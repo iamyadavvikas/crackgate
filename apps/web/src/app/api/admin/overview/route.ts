@@ -1,0 +1,179 @@
+/** GET /api/admin/overview — founder dashboard aggregate.
+ *  Returns counts, plan breakdown, revenue, signup/attempt timeseries.
+ */
+import { NextResponse } from "next/server";
+import { getAdminSession } from "@/lib/admin";
+import { db } from "@/lib/db";
+
+export const runtime = "nodejs";
+export const dynamic = "force-dynamic";
+
+function dateKey(d: Date): string {
+  return d.toISOString().slice(0, 10);
+}
+
+function fillDailySeries(days: number): Map<string, number> {
+  const map = new Map<string, number>();
+  for (let i = days - 1; i >= 0; i--) {
+    const d = new Date(Date.now() - i * 86400_000);
+    map.set(dateKey(d), 0);
+  }
+  return map;
+}
+
+export async function GET() {
+  const admin = await getAdminSession();
+  if (!admin) {
+    return NextResponse.json({ error: "forbidden" }, { status: 403 });
+  }
+
+  const now = new Date();
+  const since30 = new Date(now.getTime() - 30 * 86400_000);
+  const since7 = new Date(now.getTime() - 7 * 86400_000);
+  const since1 = new Date(now.getTime() - 86400_000);
+
+  const [
+    totalUsers,
+    usersByPlan,
+    signups30,
+    signups7,
+    signups1,
+    activeUsers7,
+    payments30Captured,
+    paymentsAllCaptured,
+    paymentsRecent,
+    attempts30,
+    attempts7,
+    attempts1,
+    activity30,
+    recentUsers,
+    recentActivity,
+  ] = await Promise.all([
+    db.user.count(),
+    db.user.groupBy({ by: ["plan"], _count: { _all: true } }),
+    db.user.count({ where: { createdAt: { gte: since30 } } }),
+    db.user.count({ where: { createdAt: { gte: since7 } } }),
+    db.user.count({ where: { createdAt: { gte: since1 } } }),
+    db.user.count({ where: { lastLoginAt: { gte: since7 } } }),
+    db.payment.aggregate({
+      where: { status: "captured", capturedAt: { gte: since30 } },
+      _sum: { amount: true },
+      _count: { _all: true },
+    }),
+    db.payment.aggregate({
+      where: { status: "captured" },
+      _sum: { amount: true },
+      _count: { _all: true },
+    }),
+    db.payment.findMany({
+      orderBy: { createdAt: "desc" },
+      take: 10,
+      include: { user: { select: { email: true, name: true } } },
+    }),
+    db.attempt.count({ where: { takenAt: { gte: since30 } } }),
+    db.attempt.count({ where: { takenAt: { gte: since7 } } }),
+    db.attempt.count({ where: { takenAt: { gte: since1 } } }),
+    db.activity.findMany({
+      where: { ts: { gte: since30 } },
+      select: { ts: true, type: true, userId: true },
+    }),
+    db.user.findMany({
+      orderBy: { createdAt: "desc" },
+      take: 10,
+      select: { id: true, email: true, name: true, plan: true, createdAt: true, lastLoginAt: true },
+    }),
+    db.activity.findMany({
+      orderBy: { ts: "desc" },
+      take: 15,
+      include: { user: { select: { email: true } } },
+    }),
+  ]);
+
+  // Build daily signup + attempt + activity series for the last 30 days.
+  const signupSeries = fillDailySeries(30);
+  const attemptSeries = fillDailySeries(30);
+  const activitySeries = fillDailySeries(30);
+  const dauSet = new Map<string, Set<string>>();
+
+  const signups30Rows = await db.user.findMany({
+    where: { createdAt: { gte: since30 } },
+    select: { createdAt: true },
+  });
+  for (const r of signups30Rows) {
+    const k = dateKey(r.createdAt);
+    if (signupSeries.has(k)) signupSeries.set(k, (signupSeries.get(k) ?? 0) + 1);
+  }
+  const attempts30Rows = await db.attempt.findMany({
+    where: { takenAt: { gte: since30 } },
+    select: { takenAt: true },
+  });
+  for (const r of attempts30Rows) {
+    const k = dateKey(r.takenAt);
+    if (attemptSeries.has(k)) attemptSeries.set(k, (attemptSeries.get(k) ?? 0) + 1);
+  }
+  for (const r of activity30) {
+    const k = dateKey(r.ts);
+    if (activitySeries.has(k)) activitySeries.set(k, (activitySeries.get(k) ?? 0) + 1);
+    if (!dauSet.has(k)) dauSet.set(k, new Set());
+    dauSet.get(k)!.add(r.userId);
+  }
+  const dauSeries = Array.from(signupSeries.keys()).map((d) => ({
+    date: d,
+    count: dauSet.get(d)?.size ?? 0,
+  }));
+
+  const planMap: Record<string, number> = { free: 0, pro: 0, premium: 0 };
+  for (const row of usersByPlan) planMap[row.plan] = row._count._all;
+
+  return NextResponse.json({
+    generatedAt: now.toISOString(),
+    admin: { email: admin.email, source: admin.source },
+    users: {
+      total: totalUsers,
+      byPlan: planMap,
+      paid: planMap.pro + planMap.premium,
+      signups: { today: signups1, last7: signups7, last30: signups30 },
+      activeLast7Days: activeUsers7,
+    },
+    revenue: {
+      last30Days: {
+        amountPaise: payments30Captured._sum.amount ?? 0,
+        amountInr: Math.round((payments30Captured._sum.amount ?? 0) / 100),
+        count: payments30Captured._count._all,
+      },
+      lifetime: {
+        amountPaise: paymentsAllCaptured._sum.amount ?? 0,
+        amountInr: Math.round((paymentsAllCaptured._sum.amount ?? 0) / 100),
+        count: paymentsAllCaptured._count._all,
+      },
+    },
+    engagement: {
+      attempts: { today: attempts1, last7: attempts7, last30: attempts30 },
+    },
+    series: {
+      signups: Array.from(signupSeries, ([date, count]) => ({ date, count })),
+      attempts: Array.from(attemptSeries, ([date, count]) => ({ date, count })),
+      activity: Array.from(activitySeries, ([date, count]) => ({ date, count })),
+      dau: dauSeries,
+    },
+    recent: {
+      users: recentUsers,
+      payments: paymentsRecent.map((p) => ({
+        id: p.id,
+        email: p.user.email,
+        name: p.user.name,
+        plan: p.plan,
+        amountInr: Math.round(p.amount / 100),
+        status: p.status,
+        createdAt: p.createdAt,
+        capturedAt: p.capturedAt,
+      })),
+      activity: recentActivity.map((a) => ({
+        id: a.id,
+        type: a.type,
+        email: a.user.email,
+        ts: a.ts,
+      })),
+    },
+  });
+}

@@ -1,0 +1,591 @@
+{
+  "slug": "mine-environment",
+  "name": "Mine Environment & Safety",
+  "questions": [
+    {
+      "subject": "Mine Environment & Safety",
+      "topic": "Gas Threshold Limits",
+      "difficulty": "easy",
+      "type": "MCQ",
+      "stem": "What is the SO₂ TLV (ppm)?",
+      "options": [
+        "1",
+        "2",
+        "5",
+        "10"
+      ],
+      "answer": 1,
+      "solution": "Statutory TLV per DGMS: option (B).",
+      "id": "mine-environment-easy-0001"
+    },
+    {
+      "subject": "Mine Environment & Safety",
+      "topic": "Gas Threshold Limits",
+      "difficulty": "easy",
+      "type": "MCQ",
+      "stem": "What is the NO₂ TLV (ppm)?",
+      "options": [
+        "1",
+        "3",
+        "5",
+        "10"
+      ],
+      "answer": 1,
+      "solution": "Statutory TLV per DGMS: option (B).",
+      "id": "mine-environment-easy-0002"
+    },
+    {
+      "subject": "Mine Environment & Safety",
+      "topic": "Workplace Norms",
+      "difficulty": "easy",
+      "type": "MCQ",
+      "stem": "Max ambient noise exposure (dBA) for 8 h:",
+      "options": [
+        "75",
+        "85",
+        "90",
+        "95"
+      ],
+      "answer": 2,
+      "solution": "DGMS prescribed: 90.",
+      "id": "mine-environment-easy-0003"
+    },
+    {
+      "subject": "Mine Environment & Safety",
+      "topic": "Workplace Norms",
+      "difficulty": "easy",
+      "type": "MCQ",
+      "stem": "Min air velocity (m/s) at coal face:",
+      "options": [
+        "0.5",
+        "1.0",
+        "2.0",
+        "3.0"
+      ],
+      "answer": 1,
+      "solution": "DGMS prescribed: 1.0.",
+      "id": "mine-environment-easy-0004"
+    },
+    {
+      "subject": "Mine Environment & Safety",
+      "topic": "Gas Threshold Limits",
+      "difficulty": "easy",
+      "type": "MCQ",
+      "stem": "What is the H₂S TLV (ppm)?",
+      "options": [
+        "1",
+        "5",
+        "10",
+        "20"
+      ],
+      "answer": 2,
+      "solution": "Statutory TLV per DGMS: option (C).",
+      "id": "mine-environment-easy-0005"
+    },
+    {
+      "subject": "Mine Environment & Safety",
+      "topic": "Workplace Norms",
+      "difficulty": "easy",
+      "type": "MCQ",
+      "stem": "Wet bulb temp limit (°C) for normal work:",
+      "options": [
+        "30.5",
+        "32",
+        "28",
+        "35"
+      ],
+      "answer": 0,
+      "solution": "DGMS prescribed: 30.5.",
+      "id": "mine-environment-easy-0006"
+    },
+    {
+      "subject": "Mine Environment & Safety",
+      "topic": "Gas Threshold Limits",
+      "difficulty": "easy",
+      "type": "MCQ",
+      "stem": "What is the CO TLV (ppm) – DGMS?",
+      "options": [
+        "10",
+        "25",
+        "50",
+        "100"
+      ],
+      "answer": 1,
+      "solution": "Statutory TLV per DGMS: option (B).",
+      "id": "mine-environment-easy-0007"
+    },
+    {
+      "subject": "Mine Environment & Safety",
+      "topic": "Heat Stress",
+      "difficulty": "medium",
+      "type": "NAT",
+      "answer": 29.4,
+      "tolerance": 0.05,
+      "stem": "WBGT (°C) for Twb=28, Tg=34, Tdb=30. (Indoor formula: 0.7Twb + 0.2Tg + 0.1Tdb).",
+      "solution": "WBGT = 0.7×28+0.2×34+0.1×30 = 29.40.",
+      "id": "mine-environment-medium-0008"
+    },
+    {
+      "subject": "Mine Environment & Safety",
+      "topic": "Heat Stress",
+      "difficulty": "medium",
+      "type": "NAT",
+      "answer": 31.2,
+      "tolerance": 0.05,
+      "stem": "WBGT (°C) for Twb=30, Tg=36, Tdb=30. (Indoor formula: 0.7Twb + 0.2Tg + 0.1Tdb).",
+      "solution": "WBGT = 0.7×30+0.2×36+0.1×30 = 31.20.",
+      "id": "mine-environment-medium-0009"
+    },
+    {
+      "subject": "Mine Environment & Safety",
+      "topic": "Heat Stress",
+      "difficulty": "medium",
+      "type": "NAT",
+      "answer": 30.6,
+      "tolerance": 0.05,
+      "stem": "WBGT (°C) for Twb=30, Tg=34, Tdb=28. (Indoor formula: 0.7Twb + 0.2Tg + 0.1Tdb).",
+      "solution": "WBGT = 0.7×30+0.2×34+0.1×28 = 30.60.",
+      "id": "mine-environment-medium-0010"
+    },
+    {
+      "subject": "Mine Environment & Safety",
+      "topic": "Heat Stress",
+      "difficulty": "medium",
+      "type": "NAT",
+      "answer": 27.8,
+      "tolerance": 0.05,
+      "stem": "WBGT (°C) for Twb=26, Tg=34, Tdb=28. (Indoor formula: 0.7Twb + 0.2Tg + 0.1Tdb).",
+      "solution": "WBGT = 0.7×26+0.2×34+0.1×28 = 27.80.",
+      "id": "mine-environment-medium-0011"
+    },
+    {
+      "subject": "Mine Environment & Safety",
+      "topic": "Heat Stress",
+      "difficulty": "medium",
+      "type": "NAT",
+      "answer": 28.6,
+      "tolerance": 0.05,
+      "stem": "WBGT (°C) for Twb=26, Tg=36, Tdb=32. (Indoor formula: 0.7Twb + 0.2Tg + 0.1Tdb).",
+      "solution": "WBGT = 0.7×26+0.2×36+0.1×32 = 28.60.",
+      "id": "mine-environment-medium-0012"
+    },
+    {
+      "subject": "Mine Environment & Safety",
+      "topic": "Heat Stress",
+      "difficulty": "medium",
+      "type": "NAT",
+      "answer": 29.2,
+      "tolerance": 0.05,
+      "stem": "WBGT (°C) for Twb=28, Tg=32, Tdb=32. (Indoor formula: 0.7Twb + 0.2Tg + 0.1Tdb).",
+      "solution": "WBGT = 0.7×28+0.2×32+0.1×32 = 29.20.",
+      "id": "mine-environment-medium-0013"
+    },
+    {
+      "subject": "Mine Environment & Safety",
+      "topic": "Heat Stress",
+      "difficulty": "medium",
+      "type": "NAT",
+      "answer": 27.4,
+      "tolerance": 0.05,
+      "stem": "WBGT (°C) for Twb=26, Tg=32, Tdb=28. (Indoor formula: 0.7Twb + 0.2Tg + 0.1Tdb).",
+      "solution": "WBGT = 0.7×26+0.2×32+0.1×28 = 27.40.",
+      "id": "mine-environment-medium-0014"
+    },
+    {
+      "subject": "Mine Environment & Safety",
+      "topic": "Heat Stress",
+      "difficulty": "medium",
+      "type": "NAT",
+      "answer": 28,
+      "tolerance": 0.05,
+      "stem": "WBGT (°C) for Twb=26, Tg=34, Tdb=30. (Indoor formula: 0.7Twb + 0.2Tg + 0.1Tdb).",
+      "solution": "WBGT = 0.7×26+0.2×34+0.1×30 = 28.00.",
+      "id": "mine-environment-medium-0015"
+    },
+    {
+      "subject": "Mine Environment & Safety",
+      "topic": "Heat Stress",
+      "difficulty": "medium",
+      "type": "NAT",
+      "answer": 27.8,
+      "tolerance": 0.05,
+      "stem": "WBGT (°C) for Twb=26, Tg=32, Tdb=32. (Indoor formula: 0.7Twb + 0.2Tg + 0.1Tdb).",
+      "solution": "WBGT = 0.7×26+0.2×32+0.1×32 = 27.80.",
+      "id": "mine-environment-medium-0016"
+    },
+    {
+      "subject": "Mine Environment & Safety",
+      "topic": "Heat Stress",
+      "difficulty": "medium",
+      "type": "NAT",
+      "answer": 29.6,
+      "tolerance": 0.05,
+      "stem": "WBGT (°C) for Twb=28, Tg=34, Tdb=32. (Indoor formula: 0.7Twb + 0.2Tg + 0.1Tdb).",
+      "solution": "WBGT = 0.7×28+0.2×34+0.1×32 = 29.60.",
+      "id": "mine-environment-medium-0017"
+    },
+    {
+      "subject": "Mine Environment & Safety",
+      "topic": "Heat Stress",
+      "difficulty": "medium",
+      "type": "NAT",
+      "answer": 30.2,
+      "tolerance": 0.05,
+      "stem": "WBGT (°C) for Twb=30, Tg=32, Tdb=28. (Indoor formula: 0.7Twb + 0.2Tg + 0.1Tdb).",
+      "solution": "WBGT = 0.7×30+0.2×32+0.1×28 = 30.20.",
+      "id": "mine-environment-medium-0018"
+    },
+    {
+      "subject": "Mine Environment & Safety",
+      "topic": "Heat Stress",
+      "difficulty": "medium",
+      "type": "NAT",
+      "answer": 28.2,
+      "tolerance": 0.05,
+      "stem": "WBGT (°C) for Twb=26, Tg=34, Tdb=32. (Indoor formula: 0.7Twb + 0.2Tg + 0.1Tdb).",
+      "solution": "WBGT = 0.7×26+0.2×34+0.1×32 = 28.20.",
+      "id": "mine-environment-medium-0019"
+    },
+    {
+      "subject": "Mine Environment & Safety",
+      "topic": "Heat Stress",
+      "difficulty": "medium",
+      "type": "NAT",
+      "answer": 28.2,
+      "tolerance": 0.05,
+      "stem": "WBGT (°C) for Twb=26, Tg=36, Tdb=28. (Indoor formula: 0.7Twb + 0.2Tg + 0.1Tdb).",
+      "solution": "WBGT = 0.7×26+0.2×36+0.1×28 = 28.20.",
+      "id": "mine-environment-medium-0020"
+    },
+    {
+      "subject": "Mine Environment & Safety",
+      "topic": "Heat Stress",
+      "difficulty": "medium",
+      "type": "NAT",
+      "answer": 30.6,
+      "tolerance": 0.05,
+      "stem": "WBGT (°C) for Twb=30, Tg=32, Tdb=32. (Indoor formula: 0.7Twb + 0.2Tg + 0.1Tdb).",
+      "solution": "WBGT = 0.7×30+0.2×32+0.1×32 = 30.60.",
+      "id": "mine-environment-medium-0021"
+    },
+    {
+      "subject": "Mine Environment & Safety",
+      "topic": "Heat Stress",
+      "difficulty": "medium",
+      "type": "NAT",
+      "answer": 30.4,
+      "tolerance": 0.05,
+      "stem": "WBGT (°C) for Twb=30, Tg=32, Tdb=30. (Indoor formula: 0.7Twb + 0.2Tg + 0.1Tdb).",
+      "solution": "WBGT = 0.7×30+0.2×32+0.1×30 = 30.40.",
+      "id": "mine-environment-medium-0022"
+    },
+    {
+      "subject": "Mine Environment & Safety",
+      "topic": "Heat Stress",
+      "difficulty": "medium",
+      "type": "NAT",
+      "answer": 30.8,
+      "tolerance": 0.05,
+      "stem": "WBGT (°C) for Twb=30, Tg=34, Tdb=30. (Indoor formula: 0.7Twb + 0.2Tg + 0.1Tdb).",
+      "solution": "WBGT = 0.7×30+0.2×34+0.1×30 = 30.80.",
+      "id": "mine-environment-medium-0023"
+    },
+    {
+      "subject": "Mine Environment & Safety",
+      "topic": "Heat Stress",
+      "difficulty": "medium",
+      "type": "NAT",
+      "answer": 31,
+      "tolerance": 0.05,
+      "stem": "WBGT (°C) for Twb=30, Tg=36, Tdb=28. (Indoor formula: 0.7Twb + 0.2Tg + 0.1Tdb).",
+      "solution": "WBGT = 0.7×30+0.2×36+0.1×28 = 31.00.",
+      "id": "mine-environment-medium-0024"
+    },
+    {
+      "subject": "Mine Environment & Safety",
+      "topic": "Heat Stress",
+      "difficulty": "medium",
+      "type": "NAT",
+      "answer": 29,
+      "tolerance": 0.05,
+      "stem": "WBGT (°C) for Twb=28, Tg=32, Tdb=30. (Indoor formula: 0.7Twb + 0.2Tg + 0.1Tdb).",
+      "solution": "WBGT = 0.7×28+0.2×32+0.1×30 = 29.00.",
+      "id": "mine-environment-medium-0025"
+    },
+    {
+      "subject": "Mine Environment & Safety",
+      "topic": "Heat Stress",
+      "difficulty": "medium",
+      "type": "NAT",
+      "answer": 31,
+      "tolerance": 0.05,
+      "stem": "WBGT (°C) for Twb=30, Tg=34, Tdb=32. (Indoor formula: 0.7Twb + 0.2Tg + 0.1Tdb).",
+      "solution": "WBGT = 0.7×30+0.2×34+0.1×32 = 31.00.",
+      "id": "mine-environment-medium-0026"
+    },
+    {
+      "subject": "Mine Environment & Safety",
+      "topic": "Heat Stress",
+      "difficulty": "medium",
+      "type": "NAT",
+      "answer": 27.6,
+      "tolerance": 0.05,
+      "stem": "WBGT (°C) for Twb=26, Tg=32, Tdb=30. (Indoor formula: 0.7Twb + 0.2Tg + 0.1Tdb).",
+      "solution": "WBGT = 0.7×26+0.2×32+0.1×30 = 27.60.",
+      "id": "mine-environment-medium-0027"
+    },
+    {
+      "subject": "Mine Environment & Safety",
+      "topic": "Heat Stress",
+      "difficulty": "medium",
+      "type": "NAT",
+      "answer": 28.8,
+      "tolerance": 0.05,
+      "stem": "WBGT (°C) for Twb=28, Tg=32, Tdb=28. (Indoor formula: 0.7Twb + 0.2Tg + 0.1Tdb).",
+      "solution": "WBGT = 0.7×28+0.2×32+0.1×28 = 28.80.",
+      "id": "mine-environment-medium-0028"
+    },
+    {
+      "subject": "Mine Environment & Safety",
+      "topic": "Heat Stress",
+      "difficulty": "medium",
+      "type": "NAT",
+      "answer": 29.2,
+      "tolerance": 0.05,
+      "stem": "WBGT (°C) for Twb=28, Tg=34, Tdb=28. (Indoor formula: 0.7Twb + 0.2Tg + 0.1Tdb).",
+      "solution": "WBGT = 0.7×28+0.2×34+0.1×28 = 29.20.",
+      "id": "mine-environment-medium-0029"
+    },
+    {
+      "subject": "Mine Environment & Safety",
+      "topic": "Heat Stress",
+      "difficulty": "medium",
+      "type": "NAT",
+      "answer": 31.4,
+      "tolerance": 0.05,
+      "stem": "WBGT (°C) for Twb=30, Tg=36, Tdb=32. (Indoor formula: 0.7Twb + 0.2Tg + 0.1Tdb).",
+      "solution": "WBGT = 0.7×30+0.2×36+0.1×32 = 31.40.",
+      "id": "mine-environment-medium-0030"
+    },
+    {
+      "subject": "Mine Environment & Safety",
+      "topic": "Heat Stress",
+      "difficulty": "medium",
+      "type": "NAT",
+      "answer": 29.6,
+      "tolerance": 0.05,
+      "stem": "WBGT (°C) for Twb=28, Tg=36, Tdb=28. (Indoor formula: 0.7Twb + 0.2Tg + 0.1Tdb).",
+      "solution": "WBGT = 0.7×28+0.2×36+0.1×28 = 29.60.",
+      "id": "mine-environment-medium-0031"
+    },
+    {
+      "subject": "Mine Environment & Safety",
+      "topic": "Heat Stress",
+      "difficulty": "medium",
+      "type": "NAT",
+      "answer": 29.8,
+      "tolerance": 0.05,
+      "stem": "WBGT (°C) for Twb=28, Tg=36, Tdb=30. (Indoor formula: 0.7Twb + 0.2Tg + 0.1Tdb).",
+      "solution": "WBGT = 0.7×28+0.2×36+0.1×30 = 29.80.",
+      "id": "mine-environment-medium-0032"
+    },
+    {
+      "subject": "Mine Environment & Safety",
+      "topic": "Heat Stress",
+      "difficulty": "medium",
+      "type": "NAT",
+      "answer": 30,
+      "tolerance": 0.05,
+      "stem": "WBGT (°C) for Twb=28, Tg=36, Tdb=32. (Indoor formula: 0.7Twb + 0.2Tg + 0.1Tdb).",
+      "solution": "WBGT = 0.7×28+0.2×36+0.1×32 = 30.00.",
+      "id": "mine-environment-medium-0033"
+    },
+    {
+      "subject": "Mine Environment & Safety",
+      "topic": "Heat Stress",
+      "difficulty": "medium",
+      "type": "NAT",
+      "answer": 28.4,
+      "tolerance": 0.05,
+      "stem": "WBGT (°C) for Twb=26, Tg=36, Tdb=30. (Indoor formula: 0.7Twb + 0.2Tg + 0.1Tdb).",
+      "solution": "WBGT = 0.7×26+0.2×36+0.1×30 = 28.40.",
+      "id": "mine-environment-medium-0034"
+    },
+    {
+      "subject": "Mine Environment & Safety",
+      "topic": "Gas Dilution",
+      "difficulty": "hard",
+      "type": "NAT",
+      "answer": 20,
+      "tolerance": 0.4,
+      "stem": "Methane emission 0.1 m³/s, allowable concentration 0.5%, inlet 0%. Required dilution airflow (m³/s):",
+      "solution": "Q = G/(C_set − C_in) = 0.1/(0.005−0) = 20.00 m³/s.",
+      "id": "mine-environment-hard-0035"
+    },
+    {
+      "subject": "Mine Environment & Safety",
+      "topic": "Gas Dilution",
+      "difficulty": "hard",
+      "type": "NAT",
+      "answer": 25,
+      "tolerance": 0.5,
+      "stem": "Methane emission 0.1 m³/s, allowable concentration 0.5%, inlet 0.1%. Required dilution airflow (m³/s):",
+      "solution": "Q = G/(C_set − C_in) = 0.1/(0.005−0.001) = 25.00 m³/s.",
+      "id": "mine-environment-hard-0036"
+    },
+    {
+      "subject": "Mine Environment & Safety",
+      "topic": "Gas Dilution",
+      "difficulty": "hard",
+      "type": "NAT",
+      "answer": 43.478,
+      "tolerance": 0.8695652173913044,
+      "stem": "Methane emission 0.5 m³/s, allowable concentration 1.25%, inlet 0.1%. Required dilution airflow (m³/s):",
+      "solution": "Q = G/(C_set − C_in) = 0.5/(0.0125−0.001) = 43.48 m³/s.",
+      "id": "mine-environment-hard-0037"
+    },
+    {
+      "subject": "Mine Environment & Safety",
+      "topic": "Gas Dilution",
+      "difficulty": "hard",
+      "type": "NAT",
+      "answer": 250,
+      "tolerance": 5,
+      "stem": "Methane emission 1.0 m³/s, allowable concentration 0.5%, inlet 0.1%. Required dilution airflow (m³/s):",
+      "solution": "Q = G/(C_set − C_in) = 1.0/(0.005−0.001) = 250.00 m³/s.",
+      "id": "mine-environment-hard-0038"
+    },
+    {
+      "subject": "Mine Environment & Safety",
+      "topic": "Gas Dilution",
+      "difficulty": "hard",
+      "type": "NAT",
+      "answer": 50,
+      "tolerance": 1,
+      "stem": "Methane emission 0.2 m³/s, allowable concentration 0.5%, inlet 0.1%. Required dilution airflow (m³/s):",
+      "solution": "Q = G/(C_set − C_in) = 0.2/(0.005−0.001) = 50.00 m³/s.",
+      "id": "mine-environment-hard-0039"
+    },
+    {
+      "subject": "Mine Environment & Safety",
+      "topic": "Gas Dilution",
+      "difficulty": "hard",
+      "type": "NAT",
+      "answer": 125,
+      "tolerance": 2.5,
+      "stem": "Methane emission 0.5 m³/s, allowable concentration 0.5%, inlet 0.1%. Required dilution airflow (m³/s):",
+      "solution": "Q = G/(C_set − C_in) = 0.5/(0.005−0.001) = 125.00 m³/s.",
+      "id": "mine-environment-hard-0040"
+    },
+    {
+      "subject": "Mine Environment & Safety",
+      "topic": "Gas Dilution",
+      "difficulty": "hard",
+      "type": "NAT",
+      "answer": 40,
+      "tolerance": 0.8,
+      "stem": "Methane emission 0.5 m³/s, allowable concentration 1.25%, inlet 0%. Required dilution airflow (m³/s):",
+      "solution": "Q = G/(C_set − C_in) = 0.5/(0.0125−0) = 40.00 m³/s.",
+      "id": "mine-environment-hard-0041"
+    },
+    {
+      "subject": "Mine Environment & Safety",
+      "topic": "Gas Dilution",
+      "difficulty": "hard",
+      "type": "NAT",
+      "answer": 200,
+      "tolerance": 4,
+      "stem": "Methane emission 1.0 m³/s, allowable concentration 0.5%, inlet 0%. Required dilution airflow (m³/s):",
+      "solution": "Q = G/(C_set − C_in) = 1.0/(0.005−0) = 200.00 m³/s.",
+      "id": "mine-environment-hard-0042"
+    },
+    {
+      "subject": "Mine Environment & Safety",
+      "topic": "Gas Dilution",
+      "difficulty": "hard",
+      "type": "NAT",
+      "answer": 40,
+      "tolerance": 0.8,
+      "stem": "Methane emission 0.2 m³/s, allowable concentration 0.5%, inlet 0%. Required dilution airflow (m³/s):",
+      "solution": "Q = G/(C_set − C_in) = 0.2/(0.005−0) = 40.00 m³/s.",
+      "id": "mine-environment-hard-0043"
+    },
+    {
+      "subject": "Mine Environment & Safety",
+      "topic": "Gas Dilution",
+      "difficulty": "hard",
+      "type": "NAT",
+      "answer": 16,
+      "tolerance": 0.32,
+      "stem": "Methane emission 0.2 m³/s, allowable concentration 1.25%, inlet 0%. Required dilution airflow (m³/s):",
+      "solution": "Q = G/(C_set − C_in) = 0.2/(0.0125−0) = 16.00 m³/s.",
+      "id": "mine-environment-hard-0044"
+    },
+    {
+      "subject": "Mine Environment & Safety",
+      "topic": "Gas Dilution",
+      "difficulty": "hard",
+      "type": "NAT",
+      "answer": 86.957,
+      "tolerance": 1.7391304347826089,
+      "stem": "Methane emission 1.0 m³/s, allowable concentration 1.25%, inlet 0.1%. Required dilution airflow (m³/s):",
+      "solution": "Q = G/(C_set − C_in) = 1.0/(0.0125−0.001) = 86.96 m³/s.",
+      "id": "mine-environment-hard-0045"
+    },
+    {
+      "subject": "Mine Environment & Safety",
+      "topic": "Gas Dilution",
+      "difficulty": "hard",
+      "type": "NAT",
+      "answer": 17.391,
+      "tolerance": 0.3478260869565218,
+      "stem": "Methane emission 0.2 m³/s, allowable concentration 1.25%, inlet 0.1%. Required dilution airflow (m³/s):",
+      "solution": "Q = G/(C_set − C_in) = 0.2/(0.0125−0.001) = 17.39 m³/s.",
+      "id": "mine-environment-hard-0046"
+    },
+    {
+      "subject": "Mine Environment & Safety",
+      "topic": "Gas Dilution",
+      "difficulty": "hard",
+      "type": "NAT",
+      "answer": 8,
+      "tolerance": 0.16,
+      "stem": "Methane emission 0.1 m³/s, allowable concentration 1.25%, inlet 0%. Required dilution airflow (m³/s):",
+      "solution": "Q = G/(C_set − C_in) = 0.1/(0.0125−0) = 8.00 m³/s.",
+      "id": "mine-environment-hard-0047"
+    },
+    {
+      "subject": "Mine Environment & Safety",
+      "topic": "Gas Dilution",
+      "difficulty": "hard",
+      "type": "NAT",
+      "answer": 8.696,
+      "tolerance": 0.1739130434782609,
+      "stem": "Methane emission 0.1 m³/s, allowable concentration 1.25%, inlet 0.1%. Required dilution airflow (m³/s):",
+      "solution": "Q = G/(C_set − C_in) = 0.1/(0.0125−0.001) = 8.70 m³/s.",
+      "id": "mine-environment-hard-0048"
+    },
+    {
+      "subject": "Mine Environment & Safety",
+      "topic": "Gas Dilution",
+      "difficulty": "hard",
+      "type": "NAT",
+      "answer": 100,
+      "tolerance": 2,
+      "stem": "Methane emission 0.5 m³/s, allowable concentration 0.5%, inlet 0%. Required dilution airflow (m³/s):",
+      "solution": "Q = G/(C_set − C_in) = 0.5/(0.005−0) = 100.00 m³/s.",
+      "id": "mine-environment-hard-0049"
+    },
+    {
+      "subject": "Mine Environment & Safety",
+      "topic": "Gas Dilution",
+      "difficulty": "hard",
+      "type": "NAT",
+      "answer": 80,
+      "tolerance": 1.6,
+      "stem": "Methane emission 1.0 m³/s, allowable concentration 1.25%, inlet 0%. Required dilution airflow (m³/s):",
+      "solution": "Q = G/(C_set − C_in) = 1.0/(0.0125−0) = 80.00 m³/s.",
+      "id": "mine-environment-hard-0050"
+    }
+  ]
+}

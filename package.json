@@ -7,21 +7,27 @@
     "packages/*"
   ],
   "scripts": {
-    "dev":         "echo 'Use npm run dev:web (port 3000) or dev:api (port 3001)'",
-    "dev:web":     "npm run dev -w apps/frontend",
-    "dev:api":     "npm run dev -w apps/backend",
-    "build":       "npm run db:generate && npm run build --workspaces --if-present",
-    "build:web":   "npm run db:generate && npm run build -w apps/frontend",
-    "build:api":   "npm run db:generate && npm run build -w apps/backend",
+    "dev":         "npm run dev -w apps/web",
+    "dev:web":     "npm run dev -w apps/web",
+    "build":       "npm run db:generate && npm run build -w apps/web",
+    "build:web":   "npm run db:generate && npm run build -w apps/web",
+    "start":       "npm run start -w apps/web",
     "lint":        "npm run lint --workspaces --if-present",
     "db:generate": "npm run generate -w @crackgate/database",
     "db:migrate":  "npm run migrate  -w @crackgate/database",
     "db:deploy":   "npm run deploy   -w @crackgate/database",
     "db:studio":   "npm run studio   -w @crackgate/database",
-    "db:seed":     "npm run seed     -w @crackgate/database"
+    "db:seed":     "npm run seed     -w @crackgate/database",
+    "build:mocks":       "npx tsx scripts/build_mocks.ts",
+    "build:mocks:force": "npx tsx scripts/build_mocks.ts --force",
+    "build:mocks:one":   "npx tsx scripts/build_mocks.ts --only="
   },
   "engines": {
     "node": ">=20.0.0",
     "npm":  ">=10.0.0"
+  },
+  "overrides": {
+    "@prisma/client": "^6.19.3",
+    "prisma": "^6.19.3"
   }
 }

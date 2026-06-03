@@ -5,7 +5,7 @@ Provisions:
 - **VPC** — 2 AZs, public + isolated subnets, no NAT
 - **Cognito User Pool** with Google as the only identity provider
 - **Aurora Serverless v2 Postgres** (0.5 → 4 ACU autoscale)
-- **Amplify Hosting** for the Next.js app (`crackgate-app/`) with auto-deploy from GitHub
+- **Amplify Hosting** for the Next.js app (`apps/web/`) with auto-deploy from GitHub
 - **Route 53** alias for `crackgate.in` and `www.crackgate.in`
 
 ## One-time setup (do these in the AWS Console first)
@@ -38,7 +38,7 @@ npx cdk deploy --all \
 
 Outputs:
 - `CognitoDomain` — paste into `COGNITO_ISSUER` for local dev
-- `UserPoolClientId` + secret — into `crackgate-app/.env`
+- `UserPoolClientId` + secret — into `apps/web/.env`
 - `DbEndpoint` — combine with the `/crackgate/db/master` secret to form your `DATABASE_URL`
 - `AmplifyUrl` — temporary URL until Route 53 finishes verifying the domain
 

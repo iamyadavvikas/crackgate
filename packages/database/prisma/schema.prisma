@@ -33,8 +33,10 @@ enum AttemptKind {
 model User {
   id            String     @id @default(cuid())
   email         String     @unique
-  name          String
-  picture       String?
+  emailVerified DateTime?
+  name          String?
+  image         String?    // required by @auth/prisma-adapter
+  picture       String?    // legacy column, kept in sync with `image`
   plan          Plan       @default(free)
   planExpiry    DateTime?
   role          Role       @default(user)

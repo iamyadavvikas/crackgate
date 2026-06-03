@@ -96,7 +96,7 @@ export class AppStack extends cdk.Stack {
     return JSON.stringify({
       version: "1.0",
       applications: [{
-        appRoot: "crackgate-app",
+        appRoot: "apps/web",
         frontend: {
           phases: {
             preBuild: { commands: ["npm ci"] },

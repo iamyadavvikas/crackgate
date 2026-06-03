@@ -1,5 +1,5 @@
-/** Shared Prisma client singleton — consumed by both apps/frontend and
- *  apps/backend via the `@crackgate/database` workspace package.
+/** Shared Prisma client singleton — consumed by apps/web via the
+ *  `@crackgate/database` workspace package.
  *
  *  The singleton pattern prevents Next.js dev-mode hot-reload from
  *  exhausting the Postgres connection pool. */
