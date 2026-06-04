@@ -43,7 +43,7 @@ export function ScoreTrendChart({ data }: { data: Point[] }) {
               if (!active || !payload || !payload.length) return null;
               const p = payload[0].payload as typeof withAvg[number];
               return (
-                <div className="bg-white border border-line rounded-lg p-3 text-xs shadow-pop">
+                <div className="bg-surface border border-line rounded-lg p-3 text-xs shadow-pop">
                   <div className="font-semibold">{p.title}</div>
                   <div className="text-muted">{p.date}</div>
                   <div className="mt-1">Score: <b>{p.score}/{p.total}</b> ({p.pct}%)</div>

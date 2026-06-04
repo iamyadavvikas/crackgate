@@ -25,8 +25,8 @@ export function EngagementStats() {
   if (loading) {
     return (
       <div className="card p-5 animate-pulse">
-        <div className="h-4 w-24 bg-slate-200 rounded" />
-        <div className="h-8 w-40 bg-slate-200 rounded mt-3" />
+        <div className="h-4 w-24 bg-line rounded" />
+        <div className="h-8 w-40 bg-line rounded mt-3" />
       </div>
     );
   }
@@ -60,7 +60,7 @@ export function EngagementStats() {
 
 function Stat({ label, value }: { label: string; value: number }) {
   return (
-    <div className="rounded-lg bg-slate-50 py-2">
+    <div className="rounded-lg bg-canvas py-2">
       <div className="text-lg font-bold text-brand">{value}</div>
       <div className="text-[11px] text-muted uppercase tracking-wide">{label}</div>
     </div>

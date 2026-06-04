@@ -150,7 +150,7 @@ export function FreshMockRunner({ initialSeed }: { initialSeed?: number }) {
                   <span>{subj}</span>
                   <span><b>{Math.round(s.scored * 100) / 100}</b> / {s.total} · {p}% · ✓{s.correct} ✗{s.wrong}</span>
                 </div>
-                <div className="h-2 bg-slate-100 rounded-full overflow-hidden">
+                <div className="h-2 bg-canvas rounded-full overflow-hidden">
                   <div className="h-full" style={{ width: `${Math.max(2, p)}%`, background: p >= 60 ? "var(--ok)" : p >= 40 ? "var(--accent)" : "var(--bad)" }} />
                 </div>
               </div>
@@ -286,7 +286,7 @@ export function FreshMockRunner({ initialSeed }: { initialSeed?: number }) {
                     i === idx && "ring-2 ring-brand",
                     isAnswered ? "bg-emerald-100 border-emerald-300 text-emerald-900" :
                       isSeen ? "bg-amber-50 border-amber-200 text-amber-900" :
-                      "bg-white border-line text-muted",
+                      "bg-surface border-line text-muted",
                   )}
                 >{i + 1}</button>
               );
@@ -295,7 +295,7 @@ export function FreshMockRunner({ initialSeed }: { initialSeed?: number }) {
           <div className="mt-3 text-xs space-y-1">
             <div className="flex items-center gap-2"><span className="w-3 h-3 bg-emerald-100 border border-emerald-300 rounded-sm" /> answered</div>
             <div className="flex items-center gap-2"><span className="w-3 h-3 bg-amber-50 border border-amber-200 rounded-sm" /> seen, skipped</div>
-            <div className="flex items-center gap-2"><span className="w-3 h-3 bg-white border border-line rounded-sm" /> not visited</div>
+            <div className="flex items-center gap-2"><span className="w-3 h-3 bg-surface border border-line rounded-sm" /> not visited</div>
           </div>
         </aside>
       </div>
@@ -314,7 +314,7 @@ function ChoiceList({ options, multi, value, onChange }: {
         const sel = multi ? (Array.isArray(value) && value.includes(i)) : value === i;
         return (
           <label key={i} className={cn(
-            "flex items-start gap-3 rounded-lg border p-3 cursor-pointer hover:bg-slate-50",
+            "flex items-start gap-3 rounded-lg border p-3 cursor-pointer hover:bg-canvas",
             sel ? "border-brand bg-brand/5" : "border-line",
           )}>
             <input type={multi ? "checkbox" : "radio"} checked={!!sel}

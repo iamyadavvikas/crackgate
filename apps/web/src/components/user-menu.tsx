@@ -46,7 +46,7 @@ export function UserMenu({
         onClick={() => setOpen((v) => !v)}
         aria-haspopup="menu"
         aria-expanded={open}
-        className="flex items-center gap-2 rounded-full pl-1 pr-2 py-1 hover:bg-slate-50 transition border border-transparent hover:border-line"
+        className="flex items-center gap-2 rounded-full pl-1 pr-2 py-1 hover:bg-canvas transition border border-transparent hover:border-line"
       >
         {image ? (
           // eslint-disable-next-line @next/next/no-img-element
@@ -64,7 +64,7 @@ export function UserMenu({
       </button>
 
       {open && (
-        <div role="menu" className="absolute right-0 mt-2 w-72 bg-white border border-line rounded-xl shadow-pop overflow-hidden z-50">
+        <div role="menu" className="absolute right-0 mt-2 w-72 bg-surface border border-line rounded-xl shadow-pop overflow-hidden z-50">
           {/* Profile card */}
           <div className="p-4 bg-gradient-to-br from-brand/5 to-accent/5 border-b border-line">
             <div className="flex items-center gap-3">
@@ -140,7 +140,7 @@ function Item({ href, icon, children, onClick }: { href: string; icon: string; c
       href={href}
       role="menuitem"
       onClick={onClick}
-      className="flex items-center gap-3 px-4 py-2.5 text-sm hover:bg-slate-50 text-ink"
+      className="flex items-center gap-3 px-4 py-2.5 text-sm hover:bg-canvas text-ink"
     >
       <span className="w-5 text-center">{icon}</span>
       <span>{children}</span>

@@ -31,8 +31,15 @@ export default async function RootLayout({ children }: { children: React.ReactNo
   const plan    = (session?.user as { plan?: "free" | "pro" | "premium" } | undefined)?.plan;
   const isAdmin = (session?.user as { role?: string } | undefined)?.role === "admin";
 
+  // Anti-FOUC theme script — runs before paint, reads localStorage / system
+  // preference, sets data-theme on <html>. Inline string so it's blocking.
+  const themeScript = `(function(){try{var s=localStorage.getItem('cg.theme');var m=window.matchMedia('(prefers-color-scheme: dark)').matches;var t=s||(m?'dark':'light');document.documentElement.setAttribute('data-theme',t);}catch(e){}})();`;
+
   return (
-    <html lang="en" className={inter.variable}>
+    <html lang="en" className={inter.variable} suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+      </head>
       <body>
         <a href="#main" className="skip-link">Skip to main content</a>
         <SiteHeader />

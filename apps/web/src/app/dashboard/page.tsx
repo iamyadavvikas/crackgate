@@ -10,13 +10,25 @@ import { EngagementStats } from "@/components/engagement-stats";
 import { TimePerformanceChart } from "@/components/time-performance-chart";
 import { DailyTargetRing } from "@/components/daily-target-ring";
 import { Sparkline } from "@/components/sparkline";
-import { InlineStreak } from "@/components/inline-streak";
+import { RankLine } from "@/components/rank-line";
+import { TodayFocusCard } from "@/components/today-focus";
+import { WeekStatus } from "@/components/week-status";
+import { DashboardTabs, type DashboardTab } from "@/components/dashboard-tabs";
+import { SubjectChipGrid } from "@/components/subject-chip-grid";
+import { MistakesVault } from "@/components/mistakes-vault";
+import { AttemptDetailModal, type AttemptRow } from "@/components/attempt-detail-modal";
+import { AttemptRowOpener } from "@/components/attempt-row-opener";
+import { MOCKS } from "@/data/mocks";
 import {
   buildSyllabusMap,
   nextBestActions,
   miniSwot,
   trendDelta,
   daysUntilGate,
+  predictAir,
+  weekActivity,
+  whyTodaysFocus,
+  nextScheduledMock,
   type SubjectMastery,
 } from "@/lib/dashboard-data";
 
@@ -28,10 +40,11 @@ export default async function DashboardPage() {
 
   const userId = session.user.id;
   const since90 = new Date(Date.now() - 90 * 86_400_000);
+  const since30 = new Date(Date.now() - 30 * 86_400_000);
   const startOfToday = new Date();
   startOfToday.setHours(0, 0, 0, 0);
 
-  const [attempts, activityCount, latest, practiceToday, practiceBySubject] = await Promise.all([
+  const [attempts, activityCount, latest, practiceToday, practiceBySubject, weekEvents] = await Promise.all([
     db.attempt.findMany({
       where: { userId },
       orderBy: { takenAt: "desc" },
@@ -45,6 +58,10 @@ export default async function DashboardPage() {
     db.activity.findMany({
       where: { userId, type: "practice_attempt", ts: { gte: since90 } },
       select: { payload: true, ts: true },
+    }),
+    db.activity.findMany({
+      where: { userId, ts: { gte: since30 } },
+      select: { ts: true },
     }),
   ]);
 
@@ -96,130 +113,223 @@ export default async function DashboardPage() {
     .slice(-12)
     .map((a) => (a.total ? Math.round((a.score / a.total) * 100) : 0));
 
-  const planLabel = (latest?.plan ?? "free").toString().toUpperCase();
   const firstName = latest?.name?.split(" ")[0] ?? "Aspirant";
   const gateDays = daysUntilGate();
 
-  const lastMockAttempt = attempts.find((a) => a.kind === "mock");
-  const continueCard = totalAttempts === 0
-    ? { href: "/mocks/mn-mock-01", title: "Start with Mock 01", subtitle: "Free · 65 Q · 3 hours · full GATE pattern", cta: "Begin first mock" }
-    : lastMockAttempt
-      ? { href: `/mocks/${lastMockAttempt.refId}`, title: `Resume ${lastMockAttempt.refTitle}`, subtitle: `Last attempted ${fmtDate(lastMockAttempt.takenAt)} · scored ${Math.round((lastMockAttempt.score / lastMockAttempt.total) * 100)}%`, cta: "Reopen" }
-      : { href: "/practice", title: "Continue practising", subtitle: `${activityCount} sessions logged`, cta: "Open practice" };
+  // ---------- Phase A derivations ----------
+  const prediction = predictAir(
+    attempts.map((a) => ({ takenAt: a.takenAt, score: a.score, total: a.total, kind: a.kind })),
+  );
+  const week = weekActivity(weekEvents);
+  const streak = computeStreak(weekEvents.map((e) => e.ts));
+  const focus = whyTodaysFocus(syllabus);
+  const followUps = buildFollowUps(actions, attemptedMockIds, focus.subjectSlug);
+  const upcomingMock = nextScheduledMock(
+    attemptedMockIds,
+    MOCKS.map((m) => ({ id: (m as { id: string }).id, title: (m as { title: string }).title })),
+  );
+  const revisionQueueCount = estimateRevisionQueue(syllabus);
 
+  // ---------- Tab bodies ----------
+  const planTab = (
+    <PlanTab
+      firstName={firstName}
+      questionsToday={questionsToday}
+      syllabus={syllabus}
+      swot={swot}
+      delta={delta}
+      trendPoints={trendPoints}
+    />
+  );
+
+  const performanceTab = (
+    <div className="space-y-8">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <StatCard label="Attempts" value={totalAttempts} />
+        <StatCard label="Avg Score" value={`${avgScore}%`} />
+        <StatCard label="Best Score" value={`${bestScore}%`} />
+        <StatCard label="Activity events" value={activityCount} />
+      </div>
+
+      <div className="card p-6">
+        <div className="flex justify-between items-end flex-wrap gap-2">
+          <div>
+            <h2 className="font-bold text-lg">Score trend</h2>
+            <p className="text-sm text-muted">Mock + PYQ accuracy over time, with running average.</p>
+          </div>
+          <span className="text-xs text-muted">Last {Math.min(attempts.length, 50)} attempts</span>
+        </div>
+        <div className="mt-4">
+          <ScoreTrendChart
+            data={[...attempts].reverse().map((a) => ({
+              date: fmtDate(a.takenAt),
+              pct: a.total ? Math.round((a.score / a.total) * 100) : 0,
+              score: a.score,
+              total: a.total,
+              title: a.refTitle,
+            }))}
+          />
+        </div>
+      </div>
+
+      <PercentilePanel />
+      <TimePerformanceChart />
+    </div>
+  );
+
+  const masteryTab = (
+    <div className="space-y-8">
+      <SubjectChipGrid syllabus={syllabus} />
+      <SubjectMasteryPanel />
+      <SwotAnalysisPanel />
+    </div>
+  );
+
+  // Serialise attempts for the client modal (Date -> ISO, Json -> typed record)
+  const attemptRows: AttemptRow[] = attempts.slice(0, 20).map((a) => ({
+    id: a.id,
+    kind: a.kind as "mock" | "pyq",
+    refId: a.refId,
+    refTitle: a.refTitle,
+    score: a.score,
+    total: a.total,
+    correct: a.correct,
+    wrong: a.wrong,
+    skipped: a.skipped,
+    durationSec: a.durationSec,
+    takenAt: a.takenAt.toISOString(),
+    breakdown: (a.breakdown as Record<string, { scored: number; total: number }>) ?? {},
+  }));
+
+  const mocksTab = (
+    <div className="space-y-8">
+      <div className="card p-6">
+        <div className="flex items-baseline justify-between flex-wrap gap-2">
+          <div>
+            <h2 className="text-lg font-extrabold">Recent attempts</h2>
+            <p className="text-sm text-muted">Click any row for the full breakdown.</p>
+          </div>
+          {upcomingMock && (
+            <Link href={`/mocks/${upcomingMock.id}`} className="btn btn-primary btn-sm">
+              Take {upcomingMock.title.replace(/—.*$/, "").trim()}
+            </Link>
+          )}
+        </div>
+        <div className="mt-4 overflow-x-auto">
+          <table className="w-full text-sm">
+            <thead className="text-muted text-left border-b border-line">
+              <tr>
+                <th className="py-2">Paper</th>
+                <th className="py-2">Type</th>
+                <th className="py-2">Score</th>
+                <th className="py-2">Accuracy</th>
+                <th className="py-2">Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              {attemptRows.map((a) => {
+                const pct = a.total ? Math.round((a.score / a.total) * 100) : 0;
+                return (
+                  <AttemptRowOpener key={a.id} id={a.id}>
+                    <td className="py-2.5 font-medium">{a.refTitle}</td>
+                    <td className="py-2.5"><span className="badge">{a.kind.toUpperCase()}</span></td>
+                    <td className="py-2.5 tabular-nums">{a.score} / {a.total}</td>
+                    <td className="py-2.5 tabular-nums">
+                      <span className={pct >= 60 ? "text-ok" : pct >= 40 ? "text-accent" : "text-bad"}>{pct}%</span>
+                    </td>
+                    <td className="py-2.5 text-muted">{fmtDate(new Date(a.takenAt))}</td>
+                  </AttemptRowOpener>
+                );
+              })}
+              {attemptRows.length === 0 && (
+                <tr><td colSpan={5} className="py-6 text-center text-sm text-muted">No attempts yet.</td></tr>
+              )}
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <AttemptDetailModal attempts={attemptRows} />
+    </div>
+  );
+
+  const mistakesTab = <MistakesVault />;
+
+  const calendarTab = (
+    <div className="space-y-8">
+      <EngagementStats />
+      <div className="card p-6 text-center">
+        <div className="text-sm font-bold text-muted uppercase tracking-wider">Coming next</div>
+        <h3 className="text-lg font-extrabold mt-2">14-week countdown calendar</h3>
+        <p className="text-sm text-muted mt-2 max-w-md mx-auto">
+          Visual week-by-week plan to GATE with subject milestones and full-syllabus checkpoints.
+        </p>
+      </div>
+    </div>
+  );
+
+  const tabs: DashboardTab[] = [
+    { key: "plan",        label: "Plan",        content: planTab },
+    { key: "performance", label: "Performance", content: performanceTab },
+    { key: "mastery",     label: "Mastery",     content: masteryTab },
+    { key: "mistakes",    label: "Mistakes",    badge: revisionQueueCount, content: mistakesTab },
+    { key: "mocks",       label: "Mocks",       content: mocksTab },
+    { key: "calendar",    label: "Calendar",    content: calendarTab },
+  ];
+
+  // ---------- Render ----------
   return (
-    <div className="max-w-7xl mx-auto px-5 py-8">
-      {/* ────────── Top rail ────────── */}
-      <section className="flex flex-wrap items-center justify-between gap-3 pb-5 border-b border-line">
-        <div className="flex items-center gap-3 flex-wrap text-sm">
-          <span className="inline-flex items-center gap-1.5 font-bold">
-            <span className="text-lg">👋</span>{firstName}
-          </span>
-          <span className="text-muted">·</span>
-          <span className="inline-flex items-center gap-1.5">
-            <span className="text-base">📅</span>
-            <span className="font-semibold">{gateDays}</span>
-            <span className="text-muted">days to GATE 2027</span>
-          </span>
-          <span className="text-muted hidden sm:inline">·</span>
-          <InlineStreak />
-        </div>
-        <div className="flex items-center gap-2">
-          <span className={`badge ${planLabel === "FREE" ? "" : "badge-pro"}`}>{planLabel}</span>
-          {planLabel === "FREE" && (
-            <Link href="/pricing" className="text-xs font-semibold text-brand hover:underline">Upgrade →</Link>
-          )}
-          <Link href="/profile" className="btn btn-ghost btn-sm" aria-label="Settings">⚙</Link>
-        </div>
+    <div className="max-w-7xl mx-auto px-5 py-8 space-y-6">
+      {/* Tier 1 — Where do I stand? */}
+      <RankLine prediction={prediction} daysToGate={gateDays} />
+
+      {/* Tier 2 — What do I do now?  &  How am I doing? */}
+      <section className="grid lg:grid-cols-[1.55fr_1fr] gap-5">
+        <TodayFocusCard focus={focus} followUps={followUps} />
+        <WeekStatus
+          week={week}
+          streak={streak}
+          revisionQueueCount={revisionQueueCount}
+          nextMock={upcomingMock}
+        />
       </section>
 
-      {/* ────────── Hero: Continue + Today's target ────────── */}
-      <section className="grid lg:grid-cols-[1.4fr_1fr] gap-5 mt-6">
-        <Link
-          href={continueCard.href}
-          className="rounded-2xl p-7 relative overflow-hidden group hover:shadow-lg transition block"
-          style={{ background: "linear-gradient(135deg, var(--brand) 0%, var(--brand-2) 100%)" }}
-        >
-          <div className="relative z-10 text-white">
-            <div className="text-xs uppercase tracking-wider font-semibold opacity-80">
-              {totalAttempts === 0 ? "Start here" : "Pick up where you left off"}
-            </div>
-            <h2 className="text-2xl sm:text-3xl font-extrabold mt-2 leading-tight">{continueCard.title}</h2>
-            <p className="text-sm text-white/85 mt-2">{continueCard.subtitle}</p>
-            <span className="inline-flex items-center gap-2 mt-5 px-4 py-2 bg-white text-[color:var(--brand)] rounded-lg font-bold text-sm group-hover:gap-3 transition-all">
-              ▶ {continueCard.cta}
-            </span>
-          </div>
-          <div aria-hidden className="absolute -right-8 -bottom-8 text-[180px] opacity-15 select-none">⛏️</div>
-        </Link>
+      {/* Tier 3 — Deeper dive */}
+      <DashboardTabs tabs={tabs} />
+    </div>
+  );
+}
 
+// ────────────────────────────────────────────────────────────────────
+// Plan tab — kept richer than other tabs since it's the default landing
+// ────────────────────────────────────────────────────────────────────
+function PlanTab({
+  firstName,
+  questionsToday,
+  syllabus,
+  swot,
+  delta,
+  trendPoints,
+}: {
+  firstName: string;
+  questionsToday: number;
+  syllabus: SubjectMastery[];
+  swot: ReturnType<typeof miniSwot>;
+  delta: ReturnType<typeof trendDelta>;
+  trendPoints: number[];
+}) {
+  return (
+    <div className="space-y-8">
+      <section className="grid lg:grid-cols-[1.4fr_1fr] gap-5">
         <DailyTargetRing done={questionsToday} />
-      </section>
-
-      {/* ────────── Next best actions ────────── */}
-      <section className="mt-8">
-        <div className="flex items-baseline justify-between">
-          <h2 className="text-lg font-extrabold">📍 Next best actions</h2>
-          <span className="text-xs text-muted">Picked for you</span>
-        </div>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-4">
-          <ActionCard
-            href={`/mocks/${actions.recommendedMockId}`}
-            icon="📝"
-            tag={attemptedMockIds.has(actions.recommendedMockId) ? "Retry" : "Recommended"}
-            title={actions.recommendedMockTitle.replace(/^Mock Test \d+\s*[—-]\s*/, "")}
-            sub="65 Q · 3 hours · GATE pattern"
-          />
-          {actions.weakestSubject ? (
-            <ActionCard
-              href={`/practice/${actions.weakestSubject.slug}`}
-              icon="🧠"
-              tag="Weak area"
-              title={actions.weakestSubject.name}
-              sub={`Current accuracy ${actions.weakestSubject.accuracy}% · drill 10 Qs`}
-              tone="bad"
-            />
-          ) : (
-            <ActionCard href="/practice" icon="🎯" tag="Explore" title="Browse practice bank" sub="906 Qs across 10 subjects" />
-          )}
-          {actions.nextPyqYear ? (
-            <ActionCard
-              href={`/pyq/${actions.nextPyqYear}`}
-              icon="📚"
-              tag={attemptedPyqYears.has(actions.nextPyqYear) ? "Re-attempt" : "Not started"}
-              title={`GATE ${actions.nextPyqYear} paper`}
-              sub="Full 65-Q PYQ · 3 hours"
-            />
-          ) : (
-            <ActionCard href="/pyq" icon="📚" tag="Browse" title="All PYQ papers" sub="12 years · 2014–2025" />
-          )}
-          <ActionCard
-            href="/practice?mode=daily10"
-            icon="🔥"
-            tag="Quick win"
-            title="Daily 10"
-            sub="Mixed quiz · ~7 minutes"
-            tone="accent"
-          />
-        </div>
-      </section>
-
-      {/* ────────── Syllabus map + Your Edge ────────── */}
-      <section className="grid lg:grid-cols-[2fr_1fr] gap-5 mt-8">
-        <div className="card p-6">
-          <div className="flex items-baseline justify-between">
-            <h2 className="text-lg font-extrabold">🗺 Syllabus map</h2>
-            <span className="text-xs text-muted">Tap a subject to practise</span>
-          </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 mt-4">
-            {syllabus.map((s) => <SyllabusTile key={s.slug} s={s} />)}
-          </div>
-        </div>
-
         <aside className="card p-6">
-          <h2 className="text-lg font-extrabold">💪 Your edge</h2>
+          <h3 className="text-base font-extrabold">
+            Hey {firstName}, your edge
+          </h3>
           {swot.strengths.length === 0 && swot.weaknesses.length === 0 ? (
-            <p className="text-sm text-muted mt-3">Take one mock or PYQ to see your strongest and weakest subjects.</p>
+            <p className="text-sm text-muted mt-3">
+              Take one mock or PYQ to see your strongest and weakest subjects.
+            </p>
           ) : (
             <div className="grid grid-cols-2 gap-4 mt-4">
               <div>
@@ -229,7 +339,7 @@ export default async function DashboardPage() {
                   {swot.strengths.map((s) => (
                     <li key={s.name} className="flex justify-between gap-2">
                       <span className="truncate">{s.name}</span>
-                      <span className="font-semibold text-ok shrink-0">{s.accuracy}%</span>
+                      <span className="font-semibold text-ok shrink-0 tabular-nums">{s.accuracy}%</span>
                     </li>
                   ))}
                 </ul>
@@ -241,7 +351,7 @@ export default async function DashboardPage() {
                   {swot.weaknesses.map((s) => (
                     <li key={s.name} className="flex justify-between gap-2">
                       <span className="truncate">{s.name}</span>
-                      <span className="font-semibold text-bad shrink-0">{s.accuracy}%</span>
+                      <span className="font-semibold text-bad shrink-0 tabular-nums">{s.accuracy}%</span>
                     </li>
                   ))}
                 </ul>
@@ -254,7 +364,7 @@ export default async function DashboardPage() {
               <div className="flex items-center justify-between">
                 <div>
                   <div className="text-xs uppercase tracking-wide text-muted">7-day trend</div>
-                  <div className="text-2xl font-extrabold mt-0.5">
+                  <div className="text-2xl font-extrabold mt-0.5 tabular-nums">
                     {delta.thisWeekAvg}%
                     <span className={`text-sm font-semibold ml-2 ${delta.delta >= 0 ? "text-ok" : "text-bad"}`}>
                       {delta.delta >= 0 ? "▲" : "▼"} {Math.abs(delta.delta)} pts
@@ -268,90 +378,95 @@ export default async function DashboardPage() {
         </aside>
       </section>
 
-      {/* ────────── Detailed analytics (collapsed by default) ────────── */}
-      <details className="mt-8 group">
-        <summary className="cursor-pointer flex items-center justify-between p-4 rounded-xl border border-line hover:bg-slate-50 list-none">
-          <div className="flex items-center gap-3">
-            <span className="text-lg">📊</span>
-            <div>
-              <div className="font-bold">Detailed analytics</div>
-              <p className="text-xs text-muted">Full SWOT 2×2 · score trend · percentile · peak hours · recent attempts</p>
-            </div>
-          </div>
-          <span className="text-muted text-sm group-open:rotate-180 transition-transform">▼</span>
-        </summary>
-
-        <div className="mt-6 space-y-8">
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            <StatCard label="Attempts" value={totalAttempts} icon="🧪" />
-            <StatCard label="Avg Score" value={`${avgScore}%`} icon="📈" />
-            <StatCard label="Best Score" value={`${bestScore}%`} icon="🏆" />
-            <StatCard label="Activity events" value={activityCount} icon="⚡" />
-          </div>
-
-          <EngagementStats />
-          <SwotAnalysisPanel />
-
-          <div className="card p-6">
-            <div className="flex justify-between items-end flex-wrap gap-2">
-              <div>
-                <h2 className="font-bold text-lg">Score trend</h2>
-                <p className="text-sm text-muted">Mock + PYQ accuracy over time, with running average.</p>
-              </div>
-              <span className="text-xs text-muted">Last {Math.min(attempts.length, 50)} attempts</span>
-            </div>
-            <div className="mt-4">
-              <ScoreTrendChart data={[...attempts].reverse().map((a) => ({
-                date: fmtDate(a.takenAt),
-                pct: a.total ? Math.round((a.score / a.total) * 100) : 0,
-                score: a.score,
-                total: a.total,
-                title: a.refTitle,
-              }))} />
-            </div>
-          </div>
-
-          <SubjectMasteryPanel />
-          <PercentilePanel />
-          <TimePerformanceChart />
-
-          <div className="card p-6 overflow-x-auto">
-            <h2 className="font-bold text-lg">Recent attempts</h2>
-            <table className="w-full text-sm mt-4">
-              <thead className="text-muted text-left border-b border-line">
-                <tr>
-                  <th className="py-2">Paper</th>
-                  <th className="py-2">Type</th>
-                  <th className="py-2">Score</th>
-                  <th className="py-2">Accuracy</th>
-                  <th className="py-2">Date</th>
-                </tr>
-              </thead>
-              <tbody>
-                {attempts.slice(0, 20).map((a) => {
-                  const pct = a.total ? Math.round((a.score / a.total) * 100) : 0;
-                  return (
-                    <tr key={a.id} className="border-b border-line/60">
-                      <td className="py-2.5 font-medium">{a.refTitle}</td>
-                      <td className="py-2.5"><span className="badge">{a.kind.toUpperCase()}</span></td>
-                      <td className="py-2.5">{a.score} / {a.total}</td>
-                      <td className="py-2.5">
-                        <span className={pct >= 60 ? "text-ok" : pct >= 40 ? "text-accent" : "text-bad"}>{pct}%</span>
-                      </td>
-                      <td className="py-2.5 text-muted">{fmtDate(a.takenAt)}</td>
-                    </tr>
-                  );
-                })}
-                {attempts.length === 0 && (
-                  <tr><td colSpan={5} className="py-6 text-center text-sm text-muted">No attempts yet.</td></tr>
-                )}
-              </tbody>
-            </table>
-          </div>
+      <section>
+        <div className="flex items-baseline justify-between">
+          <h2 className="text-lg font-extrabold">Syllabus snapshot</h2>
+          <Link href="/dashboard?tab=mastery" className="text-xs font-semibold text-brand hover:underline">
+            Open full map →
+          </Link>
         </div>
-      </details>
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 mt-4">
+          {syllabus.slice(0, 10).map((s) => <SyllabusTile key={s.slug} s={s} />)}
+        </div>
+      </section>
     </div>
   );
+}
+
+// ────────────────────────────────────────────────────────────────────
+// Helpers
+// ────────────────────────────────────────────────────────────────────
+
+function computeStreak(timestamps: Date[]): number {
+  if (!timestamps.length) return 0;
+  const keys = new Set(
+    timestamps.map((t) => {
+      const d = new Date(t);
+      d.setHours(0, 0, 0, 0);
+      return d.toISOString().slice(0, 10);
+    }),
+  );
+  const todayD = new Date();
+  todayD.setHours(0, 0, 0, 0);
+  const yesterdayD = new Date(todayD.getTime() - 86_400_000);
+  const todayKey = todayD.toISOString().slice(0, 10);
+  const yKey = yesterdayD.toISOString().slice(0, 10);
+
+  let cursor: Date | null = keys.has(todayKey) ? todayD : keys.has(yKey) ? yesterdayD : null;
+  let streak = 0;
+  while (cursor) {
+    const k = cursor.toISOString().slice(0, 10);
+    if (!keys.has(k)) break;
+    streak += 1;
+    cursor = new Date(cursor.getTime() - 86_400_000);
+  }
+  return streak;
+}
+
+function estimateRevisionQueue(syllabus: SubjectMastery[]): number {
+  // Estimate ≈ wrong answers in attempted subjects = attempted × (1 − accuracy/100)
+  let q = 0;
+  for (const s of syllabus) {
+    if (s.attempted > 0) q += Math.round(s.attempted * (1 - s.accuracy / 100));
+  }
+  return q;
+}
+
+function buildFollowUps(
+  actions: ReturnType<typeof nextBestActions>,
+  attemptedMockIds: Set<string>,
+  currentFocusSlug: string | null,
+): { href: string; label: string; sub: string }[] {
+  const out: { href: string; label: string; sub: string }[] = [];
+
+  out.push({
+    href: "/practice?mode=daily10",
+    label: "Daily 10",
+    sub: "Mixed quiz · ~7 min",
+  });
+
+  const mockTitle = actions.recommendedMockTitle.replace(/^Mock Test \d+\s*[—-]\s*/, "");
+  out.push({
+    href: `/mocks/${actions.recommendedMockId}`,
+    label: attemptedMockIds.has(actions.recommendedMockId) ? "Retry recommended mock" : "Take recommended mock",
+    sub: `${mockTitle} · 65 Q · 3 h`,
+  });
+
+  if (actions.weakestSubject && actions.weakestSubject.slug !== currentFocusSlug) {
+    out.push({
+      href: `/practice/${actions.weakestSubject.slug}`,
+      label: `Drill ${actions.weakestSubject.name}`,
+      sub: `${actions.weakestSubject.accuracy}% accuracy · 10 Qs`,
+    });
+  } else if (actions.nextPyqYear) {
+    out.push({
+      href: `/pyq/${actions.nextPyqYear}`,
+      label: `GATE ${actions.nextPyqYear} paper`,
+      sub: "Full 65-Q PYQ · 3 h",
+    });
+  }
+
+  return out.slice(0, 4);
 }
 
 // ────────── small server components ──────────
@@ -378,7 +493,7 @@ function SyllabusTile({ s }: { s: SubjectMastery }) {
           />
         ))}
       </div>
-      <div className="text-xs text-muted mt-2">
+      <div className="text-xs text-muted mt-2 tabular-nums">
         {s.attempted === 0
           ? <span>Not started</span>
           : <span><span className="font-semibold" style={{ color: tone }}>{s.accuracy}%</span> · {s.attempted} Qs</span>}
@@ -387,30 +502,10 @@ function SyllabusTile({ s }: { s: SubjectMastery }) {
   );
 }
 
-function ActionCard({
-  href, icon, tag, title, sub, tone = "brand",
-}: { href: string; icon: string; tag: string; title: string; sub: string; tone?: "brand" | "accent" | "bad" }) {
-  const tagColor = tone === "bad" ? "text-bad" : tone === "accent" ? "text-accent" : "text-brand";
-  return (
-    <Link href={href} className="card p-5 hover:shadow-md hover:-translate-y-0.5 transition block group">
-      <div className="flex items-start justify-between">
-        <span className="text-2xl">{icon}</span>
-        <span className={`text-[10px] font-bold uppercase tracking-wider ${tagColor}`}>{tag}</span>
-      </div>
-      <div className="font-bold mt-3 leading-tight line-clamp-2">{title}</div>
-      <p className="text-xs text-muted mt-1.5">{sub}</p>
-      <span className="text-xs font-semibold text-brand mt-3 inline-flex items-center gap-1 group-hover:gap-2 transition-all">
-        Start <span>→</span>
-      </span>
-    </Link>
-  );
-}
-
-function StatCard({ label, value, icon }: { label: string; value: string | number; icon: string }) {
+function StatCard({ label, value }: { label: string; value: string | number }) {
   return (
     <div className="card p-5">
-      <div className="text-2xl">{icon}</div>
-      <div className="text-3xl font-extrabold mt-2">{value}</div>
+      <div className="text-3xl font-extrabold tabular-nums">{value}</div>
       <div className="text-sm text-muted mt-0.5">{label}</div>
     </div>
   );

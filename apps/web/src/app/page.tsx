@@ -56,18 +56,18 @@ export default function HomePage() {
           <div className="hidden lg:block">
             <div className="bg-white/5 backdrop-blur rounded-2xl border border-white/20 p-6 shadow-pop">
               <div className="text-xs text-amber-300 font-semibold mb-2">LIVE EXAM PORTAL · NTA STYLE</div>
-              <div className="bg-white rounded-lg text-ink p-6">
-                <div className="text-xs text-muted">Question 23 of 65</div>
+              <div className="bg-white rounded-lg text-slate-900 p-6">
+                <div className="text-xs text-slate-500">Question 23 of 65</div>
                 <div className="mt-2 text-sm font-medium">In bord & pillar mining, the depth of cover is 250 m and unit weight of rock is 25 kN/m³. Compute the vertical stress (MPa).</div>
                 <div className="mt-4 grid grid-cols-2 gap-2 text-xs">
-                  <div className="rounded border border-line px-3 py-2 hover:bg-slate-50">A. 2.5</div>
-                  <div className="rounded border border-brand bg-brand/5 px-3 py-2 font-semibold">B. 6.25</div>
-                  <div className="rounded border border-line px-3 py-2 hover:bg-slate-50">C. 12.5</div>
-                  <div className="rounded border border-line px-3 py-2 hover:bg-slate-50">D. 25</div>
+                  <div className="rounded border border-slate-200 px-3 py-2 hover:bg-slate-50">A. 2.5</div>
+                  <div className="rounded border border-brand bg-brand/5 px-3 py-2 font-semibold text-brand">B. 6.25</div>
+                  <div className="rounded border border-slate-200 px-3 py-2 hover:bg-slate-50">C. 12.5</div>
+                  <div className="rounded border border-slate-200 px-3 py-2 hover:bg-slate-50">D. 25</div>
                 </div>
                 <div className="mt-4 flex gap-2">
-                  <span className="badge badge-pro">+2 · −0.67</span>
-                  <span className="badge">02:43:11 left</span>
+                  <span className="badge bg-amber-100 text-amber-800">+2 · −0.67</span>
+                  <span className="badge bg-slate-100 text-slate-700">02:43:11 left</span>
                 </div>
               </div>
             </div>
@@ -95,7 +95,7 @@ export default function HomePage() {
       </section>
 
       {/* ---------- CTA ---------- */}
-      <section className="bg-ink text-white">
+      <section className="bg-slate-900 text-white">
         <div className="max-w-3xl mx-auto px-5 py-16 text-center">
           <h2 className="text-3xl font-extrabold">Start your free mock now.</h2>
           <p className="mt-3 text-slate-300">No credit card. Takes 5 seconds with Google.</p>

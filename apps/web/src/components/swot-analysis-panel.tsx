@@ -98,7 +98,7 @@ export function SwotAnalysisPanel() {
           {QUADRANTS.map((q) => {
             const items = data![q.key];
             return (
-              <div key={q.key} className={`rounded-xl bg-slate-50/60 p-4 ${q.border}`}>
+              <div key={q.key} className={`rounded-xl bg-canvas/70 p-4 ${q.border}`}>
                 <div className="flex items-center justify-between">
                   <h3 className={`font-bold ${q.accent}`}>
                     {q.emoji} {q.title}
@@ -110,7 +110,7 @@ export function SwotAnalysisPanel() {
                 ) : (
                   <ul className="mt-3 space-y-2">
                     {items.map((it) => (
-                      <li key={it.name} className="rounded-lg bg-white p-3 border border-line/60">
+                      <li key={it.name} className="rounded-lg bg-surface p-3 border border-line/60">
                         <div className="flex justify-between text-sm">
                           <span className="font-semibold truncate pr-2">{it.name}</span>
                           <span className={`font-semibold ${q.accent}`}>{it.value}</span>

@@ -63,7 +63,7 @@ export function SubjectMasteryPanel() {
                   {s.pct}%
                 </div>
               </div>
-              <div className="h-1.5 bg-slate-100 rounded-full overflow-hidden mt-3">
+              <div className="h-1.5 bg-canvas rounded-full overflow-hidden mt-3">
                 <div className="h-full" style={{
                   width: `${Math.max(2, s.pct)}%`,
                   background: s.pct >= 70 ? "var(--ok)" : s.pct >= 40 ? "var(--accent)" : "var(--bad)",
@@ -74,7 +74,7 @@ export function SubjectMasteryPanel() {
                   const x = s.byDiff[d];
                   const pct = x.attempts ? Math.round((x.correct / x.attempts) * 100) : 0;
                   return (
-                    <div key={d} className="bg-slate-50 rounded px-2 py-1 text-center">
+                    <div key={d} className="bg-canvas rounded px-2 py-1 text-center">
                       <div className="text-muted capitalize">{d}</div>
                       <div className="font-bold">{x.attempts ? `${pct}%` : "—"}</div>
                     </div>

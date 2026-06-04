@@ -16,7 +16,7 @@ export function NavLink({ href, children }: { href: string; children: React.Reac
         "relative px-3 py-2 rounded-md text-sm font-medium transition-colors",
         active
           ? "text-brand bg-brand/5"
-          : "text-ink/70 hover:text-brand hover:bg-slate-50",
+          : "text-ink/70 hover:text-brand hover:bg-canvas",
       ].join(" ")}
     >
       {children}

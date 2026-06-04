@@ -8,10 +8,35 @@
   --accent:  #f59e0b;   /* amber-500   */
   --ok:      #16a34a;
   --bad:     #dc2626;
-  --ink:     #0f172a;
-  --muted:   #64748b;
-  --line:    #e2e8f0;
-  --bg:      #f8fafc;
+
+  /* Surface tokens (RGB triplets so Tailwind alpha modifiers work) */
+  --ink-rgb:     15 23 42;     /* slate-900 */
+  --muted-rgb:   100 116 139;  /* slate-500 */
+  --line-rgb:    226 232 240;  /* slate-200 */
+  --surface-rgb: 255 255 255;  /* white     */
+  --bg-rgb:      248 250 252;  /* slate-50  */
+
+  /* Legacy aliases (existing components reference these) */
+  --ink:     rgb(var(--ink-rgb));
+  --muted:   rgb(var(--muted-rgb));
+  --line:    rgb(var(--line-rgb));
+  --bg:      rgb(var(--bg-rgb));
+}
+
+[data-theme="dark"] {
+  --ink-rgb:     241 245 249;  /* slate-100  */
+  --muted-rgb:   148 163 184;  /* slate-400  */
+  --line-rgb:    51 65 85;     /* slate-700  */
+  --surface-rgb: 30 41 59;     /* slate-800  */
+  --bg-rgb:      15 23 42;     /* slate-900  */
+
+  --ok:      #4ade80;
+  --bad:     #f87171;
+
+  --ink:     rgb(var(--ink-rgb));
+  --muted:   rgb(var(--muted-rgb));
+  --line:    rgb(var(--line-rgb));
+  --bg:      rgb(var(--bg-rgb));
 }
 
 * { box-sizing: border-box; }
@@ -20,9 +45,19 @@ html, body { height: 100%; }
 
 body {
   font-family: Inter, ui-sans-serif, system-ui, sans-serif;
-  color: var(--ink);
-  background: var(--bg);
+  color: rgb(var(--ink-rgb));
+  background: rgb(var(--bg-rgb));
   -webkit-font-smoothing: antialiased;
+}
+
+/* Text selection — readable in both themes */
+::selection {
+  background: rgb(var(--brand-rgb, 79 70 229) / 0.85);
+  color: #ffffff;
+}
+[data-theme="dark"] ::selection {
+  background: #f59e0b;     /* amber-500 */
+  color: #0f172a;          /* slate-900 */
 }
 
 /* ---------- Brand button presets (used via Tailwind @apply) ---------- */
@@ -33,19 +68,23 @@ body {
   }
   .btn-primary { @apply bg-brand text-white hover:bg-brand-2; }
   .btn-accent  { @apply bg-accent text-ink hover:brightness-95; }
-  .btn-ghost   { @apply bg-white text-ink border border-line hover:bg-slate-50; }
+  .btn-ghost   { @apply bg-surface text-ink border border-line hover:brightness-95; }
   .btn-lg      { @apply px-6 py-3.5 text-base; }
+  .btn-sm      { @apply px-3 py-1.5 text-xs; }
 
-  .card { @apply bg-white border border-line rounded-xl shadow-card; }
+  .card { @apply bg-surface border border-line rounded-xl shadow-card; }
 
   .input {
-    @apply w-full rounded-lg border border-line bg-white px-3 py-2.5 text-sm
+    @apply w-full rounded-lg border border-line bg-surface px-3 py-2.5 text-sm
            focus:outline-none focus:ring-2 focus:ring-accent;
   }
 
   .badge {
     @apply inline-flex items-center rounded-full bg-slate-100 px-2.5 py-0.5
            text-xs font-medium text-slate-700;
+  }
+  [data-theme="dark"] .badge {
+    @apply bg-slate-700 text-slate-200;
   }
   .badge-free    { @apply bg-slate-100 text-slate-700; }
   .badge-pro     { @apply bg-amber-100 text-amber-800; }
@@ -66,3 +105,16 @@ body {
   outline-offset: 2px;
   border-radius: 6px;
 }
+
+/* Drawer + sheet animations */
+@keyframes cg-slide-in-right { from { transform: translateX(100%); } to { transform: translateX(0); } }
+@keyframes cg-slide-in-up    { from { transform: translateY(100%); } to { transform: translateY(0); } }
+@keyframes cg-fade-in        { from { opacity: 0; } to { opacity: 1; } }
+
+.cg-overlay  { animation: cg-fade-in 150ms ease-out; }
+.cg-drawer   { animation: cg-slide-in-right 220ms cubic-bezier(.4,.0,.2,1); }
+.cg-sheet    { animation: cg-slide-in-up    240ms cubic-bezier(.4,.0,.2,1); }
+
+/* Hide scrollbar on tab strip */
+.scrollbar-thin::-webkit-scrollbar { height: 2px; }
+.scrollbar-thin::-webkit-scrollbar-thumb { background: rgb(var(--line-rgb)); }

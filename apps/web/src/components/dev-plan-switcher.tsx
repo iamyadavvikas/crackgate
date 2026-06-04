@@ -41,7 +41,7 @@ export function DevPlanSwitcher({ currentPlan, isAdmin }: { currentPlan?: Plan; 
           \u2699 DEV · {currentPlan ?? "?"}
         </button>
       ) : (
-        <div className="bg-white border-2 border-violet-600 rounded-xl shadow-xl p-4 w-64">
+        <div className="bg-surface border-2 border-violet-600 rounded-xl shadow-xl p-4 w-64">
           <div className="flex items-center justify-between mb-3">
             <span className="text-xs font-bold text-violet-700">DEV PLAN SWITCHER</span>
             <button onClick={() => setOpen(false)} className="text-muted hover:text-ink text-sm">\u2715</button>
@@ -59,7 +59,7 @@ export function DevPlanSwitcher({ currentPlan, isAdmin }: { currentPlan?: Plan; 
                   "text-xs font-semibold py-2 rounded border transition " +
                   (currentPlan === p
                     ? "bg-violet-600 text-white border-violet-600"
-                    : "bg-white border-line hover:border-violet-400")
+                    : "bg-surface border-line hover:border-violet-400")
                 }
               >
                 {busy === p ? "\u2026" : p}

@@ -36,7 +36,7 @@ export function MobileNav({ authed }: { authed: boolean }) {
         aria-label={open ? "Close menu" : "Open menu"}
         aria-expanded={open}
         onClick={() => setOpen((v) => !v)}
-        className="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-lg hover:bg-slate-100 -ml-1"
+        className="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-lg hover:bg-canvas -ml-1"
       >
         <svg viewBox="0 0 24 24" className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
           {open ? (
@@ -61,7 +61,7 @@ export function MobileNav({ authed }: { authed: boolean }) {
         />
         <nav
           className={cn(
-            "absolute top-0 right-0 h-full w-[82%] max-w-sm bg-white shadow-2xl",
+            "absolute top-0 right-0 h-full w-[82%] max-w-sm bg-surface shadow-2xl",
             "flex flex-col transition-transform duration-200",
             open ? "translate-x-0" : "translate-x-full",
           )}
@@ -72,7 +72,7 @@ export function MobileNav({ authed }: { authed: boolean }) {
               type="button"
               aria-label="Close menu"
               onClick={() => setOpen(false)}
-              className="w-10 h-10 inline-flex items-center justify-center rounded-lg hover:bg-slate-100"
+              className="w-10 h-10 inline-flex items-center justify-center rounded-lg hover:bg-canvas"
             >
               <svg viewBox="0 0 24 24" className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
                 <path d="M6 6l12 12" /><path d="M18 6L6 18" />
@@ -88,7 +88,7 @@ export function MobileNav({ authed }: { authed: boolean }) {
                     href={l.href}
                     className={cn(
                       "block rounded-lg px-4 py-3 text-base font-medium",
-                      active ? "bg-brand/10 text-brand" : "text-ink hover:bg-slate-100",
+                      active ? "bg-brand/10 text-brand" : "text-ink hover:bg-canvas",
                     )}
                   >
                     {l.label}

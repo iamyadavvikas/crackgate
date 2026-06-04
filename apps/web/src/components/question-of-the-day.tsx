@@ -68,7 +68,7 @@ export function QuestionOfTheDayCard({ q, dateLabel }: { q: Q; dateLabel: string
                     : "border-line text-muted"
                 : chosen
                   ? "border-brand bg-brand/5 text-ink font-semibold"
-                  : "border-line hover:border-brand hover:bg-slate-50";
+                  : "border-line hover:border-brand hover:bg-canvas";
               return (
                 <button
                   key={i}
@@ -123,7 +123,7 @@ export function QuestionOfTheDayCard({ q, dateLabel }: { q: Q; dateLabel: string
         </div>
 
         {submitted && (
-          <div className="mt-5 p-4 bg-slate-50 rounded-lg border border-line relative z-10">
+          <div className="mt-5 p-4 bg-canvas rounded-lg border border-line relative z-10">
             <div className="text-xs uppercase tracking-wide text-muted font-semibold">Solution</div>
             <p className="text-sm mt-1.5 leading-relaxed" dangerouslySetInnerHTML={{ __html: q.solution }} />
           </div>

@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useMemo, useReducer, useRef, useState } from "react";
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 import { cn, secondsToHMS } from "@/lib/utils";
 
 /* ------------------------------------------------------------------ */
@@ -90,6 +91,17 @@ function scoreFor(q: Q, a: Answer): number {
 /* ------------------------------------------------------------------ */
 
 export function PracticeRunner({ slug, name }: { slug: string; name: string }) {
+  const searchParams = useSearchParams();
+  // Honour `?minutes=15|45|90` from dashboard "Today's focus" time selector.
+  // Mapping: ~1.5 min/question → 15→10, 45→30 (default), 90→60.
+  const minutesParam = parseInt(searchParams.get("minutes") ?? "", 10);
+  const limit = useMemo(() => {
+    if (!Number.isFinite(minutesParam) || minutesParam <= 0) return 30;
+    if (minutesParam <= 20) return 10;
+    if (minutesParam <= 60) return 30;
+    return 60;
+  }, [minutesParam]);
+
   const [difficulty, setDifficulty] = useState<Difficulty>("mixed");
   const [adaptive,   setAdaptive]   = useState(false);
   const [questions, setQuestions]   = useState<Q[]>([]);
@@ -99,7 +111,7 @@ export function PracticeRunner({ slug, name }: { slug: string; name: string }) {
   useEffect(() => {
     setLoading(true);
     setQuestions([]);
-    const params = new URLSearchParams({ difficulty, limit: "30" });
+    const params = new URLSearchParams({ difficulty, limit: String(limit) });
     if (adaptive) params.set("adaptive", "1");
     fetch(`/api/practice/${slug}?${params}`)
       .then((r) => r.json())
@@ -108,7 +120,7 @@ export function PracticeRunner({ slug, name }: { slug: string; name: string }) {
         setMeta({ plan: d.plan, cap: d.cap, capped: d.capped, totalAvailable: d.totalAvailable, adaptive: d.adaptive, weakTopics: d.weakTopics });
       })
       .finally(() => setLoading(false));
-  }, [slug, difficulty, adaptive]);
+  }, [slug, difficulty, adaptive, limit]);
 
   if (loading) return <LoadingScreen />;
   if (questions.length === 0) return <EmptyScreen difficulty={difficulty} setDifficulty={setDifficulty} />;
@@ -258,7 +270,7 @@ function PracticePortal({
   }, [paletteOpen]);
 
   return (
-    <div className="min-h-screen bg-slate-100 -mt-px pb-20 lg:pb-0">
+    <div className="min-h-screen bg-canvas -mt-px pb-20 lg:pb-0">
       {/* ---------- Top bar ---------- */}
       <header className="bg-gradient-to-r from-brand-2 to-brand text-white px-4 sm:px-5 py-3 flex flex-wrap items-center gap-3 sm:gap-4">
         <div className="w-9 h-9 bg-white/15 grid place-items-center rounded-lg font-bold shrink-0">CG</div>
@@ -348,12 +360,12 @@ function PracticePortal({
       {/* ---------- Two-column body ---------- */}
       <div className="grid lg:grid-cols-[1fr_320px] gap-5 px-4 sm:px-5 py-4 sm:py-5">
         {/* Question column */}
-        <section className="bg-white rounded-xl border border-line p-6">
+        <section className="bg-surface rounded-xl border border-line p-6">
           <div className="flex items-center justify-between text-sm mb-3 flex-wrap gap-2">
             <div className="flex items-center gap-2 flex-wrap">
               <span className="badge bg-brand/10 text-brand">{q.subject}</span>
-              <span className="badge bg-slate-100 text-ink/80">{q.type}</span>
-              <span className="badge bg-slate-100 text-ink/80 font-bold">
+              <span className="badge">{q.type}</span>
+              <span className="badge font-bold">
                 {marksFor(q)} mark{marksFor(q) > 1 ? "s" : ""}
               </span>
             </div>
@@ -445,7 +457,7 @@ function PracticePortal({
         </section>
 
         {/* Palette — desktop sticky sidebar */}
-        <aside className="hidden lg:block bg-white rounded-xl border border-line p-5 lg:sticky lg:top-20 h-fit">
+        <aside className="hidden lg:block bg-surface rounded-xl border border-line p-5 lg:sticky lg:top-20 h-fit">
           <Legend counts={counts} />
           <div className="mt-4 font-semibold text-sm text-muted">Choose a question</div>
           <div className="mt-2 grid grid-cols-5 sm:grid-cols-6 gap-1.5">
@@ -481,7 +493,7 @@ function PracticePortal({
       </div>
 
       {/* ---------- Mobile bottom action bar ---------- */}
-      <div className="lg:hidden fixed bottom-0 inset-x-0 z-30 bg-white border-t border-line px-3 py-2 grid grid-cols-2 gap-2 shadow-[0_-4px_12px_rgba(0,0,0,0.04)]">
+      <div className="lg:hidden fixed bottom-0 inset-x-0 z-30 bg-surface border-t border-line px-3 py-2 grid grid-cols-2 gap-2 shadow-[0_-4px_12px_rgba(0,0,0,0.04)]">
         <button
           onClick={() => setPaletteOpen(true)}
           className="btn btn-ghost border border-line h-12 justify-center font-semibold"
@@ -510,7 +522,7 @@ function PracticePortal({
         />
         <div
           className={cn(
-            "absolute top-0 right-0 h-full w-[88%] max-w-sm bg-white shadow-2xl flex flex-col transition-transform duration-200",
+            "absolute top-0 right-0 h-full w-[88%] max-w-sm bg-surface shadow-2xl flex flex-col transition-transform duration-200",
             paletteOpen ? "translate-x-0" : "translate-x-full",
           )}
         >
@@ -520,7 +532,7 @@ function PracticePortal({
               type="button"
               aria-label="Close palette"
               onClick={() => setPaletteOpen(false)}
-              className="w-10 h-10 inline-flex items-center justify-center rounded-lg hover:bg-slate-100"
+              className="w-10 h-10 inline-flex items-center justify-center rounded-lg hover:bg-canvas"
             >
               <svg viewBox="0 0 24 24" className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
                 <path d="M6 6l12 12" /><path d="M18 6L6 18" />
@@ -616,7 +628,7 @@ function Options({
             key={i}
             className={cn(
               "flex items-start gap-3 rounded-lg border p-3 transition",
-              disabled ? "cursor-default" : "cursor-pointer hover:bg-slate-50",
+              disabled ? "cursor-default" : "cursor-pointer hover:bg-canvas",
               !correct && isSel && "border-brand bg-brand/5",
               correct && isRight && "border-ok bg-emerald-50",
               correct && isWrongPick && "border-bad bg-rose-50",
@@ -682,7 +694,7 @@ function FinishModal({
   const pct = totals.totalPossible > 0 ? (totals.score / totals.totalPossible) * 100 : 0;
   return (
     <div className="fixed inset-0 bg-black/50 grid place-items-center z-50 p-4">
-      <div className="bg-white rounded-xl max-w-md w-full p-6">
+      <div className="bg-surface rounded-xl max-w-md w-full p-6">
         <h2 className="text-2xl font-extrabold">Session summary</h2>
         <p className="text-sm text-muted mt-1">Per-question attempts are already saved to your profile.</p>
 
