@@ -3,6 +3,7 @@ import { db } from "@/lib/db";
 import { redirect } from "next/navigation";
 import Link from "next/link";
 import { fmtDate } from "@/lib/utils";
+import { ProfileForm } from "@/components/profile-form";
 
 export const metadata = { title: "Account Settings" };
 export const dynamic = "force-dynamic";
@@ -11,8 +12,28 @@ export default async function SettingsPage() {
   const session = await auth();
   if (!session?.user?.id) redirect("/login?next=/settings");
 
-  const user = await db.user.findUnique({ where: { id: session.user.id } });
-  if (!user) redirect("/login");
+  const dbUser = await db.user.findUnique({ where: { id: session.user.id } });
+  // Fall back to session data if the DB user row is missing (e.g. after a re-seed)
+  // — never bounce back to /login from here, that loops the user to /dashboard.
+  const sUser = session.user as {
+    id: string; name?: string | null; email?: string | null; phone?: string | null;
+    plan?: "free" | "pro" | "premium"; role?: string;
+  };
+  const user = dbUser ?? {
+    id: sUser.id,
+    name: sUser.name ?? "Aspirant",
+    email: sUser.email ?? "—",
+    phone: sUser.phone ?? null,
+    phoneVerified: null as Date | null,
+    targetYear: null as string | null,
+    targetRank: null as number | null,
+    currentStatus: null as string | null,
+    plan: (sUser.plan ?? "free") as "free" | "pro" | "premium",
+    planExpiry: null as Date | null,
+    createdAt: new Date(),
+    lastLoginAt: null as Date | null,
+    role: (sUser.role ?? "user") as string,
+  };
 
   const plan = user.plan;
   const planClass = plan === "premium" ? "badge-premium" : plan === "pro" ? "badge-pro" : "badge-free";
@@ -23,13 +44,16 @@ export default async function SettingsPage() {
       <p className="text-muted mt-1">Manage your profile, subscription and preferences.</p>
 
       {/* Profile */}
-      <Section title="Profile" subtitle="How you appear on CrackGate.">
-        <Field label="Full name" value={user.name} />
-        <Field label="Email" value={user.email} />
-        <Field label="Phone" value={user.phone ?? "—"} verified={!!user.phoneVerified} />
-        <Field label="Target year" value={user.targetYear ?? "—"} />
-        <Field label="Current status" value={user.currentStatus ?? "—"} />
-        <p className="text-xs text-muted">Profile editing UI is coming soon. Reach out at <Link href="/contact" className="underline">/contact</Link> to update fields meanwhile.</p>
+      <Section title="Profile" subtitle="How you appear on CrackGate. Target rank drives your dashboard gap-to-target.">
+        <ProfileForm
+          defaultName={user.name ?? ""}
+          defaultTargetYear={user.targetYear ?? ""}
+          defaultTargetRank={user.targetRank != null ? String(user.targetRank) : ""}
+          defaultCurrentStatus={user.currentStatus ?? ""}
+          email={user.email ?? "—"}
+          phone={user.phone ?? "—"}
+          phoneVerified={!!user.phoneVerified}
+        />
       </Section>
 
       {/* Subscription */}

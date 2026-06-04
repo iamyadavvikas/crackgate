@@ -281,7 +281,11 @@ export default async function DashboardPage() {
   return (
     <div className="max-w-7xl mx-auto px-5 py-8 space-y-6">
       {/* Tier 1 — Where do I stand? */}
-      <RankLine prediction={prediction} daysToGate={gateDays} />
+      <RankLine
+        prediction={prediction}
+        daysToGate={gateDays}
+        targetAir={latest?.targetRank ?? 100}
+      />
 
       {/* Tier 2 — What do I do now?  &  How am I doing? */}
       <section className="grid lg:grid-cols-[1.55fr_1fr] gap-5">

@@ -6,9 +6,6 @@ export default function Contact() {
       <p className="text-muted mt-2">We reply within one working day.</p>
       <ul className="mt-8 space-y-4">
         <Row icon="📧" label="Support" value="support@crackgate.in" />
-        <Row icon="💳" label="Billing" value="billing@crackgate.in" />
-        <Row icon="⚖️" label="Legal" value="legal@crackgate.in" />
-        <Row icon="🛡️" label="Grievance officer" value="grievance@crackgate.in" />
       </ul>
     </div>
   );

@@ -107,7 +107,7 @@ function GoogleForm({ safeNext }: { safeNext: string }) {
       type="button"
       disabled={busy}
       onClick={() => { setBusy(true); signIn("google", { callbackUrl: safeNext }); }}
-      className="btn btn-lg w-full bg-white border border-line text-ink hover:bg-slate-50 justify-center font-semibold"
+      className="btn btn-lg w-full bg-white border border-slate-300 text-slate-900 hover:bg-slate-50 justify-center font-semibold"
     >
       <GoogleIcon /> {busy ? "Redirecting…" : "Continue with Google"}
     </button>

@@ -47,6 +47,7 @@ model User {
   planExpiry    DateTime?
   role          Role       @default(user)
   targetYear    String?
+  targetRank    Int?
   currentStatus String?
   phone         String?    @unique
   phoneVerified DateTime?
