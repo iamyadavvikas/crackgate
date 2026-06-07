@@ -86,8 +86,10 @@ COPY --from=builder --chown=nextjs:nodejs /app/packages/database/src/generated .
 # deploy` on container start. We copy node_modules/.bin so `npx prisma`
 # resolves to the local install instead of triggering a network download.
 COPY --from=builder --chown=nextjs:nodejs /app/packages/database/prisma      ./packages/database/prisma
-COPY --from=builder --chown=nextjs:nodejs /app/node_modules/prisma           ./node_modules/prisma
-COPY --from=builder --chown=nextjs:nodejs /app/node_modules/@prisma          ./node_modules/@prisma
+# Full node_modules (overlays Next standalone's traced subset) — needed because
+# Prisma 6's CLI pulls in transitive deps (effect, c12, defu, …) that Next's
+# tracer never sees, since the app never imports the CLI itself.
+COPY --from=builder --chown=nextjs:nodejs /app/node_modules                  ./node_modules
 
 USER nextjs
 EXPOSE 3000
