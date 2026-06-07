@@ -76,7 +76,7 @@ export async function GET() {
   let prevKey: string | null = null;
   for (const k of activeDates) {
     if (prevKey) {
-      const expected = new Date(prevKey + "T00:00:00Z");
+      const expected: Date = new Date(prevKey + "T00:00:00Z");
       expected.setUTCDate(expected.getUTCDate() + 1);
       if (expected.toISOString().slice(0, 10) === k) {
         run += 1;

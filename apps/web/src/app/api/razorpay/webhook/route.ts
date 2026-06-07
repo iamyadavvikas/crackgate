@@ -79,7 +79,7 @@ export async function POST(req: Request) {
       });
       if (u?.phone) {
         await sendPaymentReceipt(u.phone, {
-          name: u.name,
+          name: u.name ?? "",
           plan: payment.plan,
           amountRupees: Math.round(p.amount / 100),
           months,

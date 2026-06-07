@@ -54,7 +54,7 @@ function loadBank(kind: "mock" | "pyq", refId: string): BankQ[] | null {
   }
   const year = parseInt(refId.replace(/[^0-9]/g, ""), 10);
   const p = PYQ.find((y) => y.year === year);
-  return p ? (p.questions as BankQ[]) : null;
+  return p ? (p.questions as unknown as BankQ[]) : null;
 }
 
 function isAnswered(a: unknown): boolean {

@@ -8,7 +8,7 @@ declare global {
 }
 
 const PLANS = [
-  { id: "free",    name: "Free",     price: 0,    period: "forever",    cta: "Current plan",
+  { id: "free",    name: "Free",     price: 0,    period: "forever",    cta: "Current plan", highlight: false,
     perks: [
       "Mock 01 — full exam-portal experience",
       "GATE 2024 & 2025 PYQs (2 papers)",
@@ -26,7 +26,7 @@ const PLANS = [
       "Mobile + desktop sync",
       "Valid through GATE 2027 exam day",
     ] },
-  { id: "premium", name: "Premium · All-Access",  price: 899,  period: "/ GATE 2027 cycle", cta: "Get Premium",
+  { id: "premium", name: "Premium · All-Access",  price: 899,  period: "/ GATE 2027 cycle", cta: "Get Premium", highlight: false,
     perks: [
       "Everything in Pro",
       "💎 All 10 mocks including final full-syllabus FLT",
