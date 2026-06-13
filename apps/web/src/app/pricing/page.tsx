@@ -8,27 +8,27 @@ declare global {
 }
 
 const PLANS = [
-  { id: "free",    name: "Free",     price: 0,    period: "forever",    cta: "Current plan", highlight: false,
+  { id: "free",    name: "Free",     price: 0,    period: "forever",    cta: "Current plan", highlight: false, badge: "",
     perks: [
-      "Mock 01 — full exam-portal experience",
-      "Practice preview: 20 Qs per subject, all 10 subjects",
-      "Basic dashboard with score trend",
-      "Server-side grading & per-Q solutions",
+      "All Learn concept lessons — free forever",
+      "Insights dashboard — track scores & progress",
+      "Complete study Notes — free forever",
+      "Mock 01 free — full exam-portal experience",
     ] },
-  { id: "pro",     name: "Pro",      price: 499,  period: "/ GATE 2027 cycle",    cta: "Get Pro",     highlight: true,
+  { id: "pro",     name: "Pro",      price: 499,  period: "/ GATE 2027 cycle",    cta: "Get Pro",     highlight: false, badge: "Most popular",
     perks: [
-      "All subject-wise mocks + free FLT (9 tests)",
-      "🔓 Full 906-question practice bank — no per-session limits",
-      "Subject SWOT + Mastery analytics",
-      "WhatsApp payment receipts & email support",
-      "Mobile + desktop sync",
-      "Valid through GATE 2027 exam day",
+      "Everything in Free (Learn, Insights & Notes)",
+      "🔓 All 906 practice questions — fully unlocked",
+      "9 mock tests — every subject-wise mock + FLT",
+      "Subject-wise SWOT & Mastery analytics",
+      "Email support + WhatsApp payment receipts",
+      "Access through GATE 2027 exam day",
     ] },
-  { id: "premium", name: "Premium · All-Access",  price: 899,  period: "/ GATE 2027 cycle", cta: "Get Premium", highlight: false,
+  { id: "premium", name: "Premium · All-Access",  price: 899,  period: "/ GATE 2027 cycle", cta: "Get Premium", highlight: true, badge: "Best value · Go all-in",
     perks: [
-      "Everything in Pro",
-      "💎 All 10 mocks including final full-syllabus FLT",
-      "💎 Adaptive practice from your weak topics",
+      "Everything in Pro, plus:",
+      "💎 All 10 mocks — incl. final full-syllabus FLT",
+      "💎 Adaptive practice targeting your weak topics",
       "Weekly progress digest on WhatsApp",
       "Priority support + 1:1 doubt clearance",
       "Early access to GATE 2028 prep content",
@@ -59,12 +59,17 @@ export default function PricingPage() {
 }
 
 const MATRIX: { feature: string; free: string | boolean; pro: string | boolean; premium: string | boolean }[] = [
+  // Content — free for everyone
+  { feature: "Learn — concept lessons",         free: true,           pro: true,             premium: true               },
+  { feature: "Study Notes",                     free: true,           pro: true,             premium: true               },
+  { feature: "Insights dashboard",              free: true,           pro: true,             premium: "+ trends"         },
+
   // Tests
   { feature: "Full-length mock tests",          free: "1 (Mock 01)",  pro: "9 of 10",        premium: "All 10"           },
 
   // Practice
   { feature: "Practice Qs per subject",         free: "20 preview",   pro: "Full subject",   premium: "Full subject"     },
-  { feature: "Total practice questions",        free: "200",          pro: "906 (full bank)",premium: "906 (full bank)"  },
+  { feature: "Total practice questions",        free: "200",          pro: "906 (all free)", premium: "906 (all free)"   },
   { feature: "Adaptive weak-topic mode",        free: false,          pro: false,            premium: true               },
 
   // Analytics
@@ -183,7 +188,7 @@ function PlanCard({ plan }: { plan: typeof PLANS[number] }) {
 
   return (
     <div className={`card p-8 flex flex-col ${plan.highlight ? "border-accent shadow-pop ring-2 ring-accent/40" : ""}`}>
-      {plan.highlight && <div className="text-xs font-bold text-accent uppercase tracking-wide mb-2">Most popular</div>}
+      {plan.badge && <div className={`text-xs font-bold uppercase tracking-wide mb-2 ${plan.highlight ? "text-accent" : "text-brand"}`}>{plan.badge}</div>}
       <h3 className="text-xl font-bold">{plan.name}</h3>
       <div className="mt-3">
         <span className="text-4xl font-extrabold">₹{plan.price}</span>
