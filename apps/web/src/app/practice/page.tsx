@@ -1,19 +1,22 @@
 import Link from "next/link";
 import { PRACTICE } from "@/data/practice";
 import { auth } from "@/lib/auth";
+import { FREE_PREVIEW } from "@/lib/practice-config";
 
 export const metadata = { title: "Practice — Subject-wise Question Bank" };
 
 export default async function PracticeIndex() {
   const session = await auth();
   const plan    = (session?.user as { plan?: string } | undefined)?.plan ?? "free";
+  const total   = PRACTICE.reduce((n, s) => n + s.questions.length, 0);
+  const totalLabel = total.toLocaleString("en-IN");
 
   return (
     <div className="max-w-7xl mx-auto px-5 py-12">
       <header className="text-center mb-10">
         <h1 className="text-3xl lg:text-4xl font-extrabold">Subject-wise Practice</h1>
         <p className="text-muted mt-3 max-w-2xl mx-auto">
-          906 questions across 10 subjects · easy / medium / hard difficulty · solutions revealed after each answer.
+          {totalLabel} questions across {PRACTICE.length} subjects · easy / medium / hard difficulty · solutions revealed after each answer.
         </p>
         <p className="text-xs text-muted mt-2">
           Aligned with the GATE MN syllabus (which mirrors B.Tech Mining curricula at
@@ -21,7 +24,7 @@ export default async function PracticeIndex() {
         </p>
         {plan === "free" && (
           <div className="mt-5 inline-block bg-amber-50 border border-amber-200 text-amber-900 rounded-lg px-4 py-2 text-sm">
-            🎁 Free: first <b>10 questions per subject</b>. <Link href="/pricing" className="underline font-semibold">Unlock all 906</Link>.
+            🎁 Free: first <b>{FREE_PREVIEW} questions per subject</b>. <Link href="/pricing" className="underline font-semibold">Unlock all {totalLabel}</Link>.
           </div>
         )}
       </header>

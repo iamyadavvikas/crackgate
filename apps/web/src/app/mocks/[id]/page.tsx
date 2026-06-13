@@ -23,7 +23,8 @@ export default async function MockPage(props: { params: Promise<{ id: string }> 
   // mock just to be 402'd at submission. Middleware already enforces auth.
   const session = await auth();
   const plan = ((session?.user as { plan?: Plan } | undefined)?.plan) ?? "free";
-  if (!canAccess(m.tier, plan)) {
+  const isAdmin = (session?.user as { role?: string } | undefined)?.role === "admin";
+  if (!canAccess(m.tier, plan) && !isAdmin) {
     const required = m.tier === "premium" ? "premium" : "pro";
     redirect(`/pricing?gated=${m.id}&requires=${required}`);
   }

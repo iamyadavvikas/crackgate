@@ -10,10 +10,32 @@ IIT-BHU, IIT-KGP, NIT-Rourkela, IIT-Roorkee).
 Output: crackgate-app/src/data/practice.ts as a typed const.
 Deterministic — re-runs produce the same bank (seeded with subject name + tier).
 """
+import os
+import sys
+
+# ============================================================
+# RETIRED — DO NOT RUN.
+# ------------------------------------------------------------
+# This generator produced the original auto-generated practice bank, whose
+# questions were single-step formula plug-ins (several with degenerate
+# Infinity / NaN / null answers). That bank has been fully REPLACED by a hand-
+# authored, IIT/GATE-standard bank under:
+#     apps/web/src/data/questions/practice/<slug>.json
+# Running this script again would regenerate the low-quality content and
+# overwrite hand-authored work, so it is disabled. To intentionally revive it
+# for archival purposes only, set CRACKGATE_ALLOW_LEGACY_GENERATOR=1.
+# ============================================================
+if os.environ.get("CRACKGATE_ALLOW_LEGACY_GENERATOR") != "1":
+    sys.exit(
+        "build_practice.py is RETIRED. The practice bank is now hand-authored "
+        "JSON under apps/web/src/data/questions/practice/. Refusing to run."
+    )
+
 import json
 import random
 from pathlib import Path
 from itertools import product
+
 
 OUT = Path(__file__).resolve().parents[1] / "crackgate-app" / "src" / "data" / "practice.ts"
 

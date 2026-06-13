@@ -23,7 +23,9 @@ export default async function AitsPage() {
     where: { id: session.user.id },
     select: { plan: true },
   });
-  const isPremium = me?.plan === "premium";
+  const isAdmin  = (session.user as { role?: string }).role === "admin";
+  // Founders (admins) bypass both the premium gate and the per-test schedule.
+  const isPremium = me?.plan === "premium" || isAdmin;
 
   // Live count of seats so far per AITS (best score per user)
   const refIds = AITS.map((a) => a.mockRefId);
@@ -68,7 +70,7 @@ export default async function AitsPage() {
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
         {AITS.map((t) => {
-          const unlocked = isUnlocked(t, now);
+          const unlocked = isUnlocked(t, now) || isAdmin;
           const stat     = perRef.get(t.mockRefId) ?? { takers: new Set(), maxPct: 0 };
           const mock     = MOCKS.find((m) => m.id === t.mockRefId);
 

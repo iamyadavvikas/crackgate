@@ -1,0 +1,150 @@
+"use client";
+
+import { useState } from "react";
+import { cn } from "@/lib/utils";
+import { QuestionTypeTag } from "@/components/question-extras";
+import { QuestionFigure, type QuestionFigure as Figure } from "@/components/question-figure";
+import { MathText } from "@/components/math-text";
+
+/* A question as stored in the mock / PYQ banks. */
+type ReviewQuestion =
+  | { type: "MCQ"; marks: number; subject: string; stem: string; options: string[]; answer: number; solution?: string; figure?: Figure }
+  | { type: "MSQ"; marks: number; subject: string; stem: string; options: string[]; answer: number[]; solution?: string; figure?: Figure }
+  | { type: "NAT"; marks: number; subject: string; stem: string; answer: number; tolerance?: number; solution?: string; figure?: Figure };
+
+type Answer = number | number[] | string | null | undefined;
+
+function isAnswered(a: Answer) {
+  if (a === undefined || a === null || a === "") return false;
+  if (Array.isArray(a) && a.length === 0) return false;
+  return true;
+}
+
+function isCorrect(q: ReviewQuestion, a: Answer): boolean {
+  if (!isAnswered(a)) return false;
+  if (q.type === "NAT") {
+    const v = typeof a === "string" ? parseFloat(a) : (a as number);
+    return !Number.isNaN(v) && Math.abs(v - q.answer) <= (q.tolerance ?? 0);
+  }
+  if (q.type === "MSQ") {
+    const exp = [...q.answer].sort();
+    const got = Array.isArray(a) ? [...a].sort() : [];
+    return exp.length === got.length && exp.every((v, k) => v === got[k]);
+  }
+  return a === q.answer;
+}
+
+function deltaFor(q: ReviewQuestion, a: Answer): number {
+  if (!isAnswered(a)) return 0;
+  if (isCorrect(q, a)) return q.marks;
+  return q.type === "MCQ" ? -(q.marks / 3) : 0;
+}
+
+/**
+ * Answer key shown only after a mock / PYQ attempt is submitted — never during
+ * the exam. Lists every question with the candidate's response, the correct
+ * answer and the full worked solution (GATE pattern).
+ */
+export function ResultReview({
+  questions, answers,
+}: {
+  questions: ReviewQuestion[];
+  answers: Record<string, Answer>;
+}) {
+  const [filter, setFilter] = useState<"all" | "wrong" | "skipped">("all");
+
+  const rows = questions.map((q, i) => {
+    const a = answers[String(i)];
+    const answered = isAnswered(a);
+    return { q, a, i, answered, correct: answered && isCorrect(q, a), delta: deltaFor(q, a) };
+  });
+
+  const shown = rows.filter((r) =>
+    filter === "all" ? true : filter === "wrong" ? r.answered && !r.correct : !r.answered
+  );
+
+  return (
+    <div className="mt-8">
+      <div className="flex items-center gap-2 flex-wrap mb-4">
+        <h3 className="font-bold text-lg mr-auto">Answer key &amp; solutions</h3>
+        {(["all", "wrong", "skipped"] as const).map((f) => (
+          <button
+            key={f}
+            onClick={() => setFilter(f)}
+            className={cn(
+              "rounded-md px-3 py-1.5 text-xs font-semibold capitalize transition",
+              filter === f ? "bg-brand text-white" : "bg-slate-100 text-slate-700 hover:bg-slate-200 dark:bg-slate-700 dark:text-slate-200 dark:hover:bg-slate-600"
+            )}
+          >{f}</button>
+        ))}
+      </div>
+
+      <div className="space-y-5">
+        {shown.map(({ q, a, i, answered, correct, delta }) => (
+          <article key={i} className="bg-surface rounded-xl border border-line p-5 text-left">
+            <div className="flex items-center gap-2 flex-wrap text-sm mb-3">
+              <span className="badge bg-slate-100 text-slate-700 dark:bg-slate-700 dark:text-slate-200 font-bold">Q{i + 1}</span>
+              <QuestionTypeTag type={q.type} />
+              <span className="badge bg-brand/10 text-brand">{q.subject}</span>
+              <span className="badge font-bold">{q.marks} mark{q.marks > 1 ? "s" : ""}</span>
+              <span className={cn(
+                "ml-auto px-2 py-0.5 rounded text-xs font-bold tabular-nums",
+                !answered ? "bg-slate-100 text-slate-500 dark:bg-slate-700 dark:text-slate-300" : correct ? "bg-emerald-100 text-emerald-800 dark:bg-emerald-500/20 dark:text-emerald-200" : "bg-rose-100 text-rose-800 dark:bg-rose-500/20 dark:text-rose-200"
+              )}>
+                {!answered ? "Not attempted" : `${correct ? "✓ Correct" : "✗ Incorrect"} · ${delta >= 0 ? "+" : ""}${delta.toFixed(2)}`}
+              </span>
+            </div>
+
+            <MathText className="text-base leading-relaxed">{q.stem}</MathText>
+            {q.figure && <QuestionFigure figure={q.figure} />}
+
+            <div className="mt-4">
+              {q.type === "NAT" ? (
+                <div className="text-sm space-y-1">
+                  <div>Your answer: <b className="font-mono">{answered ? String(a) : "—"}</b></div>
+                  <div className="text-emerald-700 dark:text-emerald-300">Correct answer: <b className="font-mono">{q.answer}</b>{q.tolerance != null && <span className="text-muted"> (±{q.tolerance})</span>}</div>
+                </div>
+              ) : (
+                <div className="space-y-2">
+                  {q.options.map((opt, oi) => {
+                    const right = q.type === "MSQ" ? q.answer.includes(oi) : q.answer === oi;
+                    const picked = q.type === "MSQ"
+                      ? Array.isArray(a) && a.includes(oi)
+                      : a === oi;
+                    const wrongPick = picked && !right;
+                    return (
+                      <div
+                        key={oi}
+                        className={cn(
+                          "flex items-start gap-3 rounded-lg border p-3 text-sm",
+                          right && "border-ok bg-emerald-50 dark:bg-emerald-500/15",
+                          wrongPick && "border-bad bg-rose-50 dark:bg-rose-500/15",
+                          !right && !wrongPick && "border-line",
+                        )}
+                      >
+                        <span className="font-bold w-5">{String.fromCharCode(65 + oi)}.</span>
+                        <MathText className="flex-1">{opt}</MathText>
+                        {right && <span className="text-ok font-bold">✓</span>}
+                        {wrongPick && <span className="text-bad font-bold">your pick ✗</span>}
+                      </div>
+                    );
+                  })}
+                </div>
+              )}
+            </div>
+
+            {q.solution && (
+              <div className="mt-4 rounded-lg bg-canvas p-4 text-sm">
+                <p className="font-semibold text-brand">Solution</p>
+                <MathText className="mt-1.5 leading-relaxed cg-solution">{q.solution}</MathText>
+              </div>
+            )}
+          </article>
+        ))}
+        {shown.length === 0 && (
+          <p className="text-sm text-muted text-center py-6">Nothing to show for this filter. 🎉</p>
+        )}
+      </div>
+    </div>
+  );
+}

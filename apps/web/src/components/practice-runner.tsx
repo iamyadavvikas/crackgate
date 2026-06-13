@@ -4,18 +4,36 @@ import { useCallback, useEffect, useMemo, useReducer, useRef, useState } from "r
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { cn, secondsToHMS } from "@/lib/utils";
+import { CalculatorLauncher } from "@/components/gate-calculator";
+import { QuestionTypeTag, CommunitySuccessRate } from "@/components/question-extras";
+import { QuestionFigure, type QuestionFigure as Figure } from "@/components/question-figure";
+import { MathText } from "@/components/math-text";
 
 /* ------------------------------------------------------------------ */
 /* Types                                                              */
 /* ------------------------------------------------------------------ */
 
 type Q =
-  | { id: string; subject: string; topic: string; difficulty: "easy" | "medium" | "hard"; type: "MCQ"; stem: string; options: string[]; answer: number; solution: string }
-  | { id: string; subject: string; topic: string; difficulty: "easy" | "medium" | "hard"; type: "MSQ"; stem: string; options: string[]; answer: number[]; solution: string }
-  | { id: string; subject: string; topic: string; difficulty: "easy" | "medium" | "hard"; type: "NAT"; stem: string; answer: number; tolerance: number; solution: string };
+  | { id: string; subject: string; topic: string; difficulty: "easy" | "medium" | "hard"; type: "MCQ"; stem: string; options: string[]; answer: number; solution: string; figure?: Figure; marks?: 1 | 2 }
+  | { id: string; subject: string; topic: string; difficulty: "easy" | "medium" | "hard"; type: "MSQ"; stem: string; options: string[]; answer: number[]; solution: string; figure?: Figure; marks?: 1 | 2 }
+  | { id: string; subject: string; topic: string; difficulty: "easy" | "medium" | "hard"; type: "NAT"; stem: string; answer: number; tolerance: number; solution: string; figure?: Figure; marks?: 1 | 2 };
 
 type Difficulty = "mixed" | "easy" | "medium" | "hard";
 type Answer = number | number[] | string | undefined;
+
+interface DiffCounts { mixed: number; easy: number; medium: number; hard: number }
+interface Meta {
+  plan: string;
+  cap: number;
+  capped: boolean;
+  totalAvailable: number;
+  counts?: DiffCounts;
+  adaptive?: boolean;
+  weakTopics?: string[];
+}
+
+/** Selectable session sizes (untimed practice). 'All' is appended dynamically. */
+const SIZE_OPTIONS = [10, 20, 30, 60];
 
 /**
  * Palette colours follow GATE NTA convention:
@@ -55,9 +73,9 @@ function reducer(s: State, a: Action): State {
 /* GATE marking helpers                                               */
 /* ------------------------------------------------------------------ */
 
-/** Practice bank lacks a `marks` field — derive: easy = 1, otherwise 2. */
+/** Use the authored `marks` when present; otherwise derive: easy = 1, else 2. */
 function marksFor(q: Q): number {
-  return q.difficulty === "easy" ? 1 : 2;
+  return q.marks ?? (q.difficulty === "easy" ? 1 : 2);
 }
 function negativeFor(q: Q): number {
   if (q.type !== "MCQ") return 0;
@@ -95,18 +113,22 @@ export function PracticeRunner({ slug, name }: { slug: string; name: string }) {
   // Honour `?minutes=15|45|90` from dashboard "Today's focus" time selector.
   // Mapping: ~1.5 min/question → 15→10, 45→30 (default), 90→60.
   const minutesParam = parseInt(searchParams.get("minutes") ?? "", 10);
-  const limit = useMemo(() => {
+  const initialLimit = useMemo(() => {
     if (!Number.isFinite(minutesParam) || minutesParam <= 0) return 30;
     if (minutesParam <= 20) return 10;
     if (minutesParam <= 60) return 30;
     return 60;
   }, [minutesParam]);
 
+  const [limit, setLimit] = useState(initialLimit);
+  // Re-sync if the dashboard deep-link (?minutes=) changes.
+  useEffect(() => { setLimit(initialLimit); }, [initialLimit]);
+
   const [difficulty, setDifficulty] = useState<Difficulty>("mixed");
   const [adaptive,   setAdaptive]   = useState(false);
   const [questions, setQuestions]   = useState<Q[]>([]);
   const [loading,   setLoading]     = useState(true);
-  const [meta,      setMeta]        = useState<{ plan: string; cap: number; capped: boolean; totalAvailable: number; adaptive?: boolean; weakTopics?: string[] } | null>(null);
+  const [meta,      setMeta]        = useState<Meta | null>(null);
 
   useEffect(() => {
     setLoading(true);
@@ -123,7 +145,7 @@ export function PracticeRunner({ slug, name }: { slug: string; name: string }) {
   }, [slug, difficulty, adaptive, limit]);
 
   if (loading) return <LoadingScreen />;
-  if (questions.length === 0) return <EmptyScreen difficulty={difficulty} setDifficulty={setDifficulty} />;
+  if (questions.length === 0) return <EmptyScreen difficulty={difficulty} setDifficulty={setDifficulty} counts={meta?.counts} />;
 
   return (
     <PracticePortal
@@ -135,6 +157,8 @@ export function PracticeRunner({ slug, name }: { slug: string; name: string }) {
       setDifficulty={setDifficulty}
       adaptive={adaptive}
       setAdaptive={setAdaptive}
+      limit={limit}
+      setLimit={setLimit}
       meta={meta}
     />
   );
@@ -149,15 +173,77 @@ function LoadingScreen() {
   );
 }
 
-function EmptyScreen({ difficulty, setDifficulty }: { difficulty: Difficulty; setDifficulty: (d: Difficulty) => void }) {
+function EmptyScreen({ difficulty, setDifficulty, counts }: { difficulty: Difficulty; setDifficulty: (d: Difficulty) => void; counts?: DiffCounts }) {
   return (
     <div className="max-w-3xl mx-auto px-5 py-20 text-center">
       <p>No questions available for difficulty: <b>{difficulty}</b></p>
-      <div className="mt-4 flex gap-2 justify-center">
+      <div className="mt-4 flex gap-2 justify-center flex-wrap">
         {(["mixed","easy","medium","hard"] as const).map((d) => (
-          <button key={d} onClick={() => setDifficulty(d)} className="btn btn-ghost text-sm capitalize">{d}</button>
+          <button key={d} onClick={() => setDifficulty(d)} className="btn btn-ghost text-sm capitalize">
+            {d}{counts && <span className="ml-1 opacity-60 tabular-nums">{counts[d]}</span>}
+          </button>
         ))}
       </div>
+    </div>
+  );
+}
+
+/* ------------------------------------------------------------------ */
+/* Session-size selector — lets paid users choose how many questions   */
+/* this sitting covers (10 / 20 / 30 / 60 / All). Free plan is capped.  */
+/* ------------------------------------------------------------------ */
+
+function SessionSizeBar({
+  difficulty, allCount, cap, limit, setLimit, attempted, shown,
+}: {
+  difficulty: Difficulty;
+  allCount: number;
+  cap: number;
+  limit: number;
+  setLimit: (n: number) => void;
+  attempted: number;
+  shown: number;
+}) {
+  const presets = SIZE_OPTIONS.filter((n) => n < allCount);
+  const options: { value: number; label: string }[] = [
+    ...presets.map((n) => ({ value: n, label: String(n) })),
+    { value: allCount, label: `All ${allCount}` },
+  ];
+
+  const choose = (value: number, locked: boolean) => {
+    if (locked) { window.location.href = "/pricing"; return; }
+    if (value === limit) return;
+    if (attempted > 0 && !confirm("Start a new session? Current progress will be lost.")) return;
+    setLimit(value);
+  };
+
+  return (
+    <div className="bg-surface border-b border-line px-4 sm:px-5 py-2 flex items-center gap-2 flex-wrap text-xs">
+      <span className="text-muted font-semibold">Session size</span>
+      <div className="flex gap-1 flex-wrap">
+        {options.map(({ value, label }) => {
+          const locked = value > cap;
+          const active = !locked && (value === limit || (value === allCount && limit >= allCount));
+          return (
+            <button
+              key={value}
+              onClick={() => choose(value, locked)}
+              className={cn(
+                "px-2.5 py-1 rounded-md border transition tabular-nums font-semibold",
+                active
+                  ? "bg-brand text-white border-brand"
+                  : locked
+                    ? "bg-canvas text-muted border-line opacity-70"
+                    : "bg-canvas text-ink border-line hover:border-brand",
+              )}
+              title={locked ? "Upgrade to unlock larger sessions" : `Practice ${label} questions`}
+            >{label}{locked && " 🔒"}</button>
+          );
+        })}
+      </div>
+      <span className="text-muted ml-auto">
+        Showing <b className="text-ink">{shown}</b> of {allCount}{difficulty === "mixed" ? "" : ` ${difficulty}`} questions
+      </span>
     </div>
   );
 }
@@ -167,7 +253,7 @@ function EmptyScreen({ difficulty, setDifficulty }: { difficulty: Difficulty; se
 /* ------------------------------------------------------------------ */
 
 function PracticePortal({
-  slug, subjectName, questions, difficulty, setDifficulty, adaptive, setAdaptive, meta,
+  slug, subjectName, questions, difficulty, setDifficulty, adaptive, setAdaptive, limit, setLimit, meta,
 }: {
   slug: string;
   subjectName: string;
@@ -176,7 +262,9 @@ function PracticePortal({
   setDifficulty: (d: Difficulty) => void;
   adaptive: boolean;
   setAdaptive: (v: boolean) => void;
-  meta: { plan: string; cap: number; capped: boolean; totalAvailable: number; adaptive?: boolean; weakTopics?: string[] } | null;
+  limit: number;
+  setLimit: (n: number) => void;
+  meta: Meta | null;
 }) {
   const [state, dispatch] = useReducer(reducer, {
     idx: 0,
@@ -202,16 +290,15 @@ function PracticePortal({
 
   const q         = questions[state.idx];
   const a         = state.answers[state.idx];
-  const submitted = !!state.submitted[state.idx];
-  const correct   = submitted ? gradeAnswer(q, a) : null;
-  const delta     = submitted ? scoreFor(q, a) : 0;
 
   const go = useCallback((i: number) => { if (i >= 0 && i < questions.length) dispatch({ type: "go", i }); }, [questions.length]);
 
+  // Grade every *answered* question — GATE-style: nothing is revealed until the
+  // session is finished, so we score on answers, not on a per-question reveal.
   const totals = useMemo(() => {
     let score = 0, correctN = 0, wrongN = 0, attempted = 0;
     for (let i = 0; i < questions.length; i++) {
-      if (!state.submitted[i]) continue;
+      if (!isAnswered(state.answers[i])) continue;
       attempted++;
       const c = gradeAnswer(questions[i], state.answers[i]);
       if (c) correctN++; else wrongN++;
@@ -219,7 +306,7 @@ function PracticePortal({
     }
     const totalPossible = questions.reduce((s, qq) => s + marksFor(qq), 0);
     return { score, correctN, wrongN, attempted, totalPossible };
-  }, [questions, state.submitted, state.answers]);
+  }, [questions, state.answers]);
 
   const counts = useMemo(() => {
     const c = { nv: 0, not: 0, ans: 0, mark: 0, marka: 0 };
@@ -227,35 +314,38 @@ function PracticePortal({
     return c;
   }, [state.status]);
 
-  function submit() {
-    if (!isAnswered(a) || submitted) return;
-    const isC = gradeAnswer(q, a);
-    dispatch({ type: "submit", idx: state.idx });
-    dispatch({ type: "mark", idx: state.idx, status: "ans" });
-
+  // Log a per-question attempt to the profile the first time it's answered
+  // (powers adaptive practice / weak-topic tracking). Reveals nothing in the UI.
+  function track(qq: Q, ans: Answer, idx: number) {
+    if (!isAnswered(ans) || state.submitted[idx]) return;
+    dispatch({ type: "submit", idx });
     fetch("/api/practice/attempt", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify({
         subjectSlug: slug,
         subjectName,
-        qid: q.id,
-        topic: q.topic,
-        difficulty: q.difficulty,
-        correct: isC,
+        qid: qq.id,
+        topic: qq.topic,
+        difficulty: qq.difficulty,
+        correct: gradeAnswer(qq, ans),
       }),
     }).catch(() => {});
   }
 
-  const markAndNext = () => {
-    dispatch({
-      type: "mark",
-      idx: state.idx,
-      status: submitted || isAnswered(a) ? "marka" : "mark",
-    });
+  const saveAndNext = () => {
+    const answered = isAnswered(a);
+    dispatch({ type: "mark", idx: state.idx, status: answered ? "ans" : "not" });
+    if (answered) track(q, a, state.idx);
     go(state.idx + 1);
   };
-  const clear = () => { if (!submitted) dispatch({ type: "clear", idx: state.idx }); };
+  const markAndNext = () => {
+    const answered = isAnswered(a);
+    dispatch({ type: "mark", idx: state.idx, status: answered ? "marka" : "mark" });
+    if (answered) track(q, a, state.idx);
+    go(state.idx + 1);
+  };
+  const clear = () => dispatch({ type: "clear", idx: state.idx });
 
   const [finished, setFinished] = useState(false);
   const [paletteOpen, setPaletteOpen] = useState(false);
@@ -268,6 +358,20 @@ function PracticePortal({
     document.body.style.overflow = "hidden";
     return () => { document.body.style.overflow = prev; };
   }, [paletteOpen]);
+
+  // GATE simulation: once the session is finished, reveal answers + solutions.
+  if (finished) {
+    return (
+      <PracticeReview
+        questions={questions}
+        answers={state.answers}
+        totals={totals}
+        elapsed={elapsed}
+        subjectName={subjectName}
+        onResume={() => setFinished(false)}
+      />
+    );
+  }
 
   return (
     <div className="min-h-screen bg-canvas -mt-px pb-20 lg:pb-0">
@@ -293,7 +397,7 @@ function PracticePortal({
                   "px-2.5 py-1 rounded transition capitalize",
                   difficulty === d ? "bg-white text-brand" : "text-white/80 hover:text-white"
                 )}
-              >{d}</button>
+              >{d}{meta?.counts && <span className="ml-1 opacity-60 tabular-nums">{meta.counts[d]}</span>}</button>
             ))}
           </div>
           {/* Adaptive (premium) */}
@@ -318,14 +422,29 @@ function PracticePortal({
           )}
           {/* Running score */}
           <div className="bg-white/15 text-white rounded-md px-3 py-1.5 text-sm font-bold tabular-nums">
-            {totals.score >= 0 ? "+" : ""}{totals.score.toFixed(2)} / {totals.totalPossible}
+            {totals.attempted} answered
           </div>
           {/* Elapsed timer */}
           <div className="bg-amber-400 text-ink rounded-md px-3 py-1.5 text-sm font-bold tabular-nums">
             ⏱ {secondsToHMS(elapsed)}
           </div>
+          {/* Scientific calculator — top bar, like the real TCS iON CBT */}
+          <CalculatorLauncher floating={false} />
         </div>
       </header>
+
+      {/* ---------- Session-size selector ---------- */}
+      {meta && (
+        <SessionSizeBar
+          difficulty={difficulty}
+          allCount={meta.counts?.[difficulty] ?? meta.totalAvailable}
+          cap={meta.cap}
+          limit={limit}
+          setLimit={setLimit}
+          attempted={totals.attempted}
+          shown={questions.length}
+        />
+      )}
 
       {/* ---------- Adaptive banner ---------- */}
       {meta?.adaptive && meta.weakTopics && meta.weakTopics.length > 0 && (
@@ -352,8 +471,8 @@ function PracticePortal({
 
       {meta?.capped && (
         <div className="bg-amber-50 border-b border-amber-200 text-amber-900 px-5 py-2 text-xs">
-          Showing {questions.length} of {meta.totalAvailable} questions ({meta.plan} plan).{" "}
-          <Link href="/pricing" className="underline font-semibold">Upgrade to unlock all</Link>.
+          {meta.plan === "free" ? "Free preview" : "Showing"}: {questions.length} of {meta.totalAvailable} questions.{" "}
+          <Link href="/pricing" className="underline font-semibold">Upgrade to unlock all {meta.totalAvailable}</Link>.
         </div>
       )}
 
@@ -364,7 +483,7 @@ function PracticePortal({
           <div className="flex items-center justify-between text-sm mb-3 flex-wrap gap-2">
             <div className="flex items-center gap-2 flex-wrap">
               <span className="badge bg-brand/10 text-brand">{q.subject}</span>
-              <span className="badge">{q.type}</span>
+              <QuestionTypeTag type={q.type} />
               <span className="badge font-bold">
                 {marksFor(q)} mark{marksFor(q) > 1 ? "s" : ""}
               </span>
@@ -374,7 +493,8 @@ function PracticePortal({
             )}
           </div>
 
-          <div className="text-base leading-relaxed">{q.stem}</div>
+          <MathText className="text-base leading-relaxed">{q.stem}</MathText>
+          {q.figure && <QuestionFigure figure={q.figure} />}
 
           <div className="mt-5">
             {q.type === "NAT" ? (
@@ -382,7 +502,6 @@ function PracticePortal({
                 value={a as number | string | undefined}
                 onChange={(v) => dispatch({ type: "set", idx: state.idx, answer: v })}
                 tolerance={q.tolerance}
-                disabled={submitted}
               />
             ) : q.type === "MSQ" ? (
               <Options
@@ -390,8 +509,6 @@ function PracticePortal({
                 multi
                 selected={(a as number[]) ?? []}
                 onChange={(v) => dispatch({ type: "set", idx: state.idx, answer: v })}
-                correct={submitted ? q.answer : undefined}
-                disabled={submitted}
               />
             ) : (
               <Options
@@ -399,57 +516,28 @@ function PracticePortal({
                 multi={false}
                 selected={a as number | undefined}
                 onChange={(v) => dispatch({ type: "set", idx: state.idx, answer: v as number })}
-                correct={submitted ? [q.answer] : undefined}
-                disabled={submitted}
               />
             )}
           </div>
 
-          {/* Verdict — only after submit */}
-          {submitted && (
-            <div className={cn(
-              "mt-5 rounded-lg p-4 text-sm",
-              correct ? "bg-emerald-50 text-emerald-900" : "bg-rose-50 text-rose-900"
-            )}>
-              <p className="font-bold flex items-center gap-2 flex-wrap">
-                <span>{correct ? "✓ Correct!" : "✗ Incorrect"}</span>
-                <span className="px-2 py-0.5 rounded bg-white/60 text-xs tabular-nums">
-                  {delta >= 0 ? "+" : ""}{delta.toFixed(2)} mark{Math.abs(delta) === 1 ? "" : "s"}
-                </span>
-                {!correct && q.type === "NAT" && (
-                  <span className="font-normal">— answer is {q.answer}</span>
-                )}
-              </p>
-              <p className="mt-2 leading-relaxed">{q.solution}</p>
-            </div>
-          )}
+          {/* GATE simulation — no per-question verdict. Answers & solutions are
+              revealed only on the review screen after you finish the session. */}
 
           {/* Action row */}
           <div className="mt-7 flex flex-wrap gap-2">
-            {!submitted ? (
-              <>
-                <button
-                  onClick={submit}
-                  disabled={!isAnswered(a)}
-                  className="btn btn-primary text-sm"
-                >Submit answer</button>
-                <button
-                  onClick={markAndNext}
-                  className="btn bg-amber-500 text-white hover:bg-amber-600 text-sm"
-                >Mark &amp; Next</button>
-                <button
-                  onClick={clear}
-                  disabled={!isAnswered(a)}
-                  className="btn btn-ghost text-sm"
-                >Clear</button>
-              </>
-            ) : (
-              <button
-                onClick={() => go(state.idx + 1)}
-                disabled={state.idx === questions.length - 1}
-                className="btn btn-primary text-sm"
-              >Save &amp; Next</button>
-            )}
+            <button
+              onClick={saveAndNext}
+              className="btn btn-primary text-sm"
+            >Save &amp; Next</button>
+            <button
+              onClick={markAndNext}
+              className="btn bg-amber-500 text-white hover:bg-amber-600 text-sm"
+            >Mark for Review &amp; Next</button>
+            <button
+              onClick={clear}
+              disabled={!isAnswered(a)}
+              className="btn btn-ghost text-sm"
+            >Clear</button>
             <span className="flex-1" />
             <button onClick={() => go(state.idx - 1)} disabled={state.idx === 0} className="btn btn-ghost text-sm">‹ Prev</button>
             <button onClick={() => go(state.idx + 1)} disabled={state.idx === questions.length - 1} className="btn btn-ghost text-sm">Next ›</button>
@@ -568,14 +656,6 @@ function PracticePortal({
           </div>
         </div>
       </div>
-
-      {finished && (
-        <FinishModal
-          totals={totals}
-          elapsed={elapsed}
-          onClose={() => setFinished(false)}
-        />
-      )}
     </div>
   );
 }
@@ -630,8 +710,8 @@ function Options({
               "flex items-start gap-3 rounded-lg border p-3 transition",
               disabled ? "cursor-default" : "cursor-pointer hover:bg-canvas",
               !correct && isSel && "border-brand bg-brand/5",
-              correct && isRight && "border-ok bg-emerald-50",
-              correct && isWrongPick && "border-bad bg-rose-50",
+              correct && isRight && "border-ok bg-emerald-50 dark:bg-emerald-500/15",
+              correct && isWrongPick && "border-bad bg-rose-50 dark:bg-rose-500/15",
               !correct && !isSel && "border-line",
             )}
           >
@@ -649,7 +729,7 @@ function Options({
               className="mt-0.5"
             />
             <span className="font-bold w-5">{String.fromCharCode(65 + i)}.</span>
-            <span className="flex-1 text-sm">{opt}</span>
+            <MathText className="flex-1 text-sm">{opt}</MathText>
             {correct && isRight     && <span className="text-ok font-bold text-sm">✓</span>}
             {correct && isWrongPick && <span className="text-bad font-bold text-sm">✗</span>}
           </label>
@@ -684,33 +764,102 @@ function NatInput({
   );
 }
 
-function FinishModal({
-  totals, elapsed, onClose,
+/**
+ * End-of-session review (GATE simulation): shows the score summary and then
+ * every question with the candidate's response, the correct answer, marks
+ * earned and the full solution. This is the *only* place answers are revealed.
+ */
+function PracticeReview({
+  questions, answers, totals, elapsed, subjectName, onResume,
 }: {
+  questions: Q[];
+  answers: Record<number, Answer>;
   totals: { score: number; correctN: number; wrongN: number; attempted: number; totalPossible: number };
   elapsed: number;
-  onClose: () => void;
+  subjectName: string;
+  onResume: () => void;
 }) {
   const pct = totals.totalPossible > 0 ? (totals.score / totals.totalPossible) * 100 : 0;
+  const skipped = questions.length - totals.attempted;
   return (
-    <div className="fixed inset-0 bg-black/50 grid place-items-center z-50 p-4">
-      <div className="bg-surface rounded-xl max-w-md w-full p-6">
-        <h2 className="text-2xl font-extrabold">Session summary</h2>
-        <p className="text-sm text-muted mt-1">Per-question attempts are already saved to your profile.</p>
+    <div className="min-h-screen bg-canvas -mt-px">
+      <header className="bg-gradient-to-r from-brand-2 to-brand text-white px-4 sm:px-5 py-4">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-xs opacity-80">GATE Practice · Review</div>
+          <div className="font-semibold text-lg">{subjectName}</div>
+        </div>
+      </header>
 
-        <div className="mt-5 grid grid-cols-2 gap-3 text-sm">
-          <Stat label="Score" value={`${totals.score >= 0 ? "+" : ""}${totals.score.toFixed(2)} / ${totals.totalPossible}`} />
-          <Stat label="Percentage" value={`${pct.toFixed(1)}%`} />
-          <Stat label="Attempted" value={`${totals.attempted}`} />
-          <Stat label="Time" value={secondsToHMS(elapsed)} />
-          <Stat label="Correct" value={`${totals.correctN}`} tone="ok" />
-          <Stat label="Wrong"   value={`${totals.wrongN}`}   tone="bad" />
+      <div className="max-w-4xl mx-auto px-4 sm:px-5 py-6">
+        {/* Summary */}
+        <div className="bg-surface rounded-xl border border-line p-5">
+          <h2 className="text-xl font-extrabold">Session summary</h2>
+          <div className="mt-4 grid grid-cols-2 sm:grid-cols-3 gap-3 text-sm">
+            <Stat label="Score" value={`${totals.score >= 0 ? "+" : ""}${totals.score.toFixed(2)} / ${totals.totalPossible}`} />
+            <Stat label="Percentage" value={`${pct.toFixed(1)}%`} />
+            <Stat label="Time" value={secondsToHMS(elapsed)} />
+            <Stat label="Correct" value={`${totals.correctN}`} tone="ok" />
+            <Stat label="Wrong"   value={`${totals.wrongN}`}   tone="bad" />
+            <Stat label="Skipped" value={`${skipped}`} />
+          </div>
+          <div className="mt-5 flex gap-2 flex-wrap">
+            <button onClick={onResume} className="btn btn-ghost text-sm">‹ Resume session</button>
+            <Link href="/practice" className="btn btn-primary text-sm">Back to subjects</Link>
+            <Link href="/dashboard" className="btn btn-accent text-sm">View dashboard</Link>
+          </div>
         </div>
 
-        <div className="mt-6 flex gap-2 justify-end flex-wrap">
-          <button onClick={onClose} className="btn btn-ghost text-sm">Keep practising</button>
-          <Link href="/practice" className="btn btn-primary text-sm">Back to subjects</Link>
-          <Link href="/dashboard" className="btn btn-accent text-sm">View dashboard</Link>
+        {/* Per-question review */}
+        <div className="mt-6 space-y-5">
+          {questions.map((qq, i) => {
+            const ans     = answers[i];
+            const answered = isAnswered(ans);
+            const correct = answered && gradeAnswer(qq, ans);
+            const delta   = scoreFor(qq, ans);
+            return (
+              <article key={qq.id} className="bg-surface rounded-xl border border-line p-5">
+                <div className="flex items-center gap-2 flex-wrap text-sm mb-3">
+                  <span className="badge bg-slate-100 text-slate-700 dark:bg-slate-700 dark:text-slate-200 font-bold">Q{i + 1}</span>
+                  <QuestionTypeTag type={qq.type} />
+                  <span className="badge bg-brand/10 text-brand">{qq.topic}</span>
+                  <span className="badge font-bold">{marksFor(qq)} mark{marksFor(qq) > 1 ? "s" : ""}</span>
+                  <span className={cn(
+                    "ml-auto px-2 py-0.5 rounded text-xs font-bold tabular-nums",
+                    !answered ? "bg-slate-100 text-slate-500 dark:bg-slate-700 dark:text-slate-300" : correct ? "bg-emerald-100 text-emerald-800 dark:bg-emerald-500/20 dark:text-emerald-200" : "bg-rose-100 text-rose-800 dark:bg-rose-500/20 dark:text-rose-200"
+                  )}>
+                    {!answered ? "Not attempted" : `${correct ? "✓ Correct" : "✗ Incorrect"} · ${delta >= 0 ? "+" : ""}${delta.toFixed(2)}`}
+                  </span>
+                </div>
+
+                <MathText className="text-base leading-relaxed">{qq.stem}</MathText>
+                {qq.figure && <QuestionFigure figure={qq.figure} />}
+
+                <div className="mt-4">
+                  {qq.type === "NAT" ? (
+                    <div className="text-sm space-y-1">
+                      <div>Your answer: <b className="font-mono">{answered ? String(ans) : "—"}</b></div>
+                      <div className="text-emerald-700 dark:text-emerald-300">Correct answer: <b className="font-mono">{qq.answer}</b> <span className="text-muted">(±{qq.tolerance})</span></div>
+                    </div>
+                  ) : (
+                    <Options
+                      options={qq.options}
+                      multi={qq.type === "MSQ"}
+                      selected={qq.type === "MSQ" ? ((ans as number[]) ?? []) : (ans as number | undefined)}
+                      onChange={() => {}}
+                      correct={qq.type === "MSQ" ? qq.answer : [qq.answer]}
+                      disabled
+                    />
+                  )}
+                </div>
+
+                <div className="mt-4 rounded-lg bg-canvas p-4 text-sm">
+                  <p className="font-semibold text-brand">Solution</p>
+                  <MathText className="mt-1.5 leading-relaxed cg-solution">{qq.solution}</MathText>
+                  <CommunitySuccessRate qid={qq.id} difficulty={qq.difficulty} />
+                </div>
+              </article>
+            );
+          })}
         </div>
       </div>
     </div>

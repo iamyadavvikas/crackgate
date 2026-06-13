@@ -2,7 +2,6 @@ import { NextResponse } from "next/server";
 import { auth } from "@/lib/auth";
 import { db } from "@/lib/db";
 import { MOCKS } from "@/data/mocks";
-import { PYQ } from "@/data/pyq";
 
 export const runtime = "nodejs";
 
@@ -47,14 +46,12 @@ type BankQ = {
   solution?: string;
 };
 
-function loadBank(kind: "mock" | "pyq", refId: string): BankQ[] | null {
+function loadBank(kind: string, refId: string): BankQ[] | null {
   if (kind === "mock") {
     const m = MOCKS.find((x) => (x as { id: string }).id === refId) as { questions?: BankQ[] } | undefined;
     return m?.questions ?? null;
   }
-  const year = parseInt(refId.replace(/[^0-9]/g, ""), 10);
-  const p = PYQ.find((y) => y.year === year);
-  return p ? (p.questions as unknown as BankQ[]) : null;
+  return null;
 }
 
 function isAnswered(a: unknown): boolean {
@@ -98,7 +95,7 @@ export async function GET(req: Request) {
 
   const out: MistakeItem[] = [];
   for (const att of attempts) {
-    const bank = loadBank(att.kind as "mock" | "pyq", att.refId);
+    const bank = loadBank(att.kind, att.refId);
     if (!bank) continue;
     const answers = (att.answersJson as Record<string, unknown>) ?? {};
 

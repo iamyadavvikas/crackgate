@@ -99,7 +99,6 @@ export function UserMenu({
             <Item href="/dashboard" icon="📊" onClick={() => setOpen(false)}>Dashboard</Item>
             <Item href="/practice"  icon="🎯" onClick={() => setOpen(false)}>Practice</Item>
             <Item href="/mocks"     icon="📝" onClick={() => setOpen(false)}>Mock Tests</Item>
-            <Item href="/pyq"       icon="📚" onClick={() => setOpen(false)}>Previous Year Papers</Item>
           </Section>
 
           {/* Account */}

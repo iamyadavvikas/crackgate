@@ -98,13 +98,7 @@ export default async function DashboardPage() {
   const syllabus = buildSyllabusMap(subjMap, practiceCounts);
 
   const attemptedMockIds = new Set(attempts.filter((a) => a.kind === "mock").map((a) => a.refId));
-  const attemptedPyqYears = new Set(
-    attempts
-      .filter((a) => a.kind === "pyq")
-      .map((a) => Number(a.refId.replace(/[^0-9]/g, "")))
-      .filter((n) => Number.isFinite(n) && n > 0),
-  );
-  const actions = nextBestActions(attemptedMockIds, attemptedPyqYears, syllabus);
+  const actions = nextBestActions(attemptedMockIds, syllabus);
   const swot = miniSwot(syllabus);
   const delta = trendDelta(attempts.map((a) => ({ takenAt: a.takenAt, score: a.score, total: a.total })));
 
@@ -155,7 +149,7 @@ export default async function DashboardPage() {
         <div className="flex justify-between items-end flex-wrap gap-2">
           <div>
             <h2 className="font-bold text-lg">Score trend</h2>
-            <p className="text-sm text-muted">Mock + PYQ accuracy over time, with running average.</p>
+            <p className="text-sm text-muted">Mock accuracy over time, with running average.</p>
           </div>
           <span className="text-xs text-muted">Last {Math.min(attempts.length, 50)} attempts</span>
         </div>
@@ -332,7 +326,7 @@ function PlanTab({
           </h3>
           {swot.strengths.length === 0 && swot.weaknesses.length === 0 ? (
             <p className="text-sm text-muted mt-3">
-              Take one mock or PYQ to see your strongest and weakest subjects.
+              Take one mock to see your strongest and weakest subjects.
             </p>
           ) : (
             <div className="grid grid-cols-2 gap-4 mt-4">
@@ -461,12 +455,6 @@ function buildFollowUps(
       href: `/practice/${actions.weakestSubject.slug}`,
       label: `Drill ${actions.weakestSubject.name}`,
       sub: `${actions.weakestSubject.accuracy}% accuracy · 10 Qs`,
-    });
-  } else if (actions.nextPyqYear) {
-    out.push({
-      href: `/pyq/${actions.nextPyqYear}`,
-      label: `GATE ${actions.nextPyqYear} paper`,
-      sub: "Full 65-Q PYQ · 3 h",
     });
   }
 

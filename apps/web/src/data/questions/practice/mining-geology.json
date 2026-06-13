@@ -1,0 +1,1910 @@
+{
+  "slug": "mining-geology",
+  "name": "Mining Geology",
+  "questions": [
+    {
+      "id": "mg-orig-001",
+      "subject": "Mining Geology",
+      "topic": "Definition of mineral",
+      "difficulty": "easy",
+      "type": "MCQ",
+      "stem": "A 'mineral' in geology is best defined as a",
+      "options": [
+        "naturally occurring, inorganic solid with a definite chemical composition and an ordered crystalline structure",
+        "man-made crystalline solid",
+        "mixture of any solid materials",
+        "liquid found underground"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Minerals are the building blocks of rocks.\n\n**Reasoning.** A mineral is naturally occurring, inorganic, solid, homogeneous, with a definite (or narrowly varying) composition and an ordered internal (crystalline) atomic arrangement.\n\n**Answer.** Naturally occurring inorganic crystalline solid.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "mg-orig-002",
+      "subject": "Mining Geology",
+      "topic": "Definition of rock",
+      "difficulty": "easy",
+      "type": "MCQ",
+      "stem": "A rock is",
+      "options": [
+        "always a single pure mineral",
+        "a naturally occurring solid aggregate of one or more minerals (or mineraloids)",
+        "a synthetic material",
+        "molten magma only"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Rocks are mineral aggregates.\n\n**Reasoning.** Most rocks (e.g. granite) are aggregates of several minerals; some (e.g. pure limestone) are essentially one mineral, but they are still aggregates formed by geological processes.\n\n**Answer.** Aggregate of one or more minerals.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "mg-orig-003",
+      "subject": "Mining Geology",
+      "topic": "Rock classification",
+      "difficulty": "easy",
+      "type": "MCQ",
+      "stem": "On the basis of their mode of origin, rocks are classified into three main groups:",
+      "options": [
+        "hard, soft and medium",
+        "igneous, sedimentary and metamorphic",
+        "acidic, basic and neutral",
+        "primary, secondary and tertiary"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Genesis defines the three rock classes.\n\n**Reasoning.** Igneous rocks crystallise from melt, sedimentary rocks form by deposition/lithification of sediments, and metamorphic rocks form by alteration of pre-existing rocks; the rock cycle links them.\n\n**Answer.** Igneous, sedimentary, metamorphic.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "mg-orig-004",
+      "subject": "Mining Geology",
+      "topic": "Igneous rocks",
+      "difficulty": "easy",
+      "type": "MCQ",
+      "stem": "Igneous rocks are formed by the",
+      "options": [
+        "compaction of sediments",
+        "solidification and crystallisation of molten magma or lava",
+        "recrystallisation of limestone only",
+        "evaporation of seawater"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Igneous = 'from fire'.\n\n**Reasoning.** Cooling of magma at depth gives coarse-grained plutonic rocks (e.g. granite); rapid cooling of lava at the surface gives fine-grained volcanic rocks (e.g. basalt).\n\n**Answer.** Solidification of magma/lava.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "mg-orig-005",
+      "subject": "Mining Geology",
+      "topic": "Sedimentary rocks",
+      "difficulty": "easy",
+      "type": "MCQ",
+      "stem": "Sedimentary rocks are formed mainly by",
+      "options": [
+        "crystallisation of magma",
+        "weathering, transport, deposition and lithification (compaction and cementation) of sediments",
+        "high-grade metamorphism",
+        "volcanic eruption only"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Sedimentary rocks record surface processes.\n\n**Reasoning.** Pre-existing rocks are weathered, the debris is transported and deposited in layers, then compacted and cemented (lithified) into rock such as sandstone, shale and limestone; coal also forms in this environment.\n\n**Answer.** Deposition and lithification of sediments.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "mg-orig-006",
+      "subject": "Mining Geology",
+      "topic": "Metamorphic rocks",
+      "difficulty": "easy",
+      "type": "MCQ",
+      "stem": "Metamorphic rocks are produced when pre-existing rocks are altered by",
+      "options": [
+        "melting completely into magma",
+        "heat, pressure and chemically active fluids while essentially remaining solid",
+        "simple deposition in water",
+        "weathering at the surface"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Metamorphism is solid-state change.\n\n**Reasoning.** Elevated temperature and/or pressure (and fluids) recrystallise minerals and develop new textures without melting; e.g. limestone → marble, shale → slate, granite → gneiss.\n\n**Answer.** Heat, pressure and fluids (solid state).",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "mg-orig-007",
+      "subject": "Mining Geology",
+      "topic": "Rock-forming minerals",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "The most abundant group of rock-forming minerals in the earth's crust is the",
+      "options": [
+        "carbonates",
+        "silicates (e.g. feldspars, quartz, micas, pyroxenes)",
+        "sulphides",
+        "native elements"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Silicon and oxygen dominate the crust.\n\n**Reasoning.** Silicates, built on the SiO₄ tetrahedron, make up the bulk of crustal rocks; feldspars alone form ~50%, followed by quartz, pyroxenes, amphiboles and micas.\n\n**Answer.** Silicates.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "mg-orig-008",
+      "subject": "Mining Geology",
+      "topic": "Mohs scale",
+      "difficulty": "easy",
+      "type": "MCQ",
+      "stem": "Mohs scale of hardness is a relative scale running from",
+      "options": [
+        "1 (talc) to 10 (diamond)",
+        "0 to 100",
+        "1 (diamond) to 10 (talc)",
+        "1 to 14"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Mohs scale ranks scratch hardness.\n\n**Reasoning.** It is an ordinal scale from talc (1, softest) to diamond (10, hardest); a higher mineral scratches a lower one. It is relative, not proportional.\n\n**Answer.** 1 (talc) to 10 (diamond).",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "mg-orig-009",
+      "subject": "Mining Geology",
+      "topic": "Mineral hardness",
+      "difficulty": "easy",
+      "type": "NAT",
+      "stem": "On Mohs scale, the hardness of quartz is ____.",
+      "answer": 7,
+      "tolerance": 0.1,
+      "solution": "**Concept.** Quartz is a standard reference mineral.\n\n**Reasoning.** Quartz sits at hardness 7 on Mohs scale; it scratches glass (~5.5) and feldspar (6) but is scratched by topaz (8).\n\n**Answer.** 7.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "mg-orig-010",
+      "subject": "Mining Geology",
+      "topic": "Cleavage",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "Cleavage of a mineral is the",
+      "options": [
+        "colour of its powder",
+        "tendency to break along definite planes of structural weakness, producing smooth flat surfaces",
+        "appearance in reflected light",
+        "resistance to scratching"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Cleavage reflects internal bonding.\n\n**Reasoning.** Where bonds are weakest, the mineral splits along parallel planes; e.g. mica shows perfect basal cleavage, galena cubic cleavage. It is diagnostic in identification.\n\n**Answer.** Breaking along planes of weakness.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "mg-orig-011",
+      "subject": "Mining Geology",
+      "topic": "Fracture",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "The smooth, curved 'conchoidal' fracture is characteristically shown by",
+      "options": [
+        "mica",
+        "quartz and glass",
+        "galena",
+        "calcite"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Fracture is breakage not controlled by cleavage.\n\n**Reasoning.** Quartz, lacking cleavage, breaks along curved shell-like (conchoidal) surfaces, as does volcanic glass; mica, galena and calcite instead show well-developed cleavage.\n\n**Answer.** Quartz and glass.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "mg-orig-012",
+      "subject": "Mining Geology",
+      "topic": "Streak",
+      "difficulty": "easy",
+      "type": "MCQ",
+      "stem": "The 'streak' of a mineral is the",
+      "options": [
+        "colour of the mineral in bulk",
+        "colour of its fine powder, observed on a streak plate",
+        "way it breaks",
+        "its specific gravity"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Powder colour is more constant than bulk colour.\n\n**Reasoning.** Rubbing the mineral on unglazed porcelain leaves a streak whose colour is diagnostic (e.g. hematite gives a reddish-brown streak even when the lump is steel-grey).\n\n**Answer.** Colour of the powder.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "mg-orig-013",
+      "subject": "Mining Geology",
+      "topic": "Lustre",
+      "difficulty": "easy",
+      "type": "MCQ",
+      "stem": "Lustre of a mineral describes",
+      "options": [
+        "the way its surface reflects light (e.g. metallic, vitreous, pearly)",
+        "its hardness",
+        "its density",
+        "its chemical formula"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Lustre is an optical surface property.\n\n**Reasoning.** It records the quantity and quality of reflected light; broad categories are metallic (e.g. galena, pyrite) and non-metallic (vitreous, resinous, pearly, silky, dull).\n\n**Answer.** Appearance in reflected light.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "mg-orig-014",
+      "subject": "Mining Geology",
+      "topic": "Specific gravity",
+      "difficulty": "medium",
+      "type": "NAT",
+      "stem": "A mineral specimen of mass 50 g displaces 20 cm³ of water. Its specific gravity is ____ (one decimal).",
+      "answer": 2.5,
+      "tolerance": 0.05,
+      "solution": "**Concept.** $SG=\\dfrac{\\text{mass}}{\\text{mass of equal volume of water}}=\\dfrac{m}{V\\rho_w}$.\n\n**Working.**\n$$SG=\\frac{50\\ \\text{g}}{20\\ \\text{cm}^3\\times1\\ \\text{g/cm}^3}=2.5$$\n\n**Answer.** 2.5.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "mg-orig-015",
+      "subject": "Mining Geology",
+      "topic": "Quartz",
+      "difficulty": "easy",
+      "type": "MCQ",
+      "stem": "The chemical composition of quartz is",
+      "options": [
+        "CaCO₃",
+        "SiO₂",
+        "Fe₂O₃",
+        "Al₂O₃"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Quartz is crystalline silica.\n\n**Reasoning.** It is silicon dioxide, SiO₂, one of the commonest crustal minerals; hardness 7, no cleavage, vitreous lustre, conchoidal fracture.\n\n**Answer.** SiO₂.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "mg-orig-016",
+      "subject": "Mining Geology",
+      "topic": "Feldspar",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "Feldspars, the most abundant mineral group in the crust, are",
+      "options": [
+        "carbonate minerals",
+        "aluminosilicates of potassium, sodium and calcium",
+        "iron sulphides",
+        "native metals"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Feldspars are framework aluminosilicates.\n\n**Reasoning.** They form a solid-solution series — alkali feldspar (K, Na) and plagioclase (Na–Ca); hardness ~6, two cleavages near 90°. They dominate most igneous rocks.\n\n**Answer.** K/Na/Ca aluminosilicates.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "mg-orig-017",
+      "subject": "Mining Geology",
+      "topic": "Calcite",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "Calcite, the chief mineral of limestone, can be readily identified because it",
+      "options": [
+        "is magnetic",
+        "effervesces (fizzes) with cold dilute hydrochloric acid and has a hardness of 3 with rhombohedral cleavage",
+        "has a hardness of 9",
+        "shows conchoidal fracture and no cleavage"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Carbonates react with acid.\n\n**Reasoning.** Calcite (CaCO₃) releases CO₂ with dilute HCl; it is hardness 3, shows perfect rhombohedral cleavage and strong double refraction.\n\n**Answer.** Effervesces with dilute HCl, hardness 3.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "mg-orig-018",
+      "subject": "Mining Geology",
+      "topic": "Ore mineral",
+      "difficulty": "easy",
+      "type": "MCQ",
+      "stem": "An 'ore mineral' is one from which",
+      "options": [
+        "no metal can be obtained",
+        "a metal (or valuable constituent) can be profitably extracted",
+        "only building stone is cut",
+        "water is collected"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Ore implies economic recovery.\n\n**Reasoning.** A mineral becomes an ore mineral when the desired metal can be extracted economically, e.g. hematite for iron, chalcopyrite for copper, bauxite for aluminium.\n\n**Answer.** A metal can be profitably extracted.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "mg-orig-019",
+      "subject": "Mining Geology",
+      "topic": "Gangue",
+      "difficulty": "easy",
+      "type": "MCQ",
+      "stem": "The valueless mineral matter associated with an ore, which has to be separated during processing, is called",
+      "options": [
+        "gangue",
+        "concentrate",
+        "tailings dam",
+        "flux"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Gangue is the unwanted fraction of the ore.\n\n**Reasoning.** Minerals such as quartz and calcite accompanying the ore minerals are the gangue; mineral processing rejects them, the discarded material becoming tailings.\n\n**Answer.** Gangue.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "mg-orig-020",
+      "subject": "Mining Geology",
+      "topic": "Iron ore minerals",
+      "difficulty": "easy",
+      "type": "MCQ",
+      "stem": "The two most important iron ore minerals are",
+      "options": [
+        "galena and sphalerite",
+        "hematite (Fe₂O₃) and magnetite (Fe₃O₄)",
+        "bauxite and gibbsite",
+        "chalcopyrite and bornite"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Iron oxides are the chief iron ores.\n\n**Reasoning.** Hematite (Fe₂O₃, ~70% Fe, reddish streak) and magnetite (Fe₃O₄, magnetic, ~72% Fe) are the principal sources of iron; galena/sphalerite are Pb/Zn ores, bauxite an Al ore.\n\n**Answer.** Hematite and magnetite.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "mg-orig-021",
+      "subject": "Mining Geology",
+      "topic": "Intrusive vs extrusive",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "Plutonic (intrusive) igneous rocks are generally coarse-grained whereas volcanic (extrusive) rocks are fine-grained because",
+      "options": [
+        "intrusive rocks contain no minerals",
+        "magma cooling slowly at depth grows large crystals, while lava cooling rapidly at the surface gives small crystals",
+        "volcanic rocks are older",
+        "intrusive rocks form from sediments"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Grain size records cooling rate.\n\n**Reasoning.** Slow cooling at depth allows crystals time to grow (phaneritic, e.g. granite); rapid surface cooling yields fine (aphanitic, e.g. basalt) or glassy textures.\n\n**Answer.** Slow vs fast cooling.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "mg-orig-022",
+      "subject": "Mining Geology",
+      "topic": "Granite",
+      "difficulty": "easy",
+      "type": "MCQ",
+      "stem": "Granite is a",
+      "options": [
+        "fine-grained basic volcanic rock",
+        "coarse-grained acidic (felsic) plutonic rock composed mainly of quartz, feldspar and mica",
+        "chemical sedimentary rock",
+        "foliated metamorphic rock"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Granite is the type felsic plutonic rock.\n\n**Reasoning.** It crystallises slowly at depth, is rich in silica (quartz + alkali feldspar + mica), light-coloured and coarse-grained; widely used as dimension stone.\n\n**Answer.** Coarse-grained acidic plutonic rock.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "mg-orig-023",
+      "subject": "Mining Geology",
+      "topic": "Basalt",
+      "difficulty": "easy",
+      "type": "MCQ",
+      "stem": "Basalt, which forms the Deccan Traps of India, is a",
+      "options": [
+        "coarse-grained acidic plutonic rock",
+        "fine-grained basic (mafic) volcanic rock",
+        "clastic sedimentary rock",
+        "high-grade metamorphic rock"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Basalt is the commonest extrusive rock.\n\n**Reasoning.** It is fine-grained, dark, mafic (rich in Fe, Mg, plagioclase, pyroxene) and erupts as fluid lava; vast flows built the Deccan Traps.\n\n**Answer.** Fine-grained basic volcanic rock.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "mg-orig-024",
+      "subject": "Mining Geology",
+      "topic": "Acidic vs basic",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "Igneous rocks are termed 'acidic' or 'basic' chiefly on the basis of their",
+      "options": [
+        "pH value",
+        "silica (SiO₂) content — acidic >65%, basic ~45–52%",
+        "magnetic properties",
+        "grain size only"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Silica percentage classifies igneous rocks chemically.\n\n**Reasoning.** Acidic (felsic) rocks such as granite are silica-rich and light; basic (mafic) rocks such as basalt are silica-poorer and dark; ultrabasic rocks have <45% SiO₂.\n\n**Answer.** Silica content.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "mg-orig-025",
+      "subject": "Mining Geology",
+      "topic": "Igneous texture",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "A 'glassy' (vitreous) texture in an igneous rock such as obsidian indicates",
+      "options": [
+        "very slow cooling deep in the crust",
+        "extremely rapid cooling (quenching) of lava, allowing no crystals to grow",
+        "metamorphic recrystallisation",
+        "chemical precipitation"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Texture mirrors crystallisation time.\n\n**Reasoning.** When lava cools almost instantly (e.g. in water), atoms cannot organise into crystals and a natural glass forms; slower cooling gives aphanitic, then phaneritic textures.\n\n**Answer.** Very rapid cooling (quenching).",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "mg-orig-026",
+      "subject": "Mining Geology",
+      "topic": "Clastic sedimentary rocks",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "Sandstone, siltstone and shale are examples of",
+      "options": [
+        "clastic (detrital) sedimentary rocks classified mainly by grain size",
+        "igneous rocks",
+        "foliated metamorphic rocks",
+        "chemical evaporites"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Clastic rocks are made of transported fragments.\n\n**Reasoning.** They are classified by particle size — gravel→conglomerate, sand→sandstone, silt→siltstone, clay→shale; cementation binds the grains.\n\n**Answer.** Clastic sedimentary rocks.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "mg-orig-027",
+      "subject": "Mining Geology",
+      "topic": "Chemical/organic sediments",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "Limestone, rock salt and coal are examples of",
+      "options": [
+        "clastic rocks",
+        "chemically or organically formed (non-clastic) sedimentary rocks",
+        "plutonic rocks",
+        "regional metamorphic rocks"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Non-clastic sediments form by chemical or biological processes.\n\n**Reasoning.** Limestone precipitates/accumulates as carbonate, rock salt by evaporation of brine, and coal from accumulated plant matter — all without mechanical transport of clasts.\n\n**Answer.** Chemical/organic sedimentary rocks.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "mg-orig-028",
+      "subject": "Mining Geology",
+      "topic": "Sedimentary structures",
+      "difficulty": "easy",
+      "type": "MCQ",
+      "stem": "The most characteristic primary structure of sedimentary rocks is",
+      "options": [
+        "foliation",
+        "bedding (stratification) into layers",
+        "columnar jointing",
+        "schistosity"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Layering reflects successive deposition.\n\n**Reasoning.** Sediments accumulate in beds separated by bedding planes; other features include cross-bedding, ripple marks and graded bedding, all aiding interpretation of the depositional environment.\n\n**Answer.** Bedding/stratification.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "mg-orig-029",
+      "subject": "Mining Geology",
+      "topic": "Foliation",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "Foliation in metamorphic rocks such as slate, schist and gneiss is",
+      "options": [
+        "the bedding inherited unchanged from sediments",
+        "a planar arrangement of mineral grains developed under directed (differential) pressure",
+        "the cooling joints of lava",
+        "a chemical precipitate"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Directed stress aligns minerals.\n\n**Reasoning.** Platy/elongate minerals grow or rotate perpendicular to the maximum stress, giving slaty cleavage (slate), schistosity (schist) or gneissic banding (gneiss).\n\n**Answer.** Pressure-aligned planar fabric.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "mg-orig-030",
+      "subject": "Mining Geology",
+      "topic": "Metamorphic equivalents",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "Which pairing of parent rock → metamorphic product is correct?",
+      "options": [
+        "Sandstone → marble",
+        "Limestone → quartzite",
+        "Shale → slate and pure limestone → marble",
+        "Granite → coal"
+      ],
+      "answer": 2,
+      "solution": "**Concept.** Each protolith yields a typical metamorphic rock.\n\n**Reasoning.** Shale → slate → phyllite → schist; pure limestone → marble; quartz sandstone → quartzite; granite → gneiss. Sandstone does not give marble, nor limestone quartzite.\n\n**Answer.** Shale → slate; limestone → marble.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "mg-orig-031",
+      "subject": "Mining Geology",
+      "topic": "Coal origin",
+      "difficulty": "easy",
+      "type": "MCQ",
+      "stem": "Coal is a combustible sedimentary rock formed by the",
+      "options": [
+        "evaporation of seawater",
+        "accumulation, burial and progressive alteration of plant (vegetal) matter",
+        "crystallisation of magma",
+        "precipitation of carbonate"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Coal is fossilised plant material.\n\n**Reasoning.** Plant debris accumulates in swamps as peat; burial with increasing temperature and pressure drives coalification: peat → lignite → sub-bituminous → bituminous → anthracite.\n\n**Answer.** Alteration of buried plant matter.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "mg-orig-032",
+      "subject": "Mining Geology",
+      "topic": "Coalification series",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "In the coalification (rank) series, the correct order of increasing rank is",
+      "options": [
+        "anthracite < bituminous < lignite < peat",
+        "peat < lignite < sub-bituminous < bituminous < anthracite",
+        "lignite < peat < anthracite < bituminous",
+        "bituminous < anthracite < peat < lignite"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Rank rises with maturation.\n\n**Reasoning.** As coalification proceeds, fixed carbon increases while moisture and volatile matter fall; peat (lowest) grades through lignite and bituminous to anthracite (highest rank).\n\n**Answer.** Peat → lignite → bituminous → anthracite.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "mg-orig-033",
+      "subject": "Mining Geology",
+      "topic": "Rank of coal",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "The 'rank' of a coal is a measure of its",
+      "options": [
+        "ash content only",
+        "degree of coalification (maturity), increasing with fixed carbon and decreasing with volatile matter and moisture",
+        "sulphur content",
+        "grain size"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Rank expresses metamorphic maturity.\n\n**Reasoning.** Higher-rank coals (anthracite) have more fixed carbon, higher calorific value and less volatile matter/moisture than low-rank coals (lignite). Rank is distinct from grade.\n\n**Answer.** Degree of coalification.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "mg-orig-034",
+      "subject": "Mining Geology",
+      "topic": "Grade of coal",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "The 'grade' of a coal, as distinct from its rank, refers to its",
+      "options": [
+        "degree of coalification",
+        "quality as judged by the amount of mineral matter / ash (and hence useful heat content)",
+        "geological age",
+        "colour"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Grade reflects purity, not maturity.\n\n**Reasoning.** Grade is governed by ash (mineral matter) content; Indian non-coking coals are graded by gross calorific value. Two coals of the same rank can differ in grade.\n\n**Answer.** Quality set by ash/mineral content.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "mg-orig-035",
+      "subject": "Mining Geology",
+      "topic": "Proximate analysis",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "The proximate analysis of coal determines",
+      "options": [
+        "the elements C, H, N, S and O",
+        "moisture, volatile matter, ash and fixed carbon",
+        "the maceral composition",
+        "the trace metals"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Proximate analysis groups coal into four fractions.\n\n**Reasoning.** Standard heating/combustion steps give moisture, volatile matter and ash by difference/residue, with fixed carbon obtained as the remainder; it guides utilisation.\n\n**Answer.** Moisture, VM, ash, fixed carbon.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "mg-orig-036",
+      "subject": "Mining Geology",
+      "topic": "Ultimate analysis",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "The ultimate analysis of coal reports the",
+      "options": [
+        "moisture, volatile matter, ash and fixed carbon",
+        "elemental percentages of carbon, hydrogen, nitrogen, sulphur and oxygen",
+        "maceral groups",
+        "Hardgrove grindability index"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Ultimate analysis is elemental.\n\n**Reasoning.** It gives C, H, N, S and O (O often by difference); these are needed to compute calorific value (Dulong) and combustion air/products.\n\n**Answer.** C, H, N, S, O percentages.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "mg-orig-037",
+      "subject": "Mining Geology",
+      "topic": "Fixed carbon",
+      "difficulty": "easy",
+      "type": "NAT",
+      "stem": "A proximate analysis gives moisture 5%, volatile matter 25% and ash 10%. The fixed carbon, in %, is ____.",
+      "answer": 60,
+      "tolerance": 0.1,
+      "solution": "**Concept.** $FC=100-(\\text{moisture}+VM+\\text{ash})$.\n\n**Working.**\n$$FC=100-(5+25+10)=100-40=60\\%$$\n\n**Answer.** 60 %.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "mg-orig-038",
+      "subject": "Mining Geology",
+      "topic": "Macerals",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "Macerals (vitrinite, liptinite/exinite and inertinite) are the",
+      "options": [
+        "inorganic minerals in coal",
+        "microscopic organic constituents of coal, analogous to minerals in inorganic rocks",
+        "products of coal combustion",
+        "size fractions of crushed coal"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Macerals are coal's organic micro-components.\n\n**Reasoning.** Derived from different plant tissues, vitrinite (woody), liptinite (spores/resins) and inertinite (oxidised) are identified under the microscope and control coking and other properties.\n\n**Answer.** Microscopic organic constituents.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "mg-orig-039",
+      "subject": "Mining Geology",
+      "topic": "Coal reserve estimate",
+      "difficulty": "medium",
+      "type": "NAT",
+      "stem": "A coal seam covers an area of 1,000,000 m² with an average thickness of 3 m and an in-situ density of 1.4 t/m³. The in-situ tonnage, in million tonnes, is ____ (one decimal).",
+      "answer": 4.2,
+      "tolerance": 0.05,
+      "solution": "**Concept.** Tonnage $=$ area $\\times$ thickness $\\times$ density.\n\n**Working.**\n$$T=1{,}000{,}000\\times3\\times1.4=4.2\\times10^{6}\\ \\text{t}=4.2\\ \\text{Mt}$$\n\n**Answer.** 4.2 million tonnes.",
+      "archetype": "D",
+      "marks": 2
+    },
+    {
+      "id": "mg-orig-040",
+      "subject": "Mining Geology",
+      "topic": "Indian coalfields",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "The bulk of India's coal reserves occur in rocks of the",
+      "options": [
+        "Tertiary system of north-east India",
+        "Gondwana (Permian) Supergroup, e.g. the Damodar valley coalfields (Raniganj, Jharia)",
+        "Deccan Trap basalts",
+        "Aravalli metamorphics"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Indian coal is mainly Gondwana in age.\n\n**Reasoning.** Over 95% of reserves lie in Permian Gondwana sediments of the Damodar, Son, Mahanadi and Godavari valleys; younger Tertiary coals occur in Assam/north-east but are minor.\n\n**Answer.** Gondwana (Permian) coalfields.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "mg-orig-041",
+      "subject": "Mining Geology",
+      "topic": "Dip",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "The 'true dip' of a bed is the",
+      "options": [
+        "horizontal direction of the bedding plane",
+        "maximum angle of inclination of the bedding plane to the horizontal, measured perpendicular to the strike",
+        "thickness of the bed",
+        "depth of the bed below surface"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Dip measures inclination.\n\n**Reasoning.** True dip is the steepest angle the bed makes with the horizontal, in the direction at right angles to strike; any other direction gives a smaller apparent dip.\n\n**Answer.** Maximum inclination ⟂ strike.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "mg-orig-042",
+      "subject": "Mining Geology",
+      "topic": "Strike",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "The 'strike' of a bed is the",
+      "options": [
+        "direction of a horizontal line lying in the bedding plane",
+        "direction of maximum slope of the bed",
+        "vertical thickness of the bed",
+        "angle of dip"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Strike is a horizontal reference in the plane.\n\n**Reasoning.** It is the compass bearing of the horizontal line on the inclined plane (the trace of the bed on a horizontal surface) and is perpendicular to the dip direction.\n\n**Answer.** Horizontal line in the bedding plane.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "mg-orig-043",
+      "subject": "Mining Geology",
+      "topic": "Dip and strike",
+      "difficulty": "easy",
+      "type": "MCQ",
+      "stem": "On a planar bed, the dip direction and the strike are always",
+      "options": [
+        "parallel",
+        "perpendicular to each other",
+        "at 45°",
+        "unrelated"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Dip and strike are orthogonal.\n\n**Reasoning.** The strike is horizontal in the plane; the true dip is measured in the vertical plane at right angles to it, so the two directions are perpendicular in plan.\n\n**Answer.** Perpendicular.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "mg-orig-044",
+      "subject": "Mining Geology",
+      "topic": "Apparent dip",
+      "difficulty": "hard",
+      "type": "NAT",
+      "stem": "A bed has a true dip of 45°. In a vertical section whose direction makes 30° with the strike, the apparent dip, in degrees, is ____ (two decimals).",
+      "answer": 26.57,
+      "tolerance": 0.2,
+      "solution": "**Concept.** $\\tan(\\delta_a)=\\tan(\\delta_t)\\sin\\theta$, where θ is the angle between the section and the strike.\n\n**Working.**\n$$\\tan\\delta_a=\\tan45^{\\circ}\\times\\sin30^{\\circ}=1\\times0.5=0.5$$\n$$\\delta_a=\\tan^{-1}(0.5)=26.57^{\\circ}$$\n\n**Answer.** 26.57°.",
+      "archetype": "D",
+      "marks": 2
+    },
+    {
+      "id": "mg-orig-045",
+      "subject": "Mining Geology",
+      "topic": "Apparent vs true dip",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "Compared with the true dip, the apparent dip in any other vertical section is",
+      "options": [
+        "always greater",
+        "always less than or equal to the true dip",
+        "always equal",
+        "unrelated"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** True dip is the maximum dip.\n\n**Reasoning.** Since $\\tan\\delta_a=\\tan\\delta_t\\sin\\theta$ and $\\sin\\theta\\le1$, the apparent dip cannot exceed the true dip; they are equal only when the section is perpendicular to strike (θ = 90°).\n\n**Answer.** ≤ true dip.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "mg-orig-046",
+      "subject": "Mining Geology",
+      "topic": "Folds",
+      "difficulty": "easy",
+      "type": "MCQ",
+      "stem": "A fold in rock strata is",
+      "options": [
+        "a fracture with displacement",
+        "a bend or flexure produced mainly by compressive forces",
+        "a buried erosion surface",
+        "an igneous intrusion"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Folds record ductile deformation.\n\n**Reasoning.** Compressive (and sometimes shear) stresses buckle layered rocks into folds; the geometry (limbs, hinge, axial plane) describes their form.\n\n**Answer.** A bend produced by compression.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "mg-orig-047",
+      "subject": "Mining Geology",
+      "topic": "Anticline and syncline",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "In an anticline (as opposed to a syncline),",
+      "options": [
+        "the youngest beds occur in the core and the fold closes downward",
+        "the beds arch upward and the oldest beds occur in the core",
+        "there is no curvature",
+        "the limbs are vertical only"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Anticlines arch up; synclines sag down.\n\n**Reasoning.** An anticline is convex-up with the oldest strata in its core; a syncline is concave-up with the youngest strata in its core. Anticlines are important hydrocarbon/structural traps.\n\n**Answer.** Up-arched with oldest beds in core.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "mg-orig-048",
+      "subject": "Mining Geology",
+      "topic": "Faults",
+      "difficulty": "easy",
+      "type": "MCQ",
+      "stem": "A fault is a",
+      "options": [
+        "fold without displacement",
+        "fracture surface along which appreciable relative displacement of the two sides has occurred",
+        "bedding plane",
+        "type of mineral"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Faults are fractures with slip.\n\n**Reasoning.** Stress exceeding rock strength produces a break, and the blocks move relative to each other along the fault plane; the amount and sense of movement classify the fault.\n\n**Answer.** Fracture with relative displacement.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "mg-orig-049",
+      "subject": "Mining Geology",
+      "topic": "Normal fault",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "In a normal fault,",
+      "options": [
+        "the hanging wall moves up relative to the footwall under compression",
+        "the hanging wall moves down relative to the footwall, typically under tension (extension)",
+        "movement is purely horizontal",
+        "there is no movement"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Normal faults extend the crust.\n\n**Reasoning.** Under tension the hanging wall slips down the dip relative to the footwall, lengthening the section; grabens and horsts result from sets of normal faults.\n\n**Answer.** Hanging wall down (extension).",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "mg-orig-050",
+      "subject": "Mining Geology",
+      "topic": "Reverse fault",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "A reverse (or thrust) fault is one in which",
+      "options": [
+        "the hanging wall moves up relative to the footwall under compression",
+        "the hanging wall moves down under tension",
+        "the displacement is purely strike-slip",
+        "no rocks are displaced"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Reverse faults shorten the crust.\n\n**Reasoning.** Compression drives the hanging wall up relative to the footwall; a low-angle reverse fault (<45° dip) is a thrust, common in fold-and-thrust belts.\n\n**Answer.** Hanging wall up (compression).",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "mg-orig-051",
+      "subject": "Mining Geology",
+      "topic": "Strike-slip fault",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "A strike-slip (transcurrent) fault is characterised by displacement that is predominantly",
+      "options": [
+        "vertical",
+        "horizontal, parallel to the strike of the fault",
+        "absent",
+        "rotational about a horizontal axis"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Strike-slip motion is lateral.\n\n**Reasoning.** The blocks slide past each other horizontally along the fault strike (e.g. transform faults); sense is described as dextral (right-lateral) or sinistral (left-lateral).\n\n**Answer.** Horizontal, along strike.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "mg-orig-052",
+      "subject": "Mining Geology",
+      "topic": "Fault throw",
+      "difficulty": "medium",
+      "type": "NAT",
+      "stem": "A dip-slip fault has a net slip of 10 m along a fault plane dipping 30°. The throw (vertical component), in m, is ____ (one decimal).",
+      "answer": 5,
+      "tolerance": 0.1,
+      "solution": "**Concept.** Throw $=$ net slip $\\times\\sin(\\text{dip})$.\n\n**Working.**\n$$\\text{Throw}=10\\sin30^{\\circ}=10\\times0.5=5.0\\ \\text{m}$$\n\n**Answer.** 5.0 m.",
+      "archetype": "D",
+      "marks": 2
+    },
+    {
+      "id": "mg-orig-053",
+      "subject": "Mining Geology",
+      "topic": "Fault heave",
+      "difficulty": "medium",
+      "type": "NAT",
+      "stem": "For the same fault (net slip 10 m, dip 30°), the heave (horizontal component), in m, is ____ (two decimals).",
+      "answer": 8.66,
+      "tolerance": 0.05,
+      "solution": "**Concept.** Heave $=$ net slip $\\times\\cos(\\text{dip})$.\n\n**Working.**\n$$\\text{Heave}=10\\cos30^{\\circ}=10\\times0.8660=8.66\\ \\text{m}$$\n\n**Answer.** 8.66 m.",
+      "archetype": "D",
+      "marks": 2
+    },
+    {
+      "id": "mg-orig-054",
+      "subject": "Mining Geology",
+      "topic": "Joints",
+      "difficulty": "easy",
+      "type": "MCQ",
+      "stem": "Joints differ from faults in that joints are fractures",
+      "options": [
+        "along which large displacement has occurred",
+        "along which there is little or no appreciable relative displacement",
+        "filled only with ore",
+        "found only in coal"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Joints are fractures without slip.\n\n**Reasoning.** They form by tension, cooling or unloading; though they show negligible movement, joint sets strongly control rock-mass strength, permeability, blasting and slope stability.\n\n**Answer.** Fractures with negligible displacement.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "mg-orig-055",
+      "subject": "Mining Geology",
+      "topic": "Unconformity",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "An unconformity in a rock sequence represents",
+      "options": [
+        "a continuous deposition with no time gap",
+        "a buried erosion (or non-deposition) surface marking a significant gap in the geological record",
+        "an igneous dyke",
+        "a fault plane"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Unconformities mark missing time.\n\n**Reasoning.** Older rocks were uplifted/eroded (or deposition ceased) before younger rocks were laid on top; the surface between records a hiatus.\n\n**Answer.** Buried erosion surface (time gap).",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "mg-orig-056",
+      "subject": "Mining Geology",
+      "topic": "Types of unconformity",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "An 'angular unconformity' is one in which",
+      "options": [
+        "the beds above and below are parallel",
+        "tilted/folded older strata are overlain, across an erosion surface, by younger beds at a different angle",
+        "younger sediments rest on an igneous/metamorphic basement",
+        "there is no erosion surface"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Angular unconformity shows discordant attitudes.\n\n**Reasoning.** The lower beds were tilted/folded and eroded before the upper, gently dipping beds were deposited, so they meet at an angle; a disconformity has parallel beds, a nonconformity has sediments on crystalline basement.\n\n**Answer.** Discordant (angular) contact.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "mg-orig-057",
+      "subject": "Mining Geology",
+      "topic": "Dip from boreholes",
+      "difficulty": "medium",
+      "type": "NAT",
+      "stem": "Two vertical boreholes 100 m apart lie in the dip direction. The top of a seam is 50 m deeper in the down-dip borehole than in the up-dip one. The true dip of the seam, in degrees, is ____ (two decimals).",
+      "answer": 26.57,
+      "tolerance": 0.2,
+      "solution": "**Concept.** $\\tan(\\text{dip})=\\dfrac{\\text{vertical difference}}{\\text{horizontal distance (in dip direction)}}$.\n\n**Working.**\n$$\\tan\\delta=\\frac{50}{100}=0.5\\Rightarrow\\delta=\\tan^{-1}(0.5)=26.57^{\\circ}$$\n\n**Answer.** 26.57°.",
+      "archetype": "D",
+      "marks": 2
+    },
+    {
+      "id": "mg-orig-058",
+      "subject": "Mining Geology",
+      "topic": "Outcrop",
+      "difficulty": "easy",
+      "type": "MCQ",
+      "stem": "The 'outcrop' of a bed is",
+      "options": [
+        "the part of the bed exposed at (or just beneath) the ground surface",
+        "the deepest part of the bed",
+        "the dip angle",
+        "the thickness of overburden"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Outcrop is the surface trace of a bed.\n\n**Reasoning.** It is where the bed meets the topographic surface; its plan pattern depends on the bed's dip and the relief, and is interpreted from geological maps ('rule of Vs').\n\n**Answer.** Surface exposure of the bed.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "mg-orig-059",
+      "subject": "Mining Geology",
+      "topic": "Outcrop width",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "For a given true thickness, the width of outcrop of an inclined bed on flat ground is greatest when the bed",
+      "options": [
+        "is vertical",
+        "dips at a low (gentle) angle",
+        "dips at exactly 45°",
+        "is non-existent"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Gentle dips spread the outcrop.\n\n**Reasoning.** On level ground the outcrop width $=t/\\sin\\delta$ (t = true thickness); as the dip δ decreases, $\\sin\\delta$ falls and the width increases, becoming a minimum for a vertical bed.\n\n**Answer.** Gentle dip.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "mg-orig-060",
+      "subject": "Mining Geology",
+      "topic": "Fold cross-section",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "The cross-section shows folded strata. Identify structures A (left, up-arched) and B (right, down-folded).",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox='0 0 320 160' xmlns='http://www.w3.org/2000/svg'><path d='M 10 45 Q 80 5 150 45 T 290 45' fill='none' stroke='#8a5a2b' stroke-width='3'/><path d='M 10 75 Q 80 35 150 75 T 290 75' fill='none' stroke='#b3793b' stroke-width='3'/><path d='M 10 105 Q 80 65 150 105 T 290 105' fill='none' stroke='#cf9a5a' stroke-width='3'/><text x='72' y='140' font-size='13'>A</text><text x='208' y='140' font-size='13'>B</text></svg>",
+        "caption": "Cross-section through folded beds"
+      },
+      "options": [
+        "A is an anticline (up-arch) and B is a syncline (down-fold)",
+        "A is a syncline and B is an anticline",
+        "Both A and B are synclines",
+        "Both A and B are faults"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Up-arches are anticlines, down-folds are synclines.\n\n**Reasoning.** Structure A is convex-up (crest) — an anticline; structure B is concave-up (trough) — a syncline. The beds curve continuously, indicating folding rather than faulting.\n\n**Answer.** A anticline, B syncline.",
+      "archetype": "C",
+      "marks": 1
+    },
+    {
+      "id": "mg-orig-061",
+      "subject": "Mining Geology",
+      "topic": "Ore deposit",
+      "difficulty": "easy",
+      "type": "MCQ",
+      "stem": "An 'ore deposit' is",
+      "options": [
+        "any rock containing a trace of metal",
+        "a natural concentration of ore minerals large and rich enough to be mined at a profit",
+        "the waste rock of a mine",
+        "a sedimentary bedding plane"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Economic concentration defines an ore deposit.\n\n**Reasoning.** Ore-forming processes enrich a metal far above its crustal average so that, given grade, tonnage and market, extraction is profitable; otherwise it is only a mineral occurrence.\n\n**Answer.** Economically mineable concentration.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "mg-orig-062",
+      "subject": "Mining Geology",
+      "topic": "Magmatic deposits",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "Chromite and nickel-copper sulphide deposits associated with basic/ultrabasic intrusions are examples of",
+      "options": [
+        "placer deposits",
+        "magmatic (orthomagmatic) deposits formed by crystallisation and gravity segregation within a magma",
+        "residual weathering deposits",
+        "evaporite deposits"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Some ores crystallise directly from magma.\n\n**Reasoning.** Early-formed dense minerals (chromite) or immiscible sulphide liquids (Ni–Cu) settle and concentrate in mafic/ultramafic bodies, giving magmatic ore deposits.\n\n**Answer.** Magmatic deposits.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "mg-orig-063",
+      "subject": "Mining Geology",
+      "topic": "Hydrothermal deposits",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "Many vein-type metal deposits (e.g. Pb-Zn, Cu, Au veins) are formed by",
+      "options": [
+        "deposition of minerals from hot, mineral-bearing aqueous (hydrothermal) solutions in fractures",
+        "mechanical sorting in rivers",
+        "evaporation of seawater",
+        "metamorphism of coal"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Hot fluids transport and precipitate metals.\n\n**Reasoning.** Hydrothermal solutions, often of magmatic or circulating-meteoric origin, carry dissolved metals and deposit ore and gangue in fissures (fissure-filling veins) and replacement bodies as they cool/react.\n\n**Answer.** Hydrothermal deposition.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "mg-orig-064",
+      "subject": "Mining Geology",
+      "topic": "Placer deposits",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "Placer deposits of gold, cassiterite (tin) and diamond form by",
+      "options": [
+        "crystallisation of magma",
+        "mechanical concentration of heavy, chemically resistant minerals by flowing water or wind",
+        "hydrothermal vein filling",
+        "regional metamorphism"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Density and durability drive placer formation.\n\n**Reasoning.** Weathering releases heavy, hard, chemically stable minerals; running water (or wind) winnows the light material and concentrates the dense grains in stream beds, beaches and terraces.\n\n**Answer.** Mechanical (placer) concentration.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "mg-orig-065",
+      "subject": "Mining Geology",
+      "topic": "Residual deposits",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "Bauxite and laterite are typical",
+      "options": [
+        "magmatic deposits",
+        "residual deposits formed by intense chemical weathering that removes soluble matter and leaves an insoluble enriched residue",
+        "placer deposits",
+        "hydrothermal veins"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Weathering can concentrate ore in place.\n\n**Reasoning.** In warm, humid climates leaching removes silica and alkalis, leaving Al/Fe-rich residues; bauxite (Al ore) and laterite are the classic residual deposits.\n\n**Answer.** Residual (weathering) deposits.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "mg-orig-066",
+      "subject": "Mining Geology",
+      "topic": "Sedimentary deposits",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "Banded iron formations (BIF) and evaporite salt deposits are examples of",
+      "options": [
+        "magmatic deposits",
+        "sedimentary (chemically precipitated) ore deposits",
+        "placer deposits",
+        "metamorphic vein deposits"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Chemical sedimentation forms large ore bodies.\n\n**Reasoning.** BIFs precipitated iron oxides/silica in Precambrian seas; evaporites (halite, gypsum, potash) precipitated as restricted basins dried up — both are sedimentary deposits.\n\n**Answer.** Sedimentary ore deposits.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "mg-orig-067",
+      "subject": "Mining Geology",
+      "topic": "Syngenetic vs epigenetic",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "A 'syngenetic' ore deposit is one that",
+      "options": [
+        "formed at the same time as the enclosing host rock",
+        "was introduced into pre-existing rock at a later time",
+        "is always a vein",
+        "contains no ore minerals"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Timing relative to host rock classifies deposits.\n\n**Reasoning.** Syngenetic deposits (e.g. BIF, magmatic segregations) form together with the host; epigenetic deposits (e.g. fissure veins) are emplaced later into existing rock.\n\n**Answer.** Formed with the host rock.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "mg-orig-068",
+      "subject": "Mining Geology",
+      "topic": "Stratabound deposits",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "A 'stratabound' ore deposit is one that is",
+      "options": [
+        "confined to a particular stratigraphic unit or bed",
+        "cutting sharply across all bedding",
+        "purely magmatic",
+        "found only at the surface"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Stratabound ores honour stratigraphy.\n\n**Reasoning.** The mineralisation is restricted to a specific bed/horizon (though it may be disseminated within it); strata-form deposits additionally lie parallel to bedding.\n\n**Answer.** Restricted to a particular stratum.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "mg-orig-069",
+      "subject": "Mining Geology",
+      "topic": "Exploration sequence",
+      "difficulty": "easy",
+      "type": "MCQ",
+      "stem": "The usual logical sequence of mineral exploration is",
+      "options": [
+        "mining → reconnaissance → prospecting",
+        "reconnaissance → prospecting → detailed exploration (including drilling) → evaluation",
+        "drilling → reconnaissance → prospecting",
+        "evaluation → reconnaissance → mining"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Exploration narrows from regional to local.\n\n**Reasoning.** Broad reconnaissance identifies favourable areas; prospecting locates targets; detailed exploration (mapping, geophysics, drilling) and sampling delineate and evaluate the deposit before mining.\n\n**Answer.** Reconnaissance → prospecting → detailed exploration → evaluation.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "mg-orig-070",
+      "subject": "Mining Geology",
+      "topic": "Geophysical methods",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "Which of the following is a geophysical method of exploration?",
+      "options": [
+        "Proximate analysis of coal",
+        "Seismic refraction survey",
+        "Petrographic thin-section study",
+        "Streak test"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Geophysics measures physical-property contrasts.\n\n**Reasoning.** Seismic, gravity, magnetic, electrical/resistivity and electromagnetic surveys detect subsurface variations in elastic, density, magnetic, conductive properties; seismic refraction is one such method.\n\n**Answer.** Seismic refraction survey.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "mg-orig-071",
+      "subject": "Mining Geology",
+      "topic": "Magnetic survey",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "A magnetic survey is particularly useful for exploring",
+      "options": [
+        "rock salt deposits",
+        "magnetite-bearing iron ore bodies, which produce magnetic anomalies",
+        "coal seams by their magnetism",
+        "limestone purity"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Magnetic surveys map susceptibility contrasts.\n\n**Reasoning.** Strongly magnetic minerals (magnetite) distort the earth's field, giving anomalies that outline iron ore (and mafic/ultramafic bodies); weakly magnetic rocks give little response.\n\n**Answer.** Magnetite iron ore.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "mg-orig-072",
+      "subject": "Mining Geology",
+      "topic": "Geochemical exploration",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "Geochemical exploration locates buried mineralisation by",
+      "options": [
+        "measuring seismic velocity",
+        "detecting anomalous concentrations of elements (including pathfinder elements) in soil, water, rock or vegetation",
+        "weighing rock samples",
+        "measuring magnetic field only"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Dispersion haloes betray hidden ore.\n\n**Reasoning.** Weathering disperses ore elements, forming geochemical anomalies; sampling soils, stream sediments, waters or plants and analysing for the ore or 'pathfinder' elements (e.g. As for Au) guides targeting.\n\n**Answer.** Element anomalies in surface media.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "mg-orig-073",
+      "subject": "Mining Geology",
+      "topic": "Core drilling",
+      "difficulty": "easy",
+      "type": "MCQ",
+      "stem": "Diamond core drilling is used in exploration chiefly to",
+      "options": [
+        "blast the rock",
+        "recover a cylindrical core of rock for geological logging, sampling and assay",
+        "ventilate the borehole",
+        "measure magnetic field"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Cores give a continuous rock record.\n\n**Reasoning.** A diamond bit cuts an intact cylinder that is logged for lithology, structure, alteration and ore, and sampled for assay; core recovery and RQD also indicate rock quality.\n\n**Answer.** Recover core for logging/assay.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "mg-orig-074",
+      "subject": "Mining Geology",
+      "topic": "RQD",
+      "difficulty": "easy",
+      "type": "NAT",
+      "stem": "In a 100 cm core run, the sum of the lengths of intact core pieces each ≥ 10 cm long is 70 cm. The Rock Quality Designation (RQD), in %, is ____.",
+      "answer": 70,
+      "tolerance": 0.5,
+      "solution": "**Concept.** $RQD=\\dfrac{\\sum(\\text{pieces}\\ge10\\ \\text{cm})}{\\text{total run}}\\times100$.\n\n**Working.**\n$$RQD=\\frac{70}{100}\\times100=70\\%$$\n\n**Answer.** 70 %.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "mg-orig-075",
+      "subject": "Mining Geology",
+      "topic": "Reserve vs resource",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "The difference between a mineral 'reserve' and a mineral 'resource' is that a reserve is",
+      "options": [
+        "the same as a resource",
+        "the economically and legally mineable part of a resource under current conditions",
+        "always larger than the resource",
+        "material with no economic value"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Reserves are the economic subset of resources.\n\n**Reasoning.** A resource is a concentration with reasonable prospects of eventual economic extraction; a reserve is the portion that is demonstrably economic and mineable now (modifying factors applied).\n\n**Answer.** Economically mineable part of the resource.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "mg-orig-076",
+      "subject": "Mining Geology",
+      "topic": "UNFC",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "The United Nations Framework Classification (UNFC) classifies mineral reserves/resources using",
+      "options": [
+        "a single axis of tonnage",
+        "three axes — economic viability, feasibility (project) status and geological knowledge",
+        "only colour codes",
+        "rank and grade of coal"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** UNFC is a three-dimensional scheme.\n\n**Reasoning.** Each category is defined by codes on economic-social viability (E), field-project/feasibility status (F) and geological knowledge (G), giving a harmonised classification adopted in India.\n\n**Answer.** Three axes (E, F, G).",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "mg-orig-077",
+      "subject": "Mining Geology",
+      "topic": "Confidence categories",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "In order of decreasing geological confidence, resource categories are usually termed",
+      "options": [
+        "inferred, indicated, measured",
+        "measured (proved), indicated (probable), inferred (possible)",
+        "possible, probable, proved with possible highest",
+        "all of equal confidence"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Confidence falls as data density decreases.\n\n**Reasoning.** Measured/proved has the closest spaced, most reliable data; indicated/probable is moderate; inferred/possible is the least certain, based on limited sampling.\n\n**Answer.** Measured → indicated → inferred.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "mg-orig-078",
+      "subject": "Mining Geology",
+      "topic": "Reserve tonnage",
+      "difficulty": "medium",
+      "type": "NAT",
+      "stem": "An ore block measures 200 m × 100 m × 5 m and has a bulk density of 2.7 t/m³. The contained tonnage, in tonnes, is ____.",
+      "answer": 270000,
+      "tolerance": 100,
+      "solution": "**Concept.** Tonnage $=$ volume $\\times$ density.\n\n**Working.**\n$$V=200\\times100\\times5=100{,}000\\ \\text{m}^3$$\n$$T=100{,}000\\times2.7=270{,}000\\ \\text{t}$$\n\n**Answer.** 270,000 t.",
+      "archetype": "D",
+      "marks": 2
+    },
+    {
+      "id": "mg-orig-079",
+      "subject": "Mining Geology",
+      "topic": "Ore-forming processes",
+      "difficulty": "medium",
+      "type": "MSQ",
+      "stem": "Which of the following are recognised ore-forming (mineral concentration) processes? (Select all that apply.)",
+      "options": [
+        "Magmatic segregation",
+        "Hydrothermal deposition",
+        "Placer (mechanical) concentration",
+        "Development of schistosity"
+      ],
+      "answer": [0, 1, 2],
+      "solution": "**Concept.** Ore deposits form by physical and chemical concentration.\n\n**Reasoning.** Magmatic segregation, hydrothermal precipitation and mechanical (placer) sorting all concentrate valuable minerals. Schistosity is a metamorphic fabric, not an ore-forming process.\n\n**Answer.** Magmatic, hydrothermal, placer.",
+      "archetype": "A",
+      "marks": 2
+    },
+    {
+      "id": "mg-orig-080",
+      "subject": "Mining Geology",
+      "topic": "Geophysical exploration",
+      "difficulty": "medium",
+      "type": "MSQ",
+      "stem": "Which of the following are geophysical methods used in mineral exploration? (Select all that apply.)",
+      "options": [
+        "Gravity survey",
+        "Magnetic survey",
+        "Seismic survey",
+        "Proximate analysis"
+      ],
+      "answer": [0, 1, 2],
+      "solution": "**Concept.** Geophysics maps subsurface physical-property contrasts.\n\n**Reasoning.** Gravity, magnetic and seismic surveys (with electrical and electromagnetic methods) detect density, magnetic and elastic variations underground. Proximate analysis is a laboratory test of coal composition, not a geophysical method.\n\n**Answer.** Gravity, magnetic, seismic.",
+      "archetype": "A",
+      "marks": 2
+    },
+    {
+      "id": "mg-orig-081",
+      "subject": "Mining Geology",
+      "topic": "Strike and dip",
+      "difficulty": "easy",
+      "type": "MCQ",
+      "stem": "On the block diagram the red line marks the strike of the bed and the green arrow its dip direction. The dip direction is",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox='0 0 220 180' xmlns='http://www.w3.org/2000/svg'><polygon points='30,60 150,40 190,80 70,100' fill='#bfdbfe' stroke='#1d4ed8'/><polygon points='30,60 70,100 70,160 30,120' fill='#93c5fd' stroke='#1d4ed8'/><polygon points='70,100 190,80 190,140 70,160' fill='#60a5fa' stroke='#1d4ed8'/><line x1='30' y1='60' x2='150' y2='40' stroke='#dc2626' stroke-width='2'/><text x='118' y='34' font-size='10' fill='#dc2626'>strike line</text><line x1='90' y1='80' x2='128' y2='118' stroke='#16a34a' stroke-width='2' marker-end='url(#dpg)'/><defs><marker id='dpg' markerWidth='8' markerHeight='8' refX='6' refY='3' orient='auto'><path d='M0 0 L6 3 L0 6 Z' fill='#16a34a'/></marker></defs><text x='118' y='132' font-size='10' fill='#16a34a'>dip</text></svg>",
+        "caption": "Strike line and dip of a bed"
+      },
+      "options": [
+        "parallel to the strike line",
+        "perpendicular to the strike line, in the plane of the bed",
+        "vertically downward",
+        "horizontal and along the strike"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Dip is measured perpendicular to strike.\n\n**Reasoning.** The strike is the horizontal line in the bedding plane; the true dip is the line of steepest descent, which lies in the plane at right angles to the strike.\n\n**Answer.** Perpendicular to the strike line.",
+      "archetype": "C",
+      "marks": 1
+    },
+    {
+      "id": "mg-orig-082",
+      "subject": "Mining Geology",
+      "topic": "Fault — throw from heave",
+      "difficulty": "medium",
+      "type": "NAT",
+      "stem": "A fault plane (see figure) dips at $60^\\circ$ and the horizontal displacement (heave) of a marker bed across it is 10 m. The throw (vertical displacement), in m, is _____ (two decimals).",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox='0 0 240 180' xmlns='http://www.w3.org/2000/svg'><line x1='120' y1='20' x2='150' y2='170' stroke='#1f2937' stroke-width='2'/><g stroke='#b45309' stroke-width='4'><line x1='20' y1='70' x2='123' y2='70'/><line x1='147' y1='110' x2='220' y2='110'/></g><line x1='205' y1='70' x2='205' y2='110' stroke='#dc2626' stroke-width='1'/><text x='208' y='95' font-size='9' fill='#dc2626'>throw</text><text x='150' y='160' font-size='9'>fault dip 60&#176;</text></svg>",
+        "caption": "Normal fault offsetting a bed"
+      },
+      "options": [],
+      "answer": 17.32,
+      "tolerance": 0.05,
+      "solution": "**Concept.** $\\dfrac{\\text{throw}}{\\text{heave}}=\\tan(\\text{fault dip})$.\n\n**Working.**\n$$\\text{throw}=\\text{heave}\\times\\tan60^\\circ=10\\times1.7321=17.32\\ \\text{m}$$\n\n**Answer.** $17.32$ m.",
+      "archetype": "C",
+      "marks": 2
+    },
+    {
+      "id": "mg-orig-083",
+      "subject": "Mining Geology",
+      "topic": "Dip from cross-section",
+      "difficulty": "medium",
+      "type": "NAT",
+      "stem": "A planar bed drops 50 m vertically over a horizontal distance of 100 m measured perpendicular to strike (see figure). The true dip of the bed, in degrees, is _____ (two decimals).",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox='0 0 240 160' xmlns='http://www.w3.org/2000/svg'><line x1='20' y1='40' x2='200' y2='130' stroke='#b45309' stroke-width='3'/><line x1='20' y1='40' x2='20' y2='130' stroke='#94a3b8' stroke-dasharray='3 3'/><line x1='20' y1='130' x2='200' y2='130' stroke='#94a3b8' stroke-dasharray='3 3'/><text x='80' y='148' font-size='10'>horizontal 100 m</text><text x='24' y='90' font-size='10' fill='#dc2626'>drop 50 m</text></svg>",
+        "caption": "Vertical drop over horizontal run"
+      },
+      "options": [],
+      "answer": 26.57,
+      "tolerance": 0.1,
+      "solution": "**Concept.** $\\tan(\\text{dip})=\\dfrac{\\text{vertical drop}}{\\text{horizontal distance}}$.\n\n**Working.**\n$$\\text{dip}=\\arctan\\!\\left(\\frac{50}{100}\\right)=\\arctan(0.5)=26.57^\\circ$$\n\n**Answer.** $26.57^\\circ$.",
+      "archetype": "C",
+      "marks": 2
+    },
+    {
+      "id": "mg-orig-084",
+      "subject": "Mining Geology",
+      "topic": "True thickness from outcrop width",
+      "difficulty": "medium",
+      "type": "NAT",
+      "stem": "A bed dipping at $30^\\circ$ crops out across a horizontal surface with an outcrop width of 40 m measured perpendicular to strike (see figure). Its true (perpendicular) thickness, in m, is _____ (one decimal).",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox='0 0 240 150' xmlns='http://www.w3.org/2000/svg'><line x1='20' y1='100' x2='210' y2='100' stroke='#475569'/><line x1='60' y1='100' x2='140' y2='100' stroke='#b45309' stroke-width='5'/><text x='70' y='120' font-size='10'>outcrop width 40 m</text><line x1='60' y1='100' x2='102' y2='58' stroke='#1d4ed8' stroke-width='2'/><text x='64' y='72' font-size='9' fill='#1d4ed8'>dip 30&#176;</text></svg>",
+        "caption": "Outcrop width of a dipping bed"
+      },
+      "options": [],
+      "answer": 20,
+      "tolerance": 0.2,
+      "solution": "**Concept.** For a horizontal ground surface, true thickness $t=w\\sin\\delta$ (w = outcrop width measured perpendicular to strike, $\\delta$ = dip).\n\n**Working.**\n$$t=40\\sin30^\\circ=40\\times0.5=20.0\\ \\text{m}$$\n\n**Answer.** $20.0$ m.",
+      "archetype": "C",
+      "marks": 2
+    },
+    {
+      "id": "mg-orig-085",
+      "subject": "Mining Geology",
+      "topic": "Unconformities",
+      "difficulty": "easy",
+      "type": "MCQ",
+      "stem": "In the section shown, tilted older strata are truncated by an erosion surface (dashed) and overlain by near-horizontal younger beds. This relationship is an example of an",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox='0 0 240 170' xmlns='http://www.w3.org/2000/svg'><g stroke='#b45309' stroke-width='3'><line x1='20' y1='150' x2='220' y2='110'/><line x1='20' y1='135' x2='220' y2='95'/><line x1='20' y1='120' x2='220' y2='80'/></g><line x1='20' y1='75' x2='220' y2='65' stroke='#1f2937' stroke-width='2' stroke-dasharray='5 3'/><g stroke='#16a34a' stroke-width='3'><line x1='20' y1='50' x2='220' y2='45'/><line x1='20' y1='35' x2='220' y2='30'/></g><text x='70' y='62' font-size='9'>erosion surface</text></svg>",
+        "caption": "Tilted beds truncated below sub-horizontal beds"
+      },
+      "options": [
+        "disconformity",
+        "angular unconformity",
+        "nonconformity",
+        "paraconformity"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** An angular unconformity shows a clear angular discordance across the break.\n\n**Reasoning.** The older beds were tilted and eroded before the younger, gently dipping beds were deposited, so the bedding above and below the surface meet at an angle — the defining feature of an angular unconformity.\n\n**Answer.** Angular unconformity.",
+      "archetype": "C",
+      "marks": 1
+    },
+    {
+      "id": "mg-orig-086",
+      "subject": "Mining Geology",
+      "topic": "Apparent vs true dip",
+      "difficulty": "medium",
+      "type": "NAT",
+      "stem": "A bed has a true dip of $30^\\circ$. A vertical section is cut in a direction making $30^\\circ$ with the strike. Compute the apparent dip seen in that section (degrees).",
+      "figure": {
+        "kind": "svg",
+        "caption": "Apparent dip in an oblique section",
+        "markup": "<svg viewBox='0 0 220 160' xmlns='http://www.w3.org/2000/svg'><polygon points='30,120 150,120 190,80 70,80' fill='#e5e7eb' stroke='#475569'/><line x1='70' y1='80' x2='150' y2='120' stroke='#dc2626' stroke-width='2'/><text x='40' y='108' font-size='8'>true dip=30 deg</text><text x='28' y='150' font-size='8'>section at 30 deg to strike</text></svg>"
+      },
+      "options": [],
+      "answer": 16.1,
+      "tolerance": 0.3,
+      "solution": "**Concept.** $\\tan(\\text{apparent dip})=\\tan(\\text{true dip})\\times\\sin\\theta$, where $\\theta$ is the angle between the section and the strike.\n\n**Working.**\n$$\\tan\\alpha=\\tan30^\\circ\\times\\sin30^\\circ=0.5774\\times0.5=0.2887\\Rightarrow\\alpha=16.1^\\circ$$\n\n**Answer.** $\\approx 16.1^\\circ$.",
+      "archetype": "C"
+    },
+    {
+      "id": "mg-orig-087",
+      "subject": "Mining Geology",
+      "topic": "Faults",
+      "difficulty": "easy",
+      "type": "NAT",
+      "stem": "A dip-slip fault has a net slip of $20\\ \\text{m}$ measured along a fault plane dipping at $30^\\circ$. Compute the vertical throw (m).",
+      "figure": {
+        "kind": "svg",
+        "caption": "Throw and heave of a fault",
+        "markup": "<svg viewBox='0 0 240 160' xmlns='http://www.w3.org/2000/svg'><line x1='40' y1='30' x2='170' y2='140' stroke='#1f2937' stroke-width='2' stroke-dasharray='5 3'/><g stroke='#b45309' stroke-width='3'><line x1='20' y1='70' x2='95' y2='95'/><line x1='120' y1='120' x2='210' y2='120'/></g><text x='28' y='152' font-size='8'>fault dip=30 deg, net slip=20 m</text></svg>"
+      },
+      "options": [],
+      "answer": 10,
+      "tolerance": 0.2,
+      "solution": "**Concept.** Throw $=$ net slip $\\times\\sin(\\text{fault dip})$.\n\n**Working.**\n$$\\text{throw}=20\\sin30^\\circ=20\\times0.5=10\\ \\text{m}$$\n\n**Answer.** $10$ m.",
+      "archetype": "C"
+    },
+    {
+      "id": "mg-orig-088",
+      "subject": "Mining Geology",
+      "topic": "Faults",
+      "difficulty": "medium",
+      "type": "NAT",
+      "stem": "For the same fault (net slip $20\\ \\text{m}$, fault dip $30^\\circ$), compute the horizontal heave (m).",
+      "figure": {
+        "kind": "svg",
+        "caption": "Horizontal heave of a fault",
+        "markup": "<svg viewBox='0 0 240 160' xmlns='http://www.w3.org/2000/svg'><line x1='40' y1='30' x2='170' y2='140' stroke='#1f2937' stroke-width='2' stroke-dasharray='5 3'/><g stroke='#b45309' stroke-width='3'><line x1='20' y1='70' x2='95' y2='95'/><line x1='120' y1='120' x2='210' y2='120'/></g><line x1='95' y1='110' x2='150' y2='110' stroke='#dc2626' stroke-width='2'/><text x='28' y='152' font-size='8'>heave = horizontal offset</text></svg>"
+      },
+      "options": [],
+      "answer": 17.32,
+      "tolerance": 0.2,
+      "solution": "**Concept.** Heave $=$ net slip $\\times\\cos(\\text{fault dip})$.\n\n**Working.**\n$$\\text{heave}=20\\cos30^\\circ=20\\times0.8660=17.32\\ \\text{m}$$\n\n**Answer.** $\\approx 17.3\\ \\text{m}$.",
+      "archetype": "C"
+    },
+    {
+      "id": "mg-orig-089",
+      "subject": "Mining Geology",
+      "topic": "Dip from cross-section",
+      "difficulty": "medium",
+      "type": "NAT",
+      "stem": "Along the dip direction, a marker bed drops $50\\ \\text{m}$ in elevation over a horizontal distance of $100\\ \\text{m}$. Compute the true dip (degrees).",
+      "figure": {
+        "kind": "svg",
+        "caption": "Dip from a cross-section",
+        "markup": "<svg viewBox='0 0 220 160' xmlns='http://www.w3.org/2000/svg'><line x1='30' y1='60' x2='180' y2='120' stroke='#2563eb' stroke-width='2'/><line x1='30' y1='60' x2='180' y2='60' stroke='#94a3b8' stroke-dasharray='3 2'/><line x1='180' y1='60' x2='180' y2='120' stroke='#94a3b8' stroke-dasharray='3 2'/><text x='80' y='52' font-size='8'>100 m</text><text x='185' y='95' font-size='8'>50 m</text></svg>"
+      },
+      "options": [],
+      "answer": 26.57,
+      "tolerance": 0.3,
+      "solution": "**Concept.** $\\text{dip}=\\arctan\\left(\\dfrac{\\text{vertical drop}}{\\text{horizontal distance}}\\right)$.\n\n**Working.**\n$$\\text{dip}=\\arctan\\left(\\frac{50}{100}\\right)=\\arctan(0.5)=26.57^\\circ$$\n\n**Answer.** $\\approx 26.6^\\circ$.",
+      "archetype": "C"
+    },
+    {
+      "id": "mg-orig-090",
+      "subject": "Mining Geology",
+      "topic": "Dip from boreholes",
+      "difficulty": "easy",
+      "type": "NAT",
+      "stem": "Two vertical boreholes $40\\ \\text{m}$ apart (along the dip direction) intersect the same seam, with the seam $40\\ \\text{m}$ deeper in the down-dip hole. Compute the apparent dip along that line (degrees).",
+      "figure": {
+        "kind": "svg",
+        "caption": "Dip from two boreholes",
+        "markup": "<svg viewBox='0 0 220 160' xmlns='http://www.w3.org/2000/svg'><line x1='50' y1='20' x2='50' y2='90' stroke='#475569' stroke-width='2'/><line x1='150' y1='20' x2='150' y2='130' stroke='#475569' stroke-width='2'/><line x1='50' y1='90' x2='150' y2='130' stroke='#b45309' stroke-width='3'/><text x='28' y='150' font-size='8'>holes 40 m apart, seam 40 m deeper</text></svg>"
+      },
+      "options": [],
+      "answer": 45,
+      "tolerance": 0.3,
+      "solution": "**Concept.** $\\text{dip}=\\arctan\\left(\\dfrac{\\Delta\\text{depth}}{\\text{spacing}}\\right)$.\n\n**Working.**\n$$\\text{dip}=\\arctan\\left(\\frac{40}{40}\\right)=\\arctan(1)=45^\\circ$$\n\n**Answer.** $45^\\circ$.",
+      "archetype": "C"
+    },
+    {
+      "id": "mg-orig-091",
+      "subject": "Mining Geology",
+      "topic": "Coal reserve estimate",
+      "difficulty": "medium",
+      "type": "NAT",
+      "stem": "A coal block covers a plan area of $100{,}000\\ \\mathrm{m^2}$ with seam thickness $2\\ \\text{m}$ and in-situ density $1.4\\ \\mathrm{t/m^3}$. Compute the in-situ (geological) reserve in tonnes.",
+      "figure": {
+        "kind": "svg",
+        "caption": "Coal block volume to tonnage",
+        "markup": "<svg viewBox='0 0 220 150' xmlns='http://www.w3.org/2000/svg'><polygon points='40,110 150,110 190,80 80,80' fill='#94a3b8' stroke='#475569'/><polygon points='40,110 40,125 150,125 150,110' fill='#cbd5e1' stroke='#475569'/><polygon points='150,110 150,125 190,95 190,80' fill='#9ca3af' stroke='#475569'/><text x='30' y='145' font-size='8'>area=1e5 m^2, t=2 m, density=1.4</text></svg>"
+      },
+      "options": [],
+      "answer": 280000,
+      "tolerance": 100,
+      "solution": "**Concept.** Tonnage $=$ area $\\times$ thickness $\\times$ density.\n\n**Working.**\n$$T=100000\\times2\\times1.4=280000\\ \\text{t}$$\n\n**Answer.** $280{,}000$ t.",
+      "archetype": "C"
+    },
+    {
+      "id": "mg-orig-092",
+      "subject": "Mining Geology",
+      "topic": "Coal reserve estimate",
+      "difficulty": "medium",
+      "type": "NAT",
+      "stem": "If the recovery (extraction) factor for the $280{,}000\\ \\text{t}$ in-situ block is $0.80$, compute the recoverable (mineable) reserve in tonnes.",
+      "figure": {
+        "kind": "svg",
+        "caption": "Recoverable fraction of a reserve",
+        "markup": "<svg viewBox='0 0 220 140' xmlns='http://www.w3.org/2000/svg'><rect x='30' y='40' width='160' height='50' fill='#cbd5e1' stroke='#475569'/><rect x='30' y='40' width='128' height='50' fill='#94a3b8' stroke='#475569'/><text x='40' y='70' font-size='9'>recover 80%</text><text x='30' y='115' font-size='8'>in-situ = 280000 t</text></svg>"
+      },
+      "options": [],
+      "answer": 224000,
+      "tolerance": 100,
+      "solution": "**Concept.** Recoverable reserve $=$ in-situ reserve $\\times$ recovery factor.\n\n**Working.**\n$$T_r=280000\\times0.80=224000\\ \\text{t}$$\n\n**Answer.** $224{,}000$ t.",
+      "archetype": "C"
+    },
+    {
+      "id": "mg-orig-093",
+      "subject": "Mining Geology",
+      "topic": "Core drilling",
+      "difficulty": "easy",
+      "type": "NAT",
+      "stem": "In a core run of $100\\ \\text{cm}$, the sound core pieces each $\\ge 10\\ \\text{cm}$ long total $75\\ \\text{cm}$. Compute the Rock Quality Designation (RQD) in percent.",
+      "figure": {
+        "kind": "svg",
+        "caption": "RQD from a core run",
+        "markup": "<svg viewBox='0 0 240 110' xmlns='http://www.w3.org/2000/svg'><rect x='20' y='45' width='200' height='20' fill='#e5e7eb' stroke='#475569'/><g fill='#b45309'><rect x='22' y='45' width='40' height='20'/><rect x='66' y='45' width='30' height='20'/><rect x='110' y='45' width='8' height='20'/><rect x='122' y='45' width='55' height='20'/></g><text x='28' y='90' font-size='8'>core run 100 cm; sound pieces shaded</text></svg>"
+      },
+      "options": [],
+      "answer": 75,
+      "tolerance": 0.5,
+      "solution": "**Concept.** $\\text{RQD}=\\dfrac{\\sum(\\text{intact pieces}\\ge10\\ \\text{cm})}{\\text{total run length}}\\times100$.\n\n**Working.**\n$$\\text{RQD}=\\frac{75}{100}\\times100=75\\%$$\n\n**Answer.** $75\\%$ (good rock mass).",
+      "archetype": "C"
+    },
+    {
+      "id": "mg-orig-094",
+      "subject": "Mining Geology",
+      "topic": "Dip and strike",
+      "difficulty": "easy",
+      "type": "MCQ",
+      "stem": "The map symbol shown (a long line with a short perpendicular tick and the number $30$) records the attitude of a bed. It means:",
+      "options": [
+        "the long line is the strike, the tick points down-dip, and 30 is the amount of dip",
+        "the long line is the dip direction and 30 is the strike azimuth",
+        "the symbol marks a vertical borehole 30 m deep",
+        "the number 30 is the bed thickness"
+      ],
+      "answer": 0,
+      "figure": {
+        "kind": "svg",
+        "caption": "Strike and dip symbol",
+        "markup": "<svg viewBox='0 0 180 160' xmlns='http://www.w3.org/2000/svg'><line x1='40' y1='80' x2='140' y2='80' stroke='#1f2937' stroke-width='2'/><line x1='90' y1='80' x2='90' y2='105' stroke='#1f2937' stroke-width='2'/><text x='96' y='100' font-size='9'>30</text><text x='28' y='140' font-size='8'>strike and dip symbol</text></svg>"
+      },
+      "solution": "**Concept.** A strike-and-dip symbol encodes both the strike line and the dip.\n\n**Reasoning.** The long line is drawn along strike, the short tick points in the down-dip direction (perpendicular to strike), and the adjacent number gives the dip amount in degrees.\n\n**Answer.** The long line is strike, the tick points down-dip, and 30 is the dip amount.",
+      "archetype": "C"
+    },
+    {
+      "id": "mg-orig-095",
+      "subject": "Mining Geology",
+      "topic": "Anticline and syncline",
+      "difficulty": "easy",
+      "type": "MCQ",
+      "stem": "The fold in the figure has limbs that dip away from a central axis. This structure is:",
+      "options": [
+        "an anticline, with the oldest beds in its core",
+        "a syncline, with the youngest beds in its core",
+        "a monocline",
+        "a recumbent fold lying on its side"
+      ],
+      "answer": 0,
+      "figure": {
+        "kind": "svg",
+        "caption": "Fold with limbs dipping away from the axis",
+        "markup": "<svg viewBox='0 0 220 150' xmlns='http://www.w3.org/2000/svg'><g fill='none' stroke='#b45309' stroke-width='3'><path d='M20 120 Q110 50 200 120'/><path d='M20 135 Q110 70 200 135'/></g><line x1='110' y1='55' x2='110' y2='120' stroke='#1f2937' stroke-dasharray='3 2'/><text x='55' y='145' font-size='8'>limbs dip away from the axis</text></svg>"
+      },
+      "solution": "**Concept.** In an anticline the limbs dip outward (away) from the fold axis.\n\n**Reasoning.** Such an up-arching fold brings the stratigraphically oldest beds to its core, the diagnostic feature distinguishing it from a syncline.\n\n**Answer.** An anticline, with the oldest beds in its core.",
+      "archetype": "C"
+    },
+    {
+      "id": "mg-orig-096",
+      "subject": "Mining Geology",
+      "topic": "Unconformities",
+      "difficulty": "easy",
+      "type": "MCQ",
+      "stem": "In the section, sedimentary beds rest on an eroded surface developed across igneous/metamorphic (crystalline) basement. This relationship is:",
+      "options": [
+        "a nonconformity",
+        "an angular unconformity",
+        "a disconformity",
+        "a paraconformity"
+      ],
+      "answer": 0,
+      "figure": {
+        "kind": "svg",
+        "caption": "Sediments over crystalline basement",
+        "markup": "<svg viewBox='0 0 220 160' xmlns='http://www.w3.org/2000/svg'><rect x='20' y='90' width='180' height='50' fill='#9ca3af' stroke='#475569'/><line x1='20' y1='90' x2='200' y2='90' stroke='#1f2937' stroke-width='2' stroke-dasharray='5 3'/><g stroke='#16a34a' stroke-width='3'><line x1='20' y1='70' x2='200' y2='70'/><line x1='20' y1='55' x2='200' y2='55'/></g><text x='55' y='120' font-size='9'>igneous / metamorphic</text><text x='28' y='40' font-size='8'>sediments over crystalline rock</text></svg>"
+      },
+      "solution": "**Concept.** A nonconformity separates sedimentary strata from underlying crystalline (igneous or metamorphic) rock.\n\n**Reasoning.** The basement was eroded before the overlying sediments were deposited, so younger bedded rocks lie directly on non-stratified crystalline rock.\n\n**Answer.** A nonconformity.",
+      "archetype": "C"
+    },
+    {
+      "id": "mg-orig-097",
+      "subject": "Mining Geology",
+      "topic": "Apparent vs true dip",
+      "difficulty": "easy",
+      "type": "MCQ",
+      "stem": "Comparing the dip seen in an oblique vertical section (apparent dip) with the dip in a section perpendicular to strike (true dip), the apparent dip is always:",
+      "options": [
+        "less than or equal to the true dip",
+        "greater than the true dip",
+        "exactly twice the true dip",
+        "independent of the section direction"
+      ],
+      "answer": 0,
+      "figure": {
+        "kind": "svg",
+        "caption": "True versus apparent dip",
+        "markup": "<svg viewBox='0 0 220 150' xmlns='http://www.w3.org/2000/svg'><polygon points='30,110 150,110 190,70 70,70' fill='#e5e7eb' stroke='#475569'/><line x1='70' y1='70' x2='150' y2='110' stroke='#dc2626' stroke-width='2'/><line x1='30' y1='110' x2='150' y2='110' stroke='#2563eb' stroke-width='2'/><text x='40' y='98' font-size='8'>true dip</text><text x='55' y='128' font-size='8'>apparent dip (oblique)</text></svg>"
+      },
+      "solution": "**Concept.** $\\tan(\\text{apparent})=\\tan(\\text{true})\\sin\\theta$, and $\\sin\\theta\\le1$.\n\n**Reasoning.** Because $\\sin\\theta$ cannot exceed one, the apparent dip can never exceed the true dip; it equals the true dip only when the section is perpendicular to strike.\n\n**Answer.** Less than or equal to the true dip.",
+      "archetype": "C"
+    },
+    {
+      "id": "mg-orig-098",
+      "subject": "Mining Geology",
+      "topic": "Structural geology",
+      "difficulty": "medium",
+      "type": "NAT",
+      "stem": "A bedding plane descends $50\\ \\text{m}$ vertically over a horizontal distance of $100\\ \\text{m}$ measured perpendicular to strike (figure). Compute the true dip (degrees, two decimals).",
+      "options": [],
+      "answer": 26.57,
+      "tolerance": 0.1,
+      "figure": {"kind": "svg", "caption": "Dipping bed cross-section", "markup": "<svg viewBox='0 0 220 150' xmlns='http://www.w3.org/2000/svg'><line x1='20' y1='40' x2='200' y2='120' stroke='#a16207' stroke-width='4'/><line x1='20' y1='120' x2='200' y2='120' stroke='#475569'/><line x1='20' y1='40' x2='20' y2='120' stroke='#475569'/><text x='24' y='82' font-size='8'>drop 50</text><text x='98' y='135' font-size='8'>horizontal 100</text></svg>"},
+      "solution": "**Concept.** $\\text{dip}=\\tan^{-1}\\!\\left(\\dfrac{\\text{vertical}}{\\text{horizontal}}\\right)$.\n\n**Working.**\n$$\\delta=\\tan^{-1}\\!\\left(\\frac{50}{100}\\right)=\\tan^{-1}(0.5)=26.57^\\circ$$\n\n**Answer.** $26.57^\\circ$.",
+      "archetype": "C"
+    },
+    {
+      "id": "mg-orig-099",
+      "subject": "Mining Geology",
+      "topic": "Folds",
+      "difficulty": "easy",
+      "type": "MCQ",
+      "stem": "The fold shown has limbs dipping away from the crest (figure). It is:",
+      "options": [
+        "an anticline, with the oldest beds in the core and limbs dipping away from the axis",
+        "a syncline, with the youngest beds in the core",
+        "a monocline with a single flexure",
+        "a recumbent fold with a horizontal axial plane"
+      ],
+      "answer": 0,
+      "figure": {"kind": "svg", "caption": "Arched fold", "markup": "<svg viewBox='0 0 220 140' xmlns='http://www.w3.org/2000/svg'><path d='M20 110 Q110 30 200 110' fill='none' stroke='#a16207' stroke-width='3'/><path d='M20 125 Q110 50 200 125' fill='none' stroke='#92400e' stroke-width='3'/><text x='72' y='132' font-size='8'>beds arch upward</text></svg>"},
+      "solution": "**Concept.** Fold nomenclature.\n\n**Reasoning.** Limbs dipping away from a crest, with the oldest strata exposed in the core, define an anticline.\n\n**Answer.** An anticline, with the oldest beds in the core and limbs dipping away from the axis.",
+      "archetype": "C"
+    },
+    {
+      "id": "mg-orig-100",
+      "subject": "Mining Geology",
+      "topic": "Faults",
+      "difficulty": "easy",
+      "type": "NAT",
+      "stem": "A marker bed is displaced across a fault so that the same horizon is $20\\ \\text{m}$ lower on the downthrown side (figure). Compute the vertical throw (m).",
+      "options": [],
+      "answer": 20,
+      "tolerance": 0.1,
+      "figure": {"kind": "svg", "caption": "Normal fault offset", "markup": "<svg viewBox='0 0 220 150' xmlns='http://www.w3.org/2000/svg'><rect x='20' y='50' width='90' height='15' fill='#a16207'/><rect x='110' y='70' width='90' height='15' fill='#a16207'/><line x1='110' y1='30' x2='110' y2='130' stroke='#dc2626' stroke-width='2' stroke-dasharray='4 3'/><text x='24' y='130' font-size='8'>marker offset 20 m vertical</text></svg>"},
+      "solution": "**Concept.** Throw is the vertical component of fault displacement.\n\n**Working.** The same horizon sits $20\\ \\text{m}$ lower across the fault, so the throw equals $20\\ \\text{m}$.\n\n**Answer.** $20$ m.",
+      "archetype": "C"
+    },
+    {
+      "id": "mg-orig-101",
+      "subject": "Mining Geology",
+      "topic": "Outcrop geometry",
+      "difficulty": "medium",
+      "type": "NAT",
+      "stem": "A bed of true thickness $30\\ \\text{m}$ dips at $30^\\circ$ and outcrops on flat ground (figure). Compute the outcrop width measured perpendicular to strike (m).",
+      "options": [],
+      "answer": 60,
+      "tolerance": 0.5,
+      "figure": {"kind": "svg", "caption": "Outcrop of a dipping bed", "markup": "<svg viewBox='0 0 220 150' xmlns='http://www.w3.org/2000/svg'><polygon points='40,120 160,120 120,40' fill='#a16207' stroke='#475569'/><line x1='40' y1='130' x2='160' y2='130' stroke='#2563eb'/><text x='58' y='145' font-size='8'>outcrop width?</text><text x='92' y='92' font-size='8'>t=30, dip 30 deg</text></svg>"},
+      "solution": "**Concept.** On flat ground $w=\\dfrac{t}{\\sin\\delta}$.\n\n**Working.**\n$$w=\\frac{30}{\\sin30^\\circ}=\\frac{30}{0.5}=60\\ \\text{m}$$\n\n**Answer.** $60$ m.",
+      "archetype": "C"
+    },
+    {
+      "id": "mg-orig-102",
+      "subject": "Mining Geology",
+      "topic": "Stratigraphy",
+      "difficulty": "easy",
+      "type": "MCQ",
+      "stem": "In the section shown, tilted older strata are truncated and overlain by flat-lying younger beds (figure). This surface is:",
+      "options": [
+        "an angular unconformity",
+        "a conformable contact",
+        "a thrust fault",
+        "an igneous intrusion"
+      ],
+      "answer": 0,
+      "figure": {"kind": "svg", "caption": "Angular unconformity", "markup": "<svg viewBox='0 0 220 150' xmlns='http://www.w3.org/2000/svg'><g stroke='#475569'><line x1='20' y1='60' x2='200' y2='60'/><line x1='20' y1='72' x2='200' y2='72'/></g><path d='M20 90 Q110 70 200 90' fill='none' stroke='#dc2626' stroke-width='2'/><g stroke='#92400e' stroke-width='2'><line x1='30' y1='110' x2='90' y2='130'/><line x1='110' y1='100' x2='170' y2='125'/></g><text x='28' y='148' font-size='8'>tilted beds below, flat above</text></svg>"},
+      "solution": "**Concept.** Unconformities mark gaps in the record.\n\n**Reasoning.** Tilted, eroded older beds overlain by flat younger beds at an angular discordance define an angular unconformity.\n\n**Answer.** An angular unconformity.",
+      "archetype": "C"
+    },
+    {
+      "id": "mg-orig-103",
+      "subject": "Mining Geology",
+      "topic": "Borehole interpretation",
+      "difficulty": "medium",
+      "type": "NAT",
+      "stem": "A vertical borehole passes through a bed dipping at $30^\\circ$, giving a vertical intercept of $40\\ \\text{m}$ (figure). Compute the true (perpendicular) thickness of the bed (m, two decimals).",
+      "options": [],
+      "answer": 34.64,
+      "tolerance": 0.1,
+      "figure": {"kind": "svg", "caption": "Vertical hole through a dipping bed", "markup": "<svg viewBox='0 0 220 160' xmlns='http://www.w3.org/2000/svg'><line x1='110' y1='20' x2='110' y2='140' stroke='#1f2937' stroke-width='2'/><polygon points='40,60 200,100 200,115 40,75' fill='#a16207' stroke='#475569'/><text x='114' y='92' font-size='8'>vertical hole</text><text x='28' y='152' font-size='8'>intercept 40, dip 30 deg</text></svg>"},
+      "solution": "**Concept.** True thickness $t=h\\cos\\delta$ for a vertical hole.\n\n**Working.**\n$$t=40\\cos30^\\circ=40\\times0.8660=34.64\\ \\text{m}$$\n\n**Answer.** $34.64$ m.",
+      "archetype": "C"
+    },
+    {
+      "id": "mg-orig-104",
+      "subject": "Mining Geology",
+      "topic": "Structural geology",
+      "difficulty": "easy",
+      "type": "MCQ",
+      "stem": "On the bedding plane shown, the horizontal line along the surface (figure) represents:",
+      "options": [
+        "the strike, which is horizontal and perpendicular to the dip direction",
+        "the dip, the line of steepest descent",
+        "the plunge of a fold axis",
+        "the trend of a lineation"
+      ],
+      "answer": 0,
+      "figure": {"kind": "svg", "caption": "Strike and dip on a plane", "markup": "<svg viewBox='0 0 200 160' xmlns='http://www.w3.org/2000/svg'><line x1='40' y1='60' x2='160' y2='60' stroke='#1f2937' stroke-width='3'/><line x1='100' y1='60' x2='100' y2='100' stroke='#dc2626' stroke-width='2'/><polygon points='100,100 95,90 105,90' fill='#dc2626'/><text x='46' y='50' font-size='8'>strike line</text><text x='106' y='90' font-size='8'>dip</text></svg>"},
+      "solution": "**Concept.** Strike and dip are orthogonal.\n\n**Reasoning.** The horizontal line of intersection of the bedding plane with a horizontal surface is the strike, always perpendicular to the dip direction.\n\n**Answer.** The strike, which is horizontal and perpendicular to the dip direction.",
+      "archetype": "C"
+    },
+    {
+      "id": "mg-orig-105",
+      "subject": "Mining Geology",
+      "topic": "Folds",
+      "difficulty": "easy",
+      "type": "MCQ",
+      "stem": "The fold shown has limbs dipping inward toward the trough (figure). It is:",
+      "options": [
+        "a syncline, with the youngest beds in the core and limbs dipping toward the axis",
+        "an anticline, with the oldest beds in the core",
+        "a dome with beds dipping radially outward",
+        "a monocline"
+      ],
+      "answer": 0,
+      "figure": {"kind": "svg", "caption": "Trough fold", "markup": "<svg viewBox='0 0 220 140' xmlns='http://www.w3.org/2000/svg'><path d='M20 40 Q110 120 200 40' fill='none' stroke='#a16207' stroke-width='3'/><path d='M20 25 Q110 100 200 25' fill='none' stroke='#92400e' stroke-width='3'/><text x='76' y='130' font-size='8'>beds sag downward</text></svg>"},
+      "solution": "**Concept.** Fold nomenclature.\n\n**Reasoning.** Limbs dipping toward a central trough with the youngest beds preserved in the core define a syncline.\n\n**Answer.** A syncline, with the youngest beds in the core and limbs dipping toward the axis.",
+      "archetype": "C"
+    },
+    {
+      "id": "mg-orig-106",
+      "subject": "Mining Geology",
+      "topic": "Structure contours",
+      "difficulty": "medium",
+      "type": "NAT",
+      "stem": "Structure contours on a bed have a vertical interval of $10\\ \\text{m}$ and a horizontal spacing of $50\\ \\text{m}$ on the map (figure). Compute the dip (degrees, two decimals).",
+      "options": [],
+      "answer": 11.31,
+      "tolerance": 0.1,
+      "figure": {"kind": "svg", "caption": "Structure contours", "markup": "<svg viewBox='0 0 220 150' xmlns='http://www.w3.org/2000/svg'><g stroke='#2563eb'><line x1='40' y1='30' x2='40' y2='120'/><line x1='90' y1='30' x2='90' y2='120'/><line x1='140' y1='30' x2='140' y2='120'/><line x1='190' y1='30' x2='190' y2='120'/></g><text x='28' y='140' font-size='8'>VI=10 m, spacing 50 m</text></svg>"},
+      "solution": "**Concept.** $\\text{dip}=\\tan^{-1}\\!\\left(\\dfrac{\\text{vertical interval}}{\\text{horizontal spacing}}\\right)$.\n\n**Working.**\n$$\\delta=\\tan^{-1}\\!\\left(\\frac{10}{50}\\right)=\\tan^{-1}(0.2)=11.31^\\circ$$\n\n**Answer.** $11.31^\\circ$.",
+      "archetype": "C"
+    },
+    {
+      "id": "mg-orig-107",
+      "subject": "Mining Geology",
+      "topic": "Faults",
+      "difficulty": "easy",
+      "type": "MCQ",
+      "stem": "The structure shown has a central block dropped down between two outward-dipping normal faults (figure). It is:",
+      "options": [
+        "a graben, a block down-dropped between two normal faults",
+        "a horst, an up-thrown central block",
+        "a thrust sheet",
+        "a syncline"
+      ],
+      "answer": 0,
+      "figure": {"kind": "svg", "caption": "Down-dropped block", "markup": "<svg viewBox='0 0 220 150' xmlns='http://www.w3.org/2000/svg'><rect x='20' y='50' width='50' height='15' fill='#a16207'/><rect x='90' y='90' width='40' height='15' fill='#a16207'/><rect x='150' y='50' width='50' height='15' fill='#a16207'/><g stroke='#dc2626' stroke-dasharray='4 3'><line x1='75' y1='40' x2='90' y2='120'/><line x1='145' y1='40' x2='130' y2='120'/></g><text x='38' y='140' font-size='8'>central block down-dropped</text></svg>"},
+      "solution": "**Concept.** Extensional fault blocks.\n\n**Reasoning.** A central block lowered between two normal faults dipping toward each other is a graben; the opposite (up-thrown) block is a horst.\n\n**Answer.** A graben, a block down-dropped between two normal faults.",
+      "archetype": "C"
+    },
+    {
+      "id": "mg-orig-108",
+      "subject": "Mining Geology",
+      "topic": "Outcrop geometry",
+      "difficulty": "easy",
+      "type": "NAT",
+      "stem": "A bed outcrops with a map width of $100\\ \\text{m}$ (perpendicular to strike) on flat ground and dips at $30^\\circ$ (figure). Compute the true thickness of the bed (m).",
+      "options": [],
+      "answer": 50,
+      "tolerance": 0.5,
+      "figure": {"kind": "svg", "caption": "Outcrop width to thickness", "markup": "<svg viewBox='0 0 220 150' xmlns='http://www.w3.org/2000/svg'><polygon points='40,110 140,110 100,50' fill='#a16207' stroke='#475569'/><line x1='40' y1='122' x2='140' y2='122' stroke='#2563eb'/><text x='52' y='138' font-size='8'>map width 100, dip 30 deg</text></svg>"},
+      "solution": "**Concept.** On flat ground $t=w\\sin\\delta$.\n\n**Working.**\n$$t=100\\sin30^\\circ=100\\times0.5=50\\ \\text{m}$$\n\n**Answer.** $50$ m.",
+      "archetype": "C"
+    }
+  ]
+}

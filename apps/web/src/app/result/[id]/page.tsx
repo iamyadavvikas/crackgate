@@ -2,8 +2,22 @@ import { auth } from "@/lib/auth";
 import { db } from "@/lib/db";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import { MOCKS } from "@/data/mocks";
+import { ResultReview } from "@/components/result-review";
 
 export const dynamic = "force-dynamic";
+
+type Answer = number | number[] | string | null | undefined;
+
+/** Re-load the source question bank for an attempt so we can show the answer
+ *  key. Mirrors the loader in /api/attempts (refId → mock id). */
+function loadBank(kind: string, refId: string): unknown[] | null {
+  if (kind === "mock") {
+    const m = MOCKS.find((x) => x.id === refId);
+    return m ? (m.questions as unknown as unknown[]) : null;
+  }
+  return null;
+}
 
 export default async function ResultPage(props: { params: Promise<{ id: string }> }) {
   const { id } = await props.params;
@@ -15,6 +29,8 @@ export default async function ResultPage(props: { params: Promise<{ id: string }
 
   const pct = att.total ? Math.round((att.score / att.total) * 100) : 0;
   const breakdown = (att.breakdown as Record<string, { scored: number; total: number }>) ?? {};
+  const bank = loadBank(att.kind, att.refId);
+  const answers = (att.answersJson as Record<string, Answer>) ?? {};
 
   return (
     <div className="max-w-3xl mx-auto px-5 py-12">
@@ -25,10 +41,10 @@ export default async function ResultPage(props: { params: Promise<{ id: string }
         <div className="text-lg mt-2">{pct}% accuracy</div>
 
         <div className="grid grid-cols-4 gap-3 mt-8">
-          <Cell label="Correct" value={att.correct} color="text-ok" bg="bg-emerald-50" />
-          <Cell label="Wrong" value={att.wrong} color="text-bad" bg="bg-rose-50" />
-          <Cell label="Skipped" value={att.skipped} color="text-muted" bg="bg-slate-50" />
-          <Cell label="Time" value={Math.round(att.durationSec / 60) + "m"} color="text-brand" bg="bg-blue-50" />
+          <Cell label="Correct" value={att.correct} color="text-ok" bg="bg-emerald-50 dark:bg-emerald-500/15" />
+          <Cell label="Wrong" value={att.wrong} color="text-bad" bg="bg-rose-50 dark:bg-rose-500/15" />
+          <Cell label="Skipped" value={att.skipped} color="text-muted" bg="bg-slate-50 dark:bg-slate-700/40" />
+          <Cell label="Time" value={Math.round(att.durationSec / 60) + "m"} color="text-brand" bg="bg-blue-50 dark:bg-blue-500/15" />
         </div>
 
         <div className="mt-8 text-left">
@@ -41,7 +57,7 @@ export default async function ResultPage(props: { params: Promise<{ id: string }
                   <div className="flex justify-between text-sm mb-1">
                     <span>{k}</span><span className="font-semibold">{v.scored} / {v.total}</span>
                   </div>
-                  <div className="h-2 bg-slate-100 rounded-full overflow-hidden">
+                  <div className="h-2 bg-slate-100 dark:bg-slate-700 rounded-full overflow-hidden">
                     <div className="h-full" style={{
                       width: `${Math.max(2, p)}%`,
                       background: p >= 70 ? "var(--ok)" : p >= 40 ? "var(--accent)" : "var(--bad)",
@@ -55,9 +71,11 @@ export default async function ResultPage(props: { params: Promise<{ id: string }
 
         <div className="mt-8 flex justify-center gap-3">
           <Link href="/dashboard" className="btn btn-primary">📊 Dashboard</Link>
-          <Link href={att.kind === "pyq" ? "/pyq" : "/mocks"} className="btn btn-ghost">↻ Try another</Link>
+          <Link href="/mocks" className="btn btn-ghost">↻ Try another</Link>
         </div>
       </div>
+
+      {bank && <ResultReview questions={bank as never} answers={answers} />}
     </div>
   );
 }

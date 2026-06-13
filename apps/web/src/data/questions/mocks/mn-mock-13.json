@@ -1,0 +1,1122 @@
+{
+  "id": "mn-mock-13",
+  "title": "Mock Test 13 — Mining Geology & Surveying",
+  "tier": "subject",
+  "duration": 180,
+  "pattern": "GATE 2027 (65 Q · 100 marks · 3 hours)",
+  "totalMarks": 100,
+  "sections": [
+    {
+      "name": "General Aptitude",
+      "count": 10,
+      "marks": 15
+    },
+    {
+      "name": "Technical (1-mark)",
+      "count": 25,
+      "marks": 25
+    },
+    {
+      "name": "Technical (2-mark)",
+      "count": 30,
+      "marks": 60
+    }
+  ],
+  "negativeMarking": {
+    "mcq1": -0.3333333333333333,
+    "mcq2": -0.6666666666666666,
+    "nat": 0,
+    "msq": 0
+  },
+  "seed": 4108837638,
+  "locked": true,
+  "questions": [
+    {
+      "id": 1,
+      "subject": "General Aptitude",
+      "topic": "Quantitative Aptitude — HCF and LCM",
+      "section": "General Aptitude",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The largest number that divides $70$ and $125$, leaving remainders $5$ and $8$ respectively, is _____ .",
+      "answer": 13,
+      "tolerance": 0.01,
+      "solution": "**Concept.** Subtract the remainders, then take the HCF.\n\n**Working.** $70-5=65$, $125-8=117$; HCF$(65,117)=13$.\n\n**Answer.** $13$."
+    },
+    {
+      "id": 2,
+      "subject": "General Aptitude",
+      "topic": "Analytical Aptitude — Coding-Decoding",
+      "section": "General Aptitude",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "If CAT is coded as DBU, then DOG is coded as",
+      "options": [
+        "EPH",
+        "CPF",
+        "EPG",
+        "DPH"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Each letter shifts forward by one position.\n\n**Working.** D→E, O→P, G→H gives EPH.\n\n**Answer.** EPH."
+    },
+    {
+      "id": 3,
+      "subject": "General Aptitude",
+      "topic": "Verbal Aptitude — Grammar",
+      "section": "General Aptitude",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Identify the grammatically correct sentence (free of a dangling modifier).",
+      "options": [
+        "Walking through the tunnel, the engineer was protected by the helmet from falling debris.",
+        "Walking through the tunnel, the helmet protected the engineer from falling debris.",
+        "The helmet, walking through the tunnel, protected the engineer.",
+        "Walking through the tunnel, falling debris was stopped by the helmet."
+      ],
+      "answer": 0,
+      "solution": "**Concept.** The introductory '-ing' phrase must modify the subject that immediately follows it.\n\n**Working.** Only the engineer can 'walk through the tunnel'; the helmet and the debris cannot. Hence the subject after the comma must be 'the engineer'.\n\n**Answer.** 'Walking through the tunnel, the engineer was protected by the helmet ...'."
+    },
+    {
+      "id": 4,
+      "subject": "General Aptitude",
+      "topic": "Spatial Aptitude — Figure Rotation",
+      "section": "General Aptitude",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The lowercase letter shown, rotated $180^\\circ$ in the plane, looks like the letter",
+      "options": [
+        "q",
+        "d",
+        "p",
+        "b"
+      ],
+      "answer": 0,
+      "figure": {
+        "kind": "svg",
+        "caption": "The lowercase letter b.",
+        "markup": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><text x='35' y='88' font-size='80' fill='#334155'>b</text></svg>"
+      },
+      "solution": "**Concept.** A $180^\\circ$ rotation flips both top-bottom and left-right.\n\n**Working.** 'b' rotated $180^\\circ$ becomes 'q'.\n\n**Answer.** q."
+    },
+    {
+      "id": 5,
+      "subject": "General Aptitude",
+      "topic": "Analytical Aptitude — Data Sufficiency",
+      "section": "General Aptitude",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "hard",
+      "stem": "To find a man's age, consider: (I) He is $5$ years older than his brother. (II) His brother is $20$ years old. Which is sufficient?",
+      "options": [
+        "Both I and II together",
+        "I alone",
+        "II alone",
+        "Neither I nor II"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Identify the minimal information that fixes a unique value.\n\n**Working.** I gives a relation, II gives the brother's age; together the man is $25$. Neither alone suffices.\n\n**Answer.** Both I and II together."
+    },
+    {
+      "id": 6,
+      "subject": "General Aptitude",
+      "topic": "Quantitative Aptitude — Mensuration",
+      "section": "General Aptitude",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "The volume of a cube of side $4$ is",
+      "options": [
+        "64",
+        "16",
+        "48",
+        "12"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Volume of a cube $=\\text{side}^3$.\n\n**Working.** $4^3=64$.\n\n**Answer.** $64$."
+    },
+    {
+      "id": 7,
+      "subject": "General Aptitude",
+      "topic": "Quantitative Aptitude — Number System",
+      "section": "General Aptitude",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "The remainder when $2^{10}$ is divided by $7$ is _____ .",
+      "answer": 2,
+      "tolerance": 0.01,
+      "solution": "**Concept.** Use $2^3=8\\equiv 1 \\pmod 7$.\n\n**Working.** $2^{10}=(2^3)^3\\cdot 2 \\equiv 1^3\\cdot 2 = 2 \\pmod 7$.\n\n**Answer.** $2$."
+    },
+    {
+      "id": 8,
+      "subject": "General Aptitude",
+      "topic": "Spatial Aptitude — Paper Folding and Punching",
+      "section": "General Aptitude",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "A square sheet is folded three times (into one-eighth) and one hole is punched through all layers. When unfolded, the number of holes is _____ .",
+      "answer": 8,
+      "tolerance": 0.01,
+      "figure": {
+        "kind": "svg",
+        "caption": "A square folded three times into an eighth with one hole punched.",
+        "markup": "<svg viewBox='0 0 100 110' xmlns='http://www.w3.org/2000/svg' role='img'><rect x='30' y='25' width='30' height='60' fill='rgba(244,63,94,0.10)' stroke='#ef4444' stroke-width='2'/><circle cx='45' cy='55' r='6' fill='none' stroke='#ef4444' stroke-width='2'/></svg>"
+      },
+      "solution": "**Concept.** Three folds create $2^3 = 8$ layers.\n\n**Working.** One punch through $8$ layers gives $8$ holes.\n\n**Answer.** $8$."
+    },
+    {
+      "id": 9,
+      "subject": "General Aptitude",
+      "topic": "Spatial Aptitude — Paper Folding and Punching",
+      "section": "General Aptitude",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "A square sheet is folded once in half and three holes are punched through both layers. When unfolded, the total number of holes is _____ .",
+      "answer": 6,
+      "tolerance": 0.01,
+      "figure": {
+        "kind": "svg",
+        "caption": "A square folded in half with three holes punched.",
+        "markup": "<svg viewBox='0 0 160 110' xmlns='http://www.w3.org/2000/svg' role='img'><rect x='20' y='20' width='60' height='70' fill='rgba(99,102,241,0.10)' stroke='#6366f1' stroke-width='2'/><line x1='80' y1='20' x2='80' y2='90' stroke='#6366f1' stroke-width='2' stroke-dasharray='4 3'/><circle cx='45' cy='38' r='5' fill='none' stroke='#ef4444' stroke-width='2'/><circle cx='45' cy='55' r='5' fill='none' stroke='#ef4444' stroke-width='2'/><circle cx='45' cy='72' r='5' fill='none' stroke='#ef4444' stroke-width='2'/></svg>"
+      },
+      "solution": "**Concept.** Holes $=$ punches $\\times$ layers.\n\n**Working.** $1$ fold gives $2$ layers; $3$ punches make $3\\times 2 = 6$ holes.\n\n**Answer.** $6$."
+    },
+    {
+      "id": 10,
+      "subject": "General Aptitude",
+      "topic": "Quantitative Aptitude — Data Interpretation",
+      "section": "General Aptitude",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "From the same sales data ($40, 60, 30, 80$ units over four years), the average annual sales is _____ units.",
+      "answer": 52.5,
+      "tolerance": 0.01,
+      "figure": {
+        "kind": "svg",
+        "caption": "Bar chart of annual sales for 2018-2021: 40, 60, 30, 80 units.",
+        "markup": "<svg viewBox='0 0 240 180' xmlns='http://www.w3.org/2000/svg' role='img'><line x1='30' y1='160' x2='220' y2='160' stroke='#94a3b8' stroke-width='1'/><rect x='40' y='100' width='28' height='60' fill='#6366f1'/><rect x='80' y='70' width='28' height='90' fill='#6366f1'/><rect x='120' y='115' width='28' height='45' fill='#6366f1'/><rect x='160' y='40' width='28' height='120' fill='#6366f1'/><line x1='30' y1='82.5' x2='220' y2='82.5' stroke='#ef4444' stroke-width='1.5' stroke-dasharray='5 3'/><text x='150' y='78' font-size='10' fill='#ef4444'>average</text></svg>"
+      },
+      "solution": "**Concept.** Average = total / number of years.\n\n**Working.** $\\dfrac{40+60+30+80}{4}=\\dfrac{210}{4}=52.5$.\n\n**Answer.** $52.5$."
+    },
+    {
+      "id": 11,
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Slope to horizontal distance",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A total station measures a slope distance of 100.0 m at a vertical angle of 30°. The horizontal distance, in m, is ____ (one decimal).",
+      "answer": 86.6,
+      "tolerance": 0.1,
+      "solution": "**Concept.** Horizontal distance $=$ slope distance $\\times\\cos(\\text{vertical angle})$.\n\n**Working.**\n$$H=100.0\\cos30^{\\circ}=100.0\\times0.8660=86.6\\ \\text{m}$$\n\n**Answer.** 86.6 m."
+    },
+    {
+      "id": 12,
+      "subject": "Mining Geology",
+      "topic": "Folds",
+      "section": "Technical (1-mark)",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "A fold in rock strata is",
+      "options": [
+        "a fracture with displacement",
+        "a bend or flexure produced mainly by compressive forces",
+        "a buried erosion surface",
+        "an igneous intrusion"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Folds record ductile deformation.\n\n**Reasoning.** Compressive (and sometimes shear) stresses buckle layered rocks into folds; the geometry (limbs, hinge, axial plane) describes their form.\n\n**Answer.** A bend produced by compression."
+    },
+    {
+      "id": 13,
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Levelling — reduced level",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "In the levelling setup shown, the reduced level of A is 100.000 m, the back sight on A is 1.500 m and the fore sight on B is 2.300 m. The reduced level of B, in m, is _____ (three decimals).",
+      "answer": 99.2,
+      "tolerance": 0.01,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox='0 0 260 160' xmlns='http://www.w3.org/2000/svg'><line x1='10' y1='140' x2='250' y2='140' stroke='#475569'/><line x1='130' y1='70' x2='130' y2='90' stroke='#1f2937' stroke-width='2'/><circle cx='130' cy='68' r='5' fill='#475569'/><text x='116' y='60' font-size='9'>level</text><line x1='40' y1='90' x2='40' y2='140' stroke='#dc2626' stroke-width='2'/><text x='30' y='84' font-size='9' fill='#dc2626'>A</text><text x='44' y='112' font-size='9'>BS 1.5</text><line x1='220' y1='80' x2='220' y2='140' stroke='#2563eb' stroke-width='2'/><text x='212' y='74' font-size='9' fill='#2563eb'>B</text><text x='176' y='112' font-size='9'>FS 2.3</text><line x1='40' y1='90' x2='220' y2='80' stroke='#94a3b8' stroke-dasharray='3 3'/></svg>",
+        "caption": "Differential levelling A to B"
+      },
+      "solution": "**Concept.** $RL_B=RL_A+BS-FS$.\n\n**Working.**\n$$RL_B=100.000+1.500-2.300=99.200\\ \\text{m}$$\n\n**Answer.** $99.200$ m."
+    },
+    {
+      "id": 14,
+      "subject": "Mining Geology",
+      "topic": "Unconformities",
+      "section": "Technical (1-mark)",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "In the section shown, tilted older strata are truncated by an erosion surface (dashed) and overlain by near-horizontal younger beds. This relationship is an example of an",
+      "options": [
+        "disconformity",
+        "angular unconformity",
+        "nonconformity",
+        "paraconformity"
+      ],
+      "answer": 1,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox='0 0 240 170' xmlns='http://www.w3.org/2000/svg'><g stroke='#b45309' stroke-width='3'><line x1='20' y1='150' x2='220' y2='110'/><line x1='20' y1='135' x2='220' y2='95'/><line x1='20' y1='120' x2='220' y2='80'/></g><line x1='20' y1='75' x2='220' y2='65' stroke='#1f2937' stroke-width='2' stroke-dasharray='5 3'/><g stroke='#16a34a' stroke-width='3'><line x1='20' y1='50' x2='220' y2='45'/><line x1='20' y1='35' x2='220' y2='30'/></g><text x='70' y='62' font-size='9'>erosion surface</text></svg>",
+        "caption": "Tilted beds truncated below sub-horizontal beds"
+      },
+      "solution": "**Concept.** An angular unconformity shows a clear angular discordance across the break.\n\n**Reasoning.** The older beds were tilted and eroded before the younger, gently dipping beds were deposited, so the bedding above and below the surface meet at an angle — the defining feature of an angular unconformity.\n\n**Answer.** Angular unconformity."
+    },
+    {
+      "id": 15,
+      "subject": "Mining Geology",
+      "topic": "Specific gravity",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A mineral specimen of mass 50 g displaces 20 cm³ of water. Its specific gravity is ____ (one decimal).",
+      "answer": 2.5,
+      "tolerance": 0.05,
+      "solution": "**Concept.** $SG=\\dfrac{\\text{mass}}{\\text{mass of equal volume of water}}=\\dfrac{m}{V\\rho_w}$.\n\n**Working.**\n$$SG=\\frac{50\\ \\text{g}}{20\\ \\text{cm}^3\\times1\\ \\text{g/cm}^3}=2.5$$\n\n**Answer.** 2.5."
+    },
+    {
+      "id": 16,
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Area by coordinates",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A triangular plot has corner coordinates (0, 0), (40, 0) and (0, 30) m. Its area by the coordinate (cross-product) method, in m², is ____.",
+      "answer": 600,
+      "tolerance": 1,
+      "solution": "**Concept.** $A=\\tfrac12|x_1(y_2-y_3)+x_2(y_3-y_1)+x_3(y_1-y_2)|$.\n\n**Working.**\n$$A=\\tfrac12|0(0-30)+40(30-0)+0(0-0)|=\\tfrac12(1200)=600\\ \\text{m}^2$$\n\n**Answer.** 600 m²."
+    },
+    {
+      "id": 17,
+      "subject": "mine-surveying",
+      "topic": "Levelling",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "Successive staff readings give a backsight of $2.0\\ \\text{m}$ and a foresight of $1.2\\ \\text{m}$ (figure). Compute the rise from the first point to the second (m).",
+      "answer": 0.8,
+      "tolerance": 0.02,
+      "figure": {
+        "kind": "svg",
+        "caption": "Rise between readings",
+        "markup": "<svg viewBox='0 0 220 150' xmlns='http://www.w3.org/2000/svg'><line x1='40' y1='40' x2='180' y2='40' stroke='#475569' stroke-dasharray='3 2'/><line x1='40' y1='40' x2='40' y2='120' stroke='#2563eb'/><line x1='180' y1='40' x2='180' y2='100' stroke='#16a34a'/><text x='24' y='100' font-size='8'>BS 2.0</text><text x='158' y='90' font-size='8'>FS 1.2</text></svg>"
+      },
+      "solution": "**Concept.** Rise $=BS-FS$ (positive means rising ground).\n\n**Working.**\n$$\\text{Rise}=2.0-1.2=0.8\\ \\text{m}$$\n\n**Answer.** $0.8$ m."
+    },
+    {
+      "id": 18,
+      "subject": "mine-surveying",
+      "topic": "Compass surveying",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "The fore bearing of a line is $70^\\circ$ (whole-circle bearing). Compute its back bearing in degrees.",
+      "answer": 250,
+      "tolerance": 0.5,
+      "figure": {
+        "kind": "svg",
+        "caption": "Fore and back bearing",
+        "markup": "<svg viewBox='0 0 180 170' xmlns='http://www.w3.org/2000/svg'><line x1='40' y1='30' x2='40' y2='150' stroke='#cbd5e1'/><line x1='40' y1='90' x2='140' y2='55' stroke='#2563eb' stroke-width='2'/><line x1='40' y1='90' x2='-20' y2='111' stroke='#dc2626' stroke-width='2'/><text x='20' y='25' font-size='8'>N</text><text x='90' y='62' font-size='8'>FB=70 deg</text></svg>"
+      },
+      "solution": "**Concept.** For a whole-circle fore bearing below $180^\\circ$, back bearing $=$ FB $+180^\\circ$.\n\n**Working.**\n$$\\text{BB}=70^\\circ+180^\\circ=250^\\circ$$\n\n**Answer.** $250^\\circ$."
+    },
+    {
+      "id": 19,
+      "subject": "mine-surveying",
+      "topic": "Traversing",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "A traverse of perimeter $1000$ m has a linear closing error of $0.5$ m. Express the relative precision as a decimal fraction (error per unit length).",
+      "answer": 0.0005,
+      "tolerance": 0.00005,
+      "figure": {
+        "kind": "svg",
+        "caption": "Traverse precision",
+        "markup": "<svg viewBox='0 0 220 160' xmlns='http://www.w3.org/2000/svg'><polygon points='30,130 100,30 180,70 140,130' fill='none' stroke='#475569' stroke-width='2'/><text x='25' y='150' font-size='8'>perimeter=1000 m, e=0.5 m</text></svg>"
+      },
+      "solution": "**Concept.** Relative precision $=$ closing error divided by total traverse length.\n\n**Working.**\n$$\\text{precision}=\\frac{e}{P}=\\frac{0.5}{1000}=0.0005\\ \\left(=\\tfrac{1}{2000}\\right)$$\n\n**Answer.** $0.0005$."
+    },
+    {
+      "id": 20,
+      "subject": "Rock Mechanics",
+      "topic": "Engineering Mechanics — Dynamics",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A $10\\,\\text{kg}$ block on a frictionless floor is pushed by a horizontal force of $30\\,\\text{N}$. Its acceleration is _____ m/s$^2$.",
+      "answer": 3,
+      "tolerance": 0.01,
+      "solution": "**Concept.** $a=F/m$ with no friction.\n\n**Working.**\n$$a=\\frac{30}{10}=3.$$\n\n**Answer.** $3\\,\\text{m/s}^2$."
+    },
+    {
+      "id": 21,
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Stadia distance",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "With K = 100, C = 0 and a horizontal staff intercept of 1.20 m, the horizontal distance, in m, is ____.",
+      "answer": 120,
+      "tolerance": 0.1,
+      "solution": "**Concept.** $D=Ks+C$.\n\n**Working.**\n$$D=100\\times1.20=120\\ \\text{m}$$\n\n**Answer.** 120 m."
+    },
+    {
+      "id": 22,
+      "subject": "Rock Mechanics",
+      "topic": "Rock Mass Classification — RMR",
+      "section": "Technical (1-mark)",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A rock mass with RMR $=59$ falls in",
+      "options": [
+        "Class III — fair rock (41-60)",
+        "Class I — very good (81-100)",
+        "Class V — very poor (<21)",
+        "Class II — good (61-80)"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** RMR classes in steps of 20: I (81-100), II (61-80), III (41-60), IV (21-40), V (<21).\n\n**Working.** $59$ lies in 41-60.\n\n**Answer.** Class III — fair rock."
+    },
+    {
+      "id": 23,
+      "subject": "Mine Ventilation",
+      "topic": "Hydraulic Mean Depth",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "For an airway of area $12\\,\\text{m}^2$ and perimeter $14\\,\\text{m}$, the hydraulic mean depth $m=A/P$ is _____ m. Round to two decimals.",
+      "answer": 0.86,
+      "tolerance": 0.02,
+      "solution": "**Concept.** $m=\\dfrac{A}{P}$.\n\n**Working.**\n$$m=\\frac{12}{14}=0.857.$$\n\n**Answer.** $\\approx 0.86\\,\\text{m}$."
+    },
+    {
+      "id": 24,
+      "subject": "Mine Economics, Planning & Systems Engineering",
+      "topic": "Cost Analysis — Variable Cost",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "At a variable cost of $\\textsf{Rs}\\,60$/unit, the total variable cost for $10{,}000$ units is $\\textsf{Rs}$ _____ .",
+      "answer": 600000,
+      "tolerance": 1,
+      "solution": "**Concept.** $TVC=VC\\times\\text{units}$.\n\n**Working.**\n$$60\\times10000=600000.$$\n\n**Answer.** $\\textsf{Rs}\\,6{,}00{,}000$."
+    },
+    {
+      "id": 25,
+      "subject": "Underground Mining",
+      "topic": "Development extraction",
+      "section": "Technical (1-mark)",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Percentage extraction during the development (first working) stage of bord-and-pillar is low because",
+      "options": [
+        "the coal seam is very thin",
+        "most of the coal is left in pillars to support the roof",
+        "the galleries are flooded",
+        "explosives are not permitted"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Pillars carry the overburden load during development.\n\n**Reasoning.** Only the gallery coal is won initially; the bulk stays in standing pillars to keep the roof up, so first-working extraction is typically 25–40%.\n\n**Answer.** Most coal is locked in support pillars."
+    },
+    {
+      "id": 26,
+      "subject": "Engineering Mathematics",
+      "topic": "Linear Algebra",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "For the diagonal matrix shown, find the largest eigenvalue.",
+      "answer": 3,
+      "tolerance": 0.05,
+      "figure": {
+        "kind": "svg",
+        "caption": "Diagonal matrix",
+        "markup": "<svg viewBox='0 0 200 110' xmlns='http://www.w3.org/2000/svg'><text x='25' y='52' font-size='16'>[</text><text x='45' y='45' font-size='12'>2   0</text><text x='45' y='70' font-size='12'>0   3</text><text x='98' y='52' font-size='16'>]</text><text x='25' y='100' font-size='9'>eigenvalues of diagonal matrix</text></svg>"
+      },
+      "solution": "**Concept.** The eigenvalues of a diagonal matrix are its diagonal entries.\n\n**Working.**\n$$\\lambda_1=2,\\quad\\lambda_2=3\\Rightarrow\\lambda_{max}=3$$\n\n**Answer.** $3$."
+    },
+    {
+      "id": 27,
+      "subject": "Mine Environment & Occupational Health",
+      "topic": "Gas layering",
+      "section": "Technical (1-mark)",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "The figure shows a roadway in which a gas has accumulated as a layer against the roof, above the ventilating air stream. The gas most likely responsible is",
+      "options": [
+        "carbon dioxide (CO₂)",
+        "methane (CH₄), which is lighter than air and collects at the roof",
+        "hydrogen sulphide (H₂S)",
+        "radon"
+      ],
+      "answer": 1,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox='0 0 240 140' xmlns='http://www.w3.org/2000/svg'><rect x='20' y='30' width='200' height='80' fill='#e5e7eb' stroke='#475569'/><rect x='20' y='30' width='200' height='18' fill='#fca5a5'/><text x='120' y='44' font-size='10' text-anchor='middle' fill='#991b1b'>gas layer</text><line x1='40' y1='80' x2='200' y2='80' stroke='#2563eb' stroke-width='2' marker-end='url(#afn)'/><defs><marker id='afn' markerWidth='8' markerHeight='8' refX='6' refY='3' orient='auto'><path d='M0 0 L6 3 L0 6 Z' fill='#2563eb'/></marker></defs><text x='110' y='98' font-size='9' fill='#2563eb'>airflow</text></svg>",
+        "caption": "Gas layered at the roof of a roadway"
+      },
+      "solution": "**Concept.** Roof layering indicates a gas lighter than air.\n\n**Reasoning.** Methane has a specific gravity of about 0.55, so it rises and forms layers along the roof where ventilation is weak; CO₂ and H₂S are denser than air and tend to collect near the floor.\n\n**Answer.** Methane (CH₄)."
+    },
+    {
+      "id": 28,
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Contour interval",
+      "section": "Technical (1-mark)",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "The contour interval is the",
+      "options": [
+        "horizontal distance between two adjacent contours",
+        "constant vertical distance (difference in elevation) between successive contours",
+        "scale of the map",
+        "length of the survey line"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Interval is a vertical quantity.\n\n**Reasoning.** It is the fixed elevation difference between consecutive contours (e.g. 1 m, 5 m); smaller intervals give more detail. The horizontal spacing is the 'horizontal equivalent'.\n\n**Answer.** Vertical distance between contours."
+    },
+    {
+      "id": 29,
+      "subject": "Mining Geology",
+      "topic": "Joints",
+      "section": "Technical (1-mark)",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "Joints differ from faults in that joints are fractures",
+      "options": [
+        "along which large displacement has occurred",
+        "along which there is little or no appreciable relative displacement",
+        "filled only with ore",
+        "found only in coal"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Joints are fractures without slip.\n\n**Reasoning.** They form by tension, cooling or unloading; though they show negligible movement, joint sets strongly control rock-mass strength, permeability, blasting and slope stability.\n\n**Answer.** Fractures with negligible displacement."
+    },
+    {
+      "id": 30,
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Changing face",
+      "section": "Technical (1-mark)",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Observing a theodolite angle on both 'face left' and 'face right' and meaning the results",
+      "options": [
+        "doubles the work for no benefit",
+        "eliminates instrumental errors such as line-of-collimation and trunnion-axis errors",
+        "removes magnetic declination",
+        "is required only at night"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Reversing the telescope cancels symmetric errors.\n\n**Reasoning.** Changing face reverses the sign of collimation and trunnion-axis (and horizontal-axis) errors, so their mean is free of these instrumental defects.\n\n**Answer.** Eliminates instrumental errors."
+    },
+    {
+      "id": 31,
+      "subject": "Mine Ventilation",
+      "topic": "Networks — Parallel",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Three airways, each of resistance $9\\,\\text{Ns}^2/\\text{m}^8$, are in parallel. The equivalent resistance is _____ Ns$^2$/m$^8$.",
+      "answer": 1,
+      "tolerance": 0.02,
+      "solution": "**Concept.** For $n$ equal resistances in parallel, $R_{eq}=R/n^2$.\n\n**Working.**\n$$\\frac{9}{3^2}=\\frac{9}{9}=1.$$\n\n**Answer.** $1\\,\\text{Ns}^2/\\text{m}^8$."
+    },
+    {
+      "id": 32,
+      "subject": "Mining Geology",
+      "topic": "Granite",
+      "section": "Technical (1-mark)",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "Granite is a",
+      "options": [
+        "fine-grained basic volcanic rock",
+        "coarse-grained acidic (felsic) plutonic rock composed mainly of quartz, feldspar and mica",
+        "chemical sedimentary rock",
+        "foliated metamorphic rock"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Granite is the type felsic plutonic rock.\n\n**Reasoning.** It crystallises slowly at depth, is rich in silica (quartz + alkali feldspar + mica), light-coloured and coarse-grained; widely used as dimension stone.\n\n**Answer.** Coarse-grained acidic plutonic rock."
+    },
+    {
+      "id": 33,
+      "subject": "Underground Mining",
+      "topic": "Longwall vs bord-pillar",
+      "section": "Technical (1-mark)",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A key advantage of longwall over bord-and-pillar mining is",
+      "options": [
+        "lower capital cost of equipment",
+        "very high percentage extraction (80–90%) with concentrated, high output",
+        "no subsidence at the surface",
+        "no need for ventilation"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Longwall maximises recovery.\n\n**Reasoning.** Because pillars are not left in the panel, recovery reaches 80–90% with high, concentrated production from a single face — at the cost of high capital equipment and planned surface subsidence.\n\n**Answer.** High percentage extraction and concentrated output."
+    },
+    {
+      "id": 34,
+      "subject": "Mining Geology",
+      "topic": "Folds",
+      "section": "Technical (1-mark)",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "The fold shown has limbs dipping away from the crest (figure). It is:",
+      "options": [
+        "an anticline, with the oldest beds in the core and limbs dipping away from the axis",
+        "a syncline, with the youngest beds in the core",
+        "a monocline with a single flexure",
+        "a recumbent fold with a horizontal axial plane"
+      ],
+      "answer": 0,
+      "figure": {
+        "kind": "svg",
+        "caption": "Arched fold",
+        "markup": "<svg viewBox='0 0 220 140' xmlns='http://www.w3.org/2000/svg'><path d='M20 110 Q110 30 200 110' fill='none' stroke='#a16207' stroke-width='3'/><path d='M20 125 Q110 50 200 125' fill='none' stroke='#92400e' stroke-width='3'/><text x='72' y='132' font-size='8'>beds arch upward</text></svg>"
+      },
+      "solution": "**Concept.** Fold nomenclature.\n\n**Reasoning.** Limbs dipping away from a crest, with the oldest strata exposed in the core, define an anticline.\n\n**Answer.** An anticline, with the oldest beds in the core and limbs dipping away from the axis."
+    },
+    {
+      "id": 35,
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Slope to horizontal distance",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A total station measures a slope distance of 100 m to a target at a vertical angle of $30^\\circ$ above the horizontal (see figure). The horizontal distance, in m, is _____ (two decimals).",
+      "answer": 86.6,
+      "tolerance": 0.1,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox='0 0 240 150' xmlns='http://www.w3.org/2000/svg'><line x1='30' y1='120' x2='210' y2='120' stroke='#475569'/><line x1='30' y1='120' x2='190' y2='40' stroke='#2563eb' stroke-width='2'/><text x='92' y='72' font-size='10' fill='#2563eb'>L = 100 m</text><path d='M72 120 A42 42 0 0 0 58 100' fill='none' stroke='#dc2626'/><text x='76' y='113' font-size='10' fill='#dc2626'>30&#176;</text><line x1='190' y1='40' x2='190' y2='120' stroke='#94a3b8' stroke-dasharray='3 3'/></svg>",
+        "caption": "Slope distance and vertical angle"
+      },
+      "solution": "**Concept.** Horizontal distance $H=L\\cos\\theta$.\n\n**Working.**\n$$H=100\\cos30^\\circ=100\\times0.8660=86.60\\ \\text{m}$$\n\n**Answer.** $86.60$ m."
+    },
+    {
+      "id": 36,
+      "subject": "Mine Environment & Occupational Health",
+      "topic": "Spontaneous combustion",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "Spontaneous heating (spontaneous combustion) of coal is initiated by",
+      "options": [
+        "friction of conveyor belts only",
+        "the exothermic low-temperature oxidation of coal, whose heat accumulates when it cannot be dissipated",
+        "lightning strikes underground",
+        "evaporation of mine water"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Coal slowly oxidises and releases heat.\n\n**Reasoning.** Oxygen reacts with exposed coal exothermically; if ventilation supplies oxygen but cannot carry the heat away, the temperature climbs progressively to ignition — spontaneous combustion.\n\n**Answer.** Self-heating from exothermic coal oxidation."
+    },
+    {
+      "id": 37,
+      "subject": "Engineering Mathematics",
+      "topic": "Vector Calculus",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "Using $\\iiint_V dV$, the volume of a sphere of radius $2$ is _____ (round to 2 decimals).",
+      "answer": 33.51,
+      "tolerance": 0.1,
+      "solution": "**Concept.** Volume of a sphere $=\\tfrac{4}{3}\\pi r^{3}$ (the triple integral of $1$ over the ball).\n\n**Working.**\n$$V=\\tfrac{4}{3}\\pi(2)^{3}=\\tfrac{32}{3}\\pi\\approx 33.51$$\n\n**Answer.** $\\approx 33.51$."
+    },
+    {
+      "id": 38,
+      "subject": "Mine Environment & Occupational Health",
+      "topic": "Acid mine drainage",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "Acid mine drainage (AMD) is generated when",
+      "options": [
+        "limestone dissolves in fresh water",
+        "pyrite (FeS₂) in the rock is oxidised in the presence of water and air, producing sulphuric acid and dissolved metals",
+        "methane is drained from a coal seam",
+        "diesel exhaust mixes with mine air"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Sulphide oxidation acidifies mine water.\n\n**Reasoning.** Exposure of pyrite to oxygen and water yields sulphuric acid and ferrous/ferric sulphate, dropping the pH and mobilising heavy metals — the origin of acidic, metal-laden mine discharges.\n\n**Answer.** Oxidation of pyrite by air and water."
+    },
+    {
+      "id": 39,
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Levelling check",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "In a line of levels the sum of all backsights is 3.250 m and the sum of all foresights is 2.100 m. The difference between the last and first reduced levels (last − first), in m, is ____ (two decimals).",
+      "answer": 1.15,
+      "tolerance": 0.005,
+      "solution": "**Concept.** Arithmetic check: $\\sum BS-\\sum FS=RL_{last}-RL_{first}$.\n\n**Working.**\n$$3.250-2.100=1.150\\ \\text{m}$$\n\n**Answer.** +1.15 m (net rise)."
+    },
+    {
+      "id": 40,
+      "subject": "Mine Economics, Planning & Systems Engineering",
+      "topic": "Mine Planning — Tonnage Factor",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "The tonnage factor relates",
+      "options": [
+        "volume of rock to its tonnage (via bulk density)",
+        "grade to recovery",
+        "price to cost",
+        "depth to stripping ratio"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** It is the bulk density (or its reciprocal).\n\n**Working.** Tonnage $=$ volume $\\div$ tonnage factor (or $\\times$ density).\n\n**Answer.** volume of rock to its tonnage."
+    },
+    {
+      "id": 41,
+      "subject": "Mine Environment & Occupational Health",
+      "topic": "Subsidence",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "Mining subsidence is",
+      "options": [
+        "the rise of the surface above a mine",
+        "the downward movement/settlement of the ground surface caused by extraction of the underlying mineral",
+        "the collapse of a haul-truck tyre",
+        "the heating of coal in the goaf"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Removing support lets the overburden settle.\n\n**Reasoning.** As underground voids close (e.g. longwall caving), the strata sag and the surface subsides, forming a subsidence trough that can damage structures, services and drainage.\n\n**Answer.** Surface settlement from underground extraction."
+    },
+    {
+      "id": 42,
+      "subject": "Surface Mining",
+      "topic": "Strip mining",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "Strip mining is most suitable for",
+      "options": [
+        "thick, steeply inclined metalliferous lodes",
+        "flat-lying, tabular near-surface deposits such as coal and lignite",
+        "deep, irregular vein systems",
+        "alluvial placer gold deposits in river beds"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Strip mining removes overburden in long parallel strips and casts it into the adjacent mined-out void.\n\n**Reasoning.** This geometry works only for flat-lying, tabular seams of roughly uniform thickness near the surface — typically coal and lignite.\n\n**Answer.** Flat-lying tabular near-surface deposits (coal/lignite)."
+    },
+    {
+      "id": 43,
+      "subject": "Mine Ventilation",
+      "topic": "Atkinson's Law — Geometry",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "An airway of resistance $1.6\\,\\text{Ns}^2/\\text{m}^8$ has its area doubled (perimeter unchanged). The new resistance is _____ Ns$^2$/m$^8$.",
+      "answer": 0.2,
+      "tolerance": 0.01,
+      "solution": "**Concept.** $R\\propto A^{-3}$.\n\n**Working.**\n$$R_2=\\frac{1.6}{2^3}=\\frac{1.6}{8}=0.2.$$\n\n**Answer.** $0.2\\,\\text{Ns}^2/\\text{m}^8$."
+    },
+    {
+      "id": 44,
+      "subject": "Mining Geology",
+      "topic": "Metamorphic equivalents",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "Which pairing of parent rock → metamorphic product is correct?",
+      "options": [
+        "Sandstone → marble",
+        "Limestone → quartzite",
+        "Shale → slate and pure limestone → marble",
+        "Granite → coal"
+      ],
+      "answer": 2,
+      "solution": "**Concept.** Each protolith yields a typical metamorphic rock.\n\n**Reasoning.** Shale → slate → phyllite → schist; pure limestone → marble; quartz sandstone → quartzite; granite → gneiss. Sandstone does not give marble, nor limestone quartzite.\n\n**Answer.** Shale → slate; limestone → marble."
+    },
+    {
+      "id": 45,
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Closing error",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "In a closed traverse the algebraic sum of latitudes is +0.30 m and the sum of departures is +0.40 m. The linear closing error, in m, is ____ (two decimals).",
+      "answer": 0.5,
+      "tolerance": 0.005,
+      "solution": "**Concept.** Closing error $=\\sqrt{(\\sum L)^2+(\\sum D)^2}$.\n\n**Working.**\n$$e=\\sqrt{0.30^2+0.40^2}=\\sqrt{0.09+0.16}=\\sqrt{0.25}=0.50\\ \\text{m}$$\n\n**Answer.** 0.50 m."
+    },
+    {
+      "id": 46,
+      "subject": "Mining Geology",
+      "topic": "Apparent vs true dip",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "A bed has a true dip of $30^\\circ$. A vertical section is cut in a direction making $30^\\circ$ with the strike. Compute the apparent dip seen in that section (degrees).",
+      "answer": 16.1,
+      "tolerance": 0.3,
+      "figure": {
+        "kind": "svg",
+        "caption": "Apparent dip in an oblique section",
+        "markup": "<svg viewBox='0 0 220 160' xmlns='http://www.w3.org/2000/svg'><polygon points='30,120 150,120 190,80 70,80' fill='#e5e7eb' stroke='#475569'/><line x1='70' y1='80' x2='150' y2='120' stroke='#dc2626' stroke-width='2'/><text x='40' y='108' font-size='8'>true dip=30 deg</text><text x='28' y='150' font-size='8'>section at 30 deg to strike</text></svg>"
+      },
+      "solution": "**Concept.** $\\tan(\\text{apparent dip})=\\tan(\\text{true dip})\\times\\sin\\theta$, where $\\theta$ is the angle between the section and the strike.\n\n**Working.**\n$$\\tan\\alpha=\\tan30^\\circ\\times\\sin30^\\circ=0.5774\\times0.5=0.2887\\Rightarrow\\alpha=16.1^\\circ$$\n\n**Answer.** $\\approx 16.1^\\circ$."
+    },
+    {
+      "id": 47,
+      "subject": "Mining Geology",
+      "topic": "Dip from cross-section",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "Along the dip direction, a marker bed drops $50\\ \\text{m}$ in elevation over a horizontal distance of $100\\ \\text{m}$. Compute the true dip (degrees).",
+      "answer": 26.57,
+      "tolerance": 0.3,
+      "figure": {
+        "kind": "svg",
+        "caption": "Dip from a cross-section",
+        "markup": "<svg viewBox='0 0 220 160' xmlns='http://www.w3.org/2000/svg'><line x1='30' y1='60' x2='180' y2='120' stroke='#2563eb' stroke-width='2'/><line x1='30' y1='60' x2='180' y2='60' stroke='#94a3b8' stroke-dasharray='3 2'/><line x1='180' y1='60' x2='180' y2='120' stroke='#94a3b8' stroke-dasharray='3 2'/><text x='80' y='52' font-size='8'>100 m</text><text x='185' y='95' font-size='8'>50 m</text></svg>"
+      },
+      "solution": "**Concept.** $\\text{dip}=\\arctan\\left(\\dfrac{\\text{vertical drop}}{\\text{horizontal distance}}\\right)$.\n\n**Working.**\n$$\\text{dip}=\\arctan\\left(\\frac{50}{100}\\right)=\\arctan(0.5)=26.57^\\circ$$\n\n**Answer.** $\\approx 26.6^\\circ$."
+    },
+    {
+      "id": 48,
+      "subject": "Mine Environment & Occupational Health",
+      "topic": "Spontaneous combustion",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "Spontaneous-combustion risk is generally greatest in",
+      "options": [
+        "thin anthracite seams with strong ventilation",
+        "thick, low-rank, high-sulphur seams worked by caving methods that leave loose coal in the goaf",
+        "fully stowed workings with no loose coal",
+        "metalliferous mines without any coal"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Loose reactive coal plus oxygen leakage drives heating.\n\n**Reasoning.** Thick low-rank, pyritic seams mined by caving leave broken coal in the goaf where slow air leakage feeds oxidation — the classic high-risk setting; stowing or high extraction reduces the loose coal and the risk.\n\n**Answer.** Thick low-rank high-sulphur caved seams."
+    },
+    {
+      "id": 49,
+      "subject": "Surface Mining",
+      "topic": "Truck-shovel matching",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "For a fixed shovel, replacing the truck fleet with fewer but larger-payload trucks generally",
+      "options": [
+        "reduces the number of trucks but lengthens each loading time (more passes)",
+        "eliminates the need for a shovel",
+        "reduces the bucket fill factor to zero",
+        "always reduces total system cost regardless of haul distance"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Truck and shovel must be size-matched.\n\n**Reasoning.** Bigger trucks need fewer units for the same tonnage, but each takes more dipper passes to fill, increasing loading time and possibly shovel waiting. An ideal match uses 3–5 passes per truck.\n\n**Answer.** Fewer trucks but longer loading per truck."
+    },
+    {
+      "id": 50,
+      "subject": "Mining Geology",
+      "topic": "Chemical/organic sediments",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "Limestone, rock salt and coal are examples of",
+      "options": [
+        "clastic rocks",
+        "chemically or organically formed (non-clastic) sedimentary rocks",
+        "plutonic rocks",
+        "regional metamorphic rocks"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Non-clastic sediments form by chemical or biological processes.\n\n**Reasoning.** Limestone precipitates/accumulates as carbonate, rock salt by evaporation of brine, and coal from accumulated plant matter — all without mechanical transport of clasts.\n\n**Answer.** Chemical/organic sedimentary rocks."
+    },
+    {
+      "id": 51,
+      "subject": "Rock Mechanics",
+      "topic": "Rock Properties — Porosity",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "A rock sample of total volume $0.5\\,\\text{m}^3$ contains $0.1\\,\\text{m}^3$ of voids. Its porosity is _____ %.",
+      "answer": 20,
+      "tolerance": 0.01,
+      "solution": "**Concept.** Porosity $n=\\dfrac{V_v}{V}$.\n\n**Working.**\n$$n=\\frac{0.1}{0.5}=0.20=20\\%.$$\n\n**Answer.** $20\\%$."
+    },
+    {
+      "id": 52,
+      "subject": "Mining Geology",
+      "topic": "Dip from cross-section",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "A planar bed drops 50 m vertically over a horizontal distance of 100 m measured perpendicular to strike (see figure). The true dip of the bed, in degrees, is _____ (two decimals).",
+      "answer": 26.57,
+      "tolerance": 0.1,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox='0 0 240 160' xmlns='http://www.w3.org/2000/svg'><line x1='20' y1='40' x2='200' y2='130' stroke='#b45309' stroke-width='3'/><line x1='20' y1='40' x2='20' y2='130' stroke='#94a3b8' stroke-dasharray='3 3'/><line x1='20' y1='130' x2='200' y2='130' stroke='#94a3b8' stroke-dasharray='3 3'/><text x='80' y='148' font-size='10'>horizontal 100 m</text><text x='24' y='90' font-size='10' fill='#dc2626'>drop 50 m</text></svg>",
+        "caption": "Vertical drop over horizontal run"
+      },
+      "solution": "**Concept.** $\\tan(\\text{dip})=\\dfrac{\\text{vertical drop}}{\\text{horizontal distance}}$.\n\n**Working.**\n$$\\text{dip}=\\arctan\\!\\left(\\frac{50}{100}\\right)=\\arctan(0.5)=26.57^\\circ$$\n\n**Answer.** $26.57^\\circ$."
+    },
+    {
+      "id": 53,
+      "subject": "Drilling & Blasting",
+      "topic": "Bench geometry",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "A bench blasthole has burden $B=3\\ \\text{m}$, spacing $S=4\\ \\text{m}$ and bench height $H=10\\ \\text{m}$ (figure). Compute the rock volume broken per hole ($\\mathrm{m^3}$).",
+      "answer": 120,
+      "tolerance": 1,
+      "figure": {
+        "kind": "bench",
+        "benchHeight": 10,
+        "burden": 3,
+        "spacing": 4,
+        "holes": 5
+      },
+      "solution": "**Concept.** Volume per hole $=B\\times S\\times H$.\n\n**Working.**\n$$V=3\\times4\\times10=120\\ \\mathrm{m^3}$$\n\n**Answer.** $120\\ \\mathrm{m^3}$."
+    },
+    {
+      "id": 54,
+      "subject": "Mine Economics, Planning & Systems Engineering",
+      "topic": "Systems Engineering — System Reliability",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "Two parallel units (each $0.9$) are in series with a single unit of reliability $0.8$. The overall reliability is _____ . Round to three decimals.",
+      "answer": 0.792,
+      "tolerance": 0.005,
+      "solution": "**Concept.** Combine the parallel block, then the series unit.\n\n**Working.**\n$$R_{\\parallel}=1-(0.1)(0.1)=0.99,\\qquad R=0.99\\times0.8=0.792.$$\n\n**Answer.** $0.792$."
+    },
+    {
+      "id": 55,
+      "subject": "Mine Economics, Planning & Systems Engineering",
+      "topic": "Investment Analysis — Profitability Index",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "The profitability index of a project is defined as",
+      "options": [
+        "present worth of future cash flows divided by the initial investment",
+        "annual profit divided by salvage value",
+        "fixed cost divided by contribution",
+        "IRR divided by MARR"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** PI relates value created to capital spent.\n\n**Working.** $\\text{PI}=\\dfrac{\\text{PW of future flows}}{\\text{initial investment}}$.\n\n**Answer.** present worth of future cash flows divided by the initial investment."
+    },
+    {
+      "id": 56,
+      "subject": "Mining Geology",
+      "topic": "Fracture",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "The smooth, curved 'conchoidal' fracture is characteristically shown by",
+      "options": [
+        "mica",
+        "quartz and glass",
+        "galena",
+        "calcite"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Fracture is breakage not controlled by cleavage.\n\n**Reasoning.** Quartz, lacking cleavage, breaks along curved shell-like (conchoidal) surfaces, as does volcanic glass; mica, galena and calcite instead show well-developed cleavage.\n\n**Answer.** Quartz and glass."
+    },
+    {
+      "id": 57,
+      "subject": "Mine Ventilation",
+      "topic": "Regulators",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "A regulator (an adjustable door opening) in a ventilation split is used to",
+      "options": [
+        "add resistance and so reduce/control the airflow in that split",
+        "increase the airflow without a fan",
+        "measure methane",
+        "support the roof"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** A regulator restricts a split.\n\n**Working.** Added resistance lowers and balances the flow.\n\n**Answer.** add resistance to reduce/control the airflow."
+    },
+    {
+      "id": 58,
+      "subject": "Underground Mining",
+      "topic": "Pillar strength",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "Using the Obert-Duvall formula $S_p=S_1\\left(0.778+0.222\\frac{W}{H}\\right)$ with $S_1=30\\ \\text{MPa}$, $W=4\\ \\text{m}$ and $H=2\\ \\text{m}$ (figure), compute the pillar strength (MPa, two decimals).",
+      "answer": 36.66,
+      "tolerance": 0.1,
+      "figure": {
+        "kind": "svg",
+        "caption": "Pillar width and height",
+        "markup": "<svg viewBox='0 0 200 170' xmlns='http://www.w3.org/2000/svg'><rect x='60' y='50' width='80' height='60' fill='#78716c' stroke='#475569'/><text x='92' y='130' font-size='8'>W=4</text><text x='18' y='85' font-size='8'>H=2</text></svg>"
+      },
+      "solution": "**Concept.** Obert-Duvall pillar strength.\n\n**Working.**\n$$S_p=30\\left(0.778+0.222\\times\\frac{4}{2}\\right)=30(0.778+0.444)=30\\times1.222=36.66\\ \\text{MPa}$$\n\n**Answer.** $36.66\\ \\text{MPa}$."
+    },
+    {
+      "id": 59,
+      "subject": "Underground Mining",
+      "topic": "Shearer cutting time",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "A shearer traverses a 200 m face at a haulage (cutting) speed of 6 m/min. The time for one full cut, in minutes, is ____ (two decimals).",
+      "answer": 33.33,
+      "tolerance": 0.1,
+      "solution": "**Concept.** Time $=\\dfrac{\\text{face length}}{\\text{cutting speed}}$.\n\n**Working.**\n$$t=\\frac{200}{6}=33.33\\ \\text{min}$$\n\n**Answer.** 33.33 min."
+    },
+    {
+      "id": 60,
+      "subject": "Mine Economics & Planning",
+      "topic": "PERT",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "For the same activity ($t_o=2$, $t_m=5$, $t_p=8$ weeks), compute the variance of the activity duration (weeks²).",
+      "answer": 1,
+      "tolerance": 0.05,
+      "figure": {
+        "kind": "svg",
+        "caption": "PERT activity",
+        "markup": "<svg viewBox='0 0 260 110' xmlns='http://www.w3.org/2000/svg'><circle cx='40' cy='55' r='14' fill='#e0f2fe' stroke='#475569'/><circle cx='220' cy='55' r='14' fill='#e0f2fe' stroke='#475569'/><line x1='54' y1='55' x2='204' y2='55' stroke='#475569' stroke-width='2' marker-end='url(#pe)'/><defs><marker id='pe' markerWidth='8' markerHeight='8' refX='6' refY='3' orient='auto'><path d='M0 0 L6 3 L0 6 Z' fill='#475569'/></marker></defs><text x='130' y='42' font-size='9' text-anchor='middle'>to=2, tm=5, tp=8</text></svg>"
+      },
+      "solution": "**Concept.** PERT activity variance is $\\sigma^2 = \\left(\\dfrac{t_p - t_o}{6}\\right)^2$.\n\n**Working.**\n$$\\sigma^2 = \\left(\\frac{8-2}{6}\\right)^2 = (1)^2 = 1$$\n\n**Answer.** Variance $= \\mathbf{1}$ week²."
+    },
+    {
+      "id": 61,
+      "subject": "Mine Economics, Planning & Systems Engineering",
+      "topic": "Systems Engineering — Time in System",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "With $\\lambda=6$/hr and $\\mu=10$/hr, the average time spent in the system $W_s$ is _____ hours.",
+      "answer": 0.25,
+      "tolerance": 0.01,
+      "solution": "**Concept.** $W_s=\\dfrac{1}{\\mu-\\lambda}$.\n\n**Working.**\n$$W_s=\\frac{1}{10-6}=\\frac{1}{4}=0.25.$$\n\n**Answer.** $0.25$ hour."
+    },
+    {
+      "id": 62,
+      "subject": "Rock Mechanics",
+      "topic": "Stress and Strain — Maximum Shear",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "For $\\sigma_x=50$, $\\sigma_y=10$, $\\tau_{xy}=15\\,\\text{MPa}$, the maximum in-plane shear stress is _____ MPa.",
+      "answer": 25,
+      "tolerance": 0.01,
+      "solution": "**Concept.** $\\tau_{max}=R$ (radius of the Mohr circle).\n\n**Working.**\n$$\\tau_{max}=25.$$\n\n**Answer.** $25\\,\\text{MPa}$."
+    },
+    {
+      "id": 63,
+      "subject": "Surface Mining",
+      "topic": "BWE output",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "A bucket wheel excavator has 12 buckets on the wheel, which rotates at 4 rev/min. The number of bucket discharges per minute is ____.",
+      "answer": 48,
+      "tolerance": 0.1,
+      "solution": "**Concept.** Discharges/min $=$ buckets on wheel $\\times$ wheel speed (rev/min).\n\n**Working.**\n$$d=12\\times4=48\\ \\text{discharges/min}$$\n\n**Answer.** 48."
+    },
+    {
+      "id": 64,
+      "subject": "Drilling & Blasting",
+      "topic": "Relative weight strength",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "Explosive A has a weight strength of 1000 and explosive B has 900 (same units). The relative weight strength of B with respect to A, in %, is ____.",
+      "answer": 90,
+      "tolerance": 0.5,
+      "solution": "**Concept.** Relative weight strength $=\\dfrac{\\text{strength of B}}{\\text{strength of A}}\\times100$.\n\n**Working.**\n$$RWS=\\frac{900}{1000}\\times100=90\\%$$\n\n**Answer.** 90%."
+    },
+    {
+      "id": 65,
+      "subject": "Underground Mining",
+      "topic": "Room and pillar (metal)",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "Room-and-pillar mining of a metalliferous deposit is most appropriate for",
+      "options": [
+        "near-vertical narrow veins",
+        "flat-lying or gently dipping tabular deposits at moderate depth, with pillars left for roof support",
+        "deep, massive, low-grade orebodies",
+        "soft, water-bearing placer ground"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Room-and-pillar suits bedded, low-dip deposits.\n\n**Reasoning.** Rooms are mined leaving regular pillars to hold the roof; the geometry works for flat/gently dipping tabular orebodies (e.g. limestone, salt, some base metals) where depth/stress allow economic pillar sizes.\n\n**Answer.** Flat-lying tabular deposits at moderate depth."
+    }
+  ]
+}

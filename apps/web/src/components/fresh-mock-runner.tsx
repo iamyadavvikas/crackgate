@@ -3,6 +3,8 @@
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
+import { MathText } from "@/components/math-text";
+import { QuestionFigure, type QuestionFigure as Figure } from "@/components/question-figure";
 
 type Q = {
   id: string; subject: string; topic: string;
@@ -13,6 +15,7 @@ type Q = {
   answer: number | number[];
   tolerance?: number;
   solution: string;
+  figure?: Figure;
   marks: 1 | 2;
   section: string;
 };
@@ -171,7 +174,8 @@ export function FreshMockRunner({ initialSeed }: { initialSeed?: number }) {
                 ok === false && "border-bad",
               )}>
                 <div className="text-xs text-muted">Q{i + 1} · {q.section} · {q.marks}m · {q.subject} · {q.topic} · <span className="capitalize">{q.difficulty}</span></div>
-                <p className="text-sm mt-2">{q.stem}</p>
+                <MathText className="text-sm mt-2 leading-relaxed">{q.stem}</MathText>
+                {q.figure && <QuestionFigure figure={q.figure} />}
                 {q.options && (
                   <ul className="mt-2 text-sm space-y-1">
                     {q.options.map((opt, j) => {
@@ -197,7 +201,10 @@ export function FreshMockRunner({ initialSeed }: { initialSeed?: number }) {
                     Your answer: <b>{attempted ? String(a) : "—"}</b> · Correct: <b>{q.answer as number}</b>
                   </p>
                 )}
-                <p className="text-xs text-muted mt-2"><b>Solution:</b> {q.solution}</p>
+                <div className="mt-3 rounded-lg bg-canvas p-3 text-sm">
+                  <p className="font-semibold text-brand text-xs uppercase tracking-wide">Solution</p>
+                  <MathText className="mt-1.5 leading-relaxed cg-solution">{q.solution}</MathText>
+                </div>
               </div>
             );
           })}

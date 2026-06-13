@@ -1,0 +1,1100 @@
+{
+  "id": "mn-mock-15",
+  "title": "Mock Test 15 — Ventilation, Environment & Safety",
+  "tier": "subject",
+  "duration": 180,
+  "pattern": "GATE 2027 (65 Q · 100 marks · 3 hours)",
+  "totalMarks": 100,
+  "sections": [
+    {
+      "name": "General Aptitude",
+      "count": 10,
+      "marks": 15
+    },
+    {
+      "name": "Technical (1-mark)",
+      "count": 25,
+      "marks": 25
+    },
+    {
+      "name": "Technical (2-mark)",
+      "count": 30,
+      "marks": 60
+    }
+  ],
+  "negativeMarking": {
+    "mcq1": -0.3333333333333333,
+    "mcq2": -0.6666666666666666,
+    "nat": 0,
+    "msq": 0
+  },
+  "seed": 4142392876,
+  "locked": true,
+  "questions": [
+    {
+      "id": 1,
+      "subject": "General Aptitude",
+      "topic": "Quantitative Aptitude — Average",
+      "section": "General Aptitude",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The average age of $30$ students is $12$ years. When the teacher's age is included, the average rises to $13$ years. The teacher's age is",
+      "options": [
+        "43 years",
+        "42 years",
+        "31 years",
+        "13 years"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Total age = average times number of people.\n\n**Working.** Students' total $=30\\times 12=360$; with teacher $=31\\times 13=403$. Teacher $=403-360=43$.\n\n**Answer.** $43$ years."
+    },
+    {
+      "id": 2,
+      "subject": "General Aptitude",
+      "topic": "Quantitative Aptitude — Percentage",
+      "section": "General Aptitude",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Expressed as a percentage, $0.25$ equals",
+      "options": [
+        "25%",
+        "2.5%",
+        "0.25%",
+        "250%"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Multiply a decimal by $100$ to convert to a percentage.\n\n**Working.** $0.25\\times 100 = 25\\%$.\n\n**Answer.** $25\\%$."
+    },
+    {
+      "id": 3,
+      "subject": "General Aptitude",
+      "topic": "Analytical Aptitude — Logical Deduction",
+      "section": "General Aptitude",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "All squares are rectangles. A given figure is not a rectangle. Therefore the figure",
+      "options": [
+        "is not a square",
+        "is a square",
+        "may be a square",
+        "is a rectangle"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Contrapositive of 'square → rectangle' is 'not rectangle → not square'.\n\n**Working.** Since it is not a rectangle, it cannot be a square.\n\n**Answer.** is not a square."
+    },
+    {
+      "id": 4,
+      "subject": "General Aptitude",
+      "topic": "Verbal Aptitude — Grammar",
+      "section": "General Aptitude",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Choose the correct pronoun: 'It was ____ who first reported the gas leak.'",
+      "options": [
+        "he",
+        "him",
+        "his",
+        "himself"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** After the linking verb 'was', a subject complement takes the nominative (subject) case.\n\n**Working.** The pronoun renames the subject 'It', so the nominative 'he' is correct (not the objective 'him').\n\n**Answer.** he."
+    },
+    {
+      "id": 5,
+      "subject": "General Aptitude",
+      "topic": "Quantitative Aptitude — Average Speed",
+      "section": "General Aptitude",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "hard",
+      "stem": "A man travels to a town at $40$ km/h and returns along the same road at $60$ km/h. His average speed for the whole journey is _____ km/h.",
+      "answer": 48,
+      "tolerance": 0.01,
+      "solution": "**Concept.** For equal distances, average speed is the harmonic mean.\n\n**Working.**\n$$\\frac{2\\times 40\\times 60}{40+60}=\\frac{4800}{100}=48$$\n\n**Answer.** $48$ km/h."
+    },
+    {
+      "id": 6,
+      "subject": "General Aptitude",
+      "topic": "Quantitative Aptitude — Mensuration",
+      "section": "General Aptitude",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "The area of a triangle with base $10$ and height $6$ is _____ .",
+      "answer": 30,
+      "tolerance": 0.01,
+      "solution": "**Concept.** Area $=\\tfrac{1}{2}\\,\\text{base}\\times\\text{height}$.\n\n**Working.** $\\tfrac{1}{2}\\times 10\\times 6 = 30$.\n\n**Answer.** $30$."
+    },
+    {
+      "id": 7,
+      "subject": "General Aptitude",
+      "topic": "Spatial Aptitude — Figure Series",
+      "section": "General Aptitude",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "The square-dot pattern grows as $1, 4, 9, \\ldots$ (perfect squares). The number of dots in the next figure is _____ .",
+      "answer": 16,
+      "tolerance": 0.01,
+      "figure": {
+        "kind": "svg",
+        "caption": "Square dot arrangements of 1, 4 and 9 dots.",
+        "markup": "<svg viewBox='0 0 240 90' xmlns='http://www.w3.org/2000/svg' role='img'><circle cx='25' cy='45' r='4' fill='#6366f1'/><g fill='#6366f1'><circle cx='80' cy='35' r='4'/><circle cx='95' cy='35' r='4'/><circle cx='80' cy='50' r='4'/><circle cx='95' cy='50' r='4'/></g><g fill='#6366f1'><circle cx='150' cy='25' r='4'/><circle cx='165' cy='25' r='4'/><circle cx='180' cy='25' r='4'/><circle cx='150' cy='40' r='4'/><circle cx='165' cy='40' r='4'/><circle cx='180' cy='40' r='4'/><circle cx='150' cy='55' r='4'/><circle cx='165' cy='55' r='4'/><circle cx='180' cy='55' r='4'/></g><text x='215' y='48' font-size='24' fill='#94a3b8'>?</text></svg>"
+      },
+      "solution": "**Concept.** The terms are consecutive perfect squares $n^2$.\n\n**Working.** $1=1^2$, $4=2^2$, $9=3^2$, so the next is $4^2=16$.\n\n**Answer.** $16$."
+    },
+    {
+      "id": 8,
+      "subject": "General Aptitude",
+      "topic": "Spatial Reasoning",
+      "section": "General Aptitude",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "A square pyramid of unit cubes is built with a $3\\times3$ bottom layer, a $2\\times2$ middle layer and a single top cube (figure). Compute the total number of cubes.",
+      "answer": 14,
+      "tolerance": 0.5,
+      "figure": {
+        "kind": "svg",
+        "caption": "Three-layer cube stack",
+        "markup": "<svg viewBox='0 0 210 160' xmlns='http://www.w3.org/2000/svg'><g fill='#bfdbfe' stroke='#475569'><rect x='40' y='110' width='22' height='22'/><rect x='62' y='110' width='22' height='22'/><rect x='84' y='110' width='22' height='22'/><rect x='51' y='86' width='22' height='22'/><rect x='73' y='86' width='22' height='22'/><rect x='62' y='62' width='22' height='22'/></g><text x='28' y='150' font-size='8'>layers: 3x3, 2x2, 1x1</text></svg>"
+      },
+      "solution": "**Concept.** Sum the cubes in each layer.\n\n**Working.**\n$$N=3^2+2^2+1^2=9+4+1=14$$\n\n**Answer.** $14$."
+    },
+    {
+      "id": 9,
+      "subject": "General Aptitude",
+      "topic": "Analytical Aptitude — Blood Relations",
+      "section": "General Aptitude",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "Pointing to a man, a woman said, 'His mother is the only daughter of my mother.' How is the woman related to the man?",
+      "options": [
+        "Mother",
+        "Sister",
+        "Aunt",
+        "Grandmother"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Resolve the description inside-out.\n\n**Working.** 'The only daughter of my mother' is the woman herself, so 'his mother' is the woman — she is his mother.\n\n**Answer.** Mother."
+    },
+    {
+      "id": 10,
+      "subject": "General Aptitude",
+      "topic": "Quantitative Aptitude — Mixtures",
+      "section": "General Aptitude",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "A $40$-litre mixture contains milk and water in the ratio $3:1$. The volume of water in it is _____ litres.",
+      "answer": 10,
+      "tolerance": 0.01,
+      "solution": "**Concept.** Water fraction $=\\dfrac{1}{3+1}$.\n\n**Working.** $40\\times\\dfrac{1}{4}=10$ litres.\n\n**Answer.** $10$ litres."
+    },
+    {
+      "id": 11,
+      "subject": "Mine Economics, Planning & Systems Engineering",
+      "topic": "Time Value of Money — Continuous Compounding",
+      "section": "Technical (1-mark)",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "For a nominal rate $r$ compounded continuously, the effective annual rate is",
+      "options": [
+        "$e^{r}-1$",
+        "$r/2$",
+        "$(1+r)^2-1$",
+        "$\\ln(1+r)$"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Continuous limit of $(1+r/m)^m$ as $m\\to\\infty$ is $e^r$.\n\n**Working.** Effective rate $=e^r-1$.\n\n**Answer.** $e^{r}-1$."
+    },
+    {
+      "id": 12,
+      "subject": "Mine Ventilation",
+      "topic": "Networks — Parallel",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "If the two parallel branches above carry $10$ and $20\\,\\text{m}^3$/s, the total quantity is _____ m$^3$/s.",
+      "answer": 30,
+      "tolerance": 0.1,
+      "solution": "**Concept.** Parallel quantities add.\n\n**Working.**\n$$10+20=30.$$\n\n**Answer.** $30\\,\\text{m}^3/\\text{s}$."
+    },
+    {
+      "id": 13,
+      "subject": "Mine Environment & Occupational Health",
+      "topic": "Ventilation health standards",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "A district has $40$ workers, each requiring $0.05\\ \\mathrm{m^3/s}$ of fresh air (figure). Compute the minimum air quantity required ($\\mathrm{m^3/s}$).",
+      "answer": 2,
+      "tolerance": 0.05,
+      "figure": {
+        "kind": "svg",
+        "caption": "Per-person air requirement",
+        "markup": "<svg viewBox='0 0 220 120' xmlns='http://www.w3.org/2000/svg'><rect x='30' y='40' width='160' height='40' fill='#bfdbfe' stroke='#475569'/><g fill='#1f2937'><circle cx='60' cy='60' r='4'/><circle cx='90' cy='60' r='4'/><circle cx='120' cy='60' r='4'/><circle cx='150' cy='60' r='4'/></g><text x='30' y='105' font-size='8'>40 men at 0.05 m^3/s each</text></svg>"
+      },
+      "solution": "**Concept.** $Q=\\text{workers}\\times\\text{rate per worker}$.\n\n**Working.**\n$$Q=40\\times0.05=2\\ \\mathrm{m^3/s}$$\n\n**Answer.** $2\\ \\mathrm{m^3/s}$."
+    },
+    {
+      "id": 14,
+      "subject": "Mine Ventilation",
+      "topic": "Ventilation networks",
+      "section": "Technical (1-mark)",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "Kirchhoff's second (pressure) law, applied to the closed mesh shown in a ventilation network, states that:",
+      "options": [
+        "the algebraic sum of pressure drops around any closed mesh is zero",
+        "the sum of quantities entering a junction is always zero",
+        "the resistance of any mesh equals the fan pressure",
+        "all branches in a mesh carry equal quantity"
+      ],
+      "answer": 0,
+      "figure": {
+        "kind": "svg",
+        "caption": "Closed mesh in a network",
+        "markup": "<svg viewBox='0 0 220 150' xmlns='http://www.w3.org/2000/svg'><polygon points='40,75 110,30 180,75 110,120' fill='none' stroke='#475569' stroke-width='2'/><g fill='#1f2937'><circle cx='40' cy='75' r='3'/><circle cx='110' cy='30' r='3'/><circle cx='180' cy='75' r='3'/><circle cx='110' cy='120' r='3'/></g><text x='62' y='48' font-size='8'>mesh</text><text x='38' y='142' font-size='8'>algebraic sum of drops = 0</text></svg>"
+      },
+      "solution": "**Concept.** Kirchhoff's pressure (mesh) law is an energy-conservation statement.\n\n**Reasoning.** Going once around any closed loop returns to the same pressure, so the algebraic sum of the pressure drops (including any fan pressure rises taken as negative) must be zero.\n\n**Answer.** The algebraic sum of pressure drops around any closed mesh is zero."
+    },
+    {
+      "id": 15,
+      "subject": "Mine Ventilation",
+      "topic": "Regulators",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A regulator adding $0.5\\,\\text{Ns}^2/\\text{m}^8$ of resistance to a split carrying $20\\,\\text{m}^3$/s imposes an extra pressure drop of _____ Pa.",
+      "answer": 200,
+      "tolerance": 1,
+      "solution": "**Concept.** Extra drop $=R_{\\text{reg}}\\,Q^2$.\n\n**Working.**\n$$0.5\\times20^2=0.5\\times400=200.$$\n\n**Answer.** $200\\,\\text{Pa}$."
+    },
+    {
+      "id": 16,
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "True bearing",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "The magnetic bearing of a line is 130° and the magnetic declination is 2° East. The true bearing, in degrees, is ____.",
+      "answer": 132,
+      "tolerance": 0.1,
+      "solution": "**Concept.** True bearing $=$ magnetic bearing $+$ easterly declination.\n\n**Working.**\n$$TB=130+2=132^{\\circ}$$\n\n**Answer.** 132°."
+    },
+    {
+      "id": 17,
+      "subject": "Surface Mining",
+      "topic": "Dump footprint",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A dump of 1,250,000 m³ loose volume is built to an average height of 25 m. Its base footprint area, in m², is ____.",
+      "answer": 50000,
+      "tolerance": 10,
+      "solution": "**Concept.** Area $=\\dfrac{\\text{volume}}{\\text{average height}}$.\n\n**Working.**\n$$A=\\frac{1{,}250{,}000}{25}=50{,}000\\ \\text{m}^2$$\n\n**Answer.** 50,000 m²."
+    },
+    {
+      "id": 18,
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "EDM",
+      "section": "Technical (1-mark)",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Electronic distance measurement (EDM) determines distance by",
+      "options": [
+        "counting chain links",
+        "measuring the travel time or phase difference of modulated electromagnetic waves between instrument and reflector",
+        "reading a levelling staff",
+        "observing the magnetic field"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** EDM uses wave propagation.\n\n**Reasoning.** A modulated light/infrared (or microwave) signal travels to a reflector and back; the phase shift or transit time gives the distance very accurately and quickly.\n\n**Answer.** Phase/time of EM waves."
+    },
+    {
+      "id": 19,
+      "subject": "Mine Ventilation",
+      "topic": "Ventilation networks",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Two airways, each of resistance $0.4\\ \\mathrm{Ns^2/m^8}$, are connected in parallel. Compute the equivalent resistance ($\\mathrm{Ns^2/m^8}$).",
+      "answer": 0.1,
+      "tolerance": 0.005,
+      "figure": {
+        "kind": "svg",
+        "caption": "Resistances in parallel",
+        "markup": "<svg viewBox='0 0 240 130' xmlns='http://www.w3.org/2000/svg'><line x1='10' y1='65' x2='50' y2='65' stroke='#475569'/><path d='M50 65 L50 35 L190 35 L190 65' fill='none' stroke='#475569'/><path d='M50 65 L50 95 L190 95 L190 65' fill='none' stroke='#475569'/><rect x='95' y='23' width='40' height='24' fill='#bfdbfe' stroke='#475569'/><rect x='95' y='83' width='40' height='24' fill='#bfdbfe' stroke='#475569'/><line x1='190' y1='65' x2='230' y2='65' stroke='#475569'/><text x='102' y='39' font-size='8'>0.4</text><text x='102' y='99' font-size='8'>0.4</text></svg>"
+      },
+      "solution": "**Concept.** Parallel airways: $\\dfrac{1}{\\sqrt{R_{eq}}}=\\sum\\dfrac{1}{\\sqrt{R_i}}$.\n\n**Working.**\n$$\\frac{1}{\\sqrt{R_{eq}}}=\\frac{2}{\\sqrt{0.4}}\\Rightarrow \\sqrt{R_{eq}}=\\frac{\\sqrt{0.4}}{2}\\Rightarrow R_{eq}=\\frac{0.4}{4}=0.1$$\n\n**Answer.** $0.1\\ \\mathrm{Ns^2/m^8}$."
+    },
+    {
+      "id": 20,
+      "subject": "Mining Geology",
+      "topic": "Exploration sequence",
+      "section": "Technical (1-mark)",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "The usual logical sequence of mineral exploration is",
+      "options": [
+        "mining → reconnaissance → prospecting",
+        "reconnaissance → prospecting → detailed exploration (including drilling) → evaluation",
+        "drilling → reconnaissance → prospecting",
+        "evaluation → reconnaissance → mining"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Exploration narrows from regional to local.\n\n**Reasoning.** Broad reconnaissance identifies favourable areas; prospecting locates targets; detailed exploration (mapping, geophysics, drilling) and sampling delineate and evaluate the deposit before mining.\n\n**Answer.** Reconnaissance → prospecting → detailed exploration → evaluation."
+    },
+    {
+      "id": 21,
+      "subject": "Mine Ventilation",
+      "topic": "Parallel networks",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Two airways, each of resistance $4\\ \\mathrm{Ns^2/m^8}$, are connected in parallel (figure). Compute the equivalent resistance ($\\mathrm{Ns^2/m^8}$).",
+      "answer": 1,
+      "tolerance": 0.02,
+      "figure": {
+        "kind": "svg",
+        "caption": "Resistances in parallel",
+        "markup": "<svg viewBox='0 0 220 140' xmlns='http://www.w3.org/2000/svg'><line x1='20' y1='70' x2='50' y2='70' stroke='#475569'/><path d='M50 70 L50 40 L90 40 L90 70' fill='none' stroke='#475569'/><path d='M50 70 L50 100 L90 100 L90 70' fill='none' stroke='#475569'/><rect x='90' y='28' width='40' height='24' fill='#bfdbfe' stroke='#475569'/><rect x='90' y='88' width='40' height='24' fill='#bfdbfe' stroke='#475569'/><path d='M130 40 L170 40 L170 70' fill='none' stroke='#475569'/><path d='M130 100 L170 100 L170 70' fill='none' stroke='#475569'/><line x1='170' y1='70' x2='200' y2='70' stroke='#475569'/><text x='100' y='44' font-size='8'>R=4</text><text x='100' y='104' font-size='8'>R=4</text></svg>"
+      },
+      "solution": "**Concept.** For parallel airways $\\dfrac{1}{\\sqrt{R}}=\\dfrac{1}{\\sqrt{R_1}}+\\dfrac{1}{\\sqrt{R_2}}$.\n\n**Working.**\n$$\\frac{1}{\\sqrt{R}}=\\frac{1}{\\sqrt4}+\\frac{1}{\\sqrt4}=0.5+0.5=1\\implies R=1$$\n\n**Answer.** $1\\ \\mathrm{Ns^2/m^8}$."
+    },
+    {
+      "id": 22,
+      "subject": "Mine Economics, Planning & Systems Engineering",
+      "topic": "Systems Engineering — Free Float",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "An activity finishes earliest at $\\text{EF}=10$; its successor starts earliest at $\\text{ES}=12$. The free float of the activity is _____ days.",
+      "answer": 2,
+      "tolerance": 0.1,
+      "solution": "**Concept.** Free float $=\\text{ES(successor)}-\\text{EF}$.\n\n**Working.**\n$$12-10=2.$$\n\n**Answer.** $2$ days."
+    },
+    {
+      "id": 23,
+      "subject": "Mine Economics & Planning",
+      "topic": "Mine Planning",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "A reserve of $2.5\\times10^6$ t is mined at an annual production of $500{,}000$ t/yr. Compute the mine life (years).",
+      "answer": 5,
+      "tolerance": 0.05,
+      "figure": {
+        "kind": "svg",
+        "caption": "Reserve and annual output",
+        "markup": "<svg viewBox='0 0 220 140' xmlns='http://www.w3.org/2000/svg'><rect x='40' y='40' width='60' height='80' fill='#94a3b8' stroke='#475569'/><line x1='110' y1='80' x2='180' y2='80' stroke='#2563eb' stroke-width='2' marker-end='url(#ml)'/><defs><marker id='ml' markerWidth='8' markerHeight='8' refX='6' refY='3' orient='auto'><path d='M0 0 L6 3 L0 6 Z' fill='#2563eb'/></marker></defs><text x='35' y='135' font-size='8'>reserve / annual output = life</text></svg>"
+      },
+      "solution": "**Concept.** Mine life $=\\dfrac{\\text{reserve}}{\\text{annual production}}$.\n\n**Working.**\n$$L=\\frac{2.5\\times10^6}{500000}=5\\ \\text{years}$$\n\n**Answer.** $5$ years."
+    },
+    {
+      "id": 24,
+      "subject": "Mine Environment & Occupational Health",
+      "topic": "Graham's ratio",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "An air sample shows 0.05% CO produced against a 2.5% oxygen deficiency. Graham's ratio $\\left(100\\times\\dfrac{\\text{CO}}{\\text{O}_2\\ \\text{deficiency}}\\right)$ is ____ (one decimal).",
+      "answer": 2,
+      "tolerance": 0.05,
+      "solution": "**Concept.** $GR=100\\times\\dfrac{\\text{CO}}{\\Delta\\text{O}_2}$.\n\n**Working.**\n$$GR=100\\times\\frac{0.05}{2.5}=2.0$$\n\n**Answer.** 2.0 (an elevated value suggesting active heating)."
+    },
+    {
+      "id": 25,
+      "subject": "Engineering Mathematics",
+      "topic": "Vector Calculus",
+      "section": "Technical (1-mark)",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Stokes' theorem equates the surface integral of $(\\nabla\\times\\mathbf{F})$ over $S$ to",
+      "options": [
+        "the volume integral of $\\mathbf{F}$",
+        "the line integral of $\\mathbf{F}$ around the boundary of $S$",
+        "the flux of $\\mathbf{F}$ through $S$",
+        "zero always"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** $\\iint_S(\\nabla\\times\\mathbf{F})\\cdot\\hat{n}\\,dS=\\oint_{\\partial S}\\mathbf{F}\\cdot d\\mathbf{r}$.\n\n**Working.** The curl-flux through a surface equals the circulation of $\\mathbf{F}$ around its boundary curve.\n\n**Answer.** The line integral of $\\mathbf{F}$ around the boundary of $S$."
+    },
+    {
+      "id": 26,
+      "subject": "Mine Environment & Occupational Health",
+      "topic": "Illumination",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "A point source of luminous intensity $200\\ \\text{cd}$ illuminates a surface $2\\ \\text{m}$ away, normal to the beam. Compute the illuminance (lux).",
+      "answer": 50,
+      "tolerance": 0.5,
+      "figure": {
+        "kind": "svg",
+        "caption": "Inverse-square illumination",
+        "markup": "<svg viewBox='0 0 220 130' xmlns='http://www.w3.org/2000/svg'><circle cx='40' cy='60' r='14' fill='#fde68a' stroke='#b45309'/><g stroke='#f59e0b'><line x1='54' y1='60' x2='190' y2='30'/><line x1='54' y1='60' x2='190' y2='90'/></g><line x1='110' y1='45' x2='110' y2='78' stroke='#2563eb' stroke-dasharray='3 2'/><text x='80' y='110' font-size='8'>I=200 cd, d=2 m</text></svg>"
+      },
+      "solution": "**Concept.** $E=\\dfrac{I}{d^2}$.\n\n**Working.**\n$$E=\\frac{200}{2^2}=\\frac{200}{4}=50\\ \\text{lux}$$\n\n**Answer.** $50$ lux."
+    },
+    {
+      "id": 27,
+      "subject": "Mine Economics, Planning & Systems Engineering",
+      "topic": "Time Value of Money — Concept",
+      "section": "Technical (1-mark)",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "Converting a future cash amount into its equivalent value today is called",
+      "options": [
+        "discounting",
+        "compounding",
+        "amortizing",
+        "depreciating"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Present worth divides the future sum by $(1+i)^n$.\n\n**Working.** This process of moving money backward in time is discounting.\n\n**Answer.** discounting."
+    },
+    {
+      "id": 28,
+      "subject": "Drilling & Blasting",
+      "topic": "Bench Blast Design",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "For the bench shown with a burden of 3 m, compute the subdrill depth (m) using subdrill = 0.3 × burden.",
+      "answer": 0.9,
+      "tolerance": 0.05,
+      "figure": {
+        "kind": "bench",
+        "benchHeight": 10,
+        "burden": 3,
+        "spacing": 4,
+        "holes": 3
+      },
+      "solution": "**Concept.** Subdrilling below grade is about 0.3 of the burden to ensure a clean floor.\n\n**Working.**\n$$J = 0.3 \\times 3 = 0.9$$\n\n**Answer.** $\\mathbf{0.9}$ m."
+    },
+    {
+      "id": 29,
+      "subject": "Mine Ventilation",
+      "topic": "Fan — Operating Point",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "At the operating point of the previous fan ($Q=10\\,\\text{m}^3$/s, $R=2$), the operating pressure is _____ Pa.",
+      "answer": 200,
+      "tolerance": 1,
+      "solution": "**Concept.** $P=RQ^2$.\n\n**Working.**\n$$P=2\\times10^2=200.$$\n\n**Answer.** $200\\,\\text{Pa}$."
+    },
+    {
+      "id": 30,
+      "subject": "Mine Environment & Occupational Health",
+      "topic": "Reclamation",
+      "section": "Technical (1-mark)",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Reclamation (restoration) of mined-out opencast land typically involves",
+      "options": [
+        "leaving the spoil heaps untouched permanently",
+        "backfilling and regrading, replacing topsoil and revegetating the land for a productive after-use",
+        "flooding the entire region with acid water",
+        "increasing the depth of the pit indefinitely"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Restore land to a stable, usable condition.\n\n**Reasoning.** Spoil is regraded to stable slopes, topsoil is respread and vegetation/agriculture or forestry re-established, returning the disturbed land to beneficial use and controlling erosion.\n\n**Answer.** Regrade, replace topsoil and revegetate."
+    },
+    {
+      "id": 31,
+      "subject": "Mine Environment & Occupational Health",
+      "topic": "Nitrogen oxides",
+      "section": "Technical (1-mark)",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Nitrogen dioxide (NO₂) in underground air originates mainly from",
+      "options": [
+        "coal seam desorption",
+        "diesel engine exhaust and blasting fumes",
+        "water evaporation",
+        "the flame safety lamp"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** NOx is a combustion/blasting product.\n\n**Reasoning.** Diesel equipment and detonation of explosives generate oxides of nitrogen; NO₂ is a brown, highly irritant and toxic gas affecting the lungs, requiring good ventilation of headings.\n\n**Answer.** Diesel exhaust and blasting fumes."
+    },
+    {
+      "id": 32,
+      "subject": "Mine Environment & Occupational Health",
+      "topic": "Firefighting",
+      "section": "Technical (1-mark)",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Direct (active) attack on a mine fire is appropriate when",
+      "options": [
+        "the fire is small, accessible and can be safely reached and extinguished with water/foam/extinguishers",
+        "the fire is large and inaccessible behind goaf",
+        "explosive gas has already accumulated heavily",
+        "the ventilation has totally failed"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Method choice depends on accessibility and gas risk.\n\n**Reasoning.** A small, reachable fire with safe gas conditions is best tackled directly using water, foam or extinguishers; large, gassy or inaccessible fires require indirect methods (sealing/inertisation).\n\n**Answer.** Small, accessible fires."
+    },
+    {
+      "id": 33,
+      "subject": "Rock Mechanics",
+      "topic": "Rock Properties — Brazilian Test",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "In a Brazilian test, a disc of diameter $50\\,\\text{mm}$ and thickness $50\\,\\text{mm}$ fails at $30\\,\\text{kN}$. The indirect tensile strength $\\sigma_t=\\dfrac{2P}{\\pi D L}$ is _____ MPa. Round to two decimals.",
+      "answer": 7.64,
+      "tolerance": 0.1,
+      "figure": {
+        "kind": "svg",
+        "caption": "A Brazilian disc compressed diametrically between two platens.",
+        "markup": "<svg viewBox='0 0 140 140' xmlns='http://www.w3.org/2000/svg' role='img'><circle cx='70' cy='70' r='40' fill='rgba(16,185,129,0.10)' stroke='#10b981' stroke-width='2'/><line x1='70' y1='30' x2='70' y2='110' stroke='#ef4444' stroke-width='1.5' stroke-dasharray='3 2'/><line x1='70' y1='10' x2='70' y2='28' stroke='#334155' stroke-width='3'/><polygon points='70,28 64,16 76,16' fill='#334155'/><line x1='70' y1='130' x2='70' y2='112' stroke='#334155' stroke-width='3'/><polygon points='70,112 64,124 76,124' fill='#334155'/></svg>"
+      },
+      "solution": "**Concept.** Brazilian tensile strength $\\sigma_t=\\dfrac{2P}{\\pi D L}$.\n\n**Working.**\n$$\\sigma_t=\\frac{2(30000)}{\\pi(50)(50)}=\\frac{60000}{7854}=7.64\\,\\text{MPa}.$$\n\n**Answer.** $\\approx 7.64\\,\\text{MPa}$."
+    },
+    {
+      "id": 34,
+      "subject": "Drilling & Blasting",
+      "topic": "Bit life",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "A bit drills 2000 m before replacement. If each hole is 10 m deep, the number of holes drilled per bit is ____.",
+      "answer": 200,
+      "tolerance": 0.5,
+      "solution": "**Concept.** Holes per bit $=\\dfrac{\\text{bit life (m)}}{\\text{hole depth}}$.\n\n**Working.**\n$$N=\\frac{2000}{10}=200$$\n\n**Answer.** 200 holes."
+    },
+    {
+      "id": 35,
+      "subject": "Rock Mechanics",
+      "topic": "Stress and Strain — Deviatoric Stress",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "For $\\sigma_1=60\\,\\text{MPa}$ and $\\sigma_3=20\\,\\text{MPa}$, the deviatoric (differential) stress $\\sigma_1-\\sigma_3$ is _____ MPa.",
+      "answer": 40,
+      "tolerance": 0.01,
+      "solution": "**Concept.** Differential stress $=\\sigma_1-\\sigma_3$.\n\n**Working.**\n$$60-20=40.$$\n\n**Answer.** $40\\,\\text{MPa}$."
+    },
+    {
+      "id": 36,
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Setting out curves",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "Rankine's method of setting out a circular curve uses",
+      "options": [
+        "offsets from the long chord only",
+        "tangential (deflection) angles measured with a theodolite and chord lengths taped on the ground",
+        "levelling staff readings",
+        "GPS only"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Deflection angles locate successive chord points.\n\n**Reasoning.** Each chord subtends a tangential angle $\\delta=\\dfrac{1718.9\\,C}{R}$ minutes; the theodolite is set to cumulative deflection angles while the chord length is taped, fixing points on the curve.\n\n**Answer.** Deflection (tangential) angle method."
+    },
+    {
+      "id": 37,
+      "subject": "Mine Ventilation",
+      "topic": "Natural Ventilation",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "Natural ventilation in a mine arises from",
+      "options": [
+        "the density difference between the downcast and upcast air columns",
+        "the rotation of the earth",
+        "blasting vibrations",
+        "the conveyor motion"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** A heavier downcast column displaces the lighter upcast column.\n\n**Working.** The resulting buoyancy drives the airflow.\n\n**Answer.** density difference between downcast and upcast columns."
+    },
+    {
+      "id": 38,
+      "subject": "Mine Environment & Occupational Health",
+      "topic": "Dust sampling",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "The cyclone fitted ahead of the filter in a respirable-dust sampler serves to",
+      "options": [
+        "increase the airflow rate",
+        "remove the coarse, non-respirable particles so that only the respirable fraction reaches the filter",
+        "heat the air sample",
+        "measure noise"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Size selection mimics the human airway.\n\n**Reasoning.** The cyclone spins out and discards the larger particles that would be trapped in the upper airways, letting through the fine fraction that penetrates the lungs — so the filter mass reflects the health-relevant respirable dust.\n\n**Answer.** Reject coarse particles; pass the respirable fraction."
+    },
+    {
+      "id": 39,
+      "subject": "Mining Geology",
+      "topic": "Dip",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "The 'true dip' of a bed is the",
+      "options": [
+        "horizontal direction of the bedding plane",
+        "maximum angle of inclination of the bedding plane to the horizontal, measured perpendicular to the strike",
+        "thickness of the bed",
+        "depth of the bed below surface"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Dip measures inclination.\n\n**Reasoning.** True dip is the steepest angle the bed makes with the horizontal, in the direction at right angles to strike; any other direction gives a smaller apparent dip.\n\n**Answer.** Maximum inclination ⟂ strike."
+    },
+    {
+      "id": 40,
+      "subject": "Mine Economics, Planning & Systems Engineering",
+      "topic": "Mine life",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "The cumulative-production graph shows a mineable reserve of 10 Mt extracted at a uniform rate of 2 Mt per year. The life of the mine, in years, is _____.",
+      "answer": 5,
+      "tolerance": 0.05,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox='0 0 240 170' xmlns='http://www.w3.org/2000/svg'><line x1='30' y1='140' x2='220' y2='140' stroke='#475569'/><line x1='30' y1='140' x2='30' y2='20' stroke='#475569'/><line x1='30' y1='140' x2='190' y2='30' stroke='#2563eb' stroke-width='2'/><line x1='30' y1='30' x2='220' y2='30' stroke='#dc2626' stroke-dasharray='4 3'/><text x='140' y='26' font-size='9' fill='#dc2626'>reserve 10 Mt</text><text x='100' y='158' font-size='9'>years</text><text x='38' y='95' font-size='9' fill='#2563eb'>2 Mt/yr</text></svg>",
+        "caption": "Cumulative production vs time"
+      },
+      "solution": "**Concept.** Mine life $=\\dfrac{\\text{mineable reserve}}{\\text{annual production rate}}$.\n\n**Working.**\n$$L=\\frac{10}{2}=5\\ \\text{years}$$\n\n**Answer.** $5$ years."
+    },
+    {
+      "id": 41,
+      "subject": "Mine Ventilation",
+      "topic": "Fan Power & Efficiency",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "A fan delivers $30\\,\\text{m}^3$/s at $600\\,\\text{Pa}$ with an overall efficiency of $75\\%$. The motor input power is _____ W.",
+      "answer": 24000,
+      "tolerance": 5,
+      "solution": "**Concept.** Input power $=\\dfrac{P\\,Q}{\\eta}$.\n\n**Working.**\n$$\\frac{600\\times30}{0.75}=\\frac{18000}{0.75}=24000.$$\n\n**Answer.** $24{,}000\\,\\text{W}=24\\,\\text{kW}$."
+    },
+    {
+      "id": 42,
+      "subject": "Surface Mining",
+      "topic": "Dragline locomotion",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "A walking dragline propels itself by",
+      "options": [
+        "crawler tracks like a shovel",
+        "walking shoes/cams, resting on a circular tub while digging",
+        "rubber-tyred wheels",
+        "rail bogies on a temporary track"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Draglines are too heavy for crawlers; ground bearing pressure must be very low.\n\n**Reasoning.** The machine rests on a large circular tub (low bearing pressure) while digging, and 'walks' short distances on a pair of eccentric-driven shoes to reposition.\n\n**Answer.** Walking shoes, resting on a tub while digging."
+    },
+    {
+      "id": 43,
+      "subject": "Mine Ventilation",
+      "topic": "Atkinson resistance",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "Using $R=\\dfrac{kPL}{A^3}$ with $k=0.01\\ \\mathrm{Ns^2/m^4}$, perimeter $P=12\\ \\text{m}$, length $L=100\\ \\text{m}$ and area $A=6\\ \\mathrm{m^2}$ (figure), compute the airway resistance ($\\mathrm{Ns^2/m^8}$, four decimals).",
+      "answer": 0.0556,
+      "tolerance": 0.001,
+      "figure": {
+        "kind": "svg",
+        "caption": "Airway geometry",
+        "markup": "<svg viewBox='0 0 220 130' xmlns='http://www.w3.org/2000/svg'><rect x='40' y='40' width='130' height='55' fill='#cbd5e1' stroke='#475569'/><text x='46' y='35' font-size='8'>perimeter 12, A=6</text><text x='46' y='120' font-size='8'>L=100, k=0.01</text></svg>"
+      },
+      "solution": "**Concept.** Atkinson resistance $R=\\dfrac{kPL}{A^3}$.\n\n**Working.**\n$$R=\\frac{0.01\\times12\\times100}{6^3}=\\frac{12}{216}=0.0556$$\n\n**Answer.** $0.0556\\ \\mathrm{Ns^2/m^8}$."
+    },
+    {
+      "id": 44,
+      "subject": "Underground Mining",
+      "topic": "LHD productivity",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "An LHD has a 4 m³ bucket at 0.9 fill factor and a cycle time of 90 s. Its loose output, in m³/h, is ____.",
+      "answer": 144,
+      "tolerance": 1,
+      "solution": "**Concept.** Output $=$ bucket $\\times$ fill $\\times$ cycles/h.\n\n**Working.**\n$$\\text{cycles/h}=\\frac{3600}{90}=40$$\n$$Q=4\\times0.9\\times40=144\\ \\text{m}^3/\\text{h}$$\n\n**Answer.** 144 m³/h (loose)."
+    },
+    {
+      "id": 45,
+      "subject": "Engineering Mathematics",
+      "topic": "Probability and Statistics",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "By the empirical (68–95–99.7) rule, the approximate fraction of a normal population within one standard deviation of the mean is",
+      "options": [
+        "$50\\%$",
+        "$68\\%$",
+        "$95\\%$",
+        "$99.7\\%$"
+      ],
+      "answer": 1,
+      "figure": {
+        "kind": "svg",
+        "caption": "Empirical rule: about 68% of a normal distribution lies within one standard deviation of the mean.",
+        "markup": "<svg viewBox='0 0 260 170' xmlns='http://www.w3.org/2000/svg' role='img'><line x1='20' y1='140' x2='245' y2='140' stroke='#94a3b8' stroke-width='1'/><path d='M20 140 C70 140 90 30 132 30 C175 30 195 140 245 140 Z' fill='rgba(99,102,241,0.10)' stroke='#6366f1' stroke-width='2'/><rect x='95' y='40' width='74' height='100' fill='rgba(16,185,129,0.18)' stroke='none'/><line x1='95' y1='30' x2='95' y2='140' stroke='#10b981' stroke-width='1' stroke-dasharray='3 3'/><line x1='169' y1='30' x2='169' y2='140' stroke='#10b981' stroke-width='1' stroke-dasharray='3 3'/><text x='110' y='90' font-size='11' fill='#10b981'>68%</text><text x='84' y='155' font-size='9' fill='#94a3b8'>mu-sigma</text><text x='150' y='155' font-size='9' fill='#94a3b8'>mu+sigma</text></svg>"
+      },
+      "solution": "**Concept.** Empirical rule for the normal distribution.\n\n**Working.** About $68\\%$ lies within $\\mu\\pm\\sigma$, $95\\%$ within $\\mu\\pm2\\sigma$, $99.7\\%$ within $\\mu\\pm3\\sigma$.\n\n**Answer.** $68\\%$."
+    },
+    {
+      "id": 46,
+      "subject": "Mine Environment & Occupational Health",
+      "topic": "Fire classification",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "A fire involving energised electrical equipment should NOT be fought with",
+      "options": [
+        "a CO₂ extinguisher",
+        "a jet of water (which conducts electricity and risks electrocution)",
+        "dry chemical powder",
+        "de-energising the circuit first"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Water conducts electricity.\n\n**Reasoning.** Energised electrical fires must be tackled with non-conducting agents (CO₂, dry powder) after isolating the supply; a water jet risks electrocution and equipment damage.\n\n**Answer.** A water jet."
+    },
+    {
+      "id": 47,
+      "subject": "Underground Mining",
+      "topic": "Hoisting capacity",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "A skip hoists 10 t per wind and completes one wind every 120 s. The hourly hoisting capacity, in t/h, is ____.",
+      "answer": 300,
+      "tolerance": 1,
+      "solution": "**Concept.** Capacity $=$ payload $\\times$ winds per hour.\n\n**Working.**\n$$\\text{winds/h}=\\frac{3600}{120}=30,\\quad Q=10\\times30=300\\ \\text{t/h}$$\n\n**Answer.** 300 t/h."
+    },
+    {
+      "id": 48,
+      "subject": "Surface Mining",
+      "topic": "Pump power",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "A pit pump delivers 600 m³/h against a total head of 50 m (water density 1000 kg/m³, g = 9.81 m/s², efficiency 100%). The hydraulic power, in kW, is ____ (two decimals).",
+      "answer": 81.75,
+      "tolerance": 0.3,
+      "solution": "**Concept.** Hydraulic power $=\\rho g Q H$, with $Q$ in m³/s.\n\n**Working.**\n$$Q=\\frac{600}{3600}=0.1667\\ \\text{m}^3/\\text{s}$$\n$$P=1000\\times9.81\\times0.1667\\times50=81{,}750\\ \\text{W}=81.75\\ \\text{kW}$$\n\n**Answer.** 81.75 kW."
+    },
+    {
+      "id": 49,
+      "subject": "Mine Ventilation",
+      "topic": "Networks — Series-Parallel",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "Two airways of $4\\,\\text{Ns}^2/\\text{m}^8$ each are in parallel, and this group is in series with a $2\\,\\text{Ns}^2/\\text{m}^8$ airway. The overall equivalent resistance is _____ Ns$^2$/m$^8$.",
+      "answer": 3,
+      "tolerance": 0.02,
+      "solution": "**Concept.** Reduce the parallel pair, then add in series.\n\n**Working.**\n$$R_{\\parallel}=1\\ (\\text{from }0.5+0.5),\\quad R_{eq}=1+2=3.$$\n\n**Answer.** $3\\,\\text{Ns}^2/\\text{m}^8$."
+    },
+    {
+      "id": 50,
+      "subject": "Mine Ventilation",
+      "topic": "Mine Resistance — Square Law",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "A pressure drop of $200\\,\\text{Pa}$ accompanies a flow of $20\\,\\text{m}^3$/s. The airway resistance is _____ Ns$^2$/m$^8$.",
+      "answer": 0.5,
+      "tolerance": 0.01,
+      "solution": "**Concept.** $R=\\dfrac{P}{Q^2}$.\n\n**Working.**\n$$R=\\frac{200}{400}=0.5.$$\n\n**Answer.** $0.5\\,\\text{Ns}^2/\\text{m}^8$."
+    },
+    {
+      "id": 51,
+      "subject": "Mine Environment & Occupational Health",
+      "topic": "Angle of draw",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "The 'angle of draw' in subsidence engineering is",
+      "options": [
+        "the slope angle of the final highwall",
+        "the angle from the vertical at the panel edge to the limit of perceptible surface subsidence",
+        "the angle of repose of the spoil",
+        "the inclination of the conveyor"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** It defines the lateral extent of the subsidence basin.\n\n**Reasoning.** Measured from the vertical at the edge of the extracted panel, the angle of draw locates where surface movement effectively ceases; a larger angle means subsidence extends further beyond the workings.\n\n**Answer.** Vertical-to-limit-of-subsidence angle at the panel edge."
+    },
+    {
+      "id": 52,
+      "subject": "Surface Mining",
+      "topic": "Truck Productivity",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "A truck of payload 100 t has a cycle time of 15 min (as shown). Compute its hourly output (t/h).",
+      "answer": 400,
+      "tolerance": 1,
+      "figure": {
+        "kind": "svg",
+        "caption": "Haul truck",
+        "markup": "<svg viewBox='0 0 220 110' xmlns='http://www.w3.org/2000/svg'><rect x='40' y='45' width='70' height='30' fill='#bfdbfe' stroke='#475569'/><circle cx='58' cy='80' r='8' fill='#1f2937'/><circle cx='95' cy='80' r='8' fill='#1f2937'/><text x='48' y='40' font-size='8'>payload 100 t</text><text x='44' y='102' font-size='8'>cycle 15 min</text></svg>"
+      },
+      "solution": "**Concept.** Output = payload × trips per hour, trips/h = 60 ÷ cycle minutes.\n\n**Working.**\n$$\\frac{60}{15} = 4 \\text{ trips/h},\\qquad Q = 100 \\times 4 = 400$$\n\n**Answer.** $\\mathbf{400}$ t/h."
+    },
+    {
+      "id": 53,
+      "subject": "Engineering Mathematics",
+      "topic": "Differential Equations",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "For $y''+y=0$ with $y(0)=1,\\;y'(0)=0$, the value of $y\\!\\left(\\tfrac{\\pi}{3}\\right)$ is _____ (round to 2 decimals).",
+      "answer": 0.5,
+      "tolerance": 0.01,
+      "solution": "**Concept.** Solution is $y=A\\cos t+B\\sin t$; apply initial conditions.\n\n**Working.** $y(0)=1\\Rightarrow A=1$; $y'(0)=0\\Rightarrow B=0$, so $y=\\cos t$.\n$$y\\!\\left(\\tfrac{\\pi}{3}\\right)=\\cos 60^{\\circ}=0.5$$\n\n**Answer.** $0.5$."
+    },
+    {
+      "id": 54,
+      "subject": "Rock Mechanics",
+      "topic": "Failure Criteria — Factor of Safety",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "On a plane with $c=10\\,\\text{kPa}$, $\\phi=30^\\circ$ and normal stress $\\sigma_n=40\\,\\text{kPa}$, the driving shear stress is $30\\,\\text{kPa}$. The factor of safety is _____ . Round to two decimals.",
+      "answer": 1.1,
+      "tolerance": 0.05,
+      "solution": "**Concept.** $\\text{FoS}=\\dfrac{c+\\sigma_n\\tan\\phi}{\\tau}$.\n\n**Working.**\n$$\\tau_f=10+40\\tan 30^\\circ=10+23.09=33.09,\\quad \\text{FoS}=\\frac{33.09}{30}=1.10.$$\n\n**Answer.** $\\approx 1.10$."
+    },
+    {
+      "id": 55,
+      "subject": "Surface Mining",
+      "topic": "Haul truck braking",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "A retarder on a haul truck is used to",
+      "options": [
+        "increase engine power on upgrades",
+        "control and limit truck speed on downgrades without overheating the service brakes",
+        "raise the dump body faster",
+        "improve tyre traction in mud"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Descending a loaded truck releases large gravitational energy.\n\n**Reasoning.** A retarder (hydraulic/electric/engine) dissipates this energy to hold a safe steady speed on long downgrades, sparing the friction service brakes from overheating.\n\n**Answer.** Controls speed on downgrades."
+    },
+    {
+      "id": 56,
+      "subject": "Mine Environment & Occupational Health",
+      "topic": "Noise",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "Three incoherent noise sources each producing $80\\ \\text{dB}$ act together at a point (figure). Compute the combined sound level (dB, two decimals).",
+      "answer": 84.77,
+      "tolerance": 0.1,
+      "figure": {
+        "kind": "svg",
+        "caption": "Three equal noise sources",
+        "markup": "<svg viewBox='0 0 220 120' xmlns='http://www.w3.org/2000/svg'><g fill='#fca5a5' stroke='#475569'><circle cx='60' cy='50' r='12'/><circle cx='100' cy='50' r='12'/><circle cx='140' cy='50' r='12'/></g><circle cx='100' cy='95' r='6' fill='#1f2937'/><text x='32' y='115' font-size='8'>three 80 dB sources at a point</text></svg>"
+      },
+      "solution": "**Concept.** $L=L_1+10\\log_{10}n$ for $n$ equal sources.\n\n**Working.**\n$$L=80+10\\log_{10}3=80+4.77=84.77\\ \\text{dB}$$\n\n**Answer.** $84.77$ dB."
+    },
+    {
+      "id": 57,
+      "subject": "Mining Geology",
+      "topic": "Coal reserve estimate",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "If the recovery (extraction) factor for the $280{,}000\\ \\text{t}$ in-situ block is $0.80$, compute the recoverable (mineable) reserve in tonnes.",
+      "answer": 224000,
+      "tolerance": 100,
+      "figure": {
+        "kind": "svg",
+        "caption": "Recoverable fraction of a reserve",
+        "markup": "<svg viewBox='0 0 220 140' xmlns='http://www.w3.org/2000/svg'><rect x='30' y='40' width='160' height='50' fill='#cbd5e1' stroke='#475569'/><rect x='30' y='40' width='128' height='50' fill='#94a3b8' stroke='#475569'/><text x='40' y='70' font-size='9'>recover 80%</text><text x='30' y='115' font-size='8'>in-situ = 280000 t</text></svg>"
+      },
+      "solution": "**Concept.** Recoverable reserve $=$ in-situ reserve $\\times$ recovery factor.\n\n**Working.**\n$$T_r=280000\\times0.80=224000\\ \\text{t}$$\n\n**Answer.** $224{,}000$ t."
+    },
+    {
+      "id": 58,
+      "subject": "Underground Mining",
+      "topic": "Longwall production",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "A longwall face is 200 m long and 2 m high; the shearer takes a 0.8 m web and makes 10 cuts per day. Coal density is 1.4 t/m³. The daily production, in t, is ____.",
+      "answer": 4480,
+      "tolerance": 5,
+      "solution": "**Concept.** Output $=$ face length $\\times$ web $\\times$ height $\\times$ density $\\times$ cuts/day.\n\n**Working.**\n$$Q=200\\times0.8\\times2\\times1.4\\times10=4480\\ \\text{t/day}$$\n\n**Answer.** 4480 t/day."
+    },
+    {
+      "id": 59,
+      "subject": "Rock Mechanics",
+      "topic": "Failure Criteria — Mohr-Coulomb",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "A rock has $\\sigma_c=40\\,\\text{MPa}$ and tensile strength $\\sigma_t=10\\,\\text{MPa}$. Using $c=\\tfrac{1}{2}\\sqrt{\\sigma_c\\sigma_t}$, the cohesion is _____ MPa.",
+      "answer": 10,
+      "tolerance": 0.1,
+      "solution": "**Concept.** $c=\\tfrac{1}{2}\\sqrt{\\sigma_c\\sigma_t}$.\n\n**Working.**\n$$c=\\tfrac{1}{2}\\sqrt{40\\times10}=\\tfrac{1}{2}(20)=10.$$\n\n**Answer.** $10\\,\\text{MPa}$."
+    },
+    {
+      "id": 60,
+      "subject": "Engineering Mathematics",
+      "topic": "Numerical Methods",
+      "section": "Technical (2-mark)",
+      "type": "MSQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "Which of the following are INTERPOLATION techniques?",
+      "options": [
+        "Lagrange interpolation",
+        "Newton's divided-difference formula",
+        "Simpson's $\\tfrac13$ rule",
+        "Newton–Raphson method"
+      ],
+      "answer": [
+        0,
+        1
+      ],
+      "solution": "**Concept.** Distinguish interpolation from integration and root-finding.\n\n**Working.**\n- Lagrange — interpolation (TRUE).\n- Newton's divided difference — interpolation (TRUE).\n- Simpson's rule — numerical integration (FALSE).\n- Newton–Raphson — root finding (FALSE).\n\n**Answer.** Options (a) and (b)."
+    },
+    {
+      "id": 61,
+      "subject": "Mine Economics, Planning & Systems Engineering",
+      "topic": "Investment Analysis — Payback",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "A project costs $\\textsf{Rs}\\,1{,}00{,}000$ and returns $\\textsf{Rs}\\,30{,}000$ per year. The simple payback period is _____ years. Round to two decimals.",
+      "answer": 3.33,
+      "tolerance": 0.05,
+      "solution": "**Concept.** Payback $=\\dfrac{\\text{investment}}{\\text{annual cash flow}}$.\n\n**Working.**\n$$\\frac{100000}{30000}=3.33.$$\n\n**Answer.** $\\approx 3.33$ years."
+    },
+    {
+      "id": 62,
+      "subject": "Mine Ventilation",
+      "topic": "Total Pressure",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "At a point the static pressure is $200\\,\\text{Pa}$ and the velocity pressure is $60\\,\\text{Pa}$. The total pressure is _____ Pa.",
+      "answer": 260,
+      "tolerance": 0.5,
+      "solution": "**Concept.** Total $=$ static $+$ velocity pressure.\n\n**Working.**\n$$200+60=260.$$\n\n**Answer.** $260\\,\\text{Pa}$."
+    },
+    {
+      "id": 63,
+      "subject": "Underground Mining",
+      "topic": "Friction winder",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "A friction (Koepe) winder drives the rope by",
+      "options": [
+        "coiling it onto a drum",
+        "friction over a driving sheave, with a tail rope balancing the head rope; suited to deep shafts",
+        "an inclined haulage track",
+        "compressed air"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** The Koepe principle uses traction, not storage.\n\n**Reasoning.** The rope passes over a friction sheave with conveyances on each side; a tail rope balances the head-rope weight. With no drum to store rope, it suits great depths and shares load across multiple ropes.\n\n**Answer.** Friction over a sheave with a balancing tail rope."
+    },
+    {
+      "id": 64,
+      "subject": "Mining Geology",
+      "topic": "Acidic vs basic",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "Igneous rocks are termed 'acidic' or 'basic' chiefly on the basis of their",
+      "options": [
+        "pH value",
+        "silica (SiO₂) content — acidic >65%, basic ~45–52%",
+        "magnetic properties",
+        "grain size only"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Silica percentage classifies igneous rocks chemically.\n\n**Reasoning.** Acidic (felsic) rocks such as granite are silica-rich and light; basic (mafic) rocks such as basalt are silica-poorer and dark; ultrabasic rocks have <45% SiO₂.\n\n**Answer.** Silica content."
+    },
+    {
+      "id": 65,
+      "subject": "Mine Economics, Planning & Systems Engineering",
+      "topic": "Systems Engineering — EOQ Property",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "At the economic order quantity, the annual",
+      "options": [
+        "ordering cost equals the holding cost",
+        "ordering cost is zero",
+        "holding cost is zero",
+        "purchase cost is minimised"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** EOQ balances the two variable costs.\n\n**Working.** $\\dfrac{D}{Q}S=\\dfrac{Q}{2}H$ at the optimum.\n\n**Answer.** ordering cost equals holding cost."
+    }
+  ]
+}

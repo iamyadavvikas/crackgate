@@ -1,0 +1,1079 @@
+{
+  "id": "mn-mock-18",
+  "title": "Mock Test 18 — Economics, Planning & Systems Engg.",
+  "tier": "subject",
+  "duration": 180,
+  "pattern": "GATE 2027 (65 Q · 100 marks · 3 hours)",
+  "totalMarks": 100,
+  "sections": [
+    {
+      "name": "General Aptitude",
+      "count": 10,
+      "marks": 15
+    },
+    {
+      "name": "Technical (1-mark)",
+      "count": 25,
+      "marks": 25
+    },
+    {
+      "name": "Technical (2-mark)",
+      "count": 30,
+      "marks": 60
+    }
+  ],
+  "negativeMarking": {
+    "mcq1": -0.3333333333333333,
+    "mcq2": -0.6666666666666666,
+    "nat": 0,
+    "msq": 0
+  },
+  "seed": 4226280971,
+  "locked": true,
+  "questions": [
+    {
+      "id": 1,
+      "subject": "General Aptitude",
+      "topic": "Data Interpretation",
+      "section": "General Aptitude",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "On a pie chart of $800$ students, one sector spans $45^\\circ$. Compute the number of students in that sector.",
+      "answer": 100,
+      "tolerance": 0.5,
+      "figure": {
+        "kind": "svg",
+        "caption": "Pie sector of 45 degrees",
+        "markup": "<svg viewBox='0 0 170 175' xmlns='http://www.w3.org/2000/svg'><circle cx='85' cy='80' r='60' fill='#e5e7eb' stroke='#475569'/><path d='M85 80 L85 20 A60 60 0 0 1 127 38 Z' fill='#16a34a'/><text x='22' y='160' font-size='8'>sector 45 deg, total 800</text></svg>"
+      },
+      "solution": "**Concept.** Count $=\\dfrac{\\theta}{360}\\times\\text{total}$.\n\n**Working.**\n$$N=\\frac{45}{360}\\times800=100$$\n\n**Answer.** $100$ students."
+    },
+    {
+      "id": 2,
+      "subject": "General Aptitude",
+      "topic": "Analytical Aptitude — Blood Relations",
+      "section": "General Aptitude",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "hard",
+      "stem": "Pointing to a photograph, a man said, 'She is the daughter of my grandfather's only son.' How is she related to the man?",
+      "options": [
+        "Sister",
+        "Mother",
+        "Aunt",
+        "Cousin"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Resolve the chain from the innermost phrase.\n\n**Working.** 'My grandfather's only son' is the man's father; his daughter is the man's sister.\n\n**Answer.** Sister."
+    },
+    {
+      "id": 3,
+      "subject": "General Aptitude",
+      "topic": "Data Interpretation",
+      "section": "General Aptitude",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The line graph shows a value rising from $20$ to $50$. Compute the percentage increase (%).",
+      "answer": 150,
+      "tolerance": 0.5,
+      "figure": {
+        "kind": "svg",
+        "caption": "Line graph",
+        "markup": "<svg viewBox='0 0 220 150' xmlns='http://www.w3.org/2000/svg'><line x1='30' y1='120' x2='210' y2='120' stroke='#475569'/><line x1='30' y1='120' x2='30' y2='20' stroke='#475569'/><polyline points='40,90 100,75 160,40' fill='none' stroke='#2563eb' stroke-width='2'/><circle cx='40' cy='90' r='3' fill='#dc2626'/><circle cx='160' cy='40' r='3' fill='#dc2626'/><text x='45' y='138' font-size='8'>20 -> 50</text></svg>"
+      },
+      "solution": "**Concept.** $\\%\\text{ increase}=\\dfrac{\\Delta}{\\text{initial}}\\times100$.\n\n**Working.**\n$$\\frac{50-20}{20}\\times100=\\frac{30}{20}\\times100=150\\%$$\n\n**Answer.** $150\\%$."
+    },
+    {
+      "id": 4,
+      "subject": "General Aptitude",
+      "topic": "Spatial Aptitude — Figure Rotation",
+      "section": "General Aptitude",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The arrow shown points to the right (east). After rotating it $90^\\circ$ clockwise, it points",
+      "options": [
+        "Downward (south)",
+        "Upward (north)",
+        "Left (west)",
+        "Right (east)"
+      ],
+      "answer": 0,
+      "figure": {
+        "kind": "svg",
+        "caption": "A horizontal arrow pointing to the right.",
+        "markup": "<svg viewBox='0 0 160 80' xmlns='http://www.w3.org/2000/svg' role='img'><line x1='20' y1='40' x2='120' y2='40' stroke='#6366f1' stroke-width='3'/><polygon points='120,40 105,32 105,48' fill='#6366f1'/></svg>"
+      },
+      "solution": "**Concept.** A $90^\\circ$ clockwise turn sends east to south.\n\n**Working.** Right rotated clockwise becomes downward.\n\n**Answer.** Downward (south)."
+    },
+    {
+      "id": 5,
+      "subject": "General Aptitude",
+      "topic": "Analytical Aptitude — Data Sufficiency",
+      "section": "General Aptitude",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "hard",
+      "stem": "Question: Is $x>10$? (I) $x$ is a positive even number. (II) $x=12$. Which is sufficient?",
+      "options": [
+        "II alone is sufficient",
+        "I alone is sufficient",
+        "Both together are needed",
+        "Neither is sufficient"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** A statement is sufficient if it answers the question definitively.\n\n**Working.** I allows $x=2$ (no) or $x=12$ (yes), so it is inconclusive; II fixes $x=12>10$.\n\n**Answer.** II alone is sufficient."
+    },
+    {
+      "id": 6,
+      "subject": "General Aptitude",
+      "topic": "Quantitative Aptitude — Successive Percentage",
+      "section": "General Aptitude",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "A price is first increased by $10\\%$ and then decreased by $10\\%$. The net percentage change in the price is _____ % (use a negative sign for a decrease).",
+      "answer": -1,
+      "tolerance": 0.01,
+      "solution": "**Concept.** Combine successive factors multiplicatively.\n\n**Working.**\n$$1.10\\times 0.90 = 0.99 \\Rightarrow -1\\%$$\n\n**Answer.** $-1$."
+    },
+    {
+      "id": 7,
+      "subject": "General Aptitude",
+      "topic": "Quantitative Aptitude — Boats and Streams",
+      "section": "General Aptitude",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "A boat covers $16$ km downstream in $2$ hours and returns the same distance upstream in $4$ hours. The speed of the boat in still water is",
+      "options": [
+        "6 km/h",
+        "2 km/h",
+        "8 km/h",
+        "5 km/h"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Boat speed = (downstream + upstream)/2.\n\n**Working.** Downstream $=\\tfrac{16}{2}=8$, upstream $=\\tfrac{16}{4}=4$ km/h; boat $=\\dfrac{8+4}{2}=6$ km/h.\n\n**Answer.** $6$ km/h."
+    },
+    {
+      "id": 8,
+      "subject": "General Aptitude",
+      "topic": "Verbal Aptitude — Grammar",
+      "section": "General Aptitude",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "Convert to the passive voice: 'The committee approved the safety proposal.'",
+      "options": [
+        "The safety proposal was approved by the committee.",
+        "The safety proposal is approved by the committee.",
+        "The safety proposal has approved the committee.",
+        "The committee was approved by the safety proposal."
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Passive voice: object becomes subject, verb becomes 'be + past participle', and the tense is preserved.\n\n**Working.** Simple past 'approved' becomes 'was approved'; the object 'proposal' moves to the front.\n\n**Answer.** 'The safety proposal was approved by the committee.'"
+    },
+    {
+      "id": 9,
+      "subject": "General Aptitude",
+      "topic": "Analytical Aptitude — Syllogism",
+      "section": "General Aptitude",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "All miners are workers. All workers are humans. Which conclusion necessarily follows?",
+      "options": [
+        "All miners are humans",
+        "All humans are miners",
+        "Some workers are not humans",
+        "No miner is human"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Transitivity of universal affirmatives.\n\n**Working.** Miners ⊆ workers ⊆ humans, so all miners are humans.\n\n**Answer.** All miners are humans."
+    },
+    {
+      "id": 10,
+      "subject": "General Aptitude",
+      "topic": "Quantitative Aptitude — Mensuration",
+      "section": "General Aptitude",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "The volume of a sphere of radius $3$ is _____ (use $\\pi=22/7$, round to two decimals).",
+      "answer": 113.14,
+      "tolerance": 0.3,
+      "solution": "**Concept.** Volume of a sphere $=\\tfrac{4}{3}\\pi r^3$.\n\n**Working.** $\\tfrac{4}{3}\\times\\dfrac{22}{7}\\times 27 = \\dfrac{2376}{21}\\approx 113.14$.\n\n**Answer.** $\\approx 113.14$."
+    },
+    {
+      "id": 11,
+      "subject": "Engineering Mathematics",
+      "topic": "Probability and Statistics",
+      "section": "Technical (1-mark)",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "For a perfectly symmetric normal distribution, the relationship between mean, median and mode is",
+      "options": [
+        "mean $>$ median $>$ mode",
+        "mean $=$ median $=$ mode",
+        "mean $<$ median $<$ mode",
+        "no fixed relationship"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Symmetry of the normal curve.\n\n**Working.** All three measures of central tendency coincide at the centre.\n\n**Answer.** Mean $=$ median $=$ mode."
+    },
+    {
+      "id": 12,
+      "subject": "Mine Environment & Occupational Health",
+      "topic": "Heat sources",
+      "section": "Technical (1-mark)",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The principal source of heat in a deep mine is usually",
+      "options": [
+        "the miners' lamps",
+        "the geothermal heat of the surrounding rock (rising with the geothermal gradient), supplemented by autocompression and machinery",
+        "evaporation of mine water only",
+        "the intake fresh air"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Rock heat dominates at depth.\n\n**Reasoning.** Strata temperature rises with depth (geothermal gradient), and air heats by autocompression as it descends; machinery, oxidation, men and blasting add further heat. Rock heat is usually the largest contributor in deep mines.\n\n**Answer.** Geothermal rock heat (plus autocompression/machinery)."
+    },
+    {
+      "id": 13,
+      "subject": "Engineering Mathematics",
+      "topic": "Probability and Statistics",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The standard deviation of the data $4,\\,4,\\,4,\\,4$ is _____ .",
+      "answer": 0,
+      "tolerance": 0.01,
+      "solution": "**Concept.** Standard deviation measures spread about the mean.\n\n**Working.** All values equal the mean ($4$), so every deviation is zero.\n$$\\sigma=0$$\n\n**Answer.** $0$."
+    },
+    {
+      "id": 14,
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Trapezoidal rule",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Offsets 0, 2, 4, 3, 0 m are taken at a regular interval of 10 m. By the trapezoidal rule the enclosed area, in m², is ____.",
+      "answer": 90,
+      "tolerance": 0.5,
+      "solution": "**Concept.** $A=d\\left[\\dfrac{o_1+o_n}{2}+\\sum o_{mid}\\right]$.\n\n**Working.**\n$$A=10\\left[\\frac{0+0}{2}+(2+4+3)\\right]=10\\times9=90\\ \\text{m}^2$$\n\n**Answer.** 90 m²."
+    },
+    {
+      "id": 15,
+      "subject": "mine-surveying",
+      "topic": "Tacheometry",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "A tacheometer with multiplying constant $k=100$ and additive constant $c=0$ reads a staff intercept $s=0.500$ m on a horizontal sight. Find the horizontal distance (m).",
+      "answer": 50,
+      "tolerance": 0.2,
+      "figure": {
+        "kind": "svg",
+        "caption": "Stadia tacheometry",
+        "markup": "<svg viewBox='0 0 220 150' xmlns='http://www.w3.org/2000/svg'><rect x='160' y='30' width='10' height='100' fill='#cbd5e1' stroke='#475569'/><line x1='160' y1='50' x2='170' y2='50' stroke='#dc2626'/><line x1='160' y1='110' x2='170' y2='110' stroke='#dc2626'/><circle cx='40' cy='80' r='12' fill='#fde68a' stroke='#b45309'/><line x1='52' y1='80' x2='160' y2='80' stroke='#475569' stroke-dasharray='3 2'/><text x='28' y='146' font-size='8'>k=100, c=0, s=0.5 m</text></svg>"
+      },
+      "solution": "**Concept.** Horizontal distance $D=k\\,s+c$ for a horizontal stadia sight.\n\n**Working.**\n$$D=100\\times0.500+0=50\\ \\text{m}$$\n\n**Answer.** $50$ m."
+    },
+    {
+      "id": 16,
+      "subject": "Mine Economics, Planning & Systems Engineering",
+      "topic": "Systems Engineering — Inventory Cost",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "At the EOQ ($20$ orders/year, $S=\\textsf{Rs}\\,50$), the annual ordering cost is $\\textsf{Rs}$ _____ .",
+      "answer": 1000,
+      "tolerance": 1,
+      "solution": "**Concept.** Ordering cost $=\\dfrac{D}{Q}\\,S$.\n\n**Working.**\n$$20\\times50=1000.$$\n\n**Answer.** $\\textsf{Rs}\\,1000$."
+    },
+    {
+      "id": 17,
+      "subject": "Mine Economics, Planning & Systems Engineering",
+      "topic": "Mine Planning — Mine Life",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A reserve of $1$ crore ($10{,}000{,}000$) tonnes is mined at $10{,}00{,}000$ tonnes per year. The mine life is _____ years.",
+      "answer": 10,
+      "tolerance": 0.1,
+      "solution": "**Concept.** Mine life $=\\dfrac{\\text{reserve}}{\\text{annual production}}$.\n\n**Working.**\n$$\\frac{10000000}{1000000}=10.$$\n\n**Answer.** $10$ years."
+    },
+    {
+      "id": 18,
+      "subject": "Engineering Mathematics",
+      "topic": "Probability and Statistics",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A binomial random variable has $n=5,\\;p=0.2$. Its mean is _____ .",
+      "answer": 1,
+      "tolerance": 0.01,
+      "solution": "**Concept.** Mean $=np$.\n\n**Working.**\n$$\\mu=5\\times 0.2=1$$\n\n**Answer.** $1$."
+    },
+    {
+      "id": 19,
+      "subject": "Rock Mechanics",
+      "topic": "Engineering Mechanics — Friction",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "If the normal reaction is $200\\,\\text{N}$ and $\\mu=0.25$, the limiting friction force is _____ N.",
+      "answer": 50,
+      "tolerance": 0.01,
+      "solution": "**Concept.** $F=\\mu N$.\n\n**Working.**\n$$F=0.25\\times 200=50.$$\n\n**Answer.** $50\\,\\text{N}$."
+    },
+    {
+      "id": 20,
+      "subject": "Underground Mining",
+      "topic": "Mine Layout",
+      "section": "Technical (1-mark)",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "The large block of mineral left unworked around the shaft in the plan shown is a:",
+      "options": [
+        "shaft (safety) pillar protecting shaft from subsidence",
+        "barrier pillar between two collieries",
+        "chain pillar between longwall panels",
+        "rib pillar in a stope"
+      ],
+      "answer": 0,
+      "figure": {
+        "kind": "svg",
+        "caption": "Shaft pillar",
+        "markup": "<svg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'><rect x='10' y='10' width='180' height='180' fill='#e5e7eb'/><circle cx='100' cy='100' r='55' fill='#1f2937'/><circle cx='100' cy='100' r='10' fill='#fff' stroke='#475569'/><text x='84' y='80' font-size='8' fill='#fff'>shaft pillar</text></svg>"
+      },
+      "solution": "**Concept.** A shaft pillar is unworked ground left to protect the shaft.\n\n**Reasoning.** The ring of solid mineral around the shaft prevents subsidence damage to the shaft and surface installations; it is the shaft (safety) pillar.\n\n**Answer.** Shaft (safety) pillar."
+    },
+    {
+      "id": 21,
+      "subject": "Rock Mechanics",
+      "topic": "Slope Stability — Kinematic Analysis",
+      "section": "Technical (1-mark)",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A slope face dips $45^\\circ$ and a joint dips $30^\\circ$ in the same direction; the friction angle is $20^\\circ$. For this joint, plane sliding is",
+      "options": [
+        "kinematically feasible (joint daylights and dips steeper than $\\phi$)",
+        "impossible because the joint dips into the slope",
+        "impossible because the joint is flatter than $\\phi$",
+        "a toppling, not sliding, mode"
+      ],
+      "answer": 0,
+      "figure": {
+        "kind": "stereonet",
+        "planes": [
+          {
+            "strike": 0,
+            "dip": 45,
+            "label": "slope face"
+          },
+          {
+            "strike": 10,
+            "dip": 30,
+            "label": "joint"
+          }
+        ],
+        "caption": "Stereonet: slope face (dip 45 deg) and a joint (dip 30 deg) in the same direction."
+      },
+      "solution": "**Concept.** Need $\\phi<\\psi_p<\\psi_f$.\n\n**Working.** Here $20^\\circ<30^\\circ<45^\\circ$, so the joint daylights and exceeds friction.\n\n**Answer.** kinematically feasible."
+    },
+    {
+      "id": 22,
+      "subject": "Mine Economics, Planning & Systems Engineering",
+      "topic": "Cost Analysis — Total Cost",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "With $FC=\\textsf{Rs}\\,5{,}00{,}000$ and $VC=\\textsf{Rs}\\,60$/unit, the total cost of producing $10{,}000$ units is $\\textsf{Rs}$ _____ .",
+      "answer": 1100000,
+      "tolerance": 1,
+      "solution": "**Concept.** $TC=FC+VC\\times\\text{units}$.\n\n**Working.**\n$$500000+60(10000)=1100000.$$\n\n**Answer.** $\\textsf{Rs}\\,11{,}00{,}000$."
+    },
+    {
+      "id": 23,
+      "subject": "Mine Environment & Occupational Health",
+      "topic": "Noise",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "A point source gives $96\\ \\text{dB}$ at $1\\ \\text{m}$. Assuming free-field spherical spreading, compute the level at $2\\ \\text{m}$ (dB).",
+      "answer": 90,
+      "tolerance": 0.2,
+      "figure": {
+        "kind": "svg",
+        "caption": "Inverse-square decay of sound",
+        "markup": "<svg viewBox='0 0 220 120' xmlns='http://www.w3.org/2000/svg'><circle cx='40' cy='60' r='16' fill='#fde68a' stroke='#475569'/><circle cx='100' cy='60' r='3' fill='#1f2937'/><circle cx='170' cy='60' r='3' fill='#1f2937'/><text x='26' y='64' font-size='7'>src</text><text x='88' y='50' font-size='8'>1 m</text><text x='150' y='50' font-size='8'>2 m</text><text x='28' y='100' font-size='8'>96 dB at 1 m</text></svg>"
+      },
+      "solution": "**Concept.** Each doubling of distance reduces the level by $6\\ \\text{dB}$ ($20\\log_{10}2$).\n\n**Working.**\n$$L=96-6=90\\ \\text{dB}$$\n\n**Answer.** $90$ dB."
+    },
+    {
+      "id": 24,
+      "subject": "Engineering Mathematics",
+      "topic": "Linear Algebra",
+      "section": "Technical (1-mark)",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A $2\\times2$ matrix with a repeated eigenvalue $\\lambda$ is diagonalizable if and only if",
+      "options": [
+        "its trace is zero",
+        "it equals $\\lambda I$",
+        "its determinant is $\\lambda^{2}$",
+        "it is symmetric"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** A matrix is diagonalizable iff the geometric multiplicity equals the algebraic multiplicity for every eigenvalue.\n\n**Working.** With a single repeated eigenvalue $\\lambda$ (algebraic multiplicity $2$), diagonalizability needs two independent eigenvectors, i.e. $A-\\lambda I=0$, so $A=\\lambda I$. (Any $2\\times2$ matrix has $\\det=\\lambda^{2}$ for a repeated eigenvalue, so that condition is automatic and insufficient.)\n\n**Answer.** $A=\\lambda I$."
+    },
+    {
+      "id": 25,
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Relative error",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A closed traverse of perimeter 1000 m has a linear closing error of 0.50 m. Its relative error of closure expressed as 1 in n gives n = ____.",
+      "answer": 2000,
+      "tolerance": 1,
+      "solution": "**Concept.** Relative error $=\\dfrac{e}{\\text{perimeter}}$.\n\n**Working.**\n$$\\frac{0.50}{1000}=\\frac{1}{2000}\\Rightarrow 1\\text{ in }2000$$\n\n**Answer.** n = 2000."
+    },
+    {
+      "id": 26,
+      "subject": "Rock Mechanics",
+      "topic": "Engineering Mechanics — Resultant of Forces",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "Two forces of $3\\,\\text{N}$ and $4\\,\\text{N}$ act at a point at right angles to each other. The magnitude of their resultant is _____ N.",
+      "answer": 5,
+      "tolerance": 0.01,
+      "figure": {
+        "kind": "svg",
+        "caption": "Two perpendicular forces of 3 N and 4 N acting at a point.",
+        "markup": "<svg viewBox='0 0 170 150' xmlns='http://www.w3.org/2000/svg' role='img'><line x1='30' y1='120' x2='130' y2='120' stroke='#6366f1' stroke-width='3'/><polygon points='130,120 116,114 116,126' fill='#6366f1'/><line x1='30' y1='120' x2='30' y2='30' stroke='#10b981' stroke-width='3'/><polygon points='30,30 24,44 36,44' fill='#10b981'/><text x='95' y='138' font-size='12' fill='#6366f1'>4 N</text><text x='6' y='75' font-size='12' fill='#10b981'>3 N</text></svg>"
+      },
+      "solution": "**Concept.** For perpendicular forces, $R=\\sqrt{F_1^2+F_2^2}$.\n\n**Working.**\n$$R=\\sqrt{3^2+4^2}=\\sqrt{25}=5.$$\n\n**Answer.** $5\\,\\text{N}$."
+    },
+    {
+      "id": 27,
+      "subject": "Mining Geology",
+      "topic": "Reserve vs resource",
+      "section": "Technical (1-mark)",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The difference between a mineral 'reserve' and a mineral 'resource' is that a reserve is",
+      "options": [
+        "the same as a resource",
+        "the economically and legally mineable part of a resource under current conditions",
+        "always larger than the resource",
+        "material with no economic value"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Reserves are the economic subset of resources.\n\n**Reasoning.** A resource is a concentration with reasonable prospects of eventual economic extraction; a reserve is the portion that is demonstrably economic and mineable now (modifying factors applied).\n\n**Answer.** Economically mineable part of the resource."
+    },
+    {
+      "id": 28,
+      "subject": "Mine Economics, Planning & Systems Engineering",
+      "topic": "Time Value of Money — Compound Interest",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The compound interest earned on $\\textsf{Rs}\\,1{,}00{,}000$ at $8\\%$ per year for $3$ years is $\\textsf{Rs}$ _____ .",
+      "answer": 25971,
+      "tolerance": 5,
+      "solution": "**Concept.** $I=P[(1+i)^n-1]$.\n\n**Working.**\n$$I=100000[(1.08)^3-1]=100000(0.259712)=25971.$$\n\n**Answer.** $\\textsf{Rs}\\,25{,}971$."
+    },
+    {
+      "id": 29,
+      "subject": "Surface Mining",
+      "topic": "Tonnage from volume",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "A bench block has an in-situ volume of 1000 m³ and the rock density is 2.5 t/m³. The tonnage, in t, is ____.",
+      "answer": 2500,
+      "tolerance": 1,
+      "solution": "**Concept.** Tonnage $=$ in-situ volume $\\times$ bank density.\n\n**Working.**\n$$T=1000\\times2.5=2500\\ \\text{t}$$\n\n**Answer.** 2500 t."
+    },
+    {
+      "id": 30,
+      "subject": "Drilling & Blasting",
+      "topic": "Total volume",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "If each of the 40 holes breaks 250 m³, the total rock volume broken by the round, in m³, is ____.",
+      "answer": 10000,
+      "tolerance": 1,
+      "solution": "**Concept.** Total volume $=$ holes $\\times$ volume per hole.\n\n**Working.**\n$$V=40\\times250=10000\\ \\text{m}^3$$\n\n**Answer.** 10000 m³."
+    },
+    {
+      "id": 31,
+      "subject": "Mine Environment & Occupational Health",
+      "topic": "Noise",
+      "section": "Technical (1-mark)",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "The bar chart shows permissible exposure decreasing as noise level rises. Under the $3\\ \\text{dB}$ exchange rate, each $3\\ \\text{dB}$ increase in level:",
+      "options": [
+        "halves the permissible exposure time",
+        "doubles the permissible exposure time",
+        "leaves the permissible time unchanged",
+        "increases the permissible time by 3 hours"
+      ],
+      "answer": 0,
+      "figure": {
+        "kind": "svg",
+        "caption": "Exchange rate for noise exposure",
+        "markup": "<svg viewBox='0 0 200 140' xmlns='http://www.w3.org/2000/svg'><line x1='30' y1='110' x2='180' y2='110' stroke='#475569'/><line x1='30' y1='110' x2='30' y2='20' stroke='#475569'/><rect x='50' y='80' width='14' height='30' fill='#94a3b8'/><rect x='90' y='55' width='14' height='55' fill='#94a3b8'/><rect x='130' y='35' width='14' height='75' fill='#dc2626'/><text x='40' y='128' font-size='8'>+3 dB halves exposure</text></svg>"
+      },
+      "solution": "**Concept.** The exchange rate links an increase in level to a reduction in allowed time at equal noise dose.\n\n**Reasoning.** With a $3\\ \\text{dB}$ exchange rate the sound energy doubles for every $3\\ \\text{dB}$, so the permissible exposure time is halved.\n\n**Answer.** It halves the permissible exposure time."
+    },
+    {
+      "id": 32,
+      "subject": "Mine Economics, Planning & Systems Engineering",
+      "topic": "Mine Planning — Tonnage Estimation",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "An ore block has a volume of $5{,}00{,}000\\,\\text{m}^3$ and a bulk density of $2.7\\,\\text{t/m}^3$. Its tonnage is _____ tonnes.",
+      "answer": 1350000,
+      "tolerance": 1,
+      "solution": "**Concept.** Tonnage $=$ volume $\\times$ density.\n\n**Working.**\n$$500000\\times2.7=1350000.$$\n\n**Answer.** $13{,}50{,}000$ tonnes."
+    },
+    {
+      "id": 33,
+      "subject": "Mine Economics, Planning & Systems Engineering",
+      "topic": "Systems Engineering — Project Duration",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The critical path consists of three activities of duration $5$, $8$ and $7$ days. The project duration is _____ days.",
+      "answer": 20,
+      "tolerance": 0.1,
+      "solution": "**Concept.** Project duration $=$ sum of critical activity times.\n\n**Working.**\n$$5+8+7=20.$$\n\n**Answer.** $20$ days."
+    },
+    {
+      "id": 34,
+      "subject": "Mining Geology",
+      "topic": "Mohs scale",
+      "section": "Technical (1-mark)",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "Mohs scale of hardness is a relative scale running from",
+      "options": [
+        "1 (talc) to 10 (diamond)",
+        "0 to 100",
+        "1 (diamond) to 10 (talc)",
+        "1 to 14"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Mohs scale ranks scratch hardness.\n\n**Reasoning.** It is an ordinal scale from talc (1, softest) to diamond (10, hardest); a higher mineral scratches a lower one. It is relative, not proportional.\n\n**Answer.** 1 (talc) to 10 (diamond)."
+    },
+    {
+      "id": 35,
+      "subject": "Underground Mining",
+      "topic": "Skip vs cage",
+      "section": "Technical (1-mark)",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "In shaft hoisting, a skip is used mainly to",
+      "options": [
+        "transport men and materials in a floored container",
+        "hoist bulk mineral, discharged by tipping or a bottom door",
+        "ventilate the shaft",
+        "support the shaft walls"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Skips are bulk-handling conveyances.\n\n**Reasoning.** A skip is a steel box that loads ore/waste at a measuring pocket and discharges it automatically at the top; men, materials and mine cars are carried in cages instead.\n\n**Answer.** Hoisting bulk mineral."
+    },
+    {
+      "id": 36,
+      "subject": "Surface Mining",
+      "topic": "Pit dewatering",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "Groundwater enters a pit sump at 500 m³/h and the pump removes 600 m³/h. The net rate at which the sump is dewatered, in m³/h, is ____.",
+      "answer": 100,
+      "tolerance": 0.1,
+      "solution": "**Concept.** Net dewatering $=$ pumping rate $-$ inflow.\n\n**Working.**\n$$\\dot V=600-500=100\\ \\text{m}^3/\\text{h}$$\n\n**Answer.** 100 m³/h."
+    },
+    {
+      "id": 37,
+      "subject": "Mine Economics, Planning & Systems Engineering",
+      "topic": "Mine Planning — Reserve Classification",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "In order of increasing geological confidence, mineral resources are classified as",
+      "options": [
+        "inferred, indicated, measured",
+        "measured, indicated, inferred",
+        "proved, probable, possible",
+        "indicated, inferred, measured"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Confidence rises from inferred to measured.\n\n**Working.** The correct increasing order is inferred $\\to$ indicated $\\to$ measured.\n\n**Answer.** inferred, indicated, measured."
+    },
+    {
+      "id": 38,
+      "subject": "Underground Mining",
+      "topic": "Factor of safety",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "For a pillar strength of 13.22 MPa and a pillar stress of 7.81 MPa, the factor of safety is ____ (two decimals).",
+      "answer": 1.69,
+      "tolerance": 0.03,
+      "solution": "**Concept.** $FS=\\dfrac{\\text{pillar strength}}{\\text{pillar stress}}$.\n\n**Working.**\n$$FS=\\frac{13.22}{7.81}=1.69$$\n\n**Answer.** 1.69."
+    },
+    {
+      "id": 39,
+      "subject": "Rock Mechanics",
+      "topic": "Underground Openings — Kirsch Solution",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "For the same opening ($\\sigma_v=10$, $\\sigma_h=0\\,\\text{MPa}$), the tangential stress at the crown (roof) is $3\\sigma_h-\\sigma_v$, i.e. _____ MPa (a negative value indicates tension).",
+      "answer": -10,
+      "tolerance": 0.1,
+      "solution": "**Concept.** Kirsch crown stress: $\\sigma_\\theta=3\\sigma_h-\\sigma_v$.\n\n**Working.**\n$$\\sigma_\\theta=3(0)-10=-10.$$\n\n**Answer.** $-10\\,\\text{MPa}$ (tensile)."
+    },
+    {
+      "id": 40,
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Weisbach triangle",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "The Weisbach triangle method of shaft correlation places the theodolite",
+      "options": [
+        "exactly on the line of the two plumb wires",
+        "slightly off the line joining the two wires, forming a long, narrow triangle with a very small angle at the instrument",
+        "on the surface only",
+        "at the shaft bottom centre"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** A small offset angle is measured precisely.\n\n**Reasoning.** Because the instrument cannot sit exactly on the wire line, it is set a little off, forming a very acute triangle; the tiny angle at the instrument is computed by the sine rule to bring the underground line onto the wire-plane direction.\n\n**Answer.** Slightly off the wire line (narrow triangle)."
+    },
+    {
+      "id": 41,
+      "subject": "Mine Economics, Planning & Systems Engineering",
+      "topic": "Time Value of Money — Continuous Discounting",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "The present worth of $\\textsf{Rs}\\,20{,}000$ due in $3$ years at $8\\%$ compounded continuously is $\\textsf{Rs}$ _____ . Round to the nearest rupee.",
+      "answer": 15733,
+      "tolerance": 5,
+      "solution": "**Concept.** $P=F\\,e^{-rt}$.\n\n**Working.**\n$$P=20000\\,e^{-0.24}=20000(0.78663)=15733.$$\n\n**Answer.** $\\textsf{Rs}\\,15{,}733$."
+    },
+    {
+      "id": 42,
+      "subject": "Rock Mechanics",
+      "topic": "Failure Criteria — Mohr-Coulomb",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "A rock has $c=2\\,\\text{MPa}$ and $\\phi=25^\\circ$. The shear strength on a plane with $\\sigma_n=30\\,\\text{MPa}$ is _____ MPa. Round to two decimals.",
+      "answer": 15.99,
+      "tolerance": 0.1,
+      "solution": "**Concept.** $\\tau=c+\\sigma_n\\tan\\phi$.\n\n**Working.**\n$$\\tau=2+30\\tan 25^\\circ=2+30(0.4663)=2+13.99=15.99.$$\n\n**Answer.** $\\approx 15.99\\,\\text{MPa}$."
+    },
+    {
+      "id": 43,
+      "subject": "Mine Ventilation",
+      "topic": "Fan Pressure",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "A fan has a static pressure of $480\\,\\text{Pa}$ and a velocity pressure of $20\\,\\text{Pa}$. Its total pressure is _____ Pa.",
+      "answer": 500,
+      "tolerance": 0.5,
+      "solution": "**Concept.** Fan total pressure $=$ static $+$ velocity pressure.\n\n**Working.**\n$$480+20=500.$$\n\n**Answer.** $500\\,\\text{Pa}$."
+    },
+    {
+      "id": 44,
+      "subject": "Mine Economics, Planning & Systems Engineering",
+      "topic": "Depreciation — Double Declining Balance",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "For the $\\textsf{Rs}\\,1{,}00{,}000$ asset (DDB, rate $40\\%$), the depreciation charged in year $2$ is $\\textsf{Rs}$ _____ .",
+      "answer": 24000,
+      "tolerance": 1,
+      "solution": "**Concept.** $D_2=\\dfrac{2}{n}\\cdot BV_1$, with $BV_1=60000$.\n\n**Working.**\n$$D_2=0.40\\times60000=24000.$$\n\n**Answer.** $\\textsf{Rs}\\,24{,}000$."
+    },
+    {
+      "id": 45,
+      "subject": "Drilling & Blasting",
+      "topic": "Bench geometry",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "For the bench blast geometry shown, with burden 4.5 m and spacing 5.6 m, the plan area broken per hole (B × S), in m², is ____ (one decimal).",
+      "answer": 25.2,
+      "tolerance": 0.3,
+      "figure": {
+        "kind": "bench",
+        "benchHeight": 10,
+        "burden": 4.5,
+        "spacing": 5.6,
+        "holes": 5,
+        "slopeAngle": 75
+      },
+      "solution": "**Concept.** Each hole is responsible for a plan rectangle of burden × spacing.\n\n**Working.**\n$$A=B\\times S=4.5\\times5.6=25.2\\ \\text{m}^2$$\n\n**Answer.** 25.2 m²."
+    },
+    {
+      "id": 46,
+      "subject": "Rock Mechanics",
+      "topic": "Slope Stability — Water",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "For most rock slopes, the least favourable (most critical) groundwater condition is",
+      "options": [
+        "fully saturated with high pore-water pressure",
+        "completely dry",
+        "a thin surface film only",
+        "frozen ground"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Pore pressure reduces effective normal stress and shear strength.\n\n**Working.** Full saturation gives the highest uplift/water thrust and lowest FoS.\n\n**Answer.** fully saturated with high pore-water pressure."
+    },
+    {
+      "id": 47,
+      "subject": "Mine Economics, Planning & Systems Engineering",
+      "topic": "Time Value of Money — Loan Amortization",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "A loan of $\\textsf{Rs}\\,5{,}00{,}000$ at $10\\%$ is repaid in $4$ equal year-end installments. Each installment is $\\textsf{Rs}$ _____ . Round to the nearest rupee.",
+      "answer": 157735,
+      "tolerance": 50,
+      "solution": "**Concept.** $A=P\\dfrac{i(1+i)^n}{(1+i)^n-1}$.\n\n**Working.**\n$$A=500000\\cdot\\frac{0.10(1.4641)}{0.4641}=500000(0.31547)=157735.$$\n\n**Answer.** $\\textsf{Rs}\\,1{,}57{,}735$."
+    },
+    {
+      "id": 48,
+      "subject": "Surface Mining",
+      "topic": "Rehandle",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "In dragline stripping, 'rehandle' refers to",
+      "options": [
+        "the coal loaded into trucks",
+        "spoil that must be moved a second time, reducing the dragline's effective (prime) output",
+        "the first dig of fresh overburden",
+        "the maintenance time of the dragline"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Limited reach forces some spoil to be cast twice.\n\n**Reasoning.** When the void cannot accept all spoil in one cast, material is placed temporarily and later re-excavated and recast — rehandle — which consumes dragline cycles without removing new overburden, lowering effective production.\n\n**Answer.** Spoil moved a second time, reducing prime output."
+    },
+    {
+      "id": 49,
+      "subject": "Drilling & Blasting",
+      "topic": "Explosive cost",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "A round uses 4800 kg of explosive at Rs 50/kg to break 25000 t of rock. The explosive cost, in Rs per tonne, is ____ (one decimal).",
+      "answer": 9.6,
+      "tolerance": 0.1,
+      "solution": "**Concept.** Unit cost $=\\dfrac{\\text{total explosive cost}}{\\text{tonnes broken}}$.\n\n**Working.**\n$$\\text{Cost}=4800\\times50=\\text{Rs }240000,\\quad \\frac{240000}{25000}=9.6\\ \\text{Rs/t}$$\n\n**Answer.** Rs 9.6 per tonne."
+    },
+    {
+      "id": 50,
+      "subject": "Mine Economics, Planning & Systems Engineering",
+      "topic": "Mine Planning — Ore Cost",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "Mining $20{,}00{,}000$ tonnes of ore at $\\textsf{Rs}\\,100$/t costs $\\textsf{Rs}$ _____ .",
+      "answer": 200000000,
+      "tolerance": 1,
+      "solution": "**Concept.** Cost $=$ tonnage $\\times$ unit cost.\n\n**Working.**\n$$2000000\\times100=200000000.$$\n\n**Answer.** $\\textsf{Rs}\\,20$ crore."
+    },
+    {
+      "id": 51,
+      "subject": "Mine Economics, Planning & Systems Engineering",
+      "topic": "Investment Analysis — Benefit-Cost",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "A project has present-worth benefits of $\\textsf{Rs}\\,2{,}50{,}000$, an initial cost of $\\textsf{Rs}\\,1{,}50{,}000$ and present-worth O&M of $\\textsf{Rs}\\,50{,}000$. The benefit-cost ratio is _____ . Round to two decimals.",
+      "answer": 1.25,
+      "tolerance": 0.01,
+      "solution": "**Concept.** $B/C=\\dfrac{\\text{PW benefits}}{\\text{PW total costs}}$.\n\n**Working.**\n$$\\frac{250000}{150000+50000}=\\frac{250000}{200000}=1.25.$$\n\n**Answer.** $1.25$."
+    },
+    {
+      "id": 52,
+      "subject": "Rock Mechanics",
+      "topic": "Engineering Mechanics — Moment of Inertia",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "The parallel-axis theorem expresses the moment of inertia about a parallel axis as $I=I_c+\\;?$",
+      "options": [
+        "A d^2",
+        "A d",
+        "I_c d",
+        "d^2 / A"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Shifting the reference axis adds $Ad^2$.\n\n**Working.** $I=I_c+Ad^2$, where $d$ is the separation between the axes.\n\n**Answer.** $A d^2$."
+    },
+    {
+      "id": 53,
+      "subject": "Mine Ventilation",
+      "topic": "Fan Laws",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "For a given fan running at variable speed $N$, the power absorbed varies as",
+      "options": [
+        "$W\\propto N^3$",
+        "$W\\propto N$",
+        "$W\\propto N^2$",
+        "$W\\propto N^{1.5}$"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Third fan law.\n\n**Working.** Power is proportional to the cube of speed.\n\n**Answer.** $W\\propto N^3$."
+    },
+    {
+      "id": 54,
+      "subject": "Mine Economics, Planning & Systems Engineering",
+      "topic": "Systems Engineering — Float",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "An activity has Earliest Start $=4$ and Latest Start $=7$ days. Its total float is _____ days.",
+      "answer": 3,
+      "tolerance": 0.1,
+      "solution": "**Concept.** Total float $=$ LS $-$ ES.\n\n**Working.**\n$$7-4=3.$$\n\n**Answer.** $3$ days."
+    },
+    {
+      "id": 55,
+      "subject": "Mine Economics, Planning & Systems Engineering",
+      "topic": "Depreciation — Salvage from Book Value",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "An asset of $\\textsf{Rs}\\,6{,}00{,}000$ is fully straight-line depreciated at $\\textsf{Rs}\\,55{,}000$/year over $10$ years. Its book value (equal to salvage) at end of life is $\\textsf{Rs}$ _____ .",
+      "answer": 50000,
+      "tolerance": 1,
+      "solution": "**Concept.** $BV=P-nD$.\n\n**Working.**\n$$600000-10(55000)=600000-550000=50000.$$\n\n**Answer.** $\\textsf{Rs}\\,50{,}000$."
+    },
+    {
+      "id": 56,
+      "subject": "Mine Economics, Planning & Systems Engineering",
+      "topic": "Depreciation — Double Declining Balance",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "For the $\\textsf{Rs}\\,1{,}00{,}000$ asset (DDB, rate $40\\%$), the book value at the end of year $2$ is $\\textsf{Rs}$ _____ .",
+      "answer": 36000,
+      "tolerance": 1,
+      "solution": "**Concept.** $BV_t=P\\left(1-\\tfrac{2}{n}\\right)^t$.\n\n**Working.**\n$$BV_2=100000(0.6)^2=100000(0.36)=36000.$$\n\n**Answer.** $\\textsf{Rs}\\,36{,}000$."
+    },
+    {
+      "id": 57,
+      "subject": "Drilling & Blasting",
+      "topic": "Spacing estimation",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "For a staggered pattern with spacing = 1.25 × burden and a burden of 4.5 m, the spacing, in m, is ____ (two decimals).",
+      "answer": 5.63,
+      "tolerance": 0.05,
+      "solution": "**Concept.** $S=1.25\\,B$.\n\n**Working.**\n$$S=1.25\\times4.5=5.63\\ \\text{m}$$\n\n**Answer.** 5.63 m."
+    },
+    {
+      "id": 58,
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "DGPS / RTK",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "Differential GPS (DGPS / RTK) improves positioning accuracy by",
+      "options": [
+        "using only one satellite",
+        "using a reference (base) station at a known point to compute and broadcast corrections that the rover applies",
+        "switching off the ionospheric model",
+        "averaging magnetic bearings"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Correlated errors cancel between nearby receivers.\n\n**Reasoning.** A base on a known point determines the range errors and sends corrections to the rover; common errors (orbit, clock, atmosphere) largely cancel, giving cm–dm accuracy (RTK to cm).\n\n**Answer.** Base-station corrections to the rover."
+    },
+    {
+      "id": 59,
+      "subject": "Mine Economics, Planning & Systems Engineering",
+      "topic": "Mine Planning — Break-Even Stripping Ratio",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "Ore yields an NSR of $\\textsf{Rs}\\,7200$/t against an ore cost of $\\textsf{Rs}\\,5000$/t; waste removal costs $\\textsf{Rs}\\,1100$/t. The break-even stripping ratio is _____ . Round to two decimals.",
+      "answer": 2,
+      "tolerance": 0.05,
+      "solution": "**Concept.** $\\text{BESR}=\\dfrac{\\text{NSR}-\\text{ore cost}}{\\text{waste cost}}$.\n\n**Working.**\n$$\\text{BESR}=\\frac{7200-5000}{1100}=\\frac{2200}{1100}=2.0.$$\n\n**Answer.** $2.0$."
+    },
+    {
+      "id": 60,
+      "subject": "Drilling & Blasting",
+      "topic": "Emulsion explosive",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "An emulsion explosive is essentially",
+      "options": [
+        "dry prilled ammonium nitrate only",
+        "a water-in-oil emulsion of fine oxidiser droplets, giving excellent water resistance",
+        "pure nitroglycerine",
+        "compressed air in a tube"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Emulsions are oxidiser droplets dispersed in oil.\n\n**Reasoning.** Microscopic ammonium-nitrate solution droplets coated by an oil/fuel phase give intimate oxidiser-fuel contact, high density and very good water resistance — ideal for wet holes; sensitised by gas bubbles or microballoons.\n\n**Answer.** Water-in-oil emulsion (water resistant)."
+    },
+    {
+      "id": 61,
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Traverse — closing error",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "For the closed traverse shown, the algebraic sums of latitudes and departures are $\\sum L=+0.3$ m and $\\sum D=-0.4$ m. The linear closing error, in m, is _____ (two decimals).",
+      "answer": 0.5,
+      "tolerance": 0.01,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox='0 0 220 200' xmlns='http://www.w3.org/2000/svg'><polygon points='40,160 160,160 180,80 90,40 30,90' fill='none' stroke='#2563eb' stroke-width='2'/><g fill='#1f2937'><circle cx='40' cy='160' r='3'/><circle cx='160' cy='160' r='3'/><circle cx='180' cy='80' r='3'/><circle cx='90' cy='40' r='3'/><circle cx='30' cy='90' r='3'/></g><text x='32' y='176' font-size='10'>A</text><text x='158' y='176' font-size='10'>B</text><text x='186' y='82' font-size='10'>C</text><text x='86' y='34' font-size='10'>D</text><text x='14' y='92' font-size='10'>E</text></svg>",
+        "caption": "Closed traverse ABCDE"
+      },
+      "solution": "**Concept.** Closing error $e=\\sqrt{(\\sum L)^2+(\\sum D)^2}$.\n\n**Working.**\n$$e=\\sqrt{0.3^2+(-0.4)^2}=\\sqrt{0.09+0.16}=\\sqrt{0.25}=0.5\\ \\text{m}$$\n\n**Answer.** $0.5$ m."
+    },
+    {
+      "id": 62,
+      "subject": "Drilling & Blasting",
+      "topic": "Bulk explosives",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "A major advantage of pumped/augered bulk explosives (ANFO, bulk emulsion) over cartridged explosives is that they",
+      "options": [
+        "are less water resistant",
+        "completely fill the borehole cross-section (good coupling), load quickly and cost less per kg",
+        "cannot be used in large holes",
+        "require no detonator or booster"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Bulk loading fully couples the charge.\n\n**Reasoning.** Bulk products fill the whole hole diameter, maximising coupling and energy transfer, are loaded fast by truck, and are cheaper than packaged cartridges — hence dominant in large opencast operations.\n\n**Answer.** Full coupling, fast loading, lower cost."
+    },
+    {
+      "id": 63,
+      "subject": "Mining Geology",
+      "topic": "Calcite",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "Calcite, the chief mineral of limestone, can be readily identified because it",
+      "options": [
+        "is magnetic",
+        "effervesces (fizzes) with cold dilute hydrochloric acid and has a hardness of 3 with rhombohedral cleavage",
+        "has a hardness of 9",
+        "shows conchoidal fracture and no cleavage"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Carbonates react with acid.\n\n**Reasoning.** Calcite (CaCO₃) releases CO₂ with dilute HCl; it is hardness 3, shows perfect rhombohedral cleavage and strong double refraction.\n\n**Answer.** Effervesces with dilute HCl, hardness 3."
+    },
+    {
+      "id": 64,
+      "subject": "Mine Ventilation",
+      "topic": "Mine Gases — Methane",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "The flammable (explosive) range of methane in air is approximately",
+      "options": [
+        "5% to 15%",
+        "0.1% to 1%",
+        "20% to 40%",
+        "50% to 80%"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Methane explodes within fixed concentration limits.\n\n**Working.** The range is roughly $5\\%$ (lower) to $15\\%$ (upper), most violent near $9.5\\%$.\n\n**Answer.** 5% to 15%."
+    },
+    {
+      "id": 65,
+      "subject": "Mine Economics, Planning & Systems Engineering",
+      "topic": "Investment Analysis — After-Tax Cash Flow",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "A mine has revenue minus operating cost of $\\textsf{Rs}\\,1{,}80{,}000$, depreciation of $\\textsf{Rs}\\,45{,}000$ and a tax rate of $30\\%$. The after-tax cash flow is $\\textsf{Rs}$ _____ .",
+      "answer": 139500,
+      "tolerance": 1,
+      "solution": "**Concept.** ATCF $=(\\text{EBITDA}-D)(1-t)+D$.\n\n**Working.**\n$$(180000-45000)(0.7)+45000=94500+45000=139500.$$\n\n**Answer.** $\\textsf{Rs}\\,1{,}39{,}500$."
+    }
+  ]
+}

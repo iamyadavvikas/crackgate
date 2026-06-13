@@ -13,14 +13,13 @@ export async function SiteHeader() {
   return (
     <header className="sticky top-0 z-40 bg-surface/85 backdrop-blur-md border-b border-line">
       <nav className="max-w-7xl mx-auto px-4 sm:px-5 h-16 flex items-center gap-3 sm:gap-6">
-        <MobileNav authed={!!u} />
         <BrandLockup />
 
         {/* Primary nav — kept tight on purpose: ordered by daily-use frequency */}
         <div className="hidden md:flex items-center gap-1 ml-4">
+          <NavLink href="/learn">Learn</NavLink>
           <NavLink href="/practice">Practice</NavLink>
           <NavLink href="/mocks">Mocks</NavLink>
-          <NavLink href="/pyq">PYQs</NavLink>
           <NavLink href="/aits">AITS</NavLink>
           <NavLink href="/study">Notes</NavLink>
           <NavLink href="/pricing">Pricing</NavLink>
@@ -42,6 +41,7 @@ export async function SiteHeader() {
               <Link href="/login" className="btn btn-primary text-sm">Get Started</Link>
             </>
           )}
+          <MobileNav authed={!!u} />
         </div>
       </nav>
     </header>

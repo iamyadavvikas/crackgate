@@ -7,7 +7,7 @@
  *   - Anonymous / free plan: capped to FREE_PREVIEW (20) questions per subject
  *     — enough to evaluate quality, not enough to seriously prep.
  *   - pro: 500 per request — effectively the whole bank, no friction.
- *   - premium: 1000 per request — hard ceiling above the 906-Q bank.
+ *   - premium: 1000 per request — hard ceiling above the per-subject bank.
  *
  *  Reasoning for shipping answers: practice mode shows solution INSTANTLY
  *  after each question; the score isn't persisted, so there's no exploit. */
@@ -15,11 +15,9 @@ import { NextResponse } from "next/server";
 import { auth } from "@/lib/auth";
 import { db } from "@/lib/db";
 import { PRACTICE } from "@/data/practice";
+import { FREE_PREVIEW, CAPS } from "@/lib/practice-config";
 
 export const runtime = "nodejs";
-
-const FREE_PREVIEW = 20;
-const CAPS: Record<string, number> = { free: FREE_PREVIEW, pro: 500, premium: 1000 };
 
 /** Build a per-topic weakness score (lower = weaker) from the user's recent
  *  practice_attempt activity rows. Returns a map topic→correctnessPct.
@@ -56,6 +54,15 @@ export async function GET(req: Request, props: { params: Promise<{ slug: string 
   const plan = (session?.user as { plan?: string } | undefined)?.plan ?? "free";
   const cap  = CAPS[plan] ?? FREE_PREVIEW;
 
+  // Per-difficulty availability (full bank, pre-cap) so the client can label
+  // its difficulty tabs and "All N" session-size chip accurately.
+  const counts = {
+    mixed:  subject.questions.length,
+    easy:   subject.questions.filter((q) => q.difficulty === "easy").length,
+    medium: subject.questions.filter((q) => q.difficulty === "medium").length,
+    hard:   subject.questions.filter((q) => q.difficulty === "hard").length,
+  };
+
   const url = new URL(req.url);
   const difficulty = url.searchParams.get("difficulty") ?? "mixed";
   const reqLimit   = Math.min(parseInt(url.searchParams.get("limit") ?? "20", 10) || 20, cap);
@@ -87,6 +94,7 @@ export async function GET(req: Request, props: { params: Promise<{ slug: string 
         subject: { slug: subject.slug, name: subject.name },
         plan, cap, capped: bank.length > cap,
         requested: reqLimit, returned: questions.length, totalAvailable: bank.length,
+        counts,
         adaptive: adaptiveApplied, weakTopics: weakTopicsUsed,
         questions,
       });
@@ -109,6 +117,7 @@ export async function GET(req: Request, props: { params: Promise<{ slug: string 
     requested: reqLimit,
     returned: questions.length,
     totalAvailable: bank.length,
+    counts,
     adaptive: adaptiveApplied,
     adaptiveRequested: adaptive,
     questions,

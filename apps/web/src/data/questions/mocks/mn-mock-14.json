@@ -1,0 +1,1074 @@
+{
+  "id": "mn-mock-14",
+  "title": "Mock Test 14 — Geomechanics & Ground Control (Hard)",
+  "tier": "subject",
+  "duration": 180,
+  "pattern": "GATE 2027 (65 Q · 100 marks · 3 hours)",
+  "totalMarks": 100,
+  "sections": [
+    {
+      "name": "General Aptitude",
+      "count": 10,
+      "marks": 15
+    },
+    {
+      "name": "Technical (1-mark)",
+      "count": 25,
+      "marks": 25
+    },
+    {
+      "name": "Technical (2-mark)",
+      "count": 30,
+      "marks": 60
+    }
+  ],
+  "negativeMarking": {
+    "mcq1": -0.3333333333333333,
+    "mcq2": -0.6666666666666666,
+    "nat": 0,
+    "msq": 0
+  },
+  "seed": 4159170495,
+  "locked": true,
+  "questions": [
+    {
+      "id": 1,
+      "subject": "General Aptitude",
+      "topic": "Analytical Aptitude — Coding-Decoding",
+      "section": "General Aptitude",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "If 'MINE' is coded as 'NJOF', then 'COAL' is coded as",
+      "options": [
+        "DPBM",
+        "BNZK",
+        "DPCM",
+        "DQBM"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Each letter is shifted forward by one (the +1 cipher).\n\n**Working.** C→D, O→P, A→B, L→M gives DPBM.\n\n**Answer.** DPBM."
+    },
+    {
+      "id": 2,
+      "subject": "General Aptitude",
+      "topic": "Analytical Aptitude — Coding-Decoding",
+      "section": "General Aptitude",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "hard",
+      "stem": "In a code, 'ROCK' is written as 'QNBJ'. Using the same rule, 'SAND' is written as",
+      "options": [
+        "RZMC",
+        "TBOE",
+        "RAMC",
+        "QZMB"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Determine the shift: R→Q is $-1$.\n\n**Working.** Each letter shifts back by one: S→R, A→Z, N→M, D→C gives RZMC.\n\n**Answer.** RZMC."
+    },
+    {
+      "id": 3,
+      "subject": "General Aptitude",
+      "topic": "Spatial Aptitude — Dice",
+      "section": "General Aptitude",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "On a standard die (opposite faces sum to $7$), the top shows $1$ and the front shows $2$. The number on the bottom face is _____ .",
+      "answer": 6,
+      "tolerance": 0.01,
+      "figure": {
+        "kind": "svg",
+        "caption": "A die showing one pip on top and two pips on the front face.",
+        "markup": "<svg viewBox='0 0 130 130' xmlns='http://www.w3.org/2000/svg' role='img'><polygon points='30,40 80,40 100,25 50,25' fill='rgba(16,185,129,0.12)' stroke='#334155' stroke-width='2'/><rect x='30' y='40' width='50' height='55' fill='rgba(99,102,241,0.08)' stroke='#334155' stroke-width='2'/><circle cx='55' cy='32' r='4' fill='#334155'/><circle cx='45' cy='58' r='4' fill='#334155'/><circle cx='65' cy='78' r='4' fill='#334155'/></svg>"
+      },
+      "solution": "**Concept.** Bottom $=7-$ top.\n\n**Working.** $7-1=6$.\n\n**Answer.** $6$."
+    },
+    {
+      "id": 4,
+      "subject": "General Aptitude",
+      "topic": "Quantitative Aptitude — Number System",
+      "section": "General Aptitude",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The units digit of $7^{4}$ is",
+      "options": [
+        "1",
+        "7",
+        "9",
+        "3"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Units digits of powers of $7$ cycle $7, 9, 3, 1$ with period $4$.\n\n**Working.** $7^4$ ends the cycle at $1$ (indeed $7^4=2401$).\n\n**Answer.** $1$."
+    },
+    {
+      "id": 5,
+      "subject": "General Aptitude",
+      "topic": "Quantitative Aptitude — Ages",
+      "section": "General Aptitude",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Five years ago, a man was seven times as old as his son. The man is now $40$ years old. The son's present age is _____ years.",
+      "answer": 10,
+      "tolerance": 0.01,
+      "solution": "**Concept.** Translate the past condition into an equation.\n\n**Working.** Five years ago the man was $35$, so $35=7(\\text{son}-5)\\Rightarrow \\text{son}-5=5\\Rightarrow \\text{son}=10$.\n\n**Answer.** $10$ years."
+    },
+    {
+      "id": 6,
+      "subject": "General Aptitude",
+      "topic": "Quantitative Aptitude — Geometry",
+      "section": "General Aptitude",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "The measure of each interior angle of a regular hexagon is _____ degrees.",
+      "answer": 120,
+      "tolerance": 0.01,
+      "solution": "**Concept.** Interior angle $=\\dfrac{(n-2)\\times 180}{n}$.\n\n**Working.** $\\dfrac{(6-2)\\times 180}{6}=\\dfrac{720}{6}=120^\\circ$.\n\n**Answer.** $120$."
+    },
+    {
+      "id": 7,
+      "subject": "General Aptitude",
+      "topic": "Analytical Aptitude — Statement and Conclusion",
+      "section": "General Aptitude",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "Statement: 'All safety helmets in the store are yellow.' Conclusion: 'No safety helmet in the store is blue.' Does the conclusion follow?",
+      "options": [
+        "Yes, the conclusion follows",
+        "No, the conclusion does not follow",
+        "Data are insufficient",
+        "The conclusion is the opposite of the statement"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** A thing of one exclusive colour cannot be another colour.\n\n**Working.** If every helmet is yellow, none can be blue; the conclusion follows.\n\n**Answer.** Yes, the conclusion follows."
+    },
+    {
+      "id": 8,
+      "subject": "General Aptitude",
+      "topic": "Spatial Aptitude — Figure Series",
+      "section": "General Aptitude",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "An arrow rotates $90^\\circ$ clockwise each step: up, right, down, ... The next arrow points",
+      "options": [
+        "Left (west)",
+        "Up (north)",
+        "Right (east)",
+        "Down (south)"
+      ],
+      "answer": 0,
+      "figure": {
+        "kind": "svg",
+        "caption": "Three arrows pointing up, right and down, followed by a question mark.",
+        "markup": "<svg viewBox='0 0 260 70' xmlns='http://www.w3.org/2000/svg' role='img'><line x1='25' y1='55' x2='25' y2='20' stroke='#334155' stroke-width='3'/><polygon points='25,20 19,32 31,32' fill='#334155'/><line x1='75' y1='37' x2='110' y2='37' stroke='#334155' stroke-width='3'/><polygon points='110,37 98,31 98,43' fill='#334155'/><line x1='160' y1='20' x2='160' y2='55' stroke='#334155' stroke-width='3'/><polygon points='160,55 154,43 166,43' fill='#334155'/><text x='215' y='48' font-size='28' fill='#94a3b8'>?</text></svg>"
+      },
+      "solution": "**Concept.** Continue the $90^\\circ$ clockwise rotation.\n\n**Working.** After down, a further clockwise quarter-turn points to the left.\n\n**Answer.** Left (west)."
+    },
+    {
+      "id": 9,
+      "subject": "General Aptitude",
+      "topic": "Spatial Aptitude — Figure Series",
+      "section": "General Aptitude",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "In the dot series shown ($1, 2, 3, \\ldots$ dots), the next figure should contain",
+      "options": [
+        "4 dots",
+        "3 dots",
+        "5 dots",
+        "2 dots"
+      ],
+      "answer": 0,
+      "figure": {
+        "kind": "svg",
+        "caption": "Three groups of dots containing one, two and three dots respectively.",
+        "markup": "<svg viewBox='0 0 240 80' xmlns='http://www.w3.org/2000/svg' role='img'><circle cx='30' cy='40' r='6' fill='#6366f1'/><circle cx='95' cy='30' r='6' fill='#6366f1'/><circle cx='95' cy='50' r='6' fill='#6366f1'/><circle cx='165' cy='25' r='6' fill='#6366f1'/><circle cx='165' cy='45' r='6' fill='#6366f1'/><circle cx='165' cy='65' r='6' fill='#6366f1'/><text x='210' y='45' font-size='28' fill='#94a3b8'>?</text></svg>"
+      },
+      "solution": "**Concept.** The count increases by one each step.\n\n**Working.** $1, 2, 3, \\ldots$ so the next figure has $4$ dots.\n\n**Answer.** 4 dots."
+    },
+    {
+      "id": 10,
+      "subject": "General Aptitude",
+      "topic": "Quantitative Aptitude — Number System",
+      "section": "General Aptitude",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "The number of positive divisors of $36$ is",
+      "options": [
+        "9",
+        "6",
+        "8",
+        "12"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** For $N=p^a q^b$, the divisor count is $(a+1)(b+1)$.\n\n**Working.** $36=2^2\\cdot 3^2$, so $(2+1)(2+1)=9$.\n\n**Answer.** $9$."
+    },
+    {
+      "id": 11,
+      "subject": "Underground Mining",
+      "topic": "Caving production",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A caving mine has 50 active drawpoints, each drawing 500 t/day. The daily production, in t, is ____.",
+      "answer": 25000,
+      "tolerance": 10,
+      "solution": "**Concept.** Output $=$ drawpoints $\\times$ tonnage per drawpoint.\n\n**Working.**\n$$Q=50\\times500=25{,}000\\ \\text{t/day}$$\n\n**Answer.** 25,000 t/day."
+    },
+    {
+      "id": 12,
+      "subject": "Engineering Mathematics",
+      "topic": "Numerical Methods",
+      "section": "Technical (1-mark)",
+      "type": "MSQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Which of the following are methods for finding ROOTS of equations?",
+      "options": [
+        "Bisection method",
+        "Newton–Raphson method",
+        "Secant method",
+        "Trapezoidal rule"
+      ],
+      "answer": [
+        0,
+        1,
+        2
+      ],
+      "solution": "**Concept.** Root-finding vs numerical integration.\n\n**Working.**\n- Bisection, Newton–Raphson, secant — all root-finding (TRUE).\n- Trapezoidal rule — numerical integration (FALSE).\n\n**Answer.** Options (a), (b) and (c)."
+    },
+    {
+      "id": 13,
+      "subject": "Mine Economics & Planning",
+      "topic": "PERT",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A PERT activity has optimistic $4$, most-likely $7$ and pessimistic $16$ days (figure). Compute its expected time (days).",
+      "answer": 8,
+      "tolerance": 0.1,
+      "figure": {
+        "kind": "svg",
+        "caption": "PERT time distribution",
+        "markup": "<svg viewBox='0 0 220 140' xmlns='http://www.w3.org/2000/svg'><line x1='30' y1='110' x2='200' y2='110' stroke='#475569'/><path d='M50 110 Q115 30 180 110' fill='#bfdbfe' stroke='#475569'/><line x1='50' y1='110' x2='50' y2='100' stroke='#475569'/><line x1='115' y1='110' x2='115' y2='95' stroke='#dc2626'/><line x1='180' y1='110' x2='180' y2='100' stroke='#475569'/><text x='42' y='128' font-size='8'>o=4, m=7, p=16</text></svg>"
+      },
+      "solution": "**Concept.** $t_e=\\dfrac{o+4m+p}{6}$.\n\n**Working.**\n$$t_e=\\frac{4+4\\times7+16}{6}=\\frac{48}{6}=8\\ \\text{days}$$\n\n**Answer.** $8$ days."
+    },
+    {
+      "id": 14,
+      "subject": "Mine Environment & Occupational Health",
+      "topic": "Methane emission",
+      "section": "Technical (1-mark)",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Methane is released into mine workings mainly by",
+      "options": [
+        "condensation of water vapour",
+        "desorption of gas from the coal seam and surrounding strata as they are exposed and relieved of pressure",
+        "diesel combustion",
+        "rock dusting"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Coal stores adsorbed methane.\n\n**Reasoning.** Mining relieves the confining pressure, so methane desorbs from the freshly exposed coal and broken strata and emits into the airways; the rate rises with gas content and production.\n\n**Answer.** Desorption from coal/strata on pressure relief."
+    },
+    {
+      "id": 15,
+      "subject": "Mine Ventilation",
+      "topic": "Main Fans",
+      "section": "Technical (1-mark)",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Most main mine fans are operated as exhaust (induced) fans, which keep the workings",
+      "options": [
+        "slightly below atmospheric pressure",
+        "well above atmospheric pressure",
+        "at exactly atmospheric pressure",
+        "under vacuum"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** An exhausting fan draws air out of the upcast.\n\n**Working.** This holds the workings just below atmospheric pressure, aiding gas drainage.\n\n**Answer.** slightly below atmospheric pressure."
+    },
+    {
+      "id": 16,
+      "subject": "Engineering Mathematics",
+      "topic": "Differential Equations",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The Laplace transform $\\mathcal{L}\\{t\\}$ evaluated at $s=2$ is _____ (round to 2 decimals).",
+      "answer": 0.25,
+      "tolerance": 0.01,
+      "solution": "**Concept.** $\\mathcal{L}\\{t\\}=\\dfrac{1}{s^{2}}$.\n\n**Working.**\n$$\\frac{1}{s^{2}}\\Big|_{s=2}=\\frac{1}{4}=0.25$$\n\n**Answer.** $0.25$."
+    },
+    {
+      "id": 17,
+      "subject": "Surface Mining",
+      "topic": "Haulage Resistance",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A truck climbs a 5% grade as shown, with a rolling resistance of 20 kg/t. Taking grade resistance as 10 kg/t per 1% of grade, compute the total resistance (kg/t).",
+      "answer": 70,
+      "tolerance": 0.5,
+      "figure": {
+        "kind": "svg",
+        "caption": "Truck on grade",
+        "markup": "<svg viewBox='0 0 240 140' xmlns='http://www.w3.org/2000/svg'><line x1='20' y1='120' x2='220' y2='40' stroke='#92400e' stroke-width='2'/><rect x='120' y='52' width='34' height='18' fill='#bfdbfe' stroke='#475569' transform='rotate(-18 137 61)'/><text x='30' y='115' font-size='8'>grade 5%, rolling res 20 kg/t</text></svg>"
+      },
+      "solution": "**Concept.** Total resistance = rolling resistance + grade resistance.\n\n**Working.**\n$$R = 20 + 10 \\times 5 = 20 + 50 = 70$$\n\n**Answer.** $\\mathbf{70}$ kg/t."
+    },
+    {
+      "id": 18,
+      "subject": "Mine Ventilation",
+      "topic": "Airflow — Continuity",
+      "section": "Technical (1-mark)",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "If an airway's cross-sectional area is reduced to half while the quantity stays constant, the air velocity",
+      "options": [
+        "doubles",
+        "halves",
+        "stays the same",
+        "becomes one-quarter"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** $Q=Av$ is constant, so $v\\propto1/A$.\n\n**Working.** Halving $A$ doubles $v$.\n\n**Answer.** doubles."
+    },
+    {
+      "id": 19,
+      "subject": "Mine Ventilation",
+      "topic": "Heat — Humidity",
+      "section": "Technical (1-mark)",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "As the humidity of mine air rises, the body's ability to lose heat by sweating",
+      "options": [
+        "decreases",
+        "increases",
+        "is unaffected",
+        "becomes infinite"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Evaporation slows as air approaches saturation.\n\n**Working.** High humidity reduces sweat evaporation and cooling.\n\n**Answer.** decreases."
+    },
+    {
+      "id": 20,
+      "subject": "Engineering Mathematics",
+      "topic": "Vector Calculus",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "For the conservative field $\\mathbf{F}=\\nabla\\phi$ with $\\phi=xy$, the line integral $\\int_{C}\\mathbf{F}\\cdot d\\mathbf{r}$ along the path $C$ from $(0,0)$ to $(2,3)$ is _____ .",
+      "answer": 6,
+      "tolerance": 0.01,
+      "figure": {
+        "kind": "svg",
+        "caption": "A path C from (0,0) to (2,3); the integral of a gradient field is path-independent.",
+        "markup": "<svg viewBox='0 0 200 170' xmlns='http://www.w3.org/2000/svg' role='img'><line x1='25' y1='145' x2='185' y2='145' stroke='#94a3b8' stroke-width='1'/><line x1='25' y1='20' x2='25' y2='145' stroke='#94a3b8' stroke-width='1'/><path d='M25 145 Q90 60 150 50' fill='none' stroke='#6366f1' stroke-width='2' stroke-dasharray='4 3'/><circle cx='25' cy='145' r='3' fill='#10b981'/><circle cx='150' cy='50' r='3' fill='#ef4444'/><text x='30' y='160' font-size='10' fill='#10b981'>(0,0)</text><text x='130' y='42' font-size='10' fill='#ef4444'>(2,3)</text></svg>"
+      },
+      "solution": "**Concept.** For a gradient field, $\\int_C\\nabla\\phi\\cdot d\\mathbf{r}=\\phi(\\text{end})-\\phi(\\text{start})$ (path-independent).\n\n**Working.**\n$$\\phi(2,3)-\\phi(0,0)=(2)(3)-0=6$$\n\n**Answer.** $6$."
+    },
+    {
+      "id": 21,
+      "subject": "Rock Mechanics",
+      "topic": "Stress and Strain — Inclined Plane",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "For the uniaxial stress of $120\\,\\text{MPa}$, the shear stress on the plane whose normal makes $30^\\circ$ with the stress axis is _____ MPa. Round to two decimals.",
+      "answer": 51.96,
+      "tolerance": 0.1,
+      "solution": "**Concept.** $\\tau=\\sigma\\sin\\theta\\cos\\theta$.\n\n**Working.**\n$$\\tau=120\\sin 30^\\circ\\cos 30^\\circ=120(0.5)(0.866)=51.96.$$\n\n**Answer.** $\\approx 51.96\\,\\text{MPa}$."
+    },
+    {
+      "id": 22,
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Volume — end area",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Two cross-sections 30 m apart have areas 20 m² and 40 m². By the average end-area (trapezoidal) method the volume, in m³, is ____.",
+      "answer": 900,
+      "tolerance": 1,
+      "solution": "**Concept.** $V=\\dfrac{L}{2}(A_1+A_2)$.\n\n**Working.**\n$$V=\\frac{30}{2}(20+40)=15\\times60=900\\ \\text{m}^3$$\n\n**Answer.** 900 m³."
+    },
+    {
+      "id": 23,
+      "subject": "Engineering Mathematics",
+      "topic": "Vector Calculus",
+      "section": "Technical (1-mark)",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "For any twice-differentiable scalar field $f$, the quantity $\\nabla\\times(\\nabla f)$ equals",
+      "options": [
+        "$\\nabla^{2}f$",
+        "$\\mathbf{0}$",
+        "$\\nabla f$",
+        "$1$"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** The curl of a gradient is identically zero.\n\n**Working.**\n$$\\nabla\\times(\\nabla f)=\\mathbf{0}$$\nThis is why every gradient field is irrotational.\n\n**Answer.** $\\mathbf{0}$."
+    },
+    {
+      "id": 24,
+      "subject": "Mine Ventilation",
+      "topic": "Fan Efficiency",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A fan delivers an air power of $18\\,\\text{kW}$ while its shaft power is $22.5\\,\\text{kW}$. The fan efficiency is _____ percent.",
+      "answer": 80,
+      "tolerance": 0.5,
+      "solution": "**Concept.** $\\eta=\\dfrac{\\text{air power}}{\\text{shaft power}}$.\n\n**Working.**\n$$\\eta=\\frac{18}{22.5}=0.80.$$\n\n**Answer.** $80\\%$."
+    },
+    {
+      "id": 25,
+      "subject": "Engineering Mathematics",
+      "topic": "Numerical Methods",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "For $y'=y$ with $y(0)=1$ and step $h=0.1$, one Euler step gives $y(0.1)\\approx$ _____ (round to 2 decimals).",
+      "answer": 1.1,
+      "tolerance": 0.01,
+      "solution": "**Concept.** $y_1=y_0+h\\,f(x_0,y_0)$ with $f=y$.\n\n**Working.**\n$$y_1=1+0.1(1)=1.1$$\n\n**Answer.** $1.1$."
+    },
+    {
+      "id": 26,
+      "subject": "Engineering Mathematics",
+      "topic": "Differential Equations",
+      "section": "Technical (1-mark)",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The order of $\\dfrac{d^{3}y}{dx^{3}}+x\\left(\\dfrac{dy}{dx}\\right)^{4}=\\sin x$ is",
+      "options": [
+        "$1$",
+        "$2$",
+        "$3$",
+        "$4$"
+      ],
+      "answer": 2,
+      "solution": "**Concept.** Order is the highest derivative, regardless of any powers.\n\n**Working.** The highest derivative is $y'''$, so the order is $3$ (the exponent $4$ would be the degree of the first-derivative term, not the order).\n\n**Answer.** $3$."
+    },
+    {
+      "id": 27,
+      "subject": "Rock Mechanics",
+      "topic": "Failure Criteria — Mohr-Coulomb",
+      "section": "Technical (1-mark)",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "In the normal-stress versus shear-stress plane, the Mohr-Coulomb failure envelope is",
+      "options": [
+        "a straight line of slope $\\tan\\phi$ and intercept $c$",
+        "a circle through the origin",
+        "a parabola opening downward",
+        "a horizontal line at $\\tau=c$"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** $\\tau=c+\\sigma_n\\tan\\phi$ is linear in $\\sigma_n$.\n\n**Working.** Slope $=\\tan\\phi$, intercept $=c$.\n\n**Answer.** a straight line of slope $\\tan\\phi$ and intercept $c$."
+    },
+    {
+      "id": 28,
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Chain correction",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A line is measured as 500 m with a 20 m chain that is found to be 0.05 m too long. The corrected (true) length, in m, is ____ (two decimals).",
+      "answer": 501.25,
+      "tolerance": 0.05,
+      "solution": "**Concept.** True length $=$ measured $\\times\\dfrac{\\text{actual chain length}}{\\text{nominal length}}$.\n\n**Working.**\n$$L=500\\times\\frac{20.05}{20}=500\\times1.0025=501.25\\ \\text{m}$$\n\n**Answer.** 501.25 m."
+    },
+    {
+      "id": 29,
+      "subject": "Rock Mechanics",
+      "topic": "Slope Stability — Wedge Failure",
+      "section": "Technical (1-mark)",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Wedge failure of a rock slope involves sliding",
+      "options": [
+        "along the line of intersection of two discontinuity planes",
+        "along a single horizontal bedding plane",
+        "by toppling of columns",
+        "through intact rock only"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Two intersecting planes form a wedge.\n\n**Working.** The wedge slides along their line of intersection.\n\n**Answer.** along the line of intersection of two discontinuity planes."
+    },
+    {
+      "id": 30,
+      "subject": "Rock Mechanics",
+      "topic": "Underground Openings — Extraction Ratio",
+      "section": "Technical (1-mark)",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "As the extraction ratio of a room-and-pillar panel increases, the pillar stress",
+      "options": [
+        "increases",
+        "decreases",
+        "stays constant",
+        "becomes tensile"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** $\\sigma_p=\\dfrac{\\sigma_v}{1-e}$.\n\n**Working.** Larger $e$ shrinks $1-e$, so $\\sigma_p$ rises.\n\n**Answer.** increases."
+    },
+    {
+      "id": 31,
+      "subject": "Mine Ventilation",
+      "topic": "Air Power",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A fan develops $500\\,\\text{Pa}$ while passing $40\\,\\text{m}^3$/s. The air power is _____ W.",
+      "answer": 20000,
+      "tolerance": 1,
+      "solution": "**Concept.** Air power $=P\\,Q$.\n\n**Working.**\n$$500\\times40=20000.$$\n\n**Answer.** $20{,}000\\,\\text{W}=20\\,\\text{kW}$."
+    },
+    {
+      "id": 32,
+      "subject": "Rock Mechanics",
+      "topic": "Stress and Strain — Principal Stress",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "For $\\sigma_x=50$, $\\sigma_y=10$, $\\tau_{xy}=15\\,\\text{MPa}$, the minor principal stress $\\sigma_2$ is _____ MPa.",
+      "answer": 5,
+      "tolerance": 0.01,
+      "solution": "**Concept.** $\\sigma_2=c-R$.\n\n**Working.**\n$$\\sigma_2=30-25=5.$$\n\n**Answer.** $5\\,\\text{MPa}$."
+    },
+    {
+      "id": 33,
+      "subject": "Underground Mining",
+      "topic": "Caveability",
+      "section": "Technical (1-mark)",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The single most critical requirement for successful block caving is that the ore",
+      "options": [
+        "is extremely hard and massive with no joints",
+        "caves and fragments readily once the support is removed by undercutting",
+        "is fully saturated with water",
+        "lies at very shallow depth"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Caving relies on the rock breaking itself.\n\n**Reasoning.** Adequate caveability — governed by jointing, strength and stress — ensures the block propagates upward and fragments to a drawable size after undercutting. Massive, unjointed ore may not cave or may produce oversize.\n\n**Answer.** It must cave/fragment readily after undercutting."
+    },
+    {
+      "id": 34,
+      "subject": "Underground Mining",
+      "topic": "Multi-rope winders",
+      "section": "Technical (1-mark)",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Multi-rope friction winders are favoured for very deep shafts because",
+      "options": [
+        "they need no headgear",
+        "the load is shared among several ropes, allowing smaller rope diameter and compact, high-capacity deep winding",
+        "they eliminate the need for braking",
+        "they avoid the use of any sheave"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Spreading load across ropes overcomes single-rope limits.\n\n**Reasoning.** At great depth a single rope would be impractically heavy/large; sharing the load over 4–6 ropes keeps each rope small and the traction sheave compact, enabling deep, high-capacity hoisting.\n\n**Answer.** Load shared across ropes for compact deep winding."
+    },
+    {
+      "id": 35,
+      "subject": "Mine Environment & Occupational Health",
+      "topic": "Stone dusting",
+      "section": "Technical (1-mark)",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Stone dusting (rock dusting) of coal-mine roadways prevents coal-dust explosions by",
+      "options": [
+        "making the dust more combustible",
+        "mixing incombustible dust (e.g. limestone) with the coal dust so the cloud cannot propagate an explosion",
+        "increasing the airflow",
+        "absorbing methane"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Inert dust quenches the flame.\n\n**Reasoning.** Spreading limestone dust raises the incombustible fraction of the roadway dust; when raised into a cloud, the inert particles absorb heat and dilute the coal dust below the level that can sustain an explosion.\n\n**Answer.** Adds incombustible dust to suppress propagation."
+    },
+    {
+      "id": 36,
+      "subject": "Rock Mechanics",
+      "topic": "Slope Stability — Tension Crack",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "A water-filled tension crack at the crest of a slope generally",
+      "options": [
+        "reduces stability by adding a driving water thrust",
+        "increases cohesion",
+        "has no effect on the factor of safety",
+        "raises the friction angle"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Water pressure in the crack pushes the block outward.\n\n**Working.** It adds a destabilising force, lowering FoS.\n\n**Answer.** reduces stability by adding a driving water thrust."
+    },
+    {
+      "id": 37,
+      "subject": "Mine Ventilation",
+      "topic": "Fan Laws",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "If a fan's speed is increased by $10\\%$, the pressure increases by _____ percent.",
+      "answer": 21,
+      "tolerance": 0.5,
+      "solution": "**Concept.** $P\\propto N^2$.\n\n**Working.**\n$$1.1^2=1.21\\Rightarrow +21\\%.$$\n\n**Answer.** $21\\%$."
+    },
+    {
+      "id": 38,
+      "subject": "Drilling & Blasting",
+      "topic": "Stemming",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "The function of stemming (inert material placed in the collar of the hole) is to",
+      "options": [
+        "increase the VOD of the explosive",
+        "confine the detonation gases so they do their work on the rock, reducing airblast and flyrock",
+        "ignite the explosive",
+        "lubricate the drill bit"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Stemming confines the borehole.\n\n**Reasoning.** Drill cuttings/angular gravel in the collar resist the gas pressure long enough for the explosive energy to fragment and heave the rock instead of venting up the hole — cutting airblast and flyrock.\n\n**Answer.** Confine gases; reduce airblast/flyrock."
+    },
+    {
+      "id": 39,
+      "subject": "Mine Environment & Occupational Health",
+      "topic": "Inertisation",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "Inertisation of a sealed-off fire area with nitrogen or CO₂ controls the fire by",
+      "options": [
+        "increasing the oxygen supply",
+        "lowering the oxygen content below the level that supports combustion and explosion",
+        "raising the temperature",
+        "adding methane"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Combustion needs oxygen above a threshold.\n\n**Reasoning.** Injecting inert gas dilutes the oxygen in the sealed zone below the level needed for burning/explosion, suppressing the fire without water and reducing explosion risk.\n\n**Answer.** Reduces oxygen below the combustion threshold."
+    },
+    {
+      "id": 40,
+      "subject": "Mine Ventilation",
+      "topic": "Air Density",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "Using $\\rho=\\dfrac{P}{RT}$ with $P=100{,}000\\,\\text{Pa}$, $R=287\\,\\text{J/kg\\,K}$ and $T=300\\,\\text{K}$, the air density is _____ kg/m$^3$. Round to two decimals.",
+      "answer": 1.16,
+      "tolerance": 0.02,
+      "solution": "**Concept.** Ideal-gas density $\\rho=\\dfrac{P}{RT}$.\n\n**Working.**\n$$\\rho=\\frac{100000}{287\\times300}=\\frac{100000}{86100}=1.16.$$\n\n**Answer.** $\\approx 1.16\\,\\text{kg/m}^3$."
+    },
+    {
+      "id": 41,
+      "subject": "Mine Environment & Occupational Health",
+      "topic": "Refrigeration",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "A cooling duty of 251.25 kW is required. Taking 1 tonne of refrigeration (TR) = 3.517 kW, the refrigeration capacity needed, in TR, is ____ (one decimal).",
+      "answer": 71.4,
+      "tolerance": 0.5,
+      "solution": "**Concept.** $\\text{TR}=\\dfrac{\\dot{Q}\\ (\\text{kW})}{3.517}$.\n\n**Working.**\n$$\\text{TR}=\\frac{251.25}{3.517}=71.4\\ \\text{TR}$$\n\n**Answer.** 71.4 TR."
+    },
+    {
+      "id": 42,
+      "subject": "Rock Mechanics",
+      "topic": "Engineering Mechanics — Trusses",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "A plane truss has $m=15$ members, $j=8$ joints and $r=4$ reaction components. The degree of static indeterminacy ($m+r-2j$) is _____ .",
+      "answer": 3,
+      "tolerance": 0.01,
+      "solution": "**Concept.** Degree of indeterminacy $=m+r-2j$.\n\n**Working.**\n$$15+4-2(8)=19-16=3.$$\n\n**Answer.** $3$."
+    },
+    {
+      "id": 43,
+      "subject": "Rock Mechanics",
+      "topic": "Failure Criteria — Triaxial",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "In a triaxial compression test, increasing the confining pressure generally",
+      "options": [
+        "increases the peak strength and ductility",
+        "decreases the peak strength",
+        "has no effect on strength",
+        "causes only tensile failure"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Confinement suppresses crack opening.\n\n**Working.** Higher $\\sigma_3$ raises peak strength and promotes ductile behaviour.\n\n**Answer.** increases the peak strength and ductility."
+    },
+    {
+      "id": 44,
+      "subject": "Mine Ventilation",
+      "topic": "Networks — Parallel",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "Two parallel branches share a pressure drop of $200\\,\\text{Pa}$. The branch of resistance $0.5\\,\\text{Ns}^2/\\text{m}^8$ carries _____ m$^3$/s.",
+      "answer": 20,
+      "tolerance": 0.2,
+      "solution": "**Concept.** $Q=\\sqrt{P/R}$.\n\n**Working.**\n$$Q=\\sqrt{\\frac{200}{0.5}}=\\sqrt{400}=20.$$\n\n**Answer.** $20\\,\\text{m}^3/\\text{s}$."
+    },
+    {
+      "id": 45,
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Triangulation",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "Triangulation as a method of horizontal control depends on measuring",
+      "options": [
+        "all the sides by chaining",
+        "the angles of a network of triangles together with at least one precisely measured baseline",
+        "only the elevations",
+        "the magnetic bearings only"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Angles plus a baseline fix the network.\n\n**Reasoning.** With one measured baseline and the observed angles, the sine rule yields all other sides; redundant angles provide checks. It was the classic method for extensive control.\n\n**Answer.** Angles + one measured baseline."
+    },
+    {
+      "id": 46,
+      "subject": "Mine Economics & Planning",
+      "topic": "Network Analysis",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "In the activity network shown, the upper path durations are $6$ and $9$ days and the lower path durations are $4$ and $5$ days between the same start and end nodes. Compute the project (critical-path) duration in days.",
+      "answer": 15,
+      "tolerance": 0.1,
+      "figure": {
+        "kind": "svg",
+        "caption": "Activity network",
+        "markup": "<svg viewBox='0 0 260 140' xmlns='http://www.w3.org/2000/svg'><g fill='#bfdbfe' stroke='#475569'><circle cx='30' cy='70' r='14'/><circle cx='110' cy='40' r='14'/><circle cx='110' cy='100' r='14'/><circle cx='200' cy='70' r='14'/></g><g stroke='#475569' marker-end='url(#na)'><line x1='44' y1='65' x2='96' y2='45'/><line x1='44' y1='75' x2='96' y2='95'/><line x1='124' y1='45' x2='186' y2='65'/><line x1='124' y1='95' x2='186' y2='75'/></g><defs><marker id='na' markerWidth='8' markerHeight='8' refX='7' refY='3' orient='auto'><path d='M0 0 L6 3 L0 6 Z' fill='#475569'/></marker></defs><text x='62' y='40' font-size='8'>6</text><text x='62' y='118' font-size='8'>4</text><text x='160' y='42' font-size='8'>9</text><text x='160' y='112' font-size='8'>5</text></svg>"
+      },
+      "solution": "**Concept.** The critical path is the longest path through the network.\n\n**Working.**\n$$\\text{upper}=6+9=15,\\quad \\text{lower}=4+5=9\\Rightarrow \\text{duration}=15$$\n\n**Answer.** $15$ days."
+    },
+    {
+      "id": 47,
+      "subject": "Rock Mechanics",
+      "topic": "Rock Properties — Factor of Safety",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "A rock pillar with compressive strength $120\\,\\text{MPa}$ carries an axial stress of $40\\,\\text{MPa}$. Its factor of safety is _____ .",
+      "answer": 3,
+      "tolerance": 0.01,
+      "solution": "**Concept.** $\\text{FoS}=\\dfrac{\\text{strength}}{\\text{stress}}$.\n\n**Working.**\n$$\\text{FoS}=\\frac{120}{40}=3.$$\n\n**Answer.** $3$."
+    },
+    {
+      "id": 48,
+      "subject": "Mining Geology",
+      "topic": "Coal reserve estimate",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "A coal seam covers an area of 1,000,000 m² with an average thickness of 3 m and an in-situ density of 1.4 t/m³. The in-situ tonnage, in million tonnes, is ____ (one decimal).",
+      "answer": 4.2,
+      "tolerance": 0.05,
+      "solution": "**Concept.** Tonnage $=$ area $\\times$ thickness $\\times$ density.\n\n**Working.**\n$$T=1{,}000{,}000\\times3\\times1.4=4.2\\times10^{6}\\ \\text{t}=4.2\\ \\text{Mt}$$\n\n**Answer.** 4.2 million tonnes."
+    },
+    {
+      "id": 49,
+      "subject": "Rock Mechanics",
+      "topic": "Engineering Mechanics — Impulse and Momentum",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "A constant force of $10\\,\\text{N}$ acts for $4\\,\\text{s}$ on a $5\\,\\text{kg}$ body initially at rest. Its final speed is _____ m/s.",
+      "answer": 8,
+      "tolerance": 0.01,
+      "solution": "**Concept.** Impulse $=Ft=m\\,\\Delta v$.\n\n**Working.**\n$$\\Delta v=\\frac{Ft}{m}=\\frac{10\\times 4}{5}=8.$$\n\n**Answer.** $8\\,\\text{m/s}$."
+    },
+    {
+      "id": 50,
+      "subject": "Drilling & Blasting",
+      "topic": "Cartridge mass",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "A cylindrical cartridge of 32 mm diameter and 200 mm length has an explosive density of 1200 kg/m³. Its mass, in grams, is ____ (nearest gram).",
+      "answer": 193,
+      "tolerance": 3,
+      "solution": "**Concept.** Mass $=\\dfrac{\\pi}{4}d^2 L\\,\\rho$.\n\n**Working.**\n$$m=\\frac{\\pi}{4}(0.032)^2(0.2)(1200)=0.000804\\times0.2\\times1200=0.193\\ \\text{kg}=193\\ \\text{g}$$\n\n**Answer.** 193 g."
+    },
+    {
+      "id": 51,
+      "subject": "Mine Ventilation",
+      "topic": "Natural Ventilation",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "Downcast air has density $1.2\\,\\text{kg/m}^3$ and upcast air $1.1\\,\\text{kg/m}^3$ over a shaft depth of $200\\,\\text{m}$. The natural ventilation pressure ($\\text{NVP}=(\\rho_d-\\rho_u)gH$, $g=9.81$) is _____ Pa. Round to one decimal.",
+      "answer": 196.2,
+      "tolerance": 1,
+      "solution": "**Concept.** $\\text{NVP}=(\\rho_d-\\rho_u)\\,g\\,H$.\n\n**Working.**\n$$(1.2-1.1)\\times9.81\\times200=0.1\\times9.81\\times200=196.2.$$\n\n**Answer.** $196.2\\,\\text{Pa}$."
+    },
+    {
+      "id": 52,
+      "subject": "Rock Mechanics",
+      "topic": "Underground Openings — Pillar Stress",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "Square pillars $8\\,\\text{m}$ wide are separated by $4\\,\\text{m}$ openings under $\\sigma_v=20\\,\\text{MPa}$. The pillar stress $\\sigma_v\\left(\\dfrac{W_p+W_o}{W_p}\\right)^2$ is _____ MPa.",
+      "answer": 45,
+      "tolerance": 0.1,
+      "solution": "**Concept.** Square-pillar tributary formula.\n\n**Working.**\n$$\\sigma_p=20\\left(\\frac{12}{8}\\right)^2=20(2.25)=45.$$\n\n**Answer.** $45\\,\\text{MPa}$."
+    },
+    {
+      "id": 53,
+      "subject": "Engineering Mathematics",
+      "topic": "Differential Equations",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "The general solution of the Cauchy–Euler equation $x^{2}y''-3xy'+3y=0$ is",
+      "options": [
+        "$C_1 x+C_2 x^{3}$",
+        "$C_1 x^{-1}+C_2 x^{-3}$",
+        "$C_1 e^{x}+C_2 e^{3x}$",
+        "$(C_1+C_2\\ln x)x$"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Try $y=x^{m}$; this yields an indicial equation.\n\n**Working.**\n$$m(m-1)-3m+3=m^{2}-4m+3=(m-1)(m-3)=0\\Rightarrow m=1,3$$\nSolution $C_1 x+C_2 x^{3}$.\n\n**Answer.** $C_1 x+C_2 x^{3}$."
+    },
+    {
+      "id": 54,
+      "subject": "Mine Ventilation",
+      "topic": "Air Mass Flow",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "Air of density $1.2\\,\\text{kg/m}^3$ flows at $50\\,\\text{m}^3$/s. The mass flow rate is _____ kg/s.",
+      "answer": 60,
+      "tolerance": 0.5,
+      "solution": "**Concept.** $\\dot m=\\rho Q$.\n\n**Working.**\n$$1.2\\times50=60.$$\n\n**Answer.** $60\\,\\text{kg/s}$."
+    },
+    {
+      "id": 55,
+      "subject": "Mine Economics, Planning & Systems Engineering",
+      "topic": "Investment Analysis — NPV",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "A project costs $\\textsf{Rs}\\,50{,}000$ and returns $\\textsf{Rs}\\,20{,}000$ per year for $4$ years. At a MARR of $12\\%$ (so $(P/A,12\\%,4)=3.0373$), its NPV is $\\textsf{Rs}$ _____ . Round to the nearest rupee.",
+      "answer": 10746,
+      "tolerance": 30,
+      "solution": "**Concept.** $\\text{NPV}=-P+A(P/A,i,n)$.\n\n**Working.**\n$$\\text{NPV}=-50000+20000(3.0373)=60746-50000=10746.$$\n\n**Answer.** $\\textsf{Rs}\\,10{,}746$."
+    },
+    {
+      "id": 56,
+      "subject": "Engineering Mathematics",
+      "topic": "Calculus",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "By the ratio test, the power series $\\displaystyle\\sum_{n=0}^{\\infty}\\frac{x^{n}}{n!}$ converges for",
+      "options": [
+        "only $|x|<1$",
+        "only $x=0$",
+        "all real $x$",
+        "only $x>0$"
+      ],
+      "answer": 2,
+      "solution": "**Concept.** Ratio test: $\\lim\\left|\\dfrac{a_{n+1}}{a_n}\\right|<1$ for convergence.\n\n**Working.**\n$$\\left|\\frac{x^{n+1}/(n+1)!}{x^{n}/n!}\\right|=\\frac{|x|}{n+1}\\to 0<1\\quad\\forall x$$\nThe radius of convergence is infinite (this series is $e^{x}$).\n\n**Answer.** All real $x$."
+    },
+    {
+      "id": 57,
+      "subject": "Rock Mechanics",
+      "topic": "Underground Openings — Rib Pillar",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "For a long rib pillar, $\\sigma_p=\\sigma_v\\dfrac{W_p+W_o}{W_p}$. With $W_p=8\\,\\text{m}$, $W_o=4\\,\\text{m}$ and $\\sigma_v=20\\,\\text{MPa}$, the pillar stress is _____ MPa.",
+      "answer": 30,
+      "tolerance": 0.1,
+      "solution": "**Concept.** Rib pillars use the linear (not squared) width ratio.\n\n**Working.**\n$$\\sigma_p=20\\times\\frac{12}{8}=20(1.5)=30.$$\n\n**Answer.** $30\\,\\text{MPa}$."
+    },
+    {
+      "id": 58,
+      "subject": "Rock Mechanics",
+      "topic": "Failure Criteria — Mohr-Coulomb",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "If the ratio $N=\\sigma_c/\\sigma_t=4$ and $N=\\tan^2(45^\\circ+\\phi/2)$, the friction angle $\\phi$ is _____ degrees. Round to two decimals.",
+      "answer": 36.87,
+      "tolerance": 0.2,
+      "solution": "**Concept.** $\\tan(45^\\circ+\\phi/2)=\\sqrt{N}$.\n\n**Working.**\n$$\\sqrt{4}=2,\\quad 45^\\circ+\\frac{\\phi}{2}=\\tan^{-1}2=63.43^\\circ,\\quad \\phi=36.87^\\circ.$$\n\n**Answer.** $\\approx 36.87^\\circ$."
+    },
+    {
+      "id": 59,
+      "subject": "Rock Mechanics",
+      "topic": "Rockbursts — Strain Energy",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "The elastic strain-energy density at failure is $U=\\dfrac{\\sigma^2}{2E}$. For $\\sigma=100\\,\\text{MPa}$ and $E=50\\,\\text{GPa}$, $U$ in kJ/m$^3$ is _____ .",
+      "answer": 100,
+      "tolerance": 0.5,
+      "solution": "**Concept.** $U=\\dfrac{\\sigma^2}{2E}$.\n\n**Working.**\n$$U=\\frac{(100\\times10^6)^2}{2(50\\times10^9)}=\\frac{1\\times10^{16}}{1\\times10^{11}}=1\\times10^5\\,\\text{J/m}^3=100\\,\\text{kJ/m}^3.$$\n\n**Answer.** $100\\,\\text{kJ/m}^3$."
+    },
+    {
+      "id": 60,
+      "subject": "Underground Mining",
+      "topic": "Method classification",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "Underground metal mining methods are broadly classified as",
+      "options": [
+        "wet, dry and damp methods",
+        "unsupported (naturally supported), supported, and caving methods",
+        "shallow, medium and deep methods only",
+        "manual, semi-mechanised and mechanised only"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** The classic classification is by ground-support strategy.\n\n**Reasoning.** Methods are grouped as naturally supported/open (e.g. sublevel and room-and-pillar), artificially supported (e.g. cut-and-fill, square-set) and caving (e.g. block and sublevel caving).\n\n**Answer.** Unsupported, supported and caving methods."
+    },
+    {
+      "id": 61,
+      "subject": "Rock Mechanics",
+      "topic": "Failure Criteria — Hoek-Brown",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "For the intact Hoek-Brown criterion with $\\sigma_c=100\\,\\text{MPa}$, $m=10$, $s=1$ and $\\sigma_3=10\\,\\text{MPa}$, $\\sigma_1$ is _____ MPa. Round to two decimals.",
+      "answer": 251.42,
+      "tolerance": 0.5,
+      "solution": "**Concept.** $\\sigma_1=\\sigma_3+\\sigma_c\\sqrt{m\\sigma_3/\\sigma_c+s}$.\n\n**Working.**\n$$\\sigma_1=10+100\\sqrt{\\frac{10\\times10}{100}+1}=10+100\\sqrt{2}=10+141.42=151.42.$$\n\n**Answer.** $\\approx 151.42\\,\\text{MPa}$."
+    },
+    {
+      "id": 62,
+      "subject": "Mine Ventilation",
+      "topic": "Instruments — Anemometer",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "A vane anemometer is used to measure",
+      "options": [
+        "air velocity",
+        "gas concentration",
+        "air temperature",
+        "dust mass"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** The vane rotates in proportion to air speed.\n\n**Working.** It reads the velocity of the airflow.\n\n**Answer.** air velocity."
+    },
+    {
+      "id": 63,
+      "subject": "Mine Economics & Planning",
+      "topic": "Network Analysis",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "For the PERT activity with $o=4$ and $p=8$ days, compute the variance of the activity time.",
+      "answer": 0.44,
+      "tolerance": 0.02,
+      "figure": {
+        "kind": "svg",
+        "caption": "PERT variance from spread",
+        "markup": "<svg viewBox='0 0 240 120' xmlns='http://www.w3.org/2000/svg'><line x1='30' y1='80' x2='210' y2='80' stroke='#475569'/><circle cx='70' cy='80' r='4' fill='#16a34a'/><circle cx='170' cy='80' r='4' fill='#dc2626'/><text x='55' y='70' font-size='8'>o=4</text><text x='158' y='70' font-size='8'>p=8</text><line x1='70' y1='95' x2='170' y2='95' stroke='#2563eb' stroke-width='2'/></svg>"
+      },
+      "solution": "**Concept.** PERT variance $=\\left(\\dfrac{p-o}{6}\\right)^2$.\n\n**Working.**\n$$\\sigma^2=\\left(\\frac{8-4}{6}\\right)^2=\\left(0.667\\right)^2=0.444$$\n\n**Answer.** $\\approx 0.44$."
+    },
+    {
+      "id": 64,
+      "subject": "Drilling & Blasting",
+      "topic": "Electronic detonators",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "Electronic detonators differ from pyrotechnic-delay detonators chiefly in offering",
+      "options": [
+        "lower cost and no programming",
+        "highly accurate, programmable delay times with negligible scatter",
+        "no need for a booster",
+        "a higher VOD core"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Electronic delays use a microchip timer.\n\n**Reasoning.** Instead of a burning pyrotechnic element (which scatters), a programmable chip gives precise, freely chosen delays with millisecond accuracy, allowing optimised timing for fragmentation and vibration control.\n\n**Answer.** Accurate, programmable delays."
+    },
+    {
+      "id": 65,
+      "subject": "Underground Mining",
+      "topic": "Tributary area",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "Using tributary area theory with a vertical stress of 5 MPa and an extraction ratio of 0.36, the average pillar stress, in MPa, is ____ (two decimals).",
+      "answer": 7.81,
+      "tolerance": 0.05,
+      "solution": "**Concept.** $\\sigma_p=\\dfrac{\\sigma_v}{1-e}$ (tributary area theory).\n\n**Working.**\n$$\\sigma_p=\\frac{5}{1-0.36}=\\frac{5}{0.64}=7.81\\ \\text{MPa}$$\n\n**Answer.** 7.81 MPa."
+    }
+  ]
+}

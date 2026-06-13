@@ -37,7 +37,7 @@ export function PercentilePanel() {
     return (
       <div className="card p-6">
         <h2 className="font-bold text-lg">Percentile vs Peers</h2>
-        <p className="text-sm text-muted mt-2">Submit a mock or PYQ to see how you rank against other CrackGate users.</p>
+        <p className="text-sm text-muted mt-2">Submit a mock to see how you rank against other CrackGate users.</p>
       </div>
     );
   }

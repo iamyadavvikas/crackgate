@@ -1,0 +1,1094 @@
+{
+  "id": "mn-mock-17",
+  "title": "Mock Test 17 — Drilling, Blasting & Machinery",
+  "tier": "subject",
+  "duration": 180,
+  "pattern": "GATE 2027 (65 Q · 100 marks · 3 hours)",
+  "totalMarks": 100,
+  "sections": [
+    {
+      "name": "General Aptitude",
+      "count": 10,
+      "marks": 15
+    },
+    {
+      "name": "Technical (1-mark)",
+      "count": 25,
+      "marks": 25
+    },
+    {
+      "name": "Technical (2-mark)",
+      "count": 30,
+      "marks": 60
+    }
+  ],
+  "negativeMarking": {
+    "mcq1": -0.3333333333333333,
+    "mcq2": -0.6666666666666666,
+    "nat": 0,
+    "msq": 0
+  },
+  "seed": 4175948114,
+  "locked": true,
+  "questions": [
+    {
+      "id": 1,
+      "subject": "General Aptitude",
+      "topic": "Quantitative Aptitude — Time, Speed and Distance",
+      "section": "General Aptitude",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "hard",
+      "stem": "Two trains $60$ km apart move toward each other at $40$ km/h and $20$ km/h. The time taken to meet is _____ hours.",
+      "answer": 1,
+      "tolerance": 0.01,
+      "solution": "**Concept.** Closing speed = sum of speeds when moving toward each other.\n\n**Working.** Relative speed $=40+20=60$ km/h; time $=\\dfrac{60}{60}=1$ h.\n\n**Answer.** $1$ hour."
+    },
+    {
+      "id": 2,
+      "subject": "General Aptitude",
+      "topic": "Spatial Aptitude — Figure Rotation",
+      "section": "General Aptitude",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The arrow shown points upward (north). After rotating it $180^\\circ$, it points",
+      "options": [
+        "Downward (south)",
+        "Upward (north)",
+        "Left (west)",
+        "Right (east)"
+      ],
+      "answer": 0,
+      "figure": {
+        "kind": "svg",
+        "caption": "A vertical arrow pointing upward.",
+        "markup": "<svg viewBox='0 0 80 160' xmlns='http://www.w3.org/2000/svg' role='img'><line x1='40' y1='130' x2='40' y2='30' stroke='#10b981' stroke-width='3'/><polygon points='40,30 32,45 48,45' fill='#10b981'/></svg>"
+      },
+      "solution": "**Concept.** A $180^\\circ$ rotation reverses the direction.\n\n**Working.** Upward becomes downward.\n\n**Answer.** Downward (south)."
+    },
+    {
+      "id": 3,
+      "subject": "General Aptitude",
+      "topic": "Verbal Aptitude — Analogy",
+      "section": "General Aptitude",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "SEISMOGRAPH : EARTHQUAKE :: ANEMOMETER : ?",
+      "options": [
+        "wind speed",
+        "rainfall",
+        "temperature",
+        "pressure"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** The relationship is 'instrument : phenomenon it records/measures'.\n\n**Working.** A seismograph records earthquakes; an anemometer measures wind speed.\n\n**Answer.** wind speed."
+    },
+    {
+      "id": 4,
+      "subject": "General Aptitude",
+      "topic": "Analytical Aptitude — Syllogism",
+      "section": "General Aptitude",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "hard",
+      "stem": "All cats are animals. Some animals are wild. Which conclusion is valid?",
+      "options": [
+        "No definite conclusion about cats being wild can be drawn",
+        "All cats are wild",
+        "Some cats are wild",
+        "No cat is wild"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** A particular premise about the broader set need not apply to the subset.\n\n**Working.** 'Some animals are wild' does not specify whether any are cats, so nothing definite about wild cats follows.\n\n**Answer.** No definite conclusion can be drawn."
+    },
+    {
+      "id": 5,
+      "subject": "General Aptitude",
+      "topic": "Verbal Aptitude — Reading Comprehension",
+      "section": "General Aptitude",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "hard",
+      "stem": "Read the passage and answer.\n\n'Critics argue that subsidies for fossil-fuel extraction distort energy markets and delay the transition to renewables. Proponents counter that such subsidies protect jobs and keep energy affordable in the short term.'\n\nThe passage primarily presents:",
+      "options": [
+        "two opposing viewpoints on fossil-fuel subsidies",
+        "a definitive argument against renewable energy",
+        "a neutral historical account of energy policy",
+        "evidence proving subsidies have no effect"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Identify the rhetorical structure (argument, narrative, comparison of views).\n\n**Working.** The passage states what 'critics argue' and what 'proponents counter', i.e., two opposing positions, without endorsing either.\n\n**Answer.** two opposing viewpoints on fossil-fuel subsidies."
+    },
+    {
+      "id": 6,
+      "subject": "General Aptitude",
+      "topic": "Analytical Aptitude — Clocks",
+      "section": "General Aptitude",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "The angle between the hour and minute hands of a clock at exactly $3{:}00$ is _____ degrees.",
+      "answer": 90,
+      "tolerance": 0.01,
+      "solution": "**Concept.** Each hour mark spans $30^\\circ$.\n\n**Working.** At $3{:}00$ the hands are $3$ hour-marks apart: $3\\times 30^\\circ = 90^\\circ$.\n\n**Answer.** $90$."
+    },
+    {
+      "id": 7,
+      "subject": "General Aptitude",
+      "topic": "Quantitative Aptitude — Time and Work",
+      "section": "General Aptitude",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "A is twice as efficient as B, and together they finish a job in $12$ days. A alone would take",
+      "options": [
+        "18 days",
+        "24 days",
+        "36 days",
+        "20 days"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Let B's rate be $x$; then A's rate is $2x$.\n\n**Working.** $3x=\\dfrac{1}{12}\\Rightarrow x=\\dfrac{1}{36}$; A's rate $=2x=\\dfrac{1}{18}$, so A alone takes $18$ days.\n\n**Answer.** $18$ days."
+    },
+    {
+      "id": 8,
+      "subject": "General Aptitude",
+      "topic": "Quantitative Aptitude — CI vs SI Difference",
+      "section": "General Aptitude",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "The difference between the compound interest and the simple interest on $10000$ at $10\\%$ per annum for $2$ years is _____ .",
+      "answer": 100,
+      "tolerance": 0.01,
+      "solution": "**Concept.** For $2$ years the difference is $P\\left(\\tfrac{r}{100}\\right)^2$.\n\n**Working.**\n$$10000\\times (0.1)^2 = 10000\\times 0.01 = 100$$\n\n**Answer.** $100$."
+    },
+    {
+      "id": 9,
+      "subject": "General Aptitude",
+      "topic": "Verbal Aptitude — Analogy",
+      "section": "General Aptitude",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "ORE : SMELTING :: WHEAT : ?",
+      "options": [
+        "milling",
+        "harvesting",
+        "sowing",
+        "storing"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** The relationship is 'raw material : the processing step that yields a usable product'.\n\n**Working.** Smelting processes ore into metal; milling processes wheat into flour. Harvesting/sowing are field operations, not refining.\n\n**Answer.** milling."
+    },
+    {
+      "id": 10,
+      "subject": "General Aptitude",
+      "topic": "Verbal Aptitude — Vocabulary",
+      "section": "General Aptitude",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "Choose the correct word: 'The blast had a serious ____ on the surrounding structures.'",
+      "options": [
+        "effect",
+        "affect",
+        "aspect",
+        "accept"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** 'Effect' is the noun (a result); 'affect' is usually the verb (to influence).\n\n**Working.** A noun is needed after 'a serious', so 'effect' is correct.\n\n**Answer.** effect."
+    },
+    {
+      "id": 11,
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Stadia constants",
+      "section": "Technical (1-mark)",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "For a modern internal-focusing tacheometer, the stadia constants are usually",
+      "options": [
+        "K ≈ 100 (multiplying) and C ≈ 0 (additive)",
+        "K = 0 and C = 100",
+        "K = 1 and C = 1",
+        "both equal to the focal length"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Constants are set by the stadia hair spacing and optics.\n\n**Reasoning.** The multiplying constant $K=f/i\\approx100$; internal focusing makes the additive constant $C\\approx0$, simplifying $D=Ks$.\n\n**Answer.** K ≈ 100, C ≈ 0."
+    },
+    {
+      "id": 12,
+      "subject": "Mine Ventilation",
+      "topic": "Airway Geometry — Perimeter",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A rectangular airway is $4\\,\\text{m}$ wide and $3\\,\\text{m}$ high. Its perimeter is _____ m.",
+      "answer": 14,
+      "tolerance": 0.1,
+      "solution": "**Concept.** Perimeter $=2(w+h)$.\n\n**Working.**\n$$2(4+3)=14.$$\n\n**Answer.** $14\\,\\text{m}$."
+    },
+    {
+      "id": 13,
+      "subject": "Mine Ventilation",
+      "topic": "Fan laws",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A fan develops $500\\ \\text{Pa}$ at its base speed; the speed is increased by a factor of $1.2$ (figure). Compute the new pressure (Pa).",
+      "answer": 720,
+      "tolerance": 1,
+      "figure": {
+        "kind": "svg",
+        "caption": "Fan pressure characteristic",
+        "markup": "<svg viewBox='0 0 200 130' xmlns='http://www.w3.org/2000/svg'><line x1='30' y1='100' x2='180' y2='100' stroke='#475569'/><line x1='30' y1='30' x2='30' y2='100' stroke='#475569'/><path d='M30 95 Q100 60 175 40' fill='none' stroke='#2563eb' stroke-width='2'/><text x='34' y='120' font-size='8'>p1=500, speed x1.2</text></svg>"
+      },
+      "solution": "**Concept.** $p\\propto N^2$.\n\n**Working.**\n$$p_2=500\\times1.2^2=500\\times1.44=720\\ \\text{Pa}$$\n\n**Answer.** $720$ Pa."
+    },
+    {
+      "id": 14,
+      "subject": "Drilling & Blasting",
+      "topic": "Vibration control",
+      "section": "Technical (1-mark)",
+      "type": "MSQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Which measures help reduce blast-induced ground vibration at nearby structures? (Select all that apply.)",
+      "options": [
+        "Reducing the maximum charge fired per delay",
+        "Using delay detonators instead of instantaneous firing",
+        "Firing all holes simultaneously on a single delay",
+        "Increasing the distance between the blast and the structure"
+      ],
+      "answer": [
+        0,
+        1,
+        3
+      ],
+      "solution": "**Concept.** PPV falls with smaller charge per delay and larger scaled distance.\n\n**Reasoning.** Limiting the charge per delay and sequencing with delays both lower the instantaneous charge, while greater distance increases the scaled distance — all reduce PPV. Firing everything on one delay maximises the instantaneous charge and worsens vibration.\n\n**Answer.** Options 1, 2 and 4."
+    },
+    {
+      "id": 15,
+      "subject": "Mine Environment & Occupational Health",
+      "topic": "Subsidence",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A flat seam lies at depth $H=200\\ \\text{m}$ and the angle of draw is $25^\\circ$ (figure). Compute the half-width of the surface influence zone measured from the panel edge (m, two decimals).",
+      "answer": 93.26,
+      "tolerance": 0.5,
+      "figure": {
+        "kind": "svg",
+        "caption": "Angle of draw",
+        "markup": "<svg viewBox='0 0 220 150' xmlns='http://www.w3.org/2000/svg'><rect x='20' y='30' width='180' height='12' fill='#cbd5e1'/><rect x='90' y='120' width='40' height='10' fill='#1f2937'/><g stroke='#dc2626' stroke-dasharray='3 2'><line x1='110' y1='125' x2='60' y2='36'/><line x1='110' y1='125' x2='160' y2='36'/></g><text x='32' y='145' font-size='8'>H=200, draw angle 25 deg</text></svg>"
+      },
+      "solution": "**Concept.** The influence half-width from a point is $H\\tan(\\text{angle of draw})$.\n\n**Working.**\n$$x=200\\tan25^\\circ=200\\times0.4663=93.26\\ \\text{m}$$\n\n**Answer.** $93.26$ m."
+    },
+    {
+      "id": 16,
+      "subject": "Underground Mining",
+      "topic": "Pillar strength",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Using the Bieniawski formula Sp = S1(0.64 + 0.36 w/h) with S1 = 5 MPa and w/h = 5, the pillar strength, in MPa, is ____ (one decimal).",
+      "answer": 12.2,
+      "tolerance": 0.1,
+      "solution": "**Concept.** Bieniawski pillar strength: $S_p=S_1(0.64+0.36\\,w/h)$.\n\n**Working.**\n$$S_p=5\\,(0.64+0.36\\times5)=5\\times2.44=12.2\\ \\text{MPa}$$\n\n**Answer.** 12.2 MPa."
+    },
+    {
+      "id": 17,
+      "subject": "Drilling & Blasting",
+      "topic": "Deck charging",
+      "section": "Technical (1-mark)",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Deck charging (decking) of a blasthole means",
+      "options": [
+        "filling the whole hole with one continuous charge",
+        "splitting the charge into separate decks separated by inert stemming, often fired on different delays",
+        "leaving the hole empty",
+        "using only detonating cord"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Decking distributes explosive along the hole.\n\n**Reasoning.** Inert stemming separates the column into decks (sometimes on different delays); this distributes energy, can avoid weak/waste bands, and reduces the charge weight per delay for vibration control.\n\n**Answer.** Charge split into decks by stemming."
+    },
+    {
+      "id": 18,
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Traverse check",
+      "section": "Technical (1-mark)",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "For a perfectly balanced closed-loop traverse, the algebraic sums of latitudes and of departures should each equal",
+      "options": [
+        "the perimeter",
+        "zero",
+        "the area",
+        "180°"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** A loop returns to its origin.\n\n**Reasoning.** Since the traverse closes on its starting point, the net north–south travel and the net east–west travel are both zero; non-zero sums are the misclosure to be adjusted.\n\n**Answer.** Zero."
+    },
+    {
+      "id": 19,
+      "subject": "Mine Economics, Planning & Systems Engineering",
+      "topic": "Systems Engineering — MTBF",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Equipment has a constant failure rate $\\lambda=0.002$ per hour. Its mean time between failures (MTBF) is _____ hours.",
+      "answer": 500,
+      "tolerance": 1,
+      "solution": "**Concept.** $\\text{MTBF}=\\dfrac{1}{\\lambda}$.\n\n**Working.**\n$$\\frac{1}{0.002}=500.$$\n\n**Answer.** $500$ hours."
+    },
+    {
+      "id": 20,
+      "subject": "Underground Mining",
+      "topic": "Longwall — production per web",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "For the longwall panel shown, the face length is 200 m, the shearer web (depth of cut) is 0.8 m, the seam is 2 m thick and the in-situ density is $1.5\\ \\mathrm{t/m^3}$. The coal produced in one full web pass, in tonnes, is _____.",
+      "answer": 480,
+      "tolerance": 1,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox='0 0 280 180' xmlns='http://www.w3.org/2000/svg'><rect x='30' y='30' width='220' height='120' fill='#fef3c7' stroke='#b45309'/><line x1='30' y1='30' x2='30' y2='150' stroke='#1f2937' stroke-width='6'/><line x1='250' y1='30' x2='250' y2='150' stroke='#1f2937' stroke-width='6'/><line x1='30' y1='90' x2='250' y2='90' stroke='#dc2626' stroke-width='3'/><text x='140' y='84' font-size='11' text-anchor='middle' fill='#dc2626'>face (length 200 m)</text><text x='8' y='95' font-size='9'>gate</text><text x='254' y='95' font-size='9'>gate</text><text x='140' y='135' font-size='10' text-anchor='middle'>panel</text></svg>",
+        "caption": "Longwall panel (plan)"
+      },
+      "solution": "**Concept.** Production $=$ face length $\\times$ web $\\times$ seam thickness $\\times$ density.\n\n**Working.**\n$$T=200\\times0.8\\times2\\times1.5=480\\ \\text{t}$$\n\n**Answer.** $480\\ \\text{t}$."
+    },
+    {
+      "id": 21,
+      "subject": "Mining Geology",
+      "topic": "Cleavage",
+      "section": "Technical (1-mark)",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Cleavage of a mineral is the",
+      "options": [
+        "colour of its powder",
+        "tendency to break along definite planes of structural weakness, producing smooth flat surfaces",
+        "appearance in reflected light",
+        "resistance to scratching"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Cleavage reflects internal bonding.\n\n**Reasoning.** Where bonds are weakest, the mineral splits along parallel planes; e.g. mica shows perfect basal cleavage, galena cubic cleavage. It is diagnostic in identification.\n\n**Answer.** Breaking along planes of weakness."
+    },
+    {
+      "id": 22,
+      "subject": "Surface Mining",
+      "topic": "Truck productivity",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Each dumper carries a payload of 50 t and makes 5 trips per hour. Its hourly haulage, in t/h, is ____.",
+      "answer": 250,
+      "tolerance": 1,
+      "solution": "**Concept.** Output $=$ payload $\\times$ trips/h.\n\n**Working.**\n$$Q=50\\times5=250\\ \\text{t/h}$$\n\n**Answer.** 250 t/h."
+    },
+    {
+      "id": 23,
+      "subject": "Underground Mining",
+      "topic": "Bord & Pillar",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "For the bord-and-pillar layout shown with square pillars 20 m wide separated by 5 m wide galleries, compute the extraction ratio.",
+      "answer": 0.36,
+      "tolerance": 0.01,
+      "figure": {
+        "kind": "svg",
+        "caption": "Bord-and-pillar plan",
+        "markup": "<svg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'><rect x='10' y='10' width='180' height='180' fill='#e5e7eb'/><g fill='#1f2937'><rect x='30' y='30' width='50' height='50'/><rect x='110' y='30' width='50' height='50'/><rect x='30' y='110' width='50' height='50'/><rect x='110' y='110' width='50' height='50'/></g><text x='86' y='60' font-size='9' fill='#475569'>B=5</text><text x='42' y='58' font-size='9' fill='#fff'>W=20</text></svg>"
+      },
+      "solution": "**Concept.** For square pillars, extraction ratio $e = 1 - \\left(\\dfrac{W}{W+B}\\right)^2$.\n\n**Working.**\n$$e = 1 - \\left(\\frac{20}{25}\\right)^2 = 1 - 0.64 = 0.36$$\n\n**Answer.** $\\mathbf{0.36}$ (36%)."
+    },
+    {
+      "id": 24,
+      "subject": "Mine Environment & Occupational Health",
+      "topic": "Dust control",
+      "section": "Technical (1-mark)",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The most effective primary measure to control airborne dust generation at a drilling/cutting point is",
+      "options": [
+        "dry drilling at high speed",
+        "wet drilling / water sprays that suppress the dust at the point of generation",
+        "increasing the lighting level",
+        "reducing the ventilation"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Suppress dust at source.\n\n**Reasoning.** Adding water at the cutting/drilling point wets the fines so they do not become airborne; combined with ventilation and respirators this is the front-line control. Dry drilling does the opposite.\n\n**Answer.** Wet drilling / water sprays."
+    },
+    {
+      "id": 25,
+      "subject": "Mine Ventilation",
+      "topic": "Mine Resistance — Square Law",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "An airway of resistance $0.3\\,\\text{Ns}^2/\\text{m}^8$ carries $15\\,\\text{m}^3$/s. The pressure loss is _____ Pa.",
+      "answer": 67.5,
+      "tolerance": 0.5,
+      "solution": "**Concept.** $P=RQ^2$.\n\n**Working.**\n$$P=0.3\\times15^2=0.3\\times225=67.5.$$\n\n**Answer.** $67.5\\,\\text{Pa}$."
+    },
+    {
+      "id": 26,
+      "subject": "Drilling & Blasting",
+      "topic": "Flyrock",
+      "section": "Technical (1-mark)",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Flyrock (rock thrown beyond the intended blast area) is most often caused by",
+      "options": [
+        "too large a burden and too much stemming",
+        "insufficient burden/stemming or geological weakness allowing gas to vent and eject rock",
+        "using delay detonators",
+        "drilling holes vertically"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Flyrock results from uncontrolled gas escape.\n\n**Reasoning.** When the burden or stemming is too small, or a weak seam/cavity exists, high-pressure gases blow out and hurl fragments far beyond the muckpile — the leading cause of blasting injuries.\n\n**Answer.** Insufficient burden/stemming or geological weakness."
+    },
+    {
+      "id": 27,
+      "subject": "Rock Mechanics",
+      "topic": "Slope stability",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "An infinite dry rock slope of $25^\\circ$ has a discontinuity friction angle of $30^\\circ$ (figure). Compute the factor of safety against planar sliding (two decimals).",
+      "answer": 1.24,
+      "tolerance": 0.03,
+      "figure": {
+        "kind": "svg",
+        "caption": "Planar slope",
+        "markup": "<svg viewBox='0 0 220 140' xmlns='http://www.w3.org/2000/svg'><polygon points='30,120 180,120 180,40' fill='#d6d3d1' stroke='#475569'/><line x1='30' y1='120' x2='180' y2='40' stroke='#dc2626' stroke-width='2'/><text x='58' y='112' font-size='8'>slope 25 deg</text><text x='90' y='135' font-size='8'>phi=30 deg</text></svg>"
+      },
+      "solution": "**Concept.** For a dry cohesionless plane $FoS=\\dfrac{\\tan\\phi}{\\tan\\beta}$.\n\n**Working.**\n$$FoS=\\frac{\\tan30^\\circ}{\\tan25^\\circ}=\\frac{0.5774}{0.4663}=1.24$$\n\n**Answer.** $1.24$."
+    },
+    {
+      "id": 28,
+      "subject": "Mine Environment & Occupational Health",
+      "topic": "Subsidence",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "For a subsidence factor of 0.6 and an extracted seam thickness of 3 m, the maximum possible surface subsidence, in m, is ____ (one decimal).",
+      "answer": 1.8,
+      "tolerance": 0.05,
+      "solution": "**Concept.** Max subsidence $=$ subsidence factor $\\times$ seam thickness.\n\n**Working.**\n$$S_{max}=0.6\\times3=1.8\\ \\text{m}$$\n\n**Answer.** 1.8 m."
+    },
+    {
+      "id": 29,
+      "subject": "Mine Ventilation",
+      "topic": "Fan Laws",
+      "section": "Technical (1-mark)",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "For a given fan running at variable speed $N$, the quantity delivered varies as",
+      "options": [
+        "$Q\\propto N$",
+        "$Q\\propto N^2$",
+        "$Q\\propto N^3$",
+        "$Q\\propto\\sqrt N$"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** First fan law.\n\n**Working.** Quantity is directly proportional to speed.\n\n**Answer.** $Q\\propto N$."
+    },
+    {
+      "id": 30,
+      "subject": "Surface Mining",
+      "topic": "Loading time",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "With 4 dipper passes at 30 s per pass, the truck loading time, in seconds, is ____.",
+      "answer": 120,
+      "tolerance": 0.1,
+      "solution": "**Concept.** Loading time $=$ passes $\\times$ cycle time.\n\n**Working.**\n$$t_L=4\\times30=120\\ \\text{s}$$\n\n**Answer.** 120 s (2 min)."
+    },
+    {
+      "id": 31,
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Vernier least count",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A theodolite main scale is graduated to 20′ and its vernier has 60 divisions matching 59 main-scale divisions. The least count, in seconds, is ____.",
+      "answer": 20,
+      "tolerance": 0.1,
+      "solution": "**Concept.** Least count $=\\dfrac{\\text{smallest main division}}{\\text{number of vernier divisions}}$.\n\n**Working.**\n$$LC=\\frac{20'}{60}=\\frac{20\\times60''}{60}=20''$$\n\n**Answer.** 20 seconds."
+    },
+    {
+      "id": 32,
+      "subject": "Drilling & Blasting",
+      "topic": "Jumbo productivity",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A face round needs 60 holes drilled in 30 min. If each jumbo boom drills one hole every 2 min, the number of booms required is ____.",
+      "answer": 4,
+      "tolerance": 0.1,
+      "solution": "**Concept.** Holes per boom $=\\dfrac{\\text{time}}{\\text{time per hole}}$; booms $=\\dfrac{\\text{total holes}}{\\text{holes per boom}}$.\n\n**Working.**\n$$\\text{holes/boom}=\\frac{30}{2}=15,\\quad N=\\frac{60}{15}=4$$\n\n**Answer.** 4 booms."
+    },
+    {
+      "id": 33,
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Degree of curve",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Using the 30 m arc definition, a curve of degree 4° has a radius, in m, of ____ (two decimals).",
+      "answer": 429.72,
+      "tolerance": 0.5,
+      "solution": "**Concept.** $R=\\dfrac{1718.87}{D}$ (30 m arc).\n\n**Working.**\n$$R=\\frac{1718.87}{4}=429.72\\ \\text{m}$$\n\n**Answer.** 429.72 m."
+    },
+    {
+      "id": 34,
+      "subject": "Drilling & Blasting",
+      "topic": "Presplit spacing",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Using a presplit hole spacing of 10 × hole diameter, the spacing for 100 mm presplit holes, in m, is ____ (one decimal).",
+      "answer": 1,
+      "tolerance": 0.05,
+      "solution": "**Concept.** Presplit spacing is much smaller than production spacing.\n\n**Working.**\n$$S=10\\times0.10=1.0\\ \\text{m}$$\n\n**Answer.** 1.0 m."
+    },
+    {
+      "id": 35,
+      "subject": "Rock Mechanics",
+      "topic": "Stress and Strain — Maximum Shear",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "For $\\sigma_x=60$, $\\sigma_y=20$, $\\tau_{xy}=20\\,\\text{MPa}$, the maximum in-plane shear stress is _____ MPa. Round to two decimals.",
+      "answer": 28.28,
+      "tolerance": 0.1,
+      "solution": "**Concept.** $\\tau_{max}=R=\\sqrt{\\left(\\dfrac{\\sigma_x-\\sigma_y}{2}\\right)^2+\\tau_{xy}^2}$.\n\n**Working.**\n$$\\tau_{max}=\\sqrt{20^2+20^2}=28.28.$$\n\n**Answer.** $\\approx 28.28\\,\\text{MPa}$."
+    },
+    {
+      "id": 36,
+      "subject": "Underground Mining",
+      "topic": "Mine Winding",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "A single-rope winder lifts a cage of mass 10 t carrying a 5 t load (as shown). Taking g = 9.81 m/s², compute the static rope tension (kN), ignoring rope weight.",
+      "answer": 147.15,
+      "tolerance": 0.2,
+      "figure": {
+        "kind": "svg",
+        "caption": "Winding headgear",
+        "markup": "<svg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'><circle cx='100' cy='40' r='18' fill='none' stroke='#475569' stroke-width='3'/><line x1='100' y1='58' x2='100' y2='150' stroke='#475569' stroke-width='2'/><rect x='85' y='150' width='30' height='30' fill='#94a3b8' stroke='#475569'/><text x='122' y='166' font-size='8'>cage 10 t</text><text x='122' y='180' font-size='8'>load 5 t</text></svg>"
+      },
+      "solution": "**Concept.** Static tension = total suspended mass × g.\n\n**Working.**\n$$T = (10000 + 5000)(9.81) = 15000 \\times 9.81 = 147150\\ \\text{N} = 147.15\\ \\text{kN}$$\n\n**Answer.** $\\mathbf{147.15}$ kN."
+    },
+    {
+      "id": 37,
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Transition curve",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "A transition (easement) curve is introduced between a straight and a circular curve mainly to",
+      "options": [
+        "increase the magnetic declination",
+        "gradually change the curvature and introduce superelevation, avoiding sudden lateral acceleration",
+        "shorten the alignment",
+        "remove the need for a theodolite"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Curvature must not jump from zero to 1/R.\n\n**Reasoning.** The transition curve gives a radius decreasing gradually from infinity to R, so centrifugal force and superelevation build up smoothly, improving comfort and safety on haul roads/rail.\n\n**Answer.** Gradual curvature and superelevation."
+    },
+    {
+      "id": 38,
+      "subject": "Mine Environment & Occupational Health",
+      "topic": "Carbon monoxide",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "Carbon monoxide (whitedamp) is extremely dangerous chiefly because it",
+      "options": [
+        "smells strongly and warns the miner",
+        "combines with haemoglobin (forming carboxyhaemoglobin) with an affinity far greater than oxygen, causing asphyxiation",
+        "is heavier than air and settles harmlessly",
+        "is non-toxic but flammable only"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** CO blocks oxygen transport in blood.\n\n**Reasoning.** CO binds haemoglobin about 200–300 times more readily than oxygen, forming carboxyhaemoglobin and starving tissues of oxygen; it is colourless and odourless, giving no warning.\n\n**Answer.** Forms carboxyhaemoglobin (high affinity)."
+    },
+    {
+      "id": 39,
+      "subject": "Engineering Mathematics",
+      "topic": "Vector Calculus",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "For $\\mathbf{a}=(3,4)$ and $\\mathbf{b}=(1,2)$, compute the magnitude of the cross product $|\\mathbf{a}\\times\\mathbf{b}|$ (the parallelogram area).",
+      "answer": 2,
+      "tolerance": 0.05,
+      "figure": {
+        "kind": "svg",
+        "caption": "Parallelogram spanned by two vectors",
+        "markup": "<svg viewBox='0 0 200 150' xmlns='http://www.w3.org/2000/svg'><line x1='30' y1='120' x2='180' y2='120' stroke='#475569'/><line x1='30' y1='120' x2='30' y2='20' stroke='#475569'/><polygon points='30,120 120,90 150,30 60,60' fill='#fde68a' fill-opacity='0.5'/><line x1='30' y1='120' x2='120' y2='90' stroke='#2563eb' stroke-width='2' marker-end='url(#cr)'/><line x1='30' y1='120' x2='60' y2='60' stroke='#16a34a' stroke-width='2' marker-end='url(#cr)'/><defs><marker id='cr' markerWidth='8' markerHeight='8' refX='6' refY='3' orient='auto'><path d='M0 0 L6 3 L0 6 Z' fill='#475569'/></marker></defs><text x='40' y='140' font-size='8'>parallelogram area</text></svg>"
+      },
+      "solution": "**Concept.** In 2D, $|\\mathbf{a}\\times\\mathbf{b}|=|a_xb_y-a_yb_x|$.\n\n**Working.**\n$$|\\mathbf{a}\\times\\mathbf{b}|=|3(2)-4(1)|=|6-4|=2$$\n\n**Answer.** $2$."
+    },
+    {
+      "id": 40,
+      "subject": "Drilling & Blasting",
+      "topic": "Charge Calculation",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "A blasthole is charged over an 8 m explosive column with a linear loading density of 5 kg/m (as shown). Compute the charge per hole (kg).",
+      "answer": 40,
+      "tolerance": 0.5,
+      "figure": {
+        "kind": "svg",
+        "caption": "Charged blasthole",
+        "markup": "<svg viewBox='0 0 150 200' xmlns='http://www.w3.org/2000/svg'><rect x='55' y='20' width='30' height='160' fill='#e5e7eb' stroke='#475569'/><rect x='55' y='40' width='30' height='40' fill='#cbd5e1'/><text x='90' y='62' font-size='8'>stemming</text><rect x='55' y='80' width='30' height='100' fill='#f59e0b'/><text x='90' y='128' font-size='8'>charge 8 m</text><text x='90' y='143' font-size='8'>5 kg/m</text></svg>"
+      },
+      "solution": "**Concept.** Charge = column length × linear loading density.\n\n**Working.**\n$$Q = 8 \\times 5 = 40$$\n\n**Answer.** $\\mathbf{40}$ kg per hole."
+    },
+    {
+      "id": 41,
+      "subject": "Engineering Mathematics",
+      "topic": "Probability and Statistics",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "Given $P(A)=0.3$ and $P(B\\,|\\,A)=0.5$, the joint probability $P(A\\cap B)$ is _____ (round to 2 decimals).",
+      "answer": 0.15,
+      "tolerance": 0.01,
+      "solution": "**Concept.** Multiplication rule $P(A\\cap B)=P(A)\\,P(B\\,|\\,A)$.\n\n**Working.**\n$$P(A\\cap B)=0.3\\times 0.5=0.15$$\n\n**Answer.** $0.15$."
+    },
+    {
+      "id": 42,
+      "subject": "Mine Economics & Planning",
+      "topic": "Reliability",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "Two components with reliabilities 0.9 and 0.8 are connected in series as shown. Compute the system reliability.",
+      "answer": 0.72,
+      "tolerance": 0.005,
+      "figure": {
+        "kind": "svg",
+        "caption": "Series reliability block diagram",
+        "markup": "<svg viewBox='0 0 240 100' xmlns='http://www.w3.org/2000/svg'><line x1='10' y1='50' x2='40' y2='50' stroke='#475569' stroke-width='2'/><rect x='40' y='35' width='60' height='30' fill='#e0f2fe' stroke='#475569'/><text x='70' y='54' font-size='9' text-anchor='middle'>R1=0.9</text><line x1='100' y1='50' x2='140' y2='50' stroke='#475569' stroke-width='2'/><rect x='140' y='35' width='60' height='30' fill='#e0f2fe' stroke='#475569'/><text x='170' y='54' font-size='9' text-anchor='middle'>R2=0.8</text><line x1='200' y1='50' x2='230' y2='50' stroke='#475569' stroke-width='2'/></svg>"
+      },
+      "solution": "**Concept.** Series reliability is the product of component reliabilities.\n\n**Working.**\n$$R_s = R_1 R_2 = 0.9 \\times 0.8 = 0.72$$\n\n**Answer.** $R_s = \\mathbf{0.72}$."
+    },
+    {
+      "id": 43,
+      "subject": "Drilling & Blasting",
+      "topic": "Hole volume",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "A blasthole of 150 mm diameter is drilled to 12 m depth. The borehole volume, in m³, is ____ (three decimals).",
+      "answer": 0.212,
+      "tolerance": 0.003,
+      "solution": "**Concept.** Volume $=\\dfrac{\\pi}{4}d^2 L$.\n\n**Working.**\n$$V=\\frac{\\pi}{4}(0.15)^2(12)=0.7854\\times0.0225\\times12=0.212\\ \\text{m}^3$$\n\n**Answer.** 0.212 m³."
+    },
+    {
+      "id": 44,
+      "subject": "Drilling & Blasting",
+      "topic": "VOD timing",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "A 6 m explosive column has a VOD of 4000 m/s. The time for the detonation to traverse the full column, in milliseconds, is ____.",
+      "answer": 1.5,
+      "tolerance": 0.02,
+      "solution": "**Concept.** $t=\\dfrac{L}{\\text{VOD}}$.\n\n**Working.**\n$$t=\\frac{6}{4000}=1.5\\times10^{-3}\\ \\text{s}=1.5\\ \\text{ms}$$\n\n**Answer.** 1.5 ms."
+    },
+    {
+      "id": 45,
+      "subject": "Drilling & Blasting",
+      "topic": "Relief hole",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "In a burn cut, the uncharged large-diameter relief hole serves to",
+      "options": [
+        "ventilate the heading",
+        "provide a void/free face into which the charged cut holes can break, improving pull",
+        "hold the detonating cord",
+        "collect drainage water"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** The relief hole supplies the only free face for the cut.\n\n**Reasoning.** With no free face except the heading itself, the empty relief hole gives the adjacent charged holes somewhere to throw rock; without it the parallel cut would 'freeze' and the round would fail to pull.\n\n**Answer.** Free face/void for the cut holes to break into."
+    },
+    {
+      "id": 46,
+      "subject": "Rock Mechanics",
+      "topic": "Slope Stability — Plane Failure",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "For a dry cohesionless plane with $\\phi=40^\\circ$ sliding on a plane dipping $\\psi_p=35^\\circ$, the factor of safety $\\tan\\phi/\\tan\\psi_p$ is _____ . Round to two decimals.",
+      "answer": 1.2,
+      "tolerance": 0.05,
+      "solution": "**Concept.** $\\text{FoS}=\\dfrac{\\tan\\phi}{\\tan\\psi_p}$.\n\n**Working.**\n$$\\text{FoS}=\\frac{\\tan 40^\\circ}{\\tan 35^\\circ}=\\frac{0.839}{0.700}=1.20.$$\n\n**Answer.** $\\approx 1.20$."
+    },
+    {
+      "id": 47,
+      "subject": "Mine Economics & Planning",
+      "topic": "Project Scheduling (CPM)",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "In the activity-on-node network below (durations in weeks), determine the project duration (length of the critical path) in weeks.",
+      "answer": 9,
+      "tolerance": 0.1,
+      "figure": {
+        "kind": "svg",
+        "caption": "Project network",
+        "markup": "<svg viewBox='0 0 300 160' xmlns='http://www.w3.org/2000/svg'><circle cx='30' cy='80' r='14' fill='#e0f2fe' stroke='#475569'/><text x='30' y='84' font-size='9' text-anchor='middle'>S</text><circle cx='130' cy='40' r='16' fill='#fef3c7' stroke='#b45309'/><text x='130' y='44' font-size='8' text-anchor='middle'>A=2</text><circle cx='130' cy='120' r='16' fill='#fef3c7' stroke='#b45309'/><text x='130' y='124' font-size='8' text-anchor='middle'>B=4</text><circle cx='230' cy='40' r='16' fill='#fef3c7' stroke='#b45309'/><text x='230' y='44' font-size='8' text-anchor='middle'>C=3</text><circle cx='230' cy='120' r='16' fill='#fef3c7' stroke='#b45309'/><text x='230' y='124' font-size='8' text-anchor='middle'>D=5</text><circle cx='285' cy='80' r='12' fill='#e0f2fe' stroke='#475569'/><text x='285' y='84' font-size='8' text-anchor='middle'>E</text><g stroke='#475569' fill='none'><path d='M44 74 L114 46'/><path d='M44 86 L114 114'/><path d='M146 40 L214 40'/><path d='M146 120 L214 120'/><path d='M246 46 L275 74'/><path d='M246 114 L275 86'/></g></svg>"
+      },
+      "solution": "**Concept.** The project duration equals the length of the longest (critical) path through the network.\n\n**Working.**\n$$S\\text{–}A\\text{–}C\\text{–}E = 2+3 = 5,\\quad S\\text{–}B\\text{–}D\\text{–}E = 4+5 = 9$$\n\n**Answer.** Critical path S–B–D–E gives a project duration of **9 weeks**."
+    },
+    {
+      "id": 48,
+      "subject": "Drilling & Blasting",
+      "topic": "Charge mass",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "A 150 mm hole is charged with explosive of density 850 kg/m³ over a charge length of 8 m (fully coupled). The charge mass per hole, in kg, is ____ (one decimal).",
+      "answer": 120.2,
+      "tolerance": 1,
+      "solution": "**Concept.** Charge mass $=\\dfrac{\\pi}{4}d^2 L_c\\,\\rho$.\n\n**Working.**\n$$m=\\frac{\\pi}{4}(0.15)^2(8)(850)=0.01767\\times8\\times850=120.2\\ \\text{kg}$$\n\n**Answer.** 120.2 kg."
+    },
+    {
+      "id": 49,
+      "subject": "Mining Geology",
+      "topic": "Coal reserve estimate",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "A coal block covers a plan area of $100{,}000\\ \\mathrm{m^2}$ with seam thickness $2\\ \\text{m}$ and in-situ density $1.4\\ \\mathrm{t/m^3}$. Compute the in-situ (geological) reserve in tonnes.",
+      "answer": 280000,
+      "tolerance": 100,
+      "figure": {
+        "kind": "svg",
+        "caption": "Coal block volume to tonnage",
+        "markup": "<svg viewBox='0 0 220 150' xmlns='http://www.w3.org/2000/svg'><polygon points='40,110 150,110 190,80 80,80' fill='#94a3b8' stroke='#475569'/><polygon points='40,110 40,125 150,125 150,110' fill='#cbd5e1' stroke='#475569'/><polygon points='150,110 150,125 190,95 190,80' fill='#9ca3af' stroke='#475569'/><text x='30' y='145' font-size='8'>area=1e5 m^2, t=2 m, density=1.4</text></svg>"
+      },
+      "solution": "**Concept.** Tonnage $=$ area $\\times$ thickness $\\times$ density.\n\n**Working.**\n$$T=100000\\times2\\times1.4=280000\\ \\text{t}$$\n\n**Answer.** $280{,}000$ t."
+    },
+    {
+      "id": 50,
+      "subject": "Engineering Mathematics",
+      "topic": "Calculus",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "The alternating series $\\displaystyle\\sum_{n=1}^{\\infty}\\frac{(-1)^{n+1}}{n}$ is",
+      "options": [
+        "divergent",
+        "absolutely convergent",
+        "conditionally convergent",
+        "oscillating without a limit"
+      ],
+      "answer": 2,
+      "solution": "**Concept.** It converges by the alternating-series (Leibniz) test, but $\\sum 1/n$ diverges.\n\n**Working.** Terms decrease to $0$ in magnitude, so the alternating series converges (to $\\ln 2$); the absolute series is the harmonic series, which diverges. Hence convergence is conditional.\n\n**Answer.** Conditionally convergent."
+    },
+    {
+      "id": 51,
+      "subject": "Rock Mechanics",
+      "topic": "Slope Stability — Factor of Safety",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "A computed factor of safety of exactly $1.0$ for a slope indicates",
+      "options": [
+        "limiting equilibrium (failure is incipient)",
+        "an absolutely stable slope",
+        "a slope with infinite cohesion",
+        "that the slope cannot fail"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** FoS is resisting over driving forces.\n\n**Working.** $\\text{FoS}=1$ means they are equal — the verge of failure.\n\n**Answer.** limiting equilibrium."
+    },
+    {
+      "id": 52,
+      "subject": "Surface Mining",
+      "topic": "Bench width",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "A working bench must accommodate a shovel of working width 10 m, a dumper of width 6 m, and a safety clearance of 4 m. The minimum bench width, in m, is ____.",
+      "answer": 20,
+      "tolerance": 0.1,
+      "solution": "**Concept.** Minimum operating bench width is the sum of equipment footprints plus clearance.\n\n**Working.**\n$$W=10+6+4=20\\ \\text{m}$$\n\n**Answer.** 20 m."
+    },
+    {
+      "id": 53,
+      "subject": "Surface Mining",
+      "topic": "Fleet sizing",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "A target of 750 t/h is required. With each dumper hauling 250 t/h, the number of dumpers needed is ____.",
+      "answer": 3,
+      "tolerance": 0.01,
+      "solution": "**Concept.** Fleet $=\\dfrac{\\text{required}}{\\text{per truck}}$.\n\n**Working.**\n$$N=\\frac{750}{250}=3$$\n\n**Answer.** 3 dumpers."
+    },
+    {
+      "id": 54,
+      "subject": "Mine Ventilation",
+      "topic": "Gas dilution",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "Methane is emitted at $0.05\\ \\mathrm{m^3/s}$ into a roadway. To hold the general-body concentration at or below $1.25\\%$ by volume, compute the minimum airflow required ($\\mathrm{m^3/s}$).",
+      "answer": 4,
+      "tolerance": 0.05,
+      "figure": {
+        "kind": "svg",
+        "caption": "Dilution of methane",
+        "markup": "<svg viewBox='0 0 240 120' xmlns='http://www.w3.org/2000/svg'><rect x='20' y='35' width='200' height='50' fill='#e5e7eb' stroke='#475569'/><line x1='6' y1='60' x2='38' y2='60' stroke='#2563eb' stroke-width='2'/><circle cx='130' cy='75' r='4' fill='#b45309'/><text x='90' y='52' font-size='8'>CH4 0.05 m^3/s</text><text x='30' y='105' font-size='8'>dilute to 1.25%</text></svg>"
+      },
+      "solution": "**Concept.** $Q\\approx\\dfrac{\\text{gas emission}}{\\text{allowable fraction}}$.\n\n**Working.**\n$$Q=\\frac{0.05}{0.0125}=4\\ \\mathrm{m^3/s}$$\n\n**Answer.** $4\\ \\mathrm{m^3/s}$."
+    },
+    {
+      "id": 55,
+      "subject": "Rock Mechanics",
+      "topic": "Infinite slope stability",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "For the dry cohesionless infinite slope shown, the slope angle is $\\beta=20^\\circ$ and the friction angle is $\\phi=30^\\circ$. The factor of safety ($\\tan\\phi/\\tan\\beta$) is _____ (two decimals).",
+      "answer": 1.59,
+      "tolerance": 0.03,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox='0 0 240 150' xmlns='http://www.w3.org/2000/svg'><path d='M20 130 L210 60' stroke='#b45309' stroke-width='3' fill='none'/><line x1='20' y1='130' x2='210' y2='130' stroke='#475569'/><path d='M170 130 A50 50 0 0 0 162 110' fill='none' stroke='#dc2626'/><text x='150' y='124' font-size='10' fill='#dc2626'>beta=20&#176;</text><text x='56' y='95' font-size='9'>phi = 30&#176;</text></svg>",
+        "caption": "Dry cohesionless slope"
+      },
+      "solution": "**Concept.** For a dry cohesionless infinite slope, $FoS=\\dfrac{\\tan\\phi}{\\tan\\beta}$.\n\n**Working.**\n$$FoS=\\frac{\\tan 30^\\circ}{\\tan 20^\\circ}=\\frac{0.5774}{0.3640}=1.59$$\n\n**Answer.** $1.59$."
+    },
+    {
+      "id": 56,
+      "subject": "Surface Mining",
+      "topic": "Haul Road Design",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "A haul ramp descends to a depth of 90 m at a ruling gradient of 9% as shown. Compute the horizontal length (m) of the ramp.",
+      "answer": 1000,
+      "tolerance": 1,
+      "figure": {
+        "kind": "svg",
+        "caption": "Descending ramp",
+        "markup": "<svg viewBox='0 0 240 150' xmlns='http://www.w3.org/2000/svg'><polygon points='20,30 220,130 20,130' fill='#fde9c8' stroke='#92400e'/><line x1='20' y1='30' x2='20' y2='130' stroke='#475569'/><text x='26' y='80' font-size='8'>depth 90 m</text><text x='100' y='108' font-size='8' transform='rotate(27 100 108)'>grade 9%</text></svg>"
+      },
+      "solution": "**Concept.** Gradient = rise ÷ horizontal run, so run = rise ÷ gradient.\n\n**Working.**\n$$L = \\frac{90}{0.09} = 1000$$\n\n**Answer.** $\\mathbf{1000}$ m of horizontal length."
+    },
+    {
+      "id": 57,
+      "subject": "Underground Mining",
+      "topic": "Rock bolt capacity",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "A rock bolt of 22 mm diameter is made of steel with a yield strength of 400 MPa. Its yield load, in kN, is ____ (nearest whole number).",
+      "answer": 152,
+      "tolerance": 2,
+      "solution": "**Concept.** Yield load $=$ yield stress $\\times$ cross-sectional area.\n\n**Working.**\n$$A=\\frac{\\pi}{4}(22)^2=380.1\\ \\text{mm}^2$$\n$$P=400\\times380.1=152{,}040\\ \\text{N}\\approx152\\ \\text{kN}$$\n\n**Answer.** 152 kN."
+    },
+    {
+      "id": 58,
+      "subject": "Drilling & Blasting",
+      "topic": "Sympathetic detonation",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "Sympathetic detonation refers to",
+      "options": [
+        "an explosive burning slowly instead of detonating",
+        "the detonation of one charge being initiated by the shock of a neighbouring charge across the intervening ground",
+        "a detonator failing to fire",
+        "the deliberate use of delays"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Shock can jump between nearby charges.\n\n**Reasoning.** If holes are too close, the detonation of one can set off an adjacent charge through the ground (sympathetic detonation), upsetting the intended delay sequence and raising the charge per delay — hence minimum hole-spacing rules.\n\n**Answer.** One charge initiating an adjacent charge via shock."
+    },
+    {
+      "id": 59,
+      "subject": "Rock Mechanics",
+      "topic": "Underground Openings — Pillar FoS",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "A pillar has strength $80\\,\\text{MPa}$ and carries a stress of $40\\,\\text{MPa}$. The factor of safety is _____ .",
+      "answer": 2,
+      "tolerance": 0.01,
+      "solution": "**Concept.** $\\text{FoS}=\\dfrac{\\text{pillar strength}}{\\text{pillar stress}}$.\n\n**Working.**\n$$\\text{FoS}=\\frac{80}{40}=2.$$\n\n**Answer.** $2$."
+    },
+    {
+      "id": 60,
+      "subject": "Rock Mechanics",
+      "topic": "Triaxial strength (Mohr–Coulomb)",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "In the triaxial test shown, a cohesionless rock has $\\phi=30^\\circ$ and is subjected to a confining pressure $\\sigma_3=10\\ \\mathrm{MPa}$. Using $\\sigma_1=\\sigma_3\\tan^2(45^\\circ+\\phi/2)$, the major principal stress at failure, in MPa, is _____.",
+      "answer": 30,
+      "tolerance": 0.3,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox='0 0 180 190' xmlns='http://www.w3.org/2000/svg'><rect x='70' y='50' width='40' height='90' fill='#d6d3d1' stroke='#475569'/><g stroke='#dc2626' stroke-width='2'><line x1='80' y1='25' x2='80' y2='48' marker-end='url(#t1)'/><line x1='100' y1='25' x2='100' y2='48' marker-end='url(#t1)'/></g><g stroke='#2563eb' stroke-width='2'><line x1='40' y1='95' x2='66' y2='95' marker-end='url(#t2)'/><line x1='140' y1='95' x2='114' y2='95' marker-end='url(#t2)'/></g><defs><marker id='t1' markerWidth='8' markerHeight='8' refX='4' refY='6' orient='auto'><path d='M0 0 L4 6 L8 0 Z' fill='#dc2626'/></marker><marker id='t2' markerWidth='8' markerHeight='8' refX='6' refY='3' orient='auto'><path d='M0 0 L6 3 L0 6 Z' fill='#2563eb'/></marker></defs><text x='104' y='35' font-size='9' fill='#dc2626'>s1</text><text x='6' y='90' font-size='9' fill='#2563eb'>s3=10</text></svg>",
+        "caption": "Triaxial test specimen"
+      },
+      "solution": "**Concept.** $\\sigma_1=\\sigma_3\\,N_\\phi$ with $N_\\phi=\\tan^2(45^\\circ+\\phi/2)$.\n\n**Working.**\n$$N_\\phi=\\tan^2 60^\\circ=3,\\quad \\sigma_1=10\\times3=30\\ \\text{MPa}$$\n\n**Answer.** $30$ MPa."
+    },
+    {
+      "id": 61,
+      "subject": "Mine Environment & Occupational Health",
+      "topic": "Legislation",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "In India, the statutory body responsible for enforcing safety and health regulations in mines is the",
+      "options": [
+        "Central Pollution Control Board",
+        "Directorate General of Mines Safety (DGMS), under the Mines Act",
+        "Geological Survey of India",
+        "Bureau of Indian Standards"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** DGMS administers mine safety law.\n\n**Reasoning.** The DGMS enforces the Mines Act and associated regulations (safety, health, gas/dust limits, inspections), distinct from environmental regulators such as the Pollution Control Boards.\n\n**Answer.** DGMS."
+    },
+    {
+      "id": 62,
+      "subject": "mine-surveying",
+      "topic": "Traversing",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "A traverse line of length $100$ m has a whole-circle bearing of $60^\\circ$. Compute its latitude (m).",
+      "answer": 50,
+      "tolerance": 0.2,
+      "figure": {
+        "kind": "svg",
+        "caption": "Latitude of a line",
+        "markup": "<svg viewBox='0 0 180 170' xmlns='http://www.w3.org/2000/svg'><line x1='40' y1='140' x2='40' y2='30' stroke='#cbd5e1'/><line x1='40' y1='140' x2='150' y2='140' stroke='#cbd5e1'/><line x1='40' y1='140' x2='135' y2='85' stroke='#2563eb' stroke-width='2'/><line x1='40' y1='140' x2='40' y2='85' stroke='#dc2626' stroke-width='2'/><text x='90' y='105' font-size='8'>l=100</text><text x='52' y='124' font-size='8'>60 deg</text><text x='22' y='25' font-size='8'>N</text></svg>"
+      },
+      "solution": "**Concept.** Latitude $L=l\\cos\\theta$.\n\n**Working.**\n$$L=100\\cos60^\\circ=100\\times0.5=50\\ \\text{m}$$\n\n**Answer.** $50$ m."
+    },
+    {
+      "id": 63,
+      "subject": "Mine Economics, Planning & Systems Engineering",
+      "topic": "Present value / discounting",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "On the time line shown, a sum of $\\mathrm{Rs}\\,121$ is received at the end of year 2. At a discount rate of $10\\%$ per annum, its present value (at year 0), in Rs, is _____.",
+      "answer": 100,
+      "tolerance": 0.5,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox='0 0 240 120' xmlns='http://www.w3.org/2000/svg'><line x1='20' y1='60' x2='220' y2='60' stroke='#475569'/><g fill='#1f2937'><circle cx='40' cy='60' r='3'/><circle cx='130' cy='60' r='3'/><circle cx='210' cy='60' r='3'/></g><text x='36' y='50' font-size='9'>0</text><text x='126' y='50' font-size='9'>1</text><text x='206' y='50' font-size='9'>2</text><text x='176' y='86' font-size='9' fill='#16a34a'>FV = 121</text><text x='100' y='102' font-size='9'>i = 10%</text></svg>",
+        "caption": "Discounting a future cash flow"
+      },
+      "solution": "**Concept.** $PV=\\dfrac{FV}{(1+i)^n}$.\n\n**Working.**\n$$PV=\\frac{121}{(1+0.10)^2}=\\frac{121}{1.21}=100\\ \\text{Rs}$$\n\n**Answer.** $\\mathrm{Rs}\\,100$."
+    },
+    {
+      "id": 64,
+      "subject": "Mine Environment & Occupational Health",
+      "topic": "Oxygen deficiency",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "A flame safety lamp flame is extinguished when the oxygen content of the air falls below about",
+      "options": [
+        "5%",
+        "16%",
+        "20%",
+        "0%"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** A flame needs sufficient oxygen.\n\n**Reasoning.** Below roughly 16% O₂ the lamp flame can no longer be sustained and goes out — a warning of dangerous oxygen deficiency, even though such air can still be briefly breathed.\n\n**Answer.** About 16%."
+    },
+    {
+      "id": 65,
+      "subject": "Surface Mining",
+      "topic": "Pit Slope",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "For the pit wall shown with vertical height 60 m and horizontal projection 120 m, compute the overall slope angle (degrees).",
+      "answer": 26.57,
+      "tolerance": 0.3,
+      "figure": {
+        "kind": "svg",
+        "caption": "Overall pit slope",
+        "markup": "<svg viewBox='0 0 240 150' xmlns='http://www.w3.org/2000/svg'><polygon points='20,30 200,130 20,130' fill='#fde9c8' stroke='#92400e'/><line x1='20' y1='30' x2='20' y2='130' stroke='#475569'/><text x='10' y='84' font-size='8' transform='rotate(-90 12 84)'>H=60</text><text x='92' y='145' font-size='8'>L=120</text></svg>"
+      },
+      "solution": "**Concept.** The overall slope angle is $\\theta = \\tan^{-1}(H/L)$.\n\n**Working.**\n$$\\theta = \\tan^{-1}\\!\\left(\\frac{60}{120}\\right) = \\tan^{-1}(0.5) = 26.57^\\circ$$\n\n**Answer.** $\\approx \\mathbf{26.57^\\circ}$."
+    }
+  ]
+}

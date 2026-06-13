@@ -43,7 +43,7 @@ const QUADRANTS: Array<{
     key: "threats", title: "Threats", emoji: "⚠️",
     border: "border-l-4 border-amber-400", accent: "text-amber-700",
     empty: "No subjects are slipping. Trend is stable.",
-    cta: { href: "/pyq", text: "Re-test with a PYQ →" },
+    cta: { href: "/mocks", text: "Re-test with a mock →" },
   },
 ];
 
@@ -74,7 +74,7 @@ export function SwotAnalysisPanel() {
         <div>
           <h2 className="font-bold text-lg">SWOT Analysis</h2>
           <p className="text-sm text-muted">
-            Last 90 days of mocks &amp; PYQs, classified into Strengths · Weaknesses · Opportunities · Threats.
+            Last 90 days of mocks, classified into Strengths · Weaknesses · Opportunities · Threats.
           </p>
         </div>
         {data && <span className="text-xs text-muted">Updated just now</span>}
@@ -89,7 +89,7 @@ export function SwotAnalysisPanel() {
           <p className="text-3xl">🧭</p>
           <p className="font-semibold mt-2">Not enough data yet.</p>
           <p className="text-sm text-muted mt-1">
-            Submit a mock or PYQ and your personalized SWOT shows up here.
+            Submit a mock and your personalized SWOT shows up here.
           </p>
           <Link href="/mocks" className="btn btn-primary mt-4 inline-flex">Take a mock →</Link>
         </div>

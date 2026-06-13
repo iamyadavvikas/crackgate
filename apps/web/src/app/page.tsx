@@ -1,8 +1,8 @@
 import Link from "next/link";
-import { PYQ } from "@/data/pyq";
 import { MOCKS } from "@/data/mocks";
 import { PRACTICE } from "@/data/practice";
 import { QuestionOfTheDayCard } from "@/components/question-of-the-day";
+import { WhatsAppButton } from "@/components/whatsapp-button";
 
 export const dynamic = "force-dynamic"; // QOTD changes daily
 
@@ -20,8 +20,8 @@ function pickQuestionOfTheDay() {
 }
 
 export default function HomePage() {
-  const yearsCount = PYQ.length;
-  const pyqQs = PYQ.reduce((s, y) => s + y.questions.length, 0);
+  const practiceQs = PRACTICE.reduce((s, sub) => s + sub.questions.length, 0);
+  const subjectsCount = PRACTICE.length;
   const mocksCount = MOCKS.length;
   const qotd = pickQuestionOfTheDay();
 
@@ -39,7 +39,7 @@ export default function HomePage() {
               <span className="text-accent">India's only</span> dedicated platform.
             </h1>
             <p className="mt-5 text-lg text-white/80 max-w-xl">
-              {mocksCount} full-length mocks · {yearsCount} years of full PYQ papers ({pyqQs}+ questions) ·
+              {mocksCount} full-length mocks · {practiceQs}+ topic-wise practice questions ·
               real-time NTA-style exam portal · SWOT analytics. Built only for GATE MN.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
@@ -47,10 +47,10 @@ export default function HomePage() {
               <Link href="/pricing" className="btn bg-white/10 text-white border border-white/30 hover:bg-white/20 btn-lg">View Pricing</Link>
             </div>
             <div className="mt-8 flex flex-wrap gap-6 text-sm text-white/70">
-              <Stat n="780+" label="PYQ Questions" />
+              <Stat n={`${practiceQs}+`} label="Practice Questions" />
               <Stat n="200+" label="Mock Questions" />
-              <Stat n="12 yrs" label="PYQs (2014–2025)" />
-              <Stat n="11" label="Subjects" />
+              <Stat n={`${mocksCount}`} label="Full-length Mocks" />
+              <Stat n={`${subjectsCount}`} label="Subjects" />
             </div>
           </div>
           <div className="hidden lg:block">
@@ -86,7 +86,7 @@ export default function HomePage() {
         </p>
         <div className="mt-12 grid md:grid-cols-3 gap-6">
           <Feature icon="🧪" title={`${mocksCount} Full-length Mocks`} desc="Exam-pattern papers with section-wise analysis and subject SWOT. First mock free." />
-          <Feature icon="📚" title={`${yearsCount} Years of Full PYQs`} desc="Complete 65-question / 100-mark papers from 2014–2025 with worked solutions." />
+          <Feature icon="📚" title={`${practiceQs}+ Practice Questions`} desc="Topic-wise practice across all subjects, each with worked solutions and instant grading." />
           <Feature icon="📊" title="SWOT Analytics" desc="Subject-wise strengths/weaknesses graphs. Time spent per question. Accuracy trend." />
           <Feature icon="🎯" title="NTA-style Live Portal" desc="Identical look to the real CBT — palette, mark-for-review, timer, auto-submit." />
           <Feature icon="🛡️" title="Server-side Grading" desc="Scores are computed on our servers — tamper-proof. Detailed report after every attempt." />
@@ -133,6 +133,9 @@ export default function HomePage() {
           <Link href="/login" className="btn btn-accent btn-lg mt-6 inline-flex">Continue with Google →</Link>
         </div>
       </section>
+
+      {/* Floating WhatsApp chat — landing page only */}
+      <WhatsAppButton />
     </>
   );
 }

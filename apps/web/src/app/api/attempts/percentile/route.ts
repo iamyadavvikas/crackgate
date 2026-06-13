@@ -1,6 +1,6 @@
 /** GET /api/attempts/percentile
  *  Returns the current user's percentile vs all other users for each
- *  ref (mock/pyq) they've attempted. Uses each user's BEST score per
+ *  ref (mock) they've attempted. Uses each user's BEST score per
  *  ref to avoid penalising people who retake.
  *
  *  Premium-only feature; pro+free get an empty array + paywall flag.

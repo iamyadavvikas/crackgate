@@ -12,12 +12,11 @@ export function SiteFooter() {
             CrackGate<span className="text-accent">.in</span>
           </div>
           <p className="text-sm mt-3 text-slate-400 max-w-xs">
-            India's dedicated GATE Mining Engineering (MN) test prep. 12 full PYQ papers, 10 mocks, SWOT analytics.
+            India's dedicated GATE Mining Engineering (MN) test prep. 10 mocks, topic-wise practice, SWOT analytics.
           </p>
         </div>
         <FooterCol title="Practice">
           <FooterLink href="/mocks">Test Series</FooterLink>
-          <FooterLink href="/pyq">Previous Year Papers</FooterLink>
           <FooterLink href="/study">Study Material</FooterLink>
           <FooterLink href="/resources">Resources</FooterLink>
         </FooterCol>

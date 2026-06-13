@@ -72,6 +72,8 @@ services:
       # Google OAuth (server-side half of NEXT_PUBLIC_GOOGLE_ENABLED)
       GOOGLE_CLIENT_ID: ${GOOGLE_CLIENT_ID}
       GOOGLE_CLIENT_SECRET: ${GOOGLE_CLIENT_SECRET}
+      # Founder/admin elevation — comma-separated emails get role=admin on login.
+      ADMIN_EMAILS: ${ADMIN_EMAILS:-}
       # Razorpay (server-side; public key id is also a build arg)
       RAZORPAY_KEY_ID: ${RAZORPAY_KEY_ID}
       RAZORPAY_KEY_SECRET: ${RAZORPAY_KEY_SECRET}

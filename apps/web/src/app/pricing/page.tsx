@@ -11,7 +11,6 @@ const PLANS = [
   { id: "free",    name: "Free",     price: 0,    period: "forever",    cta: "Current plan", highlight: false,
     perks: [
       "Mock 01 — full exam-portal experience",
-      "GATE 2024 & 2025 PYQs (2 papers)",
       "Practice preview: 20 Qs per subject, all 10 subjects",
       "Basic dashboard with score trend",
       "Server-side grading & per-Q solutions",
@@ -19,7 +18,6 @@ const PLANS = [
   { id: "pro",     name: "Pro",      price: 499,  period: "/ GATE 2027 cycle",    cta: "Get Pro",     highlight: true,
     perks: [
       "All subject-wise mocks + free FLT (9 tests)",
-      "All 12 PYQ papers (2014–2025)",
       "🔓 Full 906-question practice bank — no per-session limits",
       "Subject SWOT + Mastery analytics",
       "WhatsApp payment receipts & email support",
@@ -30,7 +28,6 @@ const PLANS = [
     perks: [
       "Everything in Pro",
       "💎 All 10 mocks including final full-syllabus FLT",
-      "💎 Topic-wise PYP filter (every Ventilation Q since 2010, etc.)",
       "💎 Adaptive practice from your weak topics",
       "Weekly progress digest on WhatsApp",
       "Priority support + 1:1 doubt clearance",
@@ -44,7 +41,7 @@ export default function PricingPage() {
       <div className="text-center">
         <h1 className="text-4xl font-extrabold">Simple, honest pricing.</h1>
         <p className="text-muted mt-3 max-w-xl mx-auto">
-          Start free. Upgrade when you want all mocks & PYQs unlocked. Cancel any time — no auto-renewal traps.
+          Start free. Upgrade when you want all mocks unlocked. Cancel any time — no auto-renewal traps.
         </p>
       </div>
 
@@ -64,8 +61,6 @@ export default function PricingPage() {
 const MATRIX: { feature: string; free: string | boolean; pro: string | boolean; premium: string | boolean }[] = [
   // Tests
   { feature: "Full-length mock tests",          free: "1 (Mock 01)",  pro: "9 of 10",        premium: "All 10"           },
-  { feature: "Previous Year Papers (PYQs)",     free: "2 papers",     pro: "All 12 papers",  premium: "All 12 papers"    },
-  { feature: "Topic-wise PYP filter",           free: false,          pro: false,            premium: true               },
 
   // Practice
   { feature: "Practice Qs per subject",         free: "20 preview",   pro: "Full subject",   premium: "Full subject"     },

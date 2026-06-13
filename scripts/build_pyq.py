@@ -577,63 +577,93 @@ def drill_pool(rng, marks):
     return pool
 
 # =====================================================================
-# MINERAL PROCESSING
+# MINE ECONOMICS, PLANNING & SYSTEMS ENGINEERING  (GATE MN Section 6)
 # =====================================================================
-def mp_pool(rng, marks):
+def econ_pool(rng, marks):
+    SUBJ = "Mine Economics & Planning"
     pool = []
-    pool.append(mcq("Mineral Processing", marks,
-        "Jig works on the principle of:",
-        ["Magnetic separation","Pulsation & differential settling",
-         "Surface tension","Centrifugal force"], 1,
-        "Jigs stratify particles by density via pulsating water column."))
 
-    pool.append(mcq("Mineral Processing", marks,
-        "Sphalerite is depressed in galena flotation by:",
-        ["NaCN","ZnSO₄","Both NaCN and ZnSO₄","H₂SO₄"], 2,
-        "Cyanide + zinc sulphate combo depresses sphalerite during PbS flotation."))
+    pool.append(mcq(SUBJ, marks,
+        "The Internal Rate of Return (IRR) of a project is the discount rate at which:",
+        ["NPV = 0", "NPV is maximum", "Payback = 1 year", "WACC = 0"], 0,
+        "IRR is the discount rate that makes the net present value of all cash flows zero."))
 
-    pool.append(mcq("Mineral Processing", marks,
-        "Bond's work index measures:",
-        ["Energy for size reduction","Specific gravity","Surface tension","Hardness only"], 0,
-        "Wi (kWh/short ton) characterises grindability — energy to reduce ∞ to 100 µm."))
+    # Present value of a single future cash flow
+    P = rng.choice([100, 200, 500]); r = rng.choice([0.08, 0.10, 0.12]); n = rng.choice([2, 3, 4, 5])
+    pv = P/((1+r)**n)
+    pool.append(nat(SUBJ, marks,
+        f"A cash inflow of ₹{P} lakh is expected {n} years from now. At a discount rate of "
+        f"{int(r*100)}% per annum, its present value (₹ lakh, 2 dp) is:",
+        pv, max(0.05, pv*0.01), f"PV = FV/(1+i)ⁿ = {P}/(1+{r})^{n} = {pv:.2f} lakh."))
 
-    f = rng.choice([0.8, 1.0, 1.2, 1.5]); c = rng.choice([15, 20, 25])
-    t = rng.choice([0.1, 0.15, 0.2]); F = rng.choice([80, 100, 120])
-    C = F*(f-t)/(c-t)
-    pool.append(nat("Mineral Processing", marks,
-        f"Two-product mass balance: feed {F} t at {f}% Cu, concentrate {c}% Cu, tail {t}% Cu. "
-        f"Concentrate produced (t, 2 dp):",
-        C, 0.2, f"C = F·(f−t)/(c−t) = {F}·({f}−{t})/({c}−{t}) = {C:.2f} t."))
+    # Economic order quantity
+    D = rng.choice([2000, 5000, 8000, 10000]); S = rng.choice([50, 100, 150]); H = rng.choice([2, 4, 5, 8])
+    eoq = (2*D*S/H)**0.5
+    pool.append(nat(SUBJ, marks,
+        f"Annual demand {D} units, ordering cost ₹{S}/order, holding cost ₹{H}/unit/year. "
+        f"Economic order quantity (units, 2 dp):",
+        eoq, max(0.5, eoq*0.01), f"EOQ = √(2DS/H) = √(2×{D}×{S}/{H}) = {eoq:.2f} units."))
 
-    pool.append(mcq("Mineral Processing", marks,
-        "Knelson concentrator separates particles based on:",
-        ["Magnetism","Density in a centrifugal field","Conductivity","Floatability"], 1,
-        "Knelson uses high-G centrifugal field to recover fine, heavy minerals."))
+    # Series reliability
+    r1 = rng.choice([0.90, 0.92, 0.95]); r2 = rng.choice([0.85, 0.88, 0.90]); r3 = rng.choice([0.80, 0.95, 0.98])
+    rs = r1*r2*r3
+    pool.append(nat(SUBJ, marks,
+        f"Three independent units in series have reliabilities {r1}, {r2} and {r3}. "
+        f"Overall system reliability (3 dp):",
+        rs, 0.005, f"Series: R = {r1}×{r2}×{r3} = {rs:.3f}."))
 
-    pool.append(mcq("Mineral Processing", marks,
-        "Wet high-intensity magnetic separators (WHIMS) recover:",
-        ["Diamagnetic gangue","Weakly paramagnetic minerals (hematite)",
-         "Sulphides","Calcite"], 1,
-        "WHIMS upgrades weakly magnetic minerals like hematite from gangue."))
+    # Parallel reliability
+    a = rng.choice([0.70, 0.75, 0.80]); b = rng.choice([0.60, 0.70, 0.85])
+    rp = 1-(1-a)*(1-b)
+    pool.append(nat(SUBJ, marks,
+        f"Two units with reliabilities {a} and {b} operate in parallel (full redundancy). "
+        f"Sub-system reliability (3 dp):",
+        rp, 0.005, f"Parallel: R = 1−(1−{a})(1−{b}) = {rp:.3f}."))
 
-    pool.append(mcq("Mineral Processing", marks,
-        "In a comminution circuit, ratio of reduction (RR) is:",
-        ["F80/P80","P80/F80","F80·P80","F80−P80"], 0,
-        "RR = feed 80% passing / product 80% passing."))
+    # PERT expected time
+    to = rng.choice([2, 3, 4]); tm = rng.choice([5, 6, 8]); tp = rng.choice([12, 14, 16])
+    te = (to+4*tm+tp)/6
+    pool.append(nat(SUBJ, marks,
+        f"For a PERT activity, optimistic = {to}, most-likely = {tm}, pessimistic = {tp} days. "
+        f"Expected time tₑ (days, 2 dp):",
+        te, 0.02, f"tₑ = (tₒ+4tₘ+tₚ)/6 = ({to}+4×{tm}+{tp})/6 = {te:.2f} days."))
 
-    Wi = rng.choice([12, 14, 16, 18])
-    F80 = rng.choice([10000, 12000, 15000])  # microns
-    P80 = rng.choice([100, 150, 200])
-    W = 10*Wi*(1/P80**0.5 - 1/F80**0.5)
-    pool.append(nat("Mineral Processing", marks,
-        f"Bond's equation: W = 10·Wi·(1/√P80 − 1/√F80). For Wi={Wi}, F80={F80} µm, P80={P80} µm, "
-        f"specific energy (kWh/t, 2 dp):",
-        W, 0.2, f"W = 10·{Wi}·(1/√{P80} − 1/√{F80}) = {W:.2f} kWh/t."))
+    # Break-even stripping ratio
+    val = rng.choice([40, 50, 60]); cost = rng.choice([15, 20, 25]); wc = rng.choice([2, 3, 4])
+    besr = (val-cost)/wc
+    pool.append(nat(SUBJ, marks,
+        f"Ore value ${val}/t, ore mining + processing cost ${cost}/t, waste removal ${wc}/t. "
+        f"Break-even stripping ratio (t waste per t ore, 2 dp):",
+        besr, 0.02, f"BESR = (value−ore cost)/waste cost = ({val}−{cost})/{wc} = {besr:.2f}."))
 
-    pool.append(mcq("Mineral Processing", marks,
-        "Frother in flotation helps to:",
-        ["Depress gangue","Stabilise air bubbles","Activate sphalerite","Reduce pH"], 1,
-        "Frothers (e.g., MIBC, pine oil) stabilise the air-bubble film at pulp surface."))
+    # Mill cut-off grade
+    tc = rng.choice([20, 25, 30]); price = rng.choice([4000, 5000, 6000]); rec = rng.choice([0.80, 0.85, 0.90])
+    gc = tc/(price*rec)*100
+    pool.append(nat(SUBJ, marks,
+        f"Treatment cost ${tc}/t ore, metal price ${price}/t, recovery {rec}. "
+        f"Mill cut-off grade (% metal, 2 dp):",
+        gc, 0.02, f"g_c = cost/(price×recovery) = {tc}/({price}×{rec}) = {gc:.2f}%."))
+
+    # M/M/1 average queue length
+    lam = rng.choice([6, 7, 8]); mu = rng.choice([10, 12])
+    lq = lam*lam/(mu*(mu-lam))
+    pool.append(nat(SUBJ, marks,
+        f"Trucks arrive at a crusher (M/M/1) at λ={lam}/h; the crusher serves at μ={mu}/h. "
+        f"Average number waiting in queue Lq (2 dp):",
+        lq, 0.02, f"Lq = λ²/[μ(μ−λ)] = {lam}²/[{mu}({mu}−{lam})] = {lq:.2f}."))
+
+    pool.append(mcq(SUBJ, marks,
+        "In linear programming, the optimum of a linear objective over a bounded feasible "
+        "region always occurs:",
+        ["At an interior point", "At a vertex (corner) of the feasible region",
+         "At the centroid", "Along the y-axis"], 1,
+        "For a linear objective over a convex polygon, the optimum lies at a vertex."))
+
+    pool.append(mcq(SUBJ, marks,
+        "The United Nations Framework Classification (UNFC) classifies mineral resources using:",
+        ["Colour, hardness and lustre", "Economic, Feasibility and Geological axes (E-F-G)",
+         "Depth of deposit only", "Mining method only"], 1,
+        "UNFC is a three-axis (E-F-G) scheme: economic viability, feasibility and geological knowledge."))
 
     rng.shuffle(pool)
     return pool
@@ -724,14 +754,14 @@ def env_pool(rng, marks):
         ["Influence function (sub-trough) method","FFT","Heat equation","Ohm's law"], 0,
         "Subsidence troughs are predicted using influence-function or profile-function methods."))
 
-    pool.append(mcq("Mine Economics", marks,
+    pool.append(mcq("Mine Economics & Planning", marks,
         "IRR of a project is the discount rate at which:",
         ["NPV = 0","NPV is maximum","Payback = 1","WACC = 0"], 0,
         "Internal Rate of Return is the discount rate that makes NPV of cash flows zero."))
 
     P = rng.choice([10, 20, 50]); r = rng.choice([0.08, 0.10, 0.12]); n = rng.choice([3, 5, 7])
     fv = P*(1+r)**n
-    pool.append(nat("Mine Economics", marks,
+    pool.append(nat("Mine Economics & Planning", marks,
         f"Principal ₹{P} lakh invested at {int(r*100)}% compound annual for {n} years. "
         f"Future value (₹ lakh, 2 dp):",
         fv, 0.1, f"FV = P(1+r)ⁿ = {P}·(1+{r})^{n} = {fv:.2f} lakh."))
@@ -769,7 +799,7 @@ SUBJECT_POOLS = [
     ('surface', surface_pool),
     ('ug',      ug_pool),
     ('drill',   drill_pool),
-    ('mp',      mp_pool),
+    ('econ',    econ_pool),
     ('survey',  survey_pool),
     ('env',     env_pool),
 ]

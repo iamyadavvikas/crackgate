@@ -1,0 +1,1114 @@
+{
+  "id": "mn-mock-12",
+  "title": "Mock Test 12 — Engineering Mathematics Heavy",
+  "tier": "subject",
+  "duration": 180,
+  "pattern": "GATE 2027 (65 Q · 100 marks · 3 hours)",
+  "totalMarks": 100,
+  "sections": [
+    {
+      "name": "General Aptitude",
+      "count": 10,
+      "marks": 15
+    },
+    {
+      "name": "Technical (1-mark)",
+      "count": 25,
+      "marks": 25
+    },
+    {
+      "name": "Technical (2-mark)",
+      "count": 30,
+      "marks": 60
+    }
+  ],
+  "negativeMarking": {
+    "mcq1": -0.3333333333333333,
+    "mcq2": -0.6666666666666666,
+    "nat": 0,
+    "msq": 0
+  },
+  "seed": 4125615257,
+  "locked": true,
+  "questions": [
+    {
+      "id": 1,
+      "subject": "General Aptitude",
+      "topic": "Quantitative Aptitude — Pipes and Cisterns",
+      "section": "General Aptitude",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "hard",
+      "stem": "Pipe A fills a tank in $10$ hours while pipe B empties it in $15$ hours. With both open, the tank fills in",
+      "options": [
+        "30 hours",
+        "25 hours",
+        "6 hours",
+        "12 hours"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Subtract the emptying rate from the filling rate.\n\n**Working.** $\\dfrac{1}{10}-\\dfrac{1}{15}=\\dfrac{3-2}{30}=\\dfrac{1}{30}$, so $30$ hours.\n\n**Answer.** $30$ hours."
+    },
+    {
+      "id": 2,
+      "subject": "General Aptitude",
+      "topic": "Quantitative Aptitude — Alligation",
+      "section": "General Aptitude",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "hard",
+      "stem": "In what ratio should rice costing $20$ per kg be mixed with rice costing $30$ per kg so that the mixture costs $24$ per kg?",
+      "options": [
+        "3 : 2",
+        "2 : 3",
+        "1 : 1",
+        "3 : 4"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Alligation: ratio $=$ (dearer $-$ mean) : (mean $-$ cheaper).\n\n**Working.** $(30-24):(24-20)=6:4=3:2$ (cheaper : dearer).\n\n**Answer.** $3:2$."
+    },
+    {
+      "id": 3,
+      "subject": "General Aptitude",
+      "topic": "Quantitative Aptitude — Percentage",
+      "section": "General Aptitude",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "In an examination $40\\%$ marks are required to pass. A student who scores $178$ marks fails by $22$ marks. The maximum marks of the examination are _____ .",
+      "answer": 500,
+      "tolerance": 0.01,
+      "solution": "**Concept.** Pass mark = score + shortfall.\n\n**Working.** Pass mark $=178+22=200=0.40\\,M$, so\n$$M=\\frac{200}{0.40}=500$$\n\n**Answer.** $500$."
+    },
+    {
+      "id": 4,
+      "subject": "General Aptitude",
+      "topic": "Quantitative Aptitude — Ratio Distribution",
+      "section": "General Aptitude",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "An amount of $5000$ is divided among A, B and C in the ratio $2:3:5$. C's share is _____ .",
+      "answer": 2500,
+      "tolerance": 0.01,
+      "solution": "**Concept.** Each share = total times its ratio fraction.\n\n**Working.** C's fraction $=\\dfrac{5}{2+3+5}=\\dfrac{5}{10}$, so $5000\\times\\dfrac{1}{2}=2500$.\n\n**Answer.** $2500$."
+    },
+    {
+      "id": 5,
+      "subject": "General Aptitude",
+      "topic": "Quantitative Aptitude — Data Interpretation",
+      "section": "General Aptitude",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The bar chart shows annual sales (in units) for four years: $40, 60, 30, 80$. The highest annual sales figure is _____ units.",
+      "answer": 80,
+      "tolerance": 0.01,
+      "figure": {
+        "kind": "svg",
+        "caption": "Bar chart of annual sales for 2018-2021: 40, 60, 30, 80 units.",
+        "markup": "<svg viewBox='0 0 240 180' xmlns='http://www.w3.org/2000/svg' role='img'><line x1='30' y1='160' x2='220' y2='160' stroke='#94a3b8' stroke-width='1'/><rect x='40' y='100' width='28' height='60' fill='#6366f1'/><rect x='80' y='70' width='28' height='90' fill='#6366f1'/><rect x='120' y='115' width='28' height='45' fill='#6366f1'/><rect x='160' y='40' width='28' height='120' fill='#6366f1'/><text x='44' y='173' font-size='9' fill='#94a3b8'>2018</text><text x='84' y='173' font-size='9' fill='#94a3b8'>2019</text><text x='124' y='173' font-size='9' fill='#94a3b8'>2020</text><text x='164' y='173' font-size='9' fill='#94a3b8'>2021</text></svg>"
+      },
+      "solution": "**Concept.** Read the tallest bar.\n\n**Working.** The values are $40,60,30,80$; the maximum is $80$ (year 2021).\n\n**Answer.** $80$."
+    },
+    {
+      "id": 6,
+      "subject": "General Aptitude",
+      "topic": "Spatial Aptitude — Counting Figures",
+      "section": "General Aptitude",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "How many straight line segments are needed to form the capital letter shown?",
+      "answer": 4,
+      "tolerance": 0.01,
+      "figure": {
+        "kind": "svg",
+        "caption": "The capital letter E drawn with straight strokes.",
+        "markup": "<svg viewBox='0 0 100 140' xmlns='http://www.w3.org/2000/svg' role='img'><line x1='30' y1='20' x2='30' y2='120' stroke='#334155' stroke-width='4'/><line x1='30' y1='20' x2='75' y2='20' stroke='#334155' stroke-width='4'/><line x1='30' y1='70' x2='65' y2='70' stroke='#334155' stroke-width='4'/><line x1='30' y1='120' x2='75' y2='120' stroke='#334155' stroke-width='4'/></svg>"
+      },
+      "solution": "**Concept.** Count each distinct stroke.\n\n**Working.** The letter E has one vertical stroke and three horizontal strokes: $1+3=4$.\n\n**Answer.** $4$."
+    },
+    {
+      "id": 7,
+      "subject": "General Aptitude",
+      "topic": "Quantitative Aptitude — Geometry",
+      "section": "General Aptitude",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "The three angles of a triangle are in the ratio $1:2:3$. The largest angle is _____ degrees.",
+      "answer": 90,
+      "tolerance": 0.01,
+      "solution": "**Concept.** Angles of a triangle sum to $180^\\circ$.\n\n**Working.** Parts $=1+2+3=6$; largest $=\\dfrac{3}{6}\\times 180 = 90^\\circ$.\n\n**Answer.** $90$."
+    },
+    {
+      "id": 8,
+      "subject": "General Aptitude",
+      "topic": "Analytical Aptitude — Blood Relations",
+      "section": "General Aptitude",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "A is B's brother. C is A's mother. D is C's father. How is B related to D?",
+      "options": [
+        "Grandchild",
+        "Son",
+        "Father",
+        "Brother"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Build the family tree level by level.\n\n**Working.** C is the mother of A and B; D is C's father, hence the grandparent of A and B. So B is D's grandchild.\n\n**Answer.** Grandchild."
+    },
+    {
+      "id": 9,
+      "subject": "General Aptitude",
+      "topic": "Spatial Aptitude — Mirror Images",
+      "section": "General Aptitude",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "An arrow points to the north-east. In a vertical mirror, the arrow appears to point toward the",
+      "options": [
+        "North-West",
+        "North-East",
+        "South-East",
+        "South-West"
+      ],
+      "answer": 0,
+      "figure": {
+        "kind": "svg",
+        "caption": "An arrow pointing to the north-east beside a dashed vertical mirror line.",
+        "markup": "<svg viewBox='0 0 180 120' xmlns='http://www.w3.org/2000/svg' role='img'><line x1='30' y1='95' x2='95' y2='35' stroke='#6366f1' stroke-width='3'/><polygon points='95,35 80,38 90,50' fill='#6366f1'/><line x1='140' y1='12' x2='140' y2='108' stroke='#94a3b8' stroke-width='2' stroke-dasharray='4 3'/></svg>"
+      },
+      "solution": "**Concept.** A vertical mirror reverses the east-west component while keeping north-south.\n\n**Working.** North-east (up and to the right) becomes up and to the left, i.e. north-west.\n\n**Answer.** North-West."
+    },
+    {
+      "id": 10,
+      "subject": "General Aptitude",
+      "topic": "Spatial Aptitude — Cube Cutting",
+      "section": "General Aptitude",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "For the same $3\\times3\\times3$ painted cube cut into $27$ small cubes, the number with exactly one painted face is _____ .",
+      "answer": 6,
+      "tolerance": 0.01,
+      "figure": {
+        "kind": "svg",
+        "caption": "A 3 by 3 by 3 cube with grid lines on its visible faces.",
+        "markup": "<svg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg' role='img'><rect x='30' y='50' width='90' height='90' fill='rgba(16,185,129,0.08)' stroke='#334155' stroke-width='2'/><line x1='60' y1='50' x2='60' y2='140' stroke='#334155'/><line x1='90' y1='50' x2='90' y2='140' stroke='#334155'/><line x1='30' y1='80' x2='120' y2='80' stroke='#334155'/><line x1='30' y1='110' x2='120' y2='110' stroke='#334155'/></svg>"
+      },
+      "solution": "**Concept.** One-face cubes sit at the centre of each face.\n\n**Working.** A cube has $6$ faces, each with one centre cube: $6\\times1=6$.\n\n**Answer.** $6$."
+    },
+    {
+      "id": 11,
+      "subject": "Rock Mechanics",
+      "topic": "Mohr circle",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A rock element is loaded to principal stresses $\\sigma_1=60\\ \\text{MPa}$ and $\\sigma_3=20\\ \\text{MPa}$ (figure). Compute the maximum shear stress (MPa).",
+      "answer": 20,
+      "tolerance": 0.1,
+      "figure": {
+        "kind": "mohr",
+        "sigma1": 60,
+        "sigma3": 20
+      },
+      "solution": "**Concept.** $\\tau_{max}=\\dfrac{\\sigma_1-\\sigma_3}{2}$.\n\n**Working.**\n$$\\tau_{max}=\\frac{60-20}{2}=20\\ \\text{MPa}$$\n\n**Answer.** $20$ MPa."
+    },
+    {
+      "id": 12,
+      "subject": "Engineering Mathematics",
+      "topic": "Vector Calculus",
+      "section": "Technical (1-mark)",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The value of $\\displaystyle\\oint_{C}(2x\\,dx+2y\\,dy)$ around any closed curve $C$ is",
+      "options": [
+        "$0$",
+        "$2\\pi$",
+        "equal to the enclosed area",
+        "$\\infty$"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** The integrand is the exact differential $d(x^{2}+y^{2})$, so the field $(2x,2y)=\\nabla(x^{2}+y^{2})$ is conservative.\n\n**Working.** The line integral of a gradient around any closed loop is $0$.\n\n**Answer.** $0$."
+    },
+    {
+      "id": 13,
+      "subject": "Mine Environment & Occupational Health",
+      "topic": "Explosibility diagram",
+      "section": "Technical (1-mark)",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Coward's explosibility (triangle) diagram is used to",
+      "options": [
+        "calculate airway resistance",
+        "show whether a mixture of methane, air and inert gas is explosive, non-explosive or potentially explosive on dilution",
+        "size a main fan",
+        "measure dust concentration"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Explosibility depends on fuel and oxygen together.\n\n**Reasoning.** Coward's diagram plots CH₄ vs effective oxygen and bounds the explosive zone; a sample's point shows if it is safe, explosive, or would become explosive if mixed with air — vital when sealing/reopening fire areas.\n\n**Answer.** Classify CH₄/air/inert mixtures by explosibility."
+    },
+    {
+      "id": 14,
+      "subject": "mine-surveying",
+      "topic": "Curves",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A simple circular curve of radius $200$ m has a deflection angle $\\Delta = 60^\\circ$. Compute the tangent length (m).",
+      "answer": 115.47,
+      "tolerance": 0.3,
+      "figure": {
+        "kind": "svg",
+        "caption": "Simple circular curve",
+        "markup": "<svg viewBox='0 0 240 180' xmlns='http://www.w3.org/2000/svg'><path d='M30 150 A150 150 0 0 1 170 60' fill='none' stroke='#2563eb' stroke-width='2'/><line x1='30' y1='150' x2='200' y2='150' stroke='#475569'/><line x1='200' y1='150' x2='170' y2='60' stroke='#475569'/><circle cx='30' cy='150' r='3' fill='#1f2937'/><circle cx='170' cy='60' r='3' fill='#1f2937'/><text x='35' y='170' font-size='8'>R=200 m, deflection=60 deg</text></svg>"
+      },
+      "solution": "**Concept.** Tangent length $T=R\\tan(\\Delta/2)$.\n\n**Working.**\n$$T=200\\tan 30^\\circ=200\\times0.5774=115.47\\ \\text{m}$$\n\n**Answer.** $115.47$ m."
+    },
+    {
+      "id": 15,
+      "subject": "Mine Environment & Occupational Health",
+      "topic": "Illumination",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A point source of luminous intensity $200\\ \\text{cd}$ illuminates a surface $4\\ \\text{m}$ away, normal to the beam (figure). Compute the illuminance (lux).",
+      "answer": 12.5,
+      "tolerance": 0.1,
+      "figure": {
+        "kind": "svg",
+        "caption": "Inverse-square illumination",
+        "markup": "<svg viewBox='0 0 220 130' xmlns='http://www.w3.org/2000/svg'><circle cx='40' cy='60' r='12' fill='#fde68a' stroke='#475569'/><g stroke='#f59e0b'><line x1='52' y1='60' x2='180' y2='30'/><line x1='52' y1='60' x2='180' y2='90'/></g><text x='32' y='120' font-size='8'>I=200 cd, distance 4 m</text></svg>"
+      },
+      "solution": "**Concept.** $E=\\dfrac{I}{d^2}$.\n\n**Working.**\n$$E=\\frac{200}{4^2}=\\frac{200}{16}=12.5\\ \\text{lux}$$\n\n**Answer.** $12.5$ lux."
+    },
+    {
+      "id": 16,
+      "subject": "Rock Mechanics",
+      "topic": "Mohr circle — maximum shear",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "For the Mohr circle shown ($\\sigma_1=80$, $\\sigma_3=20\\ \\mathrm{MPa}$), the maximum shear stress (radius), in MPa, is _____.",
+      "answer": 30,
+      "tolerance": 0.5,
+      "figure": {
+        "kind": "mohr",
+        "sigma1": 80,
+        "sigma3": 20,
+        "caption": "Mohr circle of stress"
+      },
+      "solution": "**Concept.** $\\tau_{max}=\\dfrac{\\sigma_1-\\sigma_3}{2}$.\n\n**Working.**\n$$\\tau_{max}=\\frac{80-20}{2}=30\\ \\text{MPa}$$\n\n**Answer.** $30$ MPa."
+    },
+    {
+      "id": 17,
+      "subject": "Engineering Mathematics",
+      "topic": "Calculus",
+      "section": "Technical (1-mark)",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The Fourier series of an ODD periodic function (such as the square wave shown) contains",
+      "options": [
+        "only cosine terms",
+        "only sine terms",
+        "only a constant term",
+        "both sine and cosine terms"
+      ],
+      "answer": 1,
+      "figure": {
+        "kind": "svg",
+        "caption": "An odd square wave: f(-x) = -f(x).",
+        "markup": "<svg viewBox='0 0 260 160' xmlns='http://www.w3.org/2000/svg' role='img'><line x1='10' y1='80' x2='250' y2='80' stroke='#94a3b8' stroke-width='1'/><line x1='130' y1='20' x2='130' y2='140' stroke='#94a3b8' stroke-width='1'/><polyline points='10,120 70,120 70,40 130,40 130,120 190,120 190,40 250,40' fill='none' stroke='#6366f1' stroke-width='2'/><text x='200' y='34' font-size='10' fill='#6366f1'>+A</text><text x='40' y='134' font-size='10' fill='#6366f1'>-A</text></svg>"
+      },
+      "solution": "**Concept.** An odd function $f(-x)=-f(x)$ has all cosine (even) Fourier coefficients zero, including the constant $a_0$.\n\n**Working.** Only the sine terms $b_n\\sin(n\\omega x)$ survive.\n\n**Answer.** Only sine terms."
+    },
+    {
+      "id": 18,
+      "subject": "Mine Environment & Occupational Health",
+      "topic": "Illumination design",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "To provide an average of 50 lux over a 100 m² work area, the total luminous flux required (ignoring losses), in lumens, is ____.",
+      "answer": 5000,
+      "tolerance": 10,
+      "solution": "**Concept.** Flux $=$ illuminance $\\times$ area.\n\n**Working.**\n$$\\Phi=50\\times100=5000\\ \\text{lm}$$\n\n**Answer.** 5000 lumens."
+    },
+    {
+      "id": 19,
+      "subject": "Rock Mechanics",
+      "topic": "Engineering Mechanics — Kinematics",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A body starts from rest and accelerates at $4\\,\\text{m/s}^2$ over $8\\,\\text{m}$. Its final velocity is _____ m/s.",
+      "answer": 8,
+      "tolerance": 0.01,
+      "solution": "**Concept.** $v^2=u^2+2as$.\n\n**Working.**\n$$v=\\sqrt{0+2(4)(8)}=\\sqrt{64}=8.$$\n\n**Answer.** $8\\,\\text{m/s}$."
+    },
+    {
+      "id": 20,
+      "subject": "Surface Mining",
+      "topic": "Effective grade",
+      "section": "Technical (1-mark)",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The 'effective grade' (total resistance expressed as an equivalent grade) experienced by a haul truck is",
+      "options": [
+        "grade resistance minus rolling resistance",
+        "grade percentage plus rolling-resistance percentage",
+        "the bench face angle",
+        "always equal to the rolling resistance alone"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Rolling resistance can be expressed as an equivalent grade.\n\n**Reasoning.** The truck's engine sees the sum of the actual climb and the rolling drag; adding the two percentages gives one effective grade against which rimpull/speed are read from performance charts.\n\n**Answer.** Grade % + rolling-resistance %."
+    },
+    {
+      "id": 21,
+      "subject": "Engineering Mathematics",
+      "topic": "Probability",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "From the Venn diagram, $P(A)=0.5$, $P(B)=0.4$ and $P(A\\cap B)=0.2$. Compute $P(A\\cup B)$.",
+      "answer": 0.7,
+      "tolerance": 0.01,
+      "figure": {
+        "kind": "svg",
+        "caption": "Venn diagram of two events",
+        "markup": "<svg viewBox='0 0 220 140' xmlns='http://www.w3.org/2000/svg'><circle cx='85' cy='70' r='45' fill='#bfdbfe' fill-opacity='0.6' stroke='#2563eb'/><circle cx='135' cy='70' r='45' fill='#fca5a5' fill-opacity='0.6' stroke='#dc2626'/><text x='52' y='75' font-size='9'>0.5</text><text x='150' y='75' font-size='9'>0.4</text><text x='100' y='75' font-size='9'>0.2</text></svg>"
+      },
+      "solution": "**Concept.** $P(A\\cup B)=P(A)+P(B)-P(A\\cap B)$.\n\n**Working.**\n$$P(A\\cup B)=0.5+0.4-0.2=0.7$$\n\n**Answer.** $0.7$."
+    },
+    {
+      "id": 22,
+      "subject": "Engineering Mathematics",
+      "topic": "Calculus",
+      "section": "Technical (1-mark)",
+      "type": "MSQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Which properties of definite integrals are ALWAYS valid?",
+      "options": [
+        "$\\int_a^b f\\,dx=-\\int_b^a f\\,dx$",
+        "$\\int_a^a f\\,dx=0$",
+        "$\\int_a^b (f+g)\\,dx=\\int_a^b f\\,dx+\\int_a^b g\\,dx$",
+        "$\\int_a^b fg\\,dx=\\left(\\int_a^b f\\,dx\\right)\\left(\\int_a^b g\\,dx\\right)$"
+      ],
+      "answer": [
+        0,
+        1,
+        2
+      ],
+      "solution": "**Concept.** Basic integral properties.\n\n**Working.**\n- Reversing limits flips sign — TRUE.\n- Zero-width interval gives $0$ — TRUE.\n- Linearity (sum rule) — TRUE.\n- Integral of a product is NOT the product of integrals — FALSE.\n\n**Answer.** Options (a), (b) and (c)."
+    },
+    {
+      "id": 23,
+      "subject": "Mine Economics, Planning & Systems Engineering",
+      "topic": "Cost Analysis — Margin of Safety",
+      "section": "Technical (1-mark)",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The margin of safety is",
+      "options": [
+        "the excess of actual (or budgeted) sales over break-even sales",
+        "the fixed cost divided by price",
+        "the contribution margin ratio",
+        "the variable cost per unit"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** It measures how far sales can fall before a loss.\n\n**Working.** Margin of safety $=$ actual sales $-$ break-even sales.\n\n**Answer.** the excess of actual sales over break-even sales."
+    },
+    {
+      "id": 24,
+      "subject": "Underground Mining",
+      "topic": "Rope mass",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A winding rope is 650 m long with a linear mass of 4 kg/m. Its total mass, in kg, is ____.",
+      "answer": 2600,
+      "tolerance": 1,
+      "solution": "**Concept.** Mass $=$ length $\\times$ linear mass.\n\n**Working.**\n$$m=650\\times4=2600\\ \\text{kg}$$\n\n**Answer.** 2600 kg."
+    },
+    {
+      "id": 25,
+      "subject": "Rock Mechanics",
+      "topic": "Underground Openings — Pillar Stress",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Using $\\sigma_p=\\dfrac{\\sigma_v}{1-e}$ with $\\sigma_v=10\\,\\text{MPa}$ and extraction ratio $e=0.75$, the pillar stress is _____ MPa.",
+      "answer": 40,
+      "tolerance": 0.1,
+      "solution": "**Concept.** $\\sigma_p=\\dfrac{\\sigma_v}{1-e}$.\n\n**Working.**\n$$\\sigma_p=\\frac{10}{1-0.75}=\\frac{10}{0.25}=40.$$\n\n**Answer.** $40\\,\\text{MPa}$."
+    },
+    {
+      "id": 26,
+      "subject": "Drilling & Blasting",
+      "topic": "Penetration rate",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "A blasthole is advanced $12\\ \\text{m}$ in $4\\ \\text{min}$ (figure). Compute the average penetration rate (m/min).",
+      "answer": 3,
+      "tolerance": 0.05,
+      "figure": {
+        "kind": "svg",
+        "caption": "Drilling penetration",
+        "markup": "<svg viewBox='0 0 160 170' xmlns='http://www.w3.org/2000/svg'><rect x='60' y='20' width='16' height='40' fill='#94a3b8' stroke='#475569'/><rect x='64' y='60' width='8' height='80' fill='#6b7280'/><rect x='30' y='140' width='100' height='20' fill='#a8a29e' stroke='#475569'/><line x1='100' y1='60' x2='100' y2='140' stroke='#dc2626' stroke-width='2' marker-end='url(#dr)'/><defs><marker id='dr' markerWidth='8' markerHeight='8' refX='4' refY='6' orient='auto'><path d='M0 0 L3 6 L6 0 Z' fill='#dc2626'/></marker></defs><text x='14' y='130' font-size='8'>12 m in 4 min</text></svg>"
+      },
+      "solution": "**Concept.** Penetration rate $=\\dfrac{\\text{depth}}{\\text{time}}$.\n\n**Working.**\n$$r=\\frac{12}{4}=3\\ \\text{m/min}$$\n\n**Answer.** $3$ m/min."
+    },
+    {
+      "id": 27,
+      "subject": "Engineering Mathematics",
+      "topic": "Calculus",
+      "section": "Technical (1-mark)",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "$\\displaystyle\\sum_{n=1}^{\\infty}\\left(\\tfrac{1}{2}\\right)^{n}=$",
+      "options": [
+        "$\\tfrac12$",
+        "$1$",
+        "$2$",
+        "$\\infty$"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Geometric series $\\sum_{n=1}^{\\infty}ar^{n-1}=\\dfrac{a}{1-r}$ for $|r|<1$; here first term $a=\\tfrac12$, ratio $r=\\tfrac12$.\n\n**Working.**\n$$S=\\frac{1/2}{1-1/2}=1$$\n\n**Answer.** $1$."
+    },
+    {
+      "id": 28,
+      "subject": "Rock Mechanics",
+      "topic": "Rock Mass Classification — Q-system",
+      "section": "Technical (1-mark)",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "In Barton's Q-system, the ratio $J_r/J_a$ broadly represents",
+      "options": [
+        "the shear strength (roughness vs alteration) of the joints",
+        "the in-situ stress level",
+        "the number of joint sets",
+        "the water pressure"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** $J_r$ (roughness) over $J_a$ (alteration) reflects inter-block frictional strength.\n\n**Working.** Rougher, unaltered joints give higher $J_r/J_a$ and more shear strength.\n\n**Answer.** the shear strength of the joints."
+    },
+    {
+      "id": 29,
+      "subject": "Rock Mechanics",
+      "topic": "Rock Mass Classification — RQD",
+      "section": "Technical (1-mark)",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "When computing RQD, the core pieces that are summed are those that are",
+      "options": [
+        "intact and at least 100 mm long",
+        "broken pieces of any length",
+        "shorter than 100 mm",
+        "weathered surfaces only"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** RQD counts only sound pieces $\\ge 10\\,\\text{cm}$.\n\n**Working.** Only intact lengths of at least 100 mm contribute.\n\n**Answer.** intact and at least 100 mm long."
+    },
+    {
+      "id": 30,
+      "subject": "Rock Mechanics",
+      "topic": "Underground Openings — Pillar Stress",
+      "section": "Technical (1-mark)",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Compared with a long rib pillar, the tributary-area stress formula for a square pillar uses",
+      "options": [
+        "the square of the width ratio instead of the linear ratio",
+        "no overburden weight",
+        "the joint roughness number",
+        "the Schmidt hardness"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Square pillars draw load from two horizontal directions.\n\n**Working.** Hence $\\left(\\tfrac{W_p+W_o}{W_p}\\right)^2$ versus the linear ratio for rib pillars.\n\n**Answer.** the square of the width ratio instead of the linear ratio."
+    },
+    {
+      "id": 31,
+      "subject": "Underground Mining",
+      "topic": "Longwall Mining",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "If the longwall shown advances by one 0.8 m web per shear and takes 10 shears per day, compute the daily face advance (m/day).",
+      "answer": 8,
+      "tolerance": 0.1,
+      "figure": {
+        "kind": "svg",
+        "caption": "Longwall advance",
+        "markup": "<svg viewBox='0 0 240 130' xmlns='http://www.w3.org/2000/svg'><rect x='30' y='30' width='180' height='70' fill='#e5e7eb' stroke='#475569'/><rect x='30' y='30' width='14' height='70' fill='#94a3b8'/><line x1='44' y1='115' x2='62' y2='115' stroke='#475569' marker-end='url(#aa)'/><defs><marker id='aa' markerWidth='8' markerHeight='8' refX='6' refY='3' orient='auto'><path d='M0 0 L6 3 L0 6 Z' fill='#475569'/></marker></defs><text x='70' y='119' font-size='8'>web 0.8 m, 10 shears/day</text></svg>"
+      },
+      "solution": "**Concept.** Daily advance = web × number of shears.\n\n**Working.**\n$$A = 0.8 \\times 10 = 8$$\n\n**Answer.** $\\mathbf{8}$ m/day."
+    },
+    {
+      "id": 32,
+      "subject": "Engineering Mathematics",
+      "topic": "Probability and Statistics",
+      "section": "Technical (1-mark)",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The distribution sketched has a long tail to the right. It is",
+      "options": [
+        "symmetric",
+        "positively (right) skewed",
+        "negatively (left) skewed",
+        "uniform"
+      ],
+      "answer": 1,
+      "figure": {
+        "kind": "svg",
+        "caption": "A distribution with a long right tail.",
+        "markup": "<svg viewBox='0 0 240 150' xmlns='http://www.w3.org/2000/svg' role='img'><line x1='20' y1='125' x2='225' y2='125' stroke='#94a3b8' stroke-width='1'/><path d='M30 125 C50 120 60 40 85 40 C110 40 130 110 175 120 C200 124 210 125 215 125' fill='rgba(99,102,241,0.18)' stroke='#6366f1' stroke-width='2'/><text x='150' y='100' font-size='10' fill='#94a3b8'>long right tail</text></svg>"
+      },
+      "solution": "**Concept.** Skew direction follows the longer tail.\n\n**Working.** A tail extending to the right indicates positive (right) skew, with mean $>$ median $>$ mode.\n\n**Answer.** Positively (right) skewed."
+    },
+    {
+      "id": 33,
+      "subject": "Drilling & Blasting",
+      "topic": "Detonating cord",
+      "section": "Technical (1-mark)",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Detonating cord (e.g. Cordtex) is",
+      "options": [
+        "a slow-burning fuse used to fire a plain detonator",
+        "a flexible cord with a high-VOD PETN core used to initiate charges along the trunkline/down the hole",
+        "an inert tube carrying flushing air",
+        "an electric firing cable"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Detonating cord detonates (it does not burn slowly).\n\n**Reasoning.** Its PETN core detonates at ~6500–7000 m/s, so it reliably initiates boosters/charges and links holes on the surface trunkline; it is fired by a detonator.\n\n**Answer.** High-VOD PETN-cored initiating cord."
+    },
+    {
+      "id": 34,
+      "subject": "Surface Mining",
+      "topic": "Truck-shovel match",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A truck's full cycle time (load + haul + dump + return + spot) is 20 min and its loading time at the shovel is 4 min. The number of trucks needed to keep one shovel continuously busy is ____.",
+      "answer": 5,
+      "tolerance": 0.01,
+      "solution": "**Concept.** Match factor: trucks per shovel $=\\dfrac{\\text{truck cycle time}}{\\text{loading time}}$.\n\n**Working.**\n$$N=\\frac{20}{4}=5$$\n\n**Answer.** 5 trucks."
+    },
+    {
+      "id": 35,
+      "subject": "Mine Economics, Planning & Systems Engineering",
+      "topic": "Time Value of Money — Doubling Time",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Using the rule of $72$, the approximate time for money to double at $10\\%$ per year is _____ years.",
+      "answer": 7.2,
+      "tolerance": 0.1,
+      "solution": "**Concept.** Rule of 72: $t\\approx 72/i\\%$.\n\n**Working.**\n$$t=\\frac{72}{10}=7.2.$$\n\n**Answer.** $7.2$ years."
+    },
+    {
+      "id": 36,
+      "subject": "Mine Economics, Planning & Systems Engineering",
+      "topic": "Systems Engineering — EMV",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "Alternative A yields $\\textsf{Rs}\\,100$ with probability $0.6$ and $-\\textsf{Rs}\\,20$ with probability $0.4$. Its expected monetary value is $\\textsf{Rs}$ _____ .",
+      "answer": 52,
+      "tolerance": 0.5,
+      "solution": "**Concept.** $\\text{EMV}=\\sum p_i x_i$.\n\n**Working.**\n$$100(0.6)+(-20)(0.4)=60-8=52.$$\n\n**Answer.** $\\textsf{Rs}\\,52$."
+    },
+    {
+      "id": 37,
+      "subject": "Engineering Mathematics",
+      "topic": "Probability and Statistics",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "For a Poisson distribution with mean $\\lambda=3$, the probability $P(X=0)$ is _____ (round to 2 decimals).",
+      "answer": 0.05,
+      "tolerance": 0.01,
+      "figure": {
+        "kind": "svg",
+        "caption": "Poisson probability mass function with mean lambda = 3 (right-skewed, peak near k = 2, 3).",
+        "markup": "<svg viewBox='0 0 260 180' xmlns='http://www.w3.org/2000/svg' role='img'><line x1='30' y1='160' x2='240' y2='160' stroke='#94a3b8' stroke-width='1'/><rect x='38' y='136' width='20' height='24' fill='#6366f1'/><rect x='66' y='87' width='20' height='73' fill='#6366f1'/><rect x='94' y='50' width='20' height='110' fill='#6366f1'/><rect x='122' y='50' width='20' height='110' fill='#6366f1'/><rect x='150' y='77' width='20' height='83' fill='#6366f1'/><rect x='178' y='110' width='20' height='50' fill='#6366f1'/><rect x='206' y='135' width='20' height='25' fill='#6366f1'/><text x='44' y='173' font-size='9' fill='#94a3b8'>0</text><text x='100' y='173' font-size='9' fill='#94a3b8'>2</text><text x='212' y='173' font-size='9' fill='#94a3b8'>6</text></svg>"
+      },
+      "solution": "**Concept.** $P(X=k)=\\dfrac{e^{-\\lambda}\\lambda^{k}}{k!}$.\n\n**Working.**\n$$P(X=0)=e^{-3}=0.0498\\approx 0.05$$\n\n**Answer.** $\\approx 0.05$."
+    },
+    {
+      "id": 38,
+      "subject": "Mine Environment & Occupational Health",
+      "topic": "Kata thermometer",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "A kata thermometer is used in mine-climate work to measure",
+      "options": [
+        "methane concentration",
+        "the cooling power of the air (and hence low air velocities/comfort)",
+        "respirable dust mass",
+        "illuminance in lux"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** The kata measures heat-loss (cooling) rate.\n\n**Reasoning.** The time for the heated kata bulb to cool through a fixed range gives the air's cooling power, from which low air velocities and the comfort of the environment can be assessed.\n\n**Answer.** Cooling power of the air."
+    },
+    {
+      "id": 39,
+      "subject": "Mine Ventilation",
+      "topic": "Auxiliary Ventilation — Duct",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "A circular duct of diameter $0.6\\,\\text{m}$ carries air at $10\\,\\text{m/s}$. The quantity delivered is _____ m$^3$/s. Round to two decimals.",
+      "answer": 2.83,
+      "tolerance": 0.05,
+      "solution": "**Concept.** $Q=A v=\\dfrac{\\pi}{4}d^2 v$.\n\n**Working.**\n$$A=\\frac{\\pi}{4}(0.6)^2=0.2827,\\quad Q=0.2827\\times10=2.83.$$\n\n**Answer.** $\\approx 2.83\\,\\text{m}^3/\\text{s}$."
+    },
+    {
+      "id": 40,
+      "subject": "Underground Mining",
+      "topic": "Pillar strength",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "Using Obert-Duvall Sp = S1(0.778 + 0.222 w/h) with S1 = 8 MPa, w = 15 m and h = 3 m, the pillar strength, in MPa, is ____ (one decimal).",
+      "answer": 15.1,
+      "tolerance": 0.15,
+      "solution": "**Concept.** $S_p=S_1(0.778+0.222\\,w/h)$.\n\n**Working.**\n$$\\frac{w}{h}=\\frac{15}{3}=5,\\quad S_p=8(0.778+0.222\\times5)=8\\times1.888=15.1\\ \\text{MPa}$$\n\n**Answer.** 15.1 MPa."
+    },
+    {
+      "id": 41,
+      "subject": "Surface Mining",
+      "topic": "Conveyor lift power",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "A conveyor lifts 2880 t/h of material through a vertical height of 20 m. Ignoring friction and taking g = 9.81 m/s², the lifting power, in kW, is ____ (nearest whole number).",
+      "answer": 157,
+      "tolerance": 2,
+      "solution": "**Concept.** Lift power $=\\dot m\\,g\\,h$, with mass flow in kg/s.\n\n**Working.**\n$$\\dot m=\\frac{2880\\times1000}{3600}=800\\ \\text{kg/s}$$\n$$P=800\\times9.81\\times20=156960\\ \\text{W}\\approx157\\ \\text{kW}$$\n\n**Answer.** 157 kW."
+    },
+    {
+      "id": 42,
+      "subject": "Rock Mechanics",
+      "topic": "Stress and Strain — In-situ Stress",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "The vertical in-situ stress in rock is most commonly estimated from",
+      "options": [
+        "the weight of the overburden per unit area",
+        "horizontal tectonic forces only",
+        "the uniaxial compressive strength",
+        "the pore pressure alone"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Gravitational loading governs vertical stress.\n\n**Working.** $\\sigma_v=\\gamma H$, the overburden weight per unit area.\n\n**Answer.** the weight of the overburden per unit area."
+    },
+    {
+      "id": 43,
+      "subject": "Mine Environment & Occupational Health",
+      "topic": "Glare",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "Glare in mine lighting is",
+      "options": [
+        "the complete absence of light",
+        "excessive or poorly shielded brightness in the field of view causing visual discomfort and reduced visibility",
+        "the same as illuminance in lux",
+        "a measure of air velocity"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Glare is uncontrolled brightness contrast.\n\n**Reasoning.** Bright unshielded lamps in the line of sight dazzle the eye and lower the ability to see detail; it is controlled by shielding/diffusing luminaires and positioning them out of direct view.\n\n**Answer.** Discomforting excessive brightness."
+    },
+    {
+      "id": 44,
+      "subject": "Mine Ventilation",
+      "topic": "Networks — Parallel",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "A parallel combination of equivalent resistance $1\\,\\text{Ns}^2/\\text{m}^8$ has a pressure drop of $400\\,\\text{Pa}$. The total quantity is _____ m$^3$/s.",
+      "answer": 20,
+      "tolerance": 0.2,
+      "solution": "**Concept.** $Q=\\sqrt{P/R_{eq}}$.\n\n**Working.**\n$$Q=\\sqrt{\\frac{400}{1}}=20.$$\n\n**Answer.** $20\\,\\text{m}^3/\\text{s}$."
+    },
+    {
+      "id": 45,
+      "subject": "Engineering Mathematics",
+      "topic": "Differential Equations",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "The solution of $\\dfrac{dy}{dx}=2x$ with $y(1)=2$ gives $y(3)=$ _____ .",
+      "answer": 10,
+      "tolerance": 0.01,
+      "solution": "**Concept.** Integrate and apply the initial condition.\n\n**Working.**\n$$y=x^{2}+C,\\quad y(1)=2\\Rightarrow C=1,\\quad y(3)=9+1=10$$\n\n**Answer.** $10$."
+    },
+    {
+      "id": 46,
+      "subject": "Rock Mechanics",
+      "topic": "Engineering Mechanics — Moment of Inertia",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "The area moment of inertia of a circle of diameter $4$ about a centroidal diameter is _____ (units$^4$). Round to two decimals.",
+      "answer": 12.57,
+      "tolerance": 0.05,
+      "figure": {
+        "kind": "svg",
+        "caption": "A circle of diameter 4 with a centroidal diametral axis.",
+        "markup": "<svg viewBox='0 0 140 120' xmlns='http://www.w3.org/2000/svg' role='img'><circle cx='70' cy='60' r='45' fill='rgba(16,185,129,0.10)' stroke='#10b981' stroke-width='2'/><line x1='15' y1='60' x2='125' y2='60' stroke='#ef4444' stroke-width='1.5' stroke-dasharray='4 3'/></svg>"
+      },
+      "solution": "**Concept.** $I=\\dfrac{\\pi d^4}{64}$.\n\n**Working.**\n$$I=\\frac{\\pi (4)^4}{64}=\\frac{256\\pi}{64}=4\\pi=12.57.$$\n\n**Answer.** $\\approx 12.57$."
+    },
+    {
+      "id": 47,
+      "subject": "Engineering Mathematics",
+      "topic": "Vector Calculus",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "If $\\nabla\\cdot\\mathbf{F}=0$ everywhere, the net outward flux of $\\mathbf{F}$ through ANY closed surface is",
+      "options": [
+        "$0$",
+        "equal to the enclosed volume",
+        "always positive",
+        "indeterminate"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** By the divergence theorem, flux $=\\iiint_V(\\nabla\\cdot\\mathbf{F})\\,dV$.\n\n**Working.** A divergence-free field gives $\\iiint_V 0\\,dV=0$ for every closed surface.\n\n**Answer.** $0$."
+    },
+    {
+      "id": 48,
+      "subject": "Drilling & Blasting",
+      "topic": "Jumbo drill",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "A drill jumbo is used for",
+      "options": [
+        "large-diameter rotary blasthole drilling in opencast benches",
+        "multi-boom hydraulic percussive drilling of the face in tunnels/drives",
+        "core sampling of exploration boreholes",
+        "pumping water from the sump"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Jumbos drill development rounds underground.\n\n**Reasoning.** A jumbo carries two or more hydraulic drifters on booms to drill the many parallel holes of a tunnel/drift face quickly and accurately for blasting.\n\n**Answer.** Multi-boom face drilling in tunnels/drives."
+    },
+    {
+      "id": 49,
+      "subject": "Engineering Mathematics",
+      "topic": "Probability and Statistics",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "For a normal distribution with $\\mu=50$ and $\\sigma=10$, the $z$-score of the value $x=70$ is _____ .",
+      "answer": 2,
+      "tolerance": 0.01,
+      "solution": "**Concept.** $z=\\dfrac{x-\\mu}{\\sigma}$.\n\n**Working.**\n$$z=\\frac{70-50}{10}=2$$\n\n**Answer.** $2$."
+    },
+    {
+      "id": 50,
+      "subject": "Engineering Mathematics",
+      "topic": "Calculus",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "The average value of $f(x)=x^{2}$ over the interval $[0,3]$ is _____ .",
+      "answer": 3,
+      "tolerance": 0.01,
+      "figure": {
+        "kind": "svg",
+        "caption": "y = x^2 on [0, 3]; the horizontal line marks the average value (= 3) over the interval.",
+        "markup": "<svg viewBox='0 0 240 200' xmlns='http://www.w3.org/2000/svg' role='img'><line x1='30' y1='40' x2='30' y2='175' stroke='#94a3b8' stroke-width='1'/><line x1='30' y1='170' x2='215' y2='170' stroke='#94a3b8' stroke-width='1'/><polyline points='30,170 90,157 150,116 210,49' fill='none' stroke='#6366f1' stroke-width='2'/><line x1='30' y1='130' x2='210' y2='130' stroke='#ef4444' stroke-width='1.5' stroke-dasharray='5 3'/><text x='150' y='124' font-size='10' fill='#ef4444'>average = 3</text><text x='198' y='184' font-size='10' fill='#94a3b8'>x = 3</text></svg>"
+      },
+      "solution": "**Concept.** Average value $=\\dfrac{1}{b-a}\\int_a^b f\\,dx$.\n\n**Working.**\n$$\\frac{1}{3-0}\\int_{0}^{3}x^{2}\\,dx=\\frac{1}{3}\\cdot\\frac{27}{3}=\\frac{1}{3}\\cdot 9=3$$\n\n**Answer.** $3$."
+    },
+    {
+      "id": 51,
+      "subject": "Mining Geology",
+      "topic": "Outcrop width",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "For a given true thickness, the width of outcrop of an inclined bed on flat ground is greatest when the bed",
+      "options": [
+        "is vertical",
+        "dips at a low (gentle) angle",
+        "dips at exactly 45°",
+        "is non-existent"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Gentle dips spread the outcrop.\n\n**Reasoning.** On level ground the outcrop width $=t/\\sin\\delta$ (t = true thickness); as the dip δ decreases, $\\sin\\delta$ falls and the width increases, becoming a minimum for a vertical bed.\n\n**Answer.** Gentle dip."
+    },
+    {
+      "id": 52,
+      "subject": "Mine Economics, Planning & Systems Engineering",
+      "topic": "Time Value of Money — Doubling Time",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "The exact number of years for money to double at $10\\%$ compounded annually is _____ . Round to two decimals.",
+      "answer": 7.27,
+      "tolerance": 0.05,
+      "solution": "**Concept.** $n=\\dfrac{\\ln 2}{\\ln(1+i)}$.\n\n**Working.**\n$$n=\\frac{0.6931}{\\ln 1.10}=\\frac{0.6931}{0.09531}=7.27.$$\n\n**Answer.** $\\approx 7.27$ years."
+    },
+    {
+      "id": 53,
+      "subject": "Mine Environment & Occupational Health",
+      "topic": "Environmental impacts",
+      "section": "Technical (2-mark)",
+      "type": "MSQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "Which of the following are environmental impacts associated with mining? (Select all that apply.)",
+      "options": [
+        "Land degradation and ground subsidence",
+        "Acid mine drainage and surface-water pollution",
+        "Airborne dust and air pollution",
+        "A guaranteed improvement in regional groundwater quality"
+      ],
+      "answer": [
+        0,
+        1,
+        2
+      ],
+      "solution": "**Concept.** Mining disturbs land, water and air.\n\n**Reasoning.** Excavation and subsidence degrade land, sulphide oxidation acidifies water (AMD), and operations raise dust — all adverse impacts. Mining does not inherently improve groundwater quality; if anything it can degrade it.\n\n**Answer.** Options 1, 2 and 3."
+    },
+    {
+      "id": 54,
+      "subject": "Mine Economics, Planning & Systems Engineering",
+      "topic": "Depletion — Unit Rate",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "An ore deposit cost $\\textsf{Rs}\\,1{,}00{,}00{,}000$ and contains $5{,}00{,}000$ tonnes of recoverable ore. The depletion charge per tonne is $\\textsf{Rs}$ _____ .",
+      "answer": 20,
+      "tolerance": 0.1,
+      "solution": "**Concept.** Depletion rate $=\\dfrac{\\text{cost}}{\\text{total reserve}}$.\n\n**Working.**\n$$\\frac{10000000}{500000}=20.$$\n\n**Answer.** $\\textsf{Rs}\\,20$ per tonne."
+    },
+    {
+      "id": 55,
+      "subject": "Engineering Mathematics",
+      "topic": "Calculus",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "The area enclosed between the parabola $y=4-x^{2}$ and the $x$-axis (shaded) is _____ (round to 2 decimals).",
+      "answer": 10.67,
+      "tolerance": 0.05,
+      "figure": {
+        "kind": "svg",
+        "caption": "Region bounded by y = 4 - x^2 and the x-axis, from x = -2 to x = 2.",
+        "markup": "<svg viewBox='0 0 240 170' xmlns='http://www.w3.org/2000/svg' role='img'><line x1='20' y1='140' x2='220' y2='140' stroke='#94a3b8' stroke-width='1'/><line x1='120' y1='20' x2='120' y2='150' stroke='#94a3b8' stroke-width='1'/><path d='M40 140 Q120 -12 200 140 Z' fill='rgba(16,185,129,0.18)' stroke='#10b981' stroke-width='2'/><text x='150' y='60' font-size='11' fill='#10b981'>y = 4 - x^2</text><text x='34' y='154' font-size='10' fill='#94a3b8'>-2</text><text x='196' y='154' font-size='10' fill='#94a3b8'>2</text></svg>"
+      },
+      "solution": "**Concept.** The curve crosses the axis at $x=\\pm2$; area $=\\int_{-2}^{2}(4-x^{2})\\,dx$.\n\n**Working.**\n$$\\int_{-2}^{2}(4-x^{2})\\,dx=\\Big[4x-\\tfrac{x^{3}}{3}\\Big]_{-2}^{2}=2\\left(8-\\tfrac{8}{3}\\right)=\\tfrac{32}{3}\\approx 10.67$$\n\n**Answer.** $\\tfrac{32}{3}\\approx 10.67$."
+    },
+    {
+      "id": 56,
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Underground surveying",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "Compared with surface surveying, underground mine surveying is more difficult chiefly because of",
+      "options": [
+        "the absence of any need for accuracy",
+        "cramped workings, artificial lighting, short and steeply inclined sights, and stations fixed in the roof",
+        "the unavailability of theodolites",
+        "the lack of any datum"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** The working environment constrains observation.\n\n**Reasoning.** Restricted space, poor light, dust, short/inclined lines of sight and roof-mounted stations all complicate underground work; orientation must also be carried down a shaft.\n\n**Answer.** Confined, poorly lit conditions with roof stations."
+    },
+    {
+      "id": 57,
+      "subject": "Mine Ventilation",
+      "topic": "Atkinson's Law — Friction Factor",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "An airway has a pressure loss of $60\\,\\text{Pa}$. If only the friction factor $k$ is doubled (flow unchanged), the new pressure loss is _____ Pa.",
+      "answer": 120,
+      "tolerance": 1,
+      "solution": "**Concept.** $R\\propto k$ and $P=RQ^2$, so $P\\propto k$.\n\n**Working.**\n$$P_2=2\\times60=120.$$\n\n**Answer.** $120\\,\\text{Pa}$."
+    },
+    {
+      "id": 58,
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Systematic error",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "A systematic error such as using a tape that is uniformly too long is characterised by being",
+      "options": [
+        "random in sign and self-compensating",
+        "of constant sign, cumulative, and removable by calibration/correction",
+        "a simple blunder",
+        "unrelated to the measurement"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Systematic errors follow a definite law.\n\n**Reasoning.** They have the same sign each time and accumulate with the number of measurements; once the cause is known (e.g. tape length) a correction removes them.\n\n**Answer.** Constant sign, cumulative, correctable."
+    },
+    {
+      "id": 59,
+      "subject": "Engineering Mathematics",
+      "topic": "Calculus",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "Evaluate $\\displaystyle\\int_{0}^{1} x\\,e^{x}\\,dx$ .",
+      "answer": 1,
+      "tolerance": 0.01,
+      "solution": "**Concept.** Integration by parts $\\int u\\,dv=uv-\\int v\\,du$ with $u=x$, $dv=e^{x}dx$.\n\n**Working.**\n$$\\int_{0}^{1}x e^{x}dx=\\big[x e^{x}-e^{x}\\big]_{0}^{1}=(e-e)-(0-1)=1$$\n\n**Answer.** $1$."
+    },
+    {
+      "id": 60,
+      "subject": "Mine Environment & Occupational Health",
+      "topic": "Air cooling load",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "An air stream of mass flow 50 kg/s is to be cooled by 5 °C. Taking $c_p=1.005$ kJ/kg·K, the refrigeration (cooling) duty, in kW, is ____ (two decimals).",
+      "answer": 251.25,
+      "tolerance": 2,
+      "solution": "**Concept.** $\\dot{Q}=\\dot{m}\\,c_p\\,\\Delta T$.\n\n**Working.**\n$$\\dot{Q}=50\\times1.005\\times5=251.25\\ \\text{kW}$$\n\n**Answer.** 251.25 kW."
+    },
+    {
+      "id": 61,
+      "subject": "Mine Economics, Planning & Systems Engineering",
+      "topic": "Cost Analysis — Sunk Cost",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "A sunk cost is",
+      "options": [
+        "a past cost that is irrelevant to current decisions",
+        "a future cost that varies with output",
+        "the cost of capital",
+        "the opportunity cost of capital"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Sunk costs are already incurred and unrecoverable.\n\n**Working.** They should be excluded from forward-looking decisions.\n\n**Answer.** a past cost that is irrelevant to current decisions."
+    },
+    {
+      "id": 62,
+      "subject": "Engineering Mathematics",
+      "topic": "Differential Equations",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "The solution of $\\dfrac{dy}{dx}=x$ with $y(0)=1$ gives $y(2)=$ _____ .",
+      "answer": 3,
+      "tolerance": 0.01,
+      "solution": "**Concept.** Integrate directly and apply the initial condition.\n\n**Working.**\n$$y=\\tfrac{x^{2}}{2}+C,\\quad y(0)=1\\Rightarrow C=1,\\quad y(2)=\\tfrac{4}{2}+1=3$$\n\n**Answer.** $3$."
+    },
+    {
+      "id": 63,
+      "subject": "Mining Geology",
+      "topic": "Stratabound deposits",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "A 'stratabound' ore deposit is one that is",
+      "options": [
+        "confined to a particular stratigraphic unit or bed",
+        "cutting sharply across all bedding",
+        "purely magmatic",
+        "found only at the surface"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Stratabound ores honour stratigraphy.\n\n**Reasoning.** The mineralisation is restricted to a specific bed/horizon (though it may be disseminated within it); strata-form deposits additionally lie parallel to bedding.\n\n**Answer.** Restricted to a particular stratum."
+    },
+    {
+      "id": 64,
+      "subject": "Mine Environment & Occupational Health",
+      "topic": "Mine drainage",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "A drainage pump lifts $0.08\\ \\mathrm{m^3/s}$ of water through a total head of $120\\ \\text{m}$ at an overall efficiency of $0.75$. Compute the input power (kW, two decimals). Take $\\rho g=9810\\ \\mathrm{N/m^3}$.",
+      "answer": 125.57,
+      "tolerance": 0.5,
+      "figure": {
+        "kind": "svg",
+        "caption": "Mine drainage pump",
+        "markup": "<svg viewBox='0 0 200 150' xmlns='http://www.w3.org/2000/svg'><circle cx='60' cy='100' r='22' fill='#dbeafe' stroke='#475569'/><line x1='60' y1='78' x2='60' y2='30' stroke='#2563eb' stroke-width='3' marker-end='url(#pp)'/><defs><marker id='pp' markerWidth='8' markerHeight='8' refX='4' refY='6' orient='auto'><path d='M0 0 L3 6 L6 0 Z' fill='#2563eb'/></marker></defs><text x='12' y='135' font-size='8'>Q=0.08 m^3/s, H=120 m, eff=0.75</text></svg>"
+      },
+      "solution": "**Concept.** Input power $=\\dfrac{\\rho g Q H}{\\eta}$.\n\n**Working.**\n$$P=\\frac{9810\\times0.08\\times120}{0.75}=\\frac{94176}{0.75}=125568\\ \\text{W}=125.57\\ \\text{kW}$$\n\n**Answer.** $125.57$ kW."
+    },
+    {
+      "id": 65,
+      "subject": "Mine Economics, Planning & Systems Engineering",
+      "topic": "Systems Engineering — Series Reliability",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "Two components of reliability $0.9$ and $0.8$ operate in series. The system reliability is _____ .",
+      "answer": 0.72,
+      "tolerance": 0.005,
+      "solution": "**Concept.** $R_s=R_1R_2$.\n\n**Working.**\n$$0.9\\times0.8=0.72.$$\n\n**Answer.** $0.72$."
+    }
+  ]
+}

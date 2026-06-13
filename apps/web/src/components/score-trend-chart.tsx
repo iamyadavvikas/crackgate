@@ -13,7 +13,7 @@ export function ScoreTrendChart({ data }: { data: Point[] }) {
       <div className="text-center text-sm text-muted py-10 border-2 border-dashed border-line rounded-xl">
         <p className="text-3xl">📈</p>
         <p className="mt-2 font-semibold">No score history yet</p>
-        <p className="text-xs mt-1">Your mock + PYQ scores will plot here over time.</p>
+        <p className="text-xs mt-1">Your mock scores will plot here over time.</p>
       </div>
     );
   }

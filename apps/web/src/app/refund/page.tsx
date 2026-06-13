@@ -5,8 +5,8 @@ export default function Refund() {
       <h1>Refund Policy</h1>
       <p><em>Last updated: 1 June 2026</em></p>
       <p>
-        Full refund within <b>7 days</b> of payment if you've attempted no more than one paid mock or
-        PYQ paper. Email billing@crackgate.in with your order ID. Refunds reach your source account
+        Full refund within <b>7 days</b> of payment if you've attempted no more than one paid mock.
+        Email billing@crackgate.in with your order ID. Refunds reach your source account
         within 5-7 working days via Razorpay.
       </p>
     </article>

@@ -1,0 +1,1115 @@
+{
+  "id": "mn-mock-11",
+  "title": "Mock Test 11 — Full Syllabus (Premium)",
+  "tier": "premium",
+  "duration": 180,
+  "pattern": "GATE 2027 (65 Q · 100 marks · 3 hours)",
+  "totalMarks": 100,
+  "sections": [
+    {
+      "name": "General Aptitude",
+      "count": 10,
+      "marks": 15
+    },
+    {
+      "name": "Technical (1-mark)",
+      "count": 25,
+      "marks": 25
+    },
+    {
+      "name": "Technical (2-mark)",
+      "count": 30,
+      "marks": 60
+    }
+  ],
+  "negativeMarking": {
+    "mcq1": -0.3333333333333333,
+    "mcq2": -0.6666666666666666,
+    "nat": 0,
+    "msq": 0
+  },
+  "seed": 4075282400,
+  "locked": true,
+  "questions": [
+    {
+      "id": 1,
+      "subject": "General Aptitude",
+      "topic": "Analytical Aptitude — Letter Series",
+      "section": "General Aptitude",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Find the next letter in the series: A, C, E, G, ?",
+      "options": [
+        "I",
+        "H",
+        "J",
+        "K"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** The letters advance by two positions each time (odd-positioned letters).\n\n**Working.** After G (7th letter), skip H to reach I.\n\n**Answer.** I."
+    },
+    {
+      "id": 2,
+      "subject": "General Aptitude",
+      "topic": "Verbal Aptitude — Sequencing",
+      "section": "General Aptitude",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Arrange the sentences into a coherent paragraph.\nP: Finally, the processed ore is transported to the smelter.\nQ: First, the ore body is located through exploratory drilling.\nR: Then the ore is extracted and hauled to the surface.\nS: Next, it is crushed and concentrated at the mill.\nThe correct order is:",
+      "options": [
+        "Q, R, S, P",
+        "P, Q, R, S",
+        "Q, S, R, P",
+        "R, Q, S, P"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Order the steps by their explicit sequence markers (First, Then, Next, Finally).\n\n**Working.** First locate (Q), then extract and haul (R), next crush/concentrate (S), finally transport to smelter (P).\n\n**Answer.** Q, R, S, P."
+    },
+    {
+      "id": 3,
+      "subject": "General Aptitude",
+      "topic": "Analytical Aptitude — Syllogism",
+      "section": "General Aptitude",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "No metals are gases. All mercury is metal. Which conclusion follows?",
+      "options": [
+        "No mercury is gas",
+        "All mercury is gas",
+        "Some mercury is gas",
+        "Mercury is not a metal"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Combine a universal negative with a universal affirmative.\n\n**Working.** Mercury ⊆ metals and metals ∩ gases $=\\varnothing$, so no mercury is a gas.\n\n**Answer.** No mercury is gas."
+    },
+    {
+      "id": 4,
+      "subject": "General Aptitude",
+      "topic": "Analytical Aptitude — Syllogism",
+      "section": "General Aptitude",
+      "type": "MSQ",
+      "marks": 1,
+      "difficulty": "hard",
+      "stem": "Given 'All P are Q' and 'All Q are R' (with P non-empty), which of the following necessarily follow?",
+      "options": [
+        "All P are R",
+        "Some R are P",
+        "All R are P",
+        "Some Q are R"
+      ],
+      "answer": [
+        0,
+        1,
+        3
+      ],
+      "solution": "**Concept.** Apply transitivity and existential import of a non-empty set.\n\n**Working.** P ⊆ Q ⊆ R gives 'All P are R'; since P is non-empty, 'Some R are P' holds; 'All Q are R' gives 'Some Q are R'. 'All R are P' is not implied (R may be larger).\n\n**Answer.** All P are R; Some R are P; Some Q are R."
+    },
+    {
+      "id": 5,
+      "subject": "General Aptitude",
+      "topic": "Verbal Aptitude — Vocabulary",
+      "section": "General Aptitude",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "hard",
+      "stem": "Select the option that best captures the meaning of 'EQUIVOCAL' in: 'The survey gave equivocal results.'",
+      "options": [
+        "open to more than one interpretation",
+        "absolutely certain and clear",
+        "numerically equal on both sides",
+        "strongly and clearly negative"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** 'Equivocal' means ambiguous or capable of being understood in more than one way.\n\n**Working.** Equivocal results are uncertain and admit multiple interpretations; the antonym would be 'unequivocal' (clear).\n\n**Answer.** open to more than one interpretation."
+    },
+    {
+      "id": 6,
+      "subject": "General Aptitude",
+      "topic": "Analytical Aptitude — Number Series",
+      "section": "General Aptitude",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "Find the next term: $5, 11, 23, 47, \\,?$",
+      "answer": 95,
+      "tolerance": 0.01,
+      "solution": "**Concept.** Each term follows $a_{n+1}=2a_n+1$.\n\n**Working.** $47\\times 2 + 1 = 95$.\n\n**Answer.** $95$."
+    },
+    {
+      "id": 7,
+      "subject": "General Aptitude",
+      "topic": "Analytical Aptitude — Ranking",
+      "section": "General Aptitude",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "In a row of $20$ students, A is $7$th from the left. A's position from the right is",
+      "options": [
+        "14th",
+        "13th",
+        "12th",
+        "7th"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Position from right $=$ total $-$ position from left $+1$.\n\n**Working.** $20-7+1=14$.\n\n**Answer.** 14th."
+    },
+    {
+      "id": 8,
+      "subject": "General Aptitude",
+      "topic": "Analytical Aptitude — Directions",
+      "section": "General Aptitude",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "At sunrise, the shadow of a vertical pole falls toward which direction?",
+      "options": [
+        "West",
+        "East",
+        "North",
+        "South"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** A shadow points away from the sun.\n\n**Working.** At sunrise the sun is in the east, so the shadow falls toward the west.\n\n**Answer.** West."
+    },
+    {
+      "id": 9,
+      "subject": "General Aptitude",
+      "topic": "Analytical Aptitude — Venn Diagrams",
+      "section": "General Aptitude",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "The relationship among Doctors, Women and Engineers (each pair can share members) is best shown by",
+      "options": [
+        "three mutually overlapping circles",
+        "three completely separate circles",
+        "one circle inside another",
+        "two overlapping circles and one separate"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** When all three categories can share members, all pairs overlap.\n\n**Working.** A person can be a woman, a doctor and/or an engineer, so all three circles intersect.\n\n**Answer.** three mutually overlapping circles."
+    },
+    {
+      "id": 10,
+      "subject": "General Aptitude",
+      "topic": "Spatial Aptitude — Cube Cutting",
+      "section": "General Aptitude",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "For the same $3\\times3\\times3$ painted cube cut into $27$ small cubes, the number with exactly three painted faces is _____ .",
+      "answer": 8,
+      "tolerance": 0.01,
+      "figure": {
+        "kind": "svg",
+        "caption": "A 3 by 3 by 3 cube with its eight corners highlighted.",
+        "markup": "<svg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg' role='img'><rect x='30' y='50' width='90' height='90' fill='rgba(244,63,94,0.06)' stroke='#334155' stroke-width='2'/><line x1='60' y1='50' x2='60' y2='140' stroke='#334155'/><line x1='90' y1='50' x2='90' y2='140' stroke='#334155'/><line x1='30' y1='80' x2='120' y2='80' stroke='#334155'/><line x1='30' y1='110' x2='120' y2='110' stroke='#334155'/><circle cx='30' cy='50' r='4' fill='#ef4444'/><circle cx='120' cy='50' r='4' fill='#ef4444'/><circle cx='30' cy='140' r='4' fill='#ef4444'/><circle cx='120' cy='140' r='4' fill='#ef4444'/></svg>"
+      },
+      "solution": "**Concept.** Three-face cubes are the corner cubes.\n\n**Working.** A cube has $8$ corners, so $8$ small cubes have three painted faces.\n\n**Answer.** $8$."
+    },
+    {
+      "id": 11,
+      "subject": "Rock Mechanics",
+      "topic": "Failure Criteria — Triaxial",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The triaxial stress factor $N=\\tan^2(45^\\circ+\\phi/2)$ for $\\phi=30^\\circ$ is _____ .",
+      "answer": 3,
+      "tolerance": 0.01,
+      "solution": "**Concept.** $N=\\tan^2(45^\\circ+\\phi/2)$.\n\n**Working.**\n$$N=\\tan^2 60^\\circ=(\\sqrt{3})^2=3.$$\n\n**Answer.** $3$."
+    },
+    {
+      "id": 12,
+      "subject": "Mine Ventilation",
+      "topic": "Ventilation networks",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A total airflow of $30\\ \\mathrm{m^3/s}$ splits naturally between two parallel airways of resistance $R_1=0.1$ and $R_2=0.4\\ \\mathrm{Ns^2/m^8}$. Compute the quantity through the higher-resistance airway ($\\mathrm{m^3/s}$).",
+      "answer": 10,
+      "tolerance": 0.2,
+      "figure": {
+        "kind": "svg",
+        "caption": "Natural splitting of airflow",
+        "markup": "<svg viewBox='0 0 240 140' xmlns='http://www.w3.org/2000/svg'><line x1='10' y1='70' x2='60' y2='70' stroke='#2563eb' stroke-width='3' marker-end='url(#sa)'/><path d='M60 70 L60 35 L190 35' fill='none' stroke='#475569' stroke-width='2'/><path d='M60 70 L60 105 L190 105' fill='none' stroke='#475569' stroke-width='2'/><line x1='190' y1='35' x2='230' y2='35' stroke='#16a34a' stroke-width='3' marker-end='url(#sa)'/><line x1='190' y1='105' x2='230' y2='105' stroke='#16a34a' stroke-width='2' marker-end='url(#sa)'/><defs><marker id='sa' markerWidth='8' markerHeight='8' refX='6' refY='3' orient='auto'><path d='M0 0 L6 3 L0 6 Z' fill='#475569'/></marker></defs><text x='100' y='30' font-size='8'>R1=0.1</text><text x='100' y='125' font-size='8'>R2=0.4, total Q=30</text></svg>"
+      },
+      "solution": "**Concept.** In a free split, equal pressure drop gives $\\dfrac{Q_1}{Q_2}=\\sqrt{\\dfrac{R_2}{R_1}}$.\n\n**Working.**\n$$\\frac{Q_1}{Q_2}=\\sqrt{\\frac{0.4}{0.1}}=2\\Rightarrow Q_1=2Q_2,\\ Q_1+Q_2=30\\Rightarrow Q_2=10\\ \\mathrm{m^3/s}$$\n\n**Answer.** $10\\ \\mathrm{m^3/s}$."
+    },
+    {
+      "id": 13,
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Whole-circle to reduced bearing",
+      "section": "Technical (1-mark)",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "A line has the whole-circle bearing of $210^\\circ$ shown on the compass. Its reduced (quadrantal) bearing is",
+      "options": [
+        "N 30° E",
+        "S 30° W",
+        "S 60° W",
+        "N 60° W"
+      ],
+      "answer": 1,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'><circle cx='80' cy='80' r='60' fill='none' stroke='#475569'/><line x1='80' y1='15' x2='80' y2='145' stroke='#cbd5e1'/><line x1='15' y1='80' x2='145' y2='80' stroke='#cbd5e1'/><text x='74' y='12' font-size='10'>N</text><text x='74' y='156' font-size='10'>S</text><line x1='80' y1='80' x2='50' y2='132' stroke='#dc2626' stroke-width='2' marker-end='url(#bn2)'/><defs><marker id='bn2' markerWidth='8' markerHeight='8' refX='6' refY='3' orient='auto'><path d='M0 0 L6 3 L0 6 Z' fill='#dc2626'/></marker></defs><text x='88' y='104' font-size='9' fill='#dc2626'>WCB 210&#176;</text></svg>",
+        "caption": "Whole-circle bearing of a line"
+      },
+      "solution": "**Concept.** For WCB between $180^\\circ$ and $270^\\circ$ (third quadrant) the reduced bearing is $S\\,(\\text{WCB}-180^\\circ)\\,W$.\n\n**Reasoning.** $210^\\circ-180^\\circ=30^\\circ$, so the line lies in the SW quadrant at $30^\\circ$ from south.\n\n**Answer.** $S\\,30^\\circ\\,W$."
+    },
+    {
+      "id": 14,
+      "subject": "mine-surveying",
+      "topic": "Distance measurement",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "For the same slope distance of $100$ m at an inclination of $30^\\circ$, compute the vertical component (difference in level) in metres.",
+      "answer": 50,
+      "tolerance": 0.2,
+      "figure": {
+        "kind": "svg",
+        "caption": "Vertical component of slope line",
+        "markup": "<svg viewBox='0 0 240 150' xmlns='http://www.w3.org/2000/svg'><line x1='30' y1='120' x2='200' y2='40' stroke='#475569' stroke-width='2'/><line x1='200' y1='40' x2='200' y2='120' stroke='#dc2626' stroke-width='2'/><line x1='30' y1='120' x2='200' y2='120' stroke='#94a3b8' stroke-dasharray='3 2'/><text x='40' y='114' font-size='8'>30 deg</text><text x='205' y='85' font-size='8'>V</text></svg>"
+      },
+      "solution": "**Concept.** Vertical component $V=L\\sin\\theta$.\n\n**Working.**\n$$V=100\\sin30^\\circ=100\\times0.5=50\\ \\text{m}$$\n\n**Answer.** $50$ m."
+    },
+    {
+      "id": 15,
+      "subject": "Drilling & Blasting",
+      "topic": "Bench Blast Design",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "A row of the pattern shown is 40 m long with holes at 4 m spacing. How many holes are in the row?",
+      "answer": 11,
+      "tolerance": 0.1,
+      "figure": {
+        "kind": "svg",
+        "caption": "Blast pattern",
+        "markup": "<svg viewBox='0 0 240 140' xmlns='http://www.w3.org/2000/svg'><g fill='#1f2937'><circle cx='40' cy='40' r='4'/><circle cx='75' cy='40' r='4'/><circle cx='110' cy='40' r='4'/><circle cx='145' cy='40' r='4'/><circle cx='180' cy='40' r='4'/><circle cx='40' cy='75' r='4'/><circle cx='75' cy='75' r='4'/><circle cx='110' cy='75' r='4'/><circle cx='145' cy='75' r='4'/><circle cx='180' cy='75' r='4'/><circle cx='40' cy='110' r='4'/><circle cx='75' cy='110' r='4'/><circle cx='110' cy='110' r='4'/><circle cx='145' cy='110' r='4'/><circle cx='180' cy='110' r='4'/></g><text x='40' y='132' font-size='8'>B=3 m, S=4 m</text></svg>"
+      },
+      "solution": "**Concept.** Holes in a row = length ÷ spacing + 1.\n\n**Working.**\n$$N = \\frac{40}{4} + 1 = 10 + 1 = 11$$\n\n**Answer.** $\\mathbf{11}$ holes."
+    },
+    {
+      "id": 16,
+      "subject": "Mine Economics & Planning",
+      "topic": "Payback period",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "A project requires an initial outlay of Rs $800000$ and returns a uniform Rs $200000$ per year (figure). Compute the simple payback period (years).",
+      "answer": 4,
+      "tolerance": 0.05,
+      "figure": {
+        "kind": "svg",
+        "caption": "Cumulative inflow",
+        "markup": "<svg viewBox='0 0 220 140' xmlns='http://www.w3.org/2000/svg'><line x1='30' y1='110' x2='200' y2='110' stroke='#475569'/><g fill='#bfdbfe' stroke='#475569'><rect x='45' y='90' width='22' height='20'/><rect x='80' y='70' width='22' height='40'/><rect x='115' y='50' width='22' height='60'/><rect x='150' y='30' width='22' height='80'/></g><text x='42' y='128' font-size='8'>cumulative inflow 200000/yr</text></svg>"
+      },
+      "solution": "**Concept.** Payback $=\\dfrac{\\text{initial outlay}}{\\text{annual inflow}}$.\n\n**Working.**\n$$t=\\frac{800000}{200000}=4\\ \\text{years}$$\n\n**Answer.** $4$ years."
+    },
+    {
+      "id": 17,
+      "subject": "Mine Ventilation",
+      "topic": "Fan — Operating Point",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A fan characteristic $p=300-10Q$ (Pa) operates against a mine of resistance giving $p=2Q^2$ (Pa), as shown. The operating-point quantity Q, in $\\mathrm{m^3/s}$, is _____.",
+      "answer": 10,
+      "tolerance": 0.1,
+      "figure": {
+        "kind": "pq-curve",
+        "fan": {
+          "a": 300,
+          "b": 10,
+          "label": "fan"
+        },
+        "resistances": [
+          {
+            "r": 2,
+            "label": "mine",
+            "color": "#dc2626"
+          }
+        ],
+        "caption": "Fan characteristic and mine resistance curve"
+      },
+      "solution": "**Concept.** At the operating point the fan pressure equals the mine resistance pressure: $a-bQ=rQ^2$.\n\n**Working.**\n$$2Q^2+10Q-300=0\\Rightarrow Q^2+5Q-150=0$$\n$$Q=\\frac{-5+\\sqrt{25+600}}{2}=\\frac{-5+25}{2}=10$$\n\n**Answer.** $10\\ \\mathrm{m^3/s}$."
+    },
+    {
+      "id": 18,
+      "subject": "Drilling & Blasting",
+      "topic": "Charge from powder factor",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A blasthole must break 240 m³ of rock at a powder factor of 0.5 kg/m³. The required charge per hole, in kg, is ____.",
+      "answer": 120,
+      "tolerance": 1,
+      "solution": "**Concept.** $Q=PF\\times V$.\n\n**Working.**\n$$Q=0.5\\times240=120\\ \\text{kg}$$\n\n**Answer.** 120 kg."
+    },
+    {
+      "id": 19,
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Included angle",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "From a station the bearings of two lines are 60° and 150°. The included angle between the lines, in degrees, is ____.",
+      "answer": 90,
+      "tolerance": 0.1,
+      "solution": "**Concept.** Included angle $=$ difference of the two bearings.\n\n**Working.**\n$$150-60=90^{\\circ}$$\n\n**Answer.** 90°."
+    },
+    {
+      "id": 20,
+      "subject": "Mine Environment & Occupational Health",
+      "topic": "Graham's ratio",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "If Graham's ratio at a sealed area rises from 0.5 to 2.0, the factor by which it has increased is ____.",
+      "answer": 4,
+      "tolerance": 0.05,
+      "solution": "**Concept.** Factor $=\\dfrac{\\text{new value}}{\\text{old value}}$.\n\n**Working.**\n$$\\frac{2.0}{0.5}=4$$\n\n**Answer.** 4 (a strong rise indicating intensifying heating)."
+    },
+    {
+      "id": 21,
+      "subject": "Underground Mining",
+      "topic": "Cemented fill",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "A cemented backfill of 1000 t is mixed to a 5% cement content by mass. The cement required, in t, is ____.",
+      "answer": 50,
+      "tolerance": 0.1,
+      "solution": "**Concept.** Cement mass $=$ fill mass $\\times$ cement fraction.\n\n**Working.**\n$$m=1000\\times0.05=50\\ \\text{t}$$\n\n**Answer.** 50 t."
+    },
+    {
+      "id": 22,
+      "subject": "Engineering Mathematics",
+      "topic": "Linear Algebra",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The system $x+y=2,\\; x+ky=4$ fails to have a unique solution when $k=$ _____ .",
+      "answer": 1,
+      "tolerance": 0.01,
+      "solution": "**Concept.** A $2\\times2$ system has a unique solution iff the coefficient determinant is non-zero.\n\n**Working.**\n$$\\det\\begin{bmatrix}1 & 1\\\\ 1 & k\\end{bmatrix}=k-1=0\\;\\Rightarrow\\;k=1$$\nAt $k=1$ the lines are parallel (here inconsistent), so no unique solution.\n\n**Answer.** $k=1$."
+    },
+    {
+      "id": 23,
+      "subject": "Drilling & Blasting",
+      "topic": "S/B ratio",
+      "section": "Technical (1-mark)",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "In good blast-pattern design the spacing-to-burden ratio (S/B) is usually kept around",
+      "options": [
+        "0.2 to 0.4",
+        "1.1 to 1.5",
+        "3 to 5",
+        "exactly 1.0 always"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** S/B controls fragmentation uniformity.\n\n**Reasoning.** Field practice and design rules (e.g. Konya) keep S/B between about 1.1 and 1.5; too low wastes holes, too high leaves coarse rock between holes.\n\n**Answer.** About 1.1–1.5."
+    },
+    {
+      "id": 24,
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Prismoidal correction",
+      "section": "Technical (1-mark)",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The prismoidal correction applied to an earthwork volume",
+      "options": [
+        "increases the end-area volume to a larger value always",
+        "adjusts the (usually larger) end-area volume to the more accurate prismoidal volume",
+        "converts area to length",
+        "is the same as the closing error"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** End-area overestimates for non-linear sections.\n\n**Reasoning.** The trapezoidal (end-area) method generally gives a slightly larger volume than the true prismoid; the prismoidal correction is subtracted to obtain the accurate volume.\n\n**Answer.** Refines end-area to prismoidal volume."
+    },
+    {
+      "id": 25,
+      "subject": "Underground Mining",
+      "topic": "Strata Support",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A roof bolt must suspend the loose rock block shown (1.5 m × 1.5 m plan, 1 m thick, unit weight 25 kN/m³). Compute the dead load (kN) carried by one bolt supporting this block.",
+      "answer": 56.25,
+      "tolerance": 0.2,
+      "figure": {
+        "kind": "svg",
+        "caption": "Suspension bolting",
+        "markup": "<svg viewBox='0 0 220 160' xmlns='http://www.w3.org/2000/svg'><rect x='30' y='30' width='160' height='30' fill='#a16207'/><rect x='30' y='60' width='160' height='40' fill='#d6c0a3' stroke='#92400e'/><text x='70' y='85' font-size='8'>loose rock block</text><line x1='110' y1='100' x2='110' y2='45' stroke='#1f2937' stroke-width='3'/><text x='34' y='130' font-size='8'>block 1.5x1.5x1 m, 25 kN/m^3</text></svg>"
+      },
+      "solution": "**Concept.** Dead load = unit weight × block volume.\n\n**Working.**\n$$W = 25 \\times (1.5 \\times 1.5 \\times 1) = 25 \\times 2.25 = 56.25$$\n\n**Answer.** $\\mathbf{56.25}$ kN."
+    },
+    {
+      "id": 26,
+      "subject": "Mine Ventilation",
+      "topic": "Natural Ventilation",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "For downcast density $1.18\\,\\text{kg/m}^3$, upcast $1.10\\,\\text{kg/m}^3$ and depth $150\\,\\text{m}$, the natural ventilation pressure ($g=9.81$) is _____ Pa. Round to one decimal.",
+      "answer": 117.7,
+      "tolerance": 1,
+      "solution": "**Concept.** $\\text{NVP}=(\\rho_d-\\rho_u)gH$.\n\n**Working.**\n$$(1.18-1.10)\\times9.81\\times150=0.08\\times9.81\\times150=117.7.$$\n\n**Answer.** $\\approx 117.7\\,\\text{Pa}$."
+    },
+    {
+      "id": 27,
+      "subject": "Rock Mechanics",
+      "topic": "Underground Openings — Extraction Ratio",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Pillar stress is $50\\,\\text{MPa}$ when the vertical field stress is $10\\,\\text{MPa}$. Using $\\sigma_p=\\sigma_v/(1-e)$, the extraction ratio $e$ is _____ .",
+      "answer": 0.8,
+      "tolerance": 0.01,
+      "solution": "**Concept.** $1-e=\\dfrac{\\sigma_v}{\\sigma_p}$.\n\n**Working.**\n$$1-e=\\frac{10}{50}=0.2,\\quad e=0.8.$$\n\n**Answer.** $0.8$."
+    },
+    {
+      "id": 28,
+      "subject": "Rock Mechanics",
+      "topic": "Rock Properties — Laboratory Tests",
+      "section": "Technical (1-mark)",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The Brazilian test on a rock disc is used to determine the",
+      "options": [
+        "indirect tensile strength",
+        "uniaxial compressive strength",
+        "shear modulus",
+        "porosity"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Diametral compression induces tensile splitting.\n\n**Working.** The failure load gives the indirect (splitting) tensile strength.\n\n**Answer.** indirect tensile strength."
+    },
+    {
+      "id": 29,
+      "subject": "Mining Geology",
+      "topic": "Stratigraphy",
+      "section": "Technical (1-mark)",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "In the section shown, tilted older strata are truncated and overlain by flat-lying younger beds (figure). This surface is:",
+      "options": [
+        "an angular unconformity",
+        "a conformable contact",
+        "a thrust fault",
+        "an igneous intrusion"
+      ],
+      "answer": 0,
+      "figure": {
+        "kind": "svg",
+        "caption": "Angular unconformity",
+        "markup": "<svg viewBox='0 0 220 150' xmlns='http://www.w3.org/2000/svg'><g stroke='#475569'><line x1='20' y1='60' x2='200' y2='60'/><line x1='20' y1='72' x2='200' y2='72'/></g><path d='M20 90 Q110 70 200 90' fill='none' stroke='#dc2626' stroke-width='2'/><g stroke='#92400e' stroke-width='2'><line x1='30' y1='110' x2='90' y2='130'/><line x1='110' y1='100' x2='170' y2='125'/></g><text x='28' y='148' font-size='8'>tilted beds below, flat above</text></svg>"
+      },
+      "solution": "**Concept.** Unconformities mark gaps in the record.\n\n**Reasoning.** Tilted, eroded older beds overlain by flat younger beds at an angular discordance define an angular unconformity.\n\n**Answer.** An angular unconformity."
+    },
+    {
+      "id": 30,
+      "subject": "Mining Geology",
+      "topic": "Basalt",
+      "section": "Technical (1-mark)",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "Basalt, which forms the Deccan Traps of India, is a",
+      "options": [
+        "coarse-grained acidic plutonic rock",
+        "fine-grained basic (mafic) volcanic rock",
+        "clastic sedimentary rock",
+        "high-grade metamorphic rock"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Basalt is the commonest extrusive rock.\n\n**Reasoning.** It is fine-grained, dark, mafic (rich in Fe, Mg, plagioclase, pyroxene) and erupts as fluid lava; vast flows built the Deccan Traps.\n\n**Answer.** Fine-grained basic volcanic rock."
+    },
+    {
+      "id": 31,
+      "subject": "Drilling & Blasting",
+      "topic": "Nonel system",
+      "section": "Technical (1-mark)",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A key advantage of the Nonel (shock-tube) initiation system over electric detonators is that it is",
+      "options": [
+        "cheaper than safety fuse",
+        "immune to stray electric currents, static and radio-frequency hazards",
+        "able to work without any detonator",
+        "faster than detonating cord"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Shock tube carries a low-energy signal, not electricity.\n\n**Reasoning.** A thin reactive dust layer inside the plastic tube propagates a shock wave to the detonator; since no electric current is involved, it is unaffected by stray currents, static or RF — a major safety benefit.\n\n**Answer.** Immune to stray/electric hazards."
+    },
+    {
+      "id": 32,
+      "subject": "Underground Mining",
+      "topic": "LHD tonnage",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "If the loose ore density is 1.8 t/m³, the LHD output of 144 m³/h corresponds to ____ t/h.",
+      "answer": 259.2,
+      "tolerance": 1,
+      "solution": "**Concept.** Tonnage $=$ volume rate $\\times$ loose density.\n\n**Working.**\n$$Q=144\\times1.8=259.2\\ \\text{t/h}$$\n\n**Answer.** 259.2 t/h."
+    },
+    {
+      "id": 33,
+      "subject": "Drilling & Blasting",
+      "topic": "Burden estimation",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Using a rule of thumb of burden = 30 × hole diameter, the burden for a 150 mm hole, in m, is ____.",
+      "answer": 4.5,
+      "tolerance": 0.05,
+      "solution": "**Concept.** $B=30\\,d$ (a common opencast guideline).\n\n**Working.**\n$$B=30\\times0.15=4.5\\ \\text{m}$$\n\n**Answer.** 4.5 m."
+    },
+    {
+      "id": 34,
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Geomatics techniques",
+      "section": "Technical (1-mark)",
+      "type": "MSQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Which of the following are modern geomatics techniques used to obtain position or spatial data? (Select all that apply.)",
+      "options": [
+        "Total station surveying",
+        "Global Navigation Satellite System (GNSS)",
+        "Photogrammetry and remote sensing",
+        "Bowditch's rule"
+      ],
+      "answer": [
+        0,
+        1,
+        2
+      ],
+      "solution": "**Concept.** Geomatics covers instruments and platforms that acquire spatial data.\n\n**Reasoning.** Total stations, GNSS and photogrammetry/remote sensing all yield positional or spatial information. Bowditch's rule is a traverse-adjustment computation, not a data-acquisition technique.\n\n**Answer.** Total station, GNSS, photogrammetry/remote sensing."
+    },
+    {
+      "id": 35,
+      "subject": "Mining Geology",
+      "topic": "Faults",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "For the same fault (net slip $20\\ \\text{m}$, fault dip $30^\\circ$), compute the horizontal heave (m).",
+      "answer": 17.32,
+      "tolerance": 0.2,
+      "figure": {
+        "kind": "svg",
+        "caption": "Horizontal heave of a fault",
+        "markup": "<svg viewBox='0 0 240 160' xmlns='http://www.w3.org/2000/svg'><line x1='40' y1='30' x2='170' y2='140' stroke='#1f2937' stroke-width='2' stroke-dasharray='5 3'/><g stroke='#b45309' stroke-width='3'><line x1='20' y1='70' x2='95' y2='95'/><line x1='120' y1='120' x2='210' y2='120'/></g><line x1='95' y1='110' x2='150' y2='110' stroke='#dc2626' stroke-width='2'/><text x='28' y='152' font-size='8'>heave = horizontal offset</text></svg>"
+      },
+      "solution": "**Concept.** Heave $=$ net slip $\\times\\cos(\\text{fault dip})$.\n\n**Working.**\n$$\\text{heave}=20\\cos30^\\circ=20\\times0.8660=17.32\\ \\text{m}$$\n\n**Answer.** $\\approx 17.3\\ \\text{m}$."
+    },
+    {
+      "id": 36,
+      "subject": "Mine Ventilation",
+      "topic": "Networks — Parallel",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "Two airways of equal resistance $R$ in parallel have an equivalent resistance of",
+      "options": [
+        "$R/4$",
+        "$R/2$",
+        "$2R$",
+        "$R$"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** $\\dfrac{1}{\\sqrt{R_{eq}}}=\\dfrac{2}{\\sqrt R}\\Rightarrow R_{eq}=R/4$.\n\n**Working.** Two equal parallel airways quarter the resistance.\n\n**Answer.** $R/4$."
+    },
+    {
+      "id": 37,
+      "subject": "Rock Mechanics",
+      "topic": "Rock Mass Classification — RQD",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "A $200\\,\\text{cm}$ core run contains intact pieces $\\ge 10\\,\\text{cm}$ summing to $150\\,\\text{cm}$. The RQD is _____ percent.",
+      "answer": 75,
+      "tolerance": 0.1,
+      "solution": "**Concept.** $\\text{RQD}=\\dfrac{\\sum(\\ge10\\,\\text{cm})}{\\text{total}}\\times100$.\n\n**Working.**\n$$\\text{RQD}=\\frac{150}{200}\\times100=75\\%.$$\n\n**Answer.** $75\\%$."
+    },
+    {
+      "id": 38,
+      "subject": "Mine Ventilation",
+      "topic": "Shock loss at a bend",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "Air flows round the right-angle bend shown, where the shock-loss factor is $X=1.5$ and the velocity pressure is $p_v=40\\ \\mathrm{Pa}$. The shock (bend) pressure loss, in Pa, is _____.",
+      "answer": 60,
+      "tolerance": 0.5,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox='0 0 200 180' xmlns='http://www.w3.org/2000/svg'><path d='M30 40 L120 40 L120 150' fill='none' stroke='#475569' stroke-width='16'/><path d='M30 40 L120 40 L120 150' fill='none' stroke='#e0f2fe' stroke-width='9'/><line x1='40' y1='40' x2='100' y2='40' stroke='#2563eb' stroke-width='2' marker-end='url(#bf)'/><line x1='120' y1='75' x2='120' y2='135' stroke='#2563eb' stroke-width='2' marker-end='url(#bf)'/><defs><marker id='bf' markerWidth='8' markerHeight='8' refX='6' refY='3' orient='auto'><path d='M0 0 L6 3 L0 6 Z' fill='#2563eb'/></marker></defs><text x='40' y='95' font-size='9'>X = 1.5</text><text x='40' y='110' font-size='9'>pv = 40 Pa</text></svg>",
+        "caption": "Right-angle bend in an airway"
+      },
+      "solution": "**Concept.** Shock loss $=X\\,p_v$.\n\n**Working.**\n$$\\Delta p=1.5\\times40=60\\ \\text{Pa}$$\n\n**Answer.** $60$ Pa."
+    },
+    {
+      "id": 39,
+      "subject": "Rock Mechanics",
+      "topic": "Engineering Mechanics — Work and Energy",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "The kinetic energy of a $2\\,\\text{kg}$ body moving at $10\\,\\text{m/s}$ is _____ J.",
+      "answer": 100,
+      "tolerance": 0.01,
+      "solution": "**Concept.** $KE=\\tfrac12 mv^2$.\n\n**Working.**\n$$KE=\\tfrac12(2)(10)^2=100.$$\n\n**Answer.** $100\\,\\text{J}$."
+    },
+    {
+      "id": 40,
+      "subject": "Mine Ventilation",
+      "topic": "Natural Ventilation",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "A fan develops $600\\,\\text{Pa}$ and the natural ventilation pressure of $100\\,\\text{Pa}$ acts in the same direction. The total motive pressure is _____ Pa.",
+      "answer": 700,
+      "tolerance": 1,
+      "solution": "**Concept.** Aiding NVP adds to fan pressure.\n\n**Working.**\n$$600+100=700.$$\n\n**Answer.** $700\\,\\text{Pa}$."
+    },
+    {
+      "id": 41,
+      "subject": "Mine Ventilation",
+      "topic": "Fan operating point — airflow",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "The fan characteristic is $P=150-10Q$ and the mine resistance line is $P=4Q^2$ (see figure). The operating airflow $Q$, in $\\mathrm{m^3/s}$, is _____.",
+      "answer": 5,
+      "tolerance": 0.1,
+      "figure": {
+        "kind": "pq-curve",
+        "fan": {
+          "a": 150,
+          "b": 10,
+          "label": "fan"
+        },
+        "resistances": [
+          {
+            "r": 4,
+            "label": "mine",
+            "color": "#dc2626"
+          }
+        ],
+        "caption": "Fan curve and mine resistance"
+      },
+      "solution": "**Concept.** The operating point is where fan pressure equals system resistance.\n\n**Working.**\n$$150-10Q=4Q^2\\Rightarrow 4Q^2+10Q-150=0\\Rightarrow 2Q^2+5Q-75=0$$\n$$Q=\\frac{-5+\\sqrt{25+600}}{4}=\\frac{-5+25}{4}=5\\ \\mathrm{m^3/s}$$\n\n**Answer.** $5\\ \\mathrm{m^3/s}$."
+    },
+    {
+      "id": 42,
+      "subject": "Engineering Mathematics",
+      "topic": "Linear Algebra",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "The eigenvalues of an invertible matrix $A$ are $2$ and $5$. The smallest eigenvalue of $A^{-1}$ is _____ (round to 2 decimals).",
+      "answer": 0.2,
+      "tolerance": 0.01,
+      "solution": "**Concept.** If $\\lambda$ is an eigenvalue of $A$, then $1/\\lambda$ is an eigenvalue of $A^{-1}$.\n\n**Working.**\n$$\\text{eigenvalues of }A^{-1}=\\tfrac12,\\;\\tfrac15$$\nThe smallest is $\\tfrac15=0.2$.\n\n**Answer.** $0.2$."
+    },
+    {
+      "id": 43,
+      "subject": "Underground Mining",
+      "topic": "Winder limitations",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "Compared with a drum winder of equivalent rope, a friction (Koepe) winder is limited in maximum payload mainly because",
+      "options": [
+        "its rope is always shorter",
+        "drive depends on friction grip, so excessive load would cause the rope to slip on the sheave",
+        "it cannot use a brake",
+        "it has no headgear"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Traction drive has a slip limit.\n\n**Reasoning.** The Koepe winder transmits force only through friction between rope and sheave; if the load (or out-of-balance) exceeds the available traction, the rope slips. Payload is therefore capped by the friction grip, unlike a positively wound drum.\n\n**Answer.** Friction grip limits load to avoid rope slip."
+    },
+    {
+      "id": 44,
+      "subject": "Mining Geology",
+      "topic": "Residual deposits",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "Bauxite and laterite are typical",
+      "options": [
+        "magmatic deposits",
+        "residual deposits formed by intense chemical weathering that removes soluble matter and leaves an insoluble enriched residue",
+        "placer deposits",
+        "hydrothermal veins"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Weathering can concentrate ore in place.\n\n**Reasoning.** In warm, humid climates leaching removes silica and alkalis, leaving Al/Fe-rich residues; bauxite (Al ore) and laterite are the classic residual deposits.\n\n**Answer.** Residual (weathering) deposits."
+    },
+    {
+      "id": 45,
+      "subject": "Mining Geology",
+      "topic": "Types of unconformity",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "An 'angular unconformity' is one in which",
+      "options": [
+        "the beds above and below are parallel",
+        "tilted/folded older strata are overlain, across an erosion surface, by younger beds at a different angle",
+        "younger sediments rest on an igneous/metamorphic basement",
+        "there is no erosion surface"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Angular unconformity shows discordant attitudes.\n\n**Reasoning.** The lower beds were tilted/folded and eroded before the upper, gently dipping beds were deposited, so they meet at an angle; a disconformity has parallel beds, a nonconformity has sediments on crystalline basement.\n\n**Answer.** Discordant (angular) contact."
+    },
+    {
+      "id": 46,
+      "subject": "Mine Economics, Planning & Systems Engineering",
+      "topic": "Investment Analysis — Accounting Rate",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "A project earns an average annual profit of $\\textsf{Rs}\\,18{,}000$ on an average investment of $\\textsf{Rs}\\,50{,}000$. The accounting rate of return is _____ percent.",
+      "answer": 36,
+      "tolerance": 0.1,
+      "solution": "**Concept.** ARR $=\\dfrac{\\text{avg profit}}{\\text{avg investment}}$.\n\n**Working.**\n$$\\frac{18000}{50000}=0.36=36\\%.$$\n\n**Answer.** $36\\%$."
+    },
+    {
+      "id": 47,
+      "subject": "Rock Mechanics",
+      "topic": "Engineering Mechanics — Friction",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "For the $100\\,\\text{N}$ block on a $20^\\circ$ incline, the normal reaction is _____ N. Round to two decimals.",
+      "answer": 93.97,
+      "tolerance": 0.05,
+      "solution": "**Concept.** Normal reaction $=W\\cos\\theta$.\n\n**Working.**\n$$N=100\\cos 20^\\circ=93.97.$$\n\n**Answer.** $\\approx 93.97\\,\\text{N}$."
+    },
+    {
+      "id": 48,
+      "subject": "Surface Mining",
+      "topic": "Pit limit",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "Surface mining of an increment remains economic as long as its",
+      "options": [
+        "actual stripping ratio is less than or equal to the break-even stripping ratio",
+        "actual stripping ratio exceeds the break-even stripping ratio",
+        "bench height equals the berm width",
+        "overall slope angle exceeds the face angle"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** The pit limit is set where actual SR equals BESR.\n\n**Reasoning.** While the waste-to-ore ratio of the next increment is at or below the break-even value, the increment pays its way; once it exceeds BESR, further surface mining loses money and defines the ultimate pit limit.\n\n**Answer.** Actual SR $\\le$ BESR."
+    },
+    {
+      "id": 49,
+      "subject": "Mine Ventilation",
+      "topic": "Networks — Parallel",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "Two airways, each of resistance $2\\,\\text{Ns}^2/\\text{m}^8$, are in parallel. The equivalent resistance is _____ Ns$^2$/m$^8$.",
+      "answer": 0.5,
+      "tolerance": 0.01,
+      "solution": "**Concept.** For two equal resistances in parallel, $R_{eq}=R/4$.\n\n**Working.**\n$$\\frac{2}{4}=0.5.$$\n\n**Answer.** $0.5\\,\\text{Ns}^2/\\text{m}^8$."
+    },
+    {
+      "id": 50,
+      "subject": "Rock Mechanics",
+      "topic": "Failure Criteria — Factor of Safety",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "The shear strength available on a plane is $50\\,\\text{kPa}$ and the mobilised (driving) shear stress is $25\\,\\text{kPa}$. The factor of safety is _____ .",
+      "answer": 2,
+      "tolerance": 0.01,
+      "solution": "**Concept.** $\\text{FoS}=\\dfrac{\\tau_{available}}{\\tau_{driving}}$.\n\n**Working.**\n$$\\text{FoS}=\\frac{50}{25}=2.$$\n\n**Answer.** $2$."
+    },
+    {
+      "id": 51,
+      "subject": "Mine Environment & Occupational Health",
+      "topic": "Firefighting precautions",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "When directly fighting an underground fire, a key precaution is to",
+      "options": [
+        "reverse the main ventilation immediately in every case",
+        "maintain controlled ventilation, approach from the intake (fresh-air) side and prevent accumulation of explosive gas behind the firefighters",
+        "switch off all gas monitoring",
+        "seal the area while persons are still inside"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Firefighter safety depends on fresh air and gas control.\n\n**Reasoning.** Attacking from the intake keeps firefighters in fresh air with the smoke carried away; ventilation must be controlled to avoid building explosive mixtures or spreading the fire, with continuous gas monitoring.\n\n**Answer.** Keep ventilation, attack from the intake side."
+    },
+    {
+      "id": 52,
+      "subject": "Surface Mining",
+      "topic": "Swell / bulking",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "1000 m³ of rock (bank volume) swells by 25% on excavation. The loose (bulked) volume, in m³, is ____.",
+      "answer": 1250,
+      "tolerance": 1,
+      "solution": "**Concept.** Loose volume $=$ bank volume $\\times(1+\\text{swell})$.\n\n**Working.**\n$$V_L=1000\\,(1+0.25)=1250\\ \\text{m}^3$$\n\n**Answer.** 1250 m³."
+    },
+    {
+      "id": 53,
+      "subject": "Mine Economics, Planning & Systems Engineering",
+      "topic": "Mine Planning — Taylor's Rule",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "Using Taylor's rule, life $\\approx 6.5\\,(\\text{tonnage in Mt})^{0.25}$ years. For a reserve of $16$ million tonnes, the estimated mine life is _____ years.",
+      "answer": 13,
+      "tolerance": 0.5,
+      "solution": "**Concept.** $L=6.5\\,T^{0.25}$ with $T$ in Mt.\n\n**Working.**\n$$L=6.5(16)^{0.25}=6.5\\times2=13.$$\n\n**Answer.** $13$ years."
+    },
+    {
+      "id": 54,
+      "subject": "Surface Mining",
+      "topic": "Pit slope",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "An overall pit slope rises $H=120\\ \\text{m}$ over a horizontal projection of $80\\ \\text{m}$ (figure). Compute the overall slope angle (degrees, two decimals).",
+      "answer": 56.31,
+      "tolerance": 0.1,
+      "figure": {
+        "kind": "svg",
+        "caption": "Overall pit slope",
+        "markup": "<svg viewBox='0 0 220 150' xmlns='http://www.w3.org/2000/svg'><polygon points='30,30 30,120 190,120' fill='#d6d3d1' stroke='#475569'/><line x1='30' y1='30' x2='190' y2='120' stroke='#dc2626' stroke-width='2'/><text x='35' y='70' font-size='8'>H=120</text><text x='95' y='133' font-size='8'>horizontal 80</text></svg>"
+      },
+      "solution": "**Concept.** $\\theta=\\tan^{-1}\\!\\left(\\dfrac{H}{\\text{horizontal}}\\right)$.\n\n**Working.**\n$$\\theta=\\tan^{-1}\\!\\left(\\frac{120}{80}\\right)=\\tan^{-1}(1.5)=56.31^\\circ$$\n\n**Answer.** $56.31^\\circ$."
+    },
+    {
+      "id": 55,
+      "subject": "Rock Mechanics",
+      "topic": "Subsidence — Trough Width",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "With overburden depth $H=200\\,\\text{m}$ and angle of draw $25^\\circ$, the horizontal distance the subsidence trough extends beyond the panel edge ($H\\tan 25^\\circ$) is _____ m. Round to two decimals.",
+      "answer": 93.26,
+      "tolerance": 0.5,
+      "solution": "**Concept.** Limit offset $=H\\tan(\\text{angle of draw})$.\n\n**Working.**\n$$200\\tan 25^\\circ=200(0.4663)=93.26.$$\n\n**Answer.** $\\approx 93.26\\,\\text{m}$."
+    },
+    {
+      "id": 56,
+      "subject": "Engineering Mathematics",
+      "topic": "Vector Calculus",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "For $f=x^{2}+yz$, the directional derivative at $(1,1,1)$ in the direction of $\\mathbf{a}=3\\hat{j}+4\\hat{k}$ is _____ (round to 2 decimals).",
+      "answer": 1.4,
+      "tolerance": 0.05,
+      "solution": "**Concept.** $D_{\\hat{u}}f=\\nabla f\\cdot\\hat{u}$, with $\\hat{u}=\\mathbf{a}/|\\mathbf{a}|$.\n\n**Working.** $\\nabla f=(2x,\\,z,\\,y)=(2,1,1)$ at $(1,1,1)$; $\\hat{u}=\\tfrac{(0,3,4)}{5}=(0,0.6,0.8)$.\n$$D_{\\hat u}f=(2)(0)+(1)(0.6)+(1)(0.8)=1.4$$\n\n**Answer.** $1.4$."
+    },
+    {
+      "id": 57,
+      "subject": "Drilling & Blasting",
+      "topic": "PPV prediction",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "Using $PPV=K\\,(SD)^{-n}$ with $K=1140$, $n=1.6$ and $SD=14.14$ m/kg$^{0.5}$, the predicted PPV, in mm/s, is ____ (one decimal).",
+      "answer": 16.45,
+      "tolerance": 0.6,
+      "solution": "**Concept.** Empirical attenuation law $PPV=K\\,SD^{-n}$.\n\n**Working.**\n$$SD^{1.6}=14.14^{1.6}=69.3$$\n$$PPV=\\frac{1140}{69.3}=16.45\\ \\text{mm/s}$$\n\n**Answer.** 16.45 mm/s."
+    },
+    {
+      "id": 58,
+      "subject": "Mine Environment & Occupational Health",
+      "topic": "Dust concentration",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "A sampler's filter gains 0.6 mg of dust after sampling 300 litres (0.3 m³) of air. The respirable dust concentration, in mg/m³, is ____ (one decimal).",
+      "answer": 2,
+      "tolerance": 0.05,
+      "solution": "**Concept.** Concentration $=\\dfrac{\\text{mass collected}}{\\text{air volume}}$.\n\n**Working.**\n$$c=\\frac{0.6}{0.3}=2.0\\ \\text{mg/m}^3$$\n\n**Answer.** 2.0 mg/m³."
+    },
+    {
+      "id": 59,
+      "subject": "Surface Mining",
+      "topic": "Effective output",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "A shovel's theoretical bank output is 400 m³/h. With availability 0.8 and utilization 0.75, its effective bank output, in m³/h, is ____.",
+      "answer": 240,
+      "tolerance": 0.5,
+      "solution": "**Concept.** Effective output $=$ theoretical $\\times$ availability $\\times$ utilization.\n\n**Working.**\n$$Q_{eff}=400\\times0.8\\times0.75=240\\ \\text{m}^3/\\text{h}$$\n\n**Answer.** 240 m³/h."
+    },
+    {
+      "id": 60,
+      "subject": "Drilling & Blasting",
+      "topic": "Hole diameter",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "Large opencast benches generally use large-diameter blastholes (150–310 mm) because",
+      "options": [
+        "they are cheaper to charge by hand",
+        "larger holes give higher drilling productivity and allow larger burdens/spacings and fewer holes per volume",
+        "they reduce the powder factor to zero",
+        "small holes cannot be flushed"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Hole diameter scales the blast pattern.\n\n**Reasoning.** A larger hole holds more explosive per metre, permitting larger burden and spacing, so fewer holes are needed to blast a given volume and drilling productivity per m³ rises — economic on big benches.\n\n**Answer.** Higher productivity and larger patterns."
+    },
+    {
+      "id": 61,
+      "subject": "Mine Economics & Planning",
+      "topic": "Time Value of Money",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "A sum of $\\textsf{Rs}\\,100{,}000$ is to be received $2$ years from now. At $10\\%$ per annum, compute its present worth ($\\textsf{Rs}$).",
+      "answer": 82644.6,
+      "tolerance": 5,
+      "figure": {
+        "kind": "svg",
+        "caption": "Present worth of a future sum",
+        "markup": "<svg viewBox='0 0 240 130' xmlns='http://www.w3.org/2000/svg'><line x1='20' y1='80' x2='220' y2='80' stroke='#475569'/><line x1='180' y1='80' x2='180' y2='35' stroke='#16a34a' stroke-width='2' marker-end='url(#ar)'/><defs><marker id='ar' markerWidth='7' markerHeight='7' refX='4' refY='3' orient='auto'><path d='M0 0 L5 3 L0 6 Z' fill='#16a34a'/></marker></defs><text x='158' y='28' font-size='8'>F at year 2</text><text x='20' y='110' font-size='8'>find P now, i=10%</text></svg>"
+      },
+      "solution": "**Concept.** $P=\\dfrac{F}{(1+i)^n}$.\n\n**Working.**\n$$P=\\frac{100000}{1.1^2}=\\frac{100000}{1.21}=82644.6$$\n\n**Answer.** $\\textsf{Rs}\\,82{,}644.6$."
+    },
+    {
+      "id": 62,
+      "subject": "Surface Mining",
+      "topic": "Slope economics",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "Flattening (reducing) the overall pit slope angle generally",
+      "options": [
+        "reduces waste stripping but lowers slope stability",
+        "increases waste stripping but improves slope stability",
+        "has no effect on either waste or stability",
+        "increases ore grade"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Slope angle trades stripping cost against stability.\n\n**Reasoning.** A flatter wall pushes the crest back, exposing more waste to be removed (higher SR), but the lower, less-steep wall has a higher factor of safety.\n\n**Answer.** More waste but greater stability."
+    },
+    {
+      "id": 63,
+      "subject": "Underground Mining",
+      "topic": "Sublevel caving",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "In sublevel caving, the ore is",
+      "options": [
+        "mined in open stopes with no caving",
+        "blasted by ring drilling on sublevels and drawn beneath a cap of caved waste, so dilution from waste is inherent",
+        "supported entirely by timber sets",
+        "extracted only by augering"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Sublevel caving caves the waste, not the ore.\n\n**Reasoning.** Rings of upward holes are drilled and blasted on sublevels; the ore is drawn under an overlying mat of caved waste that follows it down — so some waste dilution is unavoidable and draw control is essential.\n\n**Answer.** Ring-blasted ore drawn under caved waste (inherent dilution)."
+    },
+    {
+      "id": 64,
+      "subject": "Mine Economics, Planning & Systems Engineering",
+      "topic": "Investment Analysis — IRR",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "The internal rate of return of a project is the discount rate at which",
+      "options": [
+        "the net present value equals zero",
+        "the payback period is one year",
+        "the benefit-cost ratio is zero",
+        "depreciation equals salvage"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** IRR is the breakeven discount rate.\n\n**Working.** At IRR, $\\text{NPV}=0$.\n\n**Answer.** the net present value equals zero."
+    },
+    {
+      "id": 65,
+      "subject": "Engineering Mathematics",
+      "topic": "Numerical Methods",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "Gaussian elimination transforms a coefficient matrix into",
+      "options": [
+        "a diagonal matrix",
+        "an upper-triangular matrix",
+        "an orthogonal matrix",
+        "the identity matrix"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Forward elimination produces zeros below the pivots.\n\n**Working.** The result is an upper-triangular system solved by back-substitution.\n\n**Answer.** An upper-triangular matrix."
+    }
+  ]
+}

@@ -6,9 +6,9 @@ import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 
 const LINKS = [
+  { href: "/learn",    label: "Learn" },
   { href: "/practice", label: "Practice" },
   { href: "/mocks",    label: "Mocks" },
-  { href: "/pyq",      label: "PYQs" },
   { href: "/aits",     label: "AITS" },
   { href: "/study",    label: "Notes" },
   { href: "/pricing",  label: "Pricing" },
@@ -36,7 +36,7 @@ export function MobileNav({ authed }: { authed: boolean }) {
         aria-label={open ? "Close menu" : "Open menu"}
         aria-expanded={open}
         onClick={() => setOpen((v) => !v)}
-        className="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-lg hover:bg-canvas -ml-1"
+        className="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-lg hover:bg-canvas -mr-1"
       >
         <svg viewBox="0 0 24 24" className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
           {open ? (

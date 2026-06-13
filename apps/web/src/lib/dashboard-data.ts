@@ -5,7 +5,6 @@
  */
 import { PRACTICE } from "@/data/practice";
 import { MOCKS } from "@/data/mocks";
-import { PYQ } from "@/data/pyq";
 
 // GATE 2027 MN paper is typically held on the first weekend of February.
 // We use a placeholder date — update once IIT confirms the 2027 schedule.
@@ -31,7 +30,7 @@ export type SubjectMastery = {
  * Per-subject mastery map keyed by display name.
  *
  * Inputs:
- *  - subjMap: subject → { scored, total } already aggregated from mock/PYQ attempts.
+ *  - subjMap: subject → { scored, total } already aggregated from mock attempts.
  *  - practiceCounts: subject slug → number of practice attempts the user submitted.
  */
 export function buildSyllabusMap(
@@ -63,7 +62,6 @@ export type NextActions = {
   recommendedMockId: string;
   recommendedMockTitle: string;
   weakestSubject: { slug: string; name: string; accuracy: number } | null;
-  nextPyqYear: number | null;
   dailyTenAvailable: boolean;
 };
 
@@ -72,7 +70,6 @@ export type NextActions = {
  */
 export function nextBestActions(
   attemptedMockIds: Set<string>,
-  attemptedPyqYears: Set<number>,
   syllabus: SubjectMastery[],
 ): NextActions {
   // Next mock = first unattempted in canonical order (mn-mock-01 → 10).
@@ -84,15 +81,10 @@ export function nextBestActions(
     ? [...touched].sort((a, b) => a.accuracy - b.accuracy)[0]
     : syllabus.find((s) => s.totalAvailable > 0) ?? null;
 
-  // Most recent unattempted PYQ year (newest first).
-  const pyqYears = [...PYQ.map((p) => p.year)].sort((a, b) => b - a);
-  const nextPyq = pyqYears.find((y) => !attemptedPyqYears.has(y)) ?? pyqYears[0] ?? null;
-
   return {
     recommendedMockId: nextMock.id,
     recommendedMockTitle: nextMock.title,
     weakestSubject: weakest ? { slug: weakest.slug, name: weakest.name, accuracy: weakest.accuracy } : null,
-    nextPyqYear: nextPyq,
     dailyTenAvailable: true,
   };
 }
@@ -164,7 +156,7 @@ export function predictAir(
   attempts: { takenAt: Date; score: number; total: number; kind?: string }[],
 ): AirPrediction | null {
   const scored = attempts
-    .filter((a) => a.total > 0 && (a.kind === undefined || a.kind === "mock" || a.kind === "pyq"))
+    .filter((a) => a.total > 0 && (a.kind === undefined || a.kind === "mock"))
     .slice(0, 10); // page already sorts desc by takenAt
   if (scored.length < 2) return null;
 

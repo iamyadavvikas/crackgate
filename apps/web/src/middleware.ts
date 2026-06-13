@@ -4,7 +4,7 @@ import { NextResponse } from "next/server";
 
 const { auth } = NextAuth(authConfig);
 
-const PROTECTED = ["/dashboard", "/mocks", "/pyq", "/practice", "/aits", "/study", "/settings", "/admin"];
+const PROTECTED = ["/dashboard", "/mocks", "/practice", "/aits", "/settings", "/admin"];
 
 export default auth((req) => {
   const path = req.nextUrl.pathname;

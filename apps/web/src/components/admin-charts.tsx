@@ -79,7 +79,7 @@ export function AdminCharts() {
 
       <div className="card p-6 lg:col-span-2">
         <h2 className="font-bold text-lg">Attempts per day (30 days)</h2>
-        <p className="text-sm text-muted">Mock + PYQ submissions across all users.</p>
+        <p className="text-sm text-muted">Mock submissions across all users.</p>
         <div className="w-full h-64 mt-4">
           <ResponsiveContainer>
             <BarChart data={attempts} margin={{ top: 10, right: 10, left: 0, bottom: 0 }}>

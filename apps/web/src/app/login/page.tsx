@@ -20,7 +20,7 @@ export default async function LoginPage(props: { searchParams: Promise<{ next?: 
         </div>
         <h1 className="text-2xl font-extrabold">Welcome back</h1>
         <p className="text-sm text-muted mt-2">
-          Sign in to access your dashboard, mocks, PYQs and study material.
+          Sign in to access your dashboard, mocks and study material.
         </p>
 
         <LoginForms safeNext={safeNext} />

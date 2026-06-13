@@ -9,10 +9,20 @@
  * After editing, run `npm run build:mocks` so the 10 mocks pick up changes
  * (mocks you haven't customised by hand are regenerated; edited ones stay).
  */
+import type { QuestionFigure } from "@/components/question-figure";
+
+/** Blueprint archetypes for the curated 175-question pool:
+ *   A = Formula & unit-conversion traps
+ *   B = Vintage PYQ variants (2011–2026, re-parameterised)
+ *   C = Advanced diagrammatic / chart-based (always carries a figure)
+ *   D = High-caliber "rank determinator" multi-stage problems
+ *  Optional metadata — the runner ignores it; used for blueprint tracking. */
+export type PracticeArchetype = "A" | "B" | "C" | "D";
+
 export type PracticeQuestion =
-  | { id: string; subject: string; topic: string; difficulty: "easy"|"medium"|"hard"; type: "MCQ"; stem: string; options: string[]; answer: number; solution: string; }
-  | { id: string; subject: string; topic: string; difficulty: "easy"|"medium"|"hard"; type: "MSQ"; stem: string; options: string[]; answer: number[]; solution: string; }
-  | { id: string; subject: string; topic: string; difficulty: "easy"|"medium"|"hard"; type: "NAT"; stem: string; answer: number; tolerance: number; solution: string; };
+  | { id: string; subject: string; topic: string; difficulty: "easy"|"medium"|"hard"; type: "MCQ"; stem: string; options: string[]; answer: number; solution: string; figure?: QuestionFigure; archetype?: PracticeArchetype; marks?: 1|2; }
+  | { id: string; subject: string; topic: string; difficulty: "easy"|"medium"|"hard"; type: "MSQ"; stem: string; options: string[]; answer: number[]; solution: string; figure?: QuestionFigure; archetype?: PracticeArchetype; marks?: 1|2; }
+  | { id: string; subject: string; topic: string; difficulty: "easy"|"medium"|"hard"; type: "NAT"; stem: string; answer: number; tolerance: number; solution: string; figure?: QuestionFigure; archetype?: PracticeArchetype; marks?: 1|2; };
 
 export interface PracticeSubject {
   slug: string;
@@ -28,10 +38,9 @@ import rockMechanics          from "./questions/practice/rock-mechanics.json";
 import surfaceMining          from "./questions/practice/surface-mining.json";
 import undergroundMining      from "./questions/practice/underground-mining.json";
 import drillingBlasting       from "./questions/practice/drilling-blasting.json";
-import mineralProcessing      from "./questions/practice/mineral-processing.json";
+import mineEconomicsPlanning  from "./questions/practice/mine-economics-planning.json";
 import mineSurveying          from "./questions/practice/mine-surveying.json";
-import mineEnvironment        from "./questions/practice/mine-environment.json";
-
+import mineEnvironment        from "./questions/practice/mine-environment.json";import miningGeology         from "./questions/practice/mining-geology.json";
 export const PRACTICE: PracticeSubject[] = [
   engineeringMathematics,
   generalAptitude,
@@ -40,7 +49,8 @@ export const PRACTICE: PracticeSubject[] = [
   surfaceMining,
   undergroundMining,
   drillingBlasting,
-  mineralProcessing,
+  mineEconomicsPlanning,
   mineSurveying,
   mineEnvironment,
+  miningGeology,
 ] as PracticeSubject[];

@@ -1,708 +1,2246 @@
 {
   "slug": "mine-surveying",
-  "name": "Mine Surveying",
+  "name": "Mine Surveying & Geomatics",
   "questions": [
     {
-      "subject": "Mine Surveying",
-      "topic": "Levelling",
+      "id": "sv-orig-001",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Fundamentals",
       "difficulty": "easy",
-      "type": "NAT",
-      "answer": 151.5,
-      "tolerance": 0.01,
-      "stem": "RL of A = 150 m; BS on A = 2.5, FS on B = 1. RL of B (m):",
-      "solution": "RL_B = RL_A + BS − FS = 150 + 2.5 − 1.0 = 151.5.",
-      "id": "mine-surveying-easy-0001"
-    },
-    {
-      "subject": "Mine Surveying",
-      "topic": "Levelling",
-      "difficulty": "easy",
-      "type": "NAT",
-      "answer": 101.5,
-      "tolerance": 0.01,
-      "stem": "RL of A = 100 m; BS on A = 2, FS on B = 0.5. RL of B (m):",
-      "solution": "RL_B = RL_A + BS − FS = 100 + 2.0 − 0.5 = 101.5.",
-      "id": "mine-surveying-easy-0002"
-    },
-    {
-      "subject": "Mine Surveying",
-      "topic": "Levelling",
-      "difficulty": "easy",
-      "type": "NAT",
-      "answer": 101.7,
-      "tolerance": 0.01,
-      "stem": "RL of A = 100 m; BS on A = 2.5, FS on B = 0.8. RL of B (m):",
-      "solution": "RL_B = RL_A + BS − FS = 100 + 2.5 − 0.8 = 101.7.",
-      "id": "mine-surveying-easy-0003"
-    },
-    {
-      "subject": "Mine Surveying",
-      "topic": "Levelling",
-      "difficulty": "easy",
-      "type": "NAT",
-      "answer": 150.5,
-      "tolerance": 0.01,
-      "stem": "RL of A = 150 m; BS on A = 1.5, FS on B = 1. RL of B (m):",
-      "solution": "RL_B = RL_A + BS − FS = 150 + 1.5 − 1.0 = 150.5.",
-      "id": "mine-surveying-easy-0004"
-    },
-    {
-      "subject": "Mine Surveying",
-      "topic": "Levelling",
-      "difficulty": "easy",
-      "type": "NAT",
-      "answer": 200,
-      "tolerance": 0.01,
-      "stem": "RL of A = 200 m; BS on A = 1.2, FS on B = 1.2. RL of B (m):",
-      "solution": "RL_B = RL_A + BS − FS = 200 + 1.2 − 1.2 = 200.",
-      "id": "mine-surveying-easy-0005"
-    },
-    {
-      "subject": "Mine Surveying",
-      "topic": "Levelling",
-      "difficulty": "easy",
-      "type": "NAT",
-      "answer": 150.3,
-      "tolerance": 0.01,
-      "stem": "RL of A = 150 m; BS on A = 1.5, FS on B = 1.2. RL of B (m):",
-      "solution": "RL_B = RL_A + BS − FS = 150 + 1.5 − 1.2 = 150.3.",
-      "id": "mine-surveying-easy-0006"
-    },
-    {
-      "subject": "Mine Surveying",
-      "topic": "Levelling",
-      "difficulty": "easy",
-      "type": "NAT",
-      "answer": 200.3,
-      "tolerance": 0.01,
-      "stem": "RL of A = 200 m; BS on A = 1.5, FS on B = 1.2. RL of B (m):",
-      "solution": "RL_B = RL_A + BS − FS = 200 + 1.5 − 1.2 = 200.3.",
-      "id": "mine-surveying-easy-0007"
-    },
-    {
-      "subject": "Mine Surveying",
-      "topic": "Levelling",
-      "difficulty": "easy",
-      "type": "NAT",
-      "answer": 151,
-      "tolerance": 0.01,
-      "stem": "RL of A = 150 m; BS on A = 2, FS on B = 1. RL of B (m):",
-      "solution": "RL_B = RL_A + BS − FS = 150 + 2.0 − 1.0 = 151.",
-      "id": "mine-surveying-easy-0008"
-    },
-    {
-      "subject": "Mine Surveying",
-      "topic": "Levelling",
-      "difficulty": "easy",
-      "type": "NAT",
-      "answer": 201,
-      "tolerance": 0.01,
-      "stem": "RL of A = 200 m; BS on A = 2, FS on B = 1. RL of B (m):",
-      "solution": "RL_B = RL_A + BS − FS = 200 + 2.0 − 1.0 = 201.",
-      "id": "mine-surveying-easy-0009"
-    },
-    {
-      "subject": "Mine Surveying",
-      "topic": "Levelling",
-      "difficulty": "easy",
-      "type": "NAT",
-      "answer": 200.6,
-      "tolerance": 0.01,
-      "stem": "RL of A = 200 m; BS on A = 1.8, FS on B = 1.2. RL of B (m):",
-      "solution": "RL_B = RL_A + BS − FS = 200 + 1.8 − 1.2 = 200.6.",
-      "id": "mine-surveying-easy-0010"
-    },
-    {
-      "subject": "Mine Surveying",
-      "topic": "Levelling",
-      "difficulty": "easy",
-      "type": "NAT",
-      "answer": 201.5,
-      "tolerance": 0.01,
-      "stem": "RL of A = 200 m; BS on A = 2, FS on B = 0.5. RL of B (m):",
-      "solution": "RL_B = RL_A + BS − FS = 200 + 2.0 − 0.5 = 201.5.",
-      "id": "mine-surveying-easy-0011"
-    },
-    {
-      "subject": "Mine Surveying",
-      "topic": "Levelling",
-      "difficulty": "easy",
-      "type": "NAT",
-      "answer": 201.5,
-      "tolerance": 0.01,
-      "stem": "RL of A = 200 m; BS on A = 2.5, FS on B = 1. RL of B (m):",
-      "solution": "RL_B = RL_A + BS − FS = 200 + 2.5 − 1.0 = 201.5.",
-      "id": "mine-surveying-easy-0012"
-    },
-    {
-      "subject": "Mine Surveying",
-      "topic": "Levelling",
-      "difficulty": "easy",
-      "type": "NAT",
-      "answer": 150.7,
-      "tolerance": 0.01,
-      "stem": "RL of A = 150 m; BS on A = 1.2, FS on B = 0.5. RL of B (m):",
-      "solution": "RL_B = RL_A + BS − FS = 150 + 1.2 − 0.5 = 150.7.",
-      "id": "mine-surveying-easy-0013"
-    },
-    {
-      "subject": "Mine Surveying",
-      "topic": "Levelling",
-      "difficulty": "easy",
-      "type": "NAT",
-      "answer": 101.5,
-      "tolerance": 0.01,
-      "stem": "RL of A = 100 m; BS on A = 2.5, FS on B = 1. RL of B (m):",
-      "solution": "RL_B = RL_A + BS − FS = 100 + 2.5 − 1.0 = 101.5.",
-      "id": "mine-surveying-easy-0014"
-    },
-    {
-      "subject": "Mine Surveying",
-      "topic": "Levelling",
-      "difficulty": "easy",
-      "type": "NAT",
-      "answer": 151,
-      "tolerance": 0.01,
-      "stem": "RL of A = 150 m; BS on A = 1.5, FS on B = 0.5. RL of B (m):",
-      "solution": "RL_B = RL_A + BS − FS = 150 + 1.5 − 0.5 = 151.",
-      "id": "mine-surveying-easy-0015"
-    },
-    {
-      "subject": "Mine Surveying",
-      "topic": "Levelling",
-      "difficulty": "easy",
-      "type": "NAT",
-      "answer": 200.4,
-      "tolerance": 0.01,
-      "stem": "RL of A = 200 m; BS on A = 1.2, FS on B = 0.8. RL of B (m):",
-      "solution": "RL_B = RL_A + BS − FS = 200 + 1.2 − 0.8 = 200.4.",
-      "id": "mine-surveying-easy-0016"
-    },
-    {
-      "subject": "Mine Surveying",
-      "topic": "Levelling",
-      "difficulty": "easy",
-      "type": "NAT",
-      "answer": 201.3,
-      "tolerance": 0.01,
-      "stem": "RL of A = 200 m; BS on A = 2.5, FS on B = 1.2. RL of B (m):",
-      "solution": "RL_B = RL_A + BS − FS = 200 + 2.5 − 1.2 = 201.3.",
-      "id": "mine-surveying-easy-0017"
-    },
-    {
-      "subject": "Mine Surveying",
-      "topic": "Levelling",
-      "difficulty": "easy",
-      "type": "NAT",
-      "answer": 101.3,
-      "tolerance": 0.01,
-      "stem": "RL of A = 100 m; BS on A = 1.8, FS on B = 0.5. RL of B (m):",
-      "solution": "RL_B = RL_A + BS − FS = 100 + 1.8 − 0.5 = 101.3.",
-      "id": "mine-surveying-easy-0018"
-    },
-    {
-      "subject": "Mine Surveying",
-      "topic": "Levelling",
-      "difficulty": "easy",
-      "type": "NAT",
-      "answer": 150.8,
-      "tolerance": 0.01,
-      "stem": "RL of A = 150 m; BS on A = 1.8, FS on B = 1. RL of B (m):",
-      "solution": "RL_B = RL_A + BS − FS = 150 + 1.8 − 1.0 = 150.8.",
-      "id": "mine-surveying-easy-0019"
-    },
-    {
-      "subject": "Mine Surveying",
-      "topic": "Levelling",
-      "difficulty": "easy",
-      "type": "NAT",
-      "answer": 100.8,
-      "tolerance": 0.01,
-      "stem": "RL of A = 100 m; BS on A = 2, FS on B = 1.2. RL of B (m):",
-      "solution": "RL_B = RL_A + BS − FS = 100 + 2.0 − 1.2 = 100.8.",
-      "id": "mine-surveying-easy-0020"
-    },
-    {
-      "subject": "Mine Surveying",
-      "topic": "Levelling",
-      "difficulty": "easy",
-      "type": "NAT",
-      "answer": 151.3,
-      "tolerance": 0.01,
-      "stem": "RL of A = 150 m; BS on A = 2.5, FS on B = 1.2. RL of B (m):",
-      "solution": "RL_B = RL_A + BS − FS = 150 + 2.5 − 1.2 = 151.3.",
-      "id": "mine-surveying-easy-0021"
-    },
-    {
-      "subject": "Mine Surveying",
-      "topic": "Levelling",
-      "difficulty": "easy",
-      "type": "NAT",
-      "answer": 100.5,
-      "tolerance": 0.01,
-      "stem": "RL of A = 100 m; BS on A = 1.5, FS on B = 1. RL of B (m):",
-      "solution": "RL_B = RL_A + BS − FS = 100 + 1.5 − 1.0 = 100.5.",
-      "id": "mine-surveying-easy-0022"
-    },
-    {
-      "subject": "Mine Surveying",
-      "topic": "Levelling",
-      "difficulty": "easy",
-      "type": "NAT",
-      "answer": 201,
-      "tolerance": 0.01,
-      "stem": "RL of A = 200 m; BS on A = 1.5, FS on B = 0.5. RL of B (m):",
-      "solution": "RL_B = RL_A + BS − FS = 200 + 1.5 − 0.5 = 201.",
-      "id": "mine-surveying-easy-0023"
-    },
-    {
-      "subject": "Mine Surveying",
-      "topic": "Levelling",
-      "difficulty": "easy",
-      "type": "NAT",
-      "answer": 150.8,
-      "tolerance": 0.01,
-      "stem": "RL of A = 150 m; BS on A = 2, FS on B = 1.2. RL of B (m):",
-      "solution": "RL_B = RL_A + BS − FS = 150 + 2.0 − 1.2 = 150.8.",
-      "id": "mine-surveying-easy-0024"
-    },
-    {
-      "subject": "Mine Surveying",
-      "topic": "Levelling",
-      "difficulty": "easy",
-      "type": "NAT",
-      "answer": 151.2,
-      "tolerance": 0.01,
-      "stem": "RL of A = 150 m; BS on A = 2, FS on B = 0.8. RL of B (m):",
-      "solution": "RL_B = RL_A + BS − FS = 150 + 2.0 − 0.8 = 151.2.",
-      "id": "mine-surveying-easy-0025"
-    },
-    {
-      "subject": "Mine Surveying",
-      "topic": "Levelling",
-      "difficulty": "easy",
-      "type": "NAT",
-      "answer": 202,
-      "tolerance": 0.01,
-      "stem": "RL of A = 200 m; BS on A = 2.5, FS on B = 0.5. RL of B (m):",
-      "solution": "RL_B = RL_A + BS − FS = 200 + 2.5 − 0.5 = 202.",
-      "id": "mine-surveying-easy-0026"
-    },
-    {
-      "subject": "Mine Surveying",
-      "topic": "Levelling",
-      "difficulty": "easy",
-      "type": "NAT",
-      "answer": 201.3,
-      "tolerance": 0.01,
-      "stem": "RL of A = 200 m; BS on A = 1.8, FS on B = 0.5. RL of B (m):",
-      "solution": "RL_B = RL_A + BS − FS = 200 + 1.8 − 0.5 = 201.3.",
-      "id": "mine-surveying-easy-0027"
-    },
-    {
-      "subject": "Mine Surveying",
-      "topic": "Levelling",
-      "difficulty": "easy",
-      "type": "NAT",
-      "answer": 100,
-      "tolerance": 0.01,
-      "stem": "RL of A = 100 m; BS on A = 1.2, FS on B = 1.2. RL of B (m):",
-      "solution": "RL_B = RL_A + BS − FS = 100 + 1.2 − 1.2 = 100.",
-      "id": "mine-surveying-easy-0028"
-    },
-    {
-      "subject": "Mine Surveying",
-      "topic": "Levelling",
-      "difficulty": "easy",
-      "type": "NAT",
-      "answer": 100.4,
-      "tolerance": 0.01,
-      "stem": "RL of A = 100 m; BS on A = 1.2, FS on B = 0.8. RL of B (m):",
-      "solution": "RL_B = RL_A + BS − FS = 100 + 1.2 − 0.8 = 100.4.",
-      "id": "mine-surveying-easy-0029"
-    },
-    {
-      "subject": "Mine Surveying",
-      "topic": "Levelling",
-      "difficulty": "easy",
-      "type": "NAT",
-      "answer": 201.2,
-      "tolerance": 0.01,
-      "stem": "RL of A = 200 m; BS on A = 2, FS on B = 0.8. RL of B (m):",
-      "solution": "RL_B = RL_A + BS − FS = 200 + 2.0 − 0.8 = 201.2.",
-      "id": "mine-surveying-easy-0030"
-    },
-    {
-      "subject": "Mine Surveying",
-      "topic": "Compass Surveying",
-      "difficulty": "medium",
       "type": "MCQ",
-      "stem": "WCB = 40°. Quadrantal bearing is:",
+      "stem": "Surveying is best defined as the art and science of",
       "options": [
-        "N40°E",
-        "S60°E",
-        "S30°W",
-        "N60°W"
-      ],
-      "answer": 0,
-      "solution": "WCB 40° converts to N40°E.",
-      "id": "mine-surveying-medium-0031"
-    },
-    {
-      "subject": "Mine Surveying",
-      "topic": "Compass Surveying",
-      "difficulty": "medium",
-      "type": "MCQ",
-      "stem": "WCB = 120°. Quadrantal bearing is:",
-      "options": [
-        "N40°E",
-        "S60°E",
-        "S30°W",
-        "N60°W"
+        "drilling boreholes for mineral exploration",
+        "determining the relative positions of points on, above or below the earth's surface",
+        "designing the ventilation network of a mine",
+        "estimating the calorific value of coal"
       ],
       "answer": 1,
-      "solution": "WCB 120° converts to S60°E.",
-      "id": "mine-surveying-medium-0032"
+      "solution": "**Concept.** Surveying fixes relative position.\n\n**Reasoning.** It measures distances, directions and elevations to determine the relative positions of points and to represent them on plans/maps; in mining it links surface and underground workings.\n\n**Answer.** Determining relative positions of points.",
+      "archetype": "A",
+      "marks": 1
     },
     {
-      "subject": "Mine Surveying",
-      "topic": "Coordinate Geometry",
-      "difficulty": "medium",
-      "type": "NAT",
-      "answer": 24,
-      "tolerance": 0.05,
-      "stem": "Area of triangle with vertices (0,0),(6,0),(0,8):",
-      "solution": "A = ½|Σx_i(y_{i+1}−y_{i-1})| = 24.",
-      "id": "mine-surveying-medium-0033"
-    },
-    {
-      "subject": "Mine Surveying",
-      "topic": "Coordinate Geometry",
-      "difficulty": "medium",
-      "type": "NAT",
-      "answer": 60,
-      "tolerance": 0.05,
-      "stem": "Area of triangle with vertices (0,0),(10,0),(5,12):",
-      "solution": "A = ½|Σx_i(y_{i+1}−y_{i-1})| = 60.",
-      "id": "mine-surveying-medium-0034"
-    },
-    {
-      "subject": "Mine Surveying",
-      "topic": "Coordinate Geometry",
-      "difficulty": "medium",
-      "type": "NAT",
-      "answer": 6,
-      "tolerance": 0.05,
-      "stem": "Area of triangle with vertices (0,0),(4,0),(0,3):",
-      "solution": "A = ½|Σx_i(y_{i+1}−y_{i-1})| = 6.",
-      "id": "mine-surveying-medium-0035"
-    },
-    {
-      "subject": "Mine Surveying",
-      "topic": "Compass Surveying",
-      "difficulty": "medium",
+      "id": "sv-orig-002",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Plans and maps",
+      "difficulty": "easy",
       "type": "MCQ",
-      "stem": "WCB = 210°. Quadrantal bearing is:",
+      "stem": "A 'plan' differs from a 'map' chiefly in that a plan is drawn to a",
       "options": [
-        "N40°E",
-        "S60°E",
-        "S30°W",
-        "N60°W"
+        "small scale covering a large area",
+        "large scale covering a small area, with little distortion",
+        "scale that always ignores elevation",
+        "scale that cannot show detail"
       ],
-      "answer": 2,
-      "solution": "WCB 210° converts to S30°W.",
-      "id": "mine-surveying-medium-0036"
+      "answer": 1,
+      "solution": "**Concept.** Scale distinguishes plans from maps.\n\n**Reasoning.** A plan uses a large scale for a small area (e.g. a mine layout) showing fine detail; a map uses a small scale for a large area. Mine workings are shown on large-scale plans.\n\n**Answer.** Large scale, small area.",
+      "archetype": "A",
+      "marks": 1
     },
     {
-      "subject": "Mine Surveying",
-      "topic": "Compass Surveying",
-      "difficulty": "medium",
+      "id": "sv-orig-003",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Chain surveying",
+      "difficulty": "easy",
       "type": "MCQ",
-      "stem": "WCB = 300°. Quadrantal bearing is:",
+      "stem": "In chain surveying, the main principle followed is",
       "options": [
-        "N40°E",
-        "S60°E",
-        "S30°W",
-        "N60°W"
+        "triangulation — dividing the area into well-conditioned triangles measured by chaining",
+        "measuring angles only with a theodolite",
+        "levelling with a dumpy level",
+        "satellite positioning"
       ],
-      "answer": 3,
-      "solution": "WCB 300° converts to N60°W.",
-      "id": "mine-surveying-medium-0037"
+      "answer": 0,
+      "solution": "**Concept.** Chain surveying works by triangles.\n\n**Reasoning.** The area is covered by a framework of triangles whose sides are measured by chaining (a triangle is the only figure fixed by its sides alone); offsets locate detail. Well-conditioned (near-equilateral) triangles give the best accuracy.\n\n**Answer.** Triangulation of chained sides.",
+      "archetype": "A",
+      "marks": 1
     },
     {
-      "subject": "Mine Surveying",
-      "topic": "Tape Corrections",
-      "difficulty": "hard",
+      "id": "sv-orig-004",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Chain",
+      "difficulty": "easy",
       "type": "NAT",
-      "answer": 0.045,
-      "tolerance": 0.001,
-      "stem": "Slope correction (m) for measured length 100 m with elevation difference 3 m:",
-      "solution": "C = h²/(2L) = 3²/(2×100) = 0.0450 m.",
-      "id": "mine-surveying-hard-0038"
-    },
-    {
-      "subject": "Mine Surveying",
-      "topic": "Tape Corrections",
-      "difficulty": "hard",
-      "type": "NAT",
-      "answer": 0.267,
-      "tolerance": 0.001,
-      "stem": "Slope correction (m) for measured length 30 m with elevation difference 4 m:",
-      "solution": "C = h²/(2L) = 4²/(2×30) = 0.2667 m.",
-      "id": "mine-surveying-hard-0039"
-    },
-    {
-      "subject": "Mine Surveying",
-      "topic": "Tape Corrections",
-      "difficulty": "hard",
-      "type": "NAT",
-      "answer": 0.04,
-      "tolerance": 0.001,
-      "stem": "Slope correction (m) for measured length 200 m with elevation difference 4 m:",
-      "solution": "C = h²/(2L) = 4²/(2×200) = 0.0400 m.",
-      "id": "mine-surveying-hard-0040"
-    },
-    {
-      "subject": "Mine Surveying",
-      "topic": "Tape Corrections",
-      "difficulty": "hard",
-      "type": "NAT",
-      "answer": 0.15,
-      "tolerance": 0.001,
-      "stem": "Slope correction (m) for measured length 30 m with elevation difference 3 m:",
-      "solution": "C = h²/(2L) = 3²/(2×30) = 0.1500 m.",
-      "id": "mine-surveying-hard-0041"
-    },
-    {
-      "subject": "Mine Surveying",
-      "topic": "Tape Corrections",
-      "difficulty": "hard",
-      "type": "NAT",
-      "answer": 0.067,
-      "tolerance": 0.001,
-      "stem": "Slope correction (m) for measured length 30 m with elevation difference 2 m:",
-      "solution": "C = h²/(2L) = 2²/(2×30) = 0.0667 m.",
-      "id": "mine-surveying-hard-0042"
-    },
-    {
-      "subject": "Mine Surveying",
-      "topic": "Tape Corrections",
-      "difficulty": "hard",
-      "type": "NAT",
-      "answer": 0.01,
-      "tolerance": 0.001,
-      "stem": "Slope correction (m) for measured length 50 m with elevation difference 1 m:",
-      "solution": "C = h²/(2L) = 1²/(2×50) = 0.0100 m.",
-      "id": "mine-surveying-hard-0043"
-    },
-    {
-      "subject": "Mine Surveying",
-      "topic": "Tape Corrections",
-      "difficulty": "hard",
-      "type": "NAT",
-      "answer": 0.003,
-      "tolerance": 0.001,
-      "stem": "Slope correction (m) for measured length 200 m with elevation difference 1 m:",
-      "solution": "C = h²/(2L) = 1²/(2×200) = 0.0025 m.",
-      "id": "mine-surveying-hard-0044"
-    },
-    {
-      "subject": "Mine Surveying",
-      "topic": "Tape Corrections",
-      "difficulty": "hard",
-      "type": "NAT",
-      "answer": 0.001,
-      "tolerance": 0.001,
-      "stem": "Slope correction (m) for measured length 100 m with elevation difference 0.5 m:",
-      "solution": "C = h²/(2L) = 0.5²/(2×100) = 0.0013 m.",
-      "id": "mine-surveying-hard-0045"
-    },
-    {
-      "subject": "Mine Surveying",
-      "topic": "Compass Surveying",
-      "difficulty": "hard",
-      "type": "NAT",
-      "answer": 210,
-      "tolerance": 0,
-      "stem": "Back bearing (°) when fore bearing is 30°:",
-      "solution": "BB = FB ± 180°. Here BB = 210°.",
-      "id": "mine-surveying-hard-0046"
-    },
-    {
-      "subject": "Mine Surveying",
-      "topic": "Tape Corrections",
-      "difficulty": "hard",
-      "type": "NAT",
-      "answer": 0.022,
-      "tolerance": 0.001,
-      "stem": "Slope correction (m) for measured length 200 m with elevation difference 3 m:",
-      "solution": "C = h²/(2L) = 3²/(2×200) = 0.0225 m.",
-      "id": "mine-surveying-hard-0047"
-    },
-    {
-      "subject": "Mine Surveying",
-      "topic": "Tape Corrections",
-      "difficulty": "hard",
-      "type": "NAT",
-      "answer": 0.01,
-      "tolerance": 0.001,
-      "stem": "Slope correction (m) for measured length 200 m with elevation difference 2 m:",
-      "solution": "C = h²/(2L) = 2²/(2×200) = 0.0100 m.",
-      "id": "mine-surveying-hard-0048"
-    },
-    {
-      "subject": "Mine Surveying",
-      "topic": "Tape Corrections",
-      "difficulty": "hard",
-      "type": "NAT",
-      "answer": 0.16,
-      "tolerance": 0.001,
-      "stem": "Slope correction (m) for measured length 50 m with elevation difference 4 m:",
-      "solution": "C = h²/(2L) = 4²/(2×50) = 0.1600 m.",
-      "id": "mine-surveying-hard-0049"
-    },
-    {
-      "subject": "Mine Surveying",
-      "topic": "Tape Corrections",
-      "difficulty": "hard",
-      "type": "NAT",
-      "answer": 0.08,
-      "tolerance": 0.001,
-      "stem": "Slope correction (m) for measured length 100 m with elevation difference 4 m:",
-      "solution": "C = h²/(2L) = 4²/(2×100) = 0.0800 m.",
-      "id": "mine-surveying-hard-0050"
-    },
-    {
-      "subject": "Mine Surveying",
-      "topic": "Tape Corrections",
-      "difficulty": "hard",
-      "type": "NAT",
-      "answer": 0.001,
-      "tolerance": 0.001,
-      "stem": "Slope correction (m) for measured length 200 m with elevation difference 0.5 m:",
-      "solution": "C = h²/(2L) = 0.5²/(2×200) = 0.0006 m.",
-      "id": "mine-surveying-hard-0051"
-    },
-    {
-      "subject": "Mine Surveying",
-      "topic": "Compass Surveying",
-      "difficulty": "hard",
-      "type": "NAT",
-      "answer": 290,
-      "tolerance": 0,
-      "stem": "Back bearing (°) when fore bearing is 110°:",
-      "solution": "BB = FB ± 180°. Here BB = 290°.",
-      "id": "mine-surveying-hard-0052"
-    },
-    {
-      "subject": "Mine Surveying",
-      "topic": "Tape Corrections",
-      "difficulty": "hard",
-      "type": "NAT",
-      "answer": 0.004,
-      "tolerance": 0.001,
-      "stem": "Slope correction (m) for measured length 30 m with elevation difference 0.5 m:",
-      "solution": "C = h²/(2L) = 0.5²/(2×30) = 0.0042 m.",
-      "id": "mine-surveying-hard-0053"
-    },
-    {
-      "subject": "Mine Surveying",
-      "topic": "Tape Corrections",
-      "difficulty": "hard",
-      "type": "NAT",
-      "answer": 0.02,
-      "tolerance": 0.001,
-      "stem": "Slope correction (m) for measured length 100 m with elevation difference 2 m:",
-      "solution": "C = h²/(2L) = 2²/(2×100) = 0.0200 m.",
-      "id": "mine-surveying-hard-0054"
-    },
-    {
-      "subject": "Mine Surveying",
-      "topic": "Tape Corrections",
-      "difficulty": "hard",
-      "type": "NAT",
-      "answer": 0.003,
-      "tolerance": 0.001,
-      "stem": "Slope correction (m) for measured length 50 m with elevation difference 0.5 m:",
-      "solution": "C = h²/(2L) = 0.5²/(2×50) = 0.0025 m.",
-      "id": "mine-surveying-hard-0055"
-    },
-    {
-      "subject": "Mine Surveying",
-      "topic": "Compass Surveying",
-      "difficulty": "hard",
-      "type": "NAT",
-      "answer": 255,
-      "tolerance": 0,
-      "stem": "Back bearing (°) when fore bearing is 75°:",
-      "solution": "BB = FB ± 180°. Here BB = 255°.",
-      "id": "mine-surveying-hard-0056"
-    },
-    {
-      "subject": "Mine Surveying",
-      "topic": "Tape Corrections",
-      "difficulty": "hard",
-      "type": "NAT",
-      "answer": 0.09,
-      "tolerance": 0.001,
-      "stem": "Slope correction (m) for measured length 50 m with elevation difference 3 m:",
-      "solution": "C = h²/(2L) = 3²/(2×50) = 0.0900 m.",
-      "id": "mine-surveying-hard-0057"
-    },
-    {
-      "subject": "Mine Surveying",
-      "topic": "Tape Corrections",
-      "difficulty": "hard",
-      "type": "NAT",
-      "answer": 0.017,
-      "tolerance": 0.001,
-      "stem": "Slope correction (m) for measured length 30 m with elevation difference 1 m:",
-      "solution": "C = h²/(2L) = 1²/(2×30) = 0.0167 m.",
-      "id": "mine-surveying-hard-0058"
-    },
-    {
-      "subject": "Mine Surveying",
-      "topic": "Tape Corrections",
-      "difficulty": "hard",
-      "type": "NAT",
-      "answer": 0.04,
-      "tolerance": 0.001,
-      "stem": "Slope correction (m) for measured length 50 m with elevation difference 2 m:",
-      "solution": "C = h²/(2L) = 2²/(2×50) = 0.0400 m.",
-      "id": "mine-surveying-hard-0059"
-    },
-    {
-      "subject": "Mine Surveying",
-      "topic": "Compass Surveying",
-      "difficulty": "hard",
-      "type": "NAT",
-      "answer": 105,
-      "tolerance": 0,
-      "stem": "Back bearing (°) when fore bearing is 285°:",
-      "solution": "BB = FB ± 180°. Here BB = 105°.",
-      "id": "mine-surveying-hard-0060"
-    },
-    {
-      "subject": "Mine Surveying",
-      "topic": "Tape Corrections",
-      "difficulty": "hard",
-      "type": "NAT",
-      "answer": 0.005,
-      "tolerance": 0.001,
-      "stem": "Slope correction (m) for measured length 100 m with elevation difference 1 m:",
-      "solution": "C = h²/(2L) = 1²/(2×100) = 0.0050 m.",
-      "id": "mine-surveying-hard-0061"
-    },
-    {
-      "subject": "Mine Surveying",
-      "topic": "Compass Surveying",
-      "difficulty": "hard",
-      "type": "NAT",
+      "stem": "A metric chain is 20 m long and divided into 100 links. The length of one link, in cm, is ____.",
       "answer": 20,
-      "tolerance": 0,
-      "stem": "Back bearing (°) when fore bearing is 200°:",
-      "solution": "BB = FB ± 180°. Here BB = 20°.",
-      "id": "mine-surveying-hard-0062"
+      "tolerance": 0.1,
+      "solution": "**Concept.** Link length $=\\dfrac{\\text{chain length}}{\\text{number of links}}$.\n\n**Working.**\n$$\\frac{20\\ \\text{m}}{100}=0.20\\ \\text{m}=20\\ \\text{cm}$$\n\n**Answer.** 20 cm.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "sv-orig-005",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Ranging",
+      "difficulty": "easy",
+      "type": "MCQ",
+      "stem": "Ranging in chain surveying is the operation of",
+      "options": [
+        "measuring vertical angles",
+        "establishing intermediate points on a straight survey line between its end stations",
+        "computing areas",
+        "levelling the ground"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Ranging keeps the chain on line.\n\n**Reasoning.** Intermediate ranging rods are fixed in line with the two end stations so that chaining follows a straight line; it may be direct (ends intervisible) or indirect (reciprocal).\n\n**Answer.** Fixing intermediate points on the line.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "sv-orig-006",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Offsets",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "An 'offset' in chain surveying is",
+      "options": [
+        "the error in the chain length",
+        "the lateral distance of a detail point from the chain (survey) line",
+        "the magnetic declination",
+        "the difference of fore and back bearings"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Offsets locate detail relative to the chain line.\n\n**Reasoning.** Perpendicular (or oblique) offsets give the distance of features such as buildings or boundaries from the main line, so they can be plotted; perpendicular offsets are preferred for accuracy.\n\n**Answer.** Lateral distance of a point from the chain line.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "sv-orig-007",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Chain correction",
+      "difficulty": "medium",
+      "type": "NAT",
+      "stem": "A line is measured as 500 m with a 20 m chain that is found to be 0.05 m too long. The corrected (true) length, in m, is ____ (two decimals).",
+      "answer": 501.25,
+      "tolerance": 0.05,
+      "solution": "**Concept.** True length $=$ measured $\\times\\dfrac{\\text{actual chain length}}{\\text{nominal length}}$.\n\n**Working.**\n$$L=500\\times\\frac{20.05}{20}=500\\times1.0025=501.25\\ \\text{m}$$\n\n**Answer.** 501.25 m.",
+      "archetype": "D",
+      "marks": 2
+    },
+    {
+      "id": "sv-orig-008",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Bearings",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "The whole-circle bearing (WCB) of a line is measured",
+      "options": [
+        "from north or south, between 0° and 90°",
+        "clockwise from the north, between 0° and 360°",
+        "anticlockwise from the east",
+        "as the vertical angle from the horizon"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** WCB is a clockwise azimuth.\n\n**Reasoning.** It is reckoned clockwise from the north meridian and can take any value from 0° to 360°; the prismatic compass reads it directly.\n\n**Answer.** Clockwise from north, 0°–360°.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "sv-orig-009",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Bearings",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "A reduced (quadrantal) bearing is expressed",
+      "options": [
+        "clockwise from north only",
+        "as an angle between 0° and 90° measured from north or south, with the quadrant indicated (NE, SE, SW, NW)",
+        "from 0° to 360°",
+        "as a vertical angle"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Quadrantal bearings reference the nearer meridian.\n\n**Reasoning.** The angle is measured from north or south, toward east or west, lying between 0° and 90°, e.g. N30°E or S45°W; the surveyor's compass reads these.\n\n**Answer.** 0°–90° from N/S with quadrant.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "sv-orig-010",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Bearing conversion",
+      "difficulty": "easy",
+      "type": "NAT",
+      "stem": "A line has a whole-circle bearing of 210°. Its reduced bearing is S θ W; the value of θ, in degrees, is ____.",
+      "answer": 30,
+      "tolerance": 0.1,
+      "solution": "**Concept.** For WCB between 180° and 270° the RB is S(WCB−180°)W.\n\n**Working.**\n$$\\theta=210-180=30^{\\circ}\\Rightarrow \\text{S}30^{\\circ}\\text{W}$$\n\n**Answer.** 30°.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "sv-orig-011",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Fore and back bearing",
+      "difficulty": "easy",
+      "type": "NAT",
+      "stem": "A line has a fore bearing of 45°. Its back bearing (WCB), in degrees, is ____.",
+      "answer": 225,
+      "tolerance": 0.1,
+      "solution": "**Concept.** Back bearing $=$ fore bearing $\\pm180°$.\n\n**Working.**\n$$BB=45+180=225^{\\circ}$$\n\n**Answer.** 225°.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "sv-orig-012",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Magnetic declination",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "Magnetic declination at a place is the",
+      "options": [
+        "angle between the line of sight and the horizontal",
+        "horizontal angle between the true (geographic) north and the magnetic north",
+        "difference between fore and back bearings",
+        "slope of the ground"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** The magnetic needle does not point to true north.\n\n**Reasoning.** Declination is the horizontal angle between true north and the direction the compass needle takes (magnetic north); it varies with place and time and must be applied to convert magnetic to true bearings.\n\n**Answer.** Angle between true north and magnetic north.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "sv-orig-013",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "True bearing",
+      "difficulty": "easy",
+      "type": "NAT",
+      "stem": "The magnetic bearing of a line is 130° and the magnetic declination is 2° East. The true bearing, in degrees, is ____.",
+      "answer": 132,
+      "tolerance": 0.1,
+      "solution": "**Concept.** True bearing $=$ magnetic bearing $+$ easterly declination.\n\n**Working.**\n$$TB=130+2=132^{\\circ}$$\n\n**Answer.** 132°.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "sv-orig-014",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Local attraction",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "Local attraction in compass surveying is detected when",
+      "options": [
+        "the chain is too long",
+        "the difference between the fore and back bearings of a line is not exactly 180°",
+        "the level bubble is off centre",
+        "the offset exceeds the tape length"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Magnetic disturbance deflects the needle.\n\n**Reasoning.** Nearby iron/magnetic material pulls the needle, so the observed fore and back bearings of a line differ by something other than 180°; stations free of attraction (180° difference) are used to correct the rest.\n\n**Answer.** FB and BB differ by ≠ 180°.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "sv-orig-015",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Included angle",
+      "difficulty": "easy",
+      "type": "NAT",
+      "stem": "From a station the bearings of two lines are 60° and 150°. The included angle between the lines, in degrees, is ____.",
+      "answer": 90,
+      "tolerance": 0.1,
+      "solution": "**Concept.** Included angle $=$ difference of the two bearings.\n\n**Working.**\n$$150-60=90^{\\circ}$$\n\n**Answer.** 90°.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "sv-orig-016",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Prismatic compass",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "In a prismatic compass the graduated ring",
+      "options": [
+        "is fixed to the box and rotates with the sight vane",
+        "is attached to the magnetic needle and is read through a prism, giving the whole-circle bearing directly",
+        "shows only quadrantal bearings",
+        "must be levelled with a plumb bob"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** The card turns with the needle; the box turns about it.\n\n**Reasoning.** The graduated ring is carried by the needle and stays oriented to magnetic north; the observer reads the WCB through the prism against the object vane, so readings are taken directly.\n\n**Answer.** Ring on the needle, read by prism (WCB).",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "sv-orig-017",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Levelling",
+      "difficulty": "easy",
+      "type": "MCQ",
+      "stem": "Levelling is the branch of surveying used to determine",
+      "options": [
+        "horizontal angles between lines",
+        "the relative heights (elevations) of points and differences in level",
+        "the magnetic bearing of a line",
+        "the area of a traverse"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Levelling measures vertical position.\n\n**Reasoning.** Using a level and staff it finds the elevation differences between points relative to a datum, essential for grades, contours, drainage and mine plans.\n\n**Answer.** Relative heights/level differences.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "sv-orig-018",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Datum",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "A bench mark (BM) in levelling is",
+      "options": [
+        "a temporary point that changes each day",
+        "a fixed reference point of known elevation relative to the datum (usually mean sea level)",
+        "the magnetic north direction",
+        "the centre of the theodolite"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Bench marks anchor elevations.\n\n**Reasoning.** A BM is a permanent point whose reduced level (RL) above the datum is known; levelling is referred to BMs so that all heights tie to a common datum such as MSL.\n\n**Answer.** Fixed point of known elevation.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "sv-orig-019",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Height of instrument",
+      "difficulty": "easy",
+      "type": "NAT",
+      "stem": "A backsight of 1.500 m is taken on a bench mark of RL 100.000 m. The height of instrument (HI), in m, is ____ (three decimals).",
+      "answer": 101.5,
+      "tolerance": 0.005,
+      "solution": "**Concept.** $HI=RL_{BM}+BS$.\n\n**Working.**\n$$HI=100.000+1.500=101.500\\ \\text{m}$$\n\n**Answer.** 101.500 m.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "sv-orig-020",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Reduced level",
+      "difficulty": "easy",
+      "type": "NAT",
+      "stem": "With a height of instrument of 101.500 m, a foresight of 0.800 m is taken on a point. The reduced level of that point, in m, is ____ (one decimal).",
+      "answer": 100.7,
+      "tolerance": 0.005,
+      "solution": "**Concept.** $RL=HI-FS$.\n\n**Working.**\n$$RL=101.500-0.800=100.700\\ \\text{m}$$\n\n**Answer.** 100.7 m.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "sv-orig-021",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Backsight",
+      "difficulty": "easy",
+      "type": "MCQ",
+      "stem": "A backsight (BS) reading in levelling is",
+      "options": [
+        "the last reading before moving the instrument",
+        "the first staff reading taken on a point of known elevation after setting up the level",
+        "any intermediate reading",
+        "a vertical angle"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** BS ties the instrument to a known RL.\n\n**Reasoning.** The first reading after setting up is taken on a point of known RL (BM or change point); adding it to that RL gives the HI.\n\n**Answer.** First reading on a known point.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "sv-orig-022",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Foresight",
+      "difficulty": "easy",
+      "type": "MCQ",
+      "stem": "A foresight (FS) in levelling is",
+      "options": [
+        "the first reading taken on a bench mark",
+        "the last staff reading taken from an instrument setting, just before the level is shifted",
+        "the magnetic bearing of the staff",
+        "the horizontal distance to the staff"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** FS closes an instrument setting.\n\n**Reasoning.** It is the final reading from a given setup (on a change point or final point) before moving the instrument; it is subtracted from the HI to obtain the RL.\n\n**Answer.** Last reading before shifting the instrument.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "sv-orig-023",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Rise and fall",
+      "difficulty": "easy",
+      "type": "NAT",
+      "stem": "Consecutive staff readings are 1.200 m (back station) and 1.700 m (forward station). The magnitude of the fall from the back to the forward station, in m, is ____ (one decimal).",
+      "answer": 0.5,
+      "tolerance": 0.005,
+      "solution": "**Concept.** A larger forward reading means the ground has fallen.\n\n**Working.**\n$$1.700-1.200=0.500\\ \\text{m (fall)}$$\n\n**Answer.** 0.5 m.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "sv-orig-024",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Instruments",
+      "difficulty": "easy",
+      "type": "MCQ",
+      "stem": "A dumpy (or automatic) level is an instrument used primarily for",
+      "options": [
+        "measuring horizontal and vertical angles",
+        "establishing a horizontal line of sight to read a levelling staff and determine elevations",
+        "measuring magnetic bearings",
+        "satellite positioning"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** A level provides a horizontal line of collimation.\n\n**Reasoning.** The level's telescope, once set up, gives a horizontal sight; staff readings along it yield differences in elevation. An automatic level uses a compensator to keep the line horizontal.\n\n**Answer.** Horizontal sighting for levelling.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "sv-orig-025",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Levelling check",
+      "difficulty": "medium",
+      "type": "NAT",
+      "stem": "In a line of levels the sum of all backsights is 3.250 m and the sum of all foresights is 2.100 m. The difference between the last and first reduced levels (last − first), in m, is ____ (two decimals).",
+      "answer": 1.15,
+      "tolerance": 0.005,
+      "solution": "**Concept.** Arithmetic check: $\\sum BS-\\sum FS=RL_{last}-RL_{first}$.\n\n**Working.**\n$$3.250-2.100=1.150\\ \\text{m}$$\n\n**Answer.** +1.15 m (net rise).",
+      "archetype": "B",
+      "marks": 1
+    },
+    {
+      "id": "sv-orig-026",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Contours",
+      "difficulty": "easy",
+      "type": "MCQ",
+      "stem": "A contour line on a plan is",
+      "options": [
+        "a line of constant magnetic bearing",
+        "an imaginary line joining points of equal elevation (reduced level)",
+        "the boundary of the survey",
+        "the axis of a tunnel"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Contours show equal height.\n\n**Reasoning.** Every point on a contour has the same RL; the pattern of contours depicts the shape of the ground (relief) on a plan.\n\n**Answer.** Line of equal elevation.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "sv-orig-027",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Contour interval",
+      "difficulty": "easy",
+      "type": "MCQ",
+      "stem": "The contour interval is the",
+      "options": [
+        "horizontal distance between two adjacent contours",
+        "constant vertical distance (difference in elevation) between successive contours",
+        "scale of the map",
+        "length of the survey line"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Interval is a vertical quantity.\n\n**Reasoning.** It is the fixed elevation difference between consecutive contours (e.g. 1 m, 5 m); smaller intervals give more detail. The horizontal spacing is the 'horizontal equivalent'.\n\n**Answer.** Vertical distance between contours.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "sv-orig-028",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Slope from contours",
+      "difficulty": "medium",
+      "type": "NAT",
+      "stem": "Two adjacent contours differ by 5 m in elevation and are 50 m apart on the ground (horizontal). The ground slope, expressed as 1 in n, gives n = ____.",
+      "answer": 10,
+      "tolerance": 0.1,
+      "solution": "**Concept.** Slope $=\\dfrac{\\text{vertical}}{\\text{horizontal}}$.\n\n**Working.**\n$$\\frac{5}{50}=\\frac{1}{10}\\Rightarrow 1\\text{ in }10$$\n\n**Answer.** n = 10.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "sv-orig-029",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Contour spacing",
+      "difficulty": "easy",
+      "type": "MCQ",
+      "stem": "On a contour plan, contours that are closely spaced indicate",
+      "options": [
+        "flat ground",
+        "steep ground",
+        "a vertical cliff only",
+        "a water body"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Closeness reflects steepness.\n\n**Reasoning.** For a fixed contour interval, closely spaced contours mean a large height change over a short horizontal distance, i.e. a steep slope; widely spaced contours indicate gentle ground.\n\n**Answer.** Steep ground.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "sv-orig-030",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Grade contour",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "A 'grade contour' (contour gradient) marked on the ground is a line that",
+      "options": [
+        "joins points of equal elevation",
+        "maintains a constant specified gradient (slope) along its length",
+        "is always straight",
+        "follows the magnetic meridian"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** A grade line keeps slope constant, not height.\n\n**Reasoning.** Used to lay out haul roads, drains and inclines, the grade contour rises (or falls) at a fixed rate; its plan position is found by stepping a fixed horizontal distance per contour interval.\n\n**Answer.** Constant-gradient line.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "sv-orig-031",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Theodolite",
+      "difficulty": "easy",
+      "type": "MCQ",
+      "stem": "A theodolite is primarily used to measure",
+      "options": [
+        "only horizontal distances",
+        "horizontal and vertical angles accurately",
+        "magnetic declination only",
+        "the calorific value of coal"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** The theodolite is an angle-measuring instrument.\n\n**Reasoning.** It reads horizontal and vertical angles on graduated circles; with stadia or EDM it can also give distances, making it central to traversing and triangulation.\n\n**Answer.** Horizontal and vertical angles.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "sv-orig-032",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Changing face",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "Observing a theodolite angle on both 'face left' and 'face right' and meaning the results",
+      "options": [
+        "doubles the work for no benefit",
+        "eliminates instrumental errors such as line-of-collimation and trunnion-axis errors",
+        "removes magnetic declination",
+        "is required only at night"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Reversing the telescope cancels symmetric errors.\n\n**Reasoning.** Changing face reverses the sign of collimation and trunnion-axis (and horizontal-axis) errors, so their mean is free of these instrumental defects.\n\n**Answer.** Eliminates instrumental errors.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "sv-orig-033",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Vernier least count",
+      "difficulty": "medium",
+      "type": "NAT",
+      "stem": "A theodolite main scale is graduated to 20′ and its vernier has 60 divisions matching 59 main-scale divisions. The least count, in seconds, is ____.",
+      "answer": 20,
+      "tolerance": 0.1,
+      "solution": "**Concept.** Least count $=\\dfrac{\\text{smallest main division}}{\\text{number of vernier divisions}}$.\n\n**Working.**\n$$LC=\\frac{20'}{60}=\\frac{20\\times60''}{60}=20''$$\n\n**Answer.** 20 seconds.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "sv-orig-034",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Theodolite adjustments",
+      "difficulty": "easy",
+      "type": "MCQ",
+      "stem": "The temporary adjustments of a theodolite carried out at each station are",
+      "options": [
+        "centring, levelling and focusing (elimination of parallax)",
+        "manufacturing the graduated circle",
+        "computing the latitudes and departures",
+        "plotting the traverse"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Temporary adjustments precede every observation.\n\n**Reasoning.** The instrument is set over the station (centring), made level (levelling) and the eyepiece/objective focused to remove parallax before angles are read; permanent adjustments concern the instrument's geometry.\n\n**Answer.** Centring, levelling, focusing.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "sv-orig-035",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Traverse",
+      "difficulty": "easy",
+      "type": "MCQ",
+      "stem": "A traverse in surveying is",
+      "options": [
+        "a single levelling staff reading",
+        "a series of connected survey lines whose lengths and directions (or angles) are measured",
+        "a contour line",
+        "the magnetic declination"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** A traverse is a framework of measured lines.\n\n**Reasoning.** Successive stations are connected by lines whose lengths and bearings (or included angles) are observed; coordinates of the stations are then computed.\n\n**Answer.** Connected lines with measured length and direction.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "sv-orig-036",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Closed traverse",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "The main advantage of a closed traverse over an open traverse is that",
+      "options": [
+        "it needs no angle measurement",
+        "it provides a check on the field work because the misclosure can be computed and adjusted",
+        "it is always shorter",
+        "it ignores elevation"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Closure gives an internal check.\n\n**Reasoning.** A closed traverse returns to its start (or to known points), so the angular and linear misclosure can be evaluated and distributed; an open traverse offers no such self-check.\n\n**Answer.** Misclosure can be checked and adjusted.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "sv-orig-037",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Latitude",
+      "difficulty": "easy",
+      "type": "NAT",
+      "stem": "A traverse line is 100 m long with a whole-circle bearing of 30°. Its latitude (N–S component), in m, is ____ (one decimal).",
+      "answer": 86.6,
+      "tolerance": 0.1,
+      "solution": "**Concept.** Latitude $=L\\cos\\theta$.\n\n**Working.**\n$$100\\cos30^{\\circ}=100\\times0.8660=86.6\\ \\text{m}$$\n\n**Answer.** 86.6 m (north).",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "sv-orig-038",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Departure",
+      "difficulty": "easy",
+      "type": "NAT",
+      "stem": "For the same line (length 100 m, bearing 30°), its departure (E–W component), in m, is ____.",
+      "answer": 50,
+      "tolerance": 0.1,
+      "solution": "**Concept.** Departure $=L\\sin\\theta$.\n\n**Working.**\n$$100\\sin30^{\\circ}=100\\times0.5=50\\ \\text{m}$$\n\n**Answer.** 50 m (east).",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "sv-orig-039",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Latitude and departure",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "In traverse computation, the 'latitude' and 'departure' of a line are its projections on the",
+      "options": [
+        "vertical and horizontal planes respectively",
+        "north–south and east–west axes respectively",
+        "magnetic and true meridians respectively",
+        "fore and back bearings respectively"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** They resolve a line into rectangular components.\n\n**Reasoning.** Latitude $=L\\cos\\theta$ is the N–S projection (N positive) and departure $=L\\sin\\theta$ is the E–W projection (E positive); summing them gives coordinate differences.\n\n**Answer.** N–S and E–W axes.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "sv-orig-040",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Closing error",
+      "difficulty": "medium",
+      "type": "NAT",
+      "stem": "In a closed traverse the algebraic sum of latitudes is +0.30 m and the sum of departures is +0.40 m. The linear closing error, in m, is ____ (two decimals).",
+      "answer": 0.5,
+      "tolerance": 0.005,
+      "solution": "**Concept.** Closing error $=\\sqrt{(\\sum L)^2+(\\sum D)^2}$.\n\n**Working.**\n$$e=\\sqrt{0.30^2+0.40^2}=\\sqrt{0.09+0.16}=\\sqrt{0.25}=0.50\\ \\text{m}$$\n\n**Answer.** 0.50 m.",
+      "archetype": "D",
+      "marks": 2
+    },
+    {
+      "id": "sv-orig-041",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Bowditch rule",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "The Bowditch (compass) rule for adjusting a traverse distributes the closing error in proportion to the",
+      "options": [
+        "length of each traverse line",
+        "magnitude of each latitude only",
+        "interior angle at each station",
+        "elevation of each station"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Bowditch assumes errors proportional to length.\n\n**Reasoning.** Correction to a line's latitude (or departure) $=$ total error $\\times\\dfrac{\\text{line length}}{\\text{perimeter}}$; it suits work where angular and linear precision are comparable.\n\n**Answer.** Length of each line.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "sv-orig-042",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Transit rule",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "The transit rule for traverse adjustment distributes the closing error in proportion to the",
+      "options": [
+        "length of each line",
+        "magnitude of the latitude (or departure) of each line",
+        "interior angles",
+        "number of stations"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Transit weights by component magnitude.\n\n**Reasoning.** Correction to a latitude $=$ total latitude error $\\times\\dfrac{|\\text{latitude of line}|}{\\sum|\\text{latitudes}|}$ (similarly for departures); it is preferred when angular measurements are more precise than linear ones.\n\n**Answer.** Magnitude of latitude/departure.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "sv-orig-043",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Bowditch correction",
+      "difficulty": "medium",
+      "type": "NAT",
+      "stem": "A closed traverse has a perimeter of 1000 m and a latitude misclosure of 0.20 m. Using Bowditch's rule, the latitude correction for a line of length 200 m, in m, is ____ (two decimals).",
+      "answer": 0.04,
+      "tolerance": 0.005,
+      "solution": "**Concept.** Correction $=$ error $\\times\\dfrac{\\text{line length}}{\\text{perimeter}}$.\n\n**Working.**\n$$0.20\\times\\frac{200}{1000}=0.20\\times0.2=0.04\\ \\text{m}$$\n\n**Answer.** 0.04 m.",
+      "archetype": "D",
+      "marks": 2
+    },
+    {
+      "id": "sv-orig-044",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Relative error",
+      "difficulty": "medium",
+      "type": "NAT",
+      "stem": "A closed traverse of perimeter 1000 m has a linear closing error of 0.50 m. Its relative error of closure expressed as 1 in n gives n = ____.",
+      "answer": 2000,
+      "tolerance": 1,
+      "solution": "**Concept.** Relative error $=\\dfrac{e}{\\text{perimeter}}$.\n\n**Working.**\n$$\\frac{0.50}{1000}=\\frac{1}{2000}\\Rightarrow 1\\text{ in }2000$$\n\n**Answer.** n = 2000.",
+      "archetype": "D",
+      "marks": 2
+    },
+    {
+      "id": "sv-orig-045",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Gale's table",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "Gale's traverse table is used to",
+      "options": [
+        "compute the calorific value of coal",
+        "systematically compute latitudes, departures, corrections and independent coordinates of traverse stations",
+        "measure magnetic declination",
+        "set out circular curves"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Gale's table organises traverse computation.\n\n**Reasoning.** It tabulates each line's length, bearing, latitude, departure, corrections (Bowditch/transit) and the running (independent) coordinates, providing a clear computation and closure check.\n\n**Answer.** Tabular traverse computation.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "sv-orig-046",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Independent coordinates",
+      "difficulty": "medium",
+      "type": "NAT",
+      "stem": "A station has coordinates N = 1000.0 m, E = 1000.0 m. A line to the next station has latitude +86.6 m and departure +50.0 m. The northing of the next station, in m, is ____ (one decimal).",
+      "answer": 1086.6,
+      "tolerance": 0.1,
+      "solution": "**Concept.** New northing $=$ old northing $+$ latitude.\n\n**Working.**\n$$1000.0+86.6=1086.6\\ \\text{m}$$\n\n**Answer.** 1086.6 m.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "sv-orig-047",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Independent coordinates",
+      "difficulty": "medium",
+      "type": "NAT",
+      "stem": "For the line in the previous problem (departure +50.0 m), the easting of the next station, in m, is ____ (one decimal).",
+      "answer": 1050,
+      "tolerance": 0.1,
+      "solution": "**Concept.** New easting $=$ old easting $+$ departure.\n\n**Working.**\n$$1000.0+50.0=1050.0\\ \\text{m}$$\n\n**Answer.** 1050.0 m.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "sv-orig-048",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Traverse check",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "For a perfectly balanced closed-loop traverse, the algebraic sums of latitudes and of departures should each equal",
+      "options": [
+        "the perimeter",
+        "zero",
+        "the area",
+        "180°"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** A loop returns to its origin.\n\n**Reasoning.** Since the traverse closes on its starting point, the net north–south travel and the net east–west travel are both zero; non-zero sums are the misclosure to be adjusted.\n\n**Answer.** Zero.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "sv-orig-049",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Tacheometry",
+      "difficulty": "easy",
+      "type": "MCQ",
+      "stem": "Tacheometry (stadia surveying) is used to determine",
+      "options": [
+        "only magnetic bearings",
+        "horizontal distances and elevations rapidly using the staff intercept between stadia hairs, without chaining",
+        "the calorific value of coal",
+        "subsidence above a panel"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Stadia replaces chaining by optical distance.\n\n**Reasoning.** The intercept of the staff between the upper and lower stadia hairs, combined with the vertical angle, gives both horizontal distance and difference in elevation; it is fast over rough ground.\n\n**Answer.** Distances and elevations from staff intercept.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "sv-orig-050",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Stadia distance",
+      "difficulty": "easy",
+      "type": "NAT",
+      "stem": "A tacheometer has multiplying constant K = 100 and additive constant C = 0. For a horizontal sight with a staff intercept of 0.50 m, the horizontal distance, in m, is ____.",
+      "answer": 50,
+      "tolerance": 0.1,
+      "solution": "**Concept.** $D=Ks+C$ for a horizontal sight.\n\n**Working.**\n$$D=100\\times0.50+0=50\\ \\text{m}$$\n\n**Answer.** 50 m.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "sv-orig-051",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Stadia distance",
+      "difficulty": "easy",
+      "type": "NAT",
+      "stem": "With K = 100, C = 0 and a horizontal staff intercept of 1.20 m, the horizontal distance, in m, is ____.",
+      "answer": 120,
+      "tolerance": 0.1,
+      "solution": "**Concept.** $D=Ks+C$.\n\n**Working.**\n$$D=100\\times1.20=120\\ \\text{m}$$\n\n**Answer.** 120 m.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "sv-orig-052",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Stadia constants",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "For a modern internal-focusing tacheometer, the stadia constants are usually",
+      "options": [
+        "K ≈ 100 (multiplying) and C ≈ 0 (additive)",
+        "K = 0 and C = 100",
+        "K = 1 and C = 1",
+        "both equal to the focal length"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Constants are set by the stadia hair spacing and optics.\n\n**Reasoning.** The multiplying constant $K=f/i\\approx100$; internal focusing makes the additive constant $C\\approx0$, simplifying $D=Ks$.\n\n**Answer.** K ≈ 100, C ≈ 0.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "sv-orig-053",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Inclined stadia",
+      "difficulty": "medium",
+      "type": "NAT",
+      "stem": "A stadia sight is inclined at 10° to the horizontal. With K = 100, C = 0 and staff intercept 1.00 m, the horizontal distance, in m, is ____ (two decimals).",
+      "answer": 96.98,
+      "tolerance": 0.1,
+      "solution": "**Concept.** $D=Ks\\cos^{2}\\theta$ for an inclined sight.\n\n**Working.**\n$$D=100\\times1.00\\times\\cos^{2}10^{\\circ}=100\\times0.9698=96.98\\ \\text{m}$$\n\n**Answer.** 96.98 m.",
+      "archetype": "D",
+      "marks": 2
+    },
+    {
+      "id": "sv-orig-054",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Circular curve",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "For a simple circular curve, the tangent length, length of curve and apex (intersection) angle are related to the",
+      "options": [
+        "magnetic declination",
+        "radius R and the deflection (intersection) angle Δ",
+        "contour interval",
+        "staff intercept"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Curve geometry depends on R and Δ.\n\n**Reasoning.** Tangent length $T=R\\tan(\\Delta/2)$ and curve length $L=R\\Delta_{rad}$; the deflection angle Δ between the two tangents and the radius R fully define the simple curve.\n\n**Answer.** R and Δ.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "sv-orig-055",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Tangent length",
+      "difficulty": "medium",
+      "type": "NAT",
+      "stem": "A simple circular curve has radius 200 m and deflection angle 60°. The tangent length, in m, is ____ (two decimals).",
+      "answer": 115.47,
+      "tolerance": 0.1,
+      "solution": "**Concept.** $T=R\\tan(\\Delta/2)$.\n\n**Working.**\n$$T=200\\tan30^{\\circ}=200\\times0.5774=115.47\\ \\text{m}$$\n\n**Answer.** 115.47 m.",
+      "archetype": "D",
+      "marks": 2
+    },
+    {
+      "id": "sv-orig-056",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Curve length",
+      "difficulty": "medium",
+      "type": "NAT",
+      "stem": "For the same curve (R = 200 m, Δ = 60°), the length of the curve, in m, is ____ (two decimals).",
+      "answer": 209.44,
+      "tolerance": 0.2,
+      "solution": "**Concept.** $L=R\\,\\Delta$ with Δ in radians.\n\n**Working.**\n$$L=200\\times\\frac{60\\pi}{180}=200\\times1.0472=209.44\\ \\text{m}$$\n\n**Answer.** 209.44 m.",
+      "archetype": "D",
+      "marks": 2
+    },
+    {
+      "id": "sv-orig-057",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Degree of curve",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "The 'degree of a curve' is defined as the angle subtended at the centre by a",
+      "options": [
+        "tangent of unit length",
+        "standard arc (or chord) length such as 30 m",
+        "vertical of 1 m",
+        "full circle"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Degree of curve is an alternative to radius.\n\n**Reasoning.** It is the central angle for a standard arc (30 m in metric practice); a sharper curve (smaller R) has a larger degree. $R=\\dfrac{1718.9}{D}$ for a 30 m arc.\n\n**Answer.** Central angle for a standard arc/chord.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "sv-orig-058",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Degree of curve",
+      "difficulty": "medium",
+      "type": "NAT",
+      "stem": "Using the 30 m arc definition, a curve of degree 4° has a radius, in m, of ____ (two decimals).",
+      "answer": 429.72,
+      "tolerance": 0.5,
+      "solution": "**Concept.** $R=\\dfrac{1718.87}{D}$ (30 m arc).\n\n**Working.**\n$$R=\\frac{1718.87}{4}=429.72\\ \\text{m}$$\n\n**Answer.** 429.72 m.",
+      "archetype": "D",
+      "marks": 2
+    },
+    {
+      "id": "sv-orig-059",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Transition curve",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "A transition (easement) curve is introduced between a straight and a circular curve mainly to",
+      "options": [
+        "increase the magnetic declination",
+        "gradually change the curvature and introduce superelevation, avoiding sudden lateral acceleration",
+        "shorten the alignment",
+        "remove the need for a theodolite"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Curvature must not jump from zero to 1/R.\n\n**Reasoning.** The transition curve gives a radius decreasing gradually from infinity to R, so centrifugal force and superelevation build up smoothly, improving comfort and safety on haul roads/rail.\n\n**Answer.** Gradual curvature and superelevation.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "sv-orig-060",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Setting out curves",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "Rankine's method of setting out a circular curve uses",
+      "options": [
+        "offsets from the long chord only",
+        "tangential (deflection) angles measured with a theodolite and chord lengths taped on the ground",
+        "levelling staff readings",
+        "GPS only"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Deflection angles locate successive chord points.\n\n**Reasoning.** Each chord subtends a tangential angle $\\delta=\\dfrac{1718.9\\,C}{R}$ minutes; the theodolite is set to cumulative deflection angles while the chord length is taped, fixing points on the curve.\n\n**Answer.** Deflection (tangential) angle method.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "sv-orig-061",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Area computation",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "The area of an irregular figure bounded by offsets taken at regular intervals along a base line is commonly found by",
+      "options": [
+        "the trapezoidal rule or Simpson's rule",
+        "the Bowditch rule",
+        "the rise-and-fall method",
+        "magnetic bearing comparison"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Numerical integration of offsets gives area.\n\n**Reasoning.** Treating the boundary between offsets as straight gives the trapezoidal rule; as a parabola gives Simpson's rule (more accurate for curved boundaries, needs even number of intervals).\n\n**Answer.** Trapezoidal / Simpson's rule.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "sv-orig-062",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Trapezoidal rule",
+      "difficulty": "medium",
+      "type": "NAT",
+      "stem": "Offsets 0, 2, 4, 3, 0 m are taken at a regular interval of 10 m. By the trapezoidal rule the enclosed area, in m², is ____.",
+      "answer": 90,
+      "tolerance": 0.5,
+      "solution": "**Concept.** $A=d\\left[\\dfrac{o_1+o_n}{2}+\\sum o_{mid}\\right]$.\n\n**Working.**\n$$A=10\\left[\\frac{0+0}{2}+(2+4+3)\\right]=10\\times9=90\\ \\text{m}^2$$\n\n**Answer.** 90 m².",
+      "archetype": "D",
+      "marks": 2
+    },
+    {
+      "id": "sv-orig-063",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Simpson's rule",
+      "difficulty": "medium",
+      "type": "NAT",
+      "stem": "For the same offsets (0, 2, 4, 3, 0 m at 10 m interval), Simpson's rule gives an area, in m², of ____ (two decimals).",
+      "answer": 93.33,
+      "tolerance": 0.2,
+      "solution": "**Concept.** $A=\\dfrac{d}{3}\\left[o_1+o_n+4\\sum o_{odd}+2\\sum o_{even}\\right]$.\n\n**Working.**\n$$A=\\frac{10}{3}\\big[(0+0)+4(2+3)+2(4)\\big]=\\frac{10}{3}(28)=93.33\\ \\text{m}^2$$\n\n**Answer.** 93.33 m².",
+      "archetype": "D",
+      "marks": 2
+    },
+    {
+      "id": "sv-orig-064",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Simpson's rule",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "Simpson's one-third rule for area requires that the number of divisions (intervals) be",
+      "options": [
+        "odd, with equal spacing",
+        "even, with equal spacing (i.e. an odd number of ordinates)",
+        "any number, with unequal spacing",
+        "exactly three"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Parabolic fitting pairs the strips.\n\n**Reasoning.** The rule fits a parabola over each pair of strips, so the number of intervals must be even (ordinates odd) and the spacing equal; otherwise the last strip is handled separately.\n\n**Answer.** Even number of equal intervals.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "sv-orig-065",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Area by coordinates",
+      "difficulty": "medium",
+      "type": "NAT",
+      "stem": "A triangular plot has corner coordinates (0, 0), (40, 0) and (0, 30) m. Its area by the coordinate (cross-product) method, in m², is ____.",
+      "answer": 600,
+      "tolerance": 1,
+      "solution": "**Concept.** $A=\\tfrac12|x_1(y_2-y_3)+x_2(y_3-y_1)+x_3(y_1-y_2)|$.\n\n**Working.**\n$$A=\\tfrac12|0(0-30)+40(30-0)+0(0-0)|=\\tfrac12(1200)=600\\ \\text{m}^2$$\n\n**Answer.** 600 m².",
+      "archetype": "D",
+      "marks": 2
+    },
+    {
+      "id": "sv-orig-066",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Volume — end area",
+      "difficulty": "medium",
+      "type": "NAT",
+      "stem": "Two cross-sections 30 m apart have areas 20 m² and 40 m². By the average end-area (trapezoidal) method the volume, in m³, is ____.",
+      "answer": 900,
+      "tolerance": 1,
+      "solution": "**Concept.** $V=\\dfrac{L}{2}(A_1+A_2)$.\n\n**Working.**\n$$V=\\frac{30}{2}(20+40)=15\\times60=900\\ \\text{m}^3$$\n\n**Answer.** 900 m³.",
+      "archetype": "D",
+      "marks": 2
+    },
+    {
+      "id": "sv-orig-067",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Volume — prismoidal",
+      "difficulty": "hard",
+      "type": "NAT",
+      "stem": "Cross-sections at the two ends (30 m apart) have areas 20 m² and 40 m², and the mid-section area is 32 m². By the prismoidal formula the volume, in m³, is ____.",
+      "answer": 940,
+      "tolerance": 1,
+      "solution": "**Concept.** $V=\\dfrac{L}{6}(A_1+4A_m+A_2)$.\n\n**Working.**\n$$V=\\frac{30}{6}\\big(20+4(32)+40\\big)=5(188)=940\\ \\text{m}^3$$\n\n**Answer.** 940 m³.",
+      "archetype": "D",
+      "marks": 2
+    },
+    {
+      "id": "sv-orig-068",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Prismoidal correction",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "The prismoidal correction applied to an earthwork volume",
+      "options": [
+        "increases the end-area volume to a larger value always",
+        "adjusts the (usually larger) end-area volume to the more accurate prismoidal volume",
+        "converts area to length",
+        "is the same as the closing error"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** End-area overestimates for non-linear sections.\n\n**Reasoning.** The trapezoidal (end-area) method generally gives a slightly larger volume than the true prismoid; the prismoidal correction is subtracted to obtain the accurate volume.\n\n**Answer.** Refines end-area to prismoidal volume.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "sv-orig-069",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Gradient",
+      "difficulty": "easy",
+      "type": "MCQ",
+      "stem": "A gradient of '1 in 50' means the ground (or roadway)",
+      "options": [
+        "rises or falls 1 unit vertically for every 50 units horizontally",
+        "turns through 50°",
+        "has a radius of 50 m",
+        "has 50 contours"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Gradient is a vertical-to-horizontal ratio.\n\n**Reasoning.** '1 in 50' = $\\tfrac{1}{50}$ rise per unit horizontal distance ($=2\\%$); steeper grades have smaller n.\n\n**Answer.** 1 vertical per 50 horizontal.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "sv-orig-070",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Gradient",
+      "difficulty": "easy",
+      "type": "NAT",
+      "stem": "A roadway rises 3 m over a horizontal distance of 150 m. Its gradient expressed as 1 in n gives n = ____.",
+      "answer": 50,
+      "tolerance": 0.1,
+      "solution": "**Concept.** $n=\\dfrac{\\text{horizontal}}{\\text{vertical}}$.\n\n**Working.**\n$$n=\\frac{150}{3}=50\\Rightarrow 1\\text{ in }50$$\n\n**Answer.** n = 50.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "sv-orig-071",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Gradient",
+      "difficulty": "easy",
+      "type": "NAT",
+      "stem": "A grade rises 4 m over 100 m horizontal. Expressed as a percentage, the gradient, in %, is ____.",
+      "answer": 4,
+      "tolerance": 0.1,
+      "solution": "**Concept.** Percentage gradient $=\\dfrac{\\text{rise}}{\\text{horizontal}}\\times100$.\n\n**Working.**\n$$\\frac{4}{100}\\times100=4\\%$$\n\n**Answer.** 4 %.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "sv-orig-072",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Circular curve elements",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "In the figure, two straights meet at the intersection point I with deflection angle Δ, and a circular curve of radius R joins them at the tangent points T1 and T2. The distance from a tangent point to I is the",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox='0 0 320 200' xmlns='http://www.w3.org/2000/svg'><line x1='20' y1='160' x2='160' y2='55' stroke='#333' stroke-width='2'/><line x1='160' y1='55' x2='300' y2='160' stroke='#333' stroke-width='2'/><path d='M 70 160 A 150 150 0 0 1 250 160' fill='none' stroke='#1aa179' stroke-width='3'/><circle cx='160' cy='55' r='3' fill='#000'/><text x='150' y='45' font-size='12'>I</text><text x='40' y='175' font-size='12'>T1</text><text x='255' y='175' font-size='12'>T2</text><text x='120' y='195' font-size='11'>deflection angle &#916;</text></svg>",
+        "caption": "Simple circular curve between two straights"
+      },
+      "options": [
+        "length of the curve",
+        "tangent length, T = R·tan(Δ/2)",
+        "mid-ordinate",
+        "external distance only"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Tangent length runs from tangent point to intersection.\n\n**Reasoning.** $T1I=T2I=R\\tan(\\Delta/2)$ is the tangent length; the curve length is $R\\Delta_{rad}$, the mid-ordinate and external distance are separate elements.\n\n**Answer.** Tangent length $R\\tan(\\Delta/2)$.",
+      "archetype": "C",
+      "marks": 1
+    },
+    {
+      "id": "sv-orig-073",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Underground surveying",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "Compared with surface surveying, underground mine surveying is more difficult chiefly because of",
+      "options": [
+        "the absence of any need for accuracy",
+        "cramped workings, artificial lighting, short and steeply inclined sights, and stations fixed in the roof",
+        "the unavailability of theodolites",
+        "the lack of any datum"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** The working environment constrains observation.\n\n**Reasoning.** Restricted space, poor light, dust, short/inclined lines of sight and roof-mounted stations all complicate underground work; orientation must also be carried down a shaft.\n\n**Answer.** Confined, poorly lit conditions with roof stations.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "sv-orig-074",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Correlation survey",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "A correlation (orientation) survey in mining is carried out to",
+      "options": [
+        "measure the calorific value of coal",
+        "transfer coordinates and the bearing (orientation) from the surface survey down a shaft to the underground workings",
+        "adjust a closed traverse only",
+        "set out a circular curve"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Surface and underground surveys must share one framework.\n\n**Reasoning.** Correlation establishes the position and azimuth of an underground line relative to the surface grid by transferring coordinates and bearing down the shaft (plumb wires, gyro-theodolite, etc.).\n\n**Answer.** Transfer of coordinates and bearing down the shaft.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "sv-orig-075",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Shaft plumbing",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "In the wire (plumb-line) method of shaft plumbing, two plumb wires are hung down the shaft mainly to",
+      "options": [
+        "measure the shaft depth only",
+        "define a vertical plane whose direction can be transferred to fix the orientation of the underground survey",
+        "ventilate the shaft",
+        "support the cage"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Two wires define a reference direction underground.\n\n**Reasoning.** The two suspended wires establish a vertical plane; its azimuth, known on the surface, is connected to an underground theodolite station (often via a Weisbach triangle) to orient the workings.\n\n**Answer.** Establish a reference direction (vertical plane).",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "sv-orig-076",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Weisbach triangle",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "The Weisbach triangle method of shaft correlation places the theodolite",
+      "options": [
+        "exactly on the line of the two plumb wires",
+        "slightly off the line joining the two wires, forming a long, narrow triangle with a very small angle at the instrument",
+        "on the surface only",
+        "at the shaft bottom centre"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** A small offset angle is measured precisely.\n\n**Reasoning.** Because the instrument cannot sit exactly on the wire line, it is set a little off, forming a very acute triangle; the tiny angle at the instrument is computed by the sine rule to bring the underground line onto the wire-plane direction.\n\n**Answer.** Slightly off the wire line (narrow triangle).",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "sv-orig-077",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Gyro-theodolite",
+      "difficulty": "easy",
+      "type": "NAT",
+      "stem": "A gyro-theodolite gives the gyro azimuth of a reference line as 95°30′. The instrument calibration (E) correction is −0°30′. The true azimuth, in degrees, is ____.",
+      "answer": 95,
+      "tolerance": 0.05,
+      "solution": "**Concept.** True azimuth $=$ gyro azimuth $+$ calibration correction.\n\n**Working.**\n$$95^{\\circ}30'+(-0^{\\circ}30')=95^{\\circ}00'$$\n\n**Answer.** 95°.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "sv-orig-078",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Gyro-theodolite",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "The chief advantage of a gyro-theodolite for underground orientation is that it",
+      "options": [
+        "needs no power",
+        "determines true (geographic) north independently of the earth's magnetic field, so it is unaffected by steelwork",
+        "measures distance directly",
+        "replaces levelling"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** A spinning gyro seeks the meridian.\n\n**Reasoning.** It finds true north from the earth's rotation, free of magnetic disturbance from rails, supports and cables, giving azimuth underground without long correlation traverses.\n\n**Answer.** True north, immune to magnetic interference.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "sv-orig-079",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Magnetic methods underground",
+      "difficulty": "easy",
+      "type": "MCQ",
+      "stem": "A magnetic compass is generally unreliable for underground mine surveying because",
+      "options": [
+        "magnetism does not exist underground",
+        "steel arches, rails, cables and machinery cause strong local attraction that deflects the needle",
+        "the compass cannot be levelled",
+        "bearings are not needed underground"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Ferromagnetic material distorts the field.\n\n**Reasoning.** Abundant steel and electrical equipment underground produce local attraction, making compass bearings erratic; theodolite traversing or gyro orientation is used instead.\n\n**Answer.** Local attraction from steelwork.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "sv-orig-080",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Triangulation — sine rule",
+      "difficulty": "medium",
+      "type": "NAT",
+      "stem": "In a triangulation triangle, side a = 100 m lies opposite angle A = 30°, and angle B = 90°. The length of side b (opposite B), in m, is ____.",
+      "answer": 200,
+      "tolerance": 0.5,
+      "solution": "**Concept.** Sine rule: $\\dfrac{a}{\\sin A}=\\dfrac{b}{\\sin B}$.\n\n**Working.**\n$$b=a\\,\\frac{\\sin B}{\\sin A}=100\\times\\frac{\\sin90^{\\circ}}{\\sin30^{\\circ}}=100\\times\\frac{1}{0.5}=200\\ \\text{m}$$\n\n**Answer.** 200 m.",
+      "archetype": "D",
+      "marks": 2
+    },
+    {
+      "id": "sv-orig-081",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Triangulation",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "Triangulation as a method of horizontal control depends on measuring",
+      "options": [
+        "all the sides by chaining",
+        "the angles of a network of triangles together with at least one precisely measured baseline",
+        "only the elevations",
+        "the magnetic bearings only"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Angles plus a baseline fix the network.\n\n**Reasoning.** With one measured baseline and the observed angles, the sine rule yields all other sides; redundant angles provide checks. It was the classic method for extensive control.\n\n**Answer.** Angles + one measured baseline.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "sv-orig-082",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Well-conditioned triangle",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "A 'well-conditioned' triangle in triangulation is one in which",
+      "options": [
+        "one angle is nearly 0°",
+        "no angle is too small or too large (angles roughly between 30° and 120°, ideally near 60°)",
+        "all sides are unequal and very different",
+        "it contains a right angle exactly"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Conditioning controls error propagation.\n\n**Reasoning.** Computed side lengths are least sensitive to angular error when angles are moderate; very acute or very obtuse triangles magnify errors, so angles near 60° are preferred.\n\n**Answer.** Angles ≈ 30°–120° (near equilateral).",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "sv-orig-083",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Baseline",
+      "difficulty": "easy",
+      "type": "MCQ",
+      "stem": "The baseline in a triangulation system is",
+      "options": [
+        "any roughly measured line",
+        "a line measured with high precision from which all other distances in the network are computed",
+        "the contour of zero elevation",
+        "the magnetic meridian"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** The baseline scales the whole network.\n\n**Reasoning.** Since only angles are observed elsewhere, the single precisely measured baseline provides the scale; an error in it propagates throughout, so it is measured with great care.\n\n**Answer.** Precisely measured reference line.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "sv-orig-084",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Most probable value",
+      "difficulty": "easy",
+      "type": "NAT",
+      "stem": "An angle is measured three times: 30°10′, 30°12′ and 30°14′. The most probable value is 30° m′; the minutes part m, in minutes, is ____.",
+      "answer": 12,
+      "tolerance": 0.1,
+      "solution": "**Concept.** For equal-weight observations the MPV is the arithmetic mean.\n\n**Working.**\n$$\\bar{m}=\\frac{10+12+14}{3}=12'\\Rightarrow 30^{\\circ}12'$$\n\n**Answer.** 12′.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "sv-orig-085",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Classification of errors",
+      "difficulty": "medium",
+      "type": "MSQ",
+      "stem": "Which of the following are recognised classes of errors in surveying observations? (Select all that apply.)",
+      "options": [
+        "Gross errors (mistakes / blunders)",
+        "Systematic (cumulative) errors",
+        "Random (accidental, compensating) errors",
+        "Magnetic declination"
+      ],
+      "answer": [0, 1, 2],
+      "solution": "**Concept.** Errors are gross, systematic or random.\n\n**Reasoning.** Blunders are mistakes to be detected and removed; systematic errors follow a law and are cumulative (correctable); random errors are small, compensating and treated statistically. Magnetic declination is a known correction, not a class of error.\n\n**Answer.** Gross, systematic and random.",
+      "archetype": "A",
+      "marks": 2
+    },
+    {
+      "id": "sv-orig-086",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Systematic error",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "A systematic error such as using a tape that is uniformly too long is characterised by being",
+      "options": [
+        "random in sign and self-compensating",
+        "of constant sign, cumulative, and removable by calibration/correction",
+        "a simple blunder",
+        "unrelated to the measurement"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Systematic errors follow a definite law.\n\n**Reasoning.** They have the same sign each time and accumulate with the number of measurements; once the cause is known (e.g. tape length) a correction removes them.\n\n**Answer.** Constant sign, cumulative, correctable.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "sv-orig-087",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Random error",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "Random (accidental) errors in a set of observations are best reduced by",
+      "options": [
+        "applying a fixed correction",
+        "taking many observations and using their mean, since they tend to cancel",
+        "ignoring them entirely",
+        "changing the datum"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Random errors obey the laws of probability.\n\n**Reasoning.** Being equally likely positive or negative and small, they partly cancel; the mean of many observations is more precise, with the standard error decreasing as $1/\\sqrt{n}$.\n\n**Answer.** Average many observations.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "sv-orig-088",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Precision of the mean",
+      "difficulty": "medium",
+      "type": "NAT",
+      "stem": "A single observation has a standard deviation of 10 mm. The standard deviation of the mean of 4 independent observations, in mm, is ____.",
+      "answer": 5,
+      "tolerance": 0.1,
+      "solution": "**Concept.** $\\sigma_{\\bar{x}}=\\dfrac{\\sigma}{\\sqrt{n}}$.\n\n**Working.**\n$$\\sigma_{\\bar{x}}=\\frac{10}{\\sqrt{4}}=\\frac{10}{2}=5\\ \\text{mm}$$\n\n**Answer.** 5 mm.",
+      "archetype": "D",
+      "marks": 2
+    },
+    {
+      "id": "sv-orig-089",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "EDM",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "Electronic distance measurement (EDM) determines distance by",
+      "options": [
+        "counting chain links",
+        "measuring the travel time or phase difference of modulated electromagnetic waves between instrument and reflector",
+        "reading a levelling staff",
+        "observing the magnetic field"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** EDM uses wave propagation.\n\n**Reasoning.** A modulated light/infrared (or microwave) signal travels to a reflector and back; the phase shift or transit time gives the distance very accurately and quickly.\n\n**Answer.** Phase/time of EM waves.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "sv-orig-090",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Total station",
+      "difficulty": "easy",
+      "type": "MCQ",
+      "stem": "A total station is an instrument that combines",
+      "options": [
+        "a level and a plumb bob only",
+        "an electronic theodolite (angles), an EDM (distances) and a microprocessor that computes coordinates",
+        "a compass and a chain",
+        "a GPS receiver and a barometer"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** The total station integrates angle, distance and computation.\n\n**Reasoning.** It measures horizontal and vertical angles and slope distance, then computes and stores horizontal distance, elevation and 3-D coordinates of the point, with on-board data recording.\n\n**Answer.** Theodolite + EDM + processor.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "sv-orig-091",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Slope to horizontal distance",
+      "difficulty": "medium",
+      "type": "NAT",
+      "stem": "A total station measures a slope distance of 100.0 m at a vertical angle of 30°. The horizontal distance, in m, is ____ (one decimal).",
+      "answer": 86.6,
+      "tolerance": 0.1,
+      "solution": "**Concept.** Horizontal distance $=$ slope distance $\\times\\cos(\\text{vertical angle})$.\n\n**Working.**\n$$H=100.0\\cos30^{\\circ}=100.0\\times0.8660=86.6\\ \\text{m}$$\n\n**Answer.** 86.6 m.",
+      "archetype": "D",
+      "marks": 2
+    },
+    {
+      "id": "sv-orig-092",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "GNSS",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "A GNSS/GPS receiver fixes its three-dimensional position by",
+      "options": [
+        "measuring magnetic bearings to towers",
+        "trilateration from the ranges to at least four satellites of known position",
+        "levelling from a bench mark",
+        "reading stadia intercepts"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Satellite ranging by trilateration.\n\n**Reasoning.** The receiver measures pseudo-ranges to several satellites; four are needed to solve for the three position coordinates plus the receiver clock error.\n\n**Answer.** Trilateration from ≥4 satellites.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "sv-orig-093",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "DGPS / RTK",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "Differential GPS (DGPS / RTK) improves positioning accuracy by",
+      "options": [
+        "using only one satellite",
+        "using a reference (base) station at a known point to compute and broadcast corrections that the rover applies",
+        "switching off the ionospheric model",
+        "averaging magnetic bearings"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Correlated errors cancel between nearby receivers.\n\n**Reasoning.** A base on a known point determines the range errors and sends corrections to the rover; common errors (orbit, clock, atmosphere) largely cancel, giving cm–dm accuracy (RTK to cm).\n\n**Answer.** Base-station corrections to the rover.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "sv-orig-094",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "GIS",
+      "difficulty": "easy",
+      "type": "MCQ",
+      "stem": "A Geographic Information System (GIS) is primarily a system to",
+      "options": [
+        "drill exploration boreholes",
+        "capture, store, analyse and display spatially referenced (geographic) data in layers",
+        "measure only vertical angles",
+        "blast rock"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** GIS handles spatial data.\n\n**Reasoning.** It integrates geometry with attributes in layers, enabling spatial query, overlay and analysis for mine planning, lease management, environmental and infrastructure studies.\n\n**Answer.** Manage and analyse geographic data.",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "sv-orig-095",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Geomatics techniques",
+      "difficulty": "medium",
+      "type": "MSQ",
+      "stem": "Which of the following are modern geomatics techniques used to obtain position or spatial data? (Select all that apply.)",
+      "options": [
+        "Total station surveying",
+        "Global Navigation Satellite System (GNSS)",
+        "Photogrammetry and remote sensing",
+        "Bowditch's rule"
+      ],
+      "answer": [0, 1, 2],
+      "solution": "**Concept.** Geomatics covers instruments and platforms that acquire spatial data.\n\n**Reasoning.** Total stations, GNSS and photogrammetry/remote sensing all yield positional or spatial information. Bowditch's rule is a traverse-adjustment computation, not a data-acquisition technique.\n\n**Answer.** Total station, GNSS, photogrammetry/remote sensing.",
+      "archetype": "A",
+      "marks": 2
+    },
+    {
+      "id": "sv-orig-096",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Traverse — closing error",
+      "difficulty": "medium",
+      "type": "NAT",
+      "stem": "For the closed traverse shown, the algebraic sums of latitudes and departures are $\\sum L=+0.3$ m and $\\sum D=-0.4$ m. The linear closing error, in m, is _____ (two decimals).",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox='0 0 220 200' xmlns='http://www.w3.org/2000/svg'><polygon points='40,160 160,160 180,80 90,40 30,90' fill='none' stroke='#2563eb' stroke-width='2'/><g fill='#1f2937'><circle cx='40' cy='160' r='3'/><circle cx='160' cy='160' r='3'/><circle cx='180' cy='80' r='3'/><circle cx='90' cy='40' r='3'/><circle cx='30' cy='90' r='3'/></g><text x='32' y='176' font-size='10'>A</text><text x='158' y='176' font-size='10'>B</text><text x='186' y='82' font-size='10'>C</text><text x='86' y='34' font-size='10'>D</text><text x='14' y='92' font-size='10'>E</text></svg>",
+        "caption": "Closed traverse ABCDE"
+      },
+      "options": [],
+      "answer": 0.5,
+      "tolerance": 0.01,
+      "solution": "**Concept.** Closing error $e=\\sqrt{(\\sum L)^2+(\\sum D)^2}$.\n\n**Working.**\n$$e=\\sqrt{0.3^2+(-0.4)^2}=\\sqrt{0.09+0.16}=\\sqrt{0.25}=0.5\\ \\text{m}$$\n\n**Answer.** $0.5$ m.",
+      "archetype": "C",
+      "marks": 2
+    },
+    {
+      "id": "sv-orig-097",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Levelling — reduced level",
+      "difficulty": "medium",
+      "type": "NAT",
+      "stem": "In the levelling setup shown, the reduced level of A is 100.000 m, the back sight on A is 1.500 m and the fore sight on B is 2.300 m. The reduced level of B, in m, is _____ (three decimals).",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox='0 0 260 160' xmlns='http://www.w3.org/2000/svg'><line x1='10' y1='140' x2='250' y2='140' stroke='#475569'/><line x1='130' y1='70' x2='130' y2='90' stroke='#1f2937' stroke-width='2'/><circle cx='130' cy='68' r='5' fill='#475569'/><text x='116' y='60' font-size='9'>level</text><line x1='40' y1='90' x2='40' y2='140' stroke='#dc2626' stroke-width='2'/><text x='30' y='84' font-size='9' fill='#dc2626'>A</text><text x='44' y='112' font-size='9'>BS 1.5</text><line x1='220' y1='80' x2='220' y2='140' stroke='#2563eb' stroke-width='2'/><text x='212' y='74' font-size='9' fill='#2563eb'>B</text><text x='176' y='112' font-size='9'>FS 2.3</text><line x1='40' y1='90' x2='220' y2='80' stroke='#94a3b8' stroke-dasharray='3 3'/></svg>",
+        "caption": "Differential levelling A to B"
+      },
+      "options": [],
+      "answer": 99.2,
+      "tolerance": 0.01,
+      "solution": "**Concept.** $RL_B=RL_A+BS-FS$.\n\n**Working.**\n$$RL_B=100.000+1.500-2.300=99.200\\ \\text{m}$$\n\n**Answer.** $99.200$ m.",
+      "archetype": "C",
+      "marks": 2
+    },
+    {
+      "id": "sv-orig-098",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Gradient",
+      "difficulty": "easy",
+      "type": "NAT",
+      "stem": "A roadway rises 5 m over a horizontal distance of 100 m (see figure). Expressed as a gradient of 1 in $n$, the value of $n$ is _____.",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox='0 0 240 140' xmlns='http://www.w3.org/2000/svg'><line x1='20' y1='120' x2='200' y2='120' stroke='#475569'/><line x1='20' y1='120' x2='200' y2='60' stroke='#b45309' stroke-width='2'/><line x1='200' y1='120' x2='200' y2='60' stroke='#dc2626' stroke-width='1'/><text x='204' y='96' font-size='10' fill='#dc2626'>rise 5 m</text><text x='70' y='135' font-size='10'>horizontal 100 m</text></svg>",
+        "caption": "Roadway gradient"
+      },
+      "options": [],
+      "answer": 20,
+      "tolerance": 0.1,
+      "solution": "**Concept.** Gradient $1\\text{ in }n$ means a rise of 1 unit per $n$ horizontal units, so $n=\\dfrac{\\text{horizontal}}{\\text{rise}}$.\n\n**Working.**\n$$n=\\frac{100}{5}=20$$\n\n**Answer.** $1$ in $20$.",
+      "archetype": "C",
+      "marks": 1
+    },
+    {
+      "id": "sv-orig-099",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Slope to horizontal distance",
+      "difficulty": "medium",
+      "type": "NAT",
+      "stem": "A total station measures a slope distance of 100 m to a target at a vertical angle of $30^\\circ$ above the horizontal (see figure). The horizontal distance, in m, is _____ (two decimals).",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox='0 0 240 150' xmlns='http://www.w3.org/2000/svg'><line x1='30' y1='120' x2='210' y2='120' stroke='#475569'/><line x1='30' y1='120' x2='190' y2='40' stroke='#2563eb' stroke-width='2'/><text x='92' y='72' font-size='10' fill='#2563eb'>L = 100 m</text><path d='M72 120 A42 42 0 0 0 58 100' fill='none' stroke='#dc2626'/><text x='76' y='113' font-size='10' fill='#dc2626'>30&#176;</text><line x1='190' y1='40' x2='190' y2='120' stroke='#94a3b8' stroke-dasharray='3 3'/></svg>",
+        "caption": "Slope distance and vertical angle"
+      },
+      "options": [],
+      "answer": 86.6,
+      "tolerance": 0.1,
+      "solution": "**Concept.** Horizontal distance $H=L\\cos\\theta$.\n\n**Working.**\n$$H=100\\cos30^\\circ=100\\times0.8660=86.60\\ \\text{m}$$\n\n**Answer.** $86.60$ m.",
+      "archetype": "C",
+      "marks": 2
+    },
+    {
+      "id": "sv-orig-100",
+      "subject": "Mine Surveying & Geomatics",
+      "topic": "Whole-circle to reduced bearing",
+      "difficulty": "easy",
+      "type": "MCQ",
+      "stem": "A line has the whole-circle bearing of $210^\\circ$ shown on the compass. Its reduced (quadrantal) bearing is",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'><circle cx='80' cy='80' r='60' fill='none' stroke='#475569'/><line x1='80' y1='15' x2='80' y2='145' stroke='#cbd5e1'/><line x1='15' y1='80' x2='145' y2='80' stroke='#cbd5e1'/><text x='74' y='12' font-size='10'>N</text><text x='74' y='156' font-size='10'>S</text><line x1='80' y1='80' x2='50' y2='132' stroke='#dc2626' stroke-width='2' marker-end='url(#bn2)'/><defs><marker id='bn2' markerWidth='8' markerHeight='8' refX='6' refY='3' orient='auto'><path d='M0 0 L6 3 L0 6 Z' fill='#dc2626'/></marker></defs><text x='88' y='104' font-size='9' fill='#dc2626'>WCB 210&#176;</text></svg>",
+        "caption": "Whole-circle bearing of a line"
+      },
+      "options": [
+        "N 30\u00b0 E",
+        "S 30\u00b0 W",
+        "S 60\u00b0 W",
+        "N 60\u00b0 W"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** For WCB between $180^\\circ$ and $270^\\circ$ (third quadrant) the reduced bearing is $S\\,(\\text{WCB}-180^\\circ)\\,W$.\n\n**Reasoning.** $210^\\circ-180^\\circ=30^\\circ$, so the line lies in the SW quadrant at $30^\\circ$ from south.\n\n**Answer.** $S\\,30^\\circ\\,W$.",
+      "archetype": "C",
+      "marks": 1
+    },
+    {
+      "id": "sv-orig-101",
+      "type": "NAT",
+      "subject": "mine-surveying",
+      "topic": "Traversing",
+      "difficulty": "medium",
+      "marks": 2,
+      "stem": "A closed traverse has total error in latitude $\\sum L = 0.3$ m and total error in departure $\\sum D = 0.4$ m. Determine the closing (linear misclosure) error in metres.",
+      "options": [],
+      "answer": 0.5,
+      "tolerance": 0.02,
+      "figure": {
+        "kind": "svg",
+        "caption": "Closed traverse with misclosure",
+        "markup": "<svg viewBox='0 0 220 180' xmlns='http://www.w3.org/2000/svg'><polygon points='30,150 90,40 170,70 150,150' fill='none' stroke='#475569' stroke-width='2'/><g fill='#1f2937'><circle cx='30' cy='150' r='3'/><circle cx='90' cy='40' r='3'/><circle cx='170' cy='70' r='3'/><circle cx='150' cy='150' r='3'/></g><line x1='150' y1='150' x2='30' y2='150' stroke='#dc2626' stroke-dasharray='3 2'/><text x='20' y='172' font-size='8'>sumL=0.3 m, sumD=0.4 m</text></svg>"
+      },
+      "solution": "**Concept.** The linear closing error of a traverse is the vector sum of the latitude and departure misclosures.\n\n**Working.**\n$$e=\\sqrt{(\\sum L)^2+(\\sum D)^2}=\\sqrt{0.3^2+0.4^2}=\\sqrt{0.25}=0.5\\ \\text{m}$$\n\n**Answer.** $0.5$ m.",
+      "archetype": "C"
+    },
+    {
+      "id": "sv-orig-102",
+      "type": "NAT",
+      "subject": "mine-surveying",
+      "topic": "Traversing",
+      "difficulty": "easy",
+      "marks": 1,
+      "stem": "A traverse of perimeter $1000$ m has a linear closing error of $0.5$ m. Express the relative precision as a decimal fraction (error per unit length).",
+      "options": [],
+      "answer": 0.0005,
+      "tolerance": 0.00005,
+      "figure": {
+        "kind": "svg",
+        "caption": "Traverse precision",
+        "markup": "<svg viewBox='0 0 220 160' xmlns='http://www.w3.org/2000/svg'><polygon points='30,130 100,30 180,70 140,130' fill='none' stroke='#475569' stroke-width='2'/><text x='25' y='150' font-size='8'>perimeter=1000 m, e=0.5 m</text></svg>"
+      },
+      "solution": "**Concept.** Relative precision $=$ closing error divided by total traverse length.\n\n**Working.**\n$$\\text{precision}=\\frac{e}{P}=\\frac{0.5}{1000}=0.0005\\ \\left(=\\tfrac{1}{2000}\\right)$$\n\n**Answer.** $0.0005$.",
+      "archetype": "C"
+    },
+    {
+      "id": "sv-orig-103",
+      "type": "NAT",
+      "subject": "mine-surveying",
+      "topic": "Levelling",
+      "difficulty": "easy",
+      "marks": 1,
+      "stem": "In a levelling run the reduced level of station $A$ is $100.000$ m, the back sight on $A$ is $1.500$ m and the fore sight on $B$ is $2.300$ m. Compute the reduced level of $B$ (m).",
+      "options": [],
+      "answer": 99.2,
+      "tolerance": 0.01,
+      "figure": {
+        "kind": "svg",
+        "caption": "Differential levelling A to B",
+        "markup": "<svg viewBox='0 0 240 150' xmlns='http://www.w3.org/2000/svg'><rect x='110' y='58' width='24' height='12' fill='#94a3b8'/><line x1='40' y1='64' x2='110' y2='64' stroke='#475569' stroke-dasharray='3 2'/><line x1='134' y1='64' x2='200' y2='64' stroke='#475569' stroke-dasharray='3 2'/><line x1='40' y1='40' x2='40' y2='130' stroke='#1f2937' stroke-width='2'/><line x1='200' y1='40' x2='200' y2='130' stroke='#1f2937' stroke-width='2'/><text x='34' y='34' font-size='8'>A</text><text x='194' y='34' font-size='8'>B</text><text x='18' y='146' font-size='8'>BS=1.5, FS=2.3, RL_A=100</text></svg>"
+      },
+      "solution": "**Concept.** $\\text{RL}_B=\\text{RL}_A+\\text{BS}-\\text{FS}$.\n\n**Working.**\n$$\\text{RL}_B=100.000+1.500-2.300=99.200\\ \\text{m}$$\n\n**Answer.** $99.2$ m.",
+      "archetype": "C"
+    },
+    {
+      "id": "sv-orig-104",
+      "type": "NAT",
+      "subject": "mine-surveying",
+      "topic": "Levelling",
+      "difficulty": "easy",
+      "marks": 1,
+      "stem": "With back sight $1.500$ m and fore sight $2.300$ m on the next point, find the magnitude of the rise or fall (m) between the two staff stations.",
+      "options": [],
+      "answer": 0.8,
+      "tolerance": 0.01,
+      "figure": {
+        "kind": "svg",
+        "caption": "Rise and fall",
+        "markup": "<svg viewBox='0 0 240 150' xmlns='http://www.w3.org/2000/svg'><line x1='40' y1='60' x2='40' y2='130' stroke='#1f2937' stroke-width='2'/><line x1='200' y1='40' x2='200' y2='130' stroke='#1f2937' stroke-width='2'/><line x1='40' y1='60' x2='200' y2='40' stroke='#94a3b8' stroke-dasharray='3 2'/><text x='30' y='146' font-size='8'>BS=1.5, FS=2.3</text></svg>"
+      },
+      "solution": "**Concept.** Rise/fall $=\\text{BS}-\\text{FS}$; a negative value indicates a fall.\n\n**Working.**\n$$\\text{BS}-\\text{FS}=1.500-2.300=-0.800\\ \\text{m}\\ (\\text{fall})$$\n\n**Answer.** $0.8$ m fall.",
+      "archetype": "C"
+    },
+    {
+      "id": "sv-orig-105",
+      "type": "NAT",
+      "subject": "mine-surveying",
+      "topic": "Levelling",
+      "difficulty": "easy",
+      "marks": 1,
+      "stem": "Two points are $100$ m apart horizontally and differ in level by $5$ m. The gradient is expressed as $1$ in $n$. Find $n$.",
+      "options": [],
+      "answer": 20,
+      "tolerance": 0.1,
+      "figure": {
+        "kind": "svg",
+        "caption": "Gradient between two points",
+        "markup": "<svg viewBox='0 0 240 140' xmlns='http://www.w3.org/2000/svg'><line x1='30' y1='110' x2='200' y2='60' stroke='#2563eb' stroke-width='2'/><line x1='30' y1='110' x2='200' y2='110' stroke='#94a3b8' stroke-dasharray='3 2'/><line x1='200' y1='60' x2='200' y2='110' stroke='#94a3b8' stroke-dasharray='3 2'/><text x='95' y='125' font-size='8'>100 m</text><text x='205' y='90' font-size='8'>5 m</text></svg>"
+      },
+      "solution": "**Concept.** Gradient $1$ in $n$ means a rise of $1$ for every $n$ horizontal.\n\n**Working.**\n$$n=\\frac{\\text{horizontal}}{\\text{rise}}=\\frac{100}{5}=20$$\n\n**Answer.** $1$ in $20$.",
+      "archetype": "C"
+    },
+    {
+      "id": "sv-orig-106",
+      "type": "NAT",
+      "subject": "mine-surveying",
+      "topic": "Curves",
+      "difficulty": "medium",
+      "marks": 2,
+      "stem": "A simple circular curve of radius $200$ m has a deflection angle $\\Delta = 60^\\circ$. Compute the tangent length (m).",
+      "options": [],
+      "answer": 115.47,
+      "tolerance": 0.3,
+      "figure": {
+        "kind": "svg",
+        "caption": "Simple circular curve",
+        "markup": "<svg viewBox='0 0 240 180' xmlns='http://www.w3.org/2000/svg'><path d='M30 150 A150 150 0 0 1 170 60' fill='none' stroke='#2563eb' stroke-width='2'/><line x1='30' y1='150' x2='200' y2='150' stroke='#475569'/><line x1='200' y1='150' x2='170' y2='60' stroke='#475569'/><circle cx='30' cy='150' r='3' fill='#1f2937'/><circle cx='170' cy='60' r='3' fill='#1f2937'/><text x='35' y='170' font-size='8'>R=200 m, deflection=60 deg</text></svg>"
+      },
+      "solution": "**Concept.** Tangent length $T=R\\tan(\\Delta/2)$.\n\n**Working.**\n$$T=200\\tan 30^\\circ=200\\times0.5774=115.47\\ \\text{m}$$\n\n**Answer.** $115.47$ m.",
+      "archetype": "C"
+    },
+    {
+      "id": "sv-orig-107",
+      "type": "NAT",
+      "subject": "mine-surveying",
+      "topic": "Curves",
+      "difficulty": "medium",
+      "marks": 2,
+      "stem": "For a circular curve of radius $200$ m and deflection $\\Delta = 60^\\circ$, find the length of the curve (m).",
+      "options": [],
+      "answer": 209.44,
+      "tolerance": 0.4,
+      "figure": {
+        "kind": "svg",
+        "caption": "Length of circular curve",
+        "markup": "<svg viewBox='0 0 240 180' xmlns='http://www.w3.org/2000/svg'><path d='M30 150 A150 150 0 0 1 170 60' fill='none' stroke='#16a34a' stroke-width='3'/><line x1='30' y1='150' x2='200' y2='150' stroke='#475569'/><line x1='200' y1='150' x2='170' y2='60' stroke='#475569'/><text x='35' y='172' font-size='8'>R=200 m, delta=60 deg</text></svg>"
+      },
+      "solution": "**Concept.** Curve length $L=\\dfrac{\\pi R\\Delta}{180}$.\n\n**Working.**\n$$L=\\frac{\\pi\\times200\\times60}{180}=209.44\\ \\text{m}$$\n\n**Answer.** $209.44$ m.",
+      "archetype": "C"
+    },
+    {
+      "id": "sv-orig-108",
+      "type": "NAT",
+      "subject": "mine-surveying",
+      "topic": "Curves",
+      "difficulty": "medium",
+      "marks": 2,
+      "stem": "A circular curve has radius $200$ m and deflection angle $60^\\circ$. Compute the length of the long chord (m).",
+      "options": [],
+      "answer": 200,
+      "tolerance": 0.5,
+      "figure": {
+        "kind": "svg",
+        "caption": "Long chord of curve",
+        "markup": "<svg viewBox='0 0 240 180' xmlns='http://www.w3.org/2000/svg'><path d='M30 150 A150 150 0 0 1 170 60' fill='none' stroke='#2563eb' stroke-width='2'/><line x1='30' y1='150' x2='170' y2='60' stroke='#dc2626' stroke-width='2'/><text x='35' y='172' font-size='8'>long chord, R=200, delta=60</text></svg>"
+      },
+      "solution": "**Concept.** Long chord $LC=2R\\sin(\\Delta/2)$.\n\n**Working.**\n$$LC=2\\times200\\times\\sin30^\\circ=400\\times0.5=200\\ \\text{m}$$\n\n**Answer.** $200$ m.",
+      "archetype": "C"
+    },
+    {
+      "id": "sv-orig-109",
+      "type": "NAT",
+      "subject": "mine-surveying",
+      "topic": "Curves",
+      "difficulty": "hard",
+      "marks": 2,
+      "stem": "For a curve of radius $200$ m and deflection $60^\\circ$, compute the mid-ordinate (versine) in metres.",
+      "options": [],
+      "answer": 26.79,
+      "tolerance": 0.2,
+      "figure": {
+        "kind": "svg",
+        "caption": "Mid-ordinate of curve",
+        "markup": "<svg viewBox='0 0 240 180' xmlns='http://www.w3.org/2000/svg'><path d='M30 150 A150 150 0 0 1 170 60' fill='none' stroke='#2563eb' stroke-width='2'/><line x1='30' y1='150' x2='170' y2='60' stroke='#94a3b8' stroke-dasharray='3 2'/><line x1='100' y1='105' x2='118' y2='86' stroke='#dc2626' stroke-width='2'/><text x='35' y='172' font-size='8'>mid-ordinate M</text></svg>"
+      },
+      "solution": "**Concept.** Mid-ordinate $M=R\\bigl(1-\\cos(\\Delta/2)\\bigr)$.\n\n**Working.**\n$$M=200(1-\\cos30^\\circ)=200(1-0.8660)=26.79\\ \\text{m}$$\n\n**Answer.** $26.79$ m.",
+      "archetype": "C"
+    },
+    {
+      "id": "sv-orig-110",
+      "type": "NAT",
+      "subject": "mine-surveying",
+      "topic": "Curves",
+      "difficulty": "hard",
+      "marks": 2,
+      "stem": "Compute the apex (external) distance for a circular curve of radius $200$ m and deflection angle $60^\\circ$, in metres.",
+      "options": [],
+      "answer": 30.94,
+      "tolerance": 0.2,
+      "figure": {
+        "kind": "svg",
+        "caption": "External (apex) distance",
+        "markup": "<svg viewBox='0 0 240 180' xmlns='http://www.w3.org/2000/svg'><path d='M30 150 A150 150 0 0 1 170 60' fill='none' stroke='#2563eb' stroke-width='2'/><line x1='30' y1='150' x2='200' y2='150' stroke='#475569'/><line x1='200' y1='150' x2='170' y2='60' stroke='#475569'/><line x1='200' y1='150' x2='118' y2='86' stroke='#dc2626' stroke-dasharray='3 2'/><text x='35' y='172' font-size='8'>external distance E</text></svg>"
+      },
+      "solution": "**Concept.** External distance $E=R\\bigl(\\sec(\\Delta/2)-1\\bigr)$.\n\n**Working.**\n$$E=200\\left(\\tfrac{1}{\\cos30^\\circ}-1\\right)=200(1.1547-1)=30.94\\ \\text{m}$$\n\n**Answer.** $30.94$ m.",
+      "archetype": "C"
+    },
+    {
+      "id": "sv-orig-111",
+      "type": "NAT",
+      "subject": "mine-surveying",
+      "topic": "Tacheometry",
+      "difficulty": "easy",
+      "marks": 1,
+      "stem": "A tacheometer with multiplying constant $k=100$ and additive constant $c=0$ reads a staff intercept $s=0.500$ m on a horizontal sight. Find the horizontal distance (m).",
+      "options": [],
+      "answer": 50,
+      "tolerance": 0.2,
+      "figure": {
+        "kind": "svg",
+        "caption": "Stadia tacheometry",
+        "markup": "<svg viewBox='0 0 220 150' xmlns='http://www.w3.org/2000/svg'><rect x='160' y='30' width='10' height='100' fill='#cbd5e1' stroke='#475569'/><line x1='160' y1='50' x2='170' y2='50' stroke='#dc2626'/><line x1='160' y1='110' x2='170' y2='110' stroke='#dc2626'/><circle cx='40' cy='80' r='12' fill='#fde68a' stroke='#b45309'/><line x1='52' y1='80' x2='160' y2='80' stroke='#475569' stroke-dasharray='3 2'/><text x='28' y='146' font-size='8'>k=100, c=0, s=0.5 m</text></svg>"
+      },
+      "solution": "**Concept.** Horizontal distance $D=k\\,s+c$ for a horizontal stadia sight.\n\n**Working.**\n$$D=100\\times0.500+0=50\\ \\text{m}$$\n\n**Answer.** $50$ m.",
+      "archetype": "C"
+    },
+    {
+      "id": "sv-orig-112",
+      "type": "NAT",
+      "subject": "mine-surveying",
+      "topic": "Tacheometry",
+      "difficulty": "easy",
+      "marks": 1,
+      "stem": "A stadia reading gives top and bottom hair readings of $1.750$ m and $1.100$ m. With $k=100$ and $c=0$, find the horizontal distance (m).",
+      "options": [],
+      "answer": 65,
+      "tolerance": 0.3,
+      "figure": {
+        "kind": "svg",
+        "caption": "Stadia hair readings",
+        "markup": "<svg viewBox='0 0 220 150' xmlns='http://www.w3.org/2000/svg'><rect x='160' y='25' width='10' height='110' fill='#cbd5e1' stroke='#475569'/><line x1='158' y1='45' x2='172' y2='45' stroke='#dc2626'/><line x1='158' y1='110' x2='172' y2='110' stroke='#dc2626'/><text x='28' y='146' font-size='8'>top=1.750, bottom=1.100</text></svg>"
+      },
+      "solution": "**Concept.** Staff intercept $s=$ top $-$ bottom; then $D=ks$.\n\n**Working.**\n$$s=1.750-1.100=0.650\\ \\text{m};\\quad D=100\\times0.650=65\\ \\text{m}$$\n\n**Answer.** $65$ m.",
+      "archetype": "C"
+    },
+    {
+      "id": "sv-orig-113",
+      "type": "NAT",
+      "subject": "mine-surveying",
+      "topic": "Distance measurement",
+      "difficulty": "medium",
+      "marks": 2,
+      "stem": "A slope distance of $100$ m is measured along a line inclined at $30^\\circ$ to the horizontal. Compute the horizontal distance (m).",
+      "options": [],
+      "answer": 86.6,
+      "tolerance": 0.2,
+      "figure": {
+        "kind": "svg",
+        "caption": "Slope to horizontal reduction",
+        "markup": "<svg viewBox='0 0 240 150' xmlns='http://www.w3.org/2000/svg'><line x1='30' y1='120' x2='200' y2='40' stroke='#475569' stroke-width='2'/><line x1='30' y1='120' x2='200' y2='120' stroke='#94a3b8' stroke-dasharray='3 2'/><line x1='200' y1='40' x2='200' y2='120' stroke='#94a3b8' stroke-dasharray='3 2'/><text x='95' y='95' font-size='8' transform='rotate(-25 95 95)'>L=100 m</text><text x='40' y='114' font-size='8'>30 deg</text></svg>"
+      },
+      "solution": "**Concept.** Horizontal distance $H=L\\cos\\theta$.\n\n**Working.**\n$$H=100\\cos30^\\circ=100\\times0.8660=86.6\\ \\text{m}$$\n\n**Answer.** $86.6$ m.",
+      "archetype": "C"
+    },
+    {
+      "id": "sv-orig-114",
+      "type": "NAT",
+      "subject": "mine-surveying",
+      "topic": "Distance measurement",
+      "difficulty": "medium",
+      "marks": 2,
+      "stem": "For the same slope distance of $100$ m at an inclination of $30^\\circ$, compute the vertical component (difference in level) in metres.",
+      "options": [],
+      "answer": 50,
+      "tolerance": 0.2,
+      "figure": {
+        "kind": "svg",
+        "caption": "Vertical component of slope line",
+        "markup": "<svg viewBox='0 0 240 150' xmlns='http://www.w3.org/2000/svg'><line x1='30' y1='120' x2='200' y2='40' stroke='#475569' stroke-width='2'/><line x1='200' y1='40' x2='200' y2='120' stroke='#dc2626' stroke-width='2'/><line x1='30' y1='120' x2='200' y2='120' stroke='#94a3b8' stroke-dasharray='3 2'/><text x='40' y='114' font-size='8'>30 deg</text><text x='205' y='85' font-size='8'>V</text></svg>"
+      },
+      "solution": "**Concept.** Vertical component $V=L\\sin\\theta$.\n\n**Working.**\n$$V=100\\sin30^\\circ=100\\times0.5=50\\ \\text{m}$$\n\n**Answer.** $50$ m.",
+      "archetype": "C"
+    },
+    {
+      "id": "sv-orig-115",
+      "type": "NAT",
+      "subject": "mine-surveying",
+      "topic": "Computation of area",
+      "difficulty": "medium",
+      "marks": 2,
+      "stem": "Offsets $5, 7, 9, 7, 5$ m are taken at a regular interval of $10$ m along a baseline. Using the trapezoidal rule, compute the area (m$^2$).",
+      "options": [],
+      "answer": 280,
+      "tolerance": 1,
+      "figure": {
+        "kind": "svg",
+        "caption": "Offsets to an irregular boundary",
+        "markup": "<svg viewBox='0 0 240 140' xmlns='http://www.w3.org/2000/svg'><line x1='20' y1='110' x2='220' y2='110' stroke='#475569'/><g stroke='#2563eb'><line x1='40' y1='110' x2='40' y2='80'/><line x1='80' y1='110' x2='80' y2='65'/><line x1='120' y1='110' x2='120' y2='50'/><line x1='160' y1='110' x2='160' y2='65'/><line x1='200' y1='110' x2='200' y2='80'/></g><polyline points='40,80 80,65 120,50 160,65 200,80' fill='none' stroke='#16a34a'/><text x='40' y='128' font-size='8'>offsets at 10 m: 5,7,9,7,5</text></svg>"
+      },
+      "solution": "**Concept.** Trapezoidal rule: $A=d\\left[\\dfrac{o_0+o_n}{2}+\\sum o_{\\text{mid}}\\right]$.\n\n**Working.**\n$$A=10\\left[\\frac{5+5}{2}+(7+9+7)\\right]=10[5+23]=280\\ \\text{m}^2$$\n\n**Answer.** $280$ m$^2$.",
+      "archetype": "C"
+    },
+    {
+      "id": "sv-orig-116",
+      "type": "NAT",
+      "subject": "mine-surveying",
+      "topic": "Computation of area",
+      "difficulty": "hard",
+      "marks": 2,
+      "stem": "Offsets $2, 4, 6, 8, 10$ m are taken at $10$ m intervals. Using Simpson's one-third rule, compute the area (m$^2$).",
+      "options": [],
+      "answer": 240,
+      "tolerance": 1,
+      "figure": {
+        "kind": "svg",
+        "caption": "Offsets for Simpson's rule",
+        "markup": "<svg viewBox='0 0 240 140' xmlns='http://www.w3.org/2000/svg'><line x1='20' y1='115' x2='220' y2='115' stroke='#475569'/><g stroke='#2563eb'><line x1='40' y1='115' x2='40' y2='100'/><line x1='80' y1='115' x2='80' y2='85'/><line x1='120' y1='115' x2='120' y2='70'/><line x1='160' y1='115' x2='160' y2='55'/><line x1='200' y1='115' x2='200' y2='40'/></g><polyline points='40,100 80,85 120,70 160,55 200,40' fill='none' stroke='#16a34a'/><text x='40' y='132' font-size='8'>offsets: 2,4,6,8,10 at 10 m</text></svg>"
+      },
+      "solution": "**Concept.** Simpson's rule (even intervals): $A=\\dfrac{d}{3}\\left[o_0+o_n+4\\sum o_{\\text{odd}}+2\\sum o_{\\text{even}}\\right]$.\n\n**Working.**\n$$A=\\frac{10}{3}\\bigl[2+10+4(4+8)+2(6)\\bigr]=\\frac{10}{3}[12+48+12]=240\\ \\text{m}^2$$\n\n**Answer.** $240$ m$^2$.",
+      "archetype": "C"
+    },
+    {
+      "id": "sv-orig-117",
+      "type": "NAT",
+      "subject": "mine-surveying",
+      "topic": "Computation of volume",
+      "difficulty": "medium",
+      "marks": 2,
+      "stem": "Two cross-sections $30$ m apart have areas $A_1 = 100$ m$^2$ and $A_2 = 140$ m$^2$. Using the end-area (average-area) method, compute the volume (m$^3$).",
+      "options": [],
+      "answer": 3600,
+      "tolerance": 10,
+      "figure": {
+        "kind": "svg",
+        "caption": "End-area volume between sections",
+        "markup": "<svg viewBox='0 0 240 130' xmlns='http://www.w3.org/2000/svg'><polygon points='30,90 70,50 90,90' fill='#cbd5e1' stroke='#475569'/><polygon points='160,95 210,40 235,95' fill='#cbd5e1' stroke='#475569'/><text x='30' y='115' font-size='8'>A1=100</text><text x='165' y='115' font-size='8'>A2=140, d=30 m</text></svg>"
+      },
+      "solution": "**Concept.** End-area method: $V=\\dfrac{d}{2}(A_1+A_2)$.\n\n**Working.**\n$$V=\\frac{30}{2}(100+140)=15\\times240=3600\\ \\text{m}^3$$\n\n**Answer.** $3600$ m$^3$.",
+      "archetype": "C"
+    },
+    {
+      "id": "sv-orig-118",
+      "type": "NAT",
+      "subject": "mine-surveying",
+      "topic": "Compass surveying",
+      "difficulty": "easy",
+      "marks": 1,
+      "stem": "The fore bearing of a line is $70^\\circ$ (whole-circle bearing). Compute its back bearing in degrees.",
+      "options": [],
+      "answer": 250,
+      "tolerance": 0.5,
+      "figure": {
+        "kind": "svg",
+        "caption": "Fore and back bearing",
+        "markup": "<svg viewBox='0 0 180 170' xmlns='http://www.w3.org/2000/svg'><line x1='40' y1='30' x2='40' y2='150' stroke='#cbd5e1'/><line x1='40' y1='90' x2='140' y2='55' stroke='#2563eb' stroke-width='2'/><line x1='40' y1='90' x2='-20' y2='111' stroke='#dc2626' stroke-width='2'/><text x='20' y='25' font-size='8'>N</text><text x='90' y='62' font-size='8'>FB=70 deg</text></svg>"
+      },
+      "solution": "**Concept.** For a whole-circle fore bearing below $180^\\circ$, back bearing $=$ FB $+180^\\circ$.\n\n**Working.**\n$$\\text{BB}=70^\\circ+180^\\circ=250^\\circ$$\n\n**Answer.** $250^\\circ$.",
+      "archetype": "C"
+    },
+    {
+      "id": "sv-orig-119",
+      "type": "NAT",
+      "subject": "mine-surveying",
+      "topic": "Compass surveying",
+      "difficulty": "easy",
+      "marks": 1,
+      "stem": "Two survey lines meeting at a station have whole-circle bearings of $30^\\circ$ and $90^\\circ$. Compute the included angle between them (degrees).",
+      "options": [],
+      "answer": 60,
+      "tolerance": 0.5,
+      "figure": {
+        "kind": "svg",
+        "caption": "Included angle from bearings",
+        "markup": "<svg viewBox='0 0 180 170' xmlns='http://www.w3.org/2000/svg'><line x1='50' y1='130' x2='50' y2='30' stroke='#cbd5e1'/><line x1='50' y1='130' x2='130' y2='40' stroke='#2563eb' stroke-width='2'/><line x1='50' y1='130' x2='150' y2='90' stroke='#16a34a' stroke-width='2'/><text x='30' y='25' font-size='8'>N</text><text x='95' y='40' font-size='8'>30 deg</text><text x='120' y='80' font-size='8'>90 deg</text></svg>"
+      },
+      "solution": "**Concept.** Included angle $=$ difference of the two whole-circle bearings.\n\n**Working.**\n$$\\theta=90^\\circ-30^\\circ=60^\\circ$$\n\n**Answer.** $60^\\circ$.",
+      "archetype": "C"
+    },
+    {
+      "id": "sv-orig-120",
+      "type": "NAT",
+      "subject": "mine-surveying",
+      "topic": "Compass surveying",
+      "difficulty": "easy",
+      "marks": 1,
+      "stem": "A line has a magnetic bearing of $45^\\circ$ at a place where the magnetic declination is $2^\\circ$ East. Compute the true bearing (degrees).",
+      "options": [],
+      "answer": 47,
+      "tolerance": 0.5,
+      "figure": {
+        "kind": "svg",
+        "caption": "Magnetic and true north",
+        "markup": "<svg viewBox='0 0 180 170' xmlns='http://www.w3.org/2000/svg'><line x1='60' y1='150' x2='60' y2='30' stroke='#1f2937' stroke-width='2'/><line x1='60' y1='150' x2='72' y2='32' stroke='#dc2626' stroke-dasharray='3 2'/><line x1='60' y1='150' x2='140' y2='80' stroke='#2563eb' stroke-width='2'/><text x='40' y='25' font-size='8'>TN</text><text x='74' y='28' font-size='8'>MN</text><text x='100' y='95' font-size='8'>mag=45</text></svg>"
+      },
+      "solution": "**Concept.** With easterly declination, true bearing $=$ magnetic bearing $+$ declination.\n\n**Working.**\n$$\\text{TB}=45^\\circ+2^\\circ=47^\\circ$$\n\n**Answer.** $47^\\circ$.",
+      "archetype": "C"
+    },
+    {
+      "id": "sv-orig-121",
+      "type": "NAT",
+      "subject": "mine-surveying",
+      "topic": "Traversing",
+      "difficulty": "medium",
+      "marks": 1,
+      "stem": "A traverse line of length $100$ m has a whole-circle bearing of $60^\\circ$. Compute its latitude (m).",
+      "options": [],
+      "answer": 50,
+      "tolerance": 0.2,
+      "figure": {
+        "kind": "svg",
+        "caption": "Latitude of a line",
+        "markup": "<svg viewBox='0 0 180 170' xmlns='http://www.w3.org/2000/svg'><line x1='40' y1='140' x2='40' y2='30' stroke='#cbd5e1'/><line x1='40' y1='140' x2='150' y2='140' stroke='#cbd5e1'/><line x1='40' y1='140' x2='135' y2='85' stroke='#2563eb' stroke-width='2'/><line x1='40' y1='140' x2='40' y2='85' stroke='#dc2626' stroke-width='2'/><text x='90' y='105' font-size='8'>l=100</text><text x='52' y='124' font-size='8'>60 deg</text><text x='22' y='25' font-size='8'>N</text></svg>"
+      },
+      "solution": "**Concept.** Latitude $L=l\\cos\\theta$.\n\n**Working.**\n$$L=100\\cos60^\\circ=100\\times0.5=50\\ \\text{m}$$\n\n**Answer.** $50$ m.",
+      "archetype": "C"
+    },
+    {
+      "id": "sv-orig-122",
+      "type": "NAT",
+      "subject": "mine-surveying",
+      "topic": "Traversing",
+      "difficulty": "medium",
+      "marks": 1,
+      "stem": "For the same traverse line ($100$ m, whole-circle bearing $60^\\circ$), compute its departure (m).",
+      "options": [],
+      "answer": 86.6,
+      "tolerance": 0.2,
+      "figure": {
+        "kind": "svg",
+        "caption": "Departure of a line",
+        "markup": "<svg viewBox='0 0 180 170' xmlns='http://www.w3.org/2000/svg'><line x1='40' y1='140' x2='40' y2='30' stroke='#cbd5e1'/><line x1='40' y1='140' x2='150' y2='140' stroke='#cbd5e1'/><line x1='40' y1='140' x2='135' y2='85' stroke='#2563eb' stroke-width='2'/><line x1='40' y1='85' x2='135' y2='85' stroke='#16a34a' stroke-width='2'/><text x='90' y='105' font-size='8'>l=100</text><text x='52' y='124' font-size='8'>60 deg</text></svg>"
+      },
+      "solution": "**Concept.** Departure $D=l\\sin\\theta$.\n\n**Working.**\n$$D=100\\sin60^\\circ=100\\times0.8660=86.6\\ \\text{m}$$\n\n**Answer.** $86.6$ m.",
+      "archetype": "C"
+    },
+    {
+      "id": "sv-orig-123",
+      "type": "MCQ",
+      "subject": "mine-surveying",
+      "topic": "Correlation surveys",
+      "difficulty": "easy",
+      "marks": 1,
+      "stem": "Two plumb wires are hung down a vertical shaft to transfer surface orientation underground. The Weisbach triangle method is preferred because it:",
+      "options": [
+        "requires the theodolite to be set exactly on the line of the two wires",
+        "allows the instrument to be set slightly off the wire line, with a small angle measured at the apex",
+        "eliminates the need to measure any horizontal angle",
+        "works only when the two wires are more than 10 m apart"
+      ],
+      "answer": 1,
+      "figure": {
+        "kind": "svg",
+        "caption": "Weisbach triangle in shaft plumbing",
+        "markup": "<svg viewBox='0 0 200 170' xmlns='http://www.w3.org/2000/svg'><line x1='60' y1='20' x2='60' y2='150' stroke='#475569' stroke-dasharray='3 2'/><line x1='130' y1='20' x2='130' y2='150' stroke='#475569' stroke-dasharray='3 2'/><circle cx='60' cy='40' r='3' fill='#1f2937'/><circle cx='130' cy='40' r='3' fill='#1f2937'/><circle cx='40' cy='130' r='3' fill='#dc2626'/><line x1='40' y1='130' x2='60' y2='40' stroke='#2563eb'/><line x1='40' y1='130' x2='130' y2='40' stroke='#2563eb'/><line x1='60' y1='40' x2='130' y2='40' stroke='#2563eb'/><text x='20' y='165' font-size='8'>instrument near the wires</text></svg>"
+      },
+      "solution": "**Concept.** In the Weisbach triangle the theodolite is set up nearly but not exactly on the line joining the two wires.\n\n**Reasoning.** The small angle at the instrument (apex) is measured and, with the very short opposite side, the line direction is computed precisely using the sine rule, removing the impractical need to occupy the wire line exactly.\n\n**Answer.** It allows the instrument to be set slightly off the wire line with a small apex angle measured.",
+      "archetype": "C"
+    },
+    {
+      "id": "sv-orig-124",
+      "type": "MCQ",
+      "subject": "mine-surveying",
+      "topic": "Contouring",
+      "difficulty": "easy",
+      "marks": 1,
+      "stem": "On the contour map shown, the contour lines are closely spaced in one zone and widely spaced in another. The closely spaced contours indicate:",
+      "options": [
+        "a gentle (flat) slope",
+        "a steep slope",
+        "a horizontal plane",
+        "an overhanging cliff that cannot be contoured"
+      ],
+      "answer": 1,
+      "figure": {
+        "kind": "svg",
+        "caption": "Contour spacing and slope",
+        "markup": "<svg viewBox='0 0 220 160' xmlns='http://www.w3.org/2000/svg'><g fill='none' stroke='#92400e'><path d='M20 40 Q110 20 200 40'/><path d='M20 55 Q110 35 200 55'/><path d='M20 70 Q110 50 200 70'/><path d='M20 105 Q110 90 200 105'/><path d='M20 140 Q110 125 200 140'/></g><text x='30' y='154' font-size='8'>close spacing = ? slope</text></svg>"
+      },
+      "solution": "**Concept.** Contour spacing is inversely related to ground slope at a fixed contour interval.\n\n**Reasoning.** Where contours are close together the ground rises rapidly over a short horizontal distance, i.e. a steep slope; widely spaced contours mean a gentle slope.\n\n**Answer.** A steep slope.",
+      "archetype": "C"
+    },
+    {
+      "id": "sv-orig-125",
+      "type": "MCQ",
+      "subject": "mine-surveying",
+      "topic": "Modern instruments",
+      "difficulty": "easy",
+      "marks": 1,
+      "stem": "A total station integrates an electronic theodolite with an EDM. In a single pointing it can directly measure:",
+      "options": [
+        "horizontal angle, vertical angle and slope distance",
+        "only the horizontal angle",
+        "only the slope distance",
+        "magnetic declination and gravity"
+      ],
+      "answer": 0,
+      "figure": {
+        "kind": "svg",
+        "caption": "Total station measurement",
+        "markup": "<svg viewBox='0 0 200 160' xmlns='http://www.w3.org/2000/svg'><line x1='80' y1='90' x2='55' y2='150' stroke='#475569' stroke-width='2'/><line x1='80' y1='90' x2='105' y2='150' stroke='#475569' stroke-width='2'/><rect x='66' y='60' width='28' height='30' fill='#94a3b8' stroke='#475569'/><line x1='94' y1='75' x2='170' y2='50' stroke='#dc2626' stroke-dasharray='3 2'/><rect x='168' y='40' width='12' height='24' fill='#fde68a' stroke='#b45309'/><text x='20' y='28' font-size='8'>theodolite + EDM to prism</text></svg>"
+      },
+      "solution": "**Concept.** A total station combines angular and distance measurement electronically.\n\n**Reasoning.** In one observation to a prism it records the horizontal angle, the vertical (zenith) angle and the slope distance, from which coordinates and reduced levels are computed on board.\n\n**Answer.** Horizontal angle, vertical angle and slope distance.",
+      "archetype": "C"
+    },
+    {
+      "id": "sv-orig-126",
+      "type": "NAT",
+      "subject": "mine-surveying",
+      "topic": "Traverse computation",
+      "difficulty": "medium",
+      "marks": 2,
+      "stem": "A traverse leg has length $100\\ \\text{m}$ and a whole-circle bearing of $30^\\circ$ from north (figure). Compute the departure (easting component) of the leg (m).",
+      "options": [],
+      "answer": 50,
+      "tolerance": 0.5,
+      "figure": {"kind": "svg", "caption": "Traverse leg", "markup": "<svg viewBox='0 0 200 160' xmlns='http://www.w3.org/2000/svg'><line x1='40' y1='130' x2='140' y2='50' stroke='#2563eb' stroke-width='2'/><line x1='40' y1='130' x2='40' y2='50' stroke='#475569'/><line x1='40' y1='130' x2='140' y2='130' stroke='#475569'/><text x='62' y='82' font-size='8'>L=100</text><text x='44' y='148' font-size='8'>bearing 30 deg from N</text></svg>"},
+      "solution": "**Concept.** Departure $=L\\sin(\\text{bearing})$.\n\n**Working.**\n$$\\text{Dep}=100\\sin30^\\circ=100\\times0.5=50\\ \\text{m}$$\n\n**Answer.** $50$ m.",
+      "archetype": "C"
+    },
+    {
+      "id": "sv-orig-127",
+      "type": "NAT",
+      "subject": "mine-surveying",
+      "topic": "Bearings",
+      "difficulty": "easy",
+      "marks": 1,
+      "stem": "A line has a fore bearing of $60^\\circ$ (figure). Compute its back bearing (degrees).",
+      "options": [],
+      "answer": 240,
+      "tolerance": 0.5,
+      "figure": {"kind": "svg", "caption": "Fore bearing", "markup": "<svg viewBox='0 0 180 170' xmlns='http://www.w3.org/2000/svg'><circle cx='90' cy='85' r='55' fill='none' stroke='#475569'/><line x1='90' y1='85' x2='90' y2='30' stroke='#1f2937'/><line x1='90' y1='85' x2='138' y2='113' stroke='#dc2626' stroke-width='2'/><text x='95' y='28' font-size='8'>N</text><text x='28' y='162' font-size='8'>fore bearing 60 deg</text></svg>"},
+      "solution": "**Concept.** Back bearing $=$ fore bearing $+180^\\circ$ (when $<180^\\circ$).\n\n**Working.**\n$$BB=60^\\circ+180^\\circ=240^\\circ$$\n\n**Answer.** $240^\\circ$.",
+      "archetype": "C"
+    },
+    {
+      "id": "sv-orig-128",
+      "type": "NAT",
+      "subject": "mine-surveying",
+      "topic": "Levelling",
+      "difficulty": "medium",
+      "marks": 2,
+      "stem": "A level is set up reading a backsight of $1.5\\ \\text{m}$ on a benchmark of RL $100.0\\ \\text{m}$, then a foresight of $0.8\\ \\text{m}$ on a point (figure). Compute the reduced level of the point (m).",
+      "options": [],
+      "answer": 100.7,
+      "tolerance": 0.05,
+      "figure": {"kind": "svg", "caption": "Levelling between two points", "markup": "<svg viewBox='0 0 220 150' xmlns='http://www.w3.org/2000/svg'><rect x='100' y='40' width='20' height='10' fill='#94a3b8' stroke='#475569'/><line x1='40' y1='45' x2='180' y2='45' stroke='#475569' stroke-dasharray='3 2'/><line x1='40' y1='45' x2='40' y2='120' stroke='#2563eb'/><line x1='180' y1='45' x2='180' y2='110' stroke='#16a34a'/><text x='24' y='100' font-size='8'>BS 1.5</text><text x='158' y='100' font-size='8'>FS 0.8</text><text x='40' y='140' font-size='8'>BM RL 100</text></svg>"},
+      "solution": "**Concept.** $RL_{\\text{point}}=RL_{\\text{BM}}+BS-FS$.\n\n**Working.**\n$$RL=100.0+1.5-0.8=100.7\\ \\text{m}$$\n\n**Answer.** $100.7$ m.",
+      "archetype": "C"
+    },
+    {
+      "id": "sv-orig-129",
+      "type": "NAT",
+      "subject": "mine-surveying",
+      "topic": "Levelling",
+      "difficulty": "easy",
+      "marks": 1,
+      "stem": "Successive staff readings give a backsight of $2.0\\ \\text{m}$ and a foresight of $1.2\\ \\text{m}$ (figure). Compute the rise from the first point to the second (m).",
+      "options": [],
+      "answer": 0.8,
+      "tolerance": 0.02,
+      "figure": {"kind": "svg", "caption": "Rise between readings", "markup": "<svg viewBox='0 0 220 150' xmlns='http://www.w3.org/2000/svg'><line x1='40' y1='40' x2='180' y2='40' stroke='#475569' stroke-dasharray='3 2'/><line x1='40' y1='40' x2='40' y2='120' stroke='#2563eb'/><line x1='180' y1='40' x2='180' y2='100' stroke='#16a34a'/><text x='24' y='100' font-size='8'>BS 2.0</text><text x='158' y='90' font-size='8'>FS 1.2</text></svg>"},
+      "solution": "**Concept.** Rise $=BS-FS$ (positive means rising ground).\n\n**Working.**\n$$\\text{Rise}=2.0-1.2=0.8\\ \\text{m}$$\n\n**Answer.** $0.8$ m.",
+      "archetype": "C"
+    },
+    {
+      "id": "sv-orig-130",
+      "type": "NAT",
+      "subject": "mine-surveying",
+      "topic": "Gradient",
+      "difficulty": "easy",
+      "marks": 1,
+      "stem": "Two stations $100\\ \\text{m}$ apart differ in level by $5\\ \\text{m}$ (figure). Compute the gradient (%).",
+      "options": [],
+      "answer": 5,
+      "tolerance": 0.1,
+      "figure": {"kind": "svg", "caption": "Gradient between stations", "markup": "<svg viewBox='0 0 220 130' xmlns='http://www.w3.org/2000/svg'><line x1='30' y1='100' x2='200' y2='60' stroke='#2563eb' stroke-width='2'/><line x1='30' y1='100' x2='200' y2='100' stroke='#475569'/><text x='42' y='118' font-size='8'>rise 5 m over 100 m</text></svg>"},
+      "solution": "**Concept.** Gradient $=\\dfrac{\\text{rise}}{\\text{distance}}\\times100$.\n\n**Working.**\n$$g=\\frac{5}{100}\\times100=5\\%$$\n\n**Answer.** $5\\%$.",
+      "archetype": "C"
+    },
+    {
+      "id": "sv-orig-131",
+      "type": "MCQ",
+      "subject": "mine-surveying",
+      "topic": "Contouring",
+      "difficulty": "easy",
+      "marks": 1,
+      "stem": "On the map shown, the nested closed lines (figure) represent points of equal elevation. The constant elevation difference between adjacent lines is the:",
+      "options": [
+        "contour interval, the constant vertical distance between successive contours",
+        "horizontal equivalent, the map distance between contours",
+        "gradient of the slope",
+        "spot height of the summit"
+      ],
+      "answer": 0,
+      "figure": {"kind": "svg", "caption": "Contour lines", "markup": "<svg viewBox='0 0 200 150' xmlns='http://www.w3.org/2000/svg'><g fill='none' stroke='#16a34a'><ellipse cx='100' cy='80' rx='70' ry='45'/><ellipse cx='100' cy='80' rx='48' ry='30'/><ellipse cx='100' cy='80' rx='26' ry='16'/></g><text x='38' y='142' font-size='8'>lines of equal elevation</text></svg>"},
+      "solution": "**Concept.** Contour definitions.\n\n**Reasoning.** Each contour joins points of equal elevation; the fixed vertical difference between successive contours is the contour interval, distinct from the horizontal map spacing.\n\n**Answer.** Contour interval, the constant vertical distance between successive contours.",
+      "archetype": "C"
+    },
+    {
+      "id": "sv-orig-132",
+      "type": "NAT",
+      "subject": "mine-surveying",
+      "topic": "Theodolite",
+      "difficulty": "medium",
+      "marks": 2,
+      "stem": "A theodolite at horizontal distance $50\\ \\text{m}$ from a mast measures a vertical angle of $30^\\circ$ to its top (figure). Compute the height of the top above instrument level (m, two decimals).",
+      "options": [],
+      "answer": 28.87,
+      "tolerance": 0.1,
+      "figure": {"kind": "svg", "caption": "Vertical angle to a mast top", "markup": "<svg viewBox='0 0 220 160' xmlns='http://www.w3.org/2000/svg'><line x1='40' y1='130' x2='40' y2='50' stroke='#a16207' stroke-width='3'/><line x1='40' y1='130' x2='180' y2='130' stroke='#475569'/><line x1='180' y1='130' x2='40' y2='50' stroke='#dc2626' stroke-width='2'/><text x='92' y='145' font-size='8'>D=50</text><text x='128' y='112' font-size='8'>angle 30 deg</text></svg>"},
+      "solution": "**Concept.** $h=D\\tan(\\text{vertical angle})$.\n\n**Working.**\n$$h=50\\tan30^\\circ=50\\times0.5774=28.87\\ \\text{m}$$\n\n**Answer.** $28.87$ m.",
+      "archetype": "C"
+    },
+    {
+      "id": "sv-orig-133",
+      "type": "NAT",
+      "subject": "mine-surveying",
+      "topic": "Traverse adjustment",
+      "difficulty": "medium",
+      "marks": 2,
+      "stem": "A closed traverse has a misclosure in easting of $0.3\\ \\text{m}$ and in northing of $0.4\\ \\text{m}$ (figure). Compute the linear closing error (m).",
+      "options": [],
+      "answer": 0.5,
+      "tolerance": 0.01,
+      "figure": {"kind": "svg", "caption": "Traverse misclosure", "markup": "<svg viewBox='0 0 200 160' xmlns='http://www.w3.org/2000/svg'><polygon points='40,130 160,130 130,40 50,60' fill='none' stroke='#2563eb' stroke-width='2'/><line x1='40' y1='130' x2='52' y2='118' stroke='#dc2626' stroke-width='3'/><text x='28' y='150' font-size='8'>dE=0.3, dN=0.4</text></svg>"},
+      "solution": "**Concept.** Closing error $=\\sqrt{\\Delta E^2+\\Delta N^2}$.\n\n**Working.**\n$$e=\\sqrt{0.3^2+0.4^2}=\\sqrt{0.25}=0.5\\ \\text{m}$$\n\n**Answer.** $0.5$ m.",
+      "archetype": "C"
     }
   ]
 }

@@ -25,6 +25,8 @@ export default async function MocksIndex() {
   const session = await auth();
   const userId = session?.user?.id;
   const plan = ((session?.user as { plan?: Plan } | undefined)?.plan) ?? "free";
+  // Founders (admins) bypass every mock plan gate.
+  const isAdmin = (session?.user as { role?: string } | undefined)?.role === "admin";
 
   const attempts = userId
     ? await db.attempt.findMany({
@@ -95,7 +97,7 @@ export default async function MocksIndex() {
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
         {sorted.map((m) => {
           const mm = m as { id: string; title: string; tier: Tier; duration?: number; questions: unknown[] };
-          const unlocked = canAccess(mm.tier, plan);
+          const unlocked = canAccess(mm.tier, plan) || isAdmin;
           const best = bestByMock.get(mm.id);
           return (
             <MockCard

@@ -68,7 +68,7 @@ export function AttemptDetailModal({ attempts }: { attempts: AttemptRow[] }) {
     .filter(([, v]) => v && v.total > 0)
     .sort((a, b) => (b[1].scored / b[1].total) - (a[1].scored / a[1].total));
 
-  const retryHref = attempt.kind === "mock" ? `/mocks/${attempt.refId}` : `/pyq/${attempt.refId.replace(/^pyq-/, "")}`;
+  const retryHref = attempt.kind === "mock" ? `/mocks/${attempt.refId}` : "/mocks";
 
   return (
     <div

@@ -3,6 +3,8 @@
  *  static `pyq.html` portal: +marks for correct MCQ/MSQ/NAT, −marks/3 for
  *  wrong MCQ, 0 for skipped or wrong MSQ/NAT (GATE pattern). */
 
+import { natMatches } from "@/lib/nat";
+
 export type Question =
   | {
       type: "MCQ";
@@ -23,6 +25,7 @@ export type Question =
       marks: number;
       answer: number;
       tolerance?: number;
+      acceptedRange?: { min: number; max: number };
       subject: string;
     };
 
@@ -55,7 +58,7 @@ export function grade(questions: Question[], answers: AnswerMap) {
     let ok = false;
     if (q.type === "NAT") {
       const v = typeof a === "string" ? parseFloat(a) : (a as number);
-      ok = !Number.isNaN(v) && Math.abs(v - q.answer) <= (q.tolerance ?? 0);
+      ok = natMatches(q, v);
     } else if (q.type === "MSQ") {
       const exp = [...q.answer].sort();
       const got = Array.isArray(a) ? [...a].sort() : [];

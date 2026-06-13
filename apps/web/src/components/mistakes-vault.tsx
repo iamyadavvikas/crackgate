@@ -89,7 +89,7 @@ export function MistakesVault() {
         <CheckCircle2 size={32} className="mx-auto text-ok" aria-hidden />
         <h3 className="text-lg font-extrabold mt-3 text-ink">No mistakes yet</h3>
         <p className="text-sm text-muted mt-2 max-w-md mx-auto">
-          Take a mock or PYQ paper and your wrong answers will queue up here for spaced-repetition review.
+          Take a mock and your wrong answers will queue up here for spaced-repetition review.
         </p>
         <Link href="/mocks" className="btn btn-primary btn-sm mt-5 inline-flex">Start a mock</Link>
       </div>

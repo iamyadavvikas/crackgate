@@ -3,11 +3,15 @@
 import { useCallback, useEffect, useMemo, useReducer, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import { secondsToHMS, cn } from "@/lib/utils";
+import { CalculatorLauncher } from "@/components/gate-calculator";
+import { QuestionTypeTag } from "@/components/question-extras";
+import { QuestionFigure, type QuestionFigure as Figure } from "@/components/question-figure";
+import { MathText } from "@/components/math-text";
 
 type Question =
-  | { type: "MCQ"; marks: number; subject: string; stem: string; options: string[]; answer: number; solution?: string }
-  | { type: "MSQ"; marks: number; subject: string; stem: string; options: string[]; answer: number[]; solution?: string }
-  | { type: "NAT"; marks: number; subject: string; stem: string; answer: number; tolerance?: number; solution?: string };
+  | { type: "MCQ"; marks: number; subject: string; stem: string; options: string[]; answer: number; solution?: string; figure?: Figure }
+  | { type: "MSQ"; marks: number; subject: string; stem: string; options: string[]; answer: number[]; solution?: string; figure?: Figure }
+  | { type: "NAT"; marks: number; subject: string; stem: string; answer: number; tolerance?: number; solution?: string; figure?: Figure };
 
 type Status = "nv" | "not" | "ans" | "mark" | "marka";
 type Answer = number | number[] | string | undefined;
@@ -16,23 +20,20 @@ interface State {
   idx: number;
   answers: Record<number, Answer>;
   status: Record<number, Status>;
-  showSoln: boolean;
 }
 
 type Action =
   | { type: "go"; i: number }
   | { type: "set"; idx: number; answer: Answer }
   | { type: "mark"; idx: number; status: Status }
-  | { type: "clear"; idx: number }
-  | { type: "soln"; show: boolean };
+  | { type: "clear"; idx: number };
 
 function reducer(s: State, a: Action): State {
   switch (a.type) {
-    case "go":    return { ...s, idx: a.i, showSoln: false };
+    case "go":    return { ...s, idx: a.i };
     case "set":   return { ...s, answers: { ...s.answers, [a.idx]: a.answer } };
     case "mark":  return { ...s, status: { ...s.status, [a.idx]: a.status } };
     case "clear": return { ...s, answers: { ...s.answers, [a.idx]: undefined }, status: { ...s.status, [a.idx]: "not" } };
-    case "soln":  return { ...s, showSoln: a.show };
   }
 }
 
@@ -43,24 +44,28 @@ function isAnswered(a: Answer) {
 }
 
 export function ExamPortal({
-  kind, refId, title, questions, durationSec,
+  kind, refId, title, questions, durationSec, lockdown,
 }: {
   kind: "mock" | "pyq";
   refId: string;
   title: string;
   questions: Question[];
   durationSec: number;
+  /** Exam-center lockdown: disable right-click, copy/paste, text selection and
+   *  dev-tool shortcuts. Defaults on for mocks; PYQ Exam Mode enables it too. */
+  lockdown?: boolean;
 }) {
+  const locked = lockdown ?? kind === "mock";
   const router = useRouter();
   const [state, dispatch] = useReducer(reducer, {
     idx: 0,
     answers: {},
     status: Object.fromEntries(questions.map((_, i) => [i, "nv" as Status])),
-    showSoln: false,
   });
   const [secondsLeft, setSecondsLeft] = useState(durationSec);
   const [submitting, setSubmitting] = useState(false);
   const [paletteOpen, setPaletteOpen] = useState(false);
+  const [confirmOpen, setConfirmOpen] = useState(false);
   const startTime = useRef(Date.now());
 
   // Auto-close mobile palette whenever the question changes
@@ -100,6 +105,38 @@ export function ExamPortal({
     return () => window.removeEventListener("beforeunload", onBeforeUnload);
   }, []);
 
+  // ---------- Exam-center lockdown ----------
+  useEffect(() => {
+    if (!locked) return;
+    const noop = (e: Event) => e.preventDefault();
+    const onKey = (e: KeyboardEvent) => {
+      const k = e.key.toLowerCase();
+      // Block dev tools + copy/paste/print/save/select-all/view-source
+      if (
+        e.key === "F12" ||
+        ((e.ctrlKey || e.metaKey) && e.shiftKey && ["i", "j", "c"].includes(k)) ||
+        ((e.ctrlKey || e.metaKey) && ["c", "v", "x", "a", "s", "p", "u"].includes(k))
+      ) {
+        e.preventDefault();
+        e.stopPropagation();
+      }
+    };
+    document.addEventListener("contextmenu", noop);
+    document.addEventListener("copy", noop);
+    document.addEventListener("cut", noop);
+    document.addEventListener("paste", noop);
+    document.addEventListener("selectstart", noop);
+    document.addEventListener("keydown", onKey, true);
+    return () => {
+      document.removeEventListener("contextmenu", noop);
+      document.removeEventListener("copy", noop);
+      document.removeEventListener("cut", noop);
+      document.removeEventListener("paste", noop);
+      document.removeEventListener("selectstart", noop);
+      document.removeEventListener("keydown", onKey, true);
+    };
+  }, [locked]);
+
   const q = questions[state.idx];
   const counts = useMemo(() => {
     const c = { nv: 0, not: 0, ans: 0, mark: 0, marka: 0 };
@@ -117,7 +154,8 @@ export function ExamPortal({
   const go = useCallback((i: number) => { if (i >= 0 && i < questions.length) dispatch({ type: "go", i }); }, [questions.length]);
 
   async function submit(auto = false) {
-    if (!auto && !confirm("Submit this paper?")) return;
+    if (!auto && !confirmOpen) { setConfirmOpen(true); return; }
+    setConfirmOpen(false);
     setSubmitting(true);
     try {
       const res = await fetch("/api/attempts", {
@@ -141,7 +179,7 @@ export function ExamPortal({
   }
 
   return (
-    <div className="min-h-screen bg-canvas -mt-px pb-20 lg:pb-0">
+    <div className={cn("min-h-screen bg-canvas -mt-px pb-20 lg:pb-0", locked && "select-none")}>
       {/* ---------- Top bar ---------- */}
       <header className="bg-gradient-to-r from-brand-2 to-brand text-white px-4 sm:px-5 py-3 flex flex-wrap items-center gap-3 sm:gap-4">
         <div className="w-9 h-9 bg-white/15 grid place-items-center rounded-lg font-bold shrink-0">CG</div>
@@ -149,8 +187,12 @@ export function ExamPortal({
           <div className="text-xs sm:text-sm opacity-80">GATE — Graduate Aptitude Test in Engineering</div>
           <div className="font-semibold text-sm sm:text-base truncate">{title}</div>
         </div>
-        <div className="ml-auto bg-amber-400 text-ink rounded-md px-3 py-1.5 text-sm font-bold tabular-nums shrink-0">
-          ⏱ {secondsToHMS(secondsLeft)}
+        <div className="ml-auto flex items-center gap-2 sm:gap-3 shrink-0">
+          {/* Scientific calculator — top bar, like the real TCS iON CBT */}
+          <CalculatorLauncher floating={false} />
+          <div className="bg-amber-400 text-ink rounded-md px-3 py-1.5 text-sm font-bold tabular-nums">
+            ⏱ {secondsToHMS(secondsLeft)}
+          </div>
         </div>
       </header>
 
@@ -169,9 +211,10 @@ export function ExamPortal({
         <section className="bg-surface rounded-xl border border-line p-4 sm:p-6">
           <div className="flex items-center justify-between text-sm mb-3">
             <span className="badge bg-brand/10 text-brand">{q.subject}</span>
-            <span className="badge">{q.type}</span>
+            <QuestionTypeTag type={q.type} />
           </div>
-          <div className="prose max-w-none text-base leading-relaxed" dangerouslySetInnerHTML={{ __html: q.stem }} />
+          <MathText className="prose max-w-none text-base leading-relaxed">{q.stem}</MathText>
+          {q.figure && <QuestionFigure figure={q.figure} />}
 
           <div className="mt-5">
             {q.type === "NAT" ? (
@@ -206,16 +249,6 @@ export function ExamPortal({
             <button onClick={() => go(state.idx - 1)} className="btn btn-ghost text-sm">‹ Prev</button>
             <button onClick={() => go(state.idx + 1)} className="btn btn-ghost text-sm">Next ›</button>
           </div>
-
-          {/* solution (study aid) */}
-          <details
-            className="mt-5 text-sm bg-canvas rounded-lg p-4"
-            open={state.showSoln}
-            onToggle={(e) => dispatch({ type: "soln", show: (e.currentTarget as HTMLDetailsElement).open })}
-          >
-            <summary className="cursor-pointer font-semibold text-brand">💡 View solution (you can still change your answer)</summary>
-            <div className="mt-3 text-ink/90">{q.solution ?? "—"}</div>
-          </details>
         </section>
 
         {/* Palette — desktop sticky sidebar */}
@@ -293,6 +326,77 @@ export function ExamPortal({
           </div>
         </div>
       </div>
+
+      {/* Submit summary + double-confirmation modal */}
+      {confirmOpen && (
+        <SubmitConfirm
+          counts={counts}
+          total={questions.length}
+          submitting={submitting}
+          onCancel={() => setConfirmOpen(false)}
+          onConfirm={() => submit(false)}
+        />
+      )}
+    </div>
+  );
+}
+
+function SubmitConfirm({
+  counts, total, submitting, onCancel, onConfirm,
+}: {
+  counts: Record<string, number>;
+  total: number;
+  submitting: boolean;
+  onCancel: () => void;
+  onConfirm: () => void;
+}) {
+  const answered = (counts.ans ?? 0) + (counts.marka ?? 0);
+  const marked = (counts.mark ?? 0) + (counts.marka ?? 0);
+  const notAnswered = total - answered;
+  const [sure, setSure] = useState(false);
+  return (
+    <div className="fixed inset-0 z-[70] bg-black/50 grid place-items-center p-4">
+      <div className="bg-surface rounded-xl max-w-md w-full p-6">
+        <h2 className="text-xl font-extrabold">Submit examination?</h2>
+        <p className="text-sm text-muted mt-1">Review your attempt summary before ending the test.</p>
+
+        <div className="mt-4 grid grid-cols-3 gap-2 text-center">
+          <SummaryCell label="Answered" value={answered} tone="ok" />
+          <SummaryCell label="Not answered" value={notAnswered} tone="bad" />
+          <SummaryCell label="Marked for review" value={marked} tone="mark" />
+        </div>
+
+        {!sure ? (
+          <div className="mt-6 flex gap-2 justify-end">
+            <button onClick={onCancel} className="btn btn-ghost text-sm">Resume test</button>
+            <button onClick={() => setSure(true)} className="btn btn-accent text-sm">Submit…</button>
+          </div>
+        ) : (
+          <div className="mt-6">
+            <p className="text-sm font-semibold text-bad">Are you absolutely sure you want to end the exam? This cannot be undone.</p>
+            <div className="mt-3 flex gap-2 justify-end">
+              <button onClick={() => setSure(false)} className="btn btn-ghost text-sm">Go back</button>
+              <button disabled={submitting} onClick={onConfirm} className="btn btn-accent text-sm">
+                {submitting ? "Submitting…" : "Yes, end exam"}
+              </button>
+            </div>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
+
+function SummaryCell({ label, value, tone }: { label: string; value: number; tone: "ok" | "bad" | "mark" }) {
+  return (
+    <div className={cn(
+      "rounded-lg p-3",
+      tone === "ok" && "bg-emerald-50 text-emerald-900",
+      tone === "bad" && "bg-rose-50 text-rose-900",
+      tone === "mark" && "bg-violet-50 text-violet-900",
+    )}>
+      <div className="text-2xl font-extrabold tabular-nums">{value}</div>
+      <div className="text-[11px] mt-0.5">{label}</div>
     </div>
   );
 }
@@ -404,7 +508,7 @@ function Options({
               className="mt-0.5"
             />
             <span className="font-bold w-5">{String.fromCharCode(65 + i)}.</span>
-            <span className="flex-1 text-sm">{opt}</span>
+            <MathText className="flex-1 text-sm">{opt}</MathText>
           </label>
         );
       })}

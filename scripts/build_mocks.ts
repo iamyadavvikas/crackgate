@@ -81,9 +81,19 @@ const MOCK_SPECS: MockSpec[] = [
   { id: "mn-mock-05", title: "Mock Test 05 — Underground Coal & Metal Mining",            tier: "subject", focusSlugs: ["underground-mining"],                                          diffBias: "balanced" },
   { id: "mn-mock-06", title: "Mock Test 06 — Drilling, Blasting & Explosives",            tier: "subject", focusSlugs: ["drilling-blasting"],                                           diffBias: "balanced" },
   { id: "mn-mock-07", title: "Mock Test 07 — Mine Surveying & Mineral Exploration",       tier: "subject", focusSlugs: ["mine-surveying"],                                              diffBias: "balanced" },
-  { id: "mn-mock-08", title: "Mock Test 08 — Mineral Processing, Economics & Legislation",tier: "subject", focusSlugs: ["mineral-processing", "mine-environment"],                      diffBias: "balanced" },
+  { id: "mn-mock-08", title: "Mock Test 08 — Economics, Planning & Legislation",          tier: "subject", focusSlugs: ["mine-economics-planning", "mine-environment"],                diffBias: "balanced" },
   { id: "mn-mock-09", title: "Mock Test 09 — Full Syllabus High Difficulty",              tier: "subject", focusSlugs: [],                                                              diffBias: "harder"   },
   { id: "mn-mock-10", title: "Mock Test 10 — Grand Test (Premium)",                       tier: "premium", focusSlugs: [],                                                              diffBias: "hardest"  },
+  { id: "mn-mock-11", title: "Mock Test 11 — Full Syllabus (Premium)",                    tier: "premium", focusSlugs: [],                                                              diffBias: "balanced" },
+  { id: "mn-mock-12", title: "Mock Test 12 — Engineering Mathematics Heavy",              tier: "subject", focusSlugs: ["engineering-mathematics"],                                     diffBias: "balanced" },
+  { id: "mn-mock-13", title: "Mock Test 13 — Mining Geology & Surveying",                 tier: "subject", focusSlugs: ["mining-geology", "mine-surveying"],                           diffBias: "balanced" },
+  { id: "mn-mock-14", title: "Mock Test 14 — Geomechanics & Ground Control (Hard)",       tier: "subject", focusSlugs: ["rock-mechanics"],                                              diffBias: "harder"   },
+  { id: "mn-mock-15", title: "Mock Test 15 — Ventilation, Environment & Safety",          tier: "subject", focusSlugs: ["mine-ventilation", "mine-environment"],                        diffBias: "balanced" },
+  { id: "mn-mock-16", title: "Mock Test 16 — Surface & Underground Methods",              tier: "subject", focusSlugs: ["surface-mining", "underground-mining"],                       diffBias: "balanced" },
+  { id: "mn-mock-17", title: "Mock Test 17 — Drilling, Blasting & Machinery",             tier: "subject", focusSlugs: ["drilling-blasting", "surface-mining"],                        diffBias: "harder"   },
+  { id: "mn-mock-18", title: "Mock Test 18 — Economics, Planning & Systems Engg.",        tier: "subject", focusSlugs: ["mine-economics-planning"],                                    diffBias: "balanced" },
+  { id: "mn-mock-19", title: "Mock Test 19 — Full Syllabus High Difficulty",              tier: "subject", focusSlugs: [],                                                              diffBias: "harder"   },
+  { id: "mn-mock-20", title: "Mock Test 20 — Grand Test Finale (Premium)",                tier: "premium", focusSlugs: [],                                                              diffBias: "hardest"  },
 ];
 
 const gaSubject = PRACTICE.find((s) => s.slug === "general-aptitude");
@@ -104,16 +114,24 @@ function diffWeightedPool(qs: PracticeQuestion[], bias: DiffBias): PracticeQuest
   return qs;
 }
 
-function buildMock(spec: MockSpec) {
+function buildMock(spec: MockSpec, used: Set<string>) {
   const seed = hashSeed(spec.id);
   const rand = rng(seed);
-  const used = new Set<string>();
 
   const ga1 = gaSubject!.questions.filter((q) => q.difficulty === "easy");
   const ga2 = gaSubject!.questions.filter((q) => q.difficulty !== "easy");
-  const ga1Pick = pickUnique(ga1.length >= 5 ? ga1 : gaSubject!.questions, 5, used, rand)
+  // Draw from the preferred difficulty pool first, then top up from the full GA
+  // bank when the preferred pool is exhausted by the global zero-overlap set.
+  // (Easy GA is scarce relative to 5×20 global-unique slots, so without this
+  // top-up later mocks would be short of their 10 GA questions.)
+  function pickGA(primary: PracticeQuestion[], n: number): PracticeQuestion[] {
+    const out = pickUnique(primary, n, used, rand);
+    if (out.length < n) out.push(...pickUnique(gaSubject!.questions, n - out.length, used, rand));
+    return out;
+  }
+  const ga1Pick = pickGA(ga1, 5)
     .map((q) => ({ ...q, marks: 1 as const, section: "General Aptitude" as const }));
-  const ga2Pick = pickUnique(ga2.length >= 5 ? ga2 : gaSubject!.questions, 5, used, rand)
+  const ga2Pick = pickGA(ga2, 5)
     .map((q) => ({ ...q, marks: 2 as const, section: "General Aptitude" as const }));
 
   const focus = new Set(spec.focusSlugs);
@@ -148,6 +166,7 @@ function buildMock(spec: MockSpec) {
     ...(q.type === "MCQ" || q.type === "MSQ" ? { options: (q as { options: string[] }).options } : {}),
     answer: q.answer,
     ...(q.type === "NAT" ? { tolerance: (q as { tolerance: number }).tolerance } : {}),
+    ...((q as { figure?: unknown }).figure ? { figure: (q as { figure: unknown }).figure } : {}),
     solution: q.solution,
   }));
 
@@ -174,6 +193,10 @@ function buildMock(spec: MockSpec) {
 // ---------- Emit ----------
 const mocksDir = resolve(process.cwd(), "apps/web/src/data/questions/mocks");
 
+// Global dedupe set — shared across every mock built in this run so that no
+// single practice question is reused across two mocks (zero-overlap).
+const usedGlobal = new Set<string>();
+
 let wrote = 0, skipped = 0;
 for (const spec of MOCK_SPECS) {
   if (ONLY.length && !ONLY.includes(spec.id)) continue;
@@ -194,7 +217,7 @@ for (const spec of MOCK_SPECS) {
     continue;
   }
 
-  const mock = buildMock(spec);
+  const mock = buildMock(spec, usedGlobal);
   // Preserve the lock flag across --force regenerations so it isn't silently reset.
   if (existingLocked) mock.locked = true;
   writeFileSync(file, JSON.stringify(mock, null, 2) + "\n", "utf8");
