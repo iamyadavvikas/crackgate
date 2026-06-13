@@ -151,8 +151,12 @@ jobs:
             esac
 
             # Wait for /api/healthz
+            # NOTE: --env-file is REQUIRED here too. Without it, 'compose exec'
+            # tries to re-interpolate the compose file and dies on the first
+            # unset var (RDS_HOST), so EVERY probe fails and we roll back a
+            # container that is actually healthy (false negative).
             for i in {1..30}; do
-              if docker compose -f docker-compose.aws.yml exec -T web \\
+              if docker compose -f docker-compose.aws.yml --env-file .env.production exec -T web \\
                  curl -fsS http://127.0.0.1:3000/api/healthz >/dev/null 2>&1; then
                 echo "✓ healthy after \${i} attempts"
                 docker image prune -af --filter "until=168h"
