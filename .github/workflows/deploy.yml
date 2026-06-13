@@ -127,14 +127,28 @@ jobs:
             docker compose -f docker-compose.aws.yml --env-file .env.production pull web
 
             # Run migrations BEFORE swapping web (uses DIRECT_URL → bypasses pgbouncer)
+            # NOTE: -T + '</dev/null' are REQUIRED. Without them, 'compose run'
+            # attaches to stdin and swallows the rest of this heredoc (the
+            # force-recreate + healthcheck below), so the container is never
+            # swapped yet the job still exits 0. (Cost us a week of "phantom"
+            # green deploys that never updated the running container.)
             if [ "${SKIP_MIGRATE}" != "true" ]; then
               docker compose -f docker-compose.aws.yml --env-file .env.production \\
-                run --rm web node ./node_modules/prisma/build/index.js migrate deploy --schema=packages/database/prisma/schema.prisma
+                run --rm -T web node ./node_modules/prisma/build/index.js migrate deploy --schema=packages/database/prisma/schema.prisma </dev/null
             fi
 
             # Zero-downtime web swap (Caddy keeps serving during ~5s gap)
             docker compose -f docker-compose.aws.yml --env-file .env.production \\
               up -d --no-deps --force-recreate web
+
+            # Guard: assert the swap actually landed the expected image. The old
+            # container is "healthy" too, so the healthcheck alone can't catch a
+            # missed recreate — verify the image tag explicitly.
+            GOT=\$(docker inspect --format '{{.Config.Image}}' \$(docker compose -f docker-compose.aws.yml --env-file .env.production ps -q web))
+            case "\$GOT" in
+              *":${IMAGE_TAG}") echo "✓ web recreated on \$GOT" ;;
+              *) echo "✗ expected :${IMAGE_TAG} but web is \$GOT — recreate failed"; exit 1 ;;
+            esac
 
             # Wait for /api/healthz
             for i in {1..30}; do
