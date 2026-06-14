@@ -90,6 +90,9 @@ resource "aws_cloudwatch_metric_alarm" "ec2_cpu_high" {
   threshold           = 80
   alarm_description   = "EC2 CPU > 80% for 15 min"
 
+  alarm_actions = [aws_sns_topic.alerts.arn]
+  ok_actions    = [aws_sns_topic.alerts.arn]
+
   dimensions = {
     InstanceId = aws_instance.web.id
   }
@@ -106,6 +109,9 @@ resource "aws_cloudwatch_metric_alarm" "rds_cpu_high" {
   threshold           = 75
   alarm_description   = "RDS CPU > 75% for 15 min"
 
+  alarm_actions = [aws_sns_topic.alerts.arn]
+  ok_actions    = [aws_sns_topic.alerts.arn]
+
   dimensions = {
     DBInstanceIdentifier = aws_db_instance.main.identifier
   }
@@ -121,6 +127,9 @@ resource "aws_cloudwatch_metric_alarm" "rds_storage_low" {
   statistic           = "Average"
   threshold           = 2 * 1024 * 1024 * 1024 # 2 GB free
   alarm_description   = "RDS free storage < 2 GB"
+
+  alarm_actions = [aws_sns_topic.alerts.arn]
+  ok_actions    = [aws_sns_topic.alerts.arn]
 
   dimensions = {
     DBInstanceIdentifier = aws_db_instance.main.identifier

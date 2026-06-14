@@ -11,6 +11,10 @@ admin_ip_cidr = "203.0.113.42/32"
 # Paste the contents of ~/.ssh/id_ed25519.pub (or whichever key you'll use).
 deploy_ssh_pubkey = "ssh-ed25519 AAAA... vikas@laptop"
 
+# Email that receives CloudWatch alarm notifications (SNS). AWS sends a
+# confirmation email on first apply — click the link before alerts flow.
+alert_email = "you@example.com"
+
 # Optional overrides — defaults are fine for $32/mo target
 # aws_region                = "ap-south-1"
 # ec2_instance_type         = "t4g.small"

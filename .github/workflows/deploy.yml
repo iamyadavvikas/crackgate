@@ -3,6 +3,8 @@ name: Deploy to EC2
 on:
   push:
     branches: [main]
+  pull_request:
+    branches: [main]
   workflow_dispatch:
     inputs:
       skip_migrate:
@@ -41,6 +43,9 @@ jobs:
   # is also ~4-5x faster.
   build:
     needs: verify
+    # PRs run `verify` only (lint + typecheck). Build + deploy are reserved for
+    # pushes to main and manual dispatch — we never build/deploy from a PR.
+    if: github.event_name != 'pull_request'
     runs-on: ubuntu-24.04-arm
     permissions:
       id-token: write       # OIDC → AWS, no long-lived keys

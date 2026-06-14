@@ -59,6 +59,12 @@ variable "domain" {
   default     = "crackgate.in"
 }
 
+variable "alert_email" {
+  description = "Email address that receives CloudWatch alarm notifications (SNS). Confirm the subscription via the email AWS sends after apply."
+  type        = string
+  # No default - set in terraform.tfvars so alarms always have a destination.
+}
+
 variable "github_org" {
   description = "GitHub org/user owning the repo (for OIDC trust on the deploy role)"
   type        = string
