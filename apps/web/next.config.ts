@@ -1,5 +1,6 @@
 import type { NextConfig } from "next";
 import path from "node:path";
+import { withSentryConfig } from "@sentry/nextjs";
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
@@ -41,4 +42,16 @@ const nextConfig: NextConfig = {
   },
 };
 
-export default nextConfig;
+export default withSentryConfig(nextConfig, {
+  // Source-map upload + release tagging only run when these are set in CI;
+  // without SENTRY_AUTH_TOKEN the build silently skips upload, so this is safe
+  // to ship before Sentry is provisioned.
+  org: process.env.SENTRY_ORG,
+  project: process.env.SENTRY_PROJECT,
+  silent: !process.env.CI,
+  // Tunnel browser events through our own domain to dodge ad blockers.
+  tunnelRoute: "/monitoring",
+  disableLogger: true,
+  // Don't fail the production build if Sentry's plugin hits an issue.
+  widenClientFileUpload: true,
+});

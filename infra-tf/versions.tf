@@ -42,3 +42,19 @@ provider "aws" {
     }
   }
 }
+
+# Route 53 health-check metrics (HealthCheckStatus) are ONLY published to
+# CloudWatch in us-east-1, so the uptime alarm + its SNS topic must live there.
+provider "aws" {
+  alias  = "us_east_1"
+  region = "us-east-1"
+
+  default_tags {
+    tags = {
+      Project   = "crackgate"
+      Env       = "prod"
+      ManagedBy = "terraform"
+      Owner     = "vikas"
+    }
+  }
+}

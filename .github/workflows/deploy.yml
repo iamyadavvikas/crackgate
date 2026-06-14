@@ -34,6 +34,7 @@ jobs:
       - run: npx --workspace @crackgate/database prisma generate
       - run: npm run --workspace apps/web lint
       - run: npm run --workspace apps/web typecheck
+      - run: npm run --workspace apps/web test
 
   # ─── Build linux/arm64 image (matches t4g.small) and push to ECR ───────
   # Runs on a NATIVE arm64 runner so the Next.js build executes directly,
@@ -93,6 +94,7 @@ jobs:
             NEXT_PUBLIC_UPI_PAYEE_NAME=${{ vars.NEXT_PUBLIC_UPI_PAYEE_NAME }}
             NEXT_PUBLIC_POSTHOG_KEY=${{ secrets.NEXT_PUBLIC_POSTHOG_KEY }}
             NEXT_PUBLIC_POSTHOG_HOST=${{ vars.NEXT_PUBLIC_POSTHOG_HOST }}
+            NEXT_PUBLIC_SENTRY_DSN=${{ secrets.NEXT_PUBLIC_SENTRY_DSN }}
 
   # ─── SSH to EC2, pull, migrate, restart web, healthcheck ───────────────
   deploy:
@@ -198,3 +200,30 @@ jobs:
           curl -X POST "${{ secrets.SLACK_WEBHOOK_URL }}" \
             -H 'Content-Type: application/json' \
             -d "{\"text\":\":rotating_light: CrackGate deploy failed — ${{ github.sha }}\"}"
+
+  # ─── Post-deploy smoke test — render critical pages on the live site ───
+  # Runs Playwright against the deployed URL (no DB needed in CI). Catches
+  # white-screen / 500 regressions the in-container healthcheck can miss.
+  smoke:
+    needs: deploy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+      - run: npx --workspace apps/web playwright install --with-deps chromium
+      - name: Smoke test production
+        env:
+          PLAYWRIGHT_BASE_URL: https://crackgate.in
+        run: npm run --workspace apps/web test:e2e
+
+      - name: Notify on failure
+        if: failure()
+        run: |
+          curl -X POST "${{ secrets.SLACK_WEBHOOK_URL }}" \
+            -H 'Content-Type: application/json' \
+            -d "{\"text\":\":warning: CrackGate post-deploy smoke test failed — ${{ github.sha }}\"}"
+
