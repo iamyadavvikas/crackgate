@@ -5,7 +5,6 @@ import { auth } from "@/lib/auth";
 import { db } from "@/lib/db";
 import { NextResponse } from "next/server";
 import { z } from "zod";
-import { Prisma } from "@crackgate/database";
 
 export const runtime = "nodejs";
 
@@ -84,9 +83,14 @@ export async function POST(req: Request) {
 
     return NextResponse.json({ ok: true, claim: row });
   } catch (e) {
+    // Duck-type on the Prisma error code rather than `instanceof`. Next.js can
+    // bundle `@crackgate/database` into separate chunks for the route and the
+    // `db` singleton, which makes `instanceof Prisma.PrismaClientKnownRequestError`
+    // fail across the chunk boundary even for a genuine P2002.
     if (
-      e instanceof Prisma.PrismaClientKnownRequestError &&
-      e.code === "P2002"
+      typeof e === "object" &&
+      e !== null &&
+      (e as { code?: string }).code === "P2002"
     ) {
       return NextResponse.json(
         {
