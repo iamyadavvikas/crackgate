@@ -9,7 +9,9 @@ export function SiteFooter() {
         <div>
           <div className="flex items-center gap-2 font-extrabold text-white">
             <BrandMark size={36} />
-            CrackGate<span className="text-accent">.in</span>
+            <span>
+              CrackGate<span className="text-accent">.in</span>
+            </span>
           </div>
           <p className="text-sm mt-3 text-slate-400 max-w-xs">
             India's dedicated GATE Mining Engineering (MN) test prep. 10 mocks, topic-wise practice, SWOT analytics.

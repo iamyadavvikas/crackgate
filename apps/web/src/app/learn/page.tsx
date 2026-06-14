@@ -132,10 +132,6 @@ export default async function LearnIndex() {
           </section>
         ))}
       </div>
-
-      <p className="text-center text-sm text-muted mt-10">
-        Live sub-topics show a tier badge; the rest map the full syllabus and are on the way.
-      </p>
     </div>
   );
 }

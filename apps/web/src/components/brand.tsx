@@ -54,7 +54,7 @@ export function BrandMark({ size = 36, className = "" }: { size?: number; classN
  */
 export function Wordmark({ className = "" }: { className?: string }) {
   return (
-    <span className={`font-extrabold tracking-tight leading-none ${className}`}>
+    <span className={`font-extrabold tracking-tight leading-none whitespace-nowrap ${className}`}>
       <span className="text-ink">Crack</span>
       <span className="text-brand">Gate</span>
       <span className="text-accent">.in</span>

@@ -72,20 +72,29 @@ export default function GrantAccessForm() {
             className="input mt-1 w-full"
           />
         </label>
-        <label className="block">
+        <div className="block">
           <span className="text-xs text-muted">Plan</span>
-          <select
-            value={plan}
-            onChange={(e) => setPlan(e.target.value as "pro" | "premium")}
-            className="input mt-1"
-          >
-            {PLANS.map((p) => (
-              <option key={p.value} value={p.value}>
-                {p.label}
-              </option>
-            ))}
-          </select>
-        </label>
+          <div className="mt-1 inline-flex rounded-lg border border-line p-0.5 bg-surface">
+            {PLANS.map((p) => {
+              const active = plan === p.value;
+              return (
+                <button
+                  key={p.value}
+                  type="button"
+                  aria-pressed={active}
+                  onClick={() => setPlan(p.value)}
+                  className={`px-3 py-2 rounded-md text-sm font-semibold transition ${
+                    active
+                      ? "bg-ok text-white shadow-sm"
+                      : "text-muted hover:text-ink"
+                  }`}
+                >
+                  {p.label}
+                </button>
+              );
+            })}
+          </div>
+        </div>
         <label className="block">
           <span className="text-xs text-muted">Months</span>
           <input
