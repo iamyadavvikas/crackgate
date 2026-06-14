@@ -1,11 +1,24 @@
+import Link from "next/link";
 import { CIL_PATTERN, CIL_PHASES, cilMocksByPhase, type CilMock } from "@/data/cil-mocks";
+import { CIL_PRICE_RUPEES } from "@/data/cil";
 
 /**
  * Renders the 15-mock CIL Management Trainee prep series for a discipline,
- * grouped into three progressive phases. Mocks are "coming soon" placeholders;
- * each card carries a disabled Start Mock control until question banks ship.
+ * grouped into three progressive phases. Access is gated per discipline: until
+ * the user holds an Entitlement(exam="PSU", subject=slug) the series shows a
+ * paywall and locked cards. Once unlocked, any mock that has shipped
+ * (status "live") gets an enabled Start Mock control.
  */
-export function CilMockPlan({ discipline }: { discipline: string }) {
+export function CilMockPlan({
+  discipline,
+  slug,
+  unlocked,
+}: {
+  discipline: string;
+  slug: string;
+  unlocked: boolean;
+}) {
+  const payHref = `/pay/upi?plan=pro&exam=PSU&subject=${slug}`;
   return (
     <section className="max-w-7xl mx-auto px-5 py-14">
       <div className="flex flex-wrap items-end justify-between gap-4">
@@ -19,6 +32,17 @@ export function CilMockPlan({ discipline }: { discipline: string }) {
         </div>
         <span className="badge badge-pro shrink-0">Launching soon</span>
       </div>
+
+      {/* Access state */}
+      {unlocked ? (
+        <div className="mt-6 flex items-center gap-3 rounded-xl border border-ok/30 bg-ok/10 px-4 py-3 text-sm">
+          <span aria-hidden className="text-ok">✓</span>
+          <span className="font-semibold text-ink">{discipline} series unlocked.</span>
+          <span className="text-muted">Mocks open here as soon as each one ships.</span>
+        </div>
+      ) : (
+        <CilPaywall discipline={discipline} payHref={payHref} />
+      )}
 
       <div className="mt-8 space-y-10">
         {CIL_PHASES.map((phase, idx) => (
@@ -35,7 +59,7 @@ export function CilMockPlan({ discipline }: { discipline: string }) {
 
             <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {cilMocksByPhase(phase.id).map((m) => (
-                <MockCard key={m.no} mock={m} />
+                <MockCard key={m.no} mock={m} unlocked={unlocked} payHref={payHref} />
               ))}
             </div>
           </div>
@@ -45,10 +69,54 @@ export function CilMockPlan({ discipline }: { discipline: string }) {
   );
 }
 
-function MockCard({ mock }: { mock: CilMock }) {
+/** Top-of-series purchase banner shown to users without access. */
+function CilPaywall({ discipline, payHref }: { discipline: string; payHref: string }) {
+  return (
+    <div className="mt-6 overflow-hidden rounded-2xl border border-cyan-400/30 bg-gradient-to-r from-blue-950 to-slate-900 text-white">
+      <div className="flex flex-col gap-4 p-5 sm:flex-row sm:items-center sm:justify-between sm:p-6">
+        <div className="flex items-start gap-3">
+          <span aria-hidden className="mt-0.5 text-2xl">🔒</span>
+          <div>
+            <h3 className="text-lg font-extrabold">Unlock all 15 {discipline} mocks</h3>
+            <p className="mt-1 max-w-xl text-sm text-white/70">
+              Full official CIL MT pattern — Technical sectionals, Aptitude &amp; GK, and
+              full-length simulations. One payment, valid through the recruitment cycle.
+            </p>
+          </div>
+        </div>
+        <div className="flex shrink-0 flex-col items-stretch gap-1 sm:items-end">
+          <div className="text-right">
+            <span className="text-3xl font-extrabold">₹{CIL_PRICE_RUPEES}</span>
+          </div>
+          <Link
+            href={payHref}
+            className="cg-neon inline-flex items-center justify-center gap-2 rounded-lg border border-cyan-400/70 bg-cyan-400/10 px-6 py-3 text-sm font-semibold text-cyan-100 transition hover:bg-cyan-400/20"
+          >
+            Unlock now <span aria-hidden>→</span>
+          </Link>
+          <span className="text-[11px] text-white/50">Pay via UPI · access in a few hours</span>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function MockCard({
+  mock,
+  unlocked,
+  payHref,
+}: {
+  mock: CilMock;
+  unlocked: boolean;
+  payHref: string;
+}) {
+  const live = mock.status === "live";
+  const canStart = unlocked && live;
   return (
     <div className="card relative flex flex-col p-5 opacity-90">
-      <span className="badge badge-pro absolute right-4 top-4">Coming soon</span>
+      <span className="badge badge-pro absolute right-4 top-4">
+        {live ? (unlocked ? "Ready" : "Locked") : "Coming soon"}
+      </span>
       <div className="text-xs font-mono text-brand">Mock {String(mock.no).padStart(2, "0")}</div>
       <h4 className="mt-1 pr-20 font-bold text-ink leading-snug">{mock.title}</h4>
 
@@ -63,15 +131,33 @@ function MockCard({ mock }: { mock: CilMock }) {
         ))}
       </ul>
 
-      <button
-        type="button"
-        disabled
-        aria-disabled
-        title="Coming soon"
-        className="btn btn-ghost mt-4 w-full cursor-not-allowed justify-center opacity-60"
-      >
-        Start Mock
-      </button>
+      {canStart ? (
+        <Link
+          href={`/mocks/cil-${mock.no}`}
+          className="btn btn-primary mt-4 w-full justify-center"
+        >
+          Start Mock
+        </Link>
+      ) : !unlocked ? (
+        <Link
+          href={payHref}
+          title="Unlock to access"
+          className="btn btn-ghost mt-4 w-full justify-center gap-2"
+        >
+          <span aria-hidden>🔒</span> Unlock to access
+        </Link>
+      ) : (
+        <button
+          type="button"
+          disabled
+          aria-disabled
+          title="Coming soon"
+          className="btn btn-ghost mt-4 w-full cursor-not-allowed justify-center opacity-60"
+        >
+          Start Mock
+        </button>
+      )}
     </div>
   );
 }
+

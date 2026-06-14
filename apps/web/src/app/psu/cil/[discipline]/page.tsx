@@ -2,6 +2,11 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { CIL_ROWS, getCilDiscipline, CIL_RECRUITMENT_URL } from "@/data/cil";
 import { CilMockPlan } from "@/components/cil-mock-plan";
+import { auth } from "@/lib/auth";
+import { hasEntitlement } from "@/lib/entitlements";
+
+// Entitlement is per-user, so this page must render per-request.
+export const dynamic = "force-dynamic";
 
 export function generateStaticParams() {
   return CIL_ROWS.map((r) => ({ discipline: r.slug }));
@@ -17,6 +22,13 @@ export default async function CilDisciplinePage(props: { params: Promise<{ disci
   const { discipline } = await props.params;
   const row = getCilDiscipline(discipline);
   if (!row) notFound();
+
+  // Per-discipline access: a CIL purchase records an Entitlement(exam="PSU",
+  // subject=<slug>). Admins (role) see everything unlocked.
+  const session = await auth();
+  const userId = (session?.user as { id?: string } | undefined)?.id;
+  const isAdmin = (session?.user as { role?: string } | undefined)?.role === "admin";
+  const unlocked = isAdmin || (await hasEntitlement(userId ?? "", "PSU", row.slug));
 
   return (
     <>
@@ -53,7 +65,7 @@ export default async function CilDisciplinePage(props: { params: Promise<{ disci
         </div>
       </section>
 
-      <CilMockPlan discipline={row.discipline} />
+      <CilMockPlan discipline={row.discipline} slug={row.slug} unlocked={unlocked} />
     </>
   );
 }

@@ -10,10 +10,21 @@ type Props = {
   defaultName?: string;
   defaultPhone?: string;
   defaultEmail?: string;
+  defaultExam?: string;
+  /** Canonical subject value submitted/stored (e.g. the discipline slug). */
+  defaultSubject?: string;
+  /** Friendly label shown when attribution is locked from a deep link. */
+  defaultSubjectLabel?: string;
 };
 
 const APPS = ["PhonePe", "GPay", "Paytm", "BHIM", "Other"] as const;
 const EXAMS = ["GATE", "PSU", "State Level"] as const;
+
+function coerceExam(value: string | undefined): (typeof EXAMS)[number] {
+  return (EXAMS as readonly string[]).includes(value ?? "")
+    ? (value as (typeof EXAMS)[number])
+    : "GATE";
+}
 
 export default function UpiClaimForm({
   plan,
@@ -21,13 +32,20 @@ export default function UpiClaimForm({
   defaultName = "",
   defaultPhone = "",
   defaultEmail = "",
+  defaultExam,
+  defaultSubject = "",
+  defaultSubjectLabel,
 }: Props) {
   const router = useRouter();
+  // Attribution is locked when the buyer arrived from a specific product CTA
+  // (deep link carried both exam + subject) — they shouldn't have to retype it,
+  // and we keep the canonical slug so the access gate matches.
+  const locked = Boolean(defaultExam && defaultSubject && defaultSubjectLabel);
   const [payerName, setPayerName] = useState(defaultName);
   const [payerPhone, setPayerPhone] = useState(defaultPhone);
   const [payerEmail, setPayerEmail] = useState(defaultEmail);
-  const [examName, setExamName] = useState<(typeof EXAMS)[number]>("GATE");
-  const [subject, setSubject] = useState("");
+  const [examName, setExamName] = useState<(typeof EXAMS)[number]>(coerceExam(defaultExam));
+  const [subject, setSubject] = useState(defaultSubject);
   const [upiApp, setUpiApp] = useState<(typeof APPS)[number]>("PhonePe");
   const [payerNote, setPayerNote] = useState("");
   const [loading, setLoading] = useState(false);
@@ -206,18 +224,25 @@ export default function UpiClaimForm({
         >
           Exam <span className="text-err">*</span>
         </label>
-        <select
-          id="examName"
-          value={examName}
-          onChange={(e) => setExamName(e.target.value as (typeof EXAMS)[number])}
-          className="input w-full mt-1"
-        >
-          {EXAMS.map((x) => (
-            <option key={x} value={x}>
-              {x}
-            </option>
-          ))}
-        </select>
+        {locked ? (
+          <div className="input w-full mt-1 flex items-center justify-between bg-canvas/60">
+            <span className="font-medium text-ink">{examName}</span>
+            <span className="text-[11px] text-muted">from your selection</span>
+          </div>
+        ) : (
+          <select
+            id="examName"
+            value={examName}
+            onChange={(e) => setExamName(e.target.value as (typeof EXAMS)[number])}
+            className="input w-full mt-1"
+          >
+            {EXAMS.map((x) => (
+              <option key={x} value={x}>
+                {x}
+              </option>
+            ))}
+          </select>
+        )}
       </div>
 
       <div>
@@ -227,17 +252,24 @@ export default function UpiClaimForm({
         >
           Subject <span className="text-err">*</span>
         </label>
-        <input
-          id="subject"
-          name="subject"
-          required
-          minLength={2}
-          maxLength={80}
-          value={subject}
-          onChange={(e) => setSubject(e.target.value)}
-          placeholder="e.g. Mining Engineering"
-          className="input w-full mt-1"
-        />
+        {locked ? (
+          <div className="input w-full mt-1 flex items-center justify-between bg-canvas/60">
+            <span className="font-medium text-ink">{defaultSubjectLabel}</span>
+            <span className="text-[11px] text-muted">from your selection</span>
+          </div>
+        ) : (
+          <input
+            id="subject"
+            name="subject"
+            required
+            minLength={2}
+            maxLength={80}
+            value={subject}
+            onChange={(e) => setSubject(e.target.value)}
+            placeholder="e.g. Mining Engineering"
+            className="input w-full mt-1"
+          />
+        )}
       </div>
 
       <div>

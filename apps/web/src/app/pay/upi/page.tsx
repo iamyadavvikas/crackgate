@@ -4,6 +4,7 @@ import QRCode from "qrcode";
 import UpiClaimForm from "./form";
 import { db } from "@/lib/db";
 import { whatsappLink } from "@/lib/contact";
+import { getCilDiscipline } from "@/data/cil";
 
 export const dynamic = "force-dynamic";
 
@@ -14,18 +15,41 @@ const PLANS = {
 
 type Plan = keyof typeof PLANS;
 
+// Map a catalog exam code (from the unlock CTA) to the form's exam label.
+const EXAM_LABEL: Record<string, string> = {
+  GATE: "GATE",
+  PSU: "PSU",
+  STATE: "State Level",
+  DIPLOMA: "Diploma",
+};
+
 export default async function PayUpiPage({
   searchParams,
 }: {
-  searchParams: Promise<{ plan?: string }>;
+  searchParams: Promise<{ plan?: string; exam?: string; subject?: string }>;
 }) {
   const sp = await searchParams;
   const planKey: Plan = sp.plan === "premium" ? "premium" : "pro";
   const cfg = PLANS[planKey];
 
+  // Optional deep-link attribution (e.g. from the CIL unlock CTA:
+  // /pay/upi?plan=pro&exam=PSU&subject=civil). The slug is the canonical value
+  // we submit/store (so it matches the entitlement gate); the label is only for
+  // display.
+  const examCode = (sp.exam ?? "").toUpperCase();
+  const defaultExam = EXAM_LABEL[examCode];
+  const subjectSlug = sp.subject?.trim();
+  const defaultSubjectLabel =
+    examCode === "PSU" && subjectSlug
+      ? getCilDiscipline(subjectSlug)?.discipline ?? subjectSlug
+      : subjectSlug;
+
   const session = await auth();
   if (!session?.user?.id) {
-    redirect(`/login?next=/pay/upi?plan=${planKey}`);
+    const qs = new URLSearchParams({ plan: planKey });
+    if (sp.exam) qs.set("exam", sp.exam);
+    if (subjectSlug) qs.set("subject", subjectSlug);
+    redirect(`/login?next=${encodeURIComponent(`/pay/upi?${qs.toString()}`)}`);
   }
 
   const vpa = process.env.NEXT_PUBLIC_UPI_VPA || "";
@@ -138,6 +162,9 @@ export default async function PayUpiPage({
               plan={planKey}
               amountRupees={cfg.amountRupees}
               defaultPhone={me?.phone ?? ""}
+              defaultExam={defaultExam}
+              defaultSubject={subjectSlug}
+              defaultSubjectLabel={defaultSubjectLabel}
             />
           </div>
         </div>

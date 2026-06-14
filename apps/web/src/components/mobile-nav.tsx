@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
-import { CIL_ROWS } from "@/data/cil";
+import { PSU_COMPANIES } from "@/data/psu";
 
 type Leaf = { href: string; label: string; soon?: boolean };
 type Section = { label: string; href?: string; soon?: boolean; children?: Leaf[] };
@@ -19,8 +19,12 @@ const SECTIONS: Section[] = [
     ],
   },
   {
-    label: "PSU · Coal India Limited (CIL)",
-    children: CIL_ROWS.map((r) => ({ href: `/psu/cil/${r.slug}`, label: r.discipline })),
+    label: "PSU",
+    children: PSU_COMPANIES.map((c) => ({
+      href: c.live ? `/psu/${c.slug}` : "",
+      label: `${c.short} — ${c.name}`,
+      soon: !c.live,
+    })),
   },
   { label: "State Level Exam", href: "/state" },
   { label: "Diploma", href: "/diploma" },
@@ -128,6 +132,16 @@ export function MobileNav({ authed }: { authed: boolean }) {
                   <ul className="space-y-0.5">
                     {s.children.map((l) => {
                       const active = pathname === l.href || pathname.startsWith(l.href + "/");
+                      if (l.soon || !l.href) {
+                        return (
+                          <li key={l.label}>
+                            <div className="flex items-center justify-between rounded-lg px-4 py-2.5 text-base font-medium text-muted">
+                              {l.label}
+                              <span className="badge badge-pro">Soon</span>
+                            </div>
+                          </li>
+                        );
+                      }
                       return (
                         <li key={l.href}>
                           <Link

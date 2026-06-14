@@ -4811,6 +4811,1605 @@ const ecCostBenefit: LearnTopic = {
   ],
 };
 
+/* ════════════════════════════════════════════════════════════════════ */
+/*  PENDING MODULES — authored to complete the syllabus map               */
+/* ════════════════════════════════════════════════════════════════════ */
+
+/* ---- Section 2 — Mining Geology, Mine Development & Surveying ---------- */
+
+const geoMineralsRocks: LearnTopic = {
+  slug: "geo-minerals-rocks",
+  subject: "Mine Development & Surveying",
+  title: "Mining Geology: Minerals & Rocks",
+  tier: "free",
+  blurb:
+    "How minerals are identified from physical properties and how the three rock families form — the geological vocabulary every MN question assumes.",
+  module: {
+    principle:
+      "A **mineral** is a naturally occurring, inorganic, crystalline solid with a definite chemical composition; a **rock** is a solid aggregate of one or more minerals. Minerals are fingerprinted by **physical properties** — **hardness** (Mohs scale 1–10, talc to diamond), **cleavage/fracture**, **lustre**, **streak** (colour of the powder, far more reliable than the body colour), and **specific gravity (SG)**. Rocks fall into three families by their mode of origin: **igneous** (crystallised from molten magma/lava), **sedimentary** (lithified from weathered detritus or chemical/organic precipitates, the host of coal and most placer/strata-bound deposits), and **metamorphic** (recrystallised in the solid state under heat and pressure).",
+    formulaMatrix: [
+      "**Specific gravity (Archimedes)**: $SG = \\dfrac{W_{air}}{W_{air}-W_{water}}$",
+      "",
+      "**Density link**: $\\rho_{mineral} = SG \\times \\rho_{water} = SG \\times 1000\\ \\text{kg/m}^3$",
+      "",
+      "**Mohs scale (ordinal, non-linear)**: talc 1, gypsum 2, calcite 3, fluorite 4, apatite 5, orthoclase 6, quartz 7, topaz 8, corundum 9, diamond 10.",
+      "",
+      "**Mineral mass in a rock**: $m_{mineral} = V_{rock}\\,\\rho_{rock}\\,x_{mineral}$ (mass fraction $x$).",
+    ].join("\n"),
+    traps: [
+      "**Streak ≠ colour.** Body colour varies with impurities; the streak (powder colour) is diagnostic — e.g. pyrite is brassy but streaks greenish-black.",
+      "**Mohs is ordinal, not linear.** Diamond (10) is far more than twice as hard as apatite (5); never interpolate hardness numerically.",
+      "**Rock vs mineral.** Granite is a rock (quartz + feldspar + mica); quartz is a mineral. Coal, though organic, is classified with the sedimentary rocks.",
+      "**SG uses the weight loss in water**, not the water weight — the denominator is $W_{air}-W_{water}$.",
+    ],
+  },
+  questions: [
+    {
+      id: "geo-mr-q1",
+      difficulty: "basic",
+      marks: 1,
+      type: "MCQ",
+      stem: "On the Mohs scale of hardness, the mineral that scratches all others but is scratched by none is:",
+      options: ["Quartz", "Corundum", "Diamond", "Topaz"],
+      answer: 2,
+      solution: {
+        given: "Mohs scale ranks hardness 1 (talc) to 10 (diamond).",
+        derivation: "The hardest mineral sits at the top of the scale and cannot be scratched by any other natural mineral.",
+        target: "**Correct option: Diamond (Mohs 10).** Corundum is 9, topaz 8, quartz 7 — all scratched by diamond.",
+      },
+    },
+    {
+      id: "geo-mr-q2",
+      difficulty: "medium",
+      marks: 2,
+      type: "NAT",
+      stem:
+        "A mineral specimen weighs $54.0\\ \\text{g}$ in air and $34.0\\ \\text{g}$ when fully submerged in water. Its specific gravity is ______. (Round off to two decimal places.)",
+      natAnswer: 2.7,
+      acceptedRange: [2.65, 2.75],
+      unit: "",
+      solution: {
+        given: "$W_{air} = 54.0\\ \\text{g}$, $W_{water} = 34.0\\ \\text{g}$.",
+        derivation:
+          "$$SG = \\frac{W_{air}}{W_{air}-W_{water}} = \\frac{54.0}{54.0-34.0} = \\frac{54.0}{20.0} = 2.70$$",
+        target: "**Target: 2.70 | Accepted range: 2.65 to 2.75.** This value is typical of quartz/feldspar.",
+      },
+    },
+    {
+      id: "geo-mr-q3",
+      difficulty: "hard",
+      marks: 2,
+      type: "MSQ",
+      stem: "Which of the following are correctly paired with their rock family? (Select all that apply.)",
+      options: [
+        "Granite — igneous",
+        "Marble — metamorphic",
+        "Sandstone — sedimentary",
+        "Basalt — sedimentary",
+      ],
+      answer: [0, 1, 2],
+      solution: {
+        given: "Igneous = crystallised melt; sedimentary = lithified detritus/precipitate; metamorphic = recrystallised in solid state.",
+        derivation:
+          "Granite crystallises from magma (igneous). Marble is metamorphosed limestone. Sandstone is lithified sand (sedimentary). Basalt is an extrusive **igneous** rock, not sedimentary.",
+        target: "**Correct: Granite–igneous, Marble–metamorphic, Sandstone–sedimentary.** Basalt is igneous, so that pairing is wrong.",
+      },
+    },
+  ],
+};
+
+const geoOreGenesis: LearnTopic = {
+  slug: "geo-ore-genesis",
+  subject: "Mine Development & Surveying",
+  title: "Classification & Ore Genesis",
+  tier: "free",
+  blurb:
+    "The processes that concentrate metals into mineable orebodies — magmatic, hydrothermal, sedimentary and placer — plus the grade/tenor arithmetic that decides if rock is ore.",
+  module: {
+    principle:
+      "An **ore** is a rock from which a metal can be extracted **at a profit** — so an orebody is defined as much by economics as by geology. **Ore genesis** describes how ordinary crustal abundances are upgraded by a factor of tens to thousands into a mineable **grade (tenor)**. Key processes: **magmatic segregation** (early dense sulphides/oxides settle in a cooling magma — e.g. chromite, Ni–Cu sulphides), **hydrothermal** (hot mineralising fluids deposit veins and disseminations along fractures — most base- and precious-metal lodes), **sedimentary/residual** (banded iron formations, bauxite from lateritic weathering), and **placer** (mechanical concentration of heavy, durable minerals — gold, cassiterite, diamond — in stream/beach sediments).",
+    formulaMatrix: [
+      "**Concentration factor**: $CF = \\dfrac{\\text{ore grade}}{\\text{average crustal abundance}}$",
+      "",
+      "**Contained metal**: $M = T \\times g$  (tonnage $T$ × grade fraction $g$)",
+      "",
+      "**Recoverable metal**: $M_{rec} = T \\times g \\times R$  (recovery $R$)",
+      "",
+      "**Grade conversion**: $1\\% = 10{,}000\\ \\text{ppm} = 10\\ \\text{kg/t}$; gold often quoted in g/t.",
+    ].join("\n"),
+    traps: [
+      "**Grade is a fraction in the tonnage formula.** A 2% Cu ore means $g=0.02$, not 2, when multiplying by tonnage.",
+      "**ppm ↔ %.** $1\\% = 10{,}000\\ \\text{ppm}$. Mixing these by a factor of $10^4$ is the classic blunder.",
+      "**Ore is economic, not just enriched.** A high concentration factor does not make rock 'ore' unless extraction pays.",
+      "**Placer ≠ hydrothermal.** Placers concentrate by density/durability in sediments; they are not chemically precipitated from fluids.",
+    ],
+  },
+  questions: [
+    {
+      id: "geo-og-q1",
+      difficulty: "basic",
+      marks: 1,
+      type: "MCQ",
+      stem: "Alluvial gold and cassiterite are most characteristically concentrated by which ore-forming process?",
+      options: ["Magmatic segregation", "Placer (mechanical) concentration", "Hydrothermal veining", "Contact metamorphism"],
+      answer: 1,
+      solution: {
+        given: "Gold and cassiterite are dense, chemically durable minerals.",
+        derivation: "Heavy, weathering-resistant grains are winnowed and concentrated by flowing water in stream and beach sediments.",
+        target: "**Correct option: Placer concentration.** This exploits high density and durability, not chemical precipitation.",
+      },
+    },
+    {
+      id: "geo-og-q2",
+      difficulty: "medium",
+      marks: 2,
+      type: "NAT",
+      stem:
+        "An orebody contains $5.0$ million tonnes at an average grade of $1.2\\%$ copper. If metallurgical recovery is $90\\%$, the recoverable copper metal is ______ tonnes. (Round to the nearest whole number.)",
+      natAnswer: 54000,
+      acceptedRange: [53500, 54500],
+      unit: "t",
+      solution: {
+        given: "$T = 5.0\\times10^{6}\\ \\text{t}$, $g = 0.012$, $R = 0.90$.",
+        derivation:
+          "$$M_{rec} = T\\,g\\,R = 5.0\\times10^{6}\\times0.012\\times0.90$$\n$$= 60{,}000\\times0.90 = 54{,}000\\ \\text{t}$$",
+        target: "**Target: 54000 t | Accepted range: 53500 to 54500.** In-situ metal is 60,000 t; recovery trims 10%.",
+      },
+    },
+    {
+      id: "geo-og-q3",
+      difficulty: "hard",
+      marks: 2,
+      type: "NAT",
+      stem:
+        "Copper has an average crustal abundance of about $55\\ \\text{ppm}$. For a deposit to be mined at $0.55\\%$ Cu, the concentration factor relative to crustal abundance is ______. (Round off to the nearest whole number.)",
+      natAnswer: 100,
+      acceptedRange: [95, 105],
+      unit: "",
+      solution: {
+        given: "Ore grade $= 0.55\\% = 5500\\ \\text{ppm}$; crustal abundance $= 55\\ \\text{ppm}$.",
+        derivation:
+          "$$CF = \\frac{\\text{ore grade}}{\\text{crustal abundance}} = \\frac{5500}{55} = 100$$",
+        target: "**Target: 100 | Accepted range: 95 to 105.** Convert 0.55% to 5500 ppm before dividing.",
+      },
+    },
+  ],
+};
+
+const geoStructural: LearnTopic = {
+  slug: "geo-structural",
+  subject: "Mine Development & Surveying",
+  title: "Structural Geology",
+  tier: "free",
+  blurb:
+    "Dip, strike, folds and faults — and the apparent-dip and true-thickness trigonometry that turns a geological section into mineable numbers.",
+  module: {
+    principle:
+      "**Structural geology** describes how rock layers are oriented and deformed. A planar bed is fixed by its **strike** (the horizontal line on the plane) and its **true dip** $\\delta$ (the steepest inclination, measured perpendicular to strike). Any section cut oblique to strike shows a gentler **apparent dip** $\\alpha$. Deformation produces **folds** (anticlines/synclines), **faults** (normal — extension, hanging wall down; reverse/thrust — compression, hanging wall up; strike-slip — lateral), and **joints** (fractures with no displacement). For mine planning the two quantities that matter most are the **apparent dip** seen in a given drive direction and the **true thickness** of a seam from its outcrop/borehole width.",
+    formulaMatrix: [
+      "**Apparent dip**: $\\tan\\alpha = \\tan\\delta\\,\\sin\\beta$  ($\\beta$ = angle between section and strike)",
+      "",
+      "**True thickness from horizontal width** $w$ (across-strike, beds dipping $\\delta$): $t = w\\,\\sin\\delta$",
+      "",
+      "**True thickness from a vertical borehole depth** $d$ through the seam: $t = d\\,\\cos\\delta$",
+      "",
+      "**Limits**: along strike $\\beta=0\\Rightarrow\\alpha=0$; perpendicular $\\beta=90^\\circ\\Rightarrow\\alpha=\\delta$.",
+    ].join("\n"),
+    traps: [
+      "**Apparent dip $\\leq$ true dip, always.** If a calculation gives $\\alpha>\\delta$, the section angle $\\beta$ was mis-measured.",
+      "**Horizontal width uses $\\sin\\delta$; vertical depth uses $\\cos\\delta$.** Picking the wrong projection swaps the answer.",
+      "**Normal vs reverse fault.** Normal = hanging wall **down** (extension); reverse/thrust = hanging wall **up** (compression).",
+      "**$\\beta$ is measured from the strike**, not from the dip direction; using the complement flips $\\sin$ and $\\cos$.",
+    ],
+  },
+  questions: [
+    {
+      id: "geo-st-q1",
+      difficulty: "basic",
+      marks: 1,
+      type: "MCQ",
+      stem: "In a normal fault, the hanging wall moves:",
+      options: ["Up relative to the footwall", "Down relative to the footwall", "Horizontally only", "It does not move"],
+      answer: 1,
+      solution: {
+        given: "Normal faults form under extensional (tensional) stress.",
+        derivation: "Extension lets the hanging wall slip down the fault plane relative to the footwall.",
+        target: "**Correct option: Down relative to the footwall.** Reverse/thrust faults (compression) push it up.",
+      },
+    },
+    {
+      id: "geo-st-q2",
+      difficulty: "medium",
+      marks: 2,
+      type: "NAT",
+      stem:
+        "A coal seam has a true dip of $30^\\circ$. A roadway is driven at $40^\\circ$ to the strike. The apparent dip along the roadway is ______ degrees. (Round off to two decimal places.)",
+      natAnswer: 20.36,
+      acceptedRange: [20.0, 20.7],
+      unit: "deg",
+      solution: {
+        given: "$\\delta = 30^\\circ$, $\\beta = 40^\\circ$.",
+        derivation:
+          "$$\\tan\\alpha = \\tan\\delta\\,\\sin\\beta = \\tan 30^\\circ \\times \\sin 40^\\circ$$\n$$= 0.5774\\times0.6428 = 0.3712$$\n$$\\alpha = \\tan^{-1}(0.3712) = 20.36^\\circ$$",
+        target: "**Target: 20.36° | Accepted range: 20.0 to 20.7.** Apparent dip is gentler than the 30° true dip, as expected.",
+      },
+    },
+    {
+      id: "geo-st-q3",
+      difficulty: "hard",
+      marks: 2,
+      type: "NAT",
+      stem:
+        "A seam dipping at $35^\\circ$ shows a horizontal outcrop width of $12\\ \\text{m}$ measured across the strike. Its true (perpendicular) thickness is ______ m. (Round off to two decimal places.)",
+      natAnswer: 6.88,
+      acceptedRange: [6.7, 7.05],
+      unit: "m",
+      solution: {
+        given: "Horizontal across-strike width $w = 12\\ \\text{m}$, dip $\\delta = 35^\\circ$.",
+        derivation:
+          "$$t = w\\,\\sin\\delta = 12\\times\\sin 35^\\circ = 12\\times0.5736 = 6.88\\ \\text{m}$$",
+        target: "**Target: 6.88 m | Accepted range: 6.70 to 7.05.** Horizontal width → use $\\sin\\delta$ (not $\\cos$).",
+      },
+    },
+  ],
+};
+
+const mdsRockToolInteraction: LearnTopic = {
+  slug: "mds-rock-tool-interaction",
+  subject: "Mine Development & Surveying",
+  title: "Rock–Tool Interaction & Mechanical Cutting",
+  tier: "free",
+  blurb:
+    "Specific energy — the single number that links cutter forces, machine power and production rate for roadheaders and continuous miners.",
+  module: {
+    principle:
+      "Mechanical excavators (roadheaders, continuous miners, TBMs) break rock with **drag or disc picks**. The governing quantity is **specific energy (SE)** — the energy needed to excavate **unit volume** of rock. Efficient cutting (deeper picks, optimum spacing-to-depth ratio) **minimises SE**; blunt tools or shallow scraping raise it. Because $SE = \\text{power}/\\text{production rate}$, it directly ties the installed **cutting power** of a machine to the **volume rate** it can achieve in a given rock, and the **cutting force** on each pick to the depth of cut. SE rises with rock strength, so it is the practical index for machine selection and cutter-head sizing.",
+    formulaMatrix: [
+      "**Specific energy**: $SE = \\dfrac{P_{cut}}{Q}$  (cutting power $P_{cut}$ ÷ volume production rate $Q$)",
+      "",
+      "**Production rate**: $Q = \\dfrac{P_{cut}}{SE}$,  with $SE$ in $\\text{MJ/m}^3$ and $P$ in MW gives $Q$ in $\\text{m}^3/\\text{s}$.",
+      "",
+      "**Cutting work per pick pass**: $W = F_c \\times \\ell$  (mean cutting force $F_c$ × cut length $\\ell$)",
+      "",
+      "**Unit note**: $1\\ \\text{MJ/m}^3 = 1\\ \\text{MPa}$; SE and rock UCS share dimensions.",
+    ].join("\n"),
+    traps: [
+      "**Lower SE = better cutting.** SE measures inefficiency of energy use, so minimising it is the design goal.",
+      "**Keep units consistent.** $SE\\,[\\text{MJ/m}^3]$ with power in MW gives $Q$ in $\\text{m}^3/\\text{s}$; convert to m³/h by ×3600.",
+      "**Cutting power, not total motor power.** Auxiliary, gathering and tramming loads are excluded from $P_{cut}$.",
+      "**SE rises with optimum s/d ratio departures.** Too-wide pick spacing leaves ridges and spikes SE.",
+    ],
+  },
+  questions: [
+    {
+      id: "mds-rt-q1",
+      difficulty: "basic",
+      marks: 1,
+      type: "MCQ",
+      stem: "Specific energy in mechanical rock cutting is defined as the energy required to:",
+      options: [
+        "Excavate unit volume of rock",
+        "Move the machine unit distance",
+        "Sharpen one pick",
+        "Raise rock through unit height",
+      ],
+      answer: 0,
+      solution: {
+        given: "SE has units of energy per unit volume ($\\text{MJ/m}^3$).",
+        derivation: "By definition $SE = P_{cut}/Q$ — energy expended per unit volume excavated.",
+        target: "**Correct option: Excavate unit volume of rock.** Lower SE indicates more efficient cutting.",
+      },
+    },
+    {
+      id: "mds-rt-q2",
+      difficulty: "medium",
+      marks: 2,
+      type: "NAT",
+      stem:
+        "A roadheader cutting head develops $300\\ \\text{kW}$ of cutting power in rock of specific energy $20\\ \\text{MJ/m}^3$. The instantaneous cutting rate is ______ $\\text{m}^3/\\text{h}$. (Round off to one decimal place.)",
+      natAnswer: 54,
+      acceptedRange: [53, 55],
+      unit: "m³/h",
+      solution: {
+        given: "$P_{cut} = 300\\ \\text{kW} = 0.300\\ \\text{MW}$, $SE = 20\\ \\text{MJ/m}^3$.",
+        derivation:
+          "$$Q = \\frac{P_{cut}}{SE} = \\frac{0.300\\ \\text{MJ/s}}{20\\ \\text{MJ/m}^3} = 0.015\\ \\text{m}^3/\\text{s}$$\n$$Q = 0.015\\times3600 = 54.0\\ \\text{m}^3/\\text{h}$$",
+        target: "**Target: 54.0 m³/h | Accepted range: 53 to 55.** Express power in MJ/s so SE units cancel to m³/s, then ×3600.",
+      },
+    },
+    {
+      id: "mds-rt-q3",
+      difficulty: "hard",
+      marks: 2,
+      type: "NAT",
+      stem:
+        "A pick exerts a mean cutting force of $4.0\\ \\text{kN}$ over a $0.6\\ \\text{m}$ cut, removing $0.0015\\ \\text{m}^3$ of rock per pass. The specific energy is ______ $\\text{MJ/m}^3$. (Round off to two decimal places.)",
+      natAnswer: 1.6,
+      acceptedRange: [1.55, 1.65],
+      unit: "MJ/m³",
+      solution: {
+        given: "$F_c = 4.0\\ \\text{kN}$, cut length $\\ell = 0.6\\ \\text{m}$, volume per pass $V = 0.0015\\ \\text{m}^3$.",
+        derivation:
+          "$$W = F_c\\,\\ell = 4000\\times0.6 = 2400\\ \\text{J}$$\n$$SE = \\frac{W}{V} = \\frac{2400}{0.0015} = 1.6\\times10^{6}\\ \\text{J/m}^3 = 1.60\\ \\text{MJ/m}^3$$",
+        target: "**Target: 1.60 MJ/m³ | Accepted range: 1.55 to 1.65.** Work = force × distance, then divide by volume.",
+      },
+    },
+  ],
+};
+
+const mdsGisRemoteSensing: LearnTopic = {
+  slug: "mds-gis-remote-sensing",
+  subject: "Mine Development & Surveying",
+  title: "GIS & Remote Sensing Basics",
+  tier: "free",
+  blurb:
+    "Raster vs vector data, spectral bands and the photo-scale relation that converts an aerial image into ground distances.",
+  module: {
+    principle:
+      "**GIS (Geographic Information Systems)** store spatial data in two models: **vector** (points, lines, polygons — sharp boundaries like lease limits and benches) and **raster** (a grid of cells/pixels, each holding a value — elevation, reflectance). **Remote sensing** acquires information without contact, recording reflected/emitted energy in discrete **spectral bands** (visible, NIR, SWIR, thermal). Resolution is described as **spatial** (pixel ground size / GSD), **spectral** (number and width of bands), **radiometric** and **temporal**. **Photogrammetry** links an aerial photo to the ground through the **scale relation** $S = f/H = \\ell/L$, the basis for measuring distances and areas off imagery.",
+    formulaMatrix: [
+      "**Photo scale**: $S = \\dfrac{f}{H} = \\dfrac{\\ell}{L}$  ($f$ = focal length, $H$ = flying height above ground; $\\ell$ = photo distance, $L$ = ground distance)",
+      "",
+      "**Representative fraction**: a scale of 1:25,000 means $1\\ \\text{cm}$ on the photo = $25{,}000\\ \\text{cm} = 250\\ \\text{m}$ on the ground.",
+      "",
+      "**Ground distance**: $L = \\dfrac{\\ell}{S} = \\ell \\times \\dfrac{H}{f}$",
+      "",
+      "**Ground area**: $A_{ground} = A_{photo}\\times\\left(\\dfrac{1}{S}\\right)^2$  (area scales with the square).",
+    ].join("\n"),
+    traps: [
+      "**Scale is a ratio $f/H$ — flying height is above the ground**, not above sea level; ignoring terrain elevation biases the scale.",
+      "**Area scales as the square of the scale factor**, not linearly. Forgetting the square underestimates area by orders of magnitude.",
+      "**Larger denominator = smaller scale.** 1:50,000 is a *smaller* scale (less detail) than 1:10,000.",
+      "**Raster vs vector.** Continuous fields (DEMs, reflectance) suit raster; discrete features (boundaries, roads) suit vector.",
+    ],
+  },
+  questions: [
+    {
+      id: "mds-gis-q1",
+      difficulty: "basic",
+      marks: 1,
+      type: "MCQ",
+      stem: "In a GIS, a continuously varying surface such as a Digital Elevation Model is best represented by which data model?",
+      options: ["Vector points", "Vector polygons", "Raster grid", "Topological network"],
+      answer: 2,
+      solution: {
+        given: "Raster = grid of cells each holding a value; vector = discrete points/lines/polygons.",
+        derivation: "A continuous field like elevation maps naturally onto a regular grid of cells, one value per cell.",
+        target: "**Correct option: Raster grid.** Vector models suit discrete boundaries, not continuous surfaces.",
+      },
+    },
+    {
+      id: "mds-gis-q2",
+      difficulty: "medium",
+      marks: 2,
+      type: "NAT",
+      stem:
+        "An aerial camera of focal length $150\\ \\text{mm}$ flies at a height of $1500\\ \\text{m}$ above the ground. The representative fraction of the photograph is $1:n$, where $n$ is ______. (Round to the nearest whole number.)",
+      natAnswer: 10000,
+      acceptedRange: [9900, 10100],
+      unit: "",
+      solution: {
+        given: "$f = 150\\ \\text{mm} = 0.150\\ \\text{m}$, $H = 1500\\ \\text{m}$.",
+        derivation:
+          "$$S = \\frac{f}{H} = \\frac{0.150}{1500} = \\frac{1}{10{,}000}$$",
+        target: "**Target: 10000 | Accepted range: 9900 to 10100.** Keep $f$ and $H$ in the same units before dividing.",
+      },
+    },
+    {
+      id: "mds-gis-q3",
+      difficulty: "hard",
+      marks: 2,
+      type: "NAT",
+      stem:
+        "On a photograph of scale $1:10{,}000$, a rectangular waste dump measures $4.0\\ \\text{cm}\\times3.0\\ \\text{cm}$. Its actual ground area is ______ hectares. (Round off to one decimal place.)",
+      natAnswer: 12,
+      acceptedRange: [11.8, 12.2],
+      unit: "ha",
+      solution: {
+        given: "Photo area $= 4.0\\times3.0 = 12\\ \\text{cm}^2$; scale $S = 1/10{,}000$.",
+        derivation:
+          "Ground length factor $= 10{,}000$, so area factor $= 10{,}000^2 = 10^{8}$.\n$$A = 12\\ \\text{cm}^2 \\times 10^{8} = 12\\times10^{8}\\ \\text{cm}^2$$\n$$= 12\\times10^{8}\\times10^{-4}\\ \\text{m}^2 = 1.2\\times10^{5}\\ \\text{m}^2 = 12\\ \\text{ha}$$",
+        target: "**Target: 12.0 ha | Accepted range: 11.8 to 12.2.** Area scales with the square of the scale; $1\\ \\text{ha}=10^4\\ \\text{m}^2$.",
+      },
+    },
+  ],
+};
+
+/* ---- Section 3 — Geomechanics & Ground Control ------------------------ */
+
+const gmEngineeringMechanics: LearnTopic = {
+  slug: "gm-engineering-mechanics",
+  subject: "Geomechanics & Ground Control",
+  title: "Engineering Mechanics",
+  tier: "free",
+  blurb:
+    "Free-body diagrams, equilibrium, moments and friction — the statics toolkit underpinning every support, pillar and equipment-loading calculation.",
+  module: {
+    principle:
+      "**Engineering mechanics (statics)** analyses bodies in equilibrium. A body is in equilibrium when the **net force and net moment are zero**: $\\sum F_x = 0$, $\\sum F_y = 0$, $\\sum M = 0$. The first step is always a **free-body diagram (FBD)** isolating the body and showing every external force (loads, reactions, friction, weight). A **moment** measures a force's turning effect about a point: $M = F \\times d$, where $d$ is the **perpendicular** distance from the pivot to the line of action. **Dry friction** resists impending sliding up to a limit $F = \\mu N$ (coefficient of friction $\\mu$ × normal reaction $N$); on an incline of angle $\\theta$, sliding impends when $\\tan\\theta = \\mu$.",
+    formulaMatrix: [
+      "**Force equilibrium**: $\\sum F_x = 0,\\quad \\sum F_y = 0$",
+      "",
+      "**Moment equilibrium**: $\\sum M = 0$, with $M = F\\,d_{\\perp}$",
+      "",
+      "**Limiting friction**: $F_{max} = \\mu N$",
+      "",
+      "**Angle of repose** (block on incline): sliding impends when $\\tan\\theta = \\mu$, i.e. $\\theta = \\tan^{-1}\\mu$.",
+    ].join("\n"),
+    traps: [
+      "**Moment uses the perpendicular distance** to the line of action, not the slant distance to the point of application.",
+      "**Friction is $\\mu N$, and $N$ is not always $mg$.** On an incline $N = mg\\cos\\theta$; applied vertical forces also change $N$.",
+      "**Friction opposes *impending* motion** and is $\\leq \\mu N$ when static; only at the verge of sliding does $F = \\mu N$.",
+      "**Take moments about an unknown's line of action** to eliminate it — choosing the pivot wisely halves the algebra.",
+    ],
+  },
+  questions: [
+    {
+      id: "gm-em-q1",
+      difficulty: "basic",
+      marks: 1,
+      type: "MCQ",
+      stem: "The moment of a force about a point is the product of the force and the:",
+      options: [
+        "Distance along the force's line of action",
+        "Perpendicular distance from the point to the line of action",
+        "Magnitude of the reaction",
+        "Time of application",
+      ],
+      answer: 1,
+      solution: {
+        given: "Moment $M = F \\times d$.",
+        derivation: "The lever arm $d$ is the perpendicular (shortest) distance from the pivot to the force's line of action.",
+        target: "**Correct option: Perpendicular distance from the point to the line of action.**",
+      },
+    },
+    {
+      id: "gm-em-q2",
+      difficulty: "medium",
+      marks: 2,
+      type: "NAT",
+      stem:
+        "A block rests on a rough horizontal surface with coefficient of friction $0.30$ and normal reaction $500\\ \\text{N}$. The maximum static friction force available is ______ N. (Round to the nearest whole number.)",
+      natAnswer: 150,
+      acceptedRange: [148, 152],
+      unit: "N",
+      solution: {
+        given: "$\\mu = 0.30$, $N = 500\\ \\text{N}$.",
+        derivation: "$$F_{max} = \\mu N = 0.30\\times500 = 150\\ \\text{N}$$",
+        target: "**Target: 150 N | Accepted range: 148 to 152.** Limiting friction is $\\mu N$.",
+      },
+    },
+    {
+      id: "gm-em-q3",
+      difficulty: "hard",
+      marks: 2,
+      type: "NAT",
+      stem:
+        "A uniform horizontal beam of length $4\\ \\text{m}$ is simply supported at both ends and carries a single vertical point load of $600\\ \\text{N}$ at $1\\ \\text{m}$ from the left support. The vertical reaction at the left support is ______ N. (Round to the nearest whole number.)",
+      natAnswer: 450,
+      acceptedRange: [445, 455],
+      unit: "N",
+      solution: {
+        given: "Span $L = 4\\ \\text{m}$, load $W = 600\\ \\text{N}$ at $a = 1\\ \\text{m}$ from the left.",
+        derivation:
+          "Take moments about the right support: $R_L \\times 4 = 600\\times(4-1) = 600\\times3$.\n$$R_L = \\frac{1800}{4} = 450\\ \\text{N}$$",
+        target: "**Target: 450 N | Accepted range: 445 to 455.** Check: $R_R = 600-450 = 150\\ \\text{N}$.",
+      },
+    },
+  ],
+};
+
+const gmInsituMeasurement: LearnTopic = {
+  slug: "gm-insitu-measurement",
+  subject: "Geomechanics & Ground Control",
+  title: "In-situ Stress Measurement & Instrumentation",
+  tier: "free",
+  blurb:
+    "Overcoring, flatjack and hydraulic fracturing — how virgin ground stresses are measured, plus the convergence/load instruments that watch openings.",
+  module: {
+    principle:
+      "Underground openings respond to the **in-situ (virgin) stress field**, which must be measured, not guessed. The **vertical stress** is usually gravitational: $\\sigma_v = \\gamma H$ (unit weight × depth). The **horizontal stress** is expressed through the lateral stress ratio $k = \\sigma_h/\\sigma_v$. Field techniques: **overcoring** (a strain cell is set in a borehole, then stress-relieved by coring around it — the recovered strain gives stress), **flatjack** (slot cut in a wall, jack pressurised to cancel the relaxation), and **hydraulic fracturing** (a sealed borehole interval is pressurised until the wall cracks; the **breakdown** and **shut-in** pressures give the horizontal stresses). **Monitoring instruments** — convergence stations, extensometers, load cells and stress meters — track how the opening deforms over time.",
+    formulaMatrix: [
+      "**Vertical stress**: $\\sigma_v = \\gamma H$  (unit weight $\\gamma$ × depth $H$); rule of thumb $\\approx 0.025\\ \\text{MPa/m} = 1\\ \\text{MPa per }40\\ \\text{m}$.",
+      "",
+      "**Lateral stress ratio**: $k = \\dfrac{\\sigma_h}{\\sigma_v}$",
+      "",
+      "**Hydrofrac (impermeable rock)**: breakdown $P_b = 3\\sigma_{h,min} - \\sigma_{h,max} - P_0 + T$  ($P_0$ = pore pressure, $T$ = tensile strength)",
+      "",
+      "**Shut-in pressure**: $P_s = \\sigma_{h,min}$ (closes the fracture, giving the minimum horizontal stress directly).",
+    ].join("\n"),
+    traps: [
+      "**Vertical stress depends on depth, not opening size.** $\\sigma_v=\\gamma H$ uses overburden depth; the drive dimensions don't enter.",
+      "**Use unit weight $\\gamma$ (kN/m³), not density** in $\\sigma_v=\\gamma H$; if given $\\rho$, multiply by $g$.",
+      "**Shut-in pressure gives the *minimum* horizontal stress** directly; breakdown pressure needs the full formula with $T$ and $P_0$.",
+      "**$k$ can exceed 1.** Near the surface and in tectonic regions horizontal stress often exceeds vertical.",
+    ],
+  },
+  questions: [
+    {
+      id: "gm-im-q1",
+      difficulty: "basic",
+      marks: 1,
+      type: "MCQ",
+      stem: "Which in-situ stress measurement technique relies on stress-relieving a strain cell by drilling a larger-diameter core around it?",
+      options: ["Flatjack method", "Overcoring", "Hydraulic fracturing", "Convergence recording"],
+      answer: 1,
+      solution: {
+        given: "Overcoring isolates a strain sensor by coring around it, releasing the in-situ stress.",
+        derivation: "The recovered elastic strain on relief, with the rock modulus, back-calculates the stress.",
+        target: "**Correct option: Overcoring.** Flatjack uses slot relaxation; hydrofrac uses borehole pressurisation.",
+      },
+    },
+    {
+      id: "gm-im-q2",
+      difficulty: "medium",
+      marks: 2,
+      type: "NAT",
+      stem:
+        "Rock of unit weight $25\\ \\text{kN/m}^3$ overlies a drive at a depth of $600\\ \\text{m}$. The vertical in-situ stress is ______ MPa. (Round off to one decimal place.)",
+      natAnswer: 15,
+      acceptedRange: [14.7, 15.3],
+      unit: "MPa",
+      solution: {
+        given: "$\\gamma = 25\\ \\text{kN/m}^3$, $H = 600\\ \\text{m}$.",
+        derivation:
+          "$$\\sigma_v = \\gamma H = 25\\ \\text{kN/m}^3 \\times 600\\ \\text{m} = 15{,}000\\ \\text{kPa} = 15.0\\ \\text{MPa}$$",
+        target: "**Target: 15.0 MPa | Accepted range: 14.7 to 15.3.** $1\\ \\text{MPa}=1000\\ \\text{kPa}$.",
+      },
+    },
+    {
+      id: "gm-im-q3",
+      difficulty: "hard",
+      marks: 2,
+      type: "NAT",
+      stem:
+        "In a hydraulic fracturing test in impermeable rock with negligible pore pressure, the breakdown pressure is $18\\ \\text{MPa}$ and the shut-in pressure is $7\\ \\text{MPa}$. If the rock tensile strength is $3\\ \\text{MPa}$, the maximum horizontal stress is ______ MPa. (Round off to one decimal place.)",
+      natAnswer: 6,
+      acceptedRange: [5.7, 6.3],
+      unit: "MPa",
+      solution: {
+        given: "$P_b = 18$, $P_s = \\sigma_{h,min} = 7$, $T = 3\\ \\text{MPa}$, $P_0 = 0$.",
+        derivation:
+          "$$P_b = 3\\sigma_{h,min} - \\sigma_{h,max} - P_0 + T$$\n$$18 = 3(7) - \\sigma_{h,max} - 0 + 3 = 24 - \\sigma_{h,max}$$\n$$\\sigma_{h,max} = 24 - 18 = 6\\ \\text{MPa}$$",
+        target: "**Target: 6.0 MPa | Accepted range: 5.7 to 6.3.** Shut-in pressure gives $\\sigma_{h,min}=7$; rearrange the breakdown equation for $\\sigma_{h,max}$.",
+      },
+    },
+  ],
+};
+
+const gmMineFilling: LearnTopic = {
+  slug: "gm-mine-filling",
+  subject: "Geomechanics & Ground Control",
+  title: "Mine Filling & Strata Monitoring",
+  tier: "free",
+  blurb:
+    "Hydraulic and paste backfill — percentage solids, settlement and the convergence/stress monitoring that confirms the strata are under control.",
+  module: {
+    principle:
+      "**Backfilling** places waste material into mined voids to support the walls, control subsidence, reduce pillar loss and dispose of tailings. **Hydraulic fill** is sand/tailings transported as a slurry and dewatered in place; its key spec is **percentage solids** (mass of solids ÷ total slurry mass). **Paste fill** is a non-settling high-density mix, often cemented. The fill reduces wall convergence and redistributes stress onto the support system. **Strata monitoring** confirms control: **convergence stations** measure roof-to-floor closure, **extensometers** measure bed separation at depth into the roof, and **load/stress cells** measure support and pillar loading. A rising convergence *rate* is the classic warning of instability.",
+    formulaMatrix: [
+      "**Percentage solids (by mass)**: $C_w = \\dfrac{m_{solids}}{m_{solids}+m_{water}}\\times100\\%$",
+      "",
+      "**Slurry (pulp) density**: $\\rho_{pulp} = \\dfrac{1}{\\dfrac{C_w}{\\rho_s}+\\dfrac{1-C_w}{\\rho_w}}$  ($C_w$ as a fraction)",
+      "",
+      "**Convergence rate**: $\\dot{c} = \\dfrac{\\Delta c}{\\Delta t}$ (closure per unit time) — a rising rate signals instability.",
+      "",
+      "**Void fill ratio**: fraction of the mined void occupied by competent fill after settlement.",
+    ].join("\n"),
+    traps: [
+      "**Percentage solids is by mass unless stated.** Volume basis gives a different number; check the basis.",
+      "**Backfill supports, it does not 'hold up' the roof alone.** It limits convergence and confines pillars rather than carrying full overburden.",
+      "**Convergence *rate*, not total closure, is the alarm.** Slow steady closure can be safe; an accelerating rate is the danger sign.",
+      "**Drainage matters.** Hydraulic fill must dewater; poor drainage leaves a weak, saturated mass.",
+    ],
+  },
+  questions: [
+    {
+      id: "gm-mf-q1",
+      difficulty: "basic",
+      marks: 1,
+      type: "MCQ",
+      stem: "The primary instrument used to measure roof-to-floor closure of an underground opening is the:",
+      options: ["Extensometer", "Convergence station/indicator", "Anemometer", "Piezometer"],
+      answer: 1,
+      solution: {
+        given: "Closure = relative movement of roof and floor.",
+        derivation: "A convergence station/indicator directly records the change in roof-to-floor distance over time.",
+        target: "**Correct option: Convergence station/indicator.** Extensometers track bed separation into the roof; anemometers measure airflow.",
+      },
+    },
+    {
+      id: "gm-mf-q2",
+      difficulty: "medium",
+      marks: 2,
+      type: "NAT",
+      stem:
+        "A hydraulic fill slurry is made by mixing $700\\ \\text{kg}$ of solids with $300\\ \\text{kg}$ of water. The percentage solids by mass is ______ %. (Round to the nearest whole number.)",
+      natAnswer: 70,
+      acceptedRange: [69, 71],
+      unit: "%",
+      solution: {
+        given: "$m_{solids} = 700\\ \\text{kg}$, $m_{water} = 300\\ \\text{kg}$.",
+        derivation:
+          "$$C_w = \\frac{700}{700+300}\\times100 = \\frac{700}{1000}\\times100 = 70\\%$$",
+        target: "**Target: 70% | Accepted range: 69 to 71.** Percentage solids = solids mass ÷ total slurry mass.",
+      },
+    },
+    {
+      id: "gm-mf-q3",
+      difficulty: "hard",
+      marks: 2,
+      type: "NAT",
+      stem:
+        "A convergence station reads $0\\ \\text{mm}$ on day 0 and $36\\ \\text{mm}$ of cumulative closure on day 12, closing at a steady rate. The mean convergence rate is ______ mm/day. (Round off to one decimal place.)",
+      natAnswer: 3,
+      acceptedRange: [2.9, 3.1],
+      unit: "mm/day",
+      solution: {
+        given: "$\\Delta c = 36\\ \\text{mm}$ over $\\Delta t = 12\\ \\text{days}$.",
+        derivation: "$$\\dot{c} = \\frac{\\Delta c}{\\Delta t} = \\frac{36}{12} = 3.0\\ \\text{mm/day}$$",
+        target: "**Target: 3.0 mm/day | Accepted range: 2.9 to 3.1.** Watch for any *increase* in this rate as a warning sign.",
+      },
+    },
+  ],
+};
+
+/* ---- Section 5 — Ventilation, Environment & Hazards ------------------- */
+
+const ventilationHeatCooling: LearnTopic = {
+  slug: "ventilation-heat-cooling",
+  subject: "Mine Ventilation",
+  title: "Heat Load, Thermal Environment & Air Cooling",
+  tier: "free",
+  blurb:
+    "Why deep mines get hot, how to quantify the sensible heat the air must remove, and the refrigeration duty that keeps workings within legal limits.",
+  module: {
+    principle:
+      "As mines deepen, **virgin rock temperature rises** with the **geothermal gradient** (typically $\\sim 1^\\circ\\text{C}$ per 30–40 m), and **autocompression** heats descending air. Heat sources include the strata, machinery, oxidation, men and lights. The ventilating air removes heat as **sensible heat** (temperature rise of the air) and **latent heat** (moisture pick-up). The **sensible-heat balance** $Q = \\dot{m}\\,c_p\\,\\Delta T$ sets the airflow or cooling needed to hold the workplace within the statutory **wet-bulb** limit. When ventilation alone cannot cope, **mechanical refrigeration / spot coolers** supply the extra cooling duty.",
+    formulaMatrix: [
+      "**Sensible heat removed by air**: $Q = \\dot{m}\\,c_p\\,\\Delta T$  ($\\dot{m}$ = mass flow, $c_p\\approx1.005\\ \\text{kJ/kg·K}$ for dry air)",
+      "",
+      "**Mass flow from volume flow**: $\\dot{m} = \\rho\\,Q_v$  (air density $\\rho\\approx1.2\\ \\text{kg/m}^3$)",
+      "",
+      "**Virgin rock temperature**: $T_r = T_{surface} + g_{geo}\\,(H - H_0)$  ($g_{geo}$ = geothermal gradient)",
+      "",
+      "**Refrigeration duty**: $Q_{ref} = Q_{heat,total} - Q_{air}$ (cooling that ventilation cannot remove).",
+    ].join("\n"),
+    traps: [
+      "**Use mass flow, not volume flow, in $Q=\\dot mc_p\\Delta T$.** Convert $Q_v$ via $\\dot m=\\rho Q_v$ first.",
+      "**$c_p$ in kJ/kg·K gives $Q$ in kW** when $\\dot m$ is kg/s and $\\Delta T$ in K — keep the units aligned.",
+      "**Wet-bulb temperature, not dry-bulb, governs heat stress.** Humidity (latent heat) matters as much as temperature.",
+      "**Autocompression heats *downcast* air** even with no other source — about $1^\\circ\\text{C}$ per 100 m of descent.",
+    ],
+  },
+  questions: [
+    {
+      id: "vent-hc-q1",
+      difficulty: "basic",
+      marks: 1,
+      type: "MCQ",
+      stem: "The statutory index used to assess heat stress on miners is primarily the:",
+      options: ["Dry-bulb temperature", "Wet-bulb temperature", "Barometric pressure", "Air velocity alone"],
+      answer: 1,
+      solution: {
+        given: "Heat stress depends on the body's ability to lose heat by evaporation.",
+        derivation: "Wet-bulb temperature reflects both heat and humidity, capturing evaporative cooling capacity.",
+        target: "**Correct option: Wet-bulb temperature.** High humidity blocks sweating, so dry-bulb alone understates the hazard.",
+      },
+    },
+    {
+      id: "vent-hc-q2",
+      difficulty: "medium",
+      marks: 2,
+      type: "NAT",
+      stem:
+        "Air flows through a working at $50\\ \\text{kg/s}$. It enters at $24^\\circ\\text{C}$ and leaves at $30^\\circ\\text{C}$. Taking $c_p = 1.005\\ \\text{kJ/kg·K}$, the sensible heat picked up is ______ kW. (Round to the nearest whole number.)",
+      natAnswer: 302,
+      acceptedRange: [298, 305],
+      unit: "kW",
+      solution: {
+        given: "$\\dot m = 50\\ \\text{kg/s}$, $\\Delta T = 30-24 = 6\\ \\text{K}$, $c_p = 1.005\\ \\text{kJ/kg·K}$.",
+        derivation:
+          "$$Q = \\dot m\\,c_p\\,\\Delta T = 50\\times1.005\\times6 = 301.5\\ \\text{kW}$$",
+        target: "**Target: 302 kW | Accepted range: 298 to 305.** Sensible heat only; moisture pick-up would add latent heat.",
+      },
+    },
+    {
+      id: "vent-hc-q3",
+      difficulty: "hard",
+      marks: 2,
+      type: "NAT",
+      stem:
+        "A working generates a total heat load of $400\\ \\text{kW}$. The ventilating air ($30\\ \\text{kg/s}$, $c_p=1.005\\ \\text{kJ/kg·K}$) is allowed a temperature rise of only $8\\ \\text{K}$. The refrigeration duty required is ______ kW. (Round to the nearest whole number.)",
+      natAnswer: 159,
+      acceptedRange: [155, 163],
+      unit: "kW",
+      solution: {
+        given: "Total heat $= 400\\ \\text{kW}$; air $\\dot m=30\\ \\text{kg/s}$, $\\Delta T=8\\ \\text{K}$, $c_p=1.005$.",
+        derivation:
+          "$$Q_{air} = 30\\times1.005\\times8 = 241.2\\ \\text{kW}$$\n$$Q_{ref} = 400 - 241.2 = 158.8\\ \\text{kW}$$",
+        target: "**Target: 159 kW | Accepted range: 155 to 163.** Ventilation removes 241 kW; refrigeration covers the balance.",
+      },
+    },
+  ],
+};
+
+const ventilationNetworksSurvey: LearnTopic = {
+  slug: "ventilation-networks-survey",
+  subject: "Mine Ventilation",
+  title: "Ventilation Networks, Survey & Planning",
+  tier: "free",
+  blurb:
+    "Series/parallel airway resistance, Kirchhoff's laws and the pressure survey — how a whole-mine ventilation network is analysed and planned.",
+  module: {
+    principle:
+      "A mine ventilation system is a **network** of airways obeying laws analogous to electrical circuits. Each airway has a **resistance** $R$; the **square law** $P = R\\,Q^2$ links pressure drop to airflow (note the *square* — ventilation is non-linear). Airways combine in **series** (resistances add) and **parallel** (a softer combined resistance). **Kirchhoff's laws** apply: the **node law** (flow in = flow out at every junction) and the **mesh law** (pressure drops around any closed loop sum to zero). A **pressure (ventilation) survey** measures pressures and flows in the field to determine each airway's resistance, calibrating the network model used for planning fans and splits.",
+    formulaMatrix: [
+      "**Square law**: $P = R\\,Q^2$  (pressure drop $P$, resistance $R$, airflow $Q$)",
+      "",
+      "**Series**: $R_{eq} = R_1 + R_2 + \\dots$ (same $Q$ through each)",
+      "",
+      "**Parallel**: $\\dfrac{1}{\\sqrt{R_{eq}}} = \\dfrac{1}{\\sqrt{R_1}} + \\dfrac{1}{\\sqrt{R_2}} + \\dots$ (same $P$ across each)",
+      "",
+      "**Kirchhoff**: node $\\sum Q = 0$; mesh $\\sum P = \\sum R Q^2 = 0$ around any loop.",
+    ].join("\n"),
+    traps: [
+      "**Ventilation parallel law uses $1/\\sqrt R$, not $1/R$**, because the square law makes flow scale with $\\sqrt{1/R}$.",
+      "**Pressure drop scales with $Q^2$.** Doubling the airflow quadruples the pressure loss — never linear.",
+      "**Two equal-resistance airways in parallel** carry equal flow and give $R_{eq}=R/4$ (not $R/2$).",
+      "**Survey resistances drift** as airways age, fall or are obstructed; re-survey before major planning.",
+    ],
+  },
+  questions: [
+    {
+      id: "vent-ns-q1",
+      difficulty: "basic",
+      marks: 1,
+      type: "MCQ",
+      stem: "In mine ventilation the pressure drop across an airway varies with the airflow as:",
+      options: ["Directly proportional to $Q$", "Proportional to $Q^2$", "Proportional to $\\sqrt{Q}$", "Independent of $Q$"],
+      answer: 1,
+      solution: {
+        given: "The square law $P = R Q^2$ governs turbulent airway flow.",
+        derivation: "Pressure loss rises with the square of the volume flow because of turbulent friction.",
+        target: "**Correct option: Proportional to $Q^2$.** This non-linearity drives the $1/\\sqrt R$ parallel rule.",
+      },
+    },
+    {
+      id: "vent-ns-q2",
+      difficulty: "medium",
+      marks: 2,
+      type: "NAT",
+      stem:
+        "An airway of resistance $0.5\\ \\text{N·s}^2/\\text{m}^8$ (gaul) carries $40\\ \\text{m}^3/\\text{s}$. The pressure drop across it is ______ Pa. (Round to the nearest whole number.)",
+      natAnswer: 800,
+      acceptedRange: [790, 810],
+      unit: "Pa",
+      solution: {
+        given: "$R = 0.5$, $Q = 40\\ \\text{m}^3/\\text{s}$.",
+        derivation:
+          "$$P = R\\,Q^2 = 0.5\\times40^2 = 0.5\\times1600 = 800\\ \\text{Pa}$$",
+        target: "**Target: 800 Pa | Accepted range: 790 to 810.** Square the flow before multiplying by resistance.",
+      },
+    },
+    {
+      id: "vent-ns-q3",
+      difficulty: "hard",
+      marks: 2,
+      type: "NAT",
+      stem:
+        "Two airways of resistance $0.8$ and $0.8\\ \\text{N·s}^2/\\text{m}^8$ are connected in parallel. The equivalent resistance of the combination is ______ $\\text{N·s}^2/\\text{m}^8$. (Round off to two decimal places.)",
+      natAnswer: 0.2,
+      acceptedRange: [0.19, 0.21],
+      unit: "",
+      solution: {
+        given: "$R_1 = R_2 = 0.8$ in parallel.",
+        derivation:
+          "$$\\frac{1}{\\sqrt{R_{eq}}} = \\frac{1}{\\sqrt{0.8}}+\\frac{1}{\\sqrt{0.8}} = \\frac{2}{\\sqrt{0.8}}$$\n$$\\sqrt{R_{eq}} = \\frac{\\sqrt{0.8}}{2}\\Rightarrow R_{eq} = \\frac{0.8}{4} = 0.20$$",
+        target: "**Target: 0.20 | Accepted range: 0.19 to 0.21.** Two equal parallel airways give $R/4$, not $R/2$.",
+      },
+    },
+  ],
+};
+
+const hazardMethaneDrainage: LearnTopic = {
+  slug: "hazard-methane-drainage",
+  subject: "Environment, Ventilation & Hazards",
+  title: "Methane Drainage",
+  tier: "free",
+  blurb:
+    "Pre- and post-drainage of seam gas, capture efficiency and the dilution airflow needed to keep methane below statutory limits.",
+  module: {
+    principle:
+      "**Methane (firedamp)** is released from coal as it is mined and is explosive between roughly **5% and 15%** in air (most violent near 9.5%). Two controls work together: **ventilation dilution** carries gas away in the airstream, and **methane drainage** captures gas at source through boreholes (pre-drainage ahead of mining, post-drainage from the relaxed/goaf zone) and pipes it away. **Drainage efficiency** (or capture ratio) is the fraction of total emission removed by the drainage system; the remainder must be diluted by ventilation. The dilution airflow follows directly from a mass balance: enough fresh air to hold the general-body concentration below the statutory limit.",
+    formulaMatrix: [
+      "**Drainage (capture) efficiency**: $\\eta = \\dfrac{Q_{drained}}{Q_{total emission}}\\times100\\%$",
+      "",
+      "**Gas to dilute by ventilation**: $Q_{vent gas} = Q_{total}(1-\\eta)$",
+      "",
+      "**Dilution airflow**: $Q_{air} = \\dfrac{Q_{gas}}{C_{limit}}$  ($C_{limit}$ as a fraction, e.g. $1.25\\% = 0.0125$)",
+      "",
+      "**Explosive range of methane in air**: $\\approx 5\\%$ (LEL) to $15\\%$ (UEL).",
+    ].join("\n"),
+    traps: [
+      "**Use the concentration *limit* as a fraction in the dilution formula**, not a percentage — $0.0125$, not $1.25$.",
+      "**Drainage reduces the gas the air must carry**, so the ventilation duty is on $(1-\\eta)$ of the emission.",
+      "**The explosive range matters even below the LEL** — layering at the roof can be locally rich; measure near the roof.",
+      "**Capture efficiency is of total emission**, not just the goaf release; define the denominator clearly.",
+    ],
+  },
+  questions: [
+    {
+      id: "haz-md-q1",
+      difficulty: "basic",
+      marks: 1,
+      type: "MCQ",
+      stem: "The approximate lower explosive limit (LEL) of methane in air is:",
+      options: ["1%", "5%", "15%", "25%"],
+      answer: 1,
+      solution: {
+        given: "Methane is explosive between about 5% and 15% in air.",
+        derivation: "Below ~5% the mixture is too lean to propagate a flame; that lower bound is the LEL.",
+        target: "**Correct option: 5%.** The upper explosive limit is about 15%; most violent near 9.5%.",
+      },
+    },
+    {
+      id: "haz-md-q2",
+      difficulty: "medium",
+      marks: 2,
+      type: "NAT",
+      stem:
+        "A district emits $5.0\\ \\text{m}^3/\\text{min}$ of methane, of which the drainage system captures $3.5\\ \\text{m}^3/\\text{min}$. The drainage (capture) efficiency is ______ %. (Round to the nearest whole number.)",
+      natAnswer: 70,
+      acceptedRange: [69, 71],
+      unit: "%",
+      solution: {
+        given: "$Q_{drained} = 3.5$, $Q_{total} = 5.0\\ \\text{m}^3/\\text{min}$.",
+        derivation:
+          "$$\\eta = \\frac{3.5}{5.0}\\times100 = 70\\%$$",
+        target: "**Target: 70% | Accepted range: 69 to 71.** The remaining $1.5\\ \\text{m}^3/\\text{min}$ must be diluted by ventilation.",
+      },
+    },
+    {
+      id: "haz-md-q3",
+      difficulty: "hard",
+      marks: 2,
+      type: "NAT",
+      stem:
+        "After drainage, $1.5\\ \\text{m}^3/\\text{min}$ of methane enters the general body of air. To hold the concentration at the statutory limit of $1.25\\%$, the dilution airflow required is ______ $\\text{m}^3/\\text{min}$. (Round to the nearest whole number.)",
+      natAnswer: 120,
+      acceptedRange: [118, 122],
+      unit: "m³/min",
+      solution: {
+        given: "$Q_{gas} = 1.5\\ \\text{m}^3/\\text{min}$, $C_{limit} = 1.25\\% = 0.0125$.",
+        derivation:
+          "$$Q_{air} = \\frac{Q_{gas}}{C_{limit}} = \\frac{1.5}{0.0125} = 120\\ \\text{m}^3/\\text{min}$$",
+        target: "**Target: 120 m³/min | Accepted range: 118 to 122.** Express the limit as a fraction (0.0125) before dividing.",
+      },
+    },
+  ],
+};
+
+const envEia: LearnTopic = {
+  slug: "env-eia",
+  subject: "Environment, Ventilation & Hazards",
+  title: "Environmental Impact Assessment (EIA)",
+  tier: "free",
+  blurb:
+    "The structured process — screening, scoping, prediction, EMP — that forecasts and manages a mine's environmental footprint before clearance.",
+  module: {
+    principle:
+      "**Environmental Impact Assessment (EIA)** is the formal process of predicting, evaluating and mitigating a project's environmental effects **before** it is approved. The standard stages are **screening** (does the project need an EIA?), **scoping** (which impacts and baselines matter?), **baseline data collection**, **impact prediction & evaluation**, the **Environmental Management Plan (EMP)** with mitigation and monitoring, **public consultation**, and **decision/clearance** followed by **post-project monitoring/audit**. Methods range from simple **checklists** and **interaction matrices** (e.g. the Leopold matrix, scoring each activity-vs-component cell for magnitude and importance) to network and overlay techniques. In India, mining clearances follow the **EIA Notification 2006** under the Environment (Protection) Act, 1986.",
+    formulaMatrix: [
+      "**Leopold matrix cell score**: $S = M \\times I$  (magnitude $M$ × importance $I$, each typically scored 1–10)",
+      "",
+      "**Aggregate impact**: $S_{total} = \\sum_{i,j} M_{ij}\\,I_{ij}$ over all activity–component interactions.",
+      "",
+      "**Composite air/water index**: weighted sum $\\sum w_k\\,q_k$ of sub-indices $q_k$ with weights $w_k$ ($\\sum w_k = 1$).",
+      "",
+      "**Statutory frame (India)**: Environment (Protection) Act 1986 → EIA Notification 2006 (Categories A & B).",
+    ].join("\n"),
+    traps: [
+      "**EIA is predictive and pre-decision.** It is done *before* clearance, not as a post-mortem after impacts occur.",
+      "**Screening ≠ scoping.** Screening decides *whether* an EIA is needed; scoping decides *what* it should cover.",
+      "**The EMP is the deliverable that matters operationally** — mitigation + monitoring commitments, not just impact lists.",
+      "**Matrix scores combine magnitude *and* importance.** A large but unimportant impact may score lower than a small critical one.",
+    ],
+  },
+  questions: [
+    {
+      id: "env-eia-q1",
+      difficulty: "basic",
+      marks: 1,
+      type: "MCQ",
+      stem: "Which EIA stage decides whether a proposed project requires a full environmental impact assessment at all?",
+      options: ["Scoping", "Screening", "Public hearing", "Post-project audit"],
+      answer: 1,
+      solution: {
+        given: "Screening is the first filtering step of the EIA process.",
+        derivation: "Screening applies thresholds/categories to decide if a project needs an EIA; scoping then defines its contents.",
+        target: "**Correct option: Screening.** Scoping comes next and sets the study boundaries.",
+      },
+    },
+    {
+      id: "env-eia-q2",
+      difficulty: "medium",
+      marks: 2,
+      type: "MSQ",
+      stem: "Which of the following are recognised components of an Environmental Management Plan (EMP)? (Select all that apply.)",
+      options: [
+        "Mitigation measures for predicted impacts",
+        "A monitoring programme",
+        "The project's profit-and-loss statement",
+        "Institutional/budgetary arrangements for implementation",
+      ],
+      answer: [0, 1, 3],
+      solution: {
+        given: "An EMP operationalises mitigation and monitoring of predicted impacts.",
+        derivation: "It specifies mitigation, a monitoring schedule, and the responsibilities/budget to implement them. Financial profitability is not an EMP element.",
+        target: "**Correct: mitigation measures, monitoring programme, institutional/budgetary arrangements.** The P&L statement is not part of an EMP.",
+      },
+    },
+    {
+      id: "env-eia-q3",
+      difficulty: "hard",
+      marks: 2,
+      type: "NAT",
+      stem:
+        "In a Leopold-type matrix, an activity scores magnitude $M = 7$ and importance $I = 6$ for its impact on surface water. The cell impact score ($M\\times I$) is ______. (Round to the nearest whole number.)",
+      natAnswer: 42,
+      acceptedRange: [41, 43],
+      unit: "",
+      solution: {
+        given: "$M = 7$, $I = 6$.",
+        derivation: "$$S = M\\times I = 7\\times6 = 42$$",
+        target: "**Target: 42 | Accepted range: 41 to 43.** The matrix multiplies magnitude by importance for each interaction cell.",
+      },
+    },
+  ],
+};
+
+const hazardLegislationAccidents: LearnTopic = {
+  slug: "hazard-legislation-accidents",
+  subject: "Environment, Ventilation & Hazards",
+  title: "Mine Legislation & Accident Analysis",
+  tier: "free",
+  blurb:
+    "The Mines Act framework plus the frequency- and severity-rate arithmetic used to benchmark a mine's safety performance.",
+  module: {
+    principle:
+      "Indian mining safety is governed by the **Mines Act 1952** and subordinate rules — the **Coal Mines Regulations** and **Metalliferous Mines Regulations** — enforced by the **DGMS (Directorate General of Mines Safety)**. The Act fixes duties of owner/agent/manager, hours, and notification of accidents. **Accident analysis** benchmarks performance with standardised rates so mines of different sizes can be compared. The two core indices are the **frequency rate** (number of injuries per standard quantum of exposure — e.g. per million man-hours or per 1000 persons employed) and the **severity rate** (days lost per the same quantum). Trends in these rates, not raw counts, reveal whether safety is improving.",
+    formulaMatrix: [
+      "**Frequency rate (per million man-hours)**: $FR = \\dfrac{\\text{No. of injuries}\\times10^{6}}{\\text{man-hours worked}}$",
+      "",
+      "**Severity rate (per million man-hours)**: $SR = \\dfrac{\\text{man-days lost}\\times10^{6}}{\\text{man-hours worked}}$",
+      "",
+      "**Incidence rate (per 1000 persons)**: $IR = \\dfrac{\\text{No. of injuries}\\times1000}{\\text{average persons employed}}$",
+      "",
+      "**Statutory frame (India)**: Mines Act 1952; Coal & Metalliferous Mines Regulations; enforced by DGMS.",
+    ].join("\n"),
+    traps: [
+      "**Frequency vs severity.** Frequency counts *how often* injuries occur; severity weights them by *days lost*. A low-frequency, high-severity record is still poor.",
+      "**Keep the base consistent.** Per-million-man-hours and per-1000-persons are different bases; don't mix them when comparing.",
+      "**Man-hours, not shifts, unless stated.** Convert shifts to hours before applying the man-hour formulas.",
+      "**Rates normalise for size.** Always benchmark with rates, not raw injury counts, across mines.",
+    ],
+  },
+  questions: [
+    {
+      id: "haz-la-q1",
+      difficulty: "basic",
+      marks: 1,
+      type: "MCQ",
+      stem: "The statutory authority that administers and enforces safety legislation in Indian mines is the:",
+      options: ["CPCB", "DGMS", "BIS", "NGT"],
+      answer: 1,
+      solution: {
+        given: "Mine safety in India is regulated under the Mines Act 1952.",
+        derivation: "The Directorate General of Mines Safety (DGMS) inspects mines and enforces the Act and its regulations.",
+        target: "**Correct option: DGMS.** CPCB/NGT handle environmental matters; BIS sets standards.",
+      },
+    },
+    {
+      id: "haz-la-q2",
+      difficulty: "medium",
+      marks: 2,
+      type: "NAT",
+      stem:
+        "A mine records $8$ reportable injuries while working $4{,}000{,}000$ man-hours in a year. The injury frequency rate per million man-hours is ______. (Round off to one decimal place.)",
+      natAnswer: 2,
+      acceptedRange: [1.9, 2.1],
+      unit: "",
+      solution: {
+        given: "Injuries $= 8$, man-hours $= 4\\times10^{6}$.",
+        derivation:
+          "$$FR = \\frac{8\\times10^{6}}{4\\times10^{6}} = 2.0$$",
+        target: "**Target: 2.0 | Accepted range: 1.9 to 2.1.** Two reportable injuries per million man-hours.",
+      },
+    },
+    {
+      id: "haz-la-q3",
+      difficulty: "hard",
+      marks: 2,
+      type: "NAT",
+      stem:
+        "In the same year the mine lost $6000$ man-days to injuries over $4{,}000{,}000$ man-hours. The severity rate per million man-hours is ______. (Round to the nearest whole number.)",
+      natAnswer: 1500,
+      acceptedRange: [1485, 1515],
+      unit: "",
+      solution: {
+        given: "Man-days lost $= 6000$, man-hours $= 4\\times10^{6}$.",
+        derivation:
+          "$$SR = \\frac{6000\\times10^{6}}{4\\times10^{6}} = \\frac{6000}{4} = 1500$$",
+        target: "**Target: 1500 | Accepted range: 1485 to 1515.** Severity weights injuries by days lost, exposing serious-but-rare events.",
+      },
+    },
+  ],
+};
+
+/* ---- Section 6 — Mining & Mineral Economics -------------------------- */
+
+const ecGeostatistics: LearnTopic = {
+  slug: "ec-geostatistics",
+  subject: "Mining & Mineral Economics",
+  title: "Sampling, Geostatistics & Grade Control",
+  tier: "free",
+  blurb:
+    "From sample mean and variance to the variogram and ordinary kriging — the statistics that turn drill assays into a defensible grade estimate.",
+  module: {
+    principle:
+      "**Grade estimation** starts with **sampling**: assays of cores, channels or blastholes. The **sample mean** estimates grade; the **variance/standard deviation** quantifies its scatter. Classical statistics assumes samples are independent, but ore grades are **spatially correlated** — nearby samples are alike. **Geostatistics** captures this with the **variogram** $\\gamma(h)$, which rises with separation $h$ up to a **sill** at the **range** (beyond which samples are uncorrelated); a non-zero intercept is the **nugget effect** (micro-variability + sampling error). **Kriging** is the best linear unbiased estimator: it weights surrounding samples using the variogram to estimate a block grade with **minimum estimation variance**.",
+    formulaMatrix: [
+      "**Sample mean**: $\\bar{x} = \\dfrac{1}{n}\\sum_{i=1}^{n} x_i$",
+      "",
+      "**Sample variance**: $s^2 = \\dfrac{1}{n-1}\\sum_{i=1}^{n}(x_i-\\bar{x})^2$",
+      "",
+      "**Experimental variogram**: $\\gamma(h) = \\dfrac{1}{2N(h)}\\sum (x_i - x_{i+h})^2$",
+      "",
+      "**Variogram model**: nugget $C_0$ + sill rise $C$ over the range $a$; total sill $= C_0 + C$.",
+    ].join("\n"),
+    traps: [
+      "**Use $n-1$ for the *sample* variance**, not $n$ — the $n$ divisor is the (biased) population variance.",
+      "**The variogram has a factor of $\\tfrac{1}{2}$** (it is a *semi*-variogram); forgetting it doubles $\\gamma(h)$.",
+      "**Nugget is the intercept at $h\\to0$**, not the value at large $h$ (that is the sill).",
+      "**Kriging minimises estimation variance**, giving each sample a weight — it is not a simple inverse-distance average.",
+    ],
+  },
+  questions: [
+    {
+      id: "ec-gs-q1",
+      difficulty: "basic",
+      marks: 1,
+      type: "MCQ",
+      stem: "In a variogram, the non-zero value of $\\gamma(h)$ as the separation distance $h$ approaches zero is called the:",
+      options: ["Sill", "Range", "Nugget effect", "Lag"],
+      answer: 2,
+      solution: {
+        given: "A variogram rises from an intercept to a sill at the range.",
+        derivation: "The intercept at $h\\to0$, due to micro-scale variability and sampling error, is the nugget effect.",
+        target: "**Correct option: Nugget effect.** The sill is the plateau; the range is the distance to reach it.",
+      },
+    },
+    {
+      id: "ec-gs-q2",
+      difficulty: "medium",
+      marks: 2,
+      type: "NAT",
+      stem:
+        "Four channel samples assay $2.0, 4.0, 4.0$ and $6.0\\ \\%$ metal. The sample mean grade is ______ %. (Round off to one decimal place.)",
+      natAnswer: 4,
+      acceptedRange: [3.9, 4.1],
+      unit: "%",
+      solution: {
+        given: "Samples: 2.0, 4.0, 4.0, 6.0 (%), $n = 4$.",
+        derivation:
+          "$$\\bar{x} = \\frac{2.0+4.0+4.0+6.0}{4} = \\frac{16.0}{4} = 4.0\\%$$",
+        target: "**Target: 4.0% | Accepted range: 3.9 to 4.1.** Simple arithmetic mean of the assays.",
+      },
+    },
+    {
+      id: "ec-gs-q3",
+      difficulty: "hard",
+      marks: 2,
+      type: "NAT",
+      stem:
+        "For the same four samples ($2.0, 4.0, 4.0, 6.0\\ \\%$, mean $4.0\\%$), the sample standard deviation (using the $n-1$ divisor) is ______ %. (Round off to two decimal places.)",
+      natAnswer: 1.63,
+      acceptedRange: [1.58, 1.68],
+      unit: "%",
+      solution: {
+        given: "Deviations from mean 4.0: $-2, 0, 0, +2$; $n = 4$.",
+        derivation:
+          "$$\\sum(x_i-\\bar x)^2 = (-2)^2+0+0+(2)^2 = 8$$\n$$s^2 = \\frac{8}{n-1} = \\frac{8}{3} = 2.667$$\n$$s = \\sqrt{2.667} = 1.63\\%$$",
+        target: "**Target: 1.63% | Accepted range: 1.58 to 1.68.** Divide by $n-1=3$ for the sample standard deviation.",
+      },
+    },
+  ],
+};
+
+const ecMineSizeCutoff: LearnTopic = {
+  slug: "ec-mine-size-cutoff",
+  subject: "Mining & Mineral Economics",
+  title: "Mine Size, Life & Optimum Cut-off Grade",
+  tier: "free",
+  blurb:
+    "Taylor's rule for optimum mine life and the break-even cut-off grade that separates ore from waste.",
+  module: {
+    principle:
+      "Two linked decisions size a mine: **how fast to mine** (production rate / life) and **what to call ore** (cut-off grade). **Taylor's rule** is the classic empirical guide to **optimum mine life** from the tonnage of reserves — bigger deposits justify proportionally longer (but not linearly longer) lives, and the optimum daily rate follows. The **break-even cut-off grade** is the grade at which the **revenue from a tonne of ore just equals the cost** of mining, processing and selling it; material above cut-off is ore, below is waste. Raising the cut-off lifts the average grade fed to the plant but shrinks the reserve — the central economic trade-off in planning.",
+    formulaMatrix: [
+      "**Taylor's rule (optimum life)**: $\\text{Life (years)} \\approx 0.2\\times\\sqrt[4]{\\text{ExpReserves (tonnes)}}$ (±20%)",
+      "",
+      "**Daily rate**: $\\text{Rate} = \\dfrac{\\text{Reserves}}{\\text{Life}\\times\\text{operating days/yr}}$",
+      "",
+      "**Break-even cut-off grade**: $g_{co} = \\dfrac{\\text{Cost per tonne}}{\\text{Price}\\times\\text{Recovery}}$",
+      "",
+      "**Cut-off in metal terms**: above $g_{co}$ a tonne pays its way; below it loses money.",
+    ].join("\n"),
+    traps: [
+      "**Taylor's rule uses the fourth root of tonnage**, not a linear scaling — doubling reserves does not double life.",
+      "**Match units in the cut-off formula.** Price per unit metal and cost per tonne ore must be consistent; include recovery.",
+      "**Recovery sits in the denominator of $g_{co}$.** Ignoring it underestimates the grade needed to break even.",
+      "**Higher cut-off = higher head grade but lower tonnage.** It is a trade-off, not a free improvement.",
+    ],
+  },
+  questions: [
+    {
+      id: "ec-ms-q1",
+      difficulty: "basic",
+      marks: 1,
+      type: "MCQ",
+      stem: "Material whose grade lies below the break-even cut-off grade is classified as:",
+      options: ["Ore", "Waste", "High-grade ore", "Concentrate"],
+      answer: 1,
+      solution: {
+        given: "Cut-off grade separates economically mineable ore from sub-economic material.",
+        derivation: "Below cut-off, a tonne's revenue cannot cover its cost, so it is waste.",
+        target: "**Correct option: Waste.** Only material at or above cut-off is ore.",
+      },
+    },
+    {
+      id: "ec-ms-q2",
+      difficulty: "medium",
+      marks: 2,
+      type: "NAT",
+      stem:
+        "Mining + processing + selling cost is $\\$30$ per tonne of ore. The metal sells for $\\$2000$ per tonne and process recovery is $75\\%$. The break-even cut-off grade is ______ % metal. (Round off to two decimal places.)",
+      natAnswer: 2,
+      acceptedRange: [1.95, 2.05],
+      unit: "%",
+      solution: {
+        given: "Cost $= \\$30/\\text{t ore}$, price $= \\$2000/\\text{t metal}$, recovery $= 0.75$.",
+        derivation:
+          "$$g_{co} = \\frac{\\text{cost}}{\\text{price}\\times\\text{recovery}} = \\frac{30}{2000\\times0.75} = \\frac{30}{1500} = 0.02$$\n$$= 2.0\\%$$",
+        target: "**Target: 2.00% | Accepted range: 1.95 to 2.05.** A tonne grading 2% yields $0.02\\times0.75\\times2000 = \\$30$, exactly covering cost.",
+      },
+    },
+    {
+      id: "ec-ms-q3",
+      difficulty: "hard",
+      marks: 2,
+      type: "NAT",
+      stem:
+        "By Taylor's rule, the optimum life of a mine with expected reserves of $50$ million tonnes is approximately $0.2\\times\\sqrt[4]{\\text{tonnes}}$ years. The optimum life is ______ years. (Round to the nearest whole number.)",
+      natAnswer: 17,
+      acceptedRange: [15, 18],
+      unit: "years",
+      solution: {
+        given: "Reserves $= 50\\times10^{6}\\ \\text{t}$.",
+        derivation:
+          "$$\\sqrt[4]{50\\times10^{6}} = (5\\times10^{7})^{0.25}$$\n$$= (5)^{0.25}\\times(10^{7})^{0.25} = 1.495\\times56.23 = 84.07$$\n$$\\text{Life} = 0.2\\times84.07 = 16.8\\approx17\\ \\text{years}$$",
+        target: "**Target: 17 years | Accepted range: 15 to 18.** Taylor's rule scales with the fourth root of tonnage.",
+      },
+    },
+  ],
+};
+
+const ecPitStopePlanning: LearnTopic = {
+  slug: "ec-pit-stope-planning",
+  subject: "Mining & Mineral Economics",
+  title: "Ultimate Pit & Stope Planning",
+  tier: "free",
+  blurb:
+    "Stripping ratio, the break-even stripping ratio (BESR) and the Lerchs–Grossmann idea behind the ultimate pit limit.",
+  module: {
+    principle:
+      "For a surface mine, the **ultimate pit limit** is the economically optimal final shape — mined only while each extra increment of ore pays for the waste removed to reach it. The key ratio is the **stripping ratio** $SR$ = tonnes (or volume) of waste per tonne of ore. The **break-even stripping ratio (BESR)** is the maximum waste a tonne of ore can carry before mining it loses money. The classic optimisation is the **Lerchs–Grossmann** algorithm, which finds the maximum-value pit on a block model subject to pull-back **slope (wall) angle** constraints. Underground, the analogous decision is **stope boundary planning** — choosing which blocks to stope so that each pays for its own development and support.",
+    formulaMatrix: [
+      "**Stripping ratio**: $SR = \\dfrac{\\text{waste mined}}{\\text{ore mined}}$ (t/t or m³/t)",
+      "",
+      "**Break-even SR**: $BESR = \\dfrac{(\\text{Price}-\\text{Production cost})\\ \\text{per t ore}}{\\text{Cost of removing one tonne of waste}}$",
+      "",
+      "**Mine while** $SR \\leq BESR$; stop extending the pit when $SR = BESR$.",
+      "",
+      "**Pit value (block model)**: $\\sum(\\text{block value})$ maximised subject to slope-angle precedence (Lerchs–Grossmann).",
+    ].join("\n"),
+    traps: [
+      "**BESR uses the *net* value of ore (price − production cost)** over the waste-removal cost — not price alone.",
+      "**Mine only while $SR\\leq BESR$.** Extending the pit where $SR>BESR$ destroys value.",
+      "**Stripping ratio can be mass or volume based** — state which; rock densities differ between ore and waste.",
+      "**Slope-angle constraints drive waste.** Flatter walls (weaker rock) force more stripping for the same ore.",
+    ],
+  },
+  questions: [
+    {
+      id: "ec-ps-q1",
+      difficulty: "basic",
+      marks: 1,
+      type: "MCQ",
+      stem: "The stripping ratio of an open-pit mine is the ratio of:",
+      options: [
+        "Ore to waste",
+        "Waste to ore",
+        "Ore to total material",
+        "Concentrate to tailings",
+      ],
+      answer: 1,
+      solution: {
+        given: "Stripping ratio expresses how much waste accompanies each unit of ore.",
+        derivation: "$SR = \\text{waste}/\\text{ore}$, e.g. 3:1 means three tonnes of waste per tonne of ore.",
+        target: "**Correct option: Waste to ore.** Higher SR means more waste handling per tonne of ore.",
+      },
+    },
+    {
+      id: "ec-ps-q2",
+      difficulty: "medium",
+      marks: 2,
+      type: "NAT",
+      stem:
+        "A tonne of ore returns a net value (price minus production cost) of $\\$24$. Removing a tonne of waste costs $\\$3$. The break-even stripping ratio is ______ (tonnes waste per tonne ore). (Round to the nearest whole number.)",
+      natAnswer: 8,
+      acceptedRange: [7.8, 8.2],
+      unit: "",
+      solution: {
+        given: "Net ore value $= \\$24/\\text{t}$, waste removal cost $= \\$3/\\text{t}$.",
+        derivation:
+          "$$BESR = \\frac{\\text{net value of ore}}{\\text{cost per t waste}} = \\frac{24}{3} = 8$$",
+        target: "**Target: 8 | Accepted range: 7.8 to 8.2.** Up to 8 t of waste per t of ore can be carried before breaking even.",
+      },
+    },
+    {
+      id: "ec-ps-q3",
+      difficulty: "hard",
+      marks: 2,
+      type: "NAT",
+      stem:
+        "A pushback exposes $200{,}000\\ \\text{t}$ of ore and requires removing $1{,}400{,}000\\ \\text{t}$ of waste. If the break-even stripping ratio is $8:1$, the actual stripping ratio is ______, so the pushback is (economic / uneconomic). Give the numerical stripping ratio. (Round off to one decimal place.)",
+      natAnswer: 7,
+      acceptedRange: [6.8, 7.2],
+      unit: "",
+      solution: {
+        given: "Ore $= 200{,}000\\ \\text{t}$, waste $= 1{,}400{,}000\\ \\text{t}$, $BESR = 8$.",
+        derivation:
+          "$$SR = \\frac{1{,}400{,}000}{200{,}000} = 7.0$$\nSince $SR = 7 \\leq BESR = 8$, the pushback is **economic**.",
+        target: "**Target: 7.0 | Accepted range: 6.8 to 7.2.** $SR(7) < BESR(8)$, so the increment pays — mine it.",
+      },
+    },
+  ],
+};
+
+const ecHaulroadEquipment: LearnTopic = {
+  slug: "ec-haulroad-equipment",
+  subject: "Mining & Mineral Economics",
+  title: "Haul-road Design & Equipment Selection",
+  tier: "free",
+  blurb:
+    "Rolling and grade resistance, rimpull and the truck–shovel match factor that balances a loading-and-hauling fleet.",
+  module: {
+    principle:
+      "Hauling cost dominates surface-mine economics, so **haul-road design** and **fleet matching** are central. A truck must overcome **total resistance** = **rolling resistance** (tyre/road deformation, as a % of weight) + **grade resistance** (≈1% of weight per 1% of uphill grade). The engine supplies **rimpull** (tractive force at the tyre); the truck can climb only while $\\text{rimpull} \\geq \\text{total resistance force}$. Fleet productivity depends on **matching** loaders to trucks: the **match factor** compares the loader's truck-filling capacity with the trucks' demand — a factor near **1.0** balances the fleet, $<1$ means the loader waits, $>1$ means trucks queue.",
+    formulaMatrix: [
+      "**Grade resistance**: $GR \\approx 1\\%\\ \\text{of GVW per }1\\%\\ \\text{grade}$  (force $= 0.01\\times\\text{grade}\\times W$)",
+      "",
+      "**Total resistance force**: $F = (RR\\% + GR\\%)\\times \\dfrac{W}{100}$  ($W$ = gross vehicle weight)",
+      "",
+      "**Rimpull needed**: $\\text{Rimpull} \\geq F$ to maintain speed; surplus accelerates the truck.",
+      "",
+      "**Match factor**: $MF = \\dfrac{N_{trucks}\\times \\text{loader cycle time}}{N_{loaders}\\times \\text{truck cycle time}}$  (target $\\approx 1.0$)",
+    ].join("\n"),
+    traps: [
+      "**Grade resistance ≈ 1% of weight per 1% grade** — use the *percent* grade, not the angle in degrees (valid for small grades).",
+      "**Add rolling and grade resistance** before comparing with rimpull; one alone understates the demand.",
+      "**Match factor target is 1.0.** Above 1, trucks queue at the loader; below 1, the loader idles.",
+      "**Rimpull falls as speed rises** (constant-power curve); check rimpull at the required gradeability speed.",
+    ],
+  },
+  questions: [
+    {
+      id: "ec-he-q1",
+      difficulty: "basic",
+      marks: 1,
+      type: "MCQ",
+      stem: "A truck–shovel fleet with a match factor greater than 1.0 will typically experience:",
+      options: [
+        "Trucks queuing at the loader",
+        "The loader idle and waiting",
+        "Perfectly balanced operation",
+        "No effect on productivity",
+      ],
+      answer: 0,
+      solution: {
+        given: "Match factor compares truck arrival demand with loader service capacity.",
+        derivation: "$MF>1$ means trucks arrive faster than the loader can fill them, so they queue.",
+        target: "**Correct option: Trucks queuing at the loader.** $MF<1$ idles the loader; $MF\\approx1$ balances.",
+      },
+    },
+    {
+      id: "ec-he-q2",
+      difficulty: "medium",
+      marks: 2,
+      type: "NAT",
+      stem:
+        "A haul truck has a gross weight of $300\\ \\text{kN}$. Rolling resistance is $2\\%$ and it climbs a $6\\%$ grade. The total resistance force it must overcome is ______ kN. (Round to the nearest whole number.)",
+      natAnswer: 24,
+      acceptedRange: [23.5, 24.5],
+      unit: "kN",
+      solution: {
+        given: "$W = 300\\ \\text{kN}$, $RR = 2\\%$, grade $= 6\\%$ (so $GR\\approx6\\%$).",
+        derivation:
+          "$$F = (RR + GR)\\times\\frac{W}{100} = (2+6)\\times\\frac{300}{100} = 8\\times3 = 24\\ \\text{kN}$$",
+        target: "**Target: 24 kN | Accepted range: 23.5 to 24.5.** Add rolling (2%) and grade (6%) resistance, then apply to weight.",
+      },
+    },
+    {
+      id: "ec-he-q3",
+      difficulty: "hard",
+      marks: 2,
+      type: "NAT",
+      stem:
+        "A loader fills a truck in $2.5\\ \\text{min}$. Each truck's full cycle time is $20\\ \\text{min}$. With one loader and $7$ trucks, the match factor is ______. (Round off to two decimal places.)",
+      natAnswer: 0.875,
+      acceptedRange: [0.85, 0.9],
+      unit: "",
+      solution: {
+        given: "Loader cycle (fill) $= 2.5\\ \\text{min}$, truck cycle $= 20\\ \\text{min}$, $N_{trucks}=7$, $N_{loaders}=1$.",
+        derivation:
+          "$$MF = \\frac{N_{trucks}\\times t_{loader}}{N_{loaders}\\times t_{truck}} = \\frac{7\\times2.5}{1\\times20} = \\frac{17.5}{20} = 0.875$$",
+        target: "**Target: 0.88 | Accepted range: 0.85 to 0.90.** $MF<1$, so the loader has slight idle time — room for an 8th truck.",
+      },
+    },
+  ],
+};
+
+const ecNetworkAnalysis: LearnTopic = {
+  slug: "ec-network-analysis",
+  subject: "Mining & Mineral Economics",
+  title: "Network Analysis (PERT/CPM)",
+  tier: "free",
+  blurb:
+    "Critical path, the three-point PERT estimate and float — the project-scheduling tools for mine development and shutdowns.",
+  module: {
+    principle:
+      "**Network analysis** schedules interdependent activities (sinking, drivages, plant installation, shutdowns). Activities and their dependencies form a network; the **critical path** is the longest chain of activities, and its length is the **shortest possible project duration**. **CPM (Critical Path Method)** uses single deterministic durations; **PERT** treats durations as uncertain, combining an **optimistic ($o$)**, **most-likely ($m$)** and **pessimistic ($p$)** estimate into an expected time. **Float (slack)** is the spare time a non-critical activity has before it delays the project; critical activities have **zero float**.",
+    formulaMatrix: [
+      "**PERT expected time**: $t_e = \\dfrac{o + 4m + p}{6}$",
+      "",
+      "**Activity variance**: $\\sigma^2 = \\left(\\dfrac{p - o}{6}\\right)^2$",
+      "",
+      "**Total float**: $TF = LS - ES = LF - EF$ (late minus early start/finish)",
+      "",
+      "**Project duration** = sum of $t_e$ along the **critical path** (the path with zero total float).",
+    ].join("\n"),
+    traps: [
+      "**The most-likely estimate $m$ carries a weight of 4** in $t_e=(o+4m+p)/6$; treating all three equally is wrong.",
+      "**The critical path is the *longest* path**, because every activity on it must finish for the project to end.",
+      "**Critical activities have zero float.** Any float means the activity is not critical.",
+      "**Variance uses $(p-o)/6$ squared** — only the spread of the extremes, not $m$.",
+    ],
+  },
+  questions: [
+    {
+      id: "ec-na-q1",
+      difficulty: "basic",
+      marks: 1,
+      type: "MCQ",
+      stem: "In project network analysis, an activity that lies on the critical path has a total float of:",
+      options: ["Maximum", "Zero", "Exactly one day", "Undefined"],
+      answer: 1,
+      solution: {
+        given: "The critical path is the longest path and sets the project duration.",
+        derivation: "Activities on it have no spare time; any delay delays the whole project, so total float = 0.",
+        target: "**Correct option: Zero.** Non-critical activities carry positive float.",
+      },
+    },
+    {
+      id: "ec-na-q2",
+      difficulty: "medium",
+      marks: 2,
+      type: "NAT",
+      stem:
+        "An activity has an optimistic time of $4\\ \\text{days}$, most-likely $6\\ \\text{days}$ and pessimistic $14\\ \\text{days}$. Its PERT expected time is ______ days. (Round off to one decimal place.)",
+      natAnswer: 7,
+      acceptedRange: [6.9, 7.1],
+      unit: "days",
+      solution: {
+        given: "$o = 4$, $m = 6$, $p = 14$.",
+        derivation:
+          "$$t_e = \\frac{o+4m+p}{6} = \\frac{4 + 4(6) + 14}{6} = \\frac{4+24+14}{6} = \\frac{42}{6} = 7.0$$",
+        target: "**Target: 7.0 days | Accepted range: 6.9 to 7.1.** The most-likely value is weighted ×4.",
+      },
+    },
+    {
+      id: "ec-na-q3",
+      difficulty: "hard",
+      marks: 2,
+      type: "NAT",
+      stem:
+        "For the activity above ($o=4$, $p=14$), the standard deviation of its duration is ______ days. (Round off to two decimal places.)",
+      natAnswer: 1.67,
+      acceptedRange: [1.6, 1.74],
+      unit: "days",
+      solution: {
+        given: "$o = 4$, $p = 14$.",
+        derivation:
+          "$$\\sigma = \\frac{p-o}{6} = \\frac{14-4}{6} = \\frac{10}{6} = 1.667\\ \\text{days}$$",
+        target: "**Target: 1.67 days | Accepted range: 1.60 to 1.74.** Variance is $\\sigma^2=(10/6)^2\\approx2.78$.",
+      },
+    },
+  ],
+};
+
+const ecInventory: LearnTopic = {
+  slug: "ec-inventory",
+  subject: "Mining & Mineral Economics",
+  title: "Inventory Models",
+  tier: "free",
+  blurb:
+    "The Economic Order Quantity, reorder point and total inventory cost that minimise stores and spares spending.",
+  module: {
+    principle:
+      "A mine ties up capital in **stores and spares**. **Inventory models** find the order policy that minimises total cost, balancing two opposing costs: **ordering cost** (per purchase order — falls if you order in big batches) against **holding (carrying) cost** (per unit per year — rises with batch size). The **Economic Order Quantity (EOQ)** is the batch size that minimises their sum. At EOQ the **annual ordering cost equals the annual holding cost**. The **reorder point** is the stock level that triggers a fresh order, set so stock lasts through the **lead time** (plus safety stock).",
+    formulaMatrix: [
+      "**EOQ**: $Q^* = \\sqrt{\\dfrac{2DS}{H}}$  ($D$ = annual demand, $S$ = cost per order, $H$ = holding cost per unit per year)",
+      "",
+      "**Minimum total variable cost**: $TC^* = \\sqrt{2DSH}$  (and ordering cost $=$ holding cost at $Q^*$)",
+      "",
+      "**Number of orders/yr**: $N = \\dfrac{D}{Q^*}$;  **cycle time** $= \\dfrac{Q^*}{D}$",
+      "",
+      "**Reorder point**: $ROP = d\\times L\\;(+\\,\\text{safety stock})$  ($d$ = demand rate, $L$ = lead time)",
+    ].join("\n"),
+    traps: [
+      "**EOQ has the $2DS$ inside a square root.** Forgetting the root, or the factor 2, is the classic error.",
+      "**$H$ is the holding cost per unit *per year*** — if given as a % of unit price, multiply by price first.",
+      "**At EOQ, ordering cost = holding cost** — a quick check on your answer.",
+      "**Reorder point uses lead-time demand**, not annual demand; convert $D$ to the lead-time period.",
+    ],
+  },
+  questions: [
+    {
+      id: "ec-inv-q1",
+      difficulty: "basic",
+      marks: 1,
+      type: "MCQ",
+      stem: "At the Economic Order Quantity, the annual ordering cost is:",
+      options: [
+        "Much greater than the holding cost",
+        "Equal to the annual holding cost",
+        "Zero",
+        "Much less than the holding cost",
+      ],
+      answer: 1,
+      solution: {
+        given: "EOQ minimises the sum of ordering and holding costs.",
+        derivation: "At the minimum of the total-cost curve, the two cost components are equal.",
+        target: "**Correct option: Equal to the annual holding cost.** This equality defines the EOQ.",
+      },
+    },
+    {
+      id: "ec-inv-q2",
+      difficulty: "medium",
+      marks: 2,
+      type: "NAT",
+      stem:
+        "Annual demand for a spare is $1200$ units, the cost per order is $\\$100$, and the holding cost is $\\$6$ per unit per year. The Economic Order Quantity is ______ units. (Round to the nearest whole number.)",
+      natAnswer: 200,
+      acceptedRange: [195, 205],
+      unit: "units",
+      solution: {
+        given: "$D = 1200$, $S = \\$100$, $H = \\$6$/unit/yr.",
+        derivation:
+          "$$Q^* = \\sqrt{\\frac{2DS}{H}} = \\sqrt{\\frac{2\\times1200\\times100}{6}} = \\sqrt{\\frac{240{,}000}{6}} = \\sqrt{40{,}000} = 200$$",
+        target: "**Target: 200 units | Accepted range: 195 to 205.** Order 200 at a time; $N = 1200/200 = 6$ orders/yr.",
+      },
+    },
+    {
+      id: "ec-inv-q3",
+      difficulty: "hard",
+      marks: 2,
+      type: "NAT",
+      stem:
+        "For the same item ($D=1200$, $S=\\$100$, $H=\\$6$, $Q^*=200$), the minimum total variable (ordering + holding) cost per year is ______ dollars. (Round to the nearest whole number.)",
+      natAnswer: 1200,
+      acceptedRange: [1185, 1215],
+      unit: "$",
+      solution: {
+        given: "$D=1200$, $S=100$, $H=6$, $Q^*=200$.",
+        derivation:
+          "$$TC^* = \\sqrt{2DSH} = \\sqrt{2\\times1200\\times100\\times6} = \\sqrt{1{,}440{,}000} = 1200$$\nCheck: ordering $=\\frac{D}{Q}S = 6\\times100 = 600$; holding $=\\frac{Q}{2}H = 100\\times6 = 600$; sum $=1200$.",
+        target: "**Target: \\$1200 | Accepted range: 1185 to 1215.** Ordering (\\$600) and holding (\\$600) are equal at EOQ.",
+      },
+    },
+  ],
+};
+
+const ecMaintainabilityDecision: LearnTopic = {
+  slug: "ec-maintainability-decision",
+  subject: "Mining & Mineral Economics",
+  title: "Maintainability, Availability & Decision Trees",
+  tier: "free",
+  blurb:
+    "MTBF, MTTR and machine availability, plus the expected-monetary-value logic of decision trees under uncertainty.",
+  module: {
+    principle:
+      "Equipment economics hinges on **availability** — the fraction of scheduled time a machine is fit to run. It is built from two reliability measures: **MTBF (mean time between failures)**, a measure of reliability, and **MTTR (mean time to repair)**, a measure of **maintainability**. Higher MTBF and lower MTTR both raise availability. For investment and operating choices under uncertainty, **decision trees** lay out decisions (squares) and chance events (circles) with probabilities and payoffs; each branch is rolled back using **expected monetary value (EMV)** — the probability-weighted average payoff — and the highest-EMV decision is chosen.",
+    formulaMatrix: [
+      "**Availability**: $A = \\dfrac{MTBF}{MTBF + MTTR}$",
+      "",
+      "**Failure rate**: $\\lambda = \\dfrac{1}{MTBF}$;  **repair rate** $\\mu = \\dfrac{1}{MTTR}$",
+      "",
+      "**Expected monetary value**: $EMV = \\sum_i p_i\\,V_i$  (probability $p_i$ × payoff $V_i$, $\\sum p_i = 1$)",
+      "",
+      "**Decision rule**: choose the alternative with the **highest EMV** (or lowest expected cost).",
+    ].join("\n"),
+    traps: [
+      "**Availability puts MTBF over (MTBF + MTTR)** — not MTBF over MTTR. Mixing these is the classic slip.",
+      "**MTBF and MTTR must share units** (both hours, say) before combining.",
+      "**EMV weights *all* outcomes by probability** — don't just take the best-case payoff.",
+      "**Probabilities at a chance node sum to 1.** If they don't, an outcome is missing.",
+    ],
+  },
+  questions: [
+    {
+      id: "ec-mt-q1",
+      difficulty: "basic",
+      marks: 1,
+      type: "MCQ",
+      stem: "Mean Time To Repair (MTTR) is primarily a measure of a machine's:",
+      options: ["Reliability", "Maintainability", "Purchase cost", "Fuel efficiency"],
+      answer: 1,
+      solution: {
+        given: "MTBF measures reliability; MTTR measures how quickly repairs are made.",
+        derivation: "A short MTTR means faults are fixed quickly — that is maintainability.",
+        target: "**Correct option: Maintainability.** Reliability is captured by MTBF.",
+      },
+    },
+    {
+      id: "ec-mt-q2",
+      difficulty: "medium",
+      marks: 2,
+      type: "NAT",
+      stem:
+        "A shovel has a mean time between failures of $90\\ \\text{h}$ and a mean time to repair of $10\\ \\text{h}$. Its availability is ______ %. (Round to the nearest whole number.)",
+      natAnswer: 90,
+      acceptedRange: [89, 91],
+      unit: "%",
+      solution: {
+        given: "$MTBF = 90\\ \\text{h}$, $MTTR = 10\\ \\text{h}$.",
+        derivation:
+          "$$A = \\frac{MTBF}{MTBF+MTTR} = \\frac{90}{90+10} = \\frac{90}{100} = 0.90 = 90\\%$$",
+        target: "**Target: 90% | Accepted range: 89 to 91.** Availability = uptime ÷ (uptime + repair time).",
+      },
+    },
+    {
+      id: "ec-mt-q3",
+      difficulty: "hard",
+      marks: 2,
+      type: "NAT",
+      stem:
+        "A decision has two outcomes: a $0.6$ chance of a $\\$50{,}000$ profit and a $0.4$ chance of a $\\$20{,}000$ loss. The expected monetary value (EMV) of the decision is ______ dollars. (Round to the nearest whole number.)",
+      natAnswer: 22000,
+      acceptedRange: [21500, 22500],
+      unit: "$",
+      solution: {
+        given: "$p_1 = 0.6$, $V_1 = +50{,}000$; $p_2 = 0.4$, $V_2 = -20{,}000$.",
+        derivation:
+          "$$EMV = \\sum p_i V_i = 0.6\\times50{,}000 + 0.4\\times(-20{,}000)$$\n$$= 30{,}000 - 8{,}000 = 22{,}000$$",
+        target: "**Target: \\$22000 | Accepted range: 21500 to 22500.** Positive EMV favours taking the decision.",
+      },
+    },
+  ],
+};
+
 export const LEARN_TOPICS: LearnTopic[] = [
   // Section 1 — Engineering Mathematics
   emLinearAlgebra,
@@ -4829,6 +6428,11 @@ export const LEARN_TOPICS: LearnTopic[] = [
   mdsDrilling,
   mdsUndergroundCorrelation,
   mdsEdmTotalStation,
+  geoMineralsRocks,
+  geoOreGenesis,
+  geoStructural,
+  mdsRockToolInteraction,
+  mdsGisRemoteSensing,
   // Section 3 — Geomechanics & Ground Control
   gmMohrCoulomb,
   gmStressAroundOpenings,
@@ -4840,6 +6444,9 @@ export const LEARN_TOPICS: LearnTopic[] = [
   gmSupportDesign,
   gmRockBursts,
   gmGroundVibrations,
+  gmEngineeringMechanics,
+  gmInsituMeasurement,
+  gmMineFilling,
   // Section 4 — Mining Methods & Machinery
   mmBeltConveyor,
   mmHaulageRope,
@@ -4867,6 +6474,11 @@ export const LEARN_TOPICS: LearnTopic[] = [
   hazardMineInundation,
   hazardMineLighting,
   hazardSafetyHealth,
+  ventilationHeatCooling,
+  ventilationNetworksSurvey,
+  hazardMethaneDrainage,
+  envEia,
+  hazardLegislationAccidents,
   // Section 6 — Mining & Mineral Economics
   ecDcfNpv,
   ecReliability,
@@ -4877,6 +6489,13 @@ export const LEARN_TOPICS: LearnTopic[] = [
   ecMineralTaxation,
   ecFacilityLocation,
   ecCostBenefit,
+  ecGeostatistics,
+  ecMineSizeCutoff,
+  ecPitStopePlanning,
+  ecHaulroadEquipment,
+  ecNetworkAnalysis,
+  ecInventory,
+  ecMaintainabilityDecision,
 ];
 
 export function getLearnTopic(slug: string): LearnTopic | undefined {

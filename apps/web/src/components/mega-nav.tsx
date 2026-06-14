@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { cn } from "@/lib/utils";
-import { CIL_ROWS } from "@/data/cil";
+import { PSU_COMPANIES } from "@/data/psu";
 
 type Branch = { label: string; href: string };
 
@@ -13,11 +13,6 @@ const GATE_BRANCHES: Branch[] = [
   { label: "Civil (CE)", href: "/gate/civil" },
   { label: "Geology (GG)", href: "/gate/geology" },
 ];
-
-const PSU_BRANCHES: Branch[] = CIL_ROWS.map((r) => ({
-  label: r.discipline,
-  href: `/psu/cil/${r.slug}`,
-}));
 
 export function MegaNav() {
   const [open, setOpen] = useState<string | null>(null);
@@ -105,25 +100,38 @@ export function MegaNav() {
           PSU <Chevron open={open === "psu"} />
         </button>
         {open === "psu" && (
-          <Panel className="w-72">
-            <Link
-              href="/psu/cil"
-              className="mb-1 block rounded-md px-3 py-2 text-sm font-bold text-ink hover:bg-canvas"
-            >
-              Coal India Limited (CIL)
-            </Link>
-            {PSU_BRANCHES.map((b) => (
-              <Link
-                key={b.href}
-                href={b.href}
-                className={cn(
-                  "block rounded-md px-3 py-2 text-sm",
-                  isActive(b.href) ? "text-brand bg-brand/5" : "text-muted hover:bg-canvas hover:text-ink",
-                )}
-              >
-                {b.label}
-              </Link>
-            ))}
+          <Panel className="w-80">
+            <p className="px-3 pb-1 text-[11px] font-bold uppercase tracking-wide text-muted">
+              Recruitment by company
+            </p>
+            {PSU_COMPANIES.map((c) =>
+              c.live ? (
+                <Link
+                  key={c.slug}
+                  href={`/psu/${c.slug}`}
+                  className={cn(
+                    "flex items-center justify-between gap-3 rounded-md px-3 py-2",
+                    isActive(`/psu/${c.slug}`) ? "bg-brand/5" : "hover:bg-canvas",
+                  )}
+                >
+                  <span className="min-w-0">
+                    <span className="block text-sm font-bold text-ink">{c.short}</span>
+                    <span className="block truncate text-xs text-muted">{c.name}</span>
+                  </span>
+                </Link>
+              ) : (
+                <div
+                  key={c.slug}
+                  className="flex cursor-default items-center justify-between gap-3 rounded-md px-3 py-2 opacity-70"
+                >
+                  <span className="min-w-0">
+                    <span className="block text-sm font-bold text-ink/70">{c.short}</span>
+                    <span className="block truncate text-xs text-muted">{c.name}</span>
+                  </span>
+                  <span className="badge badge-pro shrink-0">Soon</span>
+                </div>
+              ),
+            )}
           </Panel>
         )}
       </div>

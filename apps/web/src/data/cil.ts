@@ -6,17 +6,28 @@ export type CilRow = {
   slug: string;
   discipline: string;
   qualification: string;
+  /** Vacancies declared for this discipline in the latest CIL MT advertisement. */
+  seats: number;
 };
 
 export const CIL_ROWS: CilRow[] = [
-  { code: "11", slug: "civil", discipline: "Civil", qualification: "Degree in the relevant branch of Engg. with a minimum of 60% marks" },
-  { code: "12", slug: "electrical", discipline: "Electrical", qualification: "Degree in the relevant branch of Engg. with a minimum of 60% marks" },
-  { code: "13", slug: "mechanical", discipline: "Mechanical", qualification: "Degree in the relevant branch of Engg. with a minimum of 60% marks" },
-  { code: "14", slug: "system", discipline: "System", qualification: "Recognized 1st Class Degree in BE / B.Tech / B.Sc (Engg.) in Computer Science / Computer Engineering / I.T, or any 1st Class Degree with MCA" },
-  { code: "15", slug: "e-and-t", discipline: "E&T", qualification: "BE / B.Tech / B.Sc (Engg.) in relevant branch of Engineering with minimum 60% marks" },
-  { code: "16", slug: "geology", discipline: "Geology", qualification: "M.Sc. / M.Tech. in Geology or Applied Geology or Geophysics or Applied Geophysics with minimum 60% marks" },
-  { code: "17", slug: "industrial-engineering", discipline: "Industrial Engineering", qualification: "Degree in the relevant branch of Engg. with a minimum of 60% marks" },
+  { code: "11", slug: "civil", discipline: "Civil", qualification: "Degree in the relevant branch of Engg. with a minimum of 60% marks", seats: 178 },
+  { code: "12", slug: "electrical", discipline: "Electrical", qualification: "Degree in the relevant branch of Engg. with a minimum of 60% marks", seats: 221 },
+  { code: "13", slug: "mechanical", discipline: "Mechanical", qualification: "Degree in the relevant branch of Engg. with a minimum of 60% marks", seats: 145 },
+  { code: "14", slug: "system", discipline: "System", qualification: "Recognized 1st Class Degree in BE / B.Tech / B.Sc (Engg.) in Computer Science / Computer Engineering / I.T, or any 1st Class Degree with MCA", seats: 43 },
+  { code: "15", slug: "e-and-t", discipline: "E&T", qualification: "BE / B.Tech / B.Sc (Engg.) in relevant branch of Engineering with minimum 60% marks", seats: 38 },
+  { code: "16", slug: "geology", discipline: "Geology", qualification: "M.Sc. / M.Tech. in Geology or Applied Geology or Geophysics or Applied Geophysics with minimum 60% marks", seats: 15 },
+  { code: "17", slug: "industrial-engineering", discipline: "Industrial Engineering", qualification: "Degree in the relevant branch of Engg. with a minimum of 60% marks", seats: 11 },
 ];
+
+/** Total vacancies across all CIL MT disciplines in the latest advertisement. */
+export const CIL_TOTAL_SEATS = CIL_ROWS.reduce((sum, r) => sum + r.seats, 0);
+
+/** Price to unlock a single CIL discipline's 15-mock series, in paise (₹499). */
+export const CIL_PRICE_PAISE = 49900;
+/** Rupee form of {@link CIL_PRICE_PAISE} for UI labels. */
+export const CIL_PRICE_RUPEES = Math.round(CIL_PRICE_PAISE / 100);
+
 
 /** Look up a CIL discipline by its URL slug. */
 export function getCilDiscipline(slug: string): CilRow | undefined {

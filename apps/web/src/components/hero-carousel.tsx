@@ -3,7 +3,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
-import { CIL_ROWS } from "@/data/cil";
+import { CIL_ROWS, CIL_TOTAL_SEATS } from "@/data/cil";
 
 type Props = {
   practiceQs: number;
@@ -161,7 +161,7 @@ export function GateWindow({ practiceQs, mocksCount, subjectsCount }: Props) {
 
 /* ───────────────────────── WINDOW 2 — PSU / CIL ───────────────────────── */
 
-function PsuWindow() {
+export function PsuWindow() {
   return (
     <div className="relative h-full w-full">
       <OpencastBackdrop />
@@ -200,9 +200,9 @@ function CilEligibilityCard() {
     <div className="rounded-2xl border border-cyan-300/20 bg-slate-900/60 p-4 shadow-pop backdrop-blur">
       <div className="mb-2 flex items-center justify-between">
         <div className="text-xs font-semibold uppercase tracking-wide text-cyan-300">
-          CIL Management Trainee · Eligibility
+          CIL Management Trainee · Eligibility &amp; Seats
         </div>
-        <span className="badge bg-cyan-400/10 text-cyan-200">Codes 11–17</span>
+        <span className="badge bg-cyan-400/10 text-cyan-200">{CIL_TOTAL_SEATS} seats</span>
       </div>
       <div className="max-h-[300px] overflow-y-auto rounded-lg border border-white/10">
         <table className="w-full text-left text-xs">
@@ -210,6 +210,7 @@ function CilEligibilityCard() {
             <tr>
               <th className="px-2 py-2 font-semibold">Code</th>
               <th className="px-2 py-2 font-semibold">Discipline</th>
+              <th className="px-2 py-2 text-right font-semibold">Seats</th>
               <th className="px-2 py-2 font-semibold">Minimum Qualification</th>
             </tr>
           </thead>
@@ -218,6 +219,7 @@ function CilEligibilityCard() {
               <tr key={r.code} className="border-t border-white/5 align-top">
                 <td className="px-2 py-2 font-mono text-cyan-300">{r.code}</td>
                 <td className="px-2 py-2 font-medium text-white">{r.discipline}</td>
+                <td className="px-2 py-2 text-right font-mono font-semibold text-cyan-200">{r.seats}</td>
                 <td className="px-2 py-2 leading-snug">{r.qualification}</td>
               </tr>
             ))}

@@ -6,6 +6,7 @@ import { db } from "@/lib/db";
 import { NextResponse } from "next/server";
 import { z } from "zod";
 import { isValidPhone, normalizePhone } from "@/lib/whatsapp";
+import { hasEntitlement } from "@/lib/entitlements";
 
 export const runtime = "nodejs";
 
@@ -64,18 +65,34 @@ export async function POST(req: Request) {
     select: { plan: true, planExpiry: true, phone: true },
   });
   const rank = { free: 0, pro: 1, premium: 2 } as const;
-  if (
-    me &&
-    rank[me.plan] >= rank[plan] &&
-    me.planExpiry &&
-    me.planExpiry.getTime() > Date.now()
-  ) {
+  const targetExam = EXAM_CODE[examName] ?? examName;
+
+  if (examName === "GATE") {
+    // GATE → Mining is the only track that drives the global User.plan, so its
+    // dedup is plan-based.
+    if (
+      me &&
+      rank[me.plan] >= rank[plan] &&
+      me.planExpiry &&
+      me.planExpiry.getTime() > Date.now()
+    ) {
+      return NextResponse.json(
+        {
+          error: "already_subscribed",
+          message: `You already have ${me.plan} access until ${me.planExpiry
+            .toISOString()
+            .slice(0, 10)}.`,
+        },
+        { status: 409 },
+      );
+    }
+  } else if (await hasEntitlement(session.user.id, targetExam, subject, plan)) {
+    // Other tracks (e.g. PSU · CIL) are gated per exam+subject Entitlement —
+    // don't block a buyer just because their global plan is already pro/premium.
     return NextResponse.json(
       {
         error: "already_subscribed",
-        message: `You already have ${me.plan} access until ${me.planExpiry
-          .toISOString()
-          .slice(0, 10)}.`,
+        message: "You already have active access to this track.",
       },
       { status: 409 },
     );
