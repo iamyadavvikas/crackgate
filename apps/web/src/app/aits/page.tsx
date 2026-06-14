@@ -3,7 +3,6 @@ import { db } from "@/lib/db";
 import { AITS, isUnlocked } from "@/data/aits";
 import { MOCKS } from "@/data/mocks";
 import Link from "next/link";
-import { redirect } from "next/navigation";
 
 export const dynamic = "force-dynamic";
 export const metadata = { title: "AITS — All India Test Series | CrackGate" };
@@ -17,13 +16,14 @@ function fmt(iso: string) {
 
 export default async function AitsPage() {
   const session = await auth();
-  if (!session?.user) redirect("/login?next=/aits");
 
-  const me = await db.user.findUnique({
-    where: { id: session.user.id },
-    select: { plan: true },
-  });
-  const isAdmin  = (session.user as { role?: string }).role === "admin";
+  const me = session?.user
+    ? await db.user.findUnique({
+        where: { id: session.user.id },
+        select: { plan: true },
+      })
+    : null;
+  const isAdmin  = (session?.user as { role?: string } | undefined)?.role === "admin";
   // Founders (admins) bypass both the premium gate and the per-test schedule.
   const isPremium = me?.plan === "premium" || isAdmin;
 

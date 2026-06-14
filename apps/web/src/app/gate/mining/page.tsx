@@ -1,24 +1,24 @@
 import Link from "next/link";
 import { MOCKS } from "@/data/mocks";
 import { PRACTICE } from "@/data/practice";
-import { WhatsAppButton } from "@/components/whatsapp-button";
-import { HeroCarousel } from "@/components/hero-carousel";
-import { CilAdBanner } from "@/components/cil-ad-banner";
+import { GateWindow } from "@/components/hero-carousel";
 
-export default function HomePage() {
+export const metadata = { title: "GATE Mining (MN) · CrackGate" };
+export const dynamic = "force-dynamic";
+
+export default function GateMiningPage() {
   const practiceQs = PRACTICE.reduce((s, sub) => s + sub.questions.length, 0);
   const subjectsCount = PRACTICE.length;
   const mocksCount = MOCKS.length;
 
   return (
     <>
-      {/* ---------- HERO (dual-window carousel) ---------- */}
-      <HeroCarousel practiceQs={practiceQs} mocksCount={mocksCount} subjectsCount={subjectsCount} />
-
-      {/* ---------- CIL recruitment ad ---------- */}
-      <div className="pt-10">
-        <CilAdBanner />
-      </div>
+      {/* ---------- HERO (GATE MN 2027 banner) ---------- */}
+      <section className="relative overflow-hidden bg-slate-950 text-white">
+        <div className="relative min-h-[600px] lg:min-h-[620px]">
+          <GateWindow practiceQs={practiceQs} mocksCount={mocksCount} subjectsCount={subjectsCount} />
+        </div>
+      </section>
 
       {/* ---------- FEATURES ---------- */}
       <section className="max-w-7xl mx-auto px-5 py-20">
@@ -48,18 +48,8 @@ export default function HomePage() {
           </p>
         </div>
         <div className="mt-10 grid gap-5 sm:grid-cols-2 max-w-3xl mx-auto">
-          <TeamCard
-            initials="VY"
-            name="Vikas Yadav"
-            role="Founder"
-            credentials="M.Tech, IIT Kharagpur"
-          />
-          <TeamCard
-            initials="VK"
-            name="Vishal Kumar"
-            role="Co-founder"
-            credentials="B.Tech, BIT Sindri · M.Tech, IIT Kharagpur · Coal India Limited"
-          />
+          <TeamCard initials="VY" name="Vikas Yadav" role="Founder" credentials="M.Tech, IIT Kharagpur" />
+          <TeamCard initials="VK" name="Vishal Kumar" role="Co-founder" credentials="B.Tech, BIT Sindri · M.Tech, IIT Kharagpur · Coal India Limited" />
         </div>
         <div className="mt-8 text-center">
           <Link href="/about" className="text-sm font-semibold text-brand hover:underline">
@@ -76,9 +66,6 @@ export default function HomePage() {
           <Link href="/login" className="btn btn-accent btn-lg mt-6 inline-flex">Continue with Google →</Link>
         </div>
       </section>
-
-      {/* Floating WhatsApp chat — landing page only */}
-      <WhatsAppButton />
     </>
   );
 }

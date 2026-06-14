@@ -8,13 +8,6 @@ export default function About() {
         We exist because generic GATE coaching ignores the mining branch.
       </p>
 
-      <h2 className="mt-10 text-2xl font-bold">What we do</h2>
-      <ul className="mt-3 space-y-2 list-disc pl-6 text-ink/80 marker:text-muted">
-        <li>10 full-length mock papers built on the GATE 2025 syllabus & pattern.</li>
-        <li>NTA-style live exam portal — identical UX to the real CBT.</li>
-        <li>Server-side grading + subject-wise SWOT analytics.</li>
-      </ul>
-
       <h2 className="mt-10 text-2xl font-bold">Team</h2>
       <div className="mt-4 grid gap-4 sm:grid-cols-2">
         <Founder

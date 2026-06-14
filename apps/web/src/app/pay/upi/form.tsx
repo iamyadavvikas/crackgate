@@ -13,6 +13,7 @@ type Props = {
 };
 
 const APPS = ["PhonePe", "GPay", "Paytm", "BHIM", "Other"] as const;
+const EXAMS = ["GATE", "PSU", "State Level"] as const;
 
 export default function UpiClaimForm({
   plan,
@@ -25,6 +26,8 @@ export default function UpiClaimForm({
   const [payerName, setPayerName] = useState(defaultName);
   const [payerPhone, setPayerPhone] = useState(defaultPhone);
   const [payerEmail, setPayerEmail] = useState(defaultEmail);
+  const [examName, setExamName] = useState<(typeof EXAMS)[number]>("GATE");
+  const [subject, setSubject] = useState("");
   const [upiApp, setUpiApp] = useState<(typeof APPS)[number]>("PhonePe");
   const [payerNote, setPayerNote] = useState("");
   const [loading, setLoading] = useState(false);
@@ -35,7 +38,8 @@ export default function UpiClaimForm({
   const formValid =
     payerName.trim().length >= 2 &&
     phoneDigits.length >= 10 &&
-    /^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(payerEmail.trim());
+    /^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(payerEmail.trim()) &&
+    subject.trim().length >= 2;
 
   async function submit(e: React.FormEvent) {
     e.preventDefault();
@@ -50,6 +54,8 @@ export default function UpiClaimForm({
           payerName: payerName.trim(),
           payerPhone: payerPhone.trim(),
           payerEmail: payerEmail.trim(),
+          examName,
+          subject: subject.trim(),
           upiApp,
           payerNote: payerNote.trim() || undefined,
         }),
@@ -189,6 +195,47 @@ export default function UpiClaimForm({
           value={payerEmail}
           onChange={(e) => setPayerEmail(e.target.value)}
           placeholder="you@example.com"
+          className="input w-full mt-1"
+        />
+      </div>
+
+      <div>
+        <label
+          htmlFor="examName"
+          className="block text-xs font-semibold text-muted"
+        >
+          Exam <span className="text-err">*</span>
+        </label>
+        <select
+          id="examName"
+          value={examName}
+          onChange={(e) => setExamName(e.target.value as (typeof EXAMS)[number])}
+          className="input w-full mt-1"
+        >
+          {EXAMS.map((x) => (
+            <option key={x} value={x}>
+              {x}
+            </option>
+          ))}
+        </select>
+      </div>
+
+      <div>
+        <label
+          htmlFor="subject"
+          className="block text-xs font-semibold text-muted"
+        >
+          Subject <span className="text-err">*</span>
+        </label>
+        <input
+          id="subject"
+          name="subject"
+          required
+          minLength={2}
+          maxLength={80}
+          value={subject}
+          onChange={(e) => setSubject(e.target.value)}
+          placeholder="e.g. Mining Engineering"
           className="input w-full mt-1"
         />
       </div>

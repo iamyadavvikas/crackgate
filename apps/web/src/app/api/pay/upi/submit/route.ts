@@ -19,6 +19,8 @@ const Body = z.object({
   payerName: z.string().trim().min(2, "Please enter your full name").max(80),
   payerPhone: z.string().trim().min(10, "Enter a valid phone number").max(20),
   payerEmail: z.string().trim().email("Enter a valid email").max(120),
+  examName: z.enum(["GATE", "PSU", "State Level"]),
+  subject: z.string().trim().min(2, "Please enter the subject").max(80),
   upiApp: z.enum(["PhonePe", "GPay", "Paytm", "BHIM", "Other"]).optional(),
   payerNote: z.string().trim().max(280).optional(),
 });
@@ -34,7 +36,7 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: parsed.error.flatten() }, { status: 400 });
   }
 
-  const { plan, payerName, payerPhone, payerEmail, upiApp, payerNote } =
+  const { plan, payerName, payerPhone, payerEmail, examName, subject, upiApp, payerNote } =
     parsed.data;
   const cfg = PLANS[plan];
 
@@ -89,6 +91,17 @@ export async function POST(req: Request) {
   }
 
   try {
+    // Fold exam + subject into the stored note so admins see them without a
+    // schema change. Keeps any free-form note the user added.
+    const noteWithExam = [
+      `Exam: ${examName}`,
+      `Subject: ${subject}`,
+      payerNote,
+    ]
+      .filter(Boolean)
+      .join(" · ")
+      .slice(0, 280);
+
     const row = await db.upiPayment.create({
       data: {
         userId: session.user.id,
@@ -99,7 +112,7 @@ export async function POST(req: Request) {
         payerPhone: phone,
         payerEmail,
         upiApp,
-        payerNote,
+        payerNote: noteWithExam,
         status: "pending",
       },
       select: { id: true, status: true, createdAt: true },

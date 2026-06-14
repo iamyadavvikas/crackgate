@@ -137,9 +137,7 @@ export default async function PayUpiPage({
             <UpiClaimForm
               plan={planKey}
               amountRupees={cfg.amountRupees}
-              defaultName={me?.name ?? session.user.name ?? ""}
               defaultPhone={me?.phone ?? ""}
-              defaultEmail={me?.email ?? session.user.email ?? ""}
             />
           </div>
         </div>

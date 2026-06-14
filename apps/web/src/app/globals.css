@@ -126,6 +126,23 @@ body {
 .cg-drawer   { animation: cg-slide-in-right 220ms cubic-bezier(.4,.0,.2,1); }
 .cg-sheet    { animation: cg-slide-in-up    240ms cubic-bezier(.4,.0,.2,1); }
 
+/* Hero CTA: hover ripple (amber) */
+.cg-ripple { position: relative; overflow: hidden; isolation: isolate; }
+.cg-ripple::after {
+  content: ""; position: absolute; inset: 0; z-index: -1;
+  background: radial-gradient(circle at center, rgba(255,255,255,.6) 0%, rgba(255,255,255,0) 60%);
+  transform: scale(0); opacity: 0; transition: transform .6s ease, opacity .6s ease;
+}
+.cg-ripple:hover::after { transform: scale(2.4); opacity: 1; }
+
+/* Hero CTA: neon glow (cyan) */
+.cg-neon { box-shadow: 0 0 0 rgba(34,211,238,0); }
+.cg-neon:hover { box-shadow: 0 0 18px rgba(34,211,238,.55), 0 0 4px rgba(34,211,238,.8); }
+
+@media (prefers-reduced-motion: reduce) {
+  .cg-ripple::after { transition: none; }
+}
+
 /* Hide scrollbar on tab strip */
 .scrollbar-thin::-webkit-scrollbar { height: 2px; }
 .scrollbar-thin::-webkit-scrollbar-thumb { background: rgb(var(--line-rgb)); }
