@@ -94,6 +94,7 @@ jobs:
             NEXT_PUBLIC_UPI_PAYEE_NAME=${{ vars.NEXT_PUBLIC_UPI_PAYEE_NAME }}
             NEXT_PUBLIC_POSTHOG_KEY=${{ secrets.NEXT_PUBLIC_POSTHOG_KEY }}
             NEXT_PUBLIC_POSTHOG_HOST=${{ vars.NEXT_PUBLIC_POSTHOG_HOST }}
+            NEXT_PUBLIC_SENTRY_DSN=${{ secrets.NEXT_PUBLIC_SENTRY_DSN }}
 
   # ─── SSH to EC2, pull, migrate, restart web, healthcheck ───────────────
   deploy:
