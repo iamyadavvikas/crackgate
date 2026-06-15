@@ -133,6 +133,13 @@ jobs:
               fi
             fi
 
+            # Reclaim disk before pulling. Old image versions accumulate on
+            # the small root volume and can fill it mid-pull ("no space left on
+            # device"). Images in use by the running web/db/caddy containers are
+            # kept; only unused images and build cache are removed.
+            docker image prune -af
+            docker builder prune -af
+
             docker compose -f docker-compose.aws.yml --env-file .env.production pull web
 
             if [ "${SKIP_MIGRATE}" != "true" ]; then

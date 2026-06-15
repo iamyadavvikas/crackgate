@@ -146,9 +146,14 @@ jobs:
               fi
             fi
 
-            docker compose -f docker-compose.aws.yml --env-file .env.production pull web
+            # Reclaim disk before pulling. Old image versions accumulate on
+            # the small root volume and can fill it mid-pull ("no space left on
+            # device"). Images in use by the running web/db/caddy containers are
+            # kept; only unused images and build cache are removed.
+            docker image prune -af
+            docker builder prune -af
 
-            # Run migrations BEFORE swapping web (uses DIRECT_URL → bypasses pgbouncer)
+            docker compose -f docker-compose.aws.yml --env-file .env.production pull web
             # NOTE: -T + '</dev/null' are REQUIRED. Without them, 'compose run'
             # attaches to stdin and swallows the rest of this heredoc (the
             # force-recreate + healthcheck below), so the container is never
