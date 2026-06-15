@@ -12,6 +12,7 @@ const GATE_BRANCHES: Branch[] = [
   { label: "Mining (MN)", href: "/gate/mining" },
   { label: "Civil (CE)", href: "/gate/civil" },
   { label: "Geology (GG)", href: "/gate/geology" },
+  { label: "Environment (ES)", href: "/gate/environment" },
 ];
 
 export function MegaNav() {

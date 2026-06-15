@@ -1,132 +1,157 @@
 # CrackGate.in 🛠️⛏️
 
-India's #1 dedicated GATE preparation platform for **Mining Engineering (MN)** aspirants targeting **M.Tech admissions and PSU jobs** (Coal India, NMDC, NTPC, ONGC, GAIL, HZL).
+India's #1 dedicated **GATE** preparation platform — built exclusively for **Mining Engineering (MN)** aspirants targeting **M.Tech admissions** and **PSU jobs** (Coal India, NMDC, NTPC, ONGC, GAIL, HZL), with additional GATE tracks (Civil, Geology, Environment) on the way.
 
-> Built as a static site — deployable to Netlify / Vercel / GitHub Pages / Cloudflare Pages in one click. No backend required.
+> A full-stack **Next.js 15** application running on **AWS** (EC2 + RDS Postgres), provisioned with **Terraform** and shipped through **GitHub Actions** CI/CD with separate **production** and **staging** environments.
 
 ## ✨ Features
 
-- 🎯 **10 full-length Mock Tests** on the **GATE 2025 pattern** (20 questions × 60 min each, ~200 original questions).
-- 📚 **10-year Previous Year Question bank** (2016–2025) with detailed step-by-step solutions.
-- 📊 **SWOT Analytics** after every test — radar chart, subject-wise bar graph, personalized study plan.
-- 🆓 **Free first Mock** — no signup required.
-- 🔐 **Google Sign-In** for subsequent mocks & paid plans.
-- 💳 **3-tier pricing**: Free / ₹499 Subject Mastery / ₹999 Premium All-Access.
-- 📈 **Personal dashboard** — score trend, cumulative subject mastery, history.
-- 📱 Mobile-responsive, accessible, fast.
+- 🧪 **Full-length Mock Tests** on the latest GATE pattern, with section-wise analysis and subject SWOT. First mock free.
+- 📚 **900+ topic-wise Practice Questions** across every subject, each with worked solutions and instant grading.
+- 🗂️ **Previous Year Question bank** with detailed step-by-step solutions.
+- 🎯 **NTA-style live exam portal** — pixel-identical to the real CBT (question palette, mark-for-review, timer, auto-submit).
+- 🛡️ **Server-side grading** — scores computed on the server (tamper-proof) with a detailed report after every attempt.
+- 📊 **SWOT Analytics** — subject-wise strength/weakness graphs, time-per-question, accuracy trend, percentile.
+- 📅 **AITS** (All-India Test Series) scheduled around the exam cycle.
+- 🔐 **Auth** via Google sign-in and WhatsApp/phone OTP (env-gated).
+- 💳 **Payments** via Razorpay + UPI.
+- 📱 Mobile-first, accessible, fast; progress syncs across devices.
+
+## 🏗️ Tech stack
+
+| Layer         | Tech                                                              |
+| ------------- | ---------------------------------------------------------------- |
+| Frontend      | Next.js 15 (App Router), React 19, Tailwind CSS, Recharts, KaTeX |
+| Backend       | Next.js Route Handlers / Server Actions, NextAuth v5             |
+| Database      | PostgreSQL 16 (AWS RDS) via Prisma                               |
+| Infra         | AWS (EC2 t4g arm64, RDS, S3, ECR, Secrets Manager) via Terraform |
+| Runtime       | Docker Compose on EC2, Caddy (TLS), pgbouncer                    |
+| CI/CD         | GitHub Actions → ECR → SSH deploy, Playwright smoke tests        |
+| Observability | Sentry, CloudWatch, Route 53 health checks                       |
+| Tests         | Vitest (unit), Playwright (e2e/smoke)                            |
 
 ## 📁 Structure
 
 ```
 crackgate/
-├── index.html                  # Landing page (MadeEasy-style)
-├── pages/
-│   ├── test-series.html        # List of 10 mocks
-│   ├── mock.html               # Test-taking engine (timer + palette)
-│   ├── result.html             # SWOT + Chart.js analytics + review
-│   ├── pyq.html                # 10-year PYQ filter
-│   ├── pricing.html            # Plans + payment stub
-│   ├── study-material.html     # Subject-wise PDFs (paywalled)
-│   ├── login.html              # Google Sign-In
-│   └── dashboard.html          # User progress + history
-├── assets/
-│   ├── css/style.css
-│   └── js/
-│       ├── auth.js             # Nav/Footer + Google auth + plan/paywall
-│       ├── mocks-data.js       # 10 mock tests (200+ questions)
-│       ├── pyq-data.js         # 10 years PYQ bank
-│       ├── mock-engine.js      # Test-taking UI (timer, palette, save)
-│       └── result.js           # SWOT logic + Chart.js radar/bar
-├── netlify.toml
+├── apps/
+│   └── web/                    # Next.js 15 app (App Router)
+│       ├── src/app/            # routes (home, gate/*, practice, mocks, aits, pricing, dashboard…)
+│       ├── src/components/     # UI (mega-nav, exam-portal, practice-runner, charts…)
+│       ├── src/data/           # mocks, practice, pyq, aits, psu catalogs
+│       ├── src/lib/            # grading, nat, auth, utils
+│       ├── e2e/                # Playwright smoke tests
+│       └── public/             # favicons, og images
+├── packages/
+│   └── database/               # Prisma schema, migrations, generated client (@crackgate/database)
+├── infra-tf/                   # Terraform — PRODUCTION (network, compute, rds, iam, storage, uptime)
+│   └── staging/                # Terraform — STAGING (lightweight, shares prod VPC/RDS)
+├── scripts/                    # build_mocks.ts, ec2-bootstrap*.sh, backup.sh, deploy.sh…
+├── .github/workflows/
+│   ├── deploy.yml              # main → production
+│   └── deploy-staging.yml      # develop → staging
+├── Dockerfile
+├── docker-compose.aws.yml
+├── Caddyfile
+├── STAGING.md                  # staging environment runbook
 └── README.md
 ```
 
 ## 🚀 Local development
 
+Prerequisites: **Node ≥ 20**, **npm ≥ 10**, and a local or remote Postgres.
+
 ```bash
-cd crackgate
-python3 -m http.server 8080
-# open http://localhost:8080
+# install workspace deps
+npm install
+
+# generate the Prisma client
+npm run db:generate
+
+# copy env and fill in values (DB URL, auth, etc.)
+cp apps/web/.env.example apps/web/.env.local
+
+# run migrations + seed (optional)
+npm run db:migrate
+npm run db:seed
+
+# start the dev server → http://localhost:3000
+npm run dev
 ```
 
-Any static file server works (`npx serve`, `live-server`, etc.).
+Useful scripts (root):
 
-## 🌐 Deploy to crackgate.in
+| Command               | Description                        |
+| --------------------- | ---------------------------------- |
+| `npm run dev`         | Next.js dev server                 |
+| `npm run build`       | Prisma generate + production build |
+| `npm run lint`        | ESLint across workspaces           |
+| `npm run db:studio`   | Prisma Studio                      |
+| `npm run db:migrate`  | Create/apply a dev migration       |
+| `npm run build:mocks` | Regenerate mock data from source   |
 
-### Option A — Netlify (recommended)
-1. Push to a GitHub repo.
-2. New site → "Import from Git" → select repo.
-3. Settings → Domain → add `crackgate.in` + add A/CNAME records at your registrar.
-4. HTTPS auto-provisioned via Let's Encrypt.
+App-scoped (`apps/web`): `npm run --workspace apps/web typecheck | test | test:e2e`.
 
-### Option B — Vercel
+## 🌍 Environments
+
+| Environment    | URL                    | Branch    | Terraform           | Notes                                                           |
+| -------------- | ---------------------- | --------- | ------------------- | --------------------------------------------------------------- |
+| **Production** | `crackgate.in`         | `main`    | `infra-tf/`         | t4g.small, RDS Postgres, always-on                              |
+| **Staging**    | `staging.crackgate.in` | `develop` | `infra-tf/staging/` | t4g.micro, shared RDS (`crackgate_staging` DB), auto stop/start |
+
+See **[STAGING.md](STAGING.md)** for the staging setup + runbook.
+
+## 🔁 Deployment (CI/CD)
+
+Pushing to a branch triggers the matching GitHub Actions workflow:
+
+```
+feature ─▶ PR to develop ─▶ deploy to staging  (deploy-staging.yml)
+                              │
+        PR develop ─▶ main ─▶ deploy to production (deploy.yml)
+```
+
+Each pipeline: **verify** (lint + typecheck + Vitest) → **build** (native arm64 image → ECR via OIDC) → **deploy** (SSH to EC2, `prisma migrate deploy`, zero-downtime container swap, healthcheck + rollback) → **smoke** (Playwright against the live URL).
+
+`main` is branch-protected — changes ship via PR with the `verify` check required.
+
+## 🧱 Infrastructure (Terraform)
+
+All infra is declared in `infra-tf/` (state in S3 + DynamoDB lock).
+
 ```bash
-npx vercel
-# follow prompts; add custom domain crackgate.in
+cd infra-tf
+AWS_PROFILE=crackgate terraform init
+AWS_PROFILE=crackgate terraform plan
+AWS_PROFILE=crackgate terraform apply
 ```
 
-### Option C — Cloudflare Pages
-1. Pages → connect repo → root output `.`.
-2. Custom domain → `crackgate.in`.
+Provisions: VPC + subnets + security groups, EC2 (arm64) + Elastic IP, RDS Postgres, S3 (uploads + backups), ECR, Secrets Manager, IAM (EC2 profile + GitHub OIDC deploy role), CloudWatch alarms, Route 53 uptime health check + SNS alerts.
 
-## 🔑 Configure Google Sign-In
+## 🗄️ Database
 
-1. Go to https://console.cloud.google.com → APIs & Services → Credentials.
-2. Create **OAuth 2.0 Client ID** (type: Web).
-3. Add authorized JavaScript origins: `https://crackgate.in` (and `http://localhost:8080` for dev).
-4. Copy the Client ID into [`assets/js/auth.js`](assets/js/auth.js#L5):
-   ```js
-   const GOOGLE_CLIENT_ID = "1234567890-abcdef.apps.googleusercontent.com";
-   ```
-5. Until then a dev "Continue with Google" stub button lets you test the flow.
+Schema and migrations live in `packages/database` (Prisma). The generated client is consumed as `@crackgate/database`.
 
-## 💳 Activate payments (Razorpay)
-
-Replace the demo `buy()` in [`pages/pricing.html`](pages/pricing.html) with the Razorpay checkout snippet:
-
-```html
-<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
-<script>
-function buy(plan, amount) {
-  const opts = {
-    key: "rzp_live_XXXX",                 // your key
-    amount: amount * 100,                 // paise
-    currency: "INR",
-    name: "CrackGate.in",
-    description: plan + " plan (1 year)",
-    handler: (resp) => { CG.setPlan(plan); location.href = '/pages/dashboard.html'; },
-    prefill: { email: CG.getUser()?.email }
-  };
-  new Razorpay(opts).open();
-}
-</script>
+```bash
+npm run db:migrate   # dev migration
+npm run db:deploy    # apply migrations (prod/staging — runs in CI)
+npm run db:studio    # browse data
 ```
-
-For server-side payment verification, add a small Cloud Function / Netlify Function that validates the Razorpay signature and writes the plan to a Firestore/Supabase DB.
 
 ## 📝 Adding more questions
 
-- Mocks: edit [`assets/js/mocks-data.js`](assets/js/mocks-data.js).
-- PYQs: edit [`assets/js/pyq-data.js`](assets/js/pyq-data.js).
+- Mocks/practice/PYQ source data lives in `apps/web/src/data/` and is regenerated via `scripts/build_mocks.ts` (`npm run build:mocks`).
+- Grading logic: `apps/web/src/lib/grading.ts` (covered by `grading.test.ts`); NAT matching: `apps/web/src/lib/nat.ts`.
 
-Each question schema:
-```js
+Question schema (simplified):
+```ts
 { subject: "Mine Ventilation", type: "MCQ" | "MSQ" | "NAT", marks: 1 | 2,
   stem: "Question text…",
-  options: ["A","B","C","D"],          // MCQ/MSQ only
-  answer: 2,                            // index for MCQ; array for MSQ; number for NAT
-  tolerance: 0.01,                      // NAT only
+  options: ["A", "B", "C", "D"],   // MCQ/MSQ only
+  answer: 2,                        // index (MCQ) | array (MSQ) | number (NAT)
+  tolerance: 0.01,                  // NAT only
   solution: "Step-by-step explanation." }
 ```
-
-## 🛣️ Roadmap (post-launch)
-
-- [ ] Server-side persistence (Firebase/Supabase) for attempt history across devices.
-- [ ] All-India rank / percentile leaderboard.
-- [ ] Video solutions (YouTube unlisted embeds).
-- [ ] Email digest (weekly progress + SWOT).
-- [ ] PWA install (offline practice).
-- [ ] Hindi UI.
 
 ## ⚖️ Disclaimer
 

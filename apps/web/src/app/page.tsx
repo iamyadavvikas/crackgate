@@ -22,17 +22,53 @@ export default function HomePage() {
 
       {/* ---------- FEATURES ---------- */}
       <section className="max-w-7xl mx-auto px-5 py-20">
-        <h2 className="text-3xl font-extrabold text-center">Everything you need to crack GATE MN.</h2>
-        <p className="mt-3 text-muted text-center max-w-2xl mx-auto">
-          Hyper-focused on mining. No generic content, no padding — every question is graded automatically with detailed solutions.
-        </p>
-        <div className="mt-12 grid md:grid-cols-3 gap-6">
-          <Feature icon="🧪" title={`${mocksCount} Full-length Mocks`} desc="Exam-pattern papers with section-wise analysis and subject SWOT. First mock free." />
-          <Feature icon="📚" title={`${practiceQs}+ Practice Questions`} desc="Topic-wise practice across all subjects, each with worked solutions and instant grading." />
-          <Feature icon="📊" title="SWOT Analytics" desc="Subject-wise strengths/weaknesses graphs. Time spent per question. Accuracy trend." />
-          <Feature icon="🎯" title="NTA-style Live Portal" desc="Identical look to the real CBT — palette, mark-for-review, timer, auto-submit." />
-          <Feature icon="🛡️" title="Server-side Grading" desc="Scores are computed on our servers — tamper-proof. Detailed report after every attempt." />
-          <Feature icon="📱" title="Mobile-first" desc="Practice on phone or laptop — your progress syncs across devices." />
+        <div className="text-center">
+          <span className="badge bg-brand/10 text-brand">Why CrackGate</span>
+          <h2 className="mt-3 text-3xl md:text-4xl font-extrabold tracking-tight text-ink">
+            Everything you need to crack GATE.
+          </h2>
+          <p className="mt-3 text-muted max-w-2xl mx-auto">
+            Hyper-focused on mining. No generic content, no padding — every question is graded
+            automatically with detailed solutions.
+          </p>
+        </div>
+        <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <Feature
+            icon="🧪"
+            tint="indigo"
+            title={`${mocksCount} Full-length Mocks`}
+            desc="Exam-pattern papers with section-wise analysis and subject SWOT. First mock free."
+          />
+          <Feature
+            icon="📚"
+            tint="emerald"
+            title={`${practiceQs}+ Practice Questions`}
+            desc="Topic-wise practice across every subject — each with worked solutions and instant grading."
+          />
+          <Feature
+            icon="📊"
+            tint="sky"
+            title="SWOT Analytics"
+            desc="Subject-wise strength & weakness graphs, time-per-question, and your accuracy trend over time."
+          />
+          <Feature
+            icon="🎯"
+            tint="amber"
+            title="NTA-style Live Portal"
+            desc="Pixel-identical to the real CBT — question palette, mark-for-review, timer and auto-submit."
+          />
+          <Feature
+            icon="🛡️"
+            tint="rose"
+            title="Server-side Grading"
+            desc="Scores are computed on our servers — tamper-proof, with a detailed report after every attempt."
+          />
+          <Feature
+            icon="📱"
+            tint="violet"
+            title="Mobile-first"
+            desc="Practice on phone or laptop — your progress syncs seamlessly across every device."
+          />
         </div>
       </section>
 
@@ -98,12 +134,24 @@ function TeamCard({ initials, name, role, credentials }: { initials: string; nam
   );
 }
 
-function Feature({ icon, title, desc }: { icon: string; title: string; desc: string }) {
+function Feature({ icon, title, desc, tint }: { icon: string; title: string; desc: string; tint: keyof typeof TINTS }) {
   return (
-    <div className="card p-6">
-      <div className="text-3xl">{icon}</div>
-      <h3 className="mt-3 font-bold">{title}</h3>
-      <p className="mt-2 text-sm text-muted">{desc}</p>
+    <div className="card group p-6 transition-all duration-200 hover:-translate-y-1 hover:shadow-lg">
+      <div className={`w-12 h-12 rounded-xl grid place-items-center text-2xl transition-transform duration-200 group-hover:scale-110 ${TINTS[tint]}`}>
+        {icon}
+      </div>
+      <h3 className="mt-4 font-bold text-ink">{title}</h3>
+      <p className="mt-2 text-sm text-muted leading-relaxed">{desc}</p>
     </div>
   );
 }
+
+// Static class strings so Tailwind can see them at build time (no interpolation).
+const TINTS = {
+  indigo:  "bg-indigo-500/10  text-indigo-500",
+  emerald: "bg-emerald-500/10 text-emerald-500",
+  sky:     "bg-sky-500/10     text-sky-500",
+  amber:   "bg-amber-500/10   text-amber-500",
+  rose:    "bg-rose-500/10    text-rose-500",
+  violet:  "bg-violet-500/10  text-violet-500",
+} as const;
