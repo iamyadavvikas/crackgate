@@ -10,12 +10,16 @@ import { auth } from "@/lib/auth";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
 
+// Staging (staging.crackgate.in) must never be indexed by search engines.
+const isStaging = process.env.NEXT_PUBLIC_SITE_ENV === "staging";
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://crackgate.in"),
   title: { default: "CrackGate.in — #1 GATE Mining Engineering Prep", template: "%s · CrackGate.in" },
   description:
     "India's dedicated platform for GATE Mining Engineering (MN). 10 full-length mocks, topic-wise practice, SWOT analytics, and study material. First mock free.",
   keywords: ["GATE Mining", "GATE MN 2027", "Mining Engineering PSU", "Coal India", "ONGC"],
+  ...(isStaging ? { robots: { index: false, follow: false } } : {}),
   openGraph: {
     type: "website",
     url: "https://crackgate.in",

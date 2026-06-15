@@ -97,7 +97,7 @@ services:
       driver: awslogs
       options:
         awslogs-region: ${AWS_REGION:-ap-south-1}
-        awslogs-group: /crackgate/web
+        awslogs-group: ${AWS_LOG_GROUP_WEB:-/crackgate/web}
         awslogs-create-group: "true"
         tag: "{{.Name}}/{{.ID}}"
 
@@ -125,7 +125,7 @@ services:
       driver: awslogs
       options:
         awslogs-region: ${AWS_REGION:-ap-south-1}
-        awslogs-group: /crackgate/caddy
+        awslogs-group: ${AWS_LOG_GROUP_CADDY:-/crackgate/caddy}
         awslogs-create-group: "true"
 
   # ─── nightly pg_dump → S3 ──────────────────────────────────────────────

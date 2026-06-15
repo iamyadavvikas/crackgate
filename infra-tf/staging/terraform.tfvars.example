@@ -1,0 +1,13 @@
+# Copy to terraform.tfvars (gitignored) and fill in.
+# Most values default sensibly in variables.tf; only the SSH key is required.
+
+# Public SSH key authorized as the deploy user. Reusing the prod deploy key is
+# fine — paste the contents of the same ~/.ssh/<key>.pub used for prod.
+deploy_ssh_pubkey = "ssh-ed25519 AAAA... vikas@crackgate-deploy"
+
+# Optional overrides:
+# ec2_instance_type = "t4g.micro"
+# domain            = "staging.crackgate.in"
+# deploy_branch     = "develop"
+# auto_stop_cron    = "cron(0 20 * * ? *)"   # 20:00 IST daily
+# auto_start_cron   = "cron(0 9 ? * MON-FRI *)" # 09:00 IST Mon-Fri

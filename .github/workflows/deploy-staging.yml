@@ -1,0 +1,198 @@
+name: Deploy to Staging
+
+on:
+  push:
+    branches: [develop]
+  workflow_dispatch:
+    inputs:
+      skip_migrate:
+        description: "Skip prisma migrate deploy"
+        type: boolean
+        default: false
+
+concurrency:
+  group: deploy-staging
+  cancel-in-progress: false
+
+env:
+  AWS_REGION: ap-south-1
+  ECR_REPO: crackgate-staging-web
+
+jobs:
+  # ─── Lint + typecheck + unit tests — fail fast ─────────────────────────
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+      - run: npx --workspace @crackgate/database prisma generate
+      - run: npm run --workspace apps/web lint
+      - run: npm run --workspace apps/web typecheck
+      - run: npm run --workspace apps/web test
+
+  # ─── Build linux/arm64 image and push to the STAGING ECR repo ──────────
+  build:
+    needs: verify
+    runs-on: ubuntu-24.04-arm
+    permissions:
+      id-token: write
+      contents: read
+    outputs:
+      image_tag: ${{ steps.meta.outputs.tag }}
+      image_uri: ${{ steps.meta.outputs.uri }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - id: meta
+        run: |
+          TAG="sha-$(echo $GITHUB_SHA | cut -c1-7)"
+          echo "tag=$TAG" >> $GITHUB_OUTPUT
+          echo "uri=${{ secrets.ECR_REGISTRY }}/${{ env.ECR_REPO }}:$TAG" >> $GITHUB_OUTPUT
+
+      - uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.AWS_DEPLOY_ROLE_ARN_STAGING }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - uses: aws-actions/amazon-ecr-login@v2
+        id: ecr
+
+      - uses: docker/setup-buildx-action@v3
+
+      - uses: docker/build-push-action@v5
+        with:
+          context: .
+          file: Dockerfile
+          platforms: linux/arm64
+          push: true
+          tags: |
+            ${{ steps.meta.outputs.uri }}
+            ${{ secrets.ECR_REGISTRY }}/${{ env.ECR_REPO }}:latest
+          cache-from: type=gha,scope=staging
+          cache-to: type=gha,mode=max,scope=staging
+          build-args: |
+            NEXT_PUBLIC_GOOGLE_ENABLED=${{ vars.NEXT_PUBLIC_GOOGLE_ENABLED }}
+            NEXT_PUBLIC_WHATSAPP_ENABLED=${{ vars.NEXT_PUBLIC_WHATSAPP_ENABLED }}
+            NEXT_PUBLIC_WHATSAPP_NUMBER=${{ vars.NEXT_PUBLIC_WHATSAPP_NUMBER }}
+            NEXT_PUBLIC_WHATSAPP_COMMUNITY_URL=${{ vars.NEXT_PUBLIC_WHATSAPP_COMMUNITY_URL }}
+            NEXT_PUBLIC_RAZORPAY_KEY_ID=${{ vars.NEXT_PUBLIC_RAZORPAY_KEY_ID }}
+            NEXT_PUBLIC_UPI_VPA=${{ vars.NEXT_PUBLIC_UPI_VPA }}
+            NEXT_PUBLIC_UPI_PAYEE_NAME=${{ vars.NEXT_PUBLIC_UPI_PAYEE_NAME }}
+            NEXT_PUBLIC_POSTHOG_KEY=${{ secrets.NEXT_PUBLIC_POSTHOG_KEY }}
+            NEXT_PUBLIC_POSTHOG_HOST=${{ vars.NEXT_PUBLIC_POSTHOG_HOST }}
+            NEXT_PUBLIC_SENTRY_DSN=${{ secrets.NEXT_PUBLIC_SENTRY_DSN }}
+            NEXT_PUBLIC_SITE_ENV=staging
+
+  # ─── SSH to staging EC2, pull, migrate, restart web, healthcheck ───────
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment: staging
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install SSH key
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.EC2_SSH_KEY }}" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          ssh-keyscan -H ${{ secrets.STAGING_EC2_HOST }} >> ~/.ssh/known_hosts
+
+      - name: Copy compose + Caddyfile
+        run: |
+          scp -i ~/.ssh/id_ed25519 \
+            docker-compose.aws.yml Caddyfile \
+            deploy@${{ secrets.STAGING_EC2_HOST }}:/opt/crackgate/
+
+      - name: Deploy
+        env:
+          IMAGE_TAG: ${{ needs.build.outputs.image_tag }}
+          SKIP_MIGRATE: ${{ inputs.skip_migrate || 'false' }}
+          ADMIN_EMAILS: ${{ vars.ADMIN_EMAILS }}
+        run: |
+          ssh -i ~/.ssh/id_ed25519 deploy@${{ secrets.STAGING_EC2_HOST }} bash -se <<EOF
+            set -euo pipefail
+            cd /opt/crackgate
+
+            aws ecr get-login-password --region ${{ env.AWS_REGION }} \
+              | docker login --username AWS --password-stdin ${{ secrets.ECR_REGISTRY }}
+
+            export IMAGE_TAG="${IMAGE_TAG}"
+            sed -i "s|^IMAGE_TAG=.*|IMAGE_TAG=${IMAGE_TAG}|" .env.production || \
+              echo "IMAGE_TAG=${IMAGE_TAG}" >> .env.production
+
+            if [ -n "${ADMIN_EMAILS}" ]; then
+              if grep -q '^ADMIN_EMAILS=' .env.production; then
+                sed -i "s|^ADMIN_EMAILS=.*|ADMIN_EMAILS=\"${ADMIN_EMAILS}\"|" .env.production
+              else
+                echo "ADMIN_EMAILS=\"${ADMIN_EMAILS}\"" >> .env.production
+              fi
+            fi
+
+            docker compose -f docker-compose.aws.yml --env-file .env.production pull web
+
+            if [ "${SKIP_MIGRATE}" != "true" ]; then
+              docker compose -f docker-compose.aws.yml --env-file .env.production \\
+                run --rm -T web node ./node_modules/prisma/build/index.js migrate deploy --schema=packages/database/prisma/schema.prisma </dev/null
+            fi
+
+            docker compose -f docker-compose.aws.yml --env-file .env.production \\
+              up -d --no-deps --force-recreate web
+
+            GOT=\$(docker inspect --format '{{.Config.Image}}' \$(docker compose -f docker-compose.aws.yml --env-file .env.production ps -q web))
+            case "\$GOT" in
+              *":${IMAGE_TAG}") echo "✓ web recreated on \$GOT" ;;
+              *) echo "✗ expected :${IMAGE_TAG} but web is \$GOT — recreate failed"; exit 1 ;;
+            esac
+
+            for i in {1..30}; do
+              if docker compose -f docker-compose.aws.yml --env-file .env.production exec -T web \\
+                 curl -fsS http://127.0.0.1:3000/api/healthz >/dev/null 2>&1; then
+                echo "✓ healthy after \${i} attempts"
+                docker image prune -af --filter "until=168h"
+                exit 0
+              fi
+              sleep 2
+            done
+
+            echo "✗ health check failed — rolling back"
+            sed -i "s|^IMAGE_TAG=.*|IMAGE_TAG=latest|" .env.production
+            docker compose -f docker-compose.aws.yml --env-file .env.production \\
+              up -d --no-deps web
+            exit 1
+          EOF
+
+      - name: Notify on failure
+        if: failure()
+        run: |
+          curl -X POST "${{ secrets.SLACK_WEBHOOK_URL }}" \
+            -H 'Content-Type: application/json' \
+            -d "{\"text\":\":rotating_light: CrackGate STAGING deploy failed — ${{ github.sha }}\"}"
+
+  # ─── Post-deploy smoke test against the staging site ───────────────────
+  smoke:
+    needs: deploy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+      - run: npx --workspace apps/web playwright install --with-deps chromium
+      - name: Smoke test staging
+        env:
+          PLAYWRIGHT_BASE_URL: https://staging.crackgate.in
+        run: npm run --workspace apps/web test:e2e
+
+      - name: Notify on failure
+        if: failure()
+        run: |
+          curl -X POST "${{ secrets.SLACK_WEBHOOK_URL }}" \
+            -H 'Content-Type: application/json' \
+            -d "{\"text\":\":warning: CrackGate STAGING smoke test failed — ${{ github.sha }}\"}"

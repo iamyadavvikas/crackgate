@@ -9,3 +9,7 @@ prisma/dev.db*
 .vercel
 .aws-sam
 cdk.out/
+
+# Playwright artifacts
+test-results/
+playwright-report/
