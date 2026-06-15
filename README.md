@@ -4,6 +4,8 @@ India's #1 dedicated **GATE** preparation platform — built exclusively for **M
 
 > A full-stack **Next.js 15** application running on **AWS** (EC2 + RDS Postgres), provisioned with **Terraform** and shipped through **GitHub Actions** CI/CD with separate **production** and **staging** environments.
 
+> 📐 New here or briefing a stakeholder? Start with the **[Architecture overview](ARCHITECTURE.md)** — a plain-language tour of the whole system.
+
 ## ✨ Features
 
 - 🧪 **Full-length Mock Tests** on the latest GATE pattern, with section-wise analysis and subject SWOT. First mock free.
