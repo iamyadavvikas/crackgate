@@ -12,8 +12,14 @@ test("health endpoint returns ok", async ({ request }) => {
 test("homepage renders the hero and core copy", async ({ page }) => {
   await page.goto("/");
   await expect(page).toHaveTitle(/CrackGate/i);
+  // Hero is an auto-rotating carousel, so its <h1> changes between slides —
+  // assert the carousel region itself (stable) rather than a specific slide.
   await expect(
-    page.getByRole("heading", { name: /crack GATE MN/i }),
+    page.getByRole("region", { name: /CrackGate exam tracks/i }),
+  ).toBeVisible();
+  // Static, server-rendered core copy (not subject to carousel rotation).
+  await expect(
+    page.getByRole("heading", { name: /everything you need to crack GATE/i }),
   ).toBeVisible();
 });
 
