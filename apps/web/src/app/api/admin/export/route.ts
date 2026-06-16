@@ -10,11 +10,17 @@ export const dynamic = "force-dynamic";
 
 type Row = Record<string, unknown>;
 
+// Neutralize CSV formula injection: cells starting with =,+,-,@,tab,CR are
+// interpreted as formulas by Excel/Sheets. Prefix with a single quote.
+function neutralizeFormula(s: string): string {
+  return /^[=+\-@\t\r]/.test(s) ? "'" + s : s;
+}
+
 function escapeCell(v: unknown): string {
   if (v == null) return "";
   if (v instanceof Date) return v.toISOString();
-  if (typeof v === "object") return JSON.stringify(v).replace(/"/g, '""');
-  const s = String(v);
+  if (typeof v === "object") return neutralizeFormula(JSON.stringify(v)).replace(/"/g, '""');
+  const s = neutralizeFormula(String(v));
   if (/[",\n\r]/.test(s)) return `"${s.replace(/"/g, '""')}"`;
   return s;
 }
