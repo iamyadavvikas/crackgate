@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { Brain, CheckCircle2, RotateCcw, AlertCircle } from "lucide-react";
 import type { MistakeItem } from "@/app/api/mistakes/route";
+import { toHtml } from "@/components/math-text";
 
 const LS_KEY = "cg.mistakes.understood";
 
@@ -208,7 +209,7 @@ function MistakeRow({ m, onMark }: { m: MistakeItem; onMark: () => void }) {
           >
             <p
               className={`text-sm text-ink leading-relaxed ${open ? "" : "line-clamp-2"}`}
-              dangerouslySetInnerHTML={{ __html: m.stem }}
+              dangerouslySetInnerHTML={{ __html: toHtml(m.stem) }}
             />
           </button>
           <div className="text-[11px] text-muted mt-2 tabular-nums">
@@ -244,7 +245,7 @@ function MistakeRow({ m, onMark }: { m: MistakeItem; onMark: () => void }) {
                        :              "bg-canvas/40 border-line text-muted"}`}
                   >
                     <span className="font-bold tabular-nums">{String.fromCharCode(65 + i)}.</span>
-                    <span className="flex-1" dangerouslySetInnerHTML={{ __html: opt }} />
+                    <span className="flex-1" dangerouslySetInnerHTML={{ __html: toHtml(opt) }} />
                     {isCorrect && <span className="text-[10px] font-bold text-ok uppercase tracking-wider">Correct</span>}
                     {!isCorrect && isUser && <span className="text-[10px] font-bold text-bad uppercase tracking-wider">Your pick</span>}
                   </li>
@@ -269,7 +270,7 @@ function MistakeRow({ m, onMark }: { m: MistakeItem; onMark: () => void }) {
           {m.solution && (
             <div className="rounded-md bg-canvas/40 border border-line p-3 text-sm text-ink/85 leading-relaxed">
               <div className="text-[10px] uppercase tracking-wider font-bold text-muted mb-1">Solution</div>
-              <div dangerouslySetInnerHTML={{ __html: m.solution }} />
+              <div dangerouslySetInnerHTML={{ __html: toHtml(m.solution) }} />
             </div>
           )}
         </div>

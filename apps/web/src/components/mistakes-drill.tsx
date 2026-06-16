@@ -5,6 +5,7 @@ import { useEffect, useMemo, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import { CheckCircle2, XCircle, ArrowRight, RotateCcw } from "lucide-react";
 import type { MistakeItem } from "@/app/api/mistakes/route";
+import { toHtml } from "@/components/math-text";
 
 const LS_KEY = "cg.mistakes.understood";
 
@@ -132,7 +133,7 @@ export function MistakesDrill() {
         </div>
         <div
           className="text-lg font-semibold text-ink mt-2 leading-relaxed"
-          dangerouslySetInnerHTML={{ __html: current.stem }}
+          dangerouslySetInnerHTML={{ __html: toHtml(current.stem) }}
         />
 
         {/* Options */}
@@ -171,7 +172,7 @@ export function MistakesDrill() {
                     className={`w-full text-left rounded-lg border px-4 py-3 text-sm transition-colors flex items-start gap-3 ${tone}`}
                   >
                     <span className="font-bold tabular-nums">{String.fromCharCode(65 + i)}.</span>
-                    <span className="flex-1" dangerouslySetInnerHTML={{ __html: opt }} />
+                    <span className="flex-1" dangerouslySetInnerHTML={{ __html: toHtml(opt) }} />
                     {submitted && isCorr && <CheckCircle2 size={16} className="text-ok shrink-0" aria-hidden />}
                     {submitted && !isCorr && isPicked && <XCircle size={16} className="text-bad shrink-0" aria-hidden />}
                   </button>
@@ -255,7 +256,7 @@ export function MistakesDrill() {
         {submitted && current.solution && (
           <div className="mt-5 rounded-lg bg-canvas/40 border border-line p-4 text-sm leading-relaxed">
             <div className="text-[10px] uppercase tracking-wider font-bold text-muted mb-1">Solution</div>
-            <div dangerouslySetInnerHTML={{ __html: current.solution }} />
+            <div dangerouslySetInnerHTML={{ __html: toHtml(current.solution) }} />
           </div>
         )}
       </div>

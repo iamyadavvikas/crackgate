@@ -7,8 +7,19 @@
  *   - Subscribe to: messages, message_status */
 
 import { NextResponse } from "next/server";
+import { createHmac, timingSafeEqual } from "node:crypto";
 
 export const runtime = "nodejs";
+
+/** Verify Meta's X-Hub-Signature-256 header against the raw request body. */
+function verifySignature(rawBody: string, signature: string | null): boolean {
+  const secret = process.env.WHATSAPP_APP_SECRET;
+  if (!secret || !signature) return false;
+  const expected = "sha256=" + createHmac("sha256", secret).update(rawBody, "utf8").digest("hex");
+  const a = Buffer.from(expected);
+  const b = Buffer.from(signature);
+  return a.length === b.length && timingSafeEqual(a, b);
+}
 
 export async function GET(req: Request) {
   const url = new URL(req.url);
@@ -23,8 +34,11 @@ export async function GET(req: Request) {
 }
 
 export async function POST(req: Request) {
-  const payload = await req.json().catch(() => null);
-  // For now: log only. Hook your support workflow / auto-reply here later.
-  console.log("[whatsapp-webhook]", JSON.stringify(payload));
+  const raw = await req.text();
+  if (!verifySignature(raw, req.headers.get("x-hub-signature-256"))) {
+    return new Response("forbidden", { status: 403 });
+  }
+  // For now: acknowledge only. Hook your support workflow / auto-reply here later.
+  // Payload intentionally not logged — it can contain PII (phone numbers, message text).
   return NextResponse.json({ ok: true });
 }
