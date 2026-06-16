@@ -1,6 +1,13 @@
 import { auth } from "@/lib/auth";
 import { db } from "@/lib/db";
 import { NextResponse } from "next/server";
+import { z } from "zod";
+
+const profileSchema = z.object({
+  name: z.string().trim().max(80).optional(),
+  targetYear: z.string().trim().max(40).optional(),
+  currentStatus: z.string().trim().max(40).optional(),
+});
 
 export async function GET() {
   const session = await auth();
@@ -18,15 +25,21 @@ export async function GET() {
 export async function PATCH(req: Request) {
   const session = await auth();
   if (!session?.user) return NextResponse.json({ error: "unauthenticated" }, { status: 401 });
-  const body = await req.json();
+  let body: unknown;
+  try {
+    body = await req.json();
+  } catch {
+    return NextResponse.json({ error: "invalid json" }, { status: 400 });
+  }
+  const parsed = profileSchema.safeParse(body);
+  if (!parsed.success) {
+    return NextResponse.json({ error: "invalid input" }, { status: 400 });
+  }
+  // Note: phone is intentionally not updatable here; it must go through the
+  // OTP verification flow that sets phoneVerified.
   const updated = await db.user.update({
     where: { id: session.user.id },
-    data: {
-      name: body.name?.slice(0, 80),
-      targetYear: body.targetYear?.slice(0, 40),
-      currentStatus: body.currentStatus?.slice(0, 40),
-      phone: body.phone?.slice(0, 20),
-    },
+    data: parsed.data,
   });
   return NextResponse.json({ user: updated });
 }
