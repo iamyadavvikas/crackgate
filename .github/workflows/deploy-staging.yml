@@ -33,6 +33,9 @@ jobs:
       - run: npm run --workspace apps/web lint
       - run: npm run --workspace apps/web typecheck
       - run: npm run --workspace apps/web test
+      # Informational dependency audit — surfaces advisories without blocking.
+      - name: npm audit (non-blocking)
+        run: npm audit --omit=dev --audit-level=high || true
 
   # ─── Build linux/arm64 image and push to the STAGING ECR repo ──────────
   build:
