@@ -43,6 +43,13 @@ export async function POST(req: Request) {
   }
 
   if (evt.event === "payment.captured") {
+    // Guard against amount tampering: the captured amount must match the amount
+    // we recorded when the order was created (both in paise).
+    if (typeof p.amount === "number" && p.amount !== payment.amount) {
+      console.warn("[rzp-webhook] amount mismatch", p.order_id, p.amount, payment.amount);
+      return NextResponse.json({ error: "amount mismatch" }, { status: 400 });
+    }
+
     const months = payment.periodMonths;
     const now = new Date();
     const expiry = new Date(now);

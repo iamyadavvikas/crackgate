@@ -35,6 +35,10 @@ jobs:
       - run: npm run --workspace apps/web lint
       - run: npm run --workspace apps/web typecheck
       - run: npm run --workspace apps/web test
+      # Informational dependency audit — surfaces advisories without blocking the
+      # required check (Dependabot opens the actual upgrade PRs).
+      - name: npm audit (non-blocking)
+        run: npm audit --omit=dev --audit-level=high || true
 
   # ─── Build linux/arm64 image (matches t4g.small) and push to ECR ───────
   # Runs on a NATIVE arm64 runner so the Next.js build executes directly,

@@ -1,0 +1,23 @@
+version: 2
+updates:
+  # npm dependencies across the monorepo (root + workspaces are detected via the
+  # root lockfile). Grouped to keep PR noise low.
+  - package-ecosystem: npm
+    directory: "/"
+    schedule:
+      interval: weekly
+      day: monday
+    open-pull-requests-limit: 5
+    groups:
+      production:
+        dependency-type: production
+      development:
+        dependency-type: development
+
+  # Keep GitHub Actions pinned versions current (security patches for runners/actions).
+  - package-ecosystem: github-actions
+    directory: "/"
+    schedule:
+      interval: weekly
+      day: monday
+    open-pull-requests-limit: 5
