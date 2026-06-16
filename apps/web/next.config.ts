@@ -27,10 +27,30 @@ const nextConfig: NextConfig = {
     ],
   },
   async headers() {
+    // Content-Security-Policy. script-src keeps 'unsafe-inline' because the Next.js
+    // App Router emits inline bootstrap/hydration scripts (and the anti-FOUC theme
+    // script in layout.tsx) without a nonce; the remaining directives still provide
+    // meaningful defense-in-depth (no object/embed, locked base-uri & form-action,
+    // clickjacking protection, and a tight external origin allowlist).
+    const csp = [
+      "default-src 'self'",
+      "script-src 'self' 'unsafe-inline' https://checkout.razorpay.com",
+      "style-src 'self' 'unsafe-inline'",
+      "img-src 'self' data: https://lh3.googleusercontent.com https://ui-avatars.com https://*.razorpay.com",
+      "font-src 'self' data:",
+      "connect-src 'self' https://*.razorpay.com",
+      "frame-src https://checkout.razorpay.com https://api.razorpay.com",
+      "object-src 'none'",
+      "base-uri 'self'",
+      "form-action 'self'",
+      "frame-ancestors 'none'",
+      "upgrade-insecure-requests",
+    ].join("; ");
     return [
       {
         source: "/(.*)",
         headers: [
+          { key: "Content-Security-Policy", value: csp },
           { key: "X-Frame-Options", value: "DENY" },
           { key: "X-Content-Type-Options", value: "nosniff" },
           { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },

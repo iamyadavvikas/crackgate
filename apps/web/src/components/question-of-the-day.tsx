@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { toHtml } from "@/components/math-text";
 
 type Q =
   | { id: string; type: "MCQ"; subject: string; stem: string; options: string[]; answer: number; solution: string }
@@ -51,7 +52,7 @@ export function QuestionOfTheDayCard({ q, dateLabel }: { q: Q; dateLabel: string
 
         <p
           className="mt-5 text-base sm:text-lg font-medium leading-relaxed relative z-10"
-          dangerouslySetInnerHTML={{ __html: q.stem }}
+          dangerouslySetInnerHTML={{ __html: toHtml(q.stem) }}
         />
 
         {q.type !== "NAT" ? (
@@ -78,7 +79,7 @@ export function QuestionOfTheDayCard({ q, dateLabel }: { q: Q; dateLabel: string
                   className={`text-left rounded-lg border-2 px-4 py-3 text-sm transition ${cls}`}
                 >
                   <span className="font-bold mr-2">{String.fromCharCode(65 + i)}.</span>
-                  <span dangerouslySetInnerHTML={{ __html: opt }} />
+                  <span dangerouslySetInnerHTML={{ __html: toHtml(opt) }} />
                 </button>
               );
             })}
@@ -125,7 +126,7 @@ export function QuestionOfTheDayCard({ q, dateLabel }: { q: Q; dateLabel: string
         {submitted && (
           <div className="mt-5 p-4 bg-canvas rounded-lg border border-line relative z-10">
             <div className="text-xs uppercase tracking-wide text-muted font-semibold">Solution</div>
-            <p className="text-sm mt-1.5 leading-relaxed" dangerouslySetInnerHTML={{ __html: q.solution }} />
+            <p className="text-sm mt-1.5 leading-relaxed" dangerouslySetInnerHTML={{ __html: toHtml(q.solution) }} />
           </div>
         )}
       </div>

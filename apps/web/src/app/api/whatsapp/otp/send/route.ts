@@ -7,6 +7,7 @@
  *   - Max 10 sends per IP per hour. */
 
 import { NextResponse } from "next/server";
+import { randomInt } from "node:crypto";
 import bcrypt from "bcryptjs";
 import { z } from "zod";
 import { db } from "@/lib/db";
@@ -34,8 +35,18 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: "rate_limited", retryAfterSec: 600 }, { status: 429 });
   }
 
+  // ---- rate-limit by IP (10 / hour) ----
+  if (ip) {
+    const recentByIp = await db.otpCode.count({
+      where: { ip, createdAt: { gt: new Date(Date.now() - 60 * 60 * 1000) } },
+    });
+    if (recentByIp >= 10) {
+      return NextResponse.json({ error: "rate_limited", retryAfterSec: 3600 }, { status: 429 });
+    }
+  }
+
   // ---- generate 6-digit code ----
-  const code = String(Math.floor(100000 + Math.random() * 900000));
+  const code = String(randomInt(100000, 1000000));
   const codeHash = await bcrypt.hash(code, 10);
   const expiresAt = new Date(Date.now() + 10 * 60 * 1000); // 10 min
 

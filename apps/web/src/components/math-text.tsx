@@ -38,8 +38,9 @@ function renderText(text: string): string {
     .replace(/\n/g, "<br/>");
 }
 
-/** Convert a source string with $…$ / $$…$$ segments into safe HTML. */
-function toHtml(src: string): string {
+/** Convert a source string with $…$ / $$…$$ segments into safe HTML.
+ *  Non-math text is HTML-escaped, so this is safe for dangerouslySetInnerHTML. */
+export function toHtml(src: string): string {
   const re = /\$\$([\s\S]+?)\$\$|\$([^$\n]+?)\$/g;
   let out = "";
   let last = 0;
