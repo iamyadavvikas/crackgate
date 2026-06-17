@@ -44,7 +44,6 @@ export const metadata: Metadata = {
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   const session = await auth();
   const plan    = (session?.user as { plan?: "free" | "pro" | "premium" } | undefined)?.plan;
-  const isAdmin = (session?.user as { role?: string } | undefined)?.role === "admin";
 
   // Anti-FOUC theme script — runs before paint, reads localStorage / system
   // preference, sets data-theme on <html>. Inline string so it's blocking.
@@ -61,7 +60,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         <ShowOnMiningSite><MiningHeader /></ShowOnMiningSite>
         <main id="main">{children}</main>
         <SiteFooter />
-        {session?.user && <DevPlanSwitcher currentPlan={plan} isAdmin={isAdmin} />}
+        {session?.user && <DevPlanSwitcher currentPlan={plan} />}
       </body>
     </html>
   );
