@@ -11,13 +11,12 @@ type Tier = "free" | "subject" | "premium";
 
 function canAccess(tier: Tier, plan: Plan): boolean {
   if (tier === "free") return true;
-  if (tier === "subject") return plan === "pro" || plan === "premium";
+  // Mocks are a Premium-only feature. Pro gets practice + the free Mock 1 only.
   return plan === "premium";
 }
 
 function tierBadge(tier: Tier) {
   if (tier === "free") return { label: "FREE", cls: "badge-pro" };
-  if (tier === "subject") return { label: "PRO", cls: "badge-pro" };
   return { label: "PREMIUM", cls: "badge-premium" };
 }
 
@@ -85,7 +84,7 @@ export default async function MocksIndex() {
         </div>
         <div className="mt-5 flex flex-wrap gap-x-6 gap-y-2 text-xs text-muted">
           <span><b className="text-ink">{freeCount}</b> free</span>
-          <span><b className="text-ink">{subjectCount}</b> subject tests · Pro</span>
+          <span><b className="text-ink">{subjectCount}</b> subject tests · Premium</span>
           <span><b className="text-ink">{premiumCount}</b> full-syllabus · Premium</span>
           {userId && (
             <span>✓ <b className="text-ink">{bestByMock.size}</b> / {totalMocks} attempted by you</span>

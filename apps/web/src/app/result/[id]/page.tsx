@@ -33,14 +33,14 @@ export default async function ResultPage(props: { params: Promise<{ id: string }
   const answers = (att.answersJson as Record<string, Answer>) ?? {};
 
   return (
-    <div className="max-w-3xl mx-auto px-5 py-12">
-      <div className="card p-10 text-center">
+    <div className="max-w-3xl mx-auto px-4 sm:px-5 py-8 sm:py-12">
+      <div className="card p-6 sm:p-10 text-center">
         <p className="text-xs uppercase tracking-wide text-muted">{att.kind.toUpperCase()} · Result</p>
-        <h1 className="text-2xl font-extrabold mt-1">{att.refTitle}</h1>
-        <div className="text-6xl font-extrabold text-accent mt-6">{att.score} <span className="text-2xl text-muted">/ {att.total}</span></div>
+        <h1 className="text-xl sm:text-2xl font-extrabold mt-1">{att.refTitle}</h1>
+        <div className="text-5xl sm:text-6xl font-extrabold text-accent mt-6">{att.score} <span className="text-2xl text-muted">/ {att.total}</span></div>
         <div className="text-lg mt-2">{pct}% accuracy</div>
 
-        <div className="grid grid-cols-4 gap-3 mt-8">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-8">
           <Cell label="Correct" value={att.correct} color="text-ok" bg="bg-emerald-50 dark:bg-emerald-500/15" />
           <Cell label="Wrong" value={att.wrong} color="text-bad" bg="bg-rose-50 dark:bg-rose-500/15" />
           <Cell label="Skipped" value={att.skipped} color="text-muted" bg="bg-slate-50 dark:bg-slate-700/40" />
@@ -69,7 +69,7 @@ export default async function ResultPage(props: { params: Promise<{ id: string }
           </div>
         </div>
 
-        <div className="mt-8 flex justify-center gap-3">
+        <div className="mt-8 flex flex-wrap justify-center gap-3">
           <Link href="/dashboard" className="btn btn-primary">📊 Dashboard</Link>
           <Link href="/mocks" className="btn btn-ghost">↻ Try another</Link>
         </div>
@@ -82,8 +82,8 @@ export default async function ResultPage(props: { params: Promise<{ id: string }
 
 function Cell({ label, value, color, bg }: { label: string; value: string | number; color: string; bg: string }) {
   return (
-    <div className={`${bg} rounded-xl p-4`}>
-      <div className={`text-2xl font-extrabold ${color}`}>{value}</div>
+    <div className={`${bg} rounded-xl p-3 sm:p-4`}>
+      <div className={`text-xl sm:text-2xl font-extrabold ${color}`}>{value}</div>
       <div className="text-xs text-muted mt-0.5">{label}</div>
     </div>
   );
