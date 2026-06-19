@@ -3,9 +3,8 @@
  *  Returns up to N questions for the given subject + difficulty, plus
  *  the correct answers + solution (so the client can grade instantly).
  *
- *  Plan-gating (capability over quantity):
- *   - Anonymous / free plan: capped to FREE_PREVIEW (20) questions per subject
- *     — enough to evaluate quality, not enough to seriously prep.
+ *  Plan-gating (practice is a paid feature):
+ *   - Anonymous / free plan: 403 upgrade_required — no access to the bank.
  *   - pro: 500 per request — effectively the whole bank, no friction.
  *   - premium: 1000 per request — hard ceiling above the per-subject bank.
  *
@@ -52,6 +51,15 @@ export async function GET(req: Request, props: { params: Promise<{ slug: string 
 
   const session = await auth();
   const plan = (session?.user as { plan?: string } | undefined)?.plan ?? "free";
+
+  // Practice is a paid feature: only Pro and Premium may load the question bank.
+  if (plan !== "pro" && plan !== "premium") {
+    return NextResponse.json(
+      { error: "upgrade_required", message: "Practice is available on the Pro and Premium plans." },
+      { status: 403 },
+    );
+  }
+
   const cap  = CAPS[plan] ?? FREE_PREVIEW;
 
   // Per-difficulty availability (full bank, pre-cap) so the client can label

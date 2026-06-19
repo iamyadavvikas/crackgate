@@ -14,7 +14,7 @@ const PLANS = [
   { id: "pro",     name: "Pro",      price: 499,  period: "/ GATE 2027 cycle",    cta: "Get Pro",     highlight: false, badge: "Most popular",
     perks: [
       "Everything in Free (Learn, Insights & Notes)",
-      "🔓 All 906 practice questions — fully unlocked",
+      "🔓 All 2,061 practice questions — fully unlocked",
       "9 mock tests — every subject-wise mock + FLT",
       "Subject-wise SWOT & Mastery analytics",
       "Email support",
@@ -63,8 +63,8 @@ const MATRIX: { feature: string; free: string | boolean; pro: string | boolean; 
   { feature: "Full-length mock tests",          free: "1 (Mock 01)",  pro: "9 of 10",        premium: "All 10"           },
 
   // Practice
-  { feature: "Practice Qs per subject",         free: "20 preview",   pro: "Full subject",   premium: "Full subject"     },
-  { feature: "Total practice questions",        free: "200",          pro: "906 (all free)", premium: "906 (all free)"   },
+  { feature: "Practice Qs per subject",         free: "🔒 Pro only",  pro: "Full subject",   premium: "Full subject"     },
+  { feature: "Total practice questions",        free: "🔒 Pro only",  pro: "2,061 (all free)", premium: "2,061 (all free)"   },
 
   // Analytics
   { feature: "Subject Mastery dashboard",       free: "Basic",        pro: "Full",           premium: "Full + trends"    },

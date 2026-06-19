@@ -1,13 +1,13 @@
 import Link from "next/link";
 import { PRACTICE } from "@/data/practice";
 import { auth } from "@/lib/auth";
-import { FREE_PREVIEW } from "@/lib/practice-config";
 
 export const metadata = { title: "Practice — Subject-wise Question Bank" };
 
 export default async function PracticeIndex() {
   const session = await auth();
   const plan    = (session?.user as { plan?: string } | undefined)?.plan ?? "free";
+  const hasAccess = plan === "pro" || plan === "premium";
   const total   = PRACTICE.reduce((n, s) => n + s.questions.length, 0);
   const totalLabel = total.toLocaleString("en-IN");
 
@@ -22,9 +22,9 @@ export default async function PracticeIndex() {
           Aligned with the GATE MN syllabus (which mirrors B.Tech Mining curricula at
           IIT(ISM) Dhanbad, IIT-BHU, IIT-KGP, NIT-Rourkela).
         </p>
-        {plan === "free" && (
+        {!hasAccess && (
           <div className="mt-5 inline-block bg-amber-50 border border-amber-200 text-amber-900 rounded-lg px-4 py-2 text-sm">
-            🎁 Free: first <b>{FREE_PREVIEW} questions per subject</b>. <Link href="/pricing" className="underline font-semibold">Unlock all {totalLabel}</Link>.
+            🔒 Practice is a <b>Pro</b> feature. <Link href="/pricing" className="underline font-semibold">Upgrade to unlock all {totalLabel} questions</Link>.
           </div>
         )}
       </header>
@@ -43,9 +43,15 @@ export default async function PracticeIndex() {
                 <span className="badge bg-amber-50 text-amber-700">{m} med</span>
                 <span className="badge bg-rose-50 text-rose-700">{h} hard</span>
               </div>
-              <Link href={`/practice/${s.slug}`} className="btn btn-primary w-full mt-5">
-                Practice →
-              </Link>
+              {hasAccess ? (
+                <Link href={`/practice/${s.slug}`} className="btn btn-primary w-full mt-5">
+                  Practice →
+                </Link>
+              ) : (
+                <Link href="/pricing" className="btn btn-ghost border border-line w-full mt-5">
+                  🔒 Unlock with Pro
+                </Link>
+              )}
             </div>
           );
         })}
