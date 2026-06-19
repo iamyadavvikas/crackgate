@@ -13,8 +13,8 @@ export default async function LoginPage(props: { searchParams: Promise<{ next?: 
   const safeNext = next.startsWith("/") && !next.startsWith("//") ? next : "/dashboard";
 
   return (
-    <div className="max-w-md mx-auto my-20 px-5">
-      <div className="card p-10 text-center">
+    <div className="max-w-md mx-auto my-12 sm:my-20 px-4 sm:px-5">
+      <div className="card p-6 sm:p-10 text-center">
         <div className="mx-auto mb-5 grid place-items-center">
           <BrandMark size={64} />
         </div>

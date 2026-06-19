@@ -8,7 +8,7 @@ type Tier = "free" | "subject" | "premium";
 
 function canAccess(tier: Tier, plan: Plan): boolean {
   if (tier === "free") return true;
-  if (tier === "subject") return plan === "pro" || plan === "premium";
+  // Mocks are a Premium-only feature. Pro gets practice + the free Mock 1 only.
   return plan === "premium";
 }
 
@@ -25,8 +25,7 @@ export default async function MockPage(props: { params: Promise<{ id: string }> 
   const plan = ((session?.user as { plan?: Plan } | undefined)?.plan) ?? "free";
   const isAdmin = (session?.user as { role?: string } | undefined)?.role === "admin";
   if (!canAccess(m.tier, plan) && !isAdmin) {
-    const required = m.tier === "premium" ? "premium" : "pro";
-    redirect(`/pricing?gated=${m.id}&requires=${required}`);
+    redirect(`/pricing?gated=${m.id}&requires=premium`);
   }
 
   return (

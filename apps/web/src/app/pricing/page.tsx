@@ -15,7 +15,7 @@ const PLANS = [
     perks: [
       "Everything in Free (Learn, Insights & Notes)",
       "🔓 All 2,061 practice questions — fully unlocked",
-      "9 mock tests — every subject-wise mock + FLT",
+      "Mock 01 free — full mock series is Premium-only",
       "Subject-wise SWOT & Mastery analytics",
       "Email support",
       "Access through GATE 2027 exam day",
@@ -23,7 +23,7 @@ const PLANS = [
   { id: "premium", name: "Premium · All-Access",  price: 899,  period: "/ GATE 2027 cycle", cta: "Get Premium", highlight: true, badge: "Best value · Go all-in",
     perks: [
       "Everything in Pro, plus:",
-      "💎 All 10 mocks — incl. final full-syllabus FLT",
+      "💎 All 10 mocks — the full test series, incl. final FLT",
       "Weekly progress digest on WhatsApp",
       "Priority support",
       "Early access to GATE 2028 prep content",
@@ -60,7 +60,7 @@ const MATRIX: { feature: string; free: string | boolean; pro: string | boolean; 
   { feature: "Insights dashboard",              free: true,           pro: true,             premium: "+ trends"         },
 
   // Tests
-  { feature: "Full-length mock tests",          free: "1 (Mock 01)",  pro: "9 of 10",        premium: "All 10"           },
+  { feature: "Full-length mock tests",          free: "1 (Mock 01)",  pro: "1 (Mock 01)",   premium: "All 10"           },
 
   // Practice
   { feature: "Practice Qs per subject",         free: "🔒 Pro only",  pro: "Full subject",   premium: "Full subject"     },

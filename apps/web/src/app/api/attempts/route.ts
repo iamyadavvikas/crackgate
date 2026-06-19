@@ -43,9 +43,9 @@ export async function POST(req: Request) {
   const bank = loadBank(parsed.data.kind, parsed.data.refId);
   if (!bank) return NextResponse.json({ error: "unknown refId" }, { status: 404 });
 
-  // Plan-gate: free users can take only `free`-tier mocks. `pro` users get
-  // free + subject-tier mocks; `premium` users get everything. Source of
-  // truth is the tier on the mock itself, never a hard-coded id list.
+  // Plan-gate: free users (and Pro) can take only `free`-tier mocks. The full
+  // mock series (subject + premium tiers) is Premium-only. Source of truth is
+  // the tier on the mock itself, never a hard-coded id list.
   const me = await db.user.findUnique({ where: { id: session.user.id }, select: { plan: true } });
   const plan = me?.plan ?? "free";
   // Founders (admins) bypass the submission plan-gate, mirroring the page gates.
@@ -56,10 +56,9 @@ export async function POST(req: Request) {
     const allowed =
       isAdmin ||
       tier === "free" ||
-      (tier === "subject" && (plan === "pro" || plan === "premium")) ||
-      (tier === "premium" && plan === "premium");
+      plan === "premium";
     if (!allowed) {
-      return NextResponse.json({ error: "upgrade_required", requires: tier === "premium" ? "premium" : "pro" }, { status: 402 });
+      return NextResponse.json({ error: "upgrade_required", requires: "premium" }, { status: 402 });
     }
   }
 
