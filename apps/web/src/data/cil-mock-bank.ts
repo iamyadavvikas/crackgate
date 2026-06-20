@@ -17,13 +17,18 @@ import civilSet07 from "./questions/cil/civil/cil-civil-07.json";
 import civilSet08 from "./questions/cil/civil/cil-civil-08.json";
 import civilSet09 from "./questions/cil/civil/cil-civil-09.json";
 import civilSet10 from "./questions/cil/civil/cil-civil-10.json";
+import civilSet11 from "./questions/cil/civil/cil-civil-11.json";
+import civilSet12 from "./questions/cil/civil/cil-civil-12.json";
+import civilSet13 from "./questions/cil/civil/cil-civil-13.json";
+import civilSet14 from "./questions/cil/civil/cil-civil-14.json";
+import civilSet15 from "./questions/cil/civil/cil-civil-15.json";
 
 export type CilSet = {
   /** Stable mock id, e.g. "cil-civil-01". Drives the runner route /mocks/<id>. */
   id: string;
   /** Discipline slug (matches CIL_ROWS slug + the PSU entitlement subject). */
   slug: string;
-  /** Set number 1–10 within the discipline series. */
+  /** Set number 1–15 within the discipline series (11–15 = Advanced tier). */
   no: number;
   title: string;
   discipline: string;
@@ -47,6 +52,11 @@ const CIL_SETS: CilSet[] = [
   civilSet08 as unknown as CilSet,
   civilSet09 as unknown as CilSet,
   civilSet10 as unknown as CilSet,
+  civilSet11 as unknown as CilSet,
+  civilSet12 as unknown as CilSet,
+  civilSet13 as unknown as CilSet,
+  civilSet14 as unknown as CilSet,
+  civilSet15 as unknown as CilSet,
 ];
 
 export const CIL_MOCK_BANK: ReadonlyMap<string, CilSet> = new Map(

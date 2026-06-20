@@ -4,8 +4,8 @@ import { cilLiveSetNos } from "@/data/cil-mock-bank";
 import { CIL_PRICE_RUPEES } from "@/data/cil";
 
 /**
- * Renders the 10 full-length CIL Management Trainee mock series for a
- * discipline. Each set mirrors the real exam exactly (200 MCQ · 3 h · no
+ * Renders the full-length CIL Management Trainee mock series for a discipline
+ * (10 standard sets + 5 Advanced "Conceptual" sets). Each set mirrors the real exam exactly (200 MCQ · 3 h · no
  * negative marking) across Paper-I (Non-Technical) and Paper-II (Professional
  * Knowledge). Access is gated per discipline: until the user holds an
  * Entitlement(exam="PSU", subject=slug) the series shows a paywall and locked
@@ -28,7 +28,7 @@ export function CilMockPlan({
     <section className="max-w-7xl mx-auto px-5 py-14">
       <div className="flex flex-wrap items-end justify-between gap-4">
         <div>
-          <h2 className="text-2xl font-extrabold text-ink">{discipline} — 10 Full-length Mock Tests</h2>
+          <h2 className="text-2xl font-extrabold text-ink">{discipline} — {plan.length} Full-length Mock Tests</h2>
           <p className="mt-2 max-w-2xl text-sm text-muted">
             A complete CIL Management Trainee series in the official pattern:{" "}
             <b>{CIL_PATTERN.questions} MCQs · {CIL_PATTERN.durationMin / 60} hours · no negative marking</b> ·
@@ -53,7 +53,7 @@ export function CilMockPlan({
           </span>
         </div>
       ) : (
-        <CilPaywall discipline={discipline} payHref={payHref} />
+        <CilPaywall discipline={discipline} payHref={payHref} count={plan.length} />
       )}
 
       <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -66,16 +66,16 @@ export function CilMockPlan({
 }
 
 /** Top-of-series purchase banner shown to users without access. */
-function CilPaywall({ discipline, payHref }: { discipline: string; payHref: string }) {
+function CilPaywall({ discipline, payHref, count }: { discipline: string; payHref: string; count: number }) {
   return (
     <div className="mt-6 overflow-hidden rounded-2xl border border-cyan-400/30 bg-gradient-to-r from-blue-950 to-slate-900 text-white">
       <div className="flex flex-col gap-4 p-5 sm:flex-row sm:items-center sm:justify-between sm:p-6">
         <div className="flex items-start gap-3">
           <span aria-hidden className="mt-0.5 text-2xl">🔒</span>
           <div>
-            <h3 className="text-lg font-extrabold">Unlock all 10 {discipline} mocks</h3>
+            <h3 className="text-lg font-extrabold">Unlock all {count} {discipline} mocks</h3>
             <p className="mt-1 max-w-xl text-sm text-white/70">
-              Full official CIL MT pattern — 10 complete 200-question papers across
+              Full official CIL MT pattern — {count} complete 200-question papers across
               Non-Technical (Paper-I) and {discipline} Professional Knowledge (Paper-II).
               One payment, valid through the recruitment cycle.
             </p>

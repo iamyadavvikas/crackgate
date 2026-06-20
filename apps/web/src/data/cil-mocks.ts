@@ -6,9 +6,11 @@
 //                Reasoning, General English — 25 questions each.
 //   • Paper-II · Professional Knowledge (100 Q): the candidate's discipline.
 //
-// We model a 10 full-length mock series per discipline. Each set mirrors the
-// real exam exactly (200 Q · 3 h · 1 mark each · no negative marking). Cards
-// are "coming-soon" until the question bank for that set is wired in.
+// We model a 15 full-length mock series per discipline: 10 standard sets plus
+// 5 Advanced "Conceptual" sets (11–15) that run the same official pattern at a
+// higher difficulty. Each set mirrors the real exam exactly (200 Q · 3 h · 1
+// mark each · no negative marking). Cards are "coming-soon" until the question
+// bank for that set is wired in.
 
 export const CIL_PATTERN = {
   questions: 200,
@@ -50,18 +52,24 @@ export const CIL_FULL_SECTIONS: CilMockSection[] = [
 ];
 
 /**
- * Build the 10-set full-length plan for a discipline. Statuses are overlaid
- * from whichever set numbers have actually shipped (see the CIL mock bank).
+ * Build the full-length plan for a discipline (10 standard sets + 5 Advanced
+ * "Conceptual" sets, 11–15). Statuses are overlaid from whichever set numbers
+ * have actually shipped (see the CIL mock bank).
  */
 export function buildCilMockPlan(liveSetNos: ReadonlySet<number> = new Set()): CilMock[] {
-  return Array.from({ length: 10 }, (_, i) => {
+  return Array.from({ length: 15 }, (_, i) => {
     const no = i + 1;
+    const title =
+      no === 15
+        ? "Advanced Mock 15 — Final Challenge"
+        : no >= 11
+          ? `Advanced Mock ${no} — Conceptual`
+          : no === 10
+            ? "Full-length Mock 10 — Grand Finale"
+            : `Full-length Mock ${String(no).padStart(2, "0")}`;
     return {
       no,
-      title:
-        no === 10
-          ? "Full-length Mock 10 — Grand Finale"
-          : `Full-length Mock ${String(no).padStart(2, "0")}`,
+      title,
       questions: CIL_PATTERN.questions,
       durationMin: CIL_PATTERN.durationMin,
       sections: CIL_FULL_SECTIONS,

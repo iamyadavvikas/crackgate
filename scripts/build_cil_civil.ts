@@ -796,10 +796,10 @@ function rotateSlice(pool: FactQ[], setNo: number, count: number, stride: number
   return out;
 }
 
-function genNumerical(rand: () => number, startId: number): Q[] {
+function genNumerical(rand: () => number, startId: number, tough = false): Q[] {
   const out: Q[] = [];
-  // 25 questions with a guaranteed 6 genuinely-hard items.
-  const specs = fillSpecs(rand, HARD_NUM_GENERATORS, NUM_GENERATORS, 25, 6);
+  // 25 questions with a guaranteed hard quota (Advanced sets carry more).
+  const specs = fillSpecs(rand, HARD_NUM_GENERATORS, NUM_GENERATORS, 25, tough ? 9 : 6);
   specs.forEach((spec, i) => {
     const { options, answer } = mcqFrom(rand, spec.correct, spec.distractors);
     out.push({
@@ -1317,10 +1317,10 @@ const HARD_REAS_GENERATORS: ReasGen[] = [
   },
 ];
 
-function genReasoning(rand: () => number, startId: number): Q[] {
+function genReasoning(rand: () => number, startId: number, tough = false): Q[] {
   const out: Q[] = [];
-  // 25 questions with a guaranteed 5 genuinely-hard items.
-  const specs = fillSpecs(rand, HARD_REAS_GENERATORS, REAS_GENERATORS, 25, 5);
+  // 25 questions with a guaranteed hard quota (Advanced sets carry more).
+  const specs = fillSpecs(rand, HARD_REAS_GENERATORS, REAS_GENERATORS, 25, tough ? 8 : 5);
   specs.forEach((spec, i) => {
     const { options, answer } = mcqFrom(rand, spec.correct, spec.distractors);
     out.push({
@@ -1962,6 +1962,50 @@ const CIVIL_THEORY_POOL: FactQ[] = [
   { topic: "Construction Materials", difficulty: "hard", stem: "The cement compound that liberates the greatest heat of hydration is:", correct: "Tricalcium aluminate (C3A)", distractors: ["Dicalcium silicate (C2S)", "Tricalcium silicate (C3S)", "Gypsum"], solution: "C3A hydrates fastest and releases the most heat of hydration." },
 ];
 
+// ─── Tricky / conceptual Paper-II pool (Advanced sets 11–15 only) ────────────
+// Deliberate "head-scratchers": misconception traps, "which is INCORRECT"
+// framing, limiting-case reasoning and assertion-style discrimination. Every
+// item is hard and the distractors are all individually plausible (each is a
+// true-but-irrelevant statement, or a near-miss value), so the candidate must
+// actually reason rather than pattern-match. Injected only into Advanced sets.
+const TRICKY_CONCEPTUAL_POOL: FactQ[] = [
+  // Strength of Materials
+  { topic: "Strength of Materials", difficulty: "hard", stem: "For a simply supported beam under a central point load, which statement is INCORRECT?", correct: "The maximum bending stress occurs at the neutral axis.", distractors: ["The bending moment is maximum at midspan.", "The shear force is zero at midspan.", "The deflection is maximum at midspan."], solution: "Bending stress varies linearly with distance from the neutral axis — it is zero at the NA and maximum at the extreme fibre, so that statement is false." },
+  { topic: "Strength of Materials", difficulty: "hard", stem: "A mild-steel bar and a high-strength-steel bar of identical dimensions carry the same axial load within the elastic range. Which is correct?", correct: "Both elongate by essentially the same amount.", distractors: ["The high-strength bar elongates less.", "The mild-steel bar elongates less.", "Elongation cannot be compared without the yield strengths."], solution: "Elastic elongation = PL/AE depends on Young's modulus, which is ~200 GPa for all steels regardless of strength grade, so the elongations are equal." },
+  { topic: "Strength of Materials", difficulty: "hard", stem: "The ratio of maximum to average shear stress for a solid circular cross-section is:", correct: "4/3", distractors: ["3/2", "1", "2"], solution: "For a circle the factor is 4/3 (the 3/2 value belongs to a rectangle) — a common trap." },
+  { topic: "Strength of Materials", difficulty: "hard", stem: "For a fixed cross-sectional area, which shape of strut offers the greatest resistance to buckling?", correct: "Thin hollow circular tube", distractors: ["Solid circular bar", "Solid square bar", "I-section about its weak axis"], solution: "Buckling load rises with the radius of gyration; spreading the same area to a large radius (a thin tube) maximises I and hence the critical load." },
+  { topic: "Strength of Materials", difficulty: "hard", stem: "For a cantilever carrying a uniformly distributed load over its whole span, which statement is INCORRECT?", correct: "The bending moment is maximum at the free end.", distractors: ["The shear force is maximum at the fixed end.", "The deflection is maximum at the free end.", "The bending moment is zero at the free end."], solution: "Bending moment in such a cantilever is zero at the free end and maximum (hogging) at the fixed end — so the stated claim is false." },
+  // Structural Analysis
+  { topic: "Structural Analysis", difficulty: "hard", stem: "Comparing a three-hinged and a two-hinged arch, which statement is INCORRECT?", correct: "A three-hinged arch is statically indeterminate to the first degree.", distractors: ["A three-hinged arch is free of temperature stresses.", "A two-hinged arch is indeterminate to the first degree.", "Support settlement induces no stress in a three-hinged arch."], solution: "A three-hinged arch is statically determinate (the third hinge supplies the extra equation), so calling it indeterminate is false." },
+  { topic: "Structural Analysis", difficulty: "hard", stem: "In moment distribution, the carry-over factor to the far end of a prismatic member whose far end is a pin (simply supported) is:", correct: "0", distractors: ["1/2", "1", "1/4"], solution: "The familiar 1/2 carry-over applies only to a far FIXED end; a far pinned end carries over zero moment." },
+  { topic: "Structural Analysis", difficulty: "hard", stem: "For a fixed beam and a simply supported beam of equal span carrying the same central load, which is correct?", correct: "The fixed beam deflects less.", distractors: ["The simply supported beam deflects less.", "Both deflect equally.", "Deflection depends only on the load, not the supports."], solution: "End fixity raises stiffness; the fixed beam's central deflection is one-quarter that of the simply supported beam (PL³/192EI vs PL³/48EI)." },
+  // RCC Design
+  { topic: "RCC Design", difficulty: "hard", stem: "Regarding RCC flexural sections, which statement is correct?", correct: "An under-reinforced section fails by yielding of steel, giving ample warning.", distractors: ["An over-reinforced section gives more warning before failure.", "Both steel and concrete reach their limits simultaneously.", "IS 456 recommends over-reinforced sections for ductility."], solution: "Under-reinforced sections yield the steel first (ductile, warning); over-reinforced sections crush concrete suddenly, so codes favour under-reinforced design." },
+  { topic: "RCC Design", difficulty: "hard", stem: "As per IS 456 limit-state design, the maximum compressive strain in concrete at the extreme fibre at the ultimate limit state is:", correct: "0.0035", distractors: ["0.002", "0.005", "0.0020"], solution: "The limiting concrete strain in flexure is 0.0035; 0.002 is the strain at the onset of the constant-stress (rectangular) portion of the stress block." },
+  { topic: "RCC Design", difficulty: "hard", stem: "In the IS 456 limit-state stress block, the total compressive force carried by the concrete equals:", correct: "0.36 fck b xu", distractors: ["0.42 fck b xu", "0.45 fck b xu", "0.66 fck b xu"], solution: "The area of the parabolic-rectangular stress block gives C = 0.36 fck b xu; 0.42 xu is the depth of its centroid, a value candidates often confuse with the force coefficient." },
+  { topic: "RCC Design", difficulty: "hard", stem: "Keeping the steel grade and section unchanged, raising the concrete grade in a balanced (limiting) singly-reinforced beam makes the limiting moment Mu,lim:", correct: "Increase roughly in proportion to fck", distractors: ["Decrease", "Stay unchanged", "Become independent of fck"], solution: "Mu,lim = 0.138 fck b d² for Fe415, so it scales directly with fck." },
+  // Steel Design
+  { topic: "Steel Design", difficulty: "hard", stem: "For a steel tension member, which statement is INCORRECT?", correct: "Its design strength is governed by the slenderness ratio.", distractors: ["Net sectional area governs rupture strength.", "Bolt holes reduce the effective area.", "Block shear can be a governing failure mode."], solution: "Slenderness/buckling governs compression members, not tension members — tension capacity is set by gross-section yield, net-section rupture and block shear." },
+  { topic: "Steel Design", difficulty: "hard", stem: "An angle tension member connected through one leg only suffers shear lag, which:", correct: "Reduces its effective strength below the gross-section yield value", distractors: ["Increases its strength above gross-section yield", "Has no effect on strength", "Only affects compression members"], solution: "Non-uniform stress transfer (shear lag) means the full section is not fully effective, lowering the usable tensile capacity." },
+  // Geotechnical Engineering
+  { topic: "Geotechnical Engineering", difficulty: "hard", stem: "If the water table rises from a great depth up to the ground surface (no seepage), the effective stress at a given depth:", correct: "Decreases", distractors: ["Increases", "Remains unchanged", "Becomes negative"], solution: "Below the water table the soil's effective unit weight is the submerged (buoyant) value, so effective stress falls as the water table rises." },
+  { topic: "Geotechnical Engineering", difficulty: "hard", stem: "In an unconsolidated-undrained (UU) triaxial test on a saturated clay, increasing the cell pressure causes the deviator stress at failure to:", correct: "Remain essentially constant (φu ≈ 0)", distractors: ["Increase linearly", "Decrease", "Double"], solution: "For a saturated clay under undrained conditions φu ≈ 0, so the undrained strength is independent of confining pressure — the Mohr circles have the same diameter." },
+  { topic: "Geotechnical Engineering", difficulty: "hard", stem: "Which of Terzaghi's one-dimensional consolidation assumptions is stated INCORRECTLY below?", correct: "The soil is partially saturated.", distractors: ["Flow and compression are one-dimensional.", "Darcy's law is valid throughout.", "Soil grains and pore water are incompressible."], solution: "Terzaghi's theory assumes a fully saturated soil; 'partially saturated' is the false assumption." },
+  { topic: "Geotechnical Engineering", difficulty: "hard", stem: "Compared with an over-consolidated clay of the same type, a normally consolidated clay under the same load increment will:", correct: "Settle more", distractors: ["Settle less", "Settle equally", "Not consolidate at all"], solution: "A normally consolidated clay is more compressible (higher Cc on the virgin curve), so it settles more than an over-consolidated clay loaded below its preconsolidation pressure." },
+  // Fluid Mechanics
+  { topic: "Fluid Mechanics", difficulty: "hard", stem: "For fully developed laminar flow in a circular pipe, which statement is INCORRECT?", correct: "The velocity profile is uniform across the section.", distractors: ["The maximum velocity equals twice the mean velocity.", "Head loss is proportional to the mean velocity.", "The Darcy friction factor equals 64/Re."], solution: "Laminar pipe flow has a parabolic velocity profile, not a uniform one — the other three statements are all true." },
+  { topic: "Fluid Mechanics", difficulty: "hard", stem: "For laminar flow in a circular pipe, the ratio of maximum to mean velocity is:", correct: "2.0", distractors: ["1.5", "1.33", "1.0"], solution: "The parabolic profile gives Vmax/Vmean = 2.0 for a circular pipe (the 1.33 value would apply to a wide flat channel)." },
+  { topic: "Fluid Mechanics", difficulty: "hard", stem: "Comparing a venturimeter and an orifice meter measuring the same discharge, which is correct?", correct: "The venturimeter has lower head loss and a higher coefficient of discharge.", distractors: ["The orifice meter has lower head loss.", "Both have identical head loss.", "The venturimeter has the higher head loss."], solution: "The gradual venturi contraction-expansion minimises separation, giving low permanent head loss and Cd ≈ 0.97–0.99, versus the orifice's sharp, lossy flow." },
+  { topic: "Fluid Mechanics", difficulty: "hard", stem: "As the depth of flow in a prismatic open channel approaches the critical depth at a fixed discharge, the specific energy:", correct: "Is a minimum", distractors: ["Is a maximum", "Becomes zero", "Tends to infinity"], solution: "For a given discharge the specific-energy curve has a minimum exactly at critical depth." },
+  { topic: "Fluid Mechanics", difficulty: "hard", stem: "Which statement about a hydraulic jump in an open channel is correct?", correct: "It dissipates energy while changing supercritical flow to subcritical.", distractors: ["It converts subcritical flow to supercritical.", "It conserves mechanical energy.", "It can occur only in closed pipes."], solution: "A hydraulic jump takes fast, shallow supercritical flow to slow, deep subcritical flow with a significant loss of energy." },
+  // Transportation Engineering
+  { topic: "Transportation Engineering", difficulty: "hard", stem: "Regarding superelevation on a highway curve, which statement is INCORRECT?", correct: "It is provided primarily to drain rainwater off the carriageway.", distractors: ["It counteracts the centrifugal force on a vehicle.", "IRC limits it to about 7% in plain and rolling terrain.", "It is achieved by raising the outer edge relative to the inner edge."], solution: "Superelevation counters centrifugal force; surface drainage is the job of the (separate) camber, so the drainage claim is false." },
+  { topic: "Transportation Engineering", difficulty: "hard", stem: "On a two-lane highway, the stopping sight distance compared with the overtaking (passing) sight distance is:", correct: "Much smaller", distractors: ["Much larger", "Exactly equal", "Unrelated quantities"], solution: "Overtaking sight distance must cover the whole passing manoeuvre against opposing traffic, so it is several times the stopping sight distance." },
+  { topic: "Transportation Engineering", difficulty: "hard", stem: "Mechanical extra widening on a horizontal curve is provided predominantly on the:", correct: "Inner side of the curve", distractors: ["Outer side of the curve", "Both sides equally only", "Crown of the road only"], solution: "Off-tracking sweeps the rear wheels toward the inside of the curve, so the mechanical component of extra widening is given on the inner side." },
+  { topic: "Transportation Engineering", difficulty: "hard", stem: "If the design speed is doubled, the braking-distance component of the stopping sight distance:", correct: "Increases four-fold", distractors: ["Doubles", "Triples", "Halves"], solution: "Braking distance = v²/(2gf) varies with the square of speed, so doubling speed quadruples it." },
+  { topic: "Transportation Engineering", difficulty: "hard", stem: "The length of a transition curve based on the allowable rate of change of centrifugal acceleration varies with the design speed v as:", correct: "v³ (the cube of speed)", distractors: ["v (directly)", "v² (the square)", "v⁴ (the fourth power)"], solution: "Ls = v³/(C·R), so the comfort-based transition length grows with the cube of speed." },
+];
+
 // ─── Hard Paper-II numerical generators (multi-step, computed answers) ───────
 const HARD_CIVIL_NUM_GENERATORS: CivGen[] = [
   // RCC limiting moment of resistance Mu,lim = 0.138 fck b d^2 (Fe415)
@@ -2375,23 +2419,31 @@ function drawDistinct(rand: () => number, gens: ((r: () => number) => FactQ)[], 
   return out;
 }
 
-function genProfessional(rand: () => number, startId: number, setNo: number): Q[] {
+function genProfessional(rand: () => number, startId: number, setNo: number, tough = false): Q[] {
   const out: Q[] = [];
-  // 60 theory questions: guarantee 16 hard, fill 44 from the rest, rotated by
-  // set for a distinct slice that still meets the hard quota.
+  // 60 theory questions. Standard sets: 16 hard + 44 base. Advanced sets fold
+  // in a distinct slice of genuinely tricky conceptual items: 8 tricky + 12
+  // hard-pool + 40 base = 60 (still 20 hard), rotated by set for variety.
   const hardTheoryPool = CIVIL_THEORY_POOL.filter((f) => f.difficulty === "hard");
   const baseTheoryPool = CIVIL_THEORY_POOL.filter((f) => f.difficulty !== "hard");
-  const theorySlice: FactQ[] = [
-    ...rotateSlice(hardTheoryPool, setNo, 16, 11),
-    ...rotateSlice(baseTheoryPool, setNo, 44, 44),
-  ];
+  const theorySlice: FactQ[] = tough
+    ? [
+        ...rotateSlice(TRICKY_CONCEPTUAL_POOL, setNo, 8, 7),
+        ...rotateSlice(hardTheoryPool, setNo, 12, 11),
+        ...rotateSlice(baseTheoryPool, setNo, 40, 44),
+      ]
+    : [
+        ...rotateSlice(hardTheoryPool, setNo, 16, 11),
+        ...rotateSlice(baseTheoryPool, setNo, 44, 44),
+      ];
   shuffleInPlace(rand, theorySlice);
   // 40 numerical-style questions: 12 carry a diagram (Mohr / stress element /
-  // beam BMD), the remaining 28 guarantee 6 genuinely-hard items from the pool.
+  // beam BMD); the remaining 28 guarantee a hard quota from the pool (Advanced
+  // sets carry 10 hard, standard sets 6).
   const figItems = drawDistinct(rand, FIGURE_GENERATORS, 12);
   const numItems: FactQ[] = [
     ...figItems,
-    ...fillSpecs(rand, HARD_CIVIL_NUM_GENERATORS, CIVIL_NUM_GENERATORS, 28, 6),
+    ...fillSpecs(rand, HARD_CIVIL_NUM_GENERATORS, CIVIL_NUM_GENERATORS, 28, tough ? 10 : 6),
   ];
   shuffleInPlace(rand, numItems);
   // Interleave theory and numerical so topics are well mixed through the paper.
@@ -2459,13 +2511,16 @@ function buildSet(setNo: number) {
   const seed = 0x1c1c000 + setNo * 7919; // distinct per set
   const rand = rng(seed);
   const nn = String(setNo).padStart(2, "0");
+  // Sets 11–15 are the Advanced (Conceptual) tier: same official pattern, but
+  // higher hard quotas plus a slice of deliberately tricky conceptual items.
+  const tough = setNo >= 11;
 
   const questions: Q[] = [
     ...genGeneralAwareness(rand, 1, setNo), // 1..25
-    ...genNumerical(rand, 26), // 26..50
-    ...genReasoning(rand, 51), // 51..75
+    ...genNumerical(rand, 26, tough), // 26..50
+    ...genReasoning(rand, 51, tough), // 51..75
     ...genGeneralEnglish(rand, 76, setNo), // 76..100
-    ...genProfessional(rand, 101, setNo), // 101..200
+    ...genProfessional(rand, 101, setNo, tough), // 101..200
   ];
   questions.forEach(attachMeta);
 
@@ -2473,7 +2528,9 @@ function buildSet(setNo: number) {
     id: `cil-civil-${nn}`,
     slug: "civil",
     no: setNo,
-    title: `CIL Civil — Full-length Mock ${nn}`,
+    title: tough
+      ? `CIL Civil — Advanced Mock ${nn} (Conceptual)`
+      : `CIL Civil — Full-length Mock ${nn}`,
     discipline: "Civil",
     durationMin: 180,
     totalMarks: 200,
@@ -2633,8 +2690,8 @@ mkdirSync(outDir, { recursive: true });
 
 let failed = false;
 for (const n of targets) {
-  if (n < 2 || n > 10) {
-    console.warn(`skip set ${n}: only sets 2–10 are generated (set 1 is hand-authored)`);
+  if (n < 2 || n > 15) {
+    console.warn(`skip set ${n}: only sets 2–15 are generated (set 1 is hand-authored)`);
     continue;
   }
   const set = buildSet(n);
