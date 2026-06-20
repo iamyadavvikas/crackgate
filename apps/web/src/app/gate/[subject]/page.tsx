@@ -2,7 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getGateSubject, KNOWN_COMING_SOON } from "@/data/gate/registry";
 import { TrackHub, GATE_MODULES } from "@/components/track-hub";
-import { CivilScene } from "@/components/hero-carousel";
+import { CivilWindow } from "@/components/hero-carousel";
 
 export const dynamic = "force-dynamic";
 
@@ -52,11 +52,17 @@ export default async function GateSubjectHome(props: { params: Promise<{ subject
   return (
     <>
       {/* HERO */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-brand to-brand-2 text-white">
-        <div aria-hidden className="pointer-events-none absolute -right-20 -top-24 h-72 w-72 rounded-full bg-white/10 blur-3xl" />
-        <div aria-hidden className="pointer-events-none absolute -bottom-24 left-1/4 h-72 w-72 rounded-full bg-amber-300/10 blur-3xl" />
-        <div className="relative max-w-7xl mx-auto px-5 py-16 lg:py-24 grid items-center gap-10 lg:grid-cols-2">
-          <div>
+      {subject === "civil" ? (
+        <section className="relative overflow-hidden bg-slate-950 text-white">
+          <div className="relative min-h-[560px] lg:min-h-[600px]">
+            <CivilWindow civil={{ practiceQs, mocksCount, learnCount, subjectsCount }} />
+          </div>
+        </section>
+      ) : (
+        <section className="relative overflow-hidden bg-gradient-to-br from-brand to-brand-2 text-white">
+          <div aria-hidden className="pointer-events-none absolute -right-20 -top-24 h-72 w-72 rounded-full bg-white/10 blur-3xl" />
+          <div aria-hidden className="pointer-events-none absolute -bottom-24 left-1/4 h-72 w-72 rounded-full bg-amber-300/10 blur-3xl" />
+          <div className="relative max-w-7xl mx-auto px-5 py-16 lg:py-24">
             <span className="badge bg-white/10 text-amber-300 border border-amber-300/30">
               GATE 2027 · {meta.code}
             </span>
@@ -77,13 +83,8 @@ export default async function GateSubjectHome(props: { params: Promise<{ subject
               <span><b className="text-white text-lg">{aitsCount}</b> AITS tests</span>
             </div>
           </div>
-          {subject === "civil" && (
-            <div className="hidden lg:flex lg:justify-center">
-              <CivilScene />
-            </div>
-          )}
-        </div>
-      </section>
+        </section>
+      )}
 
       {/* MODULES */}
       <section className="max-w-7xl mx-auto px-5 py-16 lg:py-20">
