@@ -56,7 +56,7 @@ jobs:
           echo "tag=$TAG" >> $GITHUB_OUTPUT
           echo "uri=${{ secrets.ECR_REGISTRY }}/${{ env.ECR_REPO }}:$TAG" >> $GITHUB_OUTPUT
 
-      - uses: aws-actions/configure-aws-credentials@v4
+      - uses: aws-actions/configure-aws-credentials@v6
         with:
           # Prefer a dedicated staging deploy role; fall back to the shared
           # AWS_DEPLOY_ROLE_ARN when AWS_DEPLOY_ROLE_ARN_STAGING is unset. This
