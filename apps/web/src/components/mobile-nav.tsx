@@ -215,7 +215,7 @@ const MINING_SITE_PREFIXES = ["/gate/mining", "/learn", "/practice", "/mocks", "
  * (rendered by the subject layout). On these paths the global header is hidden
  * but the Mining header is NOT shown. Keep in sync with liveGateSubjects().
  */
-const LIVE_SUBJECT_PREFIXES = ["/gate/civil"];
+const LIVE_SUBJECT_PREFIXES = ["/gate/civil", "/gate/geology", "/gate/environment"];
 
 function isMiningSite(pathname: string | null): boolean {
   if (!pathname) return false;
