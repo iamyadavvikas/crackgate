@@ -14,7 +14,7 @@ export function SiteFooter() {
             </span>
           </div>
           <p className="text-sm mt-3 text-slate-400 max-w-xs">
-            India's dedicated GATE test prep. Full-length mocks, topic-wise practice, SWOT analytics.
+            India's dedicated GATE &amp; PSU test prep. Full-length mocks, topic-wise practice, SWOT analytics.
           </p>
         </div>
         <FooterCol title="Practice">
@@ -47,7 +47,7 @@ export function SiteFooter() {
         </FooterCol>
       </div>
       <div className="border-t border-slate-800 py-5 text-center text-xs text-slate-500">
-        © {year} CrackGate.in · Built for Indian mining aspirants
+        © {year} CrackGate.in · Built for India's GATE &amp; PSU aspirants
       </div>
     </footer>
   );

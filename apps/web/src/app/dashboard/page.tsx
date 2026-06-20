@@ -31,20 +31,44 @@ import {
   nextScheduledMock,
   type SubjectMastery,
 } from "@/lib/dashboard-data";
+import { getUserEntitlements } from "@/lib/entitlements";
+import { resolveDashboardTracks, pickActiveTrack } from "@/lib/dashboard-tracks";
+import { TrackSwitcher } from "@/components/track-switcher";
+import { ChooseExam } from "@/components/choose-exam";
+import { CilDashboard, type CilAttempt } from "@/components/cil-dashboard";
 
 export const dynamic = "force-dynamic";
 
-export default async function DashboardPage() {
+export default async function DashboardPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ track?: string }>;
+}) {
   const session = await auth();
   if (!session?.user) return null;
 
   const userId = session.user.id;
+  const isAdmin = session.user.role === "admin";
+  const sp = await searchParams;
+
+  // Scope the dashboard to the user's owned track(s). No track → neutral chooser.
+  const entitlements = await getUserEntitlements(userId);
+  const tracks = resolveDashboardTracks(entitlements, isAdmin);
+  if (tracks.length === 0) {
+    return (
+      <div className="max-w-7xl mx-auto px-5 py-12">
+        <ChooseExam firstName={session.user.name?.split(" ")[0] ?? "Aspirant"} />
+      </div>
+    );
+  }
+  const activeTrack = pickActiveTrack(tracks, sp.track)!;
+
   const since90 = new Date(Date.now() - 90 * 86_400_000);
   const since30 = new Date(Date.now() - 30 * 86_400_000);
   const startOfToday = new Date();
   startOfToday.setHours(0, 0, 0, 0);
 
-  const [attempts, activityCount, latest, practiceToday, practiceBySubject, weekEvents] = await Promise.all([
+  const [allAttempts, activityCount, latest, practiceToday, practiceBySubject, weekEvents] = await Promise.all([
     db.attempt.findMany({
       where: { userId },
       orderBy: { takenAt: "desc" },
@@ -64,6 +88,47 @@ export default async function DashboardPage() {
       select: { ts: true },
     }),
   ]);
+
+  // ── CIL (PSU) track — dedicated view, return early. ─────────────────
+  if (activeTrack.kind === "cil") {
+    const cilAttempts: CilAttempt[] = allAttempts
+      .filter((a) => a.refId.startsWith(`cil-${activeTrack.subject}-`))
+      .map((a) => ({
+        id: a.id,
+        refId: a.refId,
+        refTitle: a.refTitle,
+        score: a.score,
+        total: a.total,
+        takenAt: a.takenAt,
+        breakdown: (a.breakdown as Record<string, { scored: number; total: number }>) ?? {},
+      }));
+    return (
+      <div className="max-w-7xl mx-auto px-5 py-8 space-y-6">
+        <TrackSwitcher tracks={tracks} activeKey={activeTrack.key} />
+        <CilDashboard track={activeTrack} attempts={cilAttempts} />
+      </div>
+    );
+  }
+
+  // ── Owned but no content yet (e.g. GATE Civil) — minimal placeholder. ─
+  if (activeTrack.kind === "soon") {
+    return (
+      <div className="max-w-7xl mx-auto px-5 py-8 space-y-6">
+        <TrackSwitcher tracks={tracks} activeKey={activeTrack.key} />
+        <div className="card p-10 text-center">
+          <div className="text-3xl">🚧</div>
+          <h1 className="text-xl font-extrabold mt-3">{activeTrack.label}</h1>
+          <p className="text-sm text-muted mt-2 max-w-md mx-auto">
+            Your access is active — full mocks, practice and analytics for this track are on the way.
+          </p>
+        </div>
+      </div>
+    );
+  }
+
+  // ── GATE Mining track (default) — rich dashboard below. ─────────────
+  // Scope analytics to GATE content only (exclude any CIL attempts).
+  const attempts = allAttempts.filter((a) => !a.refId.startsWith("cil-"));
 
   // ---------- Aggregations ----------
   const totalAttempts = attempts.length;
@@ -274,6 +339,8 @@ export default async function DashboardPage() {
   // ---------- Render ----------
   return (
     <div className="max-w-7xl mx-auto px-5 py-8 space-y-6">
+      <TrackSwitcher tracks={tracks} activeKey={activeTrack.key} />
+
       {/* Tier 1 — Where do I stand? */}
       <RankLine
         prediction={prediction}

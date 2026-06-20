@@ -211,7 +211,11 @@ export function MobileSectionBar() {
 const MINING_SITE_PREFIXES = ["/gate/mining", "/learn", "/practice", "/mocks", "/aits", "/pricing"];
 
 function isMiningSite(pathname: string | null): boolean {
-  return !!pathname && MINING_SITE_PREFIXES.some((p) => pathname === p || pathname.startsWith(p + "/"));
+  if (!pathname) return false;
+  // CIL (PSU) mocks live under /mocks/cil-* but belong to the PSU track, not the
+  // GATE Mining mini-site — they must keep the global header (PSU/GATE nav).
+  if (pathname.startsWith("/mocks/cil-")) return false;
+  return MINING_SITE_PREFIXES.some((p) => pathname === p || pathname.startsWith(p + "/"));
 }
 
 /** Renders children only OUTSIDE the Mining mini-site (i.e. the global header). */
