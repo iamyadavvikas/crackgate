@@ -6,11 +6,11 @@ import { BrandMark } from "@/components/brand";
 
 export default async function LoginPage(props: { searchParams: Promise<{ next?: string }> }) {
   const session = await auth();
-  const { next = "/dashboard" } = await props.searchParams;
+  const { next = "/" } = await props.searchParams;
   if (session?.user) redirect(next);
 
   // Whitelist redirect target to prevent open-redirect
-  const safeNext = next.startsWith("/") && !next.startsWith("//") ? next : "/dashboard";
+  const safeNext = next.startsWith("/") && !next.startsWith("//") ? next : "/";
 
   return (
     <div className="max-w-md mx-auto my-12 sm:my-20 px-4 sm:px-5">

@@ -60,7 +60,7 @@ function mmss(total: number): string {
 }
 
 export function ExamPortal({
-  kind, refId, title, questions, durationSec, lockdown, negativeMarking, examLabel,
+  kind, refId, title, questions, durationSec, lockdown, negativeMarking, examLabel, showCalculator,
 }: {
   kind: "mock" | "pyq";
   refId: string;
@@ -75,10 +75,14 @@ export function ExamPortal({
   negativeMarking?: boolean;
   /** Exam-family caption shown in the top bar. Defaults to GATE. */
   examLabel?: string;
+  /** Whether the on-screen scientific calculator is available. GATE = true;
+   *  CIL MT = false. Defaults to true to preserve existing GATE behaviour. */
+  showCalculator?: boolean;
 }) {
   const locked = lockdown ?? kind === "mock";
   const negMarking = negativeMarking ?? true;
   const examCaption = examLabel ?? "GATE — Graduate Aptitude Test in Engineering";
+  const calculatorAllowed = showCalculator ?? true;
   const router = useRouter();
   const [state, dispatch] = useReducer(reducer, {
     idx: 0,
@@ -324,8 +328,9 @@ export function ExamPortal({
           <div className="font-semibold text-sm sm:text-base truncate">{title}</div>
         </div>
         <div className="ml-auto flex items-center gap-2 sm:gap-3 shrink-0">
-          {/* Scientific calculator — top bar, like the real TCS iON CBT */}
-          <CalculatorLauncher floating={false} />
+          {/* Scientific calculator — top bar, like the real TCS iON CBT.
+             GATE allows it; CIL MT does not. */}
+          {calculatorAllowed && <CalculatorLauncher floating={false} />}
           <button
             type="button"
             onClick={() => setPaused(true)}
