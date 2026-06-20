@@ -58,7 +58,12 @@ jobs:
 
       - uses: aws-actions/configure-aws-credentials@v4
         with:
-          role-to-assume: ${{ secrets.AWS_DEPLOY_ROLE_ARN_STAGING }}
+          # Prefer a dedicated staging deploy role; fall back to the shared
+          # AWS_DEPLOY_ROLE_ARN when AWS_DEPLOY_ROLE_ARN_STAGING is unset. This
+          # only governs ECR build/push (read/write to the staging repo) — the
+          # SSH deploy below is still pinned to STAGING_EC2_HOST so a missing
+          # staging host can never target the production server.
+          role-to-assume: ${{ secrets.AWS_DEPLOY_ROLE_ARN_STAGING || secrets.AWS_DEPLOY_ROLE_ARN }}
           aws-region: ${{ env.AWS_REGION }}
 
       - uses: aws-actions/amazon-ecr-login@v2
