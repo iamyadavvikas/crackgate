@@ -1011,6 +1011,715 @@ const cePavement: LearnTopic = {
 };
 
 /* ════════════════════════════════════════════════════════════════════ */
+/*  FULL-SYLLABUS COMPLETION TOPICS                                       */
+/* ════════════════════════════════════════════════════════════════════ */
+
+const ceCalculus: LearnTopic = {
+  slug: "ce-em-calculus",
+  subject: "Engineering Mathematics",
+  title: "Calculus",
+  tier: "free",
+  blurb:
+    "Limits, derivatives, maxima/minima and definite integrals — the differential-and-integral toolkit behind optimisation and area/volume problems on the paper.",
+  module: {
+    principle:
+      "The **derivative** $f'(x)$ is the instantaneous rate of change (slope of the tangent). A **stationary point** has $f'(x)=0$; the **second derivative** classifies it — $f''<0$ is a local maximum, $f''>0$ a local minimum. The **definite integral** $\\int_a^b f\\,dx$ is the signed area under the curve and is evaluated through the antiderivative (Fundamental Theorem of Calculus).",
+    formulaMatrix: [
+      "**Power rule**: $\\dfrac{d}{dx}x^n=nx^{n-1}$",
+      "",
+      "**Maxima/minima**: solve $f'(x)=0$, then test $f''(x)$",
+      "",
+      "**Fundamental theorem**: $\\int_a^b f'(x)\\,dx=f(b)-f(a)$",
+      "",
+      "**Standard integral**: $\\int x^n\\,dx=\\dfrac{x^{n+1}}{n+1}+C\\ (n\\neq-1)$",
+    ].join("\n"),
+    traps: [
+      "**$f'=0$ alone is not a maximum.** Always confirm with the sign of $f''$ (or a first-derivative sign change).",
+      "**Definite integrals need both limits substituted** — forgetting the lower limit is the most common arithmetic slip.",
+      "**Local vs global.** A local maximum on $[a,b]$ may not be the largest value — also check the endpoints.",
+    ],
+  },
+  questions: [
+    {
+      id: "ce-cal-q1", difficulty: "basic", marks: 1, type: "NAT",
+      stem: "For $f(x)=x^3$, the value of $f'(2)$ is _____.",
+      natAnswer: 12, acceptedRange: [11.99, 12.01],
+      solution: { given: "$f(x)=x^3$.", derivation: "$$f'(x)=3x^2\\Rightarrow f'(2)=3(4)=12$$", target: "$12$." },
+    },
+    {
+      id: "ce-cal-q2", difficulty: "medium", marks: 2, type: "NAT",
+      stem: "The local maximum value of $f(x)=x^3-3x$ is _____.",
+      natAnswer: 2, acceptedRange: [1.98, 2.02],
+      solution: { given: "$f'(x)=3x^2-3=0\\Rightarrow x=\\pm1$.", derivation: "$$f''(x)=6x;\\ f''(-1)=-6<0\\Rightarrow\\text{max at }x=-1$$ $$f(-1)=-1+3=2$$", target: "Local maximum value $=2$." },
+    },
+    {
+      id: "ce-cal-q3", difficulty: "hard", marks: 2, type: "MCQ",
+      stem: "The value of $\\displaystyle\\int_0^1(3x^2+2x)\\,dx$ is:",
+      options: ["$2$", "$3$", "$1$", "$\\tfrac{5}{2}$"], answer: 0,
+      solution: { given: "Integrate term by term.", derivation: "$$\\int_0^1(3x^2+2x)dx=[x^3+x^2]_0^1=(1+1)-0=2$$", target: "Correct option: $2$." },
+    },
+  ],
+};
+
+const ceOde: LearnTopic = {
+  slug: "ce-em-odes",
+  subject: "Engineering Mathematics",
+  title: "Ordinary Differential Equations",
+  tier: "free",
+  blurb:
+    "First-order, higher-order linear and Euler–Cauchy equations — the differential equations that model beams, flow and decay.",
+  module: {
+    principle:
+      "An **ODE** relates a function to its derivatives. A **first-order linear** equation $\\frac{dy}{dx}+Py=Q$ is solved with the integrating factor $e^{\\int P\\,dx}$. A **homogeneous linear** equation with constant coefficients is solved from its **characteristic (auxiliary) equation**: each real root $m$ contributes $e^{mx}$, repeated roots add an $x$ factor, and complex roots give $e^{\\alpha x}(\\cos\\beta x,\\sin\\beta x)$.",
+    formulaMatrix: [
+      "**Variable separable**: $\\dfrac{dy}{dx}=g(x)h(y)\\Rightarrow\\int\\dfrac{dy}{h}=\\int g\\,dx$",
+      "",
+      "**Integrating factor**: $\\mu=e^{\\int P\\,dx}$ for $y'+Py=Q$",
+      "",
+      "**Auxiliary equation**: $ay''+by'+cy=0\\Rightarrow am^2+bm+c=0$",
+      "",
+      "**Distinct real roots**: $y=C_1e^{m_1x}+C_2e^{m_2x}$",
+    ].join("\n"),
+    traps: [
+      "**Apply the initial condition last.** Solve the general solution first, then fix the constants — never before integrating.",
+      "**Repeated roots.** A double root $m$ gives $(C_1+C_2x)e^{mx}$, not $C_1e^{mx}+C_2e^{mx}$.",
+      "**Order ≠ degree.** Order is the highest derivative; degree is its power after the equation is made polynomial in derivatives.",
+    ],
+  },
+  questions: [
+    {
+      id: "ce-ode-q1", difficulty: "basic", marks: 1, type: "MCQ",
+      stem: "The general solution of $\\dfrac{dy}{dx}=ky$ is:",
+      options: ["$y=Ce^{kx}$", "$y=Ckx$", "$y=C+kx$", "$y=Cx^k$"], answer: 0,
+      solution: { given: "Separable: $\\frac{dy}{y}=k\\,dx$.", derivation: "$$\\ln y=kx+c\\Rightarrow y=Ce^{kx}$$", target: "$y=Ce^{kx}$." },
+    },
+    {
+      id: "ce-ode-q2", difficulty: "medium", marks: 2, type: "NAT",
+      stem: "If $\\dfrac{dy}{dx}=2x$ with $y(0)=1$, then $y(2)$ is _____.",
+      natAnswer: 5, acceptedRange: [4.99, 5.01],
+      solution: { given: "Integrate: $y=x^2+C$; $y(0)=1\\Rightarrow C=1$.", derivation: "$$y=x^2+1\\Rightarrow y(2)=4+1=5$$", target: "$5$." },
+    },
+    {
+      id: "ce-ode-q3", difficulty: "hard", marks: 2, type: "MCQ",
+      stem: "The general solution of $y''-5y'+6y=0$ is:",
+      options: ["$C_1e^{2x}+C_2e^{3x}$", "$C_1e^{-2x}+C_2e^{-3x}$", "$(C_1+C_2x)e^{5x}$", "$C_1\\cos2x+C_2\\sin3x$"], answer: 0,
+      solution: { given: "Auxiliary $m^2-5m+6=0$.", derivation: "$$(m-2)(m-3)=0\\Rightarrow m=2,3$$", target: "$y=C_1e^{2x}+C_2e^{3x}$." },
+    },
+  ],
+};
+
+const cePde: LearnTopic = {
+  slug: "ce-em-pdes",
+  subject: "Engineering Mathematics",
+  title: "Partial Differential Equations",
+  tier: "free",
+  blurb:
+    "Laplace, heat and wave equations and their classification — the field equations governing steady state, diffusion and vibration.",
+  module: {
+    principle:
+      "A **PDE** involves partial derivatives of a function of several variables. A second-order linear PDE $Au_{xx}+Bu_{xy}+Cu_{yy}+\\dots=0$ is classified by the **discriminant** $B^2-4AC$: **elliptic** ($<0$, e.g. Laplace — steady state), **parabolic** ($=0$, e.g. heat — diffusion) or **hyperbolic** ($>0$, e.g. wave — propagation). Boundary/initial conditions plus **separation of variables** give the solution.",
+    formulaMatrix: [
+      "**Classification**: $B^2-4AC<0$ elliptic, $=0$ parabolic, $>0$ hyperbolic",
+      "",
+      "**Laplace (elliptic)**: $u_{xx}+u_{yy}=0$",
+      "",
+      "**Heat (parabolic)**: $u_t=c^2u_{xx}$",
+      "",
+      "**Wave (hyperbolic)**: $u_{tt}=c^2u_{xx}$",
+    ].join("\n"),
+    traps: [
+      "**Read coefficients of the second-order terms only** for $B^2-4AC$; first-order and source terms don't affect the type.",
+      "**$B$ is the coefficient of the mixed term $u_{xy}$**, and the discriminant uses $B^2$, not $(B/2)^2$ in the standard GATE convention — be consistent.",
+      "**Heat is parabolic, wave is hyperbolic** — both look similar but the time order differs ($u_t$ vs $u_{tt}$).",
+    ],
+  },
+  questions: [
+    {
+      id: "ce-pde-q1", difficulty: "basic", marks: 1, type: "MCQ",
+      stem: "The Laplace equation $u_{xx}+u_{yy}=0$ is classified as:",
+      options: ["Elliptic", "Parabolic", "Hyperbolic", "None of these"], answer: 0,
+      solution: { given: "$A=1,B=0,C=1$.", derivation: "$$B^2-4AC=0-4(1)(1)=-4<0$$", target: "Elliptic." },
+    },
+    {
+      id: "ce-pde-q2", difficulty: "medium", marks: 2, type: "MCQ",
+      stem: "The one-dimensional heat equation $u_t=c^2u_{xx}$ is:",
+      options: ["Parabolic", "Elliptic", "Hyperbolic", "Linear first order"], answer: 0,
+      solution: { given: "Highest space order is 2; treat $u_{tt}$ coefficient $=0$.", derivation: "$$B^2-4AC=0\\Rightarrow\\text{parabolic}$$", target: "Parabolic." },
+    },
+    {
+      id: "ce-pde-q3", difficulty: "hard", marks: 2, type: "NAT",
+      stem: "For the PDE $u_{xx}+4u_{xy}+4u_{yy}=0$, the value of the discriminant $B^2-4AC$ is _____.",
+      natAnswer: 0, acceptedRange: [-0.01, 0.01],
+      solution: { given: "$A=1,B=4,C=4$.", derivation: "$$B^2-4AC=16-4(1)(4)=16-16=0$$", target: "$0$ (parabolic)." },
+    },
+  ],
+};
+
+const ceNumerical: LearnTopic = {
+  slug: "ce-em-numerical-methods",
+  subject: "Engineering Mathematics",
+  title: "Numerical Methods",
+  tier: "free",
+  blurb:
+    "Root finding, interpolation and numerical integration — approximate techniques for problems with no closed form.",
+  module: {
+    principle:
+      "Numerical methods produce **approximate** answers iteratively. **Newton–Raphson** refines a root with $x_{n+1}=x_n-\\frac{f(x_n)}{f'(x_n)}$ and converges **quadratically** near a simple root. The **trapezoidal** and **Simpson's** rules approximate $\\int f\\,dx$ from sampled values; Simpson's is exact for cubics and needs an even number of intervals.",
+    formulaMatrix: [
+      "**Newton–Raphson**: $x_{n+1}=x_n-\\dfrac{f(x_n)}{f'(x_n)}$",
+      "",
+      "**Bisection**: root bracket halved each step (linear convergence)",
+      "",
+      "**Trapezoidal rule**: $\\int_a^b f\\,dx\\approx\\dfrac{h}{2}\\,[f_0+2(f_1+\\dots+f_{n-1})+f_n]$",
+      "",
+      "**Simpson's 1/3 rule**: $\\dfrac{h}{3}[f_0+4(f_1+f_3+\\dots)+2(f_2+f_4+\\dots)+f_n]$",
+    ].join("\n"),
+    traps: [
+      "**Newton–Raphson can diverge** if $f'(x_n)\\approx0$ or the start point is poor — it is not unconditionally stable.",
+      "**Simpson's 1/3 rule needs an even number of sub-intervals** (odd number of ordinates).",
+      "**Use $f'$, not $f$, in the denominator** of the Newton update — a frequent sign/term slip.",
+    ],
+  },
+  questions: [
+    {
+      id: "ce-num-q1", difficulty: "basic", marks: 1, type: "NAT",
+      stem: "Using Newton–Raphson on $f(x)=x^2-2$ with $x_0=1.5$, the next estimate $x_1$ is _____.",
+      natAnswer: 1.4167, acceptedRange: [1.41, 1.42],
+      solution: { given: "$f(1.5)=0.25,\\ f'(x)=2x,\\ f'(1.5)=3$.", derivation: "$$x_1=1.5-\\dfrac{0.25}{3}=1.4167$$", target: "$\\approx1.417$." },
+    },
+    {
+      id: "ce-num-q2", difficulty: "medium", marks: 2, type: "NAT",
+      stem: "Using the trapezoidal rule with one interval, $\\displaystyle\\int_0^2 x^2\\,dx$ is estimated as _____.",
+      natAnswer: 4, acceptedRange: [3.99, 4.01],
+      solution: { given: "$h=2,\\ f(0)=0,\\ f(2)=4$.", derivation: "$$\\int\\approx\\dfrac{h}{2}[f_0+f_1]=\\dfrac{2}{2}(0+4)=4$$", target: "$4$ (exact $=8/3$)." },
+    },
+    {
+      id: "ce-num-q3", difficulty: "hard", marks: 2, type: "MCQ",
+      stem: "The order of convergence of the Newton–Raphson method near a simple root is:",
+      options: ["$2$ (quadratic)", "$1$ (linear)", "$1.618$", "$3$ (cubic)"], answer: 0,
+      solution: { given: "Error $e_{n+1}\\propto e_n^2$.", derivation: "$$e_{n+1}=\\dfrac{f''}{2f'}e_n^2\\Rightarrow\\text{order }2$$", target: "Quadratic (order 2)." },
+    },
+  ],
+};
+
+const ceConstructionMgmt: LearnTopic = {
+  slug: "ce-se-construction-management",
+  subject: "Structural Engineering",
+  title: "Construction Materials & Management",
+  tier: "subject",
+  blurb:
+    "Concrete ingredients, PERT/CPM network analysis and inventory (EOQ) — the materials and project-planning scorers in GATE CE.",
+  module: {
+    principle:
+      "Construction management plans **time, cost and resources**. A **CPM** network finds the **critical path** — the longest chain of activities with **zero float** that fixes the project duration. **PERT** treats activity times as uncertain, using a weighted **expected time** $t_e=\\frac{t_o+4t_m+t_p}{6}$. Inventory is optimised by the **Economic Order Quantity** that balances ordering and holding costs.",
+    formulaMatrix: [
+      "**PERT expected time**: $t_e=\\dfrac{t_o+4t_m+t_p}{6}$",
+      "",
+      "**PERT variance**: $\\sigma^2=\\left(\\dfrac{t_p-t_o}{6}\\right)^2$",
+      "",
+      "**Total float**: $TF=LF-EF=LS-ES$ (zero on the critical path)",
+      "",
+      "**Economic Order Quantity**: $EOQ=\\sqrt{\\dfrac{2DS}{H}}$",
+    ].join("\n"),
+    traps: [
+      "**Critical path = longest path, not shortest.** It has zero total float and governs project duration.",
+      "**PERT uses a weighted mean** ($4t_m$), not a simple average of the three times.",
+      "**EOQ uses annual demand $D$ and per-unit holding cost $H$** — mixing monthly and annual figures is the usual error.",
+    ],
+  },
+  questions: [
+    {
+      id: "ce-cm-q1", difficulty: "basic", marks: 1, type: "NAT",
+      stem: "Annual demand $D=10000$ units, ordering cost $S=\\text{₹}50$, holding cost $H=\\text{₹}4$/unit/yr. The EOQ is _____ units.",
+      natAnswer: 500, acceptedRange: [498, 502],
+      solution: { given: "$D=10000,S=50,H=4$.", derivation: "$$EOQ=\\sqrt{\\dfrac{2(10000)(50)}{4}}=\\sqrt{250000}=500$$", target: "$500$ units." },
+    },
+    {
+      id: "ce-cm-q2", difficulty: "medium", marks: 2, type: "NAT",
+      stem: "For an activity $t_o=4$, $t_m=6$, $t_p=14$ days, the PERT expected time is _____ days.",
+      natAnswer: 7, acceptedRange: [6.98, 7.02],
+      solution: { given: "$t_o=4,t_m=6,t_p=14$.", derivation: "$$t_e=\\dfrac{4+4(6)+14}{6}=\\dfrac{42}{6}=7$$", target: "$7$ days." },
+    },
+    {
+      id: "ce-cm-q3", difficulty: "hard", marks: 2, type: "MCQ",
+      stem: "On a CPM network, the critical path is the path with:",
+      options: ["the longest duration and zero total float", "the shortest duration", "maximum total float", "the most activities"], answer: 0,
+      solution: { given: "Project duration = longest path.", derivation: "Activities on it have $TF=0$; any delay delays the project.", target: "Longest duration, zero float." },
+    },
+  ],
+};
+
+const ceFoundationEngg: LearnTopic = {
+  slug: "ce-ge-foundation-engineering",
+  subject: "Geotechnical Engineering",
+  title: "Foundation Engineering",
+  tier: "subject",
+  blurb:
+    "Shallow versus deep foundations, pile capacity, group efficiency and negative skin friction — carrying structural loads safely to competent strata.",
+  module: {
+    principle:
+      "A **foundation** transfers structural load to the soil within allowable bearing and settlement limits. **Shallow** foundations (footings, rafts) spread load near the surface; **deep** foundations (piles) carry it to deeper strata through **end bearing** $Q_b$ plus **skin friction** $Q_s$. In closely-spaced **pile groups** the capacity is reduced by a **group efficiency** factor, and downdrag from settling fill adds **negative skin friction**.",
+    formulaMatrix: [
+      "**Ultimate pile capacity**: $Q_u=Q_b+Q_s=q_bA_b+f_sA_s$",
+      "",
+      "**Group capacity**: $Q_{group}=\\eta\\,n\\,Q_{single}$",
+      "",
+      "**Converse–Labarre efficiency**: $\\eta=1-\\dfrac{\\theta}{90}\\left[\\dfrac{(m-1)n+(n-1)m}{mn}\\right]$",
+      "",
+      "**Negative skin friction** acts **downward**, reducing net capacity.",
+    ],
+    traps: [
+      "**Negative skin friction subtracts** from capacity — it is a load, not a resistance.",
+      "**Group capacity is not simply $n\\times$ single-pile capacity** in clays — apply the group efficiency (or block failure check).",
+      "**End bearing vs friction.** Sands favour end bearing; soft clays rely largely on skin friction.",
+    ],
+  },
+  questions: [
+    {
+      id: "ce-fe-q1", difficulty: "basic", marks: 1, type: "NAT",
+      stem: "A pile group of $9$ piles, each of single capacity $150\\,\\text{kN}$, has group efficiency $0.8$. The group capacity is _____ kN.",
+      natAnswer: 1080, acceptedRange: [1078, 1082],
+      solution: { given: "$n=9,Q_{single}=150,\\eta=0.8$.", derivation: "$$Q_{group}=0.8\\times9\\times150=1080$$", target: "$1080\\,\\text{kN}$." },
+    },
+    {
+      id: "ce-fe-q2", difficulty: "medium", marks: 2, type: "NAT",
+      stem: "A pile carries end-bearing $q_b=2000\\,\\text{kPa}$ over a tip area of $0.2\\,\\text{m}^2$ and skin friction $f_s=40\\,\\text{kPa}$ over a shaft area of $10\\,\\text{m}^2$. Its ultimate capacity is _____ kN.",
+      natAnswer: 800, acceptedRange: [798, 802],
+      solution: { given: "$Q_b=q_bA_b,\\ Q_s=f_sA_s$.", derivation: "$$Q_b=2000\\times0.2=400;\\ Q_s=40\\times10=400$$ $$Q_u=400+400=800$$", target: "$800\\,\\text{kN}$." },
+    },
+    {
+      id: "ce-fe-q3", difficulty: "hard", marks: 2, type: "MCQ",
+      stem: "Negative skin friction on a pile in a settling fill:",
+      options: ["acts downward and reduces the net allowable capacity", "acts upward and increases capacity", "has no effect on capacity", "only occurs in dense sand"], answer: 0,
+      solution: { given: "Fill settles more than the pile.", derivation: "Relative downward soil movement drags the shaft down, adding load.", target: "Downward — reduces net capacity." },
+    },
+  ],
+};
+
+const cePipeFlow: LearnTopic = {
+  slug: "ce-wr-pipe-flow",
+  subject: "Water Resources Engineering",
+  title: "Flow Through Pipes",
+  tier: "subject",
+  blurb:
+    "Darcy–Weisbach friction, major and minor losses and pipe networks — the head losses that size pumps and pipelines.",
+  module: {
+    principle:
+      "Flow in a full pipe loses energy to **friction**. The **Darcy–Weisbach** equation gives the major loss $h_f=\\frac{fLV^2}{2gD}$, where $f$ depends on Reynolds number and roughness (Moody chart). **Minor losses** at fittings, bends and expansions scale with the velocity head $\\frac{V^2}{2g}$. A **sudden expansion** loses $\\frac{(V_1-V_2)^2}{2g}$.",
+    formulaMatrix: [
+      "**Darcy–Weisbach (major loss)**: $h_f=\\dfrac{fLV^2}{2gD}$",
+      "",
+      "**Discharge**: $Q=AV=\\dfrac{\\pi D^2}{4}V$",
+      "",
+      "**Minor loss**: $h_m=K\\dfrac{V^2}{2g}$",
+      "",
+      "**Sudden expansion**: $h_L=\\dfrac{(V_1-V_2)^2}{2g}$",
+    ].join("\n"),
+    traps: [
+      "**Two friction-factor conventions.** Darcy $f$ is four times the Fanning $f$ — confirm which the formula expects.",
+      "**Diameter, not radius, in Darcy–Weisbach** — and $V$ is the mean velocity $Q/A$.",
+      "**Minor losses use the velocity head**, so they grow with $V^2$, not $V$.",
+    ],
+  },
+  questions: [
+    {
+      id: "ce-pf-q1", difficulty: "basic", marks: 1, type: "NAT",
+      stem: "Water flows at $V=2\\,\\text{m/s}$ through a $0.2\\,\\text{m}$ pipe, $L=100\\,\\text{m}$, $f=0.02$. The friction head loss is _____ m.",
+      natAnswer: 2.039, acceptedRange: [1.99, 2.08],
+      solution: { given: "$f=0.02,L=100,V=2,D=0.2$.", derivation: "$$h_f=\\dfrac{0.02\\times100\\times2^2}{2\\times9.81\\times0.2}=\\dfrac{8}{3.924}=2.04$$", target: "$\\approx2.04\\,\\text{m}$." },
+    },
+    {
+      id: "ce-pf-q2", difficulty: "medium", marks: 1, type: "NAT",
+      stem: "A pipe of diameter $0.3\\,\\text{m}$ carries water at $1.5\\,\\text{m/s}$. The discharge is _____ m³/s.",
+      natAnswer: 0.106, acceptedRange: [0.103, 0.109],
+      solution: { given: "$D=0.3,V=1.5$.", derivation: "$$Q=\\dfrac{\\pi(0.3)^2}{4}\\times1.5=0.0707\\times1.5=0.106$$", target: "$\\approx0.106\\,\\text{m}^3/\\text{s}$." },
+    },
+    {
+      id: "ce-pf-q3", difficulty: "hard", marks: 2, type: "NAT",
+      stem: "At a sudden expansion the velocity drops from $3\\,\\text{m/s}$ to $1\\,\\text{m/s}$. The head loss is _____ m.",
+      natAnswer: 0.204, acceptedRange: [0.198, 0.21],
+      solution: { given: "$V_1=3,V_2=1$.", derivation: "$$h_L=\\dfrac{(3-1)^2}{2\\times9.81}=\\dfrac{4}{19.62}=0.204$$", target: "$\\approx0.204\\,\\text{m}$." },
+    },
+  ],
+};
+
+const ceWastewater: LearnTopic = {
+  slug: "ce-en-wastewater",
+  subject: "Environmental Engineering",
+  title: "Wastewater Treatment",
+  tier: "subject",
+  blurb:
+    "Primary, secondary (biological) and tertiary treatment, detention time and BOD removal — cleaning sewage before discharge.",
+  module: {
+    principle:
+      "Wastewater is treated in stages: **primary** (physical settling of solids), **secondary** (biological oxidation of organics, e.g. activated sludge or trickling filters) and **tertiary** (nutrient/pathogen polishing). A **sedimentation/aeration tank** is sized by its **detention time** $t=V/Q$, and performance is reported as **BOD removal efficiency**.",
+    formulaMatrix: [
+      "**Detention time**: $t=\\dfrac{V}{Q}$",
+      "",
+      "**BOD removal efficiency**: $\\eta=\\dfrac{BOD_{in}-BOD_{out}}{BOD_{in}}\\times100\\%$",
+      "",
+      "**Surface overflow rate**: $v_o=\\dfrac{Q}{A_{plan}}$",
+      "",
+      "**Activated sludge** = aeration tank + secondary clarifier + sludge recycle.",
+    ].join("\n"),
+    traps: [
+      "**Primary treatment removes settleable solids, not dissolved BOD** — biological (secondary) treatment removes the organics.",
+      "**Detention time uses tank volume $V$ and flow $Q$** in consistent units (convert m³/day ↔ hours carefully).",
+      "**Efficiency is based on influent BOD**, so divide the removed amount by the inlet value, not the outlet.",
+    ],
+  },
+  questions: [
+    {
+      id: "ce-ww-q1", difficulty: "basic", marks: 1, type: "MCQ",
+      stem: "The activated-sludge process is an example of:",
+      options: ["secondary (biological) treatment", "primary settling", "tertiary disinfection", "preliminary screening"], answer: 0,
+      solution: { given: "Microbial oxidation of organics.", derivation: "Aeration tank + clarifier + sludge recycle is biological.", target: "Secondary treatment." },
+    },
+    {
+      id: "ce-ww-q2", difficulty: "medium", marks: 2, type: "NAT",
+      stem: "Influent BOD is $300\\,\\text{mg/L}$ and effluent BOD is $30\\,\\text{mg/L}$. The BOD removal efficiency is _____ %.",
+      natAnswer: 90, acceptedRange: [89.5, 90.5],
+      solution: { given: "$BOD_{in}=300,BOD_{out}=30$.", derivation: "$$\\eta=\\dfrac{300-30}{300}\\times100=90\\%$$", target: "$90\\%$." },
+    },
+    {
+      id: "ce-ww-q3", difficulty: "hard", marks: 2, type: "NAT",
+      stem: "A sedimentation tank of volume $1000\\,\\text{m}^3$ treats $2000\\,\\text{m}^3/\\text{day}$. Its detention time is _____ hours.",
+      natAnswer: 12, acceptedRange: [11.9, 12.1],
+      solution: { given: "$V=1000,Q=2000\\,\\text{m}^3/\\text{day}$.", derivation: "$$t=\\dfrac{V}{Q}=\\dfrac{1000}{2000}=0.5\\,\\text{day}=12\\,\\text{h}$$", target: "$12$ hours." },
+    },
+  ],
+};
+
+const ceAirPollution: LearnTopic = {
+  slug: "ce-en-air-pollution",
+  subject: "Environmental Engineering",
+  title: "Air Pollution",
+  tier: "subject",
+  blurb:
+    "Primary and secondary pollutants, lapse rates and atmospheric stability — the dispersion physics behind air-quality control.",
+  module: {
+    principle:
+      "**Primary** pollutants are emitted directly (CO, SO₂, NOₓ, particulates); **secondary** pollutants form in the atmosphere (ozone, PAN, photochemical smog). Vertical mixing is governed by the **environmental lapse rate** compared with the **dry adiabatic lapse rate** ($\\approx9.8\\,°C/\\text{km}$): a steeper (super-adiabatic) profile is **unstable** and disperses pollutants, while an **inversion** traps them.",
+    formulaMatrix: [
+      "**Dry adiabatic lapse rate**: $\\Gamma_d\\approx9.8\\,°C/\\text{km}$",
+      "",
+      "**Stability**: ELR $>\\Gamma_d$ unstable; ELR $<\\Gamma_d$ stable; inversion (ELR$<0$) very stable",
+      "",
+      "**Temperature at height**: $T_z=T_0-\\Gamma\\,z$",
+      "",
+      "**Effective stack height** = physical height + plume rise.",
+    ].join("\n"),
+    traps: [
+      "**Ozone at ground level is a secondary pollutant**, formed photochemically — not emitted directly.",
+      "**An inversion is the worst case** for dispersion: warm air above cold traps pollutants near the ground.",
+      "**Compare ELR with the adiabatic rate** to judge stability — the absolute temperature alone tells you nothing.",
+    ],
+  },
+  questions: [
+    {
+      id: "ce-ap-q1", difficulty: "basic", marks: 1, type: "MCQ",
+      stem: "Ground-level ozone in photochemical smog is classified as a:",
+      options: ["secondary pollutant", "primary pollutant", "inert gas", "particulate"], answer: 0,
+      solution: { given: "Forms from NOₓ + VOCs under sunlight.", derivation: "Not emitted directly ⇒ secondary.", target: "Secondary pollutant." },
+    },
+    {
+      id: "ce-ap-q2", difficulty: "medium", marks: 2, type: "NAT",
+      stem: "With a dry adiabatic lapse rate of $9.8\\,°C/\\text{km}$ and surface temperature $25\\,°C$, the air temperature at $500\\,\\text{m}$ is _____ °C.",
+      natAnswer: 20.1, acceptedRange: [20.0, 20.2],
+      solution: { given: "$T_0=25,\\Gamma=9.8\\,°C/\\text{km},z=0.5\\,\\text{km}$.", derivation: "$$T=25-9.8\\times0.5=25-4.9=20.1$$", target: "$20.1\\,°C$." },
+    },
+    {
+      id: "ce-ap-q3", difficulty: "hard", marks: 2, type: "MCQ",
+      stem: "An atmosphere with environmental lapse rate greater than the dry adiabatic lapse rate is:",
+      options: ["unstable — good dispersion", "stable — poor dispersion", "neutral", "an inversion"], answer: 0,
+      solution: { given: "ELR $>\\Gamma_d$.", derivation: "A displaced parcel keeps rising ⇒ super-adiabatic, unstable.", target: "Unstable (good dispersion)." },
+    },
+  ],
+};
+
+const ceSolidWasteNoise: LearnTopic = {
+  slug: "ce-en-solid-waste-noise",
+  subject: "Environmental Engineering",
+  title: "Solid Waste & Noise",
+  tier: "subject",
+  blurb:
+    "Municipal solid-waste management and the logarithmic addition/attenuation of noise — two high-yield environmental scorers.",
+  module: {
+    principle:
+      "**MSW management** follows the hierarchy reduce → reuse → recycle → recover (energy) → **sanitary landfill** as the final disposal route. **Noise** is measured on the logarithmic **decibel** scale, so levels do not add arithmetically: doubling equal sources adds $3\\,\\text{dB}$, and a point source attenuates by $6\\,\\text{dB}$ per doubling of distance.",
+    formulaMatrix: [
+      "**Decibel addition**: $L_{total}=10\\log_{10}\\left(\\sum 10^{L_i/10}\\right)$",
+      "",
+      "**Two equal sources**: $L+10\\log_{10}2\\approx L+3\\,\\text{dB}$",
+      "",
+      "**Point-source distance attenuation**: $\\Delta L=20\\log_{10}\\dfrac{r_2}{r_1}$",
+      "",
+      "**Sanitary landfill** = engineered final disposal with liner, cover & leachate control.",
+    ].join("\n"),
+    traps: [
+      "**Decibels add logarithmically.** $60+60\\,\\text{dB}=63\\,\\text{dB}$, not $120\\,\\text{dB}$.",
+      "**Distance attenuation uses $20\\log$ for a point source** (pressure), giving $6\\,\\text{dB}$ per doubling.",
+      "**Open dumping is not sanitary landfilling** — the latter is engineered with liners and daily cover.",
+    ],
+  },
+  questions: [
+    {
+      id: "ce-swn-q1", difficulty: "basic", marks: 1, type: "NAT",
+      stem: "Two independent sources each produce $60\\,\\text{dB}$ at a point. The combined level is _____ dB.",
+      natAnswer: 63.01, acceptedRange: [62.8, 63.2],
+      solution: { given: "Equal sources.", derivation: "$$L=10\\log_{10}(2\\times10^{6})=60+10\\log_{10}2=63.01$$", target: "$\\approx63\\,\\text{dB}$." },
+    },
+    {
+      id: "ce-swn-q2", difficulty: "medium", marks: 1, type: "MCQ",
+      stem: "The most appropriate final disposal method for municipal solid waste is:",
+      options: ["sanitary landfilling", "open dumping", "ocean discharge", "road-side storage"], answer: 0,
+      solution: { given: "Final, engineered disposal.", derivation: "Liner + cover + leachate/gas control = sanitary landfill.", target: "Sanitary landfilling." },
+    },
+    {
+      id: "ce-swn-q3", difficulty: "hard", marks: 2, type: "NAT",
+      stem: "A point source gives $80\\,\\text{dB}$ at $10\\,\\text{m}$. At $40\\,\\text{m}$ the level is _____ dB.",
+      natAnswer: 67.96, acceptedRange: [67.5, 68.3],
+      solution: { given: "$r_1=10,r_2=40$.", derivation: "$$\\Delta L=20\\log_{10}\\dfrac{40}{10}=20\\log_{10}4=12.04$$ $$L=80-12.04=67.96$$", target: "$\\approx68\\,\\text{dB}$." },
+    },
+  ],
+};
+
+const ceTraffic: LearnTopic = {
+  slug: "ce-tr-traffic",
+  subject: "Transportation Engineering",
+  title: "Traffic Engineering",
+  tier: "subject",
+  blurb:
+    "Flow–speed–density relations, Webster's signal timing and capacity — the operational analysis of roads and intersections.",
+  module: {
+    principle:
+      "Traffic flow links three quantities by $q=k\\,v$ (flow = density × speed). Greenshields' linear model gives a **maximum flow (capacity)** at $v_f/2$ and $k_j/2$, i.e. $q_{max}=\\frac{v_fk_j}{4}$. Signalised intersections are timed with **Webster's** optimum cycle length, balancing delay against lost time.",
+    formulaMatrix: [
+      "**Fundamental relation**: $q=k\\,v$",
+      "",
+      "**Greenshields capacity**: $q_{max}=\\dfrac{v_f\\,k_j}{4}$",
+      "",
+      "**Webster optimum cycle**: $C_o=\\dfrac{1.5L+5}{1-Y}$",
+      "",
+      "where $L$ = total lost time, $Y=\\sum y_i$ = sum of critical flow ratios.",
+    ].join("\n"),
+    traps: [
+      "**$q=kv$ — flow is density times speed**, not speed alone. Maximum flow occurs at intermediate density, not maximum speed.",
+      "**Webster's $Y$ is the sum of flow ratios**, and the cycle blows up as $Y\\to1$ (oversaturation).",
+      "**Capacity is $v_fk_j/4$** in the Greenshields model — a quarter of the free-flow-speed × jam-density product.",
+    ],
+  },
+  questions: [
+    {
+      id: "ce-tf-q1", difficulty: "basic", marks: 1, type: "NAT",
+      stem: "A road has traffic density $25\\,\\text{veh/km}$ moving at $60\\,\\text{km/h}$. The flow is _____ veh/h.",
+      natAnswer: 1500, acceptedRange: [1498, 1502],
+      solution: { given: "$k=25,v=60$.", derivation: "$$q=kv=25\\times60=1500$$", target: "$1500\\,\\text{veh/h}$." },
+    },
+    {
+      id: "ce-tf-q2", difficulty: "medium", marks: 2, type: "NAT",
+      stem: "Greenshields model: free-flow speed $60\\,\\text{km/h}$, jam density $120\\,\\text{veh/km}$. The capacity is _____ veh/h.",
+      natAnswer: 1800, acceptedRange: [1798, 1802],
+      solution: { given: "$v_f=60,k_j=120$.", derivation: "$$q_{max}=\\dfrac{v_fk_j}{4}=\\dfrac{60\\times120}{4}=1800$$", target: "$1800\\,\\text{veh/h}$." },
+    },
+    {
+      id: "ce-tf-q3", difficulty: "hard", marks: 2, type: "NAT",
+      stem: "Using Webster's formula with total lost time $L=12\\,\\text{s}$ and $Y=0.6$, the optimum cycle length is _____ s.",
+      natAnswer: 57.5, acceptedRange: [56.5, 58.5],
+      solution: { given: "$L=12,Y=0.6$.", derivation: "$$C_o=\\dfrac{1.5(12)+5}{1-0.6}=\\dfrac{23}{0.4}=57.5$$", target: "$57.5\\,\\text{s}$." },
+    },
+  ],
+};
+
+const ceHighwayMaterials: LearnTopic = {
+  slug: "ce-tr-highway-materials",
+  subject: "Transportation Engineering",
+  title: "Highway Materials",
+  tier: "subject",
+  blurb:
+    "Aggregate strength tests, bitumen grading and bituminous-mix air-void analysis — the material quality controls for pavements.",
+  module: {
+    principle:
+      "Pavement performance depends on material quality. **Aggregates** are checked for hardness (**Los Angeles abrasion**), toughness (**impact**) and shape; **bitumen** is graded by **penetration**, softening point and ductility. A designed bituminous mix is characterised by its **air voids** $V_a$, computed from the maximum theoretical ($G_{mm}$) and bulk ($G_{mb}$) specific gravities.",
+    formulaMatrix: [
+      "**Air voids**: $V_a=\\dfrac{G_{mm}-G_{mb}}{G_{mm}}\\times100\\%$",
+      "",
+      "**Aggregate impact value** = % fines after standardized impact (lower = tougher)",
+      "",
+      "**Los Angeles abrasion value** = % wear (lower = harder)",
+      "",
+      "**Penetration grade**: depth (0.1 mm) a needle sinks in 5 s at 25 °C.",
+    ].join("\n"),
+    traps: [
+      "**Lower abrasion/impact values mean better aggregate** — they are wear percentages, so smaller is stronger.",
+      "**Air voids use $G_{mm}$ in the denominator** (maximum theoretical specific gravity), not $G_{mb}$.",
+      "**Penetration and viscosity grading are inverse in feel**: a higher penetration number is a softer bitumen.",
+    ],
+  },
+  questions: [
+    {
+      id: "ce-hm-q1", difficulty: "basic", marks: 1, type: "MCQ",
+      stem: "The hardness of road aggregate against traffic abrasion is assessed by the:",
+      options: ["Los Angeles abrasion test", "penetration test", "ductility test", "flash-point test"], answer: 0,
+      solution: { given: "Abrasion = surface wear of aggregate.", derivation: "LA abrasion machine tumbles aggregate with steel balls.", target: "Los Angeles abrasion test." },
+    },
+    {
+      id: "ce-hm-q2", difficulty: "medium", marks: 2, type: "NAT",
+      stem: "A bituminous mix has $G_{mm}=2.45$ and $G_{mb}=2.35$. The air-void content is _____ %.",
+      natAnswer: 4.08, acceptedRange: [3.9, 4.2],
+      solution: { given: "$G_{mm}=2.45,G_{mb}=2.35$.", derivation: "$$V_a=\\dfrac{2.45-2.35}{2.45}\\times100=4.08\\%$$", target: "$\\approx4.08\\%$." },
+    },
+    {
+      id: "ce-hm-q3", difficulty: "hard", marks: 2, type: "MCQ",
+      stem: "A bitumen of penetration grade 80/100 compared with 30/40 grade is:",
+      options: ["softer", "harder", "identical in consistency", "more brittle"], answer: 0,
+      solution: { given: "Higher penetration number.", derivation: "Needle sinks deeper ⇒ less stiff bitumen.", target: "Softer." },
+    },
+  ],
+};
+
+const ceTheodolite: LearnTopic = {
+  slug: "ce-gm-theodolite-traverse",
+  subject: "Geomatics Engineering",
+  title: "Theodolite & Traverse",
+  tier: "subject",
+  blurb:
+    "Angles and bearings, latitudes and departures, and the closing error of a traverse — the backbone of horizontal control surveys.",
+  module: {
+    principle:
+      "A **traverse** is a connected series of lines whose lengths and directions are measured. Each line is resolved into a **latitude** $L\\cos\\theta$ (N–S) and **departure** $L\\sin\\theta$ (E–W) from its bearing. For a **closed traverse** the algebraic sums of latitudes and departures should be zero; any residual is the **closing error**, distributed by Bowditch's rule.",
+    formulaMatrix: [
+      "**Latitude**: $\\text{Lat}=L\\cos\\theta$",
+      "",
+      "**Departure**: $\\text{Dep}=L\\sin\\theta$",
+      "",
+      "**Closing error**: $e=\\sqrt{(\\sum\\text{Lat})^2+(\\sum\\text{Dep})^2}$",
+      "",
+      "**Bowditch (compass) rule**: correction $\\propto$ length of each line.",
+    ].join("\n"),
+    traps: [
+      "**Latitude uses cosine, departure uses sine** of the bearing measured from the meridian (N–S).",
+      "**Watch the quadrant signs.** Northings/Eastings are positive; southings/westings negative when summing.",
+      "**Closing error is the resultant** of the two misclosures, not their simple sum.",
+    ],
+  },
+  questions: [
+    {
+      id: "ce-tt-q1", difficulty: "basic", marks: 1, type: "NAT",
+      stem: "A survey line is $100\\,\\text{m}$ long with a whole-circle bearing of $30°$. Its latitude is _____ m.",
+      natAnswer: 86.6, acceptedRange: [86.4, 86.8],
+      solution: { given: "$L=100,\\theta=30°$.", derivation: "$$\\text{Lat}=100\\cos30°=100\\times0.866=86.6$$", target: "$86.6\\,\\text{m}$." },
+    },
+    {
+      id: "ce-tt-q2", difficulty: "medium", marks: 1, type: "NAT",
+      stem: "For the same line ($100\\,\\text{m}$, bearing $30°$), the departure is _____ m.",
+      natAnswer: 50, acceptedRange: [49.8, 50.2],
+      solution: { given: "$L=100,\\theta=30°$.", derivation: "$$\\text{Dep}=100\\sin30°=100\\times0.5=50$$", target: "$50\\,\\text{m}$." },
+    },
+    {
+      id: "ce-tt-q3", difficulty: "hard", marks: 2, type: "NAT",
+      stem: "A closed traverse has $\\sum\\text{Lat}=+0.3\\,\\text{m}$ and $\\sum\\text{Dep}=-0.4\\,\\text{m}$. The closing error is _____ m.",
+      natAnswer: 0.5, acceptedRange: [0.49, 0.51],
+      solution: { given: "$\\sum\\text{Lat}=0.3,\\sum\\text{Dep}=0.4$.", derivation: "$$e=\\sqrt{0.3^2+0.4^2}=\\sqrt{0.25}=0.5$$", target: "$0.5\\,\\text{m}$." },
+    },
+  ],
+};
+
+const ceCurves: LearnTopic = {
+  slug: "ce-gm-curves",
+  subject: "Geomatics Engineering",
+  title: "Curves",
+  tier: "subject",
+  blurb:
+    "Simple, transition and vertical curves — setting out the smooth horizontal and vertical alignment of roads and railways.",
+  module: {
+    principle:
+      "A **horizontal curve** connects two straights (tangents) through a circular arc of radius $R$ and deflection angle $\\Delta$. Key elements are the **tangent length** $T=R\\tan(\\Delta/2)$ and the **curve length** $L=\\frac{\\pi R\\Delta}{180}$. A **transition curve** introduces curvature gradually; its **shift** is $S=\\frac{L_t^2}{24R}$.",
+    formulaMatrix: [
+      "**Tangent length**: $T=R\\tan\\dfrac{\\Delta}{2}$",
+      "",
+      "**Length of circular curve**: $L=\\dfrac{\\pi R\\Delta}{180}$",
+      "",
+      "**Degree of curve (30 m arc)**: $R=\\dfrac{1718.87}{D}$",
+      "",
+      "**Shift of transition curve**: $S=\\dfrac{L_t^2}{24R}$",
+    ].join("\n"),
+    traps: [
+      "**Tangent length uses $\\tan(\\Delta/2)$**, not $\\tan\\Delta$ — half the deflection angle.",
+      "**Curve length needs $\\Delta$ in degrees** with the $\\pi/180$ factor (or radians directly).",
+      "**Two degree-of-curve definitions** exist (arc vs chord) — GATE usually uses the 30 m arc definition.",
+    ],
+  },
+  questions: [
+    {
+      id: "ce-cv-q1", difficulty: "basic", marks: 1, type: "NAT",
+      stem: "A circular curve has $R=300\\,\\text{m}$ and deflection angle $\\Delta=60°$. Its tangent length is _____ m.",
+      natAnswer: 173.2, acceptedRange: [172.5, 174],
+      solution: { given: "$R=300,\\Delta=60°$.", derivation: "$$T=R\\tan\\dfrac{\\Delta}{2}=300\\tan30°=300\\times0.5774=173.2$$", target: "$\\approx173.2\\,\\text{m}$." },
+    },
+    {
+      id: "ce-cv-q2", difficulty: "medium", marks: 2, type: "NAT",
+      stem: "For $R=300\\,\\text{m}$ and $\\Delta=60°$, the length of the circular curve is _____ m.",
+      natAnswer: 314.16, acceptedRange: [313, 315.5],
+      solution: { given: "$R=300,\\Delta=60°$.", derivation: "$$L=\\dfrac{\\pi R\\Delta}{180}=\\dfrac{\\pi\\times300\\times60}{180}=100\\pi=314.16$$", target: "$\\approx314.2\\,\\text{m}$." },
+    },
+    {
+      id: "ce-cv-q3", difficulty: "hard", marks: 2, type: "NAT",
+      stem: "A transition curve of length $60\\,\\text{m}$ is introduced on a curve of radius $300\\,\\text{m}$. The shift is _____ m.",
+      natAnswer: 0.5, acceptedRange: [0.49, 0.51],
+      solution: { given: "$L_t=60,R=300$.", derivation: "$$S=\\dfrac{L_t^2}{24R}=\\dfrac{3600}{24\\times300}=\\dfrac{3600}{7200}=0.5$$", target: "$0.5\\,\\text{m}$." },
+    },
+  ],
+};
+
+const ceModernSurveying: LearnTopic = {
+  slug: "ce-gm-modern-surveying",
+  subject: "Geomatics Engineering",
+  title: "Modern Surveying",
+  tier: "subject",
+  blurb:
+    "Total stations, GPS/GNSS positioning and remote sensing/GIS — the electronic and satellite methods of contemporary surveying.",
+  module: {
+    principle:
+      "Modern surveying replaces tape and theodolite with electronic instruments. A **total station** combines electronic distance measurement (EDM) with angular measurement to give 3-D coordinates directly. **GPS/GNSS** fixes position by trilateration from satellites — at least **four** are needed for a 3-D fix (three coordinates + receiver clock error). **Remote sensing** can be **passive** (uses reflected sunlight) or **active** (emits its own energy, e.g. RADAR, LiDAR).",
+    formulaMatrix: [
+      "**Total station** = EDM + electronic theodolite → 3-D coordinates",
+      "",
+      "**GNSS 3-D fix**: minimum **4** satellites (x, y, z + clock bias)",
+      "",
+      "**EDM distance**: $D=\\dfrac{c\\,t}{2}$ (two-way travel time)",
+      "",
+      "**Active vs passive**: LiDAR/RADAR active; aerial photography passive.",
+    ].join("\n"),
+    traps: [
+      "**Four satellites, not three**, are needed for a 3-D GNSS position — the fourth resolves the receiver clock error.",
+      "**LiDAR and RADAR are active sensors**; ordinary aerial/satellite photography is passive.",
+      "**A total station measures, the GNSS positions** — don't confuse EDM distance with satellite ranging.",
+    ],
+  },
+  questions: [
+    {
+      id: "ce-ms-q1", difficulty: "basic", marks: 1, type: "MCQ",
+      stem: "A total station directly provides:",
+      options: ["distance and angles (hence 3-D coordinates)", "only horizontal angles", "only distances", "only elevations"], answer: 0,
+      solution: { given: "EDM + electronic theodolite.", derivation: "Combines distance and angle ⇒ coordinates.", target: "Distance and angles." },
+    },
+    {
+      id: "ce-ms-q2", difficulty: "medium", marks: 1, type: "MCQ",
+      stem: "Which remote-sensing sensor is an active sensor?",
+      options: ["LiDAR", "Panchromatic aerial camera", "Multispectral optical scanner", "Human eye"], answer: 0,
+      solution: { given: "Active = emits its own energy.", derivation: "LiDAR emits laser pulses; others rely on sunlight.", target: "LiDAR." },
+    },
+    {
+      id: "ce-ms-q3", difficulty: "hard", marks: 2, type: "NAT",
+      stem: "The minimum number of satellites required for a 3-D GPS position fix is _____.",
+      natAnswer: 4, acceptedRange: [3.99, 4.01],
+      solution: { given: "Unknowns: x, y, z and receiver clock bias.", derivation: "$$4\\text{ unknowns}\\Rightarrow4\\text{ range equations}$$", target: "$4$ satellites." },
+    },
+  ],
+};
+
+/* ════════════════════════════════════════════════════════════════════ */
 /*  PER-TOPIC STANDARD REFERENCES                                         */
 /* ════════════════════════════════════════════════════════════════════ */
 
@@ -1086,6 +1795,60 @@ const CE_TOPIC_REFERENCES: Record<string, LearnReference[]> = {
   "ce-tr-pavement": [
     { book: "Highway Engineering", author: "S.K. Khanna & C.E.G. Justo", chapter: "Pavement Design" },
   ],
+  "ce-em-calculus": [
+    { book: "Advanced Engineering Mathematics", author: "Erwin Kreyszig", chapter: "Differential & Integral Calculus" },
+    { book: "Higher Engineering Mathematics", author: "B.S. Grewal" },
+  ],
+  "ce-em-odes": [
+    { book: "Advanced Engineering Mathematics", author: "Erwin Kreyszig", chapter: "Ordinary Differential Equations" },
+    { book: "Higher Engineering Mathematics", author: "B.S. Grewal" },
+  ],
+  "ce-em-pdes": [
+    { book: "Advanced Engineering Mathematics", author: "Erwin Kreyszig", chapter: "Partial Differential Equations" },
+  ],
+  "ce-em-numerical-methods": [
+    { book: "Introductory Methods of Numerical Analysis", author: "S.S. Sastry" },
+    { book: "Higher Engineering Mathematics", author: "B.S. Grewal", chapter: "Numerical Methods" },
+  ],
+  "ce-se-construction-management": [
+    { book: "Project Planning and Control with PERT and CPM", author: "B.C. Punmia & K.K. Khandelwal" },
+    { book: "Construction Engineering and Management", author: "S. Seetharaman" },
+  ],
+  "ce-ge-foundation-engineering": [
+    { book: "Basic and Applied Soil Mechanics", author: "Gopal Ranjan & A.S.R. Rao", chapter: "Foundation Engineering" },
+    { book: "Soil Mechanics and Foundations", author: "B.C. Punmia" },
+  ],
+  "ce-wr-pipe-flow": [
+    { book: "Hydraulics and Fluid Mechanics", author: "P.N. Modi & S.M. Seth", chapter: "Flow Through Pipes" },
+    { book: "Fluid Mechanics and Hydraulic Machines", author: "K. Subramanya" },
+  ],
+  "ce-en-wastewater": [
+    { book: "Environmental Engineering Vol. II (Sewage Disposal & Air Pollution)", author: "S.K. Garg" },
+    { book: "Wastewater Engineering: Treatment and Reuse", author: "Metcalf & Eddy" },
+  ],
+  "ce-en-air-pollution": [
+    { book: "Environmental Pollution Control Engineering", author: "C.S. Rao" },
+    { book: "Environmental Engineering Vol. II", author: "S.K. Garg" },
+  ],
+  "ce-en-solid-waste-noise": [
+    { book: "Environmental Engineering Vol. II", author: "S.K. Garg" },
+  ],
+  "ce-tr-traffic": [
+    { book: "Highway Engineering", author: "S.K. Khanna & C.E.G. Justo", chapter: "Traffic Engineering" },
+    { book: "Traffic Engineering and Transport Planning", author: "L.R. Kadiyali" },
+  ],
+  "ce-tr-highway-materials": [
+    { book: "Highway Engineering", author: "S.K. Khanna & C.E.G. Justo", chapter: "Highway Materials" },
+  ],
+  "ce-gm-theodolite-traverse": [
+    { book: "Surveying Vol. I", author: "B.C. Punmia, A.K. Jain & A.K. Jain" },
+  ],
+  "ce-gm-curves": [
+    { book: "Surveying Vol. II", author: "B.C. Punmia, A.K. Jain & A.K. Jain", chapter: "Curves" },
+  ],
+  "ce-gm-modern-surveying": [
+    { book: "Surveying Vol. II", author: "B.C. Punmia, A.K. Jain & A.K. Jain", chapter: "Modern Surveying" },
+  ],
 };
 
 /* ════════════════════════════════════════════════════════════════════ */
@@ -1152,24 +1915,39 @@ export const CE_RESOURCE_LINKS: { label: string; href: string; note: string }[] 
 export const CE_LEARN_TOPICS: LearnTopic[] = [
   ceLinearAlgebra,
   ceProbability,
+  ceCalculus,
+  ceOde,
+  cePde,
+  ceNumerical,
   ceEngMechanics,
   ceSimpleStress,
   ceBendingShear,
   ceStructuralAnalysis,
   ceDeflection,
+  ceConstructionMgmt,
   ceRcc,
   ceSteel,
   ceSoilPhase,
   ceEffectiveStress,
   ceConsolidation,
   ceBearingCapacity,
+  ceFoundationEngg,
   ceFluidMechanics,
+  cePipeFlow,
   ceOpenChannel,
   ceHydrology,
   ceEnvironmental,
+  ceWastewater,
+  ceAirPollution,
+  ceSolidWasteNoise,
   ceTransportation,
+  ceTraffic,
   cePavement,
+  ceHighwayMaterials,
   ceSurveying,
+  ceTheodolite,
+  ceCurves,
+  ceModernSurveying,
 ].map((t) => ({ ...t, references: t.references ?? CE_TOPIC_REFERENCES[t.slug] }));
 
 export function getCivilLearnTopic(slug: string): LearnTopic | undefined {
@@ -1187,11 +1965,11 @@ export const CE_LEARN_SYLLABUS: LearnSyllabusSection[] = [
     summary: "The mathematical toolkit underpinning every quantitative question on the paper.",
     subtopics: [
       { title: "Linear Algebra", slug: "ce-em-linear-algebra", highlight: "Matrices, rank, systems of equations, eigenvalues & eigenvectors" },
-      { title: "Calculus", highlight: "Limits, derivatives, maxima/minima, definite & multiple integrals" },
-      { title: "Ordinary Differential Equations", highlight: "First-order, higher-order linear, Euler–Cauchy equations" },
-      { title: "Partial Differential Equations", highlight: "Laplace, heat & wave equations; method of separation" },
+      { title: "Calculus", slug: "ce-em-calculus", highlight: "Limits, derivatives, maxima/minima, definite & multiple integrals" },
+      { title: "Ordinary Differential Equations", slug: "ce-em-odes", highlight: "First-order, higher-order linear, Euler–Cauchy equations" },
+      { title: "Partial Differential Equations", slug: "ce-em-pdes", highlight: "Laplace, heat & wave equations; method of separation" },
       { title: "Probability & Statistics", slug: "ce-em-probability-statistics", highlight: "Mean, variance, distributions, conditional probability" },
-      { title: "Numerical Methods", highlight: "Root finding, interpolation, numerical integration & ODEs" },
+      { title: "Numerical Methods", slug: "ce-em-numerical-methods", highlight: "Root finding, interpolation, numerical integration & ODEs" },
     ],
   },
   {
@@ -1204,7 +1982,7 @@ export const CE_LEARN_SYLLABUS: LearnSyllabusSection[] = [
       { title: "Bending & Shear Stresses", slug: "ce-se-bending-shear", highlight: "Flexure formula σ=My/I, transverse shear, torsion" },
       { title: "Structural Analysis", slug: "ce-se-structural-analysis", highlight: "Determinacy, SF & BM diagrams, standard beam results" },
       { title: "Deflection of Beams", slug: "ce-se-deflection", highlight: "Double integration, moment-area, unit-load methods" },
-      { title: "Construction Materials & Management", highlight: "Concrete, PERT/CPM, EOQ, work study" },
+      { title: "Construction Materials & Management", slug: "ce-se-construction-management", highlight: "Concrete, PERT/CPM, EOQ, work study" },
       { title: "Concrete Structures (RCC)", slug: "ce-se-rcc-limit-state", highlight: "Limit state, stress block, neutral axis, moment capacity" },
       { title: "Steel Structures", slug: "ce-se-steel-members", highlight: "Tension & compression members, slenderness, connections" },
     ],
@@ -1218,7 +1996,7 @@ export const CE_LEARN_SYLLABUS: LearnSyllabusSection[] = [
       { title: "Effective Stress & Seepage", slug: "ce-ge-effective-stress", highlight: "Terzaghi principle, flow nets, quick condition" },
       { title: "Consolidation", slug: "ce-ge-consolidation", highlight: "Coefficient of consolidation, settlement, time factor" },
       { title: "Shear Strength & Bearing Capacity", slug: "ce-ge-bearing-capacity", highlight: "Mohr–Coulomb, Rankine, Terzaghi bearing capacity" },
-      { title: "Foundation Engineering", highlight: "Shallow & deep foundations, pile groups, settlement" },
+      { title: "Foundation Engineering", slug: "ce-ge-foundation-engineering", highlight: "Shallow & deep foundations, pile groups, settlement" },
     ],
   },
   {
@@ -1227,7 +2005,7 @@ export const CE_LEARN_SYLLABUS: LearnSyllabusSection[] = [
     summary: "Fluid mechanics, hydrology and the engineering of irrigation systems.",
     subtopics: [
       { title: "Fluid Mechanics & Flow", slug: "ce-wr-fluid-mechanics", highlight: "Continuity, Bernoulli, hydrostatics, Manning flow" },
-      { title: "Flow Through Pipes", highlight: "Darcy–Weisbach, major & minor losses, networks" },
+      { title: "Flow Through Pipes", slug: "ce-wr-pipe-flow", highlight: "Darcy–Weisbach, major & minor losses, networks" },
       { title: "Open Channel Flow", slug: "ce-wr-open-channel", highlight: "Specific energy, critical flow, hydraulic jump" },
       { title: "Hydrology & Irrigation", slug: "ce-wr-hydrology-irrigation", highlight: "Rational method, unit hydrograph, duty–delta" },
     ],
@@ -1238,9 +2016,9 @@ export const CE_LEARN_SYLLABUS: LearnSyllabusSection[] = [
     summary: "Water supply, wastewater, air and noise — protecting public health.",
     subtopics: [
       { title: "Water Demand, Treatment & BOD", slug: "ce-en-water-wastewater", highlight: "Per-capita demand, sedimentation, disinfection, BOD kinetics" },
-      { title: "Wastewater Treatment", highlight: "Primary, secondary & tertiary processes; sludge" },
-      { title: "Air Pollution", highlight: "Primary & secondary pollutants, control, standards" },
-      { title: "Solid Waste & Noise", highlight: "MSW management, decibel addition, exposure limits" },
+      { title: "Wastewater Treatment", slug: "ce-en-wastewater", highlight: "Primary, secondary & tertiary processes; sludge" },
+      { title: "Air Pollution", slug: "ce-en-air-pollution", highlight: "Primary & secondary pollutants, control, standards" },
+      { title: "Solid Waste & Noise", slug: "ce-en-solid-waste-noise", highlight: "MSW management, decibel addition, exposure limits" },
     ],
   },
   {
@@ -1249,9 +2027,9 @@ export const CE_LEARN_SYLLABUS: LearnSyllabusSection[] = [
     summary: "Geometric design, traffic flow and pavement engineering.",
     subtopics: [
       { title: "Highway Geometric Design", slug: "ce-tr-geometric-design", highlight: "Sight distance, superelevation, traffic flow relation" },
-      { title: "Traffic Engineering", highlight: "Speed studies, capacity, signal design, PCU" },
+      { title: "Traffic Engineering", slug: "ce-tr-traffic", highlight: "Speed studies, capacity, signal design, PCU" },
       { title: "Pavement Design", slug: "ce-tr-pavement", highlight: "Flexible & rigid pavements, CBR, Westergaard" },
-      { title: "Highway Materials", highlight: "Aggregates, bitumen tests, mix design" },
+      { title: "Highway Materials", slug: "ce-tr-highway-materials", highlight: "Aggregates, bitumen tests, mix design" },
     ],
   },
   {
@@ -1260,9 +2038,9 @@ export const CE_LEARN_SYLLABUS: LearnSyllabusSection[] = [
     summary: "Surveying, levelling and modern positioning systems.",
     subtopics: [
       { title: "Levelling & Tacheometry", slug: "ce-gm-levelling-tacheometry", highlight: "HI method, stadia distance, curve geometry" },
-      { title: "Theodolite & Traverse", highlight: "Angles, bearings, latitude & departure, closing error" },
-      { title: "Curves", highlight: "Simple, compound, transition & vertical curves" },
-      { title: "Modern Surveying", highlight: "Total station, GPS/GNSS, GIS & remote sensing" },
+      { title: "Theodolite & Traverse", slug: "ce-gm-theodolite-traverse", highlight: "Angles, bearings, latitude & departure, closing error" },
+      { title: "Curves", slug: "ce-gm-curves", highlight: "Simple, compound, transition & vertical curves" },
+      { title: "Modern Surveying", slug: "ce-gm-modern-surveying", highlight: "Total station, GPS/GNSS, GIS & remote sensing" },
     ],
   },
 ];
