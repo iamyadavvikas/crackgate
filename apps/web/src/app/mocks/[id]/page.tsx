@@ -1,31 +1,41 @@
 import { notFound, redirect } from "next/navigation";
-import { MOCKS } from "@/data/mocks";
 import { ExamPortal } from "@/components/exam-portal";
 import { auth } from "@/lib/auth";
+import { resolveMock, allMockIds } from "@/lib/mock-registry";
+import { hasEntitlement } from "@/lib/entitlements";
 
 type Plan = "free" | "pro" | "premium";
 type Tier = "free" | "subject" | "premium";
 
-function canAccess(tier: Tier, plan: Plan): boolean {
+function canAccessPlan(tier: Tier, plan: Plan): boolean {
   if (tier === "free") return true;
-  // Mocks are a Premium-only feature. Pro gets practice + the free Mock 1 only.
+  // GATE mocks are a Premium-only feature. Pro gets practice + the free Mock 1.
   return plan === "premium";
 }
 
 export default async function MockPage(props: { params: Promise<{ id: string }> }) {
   const { id } = await props.params;
-  const m = MOCKS.find((x) => x.id === id) as
-    | { id: string; title: string; tier: Tier; duration?: number; questions: unknown[] }
-    | undefined;
+  const m = resolveMock(id);
   if (!m) notFound();
 
-  // Server-side plan gate: don't let a free user spend an hour on a premium
-  // mock just to be 402'd at submission. Middleware already enforces auth.
+  // Server-side access gate: don't let a user spend an hour on a locked mock
+  // just to be 402'd at submission. Middleware already enforces auth.
   const session = await auth();
-  const plan = ((session?.user as { plan?: Plan } | undefined)?.plan) ?? "free";
+  const uid = (session?.user as { id?: string } | undefined)?.id ?? "";
   const isAdmin = (session?.user as { role?: string } | undefined)?.role === "admin";
-  if (!canAccess(m.tier, plan) && !isAdmin) {
-    redirect(`/pricing?gated=${m.id}&requires=premium`);
+
+  if (!isAdmin) {
+    if (m.gate.type === "plan") {
+      const plan = ((session?.user as { plan?: Plan } | undefined)?.plan) ?? "free";
+      if (!canAccessPlan(m.gate.tier, plan)) {
+        redirect(`/pricing?gated=${m.id}&requires=premium`);
+      }
+    } else {
+      const ok = await hasEntitlement(uid, m.gate.exam, m.gate.subject);
+      if (!ok) {
+        redirect(`/pay/upi?plan=pro&exam=PSU&subject=${m.gate.subject}`);
+      }
+    }
   }
 
   return (
@@ -34,11 +44,12 @@ export default async function MockPage(props: { params: Promise<{ id: string }> 
       refId={m.id}
       title={m.title}
       questions={m.questions as never}
-      durationSec={(m.duration ?? 180) * 60}
+      durationSec={m.durationSec}
     />
   );
 }
 
 export function generateStaticParams() {
-  return MOCKS.map((m) => ({ id: m.id }));
+  return allMockIds().map((id) => ({ id }));
 }
+

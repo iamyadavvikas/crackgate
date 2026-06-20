@@ -37,7 +37,14 @@ function isAnswered(a: AnswerMap[number]) {
   return true;
 }
 
-export function grade(questions: Question[], answers: AnswerMap) {
+export function grade(
+  questions: Question[],
+  answers: AnswerMap,
+  opts: { negativeMarking?: boolean } = {},
+) {
+  // GATE applies −marks/3 on a wrong MCQ; CIL MT (and other PSU CBTs) have
+  // no negative marking. Default true preserves the existing GATE behaviour.
+  const negativeMarking = opts.negativeMarking ?? true;
   let correct = 0,
     wrong = 0,
     skipped = 0,
@@ -73,7 +80,7 @@ export function grade(questions: Question[], answers: AnswerMap) {
       perSubject[q.subject].scored += q.marks;
     } else {
       wrong++;
-      if (q.type === "MCQ") {
+      if (q.type === "MCQ" && negativeMarking) {
         scored -= q.marks / 3; // GATE negative marking
         perSubject[q.subject].scored -= q.marks / 3;
       }

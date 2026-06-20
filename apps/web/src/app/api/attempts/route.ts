@@ -1,9 +1,10 @@
 import { auth } from "@/lib/auth";
 import { db } from "@/lib/db";
-import { grade, type Question, type AnswerMap } from "@/lib/grading";
+import { grade, type AnswerMap } from "@/lib/grading";
 import { NextResponse } from "next/server";
 import { z } from "zod";
-import { MOCKS } from "@/data/mocks";
+import { resolveMock } from "@/lib/mock-registry";
+import { hasEntitlement } from "@/lib/entitlements";
 
 const SubmitSchema = z.object({
   kind: z.enum(["mock"]),
@@ -13,11 +14,6 @@ const SubmitSchema = z.object({
   ])),
   durationSec: z.number().int().nonnegative().max(60 * 60 * 6),
 });
-
-function loadBank(kind: "mock", refId: string): { title: string; questions: Question[] } | null {
-  const m = MOCKS.find((x) => x.id === refId);
-  return m ? { title: m.title, questions: m.questions as unknown as Question[] } : null;
-}
 
 export async function GET() {
   const session = await auth();
@@ -40,25 +36,26 @@ export async function POST(req: Request) {
   const parsed = SubmitSchema.safeParse(await req.json());
   if (!parsed.success) return NextResponse.json({ error: parsed.error.flatten() }, { status: 400 });
 
-  const bank = loadBank(parsed.data.kind, parsed.data.refId);
+  const bank = resolveMock(parsed.data.refId);
   if (!bank) return NextResponse.json({ error: "unknown refId" }, { status: 404 });
 
-  // Plan-gate: free users (and Pro) can take only `free`-tier mocks. The full
-  // mock series (subject + premium tiers) is Premium-only. Source of truth is
-  // the tier on the mock itself, never a hard-coded id list.
-  const me = await db.user.findUnique({ where: { id: session.user.id }, select: { plan: true } });
-  const plan = me?.plan ?? "free";
-  // Founders (admins) bypass the submission plan-gate, mirroring the page gates.
+  // Access gate: mirror the runner page. GATE mocks are plan-gated (Premium-only
+  // beyond the free tier); CIL MT sets are gated by a per-discipline PSU
+  // entitlement. Founders (admins) bypass both.
   const isAdmin = (session.user as { role?: string }).role === "admin";
-  {
-    const m = MOCKS.find((x) => x.id === parsed.data.refId) as { tier?: "free" | "subject" | "premium" } | undefined;
-    const tier = m?.tier ?? "premium";
-    const allowed =
-      isAdmin ||
-      tier === "free" ||
-      plan === "premium";
-    if (!allowed) {
-      return NextResponse.json({ error: "upgrade_required", requires: "premium" }, { status: 402 });
+  if (!isAdmin) {
+    if (bank.gate.type === "plan") {
+      const me = await db.user.findUnique({ where: { id: session.user.id }, select: { plan: true } });
+      const plan = me?.plan ?? "free";
+      const allowed = bank.gate.tier === "free" || plan === "premium";
+      if (!allowed) {
+        return NextResponse.json({ error: "upgrade_required", requires: "premium" }, { status: 402 });
+      }
+    } else {
+      const ok = await hasEntitlement(session.user.id, bank.gate.exam, bank.gate.subject);
+      if (!ok) {
+        return NextResponse.json({ error: "upgrade_required", requires: "entitlement", subject: bank.gate.subject }, { status: 402 });
+      }
     }
   }
 
@@ -69,7 +66,8 @@ export async function POST(req: Request) {
     if (!Number.isNaN(i)) answersByIdx[i] = v;
   }
 
-  const result = grade(bank.questions, answersByIdx);
+  // CIL MT has no negative marking; GATE mocks do. The registry carries the rule.
+  const result = grade(bank.questions, answersByIdx, { negativeMarking: bank.negativeMarking });
 
   const att = await db.attempt.create({
     data: {
