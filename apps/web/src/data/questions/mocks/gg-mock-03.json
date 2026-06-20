@@ -1,0 +1,1093 @@
+{
+  "id": "gg-mock-03",
+  "title": "GG Mock 03 — Mineralogy & Crystallography",
+  "tier": "subject",
+  "duration": 180,
+  "pattern": "GATE 2027 GG (65 Q · 100 marks · 3 hours)",
+  "totalMarks": 100,
+  "sections": [
+    {
+      "name": "General Aptitude",
+      "count": 10,
+      "marks": 15
+    },
+    {
+      "name": "Technical (1-mark)",
+      "count": 25,
+      "marks": 25
+    },
+    {
+      "name": "Technical (2-mark)",
+      "count": 30,
+      "marks": 60
+    }
+  ],
+  "negativeMarking": {
+    "mcq1": -0.3333333333333333,
+    "mcq2": -0.6666666666666666,
+    "nat": 0,
+    "msq": 0
+  },
+  "seed": 1333606470,
+  "locked": false,
+  "questions": [
+    {
+      "id": 1,
+      "subject": "General Aptitude",
+      "topic": "Verbal Aptitude — Grammar",
+      "section": "General Aptitude",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "Choose the best connective: '____ the equipment was old, it functioned reliably.'",
+      "options": [
+        "Although",
+        "Because",
+        "Unless",
+        "So"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** A contrast between two clauses is introduced by a concessive conjunction.\n\n**Working.** Old equipment working reliably is unexpected, so a contrast word ('Although') is needed; 'Because' would imply causation.\n\n**Answer.** Although."
+    },
+    {
+      "id": 2,
+      "subject": "General Aptitude",
+      "topic": "Quantitative Aptitude — Percentage",
+      "section": "General Aptitude",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "What is $35\\%$ of $240$?",
+      "answer": 84,
+      "tolerance": 0.01,
+      "solution": "**Concept.** Percent means parts per hundred.\n\n**Working.**\n$$\\frac{35}{100}\\times 240 = 84$$\n\n**Answer.** $84$."
+    },
+    {
+      "id": 3,
+      "subject": "General Aptitude",
+      "topic": "Data Interpretation",
+      "section": "General Aptitude",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "Compute the average of the four bar values shown: $4, 6, 8, 10$.",
+      "answer": 7,
+      "tolerance": 0.1,
+      "figure": {
+        "kind": "svg",
+        "caption": "Bar chart of four values",
+        "markup": "<svg viewBox='0 0 220 150' xmlns='http://www.w3.org/2000/svg'><line x1='30' y1='120' x2='210' y2='120' stroke='#475569'/><g fill='#bfdbfe' stroke='#475569'><rect x='45' y='90' width='25' height='30'/><rect x='85' y='75' width='25' height='45'/><rect x='125' y='60' width='25' height='60'/><rect x='165' y='45' width='25' height='75'/></g><text x='55' y='138' font-size='8'>4, 6, 8, 10</text></svg>"
+      },
+      "solution": "**Concept.** Average $=\\dfrac{\\sum x}{n}$.\n\n**Working.**\n$$\\bar{x}=\\frac{4+6+8+10}{4}=\\frac{28}{4}=7$$\n\n**Answer.** $7$."
+    },
+    {
+      "id": 4,
+      "subject": "General Aptitude",
+      "topic": "Verbal Aptitude — Analogy",
+      "section": "General Aptitude",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "MINER : ORE :: FARMER : ?",
+      "options": [
+        "crop",
+        "tractor",
+        "field",
+        "barn"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** The relationship is 'worker : product extracted/produced'.\n\n**Working.** A miner extracts ore; a farmer produces a crop. A tractor and field are tools/locations, not products.\n\n**Answer.** crop."
+    },
+    {
+      "id": 5,
+      "subject": "General Aptitude",
+      "topic": "Spatial Reasoning",
+      "section": "General Aptitude",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "On the clock face shown, the time is $3{:}00$. Compute the smaller angle between the hour and minute hands (degrees).",
+      "answer": 90,
+      "tolerance": 0.5,
+      "figure": {
+        "kind": "svg",
+        "caption": "Clock at 3:00",
+        "markup": "<svg viewBox='0 0 170 175' xmlns='http://www.w3.org/2000/svg'><circle cx='85' cy='80' r='60' fill='#e5e7eb' stroke='#475569'/><line x1='85' y1='80' x2='85' y2='28' stroke='#1f2937' stroke-width='3'/><line x1='85' y1='80' x2='133' y2='80' stroke='#dc2626' stroke-width='2'/><text x='55' y='160' font-size='8'>time = 3:00</text></svg>"
+      },
+      "solution": "**Concept.** Each hour mark is $30^\\circ$ apart.\n\n**Working.**\n$$3\\text{ hours}\\times30^\\circ=90^\\circ$$\n\n**Answer.** $90^\\circ$."
+    },
+    {
+      "id": 6,
+      "subject": "General Aptitude",
+      "topic": "Verbal Aptitude — Vocabulary",
+      "section": "General Aptitude",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "Choose the correct word: 'The blast had a serious ____ on the surrounding structures.'",
+      "options": [
+        "effect",
+        "affect",
+        "aspect",
+        "accept"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** 'Effect' is the noun (a result); 'affect' is usually the verb (to influence).\n\n**Working.** A noun is needed after 'a serious', so 'effect' is correct.\n\n**Answer.** effect."
+    },
+    {
+      "id": 7,
+      "subject": "General Aptitude",
+      "topic": "Quantitative Aptitude — Data Interpretation",
+      "section": "General Aptitude",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "A monthly budget of $3600$ is split as Labour $25\\%$, Material $40\\%$, Equipment $20\\%$ and Other $15\\%$ (see pie chart). The amount spent on Labour is",
+      "options": [
+        "900",
+        "1200",
+        "720",
+        "600"
+      ],
+      "answer": 0,
+      "figure": {
+        "kind": "svg",
+        "caption": "Pie chart of a 3600 budget: Labour 25%, Material 40%, Equipment 20%, Other 15%.",
+        "markup": "<svg viewBox='0 0 230 190' xmlns='http://www.w3.org/2000/svg' role='img'><circle cx='110' cy='90' r='70' fill='none' stroke='#94a3b8' stroke-width='1'/><line x1='110' y1='90' x2='180' y2='90' stroke='#334155' stroke-width='1'/><line x1='110' y1='90' x2='110' y2='20' stroke='#334155' stroke-width='1'/><line x1='110' y1='90' x2='69' y2='147' stroke='#334155' stroke-width='1'/><line x1='110' y1='90' x2='151' y2='147' stroke='#334155' stroke-width='1'/><text x='130' y='60' font-size='10' fill='#6366f1'>Labour 25%</text><text x='40' y='70' font-size='10' fill='#10b981'>Material 40%</text><text x='70' y='165' font-size='10' fill='#f59e0b'>Equip 20%</text><text x='150' y='130' font-size='10' fill='#ef4444'>Other 15%</text></svg>"
+      },
+      "solution": "**Concept.** Sector amount = percentage of the total.\n\n**Working.** $25\\%$ of $3600 = 0.25\\times 3600 = 900$.\n\n**Answer.** $900$."
+    },
+    {
+      "id": 8,
+      "subject": "General Aptitude",
+      "topic": "Quantitative Aptitude — Time and Work",
+      "section": "General Aptitude",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "A can complete a task in $10$ days and B in $15$ days. Working together, they complete it in _____ days.",
+      "answer": 6,
+      "tolerance": 0.01,
+      "solution": "**Concept.** Combined rate is the sum of individual rates.\n\n**Working.** $\\dfrac{1}{10}+\\dfrac{1}{15}=\\dfrac{3+2}{30}=\\dfrac{5}{30}=\\dfrac{1}{6}$, so $6$ days.\n\n**Answer.** $6$ days."
+    },
+    {
+      "id": 9,
+      "subject": "General Aptitude",
+      "topic": "Quantitative Aptitude — Geometry",
+      "section": "General Aptitude",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "Two parallel lines are cut by a transversal. If one interior angle is $70^\\circ$ (see figure), its co-interior (same-side) angle is",
+      "options": [
+        "110°",
+        "70°",
+        "90°",
+        "180°"
+      ],
+      "answer": 0,
+      "figure": {
+        "kind": "svg",
+        "caption": "Two parallel lines crossed by a transversal; one interior angle is marked 70 degrees.",
+        "markup": "<svg viewBox='0 0 220 170' xmlns='http://www.w3.org/2000/svg' role='img'><line x1='20' y1='60' x2='200' y2='60' stroke='#6366f1' stroke-width='2'/><line x1='20' y1='120' x2='200' y2='120' stroke='#6366f1' stroke-width='2'/><line x1='60' y1='30' x2='160' y2='150' stroke='#334155' stroke-width='2'/><text x='95' y='78' font-size='11' fill='#ef4444'>70</text><text x='118' y='112' font-size='11' fill='#10b981'>?</text></svg>"
+      },
+      "solution": "**Concept.** Co-interior (same-side interior) angles between parallel lines are supplementary.\n\n**Working.** $180^\\circ-70^\\circ=110^\\circ$.\n\n**Answer.** $110^\\circ$."
+    },
+    {
+      "id": 10,
+      "subject": "General Aptitude",
+      "topic": "Verbal Aptitude — Reading Comprehension",
+      "section": "General Aptitude",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "Read the passage and answer.\n\n'Acid mine drainage occurs when sulphide minerals react with water and oxygen. The resulting acidic water can dissolve heavy metals, contaminating nearby streams long after a mine has closed.'\n\nAccording to the passage, acid mine drainage:",
+      "options": [
+        "can continue to pollute water even after mining stops",
+        "occurs only while a mine is operating",
+        "is caused by the complete absence of oxygen",
+        "neutralises heavy metals in water"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Match the option to the explicit wording of the passage.\n\n**Working.** The text states contamination persists 'long after a mine has closed', so pollution can continue post-closure. Oxygen is required (not absent), and metals are dissolved (not neutralised).\n\n**Answer.** can continue to pollute water even after mining stops."
+    },
+    {
+      "id": 11,
+      "subject": "Palaeontology",
+      "topic": "Taxon Range",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A taxon's first appearance is at $201\\,$Ma and last appearance at $23\\,$Ma. Its stratigraphic range is _____ Myr.",
+      "answer": 178,
+      "tolerance": 0.1,
+      "solution": "**Concept.** Range = FAD − LAD.\n\n**Working.**\n$$201-23=178.$$\n\n**Answer.** $178\\,$Myr"
+    },
+    {
+      "id": 12,
+      "subject": "Structural Geology",
+      "topic": "Faults",
+      "section": "Technical (1-mark)",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A reverse fault forms under a stress regime in which",
+      "options": [
+        "$\\sigma_1$ is horizontal and $\\sigma_3$ is vertical",
+        "$\\sigma_1$ is vertical and $\\sigma_3$ is horizontal",
+        "all principal stresses are equal",
+        "$\\sigma_2$ is vertical and largest"
+      ],
+      "answer": 0,
+      "figure": {
+        "kind": "mohr",
+        "sigma1": 120,
+        "sigma3": 30,
+        "caption": "Compressional stress state"
+      },
+      "solution": "**Concept.** Andersonian theory: reverse (thrust) faulting has horizontal $\\sigma_1$, vertical $\\sigma_3$.\n\n**Working.**\nHorizontal $\\sigma_1$.\n\n**Answer.** $\\sigma_1$ horizontal"
+    },
+    {
+      "id": 13,
+      "subject": "Metamorphic Petrology",
+      "topic": "Contact",
+      "section": "Technical (1-mark)",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A non-foliated, fine-grained rock formed by contact metamorphism of pelite is",
+      "options": [
+        "hornfels",
+        "schist",
+        "gneiss",
+        "phyllite"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Contact (thermal) metamorphism of mudrock yields hornfels (non-foliated).\n\n**Working.**\nHornfels.\n\n**Answer.** Hornfels"
+    },
+    {
+      "id": 14,
+      "subject": "Structural Geology",
+      "topic": "Conjugate Faults",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "For a rock with internal friction angle $\\phi=35^\\circ$, conjugate shear (fault) planes form at _____ degrees to $\\sigma_1$.",
+      "answer": 27.5,
+      "tolerance": 0.1,
+      "figure": {
+        "kind": "mohr",
+        "sigma1": 100,
+        "sigma3": 20,
+        "phi": 35,
+        "cohesion": 10,
+        "caption": "Failure envelope, φ=35°"
+      },
+      "solution": "**Concept.** Coulomb: shear planes at $45^\\circ-\\phi/2$ to $\\sigma_1$.\n\n**Working.**\n$$45-35/2=27.5.$$\n\n**Answer.** $27.5^\\circ$"
+    },
+    {
+      "id": 15,
+      "subject": "Earth System & Geomorphology",
+      "topic": "Stream Gradient",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A stream falls $100\\,$m over $50\\,$km. Its gradient is _____ m/km.",
+      "answer": 2,
+      "tolerance": 0.05,
+      "solution": "**Concept.** Gradient = drop / length.\n\n**Working.**\n$$100/50=2.$$\n\n**Answer.** $2\\,$m/km"
+    },
+    {
+      "id": 16,
+      "subject": "Earth System & Geomorphology",
+      "topic": "Lithostatic Pressure",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Crustal density $2.7\\,$g/cm³, depth $3\\,$km. The lithostatic pressure ($P=\\rho g h$) is _____ MPa.",
+      "answer": 79.461,
+      "tolerance": 1,
+      "solution": "**Concept.** $P=\\rho g h$.\n\n**Working.**\n$$2.7\\times10^3\\times9.81\\times3\\times10^3/10^6=79.5.$$\n\n**Answer.** $79.5\\,$MPa"
+    },
+    {
+      "id": 17,
+      "subject": "Sedimentology & Sedimentary Petrology",
+      "topic": "Pore Volume",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A rock of porosity $0.3$ has bulk volume $200\\,$cm³. The pore volume is _____ cm³.",
+      "answer": 60,
+      "tolerance": 0.5,
+      "solution": "**Concept.** $V_{pore}=\\phi V_{bulk}$.\n\n**Working.**\n$$0.3\\times200=60.$$\n\n**Answer.** $60\\,$cm³"
+    },
+    {
+      "id": 18,
+      "subject": "Structural Geology",
+      "topic": "Mohr — Centre",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "For $\\sigma_1=120$ and $\\sigma_3=50\\,$MPa, the mean stress (centre of Mohr circle) is _____ MPa.",
+      "answer": 85,
+      "tolerance": 0.1,
+      "figure": {
+        "kind": "mohr",
+        "sigma1": 120,
+        "sigma3": 50,
+        "caption": "σ₁=120, σ₃=50 MPa"
+      },
+      "solution": "**Concept.** Centre $=(\\sigma_1+\\sigma_3)/2$.\n\n**Working.**\n$$\\dfrac{120+50}{2}=85.$$\n\n**Answer.** $85\\,$MPa"
+    },
+    {
+      "id": 19,
+      "subject": "Earth System & Geomorphology",
+      "topic": "Lithostatic Pressure",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Crustal density $2.67\\,$g/cm³, depth $4\\,$km. The lithostatic pressure ($P=\\rho g h$) is _____ MPa.",
+      "answer": 104.7708,
+      "tolerance": 1,
+      "solution": "**Concept.** $P=\\rho g h$.\n\n**Working.**\n$$2.67\\times10^3\\times9.81\\times4\\times10^3/10^6=104.8.$$\n\n**Answer.** $104.8\\,$MPa"
+    },
+    {
+      "id": 20,
+      "subject": "Mineralogy & Crystallography",
+      "topic": "d-spacing (cubic)",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A cubic mineral has $a=5.64\\,$Å. The interplanar spacing $d_{211}$ is _____ Å.",
+      "answer": 2.3025203582161873,
+      "tolerance": 0.01,
+      "solution": "**Concept.** $d_{hkl}=a/\\sqrt{h^2+k^2+l^2}$.\n\n**Working.**\n$$\\dfrac{5.64}{\\sqrt{2^2+1^2+1^2}}=2.303.$$\n\n**Answer.** $2.303\\,$Å"
+    },
+    {
+      "id": 21,
+      "subject": "Stratigraphy & Indian Geology",
+      "topic": "Unconformity Gap",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Beds of $1600\\,$Ma are overlain unconformably by beds of $750\\,$Ma. The hiatus is _____ Myr.",
+      "answer": 850,
+      "tolerance": 0.1,
+      "solution": "**Concept.** Hiatus = older − younger age.\n\n**Working.**\n$$1600-750=850.$$\n\n**Answer.** $850\\,$Myr"
+    },
+    {
+      "id": 22,
+      "subject": "Palaeontology",
+      "topic": "Trilobites",
+      "section": "Technical (1-mark)",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Trilobites are an extinct class of arthropods that were most abundant in the",
+      "options": [
+        "Paleozoic",
+        "Mesozoic",
+        "Cenozoic",
+        "Quaternary"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Trilobites flourished in the Paleozoic and died out at the end-Permian.\n\n**Working.**\nPaleozoic.\n\n**Answer.** Paleozoic"
+    },
+    {
+      "id": 23,
+      "subject": "Stratigraphy & Indian Geology",
+      "topic": "Sedimentation Rate",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A $1000\\,$m sequence accumulated at $5\\,$m/Myr. The time represented is _____ Myr.",
+      "answer": 200,
+      "tolerance": 0.1,
+      "solution": "**Concept.** $t=\\text{thickness}/\\text{rate}$.\n\n**Working.**\n$$1000/5=200.$$\n\n**Answer.** $200\\,$Myr"
+    },
+    {
+      "id": 24,
+      "subject": "Mineralogy & Crystallography",
+      "topic": "d-spacing (cubic)",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A cubic mineral has $a=4\\,$Å. The interplanar spacing $d_{200}$ is _____ Å.",
+      "answer": 2,
+      "tolerance": 0.01,
+      "solution": "**Concept.** $d_{hkl}=a/\\sqrt{h^2+k^2+l^2}$.\n\n**Working.**\n$$\\dfrac{4}{\\sqrt{2^2+0^2+0^2}}=2.$$\n\n**Answer.** $2\\,$Å"
+    },
+    {
+      "id": 25,
+      "subject": "Sedimentology & Sedimentary Petrology",
+      "topic": "Phi Grain Size",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A sediment grain is $2\\,$mm in diameter. Its phi ($\\phi$) value is _____.",
+      "answer": -1,
+      "tolerance": 0.05,
+      "solution": "**Concept.** $\\phi=-\\log_2 d_{mm}$.\n\n**Working.**\n$$-\\log_2(2)=-1.$$\n\n**Answer.** $-1$"
+    },
+    {
+      "id": 26,
+      "subject": "Applied Geology · Remote Sensing & GIS",
+      "topic": "Photo Scale",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "An aerial camera (focal length $150\\,$mm) flies at $5000\\,$m above terrain. The photo scale denominator ($H/f$) is _____.",
+      "answer": 33333.333333333336,
+      "tolerance": 5,
+      "solution": "**Concept.** Scale $=f/H$; denominator $=H/f$.\n\n**Working.**\n$$\\dfrac{5000\\times10^3}{150}=33333.$$\n\n**Answer.** $1:33333$"
+    },
+    {
+      "id": 27,
+      "subject": "Engineering & Environmental Geology",
+      "topic": "RQD",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "In a $200\\,$cm core run, the total length of intact pieces $\\geq 10\\,$cm is $130\\,$cm. The RQD is _____ %.",
+      "answer": 65,
+      "tolerance": 0.1,
+      "solution": "**Concept.** RQD $=\\dfrac{\\sum(\\text{pieces}\\geq10\\,cm)}{\\text{run length}}\\times100$.\n\n**Working.**\n$$\\dfrac{130}{200}\\times100=65.$$\n\n**Answer.** $65\\%$"
+    },
+    {
+      "id": 28,
+      "subject": "Metamorphic Petrology",
+      "topic": "Field Gradient",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Two isograds $15\\,$km apart record a temperature difference of $200\\,^\\circ$C. The implied gradient is _____ $^\\circ$C/km.",
+      "answer": 13.333333333333334,
+      "tolerance": 0.1,
+      "solution": "**Concept.** Gradient $=\\Delta T/\\Delta z$.\n\n**Working.**\n$$200/15=13.33.$$\n\n**Answer.** $13.33\\,^\\circ$C/km"
+    },
+    {
+      "id": 29,
+      "subject": "Earth System & Geomorphology",
+      "topic": "Stream Discharge",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A river carries $200\\,$m³/s through a channel $20\\,$m wide and $3\\,$m deep. The mean velocity is _____ m/s.",
+      "answer": 3.3333333333333335,
+      "tolerance": 0.05,
+      "solution": "**Concept.** $Q=A v=wdv$.\n\n**Working.**\n$$\\dfrac{200}{20\\times3}=3.33.$$\n\n**Answer.** $3.33\\,$m/s"
+    },
+    {
+      "id": 30,
+      "subject": "Mineralogy & Crystallography",
+      "topic": "d-spacing (cubic)",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A cubic mineral has $a=4.5\\,$Å. The interplanar spacing $d_{200}$ is _____ Å.",
+      "answer": 2.25,
+      "tolerance": 0.01,
+      "solution": "**Concept.** $d_{hkl}=a/\\sqrt{h^2+k^2+l^2}$.\n\n**Working.**\n$$\\dfrac{4.5}{\\sqrt{2^2+0^2+0^2}}=2.25.$$\n\n**Answer.** $2.25\\,$Å"
+    },
+    {
+      "id": 31,
+      "subject": "Structural Geology",
+      "topic": "Dip Direction",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A bed strikes $45^\\circ$ (right-hand rule) and dips $60^\\circ$. The dip direction (azimuth) is _____ degrees.",
+      "answer": 135,
+      "tolerance": 0.1,
+      "figure": {
+        "kind": "stereonet",
+        "planes": [
+          {
+            "strike": 45,
+            "dip": 60,
+            "label": "45°/60°"
+          }
+        ],
+        "caption": "Plane on stereonet"
+      },
+      "solution": "**Concept.** Dip direction = strike + 90° (right-hand rule).\n\n**Working.**\n$$45+90=135.$$\n\n**Answer.** $135^\\circ$"
+    },
+    {
+      "id": 32,
+      "subject": "Mathematics & Geostatistics",
+      "topic": "Vector Divergence",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The divergence of $\\vec F=6x\\,\\hat i+6y\\,\\hat j+5z\\,\\hat k$ is _____.",
+      "answer": 17,
+      "tolerance": 0.001,
+      "solution": "**Concept.** $\\nabla\\cdot\\vec F=\\partial_xF_x+\\partial_yF_y+\\partial_zF_z$.\n\n**Working.**\n$$6+6+5=17.$$\n\n**Answer.** $17$"
+    },
+    {
+      "id": 33,
+      "subject": "Mineralogy & Crystallography",
+      "topic": "d-spacing (cubic)",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A cubic mineral has $a=4\\,$Å. The interplanar spacing $d_{111}$ is _____ Å.",
+      "answer": 2.3094010767585034,
+      "tolerance": 0.01,
+      "solution": "**Concept.** $d_{hkl}=a/\\sqrt{h^2+k^2+l^2}$.\n\n**Working.**\n$$\\dfrac{4}{\\sqrt{1^2+1^2+1^2}}=2.309.$$\n\n**Answer.** $2.309\\,$Å"
+    },
+    {
+      "id": 34,
+      "subject": "Structural Geology",
+      "topic": "Extensional Strain",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A marker bed of original length $100\\,$m is stretched to $130\\,$m. The extension (elongation) is _____ %.",
+      "answer": 30,
+      "tolerance": 0.1,
+      "solution": "**Concept.** $e=\\dfrac{l_1-l_0}{l_0}\\times100$.\n\n**Working.**\n$$\\dfrac{130-100}{100}\\times100=30.$$\n\n**Answer.** $30\\%$"
+    },
+    {
+      "id": 35,
+      "subject": "Applied Geology · Remote Sensing & GIS",
+      "topic": "Photo Scale",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "An aerial camera (focal length $300\\,$mm) flies at $8000\\,$m above terrain. The photo scale denominator ($H/f$) is _____.",
+      "answer": 26666.666666666668,
+      "tolerance": 5,
+      "solution": "**Concept.** Scale $=f/H$; denominator $=H/f$.\n\n**Working.**\n$$\\dfrac{8000\\times10^3}{300}=26667.$$\n\n**Answer.** $1:26667$"
+    },
+    {
+      "id": 36,
+      "subject": "Structural Geology",
+      "topic": "Principal Stress Orientation",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "At a point $\\sigma_x=100$, $\\sigma_y=20$, $\\tau_{xy}=20\\,$MPa. The angle $\\theta_p$ of $\\sigma_1$ from the x-axis is _____ degrees.",
+      "answer": 13.282525588538995,
+      "tolerance": 0.3,
+      "figure": {
+        "kind": "stress-block",
+        "sx": 100,
+        "sy": 20,
+        "txy": 20,
+        "caption": "σx=100, σy=20, τxy=20 MPa"
+      },
+      "solution": "**Concept.** $\\tan2\\theta_p=\\dfrac{2\\tau_{xy}}{\\sigma_x-\\sigma_y}$.\n\n**Working.**\n$$\\theta_p=\\tfrac12\\tan^{-1}\\dfrac{2(20)}{100-20}=13.28^\\circ.$$\n\n**Answer.** $13.28^\\circ$"
+    },
+    {
+      "id": 37,
+      "subject": "Structural Geology",
+      "topic": "Apparent Dip",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "A bed has a true dip of $60^\\circ$. In a vertical cross-section making an angle of $60^\\circ$ with the strike, the apparent dip is _____ degrees.",
+      "answer": 56.3099324740202,
+      "tolerance": 0.2,
+      "figure": {
+        "kind": "stereonet",
+        "planes": [
+          {
+            "strike": 0,
+            "dip": 60,
+            "label": "Bed: strike 000°, dip 60°"
+          }
+        ],
+        "caption": "Plane dipping 60°; section at 60° to strike"
+      },
+      "solution": "**Concept.** $\\tan\\delta_{app}=\\tan\\delta_{true}\\sin\\beta$.\n\n**Working.**\n$$\\tan^{-1}(\\tan60^\\circ\\sin60^\\circ)=56.31^\\circ.$$\n\n**Answer.** $56.31^\\circ$"
+    },
+    {
+      "id": 38,
+      "subject": "Structural Geology",
+      "topic": "Minor Principal Stress",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "At a point $\\sigma_x=90$, $\\sigma_y=10$, $\\tau_{xy}=20\\,$MPa. The minor principal stress $\\sigma_3$ is _____ MPa.",
+      "answer": 5.278640450004204,
+      "tolerance": 0.2,
+      "figure": {
+        "kind": "stress-block",
+        "sx": 90,
+        "sy": 10,
+        "txy": 20,
+        "caption": "σx=90, σy=10, τxy=20 MPa"
+      },
+      "solution": "**Concept.** $\\sigma_3=\\dfrac{\\sigma_x+\\sigma_y}{2}-\\sqrt{(\\tfrac{\\sigma_x-\\sigma_y}{2})^2+\\tau_{xy}^2}$.\n\n**Working.**\n$$50-\\sqrt{40^2+20^2}=5.28.$$\n\n**Answer.** $5.28\\,$MPa"
+    },
+    {
+      "id": 39,
+      "subject": "Engineering & Environmental Geology",
+      "topic": "Joint Shear Strength",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "A discontinuity ($c=20\\,$kPa, $\\phi=30^\\circ$) carries normal stress $60\\,$kPa. Its peak shear strength is _____ kPa.",
+      "answer": 54.64101615137754,
+      "tolerance": 1,
+      "figure": {
+        "kind": "mohr",
+        "sigma1": 102,
+        "sigma3": 18,
+        "phi": 30,
+        "cohesion": 20,
+        "caption": "c=20 kPa, φ=30°"
+      },
+      "solution": "**Concept.** $\\tau=c+\\sigma_n\\tan\\phi$.\n\n**Working.**\n$$20+60\\tan30^\\circ=54.6.$$\n\n**Answer.** $54.6\\,$kPa"
+    },
+    {
+      "id": 40,
+      "subject": "Engineering & Environmental Geology",
+      "topic": "Mohr–Coulomb Strength",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "A rock joint has cohesion $30\\,$kPa and friction angle $30^\\circ$. Under normal stress $80\\,$kPa, the shear strength is _____ kPa.",
+      "answer": 76.18802153517007,
+      "tolerance": 1,
+      "figure": {
+        "kind": "mohr",
+        "sigma1": 128,
+        "sigma3": 32,
+        "phi": 30,
+        "cohesion": 30,
+        "caption": "Joint: c=30 kPa, φ=30°"
+      },
+      "solution": "**Concept.** $\\tau=c+\\sigma_n\\tan\\phi$.\n\n**Working.**\n$$30+80\\tan30^\\circ=76.2.$$\n\n**Answer.** $76.2\\,$kPa"
+    },
+    {
+      "id": 41,
+      "subject": "Structural Geology",
+      "topic": "Mohr — Centre",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "For $\\sigma_1=120$ and $\\sigma_3=30\\,$MPa, the mean stress (centre of Mohr circle) is _____ MPa.",
+      "answer": 75,
+      "tolerance": 0.1,
+      "figure": {
+        "kind": "mohr",
+        "sigma1": 120,
+        "sigma3": 30,
+        "caption": "σ₁=120, σ₃=30 MPa"
+      },
+      "solution": "**Concept.** Centre $=(\\sigma_1+\\sigma_3)/2$.\n\n**Working.**\n$$\\dfrac{120+30}{2}=75.$$\n\n**Answer.** $75\\,$MPa"
+    },
+    {
+      "id": 42,
+      "subject": "Structural Geology",
+      "topic": "Principal Stress",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "At a point $\\sigma_x=60$, $\\sigma_y=0$, $\\tau_{xy}=20\\,$MPa. The major principal stress $\\sigma_1$ is _____ MPa.",
+      "answer": 66.05551275463989,
+      "tolerance": 0.2,
+      "figure": {
+        "kind": "stress-block",
+        "sx": 60,
+        "sy": 0,
+        "txy": 20,
+        "caption": "σx=60, σy=0, τxy=20 MPa"
+      },
+      "solution": "**Concept.** $\\sigma_{1}=\\dfrac{\\sigma_x+\\sigma_y}{2}+\\sqrt{(\\tfrac{\\sigma_x-\\sigma_y}{2})^2+\\tau_{xy}^2}$.\n\n**Working.**\n$$30+\\sqrt{30^2+20^2}=66.06.$$\n\n**Answer.** $66.06\\,$MPa"
+    },
+    {
+      "id": 43,
+      "subject": "Structural Geology",
+      "topic": "Mohr — Maximum Shear",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "A rock element is under $\\sigma_1=100\\,$MPa and $\\sigma_3=30\\,$MPa. The maximum shear stress is _____ MPa.",
+      "answer": 35,
+      "tolerance": 0.1,
+      "figure": {
+        "kind": "mohr",
+        "sigma1": 100,
+        "sigma3": 30,
+        "caption": "Mohr circle: σ₁=100, σ₃=30 MPa"
+      },
+      "solution": "**Concept.** $\\tau_{max}=(\\sigma_1-\\sigma_3)/2$.\n\n**Working.**\n$$\\dfrac{100-30}{2}=35.$$\n\n**Answer.** $35\\,$MPa"
+    },
+    {
+      "id": 44,
+      "subject": "Structural Geology",
+      "topic": "Minor Principal Stress",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "At a point $\\sigma_x=90$, $\\sigma_y=30$, $\\tau_{xy}=40\\,$MPa. The minor principal stress $\\sigma_3$ is _____ MPa.",
+      "answer": 10,
+      "tolerance": 0.2,
+      "figure": {
+        "kind": "stress-block",
+        "sx": 90,
+        "sy": 30,
+        "txy": 40,
+        "caption": "σx=90, σy=30, τxy=40 MPa"
+      },
+      "solution": "**Concept.** $\\sigma_3=\\dfrac{\\sigma_x+\\sigma_y}{2}-\\sqrt{(\\tfrac{\\sigma_x-\\sigma_y}{2})^2+\\tau_{xy}^2}$.\n\n**Working.**\n$$60-\\sqrt{30^2+40^2}=10.$$\n\n**Answer.** $10\\,$MPa"
+    },
+    {
+      "id": 45,
+      "subject": "Engineering & Environmental Geology",
+      "topic": "Joint Shear Strength",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "A discontinuity ($c=10\\,$kPa, $\\phi=30^\\circ$) carries normal stress $80\\,$kPa. Its peak shear strength is _____ kPa.",
+      "answer": 56.18802153517006,
+      "tolerance": 1,
+      "figure": {
+        "kind": "mohr",
+        "sigma1": 136,
+        "sigma3": 24,
+        "phi": 30,
+        "cohesion": 10,
+        "caption": "c=10 kPa, φ=30°"
+      },
+      "solution": "**Concept.** $\\tau=c+\\sigma_n\\tan\\phi$.\n\n**Working.**\n$$10+80\\tan30^\\circ=56.2.$$\n\n**Answer.** $56.2\\,$kPa"
+    },
+    {
+      "id": 46,
+      "subject": "Structural Geology",
+      "topic": "Apparent Dip",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "A bed has a true dip of $40^\\circ$. In a vertical cross-section making an angle of $30^\\circ$ with the strike, the apparent dip is _____ degrees.",
+      "answer": 22.76047627461663,
+      "tolerance": 0.2,
+      "figure": {
+        "kind": "stereonet",
+        "planes": [
+          {
+            "strike": 0,
+            "dip": 40,
+            "label": "Bed: strike 000°, dip 40°"
+          }
+        ],
+        "caption": "Plane dipping 40°; section at 30° to strike"
+      },
+      "solution": "**Concept.** $\\tan\\delta_{app}=\\tan\\delta_{true}\\sin\\beta$.\n\n**Working.**\n$$\\tan^{-1}(\\tan40^\\circ\\sin30^\\circ)=22.76^\\circ.$$\n\n**Answer.** $22.76^\\circ$"
+    },
+    {
+      "id": 47,
+      "subject": "Structural Geology",
+      "topic": "Principal Stress",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "At a point $\\sigma_x=60$, $\\sigma_y=20$, $\\tau_{xy}=30\\,$MPa. The major principal stress $\\sigma_1$ is _____ MPa.",
+      "answer": 76.05551275463989,
+      "tolerance": 0.2,
+      "figure": {
+        "kind": "stress-block",
+        "sx": 60,
+        "sy": 20,
+        "txy": 30,
+        "caption": "σx=60, σy=20, τxy=30 MPa"
+      },
+      "solution": "**Concept.** $\\sigma_{1}=\\dfrac{\\sigma_x+\\sigma_y}{2}+\\sqrt{(\\tfrac{\\sigma_x-\\sigma_y}{2})^2+\\tau_{xy}^2}$.\n\n**Working.**\n$$40+\\sqrt{20^2+30^2}=76.06.$$\n\n**Answer.** $76.06\\,$MPa"
+    },
+    {
+      "id": 48,
+      "subject": "Structural Geology",
+      "topic": "Dip & Plunge",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "A planar fault strikes $150^\\circ$ and dips $45^\\circ$. The plunge of the true-dip line (steepest line on the plane) is _____ degrees.",
+      "answer": 45,
+      "tolerance": 0.1,
+      "figure": {
+        "kind": "stereonet",
+        "planes": [
+          {
+            "strike": 150,
+            "dip": 45,
+            "label": "Fault: 150°/45°"
+          }
+        ],
+        "caption": "Fault plane on stereonet"
+      },
+      "solution": "**Concept.** The true-dip line plunges at the dip angle, in the dip direction.\n\n**Working.**\n$$\\text{plunge}=\\text{dip}=45^\\circ.$$\n\n**Answer.** $45^\\circ$"
+    },
+    {
+      "id": 49,
+      "subject": "Structural Geology",
+      "topic": "Mohr — Maximum Shear",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "A rock element is under $\\sigma_1=100\\,$MPa and $\\sigma_3=40\\,$MPa. The maximum shear stress is _____ MPa.",
+      "answer": 30,
+      "tolerance": 0.1,
+      "figure": {
+        "kind": "mohr",
+        "sigma1": 100,
+        "sigma3": 40,
+        "caption": "Mohr circle: σ₁=100, σ₃=40 MPa"
+      },
+      "solution": "**Concept.** $\\tau_{max}=(\\sigma_1-\\sigma_3)/2$.\n\n**Working.**\n$$\\dfrac{100-40}{2}=30.$$\n\n**Answer.** $30\\,$MPa"
+    },
+    {
+      "id": 50,
+      "subject": "Applied Geology · Remote Sensing & GIS",
+      "topic": "Ground Distance",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "On a $1:10000$ map, two points are $150\\,$mm apart. The ground distance is _____ m.",
+      "answer": 1500,
+      "tolerance": 1,
+      "solution": "**Concept.** Ground = map distance × scale denominator.\n\n**Working.**\n$$150\\times10^{-3}\\times10000=1500.$$\n\n**Answer.** $1500\\,$m"
+    },
+    {
+      "id": 51,
+      "subject": "Geochemistry & Isotope Geology",
+      "topic": "Radioactive Decay",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "An isotope of half-life $5730\\,$units decays for $11460\\,$units. The remaining fraction $N/N_0$ is _____.",
+      "answer": 0.25,
+      "tolerance": 0.005,
+      "solution": "**Concept.** $N/N_0=(1/2)^{t/T_{1/2}}$.\n\n**Working.**\n$$(1/2)^{11460/5730}=0.25.$$\n\n**Answer.** $0.25$"
+    },
+    {
+      "id": 52,
+      "subject": "Mineralogy & Crystallography",
+      "topic": "Bragg Wavelength",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "First-order diffraction occurs at $\\theta=20^\\circ$ from planes $d=2\\,$Å. The X-ray wavelength is _____ Å.",
+      "answer": 1.3680805733026749,
+      "tolerance": 0.01,
+      "solution": "**Concept.** $\\lambda=2d\\sin\\theta$.\n\n**Working.**\n$$2\\times2\\sin20^\\circ=1.368.$$\n\n**Answer.** $1.368\\,$Å"
+    },
+    {
+      "id": 53,
+      "subject": "Mineralogy & Crystallography",
+      "topic": "d-spacing (cubic)",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "A cubic mineral has $a=4.5\\,$Å. The interplanar spacing $d_{100}$ is _____ Å.",
+      "answer": 4.5,
+      "tolerance": 0.01,
+      "solution": "**Concept.** $d_{hkl}=a/\\sqrt{h^2+k^2+l^2}$.\n\n**Working.**\n$$\\dfrac{4.5}{\\sqrt{1^2+0^2+0^2}}=4.5.$$\n\n**Answer.** $4.5\\,$Å"
+    },
+    {
+      "id": 54,
+      "subject": "Mineralogy & Crystallography",
+      "topic": "Unit-cell Density",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "A cubic mineral: $Z=2$ formula units, $M=120\\,$g/mol, $a=4\\,$Å. Its density is _____ g/cm³.",
+      "answer": 6.2271670541348385,
+      "tolerance": 0.05,
+      "solution": "**Concept.** $\\rho=\\dfrac{ZM}{N_A a^3}$.\n\n**Working.**\n$$\\dfrac{2\\times120}{6.022\\times10^{23}(4\\times10^{-8})^3}=6.227.$$\n\n**Answer.** $6.227\\,$g/cm³"
+    },
+    {
+      "id": 55,
+      "subject": "Economic & Ore Geology",
+      "topic": "Weighted Grade",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "Two ore blocks: $20\\,$kt at $3\\%$ and $15\\,$kt at $4\\%$. The combined average grade is _____ %.",
+      "answer": 3.4285714285714284,
+      "tolerance": 0.05,
+      "solution": "**Concept.** Weighted by tonnage.\n\n**Working.**\n$$\\dfrac{3\\times20+4\\times15}{20+15}=3.429.$$\n\n**Answer.** $3.429\\%$"
+    },
+    {
+      "id": 56,
+      "subject": "Metamorphic Petrology",
+      "topic": "Geothermal Gradient",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "For a geothermal gradient of $25\\,^\\circ$C/km, the temperature at $20\\,$km (surface $0\\,^\\circ$C) is _____ $^\\circ$C.",
+      "answer": 500,
+      "tolerance": 1,
+      "solution": "**Concept.** $T=\\text{gradient}\\times z$.\n\n**Working.**\n$$25\\times20=500.$$\n\n**Answer.** $500\\,^\\circ$C"
+    },
+    {
+      "id": 57,
+      "subject": "Geophysics",
+      "topic": "Free-air Correction",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "A gravity station is $200\\,$m above the datum. The free-air correction is _____ mGal.",
+      "answer": 61.72,
+      "tolerance": 0.1,
+      "solution": "**Concept.** Free-air correction $=0.3086\\,h$ mGal.\n\n**Working.**\n$$0.3086\\times200=61.72.$$\n\n**Answer.** $61.72\\,$mGal"
+    },
+    {
+      "id": 58,
+      "subject": "Palaeontology",
+      "topic": "Extinction Decay",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "A clade of $1000$ genera halves every $20\\,$Myr. After $30\\,$Myr, the number of genera is _____.",
+      "answer": 353.5533905932738,
+      "tolerance": 1,
+      "solution": "**Concept.** $N=N_0(1/2)^{t/T}$.\n\n**Working.**\n$$1000(1/2)^{30/20}=353.6.$$\n\n**Answer.** $353.6$"
+    },
+    {
+      "id": 59,
+      "subject": "Mineralogy & Crystallography",
+      "topic": "d-spacing (cubic)",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "A cubic crystal ($a=5.64\\,$Å) diffracts from $(400)$. The $d$-spacing is _____ Å.",
+      "answer": 1.41,
+      "tolerance": 0.01,
+      "solution": "**Concept.** $d=a/\\sqrt{h^2+k^2+l^2}$.\n\n**Working.**\n$$\\dfrac{5.64}{\\sqrt{4^2+0^2+0^2}}=1.41.$$\n\n**Answer.** $1.41\\,$Å"
+    },
+    {
+      "id": 60,
+      "subject": "Mineralogy & Crystallography",
+      "topic": "d-spacing (cubic)",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "A cubic mineral has $a=5\\,$Å. The interplanar spacing $d_{111}$ is _____ Å.",
+      "answer": 2.886751345948129,
+      "tolerance": 0.01,
+      "solution": "**Concept.** $d_{hkl}=a/\\sqrt{h^2+k^2+l^2}$.\n\n**Working.**\n$$\\dfrac{5}{\\sqrt{1^2+1^2+1^2}}=2.887.$$\n\n**Answer.** $2.887\\,$Å"
+    },
+    {
+      "id": 61,
+      "subject": "Mineralogy & Crystallography",
+      "topic": "d-spacing (cubic)",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "A cubic mineral has $a=4\\,$Å. The interplanar spacing $d_{211}$ is _____ Å.",
+      "answer": 1.6329931618554523,
+      "tolerance": 0.01,
+      "solution": "**Concept.** $d_{hkl}=a/\\sqrt{h^2+k^2+l^2}$.\n\n**Working.**\n$$\\dfrac{4}{\\sqrt{2^2+1^2+1^2}}=1.633.$$\n\n**Answer.** $1.633\\,$Å"
+    },
+    {
+      "id": 62,
+      "subject": "Mineralogy & Crystallography",
+      "topic": "d-spacing (cubic)",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "A cubic crystal ($a=5.64\\,$Å) diffracts from $(200)$. The $d$-spacing is _____ Å.",
+      "answer": 2.82,
+      "tolerance": 0.01,
+      "solution": "**Concept.** $d=a/\\sqrt{h^2+k^2+l^2}$.\n\n**Working.**\n$$\\dfrac{5.64}{\\sqrt{2^2+0^2+0^2}}=2.82.$$\n\n**Answer.** $2.82\\,$Å"
+    },
+    {
+      "id": 63,
+      "subject": "Mathematics & Geostatistics",
+      "topic": "Binomial SD",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "Of $50$ drill holes each hits ore with probability $0.1$. The standard deviation of the number of hits is _____.",
+      "answer": 2.1213203435596424,
+      "tolerance": 0.01,
+      "solution": "**Concept.** $\\sigma=\\sqrt{np(1-p)}$.\n\n**Working.**\n$$\\sqrt{50\\times0.1\\times0.9}=2.121.$$\n\n**Answer.** $2.121$"
+    },
+    {
+      "id": 64,
+      "subject": "Palaeontology",
+      "topic": "Extinction Percentage",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "Of $50$ genera before a mass extinction, $10$ survived. The extinction percentage is _____ %.",
+      "answer": 80,
+      "tolerance": 0.1,
+      "solution": "**Concept.** Extinction% $=(1-\\text{survivors}/\\text{total})\\times100$.\n\n**Working.**\n$$\\dfrac{50-10}{50}\\times100=80.$$\n\n**Answer.** $80\\%$"
+    },
+    {
+      "id": 65,
+      "subject": "Structural Geology",
+      "topic": "Max In-plane Shear",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "At a point $\\sigma_x=70$, $\\sigma_y=50$, $\\tau_{xy}=40\\,$MPa. The maximum in-plane shear stress is _____ MPa.",
+      "answer": 41.23105625617661,
+      "tolerance": 0.2,
+      "figure": {
+        "kind": "stress-block",
+        "sx": 70,
+        "sy": 50,
+        "txy": 40,
+        "caption": "σx=70, σy=50, τxy=40 MPa"
+      },
+      "solution": "**Concept.** $\\tau_{max}=\\sqrt{(\\tfrac{\\sigma_x-\\sigma_y}{2})^2+\\tau_{xy}^2}$.\n\n**Working.**\n$$\\sqrt{10^2+40^2}=41.23.$$\n\n**Answer.** $41.23\\,$MPa"
+    }
+  ]
+}

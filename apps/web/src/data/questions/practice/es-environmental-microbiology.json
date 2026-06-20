@@ -1,0 +1,1153 @@
+{
+  "slug": "es-environmental-microbiology",
+  "name": "Environmental Microbiology",
+  "questions": [
+    {
+      "id": "es-micro-001",
+      "subject": "Environmental Microbiology",
+      "topic": "Monod Kinetics",
+      "difficulty": "hard",
+      "type": "NAT",
+      "stem": "A culture follows Monod kinetics. Reading $\\mu_{max}$ (plateau) and the half-saturation constant $K_s$ from the $\\mu$–$S$ curve shown, the specific growth rate at substrate $S=100\\,\\text{mg/L}$ is _____ h⁻¹.",
+      "answer": 0.3333,
+      "tolerance": 0.005,
+      "solution": "**Concept.** Monod: $\\mu=\\dfrac{\\mu_{max}S}{K_s+S}$, with $\\mu_{max}$ and $K_s$ read from the curve.\n\n**Working.**\n$$\\dfrac{0.5\\times100}{50+100}=0.333.$$\n\n**Answer.** $0.333\\,\\text{h}^{-1}$",
+      "archetype": "C",
+      "marks": 2,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 330 195\" width=\"100%\" style=\"max-width:350px;height:auto\"><line x1=\"44\" y1=\"20\" x2=\"44\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"44\" y1=\"165\" x2=\"312\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"240\" y=\"182\" font-size=\"9\" fill=\"#1e293b\">substrate [S] →</text><line x1=\"44\" y1=\"40\" x2=\"312\" y2=\"40\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><text x=\"232\" y=\"36\" font-size=\"10\" fill=\"#dc2626\">μ_max = 0.5</text><path d=\"M44 165 C90 110 140 70 200 56 C250 46 290 42 312 41\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><line x1=\"44\" y1=\"102\" x2=\"120\" y2=\"102\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><line x1=\"120\" y1=\"102\" x2=\"120\" y2=\"165\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><text x=\"14\" y=\"106\" font-size=\"7\" fill=\"#16a34a\">μ_max/2</text><text x=\"98\" y=\"178\" font-size=\"10\" fill=\"#16a34a\">K_s = 50</text></svg>",
+        "caption": "Monod μ–S curve: μ_max (plateau) and K_s (half-saturation) marked on the curve only. (read values from the figure)"
+      }
+    },
+    {
+      "id": "es-micro-002",
+      "subject": "Environmental Microbiology",
+      "topic": "Monod Kinetics",
+      "difficulty": "hard",
+      "type": "NAT",
+      "stem": "A culture follows Monod kinetics. Reading $\\mu_{max}$ (plateau) and the half-saturation constant $K_s$ from the $\\mu$–$S$ curve shown, the specific growth rate at substrate $S=60\\,\\text{mg/L}$ is _____ h⁻¹.",
+      "answer": 0.3,
+      "tolerance": 0.005,
+      "solution": "**Concept.** Monod: $\\mu=\\dfrac{\\mu_{max}S}{K_s+S}$, with $\\mu_{max}$ and $K_s$ read from the curve.\n\n**Working.**\n$$\\dfrac{0.4\\times60}{20+60}=0.3.$$\n\n**Answer.** $0.3\\,\\text{h}^{-1}$",
+      "archetype": "C",
+      "marks": 2,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 330 195\" width=\"100%\" style=\"max-width:350px;height:auto\"><line x1=\"44\" y1=\"20\" x2=\"44\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"44\" y1=\"165\" x2=\"312\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"240\" y=\"182\" font-size=\"9\" fill=\"#1e293b\">substrate [S] →</text><line x1=\"44\" y1=\"40\" x2=\"312\" y2=\"40\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><text x=\"232\" y=\"36\" font-size=\"10\" fill=\"#dc2626\">μ_max = 0.4</text><path d=\"M44 165 C90 110 140 70 200 56 C250 46 290 42 312 41\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><line x1=\"44\" y1=\"102\" x2=\"120\" y2=\"102\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><line x1=\"120\" y1=\"102\" x2=\"120\" y2=\"165\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><text x=\"14\" y=\"106\" font-size=\"7\" fill=\"#16a34a\">μ_max/2</text><text x=\"98\" y=\"178\" font-size=\"10\" fill=\"#16a34a\">K_s = 20</text></svg>",
+        "caption": "Monod μ–S curve: μ_max (plateau) and K_s (half-saturation) marked on the curve only. (read values from the figure)"
+      }
+    },
+    {
+      "id": "es-micro-003",
+      "subject": "Environmental Microbiology",
+      "topic": "Enzyme Kinetics — Michaelis–Menten",
+      "difficulty": "hard",
+      "type": "NAT",
+      "stem": "An enzyme follows Michaelis–Menten kinetics. Reading $V_{max}$ (plateau) and $K_m$ (half-saturation) from the curve shown, the reaction velocity at substrate concentration $[S]=15\\,\\text{mmol/L}$ is _____ µmol·L⁻¹·min⁻¹.",
+      "answer": 7.5,
+      "tolerance": 0.01,
+      "solution": "**Concept.** Michaelis–Menten: $v=\\dfrac{V_{max}[S]}{K_m+[S]}$, with $V_{max}$ and $K_m$ read from the curve.\n\n**Working.**\n$$\\dfrac{10\\times15}{5+15}=7.5.$$\n\n**Answer.** $7.5\\,\\mu\\text{mol L}^{-1}\\text{min}^{-1}$",
+      "archetype": "C",
+      "marks": 2,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 330 195\" width=\"100%\" style=\"max-width:350px;height:auto\"><line x1=\"44\" y1=\"20\" x2=\"44\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"44\" y1=\"165\" x2=\"312\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"240\" y=\"182\" font-size=\"9\" fill=\"#1e293b\">substrate [S] →</text><line x1=\"44\" y1=\"40\" x2=\"312\" y2=\"40\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><text x=\"232\" y=\"36\" font-size=\"10\" fill=\"#dc2626\">V_max = 10</text><path d=\"M44 165 C90 110 140 70 200 56 C250 46 290 42 312 41\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><line x1=\"44\" y1=\"102\" x2=\"120\" y2=\"102\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><line x1=\"120\" y1=\"102\" x2=\"120\" y2=\"165\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><text x=\"14\" y=\"106\" font-size=\"7\" fill=\"#16a34a\">V_max/2</text><text x=\"98\" y=\"178\" font-size=\"10\" fill=\"#16a34a\">K_m = 5</text></svg>",
+        "caption": "Michaelis–Menten curve: V_max (plateau) and K_m (half-saturation) marked on the curve only. (read values from the figure)"
+      }
+    },
+    {
+      "id": "es-micro-004",
+      "subject": "Environmental Microbiology",
+      "topic": "Enzyme Kinetics — Michaelis–Menten",
+      "difficulty": "hard",
+      "type": "NAT",
+      "stem": "An enzyme follows Michaelis–Menten kinetics. Reading $V_{max}$ (plateau) and $K_m$ (half-saturation) from the curve shown, the reaction velocity at substrate concentration $[S]=6\\,\\text{mmol/L}$ is _____ µmol·L⁻¹·min⁻¹.",
+      "answer": 6,
+      "tolerance": 0.01,
+      "solution": "**Concept.** Michaelis–Menten: $v=\\dfrac{V_{max}[S]}{K_m+[S]}$, with $V_{max}$ and $K_m$ read from the curve.\n\n**Working.**\n$$\\dfrac{8\\times6}{2+6}=6.$$\n\n**Answer.** $6\\,\\mu\\text{mol L}^{-1}\\text{min}^{-1}$",
+      "archetype": "C",
+      "marks": 2,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 330 195\" width=\"100%\" style=\"max-width:350px;height:auto\"><line x1=\"44\" y1=\"20\" x2=\"44\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"44\" y1=\"165\" x2=\"312\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"240\" y=\"182\" font-size=\"9\" fill=\"#1e293b\">substrate [S] →</text><line x1=\"44\" y1=\"40\" x2=\"312\" y2=\"40\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><text x=\"232\" y=\"36\" font-size=\"10\" fill=\"#dc2626\">V_max = 8</text><path d=\"M44 165 C90 110 140 70 200 56 C250 46 290 42 312 41\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><line x1=\"44\" y1=\"102\" x2=\"120\" y2=\"102\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><line x1=\"120\" y1=\"102\" x2=\"120\" y2=\"165\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><text x=\"14\" y=\"106\" font-size=\"7\" fill=\"#16a34a\">V_max/2</text><text x=\"98\" y=\"178\" font-size=\"10\" fill=\"#16a34a\">K_m = 2</text></svg>",
+        "caption": "Michaelis–Menten curve: V_max (plateau) and K_m (half-saturation) marked on the curve only. (read values from the figure)"
+      }
+    },
+    {
+      "id": "es-micro-005",
+      "subject": "Environmental Microbiology",
+      "topic": "Cell Yield",
+      "difficulty": "medium",
+      "type": "NAT",
+      "stem": "In a reactor, $40\\,\\text{mg/L}$ of biomass is produced while $100\\,\\text{mg/L}$ of substrate is consumed. The observed yield $Y_{X/S}$ is _____ mg/mg.",
+      "answer": 0.4,
+      "tolerance": 0.005,
+      "solution": "**Concept.** $Y_{X/S}=\\dfrac{\\Delta X}{\\Delta S}$.\n\n**Working.**\n$$\\dfrac{40}{100}=0.4.$$\n\n**Answer.** $0.4$",
+      "archetype": "A",
+      "marks": 2
+    },
+    {
+      "id": "es-micro-006",
+      "subject": "Environmental Microbiology",
+      "topic": "Cell Yield",
+      "difficulty": "medium",
+      "type": "NAT",
+      "stem": "In a reactor, $30\\,\\text{mg/L}$ of biomass is produced while $120\\,\\text{mg/L}$ of substrate is consumed. The observed yield $Y_{X/S}$ is _____ mg/mg.",
+      "answer": 0.25,
+      "tolerance": 0.005,
+      "solution": "**Concept.** $Y_{X/S}=\\dfrac{\\Delta X}{\\Delta S}$.\n\n**Working.**\n$$\\dfrac{30}{120}=0.25.$$\n\n**Answer.** $0.25$",
+      "archetype": "A",
+      "marks": 2
+    },
+    {
+      "id": "es-micro-007",
+      "subject": "Environmental Microbiology",
+      "topic": "Microbial Growth",
+      "difficulty": "medium",
+      "type": "NAT",
+      "stem": "Bacteria grow exponentially with specific growth rate $\\mu=0.5\\,\\text{h}^{-1}$. The doubling (generation) time is _____ hours.",
+      "answer": 1.3863,
+      "tolerance": 0.02,
+      "solution": "**Concept.** $t_d=\\dfrac{\\ln 2}{\\mu}$.\n\n**Working.**\n$$\\dfrac{0.693}{0.5}=1.39.$$\n\n**Answer.** $1.39\\,\\text{h}$",
+      "archetype": "A",
+      "marks": 2,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 330 180\" width=\"100%\" style=\"max-width:350px;height:auto\"><line x1=\"38\" y1=\"18\" x2=\"38\" y2=\"158\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"38\" y1=\"158\" x2=\"312\" y2=\"158\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"6\" y=\"28\" font-size=\"8\" fill=\"#1e293b\">ln X</text><text x=\"270\" y=\"174\" font-size=\"9\" fill=\"#1e293b\">time →</text><path d=\"M38 150 L80 148 L150 60 L230 40 L300 95\" fill=\"none\" stroke=\"#16a34a\" stroke-width=\"1.7\"/><text x=\"50\" y=\"142\" font-size=\"7\" fill=\"#1e293b\">lag</text><text x=\"105\" y=\"100\" font-size=\"7\" fill=\"#16a34a\">log (μ_max)</text><text x=\"215\" y=\"34\" font-size=\"7\" fill=\"#1e293b\">stationary</text><text x=\"278\" y=\"110\" font-size=\"7\" fill=\"#dc2626\">death</text></svg>",
+        "caption": "Batch microbial growth curve."
+      }
+    },
+    {
+      "id": "es-micro-008",
+      "subject": "Environmental Microbiology",
+      "topic": "Microbial Growth",
+      "difficulty": "medium",
+      "type": "NAT",
+      "stem": "Bacteria grow exponentially with specific growth rate $\\mu=0.231\\,\\text{h}^{-1}$. The doubling (generation) time is _____ hours.",
+      "answer": 3.0006,
+      "tolerance": 0.02,
+      "solution": "**Concept.** $t_d=\\dfrac{\\ln 2}{\\mu}$.\n\n**Working.**\n$$\\dfrac{0.693}{0.231}=3.$$\n\n**Answer.** $3\\,\\text{h}$",
+      "archetype": "A",
+      "marks": 2,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 330 180\" width=\"100%\" style=\"max-width:350px;height:auto\"><line x1=\"38\" y1=\"18\" x2=\"38\" y2=\"158\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"38\" y1=\"158\" x2=\"312\" y2=\"158\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"6\" y=\"28\" font-size=\"8\" fill=\"#1e293b\">ln X</text><text x=\"270\" y=\"174\" font-size=\"9\" fill=\"#1e293b\">time →</text><path d=\"M38 150 L80 148 L150 60 L230 40 L300 95\" fill=\"none\" stroke=\"#16a34a\" stroke-width=\"1.7\"/><text x=\"50\" y=\"142\" font-size=\"7\" fill=\"#1e293b\">lag</text><text x=\"105\" y=\"100\" font-size=\"7\" fill=\"#16a34a\">log (μ_max)</text><text x=\"215\" y=\"34\" font-size=\"7\" fill=\"#1e293b\">stationary</text><text x=\"278\" y=\"110\" font-size=\"7\" fill=\"#dc2626\">death</text></svg>",
+        "caption": "Batch microbial growth curve."
+      }
+    },
+    {
+      "id": "es-micro-009",
+      "subject": "Environmental Microbiology",
+      "topic": "Microbial Growth",
+      "difficulty": "medium",
+      "type": "NAT",
+      "stem": "Bacteria grow exponentially with specific growth rate $\\mu=0.35\\,\\text{h}^{-1}$. The doubling (generation) time is _____ hours.",
+      "answer": 1.9804,
+      "tolerance": 0.02,
+      "solution": "**Concept.** $t_d=\\dfrac{\\ln 2}{\\mu}$.\n\n**Working.**\n$$\\dfrac{0.693}{0.35}=1.98.$$\n\n**Answer.** $1.98\\,\\text{h}$",
+      "archetype": "A",
+      "marks": 2,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 330 180\" width=\"100%\" style=\"max-width:350px;height:auto\"><line x1=\"38\" y1=\"18\" x2=\"38\" y2=\"158\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"38\" y1=\"158\" x2=\"312\" y2=\"158\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"6\" y=\"28\" font-size=\"8\" fill=\"#1e293b\">ln X</text><text x=\"270\" y=\"174\" font-size=\"9\" fill=\"#1e293b\">time →</text><path d=\"M38 150 L80 148 L150 60 L230 40 L300 95\" fill=\"none\" stroke=\"#16a34a\" stroke-width=\"1.7\"/><text x=\"50\" y=\"142\" font-size=\"7\" fill=\"#1e293b\">lag</text><text x=\"105\" y=\"100\" font-size=\"7\" fill=\"#16a34a\">log (μ_max)</text><text x=\"215\" y=\"34\" font-size=\"7\" fill=\"#1e293b\">stationary</text><text x=\"278\" y=\"110\" font-size=\"7\" fill=\"#dc2626\">death</text></svg>",
+        "caption": "Batch microbial growth curve."
+      }
+    },
+    {
+      "id": "es-micro-010",
+      "subject": "Environmental Microbiology",
+      "topic": "Binary Fission",
+      "difficulty": "easy",
+      "type": "NAT",
+      "stem": "Starting from $1000$ cells, a culture undergoes $6$ generations of binary fission. The final cell count is _____.",
+      "answer": 64000,
+      "tolerance": 0.5,
+      "solution": "**Concept.** $N=N_0\\,2^{n}$.\n\n**Working.**\n$$1000\\times2^{6}=64000.$$\n\n**Answer.** $64000$",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "es-micro-011",
+      "subject": "Environmental Microbiology",
+      "topic": "Binary Fission",
+      "difficulty": "easy",
+      "type": "NAT",
+      "stem": "Starting from $500$ cells, a culture undergoes $8$ generations of binary fission. The final cell count is _____.",
+      "answer": 128000,
+      "tolerance": 0.5,
+      "solution": "**Concept.** $N=N_0\\,2^{n}$.\n\n**Working.**\n$$500\\times2^{8}=128000.$$\n\n**Answer.** $128000$",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "es-micro-012",
+      "subject": "Environmental Microbiology",
+      "topic": "Indicator Organisms",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "Drinking-water standards require E. coli to be ABSENT in any 100 mL sample. A membrane-filtration test of a 100 mL sample of treated water yields 8 E. coli colonies. The correct interpretation is that the water",
+      "options": [
+        "fails the potability standard and is unsafe to drink",
+        "is potable, since 8 is a low count",
+        "is potable after simple aeration",
+        "meets the E. coli standard"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** The standard is zero E. coli per 100 mL; 8 colonies/100 mL exceeds it, signalling recent faecal contamination — the water is unsafe.\n\n**Working.**\nCompare the measured count to the zero-tolerance standard.\n\n**Answer.** Fails / unsafe",
+      "archetype": "B",
+      "marks": 1
+    },
+    {
+      "id": "es-micro-013",
+      "subject": "Environmental Microbiology",
+      "topic": "Nitrogen Cycle — Nitrification O₂ Demand",
+      "difficulty": "hard",
+      "type": "NAT",
+      "stem": "In a nitrifying reactor the ammonia-nitrogen falls from $40\\,\\text{mg/L}$ to $6\\,\\text{mg/L}$ as it is oxidised to nitrate. Taking the stoichiometric requirement as $4.57\\,\\text{g O}_2$ per g of N nitrified, the oxygen demand exerted by nitrification is _____ mg/L.",
+      "answer": 155.38,
+      "tolerance": 0.1,
+      "solution": "**Concept.** Nitrification (NH₄⁺ → NO₃⁻) consumes 4.57 g O₂ per g N. Demand $=\\Delta N\\times4.57$.\n\n**Working.**\n$$(40-6)\\times4.57=155.38\\,\\text{mg/L}.$$\n\n**Answer.** $155.38\\,\\text{mg/L}$",
+      "archetype": "C",
+      "marks": 2
+    },
+    {
+      "id": "es-micro-014",
+      "subject": "Environmental Microbiology",
+      "topic": "Microbial Metabolism",
+      "difficulty": "medium",
+      "type": "MSQ",
+      "stem": "Which processes are strictly anaerobic in wastewater treatment?",
+      "options": [
+        "Methanogenesis",
+        "Denitrification (can be anoxic)",
+        "Nitrification",
+        "Aerobic carbon oxidation"
+      ],
+      "answer": [
+        0
+      ],
+      "solution": "**Concept.** Methanogenesis requires strict anaerobiosis. Denitrification is anoxic (uses NO₃⁻), nitrification and carbon oxidation are aerobic.\n\n**Working.**\nOnly methanogenesis is strictly anaerobic.\n\n**Answer.** Methanogenesis",
+      "archetype": "D",
+      "marks": 2
+    },
+    {
+      "id": "es-micro-015",
+      "subject": "Environmental Microbiology",
+      "topic": "Binary Fission",
+      "difficulty": "easy",
+      "marks": 1,
+      "archetype": "A",
+      "solution": "**Concept.** N = N₀·2ⁿ.\n\n**Working.**\n$$500\\times2^{9}=256000.$$\n\n**Answer.** $256000$",
+      "type": "NAT",
+      "stem": "$500$ cells after $9$ generations of binary fission number _____.",
+      "answer": 256000,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-micro-016",
+      "subject": "Environmental Microbiology",
+      "topic": "Binary Fission",
+      "difficulty": "easy",
+      "marks": 1,
+      "archetype": "A",
+      "solution": "**Concept.** N = N₀·2ⁿ.\n\n**Working.**\n$$500\\times2^{5}=16000.$$\n\n**Answer.** $16000$",
+      "type": "NAT",
+      "stem": "$500$ cells after $5$ generations of binary fission number _____.",
+      "answer": 16000,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-micro-017",
+      "subject": "Environmental Microbiology",
+      "topic": "Monod Kinetics",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** μ = μ_max S/(K_s+S), with μ_max and K_s read from the curve.\n\n**Working.**\n$$\\dfrac{0.4\\times40}{20+40}=0.267.$$\n\n**Answer.** $0.267$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 330 195\" width=\"100%\" style=\"max-width:350px;height:auto\"><line x1=\"44\" y1=\"20\" x2=\"44\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"44\" y1=\"165\" x2=\"312\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"240\" y=\"182\" font-size=\"9\" fill=\"#1e293b\">substrate [S] →</text><line x1=\"44\" y1=\"40\" x2=\"312\" y2=\"40\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><text x=\"232\" y=\"36\" font-size=\"10\" fill=\"#dc2626\">μ_max = 0.4</text><path d=\"M44 165 C90 110 140 70 200 56 C250 46 290 42 312 41\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><line x1=\"44\" y1=\"102\" x2=\"120\" y2=\"102\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><line x1=\"120\" y1=\"102\" x2=\"120\" y2=\"165\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><text x=\"14\" y=\"106\" font-size=\"7\" fill=\"#16a34a\">μ_max/2</text><text x=\"98\" y=\"178\" font-size=\"10\" fill=\"#16a34a\">K_s = 20</text></svg>",
+        "caption": "Monod μ–S curve: μ_max (plateau) and K_s (half-saturation) marked on the curve only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A culture follows Monod kinetics at substrate $S=40\\,\\text{mg/L}$. Reading $\\mu_{max}$ and $K_s$ from the $\\mu$–$S$ curve shown, the specific growth rate $\\mu$ is _____ h⁻¹.",
+      "answer": 0.2667,
+      "tolerance": 0.005
+    },
+    {
+      "id": "es-micro-018",
+      "subject": "Environmental Microbiology",
+      "topic": "Binary Fission",
+      "difficulty": "easy",
+      "marks": 1,
+      "archetype": "A",
+      "solution": "**Concept.** N = N₀·2ⁿ.\n\n**Working.**\n$$500\\times2^{10}=512000.$$\n\n**Answer.** $512000$",
+      "type": "NAT",
+      "stem": "$500$ cells after $10$ generations of binary fission number _____.",
+      "answer": 512000,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-micro-019",
+      "subject": "Environmental Microbiology",
+      "topic": "Indicator Organisms",
+      "difficulty": "medium",
+      "marks": 1,
+      "archetype": "B",
+      "solution": "**Concept.** MPN is a statistical estimate of coliform density.\n\n**Working.**\nColiforms.\n\n**Answer.** Coliform bacteria",
+      "type": "MCQ",
+      "stem": "MPN (Most Probable Number) test in water analysis estimates the density of",
+      "options": [
+        "coliform bacteria",
+        "viruses",
+        "algae",
+        "protozoa"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "es-micro-020",
+      "subject": "Environmental Microbiology",
+      "topic": "Monod Kinetics",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** μ = μ_max S/(K_s+S), with μ_max and K_s read from the curve.\n\n**Working.**\n$$\\dfrac{0.5\\times80}{60+80}=0.286.$$\n\n**Answer.** $0.286$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 330 195\" width=\"100%\" style=\"max-width:350px;height:auto\"><line x1=\"44\" y1=\"20\" x2=\"44\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"44\" y1=\"165\" x2=\"312\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"240\" y=\"182\" font-size=\"9\" fill=\"#1e293b\">substrate [S] →</text><line x1=\"44\" y1=\"40\" x2=\"312\" y2=\"40\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><text x=\"232\" y=\"36\" font-size=\"10\" fill=\"#dc2626\">μ_max = 0.5</text><path d=\"M44 165 C90 110 140 70 200 56 C250 46 290 42 312 41\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><line x1=\"44\" y1=\"102\" x2=\"120\" y2=\"102\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><line x1=\"120\" y1=\"102\" x2=\"120\" y2=\"165\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><text x=\"14\" y=\"106\" font-size=\"7\" fill=\"#16a34a\">μ_max/2</text><text x=\"98\" y=\"178\" font-size=\"10\" fill=\"#16a34a\">K_s = 60</text></svg>",
+        "caption": "Monod μ–S curve: μ_max (plateau) and K_s (half-saturation) marked on the curve only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A culture follows Monod kinetics at substrate $S=80\\,\\text{mg/L}$. Reading $\\mu_{max}$ and $K_s$ from the $\\mu$–$S$ curve shown, the specific growth rate $\\mu$ is _____ h⁻¹.",
+      "answer": 0.2857,
+      "tolerance": 0.005
+    },
+    {
+      "id": "es-micro-021",
+      "subject": "Environmental Microbiology",
+      "topic": "Binary Fission",
+      "difficulty": "easy",
+      "marks": 1,
+      "archetype": "A",
+      "solution": "**Concept.** N = N₀·2ⁿ.\n\n**Working.**\n$$100\\times2^{7}=12800.$$\n\n**Answer.** $12800$",
+      "type": "NAT",
+      "stem": "$100$ cells after $7$ generations of binary fission number _____.",
+      "answer": 12800,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-micro-022",
+      "subject": "Environmental Microbiology",
+      "topic": "Monod Kinetics",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** μ = μ_max S/(K_s+S), with μ_max and K_s read from the curve.\n\n**Working.**\n$$\\dfrac{0.3\\times80}{60+80}=0.171.$$\n\n**Answer.** $0.171$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 330 195\" width=\"100%\" style=\"max-width:350px;height:auto\"><line x1=\"44\" y1=\"20\" x2=\"44\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"44\" y1=\"165\" x2=\"312\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"240\" y=\"182\" font-size=\"9\" fill=\"#1e293b\">substrate [S] →</text><line x1=\"44\" y1=\"40\" x2=\"312\" y2=\"40\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><text x=\"232\" y=\"36\" font-size=\"10\" fill=\"#dc2626\">μ_max = 0.3</text><path d=\"M44 165 C90 110 140 70 200 56 C250 46 290 42 312 41\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><line x1=\"44\" y1=\"102\" x2=\"120\" y2=\"102\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><line x1=\"120\" y1=\"102\" x2=\"120\" y2=\"165\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><text x=\"14\" y=\"106\" font-size=\"7\" fill=\"#16a34a\">μ_max/2</text><text x=\"98\" y=\"178\" font-size=\"10\" fill=\"#16a34a\">K_s = 60</text></svg>",
+        "caption": "Monod μ–S curve: μ_max (plateau) and K_s (half-saturation) marked on the curve only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A culture follows Monod kinetics at substrate $S=80\\,\\text{mg/L}$. Reading $\\mu_{max}$ and $K_s$ from the $\\mu$–$S$ curve shown, the specific growth rate $\\mu$ is _____ h⁻¹.",
+      "answer": 0.1714,
+      "tolerance": 0.005
+    },
+    {
+      "id": "es-micro-023",
+      "subject": "Environmental Microbiology",
+      "topic": "Binary Fission",
+      "difficulty": "easy",
+      "marks": 1,
+      "archetype": "A",
+      "solution": "**Concept.** N = N₀·2ⁿ.\n\n**Working.**\n$$500\\times2^{8}=128000.$$\n\n**Answer.** $128000$",
+      "type": "NAT",
+      "stem": "$500$ cells after $8$ generations of binary fission number _____.",
+      "answer": 128000,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-micro-024",
+      "subject": "Environmental Microbiology",
+      "topic": "Binary Fission",
+      "difficulty": "easy",
+      "marks": 1,
+      "archetype": "A",
+      "solution": "**Concept.** N = N₀·2ⁿ.\n\n**Working.**\n$$100\\times2^{10}=102400.$$\n\n**Answer.** $102400$",
+      "type": "NAT",
+      "stem": "$100$ cells after $10$ generations of binary fission number _____.",
+      "answer": 102400,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-micro-025",
+      "subject": "Environmental Microbiology",
+      "topic": "Microbial Growth",
+      "difficulty": "medium",
+      "marks": 2,
+      "archetype": "A",
+      "solution": "**Concept.** t_d = ln2/μ.\n\n**Working.**\n$$0.693/0.3=2.31.$$\n\n**Answer.** $2.31\\,\\text{h}$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 330 180\" width=\"100%\" style=\"max-width:350px;height:auto\"><line x1=\"38\" y1=\"18\" x2=\"38\" y2=\"158\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"38\" y1=\"158\" x2=\"312\" y2=\"158\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"6\" y=\"28\" font-size=\"8\" fill=\"#1e293b\">ln X</text><text x=\"270\" y=\"174\" font-size=\"9\" fill=\"#1e293b\">time →</text><path d=\"M38 150 L80 148 L150 60 L230 40 L300 95\" fill=\"none\" stroke=\"#16a34a\" stroke-width=\"1.7\"/><text x=\"50\" y=\"142\" font-size=\"7\" fill=\"#1e293b\">lag</text><text x=\"105\" y=\"100\" font-size=\"7\" fill=\"#16a34a\">log (μ_max)</text><text x=\"215\" y=\"34\" font-size=\"7\" fill=\"#1e293b\">stationary</text><text x=\"278\" y=\"110\" font-size=\"7\" fill=\"#dc2626\">death</text></svg>",
+        "caption": "Batch microbial growth curve."
+      },
+      "type": "NAT",
+      "stem": "Specific growth rate $\\mu=0.3\\,\\text{h}^{-1}$. Doubling time is _____ h.",
+      "answer": 2.31,
+      "tolerance": 0.02
+    },
+    {
+      "id": "es-micro-026",
+      "subject": "Environmental Microbiology",
+      "topic": "Binary Fission",
+      "difficulty": "easy",
+      "marks": 1,
+      "archetype": "A",
+      "solution": "**Concept.** N = N₀·2ⁿ.\n\n**Working.**\n$$100\\times2^{5}=3200.$$\n\n**Answer.** $3200$",
+      "type": "NAT",
+      "stem": "$100$ cells after $5$ generations of binary fission number _____.",
+      "answer": 3200,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-micro-027",
+      "subject": "Environmental Microbiology",
+      "topic": "Microbial Growth",
+      "difficulty": "medium",
+      "marks": 2,
+      "archetype": "A",
+      "solution": "**Concept.** t_d = ln2/μ.\n\n**Working.**\n$$0.693/0.2=3.47.$$\n\n**Answer.** $3.47\\,\\text{h}$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 330 180\" width=\"100%\" style=\"max-width:350px;height:auto\"><line x1=\"38\" y1=\"18\" x2=\"38\" y2=\"158\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"38\" y1=\"158\" x2=\"312\" y2=\"158\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"6\" y=\"28\" font-size=\"8\" fill=\"#1e293b\">ln X</text><text x=\"270\" y=\"174\" font-size=\"9\" fill=\"#1e293b\">time →</text><path d=\"M38 150 L80 148 L150 60 L230 40 L300 95\" fill=\"none\" stroke=\"#16a34a\" stroke-width=\"1.7\"/><text x=\"50\" y=\"142\" font-size=\"7\" fill=\"#1e293b\">lag</text><text x=\"105\" y=\"100\" font-size=\"7\" fill=\"#16a34a\">log (μ_max)</text><text x=\"215\" y=\"34\" font-size=\"7\" fill=\"#1e293b\">stationary</text><text x=\"278\" y=\"110\" font-size=\"7\" fill=\"#dc2626\">death</text></svg>",
+        "caption": "Batch microbial growth curve."
+      },
+      "type": "NAT",
+      "stem": "Specific growth rate $\\mu=0.2\\,\\text{h}^{-1}$. Doubling time is _____ h.",
+      "answer": 3.466,
+      "tolerance": 0.02
+    },
+    {
+      "id": "es-micro-028",
+      "subject": "Environmental Microbiology",
+      "topic": "Binary Fission",
+      "difficulty": "easy",
+      "marks": 1,
+      "archetype": "A",
+      "solution": "**Concept.** N = N₀·2ⁿ.\n\n**Working.**\n$$1000\\times2^{9}=512000.$$\n\n**Answer.** $512000$",
+      "type": "NAT",
+      "stem": "$1000$ cells after $9$ generations of binary fission number _____.",
+      "answer": 512000,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-micro-029",
+      "subject": "Environmental Microbiology",
+      "topic": "Monod Kinetics",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** μ = μ_max S/(K_s+S), with μ_max and K_s read from the curve.\n\n**Working.**\n$$\\dfrac{0.6\\times40}{20+40}=0.4.$$\n\n**Answer.** $0.4$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 330 195\" width=\"100%\" style=\"max-width:350px;height:auto\"><line x1=\"44\" y1=\"20\" x2=\"44\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"44\" y1=\"165\" x2=\"312\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"240\" y=\"182\" font-size=\"9\" fill=\"#1e293b\">substrate [S] →</text><line x1=\"44\" y1=\"40\" x2=\"312\" y2=\"40\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><text x=\"232\" y=\"36\" font-size=\"10\" fill=\"#dc2626\">μ_max = 0.6</text><path d=\"M44 165 C90 110 140 70 200 56 C250 46 290 42 312 41\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><line x1=\"44\" y1=\"102\" x2=\"120\" y2=\"102\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><line x1=\"120\" y1=\"102\" x2=\"120\" y2=\"165\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><text x=\"14\" y=\"106\" font-size=\"7\" fill=\"#16a34a\">μ_max/2</text><text x=\"98\" y=\"178\" font-size=\"10\" fill=\"#16a34a\">K_s = 20</text></svg>",
+        "caption": "Monod μ–S curve: μ_max (plateau) and K_s (half-saturation) marked on the curve only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A culture follows Monod kinetics at substrate $S=40\\,\\text{mg/L}$. Reading $\\mu_{max}$ and $K_s$ from the $\\mu$–$S$ curve shown, the specific growth rate $\\mu$ is _____ h⁻¹.",
+      "answer": 0.4,
+      "tolerance": 0.005
+    },
+    {
+      "id": "es-micro-030",
+      "subject": "Environmental Microbiology",
+      "topic": "Monod Kinetics",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** μ = μ_max S/(K_s+S), with μ_max and K_s read from the curve.\n\n**Working.**\n$$\\dfrac{0.5\\times100}{40+100}=0.357.$$\n\n**Answer.** $0.357$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 330 195\" width=\"100%\" style=\"max-width:350px;height:auto\"><line x1=\"44\" y1=\"20\" x2=\"44\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"44\" y1=\"165\" x2=\"312\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"240\" y=\"182\" font-size=\"9\" fill=\"#1e293b\">substrate [S] →</text><line x1=\"44\" y1=\"40\" x2=\"312\" y2=\"40\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><text x=\"232\" y=\"36\" font-size=\"10\" fill=\"#dc2626\">μ_max = 0.5</text><path d=\"M44 165 C90 110 140 70 200 56 C250 46 290 42 312 41\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><line x1=\"44\" y1=\"102\" x2=\"120\" y2=\"102\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><line x1=\"120\" y1=\"102\" x2=\"120\" y2=\"165\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><text x=\"14\" y=\"106\" font-size=\"7\" fill=\"#16a34a\">μ_max/2</text><text x=\"98\" y=\"178\" font-size=\"10\" fill=\"#16a34a\">K_s = 40</text></svg>",
+        "caption": "Monod μ–S curve: μ_max (plateau) and K_s (half-saturation) marked on the curve only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A culture follows Monod kinetics at substrate $S=100\\,\\text{mg/L}$. Reading $\\mu_{max}$ and $K_s$ from the $\\mu$–$S$ curve shown, the specific growth rate $\\mu$ is _____ h⁻¹.",
+      "answer": 0.3571,
+      "tolerance": 0.005
+    },
+    {
+      "id": "es-micro-031",
+      "subject": "Environmental Microbiology",
+      "topic": "Microbial Growth",
+      "difficulty": "medium",
+      "marks": 2,
+      "archetype": "A",
+      "solution": "**Concept.** t_d = ln2/μ.\n\n**Working.**\n$$0.693/0.693=1.$$\n\n**Answer.** $1\\,\\text{h}$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 330 180\" width=\"100%\" style=\"max-width:350px;height:auto\"><line x1=\"38\" y1=\"18\" x2=\"38\" y2=\"158\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"38\" y1=\"158\" x2=\"312\" y2=\"158\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"6\" y=\"28\" font-size=\"8\" fill=\"#1e293b\">ln X</text><text x=\"270\" y=\"174\" font-size=\"9\" fill=\"#1e293b\">time →</text><path d=\"M38 150 L80 148 L150 60 L230 40 L300 95\" fill=\"none\" stroke=\"#16a34a\" stroke-width=\"1.7\"/><text x=\"50\" y=\"142\" font-size=\"7\" fill=\"#1e293b\">lag</text><text x=\"105\" y=\"100\" font-size=\"7\" fill=\"#16a34a\">log (μ_max)</text><text x=\"215\" y=\"34\" font-size=\"7\" fill=\"#1e293b\">stationary</text><text x=\"278\" y=\"110\" font-size=\"7\" fill=\"#dc2626\">death</text></svg>",
+        "caption": "Batch microbial growth curve."
+      },
+      "type": "NAT",
+      "stem": "Specific growth rate $\\mu=0.693\\,\\text{h}^{-1}$. Doubling time is _____ h.",
+      "answer": 1,
+      "tolerance": 0.02
+    },
+    {
+      "id": "es-micro-032",
+      "subject": "Environmental Microbiology",
+      "topic": "Binary Fission",
+      "difficulty": "easy",
+      "marks": 1,
+      "archetype": "A",
+      "solution": "**Concept.** N = N₀·2ⁿ.\n\n**Working.**\n$$1000\\times2^{6}=64000.$$\n\n**Answer.** $64000$",
+      "type": "NAT",
+      "stem": "$1000$ cells after $6$ generations of binary fission number _____.",
+      "answer": 64000,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-micro-033",
+      "subject": "Environmental Microbiology",
+      "topic": "Monod Kinetics",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** μ = μ_max S/(K_s+S), with μ_max and K_s read from the curve.\n\n**Working.**\n$$\\dfrac{0.3\\times100}{20+100}=0.25.$$\n\n**Answer.** $0.25$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 330 195\" width=\"100%\" style=\"max-width:350px;height:auto\"><line x1=\"44\" y1=\"20\" x2=\"44\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"44\" y1=\"165\" x2=\"312\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"240\" y=\"182\" font-size=\"9\" fill=\"#1e293b\">substrate [S] →</text><line x1=\"44\" y1=\"40\" x2=\"312\" y2=\"40\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><text x=\"232\" y=\"36\" font-size=\"10\" fill=\"#dc2626\">μ_max = 0.3</text><path d=\"M44 165 C90 110 140 70 200 56 C250 46 290 42 312 41\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><line x1=\"44\" y1=\"102\" x2=\"120\" y2=\"102\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><line x1=\"120\" y1=\"102\" x2=\"120\" y2=\"165\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><text x=\"14\" y=\"106\" font-size=\"7\" fill=\"#16a34a\">μ_max/2</text><text x=\"98\" y=\"178\" font-size=\"10\" fill=\"#16a34a\">K_s = 20</text></svg>",
+        "caption": "Monod μ–S curve: μ_max (plateau) and K_s (half-saturation) marked on the curve only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A culture follows Monod kinetics at substrate $S=100\\,\\text{mg/L}$. Reading $\\mu_{max}$ and $K_s$ from the $\\mu$–$S$ curve shown, the specific growth rate $\\mu$ is _____ h⁻¹.",
+      "answer": 0.25,
+      "tolerance": 0.005
+    },
+    {
+      "id": "es-micro-034",
+      "subject": "Environmental Microbiology",
+      "topic": "Monod Kinetics",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** μ = μ_max S/(K_s+S), with μ_max and K_s read from the curve.\n\n**Working.**\n$$\\dfrac{0.6\\times150}{60+150}=0.429.$$\n\n**Answer.** $0.429$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 330 195\" width=\"100%\" style=\"max-width:350px;height:auto\"><line x1=\"44\" y1=\"20\" x2=\"44\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"44\" y1=\"165\" x2=\"312\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"240\" y=\"182\" font-size=\"9\" fill=\"#1e293b\">substrate [S] →</text><line x1=\"44\" y1=\"40\" x2=\"312\" y2=\"40\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><text x=\"232\" y=\"36\" font-size=\"10\" fill=\"#dc2626\">μ_max = 0.6</text><path d=\"M44 165 C90 110 140 70 200 56 C250 46 290 42 312 41\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><line x1=\"44\" y1=\"102\" x2=\"120\" y2=\"102\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><line x1=\"120\" y1=\"102\" x2=\"120\" y2=\"165\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><text x=\"14\" y=\"106\" font-size=\"7\" fill=\"#16a34a\">μ_max/2</text><text x=\"98\" y=\"178\" font-size=\"10\" fill=\"#16a34a\">K_s = 60</text></svg>",
+        "caption": "Monod μ–S curve: μ_max (plateau) and K_s (half-saturation) marked on the curve only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A culture follows Monod kinetics at substrate $S=150\\,\\text{mg/L}$. Reading $\\mu_{max}$ and $K_s$ from the $\\mu$–$S$ curve shown, the specific growth rate $\\mu$ is _____ h⁻¹.",
+      "answer": 0.4286,
+      "tolerance": 0.005
+    },
+    {
+      "id": "es-micro-035",
+      "subject": "Environmental Microbiology",
+      "topic": "Binary Fission",
+      "difficulty": "easy",
+      "marks": 1,
+      "archetype": "A",
+      "solution": "**Concept.** N = N₀·2ⁿ.\n\n**Working.**\n$$500\\times2^{6}=32000.$$\n\n**Answer.** $32000$",
+      "type": "NAT",
+      "stem": "$500$ cells after $6$ generations of binary fission number _____.",
+      "answer": 32000,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-micro-036",
+      "subject": "Environmental Microbiology",
+      "topic": "Monod Kinetics",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** μ = μ_max S/(K_s+S), with μ_max and K_s read from the curve.\n\n**Working.**\n$$\\dfrac{0.3\\times150}{40+150}=0.237.$$\n\n**Answer.** $0.237$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 330 195\" width=\"100%\" style=\"max-width:350px;height:auto\"><line x1=\"44\" y1=\"20\" x2=\"44\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"44\" y1=\"165\" x2=\"312\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"240\" y=\"182\" font-size=\"9\" fill=\"#1e293b\">substrate [S] →</text><line x1=\"44\" y1=\"40\" x2=\"312\" y2=\"40\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><text x=\"232\" y=\"36\" font-size=\"10\" fill=\"#dc2626\">μ_max = 0.3</text><path d=\"M44 165 C90 110 140 70 200 56 C250 46 290 42 312 41\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><line x1=\"44\" y1=\"102\" x2=\"120\" y2=\"102\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><line x1=\"120\" y1=\"102\" x2=\"120\" y2=\"165\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><text x=\"14\" y=\"106\" font-size=\"7\" fill=\"#16a34a\">μ_max/2</text><text x=\"98\" y=\"178\" font-size=\"10\" fill=\"#16a34a\">K_s = 40</text></svg>",
+        "caption": "Monod μ–S curve: μ_max (plateau) and K_s (half-saturation) marked on the curve only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A culture follows Monod kinetics at substrate $S=150\\,\\text{mg/L}$. Reading $\\mu_{max}$ and $K_s$ from the $\\mu$–$S$ curve shown, the specific growth rate $\\mu$ is _____ h⁻¹.",
+      "answer": 0.2368,
+      "tolerance": 0.005
+    },
+    {
+      "id": "es-micro-037",
+      "subject": "Environmental Microbiology",
+      "topic": "Monod Kinetics",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** μ = μ_max S/(K_s+S), with μ_max and K_s read from the curve.\n\n**Working.**\n$$\\dfrac{0.5\\times100}{50+100}=0.333.$$\n\n**Answer.** $0.333$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 330 195\" width=\"100%\" style=\"max-width:350px;height:auto\"><line x1=\"44\" y1=\"20\" x2=\"44\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"44\" y1=\"165\" x2=\"312\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"240\" y=\"182\" font-size=\"9\" fill=\"#1e293b\">substrate [S] →</text><line x1=\"44\" y1=\"40\" x2=\"312\" y2=\"40\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><text x=\"232\" y=\"36\" font-size=\"10\" fill=\"#dc2626\">μ_max = 0.5</text><path d=\"M44 165 C90 110 140 70 200 56 C250 46 290 42 312 41\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><line x1=\"44\" y1=\"102\" x2=\"120\" y2=\"102\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><line x1=\"120\" y1=\"102\" x2=\"120\" y2=\"165\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><text x=\"14\" y=\"106\" font-size=\"7\" fill=\"#16a34a\">μ_max/2</text><text x=\"98\" y=\"178\" font-size=\"10\" fill=\"#16a34a\">K_s = 50</text></svg>",
+        "caption": "Monod μ–S curve: μ_max (plateau) and K_s (half-saturation) marked on the curve only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A culture follows Monod kinetics at substrate $S=100\\,\\text{mg/L}$. Reading $\\mu_{max}$ and $K_s$ from the $\\mu$–$S$ curve shown, the specific growth rate $\\mu$ is _____ h⁻¹.",
+      "answer": 0.3333,
+      "tolerance": 0.005
+    },
+    {
+      "id": "es-micro-038",
+      "subject": "Environmental Microbiology",
+      "topic": "Monod Kinetics",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** μ = μ_max S/(K_s+S), with μ_max and K_s read from the curve.\n\n**Working.**\n$$\\dfrac{0.6\\times80}{50+80}=0.369.$$\n\n**Answer.** $0.369$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 330 195\" width=\"100%\" style=\"max-width:350px;height:auto\"><line x1=\"44\" y1=\"20\" x2=\"44\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"44\" y1=\"165\" x2=\"312\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"240\" y=\"182\" font-size=\"9\" fill=\"#1e293b\">substrate [S] →</text><line x1=\"44\" y1=\"40\" x2=\"312\" y2=\"40\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><text x=\"232\" y=\"36\" font-size=\"10\" fill=\"#dc2626\">μ_max = 0.6</text><path d=\"M44 165 C90 110 140 70 200 56 C250 46 290 42 312 41\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><line x1=\"44\" y1=\"102\" x2=\"120\" y2=\"102\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><line x1=\"120\" y1=\"102\" x2=\"120\" y2=\"165\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><text x=\"14\" y=\"106\" font-size=\"7\" fill=\"#16a34a\">μ_max/2</text><text x=\"98\" y=\"178\" font-size=\"10\" fill=\"#16a34a\">K_s = 50</text></svg>",
+        "caption": "Monod μ–S curve: μ_max (plateau) and K_s (half-saturation) marked on the curve only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A culture follows Monod kinetics at substrate $S=80\\,\\text{mg/L}$. Reading $\\mu_{max}$ and $K_s$ from the $\\mu$–$S$ curve shown, the specific growth rate $\\mu$ is _____ h⁻¹.",
+      "answer": 0.3692,
+      "tolerance": 0.005
+    },
+    {
+      "id": "es-micro-039",
+      "subject": "Environmental Microbiology",
+      "topic": "Binary Fission",
+      "difficulty": "easy",
+      "marks": 1,
+      "archetype": "A",
+      "solution": "**Concept.** N = N₀·2ⁿ.\n\n**Working.**\n$$1000\\times2^{10}=1024000.$$\n\n**Answer.** $1024000$",
+      "type": "NAT",
+      "stem": "$1000$ cells after $10$ generations of binary fission number _____.",
+      "answer": 1024000,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-micro-040",
+      "subject": "Environmental Microbiology",
+      "topic": "Binary Fission",
+      "difficulty": "easy",
+      "marks": 1,
+      "archetype": "A",
+      "solution": "**Concept.** N = N₀·2ⁿ.\n\n**Working.**\n$$100\\times2^{6}=6400.$$\n\n**Answer.** $6400$",
+      "type": "NAT",
+      "stem": "$100$ cells after $6$ generations of binary fission number _____.",
+      "answer": 6400,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-micro-041",
+      "subject": "Environmental Microbiology",
+      "topic": "Monod Kinetics",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** μ = μ_max S/(K_s+S), with μ_max and K_s read from the curve.\n\n**Working.**\n$$\\dfrac{0.6\\times80}{40+80}=0.4.$$\n\n**Answer.** $0.4$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 330 195\" width=\"100%\" style=\"max-width:350px;height:auto\"><line x1=\"44\" y1=\"20\" x2=\"44\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"44\" y1=\"165\" x2=\"312\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"240\" y=\"182\" font-size=\"9\" fill=\"#1e293b\">substrate [S] →</text><line x1=\"44\" y1=\"40\" x2=\"312\" y2=\"40\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><text x=\"232\" y=\"36\" font-size=\"10\" fill=\"#dc2626\">μ_max = 0.6</text><path d=\"M44 165 C90 110 140 70 200 56 C250 46 290 42 312 41\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><line x1=\"44\" y1=\"102\" x2=\"120\" y2=\"102\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><line x1=\"120\" y1=\"102\" x2=\"120\" y2=\"165\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><text x=\"14\" y=\"106\" font-size=\"7\" fill=\"#16a34a\">μ_max/2</text><text x=\"98\" y=\"178\" font-size=\"10\" fill=\"#16a34a\">K_s = 40</text></svg>",
+        "caption": "Monod μ–S curve: μ_max (plateau) and K_s (half-saturation) marked on the curve only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A culture follows Monod kinetics at substrate $S=80\\,\\text{mg/L}$. Reading $\\mu_{max}$ and $K_s$ from the $\\mu$–$S$ curve shown, the specific growth rate $\\mu$ is _____ h⁻¹.",
+      "answer": 0.4,
+      "tolerance": 0.005
+    },
+    {
+      "id": "es-micro-042",
+      "subject": "Environmental Microbiology",
+      "topic": "Monod Kinetics",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** μ = μ_max S/(K_s+S), with μ_max and K_s read from the curve.\n\n**Working.**\n$$\\dfrac{0.6\\times100}{50+100}=0.4.$$\n\n**Answer.** $0.4$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 330 195\" width=\"100%\" style=\"max-width:350px;height:auto\"><line x1=\"44\" y1=\"20\" x2=\"44\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"44\" y1=\"165\" x2=\"312\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"240\" y=\"182\" font-size=\"9\" fill=\"#1e293b\">substrate [S] →</text><line x1=\"44\" y1=\"40\" x2=\"312\" y2=\"40\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><text x=\"232\" y=\"36\" font-size=\"10\" fill=\"#dc2626\">μ_max = 0.6</text><path d=\"M44 165 C90 110 140 70 200 56 C250 46 290 42 312 41\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><line x1=\"44\" y1=\"102\" x2=\"120\" y2=\"102\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><line x1=\"120\" y1=\"102\" x2=\"120\" y2=\"165\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><text x=\"14\" y=\"106\" font-size=\"7\" fill=\"#16a34a\">μ_max/2</text><text x=\"98\" y=\"178\" font-size=\"10\" fill=\"#16a34a\">K_s = 50</text></svg>",
+        "caption": "Monod μ–S curve: μ_max (plateau) and K_s (half-saturation) marked on the curve only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A culture follows Monod kinetics at substrate $S=100\\,\\text{mg/L}$. Reading $\\mu_{max}$ and $K_s$ from the $\\mu$–$S$ curve shown, the specific growth rate $\\mu$ is _____ h⁻¹.",
+      "answer": 0.4,
+      "tolerance": 0.005
+    },
+    {
+      "id": "es-micro-043",
+      "subject": "Environmental Microbiology",
+      "topic": "Monod Kinetics",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** μ = μ_max S/(K_s+S), with μ_max and K_s read from the curve.\n\n**Working.**\n$$\\dfrac{0.6\\times80}{60+80}=0.343.$$\n\n**Answer.** $0.343$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 330 195\" width=\"100%\" style=\"max-width:350px;height:auto\"><line x1=\"44\" y1=\"20\" x2=\"44\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"44\" y1=\"165\" x2=\"312\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"240\" y=\"182\" font-size=\"9\" fill=\"#1e293b\">substrate [S] →</text><line x1=\"44\" y1=\"40\" x2=\"312\" y2=\"40\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><text x=\"232\" y=\"36\" font-size=\"10\" fill=\"#dc2626\">μ_max = 0.6</text><path d=\"M44 165 C90 110 140 70 200 56 C250 46 290 42 312 41\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><line x1=\"44\" y1=\"102\" x2=\"120\" y2=\"102\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><line x1=\"120\" y1=\"102\" x2=\"120\" y2=\"165\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><text x=\"14\" y=\"106\" font-size=\"7\" fill=\"#16a34a\">μ_max/2</text><text x=\"98\" y=\"178\" font-size=\"10\" fill=\"#16a34a\">K_s = 60</text></svg>",
+        "caption": "Monod μ–S curve: μ_max (plateau) and K_s (half-saturation) marked on the curve only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A culture follows Monod kinetics at substrate $S=80\\,\\text{mg/L}$. Reading $\\mu_{max}$ and $K_s$ from the $\\mu$–$S$ curve shown, the specific growth rate $\\mu$ is _____ h⁻¹.",
+      "answer": 0.3429,
+      "tolerance": 0.005
+    },
+    {
+      "id": "es-micro-044",
+      "subject": "Environmental Microbiology",
+      "topic": "Binary Fission",
+      "difficulty": "easy",
+      "marks": 1,
+      "archetype": "A",
+      "solution": "**Concept.** N = N₀·2ⁿ.\n\n**Working.**\n$$100\\times2^{8}=25600.$$\n\n**Answer.** $25600$",
+      "type": "NAT",
+      "stem": "$100$ cells after $8$ generations of binary fission number _____.",
+      "answer": 25600,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-micro-045",
+      "subject": "Environmental Microbiology",
+      "topic": "Monod Kinetics",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** μ = μ_max S/(K_s+S), with μ_max and K_s read from the curve.\n\n**Working.**\n$$\\dfrac{0.4\\times150}{50+150}=0.3.$$\n\n**Answer.** $0.3$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 330 195\" width=\"100%\" style=\"max-width:350px;height:auto\"><line x1=\"44\" y1=\"20\" x2=\"44\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"44\" y1=\"165\" x2=\"312\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"240\" y=\"182\" font-size=\"9\" fill=\"#1e293b\">substrate [S] →</text><line x1=\"44\" y1=\"40\" x2=\"312\" y2=\"40\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><text x=\"232\" y=\"36\" font-size=\"10\" fill=\"#dc2626\">μ_max = 0.4</text><path d=\"M44 165 C90 110 140 70 200 56 C250 46 290 42 312 41\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><line x1=\"44\" y1=\"102\" x2=\"120\" y2=\"102\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><line x1=\"120\" y1=\"102\" x2=\"120\" y2=\"165\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><text x=\"14\" y=\"106\" font-size=\"7\" fill=\"#16a34a\">μ_max/2</text><text x=\"98\" y=\"178\" font-size=\"10\" fill=\"#16a34a\">K_s = 50</text></svg>",
+        "caption": "Monod μ–S curve: μ_max (plateau) and K_s (half-saturation) marked on the curve only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A culture follows Monod kinetics at substrate $S=150\\,\\text{mg/L}$. Reading $\\mu_{max}$ and $K_s$ from the $\\mu$–$S$ curve shown, the specific growth rate $\\mu$ is _____ h⁻¹.",
+      "answer": 0.3,
+      "tolerance": 0.005
+    },
+    {
+      "id": "es-micro-046",
+      "subject": "Environmental Microbiology",
+      "topic": "Binary Fission",
+      "difficulty": "easy",
+      "marks": 1,
+      "archetype": "A",
+      "solution": "**Concept.** N = N₀·2ⁿ.\n\n**Working.**\n$$1000\\times2^{8}=256000.$$\n\n**Answer.** $256000$",
+      "type": "NAT",
+      "stem": "$1000$ cells after $8$ generations of binary fission number _____.",
+      "answer": 256000,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-micro-047",
+      "subject": "Environmental Microbiology",
+      "topic": "Monod Kinetics",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** μ = μ_max S/(K_s+S), with μ_max and K_s read from the curve.\n\n**Working.**\n$$\\dfrac{0.4\\times80}{20+80}=0.32.$$\n\n**Answer.** $0.32$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 330 195\" width=\"100%\" style=\"max-width:350px;height:auto\"><line x1=\"44\" y1=\"20\" x2=\"44\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"44\" y1=\"165\" x2=\"312\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"240\" y=\"182\" font-size=\"9\" fill=\"#1e293b\">substrate [S] →</text><line x1=\"44\" y1=\"40\" x2=\"312\" y2=\"40\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><text x=\"232\" y=\"36\" font-size=\"10\" fill=\"#dc2626\">μ_max = 0.4</text><path d=\"M44 165 C90 110 140 70 200 56 C250 46 290 42 312 41\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><line x1=\"44\" y1=\"102\" x2=\"120\" y2=\"102\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><line x1=\"120\" y1=\"102\" x2=\"120\" y2=\"165\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><text x=\"14\" y=\"106\" font-size=\"7\" fill=\"#16a34a\">μ_max/2</text><text x=\"98\" y=\"178\" font-size=\"10\" fill=\"#16a34a\">K_s = 20</text></svg>",
+        "caption": "Monod μ–S curve: μ_max (plateau) and K_s (half-saturation) marked on the curve only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A culture follows Monod kinetics at substrate $S=80\\,\\text{mg/L}$. Reading $\\mu_{max}$ and $K_s$ from the $\\mu$–$S$ curve shown, the specific growth rate $\\mu$ is _____ h⁻¹.",
+      "answer": 0.32,
+      "tolerance": 0.005
+    },
+    {
+      "id": "es-micro-048",
+      "subject": "Environmental Microbiology",
+      "topic": "Monod Kinetics",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** μ = μ_max S/(K_s+S), with μ_max and K_s read from the curve.\n\n**Working.**\n$$\\dfrac{0.4\\times100}{20+100}=0.333.$$\n\n**Answer.** $0.333$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 330 195\" width=\"100%\" style=\"max-width:350px;height:auto\"><line x1=\"44\" y1=\"20\" x2=\"44\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"44\" y1=\"165\" x2=\"312\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"240\" y=\"182\" font-size=\"9\" fill=\"#1e293b\">substrate [S] →</text><line x1=\"44\" y1=\"40\" x2=\"312\" y2=\"40\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><text x=\"232\" y=\"36\" font-size=\"10\" fill=\"#dc2626\">μ_max = 0.4</text><path d=\"M44 165 C90 110 140 70 200 56 C250 46 290 42 312 41\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><line x1=\"44\" y1=\"102\" x2=\"120\" y2=\"102\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><line x1=\"120\" y1=\"102\" x2=\"120\" y2=\"165\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><text x=\"14\" y=\"106\" font-size=\"7\" fill=\"#16a34a\">μ_max/2</text><text x=\"98\" y=\"178\" font-size=\"10\" fill=\"#16a34a\">K_s = 20</text></svg>",
+        "caption": "Monod μ–S curve: μ_max (plateau) and K_s (half-saturation) marked on the curve only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A culture follows Monod kinetics at substrate $S=100\\,\\text{mg/L}$. Reading $\\mu_{max}$ and $K_s$ from the $\\mu$–$S$ curve shown, the specific growth rate $\\mu$ is _____ h⁻¹.",
+      "answer": 0.3333,
+      "tolerance": 0.005
+    },
+    {
+      "id": "es-micro-049",
+      "subject": "Environmental Microbiology",
+      "topic": "Monod Kinetics",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** μ = μ_max S/(K_s+S), with μ_max and K_s read from the curve.\n\n**Working.**\n$$\\dfrac{0.5\\times100}{60+100}=0.313.$$\n\n**Answer.** $0.313$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 330 195\" width=\"100%\" style=\"max-width:350px;height:auto\"><line x1=\"44\" y1=\"20\" x2=\"44\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"44\" y1=\"165\" x2=\"312\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"240\" y=\"182\" font-size=\"9\" fill=\"#1e293b\">substrate [S] →</text><line x1=\"44\" y1=\"40\" x2=\"312\" y2=\"40\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><text x=\"232\" y=\"36\" font-size=\"10\" fill=\"#dc2626\">μ_max = 0.5</text><path d=\"M44 165 C90 110 140 70 200 56 C250 46 290 42 312 41\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><line x1=\"44\" y1=\"102\" x2=\"120\" y2=\"102\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><line x1=\"120\" y1=\"102\" x2=\"120\" y2=\"165\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><text x=\"14\" y=\"106\" font-size=\"7\" fill=\"#16a34a\">μ_max/2</text><text x=\"98\" y=\"178\" font-size=\"10\" fill=\"#16a34a\">K_s = 60</text></svg>",
+        "caption": "Monod μ–S curve: μ_max (plateau) and K_s (half-saturation) marked on the curve only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A culture follows Monod kinetics at substrate $S=100\\,\\text{mg/L}$. Reading $\\mu_{max}$ and $K_s$ from the $\\mu$–$S$ curve shown, the specific growth rate $\\mu$ is _____ h⁻¹.",
+      "answer": 0.3125,
+      "tolerance": 0.005
+    },
+    {
+      "id": "es-micro-050",
+      "subject": "Environmental Microbiology",
+      "topic": "Binary Fission",
+      "difficulty": "easy",
+      "marks": 1,
+      "archetype": "A",
+      "solution": "**Concept.** N = N₀·2ⁿ.\n\n**Working.**\n$$500\\times2^{4}=8000.$$\n\n**Answer.** $8000$",
+      "type": "NAT",
+      "stem": "$500$ cells after $4$ generations of binary fission number _____.",
+      "answer": 8000,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-micro-051",
+      "subject": "Environmental Microbiology",
+      "topic": "Microbial Growth",
+      "difficulty": "medium",
+      "marks": 2,
+      "archetype": "A",
+      "solution": "**Concept.** t_d = ln2/μ.\n\n**Working.**\n$$0.693/0.5=1.39.$$\n\n**Answer.** $1.39\\,\\text{h}$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 330 180\" width=\"100%\" style=\"max-width:350px;height:auto\"><line x1=\"38\" y1=\"18\" x2=\"38\" y2=\"158\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"38\" y1=\"158\" x2=\"312\" y2=\"158\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"6\" y=\"28\" font-size=\"8\" fill=\"#1e293b\">ln X</text><text x=\"270\" y=\"174\" font-size=\"9\" fill=\"#1e293b\">time →</text><path d=\"M38 150 L80 148 L150 60 L230 40 L300 95\" fill=\"none\" stroke=\"#16a34a\" stroke-width=\"1.7\"/><text x=\"50\" y=\"142\" font-size=\"7\" fill=\"#1e293b\">lag</text><text x=\"105\" y=\"100\" font-size=\"7\" fill=\"#16a34a\">log (μ_max)</text><text x=\"215\" y=\"34\" font-size=\"7\" fill=\"#1e293b\">stationary</text><text x=\"278\" y=\"110\" font-size=\"7\" fill=\"#dc2626\">death</text></svg>",
+        "caption": "Batch microbial growth curve."
+      },
+      "type": "NAT",
+      "stem": "Specific growth rate $\\mu=0.5\\,\\text{h}^{-1}$. Doubling time is _____ h.",
+      "answer": 1.386,
+      "tolerance": 0.02
+    },
+    {
+      "id": "es-micro-052",
+      "subject": "Environmental Microbiology",
+      "topic": "Monod Kinetics",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** μ = μ_max S/(K_s+S), with μ_max and K_s read from the curve.\n\n**Working.**\n$$\\dfrac{0.5\\times150}{40+150}=0.395.$$\n\n**Answer.** $0.395$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 330 195\" width=\"100%\" style=\"max-width:350px;height:auto\"><line x1=\"44\" y1=\"20\" x2=\"44\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"44\" y1=\"165\" x2=\"312\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"240\" y=\"182\" font-size=\"9\" fill=\"#1e293b\">substrate [S] →</text><line x1=\"44\" y1=\"40\" x2=\"312\" y2=\"40\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><text x=\"232\" y=\"36\" font-size=\"10\" fill=\"#dc2626\">μ_max = 0.5</text><path d=\"M44 165 C90 110 140 70 200 56 C250 46 290 42 312 41\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><line x1=\"44\" y1=\"102\" x2=\"120\" y2=\"102\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><line x1=\"120\" y1=\"102\" x2=\"120\" y2=\"165\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><text x=\"14\" y=\"106\" font-size=\"7\" fill=\"#16a34a\">μ_max/2</text><text x=\"98\" y=\"178\" font-size=\"10\" fill=\"#16a34a\">K_s = 40</text></svg>",
+        "caption": "Monod μ–S curve: μ_max (plateau) and K_s (half-saturation) marked on the curve only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A culture follows Monod kinetics at substrate $S=150\\,\\text{mg/L}$. Reading $\\mu_{max}$ and $K_s$ from the $\\mu$–$S$ curve shown, the specific growth rate $\\mu$ is _____ h⁻¹.",
+      "answer": 0.3947,
+      "tolerance": 0.005
+    },
+    {
+      "id": "es-micro-053",
+      "subject": "Environmental Microbiology",
+      "topic": "Binary Fission",
+      "difficulty": "easy",
+      "marks": 1,
+      "archetype": "A",
+      "solution": "**Concept.** N = N₀·2ⁿ.\n\n**Working.**\n$$100\\times2^{9}=51200.$$\n\n**Answer.** $51200$",
+      "type": "NAT",
+      "stem": "$100$ cells after $9$ generations of binary fission number _____.",
+      "answer": 51200,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-micro-054",
+      "subject": "Environmental Microbiology",
+      "topic": "Monod Kinetics",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** μ = μ_max S/(K_s+S), with μ_max and K_s read from the curve.\n\n**Working.**\n$$\\dfrac{0.3\\times150}{60+150}=0.214.$$\n\n**Answer.** $0.214$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 330 195\" width=\"100%\" style=\"max-width:350px;height:auto\"><line x1=\"44\" y1=\"20\" x2=\"44\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"44\" y1=\"165\" x2=\"312\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"240\" y=\"182\" font-size=\"9\" fill=\"#1e293b\">substrate [S] →</text><line x1=\"44\" y1=\"40\" x2=\"312\" y2=\"40\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><text x=\"232\" y=\"36\" font-size=\"10\" fill=\"#dc2626\">μ_max = 0.3</text><path d=\"M44 165 C90 110 140 70 200 56 C250 46 290 42 312 41\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><line x1=\"44\" y1=\"102\" x2=\"120\" y2=\"102\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><line x1=\"120\" y1=\"102\" x2=\"120\" y2=\"165\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><text x=\"14\" y=\"106\" font-size=\"7\" fill=\"#16a34a\">μ_max/2</text><text x=\"98\" y=\"178\" font-size=\"10\" fill=\"#16a34a\">K_s = 60</text></svg>",
+        "caption": "Monod μ–S curve: μ_max (plateau) and K_s (half-saturation) marked on the curve only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A culture follows Monod kinetics at substrate $S=150\\,\\text{mg/L}$. Reading $\\mu_{max}$ and $K_s$ from the $\\mu$–$S$ curve shown, the specific growth rate $\\mu$ is _____ h⁻¹.",
+      "answer": 0.2143,
+      "tolerance": 0.005
+    },
+    {
+      "id": "es-micro-055",
+      "subject": "Environmental Microbiology",
+      "topic": "Monod Kinetics",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** μ = μ_max S/(K_s+S), with μ_max and K_s read from the curve.\n\n**Working.**\n$$\\dfrac{0.4\\times100}{60+100}=0.25.$$\n\n**Answer.** $0.25$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 330 195\" width=\"100%\" style=\"max-width:350px;height:auto\"><line x1=\"44\" y1=\"20\" x2=\"44\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"44\" y1=\"165\" x2=\"312\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"240\" y=\"182\" font-size=\"9\" fill=\"#1e293b\">substrate [S] →</text><line x1=\"44\" y1=\"40\" x2=\"312\" y2=\"40\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><text x=\"232\" y=\"36\" font-size=\"10\" fill=\"#dc2626\">μ_max = 0.4</text><path d=\"M44 165 C90 110 140 70 200 56 C250 46 290 42 312 41\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><line x1=\"44\" y1=\"102\" x2=\"120\" y2=\"102\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><line x1=\"120\" y1=\"102\" x2=\"120\" y2=\"165\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><text x=\"14\" y=\"106\" font-size=\"7\" fill=\"#16a34a\">μ_max/2</text><text x=\"98\" y=\"178\" font-size=\"10\" fill=\"#16a34a\">K_s = 60</text></svg>",
+        "caption": "Monod μ–S curve: μ_max (plateau) and K_s (half-saturation) marked on the curve only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A culture follows Monod kinetics at substrate $S=100\\,\\text{mg/L}$. Reading $\\mu_{max}$ and $K_s$ from the $\\mu$–$S$ curve shown, the specific growth rate $\\mu$ is _____ h⁻¹.",
+      "answer": 0.25,
+      "tolerance": 0.005
+    },
+    {
+      "id": "es-micro-056",
+      "subject": "Environmental Microbiology",
+      "topic": "Binary Fission",
+      "difficulty": "easy",
+      "marks": 1,
+      "archetype": "A",
+      "solution": "**Concept.** N = N₀·2ⁿ.\n\n**Working.**\n$$1000\\times2^{7}=128000.$$\n\n**Answer.** $128000$",
+      "type": "NAT",
+      "stem": "$1000$ cells after $7$ generations of binary fission number _____.",
+      "answer": 128000,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-micro-057",
+      "subject": "Environmental Microbiology",
+      "topic": "Binary Fission",
+      "difficulty": "easy",
+      "marks": 1,
+      "archetype": "A",
+      "solution": "**Concept.** N = N₀·2ⁿ.\n\n**Working.**\n$$1000\\times2^{4}=16000.$$\n\n**Answer.** $16000$",
+      "type": "NAT",
+      "stem": "$1000$ cells after $4$ generations of binary fission number _____.",
+      "answer": 16000,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-micro-058",
+      "subject": "Environmental Microbiology",
+      "topic": "Monod Kinetics",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** μ = μ_max S/(K_s+S), with μ_max and K_s read from the curve.\n\n**Working.**\n$$\\dfrac{0.5\\times100}{20+100}=0.417.$$\n\n**Answer.** $0.417$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 330 195\" width=\"100%\" style=\"max-width:350px;height:auto\"><line x1=\"44\" y1=\"20\" x2=\"44\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"44\" y1=\"165\" x2=\"312\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"240\" y=\"182\" font-size=\"9\" fill=\"#1e293b\">substrate [S] →</text><line x1=\"44\" y1=\"40\" x2=\"312\" y2=\"40\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><text x=\"232\" y=\"36\" font-size=\"10\" fill=\"#dc2626\">μ_max = 0.5</text><path d=\"M44 165 C90 110 140 70 200 56 C250 46 290 42 312 41\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><line x1=\"44\" y1=\"102\" x2=\"120\" y2=\"102\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><line x1=\"120\" y1=\"102\" x2=\"120\" y2=\"165\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><text x=\"14\" y=\"106\" font-size=\"7\" fill=\"#16a34a\">μ_max/2</text><text x=\"98\" y=\"178\" font-size=\"10\" fill=\"#16a34a\">K_s = 20</text></svg>",
+        "caption": "Monod μ–S curve: μ_max (plateau) and K_s (half-saturation) marked on the curve only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A culture follows Monod kinetics at substrate $S=100\\,\\text{mg/L}$. Reading $\\mu_{max}$ and $K_s$ from the $\\mu$–$S$ curve shown, the specific growth rate $\\mu$ is _____ h⁻¹.",
+      "answer": 0.4167,
+      "tolerance": 0.005
+    },
+    {
+      "id": "es-micro-059",
+      "subject": "Environmental Microbiology",
+      "topic": "Monod Kinetics",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** μ = μ_max S/(K_s+S), with μ_max and K_s read from the curve.\n\n**Working.**\n$$\\dfrac{0.5\\times80}{50+80}=0.308.$$\n\n**Answer.** $0.308$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 330 195\" width=\"100%\" style=\"max-width:350px;height:auto\"><line x1=\"44\" y1=\"20\" x2=\"44\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"44\" y1=\"165\" x2=\"312\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"240\" y=\"182\" font-size=\"9\" fill=\"#1e293b\">substrate [S] →</text><line x1=\"44\" y1=\"40\" x2=\"312\" y2=\"40\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><text x=\"232\" y=\"36\" font-size=\"10\" fill=\"#dc2626\">μ_max = 0.5</text><path d=\"M44 165 C90 110 140 70 200 56 C250 46 290 42 312 41\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><line x1=\"44\" y1=\"102\" x2=\"120\" y2=\"102\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><line x1=\"120\" y1=\"102\" x2=\"120\" y2=\"165\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><text x=\"14\" y=\"106\" font-size=\"7\" fill=\"#16a34a\">μ_max/2</text><text x=\"98\" y=\"178\" font-size=\"10\" fill=\"#16a34a\">K_s = 50</text></svg>",
+        "caption": "Monod μ–S curve: μ_max (plateau) and K_s (half-saturation) marked on the curve only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A culture follows Monod kinetics at substrate $S=80\\,\\text{mg/L}$. Reading $\\mu_{max}$ and $K_s$ from the $\\mu$–$S$ curve shown, the specific growth rate $\\mu$ is _____ h⁻¹.",
+      "answer": 0.3077,
+      "tolerance": 0.005
+    },
+    {
+      "id": "es-micro-060",
+      "subject": "Environmental Microbiology",
+      "topic": "Monod Kinetics",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** μ = μ_max S/(K_s+S), with μ_max and K_s read from the curve.\n\n**Working.**\n$$\\dfrac{0.6\\times40}{50+40}=0.267.$$\n\n**Answer.** $0.267$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 330 195\" width=\"100%\" style=\"max-width:350px;height:auto\"><line x1=\"44\" y1=\"20\" x2=\"44\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"44\" y1=\"165\" x2=\"312\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"240\" y=\"182\" font-size=\"9\" fill=\"#1e293b\">substrate [S] →</text><line x1=\"44\" y1=\"40\" x2=\"312\" y2=\"40\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><text x=\"232\" y=\"36\" font-size=\"10\" fill=\"#dc2626\">μ_max = 0.6</text><path d=\"M44 165 C90 110 140 70 200 56 C250 46 290 42 312 41\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><line x1=\"44\" y1=\"102\" x2=\"120\" y2=\"102\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><line x1=\"120\" y1=\"102\" x2=\"120\" y2=\"165\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><text x=\"14\" y=\"106\" font-size=\"7\" fill=\"#16a34a\">μ_max/2</text><text x=\"98\" y=\"178\" font-size=\"10\" fill=\"#16a34a\">K_s = 50</text></svg>",
+        "caption": "Monod μ–S curve: μ_max (plateau) and K_s (half-saturation) marked on the curve only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A culture follows Monod kinetics at substrate $S=40\\,\\text{mg/L}$. Reading $\\mu_{max}$ and $K_s$ from the $\\mu$–$S$ curve shown, the specific growth rate $\\mu$ is _____ h⁻¹.",
+      "answer": 0.2667,
+      "tolerance": 0.005
+    },
+    {
+      "id": "es-micro-061",
+      "subject": "Environmental Microbiology",
+      "topic": "Monod Kinetics",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** μ = μ_max S/(K_s+S), with μ_max and K_s read from the curve.\n\n**Working.**\n$$\\dfrac{0.5\\times150}{60+150}=0.357.$$\n\n**Answer.** $0.357$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 330 195\" width=\"100%\" style=\"max-width:350px;height:auto\"><line x1=\"44\" y1=\"20\" x2=\"44\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"44\" y1=\"165\" x2=\"312\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"240\" y=\"182\" font-size=\"9\" fill=\"#1e293b\">substrate [S] →</text><line x1=\"44\" y1=\"40\" x2=\"312\" y2=\"40\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><text x=\"232\" y=\"36\" font-size=\"10\" fill=\"#dc2626\">μ_max = 0.5</text><path d=\"M44 165 C90 110 140 70 200 56 C250 46 290 42 312 41\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><line x1=\"44\" y1=\"102\" x2=\"120\" y2=\"102\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><line x1=\"120\" y1=\"102\" x2=\"120\" y2=\"165\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><text x=\"14\" y=\"106\" font-size=\"7\" fill=\"#16a34a\">μ_max/2</text><text x=\"98\" y=\"178\" font-size=\"10\" fill=\"#16a34a\">K_s = 60</text></svg>",
+        "caption": "Monod μ–S curve: μ_max (plateau) and K_s (half-saturation) marked on the curve only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A culture follows Monod kinetics at substrate $S=150\\,\\text{mg/L}$. Reading $\\mu_{max}$ and $K_s$ from the $\\mu$–$S$ curve shown, the specific growth rate $\\mu$ is _____ h⁻¹.",
+      "answer": 0.3571,
+      "tolerance": 0.005
+    },
+    {
+      "id": "es-micro-062",
+      "subject": "Environmental Microbiology",
+      "topic": "Monod Kinetics",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** μ = μ_max S/(K_s+S), with μ_max and K_s read from the curve.\n\n**Working.**\n$$\\dfrac{0.4\\times100}{40+100}=0.286.$$\n\n**Answer.** $0.286$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 330 195\" width=\"100%\" style=\"max-width:350px;height:auto\"><line x1=\"44\" y1=\"20\" x2=\"44\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"44\" y1=\"165\" x2=\"312\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"240\" y=\"182\" font-size=\"9\" fill=\"#1e293b\">substrate [S] →</text><line x1=\"44\" y1=\"40\" x2=\"312\" y2=\"40\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><text x=\"232\" y=\"36\" font-size=\"10\" fill=\"#dc2626\">μ_max = 0.4</text><path d=\"M44 165 C90 110 140 70 200 56 C250 46 290 42 312 41\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><line x1=\"44\" y1=\"102\" x2=\"120\" y2=\"102\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><line x1=\"120\" y1=\"102\" x2=\"120\" y2=\"165\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><text x=\"14\" y=\"106\" font-size=\"7\" fill=\"#16a34a\">μ_max/2</text><text x=\"98\" y=\"178\" font-size=\"10\" fill=\"#16a34a\">K_s = 40</text></svg>",
+        "caption": "Monod μ–S curve: μ_max (plateau) and K_s (half-saturation) marked on the curve only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A culture follows Monod kinetics at substrate $S=100\\,\\text{mg/L}$. Reading $\\mu_{max}$ and $K_s$ from the $\\mu$–$S$ curve shown, the specific growth rate $\\mu$ is _____ h⁻¹.",
+      "answer": 0.2857,
+      "tolerance": 0.005
+    },
+    {
+      "id": "es-micro-063",
+      "subject": "Environmental Microbiology",
+      "topic": "Monod Kinetics",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** μ = μ_max S/(K_s+S), with μ_max and K_s read from the curve.\n\n**Working.**\n$$\\dfrac{0.3\\times40}{50+40}=0.133.$$\n\n**Answer.** $0.133$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 330 195\" width=\"100%\" style=\"max-width:350px;height:auto\"><line x1=\"44\" y1=\"20\" x2=\"44\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"44\" y1=\"165\" x2=\"312\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"240\" y=\"182\" font-size=\"9\" fill=\"#1e293b\">substrate [S] →</text><line x1=\"44\" y1=\"40\" x2=\"312\" y2=\"40\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><text x=\"232\" y=\"36\" font-size=\"10\" fill=\"#dc2626\">μ_max = 0.3</text><path d=\"M44 165 C90 110 140 70 200 56 C250 46 290 42 312 41\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><line x1=\"44\" y1=\"102\" x2=\"120\" y2=\"102\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><line x1=\"120\" y1=\"102\" x2=\"120\" y2=\"165\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><text x=\"14\" y=\"106\" font-size=\"7\" fill=\"#16a34a\">μ_max/2</text><text x=\"98\" y=\"178\" font-size=\"10\" fill=\"#16a34a\">K_s = 50</text></svg>",
+        "caption": "Monod μ–S curve: μ_max (plateau) and K_s (half-saturation) marked on the curve only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A culture follows Monod kinetics at substrate $S=40\\,\\text{mg/L}$. Reading $\\mu_{max}$ and $K_s$ from the $\\mu$–$S$ curve shown, the specific growth rate $\\mu$ is _____ h⁻¹.",
+      "answer": 0.1333,
+      "tolerance": 0.005
+    },
+    {
+      "id": "es-micro-064",
+      "subject": "Environmental Microbiology",
+      "topic": "Monod Kinetics",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** μ = μ_max S/(K_s+S), with μ_max and K_s read from the curve.\n\n**Working.**\n$$\\dfrac{0.3\\times150}{20+150}=0.265.$$\n\n**Answer.** $0.265$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 330 195\" width=\"100%\" style=\"max-width:350px;height:auto\"><line x1=\"44\" y1=\"20\" x2=\"44\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"44\" y1=\"165\" x2=\"312\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"240\" y=\"182\" font-size=\"9\" fill=\"#1e293b\">substrate [S] →</text><line x1=\"44\" y1=\"40\" x2=\"312\" y2=\"40\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><text x=\"232\" y=\"36\" font-size=\"10\" fill=\"#dc2626\">μ_max = 0.3</text><path d=\"M44 165 C90 110 140 70 200 56 C250 46 290 42 312 41\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><line x1=\"44\" y1=\"102\" x2=\"120\" y2=\"102\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><line x1=\"120\" y1=\"102\" x2=\"120\" y2=\"165\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><text x=\"14\" y=\"106\" font-size=\"7\" fill=\"#16a34a\">μ_max/2</text><text x=\"98\" y=\"178\" font-size=\"10\" fill=\"#16a34a\">K_s = 20</text></svg>",
+        "caption": "Monod μ–S curve: μ_max (plateau) and K_s (half-saturation) marked on the curve only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A culture follows Monod kinetics at substrate $S=150\\,\\text{mg/L}$. Reading $\\mu_{max}$ and $K_s$ from the $\\mu$–$S$ curve shown, the specific growth rate $\\mu$ is _____ h⁻¹.",
+      "answer": 0.2647,
+      "tolerance": 0.005
+    },
+    {
+      "id": "es-micro-065",
+      "subject": "Environmental Microbiology",
+      "topic": "Monod Kinetics",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** μ = μ_max S/(K_s+S), with μ_max and K_s read from the curve.\n\n**Working.**\n$$\\dfrac{0.4\\times40}{50+40}=0.178.$$\n\n**Answer.** $0.178$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 330 195\" width=\"100%\" style=\"max-width:350px;height:auto\"><line x1=\"44\" y1=\"20\" x2=\"44\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"44\" y1=\"165\" x2=\"312\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"240\" y=\"182\" font-size=\"9\" fill=\"#1e293b\">substrate [S] →</text><line x1=\"44\" y1=\"40\" x2=\"312\" y2=\"40\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><text x=\"232\" y=\"36\" font-size=\"10\" fill=\"#dc2626\">μ_max = 0.4</text><path d=\"M44 165 C90 110 140 70 200 56 C250 46 290 42 312 41\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><line x1=\"44\" y1=\"102\" x2=\"120\" y2=\"102\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><line x1=\"120\" y1=\"102\" x2=\"120\" y2=\"165\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><text x=\"14\" y=\"106\" font-size=\"7\" fill=\"#16a34a\">μ_max/2</text><text x=\"98\" y=\"178\" font-size=\"10\" fill=\"#16a34a\">K_s = 50</text></svg>",
+        "caption": "Monod μ–S curve: μ_max (plateau) and K_s (half-saturation) marked on the curve only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A culture follows Monod kinetics at substrate $S=40\\,\\text{mg/L}$. Reading $\\mu_{max}$ and $K_s$ from the $\\mu$–$S$ curve shown, the specific growth rate $\\mu$ is _____ h⁻¹.",
+      "answer": 0.1778,
+      "tolerance": 0.005
+    },
+    {
+      "id": "es-micro-066",
+      "subject": "Environmental Microbiology",
+      "topic": "Monod Kinetics",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** μ = μ_max S/(K_s+S), with μ_max and K_s read from the curve.\n\n**Working.**\n$$\\dfrac{0.4\\times150}{60+150}=0.286.$$\n\n**Answer.** $0.286$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 330 195\" width=\"100%\" style=\"max-width:350px;height:auto\"><line x1=\"44\" y1=\"20\" x2=\"44\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"44\" y1=\"165\" x2=\"312\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"240\" y=\"182\" font-size=\"9\" fill=\"#1e293b\">substrate [S] →</text><line x1=\"44\" y1=\"40\" x2=\"312\" y2=\"40\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><text x=\"232\" y=\"36\" font-size=\"10\" fill=\"#dc2626\">μ_max = 0.4</text><path d=\"M44 165 C90 110 140 70 200 56 C250 46 290 42 312 41\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><line x1=\"44\" y1=\"102\" x2=\"120\" y2=\"102\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><line x1=\"120\" y1=\"102\" x2=\"120\" y2=\"165\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><text x=\"14\" y=\"106\" font-size=\"7\" fill=\"#16a34a\">μ_max/2</text><text x=\"98\" y=\"178\" font-size=\"10\" fill=\"#16a34a\">K_s = 60</text></svg>",
+        "caption": "Monod μ–S curve: μ_max (plateau) and K_s (half-saturation) marked on the curve only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A culture follows Monod kinetics at substrate $S=150\\,\\text{mg/L}$. Reading $\\mu_{max}$ and $K_s$ from the $\\mu$–$S$ curve shown, the specific growth rate $\\mu$ is _____ h⁻¹.",
+      "answer": 0.2857,
+      "tolerance": 0.005
+    },
+    {
+      "id": "es-micro-067",
+      "subject": "Environmental Microbiology",
+      "topic": "Monod Kinetics",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** μ = μ_max S/(K_s+S), with μ_max and K_s read from the curve.\n\n**Working.**\n$$\\dfrac{0.3\\times150}{50+150}=0.225.$$\n\n**Answer.** $0.225$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 330 195\" width=\"100%\" style=\"max-width:350px;height:auto\"><line x1=\"44\" y1=\"20\" x2=\"44\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"44\" y1=\"165\" x2=\"312\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"240\" y=\"182\" font-size=\"9\" fill=\"#1e293b\">substrate [S] →</text><line x1=\"44\" y1=\"40\" x2=\"312\" y2=\"40\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><text x=\"232\" y=\"36\" font-size=\"10\" fill=\"#dc2626\">μ_max = 0.3</text><path d=\"M44 165 C90 110 140 70 200 56 C250 46 290 42 312 41\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><line x1=\"44\" y1=\"102\" x2=\"120\" y2=\"102\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><line x1=\"120\" y1=\"102\" x2=\"120\" y2=\"165\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><text x=\"14\" y=\"106\" font-size=\"7\" fill=\"#16a34a\">μ_max/2</text><text x=\"98\" y=\"178\" font-size=\"10\" fill=\"#16a34a\">K_s = 50</text></svg>",
+        "caption": "Monod μ–S curve: μ_max (plateau) and K_s (half-saturation) marked on the curve only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A culture follows Monod kinetics at substrate $S=150\\,\\text{mg/L}$. Reading $\\mu_{max}$ and $K_s$ from the $\\mu$–$S$ curve shown, the specific growth rate $\\mu$ is _____ h⁻¹.",
+      "answer": 0.225,
+      "tolerance": 0.005
+    },
+    {
+      "id": "es-micro-068",
+      "subject": "Environmental Microbiology",
+      "topic": "Monod Kinetics",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** μ = μ_max S/(K_s+S), with μ_max and K_s read from the curve.\n\n**Working.**\n$$\\dfrac{0.4\\times80}{50+80}=0.246.$$\n\n**Answer.** $0.246$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 330 195\" width=\"100%\" style=\"max-width:350px;height:auto\"><line x1=\"44\" y1=\"20\" x2=\"44\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"44\" y1=\"165\" x2=\"312\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"240\" y=\"182\" font-size=\"9\" fill=\"#1e293b\">substrate [S] →</text><line x1=\"44\" y1=\"40\" x2=\"312\" y2=\"40\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><text x=\"232\" y=\"36\" font-size=\"10\" fill=\"#dc2626\">μ_max = 0.4</text><path d=\"M44 165 C90 110 140 70 200 56 C250 46 290 42 312 41\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><line x1=\"44\" y1=\"102\" x2=\"120\" y2=\"102\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><line x1=\"120\" y1=\"102\" x2=\"120\" y2=\"165\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><text x=\"14\" y=\"106\" font-size=\"7\" fill=\"#16a34a\">μ_max/2</text><text x=\"98\" y=\"178\" font-size=\"10\" fill=\"#16a34a\">K_s = 50</text></svg>",
+        "caption": "Monod μ–S curve: μ_max (plateau) and K_s (half-saturation) marked on the curve only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A culture follows Monod kinetics at substrate $S=80\\,\\text{mg/L}$. Reading $\\mu_{max}$ and $K_s$ from the $\\mu$–$S$ curve shown, the specific growth rate $\\mu$ is _____ h⁻¹.",
+      "answer": 0.2462,
+      "tolerance": 0.005
+    },
+    {
+      "id": "es-micro-069",
+      "subject": "Environmental Microbiology",
+      "topic": "Monod Kinetics",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** μ = μ_max S/(K_s+S), with μ_max and K_s read from the curve.\n\n**Working.**\n$$\\dfrac{0.5\\times80}{20+80}=0.4.$$\n\n**Answer.** $0.4$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 330 195\" width=\"100%\" style=\"max-width:350px;height:auto\"><line x1=\"44\" y1=\"20\" x2=\"44\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"44\" y1=\"165\" x2=\"312\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"240\" y=\"182\" font-size=\"9\" fill=\"#1e293b\">substrate [S] →</text><line x1=\"44\" y1=\"40\" x2=\"312\" y2=\"40\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><text x=\"232\" y=\"36\" font-size=\"10\" fill=\"#dc2626\">μ_max = 0.5</text><path d=\"M44 165 C90 110 140 70 200 56 C250 46 290 42 312 41\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><line x1=\"44\" y1=\"102\" x2=\"120\" y2=\"102\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><line x1=\"120\" y1=\"102\" x2=\"120\" y2=\"165\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><text x=\"14\" y=\"106\" font-size=\"7\" fill=\"#16a34a\">μ_max/2</text><text x=\"98\" y=\"178\" font-size=\"10\" fill=\"#16a34a\">K_s = 20</text></svg>",
+        "caption": "Monod μ–S curve: μ_max (plateau) and K_s (half-saturation) marked on the curve only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A culture follows Monod kinetics at substrate $S=80\\,\\text{mg/L}$. Reading $\\mu_{max}$ and $K_s$ from the $\\mu$–$S$ curve shown, the specific growth rate $\\mu$ is _____ h⁻¹.",
+      "answer": 0.4,
+      "tolerance": 0.005
+    },
+    {
+      "id": "es-micro-070",
+      "subject": "Environmental Microbiology",
+      "topic": "Monod Kinetics",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** μ = μ_max S/(K_s+S), with μ_max and K_s read from the curve.\n\n**Working.**\n$$\\dfrac{0.3\\times100}{60+100}=0.188.$$\n\n**Answer.** $0.188$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 330 195\" width=\"100%\" style=\"max-width:350px;height:auto\"><line x1=\"44\" y1=\"20\" x2=\"44\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"44\" y1=\"165\" x2=\"312\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"240\" y=\"182\" font-size=\"9\" fill=\"#1e293b\">substrate [S] →</text><line x1=\"44\" y1=\"40\" x2=\"312\" y2=\"40\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><text x=\"232\" y=\"36\" font-size=\"10\" fill=\"#dc2626\">μ_max = 0.3</text><path d=\"M44 165 C90 110 140 70 200 56 C250 46 290 42 312 41\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><line x1=\"44\" y1=\"102\" x2=\"120\" y2=\"102\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><line x1=\"120\" y1=\"102\" x2=\"120\" y2=\"165\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><text x=\"14\" y=\"106\" font-size=\"7\" fill=\"#16a34a\">μ_max/2</text><text x=\"98\" y=\"178\" font-size=\"10\" fill=\"#16a34a\">K_s = 60</text></svg>",
+        "caption": "Monod μ–S curve: μ_max (plateau) and K_s (half-saturation) marked on the curve only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A culture follows Monod kinetics at substrate $S=100\\,\\text{mg/L}$. Reading $\\mu_{max}$ and $K_s$ from the $\\mu$–$S$ curve shown, the specific growth rate $\\mu$ is _____ h⁻¹.",
+      "answer": 0.1875,
+      "tolerance": 0.005
+    }
+  ]
+}

@@ -20,7 +20,10 @@
     "db:seed":     "npm run seed     -w @crackgate/database",
     "build:mocks":       "npx tsx scripts/build_mocks.ts",
     "build:mocks:force": "npx tsx scripts/build_mocks.ts --force",
-    "build:mocks:one":   "npx tsx scripts/build_mocks.ts --only="
+    "build:mocks:one":   "npx tsx scripts/build_mocks.ts --only=",
+    "build:gg:practice": "npx tsx scripts/build_gg_practice.ts",
+    "build:gg:mocks":    "npx tsx scripts/build_gg_mocks.ts",
+    "build:gg:mocks:force": "npx tsx scripts/build_gg_mocks.ts --force"
   },
   "engines": {
     "node": ">=20.0.0",

@@ -1,0 +1,3103 @@
+{
+  "id": "state-rpsc-ame-mock-02",
+  "title": "RPSC Assistant Mining Engineer — Mock 02",
+  "tier": "subject",
+  "duration": 150,
+  "pattern": "RPSC AME (150 Q · 150 marks · 150 min · −1/3)",
+  "totalMarks": 150,
+  "sections": [
+    {
+      "name": "Mining Engineering",
+      "count": 150,
+      "marks": 150
+    }
+  ],
+  "negativeMarking": {
+    "mcq1": -0.3333333333333333,
+    "mcq2": 0,
+    "nat": 0,
+    "msq": 0
+  },
+  "seed": 951245879,
+  "locked": true,
+  "questions": [
+    {
+      "id": 1,
+      "subject": "Mining Engineering",
+      "topic": "Mine Ventilation — Air Quantity",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "Air flows through a roadway of cross-sectional area 4 m² at a mean velocity of 1.5 m/s. The air quantity is _____.",
+      "options": [
+        "5.5 m³/s",
+        "12 m³/s",
+        "6 m³/s",
+        "3 m³/s"
+      ],
+      "answer": 2,
+      "solution": "**Concept.** Quantity $Q=v\\times A$.\n\n**Working.** $Q=1.5\\times 4=6$ m³/s.\n\n**Answer.** $6$ m³/s.",
+      "figure": {
+        "kind": "ventilation",
+        "nodes": [
+          {
+            "id": "A",
+            "x": 30,
+            "y": 60
+          },
+          {
+            "id": "B",
+            "x": 150,
+            "y": 60
+          },
+          {
+            "id": "C",
+            "x": 270,
+            "y": 60
+          }
+        ],
+        "branches": [
+          {
+            "from": "A",
+            "to": "B",
+            "q": 6
+          },
+          {
+            "from": "B",
+            "to": "C",
+            "q": 6
+          }
+        ],
+        "caption": "Single airway — measure station"
+      }
+    },
+    {
+      "id": 2,
+      "subject": "Mining Engineering",
+      "topic": "Mine Gases — Methane Dilution",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Methane is emitted at 0.3 m³/min into a roadway carrying 15 m³/min of air. The general-body CH₄ concentration is _____.",
+      "options": [
+        "1 %",
+        "2 %",
+        "4.5 %",
+        "4 %"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** % gas $=\\dfrac{\\text{gas flow}}{\\text{air flow}}\\times100$.\n\n**Working.** $\\dfrac{0.3}{15}\\times100=2\\%$.\n\n**Answer.** $2\\%$."
+    },
+    {
+      "id": 3,
+      "subject": "Mining Engineering",
+      "topic": "Legislation — Statutory Duties",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "In a coal mine, the official who supervises a number of districts and is immediately above the Mining Sirdar is the:",
+      "options": [
+        "Engine driver",
+        "Blaster",
+        "Gas-testing person",
+        "Overman"
+      ],
+      "answer": 3,
+      "solution": "**Answer.** The Overman supervises several districts/sirdars and reports to the Assistant Manager/Manager."
+    },
+    {
+      "id": 4,
+      "subject": "Mining Engineering",
+      "topic": "Mine Gases — Methane Dilution",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Methane is emitted at 0.2 m³/min into a roadway carrying 40 m³/min of air. The general-body CH₄ concentration is _____.",
+      "options": [
+        "1 %",
+        "0.5 %",
+        "0.25 %",
+        "8 %"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** % gas $=\\dfrac{\\text{gas flow}}{\\text{air flow}}\\times100$.\n\n**Working.** $\\dfrac{0.2}{40}\\times100=0.5\\%$.\n\n**Answer.** $0.5\\%$."
+    },
+    {
+      "id": 5,
+      "subject": "Mining Engineering",
+      "topic": "Rock Mechanics — Classification",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "hard",
+      "stem": "Bieniawski's RMR (Rock Mass Rating) does NOT directly include which parameter?",
+      "options": [
+        "In-situ stress magnitude",
+        "Uniaxial compressive strength",
+        "Groundwater condition",
+        "RQD"
+      ],
+      "answer": 0,
+      "solution": "**Answer.** RMR uses UCS, RQD, discontinuity spacing/condition, groundwater and orientation adjustment — not in-situ stress directly."
+    },
+    {
+      "id": 6,
+      "subject": "Mining Engineering",
+      "topic": "Mine Gases — Toxicology",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Carbon monoxide is dangerous chiefly because it:",
+      "options": [
+        "Is explosive at 1%",
+        "Displaces all nitrogen",
+        "Condenses on the lungs",
+        "Binds haemoglobin far more strongly than oxygen"
+      ],
+      "answer": 3,
+      "solution": "**Answer.** CO forms carboxyhaemoglobin (~240× the affinity of O₂), causing tissue asphyxia."
+    },
+    {
+      "id": 7,
+      "subject": "Mining Engineering",
+      "topic": "Mine Ventilation — Mine Resistance",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A mine airway has resistance 0.8 Ns²/m⁸ (gauls) and carries 20 m³/s. The pressure drop (square law) is _____.",
+      "options": [
+        "320 Pa",
+        "16 Pa",
+        "640 Pa",
+        "160 Pa"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** $P=R\\,Q^2$ (Atkinson square law).\n\n**Working.** $P=0.8\\times 20^2=320$ Pa.\n\n**Answer.** $320$ Pa."
+    },
+    {
+      "id": 8,
+      "subject": "Mining Engineering",
+      "topic": "Mine Economics — Life of Mine",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A deposit holds 50 Mt of mineable reserve and is worked at 5 Mt per year. The life of the mine is _____.",
+      "options": [
+        "5 years",
+        "10 years",
+        "0.1 years",
+        "55 years"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Life of mine $=\\dfrac{\\text{reserve}}{\\text{annual production}}$.\n\n**Working.** $\\dfrac{50}{5}=10$ years.\n\n**Answer.** $10$ years."
+    },
+    {
+      "id": 9,
+      "subject": "Mining Engineering",
+      "topic": "Mine Ventilation — Air Quantity",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "Air flows through a roadway of cross-sectional area 6 m² at a mean velocity of 3 m/s. The air quantity is _____.",
+      "options": [
+        "36 m³/s",
+        "22.06 m³/s",
+        "9 m³/s",
+        "18 m³/s"
+      ],
+      "answer": 3,
+      "solution": "**Concept.** Quantity $Q=v\\times A$.\n\n**Working.** $Q=3\\times 6=18$ m³/s.\n\n**Answer.** $18$ m³/s.",
+      "figure": {
+        "kind": "ventilation",
+        "nodes": [
+          {
+            "id": "A",
+            "x": 30,
+            "y": 60
+          },
+          {
+            "id": "B",
+            "x": 150,
+            "y": 60
+          },
+          {
+            "id": "C",
+            "x": 270,
+            "y": 60
+          }
+        ],
+        "branches": [
+          {
+            "from": "A",
+            "to": "B",
+            "q": 18
+          },
+          {
+            "from": "B",
+            "to": "C",
+            "q": 18
+          }
+        ],
+        "caption": "Single airway — measure station"
+      }
+    },
+    {
+      "id": 10,
+      "subject": "Mining Engineering",
+      "topic": "Drilling & Blasting — Powder Factor",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "hard",
+      "stem": "An opencast blast block has burden 5 m, spacing 4 m, bench height 10 m and rock density 2.7 t/m³. If 96 kg of explosive is used, the powder factor (tonnes broken per kg) is _____.",
+      "options": [
+        "8.44 t/kg",
+        "5.63 t/kg",
+        "2.81 t/kg",
+        "2.7 t/kg"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** PF $=\\dfrac{\\text{rock broken (t)}}{\\text{explosive (kg)}}$.\n\n**Working.** Volume $=5\\times4\\times10=200$ m³; mass $=200\\times2.7=540$ t; PF $=\\dfrac{540}{96}=5.63$ t/kg.\n\n**Answer.** $5.63$ t/kg."
+    },
+    {
+      "id": 11,
+      "subject": "Mining Engineering",
+      "topic": "Mine Drainage — Pump Power",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "hard",
+      "stem": "A mine pump delivers 0.1 m³/s of water against a head of 80 m at 75% efficiency. The input power is _____.",
+      "options": [
+        "78.48 kW",
+        "52.32 kW",
+        "104.64 kW",
+        "8 kW"
+      ],
+      "answer": 2,
+      "solution": "**Concept.** $P=\\dfrac{\\rho g Q H}{\\eta}$ with $\\rho=1000$ kg/m³, $g=9.81$ m/s².\n\n**Working.** $P=\\dfrac{1000\\times9.81\\times0.1\\times80}{0.75}\\div1000=104.64$ kW.\n\n**Answer.** $104.64$ kW."
+    },
+    {
+      "id": 12,
+      "subject": "Mining Engineering",
+      "topic": "Mine Gases — Methane Dilution",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Methane is emitted at 0.7 m³/min into a roadway carrying 50 m³/min of air. The general-body CH₄ concentration is _____.",
+      "options": [
+        "1.4 %",
+        "35 %",
+        "2.8 %",
+        "0.7 %"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** % gas $=\\dfrac{\\text{gas flow}}{\\text{air flow}}\\times100$.\n\n**Working.** $\\dfrac{0.7}{50}\\times100=1.4\\%$.\n\n**Answer.** $1.4\\%$."
+    },
+    {
+      "id": 13,
+      "subject": "Mining Engineering",
+      "topic": "Mine Gases — Methane Dilution",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Methane is emitted at 0.4 m³/min into a roadway carrying 30 m³/min of air. The general-body CH₄ concentration is _____.",
+      "options": [
+        "2.67 %",
+        "0.67 %",
+        "12 %",
+        "1.33 %"
+      ],
+      "answer": 3,
+      "solution": "**Concept.** % gas $=\\dfrac{\\text{gas flow}}{\\text{air flow}}\\times100$.\n\n**Working.** $\\dfrac{0.4}{30}\\times100=1.33\\%$.\n\n**Answer.** $1.33\\%$."
+    },
+    {
+      "id": 14,
+      "subject": "Mining Engineering",
+      "topic": "Winding — Conveyances",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "In shaft winding, a 'skip' is used mainly to hoist:",
+      "options": [
+        "Ventilation air",
+        "Timber only",
+        "Men only",
+        "Bulk mineral (loose ore/coal)"
+      ],
+      "answer": 3,
+      "solution": "**Answer.** Skips hoist loose mineral; cages carry men, materials and tubs."
+    },
+    {
+      "id": 15,
+      "subject": "Mining Engineering",
+      "topic": "Safety — Coal Dust",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Coal-dust explosions are most violent when the dust is:",
+      "options": [
+        "Completely wet",
+        "Coarse lumps only",
+        "Fine (a high proportion below ~75 microns)",
+        "Mixed with stone dust above limit"
+      ],
+      "answer": 2,
+      "solution": "**Answer.** Fine, dry coal dust has high surface area and is easily raised and ignited; stone dusting inerts it."
+    },
+    {
+      "id": 16,
+      "subject": "Mining Engineering",
+      "topic": "Legislation — MMDR Act",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Since the 2015 amendment, mineral concessions for notified minerals are granted primarily through:",
+      "options": [
+        "Auction (competitive bidding)",
+        "Lottery",
+        "Nomination only",
+        "First-come-first-served"
+      ],
+      "answer": 0,
+      "solution": "**Answer.** The 2015 amendment introduced grant of mineral concessions by auction to ensure transparency."
+    },
+    {
+      "id": 17,
+      "subject": "Mining Engineering",
+      "topic": "Mine Electrical — Line Current",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A DC mine pump motor draws 1980 W from a 220 V supply. The line current is _____.",
+      "options": [
+        "24.44 A",
+        "4.5 A",
+        "9 A",
+        "435.6 A"
+      ],
+      "answer": 2,
+      "solution": "**Concept.** Power $P=V\\,I\\Rightarrow I=\\dfrac{P}{V}$.\n\n**Working.** $\\dfrac{1980}{220}=9$ A.\n\n**Answer.** $9$ A."
+    },
+    {
+      "id": 18,
+      "subject": "Mining Engineering",
+      "topic": "Shaft Sinking — Special Methods",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "hard",
+      "stem": "Sinking a shaft through heavily water-bearing, unstable strata is often achieved by the:",
+      "options": [
+        "Ground-freezing method",
+        "Self-acting haulage",
+        "Raise boring",
+        "Drill-and-blast in dry ground"
+      ],
+      "answer": 0,
+      "solution": "**Answer.** Freezing forms an ice wall to support and seal water-bearing strata during sinking (cementation is an alternative)."
+    },
+    {
+      "id": 19,
+      "subject": "Mining Engineering",
+      "topic": "Drilling & Blasting — Scaled Distance",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "hard",
+      "stem": "A blast detonates 100 kg of explosive per delay and a structure stands 120 m away. The scaled distance $\\left(D/\\sqrt{W}\\right)$ is _____.",
+      "options": [
+        "12 m/kg^½",
+        "1.2 m/kg^½",
+        "120 m/kg^½",
+        "6 m/kg^½"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Scaled distance $SD=\\dfrac{D}{\\sqrt{W}}$ governs peak particle velocity in blast-vibration control.\n\n**Working.** $\\dfrac{120}{\\sqrt{100}}=\\dfrac{120}{10}=12$.\n\n**Answer.** $12$ m/kg$^{1/2}$."
+    },
+    {
+      "id": 20,
+      "subject": "Mining Engineering",
+      "topic": "Rock Mechanics — Pillar Strength",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "hard",
+      "stem": "Using the Obert–Duvall formula $S=S_p(0.778+0.222\\,w/h)$ with $S_p=7$ MPa, the strength of a pillar of width 9 m and height 3 m is _____.",
+      "options": [
+        "13.14 MPa",
+        "5.96 MPa",
+        "10.11 MPa",
+        "7 MPa"
+      ],
+      "answer": 2,
+      "solution": "**Concept.** Obert–Duvall pillar strength uses the width-to-height ratio $w/h$.\n\n**Working.** $w/h=3$; $S=7(0.778+0.222\\times3)=10.11$ MPa.\n\n**Answer.** $10.11$ MPa."
+    },
+    {
+      "id": 21,
+      "subject": "Mining Engineering",
+      "topic": "Materials Handling — Belt Capacity",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A belt conveyor carries a uniform load of 90 kg per metre of belt at a speed of 2 m/s. Its capacity is _____.",
+      "options": [
+        "759.16 t/h",
+        "648 t/h",
+        "180 t/h",
+        "1296 t/h"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Capacity $=3.6\\times(\\text{kg/m})\\times v\\,(\\text{m/s})$ t/h.\n\n**Working.** $3.6\\times90\\times2=648$ t/h.\n\n**Answer.** $648$ t/h."
+    },
+    {
+      "id": 22,
+      "subject": "Mining Engineering",
+      "topic": "Surface Mining — Truck Output",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A dump truck of 90 t payload completes a 24-minute haul cycle over a 480-minute working shift. Its production is _____.",
+      "options": [
+        "900 t",
+        "432 t",
+        "90 t",
+        "1800 t"
+      ],
+      "answer": 3,
+      "solution": "**Concept.** Trips $=\\dfrac{\\text{shift}}{\\text{cycle}}$; output $=$ trips $\\times$ payload.\n\n**Working.** Trips $=\\dfrac{480}{24}=20$; output $=20\\times90=1800$ t.\n\n**Answer.** $1800$ t."
+    },
+    {
+      "id": 23,
+      "subject": "Mining Engineering",
+      "topic": "Mine Economics — Life of Mine",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A deposit holds 20 Mt of mineable reserve and is worked at 2.5 Mt per year. The life of the mine is _____.",
+      "options": [
+        "22.5 years",
+        "0.13 years",
+        "4 years",
+        "8 years"
+      ],
+      "answer": 3,
+      "solution": "**Concept.** Life of mine $=\\dfrac{\\text{reserve}}{\\text{annual production}}$.\n\n**Working.** $\\dfrac{20}{2.5}=8$ years.\n\n**Answer.** $8$ years."
+    },
+    {
+      "id": 24,
+      "subject": "Mining Engineering",
+      "topic": "Drilling — Penetration",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "A jackhammer drills at 0.45 m/min for 36 minutes of net drilling time. The total hole length advanced is _____.",
+      "options": [
+        "36.45 m",
+        "16.2 m",
+        "0.01 m",
+        "8.1 m"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Advance $=$ penetration rate $\\times$ time.\n\n**Working.** $0.45\\times36=16.2$ m.\n\n**Answer.** $16.2$ m."
+    },
+    {
+      "id": 25,
+      "subject": "Mining Engineering",
+      "topic": "Mine Ventilation — Air Power",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A main fan develops a pressure of 2000 Pa while passing 40 m³/s of air. The air power is _____.",
+      "options": [
+        "40 kW",
+        "50 kW",
+        "80000 kW",
+        "80 kW"
+      ],
+      "answer": 3,
+      "solution": "**Concept.** Air power $=\\dfrac{P\\times Q}{1000}$ kW ($P$ in Pa, $Q$ in m³/s).\n\n**Working.** $\\dfrac{2000\\times40}{1000}=80$ kW.\n\n**Answer.** $80$ kW."
+    },
+    {
+      "id": 26,
+      "subject": "Mining Engineering",
+      "topic": "Environment — Reclamation",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Backfilling and revegetating mined-out opencast land is termed:",
+      "options": [
+        "Calcination",
+        "Reclamation",
+        "Comminution",
+        "Beneficiation"
+      ],
+      "answer": 1,
+      "solution": "**Answer.** Reclamation restores mined land to a usable, stable, vegetated condition."
+    },
+    {
+      "id": 27,
+      "subject": "Mining Engineering",
+      "topic": "Mine Ventilation — Air Quantity",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "Air flows through a roadway of cross-sectional area 15 m² at a mean velocity of 1.8 m/s. The air quantity is _____.",
+      "options": [
+        "13.5 m³/s",
+        "16.8 m³/s",
+        "27 m³/s",
+        "54 m³/s"
+      ],
+      "answer": 2,
+      "solution": "**Concept.** Quantity $Q=v\\times A$.\n\n**Working.** $Q=1.8\\times 15=27$ m³/s.\n\n**Answer.** $27$ m³/s."
+    },
+    {
+      "id": 28,
+      "subject": "Mining Engineering",
+      "topic": "Mine Ventilation — Air Quantity",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "Air flows through a roadway of cross-sectional area 12 m² at a mean velocity of 4 m/s. The air quantity is _____.",
+      "options": [
+        "48 m³/s",
+        "16 m³/s",
+        "24 m³/s",
+        "96 m³/s"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Quantity $Q=v\\times A$.\n\n**Working.** $Q=4\\times 12=48$ m³/s.\n\n**Answer.** $48$ m³/s."
+    },
+    {
+      "id": 29,
+      "subject": "Mining Engineering",
+      "topic": "Stoping — Dilution",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A stope yields 250 t of ore mixed with 25 t of waste. The percentage dilution is _____.",
+      "options": [
+        "4.55 %",
+        "11.64 %",
+        "10 %",
+        "9.09 %"
+      ],
+      "answer": 3,
+      "solution": "**Concept.** Dilution $=\\dfrac{\\text{waste}}{\\text{ore}+\\text{waste}}\\times100$.\n\n**Working.** $\\dfrac{25}{275}\\times100=9.09\\%$.\n\n**Answer.** $9.09\\%$."
+    },
+    {
+      "id": 30,
+      "subject": "Mining Engineering",
+      "topic": "Mine Ventilation — Mine Resistance",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A mine airway has resistance 0.1 Ns²/m⁸ (gauls) and carries 20 m³/s. The pressure drop (square law) is _____.",
+      "options": [
+        "20 Pa",
+        "80 Pa",
+        "40 Pa",
+        "2 Pa"
+      ],
+      "answer": 2,
+      "solution": "**Concept.** $P=R\\,Q^2$ (Atkinson square law).\n\n**Working.** $P=0.1\\times 20^2=40$ Pa.\n\n**Answer.** $40$ Pa."
+    },
+    {
+      "id": 31,
+      "subject": "Mining Engineering",
+      "topic": "Mine Ventilation — Air Quantity",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "Air flows through a roadway of cross-sectional area 15 m² at a mean velocity of 3.5 m/s. The air quantity is _____.",
+      "options": [
+        "18.5 m³/s",
+        "52.5 m³/s",
+        "26.25 m³/s",
+        "105 m³/s"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Quantity $Q=v\\times A$.\n\n**Working.** $Q=3.5\\times 15=52.5$ m³/s.\n\n**Answer.** $52.5$ m³/s.",
+      "figure": {
+        "kind": "ventilation",
+        "nodes": [
+          {
+            "id": "A",
+            "x": 30,
+            "y": 60
+          },
+          {
+            "id": "B",
+            "x": 150,
+            "y": 60
+          },
+          {
+            "id": "C",
+            "x": 270,
+            "y": 60
+          }
+        ],
+        "branches": [
+          {
+            "from": "A",
+            "to": "B",
+            "q": 52.5
+          },
+          {
+            "from": "B",
+            "to": "C",
+            "q": 52.5
+          }
+        ],
+        "caption": "Single airway — measure station"
+      }
+    },
+    {
+      "id": 32,
+      "subject": "Mining Engineering",
+      "topic": "Mineral Resources — Rajasthan",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "India's principal rock-phosphate deposit is mined at Jhamarkotra in which Rajasthan district?",
+      "options": [
+        "Bikaner",
+        "Udaipur",
+        "Jaipur",
+        "Kota"
+      ],
+      "answer": 1,
+      "solution": "**Answer.** Jhamarkotra (Udaipur) is India's largest rock-phosphate source, mined by RSMML."
+    },
+    {
+      "id": 33,
+      "subject": "Mining Engineering",
+      "topic": "Mine Electrical — Line Current",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A DC mine pump motor draws 1100 W from a 110 V supply. The line current is _____.",
+      "options": [
+        "11 A",
+        "5 A",
+        "10 A",
+        "121 A"
+      ],
+      "answer": 2,
+      "solution": "**Concept.** Power $P=V\\,I\\Rightarrow I=\\dfrac{P}{V}$.\n\n**Working.** $\\dfrac{1100}{110}=10$ A.\n\n**Answer.** $10$ A."
+    },
+    {
+      "id": 34,
+      "subject": "Mining Engineering",
+      "topic": "Drilling — Penetration",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "A jackhammer drills at 0.4 m/min for 30 minutes of net drilling time. The total hole length advanced is _____.",
+      "options": [
+        "6 m",
+        "30.4 m",
+        "12 m",
+        "0.01 m"
+      ],
+      "answer": 2,
+      "solution": "**Concept.** Advance $=$ penetration rate $\\times$ time.\n\n**Working.** $0.4\\times30=12$ m.\n\n**Answer.** $12$ m."
+    },
+    {
+      "id": 35,
+      "subject": "Mining Engineering",
+      "topic": "Mine Ventilation — Air Quantity",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "Air flows through a roadway of cross-sectional area 10 m² at a mean velocity of 1.5 m/s. The air quantity is _____.",
+      "options": [
+        "15 m³/s",
+        "30 m³/s",
+        "11.5 m³/s",
+        "7.5 m³/s"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Quantity $Q=v\\times A$.\n\n**Working.** $Q=1.5\\times 10=15$ m³/s.\n\n**Answer.** $15$ m³/s.",
+      "figure": {
+        "kind": "ventilation",
+        "nodes": [
+          {
+            "id": "A",
+            "x": 30,
+            "y": 60
+          },
+          {
+            "id": "B",
+            "x": 150,
+            "y": 60
+          },
+          {
+            "id": "C",
+            "x": 270,
+            "y": 60
+          }
+        ],
+        "branches": [
+          {
+            "from": "A",
+            "to": "B",
+            "q": 15
+          },
+          {
+            "from": "B",
+            "to": "C",
+            "q": 15
+          }
+        ],
+        "caption": "Single airway — measure station"
+      }
+    },
+    {
+      "id": 36,
+      "subject": "Mining Engineering",
+      "topic": "Haulage — Rope Pull",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "hard",
+      "stem": "A loaded train of mass 8000 kg is hauled up a gradient of 1 in 25. With a tractive (rolling) resistance coefficient of 0.03, the rope pull is approximately _____.",
+      "options": [
+        "5493.6 N",
+        "2354.4 N",
+        "3139.2 N",
+        "8240.4 N"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Rope pull $T=Wg\\left(\\frac{1}{n}+\\mu\\right)$ (gravity + resistance).\n\n**Working.** $T=8000\\times9.81\\times(\\frac{1}{25}+0.03)=5493.6$ N.\n\n**Answer.** $5493.6$ N."
+    },
+    {
+      "id": 37,
+      "subject": "Mining Engineering",
+      "topic": "Mine Ventilation — Air Quantity",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "Air flows through a roadway of cross-sectional area 15 m² at a mean velocity of 1.2 m/s. The air quantity is _____.",
+      "options": [
+        "16.2 m³/s",
+        "36 m³/s",
+        "18 m³/s",
+        "9 m³/s"
+      ],
+      "answer": 2,
+      "solution": "**Concept.** Quantity $Q=v\\times A$.\n\n**Working.** $Q=1.2\\times 15=18$ m³/s.\n\n**Answer.** $18$ m³/s.",
+      "figure": {
+        "kind": "ventilation",
+        "nodes": [
+          {
+            "id": "A",
+            "x": 30,
+            "y": 60
+          },
+          {
+            "id": "B",
+            "x": 150,
+            "y": 60
+          },
+          {
+            "id": "C",
+            "x": 270,
+            "y": 60
+          }
+        ],
+        "branches": [
+          {
+            "from": "A",
+            "to": "B",
+            "q": 18
+          },
+          {
+            "from": "B",
+            "to": "C",
+            "q": 18
+          }
+        ],
+        "caption": "Single airway — measure station"
+      }
+    },
+    {
+      "id": 38,
+      "subject": "Mining Engineering",
+      "topic": "Mine Ventilation — Mine Resistance",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A mine airway has resistance 0.1 Ns²/m⁸ (gauls) and carries 15 m³/s. The pressure drop (square law) is _____.",
+      "options": [
+        "11.25 Pa",
+        "45 Pa",
+        "22.5 Pa",
+        "1.5 Pa"
+      ],
+      "answer": 2,
+      "solution": "**Concept.** $P=R\\,Q^2$ (Atkinson square law).\n\n**Working.** $P=0.1\\times 15^2=22.5$ Pa.\n\n**Answer.** $22.5$ Pa."
+    },
+    {
+      "id": 39,
+      "subject": "Mining Engineering",
+      "topic": "Ore Reserves — Weighted Grade",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "hard",
+      "stem": "Two ore blocks assay: 260 t at 1.6% and 140 t at 2.8%. The combined (tonnage-weighted) grade is _____.",
+      "options": [
+        "2.02 %",
+        "2.63 %",
+        "2.2 %",
+        "1.01 %"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Weighted grade $=\\dfrac{\\sum(t_i g_i)}{\\sum t_i}$.\n\n**Working.** $\\dfrac{260\\times1.6+140\\times2.8}{400}=2.02\\%$.\n\n**Answer.** $2.02\\%$."
+    },
+    {
+      "id": 40,
+      "subject": "Mining Engineering",
+      "topic": "Mine Gases — Methane Dilution",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Methane is emitted at 0.4 m³/min into a roadway carrying 25 m³/min of air. The general-body CH₄ concentration is _____.",
+      "options": [
+        "1.6 %",
+        "10 %",
+        "0.8 %",
+        "3.2 %"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** % gas $=\\dfrac{\\text{gas flow}}{\\text{air flow}}\\times100$.\n\n**Working.** $\\dfrac{0.4}{25}\\times100=1.6\\%$.\n\n**Answer.** $1.6\\%$."
+    },
+    {
+      "id": 41,
+      "subject": "Mining Engineering",
+      "topic": "Mine Gases — Methane Dilution",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Methane is emitted at 0.3 m³/min into a roadway carrying 30 m³/min of air. The general-body CH₄ concentration is _____.",
+      "options": [
+        "2 %",
+        "9 %",
+        "1 %",
+        "0.5 %"
+      ],
+      "answer": 2,
+      "solution": "**Concept.** % gas $=\\dfrac{\\text{gas flow}}{\\text{air flow}}\\times100$.\n\n**Working.** $\\dfrac{0.3}{30}\\times100=1\\%$.\n\n**Answer.** $1\\%$."
+    },
+    {
+      "id": 42,
+      "subject": "Mining Engineering",
+      "topic": "Haulage — Rope Pull",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "hard",
+      "stem": "A loaded train of mass 6000 kg is hauled up a gradient of 1 in 15. With a tractive (rolling) resistance coefficient of 0.02, the rope pull is approximately _____.",
+      "options": [
+        "3924 N",
+        "1177.2 N",
+        "7651.8 N",
+        "5101.2 N"
+      ],
+      "answer": 3,
+      "solution": "**Concept.** Rope pull $T=Wg\\left(\\frac{1}{n}+\\mu\\right)$ (gravity + resistance).\n\n**Working.** $T=6000\\times9.81\\times(\\frac{1}{15}+0.02)=5101.2$ N.\n\n**Answer.** $5101.2$ N."
+    },
+    {
+      "id": 43,
+      "subject": "Mining Engineering",
+      "topic": "Mine Gases — Methane Dilution",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Methane is emitted at 0.5 m³/min into a roadway carrying 50 m³/min of air. The general-body CH₄ concentration is _____.",
+      "options": [
+        "1 %",
+        "0.5 %",
+        "25 %",
+        "2 %"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** % gas $=\\dfrac{\\text{gas flow}}{\\text{air flow}}\\times100$.\n\n**Working.** $\\dfrac{0.5}{50}\\times100=1\\%$.\n\n**Answer.** $1\\%$."
+    },
+    {
+      "id": 44,
+      "subject": "Mining Engineering",
+      "topic": "Haulage — Rope Pull",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "hard",
+      "stem": "A loaded train of mass 11000 kg is hauled up a gradient of 1 in 25. With a tractive (rolling) resistance coefficient of 0.028, the rope pull is approximately _____.",
+      "options": [
+        "7337.88 N",
+        "11006.82 N",
+        "4316.4 N",
+        "3021.48 N"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Rope pull $T=Wg\\left(\\frac{1}{n}+\\mu\\right)$ (gravity + resistance).\n\n**Working.** $T=11000\\times9.81\\times(\\frac{1}{25}+0.028)=7337.88$ N.\n\n**Answer.** $7337.88$ N."
+    },
+    {
+      "id": 45,
+      "subject": "Mining Engineering",
+      "topic": "Surface Mining — Shovel Productivity",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "hard",
+      "stem": "A shovel with a 9 m³ bucket works at a fill factor of 0.88 and a cycle time of 36 s. Its theoretical output is _____.",
+      "options": [
+        "396 m³/h",
+        "900 m³/h",
+        "792 m³/h",
+        "7.92 m³/h"
+      ],
+      "answer": 2,
+      "solution": "**Concept.** Output $=\\dfrac{\\text{bucket}\\times\\text{fill factor}\\times3600}{\\text{cycle (s)}}$ m³/h.\n\n**Working.** $\\dfrac{9\\times0.88\\times3600}{36}=792$ m³/h.\n\n**Answer.** $792$ m³/h."
+    },
+    {
+      "id": 46,
+      "subject": "Mining Engineering",
+      "topic": "Mine Ventilation — Mine Resistance",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A mine airway has resistance 1.5 Ns²/m⁸ (gauls) and carries 10 m³/s. The pressure drop (square law) is _____.",
+      "options": [
+        "15 Pa",
+        "300 Pa",
+        "75 Pa",
+        "150 Pa"
+      ],
+      "answer": 3,
+      "solution": "**Concept.** $P=R\\,Q^2$ (Atkinson square law).\n\n**Working.** $P=1.5\\times 10^2=150$ Pa.\n\n**Answer.** $150$ Pa."
+    },
+    {
+      "id": 47,
+      "subject": "Mining Engineering",
+      "topic": "Ore Reserves — Weighted Grade",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "hard",
+      "stem": "Two ore blocks assay: 500 t at 2.5% and 250 t at 1.5%. The combined (tonnage-weighted) grade is _____.",
+      "options": [
+        "2 %",
+        "2.82 %",
+        "1.08 %",
+        "2.17 %"
+      ],
+      "answer": 3,
+      "solution": "**Concept.** Weighted grade $=\\dfrac{\\sum(t_i g_i)}{\\sum t_i}$.\n\n**Working.** $\\dfrac{500\\times2.5+250\\times1.5}{750}=2.17\\%$.\n\n**Answer.** $2.17\\%$."
+    },
+    {
+      "id": 48,
+      "subject": "Mining Engineering",
+      "topic": "Mineral Resources — Rajasthan",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Which Indian state is the leading producer of gypsum, used in cement and plaster?",
+      "options": [
+        "Kerala",
+        "Rajasthan",
+        "West Bengal",
+        "Assam"
+      ],
+      "answer": 1,
+      "solution": "**Answer.** Rajasthan (Bikaner, Nagaur, Jaisalmer) leads India's gypsum production."
+    },
+    {
+      "id": 49,
+      "subject": "Mining Engineering",
+      "topic": "Materials Handling — Belt Capacity",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A belt conveyor carries a uniform load of 80 kg per metre of belt at a speed of 1.8 m/s. Its capacity is _____.",
+      "options": [
+        "607.53 t/h",
+        "518.4 t/h",
+        "144 t/h",
+        "1036.8 t/h"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Capacity $=3.6\\times(\\text{kg/m})\\times v\\,(\\text{m/s})$ t/h.\n\n**Working.** $3.6\\times80\\times1.8=518.4$ t/h.\n\n**Answer.** $518.4$ t/h."
+    },
+    {
+      "id": 50,
+      "subject": "Mining Engineering",
+      "topic": "Mine Ventilation — Air Power",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A main fan develops a pressure of 1400 Pa while passing 65 m³/s of air. The air power is _____.",
+      "options": [
+        "91 kW",
+        "91000 kW",
+        "21.54 kW",
+        "45.5 kW"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Air power $=\\dfrac{P\\times Q}{1000}$ kW ($P$ in Pa, $Q$ in m³/s).\n\n**Working.** $\\dfrac{1400\\times65}{1000}=91$ kW.\n\n**Answer.** $91$ kW."
+    },
+    {
+      "id": 51,
+      "subject": "Mining Engineering",
+      "topic": "Mine Gases — Methane Dilution",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Methane is emitted at 0.5 m³/min into a roadway carrying 15 m³/min of air. The general-body CH₄ concentration is _____.",
+      "options": [
+        "6.67 %",
+        "3.33 %",
+        "7.5 %",
+        "1.67 %"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** % gas $=\\dfrac{\\text{gas flow}}{\\text{air flow}}\\times100$.\n\n**Working.** $\\dfrac{0.5}{15}\\times100=3.33\\%$.\n\n**Answer.** $3.33\\%$."
+    },
+    {
+      "id": 52,
+      "subject": "Mining Engineering",
+      "topic": "Mine Electrical — Line Current",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A DC mine pump motor draws 550 W from a 110 V supply. The line current is _____.",
+      "options": [
+        "22 A",
+        "2.5 A",
+        "5 A",
+        "60.5 A"
+      ],
+      "answer": 2,
+      "solution": "**Concept.** Power $P=V\\,I\\Rightarrow I=\\dfrac{P}{V}$.\n\n**Working.** $\\dfrac{550}{110}=5$ A.\n\n**Answer.** $5$ A."
+    },
+    {
+      "id": 53,
+      "subject": "Mining Engineering",
+      "topic": "Mine Gases — Methane Dilution",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Methane is emitted at 0.7 m³/min into a roadway carrying 20 m³/min of air. The general-body CH₄ concentration is _____.",
+      "options": [
+        "7 %",
+        "14 %",
+        "3.5 %",
+        "1.75 %"
+      ],
+      "answer": 2,
+      "solution": "**Concept.** % gas $=\\dfrac{\\text{gas flow}}{\\text{air flow}}\\times100$.\n\n**Working.** $\\dfrac{0.7}{20}\\times100=3.5\\%$.\n\n**Answer.** $3.5\\%$."
+    },
+    {
+      "id": 54,
+      "subject": "Mining Engineering",
+      "topic": "Mineral Resources — Rajasthan",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "hard",
+      "stem": "The Aravalli range, host to Rajasthan's base-metal deposits, is composed mainly of:",
+      "options": [
+        "Precambrian metamorphic and igneous rocks",
+        "Marine Tertiary sediments",
+        "Deccan basalt",
+        "Recent alluvium"
+      ],
+      "answer": 0,
+      "solution": "**Answer.** The Aravallis are among the oldest (Precambrian) fold mountains, of metamorphic/igneous rock."
+    },
+    {
+      "id": 55,
+      "subject": "Mining Engineering",
+      "topic": "Legislation — Mines Act 1952",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "Under the Mines Act, 1952, no person below the age of ___ years shall be employed in any mine or part thereof:",
+      "options": [
+        "21 years",
+        "18 years",
+        "14 years",
+        "16 years"
+      ],
+      "answer": 1,
+      "solution": "**Answer.** Section 40 prohibits employment of persons below 18 in a mine."
+    },
+    {
+      "id": 56,
+      "subject": "Mining Engineering",
+      "topic": "Surface Mining — Stripping Ratio",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "An opencast mine removes 550000 m³ of overburden to win 110000 t of ore. The stripping ratio (m³/t) is _____.",
+      "options": [
+        "2.5 m³/t",
+        "0.2 m³/t",
+        "10 m³/t",
+        "5 m³/t"
+      ],
+      "answer": 3,
+      "solution": "**Concept.** Stripping ratio $=\\dfrac{\\text{overburden}}{\\text{ore}}$.\n\n**Working.** $\\dfrac{550000}{110000}=5$ m³/t.\n\n**Answer.** $5$ m³/t."
+    },
+    {
+      "id": 57,
+      "subject": "Mining Engineering",
+      "topic": "Rock Mechanics — Pillar Strength",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "hard",
+      "stem": "Using the Obert–Duvall formula $S=S_p(0.778+0.222\\,w/h)$ with $S_p=7$ MPa, the strength of a pillar of width 6 m and height 3 m is _____.",
+      "options": [
+        "7 MPa",
+        "8.55 MPa",
+        "6.22 MPa",
+        "11.12 MPa"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Obert–Duvall pillar strength uses the width-to-height ratio $w/h$.\n\n**Working.** $w/h=2$; $S=7(0.778+0.222\\times2)=8.55$ MPa.\n\n**Answer.** $8.55$ MPa."
+    },
+    {
+      "id": 58,
+      "subject": "Mining Engineering",
+      "topic": "Legislation — Coal Mines Regulations 2017",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "In a below-ground coal mine, smoking materials and naked lights are:",
+      "options": [
+        "Allowed in intake airways",
+        "Allowed during night shift",
+        "Allowed near the shaft bottom",
+        "Prohibited (treated as contraband)"
+      ],
+      "answer": 3,
+      "solution": "**Answer.** Smoking materials/naked lights are contraband below ground to prevent firedamp/coal-dust ignition."
+    },
+    {
+      "id": 59,
+      "subject": "Mining Engineering",
+      "topic": "Access — Inclines",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "An inclined roadway driven from the surface to reach a shallow seam is called a(n):",
+      "options": [
+        "Adit to nowhere",
+        "Incline (drift) access",
+        "Winze",
+        "Vertical shaft"
+      ],
+      "answer": 1,
+      "solution": "**Answer.** Inclines/drifts give surface access to shallow seams; shafts are vertical, winzes are internal."
+    },
+    {
+      "id": 60,
+      "subject": "Mining Engineering",
+      "topic": "Mine Ventilation — Mine Resistance",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A mine airway has resistance 2 Ns²/m⁸ (gauls) and carries 10 m³/s. The pressure drop (square law) is _____.",
+      "options": [
+        "200 Pa",
+        "400 Pa",
+        "20 Pa",
+        "100 Pa"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** $P=R\\,Q^2$ (Atkinson square law).\n\n**Working.** $P=2\\times 10^2=200$ Pa.\n\n**Answer.** $200$ Pa."
+    },
+    {
+      "id": 61,
+      "subject": "Mining Engineering",
+      "topic": "Mine Ventilation — Air Quantity",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "Air flows through a roadway of cross-sectional area 10 m² at a mean velocity of 1.8 m/s. The air quantity is _____.",
+      "options": [
+        "11.8 m³/s",
+        "36 m³/s",
+        "18 m³/s",
+        "9 m³/s"
+      ],
+      "answer": 2,
+      "solution": "**Concept.** Quantity $Q=v\\times A$.\n\n**Working.** $Q=1.8\\times 10=18$ m³/s.\n\n**Answer.** $18$ m³/s."
+    },
+    {
+      "id": 62,
+      "subject": "Mining Engineering",
+      "topic": "Drilling — Penetration",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "A jackhammer drills at 0.35 m/min for 45 minutes of net drilling time. The total hole length advanced is _____.",
+      "options": [
+        "45.35 m",
+        "15.75 m",
+        "7.87 m",
+        "0.01 m"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Advance $=$ penetration rate $\\times$ time.\n\n**Working.** $0.35\\times45=15.75$ m.\n\n**Answer.** $15.75$ m."
+    },
+    {
+      "id": 63,
+      "subject": "Mining Engineering",
+      "topic": "Coal — Rank",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "Which of the following coals has the highest fixed-carbon content and calorific value?",
+      "options": [
+        "Lignite",
+        "Sub-bituminous",
+        "Anthracite",
+        "Peat"
+      ],
+      "answer": 2,
+      "solution": "**Answer.** Coal rank rises peat → lignite → bituminous → anthracite; anthracite has the highest carbon."
+    },
+    {
+      "id": 64,
+      "subject": "Mining Engineering",
+      "topic": "Mine Ventilation — Mine Resistance",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A mine airway has resistance 0.2 Ns²/m⁸ (gauls) and carries 25 m³/s. The pressure drop (square law) is _____.",
+      "options": [
+        "5 Pa",
+        "125 Pa",
+        "62.5 Pa",
+        "250 Pa"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** $P=R\\,Q^2$ (Atkinson square law).\n\n**Working.** $P=0.2\\times 25^2=125$ Pa.\n\n**Answer.** $125$ Pa."
+    },
+    {
+      "id": 65,
+      "subject": "Mining Engineering",
+      "topic": "Mine Ventilation — Air Quantity",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "Air flows through a roadway of cross-sectional area 4 m² at a mean velocity of 2 m/s. The air quantity is _____.",
+      "options": [
+        "8 m³/s",
+        "4 m³/s",
+        "6 m³/s",
+        "16 m³/s"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Quantity $Q=v\\times A$.\n\n**Working.** $Q=2\\times 4=8$ m³/s.\n\n**Answer.** $8$ m³/s."
+    },
+    {
+      "id": 66,
+      "subject": "Mining Engineering",
+      "topic": "Ore Reserves — Weighted Grade",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "hard",
+      "stem": "Two ore blocks assay: 400 t at 2% and 200 t at 3.5%. The combined (tonnage-weighted) grade is _____.",
+      "options": [
+        "2.75 %",
+        "3.25 %",
+        "1.25 %",
+        "2.5 %"
+      ],
+      "answer": 3,
+      "solution": "**Concept.** Weighted grade $=\\dfrac{\\sum(t_i g_i)}{\\sum t_i}$.\n\n**Working.** $\\dfrac{400\\times2+200\\times3.5}{600}=2.5\\%$.\n\n**Answer.** $2.5\\%$."
+    },
+    {
+      "id": 67,
+      "subject": "Mining Engineering",
+      "topic": "Stoping — Dilution",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A stope yields 100 t of ore mixed with 10 t of waste. The percentage dilution is _____.",
+      "options": [
+        "10 %",
+        "9.09 %",
+        "4.55 %",
+        "11.64 %"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Dilution $=\\dfrac{\\text{waste}}{\\text{ore}+\\text{waste}}\\times100$.\n\n**Working.** $\\dfrac{10}{110}\\times100=9.09\\%$.\n\n**Answer.** $9.09\\%$."
+    },
+    {
+      "id": 68,
+      "subject": "Mining Engineering",
+      "topic": "Blasting — Geometry",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "In a blast pattern, 'spacing' is the distance:",
+      "options": [
+        "Between adjacent holes in the same row",
+        "From collar to charge top",
+        "Of stemming column",
+        "From the hole to the free face"
+      ],
+      "answer": 0,
+      "solution": "**Answer.** Spacing is the centre-to-centre distance between adjacent holes in a row."
+    },
+    {
+      "id": 69,
+      "subject": "Mining Engineering",
+      "topic": "Legislation — Coal Mines Regulations 2017",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Statutory mine survey plans must be kept up to date and corrected at intervals not exceeding:",
+      "options": [
+        "6 months",
+        "12 months",
+        "1 month",
+        "3 months"
+      ],
+      "answer": 3,
+      "solution": "**Answer.** Survey plans must be brought up to date at least once every three months."
+    },
+    {
+      "id": 70,
+      "subject": "Mining Engineering",
+      "topic": "Haulage — Rope Pull",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "hard",
+      "stem": "A loaded train of mass 7500 kg is hauled up a gradient of 1 in 20. With a tractive (rolling) resistance coefficient of 0.025, the rope pull is approximately _____.",
+      "options": [
+        "8277.19 N",
+        "3678.75 N",
+        "1839.38 N",
+        "5518.13 N"
+      ],
+      "answer": 3,
+      "solution": "**Concept.** Rope pull $T=Wg\\left(\\frac{1}{n}+\\mu\\right)$ (gravity + resistance).\n\n**Working.** $T=7500\\times9.81\\times(\\frac{1}{20}+0.025)=5518.13$ N.\n\n**Answer.** $5518.13$ N."
+    },
+    {
+      "id": 71,
+      "subject": "Mining Engineering",
+      "topic": "Mine Ventilation — Air Quantity",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "Air flows through a roadway of cross-sectional area 20 m² at a mean velocity of 2.5 m/s. The air quantity is _____.",
+      "options": [
+        "50 m³/s",
+        "100 m³/s",
+        "22.5 m³/s",
+        "25 m³/s"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Quantity $Q=v\\times A$.\n\n**Working.** $Q=2.5\\times 20=50$ m³/s.\n\n**Answer.** $50$ m³/s."
+    },
+    {
+      "id": 72,
+      "subject": "Mining Engineering",
+      "topic": "Surface Mining — Shovel Productivity",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "hard",
+      "stem": "A shovel with a 6 m³ bucket works at a fill factor of 0.8 and a cycle time of 25 s. Its theoretical output is _____.",
+      "options": [
+        "4.8 m³/h",
+        "864 m³/h",
+        "691.2 m³/h",
+        "345.6 m³/h"
+      ],
+      "answer": 2,
+      "solution": "**Concept.** Output $=\\dfrac{\\text{bucket}\\times\\text{fill factor}\\times3600}{\\text{cycle (s)}}$ m³/h.\n\n**Working.** $\\dfrac{6\\times0.8\\times3600}{25}=691.2$ m³/h.\n\n**Answer.** $691.2$ m³/h."
+    },
+    {
+      "id": 73,
+      "subject": "Mining Engineering",
+      "topic": "Bord & Pillar — Extraction",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "hard",
+      "stem": "In bord-and-pillar development with square pillars of side 20 m and galleries 4 m wide, the percentage of coal extracted on development is _____.",
+      "options": [
+        "15.28 %",
+        "30.56 %",
+        "20 %",
+        "69.44 %"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** For square pillars (centre spacing $a+w$), development extraction $=\\left(1-\\dfrac{a^2}{(a+w)^2}\\right)\\times100$.\n\n**Working.** $\\left(1-\\dfrac{20^2}{24^2}\\right)\\times100=30.56\\%$.\n\n**Answer.** $30.56\\%$."
+    },
+    {
+      "id": 74,
+      "subject": "Mining Engineering",
+      "topic": "Mine Ventilation — Air Quantity",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "Air flows through a roadway of cross-sectional area 8 m² at a mean velocity of 1.5 m/s. The air quantity is _____.",
+      "options": [
+        "6 m³/s",
+        "24 m³/s",
+        "9.5 m³/s",
+        "12 m³/s"
+      ],
+      "answer": 3,
+      "solution": "**Concept.** Quantity $Q=v\\times A$.\n\n**Working.** $Q=1.5\\times 8=12$ m³/s.\n\n**Answer.** $12$ m³/s."
+    },
+    {
+      "id": 75,
+      "subject": "Mining Engineering",
+      "topic": "Strata Control — Stowing",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "hard",
+      "stem": "In hydraulic stowing, the goaf is filled with:",
+      "options": [
+        "Compressed air only",
+        "Dry rock by gravity",
+        "Cement grout pumped under pressure",
+        "Sand slurry transported and placed by water"
+      ],
+      "answer": 3,
+      "solution": "**Answer.** Hydraulic stowing pipes a sand–water slurry into the goaf; the water drains, leaving compact fill."
+    },
+    {
+      "id": 76,
+      "subject": "Mining Engineering",
+      "topic": "Mine Electrical — Line Current",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A DC mine pump motor draws 4400 W from a 550 V supply. The line current is _____.",
+      "options": [
+        "4 A",
+        "2420 A",
+        "68.75 A",
+        "8 A"
+      ],
+      "answer": 3,
+      "solution": "**Concept.** Power $P=V\\,I\\Rightarrow I=\\dfrac{P}{V}$.\n\n**Working.** $\\dfrac{4400}{550}=8$ A.\n\n**Answer.** $8$ A."
+    },
+    {
+      "id": 77,
+      "subject": "Mining Engineering",
+      "topic": "Drilling — Dust Control",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "Wet drilling is preferred over dry drilling primarily to:",
+      "options": [
+        "Increase penetration rate",
+        "Suppress respirable dust at the source",
+        "Cool the explosive",
+        "Save compressed air"
+      ],
+      "answer": 1,
+      "solution": "**Answer.** Water flushing suppresses silica/coal dust, reducing pneumoconiosis risk."
+    },
+    {
+      "id": 78,
+      "subject": "Mining Engineering",
+      "topic": "Surface Mining — Stripping Ratio",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "An opencast mine removes 500000 m³ of overburden to win 100000 t of ore. The stripping ratio (m³/t) is _____.",
+      "options": [
+        "2.5 m³/t",
+        "10 m³/t",
+        "5 m³/t",
+        "0.2 m³/t"
+      ],
+      "answer": 2,
+      "solution": "**Concept.** Stripping ratio $=\\dfrac{\\text{overburden}}{\\text{ore}}$.\n\n**Working.** $\\dfrac{500000}{100000}=5$ m³/t.\n\n**Answer.** $5$ m³/t."
+    },
+    {
+      "id": 79,
+      "subject": "Mining Engineering",
+      "topic": "Ore Reserves — Weighted Grade",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "hard",
+      "stem": "Two ore blocks assay: 300 t at 1.2% and 200 t at 2.2%. The combined (tonnage-weighted) grade is _____.",
+      "options": [
+        "1.7 %",
+        "0.8 %",
+        "1.6 %",
+        "2.08 %"
+      ],
+      "answer": 2,
+      "solution": "**Concept.** Weighted grade $=\\dfrac{\\sum(t_i g_i)}{\\sum t_i}$.\n\n**Working.** $\\dfrac{300\\times1.2+200\\times2.2}{500}=1.6\\%$.\n\n**Answer.** $1.6\\%$."
+    },
+    {
+      "id": 80,
+      "subject": "Mining Engineering",
+      "topic": "Strata Control — Monitoring",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "'Convergence' measured in an underground opening refers to:",
+      "options": [
+        "Closure between the roof and the floor",
+        "Rope elongation",
+        "Gas accumulation",
+        "Lateral airflow"
+      ],
+      "answer": 0,
+      "solution": "**Answer.** Convergence is the reduction in roof-to-floor (or rib-to-rib) distance over time."
+    },
+    {
+      "id": 81,
+      "subject": "Mining Engineering",
+      "topic": "Legislation — Metalliferous Mines 1961",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "In metalliferous mines, the statutory first-line supervisor equivalent to the coal-mine Sirdar is the:",
+      "options": [
+        "Surveyor",
+        "Overman",
+        "Winding Engine Driver",
+        "Mining Mate"
+      ],
+      "answer": 3,
+      "solution": "**Answer.** The Mining Mate is the first-line supervisor under the MMR 1961."
+    },
+    {
+      "id": 82,
+      "subject": "Mining Engineering",
+      "topic": "Rock Mechanics — Pillar Strength",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "hard",
+      "stem": "Using the Obert–Duvall formula $S=S_p(0.778+0.222\\,w/h)$ with $S_p=7$ MPa, the strength of a pillar of width 10 m and height 5 m is _____.",
+      "options": [
+        "6.22 MPa",
+        "7 MPa",
+        "8.55 MPa",
+        "11.12 MPa"
+      ],
+      "answer": 2,
+      "solution": "**Concept.** Obert–Duvall pillar strength uses the width-to-height ratio $w/h$.\n\n**Working.** $w/h=2$; $S=7(0.778+0.222\\times2)=8.55$ MPa.\n\n**Answer.** $8.55$ MPa."
+    },
+    {
+      "id": 83,
+      "subject": "Mining Engineering",
+      "topic": "Mine Economics — Life of Mine",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A deposit holds 30 Mt of mineable reserve and is worked at 2 Mt per year. The life of the mine is _____.",
+      "options": [
+        "15 years",
+        "32 years",
+        "7.5 years",
+        "0.07 years"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Life of mine $=\\dfrac{\\text{reserve}}{\\text{annual production}}$.\n\n**Working.** $\\dfrac{30}{2}=15$ years.\n\n**Answer.** $15$ years."
+    },
+    {
+      "id": 84,
+      "subject": "Mining Engineering",
+      "topic": "Mine Ventilation — Air Quantity",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "Air flows through a roadway of cross-sectional area 8 m² at a mean velocity of 3.5 m/s. The air quantity is _____.",
+      "options": [
+        "56 m³/s",
+        "28 m³/s",
+        "11.5 m³/s",
+        "14 m³/s"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Quantity $Q=v\\times A$.\n\n**Working.** $Q=3.5\\times 8=28$ m³/s.\n\n**Answer.** $28$ m³/s.",
+      "figure": {
+        "kind": "ventilation",
+        "nodes": [
+          {
+            "id": "A",
+            "x": 30,
+            "y": 60
+          },
+          {
+            "id": "B",
+            "x": 150,
+            "y": 60
+          },
+          {
+            "id": "C",
+            "x": 270,
+            "y": 60
+          }
+        ],
+        "branches": [
+          {
+            "from": "A",
+            "to": "B",
+            "q": 28
+          },
+          {
+            "from": "B",
+            "to": "C",
+            "q": 28
+          }
+        ],
+        "caption": "Single airway — measure station"
+      }
+    },
+    {
+      "id": 85,
+      "subject": "Mining Engineering",
+      "topic": "Blasting — Initiation",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Delay detonators are used in blast rounds mainly to:",
+      "options": [
+        "Save explosive cost only",
+        "Increase noise",
+        "Improve fragmentation and reduce ground vibration",
+        "Prevent any movement of rock"
+      ],
+      "answer": 2,
+      "solution": "**Answer.** Sequenced delays create free faces between holes, improving breakage and lowering peak vibration."
+    },
+    {
+      "id": 86,
+      "subject": "Mining Engineering",
+      "topic": "Mine Ventilation — Air Quantity",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "Air flows through a roadway of cross-sectional area 15 m² at a mean velocity of 1.5 m/s. The air quantity is _____.",
+      "options": [
+        "22.5 m³/s",
+        "45 m³/s",
+        "11.25 m³/s",
+        "16.5 m³/s"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Quantity $Q=v\\times A$.\n\n**Working.** $Q=1.5\\times 15=22.5$ m³/s.\n\n**Answer.** $22.5$ m³/s."
+    },
+    {
+      "id": 87,
+      "subject": "Mining Engineering",
+      "topic": "Rock Mechanics — Pillar Strength",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "hard",
+      "stem": "Using the Obert–Duvall formula $S=S_p(0.778+0.222\\,w/h)$ with $S_p=7$ MPa, the strength of a pillar of width 11 m and height 5.5 m is _____.",
+      "options": [
+        "11.12 MPa",
+        "7 MPa",
+        "8.55 MPa",
+        "6.22 MPa"
+      ],
+      "answer": 2,
+      "solution": "**Concept.** Obert–Duvall pillar strength uses the width-to-height ratio $w/h$.\n\n**Working.** $w/h=2$; $S=7(0.778+0.222\\times2)=8.55$ MPa.\n\n**Answer.** $8.55$ MPa."
+    },
+    {
+      "id": 88,
+      "subject": "Mining Engineering",
+      "topic": "Mineral Resources — Rajasthan",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "Hindustan Zinc Limited, India's largest integrated zinc–lead producer, is headquartered at:",
+      "options": [
+        "Jaipur",
+        "Jodhpur",
+        "Kota",
+        "Udaipur"
+      ],
+      "answer": 3,
+      "solution": "**Answer.** Hindustan Zinc Limited (Vedanta) is headquartered at Udaipur, Rajasthan."
+    },
+    {
+      "id": 89,
+      "subject": "Mining Engineering",
+      "topic": "Mine Ventilation — Mine Resistance",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A mine airway has resistance 0.8 Ns²/m⁸ (gauls) and carries 25 m³/s. The pressure drop (square law) is _____.",
+      "options": [
+        "250 Pa",
+        "1000 Pa",
+        "20 Pa",
+        "500 Pa"
+      ],
+      "answer": 3,
+      "solution": "**Concept.** $P=R\\,Q^2$ (Atkinson square law).\n\n**Working.** $P=0.8\\times 25^2=500$ Pa.\n\n**Answer.** $500$ Pa."
+    },
+    {
+      "id": 90,
+      "subject": "Mining Engineering",
+      "topic": "Mine Ventilation — Air Quantity",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "Air flows through a roadway of cross-sectional area 18 m² at a mean velocity of 4 m/s. The air quantity is _____.",
+      "options": [
+        "22 m³/s",
+        "72 m³/s",
+        "36 m³/s",
+        "144 m³/s"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Quantity $Q=v\\times A$.\n\n**Working.** $Q=4\\times 18=72$ m³/s.\n\n**Answer.** $72$ m³/s.",
+      "figure": {
+        "kind": "ventilation",
+        "nodes": [
+          {
+            "id": "A",
+            "x": 30,
+            "y": 60
+          },
+          {
+            "id": "B",
+            "x": 150,
+            "y": 60
+          },
+          {
+            "id": "C",
+            "x": 270,
+            "y": 60
+          }
+        ],
+        "branches": [
+          {
+            "from": "A",
+            "to": "B",
+            "q": 72
+          },
+          {
+            "from": "B",
+            "to": "C",
+            "q": 72
+          }
+        ],
+        "caption": "Single airway — measure station"
+      }
+    },
+    {
+      "id": 91,
+      "subject": "Mining Engineering",
+      "topic": "Mine Gases — Methane Dilution",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Methane is emitted at 0.15 m³/min into a roadway carrying 20 m³/min of air. The general-body CH₄ concentration is _____.",
+      "options": [
+        "1.5 %",
+        "0.75 %",
+        "0.38 %",
+        "3 %"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** % gas $=\\dfrac{\\text{gas flow}}{\\text{air flow}}\\times100$.\n\n**Working.** $\\dfrac{0.15}{20}\\times100=0.75\\%$.\n\n**Answer.** $0.75\\%$."
+    },
+    {
+      "id": 92,
+      "subject": "Mining Engineering",
+      "topic": "Mine Ventilation — Air Quantity",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "Air flows through a roadway of cross-sectional area 18 m² at a mean velocity of 2.5 m/s. The air quantity is _____.",
+      "options": [
+        "45 m³/s",
+        "22.5 m³/s",
+        "90 m³/s",
+        "20.5 m³/s"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Quantity $Q=v\\times A$.\n\n**Working.** $Q=2.5\\times 18=45$ m³/s.\n\n**Answer.** $45$ m³/s.",
+      "figure": {
+        "kind": "ventilation",
+        "nodes": [
+          {
+            "id": "A",
+            "x": 30,
+            "y": 60
+          },
+          {
+            "id": "B",
+            "x": 150,
+            "y": 60
+          },
+          {
+            "id": "C",
+            "x": 270,
+            "y": 60
+          }
+        ],
+        "branches": [
+          {
+            "from": "A",
+            "to": "B",
+            "q": 45
+          },
+          {
+            "from": "B",
+            "to": "C",
+            "q": 45
+          }
+        ],
+        "caption": "Single airway — measure station"
+      }
+    },
+    {
+      "id": 93,
+      "subject": "Mining Engineering",
+      "topic": "Mineral Resources — Rajasthan",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Sambhar Lake in Rajasthan is India's largest inland source of:",
+      "options": [
+        "Common salt",
+        "Borax",
+        "Potash",
+        "Gypsum"
+      ],
+      "answer": 0,
+      "solution": "**Answer.** Sambhar Lake is the country's largest inland saline lake worked for common salt."
+    },
+    {
+      "id": 94,
+      "subject": "Mining Engineering",
+      "topic": "Surface Mining — Stripping Ratio",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "An opencast mine removes 450000 m³ of overburden to win 90000 t of ore. The stripping ratio (m³/t) is _____.",
+      "options": [
+        "2.5 m³/t",
+        "10 m³/t",
+        "5 m³/t",
+        "0.2 m³/t"
+      ],
+      "answer": 2,
+      "solution": "**Concept.** Stripping ratio $=\\dfrac{\\text{overburden}}{\\text{ore}}$.\n\n**Working.** $\\dfrac{450000}{90000}=5$ m³/t.\n\n**Answer.** $5$ m³/t."
+    },
+    {
+      "id": 95,
+      "subject": "Mining Engineering",
+      "topic": "Mine Economics — Tonnage",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "An ore block of 600 m³ has bulk density 4.2 t/m³. Its tonnage is _____.",
+      "options": [
+        "2520 t",
+        "1260 t",
+        "604.2 t",
+        "142.86 t"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Tonnage $=$ volume $\\times$ density.\n\n**Working.** $600\\times4.2=2520$ t.\n\n**Answer.** $2520$ t."
+    },
+    {
+      "id": 96,
+      "subject": "Mining Engineering",
+      "topic": "Mine Economics — Life of Mine",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A deposit holds 24 Mt of mineable reserve and is worked at 4 Mt per year. The life of the mine is _____.",
+      "options": [
+        "0.17 years",
+        "28 years",
+        "3 years",
+        "6 years"
+      ],
+      "answer": 3,
+      "solution": "**Concept.** Life of mine $=\\dfrac{\\text{reserve}}{\\text{annual production}}$.\n\n**Working.** $\\dfrac{24}{4}=6$ years.\n\n**Answer.** $6$ years."
+    },
+    {
+      "id": 97,
+      "subject": "Mining Engineering",
+      "topic": "Stoping — Dilution",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A stope yields 150 t of ore mixed with 15 t of waste. The percentage dilution is _____.",
+      "options": [
+        "10 %",
+        "11.64 %",
+        "9.09 %",
+        "4.55 %"
+      ],
+      "answer": 2,
+      "solution": "**Concept.** Dilution $=\\dfrac{\\text{waste}}{\\text{ore}+\\text{waste}}\\times100$.\n\n**Working.** $\\dfrac{15}{165}\\times100=9.09\\%$.\n\n**Answer.** $9.09\\%$."
+    },
+    {
+      "id": 98,
+      "subject": "Mining Engineering",
+      "topic": "Mine Ventilation — Fan Operating Point",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "hard",
+      "stem": "A fan characteristic is $P=25-0.4Q^2$ and the mine resistance is $P=0.5\\,Q^2$. The operating air quantity $Q$ (intersection) is _____.",
+      "options": [
+        "2.64 m³/s",
+        "62.5 m³/s",
+        "7.38 m³/s",
+        "5.27 m³/s"
+      ],
+      "answer": 3,
+      "solution": "**Concept.** Operating point: fan pressure = mine pressure.\n\n**Working.** $25-0.4Q^2=0.5Q^2\\Rightarrow Q^2=\\dfrac{25}{0.9}\\Rightarrow Q=5.27$ m³/s.\n\n**Answer.** $5.27$ m³/s.",
+      "figure": {
+        "kind": "pq-curve",
+        "fan": {
+          "a": 25,
+          "b": 0.4,
+          "label": "Fan"
+        },
+        "resistances": [
+          {
+            "r": 0.5,
+            "label": "Mine",
+            "color": "#2563eb"
+          }
+        ],
+        "caption": "Fan vs mine characteristic"
+      }
+    },
+    {
+      "id": 99,
+      "subject": "Mining Engineering",
+      "topic": "Mine Ventilation — Air Quantity",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "Air flows through a roadway of cross-sectional area 12 m² at a mean velocity of 3.5 m/s. The air quantity is _____.",
+      "options": [
+        "15.5 m³/s",
+        "21 m³/s",
+        "84 m³/s",
+        "42 m³/s"
+      ],
+      "answer": 3,
+      "solution": "**Concept.** Quantity $Q=v\\times A$.\n\n**Working.** $Q=3.5\\times 12=42$ m³/s.\n\n**Answer.** $42$ m³/s."
+    },
+    {
+      "id": 100,
+      "subject": "Mining Engineering",
+      "topic": "Mine Ventilation — Air Power",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A main fan develops a pressure of 2500 Pa while passing 30 m³/s of air. The air power is _____.",
+      "options": [
+        "75000 kW",
+        "37.5 kW",
+        "83.33 kW",
+        "75 kW"
+      ],
+      "answer": 3,
+      "solution": "**Concept.** Air power $=\\dfrac{P\\times Q}{1000}$ kW ($P$ in Pa, $Q$ in m³/s).\n\n**Working.** $\\dfrac{2500\\times30}{1000}=75$ kW.\n\n**Answer.** $75$ kW."
+    },
+    {
+      "id": 101,
+      "subject": "Mining Engineering",
+      "topic": "Blasting — Geometry",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "In a blast round the 'burden' is the distance from a blasthole to the:",
+      "options": [
+        "Nearest free face, measured perpendicular to the hole",
+        "Collar of the hole",
+        "Adjacent hole in the same row",
+        "Floor of the bench"
+      ],
+      "answer": 0,
+      "solution": "**Answer.** Burden is the perpendicular distance to the nearest free face; spacing is between holes in a row."
+    },
+    {
+      "id": 102,
+      "subject": "Mining Engineering",
+      "topic": "Subsidence",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A seam of extraction thickness 1.8 m is worked by caving with a subsidence factor of 0.5. The maximum surface subsidence is _____.",
+      "options": [
+        "1.8 m",
+        "0.9 m",
+        "2.3 m",
+        "0.45 m"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Maximum subsidence $S_{max}=a\\times m$ (subsidence factor $\\times$ extracted thickness).\n\n**Working.** $0.5\\times1.8=0.9$ m.\n\n**Answer.** $0.9$ m."
+    },
+    {
+      "id": 103,
+      "subject": "Mining Engineering",
+      "topic": "Rock Mechanics — Pillar Strength",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "hard",
+      "stem": "Using the Obert–Duvall formula $S=S_p(0.778+0.222\\,w/h)$ with $S_p=7$ MPa, the strength of a pillar of width 8 m and height 2 m is _____.",
+      "options": [
+        "15.16 MPa",
+        "7 MPa",
+        "5.83 MPa",
+        "11.66 MPa"
+      ],
+      "answer": 3,
+      "solution": "**Concept.** Obert–Duvall pillar strength uses the width-to-height ratio $w/h$.\n\n**Working.** $w/h=4$; $S=7(0.778+0.222\\times4)=11.66$ MPa.\n\n**Answer.** $11.66$ MPa."
+    },
+    {
+      "id": 104,
+      "subject": "Mining Engineering",
+      "topic": "Surface Mining — Shovel Productivity",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "hard",
+      "stem": "A shovel with a 12 m³ bucket works at a fill factor of 0.9 and a cycle time of 45 s. Its theoretical output is _____.",
+      "options": [
+        "10.8 m³/h",
+        "960 m³/h",
+        "864 m³/h",
+        "432 m³/h"
+      ],
+      "answer": 2,
+      "solution": "**Concept.** Output $=\\dfrac{\\text{bucket}\\times\\text{fill factor}\\times3600}{\\text{cycle (s)}}$ m³/h.\n\n**Working.** $\\dfrac{12\\times0.9\\times3600}{45}=864$ m³/h.\n\n**Answer.** $864$ m³/h."
+    },
+    {
+      "id": 105,
+      "subject": "Mining Engineering",
+      "topic": "Mine Gases — Methane Dilution",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Methane is emitted at 0.3 m³/min into a roadway carrying 50 m³/min of air. The general-body CH₄ concentration is _____.",
+      "options": [
+        "1.2 %",
+        "0.3 %",
+        "0.6 %",
+        "15 %"
+      ],
+      "answer": 2,
+      "solution": "**Concept.** % gas $=\\dfrac{\\text{gas flow}}{\\text{air flow}}\\times100$.\n\n**Working.** $\\dfrac{0.3}{50}\\times100=0.6\\%$.\n\n**Answer.** $0.6\\%$."
+    },
+    {
+      "id": 106,
+      "subject": "Mining Engineering",
+      "topic": "Mine Ventilation — Air Power",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A main fan develops a pressure of 1000 Pa while passing 70 m³/s of air. The air power is _____.",
+      "options": [
+        "70 kW",
+        "14.29 kW",
+        "70000 kW",
+        "35 kW"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Air power $=\\dfrac{P\\times Q}{1000}$ kW ($P$ in Pa, $Q$ in m³/s).\n\n**Working.** $\\dfrac{1000\\times70}{1000}=70$ kW.\n\n**Answer.** $70$ kW."
+    },
+    {
+      "id": 107,
+      "subject": "Mining Engineering",
+      "topic": "Mine Ventilation — Mine Resistance",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A mine airway has resistance 1.5 Ns²/m⁸ (gauls) and carries 25 m³/s. The pressure drop (square law) is _____.",
+      "options": [
+        "468.75 Pa",
+        "37.5 Pa",
+        "937.5 Pa",
+        "1875 Pa"
+      ],
+      "answer": 2,
+      "solution": "**Concept.** $P=R\\,Q^2$ (Atkinson square law).\n\n**Working.** $P=1.5\\times 25^2=937.5$ Pa.\n\n**Answer.** $937.5$ Pa."
+    },
+    {
+      "id": 108,
+      "subject": "Mining Engineering",
+      "topic": "Mine Ventilation — Mine Resistance",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A mine airway has resistance 0.1 Ns²/m⁸ (gauls) and carries 10 m³/s. The pressure drop (square law) is _____.",
+      "options": [
+        "1 Pa",
+        "20 Pa",
+        "10 Pa",
+        "5 Pa"
+      ],
+      "answer": 2,
+      "solution": "**Concept.** $P=R\\,Q^2$ (Atkinson square law).\n\n**Working.** $P=0.1\\times 10^2=10$ Pa.\n\n**Answer.** $10$ Pa."
+    },
+    {
+      "id": 109,
+      "subject": "Mining Engineering",
+      "topic": "Environment — Effluent",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "Settling (sedimentation) ponds at a mine are provided to:",
+      "options": [
+        "Remove suspended solids before water is discharged",
+        "Increase blasting efficiency",
+        "Store explosives",
+        "Cool the ventilation air"
+      ],
+      "answer": 0,
+      "solution": "**Answer.** Settling ponds let suspended solids settle so discharged water meets effluent norms."
+    },
+    {
+      "id": 110,
+      "subject": "Mining Engineering",
+      "topic": "Mine Ventilation — Air Quantity",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "Air flows through a roadway of cross-sectional area 6 m² at a mean velocity of 4 m/s. The air quantity is _____.",
+      "options": [
+        "12 m³/s",
+        "48 m³/s",
+        "24 m³/s",
+        "10 m³/s"
+      ],
+      "answer": 2,
+      "solution": "**Concept.** Quantity $Q=v\\times A$.\n\n**Working.** $Q=4\\times 6=24$ m³/s.\n\n**Answer.** $24$ m³/s."
+    },
+    {
+      "id": 111,
+      "subject": "Mining Engineering",
+      "topic": "Materials Handling — Belt Capacity",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A belt conveyor carries a uniform load of 60 kg per metre of belt at a speed of 2 m/s. Its capacity is _____.",
+      "options": [
+        "506.44 t/h",
+        "432 t/h",
+        "864 t/h",
+        "120 t/h"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Capacity $=3.6\\times(\\text{kg/m})\\times v\\,(\\text{m/s})$ t/h.\n\n**Working.** $3.6\\times60\\times2=432$ t/h.\n\n**Answer.** $432$ t/h."
+    },
+    {
+      "id": 112,
+      "subject": "Mining Engineering",
+      "topic": "Legislation — Mines Act 1952",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "Enforcement of the Mines Act, 1952 and the regulations made under it is the responsibility of the:",
+      "options": [
+        "Coal India Limited",
+        "Indian Bureau of Mines",
+        "State Pollution Control Board",
+        "Directorate General of Mines Safety (DGMS)"
+      ],
+      "answer": 3,
+      "solution": "**Answer.** DGMS, under the Ministry of Labour and Employment, enforces the Mines Act and regulations."
+    },
+    {
+      "id": 113,
+      "subject": "Mining Engineering",
+      "topic": "Mine Ventilation — Air Quantity",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "Air flows through a roadway of cross-sectional area 12 m² at a mean velocity of 1.5 m/s. The air quantity is _____.",
+      "options": [
+        "9 m³/s",
+        "18 m³/s",
+        "13.5 m³/s",
+        "36 m³/s"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Quantity $Q=v\\times A$.\n\n**Working.** $Q=1.5\\times 12=18$ m³/s.\n\n**Answer.** $18$ m³/s."
+    },
+    {
+      "id": 114,
+      "subject": "Mining Engineering",
+      "topic": "Surface Mining — Truck Output",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A dump truck of 60 t payload completes a 18-minute haul cycle over a 450-minute working shift. Its production is _____.",
+      "options": [
+        "750 t",
+        "60 t",
+        "1500 t",
+        "270 t"
+      ],
+      "answer": 2,
+      "solution": "**Concept.** Trips $=\\dfrac{\\text{shift}}{\\text{cycle}}$; output $=$ trips $\\times$ payload.\n\n**Working.** Trips $=\\dfrac{450}{18}=25$; output $=25\\times60=1500$ t.\n\n**Answer.** $1500$ t."
+    },
+    {
+      "id": 115,
+      "subject": "Mining Engineering",
+      "topic": "Mineral Resources — Rajasthan",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "hard",
+      "stem": "Rajasthan is virtually the sole Indian producer of which industrial mineral used in ceramics and paints?",
+      "options": [
+        "Magnesite",
+        "Graphite",
+        "Wollastonite",
+        "Chromite"
+      ],
+      "answer": 2,
+      "solution": "**Answer.** Rajasthan accounts for nearly all of India's wollastonite output."
+    },
+    {
+      "id": 116,
+      "subject": "Mining Engineering",
+      "topic": "Materials Handling — Belt Capacity",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A belt conveyor carries a uniform load of 40 kg per metre of belt at a speed of 1.5 m/s. Its capacity is _____.",
+      "options": [
+        "253.72 t/h",
+        "60 t/h",
+        "216 t/h",
+        "432 t/h"
+      ],
+      "answer": 2,
+      "solution": "**Concept.** Capacity $=3.6\\times(\\text{kg/m})\\times v\\,(\\text{m/s})$ t/h.\n\n**Working.** $3.6\\times40\\times1.5=216$ t/h.\n\n**Answer.** $216$ t/h."
+    },
+    {
+      "id": 117,
+      "subject": "Mining Engineering",
+      "topic": "Mine Gases — Methane Dilution",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Methane is emitted at 0.2 m³/min into a roadway carrying 20 m³/min of air. The general-body CH₄ concentration is _____.",
+      "options": [
+        "4 %",
+        "1 %",
+        "0.5 %",
+        "2 %"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** % gas $=\\dfrac{\\text{gas flow}}{\\text{air flow}}\\times100$.\n\n**Working.** $\\dfrac{0.2}{20}\\times100=1\\%$.\n\n**Answer.** $1\\%$."
+    },
+    {
+      "id": 118,
+      "subject": "Mining Engineering",
+      "topic": "Environment — Acid Mine Drainage",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Acid mine drainage (AMD) is produced mainly by the oxidation of:",
+      "options": [
+        "Pyrite (iron sulphide) in the presence of water and air",
+        "Feldspar",
+        "Limestone",
+        "Quartz"
+      ],
+      "answer": 0,
+      "solution": "**Answer.** Pyrite (FeS₂) oxidises to sulphuric acid and iron salts, lowering water pH."
+    },
+    {
+      "id": 119,
+      "subject": "Mining Engineering",
+      "topic": "Machinery — Continuous Miner",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "A continuous miner is mainly used in:",
+      "options": [
+        "Shaft sinking",
+        "Ore crushing",
+        "Bord-and-pillar coal development",
+        "Opencast overburden removal"
+      ],
+      "answer": 2,
+      "solution": "**Answer.** Continuous miners cut and load coal in bord-and-pillar (and some pillar extraction) operations."
+    },
+    {
+      "id": 120,
+      "subject": "Mining Engineering",
+      "topic": "Mine Ventilation — Mine Resistance",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A mine airway has resistance 0.4 Ns²/m⁸ (gauls) and carries 15 m³/s. The pressure drop (square law) is _____.",
+      "options": [
+        "90 Pa",
+        "45 Pa",
+        "6 Pa",
+        "180 Pa"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** $P=R\\,Q^2$ (Atkinson square law).\n\n**Working.** $P=0.4\\times 15^2=90$ Pa.\n\n**Answer.** $90$ Pa."
+    },
+    {
+      "id": 121,
+      "subject": "Mining Engineering",
+      "topic": "Mine Ventilation — Mine Resistance",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A mine airway has resistance 1.5 Ns²/m⁸ (gauls) and carries 20 m³/s. The pressure drop (square law) is _____.",
+      "options": [
+        "30 Pa",
+        "300 Pa",
+        "600 Pa",
+        "1200 Pa"
+      ],
+      "answer": 2,
+      "solution": "**Concept.** $P=R\\,Q^2$ (Atkinson square law).\n\n**Working.** $P=1.5\\times 20^2=600$ Pa.\n\n**Answer.** $600$ Pa."
+    },
+    {
+      "id": 122,
+      "subject": "Mining Engineering",
+      "topic": "Mine Ventilation — Air Quantity",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "Air flows through a roadway of cross-sectional area 18 m² at a mean velocity of 1.2 m/s. The air quantity is _____.",
+      "options": [
+        "19.2 m³/s",
+        "10.8 m³/s",
+        "43.2 m³/s",
+        "21.6 m³/s"
+      ],
+      "answer": 3,
+      "solution": "**Concept.** Quantity $Q=v\\times A$.\n\n**Working.** $Q=1.2\\times 18=21.6$ m³/s.\n\n**Answer.** $21.6$ m³/s."
+    },
+    {
+      "id": 123,
+      "subject": "Mining Engineering",
+      "topic": "Mine Ventilation — Fan Operating Point",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "hard",
+      "stem": "A fan characteristic is $P=28-0.5Q^2$ and the mine resistance is $P=0.5\\,Q^2$. The operating air quantity $Q$ (intersection) is _____.",
+      "options": [
+        "2.65 m³/s",
+        "7.41 m³/s",
+        "5.29 m³/s",
+        "56 m³/s"
+      ],
+      "answer": 2,
+      "solution": "**Concept.** Operating point: fan pressure = mine pressure.\n\n**Working.** $28-0.5Q^2=0.5Q^2\\Rightarrow Q^2=\\dfrac{28}{1}\\Rightarrow Q=5.29$ m³/s.\n\n**Answer.** $5.29$ m³/s.",
+      "figure": {
+        "kind": "pq-curve",
+        "fan": {
+          "a": 28,
+          "b": 0.5,
+          "label": "Fan"
+        },
+        "resistances": [
+          {
+            "r": 0.5,
+            "label": "Mine",
+            "color": "#2563eb"
+          }
+        ],
+        "caption": "Fan vs mine characteristic"
+      }
+    },
+    {
+      "id": 124,
+      "subject": "Mining Engineering",
+      "topic": "Blasting — Permitted Explosives",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "In gassy coal seams, only 'permitted' (P-series) explosives are used because they:",
+      "options": [
+        "Have a low flame temperature/duration to avoid igniting gas/dust",
+        "Are cheaper",
+        "Detonate faster",
+        "Produce more fumes"
+      ],
+      "answer": 0,
+      "solution": "**Answer.** Permitted explosives are formulated for short, cool flames to reduce ignition risk of firedamp/coal dust."
+    },
+    {
+      "id": 125,
+      "subject": "Mining Engineering",
+      "topic": "Mineral Processing — Metal Recovery",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "hard",
+      "stem": "A concentrator treats 1000 t of ore assaying 2.5% metal at 90% recovery. The mass of metal recovered is _____.",
+      "options": [
+        "22.5 t",
+        "11.25 t",
+        "900 t",
+        "25 t"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Metal recovered $=$ feed $\\times\\dfrac{\\text{grade}}{100}\\times\\dfrac{\\text{recovery}}{100}$.\n\n**Working.** $1000\\times0.025\\times0.9=22.5$ t.\n\n**Answer.** $22.5$ t."
+    },
+    {
+      "id": 126,
+      "subject": "Mining Engineering",
+      "topic": "Mine Ventilation — Mine Resistance",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A mine airway has resistance 1.5 Ns²/m⁸ (gauls) and carries 15 m³/s. The pressure drop (square law) is _____.",
+      "options": [
+        "168.75 Pa",
+        "337.5 Pa",
+        "22.5 Pa",
+        "675 Pa"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** $P=R\\,Q^2$ (Atkinson square law).\n\n**Working.** $P=1.5\\times 15^2=337.5$ Pa.\n\n**Answer.** $337.5$ Pa."
+    },
+    {
+      "id": 127,
+      "subject": "Mining Engineering",
+      "topic": "Mine Economics — Tonnage",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "An ore block of 1100 m³ has bulk density 4 t/m³. Its tonnage is _____.",
+      "options": [
+        "4400 t",
+        "2200 t",
+        "275 t",
+        "1104 t"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Tonnage $=$ volume $\\times$ density.\n\n**Working.** $1100\\times4=4400$ t.\n\n**Answer.** $4400$ t."
+    },
+    {
+      "id": 128,
+      "subject": "Mining Engineering",
+      "topic": "Mine Gases — Methane Dilution",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Methane is emitted at 0.2 m³/min into a roadway carrying 50 m³/min of air. The general-body CH₄ concentration is _____.",
+      "options": [
+        "0.2 %",
+        "0.4 %",
+        "0.8 %",
+        "10 %"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** % gas $=\\dfrac{\\text{gas flow}}{\\text{air flow}}\\times100$.\n\n**Working.** $\\dfrac{0.2}{50}\\times100=0.4\\%$.\n\n**Answer.** $0.4\\%$."
+    },
+    {
+      "id": 129,
+      "subject": "Mining Engineering",
+      "topic": "Mine Ventilation — Air Quantity",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "Air flows through a roadway of cross-sectional area 8 m² at a mean velocity of 3 m/s. The air quantity is _____.",
+      "options": [
+        "12 m³/s",
+        "48 m³/s",
+        "11 m³/s",
+        "24 m³/s"
+      ],
+      "answer": 3,
+      "solution": "**Concept.** Quantity $Q=v\\times A$.\n\n**Working.** $Q=3\\times 8=24$ m³/s.\n\n**Answer.** $24$ m³/s."
+    },
+    {
+      "id": 130,
+      "subject": "Mining Engineering",
+      "topic": "Mine Gases — Methane Dilution",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Methane is emitted at 0.6 m³/min into a roadway carrying 40 m³/min of air. The general-body CH₄ concentration is _____.",
+      "options": [
+        "3 %",
+        "1.5 %",
+        "24 %",
+        "0.75 %"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** % gas $=\\dfrac{\\text{gas flow}}{\\text{air flow}}\\times100$.\n\n**Working.** $\\dfrac{0.6}{40}\\times100=1.5\\%$.\n\n**Answer.** $1.5\\%$."
+    },
+    {
+      "id": 131,
+      "subject": "Mining Engineering",
+      "topic": "Strata Control — Depillaring",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "hard",
+      "stem": "During pillar extraction, supports are withdrawn using:",
+      "options": [
+        "Water jetting",
+        "Compressed air only",
+        "A remote/mechanical withdrawal device from a place of safety",
+        "Bare hands at the face"
+      ],
+      "answer": 2,
+      "solution": "**Answer.** Supports in the goaf edge are withdrawn remotely so the operator stays in a supported, safe position."
+    },
+    {
+      "id": 132,
+      "subject": "Mining Engineering",
+      "topic": "Subsidence",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A seam of extraction thickness 2.2 m is worked by caving with a subsidence factor of 0.5. The maximum surface subsidence is _____.",
+      "options": [
+        "1.1 m",
+        "0.55 m",
+        "2.2 m",
+        "2.7 m"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Maximum subsidence $S_{max}=a\\times m$ (subsidence factor $\\times$ extracted thickness).\n\n**Working.** $0.5\\times2.2=1.1$ m.\n\n**Answer.** $1.1$ m."
+    },
+    {
+      "id": 133,
+      "subject": "Mining Engineering",
+      "topic": "Mine Ventilation — Air Quantity",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "Air flows through a roadway of cross-sectional area 20 m² at a mean velocity of 3.5 m/s. The air quantity is _____.",
+      "options": [
+        "140 m³/s",
+        "35 m³/s",
+        "23.5 m³/s",
+        "70 m³/s"
+      ],
+      "answer": 3,
+      "solution": "**Concept.** Quantity $Q=v\\times A$.\n\n**Working.** $Q=3.5\\times 20=70$ m³/s.\n\n**Answer.** $70$ m³/s."
+    },
+    {
+      "id": 134,
+      "subject": "Mining Engineering",
+      "topic": "Mine Ventilation — Mine Resistance",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A mine airway has resistance 0.5 Ns²/m⁸ (gauls) and carries 10 m³/s. The pressure drop (square law) is _____.",
+      "options": [
+        "25 Pa",
+        "100 Pa",
+        "50 Pa",
+        "5 Pa"
+      ],
+      "answer": 2,
+      "solution": "**Concept.** $P=R\\,Q^2$ (Atkinson square law).\n\n**Working.** $P=0.5\\times 10^2=50$ Pa.\n\n**Answer.** $50$ Pa."
+    },
+    {
+      "id": 135,
+      "subject": "Mining Engineering",
+      "topic": "Surface Mining — Stripping Ratio",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "An opencast mine removes 320000 m³ of overburden to win 80000 t of ore. The stripping ratio (m³/t) is _____.",
+      "options": [
+        "0.25 m³/t",
+        "2 m³/t",
+        "8 m³/t",
+        "4 m³/t"
+      ],
+      "answer": 3,
+      "solution": "**Concept.** Stripping ratio $=\\dfrac{\\text{overburden}}{\\text{ore}}$.\n\n**Working.** $\\dfrac{320000}{80000}=4$ m³/t.\n\n**Answer.** $4$ m³/t."
+    },
+    {
+      "id": 136,
+      "subject": "Mining Engineering",
+      "topic": "Mine Ventilation — Air Quantity",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "Air flows through a roadway of cross-sectional area 4 m² at a mean velocity of 2.5 m/s. The air quantity is _____.",
+      "options": [
+        "5 m³/s",
+        "6.5 m³/s",
+        "20 m³/s",
+        "10 m³/s"
+      ],
+      "answer": 3,
+      "solution": "**Concept.** Quantity $Q=v\\times A$.\n\n**Working.** $Q=2.5\\times 4=10$ m³/s.\n\n**Answer.** $10$ m³/s.",
+      "figure": {
+        "kind": "ventilation",
+        "nodes": [
+          {
+            "id": "A",
+            "x": 30,
+            "y": 60
+          },
+          {
+            "id": "B",
+            "x": 150,
+            "y": 60
+          },
+          {
+            "id": "C",
+            "x": 270,
+            "y": 60
+          }
+        ],
+        "branches": [
+          {
+            "from": "A",
+            "to": "B",
+            "q": 10
+          },
+          {
+            "from": "B",
+            "to": "C",
+            "q": 10
+          }
+        ],
+        "caption": "Single airway — measure station"
+      }
+    },
+    {
+      "id": 137,
+      "subject": "Mining Engineering",
+      "topic": "Rock Mechanics — Pillar Strength",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "hard",
+      "stem": "Using the Obert–Duvall formula $S=S_p(0.778+0.222\\,w/h)$ with $S_p=7$ MPa, the strength of a pillar of width 5 m and height 5 m is _____.",
+      "options": [
+        "7 MPa",
+        "11.38 MPa",
+        "9.1 MPa",
+        "9.19 MPa"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Obert–Duvall pillar strength uses the width-to-height ratio $w/h$.\n\n**Working.** $w/h=1$; $S=7(0.778+0.222\\times1)=7$ MPa.\n\n**Answer.** $7$ MPa."
+    },
+    {
+      "id": 138,
+      "subject": "Mining Engineering",
+      "topic": "Rock Mechanics — Pillar Strength",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "hard",
+      "stem": "Using the Obert–Duvall formula $S=S_p(0.778+0.222\\,w/h)$ with $S_p=7$ MPa, the strength of a pillar of width 14 m and height 4 m is _____.",
+      "options": [
+        "5.89 MPa",
+        "10.89 MPa",
+        "7 MPa",
+        "14.15 MPa"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Obert–Duvall pillar strength uses the width-to-height ratio $w/h$.\n\n**Working.** $w/h=3.5$; $S=7(0.778+0.222\\times3.5)=10.89$ MPa.\n\n**Answer.** $10.89$ MPa."
+    },
+    {
+      "id": 139,
+      "subject": "Mining Engineering",
+      "topic": "Mine Ventilation — Mine Resistance",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A mine airway has resistance 0.8 Ns²/m⁸ (gauls) and carries 10 m³/s. The pressure drop (square law) is _____.",
+      "options": [
+        "8 Pa",
+        "160 Pa",
+        "40 Pa",
+        "80 Pa"
+      ],
+      "answer": 3,
+      "solution": "**Concept.** $P=R\\,Q^2$ (Atkinson square law).\n\n**Working.** $P=0.8\\times 10^2=80$ Pa.\n\n**Answer.** $80$ Pa."
+    },
+    {
+      "id": 140,
+      "subject": "Mining Engineering",
+      "topic": "Mine Ventilation — Mine Resistance",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A mine airway has resistance 0.4 Ns²/m⁸ (gauls) and carries 30 m³/s. The pressure drop (square law) is _____.",
+      "options": [
+        "720 Pa",
+        "180 Pa",
+        "360 Pa",
+        "12 Pa"
+      ],
+      "answer": 2,
+      "solution": "**Concept.** $P=R\\,Q^2$ (Atkinson square law).\n\n**Working.** $P=0.4\\times 30^2=360$ Pa.\n\n**Answer.** $360$ Pa."
+    },
+    {
+      "id": 141,
+      "subject": "Mining Engineering",
+      "topic": "Stoping — Dilution",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A stope yields 300 t of ore mixed with 50 t of waste. The percentage dilution is _____.",
+      "options": [
+        "16.67 %",
+        "14.29 %",
+        "6 %",
+        "7.14 %"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Dilution $=\\dfrac{\\text{waste}}{\\text{ore}+\\text{waste}}\\times100$.\n\n**Working.** $\\dfrac{50}{350}\\times100=14.29\\%$.\n\n**Answer.** $14.29\\%$."
+    },
+    {
+      "id": 142,
+      "subject": "Mining Engineering",
+      "topic": "Mine Ventilation — Fan Operating Point",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "hard",
+      "stem": "A fan characteristic is $P=18-0.6Q^2$ and the mine resistance is $P=0.5\\,Q^2$. The operating air quantity $Q$ (intersection) is _____.",
+      "options": [
+        "4.05 m³/s",
+        "5.66 m³/s",
+        "2.02 m³/s",
+        "30 m³/s"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Operating point: fan pressure = mine pressure.\n\n**Working.** $18-0.6Q^2=0.5Q^2\\Rightarrow Q^2=\\dfrac{18}{1.1}\\Rightarrow Q=4.05$ m³/s.\n\n**Answer.** $4.05$ m³/s.",
+      "figure": {
+        "kind": "pq-curve",
+        "fan": {
+          "a": 18,
+          "b": 0.6,
+          "label": "Fan"
+        },
+        "resistances": [
+          {
+            "r": 0.5,
+            "label": "Mine",
+            "color": "#2563eb"
+          }
+        ],
+        "caption": "Fan vs mine characteristic"
+      }
+    },
+    {
+      "id": 143,
+      "subject": "Mining Engineering",
+      "topic": "Mine Ventilation — Air Power",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A main fan develops a pressure of 2200 Pa while passing 35 m³/s of air. The air power is _____.",
+      "options": [
+        "77000 kW",
+        "77 kW",
+        "38.5 kW",
+        "62.86 kW"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Air power $=\\dfrac{P\\times Q}{1000}$ kW ($P$ in Pa, $Q$ in m³/s).\n\n**Working.** $\\dfrac{2200\\times35}{1000}=77$ kW.\n\n**Answer.** $77$ kW."
+    },
+    {
+      "id": 144,
+      "subject": "Mining Engineering",
+      "topic": "Mine Ventilation — Air Quantity",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "Air flows through a roadway of cross-sectional area 8 m² at a mean velocity of 1.2 m/s. The air quantity is _____.",
+      "options": [
+        "9.6 m³/s",
+        "9.2 m³/s",
+        "4.8 m³/s",
+        "19.2 m³/s"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Quantity $Q=v\\times A$.\n\n**Working.** $Q=1.2\\times 8=9.6$ m³/s.\n\n**Answer.** $9.6$ m³/s.",
+      "figure": {
+        "kind": "ventilation",
+        "nodes": [
+          {
+            "id": "A",
+            "x": 30,
+            "y": 60
+          },
+          {
+            "id": "B",
+            "x": 150,
+            "y": 60
+          },
+          {
+            "id": "C",
+            "x": 270,
+            "y": 60
+          }
+        ],
+        "branches": [
+          {
+            "from": "A",
+            "to": "B",
+            "q": 9.6
+          },
+          {
+            "from": "B",
+            "to": "C",
+            "q": 9.6
+          }
+        ],
+        "caption": "Single airway — measure station"
+      }
+    },
+    {
+      "id": 145,
+      "subject": "Mining Engineering",
+      "topic": "Mine Gases — Methane Dilution",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Methane is emitted at 0.7 m³/min into a roadway carrying 15 m³/min of air. The general-body CH₄ concentration is _____.",
+      "options": [
+        "9.33 %",
+        "10.5 %",
+        "4.67 %",
+        "2.33 %"
+      ],
+      "answer": 2,
+      "solution": "**Concept.** % gas $=\\dfrac{\\text{gas flow}}{\\text{air flow}}\\times100$.\n\n**Working.** $\\dfrac{0.7}{15}\\times100=4.67\\%$.\n\n**Answer.** $4.67\\%$."
+    },
+    {
+      "id": 146,
+      "subject": "Mining Engineering",
+      "topic": "Haulage — Rope Pull",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "hard",
+      "stem": "A loaded train of mass 10000 kg is hauled up a gradient of 1 in 30. With a tractive (rolling) resistance coefficient of 0.025, the rope pull is approximately _____.",
+      "options": [
+        "3270 N",
+        "2452.5 N",
+        "8583.75 N",
+        "5722.5 N"
+      ],
+      "answer": 3,
+      "solution": "**Concept.** Rope pull $T=Wg\\left(\\frac{1}{n}+\\mu\\right)$ (gravity + resistance).\n\n**Working.** $T=10000\\times9.81\\times(\\frac{1}{30}+0.025)=5722.5$ N.\n\n**Answer.** $5722.5$ N."
+    },
+    {
+      "id": 147,
+      "subject": "Mining Engineering",
+      "topic": "Mine Ventilation — Air Quantity",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "Air flows through a roadway of cross-sectional area 8 m² at a mean velocity of 4 m/s. The air quantity is _____.",
+      "options": [
+        "12 m³/s",
+        "32 m³/s",
+        "64 m³/s",
+        "16 m³/s"
+      ],
+      "answer": 1,
+      "solution": "**Concept.** Quantity $Q=v\\times A$.\n\n**Working.** $Q=4\\times 8=32$ m³/s.\n\n**Answer.** $32$ m³/s."
+    },
+    {
+      "id": 148,
+      "subject": "Mining Engineering",
+      "topic": "Stoping — Dilution",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A stope yields 200 t of ore mixed with 30 t of waste. The percentage dilution is _____.",
+      "options": [
+        "6.67 %",
+        "6.52 %",
+        "13.04 %",
+        "15 %"
+      ],
+      "answer": 2,
+      "solution": "**Concept.** Dilution $=\\dfrac{\\text{waste}}{\\text{ore}+\\text{waste}}\\times100$.\n\n**Working.** $\\dfrac{30}{230}\\times100=13.04\\%$.\n\n**Answer.** $13.04\\%$."
+    },
+    {
+      "id": 149,
+      "subject": "Mining Engineering",
+      "topic": "Stoping — Dilution",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A stope yields 180 t of ore mixed with 20 t of waste. The percentage dilution is _____.",
+      "options": [
+        "10 %",
+        "5 %",
+        "11.11 %",
+        "9 %"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Dilution $=\\dfrac{\\text{waste}}{\\text{ore}+\\text{waste}}\\times100$.\n\n**Working.** $\\dfrac{20}{200}\\times100=10\\%$.\n\n**Answer.** $10\\%$."
+    },
+    {
+      "id": 150,
+      "subject": "Mining Engineering",
+      "topic": "Mine Ventilation — Air Quantity",
+      "section": "Mining Engineering",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "Air flows through a roadway of cross-sectional area 6 m² at a mean velocity of 2 m/s. The air quantity is _____.",
+      "options": [
+        "24 m³/s",
+        "6 m³/s",
+        "12 m³/s",
+        "8 m³/s"
+      ],
+      "answer": 2,
+      "solution": "**Concept.** Quantity $Q=v\\times A$.\n\n**Working.** $Q=2\\times 6=12$ m³/s.\n\n**Answer.** $12$ m³/s."
+    }
+  ]
+}

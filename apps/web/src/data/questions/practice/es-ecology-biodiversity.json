@@ -1,0 +1,1195 @@
+{
+  "slug": "es-ecology-biodiversity",
+  "name": "Ecology & Biodiversity",
+  "questions": [
+    {
+      "id": "es-eco-001",
+      "subject": "Ecology & Biodiversity",
+      "topic": "Energy Flow — 10% Law",
+      "difficulty": "medium",
+      "type": "NAT",
+      "stem": "In the energy pyramid shown, only the producer (trophic-1) energy is marked. Assuming 10% transfer per trophic level, the energy available at trophic level $4$ is _____ kcal/m²/yr.",
+      "answer": 10,
+      "tolerance": 0.5,
+      "solution": "**Concept.** Each transfer retains ~10%: $E_n=E_0(0.1)^n$, with $E_0$ read from the pyramid.\n\n**Working.**\n$$10000\\times0.1^{3}=10.$$\n\n**Answer.** $10\\,\\text{kcal/m}^2/\\text{yr}$",
+      "archetype": "A",
+      "marks": 2,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 180\" width=\"100%\" style=\"max-width:340px;height:auto\"><polygon points=\"40,150 280,150 240,118 80,118\" fill=\"#16a34a\" stroke=\"#1e293b\"/><polygon points=\"80,118 240,118 205,86 115,86\" fill=\"#65a30d\" stroke=\"#1e293b\"/><polygon points=\"115,86 205,86 178,54 142,54\" fill=\"#d97706\" stroke=\"#1e293b\"/><polygon points=\"142,54 178,54 165,30 155,30\" fill=\"#dc2626\" stroke=\"#1e293b\"/><text x=\"160\" y=\"142\" font-size=\"9\" text-anchor=\"middle\" fill=\"#fff\">Producers = 10000</text><text x=\"160\" y=\"110\" font-size=\"8\" text-anchor=\"middle\" fill=\"#fff\">L2 = ?</text><text x=\"160\" y=\"78\" font-size=\"8\" text-anchor=\"middle\" fill=\"#fff\">L3 = ?</text><text x=\"160\" y=\"46\" font-size=\"7\" text-anchor=\"middle\" fill=\"#fff\">L4 = ?</text><text x=\"160\" y=\"172\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1e293b\">kcal/m²/yr — 10% transfer per level</text></svg>",
+        "caption": "Only the producer (trophic level 1) energy is marked; upper levels follow the 10% rule. (read values from the figure)"
+      }
+    },
+    {
+      "id": "es-eco-002",
+      "subject": "Ecology & Biodiversity",
+      "topic": "Energy Flow — 10% Law",
+      "difficulty": "medium",
+      "type": "NAT",
+      "stem": "In the energy pyramid shown, only the producer (trophic-1) energy is marked. Assuming 10% transfer per trophic level, the energy available at trophic level $3$ is _____ kcal/m²/yr.",
+      "answer": 80,
+      "tolerance": 0.5,
+      "solution": "**Concept.** Each transfer retains ~10%: $E_n=E_0(0.1)^n$, with $E_0$ read from the pyramid.\n\n**Working.**\n$$8000\\times0.1^{2}=80.$$\n\n**Answer.** $80\\,\\text{kcal/m}^2/\\text{yr}$",
+      "archetype": "A",
+      "marks": 2,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 180\" width=\"100%\" style=\"max-width:340px;height:auto\"><polygon points=\"40,150 280,150 240,118 80,118\" fill=\"#16a34a\" stroke=\"#1e293b\"/><polygon points=\"80,118 240,118 205,86 115,86\" fill=\"#65a30d\" stroke=\"#1e293b\"/><polygon points=\"115,86 205,86 178,54 142,54\" fill=\"#d97706\" stroke=\"#1e293b\"/><polygon points=\"142,54 178,54 165,30 155,30\" fill=\"#dc2626\" stroke=\"#1e293b\"/><text x=\"160\" y=\"142\" font-size=\"9\" text-anchor=\"middle\" fill=\"#fff\">Producers = 8000</text><text x=\"160\" y=\"110\" font-size=\"8\" text-anchor=\"middle\" fill=\"#fff\">L2 = ?</text><text x=\"160\" y=\"78\" font-size=\"8\" text-anchor=\"middle\" fill=\"#fff\">L3 = ?</text><text x=\"160\" y=\"46\" font-size=\"7\" text-anchor=\"middle\" fill=\"#fff\">L4 = ?</text><text x=\"160\" y=\"172\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1e293b\">kcal/m²/yr — 10% transfer per level</text></svg>",
+        "caption": "Only the producer (trophic level 1) energy is marked; upper levels follow the 10% rule. (read values from the figure)"
+      }
+    },
+    {
+      "id": "es-eco-003",
+      "subject": "Ecology & Biodiversity",
+      "topic": "Productivity",
+      "difficulty": "easy",
+      "type": "NAT",
+      "stem": "An ecosystem has gross primary productivity $1000\\,\\text{g C/m}^2/\\text{yr}$ and autotroph respiration $400\\,\\text{g C/m}^2/\\text{yr}$. The net primary productivity is _____ g C/m²/yr.",
+      "answer": 600,
+      "tolerance": 0.5,
+      "solution": "**Concept.** $\\text{NPP}=\\text{GPP}-R_{\\text{auto}}$.\n\n**Working.**\n$$1000-400=600.$$\n\n**Answer.** $600$",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "es-eco-004",
+      "subject": "Ecology & Biodiversity",
+      "topic": "Productivity",
+      "difficulty": "easy",
+      "type": "NAT",
+      "stem": "An ecosystem has gross primary productivity $1500\\,\\text{g C/m}^2/\\text{yr}$ and autotroph respiration $600\\,\\text{g C/m}^2/\\text{yr}$. The net primary productivity is _____ g C/m²/yr.",
+      "answer": 900,
+      "tolerance": 0.5,
+      "solution": "**Concept.** $\\text{NPP}=\\text{GPP}-R_{\\text{auto}}$.\n\n**Working.**\n$$1500-600=900.$$\n\n**Answer.** $900$",
+      "archetype": "A",
+      "marks": 1
+    },
+    {
+      "id": "es-eco-005",
+      "subject": "Ecology & Biodiversity",
+      "topic": "Population Growth — Exponential",
+      "difficulty": "hard",
+      "type": "NAT",
+      "stem": "A population grows exponentially at intrinsic rate $r=0.02\\,\\text{yr}^{-1}$. Reading the initial size $N_0$ from the figure, after $10$ years it numbers _____.",
+      "answer": 1221.4028,
+      "tolerance": 1,
+      "solution": "**Concept.** $N_t=N_0e^{rt}$, with $N_0$ read from the figure.\n\n**Working.**\n$$1000\\,e^{0.02\\times10}=1221.$$\n\n**Answer.** $1221$",
+      "archetype": "C",
+      "marks": 2,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 190\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"40\" y1=\"20\" x2=\"40\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"40\" y1=\"165\" x2=\"300\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><path d=\"M40 150 C120 145 180 120 230 80 C260 55 285 35 300 25\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><circle cx=\"40\" cy=\"150\" r=\"3\" fill=\"#dc2626\"/><text x=\"46\" y=\"146\" font-size=\"10\" fill=\"#dc2626\">N₀ = 1000</text><text x=\"14\" y=\"30\" font-size=\"9\" fill=\"#1e293b\">N</text><text x=\"278\" y=\"180\" font-size=\"9\" fill=\"#1e293b\">time →</text></svg>",
+        "caption": "Initial population N₀ marked on the curve at t = 0. (read values from the figure)"
+      }
+    },
+    {
+      "id": "es-eco-006",
+      "subject": "Ecology & Biodiversity",
+      "topic": "Population Growth — Exponential",
+      "difficulty": "hard",
+      "type": "NAT",
+      "stem": "A population grows exponentially at intrinsic rate $r=0.05\\,\\text{yr}^{-1}$. Reading the initial size $N_0$ from the figure, after $8$ years it numbers _____.",
+      "answer": 745.9123,
+      "tolerance": 1,
+      "solution": "**Concept.** $N_t=N_0e^{rt}$, with $N_0$ read from the figure.\n\n**Working.**\n$$500\\,e^{0.05\\times8}=746.$$\n\n**Answer.** $746$",
+      "archetype": "C",
+      "marks": 2,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 190\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"40\" y1=\"20\" x2=\"40\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"40\" y1=\"165\" x2=\"300\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><path d=\"M40 150 C120 145 180 120 230 80 C260 55 285 35 300 25\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><circle cx=\"40\" cy=\"150\" r=\"3\" fill=\"#dc2626\"/><text x=\"46\" y=\"146\" font-size=\"10\" fill=\"#dc2626\">N₀ = 500</text><text x=\"14\" y=\"30\" font-size=\"9\" fill=\"#1e293b\">N</text><text x=\"278\" y=\"180\" font-size=\"9\" fill=\"#1e293b\">time →</text></svg>",
+        "caption": "Initial population N₀ marked on the curve at t = 0. (read values from the figure)"
+      }
+    },
+    {
+      "id": "es-eco-007",
+      "subject": "Ecology & Biodiversity",
+      "topic": "Logistic Growth",
+      "difficulty": "hard",
+      "type": "NAT",
+      "stem": "A population grows logistically at intrinsic rate $r=0.3\\,\\text{yr}^{-1}$. Reading the carrying capacity $K$ from the growth curve shown, the maximum rate of population increase ($rK/4$) is _____ individuals/yr.",
+      "answer": 750,
+      "tolerance": 1,
+      "solution": "**Concept.** Max $\\dfrac{dN}{dt}=\\dfrac{rK}{4}$ at $N=K/2$, with $K$ read from the curve.\n\n**Working.**\n$$\\dfrac{0.3\\times10000}{4}=750.$$\n\n**Answer.** $750$",
+      "archetype": "C",
+      "marks": 2,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 190\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"34\" y1=\"20\" x2=\"34\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"34\" y1=\"165\" x2=\"305\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"34\" y1=\"40\" x2=\"305\" y2=\"40\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><text x=\"240\" y=\"36\" font-size=\"9\" fill=\"#dc2626\">K = 10000</text><path d=\"M34 158 C120 156 150 80 175 60 C210 44 260 41 305 40\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><text x=\"10\" y=\"30\" font-size=\"9\" fill=\"#1e293b\">N</text><text x=\"285\" y=\"180\" font-size=\"9\" fill=\"#1e293b\">time →</text><text x=\"120\" y=\"120\" font-size=\"8\" fill=\"#16a34a\">max dN/dt at N=K/2</text></svg>",
+        "caption": "Carrying capacity K marked on the growth curve only. (read values from the figure)"
+      }
+    },
+    {
+      "id": "es-eco-008",
+      "subject": "Ecology & Biodiversity",
+      "topic": "Logistic Growth",
+      "difficulty": "hard",
+      "type": "NAT",
+      "stem": "A population grows logistically at intrinsic rate $r=0.4\\,\\text{yr}^{-1}$. Reading the carrying capacity $K$ from the growth curve shown, the maximum rate of population increase ($rK/4$) is _____ individuals/yr.",
+      "answer": 500,
+      "tolerance": 1,
+      "solution": "**Concept.** Max $\\dfrac{dN}{dt}=\\dfrac{rK}{4}$ at $N=K/2$, with $K$ read from the curve.\n\n**Working.**\n$$\\dfrac{0.4\\times5000}{4}=500.$$\n\n**Answer.** $500$",
+      "archetype": "C",
+      "marks": 2,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 190\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"34\" y1=\"20\" x2=\"34\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"34\" y1=\"165\" x2=\"305\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"34\" y1=\"40\" x2=\"305\" y2=\"40\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><text x=\"240\" y=\"36\" font-size=\"9\" fill=\"#dc2626\">K = 5000</text><path d=\"M34 158 C120 156 150 80 175 60 C210 44 260 41 305 40\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><text x=\"10\" y=\"30\" font-size=\"9\" fill=\"#1e293b\">N</text><text x=\"285\" y=\"180\" font-size=\"9\" fill=\"#1e293b\">time →</text><text x=\"120\" y=\"120\" font-size=\"8\" fill=\"#16a34a\">max dN/dt at N=K/2</text></svg>",
+        "caption": "Carrying capacity K marked on the growth curve only. (read values from the figure)"
+      }
+    },
+    {
+      "id": "es-eco-009",
+      "subject": "Ecology & Biodiversity",
+      "topic": "Biodiversity — Shannon Index",
+      "difficulty": "hard",
+      "type": "NAT",
+      "stem": "A community has two equally abundant species (each proportion $0.5$). The Shannon diversity index $H'=-\\sum p_i\\ln p_i$ is _____.",
+      "answer": 0.6931,
+      "tolerance": 0.01,
+      "solution": "**Concept.** $H'=-\\sum p_i\\ln p_i$.\n\n**Working.**\n$$-2(0.5\\ln 0.5)=0.693.$$\n\n**Answer.** $0.693$",
+      "archetype": "C",
+      "marks": 2
+    },
+    {
+      "id": "es-eco-010",
+      "subject": "Ecology & Biodiversity",
+      "topic": "Food Chains",
+      "difficulty": "easy",
+      "type": "MCQ",
+      "stem": "In a grazing food chain, organisms that obtain energy directly from producers are",
+      "options": [
+        "primary consumers (herbivores)",
+        "decomposers",
+        "tertiary consumers",
+        "secondary consumers"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Herbivores (primary consumers) feed on producers.\n\n**Working.**\nPrimary consumers.\n\n**Answer.** Primary consumers",
+      "archetype": "B",
+      "marks": 1,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 180\" width=\"100%\" style=\"max-width:340px;height:auto\"><polygon points=\"40,150 280,150 240,118 80,118\" fill=\"#16a34a\" stroke=\"#1e293b\"/><polygon points=\"80,118 240,118 205,86 115,86\" fill=\"#65a30d\" stroke=\"#1e293b\"/><polygon points=\"115,86 205,86 178,54 142,54\" fill=\"#d97706\" stroke=\"#1e293b\"/><polygon points=\"142,54 178,54 165,30 155,30\" fill=\"#dc2626\" stroke=\"#1e293b\"/><text x=\"160\" y=\"142\" font-size=\"9\" text-anchor=\"middle\" fill=\"#fff\">Producers 10000</text><text x=\"160\" y=\"110\" font-size=\"8\" text-anchor=\"middle\" fill=\"#fff\">Primary 1000</text><text x=\"160\" y=\"78\" font-size=\"8\" text-anchor=\"middle\" fill=\"#fff\">Secondary 100</text><text x=\"160\" y=\"46\" font-size=\"7\" text-anchor=\"middle\" fill=\"#fff\">Tert 10</text><text x=\"160\" y=\"172\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1e293b\">energy units (kcal/m²/yr) — 10% transfer</text></svg>",
+        "caption": "Ecological energy pyramid; ~10% transferred per trophic level."
+      }
+    },
+    {
+      "id": "es-eco-011",
+      "subject": "Ecology & Biodiversity",
+      "topic": "Succession",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "The stable, self-perpetuating community reached at the end of ecological succession is the",
+      "options": [
+        "climax community",
+        "pioneer community",
+        "seral stage",
+        "ecotone"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Succession culminates in a climax community in equilibrium with the environment.\n\n**Working.**\nClimax community.\n\n**Answer.** Climax community",
+      "archetype": "B",
+      "marks": 1
+    },
+    {
+      "id": "es-eco-012",
+      "subject": "Ecology & Biodiversity",
+      "topic": "Biodiversity Conservation",
+      "difficulty": "medium",
+      "type": "MSQ",
+      "stem": "Which are recognised biodiversity hotspots in/around India?",
+      "options": [
+        "Western Ghats",
+        "Eastern Himalaya",
+        "Indo-Burma",
+        "Thar Desert"
+      ],
+      "answer": [
+        0,
+        1,
+        2
+      ],
+      "solution": "**Concept.** Western Ghats, Himalaya and Indo-Burma are global hotspots; the Thar is not (low endemism/richness threshold).\n\n**Working.**\nFirst three.\n\n**Answer.** Western Ghats, Himalaya, Indo-Burma",
+      "archetype": "D",
+      "marks": 2
+    },
+    {
+      "id": "es-eco-013",
+      "subject": "Ecology & Biodiversity",
+      "topic": "Bioremediation",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "A diesel-contaminated soil is cleaned in place by injecting air and nutrients to stimulate indigenous hydrocarbon-degrading bacteria, with no excavation. This technique is best classified as",
+      "options": [
+        "in-situ bioremediation (bioventing)",
+        "ex-situ landfarming",
+        "incineration",
+        "solidification / stabilisation"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Treating soil where it lies by stimulating native microbes with O₂/nutrients is in-situ bioremediation (bioventing); ex-situ methods require excavation, and incineration/S-S are not biological.\n\n**Working.**\nNo excavation + stimulate native microbes ⇒ in-situ.\n\n**Answer.** In-situ bioremediation",
+      "archetype": "B",
+      "marks": 1
+    },
+    {
+      "id": "es-eco-014",
+      "subject": "Ecology & Biodiversity",
+      "topic": "Phytoremediation",
+      "difficulty": "medium",
+      "type": "NAT",
+      "stem": "A hyperaccumulator crop yields $20\\,\\text{t/ha}$ of dry biomass containing $500\\,\\text{mg/kg}$ of nickel. The nickel phytoextracted per hectare in one harvest is _____ g/ha.",
+      "answer": 10000,
+      "tolerance": 1,
+      "solution": "**Concept.** Metal extracted $=$ dry biomass $\\times$ tissue concentration. With biomass $20\\,\\text{t/ha}=20{,}000\\,\\text{kg/ha}$ and $500\\,\\text{mg/kg}$: $(20{,}000)(500)/1000$ g.\n\n**Working.**\n$$20{,}000\\times500/1000=10{,}000\\,\\text{g/ha}.$$\n\n**Answer.** $10\\,000\\,\\text{g/ha}$",
+      "archetype": "A",
+      "marks": 2
+    },
+    {
+      "id": "es-eco-015",
+      "subject": "Ecology & Biodiversity",
+      "topic": "Biofuels — Biogas",
+      "difficulty": "hard",
+      "type": "NAT",
+      "stem": "Anaerobic digestion of $1000\\,\\text{kg}$ of volatile solids yields biogas at $0.4\\,\\text{m}^3/\\text{kg VS}$, of which $60\\%$ is methane (calorific value $36\\,\\text{MJ/m}^3$). The recoverable energy is _____ MJ.",
+      "answer": 8640,
+      "tolerance": 1,
+      "solution": "**Concept.** Energy $=$ VS $\\times$ gas yield $\\times$ CH₄ fraction $\\times$ calorific value.\n\n**Working.**\n$$1000\\times0.4\\times0.6\\times36=8640\\,\\text{MJ}.$$\n\n**Answer.** $8640\\,\\text{MJ}$",
+      "archetype": "C",
+      "marks": 2
+    },
+    {
+      "id": "es-eco-016",
+      "subject": "Ecology & Biodiversity",
+      "topic": "Biosensors",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "A field device estimates wastewater BOD within minutes by measuring the respiration of immobilised microbes through a dissolved-oxygen electrode. The biological recognition element and the transducer are, respectively,",
+      "options": [
+        "immobilised microorganisms and the dissolved-oxygen electrode",
+        "the DO electrode and the microbes",
+        "an antibody and an enzyme",
+        "DNA and a thermistor"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** In a microbial BOD biosensor the immobilised microbes are the bio-recognition element; the O₂ they consume is sensed by the DO electrode (the transducer).\n\n**Working.**\nRecognition = microbes; transducer = DO electrode.\n\n**Answer.** Microbes; DO electrode",
+      "archetype": "B",
+      "marks": 1
+    },
+    {
+      "id": "es-eco-017",
+      "subject": "Ecology & Biodiversity",
+      "topic": "Logistic Growth",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** max dN/dt = rK/4 at N=K/2, with K read from the curve.\n\n**Working.**\n$$\\dfrac{0.3\\times8000}{4}=600.$$\n\n**Answer.** $600$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 190\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"34\" y1=\"20\" x2=\"34\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"34\" y1=\"165\" x2=\"305\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"34\" y1=\"40\" x2=\"305\" y2=\"40\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><text x=\"240\" y=\"36\" font-size=\"9\" fill=\"#dc2626\">K = 8000</text><path d=\"M34 158 C120 156 150 80 175 60 C210 44 260 41 305 40\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><text x=\"10\" y=\"30\" font-size=\"9\" fill=\"#1e293b\">N</text><text x=\"285\" y=\"180\" font-size=\"9\" fill=\"#1e293b\">time →</text><text x=\"120\" y=\"120\" font-size=\"8\" fill=\"#16a34a\">max dN/dt at N=K/2</text></svg>",
+        "caption": "Carrying capacity K marked on the growth curve only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A population grows logistically at $r=0.3\\,\\text{yr}^{-1}$. Reading the carrying capacity $K$ from the growth curve shown, the maximum $dN/dt$ ($rK/4$) is _____ /yr.",
+      "answer": 600,
+      "tolerance": 1
+    },
+    {
+      "id": "es-eco-018",
+      "subject": "Ecology & Biodiversity",
+      "topic": "Biodiversity Indices",
+      "difficulty": "medium",
+      "marks": 1,
+      "archetype": "B",
+      "solution": "**Concept.** H' increases with richness and evenness.\n\n**Working.**\nGreater diversity.\n\n**Answer.** Greater diversity",
+      "type": "MCQ",
+      "stem": "A higher value of the Shannon–Wiener index $H'$ indicates",
+      "options": [
+        "greater species diversity",
+        "lower diversity",
+        "a single dominant species",
+        "no relationship to diversity"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "es-eco-019",
+      "subject": "Ecology & Biodiversity",
+      "topic": "Logistic Growth",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** max dN/dt = rK/4 at N=K/2, with K read from the curve.\n\n**Working.**\n$$\\dfrac{0.2\\times6000}{4}=300.$$\n\n**Answer.** $300$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 190\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"34\" y1=\"20\" x2=\"34\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"34\" y1=\"165\" x2=\"305\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"34\" y1=\"40\" x2=\"305\" y2=\"40\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><text x=\"240\" y=\"36\" font-size=\"9\" fill=\"#dc2626\">K = 6000</text><path d=\"M34 158 C120 156 150 80 175 60 C210 44 260 41 305 40\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><text x=\"10\" y=\"30\" font-size=\"9\" fill=\"#1e293b\">N</text><text x=\"285\" y=\"180\" font-size=\"9\" fill=\"#1e293b\">time →</text><text x=\"120\" y=\"120\" font-size=\"8\" fill=\"#16a34a\">max dN/dt at N=K/2</text></svg>",
+        "caption": "Carrying capacity K marked on the growth curve only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A population grows logistically at $r=0.2\\,\\text{yr}^{-1}$. Reading the carrying capacity $K$ from the growth curve shown, the maximum $dN/dt$ ($rK/4$) is _____ /yr.",
+      "answer": 300,
+      "tolerance": 1
+    },
+    {
+      "id": "es-eco-020",
+      "subject": "Ecology & Biodiversity",
+      "topic": "Energy Flow — 10% Law",
+      "difficulty": "medium",
+      "marks": 2,
+      "archetype": "A",
+      "solution": "**Concept.** Eₙ = E₀(0.1)ⁿ, with E₀ read from the pyramid.\n\n**Working.**\n$$10000\\times0.1^{3}=10.$$\n\n**Answer.** $10$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 180\" width=\"100%\" style=\"max-width:340px;height:auto\"><polygon points=\"40,150 280,150 240,118 80,118\" fill=\"#16a34a\" stroke=\"#1e293b\"/><polygon points=\"80,118 240,118 205,86 115,86\" fill=\"#65a30d\" stroke=\"#1e293b\"/><polygon points=\"115,86 205,86 178,54 142,54\" fill=\"#d97706\" stroke=\"#1e293b\"/><polygon points=\"142,54 178,54 165,30 155,30\" fill=\"#dc2626\" stroke=\"#1e293b\"/><text x=\"160\" y=\"142\" font-size=\"9\" text-anchor=\"middle\" fill=\"#fff\">Producers = 10000</text><text x=\"160\" y=\"110\" font-size=\"8\" text-anchor=\"middle\" fill=\"#fff\">L2 = ?</text><text x=\"160\" y=\"78\" font-size=\"8\" text-anchor=\"middle\" fill=\"#fff\">L3 = ?</text><text x=\"160\" y=\"46\" font-size=\"7\" text-anchor=\"middle\" fill=\"#fff\">L4 = ?</text><text x=\"160\" y=\"172\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1e293b\">kcal/m²/yr — 10% transfer per level</text></svg>",
+        "caption": "Only the producer (trophic level 1) energy is marked; upper levels follow the 10% rule. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "In the energy pyramid shown, only the producer (trophic-1) energy is marked; 10% transfers per level. Energy at trophic level $4$ is _____ kcal/m²/yr.",
+      "answer": 10,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-eco-021",
+      "subject": "Ecology & Biodiversity",
+      "topic": "Logistic Growth",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** max dN/dt = rK/4 at N=K/2, with K read from the curve.\n\n**Working.**\n$$\\dfrac{0.4\\times10000}{4}=1000.$$\n\n**Answer.** $1000$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 190\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"34\" y1=\"20\" x2=\"34\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"34\" y1=\"165\" x2=\"305\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"34\" y1=\"40\" x2=\"305\" y2=\"40\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><text x=\"240\" y=\"36\" font-size=\"9\" fill=\"#dc2626\">K = 10000</text><path d=\"M34 158 C120 156 150 80 175 60 C210 44 260 41 305 40\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><text x=\"10\" y=\"30\" font-size=\"9\" fill=\"#1e293b\">N</text><text x=\"285\" y=\"180\" font-size=\"9\" fill=\"#1e293b\">time →</text><text x=\"120\" y=\"120\" font-size=\"8\" fill=\"#16a34a\">max dN/dt at N=K/2</text></svg>",
+        "caption": "Carrying capacity K marked on the growth curve only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A population grows logistically at $r=0.4\\,\\text{yr}^{-1}$. Reading the carrying capacity $K$ from the growth curve shown, the maximum $dN/dt$ ($rK/4$) is _____ /yr.",
+      "answer": 1000,
+      "tolerance": 1
+    },
+    {
+      "id": "es-eco-022",
+      "subject": "Ecology & Biodiversity",
+      "topic": "Logistic Growth",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** max dN/dt = rK/4 at N=K/2, with K read from the curve.\n\n**Working.**\n$$\\dfrac{0.2\\times8000}{4}=400.$$\n\n**Answer.** $400$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 190\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"34\" y1=\"20\" x2=\"34\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"34\" y1=\"165\" x2=\"305\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"34\" y1=\"40\" x2=\"305\" y2=\"40\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><text x=\"240\" y=\"36\" font-size=\"9\" fill=\"#dc2626\">K = 8000</text><path d=\"M34 158 C120 156 150 80 175 60 C210 44 260 41 305 40\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><text x=\"10\" y=\"30\" font-size=\"9\" fill=\"#1e293b\">N</text><text x=\"285\" y=\"180\" font-size=\"9\" fill=\"#1e293b\">time →</text><text x=\"120\" y=\"120\" font-size=\"8\" fill=\"#16a34a\">max dN/dt at N=K/2</text></svg>",
+        "caption": "Carrying capacity K marked on the growth curve only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A population grows logistically at $r=0.2\\,\\text{yr}^{-1}$. Reading the carrying capacity $K$ from the growth curve shown, the maximum $dN/dt$ ($rK/4$) is _____ /yr.",
+      "answer": 400,
+      "tolerance": 1
+    },
+    {
+      "id": "es-eco-023",
+      "subject": "Ecology & Biodiversity",
+      "topic": "Population Growth — Exponential",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** N = N₀e^{rt}, with N₀ read from the figure.\n\n**Working.**\n$$2000e^{0.05\\times6}=2700.$$\n\n**Answer.** $2700$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 190\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"40\" y1=\"20\" x2=\"40\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"40\" y1=\"165\" x2=\"300\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><path d=\"M40 150 C120 145 180 120 230 80 C260 55 285 35 300 25\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><circle cx=\"40\" cy=\"150\" r=\"3\" fill=\"#dc2626\"/><text x=\"46\" y=\"146\" font-size=\"10\" fill=\"#dc2626\">N₀ = 2000</text><text x=\"14\" y=\"30\" font-size=\"9\" fill=\"#1e293b\">N</text><text x=\"278\" y=\"180\" font-size=\"9\" fill=\"#1e293b\">time →</text></svg>",
+        "caption": "Initial population N₀ marked on the curve at t = 0. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A population grows exponentially at $r=0.05\\,\\text{yr}^{-1}$. Reading the initial size $N_0$ from the figure, after $6$ yr, $N=$ _____.",
+      "answer": 2699.7,
+      "tolerance": 1
+    },
+    {
+      "id": "es-eco-024",
+      "subject": "Ecology & Biodiversity",
+      "topic": "Energy Flow — 10% Law",
+      "difficulty": "medium",
+      "marks": 2,
+      "archetype": "A",
+      "solution": "**Concept.** Eₙ = E₀(0.1)ⁿ, with E₀ read from the pyramid.\n\n**Working.**\n$$8000\\times0.1^{2}=80.$$\n\n**Answer.** $80$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 180\" width=\"100%\" style=\"max-width:340px;height:auto\"><polygon points=\"40,150 280,150 240,118 80,118\" fill=\"#16a34a\" stroke=\"#1e293b\"/><polygon points=\"80,118 240,118 205,86 115,86\" fill=\"#65a30d\" stroke=\"#1e293b\"/><polygon points=\"115,86 205,86 178,54 142,54\" fill=\"#d97706\" stroke=\"#1e293b\"/><polygon points=\"142,54 178,54 165,30 155,30\" fill=\"#dc2626\" stroke=\"#1e293b\"/><text x=\"160\" y=\"142\" font-size=\"9\" text-anchor=\"middle\" fill=\"#fff\">Producers = 8000</text><text x=\"160\" y=\"110\" font-size=\"8\" text-anchor=\"middle\" fill=\"#fff\">L2 = ?</text><text x=\"160\" y=\"78\" font-size=\"8\" text-anchor=\"middle\" fill=\"#fff\">L3 = ?</text><text x=\"160\" y=\"46\" font-size=\"7\" text-anchor=\"middle\" fill=\"#fff\">L4 = ?</text><text x=\"160\" y=\"172\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1e293b\">kcal/m²/yr — 10% transfer per level</text></svg>",
+        "caption": "Only the producer (trophic level 1) energy is marked; upper levels follow the 10% rule. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "In the energy pyramid shown, only the producer (trophic-1) energy is marked; 10% transfers per level. Energy at trophic level $3$ is _____ kcal/m²/yr.",
+      "answer": 80,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-eco-025",
+      "subject": "Ecology & Biodiversity",
+      "topic": "Population Growth — Exponential",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** N = N₀e^{rt}, with N₀ read from the figure.\n\n**Working.**\n$$2000e^{0.02\\times8}=2347.$$\n\n**Answer.** $2347$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 190\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"40\" y1=\"20\" x2=\"40\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"40\" y1=\"165\" x2=\"300\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><path d=\"M40 150 C120 145 180 120 230 80 C260 55 285 35 300 25\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><circle cx=\"40\" cy=\"150\" r=\"3\" fill=\"#dc2626\"/><text x=\"46\" y=\"146\" font-size=\"10\" fill=\"#dc2626\">N₀ = 2000</text><text x=\"14\" y=\"30\" font-size=\"9\" fill=\"#1e293b\">N</text><text x=\"278\" y=\"180\" font-size=\"9\" fill=\"#1e293b\">time →</text></svg>",
+        "caption": "Initial population N₀ marked on the curve at t = 0. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A population grows exponentially at $r=0.02\\,\\text{yr}^{-1}$. Reading the initial size $N_0$ from the figure, after $8$ yr, $N=$ _____.",
+      "answer": 2347,
+      "tolerance": 1
+    },
+    {
+      "id": "es-eco-026",
+      "subject": "Ecology & Biodiversity",
+      "topic": "Productivity",
+      "difficulty": "easy",
+      "marks": 1,
+      "archetype": "A",
+      "solution": "**Concept.** NPP = GPP − R.\n\n**Working.**\n$$1200-300=900.$$\n\n**Answer.** $900$",
+      "type": "NAT",
+      "stem": "GPP $1200$, respiration $300\\,\\text{g C/m}^2/\\text{yr}$. NPP is _____ g C/m²/yr.",
+      "answer": 900,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-eco-027",
+      "subject": "Ecology & Biodiversity",
+      "topic": "Logistic Growth",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** max dN/dt = rK/4 at N=K/2, with K read from the curve.\n\n**Working.**\n$$\\dfrac{0.2\\times4000}{4}=200.$$\n\n**Answer.** $200$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 190\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"34\" y1=\"20\" x2=\"34\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"34\" y1=\"165\" x2=\"305\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"34\" y1=\"40\" x2=\"305\" y2=\"40\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><text x=\"240\" y=\"36\" font-size=\"9\" fill=\"#dc2626\">K = 4000</text><path d=\"M34 158 C120 156 150 80 175 60 C210 44 260 41 305 40\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><text x=\"10\" y=\"30\" font-size=\"9\" fill=\"#1e293b\">N</text><text x=\"285\" y=\"180\" font-size=\"9\" fill=\"#1e293b\">time →</text><text x=\"120\" y=\"120\" font-size=\"8\" fill=\"#16a34a\">max dN/dt at N=K/2</text></svg>",
+        "caption": "Carrying capacity K marked on the growth curve only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A population grows logistically at $r=0.2\\,\\text{yr}^{-1}$. Reading the carrying capacity $K$ from the growth curve shown, the maximum $dN/dt$ ($rK/4$) is _____ /yr.",
+      "answer": 200,
+      "tolerance": 1
+    },
+    {
+      "id": "es-eco-028",
+      "subject": "Ecology & Biodiversity",
+      "topic": "Energy Flow — 10% Law",
+      "difficulty": "medium",
+      "marks": 2,
+      "archetype": "A",
+      "solution": "**Concept.** Eₙ = E₀(0.1)ⁿ, with E₀ read from the pyramid.\n\n**Working.**\n$$8000\\times0.1^{3}=8.$$\n\n**Answer.** $8$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 180\" width=\"100%\" style=\"max-width:340px;height:auto\"><polygon points=\"40,150 280,150 240,118 80,118\" fill=\"#16a34a\" stroke=\"#1e293b\"/><polygon points=\"80,118 240,118 205,86 115,86\" fill=\"#65a30d\" stroke=\"#1e293b\"/><polygon points=\"115,86 205,86 178,54 142,54\" fill=\"#d97706\" stroke=\"#1e293b\"/><polygon points=\"142,54 178,54 165,30 155,30\" fill=\"#dc2626\" stroke=\"#1e293b\"/><text x=\"160\" y=\"142\" font-size=\"9\" text-anchor=\"middle\" fill=\"#fff\">Producers = 8000</text><text x=\"160\" y=\"110\" font-size=\"8\" text-anchor=\"middle\" fill=\"#fff\">L2 = ?</text><text x=\"160\" y=\"78\" font-size=\"8\" text-anchor=\"middle\" fill=\"#fff\">L3 = ?</text><text x=\"160\" y=\"46\" font-size=\"7\" text-anchor=\"middle\" fill=\"#fff\">L4 = ?</text><text x=\"160\" y=\"172\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1e293b\">kcal/m²/yr — 10% transfer per level</text></svg>",
+        "caption": "Only the producer (trophic level 1) energy is marked; upper levels follow the 10% rule. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "In the energy pyramid shown, only the producer (trophic-1) energy is marked; 10% transfers per level. Energy at trophic level $4$ is _____ kcal/m²/yr.",
+      "answer": 8,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-eco-029",
+      "subject": "Ecology & Biodiversity",
+      "topic": "Productivity",
+      "difficulty": "easy",
+      "marks": 1,
+      "archetype": "A",
+      "solution": "**Concept.** NPP = GPP − R.\n\n**Working.**\n$$1200-400=800.$$\n\n**Answer.** $800$",
+      "type": "NAT",
+      "stem": "GPP $1200$, respiration $400\\,\\text{g C/m}^2/\\text{yr}$. NPP is _____ g C/m²/yr.",
+      "answer": 800,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-eco-030",
+      "subject": "Ecology & Biodiversity",
+      "topic": "Population Growth — Exponential",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** N = N₀e^{rt}, with N₀ read from the figure.\n\n**Working.**\n$$1000e^{0.08\\times13}=2829.$$\n\n**Answer.** $2829$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 190\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"40\" y1=\"20\" x2=\"40\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"40\" y1=\"165\" x2=\"300\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><path d=\"M40 150 C120 145 180 120 230 80 C260 55 285 35 300 25\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><circle cx=\"40\" cy=\"150\" r=\"3\" fill=\"#dc2626\"/><text x=\"46\" y=\"146\" font-size=\"10\" fill=\"#dc2626\">N₀ = 1000</text><text x=\"14\" y=\"30\" font-size=\"9\" fill=\"#1e293b\">N</text><text x=\"278\" y=\"180\" font-size=\"9\" fill=\"#1e293b\">time →</text></svg>",
+        "caption": "Initial population N₀ marked on the curve at t = 0. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A population grows exponentially at $r=0.08\\,\\text{yr}^{-1}$. Reading the initial size $N_0$ from the figure, after $13$ yr, $N=$ _____.",
+      "answer": 2829.2,
+      "tolerance": 1
+    },
+    {
+      "id": "es-eco-031",
+      "subject": "Ecology & Biodiversity",
+      "topic": "Productivity",
+      "difficulty": "easy",
+      "marks": 1,
+      "archetype": "A",
+      "solution": "**Concept.** NPP = GPP − R.\n\n**Working.**\n$$1000-400=600.$$\n\n**Answer.** $600$",
+      "type": "NAT",
+      "stem": "GPP $1000$, respiration $400\\,\\text{g C/m}^2/\\text{yr}$. NPP is _____ g C/m²/yr.",
+      "answer": 600,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-eco-032",
+      "subject": "Ecology & Biodiversity",
+      "topic": "Population Growth — Exponential",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** N = N₀e^{rt}, with N₀ read from the figure.\n\n**Working.**\n$$2000e^{0.05\\times14}=4028.$$\n\n**Answer.** $4028$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 190\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"40\" y1=\"20\" x2=\"40\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"40\" y1=\"165\" x2=\"300\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><path d=\"M40 150 C120 145 180 120 230 80 C260 55 285 35 300 25\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><circle cx=\"40\" cy=\"150\" r=\"3\" fill=\"#dc2626\"/><text x=\"46\" y=\"146\" font-size=\"10\" fill=\"#dc2626\">N₀ = 2000</text><text x=\"14\" y=\"30\" font-size=\"9\" fill=\"#1e293b\">N</text><text x=\"278\" y=\"180\" font-size=\"9\" fill=\"#1e293b\">time →</text></svg>",
+        "caption": "Initial population N₀ marked on the curve at t = 0. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A population grows exponentially at $r=0.05\\,\\text{yr}^{-1}$. Reading the initial size $N_0$ from the figure, after $14$ yr, $N=$ _____.",
+      "answer": 4027.5,
+      "tolerance": 1
+    },
+    {
+      "id": "es-eco-033",
+      "subject": "Ecology & Biodiversity",
+      "topic": "Productivity",
+      "difficulty": "easy",
+      "marks": 1,
+      "archetype": "A",
+      "solution": "**Concept.** NPP = GPP − R.\n\n**Working.**\n$$1200-600=600.$$\n\n**Answer.** $600$",
+      "type": "NAT",
+      "stem": "GPP $1200$, respiration $600\\,\\text{g C/m}^2/\\text{yr}$. NPP is _____ g C/m²/yr.",
+      "answer": 600,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-eco-034",
+      "subject": "Ecology & Biodiversity",
+      "topic": "Energy Flow — 10% Law",
+      "difficulty": "medium",
+      "marks": 2,
+      "archetype": "A",
+      "solution": "**Concept.** Eₙ = E₀(0.1)ⁿ, with E₀ read from the pyramid.\n\n**Working.**\n$$12000\\times0.1^{2}=120.$$\n\n**Answer.** $120$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 180\" width=\"100%\" style=\"max-width:340px;height:auto\"><polygon points=\"40,150 280,150 240,118 80,118\" fill=\"#16a34a\" stroke=\"#1e293b\"/><polygon points=\"80,118 240,118 205,86 115,86\" fill=\"#65a30d\" stroke=\"#1e293b\"/><polygon points=\"115,86 205,86 178,54 142,54\" fill=\"#d97706\" stroke=\"#1e293b\"/><polygon points=\"142,54 178,54 165,30 155,30\" fill=\"#dc2626\" stroke=\"#1e293b\"/><text x=\"160\" y=\"142\" font-size=\"9\" text-anchor=\"middle\" fill=\"#fff\">Producers = 12000</text><text x=\"160\" y=\"110\" font-size=\"8\" text-anchor=\"middle\" fill=\"#fff\">L2 = ?</text><text x=\"160\" y=\"78\" font-size=\"8\" text-anchor=\"middle\" fill=\"#fff\">L3 = ?</text><text x=\"160\" y=\"46\" font-size=\"7\" text-anchor=\"middle\" fill=\"#fff\">L4 = ?</text><text x=\"160\" y=\"172\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1e293b\">kcal/m²/yr — 10% transfer per level</text></svg>",
+        "caption": "Only the producer (trophic level 1) energy is marked; upper levels follow the 10% rule. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "In the energy pyramid shown, only the producer (trophic-1) energy is marked; 10% transfers per level. Energy at trophic level $3$ is _____ kcal/m²/yr.",
+      "answer": 120,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-eco-035",
+      "subject": "Ecology & Biodiversity",
+      "topic": "Logistic Growth",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** max dN/dt = rK/4 at N=K/2, with K read from the curve.\n\n**Working.**\n$$\\dfrac{0.3\\times4000}{4}=300.$$\n\n**Answer.** $300$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 190\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"34\" y1=\"20\" x2=\"34\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"34\" y1=\"165\" x2=\"305\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"34\" y1=\"40\" x2=\"305\" y2=\"40\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><text x=\"240\" y=\"36\" font-size=\"9\" fill=\"#dc2626\">K = 4000</text><path d=\"M34 158 C120 156 150 80 175 60 C210 44 260 41 305 40\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><text x=\"10\" y=\"30\" font-size=\"9\" fill=\"#1e293b\">N</text><text x=\"285\" y=\"180\" font-size=\"9\" fill=\"#1e293b\">time →</text><text x=\"120\" y=\"120\" font-size=\"8\" fill=\"#16a34a\">max dN/dt at N=K/2</text></svg>",
+        "caption": "Carrying capacity K marked on the growth curve only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A population grows logistically at $r=0.3\\,\\text{yr}^{-1}$. Reading the carrying capacity $K$ from the growth curve shown, the maximum $dN/dt$ ($rK/4$) is _____ /yr.",
+      "answer": 300,
+      "tolerance": 1
+    },
+    {
+      "id": "es-eco-036",
+      "subject": "Ecology & Biodiversity",
+      "topic": "Productivity",
+      "difficulty": "easy",
+      "marks": 1,
+      "archetype": "A",
+      "solution": "**Concept.** NPP = GPP − R.\n\n**Working.**\n$$1500-400=1100.$$\n\n**Answer.** $1100$",
+      "type": "NAT",
+      "stem": "GPP $1500$, respiration $400\\,\\text{g C/m}^2/\\text{yr}$. NPP is _____ g C/m²/yr.",
+      "answer": 1100,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-eco-037",
+      "subject": "Ecology & Biodiversity",
+      "topic": "Population Growth — Exponential",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** N = N₀e^{rt}, with N₀ read from the figure.\n\n**Working.**\n$$500e^{0.05\\times11}=867.$$\n\n**Answer.** $867$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 190\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"40\" y1=\"20\" x2=\"40\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"40\" y1=\"165\" x2=\"300\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><path d=\"M40 150 C120 145 180 120 230 80 C260 55 285 35 300 25\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><circle cx=\"40\" cy=\"150\" r=\"3\" fill=\"#dc2626\"/><text x=\"46\" y=\"146\" font-size=\"10\" fill=\"#dc2626\">N₀ = 500</text><text x=\"14\" y=\"30\" font-size=\"9\" fill=\"#1e293b\">N</text><text x=\"278\" y=\"180\" font-size=\"9\" fill=\"#1e293b\">time →</text></svg>",
+        "caption": "Initial population N₀ marked on the curve at t = 0. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A population grows exponentially at $r=0.05\\,\\text{yr}^{-1}$. Reading the initial size $N_0$ from the figure, after $11$ yr, $N=$ _____.",
+      "answer": 866.6,
+      "tolerance": 1
+    },
+    {
+      "id": "es-eco-038",
+      "subject": "Ecology & Biodiversity",
+      "topic": "Population Growth — Exponential",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** N = N₀e^{rt}, with N₀ read from the figure.\n\n**Working.**\n$$500e^{0.02\\times10}=611.$$\n\n**Answer.** $611$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 190\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"40\" y1=\"20\" x2=\"40\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"40\" y1=\"165\" x2=\"300\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><path d=\"M40 150 C120 145 180 120 230 80 C260 55 285 35 300 25\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><circle cx=\"40\" cy=\"150\" r=\"3\" fill=\"#dc2626\"/><text x=\"46\" y=\"146\" font-size=\"10\" fill=\"#dc2626\">N₀ = 500</text><text x=\"14\" y=\"30\" font-size=\"9\" fill=\"#1e293b\">N</text><text x=\"278\" y=\"180\" font-size=\"9\" fill=\"#1e293b\">time →</text></svg>",
+        "caption": "Initial population N₀ marked on the curve at t = 0. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A population grows exponentially at $r=0.02\\,\\text{yr}^{-1}$. Reading the initial size $N_0$ from the figure, after $10$ yr, $N=$ _____.",
+      "answer": 610.7,
+      "tolerance": 1
+    },
+    {
+      "id": "es-eco-039",
+      "subject": "Ecology & Biodiversity",
+      "topic": "Population Growth — Exponential",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** N = N₀e^{rt}, with N₀ read from the figure.\n\n**Working.**\n$$2000e^{0.05\\times9}=3137.$$\n\n**Answer.** $3137$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 190\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"40\" y1=\"20\" x2=\"40\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"40\" y1=\"165\" x2=\"300\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><path d=\"M40 150 C120 145 180 120 230 80 C260 55 285 35 300 25\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><circle cx=\"40\" cy=\"150\" r=\"3\" fill=\"#dc2626\"/><text x=\"46\" y=\"146\" font-size=\"10\" fill=\"#dc2626\">N₀ = 2000</text><text x=\"14\" y=\"30\" font-size=\"9\" fill=\"#1e293b\">N</text><text x=\"278\" y=\"180\" font-size=\"9\" fill=\"#1e293b\">time →</text></svg>",
+        "caption": "Initial population N₀ marked on the curve at t = 0. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A population grows exponentially at $r=0.05\\,\\text{yr}^{-1}$. Reading the initial size $N_0$ from the figure, after $9$ yr, $N=$ _____.",
+      "answer": 3136.6,
+      "tolerance": 1
+    },
+    {
+      "id": "es-eco-040",
+      "subject": "Ecology & Biodiversity",
+      "topic": "Productivity",
+      "difficulty": "easy",
+      "marks": 1,
+      "archetype": "A",
+      "solution": "**Concept.** NPP = GPP − R.\n\n**Working.**\n$$1000-300=700.$$\n\n**Answer.** $700$",
+      "type": "NAT",
+      "stem": "GPP $1000$, respiration $300\\,\\text{g C/m}^2/\\text{yr}$. NPP is _____ g C/m²/yr.",
+      "answer": 700,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-eco-041",
+      "subject": "Ecology & Biodiversity",
+      "topic": "Energy Flow — 10% Law",
+      "difficulty": "medium",
+      "marks": 2,
+      "archetype": "A",
+      "solution": "**Concept.** Eₙ = E₀(0.1)ⁿ, with E₀ read from the pyramid.\n\n**Working.**\n$$15000\\times0.1^{3}=15.$$\n\n**Answer.** $15$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 180\" width=\"100%\" style=\"max-width:340px;height:auto\"><polygon points=\"40,150 280,150 240,118 80,118\" fill=\"#16a34a\" stroke=\"#1e293b\"/><polygon points=\"80,118 240,118 205,86 115,86\" fill=\"#65a30d\" stroke=\"#1e293b\"/><polygon points=\"115,86 205,86 178,54 142,54\" fill=\"#d97706\" stroke=\"#1e293b\"/><polygon points=\"142,54 178,54 165,30 155,30\" fill=\"#dc2626\" stroke=\"#1e293b\"/><text x=\"160\" y=\"142\" font-size=\"9\" text-anchor=\"middle\" fill=\"#fff\">Producers = 15000</text><text x=\"160\" y=\"110\" font-size=\"8\" text-anchor=\"middle\" fill=\"#fff\">L2 = ?</text><text x=\"160\" y=\"78\" font-size=\"8\" text-anchor=\"middle\" fill=\"#fff\">L3 = ?</text><text x=\"160\" y=\"46\" font-size=\"7\" text-anchor=\"middle\" fill=\"#fff\">L4 = ?</text><text x=\"160\" y=\"172\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1e293b\">kcal/m²/yr — 10% transfer per level</text></svg>",
+        "caption": "Only the producer (trophic level 1) energy is marked; upper levels follow the 10% rule. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "In the energy pyramid shown, only the producer (trophic-1) energy is marked; 10% transfers per level. Energy at trophic level $4$ is _____ kcal/m²/yr.",
+      "answer": 15,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-eco-042",
+      "subject": "Ecology & Biodiversity",
+      "topic": "Productivity",
+      "difficulty": "easy",
+      "marks": 1,
+      "archetype": "A",
+      "solution": "**Concept.** NPP = GPP − R.\n\n**Working.**\n$$1500-300=1200.$$\n\n**Answer.** $1200$",
+      "type": "NAT",
+      "stem": "GPP $1500$, respiration $300\\,\\text{g C/m}^2/\\text{yr}$. NPP is _____ g C/m²/yr.",
+      "answer": 1200,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-eco-043",
+      "subject": "Ecology & Biodiversity",
+      "topic": "Energy Flow — 10% Law",
+      "difficulty": "medium",
+      "marks": 2,
+      "archetype": "A",
+      "solution": "**Concept.** Eₙ = E₀(0.1)ⁿ, with E₀ read from the pyramid.\n\n**Working.**\n$$12000\\times0.1^{3}=12.$$\n\n**Answer.** $12$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 180\" width=\"100%\" style=\"max-width:340px;height:auto\"><polygon points=\"40,150 280,150 240,118 80,118\" fill=\"#16a34a\" stroke=\"#1e293b\"/><polygon points=\"80,118 240,118 205,86 115,86\" fill=\"#65a30d\" stroke=\"#1e293b\"/><polygon points=\"115,86 205,86 178,54 142,54\" fill=\"#d97706\" stroke=\"#1e293b\"/><polygon points=\"142,54 178,54 165,30 155,30\" fill=\"#dc2626\" stroke=\"#1e293b\"/><text x=\"160\" y=\"142\" font-size=\"9\" text-anchor=\"middle\" fill=\"#fff\">Producers = 12000</text><text x=\"160\" y=\"110\" font-size=\"8\" text-anchor=\"middle\" fill=\"#fff\">L2 = ?</text><text x=\"160\" y=\"78\" font-size=\"8\" text-anchor=\"middle\" fill=\"#fff\">L3 = ?</text><text x=\"160\" y=\"46\" font-size=\"7\" text-anchor=\"middle\" fill=\"#fff\">L4 = ?</text><text x=\"160\" y=\"172\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1e293b\">kcal/m²/yr — 10% transfer per level</text></svg>",
+        "caption": "Only the producer (trophic level 1) energy is marked; upper levels follow the 10% rule. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "In the energy pyramid shown, only the producer (trophic-1) energy is marked; 10% transfers per level. Energy at trophic level $4$ is _____ kcal/m²/yr.",
+      "answer": 12,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-eco-044",
+      "subject": "Ecology & Biodiversity",
+      "topic": "Population Growth — Exponential",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** N = N₀e^{rt}, with N₀ read from the figure.\n\n**Working.**\n$$1000e^{0.02\\times10}=1221.$$\n\n**Answer.** $1221$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 190\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"40\" y1=\"20\" x2=\"40\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"40\" y1=\"165\" x2=\"300\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><path d=\"M40 150 C120 145 180 120 230 80 C260 55 285 35 300 25\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><circle cx=\"40\" cy=\"150\" r=\"3\" fill=\"#dc2626\"/><text x=\"46\" y=\"146\" font-size=\"10\" fill=\"#dc2626\">N₀ = 1000</text><text x=\"14\" y=\"30\" font-size=\"9\" fill=\"#1e293b\">N</text><text x=\"278\" y=\"180\" font-size=\"9\" fill=\"#1e293b\">time →</text></svg>",
+        "caption": "Initial population N₀ marked on the curve at t = 0. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A population grows exponentially at $r=0.02\\,\\text{yr}^{-1}$. Reading the initial size $N_0$ from the figure, after $10$ yr, $N=$ _____.",
+      "answer": 1221.4,
+      "tolerance": 1
+    },
+    {
+      "id": "es-eco-045",
+      "subject": "Ecology & Biodiversity",
+      "topic": "Productivity",
+      "difficulty": "easy",
+      "marks": 1,
+      "archetype": "A",
+      "solution": "**Concept.** NPP = GPP − R.\n\n**Working.**\n$$1000-600=400.$$\n\n**Answer.** $400$",
+      "type": "NAT",
+      "stem": "GPP $1000$, respiration $600\\,\\text{g C/m}^2/\\text{yr}$. NPP is _____ g C/m²/yr.",
+      "answer": 400,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-eco-046",
+      "subject": "Ecology & Biodiversity",
+      "topic": "Population Growth — Exponential",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** N = N₀e^{rt}, with N₀ read from the figure.\n\n**Working.**\n$$500e^{0.08\\times14}=1532.$$\n\n**Answer.** $1532$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 190\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"40\" y1=\"20\" x2=\"40\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"40\" y1=\"165\" x2=\"300\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><path d=\"M40 150 C120 145 180 120 230 80 C260 55 285 35 300 25\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><circle cx=\"40\" cy=\"150\" r=\"3\" fill=\"#dc2626\"/><text x=\"46\" y=\"146\" font-size=\"10\" fill=\"#dc2626\">N₀ = 500</text><text x=\"14\" y=\"30\" font-size=\"9\" fill=\"#1e293b\">N</text><text x=\"278\" y=\"180\" font-size=\"9\" fill=\"#1e293b\">time →</text></svg>",
+        "caption": "Initial population N₀ marked on the curve at t = 0. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A population grows exponentially at $r=0.08\\,\\text{yr}^{-1}$. Reading the initial size $N_0$ from the figure, after $14$ yr, $N=$ _____.",
+      "answer": 1532.4,
+      "tolerance": 1
+    },
+    {
+      "id": "es-eco-047",
+      "subject": "Ecology & Biodiversity",
+      "topic": "Population Growth — Exponential",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** N = N₀e^{rt}, with N₀ read from the figure.\n\n**Working.**\n$$1000e^{0.05\\times12}=1822.$$\n\n**Answer.** $1822$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 190\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"40\" y1=\"20\" x2=\"40\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"40\" y1=\"165\" x2=\"300\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><path d=\"M40 150 C120 145 180 120 230 80 C260 55 285 35 300 25\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><circle cx=\"40\" cy=\"150\" r=\"3\" fill=\"#dc2626\"/><text x=\"46\" y=\"146\" font-size=\"10\" fill=\"#dc2626\">N₀ = 1000</text><text x=\"14\" y=\"30\" font-size=\"9\" fill=\"#1e293b\">N</text><text x=\"278\" y=\"180\" font-size=\"9\" fill=\"#1e293b\">time →</text></svg>",
+        "caption": "Initial population N₀ marked on the curve at t = 0. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A population grows exponentially at $r=0.05\\,\\text{yr}^{-1}$. Reading the initial size $N_0$ from the figure, after $12$ yr, $N=$ _____.",
+      "answer": 1822.1,
+      "tolerance": 1
+    },
+    {
+      "id": "es-eco-048",
+      "subject": "Ecology & Biodiversity",
+      "topic": "Population Growth — Exponential",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** N = N₀e^{rt}, with N₀ read from the figure.\n\n**Working.**\n$$500e^{0.02\\times9}=599.$$\n\n**Answer.** $599$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 190\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"40\" y1=\"20\" x2=\"40\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"40\" y1=\"165\" x2=\"300\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><path d=\"M40 150 C120 145 180 120 230 80 C260 55 285 35 300 25\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><circle cx=\"40\" cy=\"150\" r=\"3\" fill=\"#dc2626\"/><text x=\"46\" y=\"146\" font-size=\"10\" fill=\"#dc2626\">N₀ = 500</text><text x=\"14\" y=\"30\" font-size=\"9\" fill=\"#1e293b\">N</text><text x=\"278\" y=\"180\" font-size=\"9\" fill=\"#1e293b\">time →</text></svg>",
+        "caption": "Initial population N₀ marked on the curve at t = 0. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A population grows exponentially at $r=0.02\\,\\text{yr}^{-1}$. Reading the initial size $N_0$ from the figure, after $9$ yr, $N=$ _____.",
+      "answer": 598.6,
+      "tolerance": 1
+    },
+    {
+      "id": "es-eco-049",
+      "subject": "Ecology & Biodiversity",
+      "topic": "Logistic Growth",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** max dN/dt = rK/4 at N=K/2, with K read from the curve.\n\n**Working.**\n$$\\dfrac{0.4\\times6000}{4}=600.$$\n\n**Answer.** $600$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 190\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"34\" y1=\"20\" x2=\"34\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"34\" y1=\"165\" x2=\"305\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"34\" y1=\"40\" x2=\"305\" y2=\"40\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><text x=\"240\" y=\"36\" font-size=\"9\" fill=\"#dc2626\">K = 6000</text><path d=\"M34 158 C120 156 150 80 175 60 C210 44 260 41 305 40\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><text x=\"10\" y=\"30\" font-size=\"9\" fill=\"#1e293b\">N</text><text x=\"285\" y=\"180\" font-size=\"9\" fill=\"#1e293b\">time →</text><text x=\"120\" y=\"120\" font-size=\"8\" fill=\"#16a34a\">max dN/dt at N=K/2</text></svg>",
+        "caption": "Carrying capacity K marked on the growth curve only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A population grows logistically at $r=0.4\\,\\text{yr}^{-1}$. Reading the carrying capacity $K$ from the growth curve shown, the maximum $dN/dt$ ($rK/4$) is _____ /yr.",
+      "answer": 600,
+      "tolerance": 1
+    },
+    {
+      "id": "es-eco-050",
+      "subject": "Ecology & Biodiversity",
+      "topic": "Population Growth — Exponential",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** N = N₀e^{rt}, with N₀ read from the figure.\n\n**Working.**\n$$500e^{0.05\\times8}=746.$$\n\n**Answer.** $746$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 190\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"40\" y1=\"20\" x2=\"40\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"40\" y1=\"165\" x2=\"300\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><path d=\"M40 150 C120 145 180 120 230 80 C260 55 285 35 300 25\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><circle cx=\"40\" cy=\"150\" r=\"3\" fill=\"#dc2626\"/><text x=\"46\" y=\"146\" font-size=\"10\" fill=\"#dc2626\">N₀ = 500</text><text x=\"14\" y=\"30\" font-size=\"9\" fill=\"#1e293b\">N</text><text x=\"278\" y=\"180\" font-size=\"9\" fill=\"#1e293b\">time →</text></svg>",
+        "caption": "Initial population N₀ marked on the curve at t = 0. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A population grows exponentially at $r=0.05\\,\\text{yr}^{-1}$. Reading the initial size $N_0$ from the figure, after $8$ yr, $N=$ _____.",
+      "answer": 745.9,
+      "tolerance": 1
+    },
+    {
+      "id": "es-eco-051",
+      "subject": "Ecology & Biodiversity",
+      "topic": "Population Growth — Exponential",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** N = N₀e^{rt}, with N₀ read from the figure.\n\n**Working.**\n$$2000e^{0.02\\times10}=2443.$$\n\n**Answer.** $2443$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 190\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"40\" y1=\"20\" x2=\"40\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"40\" y1=\"165\" x2=\"300\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><path d=\"M40 150 C120 145 180 120 230 80 C260 55 285 35 300 25\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><circle cx=\"40\" cy=\"150\" r=\"3\" fill=\"#dc2626\"/><text x=\"46\" y=\"146\" font-size=\"10\" fill=\"#dc2626\">N₀ = 2000</text><text x=\"14\" y=\"30\" font-size=\"9\" fill=\"#1e293b\">N</text><text x=\"278\" y=\"180\" font-size=\"9\" fill=\"#1e293b\">time →</text></svg>",
+        "caption": "Initial population N₀ marked on the curve at t = 0. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A population grows exponentially at $r=0.02\\,\\text{yr}^{-1}$. Reading the initial size $N_0$ from the figure, after $10$ yr, $N=$ _____.",
+      "answer": 2442.8,
+      "tolerance": 1
+    },
+    {
+      "id": "es-eco-052",
+      "subject": "Ecology & Biodiversity",
+      "topic": "Population Growth — Exponential",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** N = N₀e^{rt}, with N₀ read from the figure.\n\n**Working.**\n$$2000e^{0.02\\times9}=2394.$$\n\n**Answer.** $2394$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 190\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"40\" y1=\"20\" x2=\"40\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"40\" y1=\"165\" x2=\"300\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><path d=\"M40 150 C120 145 180 120 230 80 C260 55 285 35 300 25\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><circle cx=\"40\" cy=\"150\" r=\"3\" fill=\"#dc2626\"/><text x=\"46\" y=\"146\" font-size=\"10\" fill=\"#dc2626\">N₀ = 2000</text><text x=\"14\" y=\"30\" font-size=\"9\" fill=\"#1e293b\">N</text><text x=\"278\" y=\"180\" font-size=\"9\" fill=\"#1e293b\">time →</text></svg>",
+        "caption": "Initial population N₀ marked on the curve at t = 0. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A population grows exponentially at $r=0.02\\,\\text{yr}^{-1}$. Reading the initial size $N_0$ from the figure, after $9$ yr, $N=$ _____.",
+      "answer": 2394.4,
+      "tolerance": 1
+    },
+    {
+      "id": "es-eco-053",
+      "subject": "Ecology & Biodiversity",
+      "topic": "Productivity",
+      "difficulty": "easy",
+      "marks": 1,
+      "archetype": "A",
+      "solution": "**Concept.** NPP = GPP − R.\n\n**Working.**\n$$2000-400=1600.$$\n\n**Answer.** $1600$",
+      "type": "NAT",
+      "stem": "GPP $2000$, respiration $400\\,\\text{g C/m}^2/\\text{yr}$. NPP is _____ g C/m²/yr.",
+      "answer": 1600,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-eco-054",
+      "subject": "Ecology & Biodiversity",
+      "topic": "Population Growth — Exponential",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** N = N₀e^{rt}, with N₀ read from the figure.\n\n**Working.**\n$$1000e^{0.05\\times8}=1492.$$\n\n**Answer.** $1492$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 190\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"40\" y1=\"20\" x2=\"40\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"40\" y1=\"165\" x2=\"300\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><path d=\"M40 150 C120 145 180 120 230 80 C260 55 285 35 300 25\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><circle cx=\"40\" cy=\"150\" r=\"3\" fill=\"#dc2626\"/><text x=\"46\" y=\"146\" font-size=\"10\" fill=\"#dc2626\">N₀ = 1000</text><text x=\"14\" y=\"30\" font-size=\"9\" fill=\"#1e293b\">N</text><text x=\"278\" y=\"180\" font-size=\"9\" fill=\"#1e293b\">time →</text></svg>",
+        "caption": "Initial population N₀ marked on the curve at t = 0. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A population grows exponentially at $r=0.05\\,\\text{yr}^{-1}$. Reading the initial size $N_0$ from the figure, after $8$ yr, $N=$ _____.",
+      "answer": 1491.8,
+      "tolerance": 1
+    },
+    {
+      "id": "es-eco-055",
+      "subject": "Ecology & Biodiversity",
+      "topic": "Population Growth — Exponential",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** N = N₀e^{rt}, with N₀ read from the figure.\n\n**Working.**\n$$1000e^{0.05\\times5}=1284.$$\n\n**Answer.** $1284$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 190\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"40\" y1=\"20\" x2=\"40\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"40\" y1=\"165\" x2=\"300\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><path d=\"M40 150 C120 145 180 120 230 80 C260 55 285 35 300 25\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><circle cx=\"40\" cy=\"150\" r=\"3\" fill=\"#dc2626\"/><text x=\"46\" y=\"146\" font-size=\"10\" fill=\"#dc2626\">N₀ = 1000</text><text x=\"14\" y=\"30\" font-size=\"9\" fill=\"#1e293b\">N</text><text x=\"278\" y=\"180\" font-size=\"9\" fill=\"#1e293b\">time →</text></svg>",
+        "caption": "Initial population N₀ marked on the curve at t = 0. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A population grows exponentially at $r=0.05\\,\\text{yr}^{-1}$. Reading the initial size $N_0$ from the figure, after $5$ yr, $N=$ _____.",
+      "answer": 1284,
+      "tolerance": 1
+    },
+    {
+      "id": "es-eco-056",
+      "subject": "Ecology & Biodiversity",
+      "topic": "Population Growth — Exponential",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** N = N₀e^{rt}, with N₀ read from the figure.\n\n**Working.**\n$$2000e^{0.05\\times13}=3831.$$\n\n**Answer.** $3831$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 190\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"40\" y1=\"20\" x2=\"40\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"40\" y1=\"165\" x2=\"300\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><path d=\"M40 150 C120 145 180 120 230 80 C260 55 285 35 300 25\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><circle cx=\"40\" cy=\"150\" r=\"3\" fill=\"#dc2626\"/><text x=\"46\" y=\"146\" font-size=\"10\" fill=\"#dc2626\">N₀ = 2000</text><text x=\"14\" y=\"30\" font-size=\"9\" fill=\"#1e293b\">N</text><text x=\"278\" y=\"180\" font-size=\"9\" fill=\"#1e293b\">time →</text></svg>",
+        "caption": "Initial population N₀ marked on the curve at t = 0. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A population grows exponentially at $r=0.05\\,\\text{yr}^{-1}$. Reading the initial size $N_0$ from the figure, after $13$ yr, $N=$ _____.",
+      "answer": 3831.1,
+      "tolerance": 1
+    },
+    {
+      "id": "es-eco-057",
+      "subject": "Ecology & Biodiversity",
+      "topic": "Population Growth — Exponential",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** N = N₀e^{rt}, with N₀ read from the figure.\n\n**Working.**\n$$1000e^{0.08\\times6}=1616.$$\n\n**Answer.** $1616$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 190\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"40\" y1=\"20\" x2=\"40\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"40\" y1=\"165\" x2=\"300\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><path d=\"M40 150 C120 145 180 120 230 80 C260 55 285 35 300 25\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><circle cx=\"40\" cy=\"150\" r=\"3\" fill=\"#dc2626\"/><text x=\"46\" y=\"146\" font-size=\"10\" fill=\"#dc2626\">N₀ = 1000</text><text x=\"14\" y=\"30\" font-size=\"9\" fill=\"#1e293b\">N</text><text x=\"278\" y=\"180\" font-size=\"9\" fill=\"#1e293b\">time →</text></svg>",
+        "caption": "Initial population N₀ marked on the curve at t = 0. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A population grows exponentially at $r=0.08\\,\\text{yr}^{-1}$. Reading the initial size $N_0$ from the figure, after $6$ yr, $N=$ _____.",
+      "answer": 1616.1,
+      "tolerance": 1
+    },
+    {
+      "id": "es-eco-058",
+      "subject": "Ecology & Biodiversity",
+      "topic": "Population Growth — Exponential",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** N = N₀e^{rt}, with N₀ read from the figure.\n\n**Working.**\n$$1000e^{0.08\\times11}=2411.$$\n\n**Answer.** $2411$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 190\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"40\" y1=\"20\" x2=\"40\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"40\" y1=\"165\" x2=\"300\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><path d=\"M40 150 C120 145 180 120 230 80 C260 55 285 35 300 25\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><circle cx=\"40\" cy=\"150\" r=\"3\" fill=\"#dc2626\"/><text x=\"46\" y=\"146\" font-size=\"10\" fill=\"#dc2626\">N₀ = 1000</text><text x=\"14\" y=\"30\" font-size=\"9\" fill=\"#1e293b\">N</text><text x=\"278\" y=\"180\" font-size=\"9\" fill=\"#1e293b\">time →</text></svg>",
+        "caption": "Initial population N₀ marked on the curve at t = 0. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A population grows exponentially at $r=0.08\\,\\text{yr}^{-1}$. Reading the initial size $N_0$ from the figure, after $11$ yr, $N=$ _____.",
+      "answer": 2410.9,
+      "tolerance": 1
+    },
+    {
+      "id": "es-eco-059",
+      "subject": "Ecology & Biodiversity",
+      "topic": "Population Growth — Exponential",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** N = N₀e^{rt}, with N₀ read from the figure.\n\n**Working.**\n$$500e^{0.02\\times14}=662.$$\n\n**Answer.** $662$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 190\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"40\" y1=\"20\" x2=\"40\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"40\" y1=\"165\" x2=\"300\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><path d=\"M40 150 C120 145 180 120 230 80 C260 55 285 35 300 25\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><circle cx=\"40\" cy=\"150\" r=\"3\" fill=\"#dc2626\"/><text x=\"46\" y=\"146\" font-size=\"10\" fill=\"#dc2626\">N₀ = 500</text><text x=\"14\" y=\"30\" font-size=\"9\" fill=\"#1e293b\">N</text><text x=\"278\" y=\"180\" font-size=\"9\" fill=\"#1e293b\">time →</text></svg>",
+        "caption": "Initial population N₀ marked on the curve at t = 0. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A population grows exponentially at $r=0.02\\,\\text{yr}^{-1}$. Reading the initial size $N_0$ from the figure, after $14$ yr, $N=$ _____.",
+      "answer": 661.6,
+      "tolerance": 1
+    },
+    {
+      "id": "es-eco-060",
+      "subject": "Ecology & Biodiversity",
+      "topic": "Population Growth — Exponential",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** N = N₀e^{rt}, with N₀ read from the figure.\n\n**Working.**\n$$500e^{0.05\\times15}=1059.$$\n\n**Answer.** $1059$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 190\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"40\" y1=\"20\" x2=\"40\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"40\" y1=\"165\" x2=\"300\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><path d=\"M40 150 C120 145 180 120 230 80 C260 55 285 35 300 25\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><circle cx=\"40\" cy=\"150\" r=\"3\" fill=\"#dc2626\"/><text x=\"46\" y=\"146\" font-size=\"10\" fill=\"#dc2626\">N₀ = 500</text><text x=\"14\" y=\"30\" font-size=\"9\" fill=\"#1e293b\">N</text><text x=\"278\" y=\"180\" font-size=\"9\" fill=\"#1e293b\">time →</text></svg>",
+        "caption": "Initial population N₀ marked on the curve at t = 0. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A population grows exponentially at $r=0.05\\,\\text{yr}^{-1}$. Reading the initial size $N_0$ from the figure, after $15$ yr, $N=$ _____.",
+      "answer": 1058.5,
+      "tolerance": 1
+    },
+    {
+      "id": "es-eco-061",
+      "subject": "Ecology & Biodiversity",
+      "topic": "Logistic Growth",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** max dN/dt = rK/4 at N=K/2, with K read from the curve.\n\n**Working.**\n$$\\dfrac{0.4\\times8000}{4}=800.$$\n\n**Answer.** $800$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 190\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"34\" y1=\"20\" x2=\"34\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"34\" y1=\"165\" x2=\"305\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"34\" y1=\"40\" x2=\"305\" y2=\"40\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><text x=\"240\" y=\"36\" font-size=\"9\" fill=\"#dc2626\">K = 8000</text><path d=\"M34 158 C120 156 150 80 175 60 C210 44 260 41 305 40\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><text x=\"10\" y=\"30\" font-size=\"9\" fill=\"#1e293b\">N</text><text x=\"285\" y=\"180\" font-size=\"9\" fill=\"#1e293b\">time →</text><text x=\"120\" y=\"120\" font-size=\"8\" fill=\"#16a34a\">max dN/dt at N=K/2</text></svg>",
+        "caption": "Carrying capacity K marked on the growth curve only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A population grows logistically at $r=0.4\\,\\text{yr}^{-1}$. Reading the carrying capacity $K$ from the growth curve shown, the maximum $dN/dt$ ($rK/4$) is _____ /yr.",
+      "answer": 800,
+      "tolerance": 1
+    },
+    {
+      "id": "es-eco-062",
+      "subject": "Ecology & Biodiversity",
+      "topic": "Population Growth — Exponential",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** N = N₀e^{rt}, with N₀ read from the figure.\n\n**Working.**\n$$500e^{0.05\\times13}=958.$$\n\n**Answer.** $958$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 190\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"40\" y1=\"20\" x2=\"40\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"40\" y1=\"165\" x2=\"300\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><path d=\"M40 150 C120 145 180 120 230 80 C260 55 285 35 300 25\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><circle cx=\"40\" cy=\"150\" r=\"3\" fill=\"#dc2626\"/><text x=\"46\" y=\"146\" font-size=\"10\" fill=\"#dc2626\">N₀ = 500</text><text x=\"14\" y=\"30\" font-size=\"9\" fill=\"#1e293b\">N</text><text x=\"278\" y=\"180\" font-size=\"9\" fill=\"#1e293b\">time →</text></svg>",
+        "caption": "Initial population N₀ marked on the curve at t = 0. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A population grows exponentially at $r=0.05\\,\\text{yr}^{-1}$. Reading the initial size $N_0$ from the figure, after $13$ yr, $N=$ _____.",
+      "answer": 957.8,
+      "tolerance": 1
+    },
+    {
+      "id": "es-eco-063",
+      "subject": "Ecology & Biodiversity",
+      "topic": "Productivity",
+      "difficulty": "easy",
+      "marks": 1,
+      "archetype": "A",
+      "solution": "**Concept.** NPP = GPP − R.\n\n**Working.**\n$$1500-600=900.$$\n\n**Answer.** $900$",
+      "type": "NAT",
+      "stem": "GPP $1500$, respiration $600\\,\\text{g C/m}^2/\\text{yr}$. NPP is _____ g C/m²/yr.",
+      "answer": 900,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-eco-064",
+      "subject": "Ecology & Biodiversity",
+      "topic": "Population Growth — Exponential",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** N = N₀e^{rt}, with N₀ read from the figure.\n\n**Working.**\n$$1000e^{0.02\\times8}=1174.$$\n\n**Answer.** $1174$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 190\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"40\" y1=\"20\" x2=\"40\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"40\" y1=\"165\" x2=\"300\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><path d=\"M40 150 C120 145 180 120 230 80 C260 55 285 35 300 25\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><circle cx=\"40\" cy=\"150\" r=\"3\" fill=\"#dc2626\"/><text x=\"46\" y=\"146\" font-size=\"10\" fill=\"#dc2626\">N₀ = 1000</text><text x=\"14\" y=\"30\" font-size=\"9\" fill=\"#1e293b\">N</text><text x=\"278\" y=\"180\" font-size=\"9\" fill=\"#1e293b\">time →</text></svg>",
+        "caption": "Initial population N₀ marked on the curve at t = 0. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A population grows exponentially at $r=0.02\\,\\text{yr}^{-1}$. Reading the initial size $N_0$ from the figure, after $8$ yr, $N=$ _____.",
+      "answer": 1173.5,
+      "tolerance": 1
+    },
+    {
+      "id": "es-eco-065",
+      "subject": "Ecology & Biodiversity",
+      "topic": "Energy Flow — 10% Law",
+      "difficulty": "medium",
+      "marks": 2,
+      "archetype": "A",
+      "solution": "**Concept.** Eₙ = E₀(0.1)ⁿ, with E₀ read from the pyramid.\n\n**Working.**\n$$15000\\times0.1^{2}=150.$$\n\n**Answer.** $150$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 180\" width=\"100%\" style=\"max-width:340px;height:auto\"><polygon points=\"40,150 280,150 240,118 80,118\" fill=\"#16a34a\" stroke=\"#1e293b\"/><polygon points=\"80,118 240,118 205,86 115,86\" fill=\"#65a30d\" stroke=\"#1e293b\"/><polygon points=\"115,86 205,86 178,54 142,54\" fill=\"#d97706\" stroke=\"#1e293b\"/><polygon points=\"142,54 178,54 165,30 155,30\" fill=\"#dc2626\" stroke=\"#1e293b\"/><text x=\"160\" y=\"142\" font-size=\"9\" text-anchor=\"middle\" fill=\"#fff\">Producers = 15000</text><text x=\"160\" y=\"110\" font-size=\"8\" text-anchor=\"middle\" fill=\"#fff\">L2 = ?</text><text x=\"160\" y=\"78\" font-size=\"8\" text-anchor=\"middle\" fill=\"#fff\">L3 = ?</text><text x=\"160\" y=\"46\" font-size=\"7\" text-anchor=\"middle\" fill=\"#fff\">L4 = ?</text><text x=\"160\" y=\"172\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1e293b\">kcal/m²/yr — 10% transfer per level</text></svg>",
+        "caption": "Only the producer (trophic level 1) energy is marked; upper levels follow the 10% rule. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "In the energy pyramid shown, only the producer (trophic-1) energy is marked; 10% transfers per level. Energy at trophic level $3$ is _____ kcal/m²/yr.",
+      "answer": 150,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-eco-066",
+      "subject": "Ecology & Biodiversity",
+      "topic": "Population Growth — Exponential",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** N = N₀e^{rt}, with N₀ read from the figure.\n\n**Working.**\n$$2000e^{0.02\\times15}=2700.$$\n\n**Answer.** $2700$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 190\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"40\" y1=\"20\" x2=\"40\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"40\" y1=\"165\" x2=\"300\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><path d=\"M40 150 C120 145 180 120 230 80 C260 55 285 35 300 25\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><circle cx=\"40\" cy=\"150\" r=\"3\" fill=\"#dc2626\"/><text x=\"46\" y=\"146\" font-size=\"10\" fill=\"#dc2626\">N₀ = 2000</text><text x=\"14\" y=\"30\" font-size=\"9\" fill=\"#1e293b\">N</text><text x=\"278\" y=\"180\" font-size=\"9\" fill=\"#1e293b\">time →</text></svg>",
+        "caption": "Initial population N₀ marked on the curve at t = 0. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A population grows exponentially at $r=0.02\\,\\text{yr}^{-1}$. Reading the initial size $N_0$ from the figure, after $15$ yr, $N=$ _____.",
+      "answer": 2699.7,
+      "tolerance": 1
+    },
+    {
+      "id": "es-eco-067",
+      "subject": "Ecology & Biodiversity",
+      "topic": "Productivity",
+      "difficulty": "easy",
+      "marks": 1,
+      "archetype": "A",
+      "solution": "**Concept.** NPP = GPP − R.\n\n**Working.**\n$$2000-600=1400.$$\n\n**Answer.** $1400$",
+      "type": "NAT",
+      "stem": "GPP $2000$, respiration $600\\,\\text{g C/m}^2/\\text{yr}$. NPP is _____ g C/m²/yr.",
+      "answer": 1400,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-eco-068",
+      "subject": "Ecology & Biodiversity",
+      "topic": "Population Growth — Exponential",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** N = N₀e^{rt}, with N₀ read from the figure.\n\n**Working.**\n$$2000e^{0.08\\times13}=5658.$$\n\n**Answer.** $5658$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 190\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"40\" y1=\"20\" x2=\"40\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"40\" y1=\"165\" x2=\"300\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><path d=\"M40 150 C120 145 180 120 230 80 C260 55 285 35 300 25\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><circle cx=\"40\" cy=\"150\" r=\"3\" fill=\"#dc2626\"/><text x=\"46\" y=\"146\" font-size=\"10\" fill=\"#dc2626\">N₀ = 2000</text><text x=\"14\" y=\"30\" font-size=\"9\" fill=\"#1e293b\">N</text><text x=\"278\" y=\"180\" font-size=\"9\" fill=\"#1e293b\">time →</text></svg>",
+        "caption": "Initial population N₀ marked on the curve at t = 0. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A population grows exponentially at $r=0.08\\,\\text{yr}^{-1}$. Reading the initial size $N_0$ from the figure, after $13$ yr, $N=$ _____.",
+      "answer": 5658.4,
+      "tolerance": 1
+    },
+    {
+      "id": "es-eco-069",
+      "subject": "Ecology & Biodiversity",
+      "topic": "Population Growth — Exponential",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** N = N₀e^{rt}, with N₀ read from the figure.\n\n**Working.**\n$$1000e^{0.08\\times5}=1492.$$\n\n**Answer.** $1492$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 190\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"40\" y1=\"20\" x2=\"40\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"40\" y1=\"165\" x2=\"300\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><path d=\"M40 150 C120 145 180 120 230 80 C260 55 285 35 300 25\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><circle cx=\"40\" cy=\"150\" r=\"3\" fill=\"#dc2626\"/><text x=\"46\" y=\"146\" font-size=\"10\" fill=\"#dc2626\">N₀ = 1000</text><text x=\"14\" y=\"30\" font-size=\"9\" fill=\"#1e293b\">N</text><text x=\"278\" y=\"180\" font-size=\"9\" fill=\"#1e293b\">time →</text></svg>",
+        "caption": "Initial population N₀ marked on the curve at t = 0. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A population grows exponentially at $r=0.08\\,\\text{yr}^{-1}$. Reading the initial size $N_0$ from the figure, after $5$ yr, $N=$ _____.",
+      "answer": 1491.8,
+      "tolerance": 1
+    },
+    {
+      "id": "es-eco-070",
+      "subject": "Ecology & Biodiversity",
+      "topic": "Energy Flow — 10% Law",
+      "difficulty": "medium",
+      "marks": 2,
+      "archetype": "A",
+      "solution": "**Concept.** Eₙ = E₀(0.1)ⁿ, with E₀ read from the pyramid.\n\n**Working.**\n$$10000\\times0.1^{2}=100.$$\n\n**Answer.** $100$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 180\" width=\"100%\" style=\"max-width:340px;height:auto\"><polygon points=\"40,150 280,150 240,118 80,118\" fill=\"#16a34a\" stroke=\"#1e293b\"/><polygon points=\"80,118 240,118 205,86 115,86\" fill=\"#65a30d\" stroke=\"#1e293b\"/><polygon points=\"115,86 205,86 178,54 142,54\" fill=\"#d97706\" stroke=\"#1e293b\"/><polygon points=\"142,54 178,54 165,30 155,30\" fill=\"#dc2626\" stroke=\"#1e293b\"/><text x=\"160\" y=\"142\" font-size=\"9\" text-anchor=\"middle\" fill=\"#fff\">Producers = 10000</text><text x=\"160\" y=\"110\" font-size=\"8\" text-anchor=\"middle\" fill=\"#fff\">L2 = ?</text><text x=\"160\" y=\"78\" font-size=\"8\" text-anchor=\"middle\" fill=\"#fff\">L3 = ?</text><text x=\"160\" y=\"46\" font-size=\"7\" text-anchor=\"middle\" fill=\"#fff\">L4 = ?</text><text x=\"160\" y=\"172\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1e293b\">kcal/m²/yr — 10% transfer per level</text></svg>",
+        "caption": "Only the producer (trophic level 1) energy is marked; upper levels follow the 10% rule. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "In the energy pyramid shown, only the producer (trophic-1) energy is marked; 10% transfers per level. Energy at trophic level $3$ is _____ kcal/m²/yr.",
+      "answer": 100,
+      "tolerance": 0.5
+    }
+  ]
+}

@@ -16,6 +16,16 @@ import { CE_MOCKS } from "@/data/gate/civil/mocks";
 import { CE_LEARN_TOPICS, getCivilLearnTopic, getCivilLearnSyllabus } from "@/data/gate/civil/learn";
 import { CE_AITS } from "@/data/gate/civil/aits";
 
+import { GG_PRACTICE } from "@/data/gate/geology/practice";
+import { GG_MOCKS } from "@/data/gate/geology/mocks";
+import { GG_LEARN_TOPICS, getGeoLearnTopic, getGeoLearnSyllabus } from "@/data/gate/geology/learn";
+import { GG_AITS } from "@/data/gate/geology/aits";
+
+import { ES_PRACTICE } from "@/data/gate/environment/practice";
+import { ES_MOCKS } from "@/data/gate/environment/mocks";
+import { ES_LEARN_TOPICS, getEnvLearnTopic, getEnvLearnSyllabus } from "@/data/gate/environment/learn";
+import { ES_AITS } from "@/data/gate/environment/aits";
+
 export type GateMock = {
   id: string;
   title: string;
@@ -70,6 +80,36 @@ const SUBJECTS: Record<string, GateSubject> = {
     getLearnSyllabus: getCivilLearnSyllabus,
     aits: CE_AITS,
   },
+  geology: {
+    slug: "geology",
+    label: "Geology & Geophysics",
+    code: "GG",
+    blurb:
+      "Full GATE Geology & Geophysics (GG) preparation — topic-wise learning, an exam-grade practice bank, full-length mocks and a scheduled All India Test Series.",
+    accessExam: "GATE",
+    accessSubject: "geology",
+    practice: GG_PRACTICE,
+    mocks: GG_MOCKS as unknown as readonly GateMock[],
+    learnTopics: GG_LEARN_TOPICS,
+    getLearnTopic: getGeoLearnTopic,
+    getLearnSyllabus: getGeoLearnSyllabus,
+    aits: GG_AITS,
+  },
+  environment: {
+    slug: "environment",
+    label: "Environmental Science",
+    code: "ES",
+    blurb:
+      "Full GATE Environmental Science & Engineering (ES) preparation — topic-wise learning, an exam-grade practice bank, full-length mocks and a scheduled All India Test Series.",
+    accessExam: "GATE",
+    accessSubject: "environment",
+    practice: ES_PRACTICE,
+    mocks: ES_MOCKS as unknown as readonly GateMock[],
+    learnTopics: ES_LEARN_TOPICS,
+    getLearnTopic: getEnvLearnTopic,
+    getLearnSyllabus: getEnvLearnSyllabus,
+    aits: ES_AITS,
+  },
 };
 
 /** Subjects that have a fully-built mini-site at /gate/<slug>. */
@@ -83,4 +123,4 @@ export function getGateSubject(slug: string): GateSubject | undefined {
 }
 
 /** Subjects known to the catalogue but not yet built (render "coming soon"). */
-export const KNOWN_COMING_SOON = new Set<string>(["geology", "environment"]);
+export const KNOWN_COMING_SOON = new Set<string>([]);

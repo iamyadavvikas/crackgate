@@ -1,0 +1,1185 @@
+{
+  "slug": "es-air-noise-pollution",
+  "name": "Air & Noise Pollution",
+  "questions": [
+    {
+      "id": "es-air-001",
+      "subject": "Air & Noise Pollution",
+      "topic": "Noise — Addition",
+      "difficulty": "medium",
+      "type": "NAT",
+      "stem": "At a receptor, $4$ identical machines each produce $80\\,\\text{dB}$. The combined sound pressure level is _____ dB.",
+      "answer": 86.0206,
+      "tolerance": 0.1,
+      "solution": "**Concept.** $L=L_1+10\\log_{10}n$ for $n$ equal incoherent sources.\n\n**Working.**\n$$80+10\\log_{10}4=86.02.$$\n\n**Answer.** $86.02\\,\\text{dB}$",
+      "archetype": "A",
+      "marks": 2
+    },
+    {
+      "id": "es-air-002",
+      "subject": "Air & Noise Pollution",
+      "topic": "Noise — Addition",
+      "difficulty": "medium",
+      "type": "NAT",
+      "stem": "At a receptor, $3$ identical machines each produce $85\\,\\text{dB}$. The combined sound pressure level is _____ dB.",
+      "answer": 89.7712,
+      "tolerance": 0.1,
+      "solution": "**Concept.** $L=L_1+10\\log_{10}n$ for $n$ equal incoherent sources.\n\n**Working.**\n$$85+10\\log_{10}3=89.77.$$\n\n**Answer.** $89.77\\,\\text{dB}$",
+      "archetype": "A",
+      "marks": 2
+    },
+    {
+      "id": "es-air-003",
+      "subject": "Air & Noise Pollution",
+      "topic": "Noise — Addition",
+      "difficulty": "medium",
+      "type": "NAT",
+      "stem": "At a receptor, $10$ identical machines each produce $75\\,\\text{dB}$. The combined sound pressure level is _____ dB.",
+      "answer": 85,
+      "tolerance": 0.1,
+      "solution": "**Concept.** $L=L_1+10\\log_{10}n$ for $n$ equal incoherent sources.\n\n**Working.**\n$$75+10\\log_{10}10=85.$$\n\n**Answer.** $85\\,\\text{dB}$",
+      "archetype": "A",
+      "marks": 2
+    },
+    {
+      "id": "es-air-004",
+      "subject": "Air & Noise Pollution",
+      "topic": "Noise — Combination",
+      "difficulty": "hard",
+      "type": "NAT",
+      "stem": "Two sources produce $70\\,\\text{dB}$ and $73\\,\\text{dB}$ at a point. The combined level is _____ dB.",
+      "answer": 74.7643,
+      "tolerance": 0.1,
+      "solution": "**Concept.** $L=10\\log_{10}(10^{L_1/10}+10^{L_2/10})$.\n\n**Working.**\n$$10\\log_{10}(10^{7}+10^{7.3})=74.76.$$\n\n**Answer.** $74.76\\,\\text{dB}$",
+      "archetype": "C",
+      "marks": 2
+    },
+    {
+      "id": "es-air-005",
+      "subject": "Air & Noise Pollution",
+      "topic": "Gaussian Plume",
+      "difficulty": "hard",
+      "type": "NAT",
+      "stem": "A stack emits $100\\,\\text{g/s}$ of a pollutant. Using the effective height $H$, wind speed $u$ and dispersion coefficients $\\sigma_y,\\sigma_z$ marked on the diagram, the ground-level concentration on the plume centreline (full ground reflection, $y=0$) is _____ ×10⁻⁴ g/m³.",
+      "answer": 4.6619,
+      "tolerance": 0.2,
+      "solution": "**Concept.** $C=\\dfrac{Q}{\\pi u\\sigma_y\\sigma_z}\\exp\\!\\left(-\\dfrac{H^2}{2\\sigma_z^2}\\right)$ (ground, centreline, full reflection); $H,u,\\sigma_y,\\sigma_z$ read from the figure.\n\n**Working.**\n$$\\dfrac{100}{\\pi\\times5\\times30\\times20}e^{-50^2/(2\\times20^2)}=0.00046619\\,\\text{g/m}^3.$$\n\n**Answer.** $4.662\\times10^{-4}$",
+      "archetype": "C",
+      "marks": 2,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 360 210\" width=\"100%\" style=\"max-width:380px;height:auto\"><line x1=\"20\" y1=\"175\" x2=\"350\" y2=\"175\" stroke=\"#475569\" stroke-width=\"1.4\"/><rect x=\"34\" y=\"75\" width=\"14\" height=\"100\" fill=\"#94a3b8\" stroke=\"#1e293b\"/><text x=\"41\" y=\"191\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1e293b\">stack</text><path d=\"M48 75 Q160 64 350 44 M48 75 Q160 86 350 116\" fill=\"rgba(37,99,235,0.10)\" stroke=\"#2563eb\" stroke-width=\"1.3\"/><line x1=\"41\" y1=\"75\" x2=\"41\" y2=\"175\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"3 2\"/><text x=\"54\" y=\"70\" font-size=\"10\" fill=\"#dc2626\">H = 50 m</text><path d=\"M118 148 l20 0 m-5 -3 l5 3 -5 3\" stroke=\"#16a34a\" stroke-width=\"1.1\" fill=\"none\"/><text x=\"142\" y=\"151\" font-size=\"10\" fill=\"#16a34a\">u = 5 m/s</text><text x=\"206\" y=\"40\" font-size=\"10\" fill=\"#2563eb\">σ_y = 30 m,  σ_z = 20 m</text><text x=\"318\" y=\"171\" font-size=\"9\" fill=\"#1e293b\">x →</text></svg>",
+        "caption": "Elevated point source: H, u, σ_y and σ_z are marked on the diagram only. (read values from the figure)"
+      }
+    },
+    {
+      "id": "es-air-006",
+      "subject": "Air & Noise Pollution",
+      "topic": "Gaussian Plume",
+      "difficulty": "hard",
+      "type": "NAT",
+      "stem": "A stack emits $80\\,\\text{g/s}$ of a pollutant. Using the effective height $H$, wind speed $u$ and dispersion coefficients $\\sigma_y,\\sigma_z$ marked on the diagram, the ground-level concentration on the plume centreline (full ground reflection, $y=0$) is _____ ×10⁻⁴ g/m³.",
+      "answer": 17.7004,
+      "tolerance": 0.2,
+      "solution": "**Concept.** $C=\\dfrac{Q}{\\pi u\\sigma_y\\sigma_z}\\exp\\!\\left(-\\dfrac{H^2}{2\\sigma_z^2}\\right)$ (ground, centreline, full reflection); $H,u,\\sigma_y,\\sigma_z$ read from the figure.\n\n**Working.**\n$$\\dfrac{80}{\\pi\\times4\\times40\\times25}e^{-40^2/(2\\times25^2)}=0.00177004\\,\\text{g/m}^3.$$\n\n**Answer.** $17.7\\times10^{-4}$",
+      "archetype": "C",
+      "marks": 2,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 360 210\" width=\"100%\" style=\"max-width:380px;height:auto\"><line x1=\"20\" y1=\"175\" x2=\"350\" y2=\"175\" stroke=\"#475569\" stroke-width=\"1.4\"/><rect x=\"34\" y=\"75\" width=\"14\" height=\"100\" fill=\"#94a3b8\" stroke=\"#1e293b\"/><text x=\"41\" y=\"191\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1e293b\">stack</text><path d=\"M48 75 Q160 64 350 44 M48 75 Q160 86 350 116\" fill=\"rgba(37,99,235,0.10)\" stroke=\"#2563eb\" stroke-width=\"1.3\"/><line x1=\"41\" y1=\"75\" x2=\"41\" y2=\"175\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"3 2\"/><text x=\"54\" y=\"70\" font-size=\"10\" fill=\"#dc2626\">H = 40 m</text><path d=\"M118 148 l20 0 m-5 -3 l5 3 -5 3\" stroke=\"#16a34a\" stroke-width=\"1.1\" fill=\"none\"/><text x=\"142\" y=\"151\" font-size=\"10\" fill=\"#16a34a\">u = 4 m/s</text><text x=\"206\" y=\"40\" font-size=\"10\" fill=\"#2563eb\">σ_y = 40 m,  σ_z = 25 m</text><text x=\"318\" y=\"171\" font-size=\"9\" fill=\"#1e293b\">x →</text></svg>",
+        "caption": "Elevated point source: H, u, σ_y and σ_z are marked on the diagram only. (read values from the figure)"
+      }
+    },
+    {
+      "id": "es-air-007",
+      "subject": "Air & Noise Pollution",
+      "topic": "Effective Stack Height",
+      "difficulty": "easy",
+      "type": "NAT",
+      "stem": "For the chimney shown, the physical stack height $h_s$ and the plume rise $\\Delta h$ are marked on the diagram. The effective stack height $H=h_s+\\Delta h$ is _____ m.",
+      "answer": 85,
+      "tolerance": 0.1,
+      "solution": "**Concept.** $H=h_s+\\Delta h$, with $h_s$ and $\\Delta h$ read from the figure.\n\n**Working.**\n$$60+25=85.$$\n\n**Answer.** $85\\,\\text{m}$",
+      "archetype": "A",
+      "marks": 1,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 220\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"20\" y1=\"185\" x2=\"300\" y2=\"185\" stroke=\"#475569\" stroke-width=\"1.4\"/><rect x=\"60\" y=\"85\" width=\"16\" height=\"100\" fill=\"#94a3b8\" stroke=\"#1e293b\"/><line x1=\"68\" y1=\"85\" x2=\"68\" y2=\"42\" stroke=\"#2563eb\" stroke-width=\"1.2\" stroke-dasharray=\"3 2\"/><circle cx=\"68\" cy=\"42\" r=\"3\" fill=\"#2563eb\"/><line x1=\"40\" y1=\"185\" x2=\"40\" y2=\"85\" stroke=\"#dc2626\" stroke-width=\"1\"/><text x=\"6\" y=\"138\" font-size=\"10\" fill=\"#dc2626\">h_s = 60 m</text><line x1=\"92\" y1=\"85\" x2=\"92\" y2=\"42\" stroke=\"#16a34a\" stroke-width=\"1\"/><text x=\"98\" y=\"66\" font-size=\"10\" fill=\"#16a34a\">Δh = 25 m</text><text x=\"150\" y=\"36\" font-size=\"9\" fill=\"#2563eb\">plume centreline</text></svg>",
+        "caption": "Physical stack height h_s and plume rise Δh marked on the diagram only. (read values from the figure)"
+      }
+    },
+    {
+      "id": "es-air-008",
+      "subject": "Air & Noise Pollution",
+      "topic": "Effective Stack Height",
+      "difficulty": "easy",
+      "type": "NAT",
+      "stem": "For the chimney shown, the physical stack height $h_s$ and the plume rise $\\Delta h$ are marked on the diagram. The effective stack height $H=h_s+\\Delta h$ is _____ m.",
+      "answer": 110,
+      "tolerance": 0.1,
+      "solution": "**Concept.** $H=h_s+\\Delta h$, with $h_s$ and $\\Delta h$ read from the figure.\n\n**Working.**\n$$80+30=110.$$\n\n**Answer.** $110\\,\\text{m}$",
+      "archetype": "A",
+      "marks": 1,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 220\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"20\" y1=\"185\" x2=\"300\" y2=\"185\" stroke=\"#475569\" stroke-width=\"1.4\"/><rect x=\"60\" y=\"85\" width=\"16\" height=\"100\" fill=\"#94a3b8\" stroke=\"#1e293b\"/><line x1=\"68\" y1=\"85\" x2=\"68\" y2=\"42\" stroke=\"#2563eb\" stroke-width=\"1.2\" stroke-dasharray=\"3 2\"/><circle cx=\"68\" cy=\"42\" r=\"3\" fill=\"#2563eb\"/><line x1=\"40\" y1=\"185\" x2=\"40\" y2=\"85\" stroke=\"#dc2626\" stroke-width=\"1\"/><text x=\"6\" y=\"138\" font-size=\"10\" fill=\"#dc2626\">h_s = 80 m</text><line x1=\"92\" y1=\"85\" x2=\"92\" y2=\"42\" stroke=\"#16a34a\" stroke-width=\"1\"/><text x=\"98\" y=\"66\" font-size=\"10\" fill=\"#16a34a\">Δh = 30 m</text><text x=\"150\" y=\"36\" font-size=\"9\" fill=\"#2563eb\">plume centreline</text></svg>",
+        "caption": "Physical stack height h_s and plume rise Δh marked on the diagram only. (read values from the figure)"
+      }
+    },
+    {
+      "id": "es-air-009",
+      "subject": "Air & Noise Pollution",
+      "topic": "ESP — Deutsch–Anderson",
+      "difficulty": "hard",
+      "type": "NAT",
+      "stem": "An ESP treats $5\\,\\text{m}^3/\\text{s}$ of flue gas. Reading the collecting area $A$ and the drift velocity $w$ from the figure, its Deutsch–Anderson collection efficiency is _____ %.",
+      "answer": 98.1684,
+      "tolerance": 0.1,
+      "solution": "**Concept.** Deutsch–Anderson: $\\eta=1-e^{-wA/Q}$, with $A$ and $w$ read from the figure.\n\n**Working.**\n$$\\left(1-e^{-0.1\\times200/5}\\right)\\times100=98.17\\%.$$\n\n**Answer.** $98.17\\%$",
+      "archetype": "C",
+      "marks": 2,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 340 170\" width=\"100%\" style=\"max-width:360px;height:auto\"><rect x=\"40\" y=\"30\" width=\"260\" height=\"110\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.2\"/><line x1=\"80\" y1=\"30\" x2=\"80\" y2=\"140\" stroke=\"#94a3b8\" stroke-width=\"3\"/><line x1=\"150\" y1=\"30\" x2=\"150\" y2=\"140\" stroke=\"#94a3b8\" stroke-width=\"3\"/><line x1=\"220\" y1=\"30\" x2=\"220\" y2=\"140\" stroke=\"#94a3b8\" stroke-width=\"3\"/><line x1=\"115\" y1=\"35\" x2=\"115\" y2=\"135\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"2 2\"/><line x1=\"185\" y1=\"35\" x2=\"185\" y2=\"135\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"2 2\"/><path d=\"M14 70 l22 0 m-6 -3 l6 3 -6 3\" stroke=\"#16a34a\" stroke-width=\"1.2\" fill=\"none\"/><text x=\"6\" y=\"64\" font-size=\"9\" fill=\"#16a34a\">gas in</text><text x=\"60\" y=\"158\" font-size=\"9\" fill=\"#1e293b\">collecting area A = 200 m²</text><text x=\"150\" y=\"22\" font-size=\"9\" fill=\"#dc2626\">w = 0.1 m/s (drift)</text></svg>",
+        "caption": "Collecting area A and drift velocity w marked on the diagram only. (read values from the figure)"
+      }
+    },
+    {
+      "id": "es-air-010",
+      "subject": "Air & Noise Pollution",
+      "topic": "ESP — Deutsch–Anderson",
+      "difficulty": "hard",
+      "type": "NAT",
+      "stem": "An ESP treats $8\\,\\text{m}^3/\\text{s}$ of flue gas. Reading the collecting area $A$ and the drift velocity $w$ from the figure, its Deutsch–Anderson collection efficiency is _____ %.",
+      "answer": 98.8891,
+      "tolerance": 0.1,
+      "solution": "**Concept.** Deutsch–Anderson: $\\eta=1-e^{-wA/Q}$, with $A$ and $w$ read from the figure.\n\n**Working.**\n$$\\left(1-e^{-0.12\\times300/8}\\right)\\times100=98.89\\%.$$\n\n**Answer.** $98.89\\%$",
+      "archetype": "C",
+      "marks": 2,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 340 170\" width=\"100%\" style=\"max-width:360px;height:auto\"><rect x=\"40\" y=\"30\" width=\"260\" height=\"110\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.2\"/><line x1=\"80\" y1=\"30\" x2=\"80\" y2=\"140\" stroke=\"#94a3b8\" stroke-width=\"3\"/><line x1=\"150\" y1=\"30\" x2=\"150\" y2=\"140\" stroke=\"#94a3b8\" stroke-width=\"3\"/><line x1=\"220\" y1=\"30\" x2=\"220\" y2=\"140\" stroke=\"#94a3b8\" stroke-width=\"3\"/><line x1=\"115\" y1=\"35\" x2=\"115\" y2=\"135\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"2 2\"/><line x1=\"185\" y1=\"35\" x2=\"185\" y2=\"135\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"2 2\"/><path d=\"M14 70 l22 0 m-6 -3 l6 3 -6 3\" stroke=\"#16a34a\" stroke-width=\"1.2\" fill=\"none\"/><text x=\"6\" y=\"64\" font-size=\"9\" fill=\"#16a34a\">gas in</text><text x=\"60\" y=\"158\" font-size=\"9\" fill=\"#1e293b\">collecting area A = 300 m²</text><text x=\"150\" y=\"22\" font-size=\"9\" fill=\"#dc2626\">w = 0.12 m/s (drift)</text></svg>",
+        "caption": "Collecting area A and drift velocity w marked on the diagram only. (read values from the figure)"
+      }
+    },
+    {
+      "id": "es-air-011",
+      "subject": "Air & Noise Pollution",
+      "topic": "Particulate Control",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "Which device is most effective for removing very fine particulates (< 1 µm) at high efficiency?",
+      "options": [
+        "Electrostatic precipitator",
+        "Settling chamber",
+        "Simple cyclone",
+        "Gravity settler"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** ESPs and fabric filters capture sub-micron particles; settling chambers/cyclones are for coarse particles.\n\n**Working.**\nESP.\n\n**Answer.** Electrostatic precipitator",
+      "archetype": "B",
+      "marks": 1,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 280 200\" width=\"100%\" style=\"max-width:300px;height:auto\"><path d=\"M70 40 L210 40 L210 110 L165 175 L115 175 L70 110 Z\" fill=\"rgba(37,99,235,0.06)\" stroke=\"#1e293b\" stroke-width=\"1.3\"/><rect x=\"120\" y=\"20\" width=\"40\" height=\"22\" fill=\"#fff\" stroke=\"#1e293b\"/><text x=\"140\" y=\"16\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">clean gas out</text><path d=\"M40 55 l30 0\" stroke=\"#16a34a\" stroke-width=\"1.3\"/><text x=\"6\" y=\"50\" font-size=\"8\" fill=\"#16a34a\">dusty in</text><path d=\"M150 50 q30 25 -8 50 q-34 18 6 45\" stroke=\"#dc2626\" stroke-width=\"1.1\" fill=\"none\"/><text x=\"130\" y=\"190\" font-size=\"8\" text-anchor=\"middle\" fill=\"#7c2d12\">dust hopper</text></svg>",
+        "caption": "Reverse-flow cyclone separator (vortex collects particulates)."
+      }
+    },
+    {
+      "id": "es-air-012",
+      "subject": "Air & Noise Pollution",
+      "topic": "Atmospheric Stability",
+      "difficulty": "hard",
+      "type": "MCQ",
+      "stem": "When the environmental lapse rate is greater than the dry adiabatic lapse rate, the atmosphere is",
+      "options": [
+        "superadiabatic and unstable",
+        "isothermal",
+        "inverted and stable",
+        "neutral"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** ELR > DALR ⇒ a displaced parcel keeps rising ⇒ superadiabatic, unstable (good dispersion, looping plume).\n\n**Working.**\nSuperadiabatic, unstable.\n\n**Answer.** Superadiabatic / unstable",
+      "archetype": "B",
+      "marks": 1,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 190\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"40\" y1=\"20\" x2=\"40\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"40\" y1=\"165\" x2=\"300\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"10\" y=\"28\" font-size=\"9\" fill=\"#1e293b\">altitude</text><text x=\"245\" y=\"182\" font-size=\"9\" fill=\"#1e293b\">temperature →</text><line x1=\"120\" y1=\"160\" x2=\"220\" y2=\"30\" stroke=\"#475569\" stroke-width=\"1.3\" stroke-dasharray=\"5 3\"/><text x=\"222\" y=\"34\" font-size=\"8\" fill=\"#475569\">DALR (dry adiabatic)</text><line x1=\"150\" y1=\"160\" x2=\"200\" y2=\"30\" stroke=\"#dc2626\" stroke-width=\"1.6\"/><text x=\"172\" y=\"50\" font-size=\"8\" fill=\"#dc2626\">ELR (unstable)</text></svg>",
+        "caption": "Environmental lapse rate vs. dry adiabatic lapse rate — unstable atmosphere."
+      }
+    },
+    {
+      "id": "es-air-013",
+      "subject": "Air & Noise Pollution",
+      "topic": "Meteorology",
+      "difficulty": "medium",
+      "type": "MSQ",
+      "stem": "Which conditions worsen ground-level air pollution by limiting dispersion?",
+      "options": [
+        "Temperature inversion",
+        "Low mixing height",
+        "Calm winds",
+        "Strong superadiabatic lapse"
+      ],
+      "answer": [
+        0,
+        1,
+        2
+      ],
+      "solution": "**Concept.** Inversions, low mixing height and calm winds all trap pollutants; a strong superadiabatic lapse improves dispersion.\n\n**Working.**\nFirst three.\n\n**Answer.** Inversion, low mixing height, calm winds",
+      "archetype": "D",
+      "marks": 2,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 190\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"40\" y1=\"20\" x2=\"40\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"40\" y1=\"165\" x2=\"300\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"10\" y=\"28\" font-size=\"9\" fill=\"#1e293b\">altitude</text><text x=\"245\" y=\"182\" font-size=\"9\" fill=\"#1e293b\">temperature →</text><line x1=\"120\" y1=\"160\" x2=\"220\" y2=\"30\" stroke=\"#475569\" stroke-width=\"1.3\" stroke-dasharray=\"5 3\"/><text x=\"222\" y=\"34\" font-size=\"8\" fill=\"#475569\">DALR (dry adiabatic)</text><line x1=\"150\" y1=\"160\" x2=\"200\" y2=\"30\" stroke=\"#dc2626\" stroke-width=\"1.6\"/><text x=\"172\" y=\"50\" font-size=\"8\" fill=\"#dc2626\">ELR (inversion)</text></svg>",
+        "caption": "Environmental lapse rate vs. dry adiabatic lapse rate — inversion atmosphere."
+      }
+    },
+    {
+      "id": "es-air-014",
+      "subject": "Air & Noise Pollution",
+      "topic": "Noise — Addition",
+      "difficulty": "medium",
+      "marks": 2,
+      "archetype": "A",
+      "solution": "**Concept.** L = L₁ + 10log n.\n\n**Working.**\n$$80+10\\log3=84.77.$$\n\n**Answer.** $84.77\\,\\text{dB}$",
+      "type": "NAT",
+      "stem": "$3$ identical sources each $80\\,\\text{dB}$. Combined level is _____ dB.",
+      "answer": 84.771,
+      "tolerance": 0.1
+    },
+    {
+      "id": "es-air-015",
+      "subject": "Air & Noise Pollution",
+      "topic": "Effective Stack Height",
+      "difficulty": "easy",
+      "marks": 1,
+      "archetype": "A",
+      "solution": "**Concept.** H = h_s + Δh, with both read from the figure.\n\n**Working.**\n$$80+20=100.$$\n\n**Answer.** $100\\,\\text{m}$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 220\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"20\" y1=\"185\" x2=\"300\" y2=\"185\" stroke=\"#475569\" stroke-width=\"1.4\"/><rect x=\"60\" y=\"85\" width=\"16\" height=\"100\" fill=\"#94a3b8\" stroke=\"#1e293b\"/><line x1=\"68\" y1=\"85\" x2=\"68\" y2=\"42\" stroke=\"#2563eb\" stroke-width=\"1.2\" stroke-dasharray=\"3 2\"/><circle cx=\"68\" cy=\"42\" r=\"3\" fill=\"#2563eb\"/><line x1=\"40\" y1=\"185\" x2=\"40\" y2=\"85\" stroke=\"#dc2626\" stroke-width=\"1\"/><text x=\"6\" y=\"138\" font-size=\"10\" fill=\"#dc2626\">h_s = 80 m</text><line x1=\"92\" y1=\"85\" x2=\"92\" y2=\"42\" stroke=\"#16a34a\" stroke-width=\"1\"/><text x=\"98\" y=\"66\" font-size=\"10\" fill=\"#16a34a\">Δh = 20 m</text><text x=\"150\" y=\"36\" font-size=\"9\" fill=\"#2563eb\">plume centreline</text></svg>",
+        "caption": "Physical stack height h_s and plume rise Δh marked on the diagram only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "For the chimney shown, the physical stack height $h_s$ and plume rise $\\Delta h$ are marked on the diagram. The effective stack height is _____ m.",
+      "answer": 100,
+      "tolerance": 0.1
+    },
+    {
+      "id": "es-air-016",
+      "subject": "Air & Noise Pollution",
+      "topic": "Noise — Combination",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** L = 10log(10^{L₁/10}+10^{L₂/10}).\n\n**Working.**\n$$10\\log(10^{72/10}+10^{73/10})=75.54.$$\n\n**Answer.** $75.54\\,\\text{dB}$",
+      "type": "NAT",
+      "stem": "Two sources $72\\,\\text{dB}$ and $73\\,\\text{dB}$ at a point. Combined level is _____ dB.",
+      "answer": 75.539,
+      "tolerance": 0.1
+    },
+    {
+      "id": "es-air-017",
+      "subject": "Air & Noise Pollution",
+      "topic": "Noise — Addition",
+      "difficulty": "medium",
+      "marks": 2,
+      "archetype": "A",
+      "solution": "**Concept.** L = L₁ + 10log n.\n\n**Working.**\n$$75+10\\log3=79.77.$$\n\n**Answer.** $79.77\\,\\text{dB}$",
+      "type": "NAT",
+      "stem": "$3$ identical sources each $75\\,\\text{dB}$. Combined level is _____ dB.",
+      "answer": 79.771,
+      "tolerance": 0.1
+    },
+    {
+      "id": "es-air-018",
+      "subject": "Air & Noise Pollution",
+      "topic": "ESP — Deutsch–Anderson",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** η = 1 − e^{−wA/Q}, with A and w read from the figure.\n\n**Working.**\n$$(1-e^{-0.08\\times300/6})\\times100=98.17\\%.$$\n\n**Answer.** $98.17\\%$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 340 170\" width=\"100%\" style=\"max-width:360px;height:auto\"><rect x=\"40\" y=\"30\" width=\"260\" height=\"110\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.2\"/><line x1=\"80\" y1=\"30\" x2=\"80\" y2=\"140\" stroke=\"#94a3b8\" stroke-width=\"3\"/><line x1=\"150\" y1=\"30\" x2=\"150\" y2=\"140\" stroke=\"#94a3b8\" stroke-width=\"3\"/><line x1=\"220\" y1=\"30\" x2=\"220\" y2=\"140\" stroke=\"#94a3b8\" stroke-width=\"3\"/><line x1=\"115\" y1=\"35\" x2=\"115\" y2=\"135\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"2 2\"/><line x1=\"185\" y1=\"35\" x2=\"185\" y2=\"135\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"2 2\"/><path d=\"M14 70 l22 0 m-6 -3 l6 3 -6 3\" stroke=\"#16a34a\" stroke-width=\"1.2\" fill=\"none\"/><text x=\"6\" y=\"64\" font-size=\"9\" fill=\"#16a34a\">gas in</text><text x=\"60\" y=\"158\" font-size=\"9\" fill=\"#1e293b\">collecting area A = 300 m²</text><text x=\"150\" y=\"22\" font-size=\"9\" fill=\"#dc2626\">w = 0.08 m/s (drift)</text></svg>",
+        "caption": "Collecting area A and drift velocity w marked on the diagram only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "An ESP treats $6\\,\\text{m}^3/\\text{s}$. Reading the collecting area $A$ and drift velocity $w$ from the figure, its collection efficiency is _____ %.",
+      "answer": 98.168,
+      "tolerance": 0.1
+    },
+    {
+      "id": "es-air-019",
+      "subject": "Air & Noise Pollution",
+      "topic": "Effective Stack Height",
+      "difficulty": "easy",
+      "marks": 1,
+      "archetype": "A",
+      "solution": "**Concept.** H = h_s + Δh, with both read from the figure.\n\n**Working.**\n$$100+20=120.$$\n\n**Answer.** $120\\,\\text{m}$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 220\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"20\" y1=\"185\" x2=\"300\" y2=\"185\" stroke=\"#475569\" stroke-width=\"1.4\"/><rect x=\"60\" y=\"85\" width=\"16\" height=\"100\" fill=\"#94a3b8\" stroke=\"#1e293b\"/><line x1=\"68\" y1=\"85\" x2=\"68\" y2=\"42\" stroke=\"#2563eb\" stroke-width=\"1.2\" stroke-dasharray=\"3 2\"/><circle cx=\"68\" cy=\"42\" r=\"3\" fill=\"#2563eb\"/><line x1=\"40\" y1=\"185\" x2=\"40\" y2=\"85\" stroke=\"#dc2626\" stroke-width=\"1\"/><text x=\"6\" y=\"138\" font-size=\"10\" fill=\"#dc2626\">h_s = 100 m</text><line x1=\"92\" y1=\"85\" x2=\"92\" y2=\"42\" stroke=\"#16a34a\" stroke-width=\"1\"/><text x=\"98\" y=\"66\" font-size=\"10\" fill=\"#16a34a\">Δh = 20 m</text><text x=\"150\" y=\"36\" font-size=\"9\" fill=\"#2563eb\">plume centreline</text></svg>",
+        "caption": "Physical stack height h_s and plume rise Δh marked on the diagram only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "For the chimney shown, the physical stack height $h_s$ and plume rise $\\Delta h$ are marked on the diagram. The effective stack height is _____ m.",
+      "answer": 120,
+      "tolerance": 0.1
+    },
+    {
+      "id": "es-air-020",
+      "subject": "Air & Noise Pollution",
+      "topic": "Noise — Addition",
+      "difficulty": "medium",
+      "marks": 2,
+      "archetype": "A",
+      "solution": "**Concept.** L = L₁ + 10log n.\n\n**Working.**\n$$70+10\\log3=74.77.$$\n\n**Answer.** $74.77\\,\\text{dB}$",
+      "type": "NAT",
+      "stem": "$3$ identical sources each $70\\,\\text{dB}$. Combined level is _____ dB.",
+      "answer": 74.771,
+      "tolerance": 0.1
+    },
+    {
+      "id": "es-air-021",
+      "subject": "Air & Noise Pollution",
+      "topic": "Atmospheric Stability",
+      "difficulty": "hard",
+      "marks": 1,
+      "archetype": "B",
+      "solution": "**Concept.** Fanning occurs in a stable/inversion layer that suppresses vertical mixing.\n\n**Working.**\nStable inversion.\n\n**Answer.** Stable",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 190\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"40\" y1=\"20\" x2=\"40\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"40\" y1=\"165\" x2=\"300\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"10\" y=\"28\" font-size=\"9\" fill=\"#1e293b\">altitude</text><text x=\"245\" y=\"182\" font-size=\"9\" fill=\"#1e293b\">temperature →</text><line x1=\"120\" y1=\"160\" x2=\"220\" y2=\"30\" stroke=\"#475569\" stroke-width=\"1.3\" stroke-dasharray=\"5 3\"/><text x=\"222\" y=\"34\" font-size=\"8\" fill=\"#475569\">DALR (dry adiabatic)</text><line x1=\"150\" y1=\"160\" x2=\"200\" y2=\"30\" stroke=\"#dc2626\" stroke-width=\"1.6\"/><text x=\"172\" y=\"50\" font-size=\"8\" fill=\"#dc2626\">ELR (inversion)</text></svg>",
+        "caption": "Environmental lapse rate vs. dry adiabatic lapse rate — inversion atmosphere."
+      },
+      "type": "MCQ",
+      "stem": "A 'fanning' plume is associated with which atmospheric condition?",
+      "options": [
+        "Stable (inversion) layer",
+        "Strongly unstable",
+        "Neutral",
+        "Superadiabatic"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "es-air-022",
+      "subject": "Air & Noise Pollution",
+      "topic": "Effective Stack Height",
+      "difficulty": "easy",
+      "marks": 1,
+      "archetype": "A",
+      "solution": "**Concept.** H = h_s + Δh, with both read from the figure.\n\n**Working.**\n$$50+25=75.$$\n\n**Answer.** $75\\,\\text{m}$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 220\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"20\" y1=\"185\" x2=\"300\" y2=\"185\" stroke=\"#475569\" stroke-width=\"1.4\"/><rect x=\"60\" y=\"85\" width=\"16\" height=\"100\" fill=\"#94a3b8\" stroke=\"#1e293b\"/><line x1=\"68\" y1=\"85\" x2=\"68\" y2=\"42\" stroke=\"#2563eb\" stroke-width=\"1.2\" stroke-dasharray=\"3 2\"/><circle cx=\"68\" cy=\"42\" r=\"3\" fill=\"#2563eb\"/><line x1=\"40\" y1=\"185\" x2=\"40\" y2=\"85\" stroke=\"#dc2626\" stroke-width=\"1\"/><text x=\"6\" y=\"138\" font-size=\"10\" fill=\"#dc2626\">h_s = 50 m</text><line x1=\"92\" y1=\"85\" x2=\"92\" y2=\"42\" stroke=\"#16a34a\" stroke-width=\"1\"/><text x=\"98\" y=\"66\" font-size=\"10\" fill=\"#16a34a\">Δh = 25 m</text><text x=\"150\" y=\"36\" font-size=\"9\" fill=\"#2563eb\">plume centreline</text></svg>",
+        "caption": "Physical stack height h_s and plume rise Δh marked on the diagram only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "For the chimney shown, the physical stack height $h_s$ and plume rise $\\Delta h$ are marked on the diagram. The effective stack height is _____ m.",
+      "answer": 75,
+      "tolerance": 0.1
+    },
+    {
+      "id": "es-air-023",
+      "subject": "Air & Noise Pollution",
+      "topic": "ESP — Deutsch–Anderson",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** η = 1 − e^{−wA/Q}, with A and w read from the figure.\n\n**Working.**\n$$(1-e^{-0.08\\times150/4})\\times100=95.02\\%.$$\n\n**Answer.** $95.02\\%$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 340 170\" width=\"100%\" style=\"max-width:360px;height:auto\"><rect x=\"40\" y=\"30\" width=\"260\" height=\"110\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.2\"/><line x1=\"80\" y1=\"30\" x2=\"80\" y2=\"140\" stroke=\"#94a3b8\" stroke-width=\"3\"/><line x1=\"150\" y1=\"30\" x2=\"150\" y2=\"140\" stroke=\"#94a3b8\" stroke-width=\"3\"/><line x1=\"220\" y1=\"30\" x2=\"220\" y2=\"140\" stroke=\"#94a3b8\" stroke-width=\"3\"/><line x1=\"115\" y1=\"35\" x2=\"115\" y2=\"135\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"2 2\"/><line x1=\"185\" y1=\"35\" x2=\"185\" y2=\"135\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"2 2\"/><path d=\"M14 70 l22 0 m-6 -3 l6 3 -6 3\" stroke=\"#16a34a\" stroke-width=\"1.2\" fill=\"none\"/><text x=\"6\" y=\"64\" font-size=\"9\" fill=\"#16a34a\">gas in</text><text x=\"60\" y=\"158\" font-size=\"9\" fill=\"#1e293b\">collecting area A = 150 m²</text><text x=\"150\" y=\"22\" font-size=\"9\" fill=\"#dc2626\">w = 0.08 m/s (drift)</text></svg>",
+        "caption": "Collecting area A and drift velocity w marked on the diagram only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "An ESP treats $4\\,\\text{m}^3/\\text{s}$. Reading the collecting area $A$ and drift velocity $w$ from the figure, its collection efficiency is _____ %.",
+      "answer": 95.021,
+      "tolerance": 0.1
+    },
+    {
+      "id": "es-air-024",
+      "subject": "Air & Noise Pollution",
+      "topic": "ESP — Deutsch–Anderson",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** η = 1 − e^{−wA/Q}, with A and w read from the figure.\n\n**Working.**\n$$(1-e^{-0.08\\times150/6})\\times100=86.47\\%.$$\n\n**Answer.** $86.47\\%$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 340 170\" width=\"100%\" style=\"max-width:360px;height:auto\"><rect x=\"40\" y=\"30\" width=\"260\" height=\"110\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.2\"/><line x1=\"80\" y1=\"30\" x2=\"80\" y2=\"140\" stroke=\"#94a3b8\" stroke-width=\"3\"/><line x1=\"150\" y1=\"30\" x2=\"150\" y2=\"140\" stroke=\"#94a3b8\" stroke-width=\"3\"/><line x1=\"220\" y1=\"30\" x2=\"220\" y2=\"140\" stroke=\"#94a3b8\" stroke-width=\"3\"/><line x1=\"115\" y1=\"35\" x2=\"115\" y2=\"135\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"2 2\"/><line x1=\"185\" y1=\"35\" x2=\"185\" y2=\"135\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"2 2\"/><path d=\"M14 70 l22 0 m-6 -3 l6 3 -6 3\" stroke=\"#16a34a\" stroke-width=\"1.2\" fill=\"none\"/><text x=\"6\" y=\"64\" font-size=\"9\" fill=\"#16a34a\">gas in</text><text x=\"60\" y=\"158\" font-size=\"9\" fill=\"#1e293b\">collecting area A = 150 m²</text><text x=\"150\" y=\"22\" font-size=\"9\" fill=\"#dc2626\">w = 0.08 m/s (drift)</text></svg>",
+        "caption": "Collecting area A and drift velocity w marked on the diagram only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "An ESP treats $6\\,\\text{m}^3/\\text{s}$. Reading the collecting area $A$ and drift velocity $w$ from the figure, its collection efficiency is _____ %.",
+      "answer": 86.466,
+      "tolerance": 0.1
+    },
+    {
+      "id": "es-air-025",
+      "subject": "Air & Noise Pollution",
+      "topic": "Noise — Addition",
+      "difficulty": "medium",
+      "marks": 2,
+      "archetype": "A",
+      "solution": "**Concept.** L = L₁ + 10log n.\n\n**Working.**\n$$85+10\\log2=88.01.$$\n\n**Answer.** $88.01\\,\\text{dB}$",
+      "type": "NAT",
+      "stem": "$2$ identical sources each $85\\,\\text{dB}$. Combined level is _____ dB.",
+      "answer": 88.01,
+      "tolerance": 0.1
+    },
+    {
+      "id": "es-air-026",
+      "subject": "Air & Noise Pollution",
+      "topic": "Noise — Combination",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** L = 10log(10^{L₁/10}+10^{L₂/10}).\n\n**Working.**\n$$10\\log(10^{68/10}+10^{75/10})=75.79.$$\n\n**Answer.** $75.79\\,\\text{dB}$",
+      "type": "NAT",
+      "stem": "Two sources $68\\,\\text{dB}$ and $75\\,\\text{dB}$ at a point. Combined level is _____ dB.",
+      "answer": 75.79,
+      "tolerance": 0.1
+    },
+    {
+      "id": "es-air-027",
+      "subject": "Air & Noise Pollution",
+      "topic": "Noise — Combination",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** L = 10log(10^{L₁/10}+10^{L₂/10}).\n\n**Working.**\n$$10\\log(10^{72/10}+10^{75/10})=76.76.$$\n\n**Answer.** $76.76\\,\\text{dB}$",
+      "type": "NAT",
+      "stem": "Two sources $72\\,\\text{dB}$ and $75\\,\\text{dB}$ at a point. Combined level is _____ dB.",
+      "answer": 76.764,
+      "tolerance": 0.1
+    },
+    {
+      "id": "es-air-028",
+      "subject": "Air & Noise Pollution",
+      "topic": "Noise — Addition",
+      "difficulty": "medium",
+      "marks": 2,
+      "archetype": "A",
+      "solution": "**Concept.** L = L₁ + 10log n.\n\n**Working.**\n$$80+10\\log5=86.99.$$\n\n**Answer.** $86.99\\,\\text{dB}$",
+      "type": "NAT",
+      "stem": "$5$ identical sources each $80\\,\\text{dB}$. Combined level is _____ dB.",
+      "answer": 86.99,
+      "tolerance": 0.1
+    },
+    {
+      "id": "es-air-029",
+      "subject": "Air & Noise Pollution",
+      "topic": "Noise — Addition",
+      "difficulty": "medium",
+      "marks": 2,
+      "archetype": "A",
+      "solution": "**Concept.** L = L₁ + 10log n.\n\n**Working.**\n$$85+10\\log3=89.77.$$\n\n**Answer.** $89.77\\,\\text{dB}$",
+      "type": "NAT",
+      "stem": "$3$ identical sources each $85\\,\\text{dB}$. Combined level is _____ dB.",
+      "answer": 89.771,
+      "tolerance": 0.1
+    },
+    {
+      "id": "es-air-030",
+      "subject": "Air & Noise Pollution",
+      "topic": "Effective Stack Height",
+      "difficulty": "easy",
+      "marks": 1,
+      "archetype": "A",
+      "solution": "**Concept.** H = h_s + Δh, with both read from the figure.\n\n**Working.**\n$$50+20=70.$$\n\n**Answer.** $70\\,\\text{m}$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 220\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"20\" y1=\"185\" x2=\"300\" y2=\"185\" stroke=\"#475569\" stroke-width=\"1.4\"/><rect x=\"60\" y=\"85\" width=\"16\" height=\"100\" fill=\"#94a3b8\" stroke=\"#1e293b\"/><line x1=\"68\" y1=\"85\" x2=\"68\" y2=\"42\" stroke=\"#2563eb\" stroke-width=\"1.2\" stroke-dasharray=\"3 2\"/><circle cx=\"68\" cy=\"42\" r=\"3\" fill=\"#2563eb\"/><line x1=\"40\" y1=\"185\" x2=\"40\" y2=\"85\" stroke=\"#dc2626\" stroke-width=\"1\"/><text x=\"6\" y=\"138\" font-size=\"10\" fill=\"#dc2626\">h_s = 50 m</text><line x1=\"92\" y1=\"85\" x2=\"92\" y2=\"42\" stroke=\"#16a34a\" stroke-width=\"1\"/><text x=\"98\" y=\"66\" font-size=\"10\" fill=\"#16a34a\">Δh = 20 m</text><text x=\"150\" y=\"36\" font-size=\"9\" fill=\"#2563eb\">plume centreline</text></svg>",
+        "caption": "Physical stack height h_s and plume rise Δh marked on the diagram only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "For the chimney shown, the physical stack height $h_s$ and plume rise $\\Delta h$ are marked on the diagram. The effective stack height is _____ m.",
+      "answer": 70,
+      "tolerance": 0.1
+    },
+    {
+      "id": "es-air-031",
+      "subject": "Air & Noise Pollution",
+      "topic": "Gaussian Plume",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** C = Q/(πuσ_yσ_z)·exp(−H²/2σ_z²); H,u,σ_y,σ_z read from the figure.\n\n**Working.**\n$$\\dfrac{80}{\\pi\\times5\\times30\\times20}e^{-30^2/(2\\times20^2)}=0.00275574.$$\n\n**Answer.** $27.557\\times10^{-4}$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 360 210\" width=\"100%\" style=\"max-width:380px;height:auto\"><line x1=\"20\" y1=\"175\" x2=\"350\" y2=\"175\" stroke=\"#475569\" stroke-width=\"1.4\"/><rect x=\"34\" y=\"75\" width=\"14\" height=\"100\" fill=\"#94a3b8\" stroke=\"#1e293b\"/><text x=\"41\" y=\"191\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1e293b\">stack</text><path d=\"M48 75 Q160 64 350 44 M48 75 Q160 86 350 116\" fill=\"rgba(37,99,235,0.10)\" stroke=\"#2563eb\" stroke-width=\"1.3\"/><line x1=\"41\" y1=\"75\" x2=\"41\" y2=\"175\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"3 2\"/><text x=\"54\" y=\"70\" font-size=\"10\" fill=\"#dc2626\">H = 30 m</text><path d=\"M118 148 l20 0 m-5 -3 l5 3 -5 3\" stroke=\"#16a34a\" stroke-width=\"1.1\" fill=\"none\"/><text x=\"142\" y=\"151\" font-size=\"10\" fill=\"#16a34a\">u = 5 m/s</text><text x=\"206\" y=\"40\" font-size=\"10\" fill=\"#2563eb\">σ_y = 30 m,  σ_z = 20 m</text><text x=\"318\" y=\"171\" font-size=\"9\" fill=\"#1e293b\">x →</text></svg>",
+        "caption": "Elevated point source: H, u, σ_y and σ_z are marked on the diagram only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A stack emits $Q=80\\,\\text{g/s}$. Using the effective height $H$, wind speed $u$ and dispersion coefficients $\\sigma_y,\\sigma_z$ marked on the diagram, the ground-level centreline concentration (full reflection) is _____ ×10⁻⁴ g/m³.",
+      "answer": 27.5574,
+      "tolerance": 0.2
+    },
+    {
+      "id": "es-air-032",
+      "subject": "Air & Noise Pollution",
+      "topic": "ESP — Deutsch–Anderson",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** η = 1 − e^{−wA/Q}, with A and w read from the figure.\n\n**Working.**\n$$(1-e^{-0.12\\times200/6})\\times100=98.17\\%.$$\n\n**Answer.** $98.17\\%$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 340 170\" width=\"100%\" style=\"max-width:360px;height:auto\"><rect x=\"40\" y=\"30\" width=\"260\" height=\"110\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.2\"/><line x1=\"80\" y1=\"30\" x2=\"80\" y2=\"140\" stroke=\"#94a3b8\" stroke-width=\"3\"/><line x1=\"150\" y1=\"30\" x2=\"150\" y2=\"140\" stroke=\"#94a3b8\" stroke-width=\"3\"/><line x1=\"220\" y1=\"30\" x2=\"220\" y2=\"140\" stroke=\"#94a3b8\" stroke-width=\"3\"/><line x1=\"115\" y1=\"35\" x2=\"115\" y2=\"135\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"2 2\"/><line x1=\"185\" y1=\"35\" x2=\"185\" y2=\"135\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"2 2\"/><path d=\"M14 70 l22 0 m-6 -3 l6 3 -6 3\" stroke=\"#16a34a\" stroke-width=\"1.2\" fill=\"none\"/><text x=\"6\" y=\"64\" font-size=\"9\" fill=\"#16a34a\">gas in</text><text x=\"60\" y=\"158\" font-size=\"9\" fill=\"#1e293b\">collecting area A = 200 m²</text><text x=\"150\" y=\"22\" font-size=\"9\" fill=\"#dc2626\">w = 0.12 m/s (drift)</text></svg>",
+        "caption": "Collecting area A and drift velocity w marked on the diagram only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "An ESP treats $6\\,\\text{m}^3/\\text{s}$. Reading the collecting area $A$ and drift velocity $w$ from the figure, its collection efficiency is _____ %.",
+      "answer": 98.168,
+      "tolerance": 0.1
+    },
+    {
+      "id": "es-air-033",
+      "subject": "Air & Noise Pollution",
+      "topic": "Gaussian Plume",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** C = Q/(πuσ_yσ_z)·exp(−H²/2σ_z²); H,u,σ_y,σ_z read from the figure.\n\n**Working.**\n$$\\dfrac{120}{\\pi\\times4\\times40\\times20}e^{-30^2/(2\\times20^2)}=0.00387525.$$\n\n**Answer.** $38.753\\times10^{-4}$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 360 210\" width=\"100%\" style=\"max-width:380px;height:auto\"><line x1=\"20\" y1=\"175\" x2=\"350\" y2=\"175\" stroke=\"#475569\" stroke-width=\"1.4\"/><rect x=\"34\" y=\"75\" width=\"14\" height=\"100\" fill=\"#94a3b8\" stroke=\"#1e293b\"/><text x=\"41\" y=\"191\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1e293b\">stack</text><path d=\"M48 75 Q160 64 350 44 M48 75 Q160 86 350 116\" fill=\"rgba(37,99,235,0.10)\" stroke=\"#2563eb\" stroke-width=\"1.3\"/><line x1=\"41\" y1=\"75\" x2=\"41\" y2=\"175\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"3 2\"/><text x=\"54\" y=\"70\" font-size=\"10\" fill=\"#dc2626\">H = 30 m</text><path d=\"M118 148 l20 0 m-5 -3 l5 3 -5 3\" stroke=\"#16a34a\" stroke-width=\"1.1\" fill=\"none\"/><text x=\"142\" y=\"151\" font-size=\"10\" fill=\"#16a34a\">u = 4 m/s</text><text x=\"206\" y=\"40\" font-size=\"10\" fill=\"#2563eb\">σ_y = 40 m,  σ_z = 20 m</text><text x=\"318\" y=\"171\" font-size=\"9\" fill=\"#1e293b\">x →</text></svg>",
+        "caption": "Elevated point source: H, u, σ_y and σ_z are marked on the diagram only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A stack emits $Q=120\\,\\text{g/s}$. Using the effective height $H$, wind speed $u$ and dispersion coefficients $\\sigma_y,\\sigma_z$ marked on the diagram, the ground-level centreline concentration (full reflection) is _____ ×10⁻⁴ g/m³.",
+      "answer": 38.7525,
+      "tolerance": 0.2
+    },
+    {
+      "id": "es-air-034",
+      "subject": "Air & Noise Pollution",
+      "topic": "Noise — Combination",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** L = 10log(10^{L₁/10}+10^{L₂/10}).\n\n**Working.**\n$$10\\log(10^{70/10}+10^{76/10})=76.97.$$\n\n**Answer.** $76.97\\,\\text{dB}$",
+      "type": "NAT",
+      "stem": "Two sources $70\\,\\text{dB}$ and $76\\,\\text{dB}$ at a point. Combined level is _____ dB.",
+      "answer": 76.973,
+      "tolerance": 0.1
+    },
+    {
+      "id": "es-air-035",
+      "subject": "Air & Noise Pollution",
+      "topic": "Noise — Addition",
+      "difficulty": "medium",
+      "marks": 2,
+      "archetype": "A",
+      "solution": "**Concept.** L = L₁ + 10log n.\n\n**Working.**\n$$75+10\\log5=81.99.$$\n\n**Answer.** $81.99\\,\\text{dB}$",
+      "type": "NAT",
+      "stem": "$5$ identical sources each $75\\,\\text{dB}$. Combined level is _____ dB.",
+      "answer": 81.99,
+      "tolerance": 0.1
+    },
+    {
+      "id": "es-air-036",
+      "subject": "Air & Noise Pollution",
+      "topic": "Noise — Addition",
+      "difficulty": "medium",
+      "marks": 2,
+      "archetype": "A",
+      "solution": "**Concept.** L = L₁ + 10log n.\n\n**Working.**\n$$80+10\\log4=86.02.$$\n\n**Answer.** $86.02\\,\\text{dB}$",
+      "type": "NAT",
+      "stem": "$4$ identical sources each $80\\,\\text{dB}$. Combined level is _____ dB.",
+      "answer": 86.021,
+      "tolerance": 0.1
+    },
+    {
+      "id": "es-air-037",
+      "subject": "Air & Noise Pollution",
+      "topic": "ESP — Deutsch–Anderson",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** η = 1 − e^{−wA/Q}, with A and w read from the figure.\n\n**Working.**\n$$(1-e^{-0.12\\times150/6})\\times100=95.02\\%.$$\n\n**Answer.** $95.02\\%$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 340 170\" width=\"100%\" style=\"max-width:360px;height:auto\"><rect x=\"40\" y=\"30\" width=\"260\" height=\"110\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.2\"/><line x1=\"80\" y1=\"30\" x2=\"80\" y2=\"140\" stroke=\"#94a3b8\" stroke-width=\"3\"/><line x1=\"150\" y1=\"30\" x2=\"150\" y2=\"140\" stroke=\"#94a3b8\" stroke-width=\"3\"/><line x1=\"220\" y1=\"30\" x2=\"220\" y2=\"140\" stroke=\"#94a3b8\" stroke-width=\"3\"/><line x1=\"115\" y1=\"35\" x2=\"115\" y2=\"135\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"2 2\"/><line x1=\"185\" y1=\"35\" x2=\"185\" y2=\"135\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"2 2\"/><path d=\"M14 70 l22 0 m-6 -3 l6 3 -6 3\" stroke=\"#16a34a\" stroke-width=\"1.2\" fill=\"none\"/><text x=\"6\" y=\"64\" font-size=\"9\" fill=\"#16a34a\">gas in</text><text x=\"60\" y=\"158\" font-size=\"9\" fill=\"#1e293b\">collecting area A = 150 m²</text><text x=\"150\" y=\"22\" font-size=\"9\" fill=\"#dc2626\">w = 0.12 m/s (drift)</text></svg>",
+        "caption": "Collecting area A and drift velocity w marked on the diagram only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "An ESP treats $6\\,\\text{m}^3/\\text{s}$. Reading the collecting area $A$ and drift velocity $w$ from the figure, its collection efficiency is _____ %.",
+      "answer": 95.021,
+      "tolerance": 0.1
+    },
+    {
+      "id": "es-air-038",
+      "subject": "Air & Noise Pollution",
+      "topic": "Gaussian Plume",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** C = Q/(πuσ_yσ_z)·exp(−H²/2σ_z²); H,u,σ_y,σ_z read from the figure.\n\n**Working.**\n$$\\dfrac{120}{\\pi\\times6\\times25\\times25}e^{-50^2/(2\\times25^2)}=0.00137851.$$\n\n**Answer.** $13.785\\times10^{-4}$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 360 210\" width=\"100%\" style=\"max-width:380px;height:auto\"><line x1=\"20\" y1=\"175\" x2=\"350\" y2=\"175\" stroke=\"#475569\" stroke-width=\"1.4\"/><rect x=\"34\" y=\"75\" width=\"14\" height=\"100\" fill=\"#94a3b8\" stroke=\"#1e293b\"/><text x=\"41\" y=\"191\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1e293b\">stack</text><path d=\"M48 75 Q160 64 350 44 M48 75 Q160 86 350 116\" fill=\"rgba(37,99,235,0.10)\" stroke=\"#2563eb\" stroke-width=\"1.3\"/><line x1=\"41\" y1=\"75\" x2=\"41\" y2=\"175\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"3 2\"/><text x=\"54\" y=\"70\" font-size=\"10\" fill=\"#dc2626\">H = 50 m</text><path d=\"M118 148 l20 0 m-5 -3 l5 3 -5 3\" stroke=\"#16a34a\" stroke-width=\"1.1\" fill=\"none\"/><text x=\"142\" y=\"151\" font-size=\"10\" fill=\"#16a34a\">u = 6 m/s</text><text x=\"206\" y=\"40\" font-size=\"10\" fill=\"#2563eb\">σ_y = 25 m,  σ_z = 25 m</text><text x=\"318\" y=\"171\" font-size=\"9\" fill=\"#1e293b\">x →</text></svg>",
+        "caption": "Elevated point source: H, u, σ_y and σ_z are marked on the diagram only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A stack emits $Q=120\\,\\text{g/s}$. Using the effective height $H$, wind speed $u$ and dispersion coefficients $\\sigma_y,\\sigma_z$ marked on the diagram, the ground-level centreline concentration (full reflection) is _____ ×10⁻⁴ g/m³.",
+      "answer": 13.7851,
+      "tolerance": 0.2
+    },
+    {
+      "id": "es-air-039",
+      "subject": "Air & Noise Pollution",
+      "topic": "Gaussian Plume",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** C = Q/(πuσ_yσ_z)·exp(−H²/2σ_z²); H,u,σ_y,σ_z read from the figure.\n\n**Working.**\n$$\\dfrac{100}{\\pi\\times6\\times40\\times15}e^{-30^2/(2\\times15^2)}=0.00119663.$$\n\n**Answer.** $11.966\\times10^{-4}$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 360 210\" width=\"100%\" style=\"max-width:380px;height:auto\"><line x1=\"20\" y1=\"175\" x2=\"350\" y2=\"175\" stroke=\"#475569\" stroke-width=\"1.4\"/><rect x=\"34\" y=\"75\" width=\"14\" height=\"100\" fill=\"#94a3b8\" stroke=\"#1e293b\"/><text x=\"41\" y=\"191\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1e293b\">stack</text><path d=\"M48 75 Q160 64 350 44 M48 75 Q160 86 350 116\" fill=\"rgba(37,99,235,0.10)\" stroke=\"#2563eb\" stroke-width=\"1.3\"/><line x1=\"41\" y1=\"75\" x2=\"41\" y2=\"175\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"3 2\"/><text x=\"54\" y=\"70\" font-size=\"10\" fill=\"#dc2626\">H = 30 m</text><path d=\"M118 148 l20 0 m-5 -3 l5 3 -5 3\" stroke=\"#16a34a\" stroke-width=\"1.1\" fill=\"none\"/><text x=\"142\" y=\"151\" font-size=\"10\" fill=\"#16a34a\">u = 6 m/s</text><text x=\"206\" y=\"40\" font-size=\"10\" fill=\"#2563eb\">σ_y = 40 m,  σ_z = 15 m</text><text x=\"318\" y=\"171\" font-size=\"9\" fill=\"#1e293b\">x →</text></svg>",
+        "caption": "Elevated point source: H, u, σ_y and σ_z are marked on the diagram only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A stack emits $Q=100\\,\\text{g/s}$. Using the effective height $H$, wind speed $u$ and dispersion coefficients $\\sigma_y,\\sigma_z$ marked on the diagram, the ground-level centreline concentration (full reflection) is _____ ×10⁻⁴ g/m³.",
+      "answer": 11.9663,
+      "tolerance": 0.2
+    },
+    {
+      "id": "es-air-040",
+      "subject": "Air & Noise Pollution",
+      "topic": "Effective Stack Height",
+      "difficulty": "easy",
+      "marks": 1,
+      "archetype": "A",
+      "solution": "**Concept.** H = h_s + Δh, with both read from the figure.\n\n**Working.**\n$$100+25=125.$$\n\n**Answer.** $125\\,\\text{m}$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 220\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"20\" y1=\"185\" x2=\"300\" y2=\"185\" stroke=\"#475569\" stroke-width=\"1.4\"/><rect x=\"60\" y=\"85\" width=\"16\" height=\"100\" fill=\"#94a3b8\" stroke=\"#1e293b\"/><line x1=\"68\" y1=\"85\" x2=\"68\" y2=\"42\" stroke=\"#2563eb\" stroke-width=\"1.2\" stroke-dasharray=\"3 2\"/><circle cx=\"68\" cy=\"42\" r=\"3\" fill=\"#2563eb\"/><line x1=\"40\" y1=\"185\" x2=\"40\" y2=\"85\" stroke=\"#dc2626\" stroke-width=\"1\"/><text x=\"6\" y=\"138\" font-size=\"10\" fill=\"#dc2626\">h_s = 100 m</text><line x1=\"92\" y1=\"85\" x2=\"92\" y2=\"42\" stroke=\"#16a34a\" stroke-width=\"1\"/><text x=\"98\" y=\"66\" font-size=\"10\" fill=\"#16a34a\">Δh = 25 m</text><text x=\"150\" y=\"36\" font-size=\"9\" fill=\"#2563eb\">plume centreline</text></svg>",
+        "caption": "Physical stack height h_s and plume rise Δh marked on the diagram only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "For the chimney shown, the physical stack height $h_s$ and plume rise $\\Delta h$ are marked on the diagram. The effective stack height is _____ m.",
+      "answer": 125,
+      "tolerance": 0.1
+    },
+    {
+      "id": "es-air-041",
+      "subject": "Air & Noise Pollution",
+      "topic": "Noise — Combination",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** L = 10log(10^{L₁/10}+10^{L₂/10}).\n\n**Working.**\n$$10\\log(10^{68/10}+10^{73/10})=74.19.$$\n\n**Answer.** $74.19\\,\\text{dB}$",
+      "type": "NAT",
+      "stem": "Two sources $68\\,\\text{dB}$ and $73\\,\\text{dB}$ at a point. Combined level is _____ dB.",
+      "answer": 74.193,
+      "tolerance": 0.1
+    },
+    {
+      "id": "es-air-042",
+      "subject": "Air & Noise Pollution",
+      "topic": "Noise — Combination",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** L = 10log(10^{L₁/10}+10^{L₂/10}).\n\n**Working.**\n$$10\\log(10^{70/10}+10^{73/10})=74.76.$$\n\n**Answer.** $74.76\\,\\text{dB}$",
+      "type": "NAT",
+      "stem": "Two sources $70\\,\\text{dB}$ and $73\\,\\text{dB}$ at a point. Combined level is _____ dB.",
+      "answer": 74.764,
+      "tolerance": 0.1
+    },
+    {
+      "id": "es-air-043",
+      "subject": "Air & Noise Pollution",
+      "topic": "ESP — Deutsch–Anderson",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** η = 1 − e^{−wA/Q}, with A and w read from the figure.\n\n**Working.**\n$$(1-e^{-0.12\\times200/4})\\times100=99.75\\%.$$\n\n**Answer.** $99.75\\%$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 340 170\" width=\"100%\" style=\"max-width:360px;height:auto\"><rect x=\"40\" y=\"30\" width=\"260\" height=\"110\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.2\"/><line x1=\"80\" y1=\"30\" x2=\"80\" y2=\"140\" stroke=\"#94a3b8\" stroke-width=\"3\"/><line x1=\"150\" y1=\"30\" x2=\"150\" y2=\"140\" stroke=\"#94a3b8\" stroke-width=\"3\"/><line x1=\"220\" y1=\"30\" x2=\"220\" y2=\"140\" stroke=\"#94a3b8\" stroke-width=\"3\"/><line x1=\"115\" y1=\"35\" x2=\"115\" y2=\"135\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"2 2\"/><line x1=\"185\" y1=\"35\" x2=\"185\" y2=\"135\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"2 2\"/><path d=\"M14 70 l22 0 m-6 -3 l6 3 -6 3\" stroke=\"#16a34a\" stroke-width=\"1.2\" fill=\"none\"/><text x=\"6\" y=\"64\" font-size=\"9\" fill=\"#16a34a\">gas in</text><text x=\"60\" y=\"158\" font-size=\"9\" fill=\"#1e293b\">collecting area A = 200 m²</text><text x=\"150\" y=\"22\" font-size=\"9\" fill=\"#dc2626\">w = 0.12 m/s (drift)</text></svg>",
+        "caption": "Collecting area A and drift velocity w marked on the diagram only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "An ESP treats $4\\,\\text{m}^3/\\text{s}$. Reading the collecting area $A$ and drift velocity $w$ from the figure, its collection efficiency is _____ %.",
+      "answer": 99.752,
+      "tolerance": 0.1
+    },
+    {
+      "id": "es-air-044",
+      "subject": "Air & Noise Pollution",
+      "topic": "Gaussian Plume",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** C = Q/(πuσ_yσ_z)·exp(−H²/2σ_z²); H,u,σ_y,σ_z read from the figure.\n\n**Working.**\n$$\\dfrac{80}{\\pi\\times6\\times30\\times15}e^{-50^2/(2\\times15^2)}=0.00003646.$$\n\n**Answer.** $0.365\\times10^{-4}$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 360 210\" width=\"100%\" style=\"max-width:380px;height:auto\"><line x1=\"20\" y1=\"175\" x2=\"350\" y2=\"175\" stroke=\"#475569\" stroke-width=\"1.4\"/><rect x=\"34\" y=\"75\" width=\"14\" height=\"100\" fill=\"#94a3b8\" stroke=\"#1e293b\"/><text x=\"41\" y=\"191\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1e293b\">stack</text><path d=\"M48 75 Q160 64 350 44 M48 75 Q160 86 350 116\" fill=\"rgba(37,99,235,0.10)\" stroke=\"#2563eb\" stroke-width=\"1.3\"/><line x1=\"41\" y1=\"75\" x2=\"41\" y2=\"175\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"3 2\"/><text x=\"54\" y=\"70\" font-size=\"10\" fill=\"#dc2626\">H = 50 m</text><path d=\"M118 148 l20 0 m-5 -3 l5 3 -5 3\" stroke=\"#16a34a\" stroke-width=\"1.1\" fill=\"none\"/><text x=\"142\" y=\"151\" font-size=\"10\" fill=\"#16a34a\">u = 6 m/s</text><text x=\"206\" y=\"40\" font-size=\"10\" fill=\"#2563eb\">σ_y = 30 m,  σ_z = 15 m</text><text x=\"318\" y=\"171\" font-size=\"9\" fill=\"#1e293b\">x →</text></svg>",
+        "caption": "Elevated point source: H, u, σ_y and σ_z are marked on the diagram only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A stack emits $Q=80\\,\\text{g/s}$. Using the effective height $H$, wind speed $u$ and dispersion coefficients $\\sigma_y,\\sigma_z$ marked on the diagram, the ground-level centreline concentration (full reflection) is _____ ×10⁻⁴ g/m³.",
+      "answer": 0.3646,
+      "tolerance": 0.2
+    },
+    {
+      "id": "es-air-045",
+      "subject": "Air & Noise Pollution",
+      "topic": "Effective Stack Height",
+      "difficulty": "easy",
+      "marks": 1,
+      "archetype": "A",
+      "solution": "**Concept.** H = h_s + Δh, with both read from the figure.\n\n**Working.**\n$$60+30=90.$$\n\n**Answer.** $90\\,\\text{m}$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 220\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"20\" y1=\"185\" x2=\"300\" y2=\"185\" stroke=\"#475569\" stroke-width=\"1.4\"/><rect x=\"60\" y=\"85\" width=\"16\" height=\"100\" fill=\"#94a3b8\" stroke=\"#1e293b\"/><line x1=\"68\" y1=\"85\" x2=\"68\" y2=\"42\" stroke=\"#2563eb\" stroke-width=\"1.2\" stroke-dasharray=\"3 2\"/><circle cx=\"68\" cy=\"42\" r=\"3\" fill=\"#2563eb\"/><line x1=\"40\" y1=\"185\" x2=\"40\" y2=\"85\" stroke=\"#dc2626\" stroke-width=\"1\"/><text x=\"6\" y=\"138\" font-size=\"10\" fill=\"#dc2626\">h_s = 60 m</text><line x1=\"92\" y1=\"85\" x2=\"92\" y2=\"42\" stroke=\"#16a34a\" stroke-width=\"1\"/><text x=\"98\" y=\"66\" font-size=\"10\" fill=\"#16a34a\">Δh = 30 m</text><text x=\"150\" y=\"36\" font-size=\"9\" fill=\"#2563eb\">plume centreline</text></svg>",
+        "caption": "Physical stack height h_s and plume rise Δh marked on the diagram only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "For the chimney shown, the physical stack height $h_s$ and plume rise $\\Delta h$ are marked on the diagram. The effective stack height is _____ m.",
+      "answer": 90,
+      "tolerance": 0.1
+    },
+    {
+      "id": "es-air-046",
+      "subject": "Air & Noise Pollution",
+      "topic": "Effective Stack Height",
+      "difficulty": "easy",
+      "marks": 1,
+      "archetype": "A",
+      "solution": "**Concept.** H = h_s + Δh, with both read from the figure.\n\n**Working.**\n$$60+20=80.$$\n\n**Answer.** $80\\,\\text{m}$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 220\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"20\" y1=\"185\" x2=\"300\" y2=\"185\" stroke=\"#475569\" stroke-width=\"1.4\"/><rect x=\"60\" y=\"85\" width=\"16\" height=\"100\" fill=\"#94a3b8\" stroke=\"#1e293b\"/><line x1=\"68\" y1=\"85\" x2=\"68\" y2=\"42\" stroke=\"#2563eb\" stroke-width=\"1.2\" stroke-dasharray=\"3 2\"/><circle cx=\"68\" cy=\"42\" r=\"3\" fill=\"#2563eb\"/><line x1=\"40\" y1=\"185\" x2=\"40\" y2=\"85\" stroke=\"#dc2626\" stroke-width=\"1\"/><text x=\"6\" y=\"138\" font-size=\"10\" fill=\"#dc2626\">h_s = 60 m</text><line x1=\"92\" y1=\"85\" x2=\"92\" y2=\"42\" stroke=\"#16a34a\" stroke-width=\"1\"/><text x=\"98\" y=\"66\" font-size=\"10\" fill=\"#16a34a\">Δh = 20 m</text><text x=\"150\" y=\"36\" font-size=\"9\" fill=\"#2563eb\">plume centreline</text></svg>",
+        "caption": "Physical stack height h_s and plume rise Δh marked on the diagram only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "For the chimney shown, the physical stack height $h_s$ and plume rise $\\Delta h$ are marked on the diagram. The effective stack height is _____ m.",
+      "answer": 80,
+      "tolerance": 0.1
+    },
+    {
+      "id": "es-air-047",
+      "subject": "Air & Noise Pollution",
+      "topic": "Effective Stack Height",
+      "difficulty": "easy",
+      "marks": 1,
+      "archetype": "A",
+      "solution": "**Concept.** H = h_s + Δh, with both read from the figure.\n\n**Working.**\n$$100+15=115.$$\n\n**Answer.** $115\\,\\text{m}$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 220\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"20\" y1=\"185\" x2=\"300\" y2=\"185\" stroke=\"#475569\" stroke-width=\"1.4\"/><rect x=\"60\" y=\"85\" width=\"16\" height=\"100\" fill=\"#94a3b8\" stroke=\"#1e293b\"/><line x1=\"68\" y1=\"85\" x2=\"68\" y2=\"42\" stroke=\"#2563eb\" stroke-width=\"1.2\" stroke-dasharray=\"3 2\"/><circle cx=\"68\" cy=\"42\" r=\"3\" fill=\"#2563eb\"/><line x1=\"40\" y1=\"185\" x2=\"40\" y2=\"85\" stroke=\"#dc2626\" stroke-width=\"1\"/><text x=\"6\" y=\"138\" font-size=\"10\" fill=\"#dc2626\">h_s = 100 m</text><line x1=\"92\" y1=\"85\" x2=\"92\" y2=\"42\" stroke=\"#16a34a\" stroke-width=\"1\"/><text x=\"98\" y=\"66\" font-size=\"10\" fill=\"#16a34a\">Δh = 15 m</text><text x=\"150\" y=\"36\" font-size=\"9\" fill=\"#2563eb\">plume centreline</text></svg>",
+        "caption": "Physical stack height h_s and plume rise Δh marked on the diagram only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "For the chimney shown, the physical stack height $h_s$ and plume rise $\\Delta h$ are marked on the diagram. The effective stack height is _____ m.",
+      "answer": 115,
+      "tolerance": 0.1
+    },
+    {
+      "id": "es-air-048",
+      "subject": "Air & Noise Pollution",
+      "topic": "Effective Stack Height",
+      "difficulty": "easy",
+      "marks": 1,
+      "archetype": "A",
+      "solution": "**Concept.** H = h_s + Δh, with both read from the figure.\n\n**Working.**\n$$50+30=80.$$\n\n**Answer.** $80\\,\\text{m}$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 220\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"20\" y1=\"185\" x2=\"300\" y2=\"185\" stroke=\"#475569\" stroke-width=\"1.4\"/><rect x=\"60\" y=\"85\" width=\"16\" height=\"100\" fill=\"#94a3b8\" stroke=\"#1e293b\"/><line x1=\"68\" y1=\"85\" x2=\"68\" y2=\"42\" stroke=\"#2563eb\" stroke-width=\"1.2\" stroke-dasharray=\"3 2\"/><circle cx=\"68\" cy=\"42\" r=\"3\" fill=\"#2563eb\"/><line x1=\"40\" y1=\"185\" x2=\"40\" y2=\"85\" stroke=\"#dc2626\" stroke-width=\"1\"/><text x=\"6\" y=\"138\" font-size=\"10\" fill=\"#dc2626\">h_s = 50 m</text><line x1=\"92\" y1=\"85\" x2=\"92\" y2=\"42\" stroke=\"#16a34a\" stroke-width=\"1\"/><text x=\"98\" y=\"66\" font-size=\"10\" fill=\"#16a34a\">Δh = 30 m</text><text x=\"150\" y=\"36\" font-size=\"9\" fill=\"#2563eb\">plume centreline</text></svg>",
+        "caption": "Physical stack height h_s and plume rise Δh marked on the diagram only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "For the chimney shown, the physical stack height $h_s$ and plume rise $\\Delta h$ are marked on the diagram. The effective stack height is _____ m.",
+      "answer": 80,
+      "tolerance": 0.1
+    },
+    {
+      "id": "es-air-049",
+      "subject": "Air & Noise Pollution",
+      "topic": "ESP — Deutsch–Anderson",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** η = 1 − e^{−wA/Q}, with A and w read from the figure.\n\n**Working.**\n$$(1-e^{-0.1\\times250/6})\\times100=98.45\\%.$$\n\n**Answer.** $98.45\\%$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 340 170\" width=\"100%\" style=\"max-width:360px;height:auto\"><rect x=\"40\" y=\"30\" width=\"260\" height=\"110\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.2\"/><line x1=\"80\" y1=\"30\" x2=\"80\" y2=\"140\" stroke=\"#94a3b8\" stroke-width=\"3\"/><line x1=\"150\" y1=\"30\" x2=\"150\" y2=\"140\" stroke=\"#94a3b8\" stroke-width=\"3\"/><line x1=\"220\" y1=\"30\" x2=\"220\" y2=\"140\" stroke=\"#94a3b8\" stroke-width=\"3\"/><line x1=\"115\" y1=\"35\" x2=\"115\" y2=\"135\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"2 2\"/><line x1=\"185\" y1=\"35\" x2=\"185\" y2=\"135\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"2 2\"/><path d=\"M14 70 l22 0 m-6 -3 l6 3 -6 3\" stroke=\"#16a34a\" stroke-width=\"1.2\" fill=\"none\"/><text x=\"6\" y=\"64\" font-size=\"9\" fill=\"#16a34a\">gas in</text><text x=\"60\" y=\"158\" font-size=\"9\" fill=\"#1e293b\">collecting area A = 250 m²</text><text x=\"150\" y=\"22\" font-size=\"9\" fill=\"#dc2626\">w = 0.1 m/s (drift)</text></svg>",
+        "caption": "Collecting area A and drift velocity w marked on the diagram only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "An ESP treats $6\\,\\text{m}^3/\\text{s}$. Reading the collecting area $A$ and drift velocity $w$ from the figure, its collection efficiency is _____ %.",
+      "answer": 98.45,
+      "tolerance": 0.1
+    },
+    {
+      "id": "es-air-050",
+      "subject": "Air & Noise Pollution",
+      "topic": "ESP — Deutsch–Anderson",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** η = 1 − e^{−wA/Q}, with A and w read from the figure.\n\n**Working.**\n$$(1-e^{-0.1\\times300/5})\\times100=99.75\\%.$$\n\n**Answer.** $99.75\\%$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 340 170\" width=\"100%\" style=\"max-width:360px;height:auto\"><rect x=\"40\" y=\"30\" width=\"260\" height=\"110\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.2\"/><line x1=\"80\" y1=\"30\" x2=\"80\" y2=\"140\" stroke=\"#94a3b8\" stroke-width=\"3\"/><line x1=\"150\" y1=\"30\" x2=\"150\" y2=\"140\" stroke=\"#94a3b8\" stroke-width=\"3\"/><line x1=\"220\" y1=\"30\" x2=\"220\" y2=\"140\" stroke=\"#94a3b8\" stroke-width=\"3\"/><line x1=\"115\" y1=\"35\" x2=\"115\" y2=\"135\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"2 2\"/><line x1=\"185\" y1=\"35\" x2=\"185\" y2=\"135\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"2 2\"/><path d=\"M14 70 l22 0 m-6 -3 l6 3 -6 3\" stroke=\"#16a34a\" stroke-width=\"1.2\" fill=\"none\"/><text x=\"6\" y=\"64\" font-size=\"9\" fill=\"#16a34a\">gas in</text><text x=\"60\" y=\"158\" font-size=\"9\" fill=\"#1e293b\">collecting area A = 300 m²</text><text x=\"150\" y=\"22\" font-size=\"9\" fill=\"#dc2626\">w = 0.1 m/s (drift)</text></svg>",
+        "caption": "Collecting area A and drift velocity w marked on the diagram only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "An ESP treats $5\\,\\text{m}^3/\\text{s}$. Reading the collecting area $A$ and drift velocity $w$ from the figure, its collection efficiency is _____ %.",
+      "answer": 99.752,
+      "tolerance": 0.1
+    },
+    {
+      "id": "es-air-051",
+      "subject": "Air & Noise Pollution",
+      "topic": "Noise — Combination",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** L = 10log(10^{L₁/10}+10^{L₂/10}).\n\n**Working.**\n$$10\\log(10^{68/10}+10^{76/10})=76.64.$$\n\n**Answer.** $76.64\\,\\text{dB}$",
+      "type": "NAT",
+      "stem": "Two sources $68\\,\\text{dB}$ and $76\\,\\text{dB}$ at a point. Combined level is _____ dB.",
+      "answer": 76.639,
+      "tolerance": 0.1
+    },
+    {
+      "id": "es-air-052",
+      "subject": "Air & Noise Pollution",
+      "topic": "Gaussian Plume",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** C = Q/(πuσ_yσ_z)·exp(−H²/2σ_z²); H,u,σ_y,σ_z read from the figure.\n\n**Working.**\n$$\\dfrac{100}{\\pi\\times6\\times30\\times20}e^{-30^2/(2\\times20^2)}=0.00287056.$$\n\n**Answer.** $28.706\\times10^{-4}$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 360 210\" width=\"100%\" style=\"max-width:380px;height:auto\"><line x1=\"20\" y1=\"175\" x2=\"350\" y2=\"175\" stroke=\"#475569\" stroke-width=\"1.4\"/><rect x=\"34\" y=\"75\" width=\"14\" height=\"100\" fill=\"#94a3b8\" stroke=\"#1e293b\"/><text x=\"41\" y=\"191\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1e293b\">stack</text><path d=\"M48 75 Q160 64 350 44 M48 75 Q160 86 350 116\" fill=\"rgba(37,99,235,0.10)\" stroke=\"#2563eb\" stroke-width=\"1.3\"/><line x1=\"41\" y1=\"75\" x2=\"41\" y2=\"175\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"3 2\"/><text x=\"54\" y=\"70\" font-size=\"10\" fill=\"#dc2626\">H = 30 m</text><path d=\"M118 148 l20 0 m-5 -3 l5 3 -5 3\" stroke=\"#16a34a\" stroke-width=\"1.1\" fill=\"none\"/><text x=\"142\" y=\"151\" font-size=\"10\" fill=\"#16a34a\">u = 6 m/s</text><text x=\"206\" y=\"40\" font-size=\"10\" fill=\"#2563eb\">σ_y = 30 m,  σ_z = 20 m</text><text x=\"318\" y=\"171\" font-size=\"9\" fill=\"#1e293b\">x →</text></svg>",
+        "caption": "Elevated point source: H, u, σ_y and σ_z are marked on the diagram only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A stack emits $Q=100\\,\\text{g/s}$. Using the effective height $H$, wind speed $u$ and dispersion coefficients $\\sigma_y,\\sigma_z$ marked on the diagram, the ground-level centreline concentration (full reflection) is _____ ×10⁻⁴ g/m³.",
+      "answer": 28.7056,
+      "tolerance": 0.2
+    },
+    {
+      "id": "es-air-053",
+      "subject": "Air & Noise Pollution",
+      "topic": "ESP — Deutsch–Anderson",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** η = 1 − e^{−wA/Q}, with A and w read from the figure.\n\n**Working.**\n$$(1-e^{-0.1\\times200/6})\\times100=96.43\\%.$$\n\n**Answer.** $96.43\\%$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 340 170\" width=\"100%\" style=\"max-width:360px;height:auto\"><rect x=\"40\" y=\"30\" width=\"260\" height=\"110\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.2\"/><line x1=\"80\" y1=\"30\" x2=\"80\" y2=\"140\" stroke=\"#94a3b8\" stroke-width=\"3\"/><line x1=\"150\" y1=\"30\" x2=\"150\" y2=\"140\" stroke=\"#94a3b8\" stroke-width=\"3\"/><line x1=\"220\" y1=\"30\" x2=\"220\" y2=\"140\" stroke=\"#94a3b8\" stroke-width=\"3\"/><line x1=\"115\" y1=\"35\" x2=\"115\" y2=\"135\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"2 2\"/><line x1=\"185\" y1=\"35\" x2=\"185\" y2=\"135\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"2 2\"/><path d=\"M14 70 l22 0 m-6 -3 l6 3 -6 3\" stroke=\"#16a34a\" stroke-width=\"1.2\" fill=\"none\"/><text x=\"6\" y=\"64\" font-size=\"9\" fill=\"#16a34a\">gas in</text><text x=\"60\" y=\"158\" font-size=\"9\" fill=\"#1e293b\">collecting area A = 200 m²</text><text x=\"150\" y=\"22\" font-size=\"9\" fill=\"#dc2626\">w = 0.1 m/s (drift)</text></svg>",
+        "caption": "Collecting area A and drift velocity w marked on the diagram only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "An ESP treats $6\\,\\text{m}^3/\\text{s}$. Reading the collecting area $A$ and drift velocity $w$ from the figure, its collection efficiency is _____ %.",
+      "answer": 96.433,
+      "tolerance": 0.1
+    },
+    {
+      "id": "es-air-054",
+      "subject": "Air & Noise Pollution",
+      "topic": "ESP — Deutsch–Anderson",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** η = 1 − e^{−wA/Q}, with A and w read from the figure.\n\n**Working.**\n$$(1-e^{-0.08\\times300/8})\\times100=95.02\\%.$$\n\n**Answer.** $95.02\\%$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 340 170\" width=\"100%\" style=\"max-width:360px;height:auto\"><rect x=\"40\" y=\"30\" width=\"260\" height=\"110\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.2\"/><line x1=\"80\" y1=\"30\" x2=\"80\" y2=\"140\" stroke=\"#94a3b8\" stroke-width=\"3\"/><line x1=\"150\" y1=\"30\" x2=\"150\" y2=\"140\" stroke=\"#94a3b8\" stroke-width=\"3\"/><line x1=\"220\" y1=\"30\" x2=\"220\" y2=\"140\" stroke=\"#94a3b8\" stroke-width=\"3\"/><line x1=\"115\" y1=\"35\" x2=\"115\" y2=\"135\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"2 2\"/><line x1=\"185\" y1=\"35\" x2=\"185\" y2=\"135\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"2 2\"/><path d=\"M14 70 l22 0 m-6 -3 l6 3 -6 3\" stroke=\"#16a34a\" stroke-width=\"1.2\" fill=\"none\"/><text x=\"6\" y=\"64\" font-size=\"9\" fill=\"#16a34a\">gas in</text><text x=\"60\" y=\"158\" font-size=\"9\" fill=\"#1e293b\">collecting area A = 300 m²</text><text x=\"150\" y=\"22\" font-size=\"9\" fill=\"#dc2626\">w = 0.08 m/s (drift)</text></svg>",
+        "caption": "Collecting area A and drift velocity w marked on the diagram only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "An ESP treats $8\\,\\text{m}^3/\\text{s}$. Reading the collecting area $A$ and drift velocity $w$ from the figure, its collection efficiency is _____ %.",
+      "answer": 95.021,
+      "tolerance": 0.1
+    },
+    {
+      "id": "es-air-055",
+      "subject": "Air & Noise Pollution",
+      "topic": "Effective Stack Height",
+      "difficulty": "easy",
+      "marks": 1,
+      "archetype": "A",
+      "solution": "**Concept.** H = h_s + Δh, with both read from the figure.\n\n**Working.**\n$$100+30=130.$$\n\n**Answer.** $130\\,\\text{m}$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 220\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"20\" y1=\"185\" x2=\"300\" y2=\"185\" stroke=\"#475569\" stroke-width=\"1.4\"/><rect x=\"60\" y=\"85\" width=\"16\" height=\"100\" fill=\"#94a3b8\" stroke=\"#1e293b\"/><line x1=\"68\" y1=\"85\" x2=\"68\" y2=\"42\" stroke=\"#2563eb\" stroke-width=\"1.2\" stroke-dasharray=\"3 2\"/><circle cx=\"68\" cy=\"42\" r=\"3\" fill=\"#2563eb\"/><line x1=\"40\" y1=\"185\" x2=\"40\" y2=\"85\" stroke=\"#dc2626\" stroke-width=\"1\"/><text x=\"6\" y=\"138\" font-size=\"10\" fill=\"#dc2626\">h_s = 100 m</text><line x1=\"92\" y1=\"85\" x2=\"92\" y2=\"42\" stroke=\"#16a34a\" stroke-width=\"1\"/><text x=\"98\" y=\"66\" font-size=\"10\" fill=\"#16a34a\">Δh = 30 m</text><text x=\"150\" y=\"36\" font-size=\"9\" fill=\"#2563eb\">plume centreline</text></svg>",
+        "caption": "Physical stack height h_s and plume rise Δh marked on the diagram only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "For the chimney shown, the physical stack height $h_s$ and plume rise $\\Delta h$ are marked on the diagram. The effective stack height is _____ m.",
+      "answer": 130,
+      "tolerance": 0.1
+    },
+    {
+      "id": "es-air-056",
+      "subject": "Air & Noise Pollution",
+      "topic": "Gaussian Plume",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** C = Q/(πuσ_yσ_z)·exp(−H²/2σ_z²); H,u,σ_y,σ_z read from the figure.\n\n**Working.**\n$$\\dfrac{120}{\\pi\\times3\\times25\\times25}e^{-30^2/(2\\times25^2)}=0.00991604.$$\n\n**Answer.** $99.16\\times10^{-4}$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 360 210\" width=\"100%\" style=\"max-width:380px;height:auto\"><line x1=\"20\" y1=\"175\" x2=\"350\" y2=\"175\" stroke=\"#475569\" stroke-width=\"1.4\"/><rect x=\"34\" y=\"75\" width=\"14\" height=\"100\" fill=\"#94a3b8\" stroke=\"#1e293b\"/><text x=\"41\" y=\"191\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1e293b\">stack</text><path d=\"M48 75 Q160 64 350 44 M48 75 Q160 86 350 116\" fill=\"rgba(37,99,235,0.10)\" stroke=\"#2563eb\" stroke-width=\"1.3\"/><line x1=\"41\" y1=\"75\" x2=\"41\" y2=\"175\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"3 2\"/><text x=\"54\" y=\"70\" font-size=\"10\" fill=\"#dc2626\">H = 30 m</text><path d=\"M118 148 l20 0 m-5 -3 l5 3 -5 3\" stroke=\"#16a34a\" stroke-width=\"1.1\" fill=\"none\"/><text x=\"142\" y=\"151\" font-size=\"10\" fill=\"#16a34a\">u = 3 m/s</text><text x=\"206\" y=\"40\" font-size=\"10\" fill=\"#2563eb\">σ_y = 25 m,  σ_z = 25 m</text><text x=\"318\" y=\"171\" font-size=\"9\" fill=\"#1e293b\">x →</text></svg>",
+        "caption": "Elevated point source: H, u, σ_y and σ_z are marked on the diagram only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A stack emits $Q=120\\,\\text{g/s}$. Using the effective height $H$, wind speed $u$ and dispersion coefficients $\\sigma_y,\\sigma_z$ marked on the diagram, the ground-level centreline concentration (full reflection) is _____ ×10⁻⁴ g/m³.",
+      "answer": 99.1604,
+      "tolerance": 0.2
+    },
+    {
+      "id": "es-air-057",
+      "subject": "Air & Noise Pollution",
+      "topic": "Noise — Addition",
+      "difficulty": "medium",
+      "marks": 2,
+      "archetype": "A",
+      "solution": "**Concept.** L = L₁ + 10log n.\n\n**Working.**\n$$75+10\\log2=78.01.$$\n\n**Answer.** $78.01\\,\\text{dB}$",
+      "type": "NAT",
+      "stem": "$2$ identical sources each $75\\,\\text{dB}$. Combined level is _____ dB.",
+      "answer": 78.01,
+      "tolerance": 0.1
+    },
+    {
+      "id": "es-air-058",
+      "subject": "Air & Noise Pollution",
+      "topic": "Noise — Addition",
+      "difficulty": "medium",
+      "marks": 2,
+      "archetype": "A",
+      "solution": "**Concept.** L = L₁ + 10log n.\n\n**Working.**\n$$80+10\\log10=90.$$\n\n**Answer.** $90\\,\\text{dB}$",
+      "type": "NAT",
+      "stem": "$10$ identical sources each $80\\,\\text{dB}$. Combined level is _____ dB.",
+      "answer": 90,
+      "tolerance": 0.1
+    },
+    {
+      "id": "es-air-059",
+      "subject": "Air & Noise Pollution",
+      "topic": "Effective Stack Height",
+      "difficulty": "easy",
+      "marks": 1,
+      "archetype": "A",
+      "solution": "**Concept.** H = h_s + Δh, with both read from the figure.\n\n**Working.**\n$$60+25=85.$$\n\n**Answer.** $85\\,\\text{m}$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 220\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"20\" y1=\"185\" x2=\"300\" y2=\"185\" stroke=\"#475569\" stroke-width=\"1.4\"/><rect x=\"60\" y=\"85\" width=\"16\" height=\"100\" fill=\"#94a3b8\" stroke=\"#1e293b\"/><line x1=\"68\" y1=\"85\" x2=\"68\" y2=\"42\" stroke=\"#2563eb\" stroke-width=\"1.2\" stroke-dasharray=\"3 2\"/><circle cx=\"68\" cy=\"42\" r=\"3\" fill=\"#2563eb\"/><line x1=\"40\" y1=\"185\" x2=\"40\" y2=\"85\" stroke=\"#dc2626\" stroke-width=\"1\"/><text x=\"6\" y=\"138\" font-size=\"10\" fill=\"#dc2626\">h_s = 60 m</text><line x1=\"92\" y1=\"85\" x2=\"92\" y2=\"42\" stroke=\"#16a34a\" stroke-width=\"1\"/><text x=\"98\" y=\"66\" font-size=\"10\" fill=\"#16a34a\">Δh = 25 m</text><text x=\"150\" y=\"36\" font-size=\"9\" fill=\"#2563eb\">plume centreline</text></svg>",
+        "caption": "Physical stack height h_s and plume rise Δh marked on the diagram only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "For the chimney shown, the physical stack height $h_s$ and plume rise $\\Delta h$ are marked on the diagram. The effective stack height is _____ m.",
+      "answer": 85,
+      "tolerance": 0.1
+    },
+    {
+      "id": "es-air-060",
+      "subject": "Air & Noise Pollution",
+      "topic": "Effective Stack Height",
+      "difficulty": "easy",
+      "marks": 1,
+      "archetype": "A",
+      "solution": "**Concept.** H = h_s + Δh, with both read from the figure.\n\n**Working.**\n$$60+15=75.$$\n\n**Answer.** $75\\,\\text{m}$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 220\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"20\" y1=\"185\" x2=\"300\" y2=\"185\" stroke=\"#475569\" stroke-width=\"1.4\"/><rect x=\"60\" y=\"85\" width=\"16\" height=\"100\" fill=\"#94a3b8\" stroke=\"#1e293b\"/><line x1=\"68\" y1=\"85\" x2=\"68\" y2=\"42\" stroke=\"#2563eb\" stroke-width=\"1.2\" stroke-dasharray=\"3 2\"/><circle cx=\"68\" cy=\"42\" r=\"3\" fill=\"#2563eb\"/><line x1=\"40\" y1=\"185\" x2=\"40\" y2=\"85\" stroke=\"#dc2626\" stroke-width=\"1\"/><text x=\"6\" y=\"138\" font-size=\"10\" fill=\"#dc2626\">h_s = 60 m</text><line x1=\"92\" y1=\"85\" x2=\"92\" y2=\"42\" stroke=\"#16a34a\" stroke-width=\"1\"/><text x=\"98\" y=\"66\" font-size=\"10\" fill=\"#16a34a\">Δh = 15 m</text><text x=\"150\" y=\"36\" font-size=\"9\" fill=\"#2563eb\">plume centreline</text></svg>",
+        "caption": "Physical stack height h_s and plume rise Δh marked on the diagram only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "For the chimney shown, the physical stack height $h_s$ and plume rise $\\Delta h$ are marked on the diagram. The effective stack height is _____ m.",
+      "answer": 75,
+      "tolerance": 0.1
+    },
+    {
+      "id": "es-air-061",
+      "subject": "Air & Noise Pollution",
+      "topic": "ESP — Deutsch–Anderson",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** η = 1 − e^{−wA/Q}, with A and w read from the figure.\n\n**Working.**\n$$(1-e^{-0.12\\times300/6})\\times100=99.75\\%.$$\n\n**Answer.** $99.75\\%$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 340 170\" width=\"100%\" style=\"max-width:360px;height:auto\"><rect x=\"40\" y=\"30\" width=\"260\" height=\"110\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.2\"/><line x1=\"80\" y1=\"30\" x2=\"80\" y2=\"140\" stroke=\"#94a3b8\" stroke-width=\"3\"/><line x1=\"150\" y1=\"30\" x2=\"150\" y2=\"140\" stroke=\"#94a3b8\" stroke-width=\"3\"/><line x1=\"220\" y1=\"30\" x2=\"220\" y2=\"140\" stroke=\"#94a3b8\" stroke-width=\"3\"/><line x1=\"115\" y1=\"35\" x2=\"115\" y2=\"135\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"2 2\"/><line x1=\"185\" y1=\"35\" x2=\"185\" y2=\"135\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"2 2\"/><path d=\"M14 70 l22 0 m-6 -3 l6 3 -6 3\" stroke=\"#16a34a\" stroke-width=\"1.2\" fill=\"none\"/><text x=\"6\" y=\"64\" font-size=\"9\" fill=\"#16a34a\">gas in</text><text x=\"60\" y=\"158\" font-size=\"9\" fill=\"#1e293b\">collecting area A = 300 m²</text><text x=\"150\" y=\"22\" font-size=\"9\" fill=\"#dc2626\">w = 0.12 m/s (drift)</text></svg>",
+        "caption": "Collecting area A and drift velocity w marked on the diagram only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "An ESP treats $6\\,\\text{m}^3/\\text{s}$. Reading the collecting area $A$ and drift velocity $w$ from the figure, its collection efficiency is _____ %.",
+      "answer": 99.752,
+      "tolerance": 0.1
+    },
+    {
+      "id": "es-air-062",
+      "subject": "Air & Noise Pollution",
+      "topic": "Effective Stack Height",
+      "difficulty": "easy",
+      "marks": 1,
+      "archetype": "A",
+      "solution": "**Concept.** H = h_s + Δh, with both read from the figure.\n\n**Working.**\n$$80+30=110.$$\n\n**Answer.** $110\\,\\text{m}$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 220\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"20\" y1=\"185\" x2=\"300\" y2=\"185\" stroke=\"#475569\" stroke-width=\"1.4\"/><rect x=\"60\" y=\"85\" width=\"16\" height=\"100\" fill=\"#94a3b8\" stroke=\"#1e293b\"/><line x1=\"68\" y1=\"85\" x2=\"68\" y2=\"42\" stroke=\"#2563eb\" stroke-width=\"1.2\" stroke-dasharray=\"3 2\"/><circle cx=\"68\" cy=\"42\" r=\"3\" fill=\"#2563eb\"/><line x1=\"40\" y1=\"185\" x2=\"40\" y2=\"85\" stroke=\"#dc2626\" stroke-width=\"1\"/><text x=\"6\" y=\"138\" font-size=\"10\" fill=\"#dc2626\">h_s = 80 m</text><line x1=\"92\" y1=\"85\" x2=\"92\" y2=\"42\" stroke=\"#16a34a\" stroke-width=\"1\"/><text x=\"98\" y=\"66\" font-size=\"10\" fill=\"#16a34a\">Δh = 30 m</text><text x=\"150\" y=\"36\" font-size=\"9\" fill=\"#2563eb\">plume centreline</text></svg>",
+        "caption": "Physical stack height h_s and plume rise Δh marked on the diagram only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "For the chimney shown, the physical stack height $h_s$ and plume rise $\\Delta h$ are marked on the diagram. The effective stack height is _____ m.",
+      "answer": 110,
+      "tolerance": 0.1
+    },
+    {
+      "id": "es-air-063",
+      "subject": "Air & Noise Pollution",
+      "topic": "Gaussian Plume",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** C = Q/(πuσ_yσ_z)·exp(−H²/2σ_z²); H,u,σ_y,σ_z read from the figure.\n\n**Working.**\n$$\\dfrac{80}{\\pi\\times5\\times40\\times20}e^{-50^2/(2\\times20^2)}=0.00027971.$$\n\n**Answer.** $2.797\\times10^{-4}$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 360 210\" width=\"100%\" style=\"max-width:380px;height:auto\"><line x1=\"20\" y1=\"175\" x2=\"350\" y2=\"175\" stroke=\"#475569\" stroke-width=\"1.4\"/><rect x=\"34\" y=\"75\" width=\"14\" height=\"100\" fill=\"#94a3b8\" stroke=\"#1e293b\"/><text x=\"41\" y=\"191\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1e293b\">stack</text><path d=\"M48 75 Q160 64 350 44 M48 75 Q160 86 350 116\" fill=\"rgba(37,99,235,0.10)\" stroke=\"#2563eb\" stroke-width=\"1.3\"/><line x1=\"41\" y1=\"75\" x2=\"41\" y2=\"175\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"3 2\"/><text x=\"54\" y=\"70\" font-size=\"10\" fill=\"#dc2626\">H = 50 m</text><path d=\"M118 148 l20 0 m-5 -3 l5 3 -5 3\" stroke=\"#16a34a\" stroke-width=\"1.1\" fill=\"none\"/><text x=\"142\" y=\"151\" font-size=\"10\" fill=\"#16a34a\">u = 5 m/s</text><text x=\"206\" y=\"40\" font-size=\"10\" fill=\"#2563eb\">σ_y = 40 m,  σ_z = 20 m</text><text x=\"318\" y=\"171\" font-size=\"9\" fill=\"#1e293b\">x →</text></svg>",
+        "caption": "Elevated point source: H, u, σ_y and σ_z are marked on the diagram only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A stack emits $Q=80\\,\\text{g/s}$. Using the effective height $H$, wind speed $u$ and dispersion coefficients $\\sigma_y,\\sigma_z$ marked on the diagram, the ground-level centreline concentration (full reflection) is _____ ×10⁻⁴ g/m³.",
+      "answer": 2.7971,
+      "tolerance": 0.2
+    },
+    {
+      "id": "es-air-064",
+      "subject": "Air & Noise Pollution",
+      "topic": "ESP — Deutsch–Anderson",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** η = 1 − e^{−wA/Q}, with A and w read from the figure.\n\n**Working.**\n$$(1-e^{-0.1\\times250/4})\\times100=99.81\\%.$$\n\n**Answer.** $99.81\\%$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 340 170\" width=\"100%\" style=\"max-width:360px;height:auto\"><rect x=\"40\" y=\"30\" width=\"260\" height=\"110\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.2\"/><line x1=\"80\" y1=\"30\" x2=\"80\" y2=\"140\" stroke=\"#94a3b8\" stroke-width=\"3\"/><line x1=\"150\" y1=\"30\" x2=\"150\" y2=\"140\" stroke=\"#94a3b8\" stroke-width=\"3\"/><line x1=\"220\" y1=\"30\" x2=\"220\" y2=\"140\" stroke=\"#94a3b8\" stroke-width=\"3\"/><line x1=\"115\" y1=\"35\" x2=\"115\" y2=\"135\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"2 2\"/><line x1=\"185\" y1=\"35\" x2=\"185\" y2=\"135\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"2 2\"/><path d=\"M14 70 l22 0 m-6 -3 l6 3 -6 3\" stroke=\"#16a34a\" stroke-width=\"1.2\" fill=\"none\"/><text x=\"6\" y=\"64\" font-size=\"9\" fill=\"#16a34a\">gas in</text><text x=\"60\" y=\"158\" font-size=\"9\" fill=\"#1e293b\">collecting area A = 250 m²</text><text x=\"150\" y=\"22\" font-size=\"9\" fill=\"#dc2626\">w = 0.1 m/s (drift)</text></svg>",
+        "caption": "Collecting area A and drift velocity w marked on the diagram only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "An ESP treats $4\\,\\text{m}^3/\\text{s}$. Reading the collecting area $A$ and drift velocity $w$ from the figure, its collection efficiency is _____ %.",
+      "answer": 99.807,
+      "tolerance": 0.1
+    },
+    {
+      "id": "es-air-065",
+      "subject": "Air & Noise Pollution",
+      "topic": "Gaussian Plume",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** C = Q/(πuσ_yσ_z)·exp(−H²/2σ_z²); H,u,σ_y,σ_z read from the figure.\n\n**Working.**\n$$\\dfrac{100}{\\pi\\times3\\times30\\times15}e^{-60^2/(2\\times15^2)}=0.00000791.$$\n\n**Answer.** $0.079\\times10^{-4}$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 360 210\" width=\"100%\" style=\"max-width:380px;height:auto\"><line x1=\"20\" y1=\"175\" x2=\"350\" y2=\"175\" stroke=\"#475569\" stroke-width=\"1.4\"/><rect x=\"34\" y=\"75\" width=\"14\" height=\"100\" fill=\"#94a3b8\" stroke=\"#1e293b\"/><text x=\"41\" y=\"191\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1e293b\">stack</text><path d=\"M48 75 Q160 64 350 44 M48 75 Q160 86 350 116\" fill=\"rgba(37,99,235,0.10)\" stroke=\"#2563eb\" stroke-width=\"1.3\"/><line x1=\"41\" y1=\"75\" x2=\"41\" y2=\"175\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"3 2\"/><text x=\"54\" y=\"70\" font-size=\"10\" fill=\"#dc2626\">H = 60 m</text><path d=\"M118 148 l20 0 m-5 -3 l5 3 -5 3\" stroke=\"#16a34a\" stroke-width=\"1.1\" fill=\"none\"/><text x=\"142\" y=\"151\" font-size=\"10\" fill=\"#16a34a\">u = 3 m/s</text><text x=\"206\" y=\"40\" font-size=\"10\" fill=\"#2563eb\">σ_y = 30 m,  σ_z = 15 m</text><text x=\"318\" y=\"171\" font-size=\"9\" fill=\"#1e293b\">x →</text></svg>",
+        "caption": "Elevated point source: H, u, σ_y and σ_z are marked on the diagram only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A stack emits $Q=100\\,\\text{g/s}$. Using the effective height $H$, wind speed $u$ and dispersion coefficients $\\sigma_y,\\sigma_z$ marked on the diagram, the ground-level centreline concentration (full reflection) is _____ ×10⁻⁴ g/m³.",
+      "answer": 0.0791,
+      "tolerance": 0.2
+    },
+    {
+      "id": "es-air-066",
+      "subject": "Air & Noise Pollution",
+      "topic": "Gaussian Plume",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** C = Q/(πuσ_yσ_z)·exp(−H²/2σ_z²); H,u,σ_y,σ_z read from the figure.\n\n**Working.**\n$$\\dfrac{80}{\\pi\\times4\\times25\\times20}e^{-50^2/(2\\times20^2)}=0.00055942.$$\n\n**Answer.** $5.594\\times10^{-4}$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 360 210\" width=\"100%\" style=\"max-width:380px;height:auto\"><line x1=\"20\" y1=\"175\" x2=\"350\" y2=\"175\" stroke=\"#475569\" stroke-width=\"1.4\"/><rect x=\"34\" y=\"75\" width=\"14\" height=\"100\" fill=\"#94a3b8\" stroke=\"#1e293b\"/><text x=\"41\" y=\"191\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1e293b\">stack</text><path d=\"M48 75 Q160 64 350 44 M48 75 Q160 86 350 116\" fill=\"rgba(37,99,235,0.10)\" stroke=\"#2563eb\" stroke-width=\"1.3\"/><line x1=\"41\" y1=\"75\" x2=\"41\" y2=\"175\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"3 2\"/><text x=\"54\" y=\"70\" font-size=\"10\" fill=\"#dc2626\">H = 50 m</text><path d=\"M118 148 l20 0 m-5 -3 l5 3 -5 3\" stroke=\"#16a34a\" stroke-width=\"1.1\" fill=\"none\"/><text x=\"142\" y=\"151\" font-size=\"10\" fill=\"#16a34a\">u = 4 m/s</text><text x=\"206\" y=\"40\" font-size=\"10\" fill=\"#2563eb\">σ_y = 25 m,  σ_z = 20 m</text><text x=\"318\" y=\"171\" font-size=\"9\" fill=\"#1e293b\">x →</text></svg>",
+        "caption": "Elevated point source: H, u, σ_y and σ_z are marked on the diagram only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A stack emits $Q=80\\,\\text{g/s}$. Using the effective height $H$, wind speed $u$ and dispersion coefficients $\\sigma_y,\\sigma_z$ marked on the diagram, the ground-level centreline concentration (full reflection) is _____ ×10⁻⁴ g/m³.",
+      "answer": 5.5942,
+      "tolerance": 0.2
+    },
+    {
+      "id": "es-air-067",
+      "subject": "Air & Noise Pollution",
+      "topic": "ESP — Deutsch–Anderson",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** η = 1 − e^{−wA/Q}, with A and w read from the figure.\n\n**Working.**\n$$(1-e^{-0.08\\times200/4})\\times100=98.17\\%.$$\n\n**Answer.** $98.17\\%$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 340 170\" width=\"100%\" style=\"max-width:360px;height:auto\"><rect x=\"40\" y=\"30\" width=\"260\" height=\"110\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.2\"/><line x1=\"80\" y1=\"30\" x2=\"80\" y2=\"140\" stroke=\"#94a3b8\" stroke-width=\"3\"/><line x1=\"150\" y1=\"30\" x2=\"150\" y2=\"140\" stroke=\"#94a3b8\" stroke-width=\"3\"/><line x1=\"220\" y1=\"30\" x2=\"220\" y2=\"140\" stroke=\"#94a3b8\" stroke-width=\"3\"/><line x1=\"115\" y1=\"35\" x2=\"115\" y2=\"135\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"2 2\"/><line x1=\"185\" y1=\"35\" x2=\"185\" y2=\"135\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"2 2\"/><path d=\"M14 70 l22 0 m-6 -3 l6 3 -6 3\" stroke=\"#16a34a\" stroke-width=\"1.2\" fill=\"none\"/><text x=\"6\" y=\"64\" font-size=\"9\" fill=\"#16a34a\">gas in</text><text x=\"60\" y=\"158\" font-size=\"9\" fill=\"#1e293b\">collecting area A = 200 m²</text><text x=\"150\" y=\"22\" font-size=\"9\" fill=\"#dc2626\">w = 0.08 m/s (drift)</text></svg>",
+        "caption": "Collecting area A and drift velocity w marked on the diagram only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "An ESP treats $4\\,\\text{m}^3/\\text{s}$. Reading the collecting area $A$ and drift velocity $w$ from the figure, its collection efficiency is _____ %.",
+      "answer": 98.168,
+      "tolerance": 0.1
+    },
+    {
+      "id": "es-air-068",
+      "subject": "Air & Noise Pollution",
+      "topic": "ESP — Deutsch–Anderson",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** η = 1 − e^{−wA/Q}, with A and w read from the figure.\n\n**Working.**\n$$(1-e^{-0.1\\times200/5})\\times100=98.17\\%.$$\n\n**Answer.** $98.17\\%$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 340 170\" width=\"100%\" style=\"max-width:360px;height:auto\"><rect x=\"40\" y=\"30\" width=\"260\" height=\"110\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.2\"/><line x1=\"80\" y1=\"30\" x2=\"80\" y2=\"140\" stroke=\"#94a3b8\" stroke-width=\"3\"/><line x1=\"150\" y1=\"30\" x2=\"150\" y2=\"140\" stroke=\"#94a3b8\" stroke-width=\"3\"/><line x1=\"220\" y1=\"30\" x2=\"220\" y2=\"140\" stroke=\"#94a3b8\" stroke-width=\"3\"/><line x1=\"115\" y1=\"35\" x2=\"115\" y2=\"135\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"2 2\"/><line x1=\"185\" y1=\"35\" x2=\"185\" y2=\"135\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"2 2\"/><path d=\"M14 70 l22 0 m-6 -3 l6 3 -6 3\" stroke=\"#16a34a\" stroke-width=\"1.2\" fill=\"none\"/><text x=\"6\" y=\"64\" font-size=\"9\" fill=\"#16a34a\">gas in</text><text x=\"60\" y=\"158\" font-size=\"9\" fill=\"#1e293b\">collecting area A = 200 m²</text><text x=\"150\" y=\"22\" font-size=\"9\" fill=\"#dc2626\">w = 0.1 m/s (drift)</text></svg>",
+        "caption": "Collecting area A and drift velocity w marked on the diagram only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "An ESP treats $5\\,\\text{m}^3/\\text{s}$. Reading the collecting area $A$ and drift velocity $w$ from the figure, its collection efficiency is _____ %.",
+      "answer": 98.168,
+      "tolerance": 0.1
+    },
+    {
+      "id": "es-air-069",
+      "subject": "Air & Noise Pollution",
+      "topic": "Gaussian Plume",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** C = Q/(πuσ_yσ_z)·exp(−H²/2σ_z²); H,u,σ_y,σ_z read from the figure.\n\n**Working.**\n$$\\dfrac{120}{\\pi\\times6\\times25\\times15}e^{-50^2/(2\\times15^2)}=0.00006563.$$\n\n**Answer.** $0.656\\times10^{-4}$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 360 210\" width=\"100%\" style=\"max-width:380px;height:auto\"><line x1=\"20\" y1=\"175\" x2=\"350\" y2=\"175\" stroke=\"#475569\" stroke-width=\"1.4\"/><rect x=\"34\" y=\"75\" width=\"14\" height=\"100\" fill=\"#94a3b8\" stroke=\"#1e293b\"/><text x=\"41\" y=\"191\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1e293b\">stack</text><path d=\"M48 75 Q160 64 350 44 M48 75 Q160 86 350 116\" fill=\"rgba(37,99,235,0.10)\" stroke=\"#2563eb\" stroke-width=\"1.3\"/><line x1=\"41\" y1=\"75\" x2=\"41\" y2=\"175\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"3 2\"/><text x=\"54\" y=\"70\" font-size=\"10\" fill=\"#dc2626\">H = 50 m</text><path d=\"M118 148 l20 0 m-5 -3 l5 3 -5 3\" stroke=\"#16a34a\" stroke-width=\"1.1\" fill=\"none\"/><text x=\"142\" y=\"151\" font-size=\"10\" fill=\"#16a34a\">u = 6 m/s</text><text x=\"206\" y=\"40\" font-size=\"10\" fill=\"#2563eb\">σ_y = 25 m,  σ_z = 15 m</text><text x=\"318\" y=\"171\" font-size=\"9\" fill=\"#1e293b\">x →</text></svg>",
+        "caption": "Elevated point source: H, u, σ_y and σ_z are marked on the diagram only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A stack emits $Q=120\\,\\text{g/s}$. Using the effective height $H$, wind speed $u$ and dispersion coefficients $\\sigma_y,\\sigma_z$ marked on the diagram, the ground-level centreline concentration (full reflection) is _____ ×10⁻⁴ g/m³.",
+      "answer": 0.6563,
+      "tolerance": 0.2
+    },
+    {
+      "id": "es-air-070",
+      "subject": "Air & Noise Pollution",
+      "topic": "ESP — Deutsch–Anderson",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** η = 1 − e^{−wA/Q}, with A and w read from the figure.\n\n**Working.**\n$$(1-e^{-0.12\\times200/8})\\times100=95.02\\%.$$\n\n**Answer.** $95.02\\%$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 340 170\" width=\"100%\" style=\"max-width:360px;height:auto\"><rect x=\"40\" y=\"30\" width=\"260\" height=\"110\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.2\"/><line x1=\"80\" y1=\"30\" x2=\"80\" y2=\"140\" stroke=\"#94a3b8\" stroke-width=\"3\"/><line x1=\"150\" y1=\"30\" x2=\"150\" y2=\"140\" stroke=\"#94a3b8\" stroke-width=\"3\"/><line x1=\"220\" y1=\"30\" x2=\"220\" y2=\"140\" stroke=\"#94a3b8\" stroke-width=\"3\"/><line x1=\"115\" y1=\"35\" x2=\"115\" y2=\"135\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"2 2\"/><line x1=\"185\" y1=\"35\" x2=\"185\" y2=\"135\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"2 2\"/><path d=\"M14 70 l22 0 m-6 -3 l6 3 -6 3\" stroke=\"#16a34a\" stroke-width=\"1.2\" fill=\"none\"/><text x=\"6\" y=\"64\" font-size=\"9\" fill=\"#16a34a\">gas in</text><text x=\"60\" y=\"158\" font-size=\"9\" fill=\"#1e293b\">collecting area A = 200 m²</text><text x=\"150\" y=\"22\" font-size=\"9\" fill=\"#dc2626\">w = 0.12 m/s (drift)</text></svg>",
+        "caption": "Collecting area A and drift velocity w marked on the diagram only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "An ESP treats $8\\,\\text{m}^3/\\text{s}$. Reading the collecting area $A$ and drift velocity $w$ from the figure, its collection efficiency is _____ %.",
+      "answer": 95.021,
+      "tolerance": 0.1
+    }
+  ]
+}

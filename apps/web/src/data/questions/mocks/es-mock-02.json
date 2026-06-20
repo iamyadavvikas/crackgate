@@ -1,0 +1,1143 @@
+{
+  "id": "es-mock-02",
+  "title": "ES Mock 02 — Air & Noise Pollution Heavy",
+  "tier": "subject",
+  "duration": 180,
+  "pattern": "GATE 2027 ES (65 Q · 100 marks · 3 hours)",
+  "totalMarks": 100,
+  "sections": [
+    {
+      "name": "General Aptitude",
+      "count": 10,
+      "marks": 15
+    },
+    {
+      "name": "Technical (1-mark)",
+      "count": 25,
+      "marks": 25
+    },
+    {
+      "name": "Technical (2-mark)",
+      "count": 30,
+      "marks": 60
+    }
+  ],
+  "negativeMarking": {
+    "mcq1": -0.3333333333333333,
+    "mcq2": -0.6666666666666666,
+    "nat": 0,
+    "msq": 0
+  },
+  "seed": 3964750903,
+  "locked": false,
+  "questions": [
+    {
+      "id": 1,
+      "subject": "General Aptitude",
+      "topic": "Verbal Aptitude — Grammar",
+      "section": "General Aptitude",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "Choose the correct preposition: 'The ore sample was analysed ____ traces of gold.'",
+      "options": [
+        "for",
+        "at",
+        "into",
+        "by"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** 'Analyse for' is the idiomatic collocation when testing for the presence of something.\n\n**Working.** We test a sample 'for' a substance; the other prepositions do not fit this sense.\n\n**Answer.** for."
+    },
+    {
+      "id": 2,
+      "subject": "General Aptitude",
+      "topic": "Quantitative Aptitude — Time, Speed and Distance",
+      "section": "General Aptitude",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "A car travels $180$ km in $3$ hours. Its average speed is _____ km/h.",
+      "answer": 60,
+      "tolerance": 0.01,
+      "solution": "**Concept.** Speed = distance / time.\n\n**Working.** $\\dfrac{180}{3}=60$ km/h.\n\n**Answer.** $60$ km/h."
+    },
+    {
+      "id": 3,
+      "subject": "General Aptitude",
+      "topic": "Quantitative Aptitude — Ratio and Proportion",
+      "section": "General Aptitude",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "An amount of $600$ is divided in the ratio $2:3$. The larger part is _____ .",
+      "answer": 360,
+      "tolerance": 0.01,
+      "solution": "**Concept.** Each share equals the total times its ratio fraction.\n\n**Working.** Larger fraction $=\\dfrac{3}{2+3}=\\dfrac{3}{5}$, so\n$$600\\times\\frac{3}{5}=360$$\n\n**Answer.** $360$."
+    },
+    {
+      "id": 4,
+      "subject": "General Aptitude",
+      "topic": "Quantitative Aptitude — Percentage",
+      "section": "General Aptitude",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "What is $35\\%$ of $240$?",
+      "answer": 84,
+      "tolerance": 0.01,
+      "solution": "**Concept.** Percent means parts per hundred.\n\n**Working.**\n$$\\frac{35}{100}\\times 240 = 84$$\n\n**Answer.** $84$."
+    },
+    {
+      "id": 5,
+      "subject": "General Aptitude",
+      "topic": "Data Interpretation",
+      "section": "General Aptitude",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "A sector representing $25\\%$ of a total is shown shaded on the pie chart. Compute its central angle (degrees).",
+      "answer": 90,
+      "tolerance": 0.5,
+      "figure": {
+        "kind": "svg",
+        "caption": "Pie sector",
+        "markup": "<svg viewBox='0 0 170 170' xmlns='http://www.w3.org/2000/svg'><circle cx='85' cy='80' r='60' fill='#e5e7eb' stroke='#475569'/><path d='M85 80 L85 20 A60 60 0 0 1 145 80 Z' fill='#2563eb'/><text x='30' y='158' font-size='8'>shaded = 25% of pie</text></svg>"
+      },
+      "solution": "**Concept.** Central angle $=\\text{fraction}\\times360^\\circ$.\n\n**Working.**\n$$\\theta=0.25\\times360=90^\\circ$$\n\n**Answer.** $90^\\circ$."
+    },
+    {
+      "id": 6,
+      "subject": "General Aptitude",
+      "topic": "Verbal Aptitude — Grammar",
+      "section": "General Aptitude",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "Convert to the passive voice: 'The committee approved the safety proposal.'",
+      "options": [
+        "The safety proposal was approved by the committee.",
+        "The safety proposal is approved by the committee.",
+        "The safety proposal has approved the committee.",
+        "The committee was approved by the safety proposal."
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Passive voice: object becomes subject, verb becomes 'be + past participle', and the tense is preserved.\n\n**Working.** Simple past 'approved' becomes 'was approved'; the object 'proposal' moves to the front.\n\n**Answer.** 'The safety proposal was approved by the committee.'"
+    },
+    {
+      "id": 7,
+      "subject": "General Aptitude",
+      "topic": "Quantitative Aptitude — Mensuration",
+      "section": "General Aptitude",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "The area of a circle of radius $7$ is _____ (use $\\pi=22/7$).",
+      "answer": 154,
+      "tolerance": 0.5,
+      "solution": "**Concept.** Area $=\\pi r^2$.\n\n**Working.** $\\dfrac{22}{7}\\times 7^2 = 22\\times 7 = 154$.\n\n**Answer.** $154$."
+    },
+    {
+      "id": 8,
+      "subject": "General Aptitude",
+      "topic": "Analytical Aptitude — Letter Series",
+      "section": "General Aptitude",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "Find the next letter in the series: A, C, E, G, ?",
+      "options": [
+        "I",
+        "H",
+        "J",
+        "K"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** The letters advance by two positions each time (odd-positioned letters).\n\n**Working.** After G (7th letter), skip H to reach I.\n\n**Answer.** I."
+    },
+    {
+      "id": 9,
+      "subject": "General Aptitude",
+      "topic": "Spatial Aptitude — Cube Nets",
+      "section": "General Aptitude",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "The net shown is folded into a cube. Which face is opposite face 2?",
+      "options": [
+        "4",
+        "1",
+        "5",
+        "6"
+      ],
+      "answer": 0,
+      "figure": {
+        "kind": "svg",
+        "caption": "A cube net: a horizontal row of faces 1, 2, 3, 4 with face 5 above face 2 and face 6 below face 2.",
+        "markup": "<svg viewBox='0 0 240 180' xmlns='http://www.w3.org/2000/svg' role='img'><g stroke='#334155' stroke-width='2' fill='rgba(99,102,241,0.08)'><rect x='20' y='70' width='40' height='40'/><rect x='60' y='70' width='40' height='40'/><rect x='100' y='70' width='40' height='40'/><rect x='140' y='70' width='40' height='40'/><rect x='60' y='30' width='40' height='40'/><rect x='60' y='110' width='40' height='40'/></g><g font-size='16' fill='#334155'><text x='36' y='95'>1</text><text x='76' y='95'>2</text><text x='116' y='95'>3</text><text x='156' y='95'>4</text><text x='76' y='55'>5</text><text x='76' y='135'>6</text></g></svg>"
+      },
+      "solution": "**Concept.** In a straight row of four faces, faces two apart are opposite.\n\n**Working.** With 2 as the front, 1 is left, 3 is right and 4 is back; front (2) is opposite back (4).\n\n**Answer.** 4."
+    },
+    {
+      "id": 10,
+      "subject": "General Aptitude",
+      "topic": "Quantitative Aptitude — Trains",
+      "section": "General Aptitude",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "A train $200$ m long moving at $36$ km/h crosses a platform $100$ m long in _____ seconds.",
+      "answer": 30,
+      "tolerance": 0.01,
+      "solution": "**Concept.** To cross a platform, the train covers (its length + platform length).\n\n**Working.** Speed $=36\\times\\tfrac{5}{18}=10$ m/s; distance $=200+100=300$ m; time $=\\dfrac{300}{10}=30$ s.\n\n**Answer.** $30$ s."
+    },
+    {
+      "id": 11,
+      "subject": "Air & Noise Pollution",
+      "topic": "Noise — Addition",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "$3$ identical sources each $85\\,\\text{dB}$. Combined level is _____ dB.",
+      "answer": 89.771,
+      "tolerance": 0.1,
+      "solution": "**Concept.** L = L₁ + 10log n.\n\n**Working.**\n$$85+10\\log3=89.77.$$\n\n**Answer.** $89.77\\,\\text{dB}$"
+    },
+    {
+      "id": 12,
+      "subject": "Global & Regional Environmental Issues",
+      "topic": "Global Warming Potential",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A source emits $12\\,\\text{t}$ of a greenhouse gas. Reading the gas's GWP₁₀₀ from the figure, its CO₂-equivalent emission is _____ t CO₂-e.",
+      "answer": 336,
+      "tolerance": 0.5,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 300 130\" width=\"100%\" style=\"max-width:300px;height:auto\"><rect x=\"40\" y=\"36\" width=\"220\" height=\"56\" rx=\"6\" fill=\"rgba(217,119,6,0.12)\" stroke=\"#1e293b\"/><text x=\"150\" y=\"58\" font-size=\"11\" text-anchor=\"middle\" fill=\"#1e293b\">the gas</text><text x=\"150\" y=\"80\" font-size=\"12\" text-anchor=\"middle\" fill=\"#dc2626\">GWP₁₀₀ = 28</text><text x=\"150\" y=\"112\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">CO₂-e = mass × GWP</text></svg>",
+        "caption": "Global-warming potential of the gas marked on the diagram only. (read values from the figure)"
+      },
+      "solution": "**Concept.** CO₂-e = mass × GWP, with the GWP read from the figure.\n\n**Working.**\n$$12\\times28=336.$$\n\n**Answer.** $336$"
+    },
+    {
+      "id": 13,
+      "subject": "Environmental Management & Ethics",
+      "topic": "EIA",
+      "section": "Technical (1-mark)",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Which stage of the EIA cycle immediately follows screening?",
+      "options": [
+        "Scoping",
+        "Public hearing",
+        "Clearance",
+        "Decommissioning"
+      ],
+      "answer": 0,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 360 90\" width=\"100%\" style=\"max-width:360px;height:auto\"><rect x=\"8\" y=\"28\" width=\"60\" height=\"34\" rx=\"4\" fill=\"rgba(37,99,235,0.08)\" stroke=\"#1e293b\"/><text x=\"38\" y=\"49\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">Screening</text><path d=\"M68 45 l10 0 m-4 -3 l4 3 -4 3\" stroke=\"#16a34a\" stroke-width=\"1.1\" fill=\"none\"/><rect x=\"78\" y=\"28\" width=\"60\" height=\"34\" rx=\"4\" fill=\"rgba(37,99,235,0.08)\" stroke=\"#1e293b\"/><text x=\"108\" y=\"49\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">Scoping</text><path d=\"M138 45 l10 0 m-4 -3 l4 3 -4 3\" stroke=\"#16a34a\" stroke-width=\"1.1\" fill=\"none\"/><rect x=\"148\" y=\"28\" width=\"60\" height=\"34\" rx=\"4\" fill=\"rgba(37,99,235,0.08)\" stroke=\"#1e293b\"/><text x=\"178\" y=\"44\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">Impact</text><text x=\"178\" y=\"55\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">prediction</text><path d=\"M208 45 l10 0 m-4 -3 l4 3 -4 3\" stroke=\"#16a34a\" stroke-width=\"1.1\" fill=\"none\"/><rect x=\"218\" y=\"28\" width=\"60\" height=\"34\" rx=\"4\" fill=\"rgba(37,99,235,0.08)\" stroke=\"#1e293b\"/><text x=\"248\" y=\"49\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">EMP</text><path d=\"M278 45 l10 0 m-4 -3 l4 3 -4 3\" stroke=\"#16a34a\" stroke-width=\"1.1\" fill=\"none\"/><rect x=\"288\" y=\"28\" width=\"60\" height=\"34\" rx=\"4\" fill=\"rgba(37,99,235,0.08)\" stroke=\"#1e293b\"/><text x=\"318\" y=\"44\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">Review &</text><text x=\"318\" y=\"55\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">clearance</text></svg>",
+        "caption": "Sequential stages of the EIA process."
+      },
+      "solution": "**Concept.** Order: screening → scoping → impact prediction → EMP → review/clearance.\n\n**Working.**\nScoping follows screening.\n\n**Answer.** Scoping"
+    },
+    {
+      "id": 14,
+      "subject": "Solid & Hazardous Waste Management",
+      "topic": "Moisture Content",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Wet MSW $2000\\,\\text{kg}$ at $40\\%$ moisture. The dry-solids mass is _____ kg.",
+      "answer": 1200,
+      "tolerance": 0.5,
+      "solution": "**Concept.** Dry = wet × (1 − moisture).\n\n**Working.**\n$$2000(1-40/100)=1200.$$\n\n**Answer.** $1200\\,\\text{kg}$"
+    },
+    {
+      "id": 15,
+      "subject": "Environmental Chemistry",
+      "topic": "Chemical Kinetics",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A pollutant decays by first-order kinetics with rate constant $k=0.1\\,\\text{d}^{-1}$. Its half-life is _____ days.",
+      "answer": 6.9315,
+      "tolerance": 0.05,
+      "solution": "**Concept.** For first order, $t_{1/2}=\\dfrac{\\ln 2}{k}$.\n\n**Working.**\n$$\\dfrac{0.693}{0.1}=6.93.$$\n\n**Answer.** $6.93\\,\\text{d}$"
+    },
+    {
+      "id": 16,
+      "subject": "Water & Wastewater Treatment",
+      "topic": "Settling Velocity",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "In the settling-column test plotted in the figure, a particle settles the marked depth in the marked time. Its settling velocity is _____ mm/s.",
+      "answer": 4,
+      "tolerance": 0.05,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 330 200\" width=\"100%\" style=\"max-width:350px;height:auto\"><line x1=\"46\" y1=\"20\" x2=\"46\" y2=\"170\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"46\" y1=\"20\" x2=\"300\" y2=\"20\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"6\" y=\"100\" font-size=\"9\" fill=\"#1e293b\">depth ↓</text><text x=\"252\" y=\"14\" font-size=\"9\" fill=\"#1e293b\">time →</text><line x1=\"46\" y1=\"20\" x2=\"270\" y2=\"150\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><circle cx=\"270\" cy=\"150\" r=\"3\" fill=\"#dc2626\"/><line x1=\"270\" y1=\"20\" x2=\"270\" y2=\"150\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><line x1=\"46\" y1=\"150\" x2=\"270\" y2=\"150\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><text x=\"150\" y=\"14\" font-size=\"9\" fill=\"#16a34a\">t = 500 s</text><text x=\"118\" y=\"165\" font-size=\"9\" fill=\"#dc2626\">settles 2 m</text></svg>",
+        "caption": "Particle settles the marked depth in the marked time; v_s = depth ÷ time. (read values from the figure)"
+      },
+      "solution": "**Concept.** $v_s=\\text{depth}\\div\\text{time}$, both read from the trajectory.\n\n**Working.**\n$$\\dfrac{2\\,\\text{m}}{500\\,\\text{s}}\\times1000=4\\,\\text{mm/s}.$$\n\n**Answer.** $4\\,\\text{mm/s}$"
+    },
+    {
+      "id": 17,
+      "subject": "Ecology & Biodiversity",
+      "topic": "Biodiversity Conservation",
+      "section": "Technical (1-mark)",
+      "type": "MSQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Which are recognised biodiversity hotspots in/around India?",
+      "options": [
+        "Western Ghats",
+        "Eastern Himalaya",
+        "Indo-Burma",
+        "Thar Desert"
+      ],
+      "answer": [
+        0,
+        1,
+        2
+      ],
+      "solution": "**Concept.** Western Ghats, Himalaya and Indo-Burma are global hotspots; the Thar is not (low endemism/richness threshold).\n\n**Working.**\nFirst three.\n\n**Answer.** Western Ghats, Himalaya, Indo-Burma"
+    },
+    {
+      "id": 18,
+      "subject": "Environmental Microbiology",
+      "topic": "Indicator Organisms",
+      "section": "Technical (1-mark)",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "MPN (Most Probable Number) test in water analysis estimates the density of",
+      "options": [
+        "coliform bacteria",
+        "viruses",
+        "algae",
+        "protozoa"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** MPN is a statistical estimate of coliform density.\n\n**Working.**\nColiforms.\n\n**Answer.** Coliform bacteria"
+    },
+    {
+      "id": 19,
+      "subject": "Solid & Hazardous Waste Management",
+      "topic": "Compaction",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Read the loose and compacted densities from the bar chart. The volume reduction $(1-\\rho_1/\\rho_2)$ is _____ %.",
+      "answer": 75,
+      "tolerance": 0.1,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 300 188\" width=\"100%\" style=\"max-width:320px;height:auto\"><line x1=\"40\" y1=\"150\" x2=\"280\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"80\" y=\"120\" width=\"50\" height=\"30\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"105\" y=\"116\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">150</text><text x=\"105\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">loose ρ₁</text><rect x=\"180\" y=\"30\" width=\"50\" height=\"120\" fill=\"#16a34a\" opacity=\"0.85\"/><text x=\"205\" y=\"26\" font-size=\"10\" text-anchor=\"middle\" fill=\"#16a34a\">600</text><text x=\"205\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">compacted ρ₂</text><text x=\"160\" y=\"182\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">kg/m³</text></svg>",
+        "caption": "Loose and compacted densities shown on the bars only. (read values from the figure)"
+      },
+      "solution": "**Concept.** VR = (1 − ρ₁/ρ₂)×100, both densities read from the bars.\n\n**Working.**\n$$\\left(1-\\dfrac{150}{600}\\right)\\times100=75\\%.$$\n\n**Answer.** $75\\%$"
+    },
+    {
+      "id": 20,
+      "subject": "Solid & Hazardous Waste Management",
+      "topic": "Compaction",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Read the loose and compacted densities from the bar chart. The volume reduction $(1-\\rho_1/\\rho_2)$ achieved is _____ %.",
+      "answer": 80,
+      "tolerance": 0.1,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 300 188\" width=\"100%\" style=\"max-width:320px;height:auto\"><line x1=\"40\" y1=\"150\" x2=\"280\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"80\" y=\"126\" width=\"50\" height=\"24\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"105\" y=\"122\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">80</text><text x=\"105\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">loose ρ₁</text><rect x=\"180\" y=\"30\" width=\"50\" height=\"120\" fill=\"#16a34a\" opacity=\"0.85\"/><text x=\"205\" y=\"26\" font-size=\"10\" text-anchor=\"middle\" fill=\"#16a34a\">400</text><text x=\"205\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">compacted ρ₂</text><text x=\"160\" y=\"182\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">kg/m³</text></svg>",
+        "caption": "Loose and compacted densities shown on the bars only. (read values from the figure)"
+      },
+      "solution": "**Concept.** VR = (1 − ρ₁/ρ₂)×100, both densities read from the bars.\n\n**Working.**\n$$\\left(1-\\dfrac{80}{400}\\right)\\times100=80\\%.$$\n\n**Answer.** $80\\%$"
+    },
+    {
+      "id": 21,
+      "subject": "Air & Noise Pollution",
+      "topic": "Noise — Addition",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "$2$ identical sources each $75\\,\\text{dB}$. Combined level is _____ dB.",
+      "answer": 78.01,
+      "tolerance": 0.1,
+      "solution": "**Concept.** L = L₁ + 10log n.\n\n**Working.**\n$$75+10\\log2=78.01.$$\n\n**Answer.** $78.01\\,\\text{dB}$"
+    },
+    {
+      "id": 22,
+      "subject": "Water & Wastewater Treatment",
+      "topic": "Sedimentation — Overflow Rate",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "For the settling tank shown, read the flow $Q$ (MLD) and plan area $A$ from the diagram. The surface overflow rate $Q/A$ is _____ m³/m²/day.",
+      "answer": 10,
+      "tolerance": 0.1,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 340 170\" width=\"100%\" style=\"max-width:360px;height:auto\"><rect x=\"40\" y=\"40\" width=\"250\" height=\"90\" fill=\"rgba(37,99,235,0.08)\" stroke=\"#1e293b\" stroke-width=\"1.3\"/><path d=\"M20 60 l20 0 m-5 -3 l5 3 -5 3\" stroke=\"#16a34a\" stroke-width=\"1.2\" fill=\"none\"/><text x=\"14\" y=\"55\" font-size=\"9\" fill=\"#16a34a\">Q = 5 MLD</text><path d=\"M290 60 l20 0 m-5 -3 l5 3 -5 3\" stroke=\"#16a34a\" stroke-width=\"1.2\" fill=\"none\"/><text x=\"300\" y=\"55\" font-size=\"9\" fill=\"#16a34a\">out</text><line x1=\"40\" y1=\"48\" x2=\"290\" y2=\"48\" stroke=\"#2563eb\" stroke-width=\"1\" stroke-dasharray=\"3 2\"/><circle cx=\"120\" cy=\"80\" r=\"2\" fill=\"#1e293b\"/><circle cx=\"170\" cy=\"100\" r=\"2\" fill=\"#1e293b\"/><circle cx=\"210\" cy=\"118\" r=\"2\" fill=\"#1e293b\"/><path d=\"M120 86 L132 124 M170 106 L182 126\" stroke=\"#94a3b8\" stroke-width=\"0.8\"/><text x=\"120\" y=\"150\" font-size=\"9\" fill=\"#1e293b\">plan area A = 500 m²</text><text x=\"160\" y=\"36\" font-size=\"8\" fill=\"#2563eb\">surface (overflow)</text></svg>",
+        "caption": "Flow Q and plan area A marked on the diagram only. (read values from the figure)"
+      },
+      "solution": "**Concept.** SOR = Q/A, with Q and A read from the figure.\n\n**Working.**\n$$\\dfrac{5\\times1000}{500}=10.$$\n\n**Answer.** $10$"
+    },
+    {
+      "id": 23,
+      "subject": "Global & Regional Environmental Issues",
+      "topic": "Global Warming Potential",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A source emits $6\\,\\text{t}$ of a greenhouse gas. Reading the gas's GWP₁₀₀ from the figure, its CO₂-equivalent emission is _____ t CO₂-e.",
+      "answer": 168,
+      "tolerance": 0.5,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 300 130\" width=\"100%\" style=\"max-width:300px;height:auto\"><rect x=\"40\" y=\"36\" width=\"220\" height=\"56\" rx=\"6\" fill=\"rgba(217,119,6,0.12)\" stroke=\"#1e293b\"/><text x=\"150\" y=\"58\" font-size=\"11\" text-anchor=\"middle\" fill=\"#1e293b\">the gas</text><text x=\"150\" y=\"80\" font-size=\"12\" text-anchor=\"middle\" fill=\"#dc2626\">GWP₁₀₀ = 28</text><text x=\"150\" y=\"112\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">CO₂-e = mass × GWP</text></svg>",
+        "caption": "Global-warming potential of the gas marked on the diagram only. (read values from the figure)"
+      },
+      "solution": "**Concept.** CO₂-e = mass × GWP, with the GWP read from the figure.\n\n**Working.**\n$$6\\times28=168.$$\n\n**Answer.** $168$"
+    },
+    {
+      "id": 24,
+      "subject": "Water & Wastewater Treatment",
+      "topic": "Breakpoint Chlorination",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Ammonia-bearing water is chlorinated. From the breakpoint-chlorination curve shown, read the breakpoint dose. To leave a free residual of $1.5\\,\\text{mg/L}$, the chlorine that must be applied is _____ mg/L.",
+      "answer": 10.5,
+      "tolerance": 0.05,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 330 195\" width=\"100%\" style=\"max-width:350px;height:auto\"><line x1=\"38\" y1=\"20\" x2=\"38\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"38\" y1=\"165\" x2=\"312\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"4\" y=\"30\" font-size=\"8\" fill=\"#1e293b\">residual</text><text x=\"232\" y=\"182\" font-size=\"9\" fill=\"#1e293b\">Cl₂ dose (mg/L) →</text><path d=\"M38 165 L95 120 L150 150 L205 160 L300 80\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.7\"/><line x1=\"205\" y1=\"55\" x2=\"205\" y2=\"165\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"3 2\"/><circle cx=\"205\" cy=\"160\" r=\"3\" fill=\"#dc2626\"/><text x=\"170\" y=\"50\" font-size=\"9\" fill=\"#dc2626\">breakpoint</text><text x=\"186\" y=\"178\" font-size=\"9\" fill=\"#dc2626\">9</text><text x=\"250\" y=\"92\" font-size=\"7\" fill=\"#16a34a\">free residual</text></svg>",
+        "caption": "Breakpoint dose marked on the x-axis only. (read values from the figure)"
+      },
+      "solution": "**Concept.** Beyond the breakpoint, extra chlorine appears as free residual: applied = breakpoint dose + desired free residual.\n\n**Working.**\n$$9+1.5=10.5.$$\n\n**Answer.** $10.5\\,\\text{mg/L}$"
+    },
+    {
+      "id": 25,
+      "subject": "Environmental Chemistry",
+      "topic": "Chemical Kinetics",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A pollutant decays by first-order kinetics with rate constant $k=0.231\\,\\text{d}^{-1}$. Its half-life is _____ days.",
+      "answer": 3.0006,
+      "tolerance": 0.05,
+      "solution": "**Concept.** For first order, $t_{1/2}=\\dfrac{\\ln 2}{k}$.\n\n**Working.**\n$$\\dfrac{0.693}{0.231}=3.$$\n\n**Answer.** $3\\,\\text{d}$"
+    },
+    {
+      "id": 26,
+      "subject": "Air & Noise Pollution",
+      "topic": "Noise — Addition",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "$5$ identical sources each $80\\,\\text{dB}$. Combined level is _____ dB.",
+      "answer": 86.99,
+      "tolerance": 0.1,
+      "solution": "**Concept.** L = L₁ + 10log n.\n\n**Working.**\n$$80+10\\log5=86.99.$$\n\n**Answer.** $86.99\\,\\text{dB}$"
+    },
+    {
+      "id": 27,
+      "subject": "Water & Wastewater Treatment",
+      "topic": "Treatment Efficiency",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Influent BOD $250$, effluent $25\\,\\text{mg/L}$. Removal efficiency is _____ %.",
+      "answer": 90,
+      "tolerance": 0.1,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 300 180\" width=\"100%\" style=\"max-width:320px;height:auto\"><line x1=\"40\" y1=\"150\" x2=\"280\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"70\" y=\"30\" width=\"46\" height=\"120\" fill=\"#dc2626\" opacity=\"0.75\"/><text x=\"93\" y=\"26\" font-size=\"9\" text-anchor=\"middle\" fill=\"#dc2626\">in 250</text><rect x=\"190\" y=\"138\" width=\"46\" height=\"12\" fill=\"#16a34a\" opacity=\"0.8\"/><text x=\"213\" y=\"134\" font-size=\"9\" text-anchor=\"middle\" fill=\"#16a34a\">out 25</text><text x=\"160\" y=\"170\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1e293b\">BOD (mg/L)</text></svg>",
+        "caption": "BOD: influent vs. effluent (mg/L)."
+      },
+      "solution": "**Concept.** η = (S₀−Se)/S₀ ×100.\n\n**Working.**\n$$\\dfrac{250-25}{250}\\times100=90\\%.$$\n\n**Answer.** $90\\%$"
+    },
+    {
+      "id": 28,
+      "subject": "Water & Wastewater Treatment",
+      "topic": "Settling Velocity",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "In the settling-column test plotted in the figure, a particle settles the marked depth in the marked time. Its settling velocity is _____ mm/s.",
+      "answer": 3.75,
+      "tolerance": 0.05,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 330 200\" width=\"100%\" style=\"max-width:350px;height:auto\"><line x1=\"46\" y1=\"20\" x2=\"46\" y2=\"170\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"46\" y1=\"20\" x2=\"300\" y2=\"20\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"6\" y=\"100\" font-size=\"9\" fill=\"#1e293b\">depth ↓</text><text x=\"252\" y=\"14\" font-size=\"9\" fill=\"#1e293b\">time →</text><line x1=\"46\" y1=\"20\" x2=\"270\" y2=\"150\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><circle cx=\"270\" cy=\"150\" r=\"3\" fill=\"#dc2626\"/><line x1=\"270\" y1=\"20\" x2=\"270\" y2=\"150\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><line x1=\"46\" y1=\"150\" x2=\"270\" y2=\"150\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><text x=\"150\" y=\"14\" font-size=\"9\" fill=\"#16a34a\">t = 400 s</text><text x=\"118\" y=\"165\" font-size=\"9\" fill=\"#dc2626\">settles 1.5 m</text></svg>",
+        "caption": "Particle settles the marked depth in the marked time; v_s = depth ÷ time. (read values from the figure)"
+      },
+      "solution": "**Concept.** v_s = depth ÷ time (read both from the trajectory).\n\n**Working.**\n$$\\dfrac{1.5\\,\\text{m}}{400\\,\\text{s}}\\times1000=3.75\\,\\text{mm/s}.$$\n\n**Answer.** $3.75\\,\\text{mm/s}$"
+    },
+    {
+      "id": 29,
+      "subject": "Air & Noise Pollution",
+      "topic": "Noise — Addition",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "At a receptor, $4$ identical machines each produce $80\\,\\text{dB}$. The combined sound pressure level is _____ dB.",
+      "answer": 86.0206,
+      "tolerance": 0.1,
+      "solution": "**Concept.** $L=L_1+10\\log_{10}n$ for $n$ equal incoherent sources.\n\n**Working.**\n$$80+10\\log_{10}4=86.02.$$\n\n**Answer.** $86.02\\,\\text{dB}$"
+    },
+    {
+      "id": 30,
+      "subject": "Solid & Hazardous Waste Management",
+      "topic": "Compaction",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Read the loose and compacted densities from the bar chart. The volume reduction $(1-\\rho_1/\\rho_2)$ achieved is _____ %.",
+      "answer": 86.667,
+      "tolerance": 0.1,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 300 188\" width=\"100%\" style=\"max-width:320px;height:auto\"><line x1=\"40\" y1=\"150\" x2=\"280\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"80\" y=\"134\" width=\"50\" height=\"16\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"105\" y=\"130\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">80</text><text x=\"105\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">loose ρ₁</text><rect x=\"180\" y=\"30\" width=\"50\" height=\"120\" fill=\"#16a34a\" opacity=\"0.85\"/><text x=\"205\" y=\"26\" font-size=\"10\" text-anchor=\"middle\" fill=\"#16a34a\">600</text><text x=\"205\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">compacted ρ₂</text><text x=\"160\" y=\"182\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">kg/m³</text></svg>",
+        "caption": "Loose and compacted densities shown on the bars only. (read values from the figure)"
+      },
+      "solution": "**Concept.** VR = (1 − ρ₁/ρ₂)×100, both densities read from the bars.\n\n**Working.**\n$$\\left(1-\\dfrac{80}{600}\\right)\\times100=86.7\\%.$$\n\n**Answer.** $86.7\\%$"
+    },
+    {
+      "id": 31,
+      "subject": "Air & Noise Pollution",
+      "topic": "Noise — Addition",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "$4$ identical sources each $80\\,\\text{dB}$. Combined level is _____ dB.",
+      "answer": 86.021,
+      "tolerance": 0.1,
+      "solution": "**Concept.** L = L₁ + 10log n.\n\n**Working.**\n$$80+10\\log4=86.02.$$\n\n**Answer.** $86.02\\,\\text{dB}$"
+    },
+    {
+      "id": 32,
+      "subject": "Water & Wastewater Treatment",
+      "topic": "Treatment Efficiency",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Influent BOD $180$, effluent $30\\,\\text{mg/L}$. Removal efficiency is _____ %.",
+      "answer": 83.333,
+      "tolerance": 0.1,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 300 180\" width=\"100%\" style=\"max-width:320px;height:auto\"><line x1=\"40\" y1=\"150\" x2=\"280\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"70\" y=\"30\" width=\"46\" height=\"120\" fill=\"#dc2626\" opacity=\"0.75\"/><text x=\"93\" y=\"26\" font-size=\"9\" text-anchor=\"middle\" fill=\"#dc2626\">in 180</text><rect x=\"190\" y=\"130\" width=\"46\" height=\"20\" fill=\"#16a34a\" opacity=\"0.8\"/><text x=\"213\" y=\"126\" font-size=\"9\" text-anchor=\"middle\" fill=\"#16a34a\">out 30</text><text x=\"160\" y=\"170\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1e293b\">BOD (mg/L)</text></svg>",
+        "caption": "BOD: influent vs. effluent (mg/L)."
+      },
+      "solution": "**Concept.** η = (S₀−Se)/S₀ ×100.\n\n**Working.**\n$$\\dfrac{180-30}{180}\\times100=83.3\\%.$$\n\n**Answer.** $83.3\\%$"
+    },
+    {
+      "id": 33,
+      "subject": "Environmental Management & Ethics",
+      "topic": "EMS — ISO 14000",
+      "section": "Technical (1-mark)",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The cyclical framework underpinning an ISO 14001 EMS is",
+      "options": [
+        "Plan–Do–Check–Act (PDCA)",
+        "Reduce–Reuse–Recycle",
+        "Define–Measure–Analyse",
+        "Strengths–Weaknesses–Opportunities–Threats"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** ISO 14001 follows the PDCA continual-improvement loop.\n\n**Working.**\nPDCA.\n\n**Answer.** Plan-Do-Check-Act"
+    },
+    {
+      "id": 34,
+      "subject": "Air & Noise Pollution",
+      "topic": "Noise — Addition",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "At a receptor, $10$ identical machines each produce $75\\,\\text{dB}$. The combined sound pressure level is _____ dB.",
+      "answer": 85,
+      "tolerance": 0.1,
+      "solution": "**Concept.** $L=L_1+10\\log_{10}n$ for $n$ equal incoherent sources.\n\n**Working.**\n$$75+10\\log_{10}10=85.$$\n\n**Answer.** $85\\,\\text{dB}$"
+    },
+    {
+      "id": 35,
+      "subject": "Global & Regional Environmental Issues",
+      "topic": "Eutrophication",
+      "section": "Technical (1-mark)",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The nutrient most commonly limiting and therefore triggering eutrophication in freshwater lakes is",
+      "options": [
+        "phosphorus",
+        "carbon",
+        "silicon",
+        "iron"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Phosphorus is usually the limiting nutrient in freshwater; its loading drives algal blooms.\n\n**Working.**\nPhosphorus.\n\n**Answer.** Phosphorus"
+    },
+    {
+      "id": 36,
+      "subject": "Air & Noise Pollution",
+      "topic": "Gaussian Plume",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "A stack emits $Q=120\\,\\text{g/s}$. Using the effective height $H$, wind speed $u$ and dispersion coefficients $\\sigma_y,\\sigma_z$ marked on the diagram, the ground-level centreline concentration (full reflection) is _____ ×10⁻⁴ g/m³.",
+      "answer": 13.7851,
+      "tolerance": 0.2,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 360 210\" width=\"100%\" style=\"max-width:380px;height:auto\"><line x1=\"20\" y1=\"175\" x2=\"350\" y2=\"175\" stroke=\"#475569\" stroke-width=\"1.4\"/><rect x=\"34\" y=\"75\" width=\"14\" height=\"100\" fill=\"#94a3b8\" stroke=\"#1e293b\"/><text x=\"41\" y=\"191\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1e293b\">stack</text><path d=\"M48 75 Q160 64 350 44 M48 75 Q160 86 350 116\" fill=\"rgba(37,99,235,0.10)\" stroke=\"#2563eb\" stroke-width=\"1.3\"/><line x1=\"41\" y1=\"75\" x2=\"41\" y2=\"175\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"3 2\"/><text x=\"54\" y=\"70\" font-size=\"10\" fill=\"#dc2626\">H = 50 m</text><path d=\"M118 148 l20 0 m-5 -3 l5 3 -5 3\" stroke=\"#16a34a\" stroke-width=\"1.1\" fill=\"none\"/><text x=\"142\" y=\"151\" font-size=\"10\" fill=\"#16a34a\">u = 6 m/s</text><text x=\"206\" y=\"40\" font-size=\"10\" fill=\"#2563eb\">σ_y = 25 m,  σ_z = 25 m</text><text x=\"318\" y=\"171\" font-size=\"9\" fill=\"#1e293b\">x →</text></svg>",
+        "caption": "Elevated point source: H, u, σ_y and σ_z are marked on the diagram only. (read values from the figure)"
+      },
+      "solution": "**Concept.** C = Q/(πuσ_yσ_z)·exp(−H²/2σ_z²); H,u,σ_y,σ_z read from the figure.\n\n**Working.**\n$$\\dfrac{120}{\\pi\\times6\\times25\\times25}e^{-50^2/(2\\times25^2)}=0.00137851.$$\n\n**Answer.** $13.785\\times10^{-4}$"
+    },
+    {
+      "id": 37,
+      "subject": "Air & Noise Pollution",
+      "topic": "Noise — Addition",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "$3$ identical sources each $70\\,\\text{dB}$. Combined level is _____ dB.",
+      "answer": 74.771,
+      "tolerance": 0.1,
+      "solution": "**Concept.** L = L₁ + 10log n.\n\n**Working.**\n$$70+10\\log3=74.77.$$\n\n**Answer.** $74.77\\,\\text{dB}$"
+    },
+    {
+      "id": 38,
+      "subject": "Environmental Chemistry",
+      "topic": "Chemical Kinetics — Decay",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "A pollutant decays first-order with $k=0.3\\,\\text{d}^{-1}$. Reading the initial concentration $C_0$ from the figure, its concentration after $5$ d is _____ mg/L.",
+      "answer": 33.47,
+      "tolerance": 0.1,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 300 170\" width=\"100%\" style=\"max-width:300px;height:auto\"><rect x=\"120\" y=\"75\" width=\"60\" height=\"75\" fill=\"#2563eb\" opacity=\"0.25\" stroke=\"#1e293b\"/><rect x=\"120\" y=\"30\" width=\"60\" height=\"120\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.3\"/><text x=\"150\" y=\"22\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1e293b\">t = 0</text><text x=\"150\" y=\"96\" font-size=\"11\" text-anchor=\"middle\" fill=\"#2563eb\">C₀ = 150</text><text x=\"150\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">mg/L</text></svg>",
+        "caption": "Initial concentration C₀ marked on the diagram only. (read values from the figure)"
+      },
+      "solution": "**Concept.** C = C₀e^{−kt}, with C₀ read from the figure.\n\n**Working.**\n$$150e^{-0.3\\times5}=33.47.$$\n\n**Answer.** $33.47$"
+    },
+    {
+      "id": 39,
+      "subject": "Environmental Management & Ethics",
+      "topic": "Environmental Economics",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "At a discount rate of $8\\%$, and reading the future benefit $F$ and its time horizon $n$ from the cash-flow diagram, the present worth is $₹$ _____.",
+      "answer": 39692,
+      "tolerance": 1,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 330 150\" width=\"100%\" style=\"max-width:350px;height:auto\"><line x1=\"30\" y1=\"100\" x2=\"310\" y2=\"100\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"30\" y=\"118\" font-size=\"9\" fill=\"#1e293b\">0</text><line x1=\"290\" y1=\"100\" x2=\"290\" y2=\"48\" stroke=\"#16a34a\" stroke-width=\"1.6\"/><path d=\"M290 46 l-5 9 10 0 z\" fill=\"#16a34a\"/><text x=\"290\" y=\"40\" font-size=\"10\" text-anchor=\"middle\" fill=\"#16a34a\">F = ₹50,000</text><text x=\"290\" y=\"118\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1e293b\">year 3</text><text x=\"165\" y=\"118\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">time (years) →</text><text x=\"42\" y=\"60\" font-size=\"10\" fill=\"#dc2626\">PW = ?</text></svg>",
+        "caption": "Future benefit F and its time horizon n marked on the cash-flow diagram only. (read values from the figure)"
+      },
+      "solution": "**Concept.** PW = F/(1+i)^n, with F and n read from the diagram.\n\n**Working.**\n$$\\dfrac{50000}{(1+0.08)^{3}}=39692.$$\n\n**Answer.** $₹39692$"
+    },
+    {
+      "id": 40,
+      "subject": "Ecology & Biodiversity",
+      "topic": "Logistic Growth",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "A population grows logistically at $r=0.4\\,\\text{yr}^{-1}$. Reading the carrying capacity $K$ from the growth curve shown, the maximum $dN/dt$ ($rK/4$) is _____ /yr.",
+      "answer": 600,
+      "tolerance": 1,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 190\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"34\" y1=\"20\" x2=\"34\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"34\" y1=\"165\" x2=\"305\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"34\" y1=\"40\" x2=\"305\" y2=\"40\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><text x=\"240\" y=\"36\" font-size=\"9\" fill=\"#dc2626\">K = 6000</text><path d=\"M34 158 C120 156 150 80 175 60 C210 44 260 41 305 40\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><text x=\"10\" y=\"30\" font-size=\"9\" fill=\"#1e293b\">N</text><text x=\"285\" y=\"180\" font-size=\"9\" fill=\"#1e293b\">time →</text><text x=\"120\" y=\"120\" font-size=\"8\" fill=\"#16a34a\">max dN/dt at N=K/2</text></svg>",
+        "caption": "Carrying capacity K marked on the growth curve only. (read values from the figure)"
+      },
+      "solution": "**Concept.** max dN/dt = rK/4 at N=K/2, with K read from the curve.\n\n**Working.**\n$$\\dfrac{0.4\\times6000}{4}=600.$$\n\n**Answer.** $600$"
+    },
+    {
+      "id": 41,
+      "subject": "Ecology & Biodiversity",
+      "topic": "Population Growth — Exponential",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "A population grows exponentially at $r=0.05\\,\\text{yr}^{-1}$. Reading the initial size $N_0$ from the figure, after $15$ yr, $N=$ _____.",
+      "answer": 1058.5,
+      "tolerance": 1,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 190\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"40\" y1=\"20\" x2=\"40\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"40\" y1=\"165\" x2=\"300\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><path d=\"M40 150 C120 145 180 120 230 80 C260 55 285 35 300 25\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><circle cx=\"40\" cy=\"150\" r=\"3\" fill=\"#dc2626\"/><text x=\"46\" y=\"146\" font-size=\"10\" fill=\"#dc2626\">N₀ = 500</text><text x=\"14\" y=\"30\" font-size=\"9\" fill=\"#1e293b\">N</text><text x=\"278\" y=\"180\" font-size=\"9\" fill=\"#1e293b\">time →</text></svg>",
+        "caption": "Initial population N₀ marked on the curve at t = 0. (read values from the figure)"
+      },
+      "solution": "**Concept.** N = N₀e^{rt}, with N₀ read from the figure.\n\n**Working.**\n$$500e^{0.05\\times15}=1059.$$\n\n**Answer.** $1059$"
+    },
+    {
+      "id": 42,
+      "subject": "Solid & Hazardous Waste Management",
+      "topic": "Compaction",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "Waste of mass $1000\\,\\text{kg}$ at loose density $100\\,\\text{kg/m}^3$ is compacted to $500\\,\\text{kg/m}^3$. The volume reduction is _____ %.",
+      "answer": 80,
+      "tolerance": 0.1,
+      "solution": "**Concept.** $VR=\\left(1-\\dfrac{V_2}{V_1}\\right)\\times100=\\left(1-\\dfrac{\\rho_1}{\\rho_2}\\right)\\times100$.\n\n**Working.**\n$$\\left(1-\\dfrac{100}{500}\\right)\\times100=80\\%.$$\n\n**Answer.** $80\\%$"
+    },
+    {
+      "id": 43,
+      "subject": "Environmental Microbiology",
+      "topic": "Monod Kinetics",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "A culture follows Monod kinetics at substrate $S=40\\,\\text{mg/L}$. Reading $\\mu_{max}$ and $K_s$ from the $\\mu$–$S$ curve shown, the specific growth rate $\\mu$ is _____ h⁻¹.",
+      "answer": 0.1333,
+      "tolerance": 0.005,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 330 195\" width=\"100%\" style=\"max-width:350px;height:auto\"><line x1=\"44\" y1=\"20\" x2=\"44\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"44\" y1=\"165\" x2=\"312\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"240\" y=\"182\" font-size=\"9\" fill=\"#1e293b\">substrate [S] →</text><line x1=\"44\" y1=\"40\" x2=\"312\" y2=\"40\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><text x=\"232\" y=\"36\" font-size=\"10\" fill=\"#dc2626\">μ_max = 0.3</text><path d=\"M44 165 C90 110 140 70 200 56 C250 46 290 42 312 41\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><line x1=\"44\" y1=\"102\" x2=\"120\" y2=\"102\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><line x1=\"120\" y1=\"102\" x2=\"120\" y2=\"165\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 2\"/><text x=\"14\" y=\"106\" font-size=\"7\" fill=\"#16a34a\">μ_max/2</text><text x=\"98\" y=\"178\" font-size=\"10\" fill=\"#16a34a\">K_s = 50</text></svg>",
+        "caption": "Monod μ–S curve: μ_max (plateau) and K_s (half-saturation) marked on the curve only. (read values from the figure)"
+      },
+      "solution": "**Concept.** μ = μ_max S/(K_s+S), with μ_max and K_s read from the curve.\n\n**Working.**\n$$\\dfrac{0.3\\times40}{50+40}=0.133.$$\n\n**Answer.** $0.133$"
+    },
+    {
+      "id": 44,
+      "subject": "Air & Noise Pollution",
+      "topic": "ESP — Deutsch–Anderson",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "An ESP treats $6\\,\\text{m}^3/\\text{s}$. Reading the collecting area $A$ and drift velocity $w$ from the figure, its collection efficiency is _____ %.",
+      "answer": 96.433,
+      "tolerance": 0.1,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 340 170\" width=\"100%\" style=\"max-width:360px;height:auto\"><rect x=\"40\" y=\"30\" width=\"260\" height=\"110\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.2\"/><line x1=\"80\" y1=\"30\" x2=\"80\" y2=\"140\" stroke=\"#94a3b8\" stroke-width=\"3\"/><line x1=\"150\" y1=\"30\" x2=\"150\" y2=\"140\" stroke=\"#94a3b8\" stroke-width=\"3\"/><line x1=\"220\" y1=\"30\" x2=\"220\" y2=\"140\" stroke=\"#94a3b8\" stroke-width=\"3\"/><line x1=\"115\" y1=\"35\" x2=\"115\" y2=\"135\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"2 2\"/><line x1=\"185\" y1=\"35\" x2=\"185\" y2=\"135\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"2 2\"/><path d=\"M14 70 l22 0 m-6 -3 l6 3 -6 3\" stroke=\"#16a34a\" stroke-width=\"1.2\" fill=\"none\"/><text x=\"6\" y=\"64\" font-size=\"9\" fill=\"#16a34a\">gas in</text><text x=\"60\" y=\"158\" font-size=\"9\" fill=\"#1e293b\">collecting area A = 200 m²</text><text x=\"150\" y=\"22\" font-size=\"9\" fill=\"#dc2626\">w = 0.1 m/s (drift)</text></svg>",
+        "caption": "Collecting area A and drift velocity w marked on the diagram only. (read values from the figure)"
+      },
+      "solution": "**Concept.** η = 1 − e^{−wA/Q}, with A and w read from the figure.\n\n**Working.**\n$$(1-e^{-0.1\\times200/6})\\times100=96.43\\%.$$\n\n**Answer.** $96.43\\%$"
+    },
+    {
+      "id": 45,
+      "subject": "Environmental Management & Ethics",
+      "topic": "Environmental Economics",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "At a discount rate of $8\\%$, and reading the future benefit $F$ and its time horizon $n$ from the cash-flow diagram, the present worth is $₹$ _____.",
+      "answer": 95260,
+      "tolerance": 1,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 330 150\" width=\"100%\" style=\"max-width:350px;height:auto\"><line x1=\"30\" y1=\"100\" x2=\"310\" y2=\"100\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"30\" y=\"118\" font-size=\"9\" fill=\"#1e293b\">0</text><line x1=\"290\" y1=\"100\" x2=\"290\" y2=\"48\" stroke=\"#16a34a\" stroke-width=\"1.6\"/><path d=\"M290 46 l-5 9 10 0 z\" fill=\"#16a34a\"/><text x=\"290\" y=\"40\" font-size=\"10\" text-anchor=\"middle\" fill=\"#16a34a\">F = ₹1,20,000</text><text x=\"290\" y=\"118\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1e293b\">year 3</text><text x=\"165\" y=\"118\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">time (years) →</text><text x=\"42\" y=\"60\" font-size=\"10\" fill=\"#dc2626\">PW = ?</text></svg>",
+        "caption": "Future benefit F and its time horizon n marked on the cash-flow diagram only. (read values from the figure)"
+      },
+      "solution": "**Concept.** PW = F/(1+i)^n, with F and n read from the diagram.\n\n**Working.**\n$$\\dfrac{120000}{(1+0.08)^{3}}=95260.$$\n\n**Answer.** $₹95260$"
+    },
+    {
+      "id": 46,
+      "subject": "Environmental Management & Ethics",
+      "topic": "Environmental Economics",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "An abatement benefit arrives as the single future cash flow shown in the diagram. At a discount rate of $10\\%$, its present worth is $₹$ _____.",
+      "answer": 37565.74,
+      "tolerance": 1,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 330 150\" width=\"100%\" style=\"max-width:350px;height:auto\"><line x1=\"30\" y1=\"100\" x2=\"310\" y2=\"100\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"30\" y=\"118\" font-size=\"9\" fill=\"#1e293b\">0</text><line x1=\"290\" y1=\"100\" x2=\"290\" y2=\"48\" stroke=\"#16a34a\" stroke-width=\"1.6\"/><path d=\"M290 46 l-5 9 10 0 z\" fill=\"#16a34a\"/><text x=\"290\" y=\"40\" font-size=\"10\" text-anchor=\"middle\" fill=\"#16a34a\">F = ₹50,000</text><text x=\"290\" y=\"118\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1e293b\">year 3</text><text x=\"165\" y=\"118\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">time (years) →</text><text x=\"42\" y=\"60\" font-size=\"10\" fill=\"#dc2626\">PW = ?</text></svg>",
+        "caption": "Future benefit F and its time horizon n marked on the cash-flow diagram only. (read values from the figure)"
+      },
+      "solution": "**Concept.** Present worth $=\\dfrac{F}{(1+i)^n}$, with $F$ and $n$ read from the cash-flow diagram.\n\n**Working.**\n$$\\dfrac{50000}{(1+0.1)^{3}}=37566.$$\n\n**Answer.** $₹37566$"
+    },
+    {
+      "id": 47,
+      "subject": "Environmental Management & Ethics",
+      "topic": "Environmental Economics",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "At a discount rate of $8\\%$, and reading the future benefit $F$ and its time horizon $n$ from the cash-flow diagram, the present worth is $₹$ _____.",
+      "answer": 36751,
+      "tolerance": 1,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 330 150\" width=\"100%\" style=\"max-width:350px;height:auto\"><line x1=\"30\" y1=\"100\" x2=\"310\" y2=\"100\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"30\" y=\"118\" font-size=\"9\" fill=\"#1e293b\">0</text><line x1=\"290\" y1=\"100\" x2=\"290\" y2=\"48\" stroke=\"#16a34a\" stroke-width=\"1.6\"/><path d=\"M290 46 l-5 9 10 0 z\" fill=\"#16a34a\"/><text x=\"290\" y=\"40\" font-size=\"10\" text-anchor=\"middle\" fill=\"#16a34a\">F = ₹50,000</text><text x=\"290\" y=\"118\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1e293b\">year 4</text><text x=\"165\" y=\"118\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">time (years) →</text><text x=\"42\" y=\"60\" font-size=\"10\" fill=\"#dc2626\">PW = ?</text></svg>",
+        "caption": "Future benefit F and its time horizon n marked on the cash-flow diagram only. (read values from the figure)"
+      },
+      "solution": "**Concept.** PW = F/(1+i)^n, with F and n read from the diagram.\n\n**Working.**\n$$\\dfrac{50000}{(1+0.08)^{4}}=36751.$$\n\n**Answer.** $₹36751$"
+    },
+    {
+      "id": 48,
+      "subject": "Environmental Management & Ethics",
+      "topic": "Environmental Economics",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "At a discount rate of $10\\%$, and reading the future benefit $F$ and its time horizon $n$ from the cash-flow diagram, the present worth is $₹$ _____.",
+      "answer": 37566,
+      "tolerance": 1,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 330 150\" width=\"100%\" style=\"max-width:350px;height:auto\"><line x1=\"30\" y1=\"100\" x2=\"310\" y2=\"100\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"30\" y=\"118\" font-size=\"9\" fill=\"#1e293b\">0</text><line x1=\"290\" y1=\"100\" x2=\"290\" y2=\"48\" stroke=\"#16a34a\" stroke-width=\"1.6\"/><path d=\"M290 46 l-5 9 10 0 z\" fill=\"#16a34a\"/><text x=\"290\" y=\"40\" font-size=\"10\" text-anchor=\"middle\" fill=\"#16a34a\">F = ₹50,000</text><text x=\"290\" y=\"118\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1e293b\">year 3</text><text x=\"165\" y=\"118\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">time (years) →</text><text x=\"42\" y=\"60\" font-size=\"10\" fill=\"#dc2626\">PW = ?</text></svg>",
+        "caption": "Future benefit F and its time horizon n marked on the cash-flow diagram only. (read values from the figure)"
+      },
+      "solution": "**Concept.** PW = F/(1+i)^n, with F and n read from the diagram.\n\n**Working.**\n$$\\dfrac{50000}{(1+0.1)^{3}}=37566.$$\n\n**Answer.** $₹37566$"
+    },
+    {
+      "id": 49,
+      "subject": "Ecology & Biodiversity",
+      "topic": "Succession",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "The stable, self-perpetuating community reached at the end of ecological succession is the",
+      "options": [
+        "climax community",
+        "pioneer community",
+        "seral stage",
+        "ecotone"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Succession culminates in a climax community in equilibrium with the environment.\n\n**Working.**\nClimax community.\n\n**Answer.** Climax community"
+    },
+    {
+      "id": 50,
+      "subject": "Air & Noise Pollution",
+      "topic": "Meteorology",
+      "section": "Technical (2-mark)",
+      "type": "MSQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "Which conditions worsen ground-level air pollution by limiting dispersion?",
+      "options": [
+        "Temperature inversion",
+        "Low mixing height",
+        "Calm winds",
+        "Strong superadiabatic lapse"
+      ],
+      "answer": [
+        0,
+        1,
+        2
+      ],
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 190\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"40\" y1=\"20\" x2=\"40\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"40\" y1=\"165\" x2=\"300\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"10\" y=\"28\" font-size=\"9\" fill=\"#1e293b\">altitude</text><text x=\"245\" y=\"182\" font-size=\"9\" fill=\"#1e293b\">temperature →</text><line x1=\"120\" y1=\"160\" x2=\"220\" y2=\"30\" stroke=\"#475569\" stroke-width=\"1.3\" stroke-dasharray=\"5 3\"/><text x=\"222\" y=\"34\" font-size=\"8\" fill=\"#475569\">DALR (dry adiabatic)</text><line x1=\"150\" y1=\"160\" x2=\"200\" y2=\"30\" stroke=\"#dc2626\" stroke-width=\"1.6\"/><text x=\"172\" y=\"50\" font-size=\"8\" fill=\"#dc2626\">ELR (inversion)</text></svg>",
+        "caption": "Environmental lapse rate vs. dry adiabatic lapse rate — inversion atmosphere."
+      },
+      "solution": "**Concept.** Inversions, low mixing height and calm winds all trap pollutants; a strong superadiabatic lapse improves dispersion.\n\n**Working.**\nFirst three.\n\n**Answer.** Inversion, low mixing height, calm winds"
+    },
+    {
+      "id": 51,
+      "subject": "Environmental Management & Ethics",
+      "topic": "Environmental Economics",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "At a discount rate of $8\\%$, and reading the future benefit $F$ and its time horizon $n$ from the cash-flow diagram, the present worth is $₹$ _____.",
+      "answer": 81670,
+      "tolerance": 1,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 330 150\" width=\"100%\" style=\"max-width:350px;height:auto\"><line x1=\"30\" y1=\"100\" x2=\"310\" y2=\"100\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"30\" y=\"118\" font-size=\"9\" fill=\"#1e293b\">0</text><line x1=\"290\" y1=\"100\" x2=\"290\" y2=\"48\" stroke=\"#16a34a\" stroke-width=\"1.6\"/><path d=\"M290 46 l-5 9 10 0 z\" fill=\"#16a34a\"/><text x=\"290\" y=\"40\" font-size=\"10\" text-anchor=\"middle\" fill=\"#16a34a\">F = ₹1,20,000</text><text x=\"290\" y=\"118\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1e293b\">year 5</text><text x=\"165\" y=\"118\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">time (years) →</text><text x=\"42\" y=\"60\" font-size=\"10\" fill=\"#dc2626\">PW = ?</text></svg>",
+        "caption": "Future benefit F and its time horizon n marked on the cash-flow diagram only. (read values from the figure)"
+      },
+      "solution": "**Concept.** PW = F/(1+i)^n, with F and n read from the diagram.\n\n**Working.**\n$$\\dfrac{120000}{(1+0.08)^{5}}=81670.$$\n\n**Answer.** $₹81670$"
+    },
+    {
+      "id": 52,
+      "subject": "Air & Noise Pollution",
+      "topic": "ESP — Deutsch–Anderson",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "An ESP treats $4\\,\\text{m}^3/\\text{s}$. Reading the collecting area $A$ and drift velocity $w$ from the figure, its collection efficiency is _____ %.",
+      "answer": 99.752,
+      "tolerance": 0.1,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 340 170\" width=\"100%\" style=\"max-width:360px;height:auto\"><rect x=\"40\" y=\"30\" width=\"260\" height=\"110\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.2\"/><line x1=\"80\" y1=\"30\" x2=\"80\" y2=\"140\" stroke=\"#94a3b8\" stroke-width=\"3\"/><line x1=\"150\" y1=\"30\" x2=\"150\" y2=\"140\" stroke=\"#94a3b8\" stroke-width=\"3\"/><line x1=\"220\" y1=\"30\" x2=\"220\" y2=\"140\" stroke=\"#94a3b8\" stroke-width=\"3\"/><line x1=\"115\" y1=\"35\" x2=\"115\" y2=\"135\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"2 2\"/><line x1=\"185\" y1=\"35\" x2=\"185\" y2=\"135\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"2 2\"/><path d=\"M14 70 l22 0 m-6 -3 l6 3 -6 3\" stroke=\"#16a34a\" stroke-width=\"1.2\" fill=\"none\"/><text x=\"6\" y=\"64\" font-size=\"9\" fill=\"#16a34a\">gas in</text><text x=\"60\" y=\"158\" font-size=\"9\" fill=\"#1e293b\">collecting area A = 200 m²</text><text x=\"150\" y=\"22\" font-size=\"9\" fill=\"#dc2626\">w = 0.12 m/s (drift)</text></svg>",
+        "caption": "Collecting area A and drift velocity w marked on the diagram only. (read values from the figure)"
+      },
+      "solution": "**Concept.** η = 1 − e^{−wA/Q}, with A and w read from the figure.\n\n**Working.**\n$$(1-e^{-0.12\\times200/4})\\times100=99.75\\%.$$\n\n**Answer.** $99.75\\%$"
+    },
+    {
+      "id": 53,
+      "subject": "Global & Regional Environmental Issues",
+      "topic": "Carbon Footprint",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "A facility emits CO₂, CH₄ (GWP 28) and N₂O (GWP 265); the three masses (t) are shown on the bar chart. The total carbon footprint is _____ t CO₂-e.",
+      "answer": 750,
+      "tolerance": 1,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 188\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"36\" y1=\"150\" x2=\"304\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"60\" y=\"30\" width=\"46\" height=\"120\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"83\" y=\"26\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">80</text><text x=\"83\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">CO₂</text><rect x=\"142\" y=\"142.5\" width=\"46\" height=\"7.5\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"165\" y=\"138.5\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">5</text><text x=\"165\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">CH₄</text><rect x=\"224\" y=\"144\" width=\"46\" height=\"6\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"247\" y=\"140\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">2</text><text x=\"247\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">N₂O</text><text x=\"170\" y=\"182\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">t</text></svg>",
+        "caption": "Masses of CO₂, CH₄ and N₂O shown on the bars only. (read values from the figure)"
+      },
+      "solution": "**Concept.** Σ massᵢ × GWPᵢ, with the three masses read from the bars.\n\n**Working.**\n$$80+5\\times28+2\\times265=750.$$\n\n**Answer.** $750$"
+    },
+    {
+      "id": 54,
+      "subject": "Ecology & Biodiversity",
+      "topic": "Logistic Growth",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "A population grows logistically at intrinsic rate $r=0.3\\,\\text{yr}^{-1}$. Reading the carrying capacity $K$ from the growth curve shown, the maximum rate of population increase ($rK/4$) is _____ individuals/yr.",
+      "answer": 750,
+      "tolerance": 1,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 190\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"34\" y1=\"20\" x2=\"34\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"34\" y1=\"165\" x2=\"305\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"34\" y1=\"40\" x2=\"305\" y2=\"40\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><text x=\"240\" y=\"36\" font-size=\"9\" fill=\"#dc2626\">K = 10000</text><path d=\"M34 158 C120 156 150 80 175 60 C210 44 260 41 305 40\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><text x=\"10\" y=\"30\" font-size=\"9\" fill=\"#1e293b\">N</text><text x=\"285\" y=\"180\" font-size=\"9\" fill=\"#1e293b\">time →</text><text x=\"120\" y=\"120\" font-size=\"8\" fill=\"#16a34a\">max dN/dt at N=K/2</text></svg>",
+        "caption": "Carrying capacity K marked on the growth curve only. (read values from the figure)"
+      },
+      "solution": "**Concept.** Max $\\dfrac{dN}{dt}=\\dfrac{rK}{4}$ at $N=K/2$, with $K$ read from the curve.\n\n**Working.**\n$$\\dfrac{0.3\\times10000}{4}=750.$$\n\n**Answer.** $750$"
+    },
+    {
+      "id": 55,
+      "subject": "Global & Regional Environmental Issues",
+      "topic": "Ozone-Depletion Potential",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "A refrigerant recovery releases $2\\,\\text{t}$ of CFC-11 (ODP $=1.0$) and $5\\,\\text{t}$ of HCFC-22 (ODP $=0.055$). The total release expressed as CFC-11-equivalent (ODP-weighted) is _____ t.",
+      "answer": 2.275,
+      "tolerance": 0.01,
+      "solution": "**Concept.** ODP-weighted release $=\\sum(\\text{mass}\\times\\text{ODP})$ — the basis on which the Montreal Protocol controls ozone-depleting substances.\n\n**Working.**\n$$2(1.0)+5(0.055)=2.275\\,\\text{t}.$$\n\n**Answer.** $2.275\\,\\text{t CFC-11-eq}$"
+    },
+    {
+      "id": 56,
+      "subject": "Ecology & Biodiversity",
+      "topic": "Population Growth — Exponential",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "A population grows exponentially at $r=0.08\\,\\text{yr}^{-1}$. Reading the initial size $N_0$ from the figure, after $13$ yr, $N=$ _____.",
+      "answer": 2829.2,
+      "tolerance": 1,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 190\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"40\" y1=\"20\" x2=\"40\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"40\" y1=\"165\" x2=\"300\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><path d=\"M40 150 C120 145 180 120 230 80 C260 55 285 35 300 25\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><circle cx=\"40\" cy=\"150\" r=\"3\" fill=\"#dc2626\"/><text x=\"46\" y=\"146\" font-size=\"10\" fill=\"#dc2626\">N₀ = 1000</text><text x=\"14\" y=\"30\" font-size=\"9\" fill=\"#1e293b\">N</text><text x=\"278\" y=\"180\" font-size=\"9\" fill=\"#1e293b\">time →</text></svg>",
+        "caption": "Initial population N₀ marked on the curve at t = 0. (read values from the figure)"
+      },
+      "solution": "**Concept.** N = N₀e^{rt}, with N₀ read from the figure.\n\n**Working.**\n$$1000e^{0.08\\times13}=2829.$$\n\n**Answer.** $2829$"
+    },
+    {
+      "id": 57,
+      "subject": "Air & Noise Pollution",
+      "topic": "Atmospheric Stability",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "When the environmental lapse rate is greater than the dry adiabatic lapse rate, the atmosphere is",
+      "options": [
+        "superadiabatic and unstable",
+        "isothermal",
+        "inverted and stable",
+        "neutral"
+      ],
+      "answer": 0,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 190\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"40\" y1=\"20\" x2=\"40\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"40\" y1=\"165\" x2=\"300\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"10\" y=\"28\" font-size=\"9\" fill=\"#1e293b\">altitude</text><text x=\"245\" y=\"182\" font-size=\"9\" fill=\"#1e293b\">temperature →</text><line x1=\"120\" y1=\"160\" x2=\"220\" y2=\"30\" stroke=\"#475569\" stroke-width=\"1.3\" stroke-dasharray=\"5 3\"/><text x=\"222\" y=\"34\" font-size=\"8\" fill=\"#475569\">DALR (dry adiabatic)</text><line x1=\"150\" y1=\"160\" x2=\"200\" y2=\"30\" stroke=\"#dc2626\" stroke-width=\"1.6\"/><text x=\"172\" y=\"50\" font-size=\"8\" fill=\"#dc2626\">ELR (unstable)</text></svg>",
+        "caption": "Environmental lapse rate vs. dry adiabatic lapse rate — unstable atmosphere."
+      },
+      "solution": "**Concept.** ELR > DALR ⇒ a displaced parcel keeps rising ⇒ superadiabatic, unstable (good dispersion, looping plume).\n\n**Working.**\nSuperadiabatic, unstable.\n\n**Answer.** Superadiabatic / unstable"
+    },
+    {
+      "id": 58,
+      "subject": "Air & Noise Pollution",
+      "topic": "Gaussian Plume",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "A stack emits $Q=80\\,\\text{g/s}$. Using the effective height $H$, wind speed $u$ and dispersion coefficients $\\sigma_y,\\sigma_z$ marked on the diagram, the ground-level centreline concentration (full reflection) is _____ ×10⁻⁴ g/m³.",
+      "answer": 27.5574,
+      "tolerance": 0.2,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 360 210\" width=\"100%\" style=\"max-width:380px;height:auto\"><line x1=\"20\" y1=\"175\" x2=\"350\" y2=\"175\" stroke=\"#475569\" stroke-width=\"1.4\"/><rect x=\"34\" y=\"75\" width=\"14\" height=\"100\" fill=\"#94a3b8\" stroke=\"#1e293b\"/><text x=\"41\" y=\"191\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1e293b\">stack</text><path d=\"M48 75 Q160 64 350 44 M48 75 Q160 86 350 116\" fill=\"rgba(37,99,235,0.10)\" stroke=\"#2563eb\" stroke-width=\"1.3\"/><line x1=\"41\" y1=\"75\" x2=\"41\" y2=\"175\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"3 2\"/><text x=\"54\" y=\"70\" font-size=\"10\" fill=\"#dc2626\">H = 30 m</text><path d=\"M118 148 l20 0 m-5 -3 l5 3 -5 3\" stroke=\"#16a34a\" stroke-width=\"1.1\" fill=\"none\"/><text x=\"142\" y=\"151\" font-size=\"10\" fill=\"#16a34a\">u = 5 m/s</text><text x=\"206\" y=\"40\" font-size=\"10\" fill=\"#2563eb\">σ_y = 30 m,  σ_z = 20 m</text><text x=\"318\" y=\"171\" font-size=\"9\" fill=\"#1e293b\">x →</text></svg>",
+        "caption": "Elevated point source: H, u, σ_y and σ_z are marked on the diagram only. (read values from the figure)"
+      },
+      "solution": "**Concept.** C = Q/(πuσ_yσ_z)·exp(−H²/2σ_z²); H,u,σ_y,σ_z read from the figure.\n\n**Working.**\n$$\\dfrac{80}{\\pi\\times5\\times30\\times20}e^{-30^2/(2\\times20^2)}=0.00275574.$$\n\n**Answer.** $27.557\\times10^{-4}$"
+    },
+    {
+      "id": 59,
+      "subject": "Environmental Management & Ethics",
+      "topic": "Environmental Economics",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "At a discount rate of $8\\%$, and reading the future benefit $F$ and its time horizon $n$ from the cash-flow diagram, the present worth is $₹$ _____.",
+      "answer": 34029,
+      "tolerance": 1,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 330 150\" width=\"100%\" style=\"max-width:350px;height:auto\"><line x1=\"30\" y1=\"100\" x2=\"310\" y2=\"100\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"30\" y=\"118\" font-size=\"9\" fill=\"#1e293b\">0</text><line x1=\"290\" y1=\"100\" x2=\"290\" y2=\"48\" stroke=\"#16a34a\" stroke-width=\"1.6\"/><path d=\"M290 46 l-5 9 10 0 z\" fill=\"#16a34a\"/><text x=\"290\" y=\"40\" font-size=\"10\" text-anchor=\"middle\" fill=\"#16a34a\">F = ₹50,000</text><text x=\"290\" y=\"118\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1e293b\">year 5</text><text x=\"165\" y=\"118\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">time (years) →</text><text x=\"42\" y=\"60\" font-size=\"10\" fill=\"#dc2626\">PW = ?</text></svg>",
+        "caption": "Future benefit F and its time horizon n marked on the cash-flow diagram only. (read values from the figure)"
+      },
+      "solution": "**Concept.** PW = F/(1+i)^n, with F and n read from the diagram.\n\n**Working.**\n$$\\dfrac{50000}{(1+0.08)^{5}}=34029.$$\n\n**Answer.** $₹34029$"
+    },
+    {
+      "id": 60,
+      "subject": "Ecology & Biodiversity",
+      "topic": "Energy Flow — 10% Law",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "In the energy pyramid shown, only the producer (trophic-1) energy is marked; 10% transfers per level. Energy at trophic level $4$ is _____ kcal/m²/yr.",
+      "answer": 10,
+      "tolerance": 0.5,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 180\" width=\"100%\" style=\"max-width:340px;height:auto\"><polygon points=\"40,150 280,150 240,118 80,118\" fill=\"#16a34a\" stroke=\"#1e293b\"/><polygon points=\"80,118 240,118 205,86 115,86\" fill=\"#65a30d\" stroke=\"#1e293b\"/><polygon points=\"115,86 205,86 178,54 142,54\" fill=\"#d97706\" stroke=\"#1e293b\"/><polygon points=\"142,54 178,54 165,30 155,30\" fill=\"#dc2626\" stroke=\"#1e293b\"/><text x=\"160\" y=\"142\" font-size=\"9\" text-anchor=\"middle\" fill=\"#fff\">Producers = 10000</text><text x=\"160\" y=\"110\" font-size=\"8\" text-anchor=\"middle\" fill=\"#fff\">L2 = ?</text><text x=\"160\" y=\"78\" font-size=\"8\" text-anchor=\"middle\" fill=\"#fff\">L3 = ?</text><text x=\"160\" y=\"46\" font-size=\"7\" text-anchor=\"middle\" fill=\"#fff\">L4 = ?</text><text x=\"160\" y=\"172\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1e293b\">kcal/m²/yr — 10% transfer per level</text></svg>",
+        "caption": "Only the producer (trophic level 1) energy is marked; upper levels follow the 10% rule. (read values from the figure)"
+      },
+      "solution": "**Concept.** Eₙ = E₀(0.1)ⁿ, with E₀ read from the pyramid.\n\n**Working.**\n$$10000\\times0.1^{3}=10.$$\n\n**Answer.** $10$"
+    },
+    {
+      "id": 61,
+      "subject": "Air & Noise Pollution",
+      "topic": "Noise — Combination",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "Two sources $68\\,\\text{dB}$ and $76\\,\\text{dB}$ at a point. Combined level is _____ dB.",
+      "answer": 76.639,
+      "tolerance": 0.1,
+      "solution": "**Concept.** L = 10log(10^{L₁/10}+10^{L₂/10}).\n\n**Working.**\n$$10\\log(10^{68/10}+10^{76/10})=76.64.$$\n\n**Answer.** $76.64\\,\\text{dB}$"
+    },
+    {
+      "id": 62,
+      "subject": "Water & Wastewater Treatment",
+      "topic": "BOD Kinetics",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "$L_0=200\\,\\text{mg/L}$, $k=0.1\\,\\text{d}^{-1}$ (base e). BOD exerted in $2$ d is _____ mg/L.",
+      "answer": 36.254,
+      "tolerance": 0.2,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 340 200\" width=\"100%\" style=\"max-width:360px;height:auto\"><line x1=\"34\" y1=\"30\" x2=\"34\" y2=\"175\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"34\" y1=\"175\" x2=\"330\" y2=\"175\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"8\" y=\"40\" font-size=\"9\" fill=\"#1e293b\">DO</text><text x=\"305\" y=\"190\" font-size=\"9\" fill=\"#1e293b\">distance/time →</text><line x1=\"34\" y1=\"45\" x2=\"330\" y2=\"45\" stroke=\"#16a34a\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><text x=\"250\" y=\"42\" font-size=\"8\" fill=\"#16a34a\">saturation DO</text><path d=\"M34 60 Q120 175 175 150 Q260 110 330 70\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.7\"/><line x1=\"175\" y1=\"45\" x2=\"175\" y2=\"150\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"3 2\"/><circle cx=\"175\" cy=\"150\" r=\"3\" fill=\"#dc2626\"/><text x=\"180\" y=\"120\" font-size=\"9\" fill=\"#dc2626\">D_c = 60 mg/L</text><text x=\"150\" y=\"170\" font-size=\"9\" fill=\"#dc2626\">t_c = 7 d</text></svg>",
+        "caption": "Oxygen-sag curve: critical deficit D_c at critical time t_c."
+      },
+      "solution": "**Concept.** y_t = L₀(1−e^{−kt}).\n\n**Working.**\n$$200(1-e^{-0.1\\times2})=36.25.$$\n\n**Answer.** $36.25$"
+    },
+    {
+      "id": 63,
+      "subject": "Environmental Chemistry",
+      "topic": "Carbonate System",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "Alkalinity of natural water is primarily a measure of its capacity to",
+      "options": [
+        "neutralise acid",
+        "neutralise base",
+        "conduct electricity",
+        "absorb light"
+      ],
+      "answer": 0,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 190\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"38\" y1=\"18\" x2=\"38\" y2=\"160\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"38\" y1=\"160\" x2=\"305\" y2=\"160\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"14\" y=\"28\" font-size=\"9\" fill=\"#1e293b\">pH</text><text x=\"240\" y=\"178\" font-size=\"9\" fill=\"#1e293b\">titrant added →</text><line x1=\"38\" y1=\"89\" x2=\"305\" y2=\"89\" stroke=\"#16a34a\" stroke-width=\"0.8\" stroke-dasharray=\"3 3\"/><text x=\"42\" y=\"86\" font-size=\"7\" fill=\"#16a34a\">pH 7</text><path d=\"M38 150 C120 146 160 140 168 89 C176 38 230 32 305 28\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><circle cx=\"168\" cy=\"89\" r=\"3\" fill=\"#dc2626\"/><text x=\"118\" y=\"70\" font-size=\"8\" fill=\"#dc2626\">equivalence pt</text></svg>",
+        "caption": "Titration curve: sharp pH jump at the equivalence point."
+      },
+      "solution": "**Concept.** Alkalinity = acid-neutralising capacity (mainly HCO₃⁻/CO₃²⁻/OH⁻).\n\n**Working.**\nAcid-neutralising capacity.\n\n**Answer.** Neutralise acid"
+    },
+    {
+      "id": 64,
+      "subject": "Water & Wastewater Treatment",
+      "topic": "Activated Sludge — F/M",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "ASP: $Q=12000\\,\\text{m}^3/\\text{d}$, $S_0=200$, $V=2000\\,\\text{m}^3$, MLSS $3000\\,\\text{mg/L}$. F/M is _____ d⁻¹.",
+      "answer": 0.4,
+      "tolerance": 0.005,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 350 180\" width=\"100%\" style=\"max-width:360px;height:auto\"><rect x=\"60\" y=\"40\" width=\"110\" height=\"70\" fill=\"rgba(37,99,235,0.08)\" stroke=\"#1e293b\"/><text x=\"115\" y=\"78\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1e293b\">Aeration</text><text x=\"115\" y=\"92\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">MLSS, V</text><circle cx=\"240\" cy=\"75\" r=\"34\" fill=\"rgba(22,163,74,0.10)\" stroke=\"#1e293b\"/><text x=\"240\" y=\"72\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">Clarifier</text><path d=\"M20 70 l40 0\" stroke=\"#16a34a\" stroke-width=\"1.3\"/><text x=\"22\" y=\"62\" font-size=\"8\" fill=\"#16a34a\">Q, S0</text><path d=\"M170 70 l36 0\" stroke=\"#16a34a\" stroke-width=\"1.3\"/><path d=\"M274 70 l44 0\" stroke=\"#16a34a\" stroke-width=\"1.3\"/><text x=\"290\" y=\"62\" font-size=\"8\" fill=\"#16a34a\">Qe, Se</text><path d=\"M240 109 l0 36 -180 0 0 -35\" stroke=\"#dc2626\" stroke-width=\"1.2\" fill=\"none\" stroke-dasharray=\"4 3\"/><text x=\"120\" y=\"158\" font-size=\"8\" fill=\"#dc2626\">return sludge Qr</text><path d=\"M250 140 l40 0\" stroke=\"#7c2d12\" stroke-width=\"1.2\"/><text x=\"255\" y=\"135\" font-size=\"8\" fill=\"#7c2d12\">waste Qw</text></svg>",
+        "caption": "Activated-sludge: aeration basin, secondary clarifier, sludge recycle."
+      },
+      "solution": "**Concept.** F/M = QS₀/(VX).\n\n**Working.**\n$$\\dfrac{12000\\times200}{2000\\times3000}=0.4.$$\n\n**Answer.** $0.4$"
+    },
+    {
+      "id": 65,
+      "subject": "Solid & Hazardous Waste Management",
+      "topic": "Moisture Content",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "Wet MSW $1000\\,\\text{kg}$ at $60\\%$ moisture. The dry-solids mass is _____ kg.",
+      "answer": 400,
+      "tolerance": 0.5,
+      "solution": "**Concept.** Dry = wet × (1 − moisture).\n\n**Working.**\n$$1000(1-60/100)=400.$$\n\n**Answer.** $400\\,\\text{kg}$"
+    }
+  ]
+}

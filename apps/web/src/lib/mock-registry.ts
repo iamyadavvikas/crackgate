@@ -7,6 +7,10 @@
 import { MOCKS } from "@/data/mocks";
 import { CIL_MOCK_BANK, cilMockIds } from "@/data/cil-mock-bank";
 import { CE_MOCKS } from "@/data/gate/civil/mocks";
+import { ES_MOCKS } from "@/data/gate/environment/mocks";
+import { GG_MOCKS } from "@/data/gate/geology/mocks";
+import { STATE_MOCKS } from "@/data/state/mocks";
+import { DIPLOMA_MOCKS } from "@/data/diploma/mocks";
 import type { Question } from "@/lib/grading";
 
 export type MockGate =
@@ -40,6 +44,36 @@ export function resolveMock(id: string): ResolvedMock | null {
     };
   }
 
+  if (id.startsWith("es-mock-")) {
+    const m = ES_MOCKS.find((x) => (x as { id: string }).id === id) as
+      | { id: string; title: string; tier?: string; duration?: number; questions: unknown[] }
+      | undefined;
+    if (!m) return null;
+    return {
+      id: m.id,
+      title: m.title,
+      questions: m.questions as unknown as Question[],
+      durationSec: (m.duration ?? 180) * 60,
+      negativeMarking: true,
+      gate: { type: "entitlement", exam: "GATE", subject: "environment", freeTrial: m.tier === "free" },
+    };
+  }
+
+  if (id.startsWith("gg-mock-")) {
+    const m = GG_MOCKS.find((x) => (x as { id: string }).id === id) as
+      | { id: string; title: string; tier?: string; duration?: number; questions: unknown[] }
+      | undefined;
+    if (!m) return null;
+    return {
+      id: m.id,
+      title: m.title,
+      questions: m.questions as unknown as Question[],
+      durationSec: (m.duration ?? 180) * 60,
+      negativeMarking: true,
+      gate: { type: "entitlement", exam: "GATE", subject: "geology", freeTrial: m.tier === "free" },
+    };
+  }
+
   if (id.startsWith("cil-")) {
     const set = CIL_MOCK_BANK.get(id);
     if (!set) return null;
@@ -50,6 +84,24 @@ export function resolveMock(id: string): ResolvedMock | null {
       durationSec: (set.durationMin ?? 180) * 60,
       negativeMarking: set.negativeMarking ?? false,
       gate: { type: "entitlement", exam: "PSU", subject: set.slug },
+    };
+  }
+
+  // STATE (RPSC AME — −1/3 negative) and DIPLOMA (coalfield CBT — no negative).
+  if (id.startsWith("state-") || id.startsWith("diploma-")) {
+    const isState = id.startsWith("state-");
+    const pool = isState ? STATE_MOCKS : DIPLOMA_MOCKS;
+    const m = pool.find((x) => (x as { id: string }).id === id) as
+      | { id: string; title: string; tier: "free" | "subject" | "premium"; duration?: number; questions: unknown[] }
+      | undefined;
+    if (!m) return null;
+    return {
+      id: m.id,
+      title: m.title,
+      questions: m.questions as unknown as Question[],
+      durationSec: (m.duration ?? (isState ? 150 : 120)) * 60,
+      negativeMarking: isState,
+      gate: { type: "plan", tier: m.tier },
     };
   }
 
@@ -67,11 +119,15 @@ export function resolveMock(id: string): ResolvedMock | null {
   };
 }
 
-/** Every resolvable mock id (GATE catalogue + CE mocks + shipped CIL sets). */
+/** Every resolvable mock id (GATE catalogue + CE mocks + shipped CIL sets + STATE/DIPLOMA). */
 export function allMockIds(): string[] {
   return [
     ...MOCKS.map((m) => (m as { id: string }).id),
     ...CE_MOCKS.map((m) => (m as { id: string }).id),
+    ...ES_MOCKS.map((m) => (m as { id: string }).id),
+    ...GG_MOCKS.map((m) => (m as { id: string }).id),
     ...cilMockIds(),
+    ...STATE_MOCKS.map((m) => (m as { id: string }).id),
+    ...DIPLOMA_MOCKS.map((m) => (m as { id: string }).id),
   ];
 }

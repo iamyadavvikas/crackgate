@@ -1,0 +1,1163 @@
+{
+  "slug": "es-global-regional-issues",
+  "name": "Global & Regional Environmental Issues",
+  "questions": [
+    {
+      "id": "es-global-001",
+      "subject": "Global & Regional Environmental Issues",
+      "topic": "Global Warming Potential",
+      "difficulty": "medium",
+      "type": "NAT",
+      "stem": "A source emits $10\\,\\text{t}$ of methane (GWP$_{100}=28$). Its carbon-dioxide-equivalent emission is _____ t CO₂-e.",
+      "answer": 280,
+      "tolerance": 0.5,
+      "solution": "**Concept.** CO₂-e $=$ mass $\\times$ GWP.\n\n**Working.**\n$$10\\times28=280.$$\n\n**Answer.** $280\\,\\text{t CO}_2\\text{-e}$",
+      "archetype": "A",
+      "marks": 2,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 300 180\" width=\"100%\" style=\"max-width:320px;height:auto\"><line x1=\"40\" y1=\"150\" x2=\"280\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"70\" y=\"30\" width=\"46\" height=\"120\" fill=\"#dc2626\" opacity=\"0.75\"/><text x=\"93\" y=\"26\" font-size=\"9\" text-anchor=\"middle\" fill=\"#dc2626\">in 280</text><rect x=\"190\" y=\"145.71428571428572\" width=\"46\" height=\"4.285714285714286\" fill=\"#16a34a\" opacity=\"0.8\"/><text x=\"213\" y=\"141.71428571428572\" font-size=\"9\" text-anchor=\"middle\" fill=\"#16a34a\">out 10</text><text x=\"160\" y=\"170\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1e293b\">CH₄ → CO₂-e (t)</text></svg>",
+        "caption": "Methane converted to CO₂-equivalent via GWP."
+      }
+    },
+    {
+      "id": "es-global-002",
+      "subject": "Global & Regional Environmental Issues",
+      "topic": "Global Warming Potential",
+      "difficulty": "medium",
+      "type": "NAT",
+      "stem": "A source emits $5\\,\\text{t}$ of methane (GWP$_{100}=25$). Its carbon-dioxide-equivalent emission is _____ t CO₂-e.",
+      "answer": 125,
+      "tolerance": 0.5,
+      "solution": "**Concept.** CO₂-e $=$ mass $\\times$ GWP.\n\n**Working.**\n$$5\\times25=125.$$\n\n**Answer.** $125\\,\\text{t CO}_2\\text{-e}$",
+      "archetype": "A",
+      "marks": 2,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 300 180\" width=\"100%\" style=\"max-width:320px;height:auto\"><line x1=\"40\" y1=\"150\" x2=\"280\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"70\" y=\"30\" width=\"46\" height=\"120\" fill=\"#dc2626\" opacity=\"0.75\"/><text x=\"93\" y=\"26\" font-size=\"9\" text-anchor=\"middle\" fill=\"#dc2626\">in 125</text><rect x=\"190\" y=\"145.2\" width=\"46\" height=\"4.8\" fill=\"#16a34a\" opacity=\"0.8\"/><text x=\"213\" y=\"141.2\" font-size=\"9\" text-anchor=\"middle\" fill=\"#16a34a\">out 5</text><text x=\"160\" y=\"170\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1e293b\">CH₄ → CO₂-e (t)</text></svg>",
+        "caption": "Methane converted to CO₂-equivalent via GWP."
+      }
+    },
+    {
+      "id": "es-global-003",
+      "subject": "Global & Regional Environmental Issues",
+      "topic": "Carbon Footprint",
+      "difficulty": "hard",
+      "type": "NAT",
+      "stem": "A facility emits $100\\,\\text{t}$ CO₂, $4\\,\\text{t}$ CH₄ (GWP 28) and $1\\,\\text{t}$ N₂O (GWP 265). The total carbon footprint is _____ t CO₂-e.",
+      "answer": 477,
+      "tolerance": 1,
+      "solution": "**Concept.** Sum each gas × its GWP.\n\n**Working.**\n$$100(1)+4(28)+1(265)=477.$$\n\n**Answer.** $477\\,\\text{t CO}_2\\text{-e}$",
+      "archetype": "C",
+      "marks": 2,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 300 180\" width=\"100%\" style=\"max-width:320px;height:auto\"><line x1=\"40\" y1=\"150\" x2=\"280\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"70\" y=\"30\" width=\"46\" height=\"120\" fill=\"#dc2626\" opacity=\"0.75\"/><text x=\"93\" y=\"26\" font-size=\"9\" text-anchor=\"middle\" fill=\"#dc2626\">in 477</text><rect x=\"190\" y=\"123.58490566037736\" width=\"46\" height=\"26.41509433962264\" fill=\"#16a34a\" opacity=\"0.8\"/><text x=\"213\" y=\"119.58490566037736\" font-size=\"9\" text-anchor=\"middle\" fill=\"#16a34a\">out 105</text><text x=\"160\" y=\"170\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1e293b\">GHG mix (t CO₂-e)</text></svg>",
+        "caption": "Aggregating gases into CO₂-equivalent."
+      }
+    },
+    {
+      "id": "es-global-004",
+      "subject": "Global & Regional Environmental Issues",
+      "topic": "Ozone Depletion",
+      "difficulty": "easy",
+      "type": "MCQ",
+      "stem": "Stratospheric ozone depletion is primarily driven by the catalytic release of which radical from CFCs?",
+      "options": [
+        "Chlorine (Cl·)",
+        "Hydroxyl (OH·)",
+        "Nitrate (NO₃·)",
+        "Carbon (C·)"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** UV photolysis of CFCs releases Cl· which catalytically destroys O₃ (one Cl can destroy thousands of O₃).\n\n**Working.**\nChlorine radical.\n\n**Answer.** Chlorine",
+      "archetype": "B",
+      "marks": 1
+    },
+    {
+      "id": "es-global-005",
+      "subject": "Global & Regional Environmental Issues",
+      "topic": "Ozone-Depletion Potential",
+      "difficulty": "hard",
+      "type": "NAT",
+      "stem": "A refrigerant recovery releases $2\\,\\text{t}$ of CFC-11 (ODP $=1.0$) and $5\\,\\text{t}$ of HCFC-22 (ODP $=0.055$). The total release expressed as CFC-11-equivalent (ODP-weighted) is _____ t.",
+      "answer": 2.275,
+      "tolerance": 0.01,
+      "solution": "**Concept.** ODP-weighted release $=\\sum(\\text{mass}\\times\\text{ODP})$ — the basis on which the Montreal Protocol controls ozone-depleting substances.\n\n**Working.**\n$$2(1.0)+5(0.055)=2.275\\,\\text{t}.$$\n\n**Answer.** $2.275\\,\\text{t CFC-11-eq}$",
+      "archetype": "C",
+      "marks": 2
+    },
+    {
+      "id": "es-global-006",
+      "subject": "Global & Regional Environmental Issues",
+      "topic": "Acid Rain",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "Acid rain is chiefly caused by the atmospheric oxidation and hydration of",
+      "options": [
+        "SO₂ and NOₓ to sulphuric and nitric acids",
+        "CO₂ to carbonic acid only",
+        "CH₄ to formic acid",
+        "O₃ to nitric acid"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** SO₂→H₂SO₄ and NOₓ→HNO₃ depress rain pH below ~5.6.\n\n**Working.**\nSO₂ and NOₓ.\n\n**Answer.** SO₂ and NOₓ",
+      "archetype": "B",
+      "marks": 1
+    },
+    {
+      "id": "es-global-007",
+      "subject": "Global & Regional Environmental Issues",
+      "topic": "Greenhouse Gases",
+      "difficulty": "easy",
+      "type": "MSQ",
+      "stem": "Which of the following are greenhouse gases?",
+      "options": [
+        "Carbon dioxide (CO₂)",
+        "Methane (CH₄)",
+        "Nitrous oxide (N₂O)",
+        "Nitrogen (N₂)"
+      ],
+      "answer": [
+        0,
+        1,
+        2
+      ],
+      "solution": "**Concept.** CO₂, CH₄ and N₂O absorb infrared; diatomic N₂ does not and is not a GHG.\n\n**Working.**\nFirst three.\n\n**Answer.** CO₂, CH₄, N₂O",
+      "archetype": "D",
+      "marks": 2
+    },
+    {
+      "id": "es-global-008",
+      "subject": "Global & Regional Environmental Issues",
+      "topic": "Eutrophication",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "The nutrient most commonly limiting and therefore triggering eutrophication in freshwater lakes is",
+      "options": [
+        "phosphorus",
+        "carbon",
+        "silicon",
+        "iron"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Phosphorus is usually the limiting nutrient in freshwater; its loading drives algal blooms.\n\n**Working.**\nPhosphorus.\n\n**Answer.** Phosphorus",
+      "archetype": "B",
+      "marks": 1
+    },
+    {
+      "id": "es-global-009",
+      "subject": "Global & Regional Environmental Issues",
+      "topic": "Conventions",
+      "difficulty": "hard",
+      "type": "MSQ",
+      "stem": "Match the correct themes: which statements are TRUE?",
+      "options": [
+        "Basel Convention → transboundary movement of hazardous waste",
+        "Ramsar Convention → conservation of wetlands",
+        "Stockholm Convention → persistent organic pollutants (POPs)",
+        "Montreal Protocol → greenhouse-gas emission caps"
+      ],
+      "answer": [
+        0,
+        1,
+        2
+      ],
+      "solution": "**Concept.** Basel = hazardous-waste trade; Ramsar = wetlands; Stockholm = POPs; Montreal = ODS (not GHG caps — that is Kyoto/Paris).\n\n**Working.**\nFirst three are correct.\n\n**Answer.** Basel, Ramsar, Stockholm",
+      "archetype": "D",
+      "marks": 2
+    },
+    {
+      "id": "es-global-010",
+      "subject": "Global & Regional Environmental Issues",
+      "topic": "Carbon Dioxide Trend",
+      "difficulty": "easy",
+      "marks": 1,
+      "archetype": "A",
+      "solution": "**Concept.** Linear extrapolation: C = C₀ + rate×t.\n\n**Working.**\n$$410+2\\times18=446.$$\n\n**Answer.** $446\\,\\text{ppm}$",
+      "type": "NAT",
+      "stem": "Atmospheric CO₂ is $410\\,\\text{ppm}$ rising at $2\\,\\text{ppm/yr}$. After $18$ years it is _____ ppm.",
+      "answer": 446,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-global-011",
+      "subject": "Global & Regional Environmental Issues",
+      "topic": "Eutrophication",
+      "difficulty": "medium",
+      "marks": 1,
+      "archetype": "B",
+      "solution": "**Concept.** Algal blooms die and decompose, consuming DO and raising BOD.\n\n**Working.**\nDO depletion.\n\n**Answer.** Oxygen depletion",
+      "type": "MCQ",
+      "stem": "A direct consequence of eutrophication in a water body is",
+      "options": [
+        "dissolved-oxygen depletion from algal decay",
+        "increased water transparency",
+        "reduced nutrient loading",
+        "lower BOD"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "es-global-012",
+      "subject": "Global & Regional Environmental Issues",
+      "topic": "Ozone Depletion",
+      "difficulty": "hard",
+      "marks": 1,
+      "archetype": "D",
+      "solution": "**Concept.** CFCs, halons and CCl₄ deplete ozone; CO₂ is a GHG but not an ODS.\n\n**Working.**\nFirst three.\n\n**Answer.** CFCs, halons, CCl₄",
+      "type": "MSQ",
+      "stem": "Which gases are ozone-depleting substances?",
+      "options": [
+        "CFCs (chlorofluorocarbons)",
+        "Halons",
+        "Carbon tetrachloride",
+        "Carbon dioxide"
+      ],
+      "answer": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "es-global-013",
+      "subject": "Global & Regional Environmental Issues",
+      "topic": "Carbon Dioxide Trend",
+      "difficulty": "easy",
+      "marks": 1,
+      "archetype": "A",
+      "solution": "**Concept.** Linear extrapolation: C = C₀ + rate×t.\n\n**Working.**\n$$420+2\\times5=430.$$\n\n**Answer.** $430\\,\\text{ppm}$",
+      "type": "NAT",
+      "stem": "Atmospheric CO₂ is $420\\,\\text{ppm}$ rising at $2\\,\\text{ppm/yr}$. After $5$ years it is _____ ppm.",
+      "answer": 430,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-global-014",
+      "subject": "Global & Regional Environmental Issues",
+      "topic": "Carbon Footprint",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** Σ massᵢ × GWPᵢ, with the three masses read from the bars.\n\n**Working.**\n$$50+5\\times28+0.5\\times265=322.5.$$\n\n**Answer.** $322.5$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 188\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"36\" y1=\"150\" x2=\"304\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"60\" y=\"30\" width=\"46\" height=\"120\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"83\" y=\"26\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">50</text><text x=\"83\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">CO₂</text><rect x=\"142\" y=\"138\" width=\"46\" height=\"12\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"165\" y=\"134\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">5</text><text x=\"165\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">CH₄</text><rect x=\"224\" y=\"144\" width=\"46\" height=\"6\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"247\" y=\"140\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">0.5</text><text x=\"247\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">N₂O</text><text x=\"170\" y=\"182\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">t</text></svg>",
+        "caption": "Masses of CO₂, CH₄ and N₂O shown on the bars only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A facility emits CO₂, CH₄ (GWP 28) and N₂O (GWP 265); the three masses (t) are shown on the bar chart. The total carbon footprint is _____ t CO₂-e.",
+      "answer": 322.5,
+      "tolerance": 1
+    },
+    {
+      "id": "es-global-015",
+      "subject": "Global & Regional Environmental Issues",
+      "topic": "Radiative Forcing",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** Equilibrium warming $\\Delta T=\\lambda\\,\\Delta F$ (climate sensitivity × forcing) — GHGs absorb the outgoing long-wave IR.\n\n**Working.**\n$$0.8\\times3.7=2.96\\,\\text{K}.$$\n\n**Answer.** $2.96\\,\\text{K}$",
+      "type": "NAT",
+      "stem": "Doubling atmospheric CO₂ adds a radiative forcing of $3.7\\,\\text{W/m}^2$. For a climate-sensitivity parameter of $0.8\\,\\text{K per W/m}^2$, the equilibrium surface warming is _____ K.",
+      "answer": 2.9600000000000004,
+      "tolerance": 0.02
+    },
+    {
+      "id": "es-global-016",
+      "subject": "Global & Regional Environmental Issues",
+      "topic": "Carbon Footprint",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** Σ massᵢ × GWPᵢ, with the three masses read from the bars.\n\n**Working.**\n$$50+4\\times28+0.5\\times265=294.5.$$\n\n**Answer.** $294.5$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 188\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"36\" y1=\"150\" x2=\"304\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"60\" y=\"30\" width=\"46\" height=\"120\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"83\" y=\"26\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">50</text><text x=\"83\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">CO₂</text><rect x=\"142\" y=\"140.4\" width=\"46\" height=\"9.6\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"165\" y=\"136.4\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">4</text><text x=\"165\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">CH₄</text><rect x=\"224\" y=\"144\" width=\"46\" height=\"6\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"247\" y=\"140\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">0.5</text><text x=\"247\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">N₂O</text><text x=\"170\" y=\"182\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">t</text></svg>",
+        "caption": "Masses of CO₂, CH₄ and N₂O shown on the bars only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A facility emits CO₂, CH₄ (GWP 28) and N₂O (GWP 265); the three masses (t) are shown on the bar chart. The total carbon footprint is _____ t CO₂-e.",
+      "answer": 294.5,
+      "tolerance": 1
+    },
+    {
+      "id": "es-global-017",
+      "subject": "Global & Regional Environmental Issues",
+      "topic": "Carbon Footprint",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** Σ massᵢ × GWPᵢ, with the three masses read from the bars.\n\n**Working.**\n$$80+4\\times28+1\\times265=457.$$\n\n**Answer.** $457$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 188\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"36\" y1=\"150\" x2=\"304\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"60\" y=\"30\" width=\"46\" height=\"120\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"83\" y=\"26\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">80</text><text x=\"83\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">CO₂</text><rect x=\"142\" y=\"144\" width=\"46\" height=\"6\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"165\" y=\"140\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">4</text><text x=\"165\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">CH₄</text><rect x=\"224\" y=\"144\" width=\"46\" height=\"6\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"247\" y=\"140\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">1</text><text x=\"247\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">N₂O</text><text x=\"170\" y=\"182\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">t</text></svg>",
+        "caption": "Masses of CO₂, CH₄ and N₂O shown on the bars only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A facility emits CO₂, CH₄ (GWP 28) and N₂O (GWP 265); the three masses (t) are shown on the bar chart. The total carbon footprint is _____ t CO₂-e.",
+      "answer": 457,
+      "tolerance": 1
+    },
+    {
+      "id": "es-global-018",
+      "subject": "Global & Regional Environmental Issues",
+      "topic": "Carbon Footprint",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** Σ massᵢ × GWPᵢ, with the three masses read from the bars.\n\n**Working.**\n$$100+4\\times28+0.5\\times265=344.5.$$\n\n**Answer.** $344.5$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 188\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"36\" y1=\"150\" x2=\"304\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"60\" y=\"30\" width=\"46\" height=\"120\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"83\" y=\"26\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">100</text><text x=\"83\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">CO₂</text><rect x=\"142\" y=\"144\" width=\"46\" height=\"6\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"165\" y=\"140\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">4</text><text x=\"165\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">CH₄</text><rect x=\"224\" y=\"144\" width=\"46\" height=\"6\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"247\" y=\"140\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">0.5</text><text x=\"247\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">N₂O</text><text x=\"170\" y=\"182\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">t</text></svg>",
+        "caption": "Masses of CO₂, CH₄ and N₂O shown on the bars only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A facility emits CO₂, CH₄ (GWP 28) and N₂O (GWP 265); the three masses (t) are shown on the bar chart. The total carbon footprint is _____ t CO₂-e.",
+      "answer": 344.5,
+      "tolerance": 1
+    },
+    {
+      "id": "es-global-019",
+      "subject": "Global & Regional Environmental Issues",
+      "topic": "Global Warming Potential",
+      "difficulty": "medium",
+      "marks": 2,
+      "archetype": "A",
+      "solution": "**Concept.** CO₂-e = mass × GWP, with the GWP read from the figure.\n\n**Working.**\n$$12\\times265=3180.$$\n\n**Answer.** $3180$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 300 130\" width=\"100%\" style=\"max-width:300px;height:auto\"><rect x=\"40\" y=\"36\" width=\"220\" height=\"56\" rx=\"6\" fill=\"rgba(217,119,6,0.12)\" stroke=\"#1e293b\"/><text x=\"150\" y=\"58\" font-size=\"11\" text-anchor=\"middle\" fill=\"#1e293b\">the gas</text><text x=\"150\" y=\"80\" font-size=\"12\" text-anchor=\"middle\" fill=\"#dc2626\">GWP₁₀₀ = 265</text><text x=\"150\" y=\"112\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">CO₂-e = mass × GWP</text></svg>",
+        "caption": "Global-warming potential of the gas marked on the diagram only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A source emits $12\\,\\text{t}$ of a greenhouse gas. Reading the gas's GWP₁₀₀ from the figure, its CO₂-equivalent emission is _____ t CO₂-e.",
+      "answer": 3180,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-global-020",
+      "subject": "Global & Regional Environmental Issues",
+      "topic": "Carbon Footprint",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** Σ massᵢ × GWPᵢ, with the three masses read from the bars.\n\n**Working.**\n$$50+5\\times28+2\\times265=720.$$\n\n**Answer.** $720$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 188\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"36\" y1=\"150\" x2=\"304\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"60\" y=\"30\" width=\"46\" height=\"120\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"83\" y=\"26\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">50</text><text x=\"83\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">CO₂</text><rect x=\"142\" y=\"138\" width=\"46\" height=\"12\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"165\" y=\"134\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">5</text><text x=\"165\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">CH₄</text><rect x=\"224\" y=\"144\" width=\"46\" height=\"6\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"247\" y=\"140\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">2</text><text x=\"247\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">N₂O</text><text x=\"170\" y=\"182\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">t</text></svg>",
+        "caption": "Masses of CO₂, CH₄ and N₂O shown on the bars only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A facility emits CO₂, CH₄ (GWP 28) and N₂O (GWP 265); the three masses (t) are shown on the bar chart. The total carbon footprint is _____ t CO₂-e.",
+      "answer": 720,
+      "tolerance": 1
+    },
+    {
+      "id": "es-global-021",
+      "subject": "Global & Regional Environmental Issues",
+      "topic": "Carbon Footprint",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** Σ massᵢ × GWPᵢ, with the three masses read from the bars.\n\n**Working.**\n$$80+5\\times28+0.5\\times265=352.5.$$\n\n**Answer.** $352.5$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 188\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"36\" y1=\"150\" x2=\"304\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"60\" y=\"30\" width=\"46\" height=\"120\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"83\" y=\"26\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">80</text><text x=\"83\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">CO₂</text><rect x=\"142\" y=\"142.5\" width=\"46\" height=\"7.5\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"165\" y=\"138.5\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">5</text><text x=\"165\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">CH₄</text><rect x=\"224\" y=\"144\" width=\"46\" height=\"6\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"247\" y=\"140\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">0.5</text><text x=\"247\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">N₂O</text><text x=\"170\" y=\"182\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">t</text></svg>",
+        "caption": "Masses of CO₂, CH₄ and N₂O shown on the bars only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A facility emits CO₂, CH₄ (GWP 28) and N₂O (GWP 265); the three masses (t) are shown on the bar chart. The total carbon footprint is _____ t CO₂-e.",
+      "answer": 352.5,
+      "tolerance": 1
+    },
+    {
+      "id": "es-global-022",
+      "subject": "Global & Regional Environmental Issues",
+      "topic": "Carbon Footprint",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** Σ massᵢ × GWPᵢ, with the three masses read from the bars.\n\n**Working.**\n$$100+5\\times28+2\\times265=770.$$\n\n**Answer.** $770$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 188\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"36\" y1=\"150\" x2=\"304\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"60\" y=\"30\" width=\"46\" height=\"120\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"83\" y=\"26\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">100</text><text x=\"83\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">CO₂</text><rect x=\"142\" y=\"144\" width=\"46\" height=\"6\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"165\" y=\"140\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">5</text><text x=\"165\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">CH₄</text><rect x=\"224\" y=\"144\" width=\"46\" height=\"6\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"247\" y=\"140\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">2</text><text x=\"247\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">N₂O</text><text x=\"170\" y=\"182\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">t</text></svg>",
+        "caption": "Masses of CO₂, CH₄ and N₂O shown on the bars only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A facility emits CO₂, CH₄ (GWP 28) and N₂O (GWP 265); the three masses (t) are shown on the bar chart. The total carbon footprint is _____ t CO₂-e.",
+      "answer": 770,
+      "tolerance": 1
+    },
+    {
+      "id": "es-global-023",
+      "subject": "Global & Regional Environmental Issues",
+      "topic": "Carbon Dioxide Trend",
+      "difficulty": "easy",
+      "marks": 1,
+      "archetype": "A",
+      "solution": "**Concept.** Linear extrapolation: C = C₀ + rate×t.\n\n**Working.**\n$$410+2\\times14=438.$$\n\n**Answer.** $438\\,\\text{ppm}$",
+      "type": "NAT",
+      "stem": "Atmospheric CO₂ is $410\\,\\text{ppm}$ rising at $2\\,\\text{ppm/yr}$. After $14$ years it is _____ ppm.",
+      "answer": 438,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-global-024",
+      "subject": "Global & Regional Environmental Issues",
+      "topic": "Carbon Dioxide Trend",
+      "difficulty": "easy",
+      "marks": 1,
+      "archetype": "A",
+      "solution": "**Concept.** Linear extrapolation: C = C₀ + rate×t.\n\n**Working.**\n$$410+3\\times6=428.$$\n\n**Answer.** $428\\,\\text{ppm}$",
+      "type": "NAT",
+      "stem": "Atmospheric CO₂ is $410\\,\\text{ppm}$ rising at $3\\,\\text{ppm/yr}$. After $6$ years it is _____ ppm.",
+      "answer": 428,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-global-025",
+      "subject": "Global & Regional Environmental Issues",
+      "topic": "Global Warming Potential",
+      "difficulty": "medium",
+      "marks": 2,
+      "archetype": "A",
+      "solution": "**Concept.** CO₂-e = mass × GWP, with the GWP read from the figure.\n\n**Working.**\n$$18\\times265=4770.$$\n\n**Answer.** $4770$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 300 130\" width=\"100%\" style=\"max-width:300px;height:auto\"><rect x=\"40\" y=\"36\" width=\"220\" height=\"56\" rx=\"6\" fill=\"rgba(217,119,6,0.12)\" stroke=\"#1e293b\"/><text x=\"150\" y=\"58\" font-size=\"11\" text-anchor=\"middle\" fill=\"#1e293b\">the gas</text><text x=\"150\" y=\"80\" font-size=\"12\" text-anchor=\"middle\" fill=\"#dc2626\">GWP₁₀₀ = 265</text><text x=\"150\" y=\"112\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">CO₂-e = mass × GWP</text></svg>",
+        "caption": "Global-warming potential of the gas marked on the diagram only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A source emits $18\\,\\text{t}$ of a greenhouse gas. Reading the gas's GWP₁₀₀ from the figure, its CO₂-equivalent emission is _____ t CO₂-e.",
+      "answer": 4770,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-global-026",
+      "subject": "Global & Regional Environmental Issues",
+      "topic": "Carbon Budget",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** Years to exhaustion $=\\dfrac{\\text{remaining budget}}{\\text{annual emissions}}$ — the logic behind the Paris-Agreement temperature goals.\n\n**Working.**\n$$\\dfrac{400}{40}=10\\,\\text{years}.$$\n\n**Answer.** $10$ years",
+      "type": "NAT",
+      "stem": "To hold warming below its target threshold, a remaining global carbon budget of $400\\,\\text{Gt CO}_2$ is available. At current emissions of $40\\,\\text{Gt CO}_2/\\text{yr}$ (held constant), the budget is exhausted in _____ years.",
+      "answer": 10,
+      "tolerance": 0.1
+    },
+    {
+      "id": "es-global-027",
+      "subject": "Global & Regional Environmental Issues",
+      "topic": "Carbon Dioxide Trend",
+      "difficulty": "easy",
+      "marks": 1,
+      "archetype": "A",
+      "solution": "**Concept.** Linear extrapolation: C = C₀ + rate×t.\n\n**Working.**\n$$420+2\\times8=436.$$\n\n**Answer.** $436\\,\\text{ppm}$",
+      "type": "NAT",
+      "stem": "Atmospheric CO₂ is $420\\,\\text{ppm}$ rising at $2\\,\\text{ppm/yr}$. After $8$ years it is _____ ppm.",
+      "answer": 436,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-global-028",
+      "subject": "Global & Regional Environmental Issues",
+      "topic": "Global Warming Potential",
+      "difficulty": "medium",
+      "marks": 2,
+      "archetype": "A",
+      "solution": "**Concept.** CO₂-e = mass × GWP, with the GWP read from the figure.\n\n**Working.**\n$$6\\times28=168.$$\n\n**Answer.** $168$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 300 130\" width=\"100%\" style=\"max-width:300px;height:auto\"><rect x=\"40\" y=\"36\" width=\"220\" height=\"56\" rx=\"6\" fill=\"rgba(217,119,6,0.12)\" stroke=\"#1e293b\"/><text x=\"150\" y=\"58\" font-size=\"11\" text-anchor=\"middle\" fill=\"#1e293b\">the gas</text><text x=\"150\" y=\"80\" font-size=\"12\" text-anchor=\"middle\" fill=\"#dc2626\">GWP₁₀₀ = 28</text><text x=\"150\" y=\"112\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">CO₂-e = mass × GWP</text></svg>",
+        "caption": "Global-warming potential of the gas marked on the diagram only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A source emits $6\\,\\text{t}$ of a greenhouse gas. Reading the gas's GWP₁₀₀ from the figure, its CO₂-equivalent emission is _____ t CO₂-e.",
+      "answer": 168,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-global-029",
+      "subject": "Global & Regional Environmental Issues",
+      "topic": "Carbon Footprint",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** Σ massᵢ × GWPᵢ, with the three masses read from the bars.\n\n**Working.**\n$$100+2\\times28+0.5\\times265=288.5.$$\n\n**Answer.** $288.5$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 188\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"36\" y1=\"150\" x2=\"304\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"60\" y=\"30\" width=\"46\" height=\"120\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"83\" y=\"26\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">100</text><text x=\"83\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">CO₂</text><rect x=\"142\" y=\"144\" width=\"46\" height=\"6\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"165\" y=\"140\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">2</text><text x=\"165\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">CH₄</text><rect x=\"224\" y=\"144\" width=\"46\" height=\"6\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"247\" y=\"140\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">0.5</text><text x=\"247\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">N₂O</text><text x=\"170\" y=\"182\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">t</text></svg>",
+        "caption": "Masses of CO₂, CH₄ and N₂O shown on the bars only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A facility emits CO₂, CH₄ (GWP 28) and N₂O (GWP 265); the three masses (t) are shown on the bar chart. The total carbon footprint is _____ t CO₂-e.",
+      "answer": 288.5,
+      "tolerance": 1
+    },
+    {
+      "id": "es-global-030",
+      "subject": "Global & Regional Environmental Issues",
+      "topic": "Carbon Dioxide Trend",
+      "difficulty": "easy",
+      "marks": 1,
+      "archetype": "A",
+      "solution": "**Concept.** Linear extrapolation: C = C₀ + rate×t.\n\n**Working.**\n$$410+2.5\\times17=452.5.$$\n\n**Answer.** $452.5\\,\\text{ppm}$",
+      "type": "NAT",
+      "stem": "Atmospheric CO₂ is $410\\,\\text{ppm}$ rising at $2.5\\,\\text{ppm/yr}$. After $17$ years it is _____ ppm.",
+      "answer": 452.5,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-global-031",
+      "subject": "Global & Regional Environmental Issues",
+      "topic": "Global Warming Potential",
+      "difficulty": "medium",
+      "marks": 2,
+      "archetype": "A",
+      "solution": "**Concept.** CO₂-e = mass × GWP, with the GWP read from the figure.\n\n**Working.**\n$$3\\times25=75.$$\n\n**Answer.** $75$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 300 130\" width=\"100%\" style=\"max-width:300px;height:auto\"><rect x=\"40\" y=\"36\" width=\"220\" height=\"56\" rx=\"6\" fill=\"rgba(217,119,6,0.12)\" stroke=\"#1e293b\"/><text x=\"150\" y=\"58\" font-size=\"11\" text-anchor=\"middle\" fill=\"#1e293b\">the gas</text><text x=\"150\" y=\"80\" font-size=\"12\" text-anchor=\"middle\" fill=\"#dc2626\">GWP₁₀₀ = 25</text><text x=\"150\" y=\"112\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">CO₂-e = mass × GWP</text></svg>",
+        "caption": "Global-warming potential of the gas marked on the diagram only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A source emits $3\\,\\text{t}$ of a greenhouse gas. Reading the gas's GWP₁₀₀ from the figure, its CO₂-equivalent emission is _____ t CO₂-e.",
+      "answer": 75,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-global-032",
+      "subject": "Global & Regional Environmental Issues",
+      "topic": "Carbon Footprint",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** Σ massᵢ × GWPᵢ, with the three masses read from the bars.\n\n**Working.**\n$$100+4\\times28+2\\times265=742.$$\n\n**Answer.** $742$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 188\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"36\" y1=\"150\" x2=\"304\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"60\" y=\"30\" width=\"46\" height=\"120\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"83\" y=\"26\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">100</text><text x=\"83\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">CO₂</text><rect x=\"142\" y=\"144\" width=\"46\" height=\"6\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"165\" y=\"140\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">4</text><text x=\"165\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">CH₄</text><rect x=\"224\" y=\"144\" width=\"46\" height=\"6\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"247\" y=\"140\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">2</text><text x=\"247\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">N₂O</text><text x=\"170\" y=\"182\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">t</text></svg>",
+        "caption": "Masses of CO₂, CH₄ and N₂O shown on the bars only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A facility emits CO₂, CH₄ (GWP 28) and N₂O (GWP 265); the three masses (t) are shown on the bar chart. The total carbon footprint is _____ t CO₂-e.",
+      "answer": 742,
+      "tolerance": 1
+    },
+    {
+      "id": "es-global-033",
+      "subject": "Global & Regional Environmental Issues",
+      "topic": "Carbon Dioxide Trend",
+      "difficulty": "easy",
+      "marks": 1,
+      "archetype": "A",
+      "solution": "**Concept.** Linear extrapolation: C = C₀ + rate×t.\n\n**Working.**\n$$420+2\\times10=440.$$\n\n**Answer.** $440\\,\\text{ppm}$",
+      "type": "NAT",
+      "stem": "Atmospheric CO₂ is $420\\,\\text{ppm}$ rising at $2\\,\\text{ppm/yr}$. After $10$ years it is _____ ppm.",
+      "answer": 440,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-global-034",
+      "subject": "Global & Regional Environmental Issues",
+      "topic": "Carbon Dioxide Trend",
+      "difficulty": "easy",
+      "marks": 1,
+      "archetype": "A",
+      "solution": "**Concept.** Linear extrapolation: C = C₀ + rate×t.\n\n**Working.**\n$$420+2.5\\times6=435.$$\n\n**Answer.** $435\\,\\text{ppm}$",
+      "type": "NAT",
+      "stem": "Atmospheric CO₂ is $420\\,\\text{ppm}$ rising at $2.5\\,\\text{ppm/yr}$. After $6$ years it is _____ ppm.",
+      "answer": 435,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-global-035",
+      "subject": "Global & Regional Environmental Issues",
+      "topic": "Carbon Footprint",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** Σ massᵢ × GWPᵢ, with the three masses read from the bars.\n\n**Working.**\n$$50+2\\times28+1\\times265=371.$$\n\n**Answer.** $371$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 188\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"36\" y1=\"150\" x2=\"304\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"60\" y=\"30\" width=\"46\" height=\"120\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"83\" y=\"26\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">50</text><text x=\"83\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">CO₂</text><rect x=\"142\" y=\"144\" width=\"46\" height=\"6\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"165\" y=\"140\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">2</text><text x=\"165\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">CH₄</text><rect x=\"224\" y=\"144\" width=\"46\" height=\"6\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"247\" y=\"140\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">1</text><text x=\"247\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">N₂O</text><text x=\"170\" y=\"182\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">t</text></svg>",
+        "caption": "Masses of CO₂, CH₄ and N₂O shown on the bars only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A facility emits CO₂, CH₄ (GWP 28) and N₂O (GWP 265); the three masses (t) are shown on the bar chart. The total carbon footprint is _____ t CO₂-e.",
+      "answer": 371,
+      "tolerance": 1
+    },
+    {
+      "id": "es-global-036",
+      "subject": "Global & Regional Environmental Issues",
+      "topic": "Global Warming Potential",
+      "difficulty": "medium",
+      "marks": 2,
+      "archetype": "A",
+      "solution": "**Concept.** CO₂-e = mass × GWP, with the GWP read from the figure.\n\n**Working.**\n$$6\\times265=1590.$$\n\n**Answer.** $1590$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 300 130\" width=\"100%\" style=\"max-width:300px;height:auto\"><rect x=\"40\" y=\"36\" width=\"220\" height=\"56\" rx=\"6\" fill=\"rgba(217,119,6,0.12)\" stroke=\"#1e293b\"/><text x=\"150\" y=\"58\" font-size=\"11\" text-anchor=\"middle\" fill=\"#1e293b\">the gas</text><text x=\"150\" y=\"80\" font-size=\"12\" text-anchor=\"middle\" fill=\"#dc2626\">GWP₁₀₀ = 265</text><text x=\"150\" y=\"112\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">CO₂-e = mass × GWP</text></svg>",
+        "caption": "Global-warming potential of the gas marked on the diagram only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A source emits $6\\,\\text{t}$ of a greenhouse gas. Reading the gas's GWP₁₀₀ from the figure, its CO₂-equivalent emission is _____ t CO₂-e.",
+      "answer": 1590,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-global-037",
+      "subject": "Global & Regional Environmental Issues",
+      "topic": "Carbon Footprint",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** Σ massᵢ × GWPᵢ, with the three masses read from the bars.\n\n**Working.**\n$$100+5\\times28+1\\times265=505.$$\n\n**Answer.** $505$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 188\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"36\" y1=\"150\" x2=\"304\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"60\" y=\"30\" width=\"46\" height=\"120\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"83\" y=\"26\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">100</text><text x=\"83\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">CO₂</text><rect x=\"142\" y=\"144\" width=\"46\" height=\"6\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"165\" y=\"140\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">5</text><text x=\"165\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">CH₄</text><rect x=\"224\" y=\"144\" width=\"46\" height=\"6\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"247\" y=\"140\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">1</text><text x=\"247\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">N₂O</text><text x=\"170\" y=\"182\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">t</text></svg>",
+        "caption": "Masses of CO₂, CH₄ and N₂O shown on the bars only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A facility emits CO₂, CH₄ (GWP 28) and N₂O (GWP 265); the three masses (t) are shown on the bar chart. The total carbon footprint is _____ t CO₂-e.",
+      "answer": 505,
+      "tolerance": 1
+    },
+    {
+      "id": "es-global-038",
+      "subject": "Global & Regional Environmental Issues",
+      "topic": "Carbon Footprint",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** Σ massᵢ × GWPᵢ, with the three masses read from the bars.\n\n**Working.**\n$$80+2\\times28+1\\times265=401.$$\n\n**Answer.** $401$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 188\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"36\" y1=\"150\" x2=\"304\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"60\" y=\"30\" width=\"46\" height=\"120\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"83\" y=\"26\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">80</text><text x=\"83\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">CO₂</text><rect x=\"142\" y=\"144\" width=\"46\" height=\"6\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"165\" y=\"140\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">2</text><text x=\"165\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">CH₄</text><rect x=\"224\" y=\"144\" width=\"46\" height=\"6\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"247\" y=\"140\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">1</text><text x=\"247\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">N₂O</text><text x=\"170\" y=\"182\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">t</text></svg>",
+        "caption": "Masses of CO₂, CH₄ and N₂O shown on the bars only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A facility emits CO₂, CH₄ (GWP 28) and N₂O (GWP 265); the three masses (t) are shown on the bar chart. The total carbon footprint is _____ t CO₂-e.",
+      "answer": 401,
+      "tolerance": 1
+    },
+    {
+      "id": "es-global-039",
+      "subject": "Global & Regional Environmental Issues",
+      "topic": "Carbon Dioxide Trend",
+      "difficulty": "easy",
+      "marks": 1,
+      "archetype": "A",
+      "solution": "**Concept.** Linear extrapolation: C = C₀ + rate×t.\n\n**Working.**\n$$400+2\\times6=412.$$\n\n**Answer.** $412\\,\\text{ppm}$",
+      "type": "NAT",
+      "stem": "Atmospheric CO₂ is $400\\,\\text{ppm}$ rising at $2\\,\\text{ppm/yr}$. After $6$ years it is _____ ppm.",
+      "answer": 412,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-global-040",
+      "subject": "Global & Regional Environmental Issues",
+      "topic": "Carbon Dioxide Trend",
+      "difficulty": "easy",
+      "marks": 1,
+      "archetype": "A",
+      "solution": "**Concept.** Linear extrapolation: C = C₀ + rate×t.\n\n**Working.**\n$$400+2\\times8=416.$$\n\n**Answer.** $416\\,\\text{ppm}$",
+      "type": "NAT",
+      "stem": "Atmospheric CO₂ is $400\\,\\text{ppm}$ rising at $2\\,\\text{ppm/yr}$. After $8$ years it is _____ ppm.",
+      "answer": 416,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-global-041",
+      "subject": "Global & Regional Environmental Issues",
+      "topic": "Carbon Footprint",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** Σ massᵢ × GWPᵢ, with the three masses read from the bars.\n\n**Working.**\n$$50+4\\times28+1\\times265=427.$$\n\n**Answer.** $427$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 188\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"36\" y1=\"150\" x2=\"304\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"60\" y=\"30\" width=\"46\" height=\"120\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"83\" y=\"26\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">50</text><text x=\"83\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">CO₂</text><rect x=\"142\" y=\"140.4\" width=\"46\" height=\"9.6\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"165\" y=\"136.4\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">4</text><text x=\"165\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">CH₄</text><rect x=\"224\" y=\"144\" width=\"46\" height=\"6\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"247\" y=\"140\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">1</text><text x=\"247\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">N₂O</text><text x=\"170\" y=\"182\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">t</text></svg>",
+        "caption": "Masses of CO₂, CH₄ and N₂O shown on the bars only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A facility emits CO₂, CH₄ (GWP 28) and N₂O (GWP 265); the three masses (t) are shown on the bar chart. The total carbon footprint is _____ t CO₂-e.",
+      "answer": 427,
+      "tolerance": 1
+    },
+    {
+      "id": "es-global-042",
+      "subject": "Global & Regional Environmental Issues",
+      "topic": "Carbon Footprint",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** Σ massᵢ × GWPᵢ, with the three masses read from the bars.\n\n**Working.**\n$$80+5\\times28+1\\times265=485.$$\n\n**Answer.** $485$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 188\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"36\" y1=\"150\" x2=\"304\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"60\" y=\"30\" width=\"46\" height=\"120\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"83\" y=\"26\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">80</text><text x=\"83\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">CO₂</text><rect x=\"142\" y=\"142.5\" width=\"46\" height=\"7.5\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"165\" y=\"138.5\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">5</text><text x=\"165\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">CH₄</text><rect x=\"224\" y=\"144\" width=\"46\" height=\"6\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"247\" y=\"140\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">1</text><text x=\"247\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">N₂O</text><text x=\"170\" y=\"182\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">t</text></svg>",
+        "caption": "Masses of CO₂, CH₄ and N₂O shown on the bars only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A facility emits CO₂, CH₄ (GWP 28) and N₂O (GWP 265); the three masses (t) are shown on the bar chart. The total carbon footprint is _____ t CO₂-e.",
+      "answer": 485,
+      "tolerance": 1
+    },
+    {
+      "id": "es-global-043",
+      "subject": "Global & Regional Environmental Issues",
+      "topic": "Global Warming Potential",
+      "difficulty": "medium",
+      "marks": 2,
+      "archetype": "A",
+      "solution": "**Concept.** CO₂-e = mass × GWP, with the GWP read from the figure.\n\n**Working.**\n$$12\\times28=336.$$\n\n**Answer.** $336$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 300 130\" width=\"100%\" style=\"max-width:300px;height:auto\"><rect x=\"40\" y=\"36\" width=\"220\" height=\"56\" rx=\"6\" fill=\"rgba(217,119,6,0.12)\" stroke=\"#1e293b\"/><text x=\"150\" y=\"58\" font-size=\"11\" text-anchor=\"middle\" fill=\"#1e293b\">the gas</text><text x=\"150\" y=\"80\" font-size=\"12\" text-anchor=\"middle\" fill=\"#dc2626\">GWP₁₀₀ = 28</text><text x=\"150\" y=\"112\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">CO₂-e = mass × GWP</text></svg>",
+        "caption": "Global-warming potential of the gas marked on the diagram only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A source emits $12\\,\\text{t}$ of a greenhouse gas. Reading the gas's GWP₁₀₀ from the figure, its CO₂-equivalent emission is _____ t CO₂-e.",
+      "answer": 336,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-global-044",
+      "subject": "Global & Regional Environmental Issues",
+      "topic": "Carbon Dioxide Trend",
+      "difficulty": "easy",
+      "marks": 1,
+      "archetype": "A",
+      "solution": "**Concept.** Linear extrapolation: C = C₀ + rate×t.\n\n**Working.**\n$$410+2\\times17=444.$$\n\n**Answer.** $444\\,\\text{ppm}$",
+      "type": "NAT",
+      "stem": "Atmospheric CO₂ is $410\\,\\text{ppm}$ rising at $2\\,\\text{ppm/yr}$. After $17$ years it is _____ ppm.",
+      "answer": 444,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-global-045",
+      "subject": "Global & Regional Environmental Issues",
+      "topic": "Carbon Dioxide Trend",
+      "difficulty": "easy",
+      "marks": 1,
+      "archetype": "A",
+      "solution": "**Concept.** Linear extrapolation: C = C₀ + rate×t.\n\n**Working.**\n$$400+3\\times10=430.$$\n\n**Answer.** $430\\,\\text{ppm}$",
+      "type": "NAT",
+      "stem": "Atmospheric CO₂ is $400\\,\\text{ppm}$ rising at $3\\,\\text{ppm/yr}$. After $10$ years it is _____ ppm.",
+      "answer": 430,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-global-046",
+      "subject": "Global & Regional Environmental Issues",
+      "topic": "Carbon Footprint",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** Σ massᵢ × GWPᵢ, with the three masses read from the bars.\n\n**Working.**\n$$100+5\\times28+0.5\\times265=372.5.$$\n\n**Answer.** $372.5$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 188\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"36\" y1=\"150\" x2=\"304\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"60\" y=\"30\" width=\"46\" height=\"120\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"83\" y=\"26\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">100</text><text x=\"83\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">CO₂</text><rect x=\"142\" y=\"144\" width=\"46\" height=\"6\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"165\" y=\"140\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">5</text><text x=\"165\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">CH₄</text><rect x=\"224\" y=\"144\" width=\"46\" height=\"6\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"247\" y=\"140\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">0.5</text><text x=\"247\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">N₂O</text><text x=\"170\" y=\"182\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">t</text></svg>",
+        "caption": "Masses of CO₂, CH₄ and N₂O shown on the bars only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A facility emits CO₂, CH₄ (GWP 28) and N₂O (GWP 265); the three masses (t) are shown on the bar chart. The total carbon footprint is _____ t CO₂-e.",
+      "answer": 372.5,
+      "tolerance": 1
+    },
+    {
+      "id": "es-global-047",
+      "subject": "Global & Regional Environmental Issues",
+      "topic": "Carbon Footprint",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** Σ massᵢ × GWPᵢ, with the three masses read from the bars.\n\n**Working.**\n$$50+2\\times28+0.5\\times265=238.5.$$\n\n**Answer.** $238.5$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 188\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"36\" y1=\"150\" x2=\"304\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"60\" y=\"30\" width=\"46\" height=\"120\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"83\" y=\"26\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">50</text><text x=\"83\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">CO₂</text><rect x=\"142\" y=\"144\" width=\"46\" height=\"6\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"165\" y=\"140\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">2</text><text x=\"165\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">CH₄</text><rect x=\"224\" y=\"144\" width=\"46\" height=\"6\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"247\" y=\"140\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">0.5</text><text x=\"247\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">N₂O</text><text x=\"170\" y=\"182\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">t</text></svg>",
+        "caption": "Masses of CO₂, CH₄ and N₂O shown on the bars only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A facility emits CO₂, CH₄ (GWP 28) and N₂O (GWP 265); the three masses (t) are shown on the bar chart. The total carbon footprint is _____ t CO₂-e.",
+      "answer": 238.5,
+      "tolerance": 1
+    },
+    {
+      "id": "es-global-048",
+      "subject": "Global & Regional Environmental Issues",
+      "topic": "Carbon Footprint",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** Σ massᵢ × GWPᵢ, with the three masses read from the bars.\n\n**Working.**\n$$100+2\\times28+2\\times265=686.$$\n\n**Answer.** $686$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 188\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"36\" y1=\"150\" x2=\"304\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"60\" y=\"30\" width=\"46\" height=\"120\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"83\" y=\"26\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">100</text><text x=\"83\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">CO₂</text><rect x=\"142\" y=\"144\" width=\"46\" height=\"6\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"165\" y=\"140\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">2</text><text x=\"165\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">CH₄</text><rect x=\"224\" y=\"144\" width=\"46\" height=\"6\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"247\" y=\"140\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">2</text><text x=\"247\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">N₂O</text><text x=\"170\" y=\"182\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">t</text></svg>",
+        "caption": "Masses of CO₂, CH₄ and N₂O shown on the bars only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A facility emits CO₂, CH₄ (GWP 28) and N₂O (GWP 265); the three masses (t) are shown on the bar chart. The total carbon footprint is _____ t CO₂-e.",
+      "answer": 686,
+      "tolerance": 1
+    },
+    {
+      "id": "es-global-049",
+      "subject": "Global & Regional Environmental Issues",
+      "topic": "Carbon Dioxide Trend",
+      "difficulty": "easy",
+      "marks": 1,
+      "archetype": "A",
+      "solution": "**Concept.** Linear extrapolation: C = C₀ + rate×t.\n\n**Working.**\n$$400+2.5\\times18=445.$$\n\n**Answer.** $445\\,\\text{ppm}$",
+      "type": "NAT",
+      "stem": "Atmospheric CO₂ is $400\\,\\text{ppm}$ rising at $2.5\\,\\text{ppm/yr}$. After $18$ years it is _____ ppm.",
+      "answer": 445,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-global-050",
+      "subject": "Global & Regional Environmental Issues",
+      "topic": "Global Warming Potential",
+      "difficulty": "medium",
+      "marks": 2,
+      "archetype": "A",
+      "solution": "**Concept.** CO₂-e = mass × GWP, with the GWP read from the figure.\n\n**Working.**\n$$6\\times25=150.$$\n\n**Answer.** $150$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 300 130\" width=\"100%\" style=\"max-width:300px;height:auto\"><rect x=\"40\" y=\"36\" width=\"220\" height=\"56\" rx=\"6\" fill=\"rgba(217,119,6,0.12)\" stroke=\"#1e293b\"/><text x=\"150\" y=\"58\" font-size=\"11\" text-anchor=\"middle\" fill=\"#1e293b\">the gas</text><text x=\"150\" y=\"80\" font-size=\"12\" text-anchor=\"middle\" fill=\"#dc2626\">GWP₁₀₀ = 25</text><text x=\"150\" y=\"112\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">CO₂-e = mass × GWP</text></svg>",
+        "caption": "Global-warming potential of the gas marked on the diagram only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A source emits $6\\,\\text{t}$ of a greenhouse gas. Reading the gas's GWP₁₀₀ from the figure, its CO₂-equivalent emission is _____ t CO₂-e.",
+      "answer": 150,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-global-051",
+      "subject": "Global & Regional Environmental Issues",
+      "topic": "Global Warming Potential",
+      "difficulty": "medium",
+      "marks": 2,
+      "archetype": "A",
+      "solution": "**Concept.** CO₂-e = mass × GWP, with the GWP read from the figure.\n\n**Working.**\n$$3\\times28=84.$$\n\n**Answer.** $84$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 300 130\" width=\"100%\" style=\"max-width:300px;height:auto\"><rect x=\"40\" y=\"36\" width=\"220\" height=\"56\" rx=\"6\" fill=\"rgba(217,119,6,0.12)\" stroke=\"#1e293b\"/><text x=\"150\" y=\"58\" font-size=\"11\" text-anchor=\"middle\" fill=\"#1e293b\">the gas</text><text x=\"150\" y=\"80\" font-size=\"12\" text-anchor=\"middle\" fill=\"#dc2626\">GWP₁₀₀ = 28</text><text x=\"150\" y=\"112\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">CO₂-e = mass × GWP</text></svg>",
+        "caption": "Global-warming potential of the gas marked on the diagram only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A source emits $3\\,\\text{t}$ of a greenhouse gas. Reading the gas's GWP₁₀₀ from the figure, its CO₂-equivalent emission is _____ t CO₂-e.",
+      "answer": 84,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-global-052",
+      "subject": "Global & Regional Environmental Issues",
+      "topic": "Carbon Footprint",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** Σ massᵢ × GWPᵢ, with the three masses read from the bars.\n\n**Working.**\n$$80+2\\times28+0.5\\times265=268.5.$$\n\n**Answer.** $268.5$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 188\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"36\" y1=\"150\" x2=\"304\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"60\" y=\"30\" width=\"46\" height=\"120\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"83\" y=\"26\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">80</text><text x=\"83\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">CO₂</text><rect x=\"142\" y=\"144\" width=\"46\" height=\"6\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"165\" y=\"140\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">2</text><text x=\"165\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">CH₄</text><rect x=\"224\" y=\"144\" width=\"46\" height=\"6\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"247\" y=\"140\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">0.5</text><text x=\"247\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">N₂O</text><text x=\"170\" y=\"182\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">t</text></svg>",
+        "caption": "Masses of CO₂, CH₄ and N₂O shown on the bars only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A facility emits CO₂, CH₄ (GWP 28) and N₂O (GWP 265); the three masses (t) are shown on the bar chart. The total carbon footprint is _____ t CO₂-e.",
+      "answer": 268.5,
+      "tolerance": 1
+    },
+    {
+      "id": "es-global-053",
+      "subject": "Global & Regional Environmental Issues",
+      "topic": "Carbon Dioxide Trend",
+      "difficulty": "easy",
+      "marks": 1,
+      "archetype": "A",
+      "solution": "**Concept.** Linear extrapolation: C = C₀ + rate×t.\n\n**Working.**\n$$410+2.5\\times8=430.$$\n\n**Answer.** $430\\,\\text{ppm}$",
+      "type": "NAT",
+      "stem": "Atmospheric CO₂ is $410\\,\\text{ppm}$ rising at $2.5\\,\\text{ppm/yr}$. After $8$ years it is _____ ppm.",
+      "answer": 430,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-global-054",
+      "subject": "Global & Regional Environmental Issues",
+      "topic": "Carbon Footprint",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** Σ massᵢ × GWPᵢ, with the three masses read from the bars.\n\n**Working.**\n$$80+5\\times28+2\\times265=750.$$\n\n**Answer.** $750$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 188\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"36\" y1=\"150\" x2=\"304\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"60\" y=\"30\" width=\"46\" height=\"120\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"83\" y=\"26\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">80</text><text x=\"83\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">CO₂</text><rect x=\"142\" y=\"142.5\" width=\"46\" height=\"7.5\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"165\" y=\"138.5\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">5</text><text x=\"165\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">CH₄</text><rect x=\"224\" y=\"144\" width=\"46\" height=\"6\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"247\" y=\"140\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">2</text><text x=\"247\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">N₂O</text><text x=\"170\" y=\"182\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">t</text></svg>",
+        "caption": "Masses of CO₂, CH₄ and N₂O shown on the bars only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A facility emits CO₂, CH₄ (GWP 28) and N₂O (GWP 265); the three masses (t) are shown on the bar chart. The total carbon footprint is _____ t CO₂-e.",
+      "answer": 750,
+      "tolerance": 1
+    },
+    {
+      "id": "es-global-055",
+      "subject": "Global & Regional Environmental Issues",
+      "topic": "Carbon Dioxide Trend",
+      "difficulty": "easy",
+      "marks": 1,
+      "archetype": "A",
+      "solution": "**Concept.** Linear extrapolation: C = C₀ + rate×t.\n\n**Working.**\n$$400+3\\times14=442.$$\n\n**Answer.** $442\\,\\text{ppm}$",
+      "type": "NAT",
+      "stem": "Atmospheric CO₂ is $400\\,\\text{ppm}$ rising at $3\\,\\text{ppm/yr}$. After $14$ years it is _____ ppm.",
+      "answer": 442,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-global-056",
+      "subject": "Global & Regional Environmental Issues",
+      "topic": "Carbon Footprint",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** Σ massᵢ × GWPᵢ, with the three masses read from the bars.\n\n**Working.**\n$$100+4\\times28+1\\times265=477.$$\n\n**Answer.** $477$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 188\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"36\" y1=\"150\" x2=\"304\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"60\" y=\"30\" width=\"46\" height=\"120\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"83\" y=\"26\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">100</text><text x=\"83\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">CO₂</text><rect x=\"142\" y=\"144\" width=\"46\" height=\"6\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"165\" y=\"140\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">4</text><text x=\"165\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">CH₄</text><rect x=\"224\" y=\"144\" width=\"46\" height=\"6\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"247\" y=\"140\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">1</text><text x=\"247\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">N₂O</text><text x=\"170\" y=\"182\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">t</text></svg>",
+        "caption": "Masses of CO₂, CH₄ and N₂O shown on the bars only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A facility emits CO₂, CH₄ (GWP 28) and N₂O (GWP 265); the three masses (t) are shown on the bar chart. The total carbon footprint is _____ t CO₂-e.",
+      "answer": 477,
+      "tolerance": 1
+    },
+    {
+      "id": "es-global-057",
+      "subject": "Global & Regional Environmental Issues",
+      "topic": "Carbon Footprint",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** Σ massᵢ × GWPᵢ, with the three masses read from the bars.\n\n**Working.**\n$$50+4\\times28+2\\times265=692.$$\n\n**Answer.** $692$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 188\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"36\" y1=\"150\" x2=\"304\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"60\" y=\"30\" width=\"46\" height=\"120\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"83\" y=\"26\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">50</text><text x=\"83\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">CO₂</text><rect x=\"142\" y=\"140.4\" width=\"46\" height=\"9.6\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"165\" y=\"136.4\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">4</text><text x=\"165\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">CH₄</text><rect x=\"224\" y=\"144\" width=\"46\" height=\"6\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"247\" y=\"140\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">2</text><text x=\"247\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">N₂O</text><text x=\"170\" y=\"182\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">t</text></svg>",
+        "caption": "Masses of CO₂, CH₄ and N₂O shown on the bars only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A facility emits CO₂, CH₄ (GWP 28) and N₂O (GWP 265); the three masses (t) are shown on the bar chart. The total carbon footprint is _____ t CO₂-e.",
+      "answer": 692,
+      "tolerance": 1
+    },
+    {
+      "id": "es-global-058",
+      "subject": "Global & Regional Environmental Issues",
+      "topic": "Carbon Footprint",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** Σ massᵢ × GWPᵢ, with the three masses read from the bars.\n\n**Working.**\n$$50+5\\times28+1\\times265=455.$$\n\n**Answer.** $455$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 188\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"36\" y1=\"150\" x2=\"304\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"60\" y=\"30\" width=\"46\" height=\"120\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"83\" y=\"26\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">50</text><text x=\"83\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">CO₂</text><rect x=\"142\" y=\"138\" width=\"46\" height=\"12\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"165\" y=\"134\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">5</text><text x=\"165\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">CH₄</text><rect x=\"224\" y=\"144\" width=\"46\" height=\"6\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"247\" y=\"140\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">1</text><text x=\"247\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">N₂O</text><text x=\"170\" y=\"182\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">t</text></svg>",
+        "caption": "Masses of CO₂, CH₄ and N₂O shown on the bars only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A facility emits CO₂, CH₄ (GWP 28) and N₂O (GWP 265); the three masses (t) are shown on the bar chart. The total carbon footprint is _____ t CO₂-e.",
+      "answer": 455,
+      "tolerance": 1
+    },
+    {
+      "id": "es-global-059",
+      "subject": "Global & Regional Environmental Issues",
+      "topic": "Carbon Footprint",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** Σ massᵢ × GWPᵢ, with the three masses read from the bars.\n\n**Working.**\n$$80+2\\times28+2\\times265=666.$$\n\n**Answer.** $666$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 188\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"36\" y1=\"150\" x2=\"304\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"60\" y=\"30\" width=\"46\" height=\"120\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"83\" y=\"26\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">80</text><text x=\"83\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">CO₂</text><rect x=\"142\" y=\"144\" width=\"46\" height=\"6\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"165\" y=\"140\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">2</text><text x=\"165\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">CH₄</text><rect x=\"224\" y=\"144\" width=\"46\" height=\"6\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"247\" y=\"140\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">2</text><text x=\"247\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">N₂O</text><text x=\"170\" y=\"182\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">t</text></svg>",
+        "caption": "Masses of CO₂, CH₄ and N₂O shown on the bars only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A facility emits CO₂, CH₄ (GWP 28) and N₂O (GWP 265); the three masses (t) are shown on the bar chart. The total carbon footprint is _____ t CO₂-e.",
+      "answer": 666,
+      "tolerance": 1
+    },
+    {
+      "id": "es-global-060",
+      "subject": "Global & Regional Environmental Issues",
+      "topic": "Carbon Dioxide Trend",
+      "difficulty": "easy",
+      "marks": 1,
+      "archetype": "A",
+      "solution": "**Concept.** Linear extrapolation: C = C₀ + rate×t.\n\n**Working.**\n$$420+2.5\\times5=432.5.$$\n\n**Answer.** $432.5\\,\\text{ppm}$",
+      "type": "NAT",
+      "stem": "Atmospheric CO₂ is $420\\,\\text{ppm}$ rising at $2.5\\,\\text{ppm/yr}$. After $5$ years it is _____ ppm.",
+      "answer": 432.5,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-global-061",
+      "subject": "Global & Regional Environmental Issues",
+      "topic": "Global Warming Potential",
+      "difficulty": "medium",
+      "marks": 2,
+      "archetype": "A",
+      "solution": "**Concept.** CO₂-e = mass × GWP, with the GWP read from the figure.\n\n**Working.**\n$$6\\times21=126.$$\n\n**Answer.** $126$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 300 130\" width=\"100%\" style=\"max-width:300px;height:auto\"><rect x=\"40\" y=\"36\" width=\"220\" height=\"56\" rx=\"6\" fill=\"rgba(217,119,6,0.12)\" stroke=\"#1e293b\"/><text x=\"150\" y=\"58\" font-size=\"11\" text-anchor=\"middle\" fill=\"#1e293b\">the gas</text><text x=\"150\" y=\"80\" font-size=\"12\" text-anchor=\"middle\" fill=\"#dc2626\">GWP₁₀₀ = 21</text><text x=\"150\" y=\"112\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">CO₂-e = mass × GWP</text></svg>",
+        "caption": "Global-warming potential of the gas marked on the diagram only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A source emits $6\\,\\text{t}$ of a greenhouse gas. Reading the gas's GWP₁₀₀ from the figure, its CO₂-equivalent emission is _____ t CO₂-e.",
+      "answer": 126,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-global-062",
+      "subject": "Global & Regional Environmental Issues",
+      "topic": "Carbon Footprint",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** Σ massᵢ × GWPᵢ, with the three masses read from the bars.\n\n**Working.**\n$$50+2\\times28+2\\times265=636.$$\n\n**Answer.** $636$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 188\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"36\" y1=\"150\" x2=\"304\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"60\" y=\"30\" width=\"46\" height=\"120\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"83\" y=\"26\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">50</text><text x=\"83\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">CO₂</text><rect x=\"142\" y=\"144\" width=\"46\" height=\"6\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"165\" y=\"140\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">2</text><text x=\"165\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">CH₄</text><rect x=\"224\" y=\"144\" width=\"46\" height=\"6\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"247\" y=\"140\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">2</text><text x=\"247\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">N₂O</text><text x=\"170\" y=\"182\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">t</text></svg>",
+        "caption": "Masses of CO₂, CH₄ and N₂O shown on the bars only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A facility emits CO₂, CH₄ (GWP 28) and N₂O (GWP 265); the three masses (t) are shown on the bar chart. The total carbon footprint is _____ t CO₂-e.",
+      "answer": 636,
+      "tolerance": 1
+    },
+    {
+      "id": "es-global-063",
+      "subject": "Global & Regional Environmental Issues",
+      "topic": "Carbon Dioxide Trend",
+      "difficulty": "easy",
+      "marks": 1,
+      "archetype": "A",
+      "solution": "**Concept.** Linear extrapolation: C = C₀ + rate×t.\n\n**Working.**\n$$420+2\\times19=458.$$\n\n**Answer.** $458\\,\\text{ppm}$",
+      "type": "NAT",
+      "stem": "Atmospheric CO₂ is $420\\,\\text{ppm}$ rising at $2\\,\\text{ppm/yr}$. After $19$ years it is _____ ppm.",
+      "answer": 458,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-global-064",
+      "subject": "Global & Regional Environmental Issues",
+      "topic": "Carbon Dioxide Trend",
+      "difficulty": "easy",
+      "marks": 1,
+      "archetype": "A",
+      "solution": "**Concept.** Linear extrapolation: C = C₀ + rate×t.\n\n**Working.**\n$$410+2\\times7=424.$$\n\n**Answer.** $424\\,\\text{ppm}$",
+      "type": "NAT",
+      "stem": "Atmospheric CO₂ is $410\\,\\text{ppm}$ rising at $2\\,\\text{ppm/yr}$. After $7$ years it is _____ ppm.",
+      "answer": 424,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-global-065",
+      "subject": "Global & Regional Environmental Issues",
+      "topic": "Carbon Footprint",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** Σ massᵢ × GWPᵢ, with the three masses read from the bars.\n\n**Working.**\n$$80+4\\times28+0.5\\times265=324.5.$$\n\n**Answer.** $324.5$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 188\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"36\" y1=\"150\" x2=\"304\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"60\" y=\"30\" width=\"46\" height=\"120\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"83\" y=\"26\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">80</text><text x=\"83\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">CO₂</text><rect x=\"142\" y=\"144\" width=\"46\" height=\"6\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"165\" y=\"140\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">4</text><text x=\"165\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">CH₄</text><rect x=\"224\" y=\"144\" width=\"46\" height=\"6\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"247\" y=\"140\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">0.5</text><text x=\"247\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">N₂O</text><text x=\"170\" y=\"182\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">t</text></svg>",
+        "caption": "Masses of CO₂, CH₄ and N₂O shown on the bars only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A facility emits CO₂, CH₄ (GWP 28) and N₂O (GWP 265); the three masses (t) are shown on the bar chart. The total carbon footprint is _____ t CO₂-e.",
+      "answer": 324.5,
+      "tolerance": 1
+    },
+    {
+      "id": "es-global-066",
+      "subject": "Global & Regional Environmental Issues",
+      "topic": "Global Warming Potential",
+      "difficulty": "medium",
+      "marks": 2,
+      "archetype": "A",
+      "solution": "**Concept.** CO₂-e = mass × GWP, with the GWP read from the figure.\n\n**Working.**\n$$3\\times265=795.$$\n\n**Answer.** $795$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 300 130\" width=\"100%\" style=\"max-width:300px;height:auto\"><rect x=\"40\" y=\"36\" width=\"220\" height=\"56\" rx=\"6\" fill=\"rgba(217,119,6,0.12)\" stroke=\"#1e293b\"/><text x=\"150\" y=\"58\" font-size=\"11\" text-anchor=\"middle\" fill=\"#1e293b\">the gas</text><text x=\"150\" y=\"80\" font-size=\"12\" text-anchor=\"middle\" fill=\"#dc2626\">GWP₁₀₀ = 265</text><text x=\"150\" y=\"112\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">CO₂-e = mass × GWP</text></svg>",
+        "caption": "Global-warming potential of the gas marked on the diagram only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A source emits $3\\,\\text{t}$ of a greenhouse gas. Reading the gas's GWP₁₀₀ from the figure, its CO₂-equivalent emission is _____ t CO₂-e.",
+      "answer": 795,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-global-067",
+      "subject": "Global & Regional Environmental Issues",
+      "topic": "Carbon Dioxide Trend",
+      "difficulty": "easy",
+      "marks": 1,
+      "archetype": "A",
+      "solution": "**Concept.** Linear extrapolation: C = C₀ + rate×t.\n\n**Working.**\n$$410+2\\times9=428.$$\n\n**Answer.** $428\\,\\text{ppm}$",
+      "type": "NAT",
+      "stem": "Atmospheric CO₂ is $410\\,\\text{ppm}$ rising at $2\\,\\text{ppm/yr}$. After $9$ years it is _____ ppm.",
+      "answer": 428,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-global-068",
+      "subject": "Global & Regional Environmental Issues",
+      "topic": "Carbon Footprint",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** Σ massᵢ × GWPᵢ, with the three masses read from the bars.\n\n**Working.**\n$$80+4\\times28+2\\times265=722.$$\n\n**Answer.** $722$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 320 188\" width=\"100%\" style=\"max-width:340px;height:auto\"><line x1=\"36\" y1=\"150\" x2=\"304\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"60\" y=\"30\" width=\"46\" height=\"120\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"83\" y=\"26\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">80</text><text x=\"83\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">CO₂</text><rect x=\"142\" y=\"144\" width=\"46\" height=\"6\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"165\" y=\"140\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">4</text><text x=\"165\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">CH₄</text><rect x=\"224\" y=\"144\" width=\"46\" height=\"6\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"247\" y=\"140\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">2</text><text x=\"247\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">N₂O</text><text x=\"170\" y=\"182\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">t</text></svg>",
+        "caption": "Masses of CO₂, CH₄ and N₂O shown on the bars only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A facility emits CO₂, CH₄ (GWP 28) and N₂O (GWP 265); the three masses (t) are shown on the bar chart. The total carbon footprint is _____ t CO₂-e.",
+      "answer": 722,
+      "tolerance": 1
+    },
+    {
+      "id": "es-global-069",
+      "subject": "Global & Regional Environmental Issues",
+      "topic": "Global Warming Potential",
+      "difficulty": "medium",
+      "marks": 2,
+      "archetype": "A",
+      "solution": "**Concept.** CO₂-e = mass × GWP, with the GWP read from the figure.\n\n**Working.**\n$$18\\times21=378.$$\n\n**Answer.** $378$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 300 130\" width=\"100%\" style=\"max-width:300px;height:auto\"><rect x=\"40\" y=\"36\" width=\"220\" height=\"56\" rx=\"6\" fill=\"rgba(217,119,6,0.12)\" stroke=\"#1e293b\"/><text x=\"150\" y=\"58\" font-size=\"11\" text-anchor=\"middle\" fill=\"#1e293b\">the gas</text><text x=\"150\" y=\"80\" font-size=\"12\" text-anchor=\"middle\" fill=\"#dc2626\">GWP₁₀₀ = 21</text><text x=\"150\" y=\"112\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">CO₂-e = mass × GWP</text></svg>",
+        "caption": "Global-warming potential of the gas marked on the diagram only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "A source emits $18\\,\\text{t}$ of a greenhouse gas. Reading the gas's GWP₁₀₀ from the figure, its CO₂-equivalent emission is _____ t CO₂-e.",
+      "answer": 378,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-global-070",
+      "subject": "Global & Regional Environmental Issues",
+      "topic": "Carbon Dioxide Trend",
+      "difficulty": "easy",
+      "marks": 1,
+      "archetype": "A",
+      "solution": "**Concept.** Linear extrapolation: C = C₀ + rate×t.\n\n**Working.**\n$$420+3\\times6=438.$$\n\n**Answer.** $438\\,\\text{ppm}$",
+      "type": "NAT",
+      "stem": "Atmospheric CO₂ is $420\\,\\text{ppm}$ rising at $3\\,\\text{ppm/yr}$. After $6$ years it is _____ ppm.",
+      "answer": 438,
+      "tolerance": 0.5
+    }
+  ]
+}

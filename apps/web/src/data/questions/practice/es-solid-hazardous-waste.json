@@ -1,0 +1,1185 @@
+{
+  "slug": "es-solid-hazardous-waste",
+  "name": "Solid & Hazardous Waste Management",
+  "questions": [
+    {
+      "id": "es-waste-001",
+      "subject": "Solid & Hazardous Waste Management",
+      "topic": "MSW Generation",
+      "difficulty": "easy",
+      "type": "NAT",
+      "stem": "A city of $1,00,000$ people generates solid waste at $0.5\\,\\text{kg/capita/day}$. The total daily generation is _____ tonnes/day.",
+      "answer": 50,
+      "tolerance": 0.5,
+      "solution": "**Concept.** Total $=$ population $\\times$ per-capita rate.\n\n**Working.**\n$$\\dfrac{100000\\times0.5}{1000}=50.$$\n\n**Answer.** $50\\,\\text{t/day}$",
+      "archetype": "A",
+      "marks": 1,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 300 180\" width=\"100%\" style=\"max-width:320px;height:auto\"><line x1=\"40\" y1=\"150\" x2=\"280\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"70\" y=\"30\" width=\"46\" height=\"120\" fill=\"#dc2626\" opacity=\"0.75\"/><text x=\"93\" y=\"26\" font-size=\"9\" text-anchor=\"middle\" fill=\"#dc2626\">in 50000</text><rect x=\"190\" y=\"146\" width=\"46\" height=\"4\" fill=\"#16a34a\" opacity=\"0.8\"/><text x=\"213\" y=\"142\" font-size=\"9\" text-anchor=\"middle\" fill=\"#16a34a\">out 0</text><text x=\"160\" y=\"170\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1e293b\">MSW (kg/day)</text></svg>",
+        "caption": "Daily MSW mass balance."
+      }
+    },
+    {
+      "id": "es-waste-002",
+      "subject": "Solid & Hazardous Waste Management",
+      "topic": "MSW Generation",
+      "difficulty": "easy",
+      "type": "NAT",
+      "stem": "A city of $2,50,000$ people generates solid waste at $0.45\\,\\text{kg/capita/day}$. The total daily generation is _____ tonnes/day.",
+      "answer": 112.5,
+      "tolerance": 0.5,
+      "solution": "**Concept.** Total $=$ population $\\times$ per-capita rate.\n\n**Working.**\n$$\\dfrac{250000\\times0.45}{1000}=112.5.$$\n\n**Answer.** $112.5\\,\\text{t/day}$",
+      "archetype": "A",
+      "marks": 1,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 300 180\" width=\"100%\" style=\"max-width:320px;height:auto\"><line x1=\"40\" y1=\"150\" x2=\"280\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"70\" y=\"30\" width=\"46\" height=\"120\" fill=\"#dc2626\" opacity=\"0.75\"/><text x=\"93\" y=\"26\" font-size=\"9\" text-anchor=\"middle\" fill=\"#dc2626\">in 112500</text><rect x=\"190\" y=\"146\" width=\"46\" height=\"4\" fill=\"#16a34a\" opacity=\"0.8\"/><text x=\"213\" y=\"142\" font-size=\"9\" text-anchor=\"middle\" fill=\"#16a34a\">out 0</text><text x=\"160\" y=\"170\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1e293b\">MSW (kg/day)</text></svg>",
+        "caption": "Daily MSW mass balance."
+      }
+    },
+    {
+      "id": "es-waste-003",
+      "subject": "Solid & Hazardous Waste Management",
+      "topic": "Calorific Value",
+      "difficulty": "hard",
+      "type": "NAT",
+      "stem": "Using the modified Dulong formula $HHV = 337C + 1419(H - O/8) + 93S$ (kJ/kg), a fuel with $C=45\\%$, $H=6\\%$, $O=40\\%$, $S=0\\%$ has a higher heating value of _____ kJ/kg.",
+      "answer": 16584,
+      "tolerance": 5,
+      "solution": "**Concept.** Apply the modified Dulong formula with percentages.\n\n**Working.**\n$$337(45)+1419(6-40/8)+93(0)=16584\\,\\text{kJ/kg}.$$\n\n**Answer.** $16584\\,\\text{kJ/kg}$",
+      "archetype": "C",
+      "marks": 2
+    },
+    {
+      "id": "es-waste-004",
+      "subject": "Solid & Hazardous Waste Management",
+      "topic": "Compaction",
+      "difficulty": "medium",
+      "type": "NAT",
+      "stem": "Waste of mass $1000\\,\\text{kg}$ at loose density $100\\,\\text{kg/m}^3$ is compacted to $500\\,\\text{kg/m}^3$. The volume reduction is _____ %.",
+      "answer": 80,
+      "tolerance": 0.1,
+      "solution": "**Concept.** $VR=\\left(1-\\dfrac{V_2}{V_1}\\right)\\times100=\\left(1-\\dfrac{\\rho_1}{\\rho_2}\\right)\\times100$.\n\n**Working.**\n$$\\left(1-\\dfrac{100}{500}\\right)\\times100=80\\%.$$\n\n**Answer.** $80\\%$",
+      "archetype": "A",
+      "marks": 2
+    },
+    {
+      "id": "es-waste-005",
+      "subject": "Solid & Hazardous Waste Management",
+      "topic": "Landfill Gas",
+      "difficulty": "medium",
+      "type": "NAT",
+      "stem": "Decomposable waste of $1000\\,\\text{kg}$ yields landfill gas at $0.15\\,\\text{m}^3/\\text{kg}$. The total gas generated is _____ m³.",
+      "answer": 150,
+      "tolerance": 0.5,
+      "solution": "**Concept.** Gas $=$ mass $\\times$ specific yield.\n\n**Working.**\n$$1000\\times0.15=150.$$\n\n**Answer.** $150\\,\\text{m}^3$",
+      "archetype": "A",
+      "marks": 2,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 340 180\" width=\"100%\" style=\"max-width:360px;height:auto\"><rect x=\"30\" y=\"30\" width=\"280\" height=\"120\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.2\"/><rect x=\"30\" y=\"40\" width=\"280\" height=\"86\" fill=\"#a16207\" opacity=\"0.5\"/><rect x=\"30\" y=\"30\" width=\"280\" height=\"10\" fill=\"#65a30d\"/><rect x=\"30\" y=\"126\" width=\"280\" height=\"14\" fill=\"#1e3a8a\" opacity=\"0.6\"/><rect x=\"30\" y=\"140\" width=\"280\" height=\"10\" fill=\"#0f172a\"/><text x=\"170\" y=\"26\" font-size=\"8\" text-anchor=\"middle\" fill=\"#16a34a\">final cover / vegetation</text><text x=\"170\" y=\"86\" font-size=\"9\" text-anchor=\"middle\" fill=\"#fff\">compacted MSW + daily cover</text><text x=\"170\" y=\"137\" font-size=\"8\" text-anchor=\"middle\" fill=\"#fff\">leachate collection</text><text x=\"170\" y=\"148\" font-size=\"7\" text-anchor=\"middle\" fill=\"#fff\">composite liner (clay+HDPE)</text><path d=\"M315 60 q14 0 14 14 q0 10 -8 18\" stroke=\"#dc2626\" stroke-width=\"1.2\" fill=\"none\"/><text x=\"318\" y=\"56\" font-size=\"8\" fill=\"#dc2626\">gas vent</text></svg>",
+        "caption": "Engineered sanitary landfill: cover, waste cell, liner and leachate system."
+      }
+    },
+    {
+      "id": "es-waste-006",
+      "subject": "Solid & Hazardous Waste Management",
+      "topic": "Landfill Gas",
+      "difficulty": "medium",
+      "type": "NAT",
+      "stem": "Decomposable waste of $2000\\,\\text{kg}$ yields landfill gas at $0.1\\,\\text{m}^3/\\text{kg}$. The total gas generated is _____ m³.",
+      "answer": 200,
+      "tolerance": 0.5,
+      "solution": "**Concept.** Gas $=$ mass $\\times$ specific yield.\n\n**Working.**\n$$2000\\times0.1=200.$$\n\n**Answer.** $200\\,\\text{m}^3$",
+      "archetype": "A",
+      "marks": 2,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 340 180\" width=\"100%\" style=\"max-width:360px;height:auto\"><rect x=\"30\" y=\"30\" width=\"280\" height=\"120\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.2\"/><rect x=\"30\" y=\"40\" width=\"280\" height=\"86\" fill=\"#a16207\" opacity=\"0.5\"/><rect x=\"30\" y=\"30\" width=\"280\" height=\"10\" fill=\"#65a30d\"/><rect x=\"30\" y=\"126\" width=\"280\" height=\"14\" fill=\"#1e3a8a\" opacity=\"0.6\"/><rect x=\"30\" y=\"140\" width=\"280\" height=\"10\" fill=\"#0f172a\"/><text x=\"170\" y=\"26\" font-size=\"8\" text-anchor=\"middle\" fill=\"#16a34a\">final cover / vegetation</text><text x=\"170\" y=\"86\" font-size=\"9\" text-anchor=\"middle\" fill=\"#fff\">compacted MSW + daily cover</text><text x=\"170\" y=\"137\" font-size=\"8\" text-anchor=\"middle\" fill=\"#fff\">leachate collection</text><text x=\"170\" y=\"148\" font-size=\"7\" text-anchor=\"middle\" fill=\"#fff\">composite liner (clay+HDPE)</text><path d=\"M315 60 q14 0 14 14 q0 10 -8 18\" stroke=\"#dc2626\" stroke-width=\"1.2\" fill=\"none\"/><text x=\"318\" y=\"56\" font-size=\"8\" fill=\"#dc2626\">gas vent</text></svg>",
+        "caption": "Engineered sanitary landfill: cover, waste cell, liner and leachate system."
+      }
+    },
+    {
+      "id": "es-waste-007",
+      "subject": "Solid & Hazardous Waste Management",
+      "topic": "Landfill Life",
+      "difficulty": "medium",
+      "type": "NAT",
+      "stem": "A landfill has a usable air-space of $5,00,000\\,\\text{m}^3$ and receives compacted waste at $50,000\\,\\text{m}^3/\\text{yr}$. Its design life is _____ years.",
+      "answer": 10,
+      "tolerance": 0.1,
+      "solution": "**Concept.** Life $=\\dfrac{\\text{capacity}}{\\text{annual fill}}$.\n\n**Working.**\n$$\\dfrac{500000}{50000}=10.$$\n\n**Answer.** $10\\,\\text{yr}$",
+      "archetype": "A",
+      "marks": 2,
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 340 180\" width=\"100%\" style=\"max-width:360px;height:auto\"><rect x=\"30\" y=\"30\" width=\"280\" height=\"120\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.2\"/><rect x=\"30\" y=\"40\" width=\"280\" height=\"86\" fill=\"#a16207\" opacity=\"0.5\"/><rect x=\"30\" y=\"30\" width=\"280\" height=\"10\" fill=\"#65a30d\"/><rect x=\"30\" y=\"126\" width=\"280\" height=\"14\" fill=\"#1e3a8a\" opacity=\"0.6\"/><rect x=\"30\" y=\"140\" width=\"280\" height=\"10\" fill=\"#0f172a\"/><text x=\"170\" y=\"26\" font-size=\"8\" text-anchor=\"middle\" fill=\"#16a34a\">final cover / vegetation</text><text x=\"170\" y=\"86\" font-size=\"9\" text-anchor=\"middle\" fill=\"#fff\">compacted MSW + daily cover</text><text x=\"170\" y=\"137\" font-size=\"8\" text-anchor=\"middle\" fill=\"#fff\">leachate collection</text><text x=\"170\" y=\"148\" font-size=\"7\" text-anchor=\"middle\" fill=\"#fff\">composite liner (clay+HDPE)</text><path d=\"M315 60 q14 0 14 14 q0 10 -8 18\" stroke=\"#dc2626\" stroke-width=\"1.2\" fill=\"none\"/><text x=\"318\" y=\"56\" font-size=\"8\" fill=\"#dc2626\">gas vent</text></svg>",
+        "caption": "Engineered sanitary landfill: cover, waste cell, liner and leachate system."
+      }
+    },
+    {
+      "id": "es-waste-008",
+      "subject": "Solid & Hazardous Waste Management",
+      "topic": "Waste Hierarchy",
+      "difficulty": "easy",
+      "type": "MCQ",
+      "stem": "In the integrated solid-waste-management hierarchy, the most preferred option is",
+      "options": [
+        "source reduction (waste prevention)",
+        "landfilling",
+        "incineration",
+        "recycling"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** The hierarchy ranks: reduce > reuse > recycle > recover (energy) > dispose (landfill).\n\n**Working.**\nSource reduction.\n\n**Answer.** Source reduction",
+      "archetype": "B",
+      "marks": 1
+    },
+    {
+      "id": "es-waste-009",
+      "subject": "Solid & Hazardous Waste Management",
+      "topic": "Hazardous Waste",
+      "difficulty": "medium",
+      "type": "MSQ",
+      "stem": "Which characteristics define a hazardous waste under typical regulatory frameworks?",
+      "options": [
+        "Ignitability",
+        "Corrosivity",
+        "Reactivity",
+        "High moisture content"
+      ],
+      "answer": [
+        0,
+        1,
+        2
+      ],
+      "solution": "**Concept.** The four hazard characteristics are ignitability, corrosivity, reactivity and toxicity; moisture content is not one.\n\n**Working.**\nIgnitability, corrosivity, reactivity.\n\n**Answer.** Ignitability, corrosivity, reactivity",
+      "archetype": "D",
+      "marks": 2
+    },
+    {
+      "id": "es-waste-010",
+      "subject": "Solid & Hazardous Waste Management",
+      "topic": "Composting",
+      "difficulty": "medium",
+      "type": "MCQ",
+      "stem": "The optimum carbon-to-nitrogen (C/N) ratio for efficient aerobic composting is approximately",
+      "options": [
+        "25–30 : 1",
+        "5 : 1",
+        "100 : 1",
+        "1 : 1"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** A C/N around 25–30:1 balances microbial energy (C) and protein synthesis (N).\n\n**Working.**\n≈ 25–30:1.\n\n**Answer.** 25–30:1",
+      "archetype": "B",
+      "marks": 1
+    },
+    {
+      "id": "es-waste-011",
+      "subject": "Solid & Hazardous Waste Management",
+      "topic": "Biomedical Waste",
+      "difficulty": "medium",
+      "marks": 1,
+      "archetype": "B",
+      "solution": "**Concept.** Yellow = incinerable anatomical/soiled waste; red = contaminated recyclable plastics; blue/white = glass/sharps.\n\n**Working.**\nYellow bag.\n\n**Answer.** Yellow",
+      "type": "MCQ",
+      "stem": "Under colour-coded biomedical-waste segregation, anatomical/infected waste for incineration is typically placed in the",
+      "options": [
+        "yellow bag",
+        "blue bag",
+        "red bag",
+        "white container"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "es-waste-012",
+      "subject": "Solid & Hazardous Waste Management",
+      "topic": "Waste Hierarchy",
+      "difficulty": "easy",
+      "marks": 1,
+      "archetype": "B",
+      "solution": "**Concept.** Order: reduce>reuse>recycle>recover>dispose. Recovery sits just above landfill.\n\n**Working.**\nAbove landfill disposal.\n\n**Answer.** Landfill disposal",
+      "type": "MCQ",
+      "stem": "Energy recovery by incineration ranks, in the waste hierarchy, above only",
+      "options": [
+        "landfill disposal",
+        "source reduction",
+        "reuse",
+        "recycling"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "es-waste-013",
+      "subject": "Solid & Hazardous Waste Management",
+      "topic": "MSW Generation",
+      "difficulty": "easy",
+      "marks": 1,
+      "archetype": "A",
+      "solution": "**Concept.** Total = pop × rate.\n\n**Working.**\n$$\\dfrac{200000\\times0.4}{1000}=80.$$\n\n**Answer.** $80\\,\\text{t/day}$",
+      "type": "NAT",
+      "stem": "City of $2,00,000$ at $0.4\\,\\text{kg/cap/day}$. Daily MSW is _____ t/day.",
+      "answer": 80,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-waste-014",
+      "subject": "Solid & Hazardous Waste Management",
+      "topic": "Compaction",
+      "difficulty": "medium",
+      "marks": 2,
+      "archetype": "A",
+      "solution": "**Concept.** VR = (1 − ρ₁/ρ₂)×100, both densities read from the bars.\n\n**Working.**\n$$\\left(1-\\dfrac{80}{600}\\right)\\times100=86.7\\%.$$\n\n**Answer.** $86.7\\%$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 300 188\" width=\"100%\" style=\"max-width:320px;height:auto\"><line x1=\"40\" y1=\"150\" x2=\"280\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"80\" y=\"134\" width=\"50\" height=\"16\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"105\" y=\"130\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">80</text><text x=\"105\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">loose ρ₁</text><rect x=\"180\" y=\"30\" width=\"50\" height=\"120\" fill=\"#16a34a\" opacity=\"0.85\"/><text x=\"205\" y=\"26\" font-size=\"10\" text-anchor=\"middle\" fill=\"#16a34a\">600</text><text x=\"205\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">compacted ρ₂</text><text x=\"160\" y=\"182\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">kg/m³</text></svg>",
+        "caption": "Loose and compacted densities shown on the bars only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "Read the loose and compacted densities from the bar chart. The volume reduction $(1-\\rho_1/\\rho_2)$ achieved is _____ %.",
+      "answer": 86.667,
+      "tolerance": 0.1
+    },
+    {
+      "id": "es-waste-015",
+      "subject": "Solid & Hazardous Waste Management",
+      "topic": "Compaction",
+      "difficulty": "medium",
+      "marks": 2,
+      "archetype": "A",
+      "solution": "**Concept.** VR = (1 − ρ₁/ρ₂)×100, both densities read from the bars.\n\n**Working.**\n$$\\left(1-\\dfrac{150}{600}\\right)\\times100=75\\%.$$\n\n**Answer.** $75\\%$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 300 188\" width=\"100%\" style=\"max-width:320px;height:auto\"><line x1=\"40\" y1=\"150\" x2=\"280\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"80\" y=\"120\" width=\"50\" height=\"30\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"105\" y=\"116\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">150</text><text x=\"105\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">loose ρ₁</text><rect x=\"180\" y=\"30\" width=\"50\" height=\"120\" fill=\"#16a34a\" opacity=\"0.85\"/><text x=\"205\" y=\"26\" font-size=\"10\" text-anchor=\"middle\" fill=\"#16a34a\">600</text><text x=\"205\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">compacted ρ₂</text><text x=\"160\" y=\"182\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">kg/m³</text></svg>",
+        "caption": "Loose and compacted densities shown on the bars only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "Read the loose and compacted densities from the bar chart. The volume reduction $(1-\\rho_1/\\rho_2)$ is _____ %.",
+      "answer": 75,
+      "tolerance": 0.1
+    },
+    {
+      "id": "es-waste-016",
+      "subject": "Solid & Hazardous Waste Management",
+      "topic": "Incineration",
+      "difficulty": "medium",
+      "marks": 1,
+      "archetype": "B",
+      "solution": "**Concept.** High temperature + 2 s residence ensures complete burnout and dioxin destruction.\n\n**Working.**\nComplete combustion.\n\n**Answer.** Complete combustion",
+      "type": "MCQ",
+      "stem": "The main purpose of maintaining ~850–1100 °C with adequate residence time in an MSW incinerator is to",
+      "options": [
+        "ensure complete combustion and destroy dioxins/pathogens",
+        "maximise ash volume",
+        "reduce the need for air pollution control",
+        "increase moisture"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "es-waste-017",
+      "subject": "Solid & Hazardous Waste Management",
+      "topic": "Moisture Content",
+      "difficulty": "medium",
+      "marks": 2,
+      "archetype": "A",
+      "solution": "**Concept.** Dry = wet × (1 − moisture).\n\n**Working.**\n$$2000(1-60/100)=800.$$\n\n**Answer.** $800\\,\\text{kg}$",
+      "type": "NAT",
+      "stem": "Wet MSW $2000\\,\\text{kg}$ at $60\\%$ moisture. The dry-solids mass is _____ kg.",
+      "answer": 800,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-waste-018",
+      "subject": "Solid & Hazardous Waste Management",
+      "topic": "MSW Generation",
+      "difficulty": "easy",
+      "marks": 1,
+      "archetype": "A",
+      "solution": "**Concept.** Total = pop × rate.\n\n**Working.**\n$$\\dfrac{100000\\times0.45}{1000}=45.$$\n\n**Answer.** $45\\,\\text{t/day}$",
+      "type": "NAT",
+      "stem": "City of $1,00,000$ at $0.45\\,\\text{kg/cap/day}$. Daily MSW is _____ t/day.",
+      "answer": 45,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-waste-019",
+      "subject": "Solid & Hazardous Waste Management",
+      "topic": "Calorific Value",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** Apply the modified Dulong formula.\n\n**Working.**\n$$337(40)+1419(6-40/8)=14899.$$\n\n**Answer.** $14899\\,\\text{kJ/kg}$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 300 180\" width=\"100%\" style=\"max-width:320px;height:auto\"><line x1=\"40\" y1=\"150\" x2=\"280\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"70\" y=\"30\" width=\"46\" height=\"120\" fill=\"#dc2626\" opacity=\"0.75\"/><text x=\"93\" y=\"26\" font-size=\"9\" text-anchor=\"middle\" fill=\"#dc2626\">in 14.9</text><rect x=\"190\" y=\"146\" width=\"46\" height=\"4\" fill=\"#16a34a\" opacity=\"0.8\"/><text x=\"213\" y=\"142\" font-size=\"9\" text-anchor=\"middle\" fill=\"#16a34a\">out 0</text><text x=\"160\" y=\"170\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1e293b\">HHV (MJ/kg)</text></svg>",
+        "caption": "Energy content of the waste fuel."
+      },
+      "type": "NAT",
+      "stem": "Modified Dulong $HHV=337C+1419(H-O/8)$ kJ/kg with $C=40\\%$, $H=6\\%$, $O=40\\%$. HHV is _____ kJ/kg.",
+      "answer": 14899,
+      "tolerance": 5
+    },
+    {
+      "id": "es-waste-020",
+      "subject": "Solid & Hazardous Waste Management",
+      "topic": "Calorific Value",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** Apply the modified Dulong formula.\n\n**Working.**\n$$337(40)+1419(7-40/8)=16318.$$\n\n**Answer.** $16318\\,\\text{kJ/kg}$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 300 180\" width=\"100%\" style=\"max-width:320px;height:auto\"><line x1=\"40\" y1=\"150\" x2=\"280\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"70\" y=\"30\" width=\"46\" height=\"120\" fill=\"#dc2626\" opacity=\"0.75\"/><text x=\"93\" y=\"26\" font-size=\"9\" text-anchor=\"middle\" fill=\"#dc2626\">in 16.3</text><rect x=\"190\" y=\"146\" width=\"46\" height=\"4\" fill=\"#16a34a\" opacity=\"0.8\"/><text x=\"213\" y=\"142\" font-size=\"9\" text-anchor=\"middle\" fill=\"#16a34a\">out 0</text><text x=\"160\" y=\"170\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1e293b\">HHV (MJ/kg)</text></svg>",
+        "caption": "Energy content of the waste fuel."
+      },
+      "type": "NAT",
+      "stem": "Modified Dulong $HHV=337C+1419(H-O/8)$ kJ/kg with $C=40\\%$, $H=7\\%$, $O=40\\%$. HHV is _____ kJ/kg.",
+      "answer": 16318,
+      "tolerance": 5
+    },
+    {
+      "id": "es-waste-021",
+      "subject": "Solid & Hazardous Waste Management",
+      "topic": "Compaction",
+      "difficulty": "medium",
+      "marks": 2,
+      "archetype": "A",
+      "solution": "**Concept.** VR = (1 − ρ₁/ρ₂)×100, both densities read from the bars.\n\n**Working.**\n$$\\left(1-\\dfrac{120}{700}\\right)\\times100=82.9\\%.$$\n\n**Answer.** $82.9\\%$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 300 188\" width=\"100%\" style=\"max-width:320px;height:auto\"><line x1=\"40\" y1=\"150\" x2=\"280\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"80\" y=\"129.4\" width=\"50\" height=\"20.6\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"105\" y=\"125.4\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">120</text><text x=\"105\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">loose ρ₁</text><rect x=\"180\" y=\"30\" width=\"50\" height=\"120\" fill=\"#16a34a\" opacity=\"0.85\"/><text x=\"205\" y=\"26\" font-size=\"10\" text-anchor=\"middle\" fill=\"#16a34a\">700</text><text x=\"205\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">compacted ρ₂</text><text x=\"160\" y=\"182\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">kg/m³</text></svg>",
+        "caption": "Loose and compacted densities shown on the bars only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "Read the loose and compacted densities from the bar chart. The volume reduction $(1-\\rho_1/\\rho_2)$ is _____ %.",
+      "answer": 82.857,
+      "tolerance": 0.1
+    },
+    {
+      "id": "es-waste-022",
+      "subject": "Solid & Hazardous Waste Management",
+      "topic": "Compaction",
+      "difficulty": "medium",
+      "marks": 2,
+      "archetype": "A",
+      "solution": "**Concept.** VR = (1 − ρ₁/ρ₂)×100, both densities read from the bars.\n\n**Working.**\n$$\\left(1-\\dfrac{100}{700}\\right)\\times100=85.7\\%.$$\n\n**Answer.** $85.7\\%$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 300 188\" width=\"100%\" style=\"max-width:320px;height:auto\"><line x1=\"40\" y1=\"150\" x2=\"280\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"80\" y=\"132.9\" width=\"50\" height=\"17.1\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"105\" y=\"128.9\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">100</text><text x=\"105\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">loose ρ₁</text><rect x=\"180\" y=\"30\" width=\"50\" height=\"120\" fill=\"#16a34a\" opacity=\"0.85\"/><text x=\"205\" y=\"26\" font-size=\"10\" text-anchor=\"middle\" fill=\"#16a34a\">700</text><text x=\"205\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">compacted ρ₂</text><text x=\"160\" y=\"182\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">kg/m³</text></svg>",
+        "caption": "Loose and compacted densities shown on the bars only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "Read the loose and compacted densities from the bar chart. The volume reduction $(1-\\rho_1/\\rho_2)$ is _____ %.",
+      "answer": 85.714,
+      "tolerance": 0.1
+    },
+    {
+      "id": "es-waste-023",
+      "subject": "Solid & Hazardous Waste Management",
+      "topic": "Material Recovery",
+      "difficulty": "easy",
+      "marks": 1,
+      "archetype": "A",
+      "solution": "**Concept.** Recovered = throughput × efficiency.\n\n**Working.**\n$$150\\times0.8=120.$$\n\n**Answer.** $120\\,\\text{t/day}$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 300 180\" width=\"100%\" style=\"max-width:320px;height:auto\"><line x1=\"40\" y1=\"150\" x2=\"280\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"70\" y=\"30\" width=\"46\" height=\"120\" fill=\"#dc2626\" opacity=\"0.75\"/><text x=\"93\" y=\"26\" font-size=\"9\" text-anchor=\"middle\" fill=\"#dc2626\">in 150</text><rect x=\"190\" y=\"54\" width=\"46\" height=\"96\" fill=\"#16a34a\" opacity=\"0.8\"/><text x=\"213\" y=\"50\" font-size=\"9\" text-anchor=\"middle\" fill=\"#16a34a\">out 120</text><text x=\"160\" y=\"170\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1e293b\">MRF recovery (t/day)</text></svg>",
+        "caption": "MRF recovery: influent vs. effluent (t/day)."
+      },
+      "type": "NAT",
+      "stem": "A MRF receives $150\\,\\text{t/day}$ and recovers recyclables at $80\\%$ efficiency. The recovered mass is _____ t/day.",
+      "answer": 120,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-waste-024",
+      "subject": "Solid & Hazardous Waste Management",
+      "topic": "Calorific Value",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** Apply the modified Dulong formula.\n\n**Working.**\n$$337(45)+1419(7-35/8)=18890.$$\n\n**Answer.** $18890\\,\\text{kJ/kg}$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 300 180\" width=\"100%\" style=\"max-width:320px;height:auto\"><line x1=\"40\" y1=\"150\" x2=\"280\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"70\" y=\"30\" width=\"46\" height=\"120\" fill=\"#dc2626\" opacity=\"0.75\"/><text x=\"93\" y=\"26\" font-size=\"9\" text-anchor=\"middle\" fill=\"#dc2626\">in 18.9</text><rect x=\"190\" y=\"146\" width=\"46\" height=\"4\" fill=\"#16a34a\" opacity=\"0.8\"/><text x=\"213\" y=\"142\" font-size=\"9\" text-anchor=\"middle\" fill=\"#16a34a\">out 0</text><text x=\"160\" y=\"170\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1e293b\">HHV (MJ/kg)</text></svg>",
+        "caption": "Energy content of the waste fuel."
+      },
+      "type": "NAT",
+      "stem": "Modified Dulong $HHV=337C+1419(H-O/8)$ kJ/kg with $C=45\\%$, $H=7\\%$, $O=35\\%$. HHV is _____ kJ/kg.",
+      "answer": 18889.9,
+      "tolerance": 5
+    },
+    {
+      "id": "es-waste-025",
+      "subject": "Solid & Hazardous Waste Management",
+      "topic": "Compaction",
+      "difficulty": "medium",
+      "marks": 2,
+      "archetype": "A",
+      "solution": "**Concept.** VR = (1 − ρ₁/ρ₂)×100, both densities read from the bars.\n\n**Working.**\n$$\\left(1-\\dfrac{100}{500}\\right)\\times100=80\\%.$$\n\n**Answer.** $80\\%$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 300 188\" width=\"100%\" style=\"max-width:320px;height:auto\"><line x1=\"40\" y1=\"150\" x2=\"280\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"80\" y=\"126\" width=\"50\" height=\"24\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"105\" y=\"122\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">100</text><text x=\"105\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">loose ρ₁</text><rect x=\"180\" y=\"30\" width=\"50\" height=\"120\" fill=\"#16a34a\" opacity=\"0.85\"/><text x=\"205\" y=\"26\" font-size=\"10\" text-anchor=\"middle\" fill=\"#16a34a\">500</text><text x=\"205\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">compacted ρ₂</text><text x=\"160\" y=\"182\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">kg/m³</text></svg>",
+        "caption": "Loose and compacted densities shown on the bars only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "Read the loose and compacted densities from the bar chart. The volume reduction $(1-\\rho_1/\\rho_2)$ achieved is _____ %.",
+      "answer": 80,
+      "tolerance": 0.1
+    },
+    {
+      "id": "es-waste-026",
+      "subject": "Solid & Hazardous Waste Management",
+      "topic": "MSW Generation",
+      "difficulty": "easy",
+      "marks": 1,
+      "archetype": "A",
+      "solution": "**Concept.** Total = pop × rate.\n\n**Working.**\n$$\\dfrac{250000\\times0.4}{1000}=100.$$\n\n**Answer.** $100\\,\\text{t/day}$",
+      "type": "NAT",
+      "stem": "City of $2,50,000$ at $0.4\\,\\text{kg/cap/day}$. Daily MSW is _____ t/day.",
+      "answer": 100,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-waste-027",
+      "subject": "Solid & Hazardous Waste Management",
+      "topic": "Calorific Value",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** Apply the modified Dulong formula.\n\n**Working.**\n$$337(50)+1419(5-40/8)=16850.$$\n\n**Answer.** $16850\\,\\text{kJ/kg}$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 300 180\" width=\"100%\" style=\"max-width:320px;height:auto\"><line x1=\"40\" y1=\"150\" x2=\"280\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"70\" y=\"30\" width=\"46\" height=\"120\" fill=\"#dc2626\" opacity=\"0.75\"/><text x=\"93\" y=\"26\" font-size=\"9\" text-anchor=\"middle\" fill=\"#dc2626\">in 16.9</text><rect x=\"190\" y=\"146\" width=\"46\" height=\"4\" fill=\"#16a34a\" opacity=\"0.8\"/><text x=\"213\" y=\"142\" font-size=\"9\" text-anchor=\"middle\" fill=\"#16a34a\">out 0</text><text x=\"160\" y=\"170\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1e293b\">HHV (MJ/kg)</text></svg>",
+        "caption": "Energy content of the waste fuel."
+      },
+      "type": "NAT",
+      "stem": "Modified Dulong $HHV=337C+1419(H-O/8)$ kJ/kg with $C=50\\%$, $H=5\\%$, $O=40\\%$. HHV is _____ kJ/kg.",
+      "answer": 16850,
+      "tolerance": 5
+    },
+    {
+      "id": "es-waste-028",
+      "subject": "Solid & Hazardous Waste Management",
+      "topic": "Moisture Content",
+      "difficulty": "medium",
+      "marks": 2,
+      "archetype": "A",
+      "solution": "**Concept.** Dry = wet × (1 − moisture).\n\n**Working.**\n$$2000(1-40/100)=1200.$$\n\n**Answer.** $1200\\,\\text{kg}$",
+      "type": "NAT",
+      "stem": "Wet MSW $2000\\,\\text{kg}$ at $40\\%$ moisture. The dry-solids mass is _____ kg.",
+      "answer": 1200,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-waste-029",
+      "subject": "Solid & Hazardous Waste Management",
+      "topic": "Landfill Life",
+      "difficulty": "medium",
+      "marks": 2,
+      "archetype": "A",
+      "solution": "**Concept.** Life = air-space/annual fill, both read from the figure.\n\n**Working.**\n$$\\dfrac{300000}{40000}=7.5.$$\n\n**Answer.** $7.5\\,\\text{yr}$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 340 180\" width=\"100%\" style=\"max-width:360px;height:auto\"><rect x=\"30\" y=\"30\" width=\"280\" height=\"120\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.2\"/><rect x=\"30\" y=\"40\" width=\"280\" height=\"100\" fill=\"#a16207\" opacity=\"0.45\"/><rect x=\"30\" y=\"30\" width=\"280\" height=\"10\" fill=\"#65a30d\"/><text x=\"170\" y=\"86\" font-size=\"10\" text-anchor=\"middle\" fill=\"#fff\">air-space = 3,00,000 m³</text><text x=\"170\" y=\"108\" font-size=\"9\" text-anchor=\"middle\" fill=\"#fff\">fill rate = 40,000 m³/yr</text><text x=\"170\" y=\"166\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">design life = air-space ÷ fill rate</text></svg>",
+        "caption": "Landfill air-space and annual fill rate marked on the diagram only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "For the landfill shown, read the usable air-space and the annual fill rate from the diagram. Its design life is _____ years.",
+      "answer": 7.5,
+      "tolerance": 0.1
+    },
+    {
+      "id": "es-waste-030",
+      "subject": "Solid & Hazardous Waste Management",
+      "topic": "MSW Generation",
+      "difficulty": "easy",
+      "marks": 1,
+      "archetype": "A",
+      "solution": "**Concept.** Total = pop × rate.\n\n**Working.**\n$$\\dfrac{250000\\times0.5}{1000}=125.$$\n\n**Answer.** $125\\,\\text{t/day}$",
+      "type": "NAT",
+      "stem": "City of $2,50,000$ at $0.5\\,\\text{kg/cap/day}$. Daily MSW is _____ t/day.",
+      "answer": 125,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-waste-031",
+      "subject": "Solid & Hazardous Waste Management",
+      "topic": "Compaction",
+      "difficulty": "medium",
+      "marks": 2,
+      "archetype": "A",
+      "solution": "**Concept.** VR = (1 − ρ₁/ρ₂)×100, both densities read from the bars.\n\n**Working.**\n$$\\left(1-\\dfrac{100}{400}\\right)\\times100=75\\%.$$\n\n**Answer.** $75\\%$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 300 188\" width=\"100%\" style=\"max-width:320px;height:auto\"><line x1=\"40\" y1=\"150\" x2=\"280\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"80\" y=\"120\" width=\"50\" height=\"30\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"105\" y=\"116\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">100</text><text x=\"105\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">loose ρ₁</text><rect x=\"180\" y=\"30\" width=\"50\" height=\"120\" fill=\"#16a34a\" opacity=\"0.85\"/><text x=\"205\" y=\"26\" font-size=\"10\" text-anchor=\"middle\" fill=\"#16a34a\">400</text><text x=\"205\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">compacted ρ₂</text><text x=\"160\" y=\"182\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">kg/m³</text></svg>",
+        "caption": "Loose and compacted densities shown on the bars only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "Read the loose and compacted densities from the bar chart. The volume reduction $(1-\\rho_1/\\rho_2)$ achieved is _____ %.",
+      "answer": 75,
+      "tolerance": 0.1
+    },
+    {
+      "id": "es-waste-032",
+      "subject": "Solid & Hazardous Waste Management",
+      "topic": "Compaction",
+      "difficulty": "medium",
+      "marks": 2,
+      "archetype": "A",
+      "solution": "**Concept.** VR = (1 − ρ₁/ρ₂)×100, both densities read from the bars.\n\n**Working.**\n$$\\left(1-\\dfrac{80}{500}\\right)\\times100=84\\%.$$\n\n**Answer.** $84\\%$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 300 188\" width=\"100%\" style=\"max-width:320px;height:auto\"><line x1=\"40\" y1=\"150\" x2=\"280\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"80\" y=\"130.8\" width=\"50\" height=\"19.2\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"105\" y=\"126.8\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">80</text><text x=\"105\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">loose ρ₁</text><rect x=\"180\" y=\"30\" width=\"50\" height=\"120\" fill=\"#16a34a\" opacity=\"0.85\"/><text x=\"205\" y=\"26\" font-size=\"10\" text-anchor=\"middle\" fill=\"#16a34a\">500</text><text x=\"205\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">compacted ρ₂</text><text x=\"160\" y=\"182\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">kg/m³</text></svg>",
+        "caption": "Loose and compacted densities shown on the bars only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "Read the loose and compacted densities from the bar chart. The volume reduction $(1-\\rho_1/\\rho_2)$ achieved is _____ %.",
+      "answer": 84,
+      "tolerance": 0.1
+    },
+    {
+      "id": "es-waste-033",
+      "subject": "Solid & Hazardous Waste Management",
+      "topic": "Calorific Value",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** Apply the modified Dulong formula.\n\n**Working.**\n$$337(40)+1419(7-35/8)=17205.$$\n\n**Answer.** $17205\\,\\text{kJ/kg}$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 300 180\" width=\"100%\" style=\"max-width:320px;height:auto\"><line x1=\"40\" y1=\"150\" x2=\"280\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"70\" y=\"30\" width=\"46\" height=\"120\" fill=\"#dc2626\" opacity=\"0.75\"/><text x=\"93\" y=\"26\" font-size=\"9\" text-anchor=\"middle\" fill=\"#dc2626\">in 17.2</text><rect x=\"190\" y=\"146\" width=\"46\" height=\"4\" fill=\"#16a34a\" opacity=\"0.8\"/><text x=\"213\" y=\"142\" font-size=\"9\" text-anchor=\"middle\" fill=\"#16a34a\">out 0</text><text x=\"160\" y=\"170\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1e293b\">HHV (MJ/kg)</text></svg>",
+        "caption": "Energy content of the waste fuel."
+      },
+      "type": "NAT",
+      "stem": "Modified Dulong $HHV=337C+1419(H-O/8)$ kJ/kg with $C=40\\%$, $H=7\\%$, $O=35\\%$. HHV is _____ kJ/kg.",
+      "answer": 17204.9,
+      "tolerance": 5
+    },
+    {
+      "id": "es-waste-034",
+      "subject": "Solid & Hazardous Waste Management",
+      "topic": "MSW Generation",
+      "difficulty": "easy",
+      "marks": 1,
+      "archetype": "A",
+      "solution": "**Concept.** Total = pop × rate.\n\n**Working.**\n$$\\dfrac{200000\\times0.6}{1000}=120.$$\n\n**Answer.** $120\\,\\text{t/day}$",
+      "type": "NAT",
+      "stem": "City of $2,00,000$ at $0.6\\,\\text{kg/cap/day}$. Daily MSW is _____ t/day.",
+      "answer": 120,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-waste-035",
+      "subject": "Solid & Hazardous Waste Management",
+      "topic": "Moisture Content",
+      "difficulty": "medium",
+      "marks": 2,
+      "archetype": "A",
+      "solution": "**Concept.** Dry = wet × (1 − moisture).\n\n**Working.**\n$$1500(1-50/100)=750.$$\n\n**Answer.** $750\\,\\text{kg}$",
+      "type": "NAT",
+      "stem": "Wet MSW $1500\\,\\text{kg}$ at $50\\%$ moisture. The dry-solids mass is _____ kg.",
+      "answer": 750,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-waste-036",
+      "subject": "Solid & Hazardous Waste Management",
+      "topic": "Landfill Gas",
+      "difficulty": "medium",
+      "marks": 2,
+      "archetype": "A",
+      "solution": "**Concept.** Gas = mass × yield.\n\n**Working.**\n$$2000\\times0.1=200.$$\n\n**Answer.** $200$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 340 180\" width=\"100%\" style=\"max-width:360px;height:auto\"><rect x=\"30\" y=\"30\" width=\"280\" height=\"120\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.2\"/><rect x=\"30\" y=\"40\" width=\"280\" height=\"86\" fill=\"#a16207\" opacity=\"0.5\"/><rect x=\"30\" y=\"30\" width=\"280\" height=\"10\" fill=\"#65a30d\"/><rect x=\"30\" y=\"126\" width=\"280\" height=\"14\" fill=\"#1e3a8a\" opacity=\"0.6\"/><rect x=\"30\" y=\"140\" width=\"280\" height=\"10\" fill=\"#0f172a\"/><text x=\"170\" y=\"26\" font-size=\"8\" text-anchor=\"middle\" fill=\"#16a34a\">final cover / vegetation</text><text x=\"170\" y=\"86\" font-size=\"9\" text-anchor=\"middle\" fill=\"#fff\">compacted MSW + daily cover</text><text x=\"170\" y=\"137\" font-size=\"8\" text-anchor=\"middle\" fill=\"#fff\">leachate collection</text><text x=\"170\" y=\"148\" font-size=\"7\" text-anchor=\"middle\" fill=\"#fff\">composite liner (clay+HDPE)</text><path d=\"M315 60 q14 0 14 14 q0 10 -8 18\" stroke=\"#dc2626\" stroke-width=\"1.2\" fill=\"none\"/><text x=\"318\" y=\"56\" font-size=\"8\" fill=\"#dc2626\">gas vent</text></svg>",
+        "caption": "Engineered sanitary landfill: cover, waste cell, liner and leachate system."
+      },
+      "type": "NAT",
+      "stem": "Decomposable waste $2000\\,\\text{kg}$ yields $0.1\\,\\text{m}^3/\\text{kg}$ gas. Total gas is _____ m³.",
+      "answer": 200,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-waste-037",
+      "subject": "Solid & Hazardous Waste Management",
+      "topic": "Material Recovery",
+      "difficulty": "easy",
+      "marks": 1,
+      "archetype": "A",
+      "solution": "**Concept.** Recovered = throughput × efficiency.\n\n**Working.**\n$$150\\times0.75=112.5.$$\n\n**Answer.** $112.5\\,\\text{t/day}$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 300 180\" width=\"100%\" style=\"max-width:320px;height:auto\"><line x1=\"40\" y1=\"150\" x2=\"280\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"70\" y=\"30\" width=\"46\" height=\"120\" fill=\"#dc2626\" opacity=\"0.75\"/><text x=\"93\" y=\"26\" font-size=\"9\" text-anchor=\"middle\" fill=\"#dc2626\">in 150</text><rect x=\"190\" y=\"59.60000000000001\" width=\"46\" height=\"90.39999999999999\" fill=\"#16a34a\" opacity=\"0.8\"/><text x=\"213\" y=\"55.60000000000001\" font-size=\"9\" text-anchor=\"middle\" fill=\"#16a34a\">out 113</text><text x=\"160\" y=\"170\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1e293b\">MRF recovery (t/day)</text></svg>",
+        "caption": "MRF recovery: influent vs. effluent (t/day)."
+      },
+      "type": "NAT",
+      "stem": "A MRF receives $150\\,\\text{t/day}$ and recovers recyclables at $75\\%$ efficiency. The recovered mass is _____ t/day.",
+      "answer": 112.5,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-waste-038",
+      "subject": "Solid & Hazardous Waste Management",
+      "topic": "MSW Generation",
+      "difficulty": "easy",
+      "marks": 1,
+      "archetype": "A",
+      "solution": "**Concept.** Total = pop × rate.\n\n**Working.**\n$$\\dfrac{200000\\times0.5}{1000}=100.$$\n\n**Answer.** $100\\,\\text{t/day}$",
+      "type": "NAT",
+      "stem": "City of $2,00,000$ at $0.5\\,\\text{kg/cap/day}$. Daily MSW is _____ t/day.",
+      "answer": 100,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-waste-039",
+      "subject": "Solid & Hazardous Waste Management",
+      "topic": "Calorific Value",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** Apply the modified Dulong formula.\n\n**Working.**\n$$337(40)+1419(5-35/8)=14367.$$\n\n**Answer.** $14367\\,\\text{kJ/kg}$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 300 180\" width=\"100%\" style=\"max-width:320px;height:auto\"><line x1=\"40\" y1=\"150\" x2=\"280\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"70\" y=\"30\" width=\"46\" height=\"120\" fill=\"#dc2626\" opacity=\"0.75\"/><text x=\"93\" y=\"26\" font-size=\"9\" text-anchor=\"middle\" fill=\"#dc2626\">in 14.4</text><rect x=\"190\" y=\"146\" width=\"46\" height=\"4\" fill=\"#16a34a\" opacity=\"0.8\"/><text x=\"213\" y=\"142\" font-size=\"9\" text-anchor=\"middle\" fill=\"#16a34a\">out 0</text><text x=\"160\" y=\"170\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1e293b\">HHV (MJ/kg)</text></svg>",
+        "caption": "Energy content of the waste fuel."
+      },
+      "type": "NAT",
+      "stem": "Modified Dulong $HHV=337C+1419(H-O/8)$ kJ/kg with $C=40\\%$, $H=5\\%$, $O=35\\%$. HHV is _____ kJ/kg.",
+      "answer": 14366.9,
+      "tolerance": 5
+    },
+    {
+      "id": "es-waste-040",
+      "subject": "Solid & Hazardous Waste Management",
+      "topic": "Landfill Life",
+      "difficulty": "medium",
+      "marks": 2,
+      "archetype": "A",
+      "solution": "**Concept.** Life = air-space/annual fill, both read from the figure.\n\n**Working.**\n$$\\dfrac{800000}{60000}=13.3.$$\n\n**Answer.** $13.3\\,\\text{yr}$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 340 180\" width=\"100%\" style=\"max-width:360px;height:auto\"><rect x=\"30\" y=\"30\" width=\"280\" height=\"120\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.2\"/><rect x=\"30\" y=\"40\" width=\"280\" height=\"100\" fill=\"#a16207\" opacity=\"0.45\"/><rect x=\"30\" y=\"30\" width=\"280\" height=\"10\" fill=\"#65a30d\"/><text x=\"170\" y=\"86\" font-size=\"10\" text-anchor=\"middle\" fill=\"#fff\">air-space = 8,00,000 m³</text><text x=\"170\" y=\"108\" font-size=\"9\" text-anchor=\"middle\" fill=\"#fff\">fill rate = 60,000 m³/yr</text><text x=\"170\" y=\"166\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">design life = air-space ÷ fill rate</text></svg>",
+        "caption": "Landfill air-space and annual fill rate marked on the diagram only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "For the landfill shown, read the usable air-space and the annual fill rate from the diagram. Its design life is _____ years.",
+      "answer": 13.333,
+      "tolerance": 0.1
+    },
+    {
+      "id": "es-waste-041",
+      "subject": "Solid & Hazardous Waste Management",
+      "topic": "Compaction",
+      "difficulty": "medium",
+      "marks": 2,
+      "archetype": "A",
+      "solution": "**Concept.** VR = (1 − ρ₁/ρ₂)×100, both densities read from the bars.\n\n**Working.**\n$$\\left(1-\\dfrac{80}{600}\\right)\\times100=86.7\\%.$$\n\n**Answer.** $86.7\\%$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 300 188\" width=\"100%\" style=\"max-width:320px;height:auto\"><line x1=\"40\" y1=\"150\" x2=\"280\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"80\" y=\"134\" width=\"50\" height=\"16\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"105\" y=\"130\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">80</text><text x=\"105\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">loose ρ₁</text><rect x=\"180\" y=\"30\" width=\"50\" height=\"120\" fill=\"#16a34a\" opacity=\"0.85\"/><text x=\"205\" y=\"26\" font-size=\"10\" text-anchor=\"middle\" fill=\"#16a34a\">600</text><text x=\"205\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">compacted ρ₂</text><text x=\"160\" y=\"182\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">kg/m³</text></svg>",
+        "caption": "Loose and compacted densities shown on the bars only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "Read the loose and compacted densities from the bar chart. The volume reduction $(1-\\rho_1/\\rho_2)$ is _____ %.",
+      "answer": 86.667,
+      "tolerance": 0.1
+    },
+    {
+      "id": "es-waste-042",
+      "subject": "Solid & Hazardous Waste Management",
+      "topic": "Material Recovery",
+      "difficulty": "easy",
+      "marks": 1,
+      "archetype": "A",
+      "solution": "**Concept.** Recovered = throughput × efficiency.\n\n**Working.**\n$$150\\times0.7=105.$$\n\n**Answer.** $105\\,\\text{t/day}$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 300 180\" width=\"100%\" style=\"max-width:320px;height:auto\"><line x1=\"40\" y1=\"150\" x2=\"280\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"70\" y=\"30\" width=\"46\" height=\"120\" fill=\"#dc2626\" opacity=\"0.75\"/><text x=\"93\" y=\"26\" font-size=\"9\" text-anchor=\"middle\" fill=\"#dc2626\">in 150</text><rect x=\"190\" y=\"66\" width=\"46\" height=\"84\" fill=\"#16a34a\" opacity=\"0.8\"/><text x=\"213\" y=\"62\" font-size=\"9\" text-anchor=\"middle\" fill=\"#16a34a\">out 105</text><text x=\"160\" y=\"170\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1e293b\">MRF recovery (t/day)</text></svg>",
+        "caption": "MRF recovery: influent vs. effluent (t/day)."
+      },
+      "type": "NAT",
+      "stem": "A MRF receives $150\\,\\text{t/day}$ and recovers recyclables at $70\\%$ efficiency. The recovered mass is _____ t/day.",
+      "answer": 105,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-waste-043",
+      "subject": "Solid & Hazardous Waste Management",
+      "topic": "Compaction",
+      "difficulty": "medium",
+      "marks": 2,
+      "archetype": "A",
+      "solution": "**Concept.** VR = (1 − ρ₁/ρ₂)×100, both densities read from the bars.\n\n**Working.**\n$$\\left(1-\\dfrac{120}{400}\\right)\\times100=70\\%.$$\n\n**Answer.** $70\\%$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 300 188\" width=\"100%\" style=\"max-width:320px;height:auto\"><line x1=\"40\" y1=\"150\" x2=\"280\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"80\" y=\"114\" width=\"50\" height=\"36\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"105\" y=\"110\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">120</text><text x=\"105\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">loose ρ₁</text><rect x=\"180\" y=\"30\" width=\"50\" height=\"120\" fill=\"#16a34a\" opacity=\"0.85\"/><text x=\"205\" y=\"26\" font-size=\"10\" text-anchor=\"middle\" fill=\"#16a34a\">400</text><text x=\"205\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">compacted ρ₂</text><text x=\"160\" y=\"182\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">kg/m³</text></svg>",
+        "caption": "Loose and compacted densities shown on the bars only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "Read the loose and compacted densities from the bar chart. The volume reduction $(1-\\rho_1/\\rho_2)$ achieved is _____ %.",
+      "answer": 70,
+      "tolerance": 0.1
+    },
+    {
+      "id": "es-waste-044",
+      "subject": "Solid & Hazardous Waste Management",
+      "topic": "Calorific Value",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** Apply the modified Dulong formula.\n\n**Working.**\n$$337(40)+1419(6-35/8)=15786.$$\n\n**Answer.** $15786\\,\\text{kJ/kg}$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 300 180\" width=\"100%\" style=\"max-width:320px;height:auto\"><line x1=\"40\" y1=\"150\" x2=\"280\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"70\" y=\"30\" width=\"46\" height=\"120\" fill=\"#dc2626\" opacity=\"0.75\"/><text x=\"93\" y=\"26\" font-size=\"9\" text-anchor=\"middle\" fill=\"#dc2626\">in 15.8</text><rect x=\"190\" y=\"146\" width=\"46\" height=\"4\" fill=\"#16a34a\" opacity=\"0.8\"/><text x=\"213\" y=\"142\" font-size=\"9\" text-anchor=\"middle\" fill=\"#16a34a\">out 0</text><text x=\"160\" y=\"170\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1e293b\">HHV (MJ/kg)</text></svg>",
+        "caption": "Energy content of the waste fuel."
+      },
+      "type": "NAT",
+      "stem": "Modified Dulong $HHV=337C+1419(H-O/8)$ kJ/kg with $C=40\\%$, $H=6\\%$, $O=35\\%$. HHV is _____ kJ/kg.",
+      "answer": 15785.9,
+      "tolerance": 5
+    },
+    {
+      "id": "es-waste-045",
+      "subject": "Solid & Hazardous Waste Management",
+      "topic": "Material Recovery",
+      "difficulty": "easy",
+      "marks": 1,
+      "archetype": "A",
+      "solution": "**Concept.** Recovered = throughput × efficiency.\n\n**Working.**\n$$250\\times0.8=200.$$\n\n**Answer.** $200\\,\\text{t/day}$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 300 180\" width=\"100%\" style=\"max-width:320px;height:auto\"><line x1=\"40\" y1=\"150\" x2=\"280\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"70\" y=\"30\" width=\"46\" height=\"120\" fill=\"#dc2626\" opacity=\"0.75\"/><text x=\"93\" y=\"26\" font-size=\"9\" text-anchor=\"middle\" fill=\"#dc2626\">in 250</text><rect x=\"190\" y=\"54\" width=\"46\" height=\"96\" fill=\"#16a34a\" opacity=\"0.8\"/><text x=\"213\" y=\"50\" font-size=\"9\" text-anchor=\"middle\" fill=\"#16a34a\">out 200</text><text x=\"160\" y=\"170\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1e293b\">MRF recovery (t/day)</text></svg>",
+        "caption": "MRF recovery: influent vs. effluent (t/day)."
+      },
+      "type": "NAT",
+      "stem": "A MRF receives $250\\,\\text{t/day}$ and recovers recyclables at $80\\%$ efficiency. The recovered mass is _____ t/day.",
+      "answer": 200,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-waste-046",
+      "subject": "Solid & Hazardous Waste Management",
+      "topic": "Compaction",
+      "difficulty": "medium",
+      "marks": 2,
+      "archetype": "A",
+      "solution": "**Concept.** VR = (1 − ρ₁/ρ₂)×100, both densities read from the bars.\n\n**Working.**\n$$\\left(1-\\dfrac{120}{500}\\right)\\times100=76\\%.$$\n\n**Answer.** $76\\%$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 300 188\" width=\"100%\" style=\"max-width:320px;height:auto\"><line x1=\"40\" y1=\"150\" x2=\"280\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"80\" y=\"121.2\" width=\"50\" height=\"28.8\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"105\" y=\"117.2\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">120</text><text x=\"105\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">loose ρ₁</text><rect x=\"180\" y=\"30\" width=\"50\" height=\"120\" fill=\"#16a34a\" opacity=\"0.85\"/><text x=\"205\" y=\"26\" font-size=\"10\" text-anchor=\"middle\" fill=\"#16a34a\">500</text><text x=\"205\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">compacted ρ₂</text><text x=\"160\" y=\"182\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">kg/m³</text></svg>",
+        "caption": "Loose and compacted densities shown on the bars only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "Read the loose and compacted densities from the bar chart. The volume reduction $(1-\\rho_1/\\rho_2)$ achieved is _____ %.",
+      "answer": 76,
+      "tolerance": 0.1
+    },
+    {
+      "id": "es-waste-047",
+      "subject": "Solid & Hazardous Waste Management",
+      "topic": "Calorific Value",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** Apply the modified Dulong formula.\n\n**Working.**\n$$337(45)+1419(5-40/8)=15165.$$\n\n**Answer.** $15165\\,\\text{kJ/kg}$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 300 180\" width=\"100%\" style=\"max-width:320px;height:auto\"><line x1=\"40\" y1=\"150\" x2=\"280\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"70\" y=\"30\" width=\"46\" height=\"120\" fill=\"#dc2626\" opacity=\"0.75\"/><text x=\"93\" y=\"26\" font-size=\"9\" text-anchor=\"middle\" fill=\"#dc2626\">in 15.2</text><rect x=\"190\" y=\"146\" width=\"46\" height=\"4\" fill=\"#16a34a\" opacity=\"0.8\"/><text x=\"213\" y=\"142\" font-size=\"9\" text-anchor=\"middle\" fill=\"#16a34a\">out 0</text><text x=\"160\" y=\"170\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1e293b\">HHV (MJ/kg)</text></svg>",
+        "caption": "Energy content of the waste fuel."
+      },
+      "type": "NAT",
+      "stem": "Modified Dulong $HHV=337C+1419(H-O/8)$ kJ/kg with $C=45\\%$, $H=5\\%$, $O=40\\%$. HHV is _____ kJ/kg.",
+      "answer": 15165,
+      "tolerance": 5
+    },
+    {
+      "id": "es-waste-048",
+      "subject": "Solid & Hazardous Waste Management",
+      "topic": "Material Recovery",
+      "difficulty": "easy",
+      "marks": 1,
+      "archetype": "A",
+      "solution": "**Concept.** Recovered = throughput × efficiency.\n\n**Working.**\n$$100\\times0.8=80.$$\n\n**Answer.** $80\\,\\text{t/day}$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 300 180\" width=\"100%\" style=\"max-width:320px;height:auto\"><line x1=\"40\" y1=\"150\" x2=\"280\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"70\" y=\"30\" width=\"46\" height=\"120\" fill=\"#dc2626\" opacity=\"0.75\"/><text x=\"93\" y=\"26\" font-size=\"9\" text-anchor=\"middle\" fill=\"#dc2626\">in 100</text><rect x=\"190\" y=\"54\" width=\"46\" height=\"96\" fill=\"#16a34a\" opacity=\"0.8\"/><text x=\"213\" y=\"50\" font-size=\"9\" text-anchor=\"middle\" fill=\"#16a34a\">out 80</text><text x=\"160\" y=\"170\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1e293b\">MRF recovery (t/day)</text></svg>",
+        "caption": "MRF recovery: influent vs. effluent (t/day)."
+      },
+      "type": "NAT",
+      "stem": "A MRF receives $100\\,\\text{t/day}$ and recovers recyclables at $80\\%$ efficiency. The recovered mass is _____ t/day.",
+      "answer": 80,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-waste-049",
+      "subject": "Solid & Hazardous Waste Management",
+      "topic": "Landfill Life",
+      "difficulty": "medium",
+      "marks": 2,
+      "archetype": "A",
+      "solution": "**Concept.** Life = air-space/annual fill, both read from the figure.\n\n**Working.**\n$$\\dfrac{500000}{40000}=12.5.$$\n\n**Answer.** $12.5\\,\\text{yr}$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 340 180\" width=\"100%\" style=\"max-width:360px;height:auto\"><rect x=\"30\" y=\"30\" width=\"280\" height=\"120\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.2\"/><rect x=\"30\" y=\"40\" width=\"280\" height=\"100\" fill=\"#a16207\" opacity=\"0.45\"/><rect x=\"30\" y=\"30\" width=\"280\" height=\"10\" fill=\"#65a30d\"/><text x=\"170\" y=\"86\" font-size=\"10\" text-anchor=\"middle\" fill=\"#fff\">air-space = 5,00,000 m³</text><text x=\"170\" y=\"108\" font-size=\"9\" text-anchor=\"middle\" fill=\"#fff\">fill rate = 40,000 m³/yr</text><text x=\"170\" y=\"166\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">design life = air-space ÷ fill rate</text></svg>",
+        "caption": "Landfill air-space and annual fill rate marked on the diagram only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "For the landfill shown, read the usable air-space and the annual fill rate from the diagram. Its design life is _____ years.",
+      "answer": 12.5,
+      "tolerance": 0.1
+    },
+    {
+      "id": "es-waste-050",
+      "subject": "Solid & Hazardous Waste Management",
+      "topic": "Landfill Gas",
+      "difficulty": "medium",
+      "marks": 2,
+      "archetype": "A",
+      "solution": "**Concept.** Gas = mass × yield.\n\n**Working.**\n$$1500\\times0.12=180.$$\n\n**Answer.** $180$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 340 180\" width=\"100%\" style=\"max-width:360px;height:auto\"><rect x=\"30\" y=\"30\" width=\"280\" height=\"120\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.2\"/><rect x=\"30\" y=\"40\" width=\"280\" height=\"86\" fill=\"#a16207\" opacity=\"0.5\"/><rect x=\"30\" y=\"30\" width=\"280\" height=\"10\" fill=\"#65a30d\"/><rect x=\"30\" y=\"126\" width=\"280\" height=\"14\" fill=\"#1e3a8a\" opacity=\"0.6\"/><rect x=\"30\" y=\"140\" width=\"280\" height=\"10\" fill=\"#0f172a\"/><text x=\"170\" y=\"26\" font-size=\"8\" text-anchor=\"middle\" fill=\"#16a34a\">final cover / vegetation</text><text x=\"170\" y=\"86\" font-size=\"9\" text-anchor=\"middle\" fill=\"#fff\">compacted MSW + daily cover</text><text x=\"170\" y=\"137\" font-size=\"8\" text-anchor=\"middle\" fill=\"#fff\">leachate collection</text><text x=\"170\" y=\"148\" font-size=\"7\" text-anchor=\"middle\" fill=\"#fff\">composite liner (clay+HDPE)</text><path d=\"M315 60 q14 0 14 14 q0 10 -8 18\" stroke=\"#dc2626\" stroke-width=\"1.2\" fill=\"none\"/><text x=\"318\" y=\"56\" font-size=\"8\" fill=\"#dc2626\">gas vent</text></svg>",
+        "caption": "Engineered sanitary landfill: cover, waste cell, liner and leachate system."
+      },
+      "type": "NAT",
+      "stem": "Decomposable waste $1500\\,\\text{kg}$ yields $0.12\\,\\text{m}^3/\\text{kg}$ gas. Total gas is _____ m³.",
+      "answer": 180,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-waste-051",
+      "subject": "Solid & Hazardous Waste Management",
+      "topic": "MSW Generation",
+      "difficulty": "easy",
+      "marks": 1,
+      "archetype": "A",
+      "solution": "**Concept.** Total = pop × rate.\n\n**Working.**\n$$\\dfrac{100000\\times0.5}{1000}=50.$$\n\n**Answer.** $50\\,\\text{t/day}$",
+      "type": "NAT",
+      "stem": "City of $1,00,000$ at $0.5\\,\\text{kg/cap/day}$. Daily MSW is _____ t/day.",
+      "answer": 50,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-waste-052",
+      "subject": "Solid & Hazardous Waste Management",
+      "topic": "Calorific Value",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** Apply the modified Dulong formula.\n\n**Working.**\n$$337(45)+1419(6-35/8)=17471.$$\n\n**Answer.** $17471\\,\\text{kJ/kg}$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 300 180\" width=\"100%\" style=\"max-width:320px;height:auto\"><line x1=\"40\" y1=\"150\" x2=\"280\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"70\" y=\"30\" width=\"46\" height=\"120\" fill=\"#dc2626\" opacity=\"0.75\"/><text x=\"93\" y=\"26\" font-size=\"9\" text-anchor=\"middle\" fill=\"#dc2626\">in 17.5</text><rect x=\"190\" y=\"146\" width=\"46\" height=\"4\" fill=\"#16a34a\" opacity=\"0.8\"/><text x=\"213\" y=\"142\" font-size=\"9\" text-anchor=\"middle\" fill=\"#16a34a\">out 0</text><text x=\"160\" y=\"170\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1e293b\">HHV (MJ/kg)</text></svg>",
+        "caption": "Energy content of the waste fuel."
+      },
+      "type": "NAT",
+      "stem": "Modified Dulong $HHV=337C+1419(H-O/8)$ kJ/kg with $C=45\\%$, $H=6\\%$, $O=35\\%$. HHV is _____ kJ/kg.",
+      "answer": 17470.9,
+      "tolerance": 5
+    },
+    {
+      "id": "es-waste-053",
+      "subject": "Solid & Hazardous Waste Management",
+      "topic": "Landfill Gas",
+      "difficulty": "medium",
+      "marks": 2,
+      "archetype": "A",
+      "solution": "**Concept.** Gas = mass × yield.\n\n**Working.**\n$$2000\\times0.2=400.$$\n\n**Answer.** $400$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 340 180\" width=\"100%\" style=\"max-width:360px;height:auto\"><rect x=\"30\" y=\"30\" width=\"280\" height=\"120\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.2\"/><rect x=\"30\" y=\"40\" width=\"280\" height=\"86\" fill=\"#a16207\" opacity=\"0.5\"/><rect x=\"30\" y=\"30\" width=\"280\" height=\"10\" fill=\"#65a30d\"/><rect x=\"30\" y=\"126\" width=\"280\" height=\"14\" fill=\"#1e3a8a\" opacity=\"0.6\"/><rect x=\"30\" y=\"140\" width=\"280\" height=\"10\" fill=\"#0f172a\"/><text x=\"170\" y=\"26\" font-size=\"8\" text-anchor=\"middle\" fill=\"#16a34a\">final cover / vegetation</text><text x=\"170\" y=\"86\" font-size=\"9\" text-anchor=\"middle\" fill=\"#fff\">compacted MSW + daily cover</text><text x=\"170\" y=\"137\" font-size=\"8\" text-anchor=\"middle\" fill=\"#fff\">leachate collection</text><text x=\"170\" y=\"148\" font-size=\"7\" text-anchor=\"middle\" fill=\"#fff\">composite liner (clay+HDPE)</text><path d=\"M315 60 q14 0 14 14 q0 10 -8 18\" stroke=\"#dc2626\" stroke-width=\"1.2\" fill=\"none\"/><text x=\"318\" y=\"56\" font-size=\"8\" fill=\"#dc2626\">gas vent</text></svg>",
+        "caption": "Engineered sanitary landfill: cover, waste cell, liner and leachate system."
+      },
+      "type": "NAT",
+      "stem": "Decomposable waste $2000\\,\\text{kg}$ yields $0.2\\,\\text{m}^3/\\text{kg}$ gas. Total gas is _____ m³.",
+      "answer": 400,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-waste-054",
+      "subject": "Solid & Hazardous Waste Management",
+      "topic": "Moisture Content",
+      "difficulty": "medium",
+      "marks": 2,
+      "archetype": "A",
+      "solution": "**Concept.** Dry = wet × (1 − moisture).\n\n**Working.**\n$$1000(1-60/100)=400.$$\n\n**Answer.** $400\\,\\text{kg}$",
+      "type": "NAT",
+      "stem": "Wet MSW $1000\\,\\text{kg}$ at $60\\%$ moisture. The dry-solids mass is _____ kg.",
+      "answer": 400,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-waste-055",
+      "subject": "Solid & Hazardous Waste Management",
+      "topic": "Compaction",
+      "difficulty": "medium",
+      "marks": 2,
+      "archetype": "A",
+      "solution": "**Concept.** VR = (1 − ρ₁/ρ₂)×100, both densities read from the bars.\n\n**Working.**\n$$\\left(1-\\dfrac{80}{400}\\right)\\times100=80\\%.$$\n\n**Answer.** $80\\%$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 300 188\" width=\"100%\" style=\"max-width:320px;height:auto\"><line x1=\"40\" y1=\"150\" x2=\"280\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"80\" y=\"126\" width=\"50\" height=\"24\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"105\" y=\"122\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">80</text><text x=\"105\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">loose ρ₁</text><rect x=\"180\" y=\"30\" width=\"50\" height=\"120\" fill=\"#16a34a\" opacity=\"0.85\"/><text x=\"205\" y=\"26\" font-size=\"10\" text-anchor=\"middle\" fill=\"#16a34a\">400</text><text x=\"205\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">compacted ρ₂</text><text x=\"160\" y=\"182\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">kg/m³</text></svg>",
+        "caption": "Loose and compacted densities shown on the bars only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "Read the loose and compacted densities from the bar chart. The volume reduction $(1-\\rho_1/\\rho_2)$ achieved is _____ %.",
+      "answer": 80,
+      "tolerance": 0.1
+    },
+    {
+      "id": "es-waste-056",
+      "subject": "Solid & Hazardous Waste Management",
+      "topic": "Moisture Content",
+      "difficulty": "medium",
+      "marks": 2,
+      "archetype": "A",
+      "solution": "**Concept.** Dry = wet × (1 − moisture).\n\n**Working.**\n$$1000(1-50/100)=500.$$\n\n**Answer.** $500\\,\\text{kg}$",
+      "type": "NAT",
+      "stem": "Wet MSW $1000\\,\\text{kg}$ at $50\\%$ moisture. The dry-solids mass is _____ kg.",
+      "answer": 500,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-waste-057",
+      "subject": "Solid & Hazardous Waste Management",
+      "topic": "Landfill Gas",
+      "difficulty": "medium",
+      "marks": 2,
+      "archetype": "A",
+      "solution": "**Concept.** Gas = mass × yield.\n\n**Working.**\n$$1000\\times0.2=200.$$\n\n**Answer.** $200$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 340 180\" width=\"100%\" style=\"max-width:360px;height:auto\"><rect x=\"30\" y=\"30\" width=\"280\" height=\"120\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.2\"/><rect x=\"30\" y=\"40\" width=\"280\" height=\"86\" fill=\"#a16207\" opacity=\"0.5\"/><rect x=\"30\" y=\"30\" width=\"280\" height=\"10\" fill=\"#65a30d\"/><rect x=\"30\" y=\"126\" width=\"280\" height=\"14\" fill=\"#1e3a8a\" opacity=\"0.6\"/><rect x=\"30\" y=\"140\" width=\"280\" height=\"10\" fill=\"#0f172a\"/><text x=\"170\" y=\"26\" font-size=\"8\" text-anchor=\"middle\" fill=\"#16a34a\">final cover / vegetation</text><text x=\"170\" y=\"86\" font-size=\"9\" text-anchor=\"middle\" fill=\"#fff\">compacted MSW + daily cover</text><text x=\"170\" y=\"137\" font-size=\"8\" text-anchor=\"middle\" fill=\"#fff\">leachate collection</text><text x=\"170\" y=\"148\" font-size=\"7\" text-anchor=\"middle\" fill=\"#fff\">composite liner (clay+HDPE)</text><path d=\"M315 60 q14 0 14 14 q0 10 -8 18\" stroke=\"#dc2626\" stroke-width=\"1.2\" fill=\"none\"/><text x=\"318\" y=\"56\" font-size=\"8\" fill=\"#dc2626\">gas vent</text></svg>",
+        "caption": "Engineered sanitary landfill: cover, waste cell, liner and leachate system."
+      },
+      "type": "NAT",
+      "stem": "Decomposable waste $1000\\,\\text{kg}$ yields $0.2\\,\\text{m}^3/\\text{kg}$ gas. Total gas is _____ m³.",
+      "answer": 200,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-waste-058",
+      "subject": "Solid & Hazardous Waste Management",
+      "topic": "Landfill Life",
+      "difficulty": "medium",
+      "marks": 2,
+      "archetype": "A",
+      "solution": "**Concept.** Life = air-space/annual fill, both read from the figure.\n\n**Working.**\n$$\\dfrac{300000}{50000}=6.$$\n\n**Answer.** $6\\,\\text{yr}$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 340 180\" width=\"100%\" style=\"max-width:360px;height:auto\"><rect x=\"30\" y=\"30\" width=\"280\" height=\"120\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.2\"/><rect x=\"30\" y=\"40\" width=\"280\" height=\"100\" fill=\"#a16207\" opacity=\"0.45\"/><rect x=\"30\" y=\"30\" width=\"280\" height=\"10\" fill=\"#65a30d\"/><text x=\"170\" y=\"86\" font-size=\"10\" text-anchor=\"middle\" fill=\"#fff\">air-space = 3,00,000 m³</text><text x=\"170\" y=\"108\" font-size=\"9\" text-anchor=\"middle\" fill=\"#fff\">fill rate = 50,000 m³/yr</text><text x=\"170\" y=\"166\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">design life = air-space ÷ fill rate</text></svg>",
+        "caption": "Landfill air-space and annual fill rate marked on the diagram only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "For the landfill shown, read the usable air-space and the annual fill rate from the diagram. Its design life is _____ years.",
+      "answer": 6,
+      "tolerance": 0.1
+    },
+    {
+      "id": "es-waste-059",
+      "subject": "Solid & Hazardous Waste Management",
+      "topic": "Calorific Value",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** Apply the modified Dulong formula.\n\n**Working.**\n$$337(45)+1419(7-40/8)=18003.$$\n\n**Answer.** $18003\\,\\text{kJ/kg}$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 300 180\" width=\"100%\" style=\"max-width:320px;height:auto\"><line x1=\"40\" y1=\"150\" x2=\"280\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"70\" y=\"30\" width=\"46\" height=\"120\" fill=\"#dc2626\" opacity=\"0.75\"/><text x=\"93\" y=\"26\" font-size=\"9\" text-anchor=\"middle\" fill=\"#dc2626\">in 18</text><rect x=\"190\" y=\"146\" width=\"46\" height=\"4\" fill=\"#16a34a\" opacity=\"0.8\"/><text x=\"213\" y=\"142\" font-size=\"9\" text-anchor=\"middle\" fill=\"#16a34a\">out 0</text><text x=\"160\" y=\"170\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1e293b\">HHV (MJ/kg)</text></svg>",
+        "caption": "Energy content of the waste fuel."
+      },
+      "type": "NAT",
+      "stem": "Modified Dulong $HHV=337C+1419(H-O/8)$ kJ/kg with $C=45\\%$, $H=7\\%$, $O=40\\%$. HHV is _____ kJ/kg.",
+      "answer": 18003,
+      "tolerance": 5
+    },
+    {
+      "id": "es-waste-060",
+      "subject": "Solid & Hazardous Waste Management",
+      "topic": "Calorific Value",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** Apply the modified Dulong formula.\n\n**Working.**\n$$337(40)+1419(6-42/8)=14544.$$\n\n**Answer.** $14544\\,\\text{kJ/kg}$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 300 180\" width=\"100%\" style=\"max-width:320px;height:auto\"><line x1=\"40\" y1=\"150\" x2=\"280\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"70\" y=\"30\" width=\"46\" height=\"120\" fill=\"#dc2626\" opacity=\"0.75\"/><text x=\"93\" y=\"26\" font-size=\"9\" text-anchor=\"middle\" fill=\"#dc2626\">in 14.5</text><rect x=\"190\" y=\"146\" width=\"46\" height=\"4\" fill=\"#16a34a\" opacity=\"0.8\"/><text x=\"213\" y=\"142\" font-size=\"9\" text-anchor=\"middle\" fill=\"#16a34a\">out 0</text><text x=\"160\" y=\"170\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1e293b\">HHV (MJ/kg)</text></svg>",
+        "caption": "Energy content of the waste fuel."
+      },
+      "type": "NAT",
+      "stem": "Modified Dulong $HHV=337C+1419(H-O/8)$ kJ/kg with $C=40\\%$, $H=6\\%$, $O=42\\%$. HHV is _____ kJ/kg.",
+      "answer": 14544.3,
+      "tolerance": 5
+    },
+    {
+      "id": "es-waste-061",
+      "subject": "Solid & Hazardous Waste Management",
+      "topic": "MSW Generation",
+      "difficulty": "easy",
+      "marks": 1,
+      "archetype": "A",
+      "solution": "**Concept.** Total = pop × rate.\n\n**Working.**\n$$\\dfrac{100000\\times0.4}{1000}=40.$$\n\n**Answer.** $40\\,\\text{t/day}$",
+      "type": "NAT",
+      "stem": "City of $1,00,000$ at $0.4\\,\\text{kg/cap/day}$. Daily MSW is _____ t/day.",
+      "answer": 40,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-waste-062",
+      "subject": "Solid & Hazardous Waste Management",
+      "topic": "Landfill Life",
+      "difficulty": "medium",
+      "marks": 2,
+      "archetype": "A",
+      "solution": "**Concept.** Life = air-space/annual fill, both read from the figure.\n\n**Working.**\n$$\\dfrac{300000}{60000}=5.$$\n\n**Answer.** $5\\,\\text{yr}$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 340 180\" width=\"100%\" style=\"max-width:360px;height:auto\"><rect x=\"30\" y=\"30\" width=\"280\" height=\"120\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.2\"/><rect x=\"30\" y=\"40\" width=\"280\" height=\"100\" fill=\"#a16207\" opacity=\"0.45\"/><rect x=\"30\" y=\"30\" width=\"280\" height=\"10\" fill=\"#65a30d\"/><text x=\"170\" y=\"86\" font-size=\"10\" text-anchor=\"middle\" fill=\"#fff\">air-space = 3,00,000 m³</text><text x=\"170\" y=\"108\" font-size=\"9\" text-anchor=\"middle\" fill=\"#fff\">fill rate = 60,000 m³/yr</text><text x=\"170\" y=\"166\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">design life = air-space ÷ fill rate</text></svg>",
+        "caption": "Landfill air-space and annual fill rate marked on the diagram only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "For the landfill shown, read the usable air-space and the annual fill rate from the diagram. Its design life is _____ years.",
+      "answer": 5,
+      "tolerance": 0.1
+    },
+    {
+      "id": "es-waste-063",
+      "subject": "Solid & Hazardous Waste Management",
+      "topic": "Moisture Content",
+      "difficulty": "medium",
+      "marks": 2,
+      "archetype": "A",
+      "solution": "**Concept.** Dry = wet × (1 − moisture).\n\n**Working.**\n$$1500(1-60/100)=600.$$\n\n**Answer.** $600\\,\\text{kg}$",
+      "type": "NAT",
+      "stem": "Wet MSW $1500\\,\\text{kg}$ at $60\\%$ moisture. The dry-solids mass is _____ kg.",
+      "answer": 600,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-waste-064",
+      "subject": "Solid & Hazardous Waste Management",
+      "topic": "Landfill Gas",
+      "difficulty": "medium",
+      "marks": 2,
+      "archetype": "A",
+      "solution": "**Concept.** Gas = mass × yield.\n\n**Working.**\n$$2500\\times0.12=300.$$\n\n**Answer.** $300$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 340 180\" width=\"100%\" style=\"max-width:360px;height:auto\"><rect x=\"30\" y=\"30\" width=\"280\" height=\"120\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.2\"/><rect x=\"30\" y=\"40\" width=\"280\" height=\"86\" fill=\"#a16207\" opacity=\"0.5\"/><rect x=\"30\" y=\"30\" width=\"280\" height=\"10\" fill=\"#65a30d\"/><rect x=\"30\" y=\"126\" width=\"280\" height=\"14\" fill=\"#1e3a8a\" opacity=\"0.6\"/><rect x=\"30\" y=\"140\" width=\"280\" height=\"10\" fill=\"#0f172a\"/><text x=\"170\" y=\"26\" font-size=\"8\" text-anchor=\"middle\" fill=\"#16a34a\">final cover / vegetation</text><text x=\"170\" y=\"86\" font-size=\"9\" text-anchor=\"middle\" fill=\"#fff\">compacted MSW + daily cover</text><text x=\"170\" y=\"137\" font-size=\"8\" text-anchor=\"middle\" fill=\"#fff\">leachate collection</text><text x=\"170\" y=\"148\" font-size=\"7\" text-anchor=\"middle\" fill=\"#fff\">composite liner (clay+HDPE)</text><path d=\"M315 60 q14 0 14 14 q0 10 -8 18\" stroke=\"#dc2626\" stroke-width=\"1.2\" fill=\"none\"/><text x=\"318\" y=\"56\" font-size=\"8\" fill=\"#dc2626\">gas vent</text></svg>",
+        "caption": "Engineered sanitary landfill: cover, waste cell, liner and leachate system."
+      },
+      "type": "NAT",
+      "stem": "Decomposable waste $2500\\,\\text{kg}$ yields $0.12\\,\\text{m}^3/\\text{kg}$ gas. Total gas is _____ m³.",
+      "answer": 300,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-waste-065",
+      "subject": "Solid & Hazardous Waste Management",
+      "topic": "Calorific Value",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** Apply the modified Dulong formula.\n\n**Working.**\n$$337(40)+1419(5-42/8)=13125.$$\n\n**Answer.** $13125\\,\\text{kJ/kg}$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 300 180\" width=\"100%\" style=\"max-width:320px;height:auto\"><line x1=\"40\" y1=\"150\" x2=\"280\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"70\" y=\"30\" width=\"46\" height=\"120\" fill=\"#dc2626\" opacity=\"0.75\"/><text x=\"93\" y=\"26\" font-size=\"9\" text-anchor=\"middle\" fill=\"#dc2626\">in 13.1</text><rect x=\"190\" y=\"146\" width=\"46\" height=\"4\" fill=\"#16a34a\" opacity=\"0.8\"/><text x=\"213\" y=\"142\" font-size=\"9\" text-anchor=\"middle\" fill=\"#16a34a\">out 0</text><text x=\"160\" y=\"170\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1e293b\">HHV (MJ/kg)</text></svg>",
+        "caption": "Energy content of the waste fuel."
+      },
+      "type": "NAT",
+      "stem": "Modified Dulong $HHV=337C+1419(H-O/8)$ kJ/kg with $C=40\\%$, $H=5\\%$, $O=42\\%$. HHV is _____ kJ/kg.",
+      "answer": 13125.3,
+      "tolerance": 5
+    },
+    {
+      "id": "es-waste-066",
+      "subject": "Solid & Hazardous Waste Management",
+      "topic": "Material Recovery",
+      "difficulty": "easy",
+      "marks": 1,
+      "archetype": "A",
+      "solution": "**Concept.** Recovered = throughput × efficiency.\n\n**Working.**\n$$200\\times0.8=160.$$\n\n**Answer.** $160\\,\\text{t/day}$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 300 180\" width=\"100%\" style=\"max-width:320px;height:auto\"><line x1=\"40\" y1=\"150\" x2=\"280\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"70\" y=\"30\" width=\"46\" height=\"120\" fill=\"#dc2626\" opacity=\"0.75\"/><text x=\"93\" y=\"26\" font-size=\"9\" text-anchor=\"middle\" fill=\"#dc2626\">in 200</text><rect x=\"190\" y=\"54\" width=\"46\" height=\"96\" fill=\"#16a34a\" opacity=\"0.8\"/><text x=\"213\" y=\"50\" font-size=\"9\" text-anchor=\"middle\" fill=\"#16a34a\">out 160</text><text x=\"160\" y=\"170\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1e293b\">MRF recovery (t/day)</text></svg>",
+        "caption": "MRF recovery: influent vs. effluent (t/day)."
+      },
+      "type": "NAT",
+      "stem": "A MRF receives $200\\,\\text{t/day}$ and recovers recyclables at $80\\%$ efficiency. The recovered mass is _____ t/day.",
+      "answer": 160,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-waste-067",
+      "subject": "Solid & Hazardous Waste Management",
+      "topic": "Compaction",
+      "difficulty": "medium",
+      "marks": 2,
+      "archetype": "A",
+      "solution": "**Concept.** VR = (1 − ρ₁/ρ₂)×100, both densities read from the bars.\n\n**Working.**\n$$\\left(1-\\dfrac{150}{500}\\right)\\times100=70\\%.$$\n\n**Answer.** $70\\%$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 300 188\" width=\"100%\" style=\"max-width:320px;height:auto\"><line x1=\"40\" y1=\"150\" x2=\"280\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"80\" y=\"114\" width=\"50\" height=\"36\" fill=\"#2563eb\" opacity=\"0.8\"/><text x=\"105\" y=\"110\" font-size=\"10\" text-anchor=\"middle\" fill=\"#2563eb\">150</text><text x=\"105\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">loose ρ₁</text><rect x=\"180\" y=\"30\" width=\"50\" height=\"120\" fill=\"#16a34a\" opacity=\"0.85\"/><text x=\"205\" y=\"26\" font-size=\"10\" text-anchor=\"middle\" fill=\"#16a34a\">500</text><text x=\"205\" y=\"164\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">compacted ρ₂</text><text x=\"160\" y=\"182\" font-size=\"8\" text-anchor=\"middle\" fill=\"#1e293b\">kg/m³</text></svg>",
+        "caption": "Loose and compacted densities shown on the bars only. (read values from the figure)"
+      },
+      "type": "NAT",
+      "stem": "Read the loose and compacted densities from the bar chart. The volume reduction $(1-\\rho_1/\\rho_2)$ is _____ %.",
+      "answer": 70,
+      "tolerance": 0.1
+    },
+    {
+      "id": "es-waste-068",
+      "subject": "Solid & Hazardous Waste Management",
+      "topic": "Material Recovery",
+      "difficulty": "easy",
+      "marks": 1,
+      "archetype": "A",
+      "solution": "**Concept.** Recovered = throughput × efficiency.\n\n**Working.**\n$$100\\times0.75=75.$$\n\n**Answer.** $75\\,\\text{t/day}$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 300 180\" width=\"100%\" style=\"max-width:320px;height:auto\"><line x1=\"40\" y1=\"150\" x2=\"280\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"70\" y=\"30\" width=\"46\" height=\"120\" fill=\"#dc2626\" opacity=\"0.75\"/><text x=\"93\" y=\"26\" font-size=\"9\" text-anchor=\"middle\" fill=\"#dc2626\">in 100</text><rect x=\"190\" y=\"60\" width=\"46\" height=\"90\" fill=\"#16a34a\" opacity=\"0.8\"/><text x=\"213\" y=\"56\" font-size=\"9\" text-anchor=\"middle\" fill=\"#16a34a\">out 75</text><text x=\"160\" y=\"170\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1e293b\">MRF recovery (t/day)</text></svg>",
+        "caption": "MRF recovery: influent vs. effluent (t/day)."
+      },
+      "type": "NAT",
+      "stem": "A MRF receives $100\\,\\text{t/day}$ and recovers recyclables at $75\\%$ efficiency. The recovered mass is _____ t/day.",
+      "answer": 75,
+      "tolerance": 0.5
+    },
+    {
+      "id": "es-waste-069",
+      "subject": "Solid & Hazardous Waste Management",
+      "topic": "Calorific Value",
+      "difficulty": "hard",
+      "marks": 2,
+      "archetype": "C",
+      "solution": "**Concept.** Apply the modified Dulong formula.\n\n**Working.**\n$$337(50)+1419(6-35/8)=19156.$$\n\n**Answer.** $19156\\,\\text{kJ/kg}$",
+      "figure": {
+        "kind": "svg",
+        "markup": "<svg viewBox=\"0 0 300 180\" width=\"100%\" style=\"max-width:320px;height:auto\"><line x1=\"40\" y1=\"150\" x2=\"280\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"70\" y=\"30\" width=\"46\" height=\"120\" fill=\"#dc2626\" opacity=\"0.75\"/><text x=\"93\" y=\"26\" font-size=\"9\" text-anchor=\"middle\" fill=\"#dc2626\">in 19.2</text><rect x=\"190\" y=\"146\" width=\"46\" height=\"4\" fill=\"#16a34a\" opacity=\"0.8\"/><text x=\"213\" y=\"142\" font-size=\"9\" text-anchor=\"middle\" fill=\"#16a34a\">out 0</text><text x=\"160\" y=\"170\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1e293b\">HHV (MJ/kg)</text></svg>",
+        "caption": "Energy content of the waste fuel."
+      },
+      "type": "NAT",
+      "stem": "Modified Dulong $HHV=337C+1419(H-O/8)$ kJ/kg with $C=50\\%$, $H=6\\%$, $O=35\\%$. HHV is _____ kJ/kg.",
+      "answer": 19155.9,
+      "tolerance": 5
+    },
+    {
+      "id": "es-waste-070",
+      "subject": "Solid & Hazardous Waste Management",
+      "topic": "Moisture Content",
+      "difficulty": "medium",
+      "marks": 2,
+      "archetype": "A",
+      "solution": "**Concept.** Dry = wet × (1 − moisture).\n\n**Working.**\n$$1500(1-40/100)=900.$$\n\n**Answer.** $900\\,\\text{kg}$",
+      "type": "NAT",
+      "stem": "Wet MSW $1500\\,\\text{kg}$ at $40\\%$ moisture. The dry-solids mass is _____ kg.",
+      "answer": 900,
+      "tolerance": 0.5
+    }
+  ]
+}

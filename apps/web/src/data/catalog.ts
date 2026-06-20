@@ -40,6 +40,10 @@ export type CatalogExam = {
 // Default GATE pricing (currently uniform across GATE subjects).
 const GATE_PRICE: SubjectPrice = { proPaise: 49900, premiumPaise: 89900 };
 
+// STATE / DIPLOMA recruitment-exam pricing (lower band than GATE).
+const STATE_PRICE: SubjectPrice = { proPaise: 29900, premiumPaise: 49900 };
+const DIPLOMA_PRICE: SubjectPrice = { proPaise: 19900, premiumPaise: 34900 };
+
 export const CATALOG: CatalogExam[] = [
   {
     exam: "GATE",
@@ -47,8 +51,8 @@ export const CATALOG: CatalogExam[] = [
     subjects: [
       { slug: "mining", label: "Mining (MN)", live: true, price: GATE_PRICE },
       { slug: "civil", label: "Civil (CE)", live: true, price: GATE_PRICE },
-      { slug: "geology", label: "Geology (GG)", live: false },
-      { slug: "environment", label: "Environment (ES)", live: false },
+      { slug: "geology", label: "Geology (GG)", live: true, price: GATE_PRICE },
+      { slug: "environment", label: "Environment (ES)", live: true, price: GATE_PRICE },
     ],
   },
   {
@@ -64,12 +68,30 @@ export const CATALOG: CatalogExam[] = [
   {
     exam: "STATE",
     label: "State Level",
-    subjects: [{ slug: "general", label: "General", live: false }],
+    subjects: [
+      {
+        slug: "rpsc-ame",
+        label: "Assistant Mining Engineer (RPSC, Rajasthan)",
+        live: true,
+        price: STATE_PRICE,
+      },
+      // Researched, content pending — recorded for attribution only.
+      { slug: "cgpsc-mining-officer", label: "Mining Officer / Inspector (CGPSC, Chhattisgarh)", live: false },
+      { slug: "general", label: "General", live: false },
+    ],
   },
   {
     exam: "DIPLOMA",
     label: "Diploma",
-    subjects: [{ slug: "general", label: "General", live: false }],
+    subjects: [
+      {
+        slug: "coal-sirdar-overman",
+        label: "Mining Sirdar / Jr. Overman (Coalfields CBT)",
+        live: true,
+        price: DIPLOMA_PRICE,
+      },
+      { slug: "general", label: "General", live: false },
+    ],
   },
 ];
 

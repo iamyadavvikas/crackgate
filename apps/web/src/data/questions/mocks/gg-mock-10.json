@@ -1,0 +1,1070 @@
+{
+  "id": "gg-mock-10",
+  "title": "GG Mock 10 — Grand Test (Premium)",
+  "tier": "premium",
+  "duration": 180,
+  "pattern": "GATE 2027 GG (65 Q · 100 marks · 3 hours)",
+  "totalMarks": 100,
+  "sections": [
+    {
+      "name": "General Aptitude",
+      "count": 10,
+      "marks": 15
+    },
+    {
+      "name": "Technical (1-mark)",
+      "count": 25,
+      "marks": 25
+    },
+    {
+      "name": "Technical (2-mark)",
+      "count": 30,
+      "marks": 60
+    }
+  ],
+  "negativeMarking": {
+    "mcq1": -0.3333333333333333,
+    "mcq2": -0.6666666666666666,
+    "nat": 0,
+    "msq": 0
+  },
+  "seed": 3900331914,
+  "locked": false,
+  "questions": [
+    {
+      "id": 1,
+      "subject": "General Aptitude",
+      "topic": "Quantitative Aptitude — Mensuration",
+      "section": "General Aptitude",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "The perimeter of a square of side $9$ is _____ .",
+      "answer": 36,
+      "tolerance": 0.01,
+      "solution": "**Concept.** Perimeter of a square $=4\\times\\text{side}$.\n\n**Working.** $4\\times 9 = 36$.\n\n**Answer.** $36$."
+    },
+    {
+      "id": 2,
+      "subject": "General Aptitude",
+      "topic": "Mensuration",
+      "section": "General Aptitude",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "Compute the area of the triangle shown with base $6$ and height $4$.",
+      "answer": 12,
+      "tolerance": 0.1,
+      "figure": {
+        "kind": "svg",
+        "caption": "Triangle base and height",
+        "markup": "<svg viewBox='0 0 200 150' xmlns='http://www.w3.org/2000/svg'><polygon points='40,120 160,120 100,40' fill='#bfdbfe' stroke='#475569'/><line x1='100' y1='120' x2='100' y2='40' stroke='#dc2626' stroke-dasharray='3 2'/><text x='90' y='135' font-size='8'>base 6</text><text x='105' y='85' font-size='8'>height 4</text></svg>"
+      },
+      "solution": "**Concept.** Area $=\\tfrac{1}{2}bh$.\n\n**Working.**\n$$A=\\tfrac{1}{2}(6)(4)=12$$\n\n**Answer.** $12$."
+    },
+    {
+      "id": 3,
+      "subject": "General Aptitude",
+      "topic": "Quantitative Aptitude — Average",
+      "section": "General Aptitude",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "The average of $10, 20, 30, 40$ and $50$ is _____ .",
+      "answer": 30,
+      "tolerance": 0.01,
+      "solution": "**Concept.** Average = sum divided by count.\n\n**Working.**\n$$\\frac{10+20+30+40+50}{5}=\\frac{150}{5}=30$$\n\n**Answer.** $30$."
+    },
+    {
+      "id": 4,
+      "subject": "General Aptitude",
+      "topic": "Quantitative Aptitude — Ratio and Proportion",
+      "section": "General Aptitude",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "An amount of $600$ is divided in the ratio $2:3$. The larger part is _____ .",
+      "answer": 360,
+      "tolerance": 0.01,
+      "solution": "**Concept.** Each share equals the total times its ratio fraction.\n\n**Working.** Larger fraction $=\\dfrac{3}{2+3}=\\dfrac{3}{5}$, so\n$$600\\times\\frac{3}{5}=360$$\n\n**Answer.** $360$."
+    },
+    {
+      "id": 5,
+      "subject": "General Aptitude",
+      "topic": "Quantitative Aptitude — Percentage",
+      "section": "General Aptitude",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "What is $35\\%$ of $240$?",
+      "answer": 84,
+      "tolerance": 0.01,
+      "solution": "**Concept.** Percent means parts per hundred.\n\n**Working.**\n$$\\frac{35}{100}\\times 240 = 84$$\n\n**Answer.** $84$."
+    },
+    {
+      "id": 6,
+      "subject": "General Aptitude",
+      "topic": "Analytical Aptitude — Logical Puzzles",
+      "section": "General Aptitude",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "If $5$ machines make $5$ widgets in $5$ minutes, how many minutes do $100$ machines take to make $100$ widgets?",
+      "answer": 5,
+      "tolerance": 0.01,
+      "solution": "**Concept.** Find the per-machine rate first.\n\n**Working.** Each machine makes $1$ widget in $5$ minutes; $100$ machines make $100$ widgets in the same $5$ minutes.\n\n**Answer.** $5$ minutes."
+    },
+    {
+      "id": 7,
+      "subject": "General Aptitude",
+      "topic": "Analytical Aptitude — Blood Relations",
+      "section": "General Aptitude",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "A is B's brother. C is A's mother. D is C's father. How is B related to D?",
+      "options": [
+        "Grandchild",
+        "Son",
+        "Father",
+        "Brother"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Build the family tree level by level.\n\n**Working.** C is the mother of A and B; D is C's father, hence the grandparent of A and B. So B is D's grandchild.\n\n**Answer.** Grandchild."
+    },
+    {
+      "id": 8,
+      "subject": "General Aptitude",
+      "topic": "Verbal Aptitude — Idioms",
+      "section": "General Aptitude",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "'After the long shift, the foreman decided to call it a day.' This means he decided to:",
+      "options": [
+        "stop work for the day",
+        "name the day after himself",
+        "start a fresh project",
+        "work additional overtime"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** 'Call it a day' is an idiom meaning to stop an activity for the time being.\n\n**Working.** In context, the foreman chose to end work for the day.\n\n**Answer.** stop work for the day."
+    },
+    {
+      "id": 9,
+      "subject": "General Aptitude",
+      "topic": "Verbal Aptitude — Grammar",
+      "section": "General Aptitude",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "Choose the correct verb form: 'Neither the manager nor the workers ____ satisfied with the new shift schedule.'",
+      "options": [
+        "are",
+        "is",
+        "was",
+        "has been"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** In 'neither ... nor ...' constructions, the verb agrees with the subject nearer to it.\n\n**Working.** The nearer subject is 'workers' (plural), so the verb must be 'are'.\n\n**Answer.** are."
+    },
+    {
+      "id": 10,
+      "subject": "General Aptitude",
+      "topic": "Quantitative Aptitude — Boats and Streams",
+      "section": "General Aptitude",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "A boat's speed in still water is $10$ km/h and the stream flows at $2$ km/h. The time taken to travel $24$ km downstream is _____ hours.",
+      "answer": 2,
+      "tolerance": 0.01,
+      "solution": "**Concept.** Downstream speed = boat + stream.\n\n**Working.** Downstream speed $=10+2=12$ km/h; time $=\\dfrac{24}{12}=2$ h.\n\n**Answer.** $2$ h."
+    },
+    {
+      "id": 11,
+      "subject": "Earth System & Geomorphology",
+      "topic": "Isostasy",
+      "section": "Technical (1-mark)",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "In the Airy model of isostasy, mountains are compensated by",
+      "options": [
+        "deep low-density crustal roots",
+        "lateral density variations only",
+        "denser crust under highlands",
+        "mantle convection currents"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Airy: constant-density crust of variable thickness — high topography has a deep root.\n\n**Working.**\nDeep roots.\n\n**Answer.** Deep low-density roots"
+    },
+    {
+      "id": 12,
+      "subject": "Structural Geology",
+      "topic": "Conjugate Faults",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "For a rock with internal friction angle $\\phi=30^\\circ$, conjugate shear (fault) planes form at _____ degrees to $\\sigma_1$.",
+      "answer": 30,
+      "tolerance": 0.1,
+      "figure": {
+        "kind": "mohr",
+        "sigma1": 100,
+        "sigma3": 20,
+        "phi": 30,
+        "cohesion": 10,
+        "caption": "Failure envelope, φ=30°"
+      },
+      "solution": "**Concept.** Coulomb: shear planes at $45^\\circ-\\phi/2$ to $\\sigma_1$.\n\n**Working.**\n$$45-30/2=30.$$\n\n**Answer.** $30^\\circ$"
+    },
+    {
+      "id": 13,
+      "subject": "Structural Geology",
+      "topic": "Extensional Strain",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A marker bed of original length $100\\,$m is stretched to $130\\,$m. The extension (elongation) is _____ %.",
+      "answer": 30,
+      "tolerance": 0.1,
+      "solution": "**Concept.** $e=\\dfrac{l_1-l_0}{l_0}\\times100$.\n\n**Working.**\n$$\\dfrac{130-100}{100}\\times100=30.$$\n\n**Answer.** $30\\%$"
+    },
+    {
+      "id": 14,
+      "subject": "Engineering & Environmental Geology",
+      "topic": "RQD",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "In a $150\\,$cm core run, the total length of intact pieces $\\geq 10\\,$cm is $130\\,$cm. The RQD is _____ %.",
+      "answer": 86.66666666666667,
+      "tolerance": 0.1,
+      "solution": "**Concept.** RQD $=\\dfrac{\\sum(\\text{pieces}\\geq10\\,cm)}{\\text{run length}}\\times100$.\n\n**Working.**\n$$\\dfrac{130}{150}\\times100=86.7.$$\n\n**Answer.** $86.7\\%$"
+    },
+    {
+      "id": 15,
+      "subject": "Applied Geology · Remote Sensing & GIS",
+      "topic": "EM Frequency",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Radiation of wavelength $0.5\\,\\mu$m. Its frequency is _____ THz.",
+      "answer": 600,
+      "tolerance": 1,
+      "solution": "**Concept.** $f=c/\\lambda$.\n\n**Working.**\n$$\\dfrac{3\\times10^8}{0.5\\times10^{-6}}=600\\times10^{12}.$$\n\n**Answer.** $600\\,$THz"
+    },
+    {
+      "id": 16,
+      "subject": "Applied Geology · Remote Sensing & GIS",
+      "topic": "Photo Scale",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "An aerial camera (focal length $210\\,$mm) flies at $8000\\,$m above terrain. The photo scale denominator ($H/f$) is _____.",
+      "answer": 38095.23809523809,
+      "tolerance": 5,
+      "solution": "**Concept.** Scale $=f/H$; denominator $=H/f$.\n\n**Working.**\n$$\\dfrac{8000\\times10^3}{210}=38095.$$\n\n**Answer.** $1:38095$"
+    },
+    {
+      "id": 17,
+      "subject": "Economic & Ore Geology",
+      "topic": "Metal Content",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "An ore body of $2\\,$million tonnes assays $2\\%$ Cu. The contained copper is _____ tonnes.",
+      "answer": 40000,
+      "tolerance": 1,
+      "solution": "**Concept.** Metal = grade × tonnage.\n\n**Working.**\n$$2/100\\times2\\times10^6=40000.$$\n\n**Answer.** $40000\\,$t"
+    },
+    {
+      "id": 18,
+      "subject": "Engineering & Environmental Geology",
+      "topic": "Transmissivity",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "An aquifer has hydraulic conductivity $K=0.00005\\,$m/s and saturated thickness $30\\,$m. Its transmissivity is _____ ×10⁻³ m²/s.",
+      "answer": 1.5,
+      "tolerance": 0.05,
+      "solution": "**Concept.** $T=Kb$.\n\n**Working.**\n$$0.00005\\times30=0.0015\\,$m²/s.$$\n\n**Answer.** $1.5\\times10^{-3}$"
+    },
+    {
+      "id": 19,
+      "subject": "Earth System & Geomorphology",
+      "topic": "Stream Discharge",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A river carries $100\\,$m³/s through a channel $50\\,$m wide and $3\\,$m deep. The mean velocity is _____ m/s.",
+      "answer": 0.6666666666666666,
+      "tolerance": 0.05,
+      "solution": "**Concept.** $Q=A v=wdv$.\n\n**Working.**\n$$\\dfrac{100}{50\\times3}=0.67.$$\n\n**Answer.** $0.67\\,$m/s"
+    },
+    {
+      "id": 20,
+      "subject": "Stratigraphy & Indian Geology",
+      "topic": "Unconformity Gap",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Beds of $2500\\,$Ma are overlain unconformably by beds of $635\\,$Ma. The hiatus is _____ Myr.",
+      "answer": 1865,
+      "tolerance": 0.1,
+      "solution": "**Concept.** Hiatus = older − younger age.\n\n**Working.**\n$$2500-635=1865.$$\n\n**Answer.** $1865\\,$Myr"
+    },
+    {
+      "id": 21,
+      "subject": "Engineering & Environmental Geology",
+      "topic": "Transmissivity",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "An aquifer has hydraulic conductivity $K=0.00005\\,$m/s and saturated thickness $20\\,$m. Its transmissivity is _____ ×10⁻³ m²/s.",
+      "answer": 1,
+      "tolerance": 0.05,
+      "solution": "**Concept.** $T=Kb$.\n\n**Working.**\n$$0.00005\\times20=0.001\\,$m²/s.$$\n\n**Answer.** $1\\times10^{-3}$"
+    },
+    {
+      "id": 22,
+      "subject": "Palaeontology",
+      "topic": "Taxon Range",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A taxon's first appearance is at $145\\,$Ma and last appearance at $34\\,$Ma. Its stratigraphic range is _____ Myr.",
+      "answer": 111,
+      "tolerance": 0.1,
+      "solution": "**Concept.** Range = FAD − LAD.\n\n**Working.**\n$$145-34=111.$$\n\n**Answer.** $111\\,$Myr"
+    },
+    {
+      "id": 23,
+      "subject": "Igneous Petrology",
+      "topic": "Classification",
+      "section": "Technical (1-mark)",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The volcanic (fine-grained) equivalent of granite is",
+      "options": [
+        "rhyolite",
+        "basalt",
+        "andesite",
+        "gabbro"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Granite (plutonic felsic) ↔ rhyolite (volcanic felsic).\n\n**Working.**\nRhyolite.\n\n**Answer.** Rhyolite"
+    },
+    {
+      "id": 24,
+      "subject": "Earth System & Geomorphology",
+      "topic": "Lithostatic Pressure",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Crustal density $2.7\\,$g/cm³, depth $2\\,$km. The lithostatic pressure ($P=\\rho g h$) is _____ MPa.",
+      "answer": 52.974,
+      "tolerance": 1,
+      "solution": "**Concept.** $P=\\rho g h$.\n\n**Working.**\n$$2.7\\times10^3\\times9.81\\times2\\times10^3/10^6=53.$$\n\n**Answer.** $53\\,$MPa"
+    },
+    {
+      "id": 25,
+      "subject": "Earth System & Geomorphology",
+      "topic": "Plate Kinematics",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A plate moves at $5\\,$cm/yr. In $20\\,$Myr the displacement is _____ km.",
+      "answer": 1000,
+      "tolerance": 5,
+      "solution": "**Concept.** $d=v\\,t$; $1\\,$cm/yr $\\times 1\\,$Myr $=10\\,$km.\n\n**Working.**\n$$5\\times20\\times10=1000.$$\n\n**Answer.** $1000\\,$km"
+    },
+    {
+      "id": 26,
+      "subject": "Structural Geology",
+      "topic": "Mohr — Centre",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "For $\\sigma_1=90$ and $\\sigma_3=10\\,$MPa, the mean stress (centre of Mohr circle) is _____ MPa.",
+      "answer": 50,
+      "tolerance": 0.1,
+      "figure": {
+        "kind": "mohr",
+        "sigma1": 90,
+        "sigma3": 10,
+        "caption": "σ₁=90, σ₃=10 MPa"
+      },
+      "solution": "**Concept.** Centre $=(\\sigma_1+\\sigma_3)/2$.\n\n**Working.**\n$$\\dfrac{90+10}{2}=50.$$\n\n**Answer.** $50\\,$MPa"
+    },
+    {
+      "id": 27,
+      "subject": "Geophysics",
+      "topic": "Magnetic Horizontal Component",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The total geomagnetic field is $50000\\,$nT with inclination $45^\\circ$. The horizontal component is _____ nT.",
+      "answer": 35355.33905932738,
+      "tolerance": 5,
+      "solution": "**Concept.** $H=F\\cos I$.\n\n**Working.**\n$$50000\\cos45^\\circ=35355.$$\n\n**Answer.** $35355\\,$nT"
+    },
+    {
+      "id": 28,
+      "subject": "Mathematics & Geostatistics",
+      "topic": "Vector Divergence",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The divergence of $\\vec F=2x\\,\\hat i+2y\\,\\hat j+1z\\,\\hat k$ is _____.",
+      "answer": 5,
+      "tolerance": 0.001,
+      "solution": "**Concept.** $\\nabla\\cdot\\vec F=\\partial_xF_x+\\partial_yF_y+\\partial_zF_z$.\n\n**Working.**\n$$2+2+1=5.$$\n\n**Answer.** $5$"
+    },
+    {
+      "id": 29,
+      "subject": "Earth System & Geomorphology",
+      "topic": "Stream Discharge",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A river carries $500\\,$m³/s through a channel $10\\,$m wide and $3\\,$m deep. The mean velocity is _____ m/s.",
+      "answer": 16.666666666666668,
+      "tolerance": 0.05,
+      "solution": "**Concept.** $Q=A v=wdv$.\n\n**Working.**\n$$\\dfrac{500}{10\\times3}=16.67.$$\n\n**Answer.** $16.67\\,$m/s"
+    },
+    {
+      "id": 30,
+      "subject": "Metamorphic Petrology",
+      "topic": "Geothermal Gradient",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "For a geothermal gradient of $20\\,^\\circ$C/km, the temperature at $25\\,$km (surface $0\\,^\\circ$C) is _____ $^\\circ$C.",
+      "answer": 500,
+      "tolerance": 1,
+      "solution": "**Concept.** $T=\\text{gradient}\\times z$.\n\n**Working.**\n$$20\\times25=500.$$\n\n**Answer.** $500\\,^\\circ$C"
+    },
+    {
+      "id": 31,
+      "subject": "Mathematics & Geostatistics",
+      "topic": "Statistics — Variance",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The population variance of $\\{5, 5, 7\\}$ is _____.",
+      "answer": 0.888888888888889,
+      "tolerance": 0.05,
+      "solution": "**Concept.** $\\sigma^2=\\sum(x_i-\\bar x)^2/n$.\n\n**Working.**\n$$\\bar x=5.667,\\ \\sigma^2=0.889.$$\n\n**Answer.** $0.889$"
+    },
+    {
+      "id": 32,
+      "subject": "Mathematics & Geostatistics",
+      "topic": "Vector Divergence",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The divergence of $\\vec F=5x\\,\\hat i+2y\\,\\hat j+6z\\,\\hat k$ is _____.",
+      "answer": 13,
+      "tolerance": 0.001,
+      "solution": "**Concept.** $\\nabla\\cdot\\vec F=\\partial_xF_x+\\partial_yF_y+\\partial_zF_z$.\n\n**Working.**\n$$5+2+6=13.$$\n\n**Answer.** $13$"
+    },
+    {
+      "id": 33,
+      "subject": "Sedimentology & Sedimentary Petrology",
+      "topic": "Uniformity Coefficient",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A sand has $d_{60}=0.9\\,$mm and $d_{10}=0.3\\,$mm. Its uniformity coefficient $C_u$ is _____.",
+      "answer": 3,
+      "tolerance": 0.05,
+      "solution": "**Concept.** $C_u=d_{60}/d_{10}$.\n\n**Working.**\n$$0.9/0.3=3.$$\n\n**Answer.** $3$"
+    },
+    {
+      "id": 34,
+      "subject": "Stratigraphy & Indian Geology",
+      "topic": "Sedimentation Rate",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A $800\\,$m sequence accumulated at $5\\,$m/Myr. The time represented is _____ Myr.",
+      "answer": 160,
+      "tolerance": 0.1,
+      "solution": "**Concept.** $t=\\text{thickness}/\\text{rate}$.\n\n**Working.**\n$$800/5=160.$$\n\n**Answer.** $160\\,$Myr"
+    },
+    {
+      "id": 35,
+      "subject": "Stratigraphy & Indian Geology",
+      "topic": "Sedimentation Rate",
+      "section": "Technical (1-mark)",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A $800\\,$m sequence accumulated at $20\\,$m/Myr. The time represented is _____ Myr.",
+      "answer": 40,
+      "tolerance": 0.1,
+      "solution": "**Concept.** $t=\\text{thickness}/\\text{rate}$.\n\n**Working.**\n$$800/20=40.$$\n\n**Answer.** $40\\,$Myr"
+    },
+    {
+      "id": 36,
+      "subject": "Structural Geology",
+      "topic": "Principal Stress Orientation",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "At a point $\\sigma_x=60$, $\\sigma_y=20$, $\\tau_{xy}=20\\,$MPa. The angle $\\theta_p$ of $\\sigma_1$ from the x-axis is _____ degrees.",
+      "answer": 22.5,
+      "tolerance": 0.3,
+      "figure": {
+        "kind": "stress-block",
+        "sx": 60,
+        "sy": 20,
+        "txy": 20,
+        "caption": "σx=60, σy=20, τxy=20 MPa"
+      },
+      "solution": "**Concept.** $\\tan2\\theta_p=\\dfrac{2\\tau_{xy}}{\\sigma_x-\\sigma_y}$.\n\n**Working.**\n$$\\theta_p=\\tfrac12\\tan^{-1}\\dfrac{2(20)}{60-20}=22.5^\\circ.$$\n\n**Answer.** $22.5^\\circ$"
+    },
+    {
+      "id": 37,
+      "subject": "Structural Geology",
+      "topic": "Dip & Plunge",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "A planar fault strikes $90^\\circ$ and dips $65^\\circ$. The plunge of the true-dip line (steepest line on the plane) is _____ degrees.",
+      "answer": 65,
+      "tolerance": 0.1,
+      "figure": {
+        "kind": "stereonet",
+        "planes": [
+          {
+            "strike": 90,
+            "dip": 65,
+            "label": "Fault: 90°/65°"
+          }
+        ],
+        "caption": "Fault plane on stereonet"
+      },
+      "solution": "**Concept.** The true-dip line plunges at the dip angle, in the dip direction.\n\n**Working.**\n$$\\text{plunge}=\\text{dip}=65^\\circ.$$\n\n**Answer.** $65^\\circ$"
+    },
+    {
+      "id": 38,
+      "subject": "Engineering & Environmental Geology",
+      "topic": "Joint Shear Strength",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "A discontinuity ($c=20\\,$kPa, $\\phi=30^\\circ$) carries normal stress $80\\,$kPa. Its peak shear strength is _____ kPa.",
+      "answer": 66.18802153517007,
+      "tolerance": 1,
+      "figure": {
+        "kind": "mohr",
+        "sigma1": 136,
+        "sigma3": 24,
+        "phi": 30,
+        "cohesion": 20,
+        "caption": "c=20 kPa, φ=30°"
+      },
+      "solution": "**Concept.** $\\tau=c+\\sigma_n\\tan\\phi$.\n\n**Working.**\n$$20+80\\tan30^\\circ=66.2.$$\n\n**Answer.** $66.2\\,$kPa"
+    },
+    {
+      "id": 39,
+      "subject": "Structural Geology",
+      "topic": "Apparent Dip",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "A bed has a true dip of $30^\\circ$. In a vertical cross-section making an angle of $30^\\circ$ with the strike, the apparent dip is _____ degrees.",
+      "answer": 16.10211375198601,
+      "tolerance": 0.2,
+      "figure": {
+        "kind": "stereonet",
+        "planes": [
+          {
+            "strike": 0,
+            "dip": 30,
+            "label": "Bed: strike 000°, dip 30°"
+          }
+        ],
+        "caption": "Plane dipping 30°; section at 30° to strike"
+      },
+      "solution": "**Concept.** $\\tan\\delta_{app}=\\tan\\delta_{true}\\sin\\beta$.\n\n**Working.**\n$$\\tan^{-1}(\\tan30^\\circ\\sin30^\\circ)=16.1^\\circ.$$\n\n**Answer.** $16.1^\\circ$"
+    },
+    {
+      "id": 40,
+      "subject": "Structural Geology",
+      "topic": "Apparent Dip",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "A coal seam dips $30^\\circ$ true. A mine drift trends at $50^\\circ$ to the strike. The apparent dip in the drift is _____ degrees.",
+      "answer": 23.858654798458655,
+      "tolerance": 0.2,
+      "figure": {
+        "kind": "stereonet",
+        "planes": [
+          {
+            "strike": 0,
+            "dip": 30,
+            "label": "Seam dip 30°"
+          }
+        ],
+        "caption": "Drift at 50° to strike"
+      },
+      "solution": "**Concept.** $\\tan\\delta_{app}=\\tan\\delta\\sin\\beta$.\n\n**Working.**\n$$\\tan^{-1}(\\tan30^\\circ\\sin50^\\circ)=23.86^\\circ.$$\n\n**Answer.** $23.86^\\circ$"
+    },
+    {
+      "id": 41,
+      "subject": "Structural Geology",
+      "topic": "Principal Stress Orientation",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "At a point $\\sigma_x=100$, $\\sigma_y=20$, $\\tau_{xy}=20\\,$MPa. The angle $\\theta_p$ of $\\sigma_1$ from the x-axis is _____ degrees.",
+      "answer": 13.282525588538995,
+      "tolerance": 0.3,
+      "figure": {
+        "kind": "stress-block",
+        "sx": 100,
+        "sy": 20,
+        "txy": 20,
+        "caption": "σx=100, σy=20, τxy=20 MPa"
+      },
+      "solution": "**Concept.** $\\tan2\\theta_p=\\dfrac{2\\tau_{xy}}{\\sigma_x-\\sigma_y}$.\n\n**Working.**\n$$\\theta_p=\\tfrac12\\tan^{-1}\\dfrac{2(20)}{100-20}=13.28^\\circ.$$\n\n**Answer.** $13.28^\\circ$"
+    },
+    {
+      "id": 42,
+      "subject": "Structural Geology",
+      "topic": "Principal Stress Orientation",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "At a point $\\sigma_x=120$, $\\sigma_y=0$, $\\tau_{xy}=30\\,$MPa. The angle $\\theta_p$ of $\\sigma_1$ from the x-axis is _____ degrees.",
+      "answer": 13.282525588538995,
+      "tolerance": 0.3,
+      "figure": {
+        "kind": "stress-block",
+        "sx": 120,
+        "sy": 0,
+        "txy": 30,
+        "caption": "σx=120, σy=0, τxy=30 MPa"
+      },
+      "solution": "**Concept.** $\\tan2\\theta_p=\\dfrac{2\\tau_{xy}}{\\sigma_x-\\sigma_y}$.\n\n**Working.**\n$$\\theta_p=\\tfrac12\\tan^{-1}\\dfrac{2(30)}{120-0}=13.28^\\circ.$$\n\n**Answer.** $13.28^\\circ$"
+    },
+    {
+      "id": 43,
+      "subject": "Engineering & Environmental Geology",
+      "topic": "Mohr–Coulomb Strength",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "A rock joint has cohesion $30\\,$kPa and friction angle $35^\\circ$. Under normal stress $80\\,$kPa, the shear strength is _____ kPa.",
+      "answer": 86.01660305677677,
+      "tolerance": 1,
+      "figure": {
+        "kind": "mohr",
+        "sigma1": 128,
+        "sigma3": 32,
+        "phi": 35,
+        "cohesion": 30,
+        "caption": "Joint: c=30 kPa, φ=35°"
+      },
+      "solution": "**Concept.** $\\tau=c+\\sigma_n\\tan\\phi$.\n\n**Working.**\n$$30+80\\tan35^\\circ=86.$$\n\n**Answer.** $86\\,$kPa"
+    },
+    {
+      "id": 44,
+      "subject": "Structural Geology",
+      "topic": "Mohr — Shear Stress on Plane",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "With $\\sigma_1=140$ and $\\sigma_3=20\\,$MPa, the shear stress on a plane whose normal makes $30^\\circ$ with $\\sigma_1$ is _____ MPa.",
+      "answer": 51.96152422706631,
+      "tolerance": 0.2,
+      "figure": {
+        "kind": "mohr",
+        "sigma1": 140,
+        "sigma3": 20,
+        "caption": "σ₁=140, σ₃=20 MPa; plane at 30° to σ₁"
+      },
+      "solution": "**Concept.** $\\tau=\\dfrac{\\sigma_1-\\sigma_3}{2}\\sin2\\theta$.\n\n**Working.**\n$$\\dfrac{140-20}{2}\\sin60^\\circ=51.96.$$\n\n**Answer.** $51.96\\,$MPa"
+    },
+    {
+      "id": 45,
+      "subject": "Structural Geology",
+      "topic": "Minor Principal Stress",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "At a point $\\sigma_x=90$, $\\sigma_y=10$, $\\tau_{xy}=20\\,$MPa. The minor principal stress $\\sigma_3$ is _____ MPa.",
+      "answer": 5.278640450004204,
+      "tolerance": 0.2,
+      "figure": {
+        "kind": "stress-block",
+        "sx": 90,
+        "sy": 10,
+        "txy": 20,
+        "caption": "σx=90, σy=10, τxy=20 MPa"
+      },
+      "solution": "**Concept.** $\\sigma_3=\\dfrac{\\sigma_x+\\sigma_y}{2}-\\sqrt{(\\tfrac{\\sigma_x-\\sigma_y}{2})^2+\\tau_{xy}^2}$.\n\n**Working.**\n$$50-\\sqrt{40^2+20^2}=5.28.$$\n\n**Answer.** $5.28\\,$MPa"
+    },
+    {
+      "id": 46,
+      "subject": "Engineering & Environmental Geology",
+      "topic": "Joint Shear Strength",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "A discontinuity ($c=10\\,$kPa, $\\phi=40^\\circ$) carries normal stress $60\\,$kPa. Its peak shear strength is _____ kPa.",
+      "answer": 60.345977870636794,
+      "tolerance": 1,
+      "figure": {
+        "kind": "mohr",
+        "sigma1": 102,
+        "sigma3": 18,
+        "phi": 40,
+        "cohesion": 10,
+        "caption": "c=10 kPa, φ=40°"
+      },
+      "solution": "**Concept.** $\\tau=c+\\sigma_n\\tan\\phi$.\n\n**Working.**\n$$10+60\\tan40^\\circ=60.3.$$\n\n**Answer.** $60.3\\,$kPa"
+    },
+    {
+      "id": 47,
+      "subject": "Structural Geology",
+      "topic": "Apparent Dip",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "A coal seam dips $20^\\circ$ true. A mine drift trends at $65^\\circ$ to the strike. The apparent dip in the drift is _____ degrees.",
+      "answer": 18.256124010900294,
+      "tolerance": 0.2,
+      "figure": {
+        "kind": "stereonet",
+        "planes": [
+          {
+            "strike": 0,
+            "dip": 20,
+            "label": "Seam dip 20°"
+          }
+        ],
+        "caption": "Drift at 65° to strike"
+      },
+      "solution": "**Concept.** $\\tan\\delta_{app}=\\tan\\delta\\sin\\beta$.\n\n**Working.**\n$$\\tan^{-1}(\\tan20^\\circ\\sin65^\\circ)=18.26^\\circ.$$\n\n**Answer.** $18.26^\\circ$"
+    },
+    {
+      "id": 48,
+      "subject": "Structural Geology",
+      "topic": "Minor Principal Stress",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "At a point $\\sigma_x=70$, $\\sigma_y=30$, $\\tau_{xy}=40\\,$MPa. The minor principal stress $\\sigma_3$ is _____ MPa.",
+      "answer": 5.278640450004204,
+      "tolerance": 0.2,
+      "figure": {
+        "kind": "stress-block",
+        "sx": 70,
+        "sy": 30,
+        "txy": 40,
+        "caption": "σx=70, σy=30, τxy=40 MPa"
+      },
+      "solution": "**Concept.** $\\sigma_3=\\dfrac{\\sigma_x+\\sigma_y}{2}-\\sqrt{(\\tfrac{\\sigma_x-\\sigma_y}{2})^2+\\tau_{xy}^2}$.\n\n**Working.**\n$$50-\\sqrt{20^2+40^2}=5.28.$$\n\n**Answer.** $5.28\\,$MPa"
+    },
+    {
+      "id": 49,
+      "subject": "Structural Geology",
+      "topic": "Mohr — Maximum Shear",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "A rock element is under $\\sigma_1=100\\,$MPa and $\\sigma_3=30\\,$MPa. The maximum shear stress is _____ MPa.",
+      "answer": 35,
+      "tolerance": 0.1,
+      "figure": {
+        "kind": "mohr",
+        "sigma1": 100,
+        "sigma3": 30,
+        "caption": "Mohr circle: σ₁=100, σ₃=30 MPa"
+      },
+      "solution": "**Concept.** $\\tau_{max}=(\\sigma_1-\\sigma_3)/2$.\n\n**Working.**\n$$\\dfrac{100-30}{2}=35.$$\n\n**Answer.** $35\\,$MPa"
+    },
+    {
+      "id": 50,
+      "subject": "Economic & Ore Geology",
+      "topic": "Recoverable Metal",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "An ore body of $10\\,$Mt at $5\\,$g/t Au is processed at $90\\%$ recovery. The recoverable gold is _____ kg. (1 g/t = 1 g per tonne)",
+      "answer": 45000,
+      "tolerance": 10,
+      "solution": "**Concept.** Metal $=$ tonnage $\\times$ grade $\\times$ recovery.\n\n**Working.**\n$$10\\times10^6\\times5\\times0.9/1000=45000\\,$kg.$$\n\n**Answer.** $45000\\,$kg"
+    },
+    {
+      "id": 51,
+      "subject": "Engineering & Environmental Geology",
+      "topic": "Joint Shear Strength",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "A discontinuity ($c=30\\,$kPa, $\\phi=25^\\circ$) carries normal stress $40\\,$kPa. Its peak shear strength is _____ kPa.",
+      "answer": 48.65230632619995,
+      "tolerance": 1,
+      "figure": {
+        "kind": "mohr",
+        "sigma1": 68,
+        "sigma3": 12,
+        "phi": 25,
+        "cohesion": 30,
+        "caption": "c=30 kPa, φ=25°"
+      },
+      "solution": "**Concept.** $\\tau=c+\\sigma_n\\tan\\phi$.\n\n**Working.**\n$$30+40\\tan25^\\circ=48.7.$$\n\n**Answer.** $48.7\\,$kPa"
+    },
+    {
+      "id": 52,
+      "subject": "Structural Geology",
+      "topic": "Principal Stress Orientation",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "At a point $\\sigma_x=120$, $\\sigma_y=20$, $\\tau_{xy}=20\\,$MPa. The angle $\\theta_p$ of $\\sigma_1$ from the x-axis is _____ degrees.",
+      "answer": 10.900704743175906,
+      "tolerance": 0.3,
+      "figure": {
+        "kind": "stress-block",
+        "sx": 120,
+        "sy": 20,
+        "txy": 20,
+        "caption": "σx=120, σy=20, τxy=20 MPa"
+      },
+      "solution": "**Concept.** $\\tan2\\theta_p=\\dfrac{2\\tau_{xy}}{\\sigma_x-\\sigma_y}$.\n\n**Working.**\n$$\\theta_p=\\tfrac12\\tan^{-1}\\dfrac{2(20)}{120-20}=10.9^\\circ.$$\n\n**Answer.** $10.9^\\circ$"
+    },
+    {
+      "id": 53,
+      "subject": "Sedimentology & Sedimentary Petrology",
+      "topic": "Classification",
+      "section": "Technical (2-mark)",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "In Dunham's classification, a mud-supported limestone with >10% grains is a",
+      "options": [
+        "wackestone",
+        "grainstone",
+        "boundstone",
+        "mudstone"
+      ],
+      "answer": 0,
+      "solution": "**Concept.** Dunham: mudstone (<10% grains), wackestone (>10%, mud-supported), packstone, grainstone (grain-supported).\n\n**Working.**\nWackestone.\n\n**Answer.** Wackestone"
+    },
+    {
+      "id": 54,
+      "subject": "Palaeontology",
+      "topic": "Taxon Range",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "A taxon's first appearance is at $145\\,$Ma and last appearance at $56\\,$Ma. Its stratigraphic range is _____ Myr.",
+      "answer": 89,
+      "tolerance": 0.1,
+      "solution": "**Concept.** Range = FAD − LAD.\n\n**Working.**\n$$145-56=89.$$\n\n**Answer.** $89\\,$Myr"
+    },
+    {
+      "id": 55,
+      "subject": "Sedimentology & Sedimentary Petrology",
+      "topic": "Stokes Settling",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "A quartz grain ($\\rho_s=2.65$ g/cm³, $d=0.2\\,$mm) settles in water ($\\mu=10^{-3}\\,$Pa·s). Its Stokes settling velocity is _____ mm/s.",
+      "answer": 35.96999999999999,
+      "tolerance": 0.5,
+      "solution": "**Concept.** $v_s=\\dfrac{g(\\rho_s-\\rho_w)d^2}{18\\mu}$.\n\n**Working.**\n$$\\dfrac{9.81\\times1650\\times(0.0002)^2}{18\\times10^{-3}}=35.97\\,$mm/s.$$\n\n**Answer.** $35.97\\,$mm/s"
+    },
+    {
+      "id": 56,
+      "subject": "Geochemistry & Isotope Geology",
+      "topic": "Isochron Age",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "A mineral has daughter/parent ratio $D/P=0.5$ for a system with half-life $1250\\,$Myr. Its age is _____ Myr.",
+      "answer": 731.2031259014452,
+      "tolerance": 5,
+      "solution": "**Concept.** $t=\\dfrac{1}{\\lambda}\\ln(1+D/P)$, $\\lambda=\\ln2/T_{1/2}$.\n\n**Working.**\n$$\\lambda=\\ln2/1250,\\ t=\\dfrac{\\ln(1+0.5)}{\\lambda}=731.2.$$\n\n**Answer.** $731.2\\,$Myr"
+    },
+    {
+      "id": 57,
+      "subject": "Metamorphic Petrology",
+      "topic": "Pressure to Depth",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "A metamorphic assemblage equilibrated at $0.5\\,$GPa in crust of density $2.8\\,$g/cm³. The depth is _____ km.",
+      "answer": 18.202999854376,
+      "tolerance": 0.5,
+      "solution": "**Concept.** $z=P/(\\rho g)$.\n\n**Working.**\n$$\\dfrac{0.5\\times10^9}{2.8\\times10^3\\times9.81}/10^3=18.2.$$\n\n**Answer.** $18.2\\,$km"
+    },
+    {
+      "id": 58,
+      "subject": "Geophysics",
+      "topic": "Crossover Distance",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "Two-layer refraction: $V_1=1500$, $V_2=4000\\,$m/s, layer thickness $20\\,$m. The crossover distance is _____ m.",
+      "answer": 59.329587896765304,
+      "tolerance": 1,
+      "solution": "**Concept.** $X_{co}=2h\\sqrt{\\dfrac{V_2+V_1}{V_2-V_1}}$.\n\n**Working.**\n$$2\\times20\\sqrt{\\dfrac{4000+1500}{4000-1500}}=59.3.$$\n\n**Answer.** $59.3\\,$m"
+    },
+    {
+      "id": 59,
+      "subject": "Structural Geology",
+      "topic": "Dip & Plunge",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "A planar fault strikes $30^\\circ$ and dips $35^\\circ$. The plunge of the true-dip line (steepest line on the plane) is _____ degrees.",
+      "answer": 35,
+      "tolerance": 0.1,
+      "figure": {
+        "kind": "stereonet",
+        "planes": [
+          {
+            "strike": 30,
+            "dip": 35,
+            "label": "Fault: 30°/35°"
+          }
+        ],
+        "caption": "Fault plane on stereonet"
+      },
+      "solution": "**Concept.** The true-dip line plunges at the dip angle, in the dip direction.\n\n**Working.**\n$$\\text{plunge}=\\text{dip}=35^\\circ.$$\n\n**Answer.** $35^\\circ$"
+    },
+    {
+      "id": 60,
+      "subject": "Sedimentology & Sedimentary Petrology",
+      "topic": "Pore Volume",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "A rock of porosity $0.25$ has bulk volume $500\\,$cm³. The pore volume is _____ cm³.",
+      "answer": 125,
+      "tolerance": 0.5,
+      "solution": "**Concept.** $V_{pore}=\\phi V_{bulk}$.\n\n**Working.**\n$$0.25\\times500=125.$$\n\n**Answer.** $125\\,$cm³"
+    },
+    {
+      "id": 61,
+      "subject": "Stratigraphy & Indian Geology",
+      "topic": "True Thickness",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "A bed dipping $30^\\circ$ crops out across a horizontal width of $1000\\,$m (perpendicular to strike). Its true thickness is _____ m.",
+      "answer": 499.99999999999994,
+      "tolerance": 1,
+      "solution": "**Concept.** $t=w\\sin\\delta$ (horizontal traverse $\\perp$ strike).\n\n**Working.**\n$$1000\\sin30^\\circ=500.$$\n\n**Answer.** $500\\,$m"
+    },
+    {
+      "id": 62,
+      "subject": "Earth System & Geomorphology",
+      "topic": "Stream Gradient",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "stem": "A stream falls $200\\,$m over $20\\,$km. Its gradient is _____ m/km.",
+      "answer": 10,
+      "tolerance": 0.05,
+      "solution": "**Concept.** Gradient = drop / length.\n\n**Working.**\n$$200/20=10.$$\n\n**Answer.** $10\\,$m/km"
+    },
+    {
+      "id": 63,
+      "subject": "Mineralogy & Crystallography",
+      "topic": "Bragg's Law",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "X-rays of wavelength $1.54\\,$Å reflect from planes $d=3\\,$Å (first order). The Bragg angle $\\theta$ is _____ degrees.",
+      "answer": 14.87236545017045,
+      "tolerance": 0.1,
+      "solution": "**Concept.** $n\\lambda=2d\\sin\\theta$.\n\n**Working.**\n$$\\theta=\\sin^{-1}\\dfrac{1.54}{2\\times3}=14.87^\\circ.$$\n\n**Answer.** $14.87^\\circ$"
+    },
+    {
+      "id": 64,
+      "subject": "Igneous Petrology",
+      "topic": "Rayleigh Fractionation",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "Rayleigh fractionation: $C_0=200\\,$ppm, melt fraction remaining $F=0.2$, $D=3$. The residual-melt concentration is _____ ppm.",
+      "answer": 8.000000000000002,
+      "tolerance": 1,
+      "solution": "**Concept.** $C_L=C_0F^{(D-1)}$.\n\n**Working.**\n$$200\\times0.2^{3-1}=8.$$\n\n**Answer.** $8\\,$ppm"
+    },
+    {
+      "id": 65,
+      "subject": "Mineralogy & Crystallography",
+      "topic": "Unit-cell Density",
+      "section": "Technical (2-mark)",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "hard",
+      "stem": "A cubic mineral: $Z=4$ formula units, $M=120\\,$g/mol, $a=6\\,$Å. Its density is _____ g/cm³.",
+      "answer": 3.6901730691169403,
+      "tolerance": 0.05,
+      "solution": "**Concept.** $\\rho=\\dfrac{ZM}{N_A a^3}$.\n\n**Working.**\n$$\\dfrac{4\\times120}{6.022\\times10^{23}(6\\times10^{-8})^3}=3.69.$$\n\n**Answer.** $3.69\\,$g/cm³"
+    }
+  ]
+}
