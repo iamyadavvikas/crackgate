@@ -492,7 +492,7 @@ function CivilBackdrop() {
 }
 
 /* Animated Civil-engineering scene — truss bridge + floating holos */
-function CivilScene() {
+export function CivilScene() {
   const float = (delay: number) => ({
     animate: { y: [0, -10, 0] },
     transition: { duration: 3.2, repeat: Infinity, ease: "easeInOut" as const, delay },
