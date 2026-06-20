@@ -210,14 +210,14 @@ export function PyqAnalyticsDashboard() {
                 <CartesianGrid strokeDasharray="3 3" stroke="rgba(0,0,0,0.06)" horizontal={false} />
                 <XAxis type="number" tick={{ fontSize: 11 }} allowDecimals={false} />
                 <YAxis type="category" dataKey="label" tick={{ fontSize: 11 }} width={120} />
-                <Tooltip formatter={(v: number, n) => [v, n === "count" ? "Questions" : n]} />
+                <Tooltip formatter={(v, n) => [v as number, n === "count" ? "Questions" : n]} />
                 <Bar dataKey="count" name="Questions" radius={[0, 4, 4, 0]}>
                   {secData.map((d) => <Cell key={d.key} fill={d.color} />)}
                 </Bar>
               </BarChart>
             ) : (
               <PieChart>
-                <Pie data={secData} dataKey="count" nameKey="label" cx="50%" cy="50%" outerRadius={100} label={(e) => `${e.label} (${e.count})`} labelLine={false}>
+                <Pie data={secData} dataKey="count" nameKey="label" cx="50%" cy="50%" outerRadius={100} label={(e) => { const d = e as unknown as { label: string; count: number }; return `${d.label} (${d.count})`; }} labelLine={false}>
                   {secData.map((d) => <Cell key={d.key} fill={d.color} />)}
                 </Pie>
                 <Tooltip />
@@ -306,7 +306,7 @@ export function PyqAnalyticsDashboard() {
           <div className="w-full h-60">
             <ResponsiveContainer>
               <PieChart>
-                <Pie data={typeData} dataKey="count" nameKey="label" cx="50%" cy="50%" innerRadius={50} outerRadius={90} label={(e) => `${e.label} ${Math.round((e.count / (totalQ || 1)) * 100)}%`} labelLine={false}>
+                <Pie data={typeData} dataKey="count" nameKey="label" cx="50%" cy="50%" innerRadius={50} outerRadius={90} label={(e) => { const d = e as unknown as { label: string; count: number }; return `${d.label} ${Math.round((d.count / (totalQ || 1)) * 100)}%`; }} labelLine={false}>
                   {typeData.map((d) => <Cell key={d.key} fill={d.color} />)}
                 </Pie>
                 <Tooltip />

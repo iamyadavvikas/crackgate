@@ -10,7 +10,6 @@ const nextConfig: NextConfig = {
   // TODO: tighten typing on PYQ/MOCKS readonly data and remove this.
   // Production build currently fails on `readonly` → mutable casts; not blocking runtime behavior.
   typescript: { ignoreBuildErrors: true },
-  eslint: { ignoreDuringBuilds: true },
   // Pin the trace root to the monorepo root so Next stops complaining about
   // multiple lockfiles and traces files from packages/database correctly.
   outputFileTracingRoot: path.join(__dirname, "../.."),
