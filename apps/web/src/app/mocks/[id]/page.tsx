@@ -45,6 +45,12 @@ export default async function MockPage(props: { params: Promise<{ id: string }> 
       title={m.title}
       questions={m.questions as never}
       durationSec={m.durationSec}
+      negativeMarking={m.negativeMarking}
+      examLabel={
+        m.gate.type === "entitlement" && m.gate.exam === "PSU"
+          ? "Coal India Limited — Management Trainee"
+          : "GATE — Graduate Aptitude Test in Engineering"
+      }
     />
   );
 }

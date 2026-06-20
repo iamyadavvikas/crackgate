@@ -60,7 +60,7 @@ function mmss(total: number): string {
 }
 
 export function ExamPortal({
-  kind, refId, title, questions, durationSec, lockdown,
+  kind, refId, title, questions, durationSec, lockdown, negativeMarking, examLabel,
 }: {
   kind: "mock" | "pyq";
   refId: string;
@@ -70,8 +70,15 @@ export function ExamPortal({
   /** Exam-center lockdown: disable right-click, copy/paste, text selection and
    *  dev-tool shortcuts. Defaults on for mocks; PYQ Exam Mode enables it too. */
   lockdown?: boolean;
+  /** Whether wrong MCQs incur negative marks. GATE = true; CIL MT = false.
+   *  Defaults to true to preserve existing GATE behaviour. */
+  negativeMarking?: boolean;
+  /** Exam-family caption shown in the top bar. Defaults to GATE. */
+  examLabel?: string;
 }) {
   const locked = lockdown ?? kind === "mock";
+  const negMarking = negativeMarking ?? true;
+  const examCaption = examLabel ?? "GATE — Graduate Aptitude Test in Engineering";
   const router = useRouter();
   const [state, dispatch] = useReducer(reducer, {
     idx: 0,
@@ -313,7 +320,7 @@ export function ExamPortal({
       <header className="bg-gradient-to-r from-brand-2 to-brand text-white px-4 sm:px-5 py-3 flex flex-wrap items-center gap-3 sm:gap-4">
         <div className="w-9 h-9 bg-white/15 grid place-items-center rounded-lg font-bold shrink-0">CG</div>
         <div className="min-w-0 flex-1">
-          <div className="text-xs sm:text-sm opacity-80">GATE — Graduate Aptitude Test in Engineering</div>
+          <div className="text-xs sm:text-sm opacity-80">{examCaption}</div>
           <div className="font-semibold text-sm sm:text-base truncate">{title}</div>
         </div>
         <div className="ml-auto flex items-center gap-2 sm:gap-3 shrink-0">
@@ -337,7 +344,12 @@ export function ExamPortal({
         <span>Section · <b>{q.subject}</b></span>
         <span className="text-amber-300">⏱ <b className="tabular-nums">{mmss(sectionSecs[q.subject] ?? 0)}</b> in section</span>
         <span>Type · <b>{q.type}</b></span>
-        <span className="hidden sm:inline">+{q.marks} <span className="text-bad">· −{q.type === "MCQ" ? (q.marks / 3).toFixed(2) : 0}</span></span>
+        <span className="hidden sm:inline">
+          +{q.marks}
+          {negMarking
+            ? <span className="text-bad"> · −{q.type === "MCQ" ? (q.marks / 3).toFixed(2) : 0}</span>
+            : <span className="text-ok"> · no negative marking</span>}
+        </span>
         <span className="ml-auto">Q <b>{state.idx + 1}</b> / {questions.length}</span>
       </div>
 
