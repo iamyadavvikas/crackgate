@@ -8,6 +8,15 @@
 import type { Question } from "@/lib/grading";
 
 import civilSet01 from "./questions/cil/civil/cil-civil-01.json";
+import civilSet02 from "./questions/cil/civil/cil-civil-02.json";
+import civilSet03 from "./questions/cil/civil/cil-civil-03.json";
+import civilSet04 from "./questions/cil/civil/cil-civil-04.json";
+import civilSet05 from "./questions/cil/civil/cil-civil-05.json";
+import civilSet06 from "./questions/cil/civil/cil-civil-06.json";
+import civilSet07 from "./questions/cil/civil/cil-civil-07.json";
+import civilSet08 from "./questions/cil/civil/cil-civil-08.json";
+import civilSet09 from "./questions/cil/civil/cil-civil-09.json";
+import civilSet10 from "./questions/cil/civil/cil-civil-10.json";
 
 export type CilSet = {
   /** Stable mock id, e.g. "cil-civil-01". Drives the runner route /mocks/<id>. */
@@ -25,10 +34,19 @@ export type CilSet = {
 };
 
 // ── Registered sets ──────────────────────────────────────────────────────────
-// Add `import civilSet01 from "./questions/cil/civil/cil-civil-01.json";`
-// and push `civilSet01 as unknown as CilSet` below as each set ships.
+// Add `import civilSetNN from "./questions/cil/civil/cil-civil-NN.json";`
+// and push `civilSetNN as unknown as CilSet` below as each set ships.
 const CIL_SETS: CilSet[] = [
   civilSet01 as unknown as CilSet,
+  civilSet02 as unknown as CilSet,
+  civilSet03 as unknown as CilSet,
+  civilSet04 as unknown as CilSet,
+  civilSet05 as unknown as CilSet,
+  civilSet06 as unknown as CilSet,
+  civilSet07 as unknown as CilSet,
+  civilSet08 as unknown as CilSet,
+  civilSet09 as unknown as CilSet,
+  civilSet10 as unknown as CilSet,
 ];
 
 export const CIL_MOCK_BANK: ReadonlyMap<string, CilSet> = new Map(
