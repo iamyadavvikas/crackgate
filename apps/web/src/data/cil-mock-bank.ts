@@ -103,6 +103,22 @@ import geologySet13 from "./questions/cil/geology/cil-geology-13.json";
 import geologySet14 from "./questions/cil/geology/cil-geology-14.json";
 import geologySet15 from "./questions/cil/geology/cil-geology-15.json";
 
+import ieSet01 from "./questions/cil/industrial-engineering/cil-industrial-engineering-01.json";
+import ieSet02 from "./questions/cil/industrial-engineering/cil-industrial-engineering-02.json";
+import ieSet03 from "./questions/cil/industrial-engineering/cil-industrial-engineering-03.json";
+import ieSet04 from "./questions/cil/industrial-engineering/cil-industrial-engineering-04.json";
+import ieSet05 from "./questions/cil/industrial-engineering/cil-industrial-engineering-05.json";
+import ieSet06 from "./questions/cil/industrial-engineering/cil-industrial-engineering-06.json";
+import ieSet07 from "./questions/cil/industrial-engineering/cil-industrial-engineering-07.json";
+import ieSet08 from "./questions/cil/industrial-engineering/cil-industrial-engineering-08.json";
+import ieSet09 from "./questions/cil/industrial-engineering/cil-industrial-engineering-09.json";
+import ieSet10 from "./questions/cil/industrial-engineering/cil-industrial-engineering-10.json";
+import ieSet11 from "./questions/cil/industrial-engineering/cil-industrial-engineering-11.json";
+import ieSet12 from "./questions/cil/industrial-engineering/cil-industrial-engineering-12.json";
+import ieSet13 from "./questions/cil/industrial-engineering/cil-industrial-engineering-13.json";
+import ieSet14 from "./questions/cil/industrial-engineering/cil-industrial-engineering-14.json";
+import ieSet15 from "./questions/cil/industrial-engineering/cil-industrial-engineering-15.json";
+
 export type CilSet = {
   /** Stable mock id, e.g. "cil-civil-01". Drives the runner route /mocks/<id>. */
   id: string;
@@ -212,6 +228,21 @@ const CIL_SETS: CilSet[] = [
   geologySet13 as unknown as CilSet,
   geologySet14 as unknown as CilSet,
   geologySet15 as unknown as CilSet,
+  ieSet01 as unknown as CilSet,
+  ieSet02 as unknown as CilSet,
+  ieSet03 as unknown as CilSet,
+  ieSet04 as unknown as CilSet,
+  ieSet05 as unknown as CilSet,
+  ieSet06 as unknown as CilSet,
+  ieSet07 as unknown as CilSet,
+  ieSet08 as unknown as CilSet,
+  ieSet09 as unknown as CilSet,
+  ieSet10 as unknown as CilSet,
+  ieSet11 as unknown as CilSet,
+  ieSet12 as unknown as CilSet,
+  ieSet13 as unknown as CilSet,
+  ieSet14 as unknown as CilSet,
+  ieSet15 as unknown as CilSet,
 ];
 
 export const CIL_MOCK_BANK: ReadonlyMap<string, CilSet> = new Map(
