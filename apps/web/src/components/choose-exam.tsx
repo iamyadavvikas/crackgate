@@ -17,6 +17,13 @@ const EXAM_CARDS: ExamCard[] = [
     cta: "Explore GATE Mining",
   },
   {
+    href: "/gate/civil",
+    eyebrow: "GATE",
+    title: "Civil Engineering (CE)",
+    blurb: "20 full-length mocks, 600+ topic-wise practice questions, Learn & Solve modules and AITS.",
+    cta: "Explore GATE Civil",
+  },
+  {
     href: "/psu/cil",
     eyebrow: "PSU",
     title: "Coal India (CIL) MT",
@@ -61,7 +68,7 @@ export function ChooseExam({ firstName }: { firstName: string }) {
       </div>
 
       <p className="text-xs text-muted mt-6">
-        More tracks (GATE Civil, Geology &amp; State PSUs) are on the way.
+        More tracks (GATE Geology &amp; State PSUs) are on the way.
       </p>
     </section>
   );

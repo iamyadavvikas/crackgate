@@ -210,17 +210,33 @@ export function MobileSectionBar() {
  */
 const MINING_SITE_PREFIXES = ["/gate/mining", "/learn", "/practice", "/mocks", "/aits", "/pricing"];
 
+/**
+ * Newer GATE subjects live under /gate/<slug>/* with their own SubjectHeader
+ * (rendered by the subject layout). On these paths the global header is hidden
+ * but the Mining header is NOT shown. Keep in sync with liveGateSubjects().
+ */
+const LIVE_SUBJECT_PREFIXES = ["/gate/civil"];
+
 function isMiningSite(pathname: string | null): boolean {
   if (!pathname) return false;
-  // CIL (PSU) mocks live under /mocks/cil-* but belong to the PSU track, not the
-  // GATE Mining mini-site — they must keep the global header (PSU/GATE nav).
+  // CIL (PSU) mocks live under /mocks/cil-* and CE mocks under /mocks/ce-mock-*;
+  // both use the shared runner but belong to their own track, so they keep the
+  // global header (PSU / subject nav) rather than the Mining header.
   if (pathname.startsWith("/mocks/cil-")) return false;
+  if (pathname.startsWith("/mocks/ce-mock-")) return false;
   return MINING_SITE_PREFIXES.some((p) => pathname === p || pathname.startsWith(p + "/"));
+}
+
+/** True on a live per-subject mini-site (e.g. /gate/civil/*). */
+function isLiveSubjectSite(pathname: string | null): boolean {
+  if (!pathname) return false;
+  return LIVE_SUBJECT_PREFIXES.some((p) => pathname === p || pathname.startsWith(p + "/"));
 }
 
 /** Renders children only OUTSIDE the Mining mini-site (i.e. the global header). */
 export function HideOnMiningSite({ children }: { children: React.ReactNode }) {
-  return isMiningSite(usePathname()) ? null : <>{children}</>;
+  const pathname = usePathname();
+  return isMiningSite(pathname) || isLiveSubjectSite(pathname) ? null : <>{children}</>;
 }
 
 /** Renders children only INSIDE the Mining mini-site (i.e. the Mining header). */

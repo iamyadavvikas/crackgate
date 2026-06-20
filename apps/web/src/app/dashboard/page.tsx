@@ -36,6 +36,7 @@ import { resolveDashboardTracks, pickActiveTrack } from "@/lib/dashboard-tracks"
 import { TrackSwitcher } from "@/components/track-switcher";
 import { ChooseExam } from "@/components/choose-exam";
 import { CilDashboard, type CilAttempt } from "@/components/cil-dashboard";
+import { CivilDashboard, type CivilAttempt } from "@/components/civil-dashboard";
 
 export const dynamic = "force-dynamic";
 
@@ -106,6 +107,27 @@ export default async function DashboardPage({
       <div className="max-w-7xl mx-auto px-5 py-8 space-y-6">
         <TrackSwitcher tracks={tracks} activeKey={activeTrack.key} />
         <CilDashboard track={activeTrack} attempts={cilAttempts} />
+      </div>
+    );
+  }
+
+  // ── GATE Civil (CE) track — dedicated view, return early. ───────────
+  if (activeTrack.kind === "civil") {
+    const ceAttempts: CivilAttempt[] = allAttempts
+      .filter((a) => a.refId.startsWith("ce-mock-"))
+      .map((a) => ({
+        id: a.id,
+        refId: a.refId,
+        refTitle: a.refTitle,
+        score: a.score,
+        total: a.total,
+        takenAt: a.takenAt,
+        breakdown: (a.breakdown as Record<string, { scored: number; total: number }>) ?? {},
+      }));
+    return (
+      <div className="max-w-7xl mx-auto px-5 py-8 space-y-6">
+        <TrackSwitcher tracks={tracks} activeKey={activeTrack.key} />
+        <CivilDashboard track={activeTrack} attempts={ceAttempts} />
       </div>
     );
   }

@@ -5,6 +5,7 @@ import UpiClaimForm from "./form";
 import { db } from "@/lib/db";
 import { whatsappLink } from "@/lib/contact";
 import { getCilDiscipline } from "@/data/cil";
+import { getSubject } from "@/data/catalog";
 
 export const dynamic = "force-dynamic";
 
@@ -42,7 +43,9 @@ export default async function PayUpiPage({
   const defaultSubjectLabel =
     examCode === "PSU" && subjectSlug
       ? getCilDiscipline(subjectSlug)?.discipline ?? subjectSlug
-      : subjectSlug;
+      : subjectSlug
+        ? getSubject(examCode, subjectSlug)?.label ?? subjectSlug
+        : subjectSlug;
 
   const session = await auth();
   if (!session?.user?.id) {

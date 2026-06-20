@@ -67,7 +67,12 @@ export async function POST(req: Request) {
   const rank = { free: 0, pro: 1, premium: 2 } as const;
   const targetExam = EXAM_CODE[examName] ?? examName;
 
-  if (examName === "GATE") {
+  // GATE subjects sold per exam+subject Entitlement (not the legacy User.plan).
+  const GATE_ENTITLEMENT_SUBJECTS = new Set(["civil"]);
+  const isGatePlanTrack =
+    targetExam === "GATE" && !GATE_ENTITLEMENT_SUBJECTS.has(subject.trim().toLowerCase());
+
+  if (isGatePlanTrack) {
     // GATE → Mining is the only track that drives the global User.plan, so its
     // dedup is plan-based.
     if (
@@ -87,7 +92,7 @@ export async function POST(req: Request) {
       );
     }
   } else if (await hasEntitlement(session.user.id, targetExam, subject, plan)) {
-    // Other tracks (e.g. PSU · CIL) are gated per exam+subject Entitlement —
+    // Entitlement tracks (PSU · CIL, GATE · Civil, …) are gated per exam+subject —
     // don't block a buyer just because their global plan is already pro/premium.
     return NextResponse.json(
       {

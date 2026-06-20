@@ -22,8 +22,8 @@ const GATE_BRANCHES: Branch[] = [
     code: "CE",
     discipline: "Civil (CE)",
     href: "/gate/civil",
-    blurb: "GATE Civil prep is coming to CrackGate — the same Learn, Practice, Mocks and AITS experience.",
-    live: false,
+    blurb: "Full-length mocks, topic-wise practice, Learn & Solve modules and AITS — built to exam-grade standard.",
+    live: true,
   },
   {
     code: "GG",

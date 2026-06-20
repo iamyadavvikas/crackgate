@@ -14,6 +14,8 @@ import { NextResponse } from "next/server";
 import { auth } from "@/lib/auth";
 import { db } from "@/lib/db";
 import { PRACTICE } from "@/data/practice";
+import { CE_PRACTICE } from "@/data/gate/civil/practice";
+import { hasEntitlement } from "@/lib/entitlements";
 import { FREE_PREVIEW, CAPS } from "@/lib/practice-config";
 
 export const runtime = "nodejs";
@@ -46,21 +48,36 @@ async function loadTopicMastery(userId: string, subjectSlug: string): Promise<Ma
 
 export async function GET(req: Request, props: { params: Promise<{ slug: string }> }) {
   const { slug } = await props.params;
-  const subject = PRACTICE.find((s) => s.slug === slug);
+  // CE (Civil) subjects use the per-subject entitlement gate; all other slugs
+  // use the legacy mining plan gate.
+  const isCe = slug.startsWith("ce-");
+  const subject = (isCe ? CE_PRACTICE : PRACTICE).find((s) => s.slug === slug);
   if (!subject) return NextResponse.json({ error: "unknown_subject" }, { status: 404 });
 
   const session = await auth();
   const plan = (session?.user as { plan?: string } | undefined)?.plan ?? "free";
+  const isAdmin = (session?.user as { role?: string } | undefined)?.role === "admin";
 
-  // Practice is a paid feature: only Pro and Premium may load the question bank.
-  if (plan !== "pro" && plan !== "premium") {
+  if (isCe) {
+    // Civil access is granted by an Entitlement(exam="GATE", subject="civil").
+    const uid = (session?.user as { id?: string } | undefined)?.id;
+    const ok = isAdmin || (uid ? await hasEntitlement(uid, "GATE", "civil") : false);
+    if (!ok) {
+      return NextResponse.json(
+        { error: "upgrade_required", message: "GATE Civil practice requires the Civil subject pass." },
+        { status: 403 },
+      );
+    }
+  } else if (plan !== "pro" && plan !== "premium") {
+    // Practice is a paid feature: only Pro and Premium may load the question bank.
     return NextResponse.json(
       { error: "upgrade_required", message: "Practice is available on the Pro and Premium plans." },
       { status: 403 },
     );
   }
 
-  const cap  = CAPS[plan] ?? FREE_PREVIEW;
+  // Entitled CE users (and admins) get a generous cap regardless of plan tier.
+  const cap = isCe ? (CAPS.premium ?? 1000) : (CAPS[plan] ?? FREE_PREVIEW);
 
   // Per-difficulty availability (full bank, pre-cap) so the client can label
   // its difficulty tabs and "All N" session-size chip accurately.

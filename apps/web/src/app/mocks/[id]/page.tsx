@@ -31,9 +31,11 @@ export default async function MockPage(props: { params: Promise<{ id: string }> 
         redirect(`/pricing?gated=${m.id}&requires=premium`);
       }
     } else {
-      const ok = await hasEntitlement(uid, m.gate.exam, m.gate.subject);
+      // Free-trial mocks (e.g. the first CE mock) are open to any signed-in user.
+      const freeTrial = m.gate.exam === "GATE" && m.gate.freeTrial === true;
+      const ok = freeTrial || (await hasEntitlement(uid, m.gate.exam, m.gate.subject));
       if (!ok) {
-        redirect(`/pay/upi?plan=pro&exam=PSU&subject=${m.gate.subject}`);
+        redirect(`/pay/upi?plan=pro&exam=${m.gate.exam}&subject=${m.gate.subject}`);
       }
     }
   }

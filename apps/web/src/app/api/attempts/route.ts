@@ -52,7 +52,9 @@ export async function POST(req: Request) {
         return NextResponse.json({ error: "upgrade_required", requires: "premium" }, { status: 402 });
       }
     } else {
-      const ok = await hasEntitlement(session.user.id, bank.gate.exam, bank.gate.subject);
+      // Free-trial mocks (e.g. the first CE mock) may be submitted by any user.
+      const freeTrial = bank.gate.exam === "GATE" && bank.gate.freeTrial === true;
+      const ok = freeTrial || (await hasEntitlement(session.user.id, bank.gate.exam, bank.gate.subject));
       if (!ok) {
         return NextResponse.json({ error: "upgrade_required", requires: "entitlement", subject: bank.gate.subject }, { status: 402 });
       }

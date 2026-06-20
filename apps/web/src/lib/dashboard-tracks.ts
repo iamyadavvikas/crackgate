@@ -16,7 +16,7 @@ import { getExam, subjectLabel, type ExamTrack } from "@/data/catalog";
 import { cilLiveSetNos } from "@/data/cil-mock-bank";
 import { getCilDiscipline } from "@/data/cil";
 
-export type DashboardTrackKind = "mining" | "cil" | "soon";
+export type DashboardTrackKind = "mining" | "cil" | "civil" | "soon";
 
 export type DashboardTrack = {
   /** URL-safe key used in `?track=`, e.g. "gate-mining", "psu-electrical". */
@@ -38,6 +38,7 @@ export function trackKey(exam: string, subject: string): string {
 
 function kindFor(exam: string, subject: string): DashboardTrackKind {
   if (exam === "GATE" && subject === "mining") return "mining";
+  if (exam === "GATE" && subject === "civil") return "civil";
   if (exam === "PSU" && cilLiveSetNos(subject).size > 0) return "cil";
   return "soon";
 }
@@ -64,7 +65,7 @@ function toTrack(exam: string, subject: string): DashboardTrack {
 
 /** Every track that has shipped content (used for admin preview + the chooser). */
 export function allContentTracks(): DashboardTrack[] {
-  const tracks: DashboardTrack[] = [toTrack("GATE", "mining")];
+  const tracks: DashboardTrack[] = [toTrack("GATE", "mining"), toTrack("GATE", "civil")];
   const psu = getExam("PSU");
   for (const s of psu?.subjects ?? []) {
     if (cilLiveSetNos(s.slug).size > 0) tracks.push(toTrack("PSU", s.slug));

@@ -46,8 +46,9 @@ export const CATALOG: CatalogExam[] = [
     label: "GATE",
     subjects: [
       { slug: "mining", label: "Mining (MN)", live: true, price: GATE_PRICE },
-      { slug: "civil", label: "Civil (CE)", live: false },
+      { slug: "civil", label: "Civil (CE)", live: true, price: GATE_PRICE },
       { slug: "geology", label: "Geology (GG)", live: false },
+      { slug: "environment", label: "Environment (ES)", live: false },
     ],
   },
   {
