@@ -97,6 +97,7 @@ export async function MiningHeader() {
               <Link href="/login" className="btn btn-primary text-sm hidden sm:inline-flex">Get Started</Link>
             </>
           )}
+          <MobileNav authed={!!u} />
         </div>
       </nav>
 
