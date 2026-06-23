@@ -6,6 +6,7 @@ import { SiteHeader, MiningHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import { DevPlanSwitcher } from "@/components/dev-plan-switcher";
 import { HideOnMiningSite, ShowOnMiningSite } from "@/components/mobile-nav";
+import { ThemeScript } from "@/components/theme-script";
 import { auth } from "@/lib/auth";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
@@ -45,14 +46,10 @@ export default async function RootLayout({ children }: { children: React.ReactNo
   const session = await auth();
   const plan    = (session?.user as { plan?: "free" | "pro" | "premium" } | undefined)?.plan;
 
-  // Anti-FOUC theme script — runs before paint, reads localStorage / system
-  // preference, sets data-theme on <html>. Inline string so it's blocking.
-  const themeScript = `(function(){try{var s=localStorage.getItem('cg.theme');var m=window.matchMedia('(prefers-color-scheme: dark)').matches;var t=s||(m?'dark':'light');document.documentElement.setAttribute('data-theme',t);}catch(e){}})();`;
-
   return (
     <html lang="en" className={inter.variable} suppressHydrationWarning>
       <head>
-        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+        <ThemeScript />
       </head>
       <body>
         <a href="#main" className="skip-link">Skip to main content</a>

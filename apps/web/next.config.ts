@@ -31,9 +31,11 @@ const nextConfig: NextConfig = {
     // script in layout.tsx) without a nonce; the remaining directives still provide
     // meaningful defense-in-depth (no object/embed, locked base-uri & form-action,
     // clickjacking protection, and a tight external origin allowlist).
+    // In development, 'unsafe-eval' is added for React's debugging features.
+    const isDev = process.env.NODE_ENV === "development";
     const csp = [
       "default-src 'self'",
-      "script-src 'self' 'unsafe-inline' https://checkout.razorpay.com",
+      `script-src 'self' 'unsafe-inline' ${isDev ? "'unsafe-eval' " : ""}https://checkout.razorpay.com`,
       "style-src 'self' 'unsafe-inline'",
       "img-src 'self' data: https://lh3.googleusercontent.com https://ui-avatars.com https://*.razorpay.com",
       "font-src 'self' data:",

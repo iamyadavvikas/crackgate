@@ -17,13 +17,15 @@ type Props = {
   mocksCount: number;
   subjectsCount: number;
   civil: CivilStats;
+  geology: CivilStats;
+  environment: CivilStats;
 };
 
-const SLIDES = 3;
+const SLIDES = 5;
 const AUTOPLAY_MS = 3000;
 const EASE = [0.16, 1, 0.3, 1] as const;
 
-export function HeroCarousel({ practiceQs, mocksCount, subjectsCount, civil }: Props) {
+export function HeroCarousel({ practiceQs, mocksCount, subjectsCount, civil, geology, environment }: Props) {
   const [[active, direction], setState] = useState<[number, number]>([0, 0]);
   const [paused, setPaused] = useState(false);
   const reduceMotion = useReducedMotion();
@@ -61,7 +63,11 @@ export function HeroCarousel({ practiceQs, mocksCount, subjectsCount, civil }: P
       ? "GATE MN 2027 — Mining Engineering"
       : active === 1
         ? "GATE CE 2027 — Civil Engineering"
-        : "PSU recruitment — Coal India Limited";
+        : active === 2
+          ? "GATE GG 2027 — Geology & Geophysics"
+          : active === 3
+            ? "GATE ES 2027 — Environmental Science"
+            : "PSU recruitment — Coal India Limited";
 
   return (
     <section
@@ -91,6 +97,10 @@ export function HeroCarousel({ practiceQs, mocksCount, subjectsCount, civil }: P
               <GateWindow practiceQs={practiceQs} mocksCount={mocksCount} subjectsCount={subjectsCount} />
             ) : active === 1 ? (
               <CivilWindow civil={civil} />
+            ) : active === 2 ? (
+              <GeologyWindow stats={geology} />
+            ) : active === 3 ? (
+              <EnvironmentWindow stats={environment} />
             ) : (
               <PsuWindow />
             )}
@@ -170,7 +180,7 @@ export function GateWindow({
             high-fidelity, TCS iON-standard exam simulations.
           </p>
           <div className="mt-8">
-            <Link href="/login" className="cg-ripple inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-amber-400 to-yellow-500 px-6 py-3.5 text-base font-semibold text-slate-900 shadow-lg shadow-amber-500/20 transition hover:brightness-105">
+            <Link href="/mocks" className="cg-ripple inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-amber-400 to-yellow-500 px-6 py-3.5 text-base font-semibold text-slate-900 shadow-lg shadow-amber-500/20 transition hover:brightness-105">
               Launch Free Exam Portal <span aria-hidden>→</span>
             </Link>
           </div>
@@ -213,8 +223,8 @@ export function CivilWindow({ civil }: { civil: CivilStats }) {
             notch tougher than the real paper.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
-            <Link href="/gate/civil" className="cg-ripple inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-emerald-400 to-teal-500 px-6 py-3.5 text-base font-semibold text-slate-900 shadow-lg shadow-emerald-500/20 transition hover:brightness-105">
-              Explore GATE CE Track <span aria-hidden>→</span>
+            <Link href="/gate/civil/mocks" className="cg-ripple inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-emerald-400 to-teal-500 px-6 py-3.5 text-base font-semibold text-slate-900 shadow-lg shadow-emerald-500/20 transition hover:brightness-105">
+              Launch Free Exam Portal <span aria-hidden>→</span>
             </Link>
             <Link href="/gate/civil/learn" className="inline-flex items-center gap-2 rounded-lg border border-emerald-300/40 bg-emerald-300/5 px-6 py-3.5 text-base font-semibold text-emerald-200 transition hover:bg-emerald-300/15">
               Learn &amp; Solve

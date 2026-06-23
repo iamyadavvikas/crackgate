@@ -19,6 +19,22 @@ export default function HomePage() {
     subjectsCount: civil?.practice.length ?? 0,
   };
 
+  const geology = getGateSubject("geology");
+  const geologyStats = {
+    practiceQs: geology?.practice.reduce((s, sub) => s + sub.questions.length, 0) ?? 0,
+    mocksCount: geology?.mocks.length ?? 0,
+    learnCount: geology?.learnTopics.length ?? 0,
+    subjectsCount: geology?.practice.length ?? 0,
+  };
+
+  const environment = getGateSubject("environment");
+  const environmentStats = {
+    practiceQs: environment?.practice.reduce((s, sub) => s + sub.questions.length, 0) ?? 0,
+    mocksCount: environment?.mocks.length ?? 0,
+    learnCount: environment?.learnTopics.length ?? 0,
+    subjectsCount: environment?.practice.length ?? 0,
+  };
+
   return (
     <>
       {/* ---------- HERO (multi-window carousel) ---------- */}
@@ -27,6 +43,8 @@ export default function HomePage() {
         mocksCount={mocksCount}
         subjectsCount={subjectsCount}
         civil={civilStats}
+        geology={geologyStats}
+        environment={environmentStats}
       />
 
       {/* ---------- CIL recruitment ad ---------- */}
