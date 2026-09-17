@@ -18,7 +18,7 @@ alert_email = "you@example.com"
 # Optional overrides — defaults are fine for $32/mo target
 # aws_region                = "ap-south-1"
 # ec2_instance_type         = "t4g.small"
-# rds_instance_class        = "db.t4g.micro"
+# rds_instance_class        = "db.t4g.small"
 # rds_allocated_storage_gb  = 20
 # rds_backup_retention_days = 7
 # domain                    = "crackgate.in"
