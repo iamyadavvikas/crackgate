@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { signOut } from "next-auth/react";
 import { useRouter } from "next/navigation";
+import { PricingLink } from "@/components/pricing-link";
 
 export function UserMenu({
   name, email, image, plan, role,
@@ -18,7 +19,6 @@ export function UserMenu({
   const ref = useRef<HTMLDivElement>(null);
   const router = useRouter();
 
-  // Close on outside click + Escape
   useEffect(() => {
     function onDown(e: MouseEvent) { if (ref.current && !ref.current.contains(e.target as Node)) setOpen(false); }
     function onKey(e: KeyboardEvent) { if (e.key === "Escape") setOpen(false); }
@@ -30,7 +30,6 @@ export function UserMenu({
   const initials = name.split(" ").map(s => s[0]).slice(0, 2).join("").toUpperCase();
   const planClass = plan === "premium" ? "badge-premium" : plan === "pro" ? "badge-pro" : "badge-free";
   const planLabel = String(plan).toUpperCase();
-  const firstName = name.split(" ")[0];
 
   async function handleLogout() {
     setOpen(false);
@@ -60,7 +59,7 @@ export function UserMenu({
       </button>
 
       {open && (
-        <div role="menu" className="absolute right-0 mt-2 w-72 bg-surface border border-line rounded-xl shadow-pop overflow-hidden z-50">
+        <div role="menu" className="absolute right-0 mt-2 w-72 max-w-[calc(100vw-2rem)] bg-surface border border-line rounded-xl shadow-pop overflow-y-auto max-h-[80vh] z-50">
           {/* Profile card */}
           <div className="p-4 bg-gradient-to-br from-brand/5 to-accent/5 border-b border-line">
             <div className="flex items-center gap-3">
@@ -80,27 +79,20 @@ export function UserMenu({
               </div>
             </div>
             {plan === "free" && (
-              <Link
-                href="/pricing"
+              <PricingLink
                 onClick={() => setOpen(false)}
                 className="btn btn-accent w-full mt-3 text-xs justify-center"
               >
-                ⭐ Upgrade your plan
-              </Link>
+                Upgrade your plan
+              </PricingLink>
             )}
           </div>
 
-          {/* Primary nav */}
-          <Section>
-            <Item href="/dashboard" icon="📊" onClick={() => setOpen(false)}>Dashboard</Item>
-            <Item href="/practice"  icon="🎯" onClick={() => setOpen(false)}>Practice</Item>
-            <Item href="/mocks"     icon="📝" onClick={() => setOpen(false)}>Mock Tests</Item>
-          </Section>
-
           {/* Account */}
           <Section>
+            <Item href="/dashboard" icon="📊" onClick={() => setOpen(false)}>Dashboard</Item>
             <Item href="/settings"  icon="⚙️" onClick={() => setOpen(false)}>Account settings</Item>
-            <Item href="/pricing"   icon="💎" onClick={() => setOpen(false)}>Plans & billing</Item>
+            <PricingLink className="flex items-center gap-3 px-4 py-2.5 text-sm hover:bg-canvas text-ink" onClick={() => setOpen(false)}><span className="w-5 text-center">💎</span><span>Plans &amp; billing</span></PricingLink>
             <Item href="/contact"   icon="💬" onClick={() => setOpen(false)}>Help & support</Item>
             {role === "admin" && (
               <Item href="/admin" icon="🛡️" onClick={() => setOpen(false)}>Admin console</Item>

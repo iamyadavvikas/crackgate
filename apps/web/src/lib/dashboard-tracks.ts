@@ -7,16 +7,21 @@
 //
 // Only tracks that have shipped content render a rich dashboard:
 //  - "mining" → GATE Mining (full practice + mocks + syllabus)
+//  - "gate"   → any other live GATE subject (civil, geology, environment) —
+//               mock series + section analytics via the shared subject view
 //  - "cil"    → a PSU · CIL discipline (mock series + section analytics)
 // Any other owned entitlement is surfaced as a "soon" track so a purchase is
 // never hidden, but its body shows a "content on the way" placeholder.
 
 import type { UserEntitlement } from "@/lib/entitlements";
-import { getExam, subjectLabel, type ExamTrack } from "@/data/catalog";
+import { getExam, subjectLabel, CATALOG, type ExamTrack } from "@/data/catalog";
 import { cilLiveSetNos } from "@/data/cil-mock-bank";
+import { ongcLiveSetNos } from "@/data/ongc-mock-bank";
 import { getCilDiscipline } from "@/data/cil";
+import { getOngcDiscipline } from "@/data/ongc";
+import { getGateSubject, liveGateSubjects } from "@/data/gate/registry";
 
-export type DashboardTrackKind = "mining" | "cil" | "civil" | "soon";
+export type DashboardTrackKind = "mining" | "cil" | "ongc" | "gate" | "diploma" | "soon";
 
 export type DashboardTrack = {
   /** URL-safe key used in `?track=`, e.g. "gate-mining", "psu-electrical". */
@@ -37,16 +42,24 @@ export function trackKey(exam: string, subject: string): string {
 }
 
 function kindFor(exam: string, subject: string): DashboardTrackKind {
-  if (exam === "GATE" && subject === "mining") return "mining";
-  if (exam === "GATE" && subject === "civil") return "civil";
+  if (exam === "GATE") {
+    if (subject === "mining") return "mining";
+    if (getGateSubject(subject)) return "gate";
+    return "soon";
+  }
   if (exam === "PSU" && cilLiveSetNos(subject).size > 0) return "cil";
+  if (exam === "PSU" && ongcLiveSetNos(subject).size > 0) return "ongc";
+  if (exam === "DIPLOMA") return "diploma";
   return "soon";
 }
 
 function shortLabelFor(exam: string, subject: string): string {
   if (exam === "PSU") {
-    const disc = getCilDiscipline(subject)?.discipline ?? subject;
-    return `CIL · ${disc}`;
+    const cil = getCilDiscipline(subject);
+    if (cil) return `CIL · ${cil.discipline}`;
+    const ongc = getOngcDiscipline(subject);
+    if (ongc) return `ONGC · ${ongc.discipline}`;
+    return `PSU · ${subject}`;
   }
   const s = getExam(exam)?.subjects.find((x) => x.slug === subject);
   return s?.label ?? subject;
@@ -65,10 +78,12 @@ function toTrack(exam: string, subject: string): DashboardTrack {
 
 /** Every track that has shipped content (used for admin preview + the chooser). */
 export function allContentTracks(): DashboardTrack[] {
-  const tracks: DashboardTrack[] = [toTrack("GATE", "mining"), toTrack("GATE", "civil")];
-  const psu = getExam("PSU");
-  for (const s of psu?.subjects ?? []) {
-    if (cilLiveSetNos(s.slug).size > 0) tracks.push(toTrack("PSU", s.slug));
+  const tracks: DashboardTrack[] = liveGateSubjects().map((slug) => toTrack("GATE", slug));
+  for (const e of CATALOG.filter((x) => x.exam === "PSU")) {
+    for (const s of e.subjects) {
+      if (cilLiveSetNos(s.slug).size > 0 || ongcLiveSetNos(s.slug).size > 0)
+        tracks.push(toTrack("PSU", s.slug));
+    }
   }
   return tracks;
 }

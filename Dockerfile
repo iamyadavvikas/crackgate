@@ -28,9 +28,6 @@ RUN apk add --no-cache libc6-compat openssl
 WORKDIR /app
 
 COPY --from=deps /app/node_modules ./node_modules
-# Some npm deps get installed in workspace-local node_modules instead of root
-# (e.g. posthog-node). Copy those too so the build stage can resolve them.
-COPY --from=deps /app/apps/web/node_modules ./apps/web/node_modules
 COPY . .
 
 # Generate Prisma client (binaryTargets in schema.prisma include linux-musl)
@@ -105,4 +102,4 @@ HEALTHCHECK --interval=30s --timeout=5s --start-period=20s --retries=3 \
   CMD curl -fsS http://127.0.0.1:3000/api/healthz || exit 1
 
 ENTRYPOINT ["/sbin/tini", "--"]
-CMD ["sh", "-c", "node ./node_modules/prisma/build/index.js migrate deploy --schema=./packages/database/prisma/schema.prisma && node apps/web/server.js"]
+CMD ["node", "apps/web/server.js"]

@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import Script from "next/script";
+import { Suspense } from "react";
 import "./globals.css";
 import "katex/dist/katex.min.css";
 import { SiteHeader, MiningHeader } from "@/components/site-header";
@@ -12,6 +13,10 @@ import { PostHogProvider } from "@/components/posthog-dynamic";
 import { PageViewTracker } from "@/components/page-view-tracker";
 import { GlobalClickTracker } from "@/components/global-click-tracker";
 import { GlobalSectionTracker } from "@/components/global-section-tracker";
+import { ImpersonationProvider } from "@/components/impersonation-context";
+import ImpersonationBanner from "@/components/impersonation-banner";
+import { IndependenceDayBanner } from "@/components/independence-day-banner";
+import { INDEPENDENCE_DAY_ACTIVE } from "@/lib/celebration";
 import { auth } from "@/lib/auth";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
@@ -22,7 +27,7 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "sw
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#4F46E5",
+  themeColor: INDEPENDENCE_DAY_ACTIVE ? "#FF9933" : "#4F46E5",
 };
 
 export const metadata: Metadata = {
@@ -56,6 +61,11 @@ export const metadata: Metadata = {
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   const session = await auth();
   const plan    = (session?.user as { plan?: "free" | "pro" | "premium" } | undefined)?.plan;
+  const impersonator = session?.impersonator;
+  // No tracking (PostHog / page-view / click) while impersonating — those are
+  // mutations the middleware blocks anyway, and the admin shouldn't pollute
+  // the target user's analytics.
+  const tracking = !impersonator;
 
   const gscContent = process.env.NEXT_PUBLIC_GSC_VERIFICATION;
   const gaId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
@@ -64,7 +74,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
     <html lang="en" className={inter.variable} suppressHydrationWarning>
       <head>
         <link rel="manifest" href="/manifest.json" />
-        <meta name="theme-color" content="#4F46E5" />
+        <meta name="theme-color" content={INDEPENDENCE_DAY_ACTIVE ? "#FF9933" : "#4F46E5"} />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <ThemeScript />
         {gscContent && <meta name="google-site-verification" content={gscContent} />}
@@ -112,17 +122,32 @@ export default async function RootLayout({ children }: { children: React.ReactNo
           }}
         />
       </head>
-      <body>
+      <body className={INDEPENDENCE_DAY_ACTIVE ? "indyday" : undefined}>
+        {INDEPENDENCE_DAY_ACTIVE && (
+          <>
+            <div className="indy-edge-top" aria-hidden />
+            <div className="indy-edge-bottom" aria-hidden />
+          </>
+        )}
         <a href="#main" className="skip-link">Skip to main content</a>
-        <PostHogProvider user={session?.user ? { id: session.user.id, email: session.user.email ?? undefined, name: session.user.name ?? undefined } : null}>
-          <PageViewTracker />
-          <GlobalClickTracker />
-          <GlobalSectionTracker />
-          <HideOnMiningSite><SiteHeader /></HideOnMiningSite>
-          <ShowOnMiningSite><MiningHeader /></ShowOnMiningSite>
+        {INDEPENDENCE_DAY_ACTIVE && <IndependenceDayBanner />}
+        {impersonator && (
+          <ImpersonationBanner
+            targetEmail={session.user.email ?? ""}
+            adminEmail={impersonator.email}
+          />
+        )}
+        <ImpersonationProvider active={!!impersonator}>
+        <PostHogProvider user={tracking && session?.user ? { id: session.user.id, email: session.user.email ?? undefined, name: session.user.name ?? undefined } : null}>
+          {tracking && <PageViewTracker />}
+          {tracking && <GlobalClickTracker />}
+          {tracking && <GlobalSectionTracker />}
+          <Suspense fallback={null}><HideOnMiningSite><SiteHeader /></HideOnMiningSite></Suspense>
+          <Suspense fallback={null}><ShowOnMiningSite><MiningHeader /></ShowOnMiningSite></Suspense>
           <main id="main">{children}</main>
           <SiteFooter />
         </PostHogProvider>
+        </ImpersonationProvider>
         {session?.user && <DevPlanSwitcher currentPlan={plan} />}
       </body>
     </html>

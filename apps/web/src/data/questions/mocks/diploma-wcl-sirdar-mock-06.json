@@ -1,1830 +1,1933 @@
 {
   "id": "diploma-wcl-sirdar-mock-06",
-  "title": "WCL Mining Sirdar — Mock 06",
-  "tier": "pro",
+  "title": "WCL Mining Sirdar Mock Test 06",
+  "subtitle": "Western Coalfields Limited — Mining Sirdar Recruitment",
   "duration": 120,
-  "pattern": "WCL Mining Sirdar CBT (100 Q · 100 marks · 120 min · no −ve)",
   "totalMarks": 100,
+  "passingMarks": 50,
+  "instructions": [
+    "Total Questions: 100",
+    "Total Marks: 100",
+    "Duration: 120 minutes",
+    "No negative marking",
+    "Each question carries 1 mark",
+    "Section B: 80 Technical (Q1-Q80)",
+    "Section A: 20 General Awareness (Q81-Q100)",
+    "Select the best answer for each question"
+  ],
   "sections": [
     {
-      "name": "General Awareness & Aptitude",
-      "count": 20,
-      "marks": 20
+      "name": "Section A — General Awareness",
+      "questions": [
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100
+      ]
     },
     {
-      "name": "Technical (Mining)",
-      "count": 80,
-      "marks": 80
+      "name": "Section B — Technical",
+      "questions": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80
+      ]
     }
   ],
-  "negativeMarking": {
-    "mcq1": 0,
-    "mcq2": 0,
-    "nat": 0,
-    "msq": 0
-  },
-  "seed": 3332608738,
-  "locked": true,
   "questions": [
     {
       "id": 1,
-      "subject": "General Awareness & Aptitude",
-      "topic": "Reasoning — Number Series",
-      "section": "General Awareness & Aptitude",
+      "subject": "Technical (Mining)",
+      "topic": "Method of Work",
+      "section": "Section B — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "medium",
-      "stem": "Find the next number: 2, 6, 12, 20, ?",
+      "difficulty": "hard",
+      "stem": "The 'partial extraction' method leaves",
       "options": [
-        "28",
-        "30",
-        "24",
-        "32"
+        "Some pillars for permanent support",
+        "No pillars at all",
+        "Pillars of any size",
+        "All the coal extracted"
       ],
-      "answer": 1,
-      "solution": "**Concept.** This question tests knowledge of Reasoning — Number Series.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** 30"
+      "answer": 0,
+      "solution": "Partial extraction leaves some pillars for long-term support."
     },
     {
       "id": 2,
-      "subject": "General Awareness & Aptitude",
-      "topic": "General Awareness — Science",
-      "section": "General Awareness & Aptitude",
+      "subject": "Technical (Mining)",
+      "topic": "Mine Ventilation & Mine Gases",
+      "section": "Section B — Technical",
       "type": "MCQ",
       "marks": 1,
       "difficulty": "medium",
-      "stem": "Which planet is known as the Red Planet?",
+      "stem": "A 'gas monitoring system' in a mine must be",
       "options": [
-        "Venus",
-        "Mars",
-        "Jupiter",
-        "Saturn"
+        "Installed only on the surface",
+        "Periodic and not continuous in operation",
+        "Continuous and capable of detecting hazardous gas concentrations",
+        "Operated manually with recorded readings"
       ],
-      "answer": 1,
-      "solution": "**Concept.** This question tests knowledge of General Awareness — Science.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** Mars"
+      "answer": 2,
+      "solution": "Continuous and capable of detecting hazardous concentrations."
     },
     {
       "id": 3,
-      "subject": "General Awareness & Aptitude",
-      "topic": "General Awareness — WCL",
-      "section": "General Awareness & Aptitude",
+      "subject": "Technical (Mining)",
+      "topic": "Legal Provisions",
+      "section": "Section B — Technical",
       "type": "MCQ",
       "marks": 1,
       "difficulty": "hard",
-      "stem": "WCL was granted Miniratna status in which year?",
+      "stem": "The 'first-aid' requirements in mines are prescribed under",
       "options": [
-        "2005",
-        "2006",
-        "2007",
-        "2008"
+        "The Companies Act 2013",
+        "Mines Act 1952 and CMR 2017",
+        "The Factories Act only",
+        "The Payment of Wages Act"
       ],
-      "answer": 2,
-      "solution": "**Concept.** This question tests knowledge of General Awareness — WCL.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** 2007"
+      "answer": 1,
+      "solution": "Both Mines Act 1952 and CMR 2017."
     },
     {
       "id": 4,
-      "subject": "General Awareness & Aptitude",
-      "topic": "General Awareness — Mining",
-      "section": "General Awareness & Aptitude",
+      "subject": "Technical (Mining)",
+      "topic": "Method of Work",
+      "section": "Section B — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "easy",
-      "stem": "Coal is primarily composed of",
+      "difficulty": "hard",
+      "stem": "The 'barrier pillar' is left to",
       "options": [
-        "Carbon",
-        "Sulphur",
-        "Iron",
-        "Silicon"
+        "Separate different panels or protect main workings",
+        "Increase production",
+        "Store equipment",
+        "Provide lighting"
       ],
       "answer": 0,
-      "solution": "**Concept.** This question tests knowledge of General Awareness — Mining.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** Carbon"
+      "solution": "Barrier pillars separate panels and protect main workings."
     },
     {
       "id": 5,
-      "subject": "General Awareness & Aptitude",
-      "topic": "General Awareness — WCL",
-      "section": "General Awareness & Aptitude",
+      "subject": "Technical (Mining)",
+      "topic": "Coal Dust",
+      "section": "Section B — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "hard",
-      "stem": "Continuous Miners in WCL are deployed at which mines?",
+      "difficulty": "medium",
+      "stem": "The ventilation system helps control coal dust by",
       "options": [
-        "Gondegao OCP",
-        "Tawa UG",
-        "Sasti OCP",
-        "Penganga OCP"
+        "Adding dust to the air currents",
+        "Regulate air temperature only",
+        "Increasing dust",
+        "Diluting and removing airborne dust"
       ],
-      "answer": 1,
-      "solution": "**Concept.** This question tests knowledge of General Awareness — WCL.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** Tawa UG"
+      "answer": 3,
+      "solution": "Dilutes and removes airborne dust."
     },
     {
       "id": 6,
-      "subject": "General Awareness & Aptitude",
-      "topic": "Quantitative — Simple Interest",
-      "section": "General Awareness & Aptitude",
+      "subject": "Technical (Mining)",
+      "topic": "Mine Fires",
+      "section": "Section B — Technical",
       "type": "MCQ",
       "marks": 1,
       "difficulty": "easy",
-      "stem": "Simple interest on Rs 500 at 5% for 2 years is:",
+      "stem": "The 'fire risk assessment' for mines evaluates",
       "options": [
-        "Rs 40",
-        "Rs 50",
-        "Rs 60",
-        "Rs 70"
+        "Only the type of roof",
+        "Only the depth of the mine",
+        "No assessment needed",
+        "Ignition sources, fuel, and control measures"
       ],
-      "answer": 1,
-      "solution": "**Concept.** This question tests knowledge of Quantitative — Simple Interest.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** Rs 50"
+      "answer": 3,
+      "solution": "Fire risk assessment evaluates ignition sources, fuel, controls."
     },
     {
       "id": 7,
-      "subject": "General Awareness & Aptitude",
-      "topic": "General English — Grammar",
-      "section": "General Awareness & Aptitude",
+      "subject": "Technical (Mining)",
+      "topic": "Geology",
+      "section": "Section B — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "hard",
-      "stem": "Fill in the blank: He ___ to school every day.",
+      "difficulty": "easy",
+      "stem": "The stages of coal formation in order are",
       "options": [
-        "go",
-        "goes",
-        "going",
-        "gone"
+        "Peat → Lignite → Bituminous → Anthracite",
+        "Lignite → Peat → Anthracite → Bituminous",
+        "Bituminous → Anthracite → Peat → Lignite",
+        "Anthracite → Bituminous → Lignite → Peat"
       ],
-      "answer": 1,
-      "solution": "**Concept.** This question tests knowledge of General English — Grammar.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** goes"
+      "answer": 0,
+      "solution": "Coal stages progress: Peat → Lignite → Bituminous → Anthracite."
     },
     {
       "id": 8,
-      "subject": "General Awareness & Aptitude",
-      "topic": "Reasoning — Blood Relations",
-      "section": "General Awareness & Aptitude",
+      "subject": "Technical (Mining)",
+      "topic": "Winding in Shaft",
+      "section": "Section B — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "easy",
-      "stem": "If '+' means '×', '×' means '−', '−' means '÷', '÷' means '+', then 8 + 4 − 2 ÷ 2 = ?",
+      "difficulty": "hard",
+      "stem": "The winding rope must be tested for",
       "options": [
-        "32",
-        "16",
-        "24",
-        "12"
+        "Tensile strength and endurance",
+        "The colour of the rope only",
+        "Only the length",
+        "Only the diameter"
       ],
-      "answer": 1,
-      "solution": "**Concept.** This question tests knowledge of Reasoning — Blood Relations.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** 16"
+      "answer": 0,
+      "solution": "Both tensile strength and endurance testing is required."
     },
     {
       "id": 9,
-      "subject": "General Awareness & Aptitude",
-      "topic": "General Awareness — WCL",
-      "section": "General Awareness & Aptitude",
+      "subject": "Technical (Mining)",
+      "topic": "Coal Dust",
+      "section": "Section B — Technical",
       "type": "MCQ",
       "marks": 1,
       "difficulty": "hard",
-      "stem": "WCL stands for",
+      "stem": "A coal dust explosion is more likely in roadways that are",
       "options": [
-        "Western Coalfields Limited",
-        "West Coal Limited",
-        "Western Coal Limited",
-        "West Coalfields Ltd"
+        "Well ventilated",
+        "Newly constructed",
+        "Wet from water spraying systems",
+        "Dry and have accumulated coal dust"
       ],
-      "answer": 0,
-      "solution": "**Concept.** This question tests knowledge of General Awareness — WCL.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** Western Coalfields Limited"
+      "answer": 3,
+      "solution": "Dry roadways with accumulated coal dust are more likely."
     },
     {
       "id": 10,
-      "subject": "General Awareness & Aptitude",
-      "topic": "General Awareness — WCL",
-      "section": "General Awareness & Aptitude",
+      "subject": "Technical (Mining)",
+      "topic": "Stowing",
+      "section": "Section B — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "easy",
-      "stem": "WCL Mission 2.0 was launched in which year?",
+      "difficulty": "hard",
+      "stem": "The 'overflow water' from stowing must be",
       "options": [
-        "2016",
-        "2017",
-        "2018",
-        "2019"
+        "Collected and either reused or discharged after treatment",
+        "Left underground",
+        "Allowed to flood the workings",
+        "Used for cooling the fans"
       ],
-      "answer": 2,
-      "solution": "**Concept.** This question tests knowledge of General Awareness — WCL.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** 2018"
+      "answer": 0,
+      "solution": "Collected and either reused or discharged after treatment."
     },
     {
       "id": 11,
-      "subject": "General Awareness & Aptitude",
-      "topic": "Quantitative — Ratio",
-      "section": "General Awareness & Aptitude",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "medium",
-      "stem": "If the ratio of A to B is 3:5 and B = 20, then A =",
-      "options": [
-        "10",
-        "12",
-        "15",
-        "18"
-      ],
-      "answer": 1,
-      "solution": "**Concept.** This question tests knowledge of Quantitative — Ratio.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** 12"
-    },
-    {
-      "id": 12,
-      "subject": "General Awareness & Aptitude",
-      "topic": "Quantitative — Percentage",
-      "section": "General Awareness & Aptitude",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "medium",
-      "stem": "What is 15% of 200?",
-      "options": [
-        "25",
-        "30",
-        "35",
-        "40"
-      ],
-      "answer": 1,
-      "solution": "**Concept.** This question tests knowledge of Quantitative — Percentage.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** 30"
-    },
-    {
-      "id": 13,
-      "subject": "General Awareness & Aptitude",
-      "topic": "General Awareness — Current",
-      "section": "General Awareness & Aptitude",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "hard",
-      "stem": "The coal minister of India (2024) is",
-      "options": [
-        "Piyush Goyal",
-        "Nitin Gadkari",
-        "Pralhad Joshi",
-        "G. Kishan Reddy"
-      ],
-      "answer": 2,
-      "solution": "**Concept.** This question tests knowledge of General Awareness — Current.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** Pralhad Joshi"
-    },
-    {
-      "id": 14,
-      "subject": "General Awareness & Aptitude",
-      "topic": "General English — Antonyms",
-      "section": "General Awareness & Aptitude",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "medium",
-      "stem": "Choose the antonym of 'MAJOR':",
-      "options": [
-        "Important",
-        "Minor",
-        "Significant",
-        "Critical"
-      ],
-      "answer": 1,
-      "solution": "**Concept.** This question tests knowledge of General English — Antonyms.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** Minor"
-    },
-    {
-      "id": 15,
-      "subject": "General Awareness & Aptitude",
-      "topic": "General English — Synonyms",
-      "section": "General Awareness & Aptitude",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "medium",
-      "stem": "Choose the synonym of 'ABUNDANT':",
-      "options": [
-        "Scarce",
-        "Plentiful",
-        "Rare",
-        "Limited"
-      ],
-      "answer": 1,
-      "solution": "**Concept.** This question tests knowledge of General English — Synonyms.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** Plentiful"
-    },
-    {
-      "id": 16,
-      "subject": "General Awareness & Aptitude",
-      "topic": "General English — Spelling",
-      "section": "General Awareness & Aptitude",
+      "subject": "Technical (Mining)",
+      "topic": "Drifting",
+      "section": "Section B — Technical",
       "type": "MCQ",
       "marks": 1,
       "difficulty": "easy",
-      "stem": "Choose the correctly spelt word:",
+      "stem": "The gradient of a drift must be such that",
       "options": [
-        "Accomodation",
-        "Accommodation",
-        "Acomodation",
-        "Acommodation"
+        "It is absolutely level",
+        "Water can be drained and transport is possible",
+        "It is very steep",
+        "It is independent of the seam gradient"
       ],
       "answer": 1,
-      "solution": "**Concept.** This question tests knowledge of General English — Spelling.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** Accommodation"
+      "solution": "Water can be drained and transport is possible."
+    },
+    {
+      "id": 12,
+      "subject": "Technical (Mining)",
+      "topic": "Method of Work",
+      "section": "Section B — Technical",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "The 'stowing ratio' refers to",
+      "options": [
+        "Ratio of time taken for stowing",
+        "Ratio of cost of stowing material",
+        "Ratio of weight of stowing material",
+        "Volume of stowing material to volume of coal extracted"
+      ],
+      "answer": 3,
+      "solution": "Stowing ratio is volume of material to volume of coal extracted."
+    },
+    {
+      "id": 13,
+      "subject": "Technical (Mining)",
+      "topic": "Drifting",
+      "section": "Section B — Technical",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "The 'drill pattern' for drifting depends on",
+      "options": [
+        "The season of the year",
+        "The number of workers",
+        "Rock conditions, drift dimensions, and explosive type",
+        "The brand of the drilling machine"
+      ],
+      "answer": 2,
+      "solution": "Rock conditions, drift dimensions, and explosive type."
+    },
+    {
+      "id": 14,
+      "subject": "Technical (Mining)",
+      "topic": "Duties of Sirdar",
+      "section": "Section B — Technical",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "hard",
+      "stem": "The sirdar's primary responsibility during a blast is to",
+      "options": [
+        "Ensure safety of all persons in the vicinity",
+        "Open the ventilation doors",
+        "Light the fuse",
+        "Count the shots"
+      ],
+      "answer": 0,
+      "solution": "Safety of all persons in the vicinity is the primary responsibility."
+    },
+    {
+      "id": 15,
+      "subject": "Technical (Mining)",
+      "topic": "Winding in Shaft",
+      "section": "Section B — Technical",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "hard",
+      "stem": "A winding rope must be replaced if its diameter decreases by more than",
+      "options": [
+        "When the diameter decreases by 10 percent",
+        "When the diameter increases by 5 percent",
+        "When the diameter decreases by 1 percent",
+        "The prescribed percentage from the original diameter"
+      ],
+      "answer": 3,
+      "solution": "More than the prescribed percentage."
+    },
+    {
+      "id": 16,
+      "subject": "Technical (Mining)",
+      "topic": "Stowing",
+      "section": "Section B — Technical",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "The 'stowing pipeline' must be checked for",
+      "options": [
+        "Wear, blockages, and leakage at regular intervals",
+        "Only the paint on the pipeline",
+        "Only the length of the pipeline",
+        "The temperature of the slurry"
+      ],
+      "answer": 0,
+      "solution": "Wear, blockages, and leakage regularly."
     },
     {
       "id": 17,
-      "subject": "General Awareness & Aptitude",
-      "topic": "General Awareness — WCL",
-      "section": "General Awareness & Aptitude",
+      "subject": "Technical (Mining)",
+      "topic": "Mine Surveying",
+      "section": "Section B — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "medium",
-      "stem": "How many areas are there in WCL?",
+      "difficulty": "hard",
+      "stem": "The 'surface survey' for mining establishes",
       "options": [
-        "7",
-        "8",
-        "9",
-        "10"
+        "Used only for horizontal lines",
+        "Processing of limestone",
+        "Control points and reference framework for mine development",
+        "Extraction of iron ore"
       ],
-      "answer": 3,
-      "solution": "**Concept.** This question tests knowledge of General Awareness — WCL.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** 10"
+      "answer": 2,
+      "solution": "Surface surveys establish control for mine development."
     },
     {
       "id": 18,
-      "subject": "General Awareness & Aptitude",
-      "topic": "Quantitative — Compound Interest",
-      "section": "General Awareness & Aptitude",
+      "subject": "Technical (Mining)",
+      "topic": "Mine Ventilation & Mine Gases",
+      "section": "Section B — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "hard",
-      "stem": "The compound interest on Rs 1000 at 10% for 2 years is:",
+      "difficulty": "easy",
+      "stem": "The 'split system' of ventilation involves",
       "options": [
-        "Rs 200",
-        "Rs 210",
-        "Rs 220",
-        "Rs 250"
+        "Regulate air temperature only",
+        "Remove blasting fumes after firing",
+        "Using only a single continuous airway",
+        "Dividing intake air into multiple splits to serve different sections"
       ],
-      "answer": 1,
-      "solution": "**Concept.** This question tests knowledge of Quantitative — Compound Interest.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** Rs 210"
+      "answer": 3,
+      "solution": "Dividing intake air into multiple splits."
     },
     {
       "id": 19,
-      "subject": "General Awareness & Aptitude",
-      "topic": "Quantitative — Simple Interest",
-      "section": "General Awareness & Aptitude",
+      "subject": "Technical (Mining)",
+      "topic": "Mine Rescue",
+      "section": "Section B — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "medium",
-      "stem": "A sum of Rs 1000 amounts to Rs 1100 in 2 years at simple interest. What is the rate?",
+      "difficulty": "easy",
+      "stem": "The 'safety helmet' of a mine rescue team member must have",
       "options": [
-        "4%",
-        "5%",
-        "6%",
-        "8%"
+        "No special feature",
+        "Enhance surveying accuracy",
+        "Reduce equipment maintenance",
+        "A cap lamp and communication device"
       ],
-      "answer": 1,
-      "solution": "**Concept.** This question tests knowledge of Quantitative — Simple Interest.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** 5%"
+      "answer": 3,
+      "solution": "A cap lamp and communication device."
     },
     {
       "id": 20,
-      "subject": "General Awareness & Aptitude",
-      "topic": "General English — Idioms",
-      "section": "General Awareness & Aptitude",
+      "subject": "Technical (Mining)",
+      "topic": "Mine Fires",
+      "section": "Section B — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "hard",
-      "stem": "Choose the correct meaning of the idiom 'to burn the midnight oil':",
+      "difficulty": "easy",
+      "stem": "The 'fire-resistant doors' in a mine must be",
       "options": [
-        "To set fire to oil",
-        "To work late at night",
-        "To waste money",
-        "To cook at night"
+        "Installed at strategic locations to control ventilation and fire spread",
+        "Installed only at the surface",
+        "Decorated with company logos",
+        "Fitted only at the surface entrance of the mine"
       ],
-      "answer": 1,
-      "solution": "**Concept.** This question tests knowledge of General English — Idioms.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** To work late at night"
+      "answer": 0,
+      "solution": "Installed at strategic locations."
     },
     {
       "id": 21,
       "subject": "Technical (Mining)",
-      "topic": "Face Machineries",
-      "section": "Technical (Mining)",
+      "topic": "Mine Rescue",
+      "section": "Section B — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "hard",
-      "stem": "SDL stands for",
+      "difficulty": "medium",
+      "stem": "The 'self-contained breathing apparatus' (SCBA) for mine rescue provides",
       "options": [
-        "Side Discharge Loader",
-        "Self Discharging Loader",
-        "Side Dump Loader",
-        "Surface Discharge Loader"
+        "Air from the mine workings",
+        "Compressed air from the surface",
+        "No air supply",
+        "Fresh air supply independent of mine atmosphere"
       ],
-      "answer": 0,
-      "solution": "**Concept.** This question tests knowledge of Face Machineries.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** Side Discharge Loader"
+      "answer": 3,
+      "solution": "SCBA provides fresh air independent of mine atmosphere."
     },
     {
       "id": 22,
       "subject": "Technical (Mining)",
-      "topic": "Mine Inundation",
-      "section": "Technical (Mining)",
+      "topic": "Report Writing",
+      "section": "Section B — Technical",
       "type": "MCQ",
       "marks": 1,
       "difficulty": "medium",
-      "stem": "Danger of inundation is highest when",
+      "stem": "The 'blast report' should contain",
       "options": [
-        "Working near old workings",
-        "Working near surface",
-        "Working in thin seam",
-        "None"
+        "Used for roof bolting only",
+        "Applied after stemming only",
+        "Type/quantity of explosive used, number of shots fired, and any misfires",
+        "Used for stemming operations"
       ],
-      "answer": 0,
-      "solution": "**Concept.** This question tests knowledge of Mine Inundation.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** Working near old workings"
+      "answer": 2,
+      "solution": "Type/quantity of explosive used, number of shots fired, and any misfires."
     },
     {
       "id": 23,
       "subject": "Technical (Mining)",
-      "topic": "Opencast Working",
-      "section": "Technical (Mining)",
+      "topic": "Report Writing",
+      "section": "Section B — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "easy",
-      "stem": "What is the size of berm?",
+      "difficulty": "hard",
+      "stem": "The '5W1H' in report writing stands for",
       "options": [
-        "1.5 m",
-        "1.2 m",
-        "1.0 m",
-        "0.5 m"
+        "Word, Writing, Waiting, Watching, Winding, and Washing",
+        "Work, Worker, Wage, Welfare, Wellbeing, and Health",
+        "Who, What, When, Where, Why, and How",
+        "Wage, Water, Wind, Wall, Wire, and Waste"
       ],
       "answer": 2,
-      "solution": "**Concept.** This question tests knowledge of Opencast Working.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** 1.0 m"
+      "solution": "Who, What, When, Where, Why, and How."
     },
     {
       "id": 24,
       "subject": "Technical (Mining)",
-      "topic": "Stowing",
-      "section": "Technical (Mining)",
+      "topic": "Mine Rescue",
+      "section": "Section B — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "easy",
-      "stem": "Stowing is done to",
+      "difficulty": "medium",
+      "stem": "The 'communication system' for mine rescue must include",
       "options": [
-        "Prevent subsidence",
-        "Fill goaf",
-        "Support roof",
-        "All of the above"
+        "Hand signals between the team members",
+        "Loud shouts from the rescue base",
+        "Visual signalling through the galleries",
+        "Two-way communication between rescue team and surface"
       ],
       "answer": 3,
-      "solution": "**Concept.** This question tests knowledge of Stowing.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** All of the above"
+      "solution": "Two-way communication between team and surface."
     },
     {
       "id": 25,
       "subject": "Technical (Mining)",
-      "topic": "Bord & Pillar",
-      "section": "Technical (Mining)",
+      "topic": "Support",
+      "section": "Section B — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "medium",
-      "stem": "Stowing is done in depillaring to",
+      "difficulty": "easy",
+      "stem": "The 'support density' in underground mines is expressed as",
       "options": [
-        "Prevent subsidence",
-        "Support roof",
-        "Both A & B",
-        "None"
+        "Prevent water ingress",
+        "Load capacity per unit area (tonnes/m²)",
+        "Support conveyor belts",
+        "Number of supports"
       ],
-      "answer": 2,
-      "solution": "**Concept.** This question tests knowledge of Bord & Pillar.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** Both A & B"
+      "answer": 1,
+      "solution": "Support density is expressed as load capacity per unit area."
     },
     {
       "id": 26,
       "subject": "Technical (Mining)",
-      "topic": "Opencast Working",
-      "section": "Technical (Mining)",
+      "topic": "Geology",
+      "section": "Section B — Technical",
       "type": "MCQ",
       "marks": 1,
       "difficulty": "hard",
-      "stem": "Dragline is used for",
+      "stem": "The 'humic coal' is formed from",
       "options": [
-        "Overburden removal",
-        "Coal extraction",
-        "Hauling",
-        "Drilling"
+        "Mining of bauxite",
+        "Higher plant material",
+        "Quarrying of granite",
+        "Marine animal remains"
       ],
-      "answer": 0,
-      "solution": "**Concept.** This question tests knowledge of Opencast Working.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** Overburden removal"
+      "answer": 1,
+      "solution": "Humic coal forms from higher plant material."
     },
     {
       "id": 27,
       "subject": "Technical (Mining)",
-      "topic": "Opencast Working",
-      "section": "Technical (Mining)",
+      "topic": "Support",
+      "section": "Section B — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "medium",
-      "stem": "Shovel-dumper combination is used for",
+      "difficulty": "easy",
+      "stem": "The 'rock bolt' is different from 'roof bolt' because",
       "options": [
-        "Overburden removal",
-        "Coal winning",
-        "Both A & B",
-        "None"
+        "Rock bolt is larger",
+        "Rock bolt is smaller",
+        "They are used at different depths",
+        "Rock bolt is used in hard rock, roof bolt in coal mines"
       ],
-      "answer": 0,
-      "solution": "**Concept.** This question tests knowledge of Opencast Working.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** Overburden removal"
+      "answer": 3,
+      "solution": "Rock bolts are for hard rock; roof bolts are specifically for coal mines."
     },
     {
       "id": 28,
       "subject": "Technical (Mining)",
-      "topic": "Mine Rescue",
-      "section": "Technical (Mining)",
+      "topic": "Mine Ventilation & Mine Gases",
+      "section": "Section B — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "hard",
-      "stem": "Rescue operations in mines are supervised by",
+      "difficulty": "easy",
+      "stem": "A 'main fan' in mine ventilation is used to",
       "options": [
-        "Manager",
-        "Chief Inspector",
-        "Mine Rescue Service",
-        "All"
+        "Provide the primary airflow through the mine",
+        "Regulate air temperature only",
+        "Remove water from the workings",
+        "Heat the mine in winter"
       ],
-      "answer": 2,
-      "solution": "**Concept.** This question tests knowledge of Mine Rescue.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** Mine Rescue Service"
+      "answer": 0,
+      "solution": "Provides the primary airflow through the mine."
     },
     {
       "id": 29,
       "subject": "Technical (Mining)",
-      "topic": "Opencast Working",
-      "section": "Technical (Mining)",
+      "topic": "Winding in Shaft",
+      "section": "Section B — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "medium",
-      "stem": "Parking brake is related with",
+      "difficulty": "hard",
+      "stem": "The winding rope must be examined by a competent person at",
       "options": [
-        "Shovel",
-        "Dragline",
-        "Dumper",
-        "Bucket Wheel Excavator"
+        "When the rope is damaged",
+        "Intervals exceeding one year",
+        "Intervals not exceeding 6 months",
+        "Once a year"
       ],
       "answer": 2,
-      "solution": "**Concept.** This question tests knowledge of Opencast Working.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** Dumper"
+      "solution": "Intervals not exceeding 6 months."
     },
     {
       "id": 30,
       "subject": "Technical (Mining)",
-      "topic": "Face Machineries",
-      "section": "Technical (Mining)",
+      "topic": "Support",
+      "section": "Section B — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "medium",
-      "stem": "A SDL is used for",
+      "difficulty": "easy",
+      "stem": "The 'wire mesh' in roof support is used to",
       "options": [
-        "Loading",
-        "Hauling",
-        "Drilling",
-        "Blasting"
+        "Store materials",
+        "Transport materials in the roadway",
+        "Increase ventilation",
+        "Prevent small pieces of roof from falling"
       ],
-      "answer": 0,
-      "solution": "**Concept.** This question tests knowledge of Face Machineries.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** Loading"
+      "answer": 3,
+      "solution": "Wire mesh prevents small roof pieces from falling."
     },
     {
       "id": 31,
       "subject": "Technical (Mining)",
-      "topic": "Face Machineries",
-      "section": "Technical (Mining)",
+      "topic": "Duties of Sirdar",
+      "section": "Section B — Technical",
       "type": "MCQ",
       "marks": 1,
       "difficulty": "medium",
-      "stem": "The minimum width of a belt conveyor roadway is",
+      "stem": "Who must the sirdar inform immediately in case of a reportable accident?",
       "options": [
-        "1.2 m",
-        "1.5 m",
-        "1.8 m",
-        "2.4 m"
+        "The manager and DGMS",
+        "Enhance surveying accuracy",
+        "The police",
+        "Reduce equipment maintenance"
       ],
-      "answer": 2,
-      "solution": "**Concept.** This question tests knowledge of Face Machineries.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** 1.8 m"
+      "answer": 0,
+      "solution": "The manager and DGMS must be informed immediately."
     },
     {
       "id": 32,
       "subject": "Technical (Mining)",
-      "topic": "Mine Surveying",
-      "section": "Technical (Mining)",
+      "topic": "Drifting",
+      "section": "Section B — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "medium",
-      "stem": "The purpose of surveying in mines is",
+      "difficulty": "hard",
+      "stem": "The 'pilot hole' in raise boring is drilled to",
       "options": [
-        "To prepare plans",
-        "To guide working",
-        "Both A & B",
-        "None"
+        "Support the roof of the raise",
+        "Provide guidance for the reaming head",
+        "Remove dust from the hole",
+        "Extract material"
       ],
-      "answer": 2,
-      "solution": "**Concept.** This question tests knowledge of Mine Surveying.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** Both A & B"
+      "answer": 1,
+      "solution": "Pilot holes provide guidance for reaming heads."
     },
     {
       "id": 33,
       "subject": "Technical (Mining)",
-      "topic": "Mine Ventilation — Gases",
-      "section": "Technical (Mining)",
+      "topic": "Mine Ventilation & Mine Gases",
+      "section": "Section B — Technical",
       "type": "MCQ",
       "marks": 1,
       "difficulty": "medium",
-      "stem": "What is the permissible limit of CO gas?",
+      "stem": "The 'ventilation records' must include",
       "options": [
-        "20 ppm",
-        "30 ppm",
-        "40 ppm",
-        "50 ppm"
+        "No records needed",
+        "The engine room records",
+        "Air quantity, quality, and fan performance data",
+        "Control humidity in underground workings"
       ],
-      "answer": 3,
-      "solution": "**Concept.** This question tests knowledge of Mine Ventilation — Gases.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** 50 ppm"
+      "answer": 2,
+      "solution": "Records must include quantity, quality, fan performance."
     },
     {
       "id": 34,
       "subject": "Technical (Mining)",
-      "topic": "Explosives & Blasting",
-      "section": "Technical (Mining)",
+      "topic": "Duties of Sirdar",
+      "section": "Section B — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "easy",
-      "stem": "Slurry explosives are preferred in wet conditions because",
+      "difficulty": "medium",
+      "stem": "When the sirdar finds that a safety device is defective, he must",
       "options": [
-        "They are cheaper",
-        "They are water resistant",
-        "They are stronger",
-        "None"
+        "Stop work and report to the manager",
+        "Fix it himself if possible",
+        "Record it in the daily diary",
+        "Continue working"
       ],
-      "answer": 1,
-      "solution": "**Concept.** This question tests knowledge of Explosives & Blasting.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** They are water resistant"
+      "answer": 0,
+      "solution": "Work must be stopped and the manager must be notified."
     },
     {
       "id": 35,
       "subject": "Technical (Mining)",
       "topic": "Explosives & Blasting",
-      "section": "Technical (Mining)",
+      "section": "Section B — Technical",
       "type": "MCQ",
       "marks": 1,
       "difficulty": "hard",
-      "stem": "Controlled blasting is used in",
+      "stem": "The 'safe distance' for persons during blasting depends on",
       "options": [
-        "Opencast mines",
-        "Underground mines",
-        "Both A & B",
-        "None of the above"
+        "Used for roof bolting only",
+        "The colour of the explosive",
+        "The charge weight and type of explosive used",
+        "Used for drilling blast holes"
       ],
-      "answer": 0,
-      "solution": "**Concept.** This question tests knowledge of Explosives & Blasting.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** Opencast mines"
+      "answer": 2,
+      "solution": "Charge weight and type of explosive."
     },
     {
       "id": 36,
       "subject": "Technical (Mining)",
-      "topic": "Explosives & Blasting",
-      "section": "Technical (Mining)",
+      "topic": "Electrical",
+      "section": "Section B — Technical",
       "type": "MCQ",
       "marks": 1,
       "difficulty": "easy",
-      "stem": "Capping of detonators should be done by",
+      "stem": "The protection of electrical equipment in mines includes",
       "options": [
-        "Any worker",
-        "Competent person",
-        "Shotfirer only",
-        "Mining Sirdar"
+        "Differential protection",
+        "Earth fault protection",
+        "Overcurrent protection only",
+        "Earth leakage protection, short circuit protection, and overload protection"
       ],
-      "answer": 1,
-      "solution": "**Concept.** This question tests knowledge of Explosives & Blasting.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** Competent person"
+      "answer": 3,
+      "solution": "Earth leakage, short circuit, and overload protection."
     },
     {
       "id": 37,
       "subject": "Technical (Mining)",
-      "topic": "Drifting",
-      "section": "Technical (Mining)",
+      "topic": "Mine Rescue",
+      "section": "Section B — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "hard",
-      "stem": "Drifting is ventilated by",
+      "difficulty": "medium",
+      "stem": "The 'rescue team equipment' includes",
       "options": [
-        "Natural ventilation",
-        "Auxiliary fan",
-        "Both A & B",
-        "None"
+        "SCBA, gas detectors, communication, first aid",
+        "A helmet and safety boots",
+        "A hand torch and lamp",
+        "No equipment needed"
       ],
-      "answer": 2,
-      "solution": "**Concept.** This question tests knowledge of Drifting.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** Both A & B"
+      "answer": 0,
+      "solution": "Teams need SCBA, detectors, communication, first aid."
     },
     {
       "id": 38,
       "subject": "Technical (Mining)",
-      "topic": "Strata Control",
-      "section": "Technical (Mining)",
+      "topic": "Explosives & Blasting",
+      "section": "Section B — Technical",
       "type": "MCQ",
       "marks": 1,
       "difficulty": "medium",
-      "stem": "The minimum thickness of a steel strap for skin support is",
+      "stem": "The 'angle of break' in blasting refers to",
       "options": [
-        "3 mm",
-        "5 mm",
-        "6 mm",
-        "10 mm"
+        "The angle of vibration",
+        "The angle of the borehole",
+        "The angle of the fragmented zone from the free face",
+        "The angle of flyrock"
       ],
       "answer": 2,
-      "solution": "**Concept.** This question tests knowledge of Strata Control.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** 6 mm"
+      "solution": "Angle of break defines the extent of fragmentation from the free face."
     },
     {
       "id": 39,
       "subject": "Technical (Mining)",
-      "topic": "Opencast Working",
-      "section": "Technical (Mining)",
+      "topic": "Report Writing",
+      "section": "Section B — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "hard",
-      "stem": "Dozer is used for",
+      "difficulty": "medium",
+      "stem": "The accident report must contain",
       "options": [
-        "Dozing/scraping material",
-        "Hauling of material",
-        "Cutting face",
-        "Loading"
+        "Increase production rate",
+        "Enhance surveying accuracy",
+        "Details of the accident, injured person, cause, and witnesses",
+        "Reduce equipment maintenance"
       ],
-      "answer": 0,
-      "solution": "**Concept.** This question tests knowledge of Opencast Working.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** Dozing/scraping material"
+      "answer": 2,
+      "solution": "Details of the accident, injured person, cause, and witnesses."
     },
     {
       "id": 40,
       "subject": "Technical (Mining)",
-      "topic": "Mine Ventilation — Gases",
-      "section": "Technical (Mining)",
+      "topic": "Face Machineries",
+      "section": "Section B — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "medium",
-      "stem": "The general body reading of methane in intake air should not exceed",
+      "difficulty": "hard",
+      "stem": "A powered roof support (shield) can withstand",
       "options": [
-        "0.25%",
-        "0.5%",
-        "0.75%",
-        "1%"
+        "Protect electrical equipment",
+        "Support conveyor belts",
+        "Control dust emissions",
+        "Hundreds of tonnes of roof load"
       ],
-      "answer": 1,
-      "solution": "**Concept.** This question tests knowledge of Mine Ventilation — Gases.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** 0.5%"
+      "answer": 3,
+      "solution": "Can withstand hundreds of tonnes of roof load."
     },
     {
       "id": 41,
       "subject": "Technical (Mining)",
-      "topic": "Coal Dust",
-      "section": "Technical (Mining)",
+      "topic": "Mine Ventilation & Mine Gases",
+      "section": "Section B — Technical",
       "type": "MCQ",
       "marks": 1,
       "difficulty": "easy",
-      "stem": "Personal dust sampler is worn by",
+      "stem": "The 'oxygen deficiency' in mines can occur due to",
       "options": [
-        "Manager",
-        "Worker at face",
-        "Safety officer",
-        "None"
+        "Affects only intake shafts",
+        "Excess of oxygen in the intake air",
+        "Increased fan speed",
+        "Displacement by other gases, oxidation, and poor ventilation"
       ],
-      "answer": 1,
-      "solution": "**Concept.** This question tests knowledge of Coal Dust.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** Worker at face"
+      "answer": 3,
+      "solution": "Oxygen deficiency occurs from gas displacement, oxidation, poor ventilation."
     },
     {
       "id": 42,
       "subject": "Technical (Mining)",
-      "topic": "Strata Control",
-      "section": "Technical (Mining)",
+      "topic": "Method of Work",
+      "section": "Section B — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "hard",
-      "stem": "A prop and bar support consists of",
+      "difficulty": "easy",
+      "stem": "The 'development working' in mining involves",
       "options": [
-        "A prop and a horizontal bar",
-        "Two props",
-        "A bolt and plate",
-        "None"
+        "Closing the mine",
+        "Building structures",
+        "Extracting pillars",
+        "Driving galleries to develop new panels"
       ],
-      "answer": 0,
-      "solution": "**Concept.** This question tests knowledge of Strata Control.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** A prop and a horizontal bar"
+      "answer": 3,
+      "solution": "Development working drives galleries to develop new working panels."
     },
     {
       "id": 43,
       "subject": "Technical (Mining)",
-      "topic": "Strata Control",
-      "section": "Technical (Mining)",
+      "topic": "Method of Work",
+      "section": "Section B — Technical",
       "type": "MCQ",
       "marks": 1,
       "difficulty": "hard",
-      "stem": "Any shortage of support material, Mining Sirdar instantly informs",
+      "stem": "The 'board and pillar' method of working involves",
       "options": [
-        "Agent",
-        "Assistant Manager",
-        "Manager",
-        "Higher Official"
+        "Driving headings and crosscuts to form pillars",
+        "Only extraction of the pillars",
+        "Only the surface mining of coal",
+        "Working with a single heading"
       ],
-      "answer": 3,
-      "solution": "**Concept.** This question tests knowledge of Strata Control.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** Higher Official"
+      "answer": 0,
+      "solution": "Driving headings and crosscuts to form pillars."
     },
     {
       "id": 44,
       "subject": "Technical (Mining)",
-      "topic": "Face Machineries",
-      "section": "Technical (Mining)",
+      "topic": "Report Writing",
+      "section": "Section B — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "medium",
-      "stem": "A continuous miner is used in",
+      "difficulty": "hard",
+      "stem": "A 'photographic evidence' in a report helps to",
       "options": [
-        "Underground coal mines",
-        "Opencast mines",
-        "Metal mines",
-        "None"
+        "Omit references",
+        "Skip executive summary",
+        "Provide visual documentation of conditions and evidence",
+        "Replace all written description"
       ],
-      "answer": 0,
-      "solution": "**Concept.** This question tests knowledge of Face Machineries.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** Underground coal mines"
+      "answer": 2,
+      "solution": "Provides visual documentation of conditions and evidence."
     },
     {
       "id": 45,
       "subject": "Technical (Mining)",
-      "topic": "Face Machineries",
-      "section": "Technical (Mining)",
+      "topic": "Stowing",
+      "section": "Section B — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "hard",
-      "stem": "LHD stands for",
+      "difficulty": "easy",
+      "stem": "The 'mine waste to stowing' ratio depends on",
       "options": [
-        "Load Haul Dump",
-        "Load Haul Drive",
-        "Loader Haulage Dump",
-        "None"
+        "The colour of the sand only",
+        "The type of pump only",
+        "The height of the seam only",
+        "The volume of voids created and available waste material"
       ],
-      "answer": 0,
-      "solution": "**Concept.** This question tests knowledge of Face Machineries.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** Load Haul Dump"
+      "answer": 3,
+      "solution": "Volume of voids and available waste."
     },
     {
       "id": 46,
       "subject": "Technical (Mining)",
-      "topic": "Opencast Working",
-      "section": "Technical (Mining)",
+      "topic": "Winding in Shaft",
+      "section": "Section B — Technical",
       "type": "MCQ",
       "marks": 1,
       "difficulty": "hard",
-      "stem": "Haul road gradient is maintained at",
+      "stem": "A person winding in a shaft must be accompanied by",
       "options": [
-        "1:10 to 1:16",
-        "1:5 to 1:10",
-        "1:20 to 1:30",
-        "1:3 to 1:5"
+        "The mines inspector on duty",
+        "The winding engineman alone",
+        "A competent person in charge of the shaft",
+        "The surface watchman only"
       ],
-      "answer": 0,
-      "solution": "**Concept.** This question tests knowledge of Opencast Working.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** 1:10 to 1:16"
+      "answer": 2,
+      "solution": "A competent person in charge of the shaft."
     },
     {
       "id": 47,
       "subject": "Technical (Mining)",
-      "topic": "Explosives & Blasting",
-      "section": "Technical (Mining)",
+      "topic": "Drifting",
+      "section": "Section B — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "easy",
-      "stem": "A misfire means",
+      "difficulty": "hard",
+      "stem": "The 'face charge' in drifting blasting is the",
       "options": [
-        "Explosive did not detonate",
-        "Explosive detonated early",
-        "Explosive detonated partially",
-        "All of the above"
+        "Fired from the surface only",
+        "Used for roof support",
+        "Total charge for the whole drift",
+        "Charge drilled and blasted at the face"
       ],
-      "answer": 0,
-      "solution": "**Concept.** This question tests knowledge of Explosives & Blasting.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** Explosive did not detonate"
+      "answer": 3,
+      "solution": "Face charges are drilled and blasted at the working face."
     },
     {
       "id": 48,
       "subject": "Technical (Mining)",
-      "topic": "Explosives & Blasting",
-      "section": "Technical (Mining)",
+      "topic": "Method of Work",
+      "section": "Section B — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "easy",
-      "stem": "Maximum charge per hole in opencast blasting is limited by",
+      "difficulty": "hard",
+      "stem": "The 'wet drilling' in underground mines is done to",
       "options": [
-        "Vibration limit",
-        "Flyrock limit",
-        "Both A & B",
-        "None"
+        "Cool the drill only",
+        "Cool the drill steel only",
+        "Increase production",
+        "Suppress dust generation during drilling"
       ],
-      "answer": 2,
-      "solution": "**Concept.** This question tests knowledge of Explosives & Blasting.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** Both A & B"
+      "answer": 3,
+      "solution": "Wet drilling suppresses dust generation during drilling operations."
     },
     {
       "id": 49,
       "subject": "Technical (Mining)",
-      "topic": "Mine Inundation",
-      "section": "Technical (Mining)",
+      "topic": "Mine Surveying",
+      "section": "Section B — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "medium",
-      "stem": "When approaching waterlogged workings, the minimum distance to keep is",
+      "difficulty": "easy",
+      "stem": "The 'total station' combines",
       "options": [
-        "10 m",
-        "20 m",
-        "30 m",
-        "50 m"
+        "Used only for horizontal lines",
+        "Applicable to total stations only",
+        "Works only in daylight",
+        "Theodolite, distance meter, and data recorder"
       ],
-      "answer": 1,
-      "solution": "**Concept.** This question tests knowledge of Mine Inundation.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** 20 m"
+      "answer": 3,
+      "solution": "Total stations combine theodolite, EDM, and data recorder."
     },
     {
       "id": 50,
       "subject": "Technical (Mining)",
-      "topic": "Geology",
-      "section": "Technical (Mining)",
+      "topic": "Explosives & Blasting",
+      "section": "Section B — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "medium",
-      "stem": "A geological fault is",
+      "difficulty": "easy",
+      "stem": "A 'presplit blast' creates",
       "options": [
-        "A fracture in rock",
-        "A fold in rock",
-        "A type of coal",
-        "None"
+        "Rough and broken wall",
+        "Clean, stable final wall surface",
+        "No visible result",
+        "Maximum fragmentation"
       ],
-      "answer": 0,
-      "solution": "**Concept.** This question tests knowledge of Geology.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** A fracture in rock"
+      "answer": 1,
+      "solution": "Presplit blasting creates clean, stable final walls."
     },
     {
       "id": 51,
       "subject": "Technical (Mining)",
-      "topic": "Duties of Sirdar",
-      "section": "Technical (Mining)",
+      "topic": "Report Writing",
+      "section": "Section B — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "easy",
-      "stem": "A safety belt is approved by",
+      "difficulty": "medium",
+      "stem": "The 'inspection report' of a working place must include",
       "options": [
-        "CMFIR",
-        "DGMS",
-        "CMPDI",
-        "CMRI"
+        "Any unsafe condition, contravention, and corrective action taken",
+        "Write without sequential order",
+        "Skip executive summary",
+        "The names of the persons working"
       ],
-      "answer": 1,
-      "solution": "**Concept.** This question tests knowledge of Duties of Sirdar.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** DGMS"
+      "answer": 0,
+      "solution": "Any unsafe condition, contravention, and corrective action taken."
     },
     {
       "id": 52,
       "subject": "Technical (Mining)",
-      "topic": "Bord & Pillar",
-      "section": "Technical (Mining)",
+      "topic": "Legal Provisions",
+      "section": "Section B — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "medium",
-      "stem": "The minimum width of split in depillaring is",
+      "difficulty": "easy",
+      "stem": "The Coal Mines Regulations (CMR) 2017 replaced",
       "options": [
-        "3 m",
-        "4.5 m",
-        "6 m",
-        "8 m"
+        "CMR 2014",
+        "CMR 1987",
+        "CMR 2000",
+        "CMR 1957"
       ],
       "answer": 1,
-      "solution": "**Concept.** This question tests knowledge of Bord & Pillar.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** 4.5 m"
+      "solution": "CMR 2017 replaced CMR 1987."
     },
     {
       "id": 53,
       "subject": "Technical (Mining)",
-      "topic": "Explosives & Blasting",
-      "section": "Technical (Mining)",
+      "topic": "Mine Rescue",
+      "section": "Section B — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "hard",
-      "stem": "Blasting card system is used in",
+      "difficulty": "easy",
+      "stem": "A 'mock drill' for mine rescue must be conducted",
       "options": [
-        "Depillaring",
-        "Development",
-        "Stowing",
-        "None of the above"
+        "After a major accident",
+        "When the inspector demands",
+        "Once in 5 years",
+        "At regular intervals as prescribed"
       ],
-      "answer": 0,
-      "solution": "**Concept.** This question tests knowledge of Explosives & Blasting.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** Depillaring"
+      "answer": 3,
+      "solution": "At regular intervals as prescribed."
     },
     {
       "id": 54,
       "subject": "Technical (Mining)",
-      "topic": "Geology",
-      "section": "Technical (Mining)",
+      "topic": "Mine Rescue",
+      "section": "Section B — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "hard",
-      "stem": "The process of coal formation is called",
+      "difficulty": "medium",
+      "stem": "A 'rescue team leader' must have",
       "options": [
-        "Sedimentation",
-        "Carbonization",
-        "Metamorphism",
-        "Erosion"
+        "Additional training in command and decision-making",
+        "No special training",
+        "Basic first aid training",
+        "No knowledge of the mine"
       ],
-      "answer": 1,
-      "solution": "**Concept.** This question tests knowledge of Geology.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** Carbonization"
+      "answer": 0,
+      "solution": "Additional training in command and decision-making."
     },
     {
       "id": 55,
       "subject": "Technical (Mining)",
-      "topic": "Stowing",
-      "section": "Technical (Mining)",
+      "topic": "Opencast Working",
+      "section": "Section B — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "hard",
-      "stem": "The maximum gradient of stowing pipeline is",
+      "difficulty": "medium",
+      "stem": "The 'safety sign maintenance' must be",
       "options": [
-        "1:10",
-        "1:15",
-        "1:20",
-        "1:30"
+        "Regular inspection and replacement of damaged signs",
+        "Enhance surveying accuracy",
+        "Done only by the security staff",
+        "Painting them once in ten years"
       ],
-      "answer": 2,
-      "solution": "**Concept.** This question tests knowledge of Stowing.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** 1:20"
+      "answer": 0,
+      "solution": "Safety signs must be regularly inspected and maintained."
     },
     {
       "id": 56,
       "subject": "Technical (Mining)",
-      "topic": "Duties of Sirdar",
-      "section": "Technical (Mining)",
+      "topic": "Legal Provisions",
+      "section": "Section B — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "medium",
-      "stem": "At every mine, who will present to manage the mine?",
+      "difficulty": "easy",
+      "stem": "The 'penalty for contravention' of provisions of the Mines Act can include",
       "options": [
-        "Manager",
-        "Agent",
-        "Safety Officer",
-        "Overman"
+        "Imprisonment up to 3 months, or fine, or both",
+        "A transfer of the manager",
+        "A reduction of wages",
+        "No penalty at all"
       ],
       "answer": 0,
-      "solution": "**Concept.** This question tests knowledge of Duties of Sirdar.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** Manager"
+      "solution": "Imprisonment up to 3 months, or fine, or both."
     },
     {
       "id": 57,
       "subject": "Technical (Mining)",
-      "topic": "Coal Dust",
-      "section": "Technical (Mining)",
+      "topic": "Legal Provisions",
+      "section": "Section B — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "medium",
-      "stem": "Gravimetric dust sampler measures",
+      "difficulty": "hard",
+      "stem": "The 'shot firer' in a mine must hold",
       "options": [
-        "Dust concentration",
-        "Gas concentration",
-        "Air velocity",
-        "Temperature"
+        "A letter from the manager",
+        "A driver's licence",
+        "A valid certificate of competency as prescribed",
+        "A certificate of experience"
       ],
-      "answer": 0,
-      "solution": "**Concept.** This question tests knowledge of Coal Dust.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** Dust concentration"
+      "answer": 2,
+      "solution": "A valid certificate of competency as prescribed."
     },
     {
       "id": 58,
       "subject": "Technical (Mining)",
-      "topic": "Opencast Working",
-      "section": "Technical (Mining)",
+      "topic": "Drifting",
+      "section": "Section B — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "hard",
-      "stem": "Water spray in opencast mine is done for",
+      "difficulty": "medium",
+      "stem": "The 'drill steel' used in drifting must be of",
       "options": [
-        "Fire suppression",
-        "Dust suppression",
-        "Increasing humidity",
-        "Both A & B"
+        "The correct length, diameter, and steel grade for the rock",
+        "Any length available",
+        "The cheapest steel available",
+        "Any type available in the store"
       ],
-      "answer": 3,
-      "solution": "**Concept.** This question tests knowledge of Opencast Working.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** Both A & B"
+      "answer": 0,
+      "solution": "Correct length, diameter, and steel grade for the rock."
     },
     {
       "id": 59,
       "subject": "Technical (Mining)",
       "topic": "Face Machineries",
-      "section": "Technical (Mining)",
+      "section": "Section B — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "medium",
-      "stem": "Haulage rope is inspected by",
+      "difficulty": "easy",
+      "stem": "A feeder breaker is used to",
       "options": [
-        "Manager",
-        "Overman",
-        "Mining Sirdar",
-        "Competent person"
+        "Break only rocks",
+        "Transport men to the face",
+        "Load the coal into dumpers",
+        "Break large coal lumps and feed them to the belt conveyor"
       ],
       "answer": 3,
-      "solution": "**Concept.** This question tests knowledge of Face Machineries.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** Competent person"
+      "solution": "Breaks large coal lumps and feeds them to the belt conveyor."
     },
     {
       "id": 60,
       "subject": "Technical (Mining)",
-      "topic": "Stowing",
-      "section": "Technical (Mining)",
+      "topic": "Drifting",
+      "section": "Section B — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "medium",
-      "stem": "The ratio of sand to water in hydraulic stowing is approximately",
+      "difficulty": "easy",
+      "stem": "The 'face profiling' in drifting is done to",
       "options": [
-        "1:1",
-        "1:2",
-        "1:3",
-        "1:4"
+        "Measure the temperature of the rock",
+        "Test the ventilation",
+        "Measure the gas content",
+        "Check the excavation against the planned profile"
       ],
-      "answer": 2,
-      "solution": "**Concept.** This question tests knowledge of Stowing.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** 1:3"
+      "answer": 3,
+      "solution": "Check excavation against planned profile."
     },
     {
       "id": 61,
       "subject": "Technical (Mining)",
       "topic": "Duties of Sirdar",
-      "section": "Technical (Mining)",
+      "section": "Section B — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "hard",
-      "stem": "Reserve station in underground mine is made by",
+      "difficulty": "medium",
+      "stem": "The sirdar's report book is maintained under",
       "options": [
-        "Overman",
-        "Manager",
-        "Mining Sirdar",
-        "Agent"
+        "Indian Penal Code",
+        "CMR 2017 Regulation 117",
+        "Mines Act 1952",
+        "Factory Act"
       ],
       "answer": 1,
-      "solution": "**Concept.** This question tests knowledge of Duties of Sirdar.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** Manager"
+      "solution": "The sirdar's report book is maintained under CMR 2017 Regulation 117."
     },
     {
       "id": 62,
       "subject": "Technical (Mining)",
-      "topic": "Mine Fires",
-      "section": "Technical (Mining)",
+      "topic": "Legal Provisions",
+      "section": "Section B — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "medium",
-      "stem": "An isolation stopping is made during",
+      "difficulty": "hard",
+      "stem": "Under CMR 2017, the 'ventilation plan' must be approved by",
       "options": [
-        "Depillaring",
-        "Fire emergency",
-        "Ventilation",
-        "None"
+        "The workers' union",
+        "The ventilation officer alone",
+        "The manager and the Regional Inspector of Mines",
+        "The local police"
       ],
-      "answer": 1,
-      "solution": "**Concept.** This question tests knowledge of Mine Fires.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** Fire emergency"
+      "answer": 2,
+      "solution": "The manager and the Regional Inspector of Mines."
     },
     {
       "id": 63,
       "subject": "Technical (Mining)",
-      "topic": "Explosives & Blasting",
-      "section": "Technical (Mining)",
+      "topic": "Legal Provisions",
+      "section": "Section B — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "medium",
-      "stem": "The minimum period of inspection after a blast is",
+      "difficulty": "hard",
+      "stem": "A woman is permitted to work in a mine",
       "options": [
-        "30 minutes",
-        "1 hour",
-        "2 hours",
-        "4 hours"
+        "Between 6 AM and 7 PM as per the Mines Act",
+        "At any time",
+        "During the night shift",
+        "With the consent of the inspector"
       ],
-      "answer": 1,
-      "solution": "**Concept.** This question tests knowledge of Explosives & Blasting.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** 1 hour"
+      "answer": 0,
+      "solution": "Between 6 AM and 7 PM."
     },
     {
       "id": 64,
       "subject": "Technical (Mining)",
-      "topic": "Mine Ventilation — Gases",
-      "section": "Technical (Mining)",
+      "topic": "Danger of Inundation",
+      "section": "Section B — Technical",
       "type": "MCQ",
       "marks": 1,
       "difficulty": "easy",
-      "stem": "Minimum explosibility limit of CH4 is",
+      "stem": "The condition for approaching water-logged workings under CMR 2017 requires",
       "options": [
-        "5.4%",
-        "5.8%",
-        "7.4%",
-        "7.8%"
+        "Boreholes to be drilled to probe the water-logged area",
+        "Rely on the old plans only",
+        "No special precaution",
+        "An inspection of the old plans"
       ],
       "answer": 0,
-      "solution": "**Concept.** This question tests knowledge of Mine Ventilation — Gases.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** 5.4%"
+      "solution": "Boreholes must be drilled to probe the water-logged area."
     },
     {
       "id": 65,
       "subject": "Technical (Mining)",
-      "topic": "Explosives & Blasting",
-      "section": "Technical (Mining)",
+      "topic": "Mine Surveying",
+      "section": "Section B — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "hard",
-      "stem": "The maximum number of holes fired in a single delay in UG is",
+      "difficulty": "medium",
+      "stem": "The 'benchmark' in surveying is a",
       "options": [
-        "5",
-        "8",
-        "10",
-        "15"
+        "Unknown point",
+        "Temporary mark",
+        "Fixed point of known elevation",
+        "Moving point"
       ],
       "answer": 2,
-      "solution": "**Concept.** This question tests knowledge of Explosives & Blasting.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** 10"
+      "solution": "Benchmarks are fixed points of known elevation."
     },
     {
       "id": 66,
       "subject": "Technical (Mining)",
-      "topic": "Geology",
-      "section": "Technical (Mining)",
+      "topic": "Method of Work",
+      "section": "Section B — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "hard",
-      "stem": "The rank of coal is determined by",
+      "difficulty": "medium",
+      "stem": "The 'dust suppression' methods in coal mines include",
       "options": [
-        "Carbon content",
-        "Moisture content",
-        "Volatile matter",
-        "All of the above"
+        "Quarrying of granite",
+        "Mining of bauxite",
+        "No methods needed",
+        "Water spraying, stone dusting, and ventilation"
       ],
       "answer": 3,
-      "solution": "**Concept.** This question tests knowledge of Geology.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** All of the above"
+      "solution": "Dust suppression uses water, stone dusting, and ventilation."
     },
     {
       "id": 67,
       "subject": "Technical (Mining)",
-      "topic": "Duties of Sirdar",
-      "section": "Technical (Mining)",
+      "topic": "Face Machineries",
+      "section": "Section B — Technical",
       "type": "MCQ",
       "marks": 1,
       "difficulty": "medium",
-      "stem": "The full form of SOP is",
+      "stem": "The main function of a feeder breaker is to",
       "options": [
-        "Standard Operating Procedure",
-        "Standard Operation Process",
-        "Safe Operating Procedure",
-        "Safe Operation Process"
+        "Only load coal into dumpers",
+        "Only break the overburden",
+        "Only transfer coal from the face",
+        "Reduce size of coal and feed to belt conveyor"
       ],
-      "answer": 0,
-      "solution": "**Concept.** This question tests knowledge of Duties of Sirdar.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** Standard Operating Procedure"
+      "answer": 3,
+      "solution": "Reduces size of coal and feeds to belt conveyor."
     },
     {
       "id": 68,
       "subject": "Technical (Mining)",
-      "topic": "Bord & Pillar",
-      "section": "Technical (Mining)",
+      "topic": "Mine Surveying",
+      "section": "Section B — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "easy",
-      "stem": "Diagonal line is related to",
+      "difficulty": "hard",
+      "stem": "The 'borehole survey' determines",
       "options": [
-        "Stowing",
-        "Development",
-        "Longwall",
-        "Depillaring"
+        "Used only for horizontal lines",
+        "Monitor gas concentrations",
+        "Applicable to total stations only",
+        "Position and orientation of boreholes underground"
       ],
       "answer": 3,
-      "solution": "**Concept.** This question tests knowledge of Bord & Pillar.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** Depillaring"
+      "solution": "Borehole surveys determine position and orientation."
     },
     {
       "id": 69,
       "subject": "Technical (Mining)",
-      "topic": "Strata Control",
-      "section": "Technical (Mining)",
+      "topic": "Winding in Shaft",
+      "section": "Section B — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "medium",
-      "stem": "The maximum number of rows of supports in a depillaring face is",
+      "difficulty": "hard",
+      "stem": "A winding engine must be stopped if",
       "options": [
-        "3",
-        "4",
-        "5",
-        "6"
+        "It is night shift",
+        "Workers are on break",
+        "Production is low",
+        "There is any unusual noise or vibration"
       ],
-      "answer": 2,
-      "solution": "**Concept.** This question tests knowledge of Strata Control.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** 5"
+      "answer": 3,
+      "solution": "Must be stopped for any unusual noise or vibration."
     },
     {
       "id": 70,
       "subject": "Technical (Mining)",
-      "topic": "Electrical — Haulage",
-      "section": "Technical (Mining)",
+      "topic": "Drifting",
+      "section": "Section B — Technical",
       "type": "MCQ",
       "marks": 1,
       "difficulty": "hard",
-      "stem": "The minimum length of a coggings sleeper used in cog is",
+      "stem": "The 'drift alignment' is maintained by",
       "options": [
-        "1 m",
-        "1.5 m",
-        "1.6 m",
-        "1.2 m"
+        "Survey control and reference points",
+        "The manager's judgement",
+        "Not maintained",
+        "Visual estimation"
       ],
-      "answer": 3,
-      "solution": "**Concept.** This question tests knowledge of Electrical — Haulage.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** 1.2 m"
+      "answer": 0,
+      "solution": "Drift alignment uses survey control and reference points."
     },
     {
       "id": 71,
       "subject": "Technical (Mining)",
-      "topic": "Explosives & Blasting",
-      "section": "Technical (Mining)",
+      "topic": "Stowing",
+      "section": "Section B — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "hard",
-      "stem": "The minimum number of blast holes for a round in development is",
+      "difficulty": "medium",
+      "stem": "The 'stowing material testing' includes",
       "options": [
-        "3",
-        "5",
-        "7",
-        "10"
+        "The density of the material",
+        "The quantity of material",
+        "Grain size, strength, permeability, and compatibility",
+        "The location of the stowing plant"
       ],
-      "answer": 1,
-      "solution": "**Concept.** This question tests knowledge of Explosives & Blasting.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** 5"
+      "answer": 2,
+      "solution": "Material testing covers grain size, strength, permeability, and compatibility."
     },
     {
       "id": 72,
       "subject": "Technical (Mining)",
-      "topic": "Opencast Working",
-      "section": "Technical (Mining)",
+      "topic": "Legal Provisions",
+      "section": "Section B — Technical",
       "type": "MCQ",
       "marks": 1,
       "difficulty": "easy",
-      "stem": "In the base of overburden bench, material should not be",
+      "stem": "The inspector of mines has the power to",
       "options": [
-        "Gravel",
-        "Sandstone",
-        "Shale",
-        "Black cotton soil"
+        "Only examine the registers",
+        "Only question the manager",
+        "Only visit with prior notice",
+        "Enter, inspect, and examine any mine at any time"
       ],
       "answer": 3,
-      "solution": "**Concept.** This question tests knowledge of Opencast Working.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** Black cotton soil"
+      "solution": "Enter, inspect, and examine any mine at any time."
     },
     {
       "id": 73,
       "subject": "Technical (Mining)",
-      "topic": "Strata Control",
-      "section": "Technical (Mining)",
+      "topic": "Duties of Sirdar",
+      "section": "Section B — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "easy",
-      "stem": "The maximum span of unsupported roof in development is",
+      "difficulty": "hard",
+      "stem": "The sirdar must ensure that all workers under him",
       "options": [
-        "1.2 m",
-        "1.8 m",
-        "2.4 m",
-        "3.0 m"
+        "Work without breaks",
+        "Use only hand tools",
+        "Are above 21 years",
+        "Are aware of the emergency procedures"
       ],
-      "answer": 2,
-      "solution": "**Concept.** This question tests knowledge of Strata Control.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** 2.4 m"
+      "answer": 0,
+      "solution": "All workers must be aware of emergency procedures."
     },
     {
       "id": 74,
       "subject": "Technical (Mining)",
-      "topic": "Mine Gases — Explosion",
-      "section": "Technical (Mining)",
+      "topic": "Method of Work",
+      "section": "Section B — Technical",
       "type": "MCQ",
       "marks": 1,
       "difficulty": "medium",
-      "stem": "An explosion in mines can be caused by",
+      "stem": "The 'galleries' in board and pillar mining are driven at",
       "options": [
-        "Methane ignition",
-        "Coal dust",
-        "Both A & B",
-        "None"
+        "Quarrying of granite",
+        "Random directions",
+        "Predetermined width and alignment",
+        "Mining of bauxite"
       ],
       "answer": 2,
-      "solution": "**Concept.** This question tests knowledge of Mine Gases — Explosion.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** Both A & B"
+      "solution": "Galleries are driven at predetermined widths and alignments."
     },
     {
       "id": 75,
       "subject": "Technical (Mining)",
-      "topic": "Stowing",
-      "section": "Technical (Mining)",
+      "topic": "Face Machineries",
+      "section": "Section B — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "easy",
-      "stem": "Stowing pipe diameter is generally",
+      "difficulty": "medium",
+      "stem": "The safety device on a conveyor belt includes",
       "options": [
-        "50 mm",
-        "75 mm",
-        "100 mm",
-        "150 mm"
+        "Streamline reporting processes",
+        "Optional in non-hazardous areas",
+        "Emergency stop pull cord, belt drift switch, and speed sensor",
+        "Reduce equipment maintenance"
       ],
       "answer": 2,
-      "solution": "**Concept.** This question tests knowledge of Stowing.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** 100 mm"
+      "solution": "Emergency stop pull cord, belt drift switch, and speed sensor."
     },
     {
       "id": 76,
       "subject": "Technical (Mining)",
-      "topic": "Bord & Pillar",
-      "section": "Technical (Mining)",
+      "topic": "Mine Ventilation & Mine Gases",
+      "section": "Section B — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "hard",
-      "stem": "Size of a pillar depends on",
+      "difficulty": "easy",
+      "stem": "The 'ventilation plan' of a mine must be approved by",
       "options": [
-        "Incubation period of seam",
-        "Production of mines",
-        "Thickness of seam",
-        "Depth of seam from surface"
+        "Regulate air temperature only",
+        "The manager and the Regional Inspector of Mines",
+        "Prevent accumulation of firedamp",
+        "The chief surveyor of the mine"
       ],
-      "answer": 3,
-      "solution": "**Concept.** This question tests knowledge of Bord & Pillar.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** Depth of seam from surface"
+      "answer": 1,
+      "solution": "The manager and the Regional Inspector of Mines."
     },
     {
       "id": 77,
       "subject": "Technical (Mining)",
-      "topic": "Opencast Working",
-      "section": "Technical (Mining)",
+      "topic": "Support",
+      "section": "Section B — Technical",
       "type": "MCQ",
       "marks": 1,
       "difficulty": "easy",
-      "stem": "A safety berm is provided on the edge of haul road to",
+      "stem": "The 'immediate roof' in coal mines refers to",
       "options": [
-        "Prevent vehicles from falling",
-        "Increase road width",
-        "Support road surface",
-        "None"
+        "The rock below the coal seam",
+        "The surface of the coal seam",
+        "The roof layers directly above the coal seam",
+        "The main roof only"
       ],
-      "answer": 0,
-      "solution": "**Concept.** This question tests knowledge of Opencast Working.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** Prevent vehicles from falling"
+      "answer": 2,
+      "solution": "Immediate roof is the roof layers directly above the coal seam."
     },
     {
       "id": 78,
       "subject": "Technical (Mining)",
-      "topic": "Stowing",
-      "section": "Technical (Mining)",
+      "topic": "Opencast Working",
+      "section": "Section B — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "easy",
-      "stem": "Stowing is not possible when",
+      "difficulty": "medium",
+      "stem": "The 'pedestrian safety' measures include",
       "options": [
-        "Seam is thin",
-        "Water is available",
-        "Sand is available",
-        "None"
+        "No measures needed",
+        "Enhance surveying accuracy",
+        "Improve ventilation efficiency",
+        "Designated walkways, barriers, visibility measures"
       ],
-      "answer": 0,
-      "solution": "**Concept.** This question tests knowledge of Stowing.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** Seam is thin"
+      "answer": 3,
+      "solution": "Pedestrian safety needs walkways, barriers, visibility."
     },
     {
       "id": 79,
       "subject": "Technical (Mining)",
-      "topic": "Stowing",
-      "section": "Technical (Mining)",
+      "topic": "Mine Ventilation & Mine Gases",
+      "section": "Section B — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "medium",
-      "stem": "Hydraulic sand stowing is used in",
+      "difficulty": "easy",
+      "stem": "When methane concentration reaches 5-15% in air, it becomes",
       "options": [
-        "Bord & Pillar",
-        "Longwall",
-        "Both A & B",
-        "Blasting Gallery"
+        "Explosive",
+        "Non-flammable",
+        "Invisible to the naked eye",
+        "Safe"
       ],
-      "answer": 2,
-      "solution": "**Concept.** This question tests knowledge of Stowing.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** Both A & B"
+      "answer": 0,
+      "solution": "Becomes explosive at 5-15% concentration."
     },
     {
       "id": 80,
       "subject": "Technical (Mining)",
-      "topic": "Bord & Pillar",
-      "section": "Technical (Mining)",
+      "topic": "Method of Work",
+      "section": "Section B — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "easy",
-      "stem": "A stook is a",
+      "difficulty": "hard",
+      "stem": "The 'ripping' in underground mining is done to",
       "options": [
-        "Pillar left during depillaring",
-        "Type of support",
-        "Gallery driven",
-        "None"
+        "Construct roof supports in the gallery",
+        "Extract coal from the seam",
+        "Increase the height of a gallery by removing roof or floor rock",
+        "Decrease gallery height"
       ],
-      "answer": 0,
-      "solution": "**Concept.** This question tests knowledge of Bord & Pillar.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** Pillar left during depillaring"
+      "answer": 2,
+      "solution": "Ripping removes roof or floor rock to increase gallery height."
     },
     {
       "id": 81,
-      "subject": "Technical (Mining)",
-      "topic": "Accidents",
-      "section": "Technical (Mining)",
+      "subject": "General",
+      "topic": "Reasoning & Verbal Ability",
+      "section": "Section A — General Awareness",
       "type": "MCQ",
       "marks": 1,
       "difficulty": "medium",
-      "stem": "A near miss is",
+      "stem": "Synonym of 'Pragmatic' is",
       "options": [
-        "An accident that almost happened",
-        "An actual accident",
-        "A minor accident",
-        "None"
+        "Impractical",
+        "Idealistic",
+        "Theoretical",
+        "Practical"
       ],
-      "answer": 0,
-      "solution": "**Concept.** This question tests knowledge of Accidents.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** An accident that almost happened"
+      "answer": 3,
+      "solution": "Pragmatic means practical."
     },
     {
       "id": 82,
-      "subject": "Technical (Mining)",
-      "topic": "Duties of Sirdar",
-      "section": "Technical (Mining)",
+      "subject": "General",
+      "topic": "General Knowledge",
+      "section": "Section A — General Awareness",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "easy",
-      "stem": "BG 174 is a",
+      "difficulty": "hard",
+      "stem": "The Parliament of India consists of",
       "options": [
-        "Self-contained breathing apparatus",
-        "Open circuit breathing apparatus",
-        "Gas mask",
-        "Gas contained breathing apparatus"
+        "The Lok Sabha and the Rajya Sabha",
+        "The Lok Sabha and the President",
+        "The Rajya Sabha and the President",
+        "The President, the Lok Sabha, and the Rajya Sabha"
       ],
-      "answer": 0,
-      "solution": "**Concept.** This question tests knowledge of Duties of Sirdar.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** Self-contained breathing apparatus"
+      "answer": 3,
+      "solution": "Under Article 79 of the Constitution of India, the Parliament consists of the President, the Lok Sabha, and the Rajya Sabha."
     },
     {
       "id": 83,
-      "subject": "Technical (Mining)",
-      "topic": "Mine Ventilation — Gases",
-      "section": "Technical (Mining)",
+      "subject": "General",
+      "topic": "General Knowledge",
+      "section": "Section A — General Awareness",
       "type": "MCQ",
       "marks": 1,
       "difficulty": "medium",
-      "stem": "How much air quantity supply to mines is calculated by",
+      "stem": "The 'Golden Temple' is located in",
       "options": [
-        "Person employed",
-        "Production of mines",
-        "Both A & B",
-        "None"
+        "Delhi",
+        "Varanasi",
+        "Jaipur",
+        "Amritsar"
       ],
-      "answer": 2,
-      "solution": "**Concept.** This question tests knowledge of Mine Ventilation — Gases.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** Both A & B"
+      "answer": 3,
+      "solution": "Golden Temple is in Amritsar."
     },
     {
       "id": 84,
-      "subject": "Technical (Mining)",
-      "topic": "Stowing",
-      "section": "Technical (Mining)",
+      "subject": "General",
+      "topic": "General Awareness",
+      "section": "Section A — General Awareness",
       "type": "MCQ",
       "marks": 1,
       "difficulty": "hard",
-      "stem": "H/L in hydraulic stowing stands for",
+      "stem": "The 'coal supply' to power plants is managed by",
       "options": [
-        "Head/Length",
-        "Head/Level",
-        "Height/Length",
-        "Height/Level"
+        "Mining of bauxite",
+        "Specific to metal mines only",
+        "Quarrying of granite",
+        "CIL through its subsidiaries and e-auction platform"
       ],
       "answer": 3,
-      "solution": "**Concept.** This question tests knowledge of Stowing.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** Height/Level"
+      "solution": "CIL through subsidiaries and e-auction."
     },
     {
       "id": 85,
-      "subject": "Technical (Mining)",
-      "topic": "Bord & Pillar",
-      "section": "Technical (Mining)",
+      "subject": "General",
+      "topic": "General Knowledge",
+      "section": "Section A — General Awareness",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "hard",
-      "stem": "Which stopping is made for depillaring?",
+      "difficulty": "easy",
+      "stem": "The national flower of India is",
       "options": [
-        "Ventilation stopping",
-        "Isolation stopping",
-        "Preparatory stopping",
-        "Permanent stopping"
+        "Sunflower",
+        "Lotus",
+        "Jasmine",
+        "Rose"
       ],
-      "answer": 2,
-      "solution": "**Concept.** This question tests knowledge of Bord & Pillar.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** Preparatory stopping"
+      "answer": 1,
+      "solution": "Lotus is the national flower."
     },
     {
       "id": 86,
-      "subject": "Technical (Mining)",
-      "topic": "Bord & Pillar",
-      "section": "Technical (Mining)",
+      "subject": "General",
+      "topic": "General Knowledge",
+      "section": "Section A — General Awareness",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "hard",
-      "stem": "Bord and pillar method is also known as",
+      "difficulty": "easy",
+      "stem": "The Sundarbans is a",
       "options": [
-        "Room and pillar",
-        "Longwall",
-        "Sublevel caving",
-        "Block caving"
+        "Volcanic region",
+        "Mountain range",
+        "Mangrove forest",
+        "Desert"
       ],
-      "answer": 0,
-      "solution": "**Concept.** This question tests knowledge of Bord & Pillar.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** Room and pillar"
+      "answer": 2,
+      "solution": "Sundarbans is the world's largest mangrove forest."
     },
     {
       "id": 87,
-      "subject": "Technical (Mining)",
-      "topic": "Mine Gases — Chromatography",
-      "section": "Technical (Mining)",
+      "subject": "General",
+      "topic": "General Awareness",
+      "section": "Section A — General Awareness",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "medium",
-      "stem": "Gas chromatography is used for",
+      "difficulty": "hard",
+      "stem": "The 'Startup India' initiative promotes",
       "options": [
-        "Detecting gas composition",
-        "Measuring air velocity",
-        "Testing coal",
-        "None"
+        "Only for large industries",
+        "Only for mining companies",
+        "Nothing specific",
+        "Entrepreneurship and innovation"
       ],
-      "answer": 0,
-      "solution": "**Concept.** This question tests knowledge of Mine Gases — Chromatography.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** Detecting gas composition"
+      "answer": 3,
+      "solution": "Entrepreneurship and innovation."
     },
     {
       "id": 88,
-      "subject": "Technical (Mining)",
-      "topic": "Strata Control",
-      "section": "Technical (Mining)",
+      "subject": "General",
+      "topic": "General Awareness",
+      "section": "Section A — General Awareness",
       "type": "MCQ",
       "marks": 1,
       "difficulty": "medium",
-      "stem": "Skin protection in depillaring is done by",
+      "stem": "The 'stripping ratio' in opencast mining is the ratio of",
       "options": [
-        "Garter props",
-        "Roof bolts",
-        "Steel straps",
-        "All of the above"
+        "Overburden to coal extracted",
+        "Specific to metal mines only",
+        "Used in quarrying operations",
+        "Quarrying of granite"
       ],
-      "answer": 3,
-      "solution": "**Concept.** This question tests knowledge of Strata Control.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** All of the above"
+      "answer": 0,
+      "solution": "Overburden to coal extracted."
     },
     {
       "id": 89,
-      "subject": "Technical (Mining)",
-      "topic": "Mine Ventilation — Gases",
-      "section": "Technical (Mining)",
+      "subject": "General",
+      "topic": "General Awareness",
+      "section": "Section A — General Awareness",
       "type": "MCQ",
       "marks": 1,
       "difficulty": "medium",
-      "stem": "At what temperature should wet bulb not exceed in mines?",
+      "stem": "The 'bench' in opencast mining is",
       "options": [
-        "30.5°C",
-        "33.5°C",
-        "33.0°C",
-        "32.5°C"
+        "Specific to metal mines only",
+        "A horizontal step-like working in an open cast mine",
+        "Mining of bauxite",
+        "Quarrying of granite"
       ],
       "answer": 1,
-      "solution": "**Concept.** This question tests knowledge of Mine Ventilation — Gases.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** 33.5°C"
+      "solution": "A horizontal step-like working in an open cast mine."
     },
     {
       "id": 90,
-      "subject": "Technical (Mining)",
-      "topic": "Explosives & Blasting",
-      "section": "Technical (Mining)",
+      "subject": "General",
+      "topic": "General Awareness",
+      "section": "Section A — General Awareness",
       "type": "MCQ",
       "marks": 1,
       "difficulty": "hard",
-      "stem": "Nonel is used for",
+      "stem": "The 'energy security' of India depends on",
       "options": [
-        "UG coal mine blasting",
-        "UG metal mine blasting",
-        "Opencast blasting",
-        "Tunnel blasting"
+        "Only on imported oil",
+        "Only on natural gas",
+        "Only on renewable sources",
+        "Domestic coal production and import management"
       ],
-      "answer": 2,
-      "solution": "**Concept.** This question tests knowledge of Explosives & Blasting.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** Opencast blasting"
+      "answer": 3,
+      "solution": "Domestic coal production and imports."
     },
     {
       "id": 91,
-      "subject": "Technical (Mining)",
-      "topic": "Mine Ventilation — Gases",
-      "section": "Technical (Mining)",
+      "subject": "General",
+      "topic": "Reasoning & Verbal Ability",
+      "section": "Section A — General Awareness",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "medium",
-      "stem": "An anemometer is used to measure",
+      "difficulty": "hard",
+      "stem": "Statement: All birds can fly. Penguin is a bird. Conclusion: Penguin can fly. This is",
       "options": [
-        "Air pressure",
-        "Air velocity",
-        "Air temperature",
-        "Air humidity"
+        "None",
+        "Valid",
+        "Invalid",
+        "Cannot determine"
       ],
-      "answer": 1,
-      "solution": "**Concept.** This question tests knowledge of Mine Ventilation — Gases.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** Air velocity"
+      "answer": 2,
+      "solution": "Invalid syllogism — penguins cannot fly."
     },
     {
       "id": 92,
-      "subject": "Technical (Mining)",
-      "topic": "Bord & Pillar",
-      "section": "Technical (Mining)",
+      "subject": "General",
+      "topic": "Reasoning & Verbal Ability",
+      "section": "Section A — General Awareness",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "hard",
-      "stem": "The minimum thickness of seam for blasting gallery is",
+      "difficulty": "easy",
+      "stem": "Find the next number in the series: 2, 6, 12, 20, ?",
       "options": [
-        "6 m",
-        "8 m",
-        "10 m",
-        "12 m"
+        "36",
+        "28",
+        "30",
+        "32"
       ],
       "answer": 2,
-      "solution": "**Concept.** This question tests knowledge of Bord & Pillar.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** 10 m"
+      "solution": "Pattern: 1×2, 2×3, 3×4, 4×5, 5×6=30."
     },
     {
       "id": 93,
-      "subject": "Technical (Mining)",
-      "topic": "Mine Ventilation — Gases",
-      "section": "Technical (Mining)",
+      "subject": "General",
+      "topic": "Reasoning & Verbal Ability",
+      "section": "Section A — General Awareness",
       "type": "MCQ",
       "marks": 1,
       "difficulty": "easy",
-      "stem": "What is the minimum percentage of O2 that should be present in mines?",
+      "stem": "If 'ROCK' is related to 'HARD', then 'WATER' is related to ?",
       "options": [
-        "17%",
-        "18%",
-        "19%",
-        "20.5%"
+        "Wet",
+        "Flow",
+        "Liquid",
+        "Soft"
       ],
-      "answer": 2,
-      "solution": "**Concept.** This question tests knowledge of Mine Ventilation — Gases.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** 19%"
+      "answer": 3,
+      "solution": "Rock is hard; water is soft."
     },
     {
       "id": 94,
-      "subject": "Technical (Mining)",
-      "topic": "Opencast Working",
-      "section": "Technical (Mining)",
+      "subject": "General",
+      "topic": "General Knowledge",
+      "section": "Section A — General Awareness",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "easy",
-      "stem": "The minimum width of haul road is",
+      "difficulty": "hard",
+      "stem": "Currency of UK is",
       "options": [
-        "5 m",
-        "7.5 m",
-        "10 m",
-        "12 m"
+        "Dollar",
+        "Pound Sterling",
+        "Franc",
+        "Euro"
       ],
       "answer": 1,
-      "solution": "**Concept.** This question tests knowledge of Opencast Working.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** 7.5 m"
+      "solution": "Pound Sterling is UK's currency."
     },
     {
       "id": 95,
-      "subject": "Technical (Mining)",
-      "topic": "Electrical — Haulage",
-      "section": "Technical (Mining)",
+      "subject": "General",
+      "topic": "General Awareness",
+      "section": "Section A — General Awareness",
       "type": "MCQ",
       "marks": 1,
       "difficulty": "hard",
-      "stem": "A back stay is used to",
+      "stem": "The 'volatile matter' in coal is",
       "options": [
-        "Prevent tubs running back while ascending",
-        "Stop tubs",
-        "Start tubs",
-        "None"
+        "Specific to metal mines only",
+        "Quarrying of granite",
+        "The gases released when coal is heated in the absence of air",
+        "Mining of bauxite"
       ],
-      "answer": 0,
-      "solution": "**Concept.** This question tests knowledge of Electrical — Haulage.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** Prevent tubs running back while ascending"
+      "answer": 2,
+      "solution": "Gases released when coal is heated without air."
     },
     {
       "id": 96,
-      "subject": "Technical (Mining)",
-      "topic": "Duties of Sirdar",
-      "section": "Technical (Mining)",
+      "subject": "General",
+      "topic": "General Awareness",
+      "section": "Section A — General Awareness",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "hard",
-      "stem": "Section 22 is imposed by",
+      "difficulty": "medium",
+      "stem": "The deepest coal mine in India is located at",
       "options": [
-        "Central Government",
-        "Medical Officer",
-        "DGMS",
-        "Manager"
+        "Singrauli",
+        "Talcher",
+        "Jharia",
+        "Raniganj"
       ],
-      "answer": 0,
-      "solution": "**Concept.** This question tests knowledge of Duties of Sirdar.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** Central Government"
+      "answer": 2,
+      "solution": "Jharia coalfield in Jharkhand has some of the deepest mines."
     },
     {
       "id": 97,
-      "subject": "Technical (Mining)",
-      "topic": "Mine Surveying",
-      "section": "Technical (Mining)",
+      "subject": "General",
+      "topic": "General Awareness",
+      "section": "Section A — General Awareness",
       "type": "MCQ",
       "marks": 1,
       "difficulty": "medium",
-      "stem": "Mine plans are drawn to a scale of",
+      "stem": "The 'coal supply monitoring' system tracks",
       "options": [
-        "1:500",
-        "1:1000",
-        "1:2000",
-        "All of the above"
+        "Only the wages of workers",
+        "Processing of limestone",
+        "Excavation of overburden only",
+        "Production, dispatch, and delivery to consumers"
       ],
       "answer": 3,
-      "solution": "**Concept.** This question tests knowledge of Mine Surveying.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** All of the above"
+      "solution": "Production, dispatch, and delivery."
     },
     {
       "id": 98,
-      "subject": "Technical (Mining)",
-      "topic": "Duties of Sirdar",
-      "section": "Technical (Mining)",
+      "subject": "General",
+      "topic": "General Awareness",
+      "section": "Section A — General Awareness",
       "type": "MCQ",
       "marks": 1,
       "difficulty": "hard",
-      "stem": "Who will be the chairman of the Pit Safety Committee?",
+      "stem": "The headquarters of Western Coalfields Limited is in",
       "options": [
-        "Manager",
-        "Ventilation Officer",
-        "Assistant Manager",
-        "Safety Officer"
+        "New Delhi",
+        "Kolkata",
+        "Nagpur",
+        "Mumbai"
       ],
-      "answer": 3,
-      "solution": "**Concept.** This question tests knowledge of Duties of Sirdar.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** Safety Officer"
+      "answer": 2,
+      "solution": "WCL headquarters is in Nagpur, Maharashtra."
     },
     {
       "id": 99,
-      "subject": "Technical (Mining)",
-      "topic": "Mine Gases — Sampling",
-      "section": "Technical (Mining)",
+      "subject": "General",
+      "topic": "Quantitative Aptitude",
+      "section": "Section A — General Awareness",
       "type": "MCQ",
       "marks": 1,
       "difficulty": "medium",
-      "stem": "Air sampling in mines is done to",
+      "stem": "The LCM of 4, 6, and 8 is",
       "options": [
-        "Check gas concentration",
-        "Check dust level",
-        "Both A & B",
-        "None"
+        "36",
+        "48",
+        "12",
+        "24"
       ],
-      "answer": 2,
-      "solution": "**Concept.** This question tests knowledge of Mine Gases — Sampling.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** Both A & B"
+      "answer": 3,
+      "solution": "LCM of 4, 6, 8 = 24."
     },
     {
       "id": 100,
-      "subject": "Technical (Mining)",
-      "topic": "Face Machineries",
-      "section": "Technical (Mining)",
+      "subject": "General",
+      "topic": "General Knowledge",
+      "section": "Section A — General Awareness",
       "type": "MCQ",
       "marks": 1,
       "difficulty": "easy",
-      "stem": "LHD machine is",
+      "stem": "Who is known as the 'Father of the Indian Nation'?",
       "options": [
-        "Tyre mounted",
-        "Crawler mounted",
-        "Chain mounted",
-        "Both A & B"
+        "B.R. Ambedkar",
+        "Jawaharlal Nehru",
+        "Subhas Chandra Bose",
+        "Mahatma Gandhi"
       ],
       "answer": 3,
-      "solution": "**Concept.** This question tests knowledge of Face Machineries.\n\n**Working.** The correct answer is derived from standard mining practices and CMR 2017 provisions.\n\n**Answer.** Both A & B"
+      "solution": "Mahatma Gandhi is known as Father of the Indian Nation."
     }
-  ]
+  ],
+  "seed": 63798927
 }

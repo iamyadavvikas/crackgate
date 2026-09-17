@@ -19,36 +19,14 @@ function Stat({ label, value, sub }: { label: string; value: string; sub?: strin
 }
 
 /**
- * CIL-specific post-test analytics shown on the result page: peer leaderboard,
- * per-section accuracy and time pacing.
+ * CIL-specific post-test analytics shown on the result page: per-section
+ * accuracy and time pacing.
  */
 export function CilResultAnalytics({ data }: { data: CilResultData }) {
-  const { leaderboard, sections, time } = data;
+  const { sections, time } = data;
 
   return (
     <div className="mt-8 space-y-6 text-left">
-      {/* Leaderboard */}
-      <section className="bg-surface rounded-xl border border-line p-5">
-        <h3 className="font-bold text-lg">Where you stand</h3>
-        {leaderboard.peerCount > 1 ? (
-          <div className="mt-3 grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
-            <Stat label="Rank" value={`#${leaderboard.rank}`} sub={`of ${leaderboard.peerCount}`} />
-            <Stat
-              label="Percentile"
-              value={leaderboard.percentile != null ? `${leaderboard.percentile}` : "—"}
-              sub="vs peers"
-            />
-            <Stat label="Top score" value={`${leaderboard.topScore}`} sub={`/ ${data.total}`} />
-            <Stat label="Avg score" value={`${leaderboard.avgScore}`} sub={`/ ${data.total}`} />
-          </div>
-        ) : (
-          <p className="text-sm text-muted mt-2">
-            You’re among the first to attempt this set — rank and percentile unlock once more
-            candidates finish.
-          </p>
-        )}
-      </section>
-
       {/* Section + time analytics */}
       <section className="bg-surface rounded-xl border border-line p-5">
         <h3 className="font-bold text-lg">Section &amp; time analysis</h3>

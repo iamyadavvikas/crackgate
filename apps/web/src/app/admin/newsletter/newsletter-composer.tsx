@@ -1,8 +1,16 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 
 type SendMode = "instant" | "schedule";
+
+interface SendResult {
+  recipients: number;
+  sent: number;
+  failed: number;
+  sendId: string;
+  items: { email: string; ok: boolean; error: string | null }[];
+}
 
 export default function NewsletterComposer({
   subscriberCount,
@@ -11,30 +19,161 @@ export default function NewsletterComposer({
   userSelectedCount = 0,
   additionalCount = 0,
   shareholdersCount = 0,
+  onSent,
+  onScheduled,
 }: {
   subscriberCount: number;
-  selectedEmails: Set<string>;
+  selectedEmails: Map<string, string | null>;
   subscriberSelectedCount?: number;
   userSelectedCount?: number;
   additionalCount?: number;
   shareholdersCount?: number;
+  onSent?: () => void;
+  onScheduled?: () => void;
 }) {
   const [subject, setSubject] = useState("");
   const [html, setHtml] = useState("");
   const [mode, setMode] = useState<SendMode>("instant");
   const [scheduledAt, setScheduledAt] = useState("");
   const [loading, setLoading] = useState(false);
-  const [result, setResult] = useState<string | null>(null);
+  const [result, setResult] = useState<SendResult | null>(null);
+  const [resultMessage, setResultMessage] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const [showOnlyFailed, setShowOnlyFailed] = useState(false);
+
+  const [drafts, setDrafts] = useState<string[]>([]);
+  const [selectedDraft, setSelectedDraft] = useState("");
+  const [loadingDraft, setLoadingDraft] = useState(false);
+  const [assets, setAssets] = useState<{ name: string; url: string }[]>([]);
+  const [insertedAsset, setInsertedAsset] = useState<string | null>(null);
+  const [theme, setTheme] = useState<"light" | "dark">("light");
+  const [previewHeight, setPreviewHeight] = useState(400);
+  const [previewExpanded, setPreviewExpanded] = useState(false);
+  const previewIframeRef = useRef<HTMLIFrameElement | null>(null);
+  const [htmlBoxHeight, setHtmlBoxHeight] = useState(0);
+  const [htmlBoxExpanded, setHtmlBoxExpanded] = useState(false);
+  const htmlTextareaRef = useRef<HTMLTextAreaElement | null>(null);
+
+  useEffect(() => {
+    const html = document.documentElement;
+    const sync = () => setTheme(html.getAttribute("data-theme") === "dark" ? "dark" : "light");
+    sync();
+    const observer = new MutationObserver(sync);
+    observer.observe(html, { attributes: true, attributeFilter: ["data-theme"] });
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    fetch("/api/admin/newsletter/drafts")
+      .then((r) => r.json())
+      .then((data) => setDrafts(data.drafts ?? []))
+      .catch(() => {});
+    fetch("/api/admin/newsletter/assets")
+      .then((r) => r.json())
+      .then((data) => setAssets(data.assets ?? []))
+      .catch(() => {});
+  }, []);
+
+  async function loadDraft() {
+    if (!selectedDraft) return;
+    setLoadingDraft(true);
+    try {
+      const res = await fetch(`/email/drafts/${selectedDraft}`);
+      const content = await res.text();
+
+      const titleMatch = content.match(/<title>([^<]+)<\/title>/i);
+      if (titleMatch) {
+        setSubject(titleMatch[1].trim());
+      }
+
+      setHtml(content);
+    } catch {
+      setError("Failed to load draft.");
+    } finally {
+      setLoadingDraft(false);
+    }
+  }
+
+  function insertAsset(asset: { name: string; url: string }) {
+    const absUrl = window.location.origin + asset.url;
+    const slotMatch = html.match(/<img\s+src="([^"]+)"[^>]*alt="Campaign image"/i);
+    if (!slotMatch) {
+      setError('No campaign image slot found. The draft must contain an <img> with alt="Campaign image".');
+      return;
+    }
+    setHtml(html.replace(slotMatch[1], absUrl));
+    setInsertedAsset(asset.url);
+    setTimeout(() => setInsertedAsset(null), 2000);
+  }
 
   function minSchedule() {
     const d = new Date(Date.now() + 3600_000);
     return d.toISOString().slice(0, 16);
   }
 
+  function togglePreview() {
+    const doc = previewIframeRef.current?.contentDocument;
+    const contentHeight = Math.max(
+      doc?.body?.scrollHeight ?? 0,
+      doc?.documentElement?.scrollHeight ?? 0,
+    );
+    if (previewExpanded) {
+      setPreviewHeight(400);
+      setPreviewExpanded(false);
+    } else {
+      const next = Math.max(
+        200,
+        Math.min(
+          (contentHeight > 0 ? contentHeight : 600) + 16,
+          Math.floor((window.innerHeight ?? 900) * 0.9),
+        ),
+      );
+      setPreviewHeight(next);
+      setPreviewExpanded(true);
+    }
+  }
+
+  function toggleHtmlBox() {
+    const el = htmlTextareaRef.current;
+    if (!el) return;
+    if (htmlBoxExpanded) {
+      setHtmlBoxHeight(0);
+      setHtmlBoxExpanded(false);
+    } else {
+      const next = Math.max(
+        200,
+        Math.min(
+          (el.scrollHeight > 0 ? el.scrollHeight : 400) + 16,
+          Math.floor((window.innerHeight ?? 900) * 0.9),
+        ),
+      );
+      setHtmlBoxHeight(next);
+      setHtmlBoxExpanded(true);
+    }
+  }
+
+  const resizeDrag = useRef<{ startY: number; startH: number } | null>(null);
+
+  function beginResize(e: React.PointerEvent<HTMLDivElement>, startH: number) {
+    e.preventDefault();
+    resizeDrag.current = { startY: e.clientY, startH };
+    e.currentTarget.setPointerCapture(e.pointerId);
+  }
+
+  function moveResize(e: React.PointerEvent<HTMLDivElement>, apply: (h: number) => void) {
+    if (!resizeDrag.current) return;
+    const next = Math.max(200, resizeDrag.current.startH + (e.clientY - resizeDrag.current.startY));
+    apply(next);
+  }
+
+  function endResize() {
+    resizeDrag.current = null;
+  }
+
   async function send() {
     setError(null);
     setResult(null);
+    setResultMessage(null);
 
     if (!subject.trim()) { setError("Subject is required."); return; }
     if (!html.trim()) { setError("Content is required."); return; }
@@ -47,7 +186,7 @@ export default function NewsletterComposer({
       const body: Record<string, unknown> = {
         subject: subject.trim(),
         html: html.trim(),
-        recipients: Array.from(selectedEmails),
+        recipients: Array.from(selectedEmails.entries()).map(([email, name]) => ({ email, name: name ?? undefined })),
       };
       if (mode === "schedule") body.scheduledAt = new Date(scheduledAt).toISOString();
 
@@ -63,14 +202,22 @@ export default function NewsletterComposer({
       }
 
       if (mode === "instant") {
-        setResult(`Sent to ${data.recipients} subscribers · ${data.sent} delivered, ${data.failed} failed.`);
-      } else {
-        setResult(`Scheduled for ${new Date(data.scheduledFor).toLocaleString()} · ${data.recipients} recipients.`);
-      }
-
-      if (mode === "instant") {
+        setResult({
+          recipients: data.recipients,
+          sent: data.sent,
+          failed: data.failed,
+          sendId: data.sendId,
+          items: data.items ?? [],
+        });
+        onSent?.();
         setSubject("");
         setHtml("");
+      } else {
+        setResult(null);
+        setResultMessage(
+          `Email “${subject.trim()}” scheduled for ${new Date(data.scheduledFor).toLocaleString()} · ${data.recipients} recipients.`,
+        );
+        onScheduled?.();
       }
     } catch {
       setError("Network error. Try again.");
@@ -99,6 +246,50 @@ export default function NewsletterComposer({
         </div>
 
         <div className="mt-4 space-y-4">
+
+          <div className="flex gap-4 flex-wrap">
+            <div className="flex items-end gap-2">
+              <div>
+                <span className="text-xs text-muted font-medium">Load draft</span>
+                <select
+                  value={selectedDraft}
+                  onChange={(e) => setSelectedDraft(e.target.value)}
+                  className="input mt-1 text-sm"
+                >
+                  <option value="">— Select —</option>
+                  {drafts.map((d) => (
+                    <option key={d} value={d}>{d}</option>
+                  ))}
+                </select>
+              </div>
+              <button
+                onClick={loadDraft}
+                disabled={!selectedDraft || loadingDraft}
+                className="btn btn-accent text-sm px-4"
+              >
+                {loadingDraft ? "Loading…" : "Load"}
+              </button>
+            </div>
+
+            {assets.length > 0 && (
+              <div>
+                <span className="text-xs text-muted font-medium">Assets</span>
+                <div className="mt-1 flex flex-wrap gap-2">
+                  {assets.map((a) => (
+                    <button
+                      key={a.name}
+                      onClick={() => insertAsset(a)}
+                      className="text-xs font-mono bg-canvas border border-line rounded px-2 py-1 hover:border-brand transition-colors"
+                      title="Click to insert into the campaign image slot"
+                    >
+                      {insertedAsset === a.url ? "Inserted!" : a.name}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+
           <label className="block">
             <span className="text-xs text-muted">Subject</span>
             <input
@@ -111,25 +302,60 @@ export default function NewsletterComposer({
 
           <label className="block">
             <span className="text-xs text-muted">Content (HTML)</span>
-            <textarea
-              value={html}
-              onChange={(e) => setHtml(e.target.value)}
-              placeholder="<h1>Hello!</h1><p>Your newsletter content here...</p>"
-              rows={12}
-              className="input mt-1 w-full font-mono text-sm"
-            />
+            <div
+              onDoubleClick={toggleHtmlBox}
+              title={htmlBoxExpanded ? "Double-click to collapse HTML box" : "Double-click to expand HTML box to full height"}
+              className="mt-1 w-full overflow-hidden rounded-lg border border-line bg-surface"
+              style={{ height: htmlBoxHeight || undefined, resize: "vertical", minHeight: 200 }}
+            >
+              <textarea
+                ref={htmlTextareaRef}
+                value={html}
+                onChange={(e) => setHtml(e.target.value)}
+                placeholder="<h1>Hello!</h1><p>Your newsletter content here...</p>"
+                rows={12}
+                style={{ height: "calc(100% - 12px)" }}
+                className="block w-full resize-none bg-transparent px-3 py-2.5 font-mono text-sm focus:outline-none focus:ring-2 focus:ring-inset focus:ring-accent"
+              />
+              <div
+                onPointerDown={(e) => beginResize(e, htmlBoxHeight || ((htmlTextareaRef.current?.offsetHeight ?? 0) + 12))}
+                onPointerMove={(e) => moveResize(e, (h) => { setHtmlBoxHeight(h); setHtmlBoxExpanded(true); })}
+                onPointerUp={endResize}
+                onPointerCancel={endResize}
+                className="flex h-3 cursor-ns-resize touch-none select-none items-center justify-center border-t border-line bg-surface"
+              >
+                <span className="h-1 w-10 rounded-full bg-current opacity-30" />
+              </div>
+            </div>
           </label>
 
           <div className="border-t border-line pt-4">
             <span className="text-xs text-muted font-medium">Preview</span>
             {html.trim() ? (
-              <iframe
-                srcDoc={html}
-                title="Newsletter preview"
-                sandbox="allow-same-origin"
-                className="mt-2 w-full rounded-lg border border-line bg-white"
-                style={{ height: "400px" }}
-              />
+              <div
+                onDoubleClick={togglePreview}
+                title={previewExpanded ? "Double-click to collapse preview" : "Double-click to expand preview to full height"}
+                className="mt-2 w-full overflow-hidden rounded-lg border border-line bg-white"
+                style={{ height: previewHeight, resize: "vertical", minHeight: 200 }}
+              >
+                <iframe
+                  ref={previewIframeRef}
+                  srcDoc={html}
+                  title="Newsletter preview"
+                  sandbox="allow-same-origin"
+                  className="block w-full"
+                  style={{ colorScheme: theme, height: "calc(100% - 12px)" }}
+                />
+                <div
+                  onPointerDown={(e) => beginResize(e, previewHeight)}
+                  onPointerMove={(e) => moveResize(e, setPreviewHeight)}
+                  onPointerUp={endResize}
+                  onPointerCancel={endResize}
+                  className="flex h-3 cursor-ns-resize touch-none select-none items-center justify-center border-t border-line bg-surface"
+                >
+                  <span className="h-1 w-10 rounded-full bg-current opacity-30" />
+                </div>
+              </div>
             ) : (
               <p className="mt-2 text-sm text-muted italic">Type some content above to see a preview.</p>
             )}
@@ -187,8 +413,76 @@ export default function NewsletterComposer({
           </div>
 
           {error && <p className="text-sm text-bad mt-2">{error}</p>}
-          {result && <p className="text-sm text-ok mt-2">{result}</p>}
+          {resultMessage && <p className="text-sm text-ok mt-2">{resultMessage}</p>}
+          {result && <SendResults result={result} showOnlyFailed={showOnlyFailed} setShowOnlyFailed={setShowOnlyFailed} />}
         </div>
+      </div>
+    </div>
+  );
+}
+
+function SendResults({
+  result,
+  showOnlyFailed,
+  setShowOnlyFailed,
+}: {
+  result: SendResult;
+  showOnlyFailed: boolean;
+  setShowOnlyFailed: (v: boolean) => void;
+}) {
+  const failedItems = result.items.filter((i) => !i.ok);
+  const visible = showOnlyFailed ? failedItems : result.items;
+
+  return (
+    <div className="border-t border-line pt-4">
+      <div className="flex flex-wrap items-center justify-between gap-3">
+        <div className="flex items-center gap-3 text-sm">
+          <span className="font-bold text-ok">{result.sent} delivered</span>
+          <span className="text-muted">·</span>
+          <span className={failedItems.length ? "font-bold text-bad" : "font-bold text-ok"}>
+            {result.failed} failed
+          </span>
+          <span className="text-muted">·</span>
+          <span className="text-muted">{result.recipients} recipients</span>
+        </div>
+        <button
+          onClick={() => setShowOnlyFailed(!showOnlyFailed)}
+          className="text-xs font-semibold rounded-lg border border-line px-3 py-1.5 hover:border-brand transition-colors"
+        >
+          {showOnlyFailed ? "Show all" : `Show failed only (${failedItems.length})`}
+        </button>
+      </div>
+
+      <div className="mt-3 max-h-72 overflow-y-auto rounded-lg border border-line">
+        <table className="w-full text-left text-xs">
+          <thead className="sticky top-0 bg-canvas text-muted">
+            <tr>
+              <th className="px-3 py-2 font-semibold">Status</th>
+              <th className="px-3 py-2 font-semibold">Email</th>
+              <th className="px-3 py-2 font-semibold">Error</th>
+            </tr>
+          </thead>
+          <tbody className="divide-y divide-line">
+            {visible.map((i) => (
+              <tr key={i.email} className="align-top">
+                <td className="px-3 py-2 whitespace-nowrap">
+                  {i.ok ? (
+                    <span className="text-ok font-semibold">✓ Delivered</span>
+                  ) : (
+                    <span className="text-bad font-semibold">✗ Failed</span>
+                  )}
+                </td>
+                <td className="px-3 py-2 font-mono break-all">{i.email}</td>
+                <td className="px-3 py-2 text-muted break-words">{i.ok ? "—" : (i.error ?? "unknown error")}</td>
+              </tr>
+            ))}
+            {visible.length === 0 && (
+              <tr>
+                <td colSpan={3} className="px-3 py-4 text-center text-muted italic">No failures 🎉</td>
+              </tr>
+            )}
+          </tbody>
+        </table>
       </div>
     </div>
   );

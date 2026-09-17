@@ -3,15 +3,28 @@ import { z } from "zod";
 import { getAdminSession } from "@/lib/admin";
 import { db } from "@/lib/db";
 import { newsletterQueue, type NewsletterJobData } from "@/lib/queue";
+import type { NewsletterRecipient } from "@/lib/resend";
 
 export const dynamic = "force-dynamic";
+
+const recipientSchema = z.union([
+  z.string().email(),
+  z.object({
+    email: z.string().email(),
+    name: z.string().trim().max(500).nullable().optional(),
+  }),
+]);
 
 const bodySchema = z.object({
   subject: z.string().min(1).max(200),
   html: z.string().min(1),
   scheduledAt: z.string().datetime(),
-  recipients: z.array(z.string().email()).optional(),
+  recipients: z.array(recipientSchema).optional(),
 });
+
+function normalizeRecipients(list: Array<{ email: string; name?: string | null } | string>): NewsletterRecipient[] {
+  return list.map((r) => (typeof r === "string" ? { email: r } : { email: r.email, name: r.name ?? null }));
+}
 
 export async function POST(request: Request) {
   const admin = await getAdminSession();
@@ -50,19 +63,32 @@ export async function POST(request: Request) {
 
   const jobData: NewsletterJobData = { subject, html };
   if (explicitRecipients && explicitRecipients.length > 0) {
-    jobData.recipients = explicitRecipients;
+    jobData.recipients = normalizeRecipients(explicitRecipients);
+  }
+
+  if (!newsletterQueue) {
+    return NextResponse.json({ error: "redis_not_configured" }, { status: 500 });
   }
 
   try {
-    await newsletterQueue.add("send", jobData, { delay });
+    const scheduledJob = await newsletterQueue.add("send", jobData, { delay });
+    const record = await db.newsletterSchedule.create({
+      data: {
+        subject,
+        html,
+        recipients: (jobData.recipients ?? []) as unknown as object[],
+        scheduledAt: scheduledDate,
+        jobId: scheduledJob.id,
+      },
+    });
+    return NextResponse.json({
+      recipients: recipientCount,
+      scheduled: true,
+      scheduledFor: scheduledDate.toISOString(),
+      scheduleId: record.id,
+    });
   } catch (err) {
     console.error("[newsletter/schedule]", err);
     return NextResponse.json({ error: "schedule_failed", sent: 0, failed: recipientCount }, { status: 500 });
   }
-
-  return NextResponse.json({
-    recipients: recipientCount,
-    scheduled: true,
-    scheduledFor: scheduledDate.toISOString(),
-  });
 }

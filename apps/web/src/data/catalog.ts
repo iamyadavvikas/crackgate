@@ -47,6 +47,8 @@ const DIPLOMA_PRICE: SubjectPrice = { proPaise: 19900, premiumPaise: 34900 };
 const WCL_PRICE: SubjectPrice = { proPaise: 39900, premiumPaise: 39900 };
 const NCL_PRICE: SubjectPrice = { proPaise: 39900, premiumPaise: 39900 };
 
+const PSU_PRICE: SubjectPrice = { proPaise: 49900, premiumPaise: 49900 };
+
 export const CATALOG: CatalogExam[] = [
   {
     exam: "GATE",
@@ -66,11 +68,11 @@ export const CATALOG: CatalogExam[] = [
   {
     exam: "PSU",
     label: "PSU · Coal India (CIL)",
-    // PSU CIL disciplines are not live yet — recorded for attribution only.
     subjects: CIL_ROWS.map((r) => ({
       slug: r.slug,
       label: r.discipline,
-      live: false,
+      live: true,
+      price: PSU_PRICE,
     })),
   },
   {
@@ -79,7 +81,8 @@ export const CATALOG: CatalogExam[] = [
     subjects: ONGC_ROWS.map((r) => ({
       slug: r.slug,
       label: r.discipline,
-      live: false,
+      live: true,
+      price: PSU_PRICE,
     })),
   },
   {
@@ -144,12 +147,19 @@ export function getExam(exam: string): CatalogExam | undefined {
   return CATALOG.find((e) => e.exam === exam);
 }
 
+/** Find the catalog entry that contains a specific subject within an exam. */
+export function getExamEntry(exam: string, subject: string): CatalogExam | undefined {
+  return CATALOG.find((e) => e.exam === exam && e.subjects.some((s) => s.slug === subject));
+}
+
 /** Look up a subject within an exam by slug. */
 export function getSubject(
   exam: string,
   subject: string,
 ): CatalogSubject | undefined {
-  return getExam(exam)?.subjects.find((s) => s.slug === subject);
+  return CATALOG.filter((e) => e.exam === exam)
+    .flatMap((e) => e.subjects)
+    .find((s) => s.slug === subject);
 }
 
 /** Flat list of every exam+subject pair (for filters / iteration). */
@@ -171,7 +181,7 @@ export function subjectPrice(exam: string, subject: string): SubjectPrice {
 
 /** Human label for an exam+subject pair, e.g. "GATE · Mining (MN)". */
 export function subjectLabel(exam: string, subject: string): string {
-  const e = getExam(exam);
+  const e = getExamEntry(exam, subject) ?? getExam(exam);
   const s = e?.subjects.find((x) => x.slug === subject);
   return `${e?.label ?? exam} · ${s?.label ?? subject}`;
 }

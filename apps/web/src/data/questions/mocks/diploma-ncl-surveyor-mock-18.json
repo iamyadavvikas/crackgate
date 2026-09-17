@@ -1,1830 +1,1825 @@
 {
-  "id": "diploma-ncl-ncl-surveyor-mock-18",
-  "title": "NCL Surveyor T&S Gr. B \u2014 Mock 18",
+  "id": "diploma-ncl-surveyor-mock-18",
+  "title": "NCL Mine Surveyor Mock 18",
   "tier": "pro",
-  "duration": 120,
-  "pattern": "NCL Surveyor CBT (100 Q \u00b7 100 marks \u00b7 120 min \u00b7 no \u2212ve)",
+  "duration": 90,
+  "pattern": "100 MCQs, 100 marks, 90 min, NO negative marking",
   "totalMarks": 100,
   "sections": [
     {
-      "name": "Section A \u2014 Technical",
-      "count": 70,
-      "marks": 70
+      "name": "Technical",
+      "questionCount": 80,
+      "marks": 80
     },
     {
-      "name": "Section B \u2014 General",
-      "count": 30,
-      "marks": 30
+      "name": "General Awareness",
+      "questionCount": 20,
+      "marks": 20
     }
   ],
-  "negativeMarking": {
-    "mcq1": 0,
-    "mcq2": 0,
-    "nat": 0,
-    "msq": 0
-  },
+  "negativeMarking": false,
   "seed": 4034446206,
   "locked": true,
   "questions": [
     {
-      "id": 1,
-      "subject": "Technical",
-      "topic": "Levelling",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "hard",
-      "stem": "The 'line of strikes' is perpendicular to",
-      "options": [
-        "Direction of dip",
-        "Surface contour",
-        "Borehole",
-        "None"
-      ],
-      "answer": 0,
-      "solution": "**Answer.** Direction of dip"
-    },
-    {
-      "id": 2,
-      "subject": "Technical",
-      "topic": "Levelling",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "easy",
-      "stem": "The line of collimation is",
-      "options": [
-        "Imaginary line",
-        "None",
-        "Physical line",
-        "Line of sight when bubble is central"
-      ],
-      "answer": 3,
-      "solution": "**Answer.** Line of sight when bubble is central"
-    },
-    {
-      "id": 3,
-      "subject": "Technical",
-      "topic": "Linear Measurement",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "hard",
-      "stem": "Remote sensing in mining is used for",
-      "options": [
-        "Only mapping",
-        "Only production",
-        "Environmental monitoring and exploration",
-        "None"
-      ],
-      "answer": 2,
-      "solution": "**Answer.** Environmental monitoring and exploration"
-    },
-    {
-      "id": 4,
-      "subject": "Technical",
-      "topic": "Errors & Adjustments",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "easy",
-      "stem": "A total station can measure",
-      "options": [
-        "Only angles",
-        "Only distance",
-        "Horizontal angle, vertical angle, and distance",
-        "None"
-      ],
-      "answer": 2,
-      "solution": "**Answer.** Horizontal angle, vertical angle, and distance"
-    },
-    {
-      "id": 5,
-      "subject": "Technical",
-      "topic": "Photogrammetry & Remote Sensing",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
+      "id": "ncl-surveyor-18-001",
+      "subject": "Mine Surveying",
+      "topic": "Theodolite",
+      "section": "technical",
+      "type": "mcq",
       "marks": 1,
       "difficulty": "medium",
-      "stem": "The least count of a vernier theodolite is typically",
+      "stem": "A micro-optic theodolite is primarily used for:",
       "options": [
-        "5 minutes",
-        "20 seconds",
+        "Contouring only",
+        "Measurement of distances only",
+        "Measurement of horizontal and vertical angles",
+        "Measurement of horizontal angles only"
+      ],
+      "answer": 2,
+      "solution": "Micro-optic theodolites are precision instruments designed for accurate measurement of horizontal and vertical angles."
+    },
+    {
+      "id": "ncl-surveyor-18-002",
+      "subject": "Mine Surveying",
+      "topic": "Theodolite",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The least count of a vernier theodolite is typically:",
+      "options": [
+        "1 degree",
         "1 minute",
-        "None"
+        "20 seconds",
+        "20 minutes"
       ],
-      "answer": 1,
-      "solution": "**Answer.** 20 seconds"
+      "answer": 2,
+      "solution": "A standard vernier theodolite has a least count of 20 seconds, while a micro-optic theodolite has 1 second or less."
     },
     {
-      "id": 6,
-      "subject": "Technical",
-      "topic": "Total Station & EDM",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
+      "id": "ncl-surveyor-18-003",
+      "subject": "Mine Surveying",
+      "topic": "Theodolite",
+      "section": "technical",
+      "type": "mcq",
       "marks": 1,
       "difficulty": "medium",
-      "stem": "A vertical aerial photograph has",
+      "stem": "The least count of a micro-optic theodolite is generally:",
       "options": [
-        "No scale variation",
-        "None",
-        "Horizon at center",
-        "Nadir point at center"
+        "1 minute",
+        "20 seconds",
+        "5 seconds",
+        "1 second"
       ],
       "answer": 3,
-      "solution": "**Answer.** Nadir point at center"
+      "solution": "Micro-optic theodolites use optical micrometers achieving least counts of 1 second or even 0.5 seconds."
     },
     {
-      "id": 7,
-      "subject": "Technical",
-      "topic": "Errors & Adjustments",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
+      "id": "ncl-surveyor-18-004",
+      "subject": "Mine Surveying",
+      "topic": "Legislation — Mine Plans & Safety",
+      "section": "technical",
+      "type": "mcq",
       "marks": 1,
-      "difficulty": "easy",
-      "stem": "A metric chain used in surveying typically has",
+      "difficulty": "medium",
+      "stem": "As per the Mines Act 1952, women may be employed aboveground only between:",
       "options": [
-        "30 m length",
-        "20 m length",
-        "Both a and b depending on use",
-        "100 m length"
+        "24 hours",
+        "6 a.m. and 7 p.m.",
+        "5 a.m. and 9 p.m.",
+        "8 a.m. and 6 p.m."
       ],
       "answer": 1,
-      "solution": "**Answer.** 20 m length"
+      "solution": "Mines Act 1952, s.46: women shall not be employed belowground, and aboveground employment is restricted between 6 a.m. and 7 p.m."
     },
     {
-      "id": 8,
-      "subject": "Technical",
-      "topic": "Angular Measurement",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
+      "id": "ncl-surveyor-18-005",
+      "subject": "Mine Surveying",
+      "topic": "Theodolite",
+      "section": "technical",
+      "type": "mcq",
       "marks": 1,
       "difficulty": "medium",
-      "stem": "The correction for slope in chain measurement is always",
-      "options": [
-        "Zero",
-        "Positive",
-        "Variable",
-        "Negative"
-      ],
-      "answer": 1,
-      "solution": "**Answer.** Positive"
-    },
-    {
-      "id": 9,
-      "subject": "Technical",
-      "topic": "Angular Measurement",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "medium",
-      "stem": "The height of instrument method is",
-      "options": [
-        "None",
-        "Faster but no check",
-        "Same as rise and fall",
-        "Slower but accurate"
-      ],
-      "answer": 1,
-      "solution": "**Answer.** Faster but no check"
-    },
-    {
-      "id": 10,
-      "subject": "Technical",
-      "topic": "Linear Measurement",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "medium",
-      "stem": "The reduced bearing system ranges from",
-      "options": [
-        "0\u00b0 to 360\u00b0",
-        "0\u00b0 to 90\u00b0 in each quadrant",
-        "0\u00b0 to 180\u00b0",
-        "None"
-      ],
-      "answer": 1,
-      "solution": "**Answer.** 0\u00b0 to 90\u00b0 in each quadrant"
-    },
-    {
-      "id": 11,
-      "subject": "Technical",
-      "topic": "Linear Measurement",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "medium",
-      "stem": "Least squares adjustment minimizes",
-      "options": [
-        "Sum of squares of residuals",
-        "None",
-        "Sum of residuals",
-        "Maximum residual"
-      ],
-      "answer": 0,
-      "solution": "**Answer.** Sum of squares of residuals"
-    },
-    {
-      "id": 12,
-      "subject": "Technical",
-      "topic": "Mine Surveying",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "hard",
-      "stem": "A total station combines",
-      "options": [
-        "None",
-        "Theodolite + EDM + microprocessor",
-        "Only theodolite",
-        "Only EDM"
-      ],
-      "answer": 1,
-      "solution": "**Answer.** Theodolite + EDM + microprocessor"
-    },
-    {
-      "id": 13,
-      "subject": "Technical",
-      "topic": "Mine Surveying",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "easy",
-      "stem": "A dial compass in mining measures",
-      "options": [
-        "None",
-        "Bearing of survey lines",
-        "Distance",
-        "Elevation"
-      ],
-      "answer": 1,
-      "solution": "**Answer.** Bearing of survey lines"
-    },
-    {
-      "id": 14,
-      "subject": "Technical",
-      "topic": "Linear Measurement",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "medium",
-      "stem": "The accuracy of a total station is typically",
-      "options": [
-        "\u00b110 cm",
-        "\u00b11 m",
-        "\u00b12 mm + 2 ppm",
-        "None"
-      ],
-      "answer": 2,
-      "solution": "**Answer.** \u00b12 mm + 2 ppm"
-    },
-    {
-      "id": 15,
-      "subject": "Technical",
-      "topic": "Errors & Adjustments",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "easy",
-      "stem": "Scale of a vertical photograph depends on",
-      "options": [
-        "Only focal length",
-        "None",
-        "Flying height and focal length",
-        "Only height"
-      ],
-      "answer": 2,
-      "solution": "**Answer.** Flying height and focal length"
-    },
-    {
-      "id": 16,
-      "subject": "Technical",
-      "topic": "Mine Surveying",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "medium",
-      "stem": "Back sight is taken on",
-      "options": [
-        "Any point",
-        "None",
-        "A point of unknown elevation",
-        "A point of known elevation"
-      ],
-      "answer": 3,
-      "solution": "**Answer.** A point of known elevation"
-    },
-    {
-      "id": 17,
-      "subject": "Technical",
-      "topic": "Mine Surveying",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "easy",
-      "stem": "A theodolite is primarily used for",
-      "options": [
-        "Measuring distance",
-        "None",
-        "Levelling",
-        "Measuring horizontal and vertical angles"
-      ],
-      "answer": 3,
-      "solution": "**Answer.** Measuring horizontal and vertical angles"
-    },
-    {
-      "id": 18,
-      "subject": "Technical",
-      "topic": "Mine Surveying",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "easy",
-      "stem": "The law of propagation of weights states",
-      "options": [
-        "Weight is constant",
-        "Weight decreases",
-        "Weight of sum = reciprocal of sum of reciprocals",
-        "None"
-      ],
-      "answer": 2,
-      "solution": "**Answer.** Weight of sum = reciprocal of sum of reciprocals"
-    },
-    {
-      "id": 19,
-      "subject": "Technical",
-      "topic": "Photogrammetry & Remote Sensing",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "easy",
-      "stem": "Chain surveying is suitable for",
-      "options": [
-        "Flat terrain only",
-        "All terrains",
-        "Hilly terrain",
-        "Small and simple areas"
-      ],
-      "answer": 0,
-      "solution": "**Answer.** Flat terrain only"
-    },
-    {
-      "id": 20,
-      "subject": "Technical",
-      "topic": "Total Station & EDM",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "medium",
-      "stem": "A drone in mine surveying is used for",
-      "options": [
-        "None",
-        "Aerial photography and topographic mapping",
-        "Only measurement",
-        "Only photography"
-      ],
-      "answer": 1,
-      "solution": "**Answer.** Aerial photography and topographic mapping"
-    },
-    {
-      "id": 21,
-      "subject": "Technical",
-      "topic": "Mine Surveying",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "hard",
-      "stem": "Dip and strike of a coal seam are measured by",
-      "options": [
-        "None",
-        "Only borehole",
-        "Surface observation and borehole data",
-        "Only surface mapping"
-      ],
-      "answer": 2,
-      "solution": "**Answer.** Surface observation and borehole data"
-    },
-    {
-      "id": 22,
-      "subject": "Technical",
-      "topic": "Mine Surveying",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "medium",
-      "stem": "The precision of a survey is expressed as",
-      "options": [
-        "Ratio of error to measured quantity",
-        "Absolute error only",
-        "None",
-        "Percentage only"
-      ],
-      "answer": 0,
-      "solution": "**Answer.** Ratio of error to measured quantity"
-    },
-    {
-      "id": 23,
-      "subject": "Technical",
-      "topic": "Errors & Adjustments",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "easy",
-      "stem": "EDM stands for",
-      "options": [
-        "Exact Distance Measurement",
-        "Electronic Data Module",
-        "None",
-        "Electronic Distance Measurement"
-      ],
-      "answer": 3,
-      "solution": "**Answer.** Electronic Distance Measurement"
-    },
-    {
-      "id": 24,
-      "subject": "Technical",
-      "topic": "Errors & Adjustments",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "medium",
-      "stem": "The rise and fall method checks",
-      "options": [
-        "Only elevation",
-        "Distance",
-        "Arithmetic accuracy of reduction",
-        "None"
-      ],
-      "answer": 2,
-      "solution": "**Answer.** Arithmetic accuracy of reduction"
-    },
-    {
-      "id": 25,
-      "subject": "Technical",
-      "topic": "Mine Surveying",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "hard",
-      "stem": "Accidental errors follow",
-      "options": [
-        "None",
-        "Poisson distribution",
-        "Normal distribution",
-        "Uniform distribution"
-      ],
-      "answer": 2,
-      "solution": "**Answer.** Normal distribution"
-    },
-    {
-      "id": 26,
-      "subject": "Technical",
-      "topic": "Mine Surveying",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "hard",
-      "stem": "A level tube bubble moves towards",
-      "options": [
-        "Higher end of the tube",
-        "Center",
-        "Lower end",
-        "None"
-      ],
-      "answer": 0,
-      "solution": "**Answer.** Higher end of the tube"
-    },
-    {
-      "id": 27,
-      "subject": "Technical",
-      "topic": "Linear Measurement",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "medium",
-      "stem": "An outlier is",
-      "options": [
-        "An observation significantly different from others",
-        "Average value",
-        "Correct reading",
-        "None"
-      ],
-      "answer": 0,
-      "solution": "**Answer.** An observation significantly different from others"
-    },
-    {
-      "id": 28,
-      "subject": "Technical",
-      "topic": "Linear Measurement",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "hard",
-      "stem": "A closing error in traverse is adjusted by",
-      "options": [
-        "Re-measuring only",
-        "Bowditch or transit rule",
-        "None",
-        "Ignoring it"
-      ],
-      "answer": 1,
-      "solution": "**Answer.** Bowditch or transit rule"
-    },
-    {
-      "id": 29,
-      "subject": "Technical",
-      "topic": "Linear Measurement",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "easy",
-      "stem": "A fault in geological terms means",
-      "options": [
-        "Surface crack",
-        "Water inflow",
-        "None",
-        "Displacement of rock strata"
-      ],
-      "answer": 3,
-      "solution": "**Answer.** Displacement of rock strata"
-    },
-    {
-      "id": 30,
-      "subject": "Technical",
-      "topic": "Levelling",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "hard",
-      "stem": "3D laser scanning is used for",
-      "options": [
-        "None",
-        "Only measuring distances",
-        "Creating digital terrain models",
-        "Only volume calculation"
-      ],
-      "answer": 2,
-      "solution": "**Answer.** Creating digital terrain models"
-    },
-    {
-      "id": 31,
-      "subject": "Technical",
-      "topic": "Errors & Adjustments",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "easy",
-      "stem": "The purpose of a mine plan is to",
-      "options": [
-        "Only show geological data",
-        "None",
-        "Only show surface features",
-        "Record and plan mining operations"
-      ],
-      "answer": 3,
-      "solution": "**Answer.** Record and plan mining operations"
-    },
-    {
-      "id": 32,
-      "subject": "Technical",
-      "topic": "Angular Measurement",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "easy",
-      "stem": "The condition equation method is used for",
-      "options": [
-        "None",
-        "Only simple surveys",
-        "Adjusting constrained measurements",
-        "Only leveling"
-      ],
-      "answer": 2,
-      "solution": "**Answer.** Adjusting constrained measurements"
-    },
-    {
-      "id": 33,
-      "subject": "Technical",
-      "topic": "Photogrammetry & Remote Sensing",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "easy",
-      "stem": "Repetition method in theodolite survey gives",
-      "options": [
-        "More accurate results",
-        "Same accuracy",
-        "Less accurate results",
-        "None"
-      ],
-      "answer": 0,
-      "solution": "**Answer.** More accurate results"
-    },
-    {
-      "id": 34,
-      "subject": "Technical",
-      "topic": "Errors & Adjustments",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "hard",
-      "stem": "Local attraction in a compass is caused by",
-      "options": [
-        "Wind",
-        "Humidity",
-        "Magnetic materials nearby",
-        "Temperature"
-      ],
-      "answer": 2,
-      "solution": "**Answer.** Magnetic materials nearby"
-    },
-    {
-      "id": 35,
-      "subject": "Technical",
-      "topic": "Total Station & EDM",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "easy",
-      "stem": "The temporary adjustments of a theodolite include",
-      "options": [
-        "Only focusing",
-        "Only levelling",
-        "Centreing, levelling, focusing",
-        "None"
-      ],
-      "answer": 2,
-      "solution": "**Answer.** Centreing, levelling, focusing"
-    },
-    {
-      "id": 36,
-      "subject": "Technical",
-      "topic": "Errors & Adjustments",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "easy",
-      "stem": "Traversing with a total station is more accurate because",
-      "options": [
-        "None",
-        "Electronic measurement eliminates human error",
-        "It is cheaper",
-        "It is faster"
-      ],
-      "answer": 1,
-      "solution": "**Answer.** Electronic measurement eliminates human error"
-    },
-    {
-      "id": 37,
-      "subject": "Technical",
-      "topic": "Angular Measurement",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "hard",
-      "stem": "The type of chain commonly used in India is",
-      "options": [
-        "Engineer's chain",
-        "Revenue chain",
-        "Metric chain",
-        "Gunter's chain"
-      ],
-      "answer": 3,
-      "solution": "**Answer.** Gunter's chain"
-    },
-    {
-      "id": 38,
-      "subject": "Technical",
-      "topic": "Errors & Adjustments",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "hard",
-      "stem": "The whole circle bearing system ranges from",
-      "options": [
-        "\u221290\u00b0 to +90\u00b0",
-        "0\u00b0 to 180\u00b0",
-        "0\u00b0 to 360\u00b0",
-        "None"
-      ],
-      "answer": 2,
-      "solution": "**Answer.** 0\u00b0 to 360\u00b0"
-    },
-    {
-      "id": 39,
-      "subject": "Technical",
-      "topic": "Errors & Adjustments",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "medium",
-      "stem": "The coordinate system in total station uses",
-      "options": [
-        "Both",
-        "None",
-        "Latitude and Longitude",
-        "Easting and Northing"
-      ],
-      "answer": 3,
-      "solution": "**Answer.** Easting and Northing"
-    },
-    {
-      "id": 40,
-      "subject": "Technical",
-      "topic": "Linear Measurement",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "hard",
-      "stem": "Fore sight is taken on",
-      "options": [
-        "None",
-        "Bench mark only",
-        "A point of known elevation",
-        "A point of unknown elevation (turning point)"
-      ],
-      "answer": 2,
-      "solution": "**Answer.** A point of known elevation"
-    },
-    {
-      "id": 41,
-      "subject": "Technical",
-      "topic": "Errors & Adjustments",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "easy",
-      "stem": "A chain length error is corrected by",
-      "options": [
-        "Tape correction",
-        "Ignoring it",
-        "Both a and b",
-        "Field calibration"
-      ],
-      "answer": 0,
-      "solution": "**Answer.** Tape correction"
-    },
-    {
-      "id": 42,
-      "subject": "Technical",
-      "topic": "Errors & Adjustments",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "medium",
-      "stem": "Contour interval is",
-      "options": [
-        "Horizontal distance",
-        "Both",
-        "Vertical distance between successive contours",
-        "None"
-      ],
-      "answer": 2,
-      "solution": "**Answer.** Vertical distance between successive contours"
-    },
-    {
-      "id": 43,
-      "subject": "Technical",
-      "topic": "Angular Measurement",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "hard",
-      "stem": "The least count of a vernier caliper is typically",
-      "options": [
-        "0.001 mm",
-        "1 mm",
-        "0.1 mm",
-        "0.01 mm"
-      ],
-      "answer": 3,
-      "solution": "**Answer.** 0.01 mm"
-    },
-    {
-      "id": 44,
-      "subject": "Technical",
-      "topic": "Linear Measurement",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "medium",
-      "stem": "GIS stands for",
-      "options": [
-        "None",
-        "Geological Investigation System",
-        "Geographic Information System",
-        "General Information System"
-      ],
-      "answer": 2,
-      "solution": "**Answer.** Geographic Information System"
-    },
-    {
-      "id": 45,
-      "subject": "Technical",
-      "topic": "Total Station & EDM",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "hard",
-      "stem": "Standard deviation measures",
-      "options": [
-        "Spread of observations around mean",
-        "None",
-        "Only minimum error",
-        "Only maximum error"
-      ],
-      "answer": 0,
-      "solution": "**Answer.** Spread of observations around mean"
-    },
-    {
-      "id": 46,
-      "subject": "Technical",
-      "topic": "Total Station & EDM",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "easy",
-      "stem": "The accuracy of GPS in surveying depends on",
-      "options": [
-        "None",
-        "Number of satellites and receiver quality",
-        "Only weather",
-        "Only time of day"
-      ],
-      "answer": 1,
-      "solution": "**Answer.** Number of satellites and receiver quality"
-    },
-    {
-      "id": 47,
-      "subject": "Technical",
-      "topic": "Mine Surveying",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "hard",
-      "stem": "Optical square is used for",
+      "stem": "The process of setting the theodolite exactly over the station point is called:",
       "options": [
         "Levelling",
-        "Measuring distance",
-        "Measuring angles",
-        "Setting out right angles"
-      ],
-      "answer": 2,
-      "solution": "**Answer.** Measuring angles"
-    },
-    {
-      "id": 48,
-      "subject": "Technical",
-      "topic": "Total Station & EDM",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "medium",
-      "stem": "Systematic errors can be",
-      "options": [
-        "None",
-        "Eliminated by corrections",
-        "Random",
-        "Never eliminated"
+        "Centreing",
+        "Focusing",
+        "Bisecting"
       ],
       "answer": 1,
-      "solution": "**Answer.** Eliminated by corrections"
+      "solution": "Centreing means positioning the theodolite plumb bob (or optical plummet) exactly over the station mark on the ground."
     },
     {
-      "id": 49,
-      "subject": "Technical",
-      "topic": "Linear Measurement",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
+      "id": "ncl-surveyor-18-006",
+      "subject": "Mine Surveying",
+      "topic": "Theodolite",
+      "section": "technical",
+      "type": "mcq",
       "marks": 1,
       "difficulty": "medium",
-      "stem": "A sectional view in mine surveying shows",
+      "stem": "The process of making the vertical axis truly vertical is called:",
       "options": [
-        "Only surface plan",
-        "Vertical cross-section of mine workings",
-        "None",
-        "Only contour map"
-      ],
-      "answer": 1,
-      "solution": "**Answer.** Vertical cross-section of mine workings"
-    },
-    {
-      "id": 50,
-      "subject": "Technical",
-      "topic": "Levelling",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "easy",
-      "stem": "Mine plans are prepared at a scale of",
-      "options": [
-        "None",
-        "1:10000 only",
-        "1:100 only",
-        "1:500 or 1:1000 typically"
-      ],
-      "answer": 3,
-      "solution": "**Answer.** 1:500 or 1:1000 typically"
-    },
-    {
-      "id": 51,
-      "subject": "Technical",
-      "topic": "Mine Surveying",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "hard",
-      "stem": "A Dumpy level has",
-      "options": [
-        "Fixed telescope",
-        "Two telescopes",
-        "No telescope",
-        "Rotating telescope"
-      ],
-      "answer": 0,
-      "solution": "**Answer.** Fixed telescope"
-    },
-    {
-      "id": 52,
-      "subject": "Technical",
-      "topic": "Photogrammetry & Remote Sensing",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "medium",
-      "stem": "Tape correction for temperature is applied when",
-      "options": [
-        "Never",
-        "Always",
-        "Only in summer",
-        "Temperature differs significantly from standard"
-      ],
-      "answer": 3,
-      "solution": "**Answer.** Temperature differs significantly from standard"
-    },
-    {
-      "id": 53,
-      "subject": "Technical",
-      "topic": "Total Station & EDM",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "medium",
-      "stem": "A reflectorless total station can measure distance to",
-      "options": [
-        "Only prism targets",
-        "None",
-        "Any surface without prism",
-        "Only metallic surfaces"
-      ],
-      "answer": 2,
-      "solution": "**Answer.** Any surface without prism"
-    },
-    {
-      "id": 54,
-      "subject": "Technical",
-      "topic": "Total Station & EDM",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "hard",
-      "stem": "Photogrammetry uses",
-      "options": [
-        "Only satellite images",
-        "None",
-        "Only ground surveys",
-        "Aerial photographs for mapping"
-      ],
-      "answer": 3,
-      "solution": "**Answer.** Aerial photographs for mapping"
-    },
-    {
-      "id": 55,
-      "subject": "Technical",
-      "topic": "Mine Surveying",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "hard",
-      "stem": "Face left and face right observations are taken to",
-      "options": [
-        "Increase speed",
-        "Eliminate instrumental errors",
-        "None",
-        "Reduce cost"
-      ],
-      "answer": 1,
-      "solution": "**Answer.** Eliminate instrumental errors"
-    },
-    {
-      "id": 56,
-      "subject": "Technical",
-      "topic": "Linear Measurement",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "medium",
-      "stem": "The duty of a mine surveyor includes",
-      "options": [
-        "None",
-        "Only surface survey",
-        "Setting out and maintaining mine plans",
-        "Only underground survey"
-      ],
-      "answer": 2,
-      "solution": "**Answer.** Setting out and maintaining mine plans"
-    },
-    {
-      "id": 57,
-      "subject": "Technical",
-      "topic": "Mine Surveying",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "medium",
-      "stem": "Borehole surveying is done to",
-      "options": [
-        "Test gas",
-        "None",
-        "Measure air velocity",
-        "Determine dip, strike, and position of coal seams"
-      ],
-      "answer": 3,
-      "solution": "**Answer.** Determine dip, strike, and position of coal seams"
-    },
-    {
-      "id": 58,
-      "subject": "Technical",
-      "topic": "Levelling",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "hard",
-      "stem": "A DTM stands for",
-      "options": [
-        "Data Transfer Module",
-        "None",
-        "Digital Terrain Model",
-        "Direct Terrain Measurement"
-      ],
-      "answer": 2,
-      "solution": "**Answer.** Digital Terrain Model"
-    },
-    {
-      "id": 59,
-      "subject": "Technical",
-      "topic": "Angular Measurement",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "medium",
-      "stem": "Magnetic declination is the angle between",
-      "options": [
-        "True north and magnetic north",
-        "Two survey lines",
-        "Horizontal and vertical",
-        "None"
-      ],
-      "answer": 0,
-      "solution": "**Answer.** True north and magnetic north"
-    },
-    {
-      "id": 60,
-      "subject": "Technical",
-      "topic": "Linear Measurement",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "medium",
-      "stem": "Reciprocal levelling eliminates",
-      "options": [
-        "None",
-        "Wind errors",
-        "Curvature and refraction errors",
-        "Temperature errors"
-      ],
-      "answer": 2,
-      "solution": "**Answer.** Curvature and refraction errors"
-    },
-    {
-      "id": 61,
-      "subject": "Technical",
-      "topic": "Photogrammetry & Remote Sensing",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "easy",
-      "stem": "A ranging rod is used for",
-      "options": [
-        "Marking stations",
+        "Orientation",
         "Levelling",
-        "None",
-        "Measuring angles"
-      ],
-      "answer": 0,
-      "solution": "**Answer.** Marking stations"
-    },
-    {
-      "id": 62,
-      "subject": "Technical",
-      "topic": "Mine Surveying",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "medium",
-      "stem": "Outcrop is where",
-      "options": [
-        "Water is found",
-        "None",
-        "Coal is deepest",
-        "Coal seam reaches the surface"
-      ],
-      "answer": 3,
-      "solution": "**Answer.** Coal seam reaches the surface"
-    },
-    {
-      "id": 63,
-      "subject": "Technical",
-      "topic": "Mine Surveying",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "hard",
-      "stem": "A bench mark is",
-      "options": [
-        "Any point",
-        "A point of known elevation",
-        "A temporary point",
-        "None"
+        "Focusing",
+        "Centreing"
       ],
       "answer": 1,
-      "solution": "**Answer.** A point of known elevation"
+      "solution": "Levelling makes the vertical axis truly vertical using plate bubbles and foot screws."
     },
     {
-      "id": 64,
-      "subject": "Technical",
-      "topic": "Linear Measurement",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "hard",
-      "stem": "The principle of EDM is",
-      "options": [
-        "Measurement of time or phase shift of electromagnetic wave",
-        "Chaining",
-        "Taping",
-        "None"
-      ],
-      "answer": 0,
-      "solution": "**Answer.** Measurement of time or phase shift of electromagnetic wave"
-    },
-    {
-      "id": 65,
-      "subject": "Technical",
-      "topic": "Linear Measurement",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
+      "id": "ncl-surveyor-18-007",
+      "subject": "Mine Surveying",
+      "topic": "Theodolite",
+      "section": "technical",
+      "type": "mcq",
       "marks": 1,
       "difficulty": "medium",
-      "stem": "A prismatic compass measures",
+      "stem": "The plate bubble tube is used for:",
       "options": [
-        "Vertical angles",
-        "Deflection angles",
-        "Bearings of lines",
-        "Internal angles"
-      ],
-      "answer": 2,
-      "solution": "**Answer.** Bearings of lines"
-    },
-    {
-      "id": 66,
-      "subject": "Technical",
-      "topic": "Total Station & EDM",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "medium",
-      "stem": "The 'set out' function of total station is used for",
-      "options": [
-        "Marking design coordinates on ground",
-        "Measuring existing features",
-        "None",
-        "Computing areas"
-      ],
-      "answer": 0,
-      "solution": "**Answer.** Marking design coordinates on ground"
-    },
-    {
-      "id": 67,
-      "subject": "Technical",
-      "topic": "Mine Surveying",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "medium",
-      "stem": "Weights in survey adjustments represent",
-      "options": [
-        "Time taken",
-        "Distance measured",
-        "None",
-        "Relative reliability of observations"
-      ],
-      "answer": 3,
-      "solution": "**Answer.** Relative reliability of observations"
-    },
-    {
-      "id": 68,
-      "subject": "Technical",
-      "topic": "Photogrammetry & Remote Sensing",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "hard",
-      "stem": "Pacing is a method of",
-      "options": [
-        "Precise measurement",
-        "Approximate distance measurement",
-        "None",
-        "Angle measurement"
+        "Focusing the objective",
+        "Making the vertical axis truly vertical",
+        "Measuring horizontal angles",
+        "Centreing over the station"
       ],
       "answer": 1,
-      "solution": "**Answer.** Approximate distance measurement"
+      "solution": "The plate bubble tube (circular or tubular) is used during levelling to make the vertical axis truly vertical."
     },
     {
-      "id": 69,
-      "subject": "Technical",
-      "topic": "Levelling",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "hard",
-      "stem": "Orthorectification corrects",
-      "options": [
-        "Terrain displacement in aerial photos",
-        "None",
-        "Only color",
-        "Only brightness"
-      ],
-      "answer": 0,
-      "solution": "**Answer.** Terrain displacement in aerial photos"
-    },
-    {
-      "id": 70,
-      "subject": "Technical",
-      "topic": "Linear Measurement",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "easy",
-      "stem": "Resection in total station survey is used to",
-      "options": [
-        "None",
-        "Measure area",
-        "Determine unknown station position from known points",
-        "Levelling"
-      ],
-      "answer": 2,
-      "solution": "**Answer.** Determine unknown station position from known points"
-    },
-    {
-      "id": 71,
-      "subject": "General Awareness & Aptitude",
-      "topic": "Quantitative Aptitude",
-      "section": "Section B \u2014 General",
-      "type": "MCQ",
+      "id": "ncl-surveyor-18-008",
+      "subject": "Mine Surveying",
+      "topic": "Theodolite",
+      "section": "technical",
+      "type": "mcq",
       "marks": 1,
       "difficulty": "medium",
-      "stem": "The square root of 144 is",
+      "stem": "The striding level is used to check:",
       "options": [
-        "13",
-        "12",
-        "14",
-        "11"
+        "The line of collimation",
+        "The verticality of the vertical axis",
+        "The horizon axis",
+        "The optical plummet"
       ],
       "answer": 1,
-      "solution": "**Answer.** 12"
+      "solution": "A striding level is placed on the horizontal axis to check whether the vertical axis is truly vertical."
     },
     {
-      "id": 72,
-      "subject": "General Awareness & Aptitude",
-      "topic": "General Awareness",
-      "section": "Section B \u2014 General",
-      "type": "MCQ",
+      "id": "ncl-surveyor-18-009",
+      "subject": "Mine Surveying",
+      "topic": "Theodolite",
+      "section": "technical",
+      "type": "mcq",
       "marks": 1,
-      "difficulty": "easy",
-      "stem": "The chemical formula of common salt is",
+      "difficulty": "medium",
+      "stem": "The optical plummet is used for:",
       "options": [
-        "MgCl\u2082",
-        "KCl",
-        "NaCl",
-        "CaCl\u2082"
+        "Reading the vernier",
+        "Centreing the theodolite over the station",
+        "Levelling the instrument",
+        "Focusing the crosshair"
       ],
-      "answer": 2,
-      "solution": "**Answer.** NaCl"
+      "answer": 1,
+      "solution": "The optical plummet provides a downward view through the instrument to assist in centreing over the ground station."
     },
     {
-      "id": 73,
-      "subject": "General Awareness & Aptitude",
-      "topic": "General Knowledge",
-      "section": "Section B \u2014 General",
-      "type": "MCQ",
+      "id": "ncl-surveyor-18-010",
+      "subject": "Mine Surveying",
+      "topic": "Legislation — Mine Plans & Safety",
+      "section": "technical",
+      "type": "mcq",
       "marks": 1,
-      "difficulty": "hard",
-      "stem": "A is twice as old as B. If A is 40, B is",
+      "difficulty": "medium",
+      "stem": "The maximum working hours in a week for an adult employed belowground in a mine are:",
       "options": [
-        "30",
-        "35",
-        "25",
-        "20"
+        "54 hours",
+        "60 hours",
+        "45 hours",
+        "48 hours"
       ],
       "answer": 3,
-      "solution": "**Answer.** 20"
+      "solution": "Mines Act 1952, s.28: no person shall be employed belowground for more than 48 hours in any week."
     },
     {
-      "id": 74,
-      "subject": "General Awareness & Aptitude",
-      "topic": "General Knowledge",
-      "section": "Section B \u2014 General",
-      "type": "MCQ",
+      "id": "ncl-surveyor-18-011",
+      "subject": "Mine Surveying",
+      "topic": "Theodolite",
+      "section": "technical",
+      "type": "mcq",
       "marks": 1,
-      "difficulty": "hard",
-      "stem": "Who was the first President of India",
+      "difficulty": "medium",
+      "stem": "If the line of collimation is not parallel to the horizon axis, the error is called:",
       "options": [
-        "Dr. S. Radhakrishnan",
-        "Zakir Husain",
-        "Dr. Rajendra Prasad",
-        "APJ Abdul Kalam"
+        "Eccentricity error",
+        "Collimation error",
+        "Index error",
+        "Parallax error"
+      ],
+      "answer": 1,
+      "solution": "Collimation error occurs when the line of sight is not perpendicular to the horizontal (trunnion) axis."
+    },
+    {
+      "id": "ncl-surveyor-18-012",
+      "subject": "Mine Surveying",
+      "topic": "Theodolite",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The condition of the vertical circle being at zero when the line of sight is horizontal is called:",
+      "options": [
+        "Collimation adjustment",
+        "Index error adjustment",
+        "2C adjustment",
+        "Plate bubble adjustment"
+      ],
+      "answer": 1,
+      "solution": "Index error is eliminated by adjusting the vertical circle reading to zero when the line of sight is horizontal."
+    },
+    {
+      "id": "ncl-surveyor-18-013",
+      "subject": "Mine Surveying",
+      "topic": "Legislation — Mine Plans & Safety",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Under the Mines Act 1952, notice of which of the following accidents is required to be given to the prescribed authorities?",
+      "options": [
+        "Loss of life, serious bodily injury, explosion, ignition, fire, inrush of water or other matter",
+        "Loss of life or bodily injury to any workman",
+        "Accidents involving the winding engine only",
+        "Injury to machinery or plant in the mine"
+      ],
+      "answer": 0,
+      "solution": "Mines Act 1952, s.23: notice is required for loss of life, serious injury, and specified occurrences such as explosion, ignition, fire, inrush of water."
+    },
+    {
+      "id": "ncl-surveyor-18-014",
+      "subject": "Mine Surveying",
+      "topic": "Legislation — Mine Plans & Safety",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Under the Mines Act 1952, an Inspector may, among other powers:",
+      "options": [
+        "Impose fines directly",
+        "Appoint mine officials",
+        "Withdraw certificates of competency",
+        "Enter, inspect and examine a mine, and make inquiries on any matter relating to safety"
+      ],
+      "answer": 3,
+      "solution": "Mines Act 1952, s.22: Inspectors may enter, inspect, examine and inquire into any mine and its records."
+    },
+    {
+      "id": "ncl-surveyor-18-015",
+      "subject": "Mine Surveying",
+      "topic": "Theodolite",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The advantage of the repetition method is that:",
+      "options": [
+        "It eliminates instrumental errors by averaging",
+        "It measures vertical angles",
+        "It is faster",
+        "It does not require a theodolite"
+      ],
+      "answer": 0,
+      "solution": "Repetition averages out errors in graduation, eccentricity, and reading, yielding higher accuracy."
+    },
+    {
+      "id": "ncl-surveyor-18-016",
+      "subject": "Mine Surveying",
+      "topic": "Theodolite",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A theodolite is said to be in perfect adjustment when:",
+      "options": [
+        "The instrument is new",
+        "It has the least count of 1 second",
+        "All permanent adjustments are correctly set",
+        "The vertical axis is parallel to the line of sight"
       ],
       "answer": 2,
-      "solution": "**Answer.** Dr. Rajendra Prasad"
+      "solution": "Perfect adjustment means all permanent adjustments — collimation, horizon axis, vertical circle index — are correctly made."
     },
     {
-      "id": 75,
-      "subject": "General Awareness & Aptitude",
+      "id": "ncl-surveyor-18-017",
+      "subject": "Mine Surveying",
+      "topic": "Theodolite",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The trunnion axis is the axis about which:",
+      "options": [
+        "The plate bubble moves",
+        "The telescope rotates in the vertical plane",
+        "The telescope rotates in the horizontal plane",
+        "The vernier is read"
+      ],
+      "answer": 1,
+      "solution": "The trunnion (horizontal) axis is the axis about which the telescope rotates in the vertical plane."
+    },
+    {
+      "id": "ncl-surveyor-18-018",
+      "subject": "Mine Surveying",
+      "topic": "Legislation — Mine Plans & Safety",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "When workings approach within 60 m of a water body or waterlogged area, the manager shall:",
+      "options": [
+        "Stop working immediately without any plan",
+        "Leave the water body untouched forever",
+        "Marking the position of the water body on the board only",
+        "Prepare a scheme for protection against inrush and drain the water in a planned manner"
+      ],
+      "answer": 3,
+      "solution": "CMR 2017 Reg 149 (danger from surface water) & Ch. XI: within 60 m, protective schemes (drainage, barriers) are implemented."
+    },
+    {
+      "id": "ncl-surveyor-18-019",
+      "subject": "Mine Surveying",
+      "topic": "Theodolite",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The method of measures used to eliminate errors in horizontal angle measurement by using both face left and face right is called:",
+      "options": [
+        "Reiteration",
+        "Reciprocal levelling",
+        "Repetition",
+        "Two-face observation"
+      ],
+      "answer": 3,
+      "solution": "Face left and face right (two-face) observations eliminate collimation, index, and axis errors."
+    },
+    {
+      "id": "ncl-surveyor-18-020",
+      "subject": "Mine Surveying",
+      "topic": "Theodolite",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Face left and face right observations are taken to eliminate:",
+      "options": [
+        "Temperature effects only",
+        "Errors due to line of collimation, vertical index, and eccentricity",
+        "Temperature effects",
+        "Instrument centring errors"
+      ],
+      "answer": 1,
+      "solution": "Taking mean of face left and face right removes collimation error, vertical index error, and eccentricity of centres."
+    },
+    {
+      "id": "ncl-surveyor-18-021",
+      "subject": "Mine Surveying",
+      "topic": "Theodolite",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The horizontal axis of a theodolite is also known as:",
+      "options": [
+        "Vertical axis",
+        "Plumb line",
+        "Line of sight",
+        "Trunnion axis"
+      ],
+      "answer": 3,
+      "solution": "The horizontal axis about which the telescope rotates vertically is called the trunnion axis or spindle axis."
+    },
+    {
+      "id": "ncl-surveyor-18-022",
+      "subject": "Mine Surveying",
+      "topic": "Theodolite",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "If the trunnion axis is not perpendicular to the vertical axis, the error affects:",
+      "options": [
+        "Horizontal angles only",
+        "Both horizontal and vertical angles",
+        "Errors in the distance measurements",
+        "Vertical angles only"
+      ],
+      "answer": 1,
+      "solution": "An inclined trunnion axis introduces errors in both horizontal and vertical angle measurements."
+    },
+    {
+      "id": "ncl-surveyor-18-023",
+      "subject": "Mine Surveying",
+      "topic": "Legislation — Mine Plans & Safety",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "In return airways and old workings, the air shall normally contain oxygen not less than ______ and carbon dioxide not more than ______.",
+      "options": [
+        "21% and 2%",
+        "18% and 1%",
+        "20% and 1.5%",
+        "19% and 0.5%"
+      ],
+      "answer": 3,
+      "solution": "CMR 2017 Reg 165: not less than 19% oxygen and not more than 0.5% carbon dioxide."
+    },
+    {
+      "id": "ncl-surveyor-18-024",
+      "subject": "Mine Surveying",
+      "topic": "Theodolite",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "In the 2C test, if the theodolite reads 45° 30' 20\" on face left and 225° 30' 40\" on face right for the same target, the 2C error is:",
+      "options": [
+        "0 seconds",
+        "10 seconds",
+        "20 seconds",
+        "40 seconds"
+      ],
+      "answer": 2,
+      "solution": "2C = (Face Left - (Face Right ± 180°)) = 45°30'20\" - (225°30'40\" - 180°) = 45°30'20\" - 45°30'40\" = -20\". Magnitude is 20 seconds."
+    },
+    {
+      "id": "ncl-surveyor-18-025",
+      "subject": "Mine Surveying",
+      "topic": "Theodolite",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The mean horizontal angle from the 2C test readings FL=45°30'20\" and FR=225°30'40\" is:",
+      "options": [
+        "45°30'10\"",
+        "45°30'30\"",
+        "45°30'40\"",
+        "45°30'20\""
+      ],
+      "answer": 1,
+      "solution": "Mean = (FL + FR - 180°)/2 = (45°30'20\" + 45°30'40\")/2 = 45°30'30\"."
+    },
+    {
+      "id": "ncl-surveyor-18-026",
+      "subject": "Mine Surveying",
+      "topic": "Theodolite",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "To eliminate the index error of the vertical circle, one should:",
+      "options": [
+        "Adjust the plate bubble",
+        "Take face left reading only",
+        "Centre the instrument",
+        "Take the mean of face left and face right readings"
+      ],
+      "answer": 3,
+      "solution": "Mean of FL and FR vertical readings eliminates the index error of the vertical circle."
+    },
+    {
+      "id": "ncl-surveyor-18-027",
+      "subject": "Mine Surveying",
+      "topic": "Theodolite",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The theodolite traverse can be classified as:",
+      "options": [
+        "Open traverse only",
+        "Only traverses along a haul road",
+        "Both open and closed traverses",
+        "Closed traverse only"
+      ],
+      "answer": 2,
+      "solution": "A theodolite traverse may be an open (link) traverse or a closed (loop or connecting) traverse."
+    },
+    {
+      "id": "ncl-surveyor-18-028",
+      "subject": "Mine Surveying",
+      "topic": "Theodolite",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A closed loop traverse starts and ends at:",
+      "options": [
+        "Any two points on a baseline",
+        "The same point",
+        "The station of origin",
+        "Different points"
+      ],
+      "answer": 1,
+      "solution": "A closed loop traverse begins and terminates at the same station, forming a closed polygon."
+    },
+    {
+      "id": "ncl-surveyor-18-029",
+      "subject": "Mine Surveying",
+      "topic": "Theodolite",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The angular misclosure of a closed traverse is distributed by:",
+      "options": [
+        "Adding it to the last angle only",
+        "Distributing it equally among all angles (Bowditch rule)",
+        "Multiplying by the number of stations",
+        "Adding the whole misclosure to one angle"
+      ],
+      "answer": 1,
+      "solution": "Angular misclosure is distributed equally (or proportional to weights) among all measured angles."
+    },
+    {
+      "id": "ncl-surveyor-18-030",
+      "subject": "Mine Surveying",
+      "topic": "Theodolite",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Bowditch's rule is used for:",
+      "options": [
+        "Linear adjustment of traverse closing error",
+        "Levelling adjustment",
+        "Computation of volume of excavated earth",
+        "Angular adjustment only"
+      ],
+      "answer": 0,
+      "solution": "Bowditch's (compass) rule distributes linear closing error in proportion to the length of each traverse leg."
+    },
+    {
+      "id": "ncl-surveyor-18-031",
+      "subject": "Mine Surveying",
+      "topic": "Theodolite",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The transit rule is used for adjustment of:",
+      "options": [
+        "Linear misclosure in a closed traverse based on latitudes and departures",
+        "Angular misclosure in a closed traverse",
+        "Contour intervals",
+        "Levelling of steep underground gradients"
+      ],
+      "answer": 0,
+      "solution": "The transit rule distributes closing error proportional to the latitude or departure of each line."
+    },
+    {
+      "id": "ncl-surveyor-18-032",
+      "subject": "Mine Surveying",
+      "topic": "Theodolite",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The latitude of a traverse line is:",
+      "options": [
+        "L / cos θ",
+        "L × sin θ",
+        "L × tan θ",
+        "L × cos θ"
+      ],
+      "answer": 3,
+      "solution": "Latitude = Length × cos( bearing ), representing the north-south component of the line."
+    },
+    {
+      "id": "ncl-surveyor-18-033",
+      "subject": "Mine Surveying",
+      "topic": "Theodolite",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The departure of a traverse line is:",
+      "options": [
+        "L × cos θ",
+        "L × tan θ",
+        "L / sin θ",
+        "L × sin θ"
+      ],
+      "answer": 3,
+      "solution": "Departure = Length × sin( bearing ), representing the east-west component of the line."
+    },
+    {
+      "id": "ncl-surveyor-18-034",
+      "subject": "Mine Surveying",
+      "topic": "Theodolite",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "If the algebraic sum of latitudes is +0.30 m and departures is -0.40 m, the linear closing error is:",
+      "options": [
+        "0.70 m",
+        "0.25 m",
+        "0.10 m",
+        "0.50 m"
+      ],
+      "answer": 3,
+      "solution": "Closing error = sqrt(Σlat² + Σdep²) = sqrt(0.30² + 0.40²) = sqrt(0.09 + 0.16) = 0.50 m."
+    },
+    {
+      "id": "ncl-surveyor-18-035",
+      "subject": "Mine Surveying",
+      "topic": "Theodolite",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The bearing of a line measured from the north direction in clockwise sense is called:",
+      "options": [
+        "Whole circle bearing (WCB)",
+        "Back bearing",
+        "Reduced bearing (QB)",
+        "Magnetic bearing"
+      ],
+      "answer": 0,
+      "solution": "Whole Circle Bearing (WCB) is measured from the north direction clockwise through 0° to 360°."
+    },
+    {
+      "id": "ncl-surveyor-18-036",
+      "subject": "Mine Surveying",
+      "topic": "Theodolite",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "If the WCB of a line is 210°, its reduced bearing (quadrantal bearing) is:",
+      "options": [
+        "S 60° W",
+        "N 150° W",
+        "N 30° W",
+        "S 30° W"
+      ],
+      "answer": 3,
+      "solution": "210° falls in the third quadrant. QB = 210° - 180° = 30°, direction is S 30° W."
+    },
+    {
+      "id": "ncl-surveyor-18-037",
+      "subject": "Mine Surveying",
+      "topic": "Theodolite",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The back bearing of a line with WCB 125° is:",
+      "options": [
+        "125°",
+        "235°",
+        "305°",
+        "55°"
+      ],
+      "answer": 2,
+      "solution": "Back bearing = WCB ± 180°. Since 125° < 180°, BB = 125° + 180° = 305°."
+    },
+    {
+      "id": "ncl-surveyor-18-038",
+      "subject": "Mine Surveying",
+      "topic": "Theodolite",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "If the reduced bearing of a line is N 45° E, its WCB is:",
+      "options": [
+        "225°",
+        "45°",
+        "315°",
+        "135°"
+      ],
+      "answer": 1,
+      "solution": "NE quadrant: WCB = QB = 45°."
+    },
+    {
+      "id": "ncl-surveyor-18-039",
+      "subject": "Mine Surveying",
+      "topic": "Theodolite",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "In a closed traverse, the sum of interior angles should be:",
+      "options": [
+        "(n - 2) × 180°",
+        "n × 180°",
+        "(2n - 4) × 90°",
+        "(n + 2) × 90°"
+      ],
+      "answer": 0,
+      "solution": "For a closed polygon with n sides, sum of interior angles = (n - 2) × 180°."
+    },
+    {
+      "id": "ncl-surveyor-18-040",
+      "subject": "Mine Surveying",
+      "topic": "Theodolite",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The sum of interior angles of a closed traverse with 6 stations is:",
+      "options": [
+        "720°",
+        "360°",
+        "540°",
+        "900°"
+      ],
+      "answer": 0,
+      "solution": "Sum = (6 - 2) × 180° = 4 × 180° = 720°."
+    },
+    {
+      "id": "ncl-surveyor-18-041",
+      "subject": "Mine Surveying",
+      "topic": "Theodolite",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Parallax in a theodolite is eliminated by:",
+      "options": [
+        "Taking face left and face right readings",
+        "Focusing the eyepiece to make crosshair sharp, then focusing objective to make target sharp",
+        "Adjusting the plate bubble",
+        "Centreing the instrument"
+      ],
+      "answer": 1,
+      "solution": "Parallax is eliminated by first focusing the eyepiece on the crosshair, then focusing the objective on the target."
+    },
+    {
+      "id": "ncl-surveyor-18-042",
+      "subject": "Mine Surveying",
+      "topic": "Theodolite",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The cross-hair in a theodolite telescope is placed at:",
+      "options": [
+        "The eyepiece lens",
+        "The halfway point between objective and eyepiece",
+        "The focal plane of the objective",
+        "The optical centre of the objective"
+      ],
+      "answer": 2,
+      "solution": "Cross-hairs are placed at the focal plane of the objective so that they are visible simultaneously with the target."
+    },
+    {
+      "id": "ncl-surveyor-18-043",
+      "subject": "Mine Surveying",
+      "topic": "Theodolite",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Anstad's formula is used to:",
+      "options": [
+        "Adjust traverse misclosure",
+        "Calculate EDM distance",
+        "Adjust levelling errors",
+        "Interpolate contours from spot heights"
+      ],
+      "answer": 3,
+      "solution": "Anstad's formula interpolates intermediate contour positions between two spot heights."
+    },
+    {
+      "id": "ncl-surveyor-18-044",
+      "subject": "Mine Surveying",
+      "topic": "Theodolite",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The telescope of a theodolite is made to plunge (transit) to:",
+      "options": [
+        "Change the horizontal angle",
+        "Continue the line of sight in the same vertical plane but reversed",
+        "Eliminate parallax",
+        "Measure vertical angles only"
+      ],
+      "answer": 1,
+      "solution": "Plunging the telescope reverses the line of sight within the same vertical plane, used in two-face observations."
+    },
+    {
+      "id": "ncl-surveyor-18-045",
+      "subject": "Mine Surveying",
+      "topic": "Theodolite",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The reiteration method is also known as:",
+      "options": [
+        "Bowditch method",
+        "Tangential method",
+        "Direction method",
+        "Repetition method"
+      ],
+      "answer": 2,
+      "solution": "Reiteration is also called the direction method since all directions are observed from a reference line."
+    },
+    {
+      "id": "ncl-surveyor-18-046",
+      "subject": "Mine Surveying",
+      "topic": "Theodolite",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "In theodolite traversing, the included angle at a station is calculated as:",
+      "options": [
+        "Difference of directions of the two lines",
+        "Back bearing - Fore bearing",
+        "Fore bearing - Back bearing",
+        "Sum of two bearings"
+      ],
+      "answer": 0,
+      "solution": "The included angle = difference between the directions of the two lines meeting at that station."
+    },
+    {
+      "id": "ncl-surveyor-18-047",
+      "subject": "Mine Surveying",
+      "topic": "Theodolite",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A theodolite with a least count of 1\" is classified as a:",
+      "options": [
+        "Digital theodolite",
+        "Transit theodolite",
+        "Vernier theodolite",
+        "Micro-optic (optical micrometer) theodolite"
+      ],
+      "answer": 3,
+      "solution": "Micro-optic theodolites use an optical micrometer to achieve least counts of 1\" or finer."
+    },
+    {
+      "id": "ncl-surveyor-18-048",
+      "subject": "Mine Surveying",
+      "topic": "Theodolite",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The vertical circle of a theodolite reads 90° when the telescope is horizontal in the:",
+      "options": [
+        "Both positions",
+        "Face right position",
+        "Neither of the face positions",
+        "Face left position"
+      ],
+      "answer": 3,
+      "solution": "In face left, the vertical circle reads 90° (or 0° depending on graduation) when the line of sight is horizontal."
+    },
+    {
+      "id": "ncl-surveyor-18-049",
+      "subject": "Mine Surveying",
+      "topic": "Theodolite",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The essential requirement for the theodolite vertical axis is that it must be:",
+      "options": [
+        "Perpendicular to the horizontal axis",
+        "Parallel to the line of sight",
+        "Truly vertical (aligned with gravity)",
+        "Aligned with the magnetic meridian"
+      ],
+      "answer": 2,
+      "solution": "The vertical axis must be truly vertical for correct angle measurement; this is achieved by levelling."
+    },
+    {
+      "id": "ncl-surveyor-18-050",
+      "subject": "Mine Surveying",
+      "topic": "Theodolite",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "In the repetition method, if an angle is accumulated 3 times and the total reading is 180°15'30\", the measured angle is:",
+      "options": [
+        "540°46'30\"",
+        "90°07'45\"",
+        "60°05'10\"",
+        "180°15'30\""
+      ],
+      "answer": 2,
+      "solution": "Accumulated reading / number of repetitions = 180°15'30\" / 3 = 60°05'10\"."
+    },
+    {
+      "id": "ncl-surveyor-18-051",
+      "subject": "Mine Surveying",
+      "topic": "Legislation — Mine Plans & Safety",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "If the percentage of inflammable gas in the general body of air exceeds ______, persons shall be withdrawn from the working.",
+      "options": [
+        "5%",
+        "1.25%",
+        "0.5%",
+        "2.5%"
+      ],
+      "answer": 1,
+      "solution": "CMR 2017 Reg 166: persons are withdrawn when the general body of air exceeds 1.25% inflammable gas."
+    },
+    {
+      "id": "ncl-surveyor-18-052",
+      "subject": "Mine Surveying",
+      "topic": "Total Station",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The EDM in a total station measures distance using:",
+      "options": [
+        "Magnetic field",
+        "Tape measurement",
+        "Infrared or laser light waves",
+        "Ultrasonic waves only"
+      ],
+      "answer": 2,
+      "solution": "EDM instruments use modulated infrared or laser light to measure distances with high precision."
+    },
+    {
+      "id": "ncl-surveyor-18-053",
+      "subject": "Mine Surveying",
+      "topic": "Total Station",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The principle of EDM distance measurement is based on:",
+      "options": [
+        "Time of flight of light",
+        "Phase difference or time of flight of modulated electromagnetic waves",
+        "Direct tape measurement",
+        "Acoustic wave reflection"
+      ],
+      "answer": 1,
+      "solution": "EDM works on phase comparison or pulse time-of-flight of modulated electromagnetic waves."
+    },
+    {
+      "id": "ncl-surveyor-18-054",
+      "subject": "Mine Surveying",
+      "topic": "Total Station",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "In a total station, the measurement of slope distance and vertical angle allows calculation of:",
+      "options": [
+        "Temperature measurement only",
+        "Pressure measurement only",
+        "The area of the cross-section of the drive",
+        "Both horizontal distance and height difference"
+      ],
+      "answer": 3,
+      "solution": "From slope distance (S) and vertical angle (α): HD = S cos α and VD = S sin α."
+    },
+    {
+      "id": "ncl-surveyor-18-055",
+      "subject": "Mine Surveying",
+      "topic": "Total Station",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The range of a typical prism-based EDM total station is approximately:",
+      "options": [
+        "3-5 km",
+        "500 m",
+        "50 m",
+        "50 km"
+      ],
+      "answer": 0,
+      "solution": "Prism-based EDM can typically measure up to 3-5 km with a single prism under good conditions."
+    },
+    {
+      "id": "ncl-surveyor-18-056",
+      "subject": "Mine Surveying",
+      "topic": "Total Station",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Reflectorless (IR) EDM measurement is useful in mine surveying for:",
+      "options": [
+        "Determining the reflectivity of the rock surface",
+        "Measuring distances to inaccessible or hazardous surfaces",
+        "Measuring only horizontal distances",
+        "Measuring vertical angles of rock faces"
+      ],
+      "answer": 1,
+      "solution": "Reflectorless EDM can measure distances to rock faces, high walls, and other surfaces where a prism cannot be placed."
+    },
+    {
+      "id": "ncl-surveyor-18-057",
+      "subject": "Mine Surveying",
+      "topic": "Total Station",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The accuracy of a total station distance measurement is typically expressed as:",
+      "options": [
+        "±(2 mm + 2 ppm × D)",
+        "±1 mm",
+        "±10 mm",
+        "±0.5 m"
+      ],
+      "answer": 0,
+      "solution": "Modern total stations have distance accuracy of ±(2 mm + 2 ppm × D), where D is the measured distance."
+    },
+    {
+      "id": "ncl-surveyor-18-058",
+      "subject": "Mine Surveying",
+      "topic": "Total Station",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The 'ppm' in EDM accuracy specification stands for:",
+      "options": [
+        "Power per module",
+        "Parts per minute",
+        "Pulse per metre",
+        "Parts per million"
+      ],
+      "answer": 3,
+      "solution": "Parts per million (ppm) is a proportional error term; 2 ppm at 1 km = 2 mm additional error."
+    },
+    {
+      "id": "ncl-surveyor-18-059",
+      "subject": "Mine Surveying",
+      "topic": "Total Station",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The atmospheric correction for EDM measurement accounts for:",
+      "options": [
+        "Correction for the curvature of the earth",
+        "Temperature and pressure affecting the refractive index of air",
+        "Gravitational pull",
+        "The temperature of the ground surface"
+      ],
+      "answer": 1,
+      "solution": "Temperature and atmospheric pressure change the refractive index of air, affecting the speed of light and hence EDM distance."
+    },
+    {
+      "id": "ncl-surveyor-18-060",
+      "subject": "Mine Surveying",
+      "topic": "Total Station",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "If the temperature is higher than the standard (15°C), the EDM measured distance will be:",
+      "options": [
+        "Unaffected",
+        "Longer than true distance",
+        "Exactly correct",
+        "Shorter than true distance"
+      ],
+      "answer": 1,
+      "solution": "Higher temperature reduces air density, slowing light propagation, making the EDM read longer than the true distance."
+    },
+    {
+      "id": "ncl-surveyor-18-061",
+      "subject": "Mine Surveying",
+      "topic": "Total Station",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The 'prism constant' (additive constant) in EDM measurement corrects for:",
+      "options": [
+        "The path length through the prism retroreflector",
+        "Instrument height",
+        "Earth curvature",
+        "Atmospheric refraction"
+      ],
+      "answer": 0,
+      "solution": "The prism constant accounts for the additional optical path through the glass prism compared to a theoretical point reflector."
+    },
+    {
+      "id": "ncl-surveyor-18-062",
+      "subject": "Mine Surveying",
+      "topic": "Total Station",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A single round of angles on a total station typically includes:",
+      "options": [
+        "Face left and face right observations",
+        "Face left only",
+        "Only the vertical angle",
+        "Only the horizontal angle"
+      ],
+      "answer": 0,
+      "solution": "Standard practice is to observe face left and face right, then average to eliminate instrumental errors."
+    },
+    {
+      "id": "ncl-surveyor-18-063",
+      "subject": "Mine Surveying",
+      "topic": "Legislation — Mine Plans & Safety",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Approaching a goaf, probing shall be carried out ahead of the working for at least:",
+      "options": [
+        "3 m",
+        "5 m",
+        "1.5 m",
+        "0.5 m"
+      ],
+      "answer": 2,
+      "solution": "CMR 2017 Reg 147: the working is probed ahead for at least 1.5 m beyond the last support before approaching the goaf."
+    },
+    {
+      "id": "ncl-surveyor-18-064",
+      "subject": "Mine Surveying",
+      "topic": "Total Station",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The coordinate system commonly used in total station surveys is:",
+      "options": [
+        "Local grid (Northing, Easting, Elevation)",
+        "Galactic coordinates",
+        "Polar coordinates only",
+        "Geodetic (lat/lon)"
+      ],
+      "answer": 0,
+      "solution": "Total stations typically work in a local Cartesian system: N (Northing), E (Easting), Z (Elevation)."
+    },
+    {
+      "id": "ncl-surveyor-18-065",
+      "subject": "Mine Surveying",
+      "topic": "Total Station",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "In total station surveying, the 'station' refers to:",
+      "options": [
+        "The target point",
+        "The point at which the prism is held",
+        "The point where the instrument is set up",
+        "The control point only"
+      ],
+      "answer": 2,
+      "solution": "The station is the occupied point where the total station is set up over a known or unknown point."
+    },
+    {
+      "id": "ncl-surveyor-18-066",
+      "subject": "Mine Surveying",
+      "topic": "Total Station",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The 'backsight' in total station traversing is a measurement taken to:",
+      "options": [
+        "An unknown point ahead",
+        "The magnetic meridian of the survey area",
+        "A previously occupied station of known coordinates",
+        "Any random point"
+      ],
+      "answer": 2,
+      "solution": "A backsight is taken to a known point (previous station) to establish the orientation of the instrument."
+    },
+    {
+      "id": "ncl-surveyor-18-067",
+      "subject": "Mine Surveying",
+      "topic": "Total Station",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The 'foresight' in total station surveying is taken to:",
+      "options": [
+        "The benchmark only",
+        "A new unknown station ahead",
+        "A known point behind",
+        "The instrument station"
+      ],
+      "answer": 1,
+      "solution": "A foresight is measured to the next station whose coordinates are to be determined."
+    },
+    {
+      "id": "ncl-surveyor-18-068",
+      "subject": "Mine Surveying",
+      "topic": "Total Station",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A resection in total station surveying determines the instrument station coordinates by:",
+      "options": [
+        "Measuring distances and/or angles to two or more known points",
+        "Measuring to one known point only",
+        "Measuring only vertical angles",
+        "Using GPS only"
+      ],
+      "answer": 0,
+      "solution": "Resection (free station) computes the occupied point's position from observations to multiple known points."
+    },
+    {
+      "id": "ncl-surveyor-18-069",
+      "subject": "Mine Surveying",
+      "topic": "Total Station",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The 'offset' method in total station surveying is used for:",
+      "options": [
+        "Setting out curves",
+        "Setting out the centre line of a drift",
+        "Measuring details from a survey line",
+        "GPS base station setup"
+      ],
+      "answer": 2,
+      "solution": "Offsets are detail measurements (distance and angle) taken from traverse stations to survey features."
+    },
+    {
+      "id": "ncl-surveyor-18-070",
+      "subject": "Mine Surveying",
+      "topic": "Total Station",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The angular accuracy of a typical 2\" total station is:",
+      "options": [
+        "±2 minutes",
+        "±20 seconds",
+        "±2 degrees",
+        "±2 seconds"
+      ],
+      "answer": 3,
+      "solution": "A 2\" total station has a manufacturer-stated angular accuracy of ±2 seconds for both horizontal and vertical angles."
+    },
+    {
+      "id": "ncl-surveyor-18-071",
+      "subject": "Mine Surveying",
+      "topic": "Legislation — Mine Plans & Safety",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "As per MVTR 1966, refresher vocational training must be given to persons employed in mines at least once in:",
+      "options": [
+        "5 years",
+        "2 years",
+        "1 year",
+        "10 years"
+      ],
+      "answer": 0,
+      "solution": "MVTR 1966, Rule 8: refresher training at least once in every 5 years."
+    },
+    {
+      "id": "ncl-surveyor-18-072",
+      "subject": "Mine Surveying",
+      "topic": "Legislation — Mine Plans & Safety",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Under the Mines Vocational Training Rules 1966, a person before being employed in a mine for the first time must undergo:",
+      "options": [
+        "One month of refresher training",
+        "Refresher training after one year of service",
+        "Initial vocational training in the prescribed subjects",
+        "A certificate of fitness from a doctor"
+      ],
+      "answer": 2,
+      "solution": "MVTR 1966, Rule 6: every person is given initial vocational training before first employment."
+    },
+    {
+      "id": "ncl-surveyor-18-073",
+      "subject": "Mine Surveying",
+      "topic": "Total Station",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The trunnion axis error in a total station is eliminated by:",
+      "options": [
+        "Using a single prism",
+        "Using only face left",
+        "Increasing the number of repetitions",
+        "Face left and face right observations"
+      ],
+      "answer": 3,
+      "solution": "Meaning of FL and FR observations eliminates trunnion axis (horizontal axis) error."
+    },
+    {
+      "id": "ncl-surveyor-18-074",
+      "subject": "Mine Surveying",
+      "topic": "Total Station",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "In total station surveying, the instrument height (HI) is measured:",
+      "options": [
+        "Record temperature variations",
+        "Map underground water flows",
+        "From the station mark to the telescope trunnion axis",
+        "From the ground to the prism"
+      ],
+      "answer": 2,
+      "solution": "HI is the vertical distance from the station ground mark to the instrument's trunnion axis (centre of telescope)."
+    },
+    {
+      "id": "ncl-surveyor-18-075",
+      "subject": "Mine Surveying",
+      "topic": "Total Station",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The target height (TH) or prism height is measured from:",
+      "options": [
+        "The instrument to the ground",
+        "The horizon to the zenith",
+        "The station mark to the centre of the prism",
+        "The eyepiece to the objective"
+      ],
+      "answer": 2,
+      "solution": "Target height is the vertical distance from the ground station mark to the optical centre of the prism/reflector."
+    },
+    {
+      "id": "ncl-surveyor-18-076",
+      "subject": "Mine Surveying",
+      "topic": "Total Station",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A total station can perform 'stakeout' (setting out) by:",
+      "options": [
+        "Guiding the user to design coordinates using angle and distance offsets",
+        "Measure only the existing points in the field",
+        "Compute only the area of the closed traverse",
+        "Measuring existing points only"
+      ],
+      "answer": 0,
+      "solution": "Stakeout mode displays the angle and distance to turn/move from the current position to the design point."
+    },
+    {
+      "id": "ncl-surveyor-18-077",
+      "subject": "Mine Surveying",
+      "topic": "Total Station",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The 'remote elevation measurement' (REM) function of a total station measures:",
+      "options": [
+        "Distance to the base only",
+        "Pressure measurement only",
+        "Height of an inaccessible point by measuring horizontal distance and vertical angles",
+        "Humidity measurement only"
+      ],
+      "answer": 2,
+      "solution": "REM uses two vertical angle readings and a horizontal distance to calculate the height of an inaccessible target."
+    },
+    {
+      "id": "ncl-surveyor-18-078",
+      "subject": "Mine Surveying",
+      "topic": "Legislation — Mine Plans & Safety",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "'Competent person' under the Mines Act 1952 means a person:",
+      "options": [
+        "Appointed by the Inspector",
+        "Having 10 years of experience",
+        "Appointed by the owner, agent or manager and possessing the prescribed qualifications",
+        "Holding any degree"
+      ],
+      "answer": 2,
+      "solution": "Mines Act 1952, s.2(1)(c): a competent person is one appointed by the owner, agent or manager with the prescribed qualifications for the purpose."
+    },
+    {
+      "id": "ncl-surveyor-18-079",
+      "subject": "Mine Surveying",
+      "topic": "Legislation — Mine Plans & Safety",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A first-aid room is required at a mine where the number of persons employed exceeds:",
+      "options": [
+        "150",
+        "100",
+        "250",
+        "50"
+      ],
+      "answer": 0,
+      "solution": "Mines Act 1952, s.21: a first-aid room is required where more than 150 persons are employed."
+    },
+    {
+      "id": "ncl-surveyor-18-080",
+      "subject": "Mine Surveying",
+      "topic": "Total Station",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The 'leveling' function in a total station can replace:",
+      "options": [
+        "A conventional dumpy level for differential levelling",
+        "A magnetic compass used for bearings",
+        "A steel tape for linear measurement",
+        "A plane table"
+      ],
+      "answer": 0,
+      "solution": "Total station trigonometric levelling can replace conventional differential levelling for many applications."
+    },
+    {
+      "id": "ncl-surveyor-18-g001",
+      "subject": "General Awareness",
       "topic": "Reasoning",
-      "section": "Section B \u2014 General",
-      "type": "MCQ",
+      "section": "general",
+      "type": "mcq",
       "marks": 1,
       "difficulty": "medium",
-      "stem": "Synonym of 'persevere' is",
+      "stem": "Seven people A, B, C, D, E, F, G are standing in a line. A is third from left. B is to the right of A. C is immediately to the left of B. D is at the extreme right. E is between A and B. Who is immediately to the right of E?",
       "options": [
-        "Quit",
-        "Abandon",
-        "Persist",
-        "Surrender"
-      ],
-      "answer": 2,
-      "solution": "**Answer.** Persist"
-    },
-    {
-      "id": 76,
-      "subject": "General Awareness & Aptitude",
-      "topic": "Reasoning",
-      "section": "Section B \u2014 General",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "hard",
-      "stem": "Profit percentage = (Profit / CP) \u00d7",
-      "options": [
-        "None",
-        "Cost Price",
-        "Selling Price",
-        "100"
-      ],
-      "answer": 3,
-      "solution": "**Answer.** 100"
-    },
-    {
-      "id": 77,
-      "subject": "General Awareness & Aptitude",
-      "topic": "Quantitative Aptitude",
-      "section": "Section B \u2014 General",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "hard",
-      "stem": "Which metal is liquid at room temperature",
-      "options": [
-        "Iron",
-        "Mercury",
-        "Lead",
-        "Copper"
+        "G",
+        "C",
+        "B",
+        "F"
       ],
       "answer": 1,
-      "solution": "**Answer.** Mercury"
+      "solution": "Arrangement: _,_,A,E,_,B,C with D at right end. B is right of E."
     },
     {
-      "id": 78,
-      "subject": "General Awareness & Aptitude",
-      "topic": "Quantitative Aptitude",
-      "section": "Section B \u2014 General",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "hard",
-      "stem": "Antonym of 'generous' is",
-      "options": [
-        "Stingy",
-        "Giving",
-        "Charitable",
-        "Kind"
-      ],
-      "answer": 0,
-      "solution": "**Answer.** Stingy"
-    },
-    {
-      "id": 79,
-      "subject": "General Awareness & Aptitude",
-      "topic": "General Awareness",
-      "section": "Section B \u2014 General",
-      "type": "MCQ",
+      "id": "ncl-surveyor-18-g002",
+      "subject": "General Awareness",
+      "topic": "GK-Geography",
+      "section": "general",
+      "type": "mcq",
       "marks": 1,
       "difficulty": "medium",
-      "stem": "Speed of sound is approximately",
+      "stem": "Which river is known as the 'Sorrow of Bihar'?",
       "options": [
-        "30 m/s",
-        "3000 m/s",
-        "3430 m/s",
-        "343 m/s"
-      ],
-      "answer": 3,
-      "solution": "**Answer.** 343 m/s"
-    },
-    {
-      "id": 80,
-      "subject": "General Awareness & Aptitude",
-      "topic": "Reasoning",
-      "section": "Section B \u2014 General",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "hard",
-      "stem": "Oxidation involves",
-      "options": [
-        "None",
-        "No change",
-        "Gain of electrons",
-        "Loss of electrons"
-      ],
-      "answer": 3,
-      "solution": "**Answer.** Loss of electrons"
-    },
-    {
-      "id": 81,
-      "subject": "General Awareness & Aptitude",
-      "topic": "Quantitative Aptitude",
-      "section": "Section B \u2014 General",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "easy",
-      "stem": "Which planet has the most moons",
-      "options": [
-        "Jupiter",
-        "Saturn",
-        "Neptune",
-        "Uranus"
+        "C. Gandak",
+        "B. Kosi",
+        "D. Son",
+        "A. Ganga"
       ],
       "answer": 1,
-      "solution": "**Answer.** Saturn"
+      "solution": "Kosi river is known as the Sorrow of Bihar due to frequent floods."
     },
     {
-      "id": 82,
-      "subject": "General Awareness & Aptitude",
-      "topic": "General Awareness",
-      "section": "Section B \u2014 General",
-      "type": "MCQ",
+      "id": "ncl-surveyor-18-g003",
+      "subject": "General Awareness",
+      "topic": "GK-Geography",
+      "section": "general",
+      "type": "mcq",
       "marks": 1,
       "difficulty": "medium",
-      "stem": "The SI unit of force is",
+      "stem": "The southernmost point of India is located in which state/UT?",
       "options": [
-        "Newton",
-        "Watt",
-        "Joule",
-        "Pascal"
-      ],
-      "answer": 0,
-      "solution": "**Answer.** Newton"
-    },
-    {
-      "id": 83,
-      "subject": "General Awareness & Aptitude",
-      "topic": "General Knowledge",
-      "section": "Section B \u2014 General",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "hard",
-      "stem": "A light year measures",
-      "options": [
-        "Time",
-        "Distance",
-        "Speed",
-        "Mass"
-      ],
-      "answer": 1,
-      "solution": "**Answer.** Distance"
-    },
-    {
-      "id": 84,
-      "subject": "General Awareness & Aptitude",
-      "topic": "Quantitative Aptitude",
-      "section": "Section B \u2014 General",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "easy",
-      "stem": "The headquarters of Coal India Limited is in",
-      "options": [
-        "Kolkata",
-        "Singrauli",
-        "New Delhi",
-        "Mumbai"
-      ],
-      "answer": 0,
-      "solution": "**Answer.** Kolkata"
-    },
-    {
-      "id": 85,
-      "subject": "General Awareness & Aptitude",
-      "topic": "General Awareness",
-      "section": "Section B \u2014 General",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "hard",
-      "stem": "HCF of 12 and 18 is",
-      "options": [
-        "36",
-        "18",
-        "6",
-        "12"
-      ],
-      "answer": 2,
-      "solution": "**Answer.** 6"
-    },
-    {
-      "id": 86,
-      "subject": "General Awareness & Aptitude",
-      "topic": "General Knowledge",
-      "section": "Section B \u2014 General",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "hard",
-      "stem": "Which gas is most abundant in Earth's atmosphere",
-      "options": [
-        "Nitrogen",
-        "Argon",
-        "Oxygen",
-        "Carbon dioxide"
-      ],
-      "answer": 0,
-      "solution": "**Answer.** Nitrogen"
-    },
-    {
-      "id": 87,
-      "subject": "General Awareness & Aptitude",
-      "topic": "Quantitative Aptitude",
-      "section": "Section B \u2014 General",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "medium",
-      "stem": "A man walks 3 km east, then 4 km north. Distance from start is",
-      "options": [
-        "1 km",
-        "5 km",
-        "7 km",
-        "12 km"
-      ],
-      "answer": 1,
-      "solution": "**Answer.** 5 km"
-    },
-    {
-      "id": 88,
-      "subject": "General Awareness & Aptitude",
-      "topic": "General Awareness",
-      "section": "Section B \u2014 General",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "medium",
-      "stem": "Newton's third law states",
-      "options": [
-        "Body remains at rest",
-        "F=ma",
-        "Every action has equal and opposite reaction",
-        "None"
-      ],
-      "answer": 2,
-      "solution": "**Answer.** Every action has equal and opposite reaction"
-    },
-    {
-      "id": 89,
-      "subject": "General Awareness & Aptitude",
-      "topic": "Reasoning",
-      "section": "Section B \u2014 General",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "medium",
-      "stem": "DNA stands for",
-      "options": [
-        "None",
-        "Deoxyribonucleic acid",
-        "Deoxyribose nucleic acid",
-        "Dynamic nuclear acid"
-      ],
-      "answer": 1,
-      "solution": "**Answer.** Deoxyribonucleic acid"
-    },
-    {
-      "id": 90,
-      "subject": "General Awareness & Aptitude",
-      "topic": "Quantitative Aptitude",
-      "section": "Section B \u2014 General",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "medium",
-      "stem": "Which is the smallest continent",
-      "options": [
-        "South America",
-        "Antarctica",
-        "Australia",
-        "Europe"
-      ],
-      "answer": 2,
-      "solution": "**Answer.** Australia"
-    },
-    {
-      "id": 91,
-      "subject": "General Awareness & Aptitude",
-      "topic": "General Knowledge",
-      "section": "Section B \u2014 General",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "medium",
-      "stem": "The currency of Japan is",
-      "options": [
-        "Won",
-        "Rupee",
-        "Yuan",
-        "Yen"
+        "B. Tamil Nadu",
+        "A. Puducherry",
+        "C. Karnataka",
+        "D. Andaman & Nicobar Islands"
       ],
       "answer": 3,
-      "solution": "**Answer.** Yen"
+      "solution": "Indira Point in Great Nicobar is the southernmost point of India."
     },
     {
-      "id": 92,
-      "subject": "General Awareness & Aptitude",
-      "topic": "Reasoning",
-      "section": "Section B \u2014 General",
-      "type": "MCQ",
+      "id": "ncl-surveyor-18-g004",
+      "subject": "General Awareness",
+      "topic": "GK-Geography",
+      "section": "general",
+      "type": "mcq",
       "marks": 1,
       "difficulty": "medium",
-      "stem": "Who wrote the Indian National Anthem",
+      "stem": "Which pass connects Srinagar with Leh?",
       "options": [
-        "Rabindranath Tagore",
-        "Jawaharlal Nehru",
-        "Bankim Chandra",
-        "Mahatma Gandhi"
-      ],
-      "answer": 0,
-      "solution": "**Answer.** Rabindranath Tagore"
-    },
-    {
-      "id": 93,
-      "subject": "General Awareness & Aptitude",
-      "topic": "General Awareness",
-      "section": "Section B \u2014 General",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "medium",
-      "stem": "Tangent of 45\u00b0 is",
-      "options": [
-        "\u221a2",
-        "0",
-        "\u221e",
-        "1"
-      ],
-      "answer": 3,
-      "solution": "**Answer.** 1"
-    },
-    {
-      "id": 94,
-      "subject": "General Awareness & Aptitude",
-      "topic": "General Knowledge",
-      "section": "Section B \u2014 General",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "easy",
-      "stem": "Photosynthesis occurs in",
-      "options": [
-        "Chloroplast",
-        "Nucleus",
-        "Ribosome",
-        "Mitochondria"
-      ],
-      "answer": 0,
-      "solution": "**Answer.** Chloroplast"
-    },
-    {
-      "id": 95,
-      "subject": "General Awareness & Aptitude",
-      "topic": "General Awareness",
-      "section": "Section B \u2014 General",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "easy",
-      "stem": "The hardest natural substance is",
-      "options": [
-        "Diamond",
-        "Quartz",
-        "Corundum",
-        "Topaz"
-      ],
-      "answer": 0,
-      "solution": "**Answer.** Diamond"
-    },
-    {
-      "id": 96,
-      "subject": "General Awareness & Aptitude",
-      "topic": "Reasoning",
-      "section": "Section B \u2014 General",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "easy",
-      "stem": "The speed of light is approximately",
-      "options": [
-        "3 \u00d7 10\u2074 m/s",
-        "3 \u00d7 10\u2078 m/s",
-        "3 \u00d7 10\u2076 m/s",
-        "3 \u00d7 10\u00b9\u2070 m/s"
+        "C. Banihal Pass",
+        "B. Zoji La",
+        "D. Khardung La",
+        "A. Rohtang Pass"
       ],
       "answer": 1,
-      "solution": "**Answer.** 3 \u00d7 10\u2078 m/s"
+      "solution": "Zoji La connects Srinagar with Leh in Jammu & Kashmir."
     },
     {
-      "id": 97,
-      "subject": "General Awareness & Aptitude",
-      "topic": "General Awareness",
-      "section": "Section B \u2014 General",
-      "type": "MCQ",
+      "id": "ncl-surveyor-18-g005",
+      "subject": "General Awareness",
+      "topic": "GK-Geography",
+      "section": "general",
+      "type": "mcq",
       "marks": 1,
       "difficulty": "medium",
-      "stem": "Which planet is known as the Red Planet",
+      "stem": "The Tropic of Cancer does NOT pass through which of the following states?",
       "options": [
-        "Mars",
-        "Jupiter",
-        "Saturn",
-        "Venus"
+        "A. Rajasthan",
+        "D. West Bengal",
+        "C. Odisha",
+        "B. Madhya Pradesh"
       ],
-      "answer": 0,
-      "solution": "**Answer.** Mars"
+      "answer": 2,
+      "solution": "Tropic of Cancer passes through Rajasthan, MP, Gujarat, Chhattisgarh, Jharkhand, WB, Tripura, Mizoram — but not Odisha."
     },
     {
-      "id": 98,
-      "subject": "General Awareness & Aptitude",
-      "topic": "Quantitative Aptitude",
-      "section": "Section B \u2014 General",
-      "type": "MCQ",
+      "id": "ncl-surveyor-18-g006",
+      "subject": "General Awareness",
+      "topic": "GK-Geography",
+      "section": "general",
+      "type": "mcq",
       "marks": 1,
       "difficulty": "medium",
-      "stem": "Einstein is famous for the theory of",
+      "stem": "Which is the largest saltwater lake in India?",
       "options": [
-        "Electromagnetism",
-        "Evolution",
-        "Gravity",
-        "Relativity"
+        "C. Sambhar Lake",
+        "D. Wular Lake",
+        "A. Chilika Lake",
+        "B. Pulicat Lake"
+      ],
+      "answer": 2,
+      "solution": "Chilika Lake in Odisha is the largest saltwater lake in India."
+    },
+    {
+      "id": "ncl-surveyor-18-g007",
+      "subject": "General Awareness",
+      "topic": "GK-Geography",
+      "section": "general",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Which Indian state has the longest coastline?",
+      "options": [
+        "D. Andhra Pradesh",
+        "B. Maharashtra",
+        "C. Tamil Nadu",
+        "A. Gujarat"
       ],
       "answer": 3,
-      "solution": "**Answer.** Relativity"
+      "solution": "Gujarat has the longest coastline among Indian states."
     },
     {
-      "id": 99,
-      "subject": "General Awareness & Aptitude",
-      "topic": "General Awareness",
-      "section": "Section B \u2014 General",
-      "type": "MCQ",
+      "id": "ncl-surveyor-18-g008",
+      "subject": "General Awareness",
+      "topic": "GK-Geography",
+      "section": "general",
+      "type": "mcq",
       "marks": 1,
-      "difficulty": "hard",
-      "stem": "The sum of angles in a triangle is",
+      "difficulty": "medium",
+      "stem": "The Jog Falls is formed by which river?",
       "options": [
-        "270\u00b0",
-        "90\u00b0",
-        "180\u00b0",
-        "360\u00b0"
+        "B. Kaveri",
+        "D. Tungabhadra",
+        "A. Krishna",
+        "C. Sharavathi"
       ],
-      "answer": 2,
-      "solution": "**Answer.** 180\u00b0"
+      "answer": 3,
+      "solution": "Jog Falls is formed by the Sharavathi River in Karnataka."
     },
     {
-      "id": 100,
-      "subject": "General Awareness & Aptitude",
-      "topic": "Quantitative Aptitude",
-      "section": "Section B \u2014 General",
-      "type": "MCQ",
+      "id": "ncl-surveyor-18-g009",
+      "subject": "General Awareness",
+      "topic": "GK-Geography",
+      "section": "general",
+      "type": "mcq",
       "marks": 1,
-      "difficulty": "easy",
-      "stem": "A natural satellite of Earth is",
+      "difficulty": "medium",
+      "stem": "Which of the following is the highest peak in South India?",
       "options": [
-        "Mars",
-        "None",
-        "Moon",
-        "Sun"
+        "D. Kudremukh",
+        "A. Anamudi",
+        "B. Doddabetta",
+        "C. Mahendragiri"
+      ],
+      "answer": 1,
+      "solution": "Anamudi (2,695 m) in Kerala is the highest peak in South India."
+    },
+    {
+      "id": "ncl-surveyor-18-g010",
+      "subject": "General Awareness",
+      "topic": "GK-Geography",
+      "section": "general",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Which canal connects the Bay of Bengal with the Arabian Sea through India?",
+      "options": [
+        "A. Indira Gandhi Canal",
+        "B. Suez Canal",
+        "C. Grand Anicut Canal",
+        "D. Narmada Canal"
+      ],
+      "answer": 0,
+      "solution": "Indira Gandhi Canal is the longest canal in India."
+    },
+    {
+      "id": "ncl-surveyor-18-g011",
+      "subject": "General Awareness",
+      "topic": "GK-Geography",
+      "section": "general",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The Sundarbans delta is formed by which rivers?",
+      "options": [
+        "A. Ganga and Brahmaputra",
+        "D. Ganga and Son",
+        "C. Brahmaputra and Meghna",
+        "B. Ganga and Yamuna"
+      ],
+      "answer": 0,
+      "solution": "Sundarbans delta is formed by the Ganga and Brahmaputra rivers."
+    },
+    {
+      "id": "ncl-surveyor-18-g012",
+      "subject": "General Awareness",
+      "topic": "GK-Geography",
+      "section": "general",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Which soil type is most suitable for cotton cultivation in India?",
+      "options": [
+        "B. Black (regur) soil",
+        "D. Laterite soil",
+        "C. Red soil",
+        "A. Alluvial soil"
+      ],
+      "answer": 0,
+      "solution": "Black (regur) soil is ideal for cotton cultivation."
+    },
+    {
+      "id": "ncl-surveyor-18-g013",
+      "subject": "General Awareness",
+      "topic": "GK-Geography",
+      "section": "general",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The Palk Strait separates India from which country?",
+      "options": [
+        "C. Myanmar",
+        "B. Sri Lanka",
+        "A. Maldives",
+        "D. Bangladesh"
+      ],
+      "answer": 1,
+      "solution": "Palk Strait separates India (Tamil Nadu) from Sri Lanka."
+    },
+    {
+      "id": "ncl-surveyor-18-g014",
+      "subject": "General Awareness",
+      "topic": "GK-Geography",
+      "section": "general",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Which pass is known as the 'Gateway to the North-East'?",
+      "options": [
+        "B. Varsity Pass",
+        "D. Banihal Pass",
+        "C. Siliguri Corridor",
+        "A. Nathu La"
       ],
       "answer": 2,
-      "solution": "**Answer.** Moon"
+      "solution": "Siliguri Corridor (Chicken's Neck) connects mainland India to the North-East."
+    },
+    {
+      "id": "ncl-surveyor-18-g015",
+      "subject": "General Awareness",
+      "topic": "GK-Geography",
+      "section": "general",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Which Indian state receives rainfall from both the Southwest and Northeast monsoons?",
+      "options": [
+        "D. Rajasthan",
+        "B. Tamil Nadu",
+        "C. Karnataka",
+        "A. Kerala"
+      ],
+      "answer": 1,
+      "solution": "Tamil Nadu receives rainfall from both Southwest (partial) and Northeast monsoons."
+    },
+    {
+      "id": "ncl-surveyor-18-g016",
+      "subject": "General Awareness",
+      "topic": "GK-Geography",
+      "section": "general",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The maximum area under forest cover in India is in which state?",
+      "options": [
+        "A. Arunachal Pradesh",
+        "B. Madhya Pradesh",
+        "D. Chhattisgarh",
+        "C. Maharashtra"
+      ],
+      "answer": 1,
+      "solution": "Madhya Pradesh has the largest forest cover in India by area."
+    },
+    {
+      "id": "ncl-surveyor-18-g017",
+      "subject": "General Awareness",
+      "topic": "GK-Polity",
+      "section": "general",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Who was the first President of India?",
+      "options": [
+        "A. Jawaharlal Nehru",
+        "C. S. Radhakrishnan",
+        "B. Dr. Rajendra Prasad",
+        "D. Zakir Husain"
+      ],
+      "answer": 2,
+      "solution": "Dr. Rajendra Prasad was the first President of India (1950-1962)."
+    },
+    {
+      "id": "ncl-surveyor-18-g018",
+      "subject": "General Awareness",
+      "topic": "GK-Polity",
+      "section": "general",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The fundamental rights are enshrined in which part of the Indian Constitution?",
+      "options": [
+        "C. Part IV",
+        "A. Part II",
+        "B. Part III",
+        "D. Part V"
+      ],
+      "answer": 2,
+      "solution": "Fundamental Rights are in Part III (Articles 12-35) of the Indian Constitution."
+    },
+    {
+      "id": "ncl-surveyor-18-g019",
+      "subject": "General Awareness",
+      "topic": "GK-Polity",
+      "section": "general",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "How many fundamental duties are listed in the Indian Constitution?",
+      "options": [
+        "D. 12",
+        "B. 10",
+        "A. 9",
+        "C. 11"
+      ],
+      "answer": 3,
+      "solution": "There are 11 fundamental duties under Article 51A."
+    },
+    {
+      "id": "ncl-surveyor-18-g020",
+      "subject": "General Awareness",
+      "topic": "GK-Polity",
+      "section": "general",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Which Article of the Indian Constitution abolishes untouchability?",
+      "options": [
+        "C. Article 17",
+        "B. Article 15",
+        "D. Article 19",
+        "A. Article 14"
+      ],
+      "answer": 0,
+      "solution": "Article 17 abolishes untouchability in all forms."
     }
   ]
 }

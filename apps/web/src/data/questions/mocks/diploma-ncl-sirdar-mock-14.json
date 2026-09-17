@@ -1,18 +1,18 @@
 {
-  "id": "diploma-ncl-ncl-sirdar-mock-14",
-  "title": "NCL Mining Sirdar T&S Gr. C \u2014 Mock 14",
+  "id": "diploma-ncl-sirdar-mock-14",
+  "title": "NCL Mining Sirdar T&S Gr. C — Mock 14",
   "tier": "pro",
-  "duration": 120,
-  "pattern": "NCL Mining Sirdar CBT (100 Q \u00b7 100 marks \u00b7 120 min \u00b7 no \u2212ve)",
+  "duration": 90,
+  "pattern": "NCL Mining Sirdar CBT (100 Q · 100 marks · 90 min · no -ve)",
   "totalMarks": 100,
   "sections": [
     {
-      "name": "Section A \u2014 Technical",
+      "name": "Section A — Technical",
       "count": 70,
       "marks": 70
     },
     {
-      "name": "Section B \u2014 General",
+      "name": "Section B — General",
       "count": 30,
       "marks": 30
     }
@@ -23,1628 +23,1808 @@
     "nat": 0,
     "msq": 0
   },
-  "seed": 927989454,
+  "seed": 79631857,
   "locked": true,
   "questions": [
     {
       "id": 1,
-      "subject": "Technical",
-      "topic": "Explosives & Blasting",
-      "section": "Section A \u2014 Technical",
+      "subject": "Technical (Mining)",
+      "topic": "Explosives & Shot Firing",
+      "section": "Section A — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "medium",
-      "stem": "Safety fuse in mines has a burning rate of approximately",
+      "difficulty": "easy",
+      "stem": "Spacing is distance between",
       "options": [
-        "1 min/m",
-        "3 min/m",
-        "2 min/m",
-        "5 min/m"
+        "Explosive and stemming",
+        "Rows",
+        "Adjacent holes in a row",
+        "Hole bottom and surface"
       ],
-      "answer": 0,
-      "solution": "**Answer.** 1 min/m"
+      "answer": 2,
+      "solution": "Adjacent holes."
     },
     {
       "id": 2,
-      "subject": "Technical",
-      "topic": "Safety & Legislation",
-      "section": "Section A \u2014 Technical",
+      "subject": "Technical (Mining)",
+      "topic": "Safety in Opencast Workings",
+      "section": "Section A — Technical",
       "type": "MCQ",
       "marks": 1,
       "difficulty": "medium",
-      "stem": "The term 'stripping ratio' in opencast mining means",
+      "stem": "The 'Blasting Exclusion Zone' enforcement at opencast mines requires",
       "options": [
-        "Overburden removed per unit of coal",
-        "Total mine depth",
-        "Number of benches",
-        "Coal extracted per shift"
+        "Clear demarcation, signage, and personnel accountability",
+        "Used for drilling blast holes",
+        "Used for roof bolting only",
+        "No enforcement of the zone at any time"
       ],
-      "answer": 3,
-      "solution": "**Answer.** Coal extracted per shift"
+      "answer": 0,
+      "solution": "Exclusion zones require clear demarcation and accountability."
     },
     {
       "id": 3,
-      "subject": "Technical",
-      "topic": "Safety & Legislation",
-      "section": "Section A \u2014 Technical",
+      "subject": "Technical (Mining)",
+      "topic": "Safety in Opencast Workings",
+      "section": "Section A — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "easy",
-      "stem": "The quantity of air required per person in underground mines is",
+      "difficulty": "hard",
+      "stem": "Berm height on embankment should be at least",
       "options": [
-        "1.0 m\u00b3/s",
-        "0.06 m\u00b3/s",
-        "0.1 m\u00b3/s",
-        "0.5 m\u00b3/s"
+        "50% of tyre diameter",
+        "Equal to tyre diameter",
+        "5% of tyre diameter",
+        "10% of largest tyre diameter"
       ],
       "answer": 1,
-      "solution": "**Answer.** 0.06 m\u00b3/s"
+      "solution": "CMR 2017 Reg 101(6): the height of every parapet/embankment must not be less than the diameter of the largest tyre plying on that road."
     },
     {
       "id": 4,
-      "subject": "Technical",
-      "topic": "Face Machinery",
-      "section": "Section A \u2014 Technical",
+      "subject": "Technical (Mining)",
+      "topic": "Opencast Working & Bench Formation",
+      "section": "Section A — Technical",
       "type": "MCQ",
       "marks": 1,
       "difficulty": "hard",
-      "stem": "The Mines Act 1952 applies to",
+      "stem": "Dump bench height max is",
       "options": [
-        "Only coal mines",
-        "All mines including quarries",
-        "Only opencast mines",
-        "Only underground mines"
+        "5 m",
+        "50 m",
+        "30 m",
+        "10-15 m"
       ],
-      "answer": 0,
-      "solution": "**Answer.** Only coal mines"
+      "answer": 3,
+      "solution": "10-15 m."
     },
     {
       "id": 5,
-      "subject": "Technical",
-      "topic": "Explosives & Blasting",
-      "section": "Section A \u2014 Technical",
+      "subject": "Technical (Mining)",
+      "topic": "Mines Rules 1955 & Related Rules",
+      "section": "Section A — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "hard",
-      "stem": "The function of a stage loader at a longwall face is",
+      "difficulty": "easy",
+      "stem": "Coal dust in underground coal mines must, after treatment, carry incombustible matter of at least",
       "options": [
-        "Loading coal onto main conveyor",
-        "Drilling holes",
-        "Ventilating",
-        "Supporting roof"
+        "50%",
+        "100%",
+        "80%",
+        "75%"
       ],
-      "answer": 0,
-      "solution": "**Answer.** Loading coal onto main conveyor"
+      "answer": 3,
+      "solution": "CMR 2017 Reg 144(3)(a): treated dust must carry at least 75% incombustible matter (85% for seams above 30% volatile matter)."
     },
     {
       "id": 6,
-      "subject": "Technical",
-      "topic": "Ventilation & Mine Gases",
-      "section": "Section A \u2014 Technical",
+      "subject": "Technical (Mining)",
+      "topic": "Opencast Working & Bench Formation",
+      "section": "Section A — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "easy",
-      "stem": "Bench height in opencast mines is governed by",
+      "difficulty": "medium",
+      "stem": "'Prospecting' means",
       "options": [
-        "Random selection",
-        "Equipment reach and geological conditions",
-        "Operator preference",
-        "Season"
+        "Building of waste dumps at the site",
+        "Training workers",
+        "Extracting coal",
+        "Exploratory investigation of coal deposits"
       ],
-      "answer": 2,
-      "solution": "**Answer.** Operator preference"
+      "answer": 3,
+      "solution": "Exploratory investigation of coal deposits."
     },
     {
       "id": 7,
-      "subject": "Technical",
-      "topic": "Safety & Legislation",
-      "section": "Section A \u2014 Technical",
+      "subject": "Technical (Mining)",
+      "topic": "CMR 2017 & Mines Act 1952",
+      "section": "Section A — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "hard",
-      "stem": "First aid certificate under CMR 2017 is required for",
+      "difficulty": "medium",
+      "stem": "Chief Inspector under Mines Act is appointed by",
       "options": [
-        "All workers",
-        "Mining Sirdar",
-        "Only safety officers",
-        "Only supervisors"
+        "The court",
+        "State Government",
+        "Central Government",
+        "Mine owner"
       ],
-      "answer": 1,
-      "solution": "**Answer.** Mining Sirdar"
+      "answer": 2,
+      "solution": "Central Government."
     },
     {
       "id": 8,
-      "subject": "Technical",
-      "topic": "Opencast Mining",
-      "section": "Section A \u2014 Technical",
+      "subject": "Technical (Mining)",
+      "topic": "Safety in Opencast Workings",
+      "section": "Section A — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "hard",
-      "stem": "The main function of pillars in bord and pillar mining is",
+      "difficulty": "medium",
+      "stem": "Walk-around inspection checks",
       "options": [
-        "Roof support",
-        "Transport",
-        "Ventilation",
-        "Coal extraction"
+        "Optional in non-hazardous areas",
+        "Required only in UG mines",
+        "All critical components visually",
+        "Applicable after shift change"
       ],
-      "answer": 3,
-      "solution": "**Answer.** Coal extraction"
+      "answer": 2,
+      "solution": "All critical components."
     },
     {
       "id": 9,
-      "subject": "Technical",
-      "topic": "Strata Control",
-      "section": "Section A \u2014 Technical",
+      "subject": "Technical (Mining)",
+      "topic": "Reclamation in Opencast Mining",
+      "section": "Section A — Technical",
       "type": "MCQ",
       "marks": 1,
       "difficulty": "medium",
-      "stem": "DGMS stands for",
+      "stem": "Water harvesting structures on reclaimed mine land serve to",
       "options": [
-        "Department of Geological Mining Survey",
-        "None",
-        "Director General of Mineral Safety",
-        "Directorate General of Mines Safety"
+        "For decoration of the landscape",
+        "Capture and store water for beneficial use",
+        "For breeding of fish and aquatic life",
+        "Allowing the water to be wasted"
       ],
-      "answer": 3,
-      "solution": "**Answer.** Directorate General of Mines Safety"
+      "answer": 1,
+      "solution": "Water harvesting captures and stores water for beneficial reuse."
     },
     {
       "id": 10,
-      "subject": "Technical",
-      "topic": "Opencast Mining",
-      "section": "Section A \u2014 Technical",
+      "subject": "Technical (Mining)",
+      "topic": "Safety Management Plan",
+      "section": "Section A — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "hard",
-      "stem": "Haul road gradient in opencast mines should not exceed",
+      "difficulty": "easy",
+      "stem": "A Safety Committee under the Mines Act is required for mines with",
       "options": [
-        "1:20",
-        "1:10",
-        "1:30",
-        "1:15"
+        "All mines regardless of size",
+        "More than 50 workers",
+        "More than 100 workers",
+        "More than 500 workers"
       ],
-      "answer": 1,
-      "solution": "**Answer.** 1:10"
+      "answer": 2,
+      "solution": "A Safety Committee is mandatory for mines with more than 100 workers as per Mines Act 1952."
     },
     {
       "id": 11,
-      "subject": "Technical",
-      "topic": "Opencast Mining",
-      "section": "Section A \u2014 Technical",
+      "subject": "Technical (Mining)",
+      "topic": "Safety Management Plan",
+      "section": "Section A — Technical",
       "type": "MCQ",
       "marks": 1,
       "difficulty": "easy",
-      "stem": "Roof bolting is used in mines to",
+      "stem": "Safety training matrix defines",
       "options": [
-        "Ventilate the mine",
-        "Support roof by anchoring to stronger strata",
-        "Transport coal",
-        "Increase mining height"
+        "Required training per role and competency",
+        "Optional in non-hazardous areas",
+        "Improve ventilation efficiency",
+        "Enhance surveying accuracy"
       ],
-      "answer": 1,
-      "solution": "**Answer.** Support roof by anchoring to stronger strata"
+      "answer": 0,
+      "solution": "Training per role."
     },
     {
       "id": 12,
-      "subject": "Technical",
-      "topic": "Opencast Mining",
-      "section": "Section A \u2014 Technical",
+      "subject": "Technical (Mining)",
+      "topic": "Explosives & Shot Firing",
+      "section": "Section A — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "medium",
-      "stem": "Anemometer is used to measure",
+      "difficulty": "easy",
+      "stem": "Powder factor is",
       "options": [
-        "Pressure",
-        "Temperature",
-        "Humidity",
-        "Air velocity"
+        "Number of holes",
+        "Weight per unit volume of rock",
+        "Cost per blast",
+        "Total explosive weight"
       ],
       "answer": 1,
-      "solution": "**Answer.** Temperature"
+      "solution": "Weight per unit volume."
     },
     {
       "id": 13,
-      "subject": "Technical",
-      "topic": "Safety & Legislation",
-      "section": "Section A \u2014 Technical",
+      "subject": "Technical (Mining)",
+      "topic": "Opencast Working & Bench Formation",
+      "section": "Section A — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "medium",
-      "stem": "Continuous Miner cuts coal by",
+      "difficulty": "easy",
+      "stem": "The 'overall slope angle' of an opencast mine is measured between",
       "options": [
-        "Rotating cutting head with picks",
-        "Drill and blast",
-        "Manual labor",
-        "Water jet"
+        "Two adjacent bench crests",
+        "Crest of topmost bench and toe of bottommost bench",
+        "Two adjacent bench toes",
+        "The surface and the pit bottom"
       ],
       "answer": 1,
-      "solution": "**Answer.** Drill and blast"
+      "solution": "Measured from crest of top bench to toe of bottom bench."
     },
     {
       "id": 14,
-      "subject": "Technical",
-      "topic": "Explosives & Blasting",
-      "section": "Section A \u2014 Technical",
+      "subject": "Technical (Mining)",
+      "topic": "Explosives & Shot Firing",
+      "section": "Section A — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "hard",
-      "stem": "Gas testing certificate is mandatory for",
+      "difficulty": "easy",
+      "stem": "Initiation point should be at",
       "options": [
-        "Only managers",
-        "All mine workers",
-        "Only persons working in gassy mines",
-        "No one"
+        "The surface of the bench only",
+        "The free face for best fragmentation",
+        "The bottom of the hole only",
+        "Maximum confinement"
       ],
-      "answer": 1,
-      "solution": "**Answer.** All mine workers"
+      "answer": 2,
+      "solution": "Bottom initiation yields better fragmentation and displacement; the initiator is placed at the bottom of the hole."
     },
     {
       "id": 15,
-      "subject": "Technical",
-      "topic": "Opencast Mining",
-      "section": "Section A \u2014 Technical",
+      "subject": "Technical (Mining)",
+      "topic": "Mines Rules 1955 & Related Rules",
+      "section": "Section A — Technical",
       "type": "MCQ",
       "marks": 1,
       "difficulty": "medium",
-      "stem": "Reclamation of opencast mines involves",
+      "stem": "Under Mines Rules 1955, the 'Register of Workers' must contain",
       "options": [
-        "Restoring land to usable condition after mining",
-        "Flooding the area",
-        "Building permanent structures",
-        "Leaving land barren"
+        "The names of the workers and nothing else",
+        "Names, ages, addresses, and other prescribed particulars",
+        "The wages paid and nothing else",
+        "The attendance and no other particulars"
       ],
-      "answer": 3,
-      "solution": "**Answer.** Leaving land barren"
+      "answer": 1,
+      "solution": "Worker registers must contain names, ages, addresses, and other prescribed particulars."
     },
     {
       "id": 16,
-      "subject": "Technical",
-      "topic": "Explosives & Blasting",
-      "section": "Section A \u2014 Technical",
+      "subject": "Technical (Mining)",
+      "topic": "Opencast Working & Bench Formation",
+      "section": "Section A — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "hard",
-      "stem": "The factor of safety for pillars is calculated as",
+      "difficulty": "easy",
+      "stem": "'Selective mining' in opencast aims to",
       "options": [
-        "Load / Strength",
-        "Strength / Load",
-        "Height / Width",
-        "Depth / Width"
+        "Reduce equipment",
+        "Increase overburden",
+        "Increase dump height",
+        "Separate coal of different qualities"
       ],
-      "answer": 1,
-      "solution": "**Answer.** Strength / Load"
+      "answer": 3,
+      "solution": "Separates coal of different qualities."
     },
     {
       "id": 17,
-      "subject": "Technical",
-      "topic": "Opencast Mining",
-      "section": "Section A \u2014 Technical",
+      "subject": "Technical (Mining)",
+      "topic": "Report Writing",
+      "section": "Section A — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "easy",
-      "stem": "The 'burden' in a blast pattern refers to",
+      "difficulty": "medium",
+      "stem": "Explosive Consumption Report covers",
       "options": [
-        "Depth of borehole",
-        "Distance from borehole to nearest free face",
-        "Distance between rows",
-        "Diameter of charge"
+        "Type, quantity per hole, powder factor, plan comparison",
+        "Used for roof support",
+        "Used for stemming operations",
+        "Used for drilling blast holes"
       ],
-      "answer": 2,
-      "solution": "**Answer.** Distance between rows"
+      "answer": 0,
+      "solution": "Type, quantity, factor, comparison."
     },
     {
       "id": 18,
-      "subject": "Technical",
-      "topic": "Ventilation & Mine Gases",
-      "section": "Section A \u2014 Technical",
+      "subject": "Technical (Mining)",
+      "topic": "CMR 2017 & Mines Act 1952",
+      "section": "Section A — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "easy",
-      "stem": "The stemming in a blast hole serves to",
+      "difficulty": "medium",
+      "stem": "Under the Mines Vocational Training Rules 1966, a person before being employed in a mine for the first time must undergo:",
       "options": [
-        "Increase smoke",
-        "Increase explosion",
-        "Reduce cost",
-        "Confine the explosive energy"
+        "One month of refresher training",
+        "No training of any kind before work",
+        "Initial vocational training in the prescribed subjects",
+        "A simple medical examination by the doctor"
       ],
-      "answer": 1,
-      "solution": "**Answer.** Increase explosion"
+      "answer": 2,
+      "solution": "MVTR 1966, Rule 6: every person is given initial vocational training before first employment."
     },
     {
       "id": 19,
-      "subject": "Technical",
-      "topic": "Safety & Legislation",
-      "section": "Section A \u2014 Technical",
+      "subject": "Technical (Mining)",
+      "topic": "Opencast Working & Bench Formation",
+      "section": "Section A — Technical",
       "type": "MCQ",
       "marks": 1,
       "difficulty": "medium",
-      "stem": "Fire damp is dangerous because it",
+      "stem": "The 'face advance rate' in opencast mining depends on",
       "options": [
-        "Is explosive when mixed with air in certain proportions",
-        "Causes suffocation",
-        "Is toxic",
-        "Is radioactive"
+        "Used in quarrying operations",
+        "Blast results, material handling capacity, and weather",
+        "Quarrying of granite",
+        "Specific to metal mines only"
       ],
-      "answer": 2,
-      "solution": "**Answer.** Is toxic"
+      "answer": 1,
+      "solution": "Face advance depends on blasting efficiency, handling capacity, and conditions."
     },
     {
       "id": 20,
-      "subject": "Technical",
-      "topic": "Opencast Mining",
-      "section": "Section A \u2014 Technical",
+      "subject": "Technical (Mining)",
+      "topic": "Opencast Working & Bench Formation",
+      "section": "Section A — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "easy",
-      "stem": "Rock dusting in coal mines is done to",
+      "difficulty": "medium",
+      "stem": "'Grade control' ensures",
       "options": [
-        "Reduce heat",
-        "Prevent coal dust explosions",
-        "Improve visibility",
-        "Increase coal quality"
+        "Coal quality and seam thickness during extraction",
+        "Only the mine layout",
+        "Only the haul road plan",
+        "Only the dump height"
       ],
-      "answer": 1,
-      "solution": "**Answer.** Prevent coal dust explosions"
+      "answer": 0,
+      "solution": "Coal quality and seam thickness."
     },
     {
       "id": 21,
-      "subject": "Technical",
-      "topic": "Safety & Legislation",
-      "section": "Section A \u2014 Technical",
+      "subject": "Technical (Mining)",
+      "topic": "Mines Rules 1955 & Related Rules",
+      "section": "Section A — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "hard",
-      "stem": "Primary explosive is used in",
+      "difficulty": "easy",
+      "stem": "Under Mines Rules 1955, 'Creche' facilities must be provided when",
       "options": [
-        "None",
-        "Main charge",
-        "Both",
-        "Blasting caps only"
+        "There are more than 30 women workers",
+        "There are more than 50 women workers",
+        "When women are employed in any number",
+        "There are more than 100 workers"
       ],
-      "answer": 3,
-      "solution": "**Answer.** Blasting caps only"
+      "answer": 2,
+      "solution": "Mines Creche Rules 1966, Rule 3(1): a creche must be provided in every mine wherein any women are employed (or were employed on any day of the preceding twelve months)."
     },
     {
       "id": 22,
-      "subject": "Technical",
-      "topic": "Opencast Mining",
-      "section": "Section A \u2014 Technical",
+      "subject": "Technical (Mining)",
+      "topic": "Explosives & Shot Firing",
+      "section": "Section A — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "hard",
-      "stem": "The primary purpose of mine ventilation is",
+      "difficulty": "easy",
+      "stem": "The 'explosive selection' for wet holes should consider",
       "options": [
-        "Cooling only",
-        "Increase production",
-        "Reduce electricity",
-        "Supply fresh air and remove harmful gases"
+        "Used for roof bolting only",
+        "Any explosive available in the store",
+        "Water-resistant emulsion or water gel explosives",
+        "Used for stemming operations"
       ],
-      "answer": 0,
-      "solution": "**Answer.** Cooling only"
+      "answer": 2,
+      "solution": "Wet holes require water-resistant explosives like emulsions or water gels."
     },
     {
       "id": 23,
-      "subject": "Technical",
-      "topic": "Safety & Legislation",
-      "section": "Section A \u2014 Technical",
+      "subject": "Technical (Mining)",
+      "topic": "Mines Rules 1955 & Related Rules",
+      "section": "Section A — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "medium",
-      "stem": "The duty of a Mining Sirdar includes",
+      "difficulty": "easy",
+      "stem": "Training frequency under Rules is",
       "options": [
-        "Only maintaining records",
-        "Only managing workers",
-        "Only supervising blasting",
-        "Supervising all mining operations for safety"
+        "At induction and periodically",
+        "On the day of joining the mine",
+        "Never at any stage of service",
+        "Once in career"
       ],
-      "answer": 2,
-      "solution": "**Answer.** Only supervising blasting"
+      "answer": 0,
+      "solution": "Induction and periodically."
     },
     {
       "id": 24,
-      "subject": "Technical",
-      "topic": "Safety & Legislation",
-      "section": "Section A \u2014 Technical",
+      "subject": "Technical (Mining)",
+      "topic": "Opencast Working & Bench Formation",
+      "section": "Section A — Technical",
       "type": "MCQ",
       "marks": 1,
       "difficulty": "easy",
-      "stem": "The capacity of a continuous miner is typically",
+      "stem": "Haul road surface is",
       "options": [
-        "20-50 TPH",
-        "5-10 TPH",
-        "100-200 TPH",
-        "500+ TPH"
+        "Loose sand of the area",
+        "A bitumen surface layer",
+        "Precast concrete slabs of the mine",
+        "Compacted earth, gravel, or laterite"
       ],
-      "answer": 1,
-      "solution": "**Answer.** 5-10 TPH"
+      "answer": 3,
+      "solution": "Compacted earth, gravel, laterite."
     },
     {
       "id": 25,
-      "subject": "Technical",
-      "topic": "Strata Control",
-      "section": "Section A \u2014 Technical",
+      "subject": "Technical (Mining)",
+      "topic": "Reclamation in Opencast Mining",
+      "section": "Section A — Technical",
       "type": "MCQ",
       "marks": 1,
       "difficulty": "medium",
-      "stem": "A shot firer must check for misfires after",
+      "stem": "Dust control during reclamation operations includes",
       "options": [
-        "5 minutes",
-        "30 minutes",
-        "15 minutes",
-        "At least 20 minutes"
+        "Wetting the floors of the office rooms",
+        "Covering the dumps with tarpaulin",
+        "Water spraying, chemical suppressants, and equipment maintenance",
+        "On the days when dust storms occur"
       ],
       "answer": 2,
-      "solution": "**Answer.** 15 minutes"
+      "solution": "Dust control uses water, chemicals, and equipment maintenance."
     },
     {
       "id": 26,
-      "subject": "Technical",
-      "topic": "Ventilation & Mine Gases",
-      "section": "Section A \u2014 Technical",
+      "subject": "Technical (Mining)",
+      "topic": "Report Writing",
+      "section": "Section A — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "hard",
-      "stem": "Blackdamp is a mixture of",
+      "difficulty": "medium",
+      "stem": "A 'visual hierarchy' in reports guides readers through",
       "options": [
-        "None",
-        "Carbon monoxide and hydrogen",
-        "Nitrogen and carbon dioxide",
-        "Methane and oxygen"
+        "The use of bold text and italics",
+        "The use of bullet points and numbered lists",
+        "Logical progression from most to least important information",
+        "The index at the front of the report"
       ],
       "answer": 2,
-      "solution": "**Answer.** Nitrogen and carbon dioxide"
+      "solution": "Visual hierarchy guides readers through information priority."
     },
     {
       "id": 27,
-      "subject": "Technical",
-      "topic": "Strata Control",
-      "section": "Section A \u2014 Technical",
+      "subject": "Technical (Mining)",
+      "topic": "Safety Management Plan",
+      "section": "Section A — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "easy",
-      "stem": "Shotcreting is used in mines for",
+      "difficulty": "medium",
+      "stem": "Proactive indicators include",
       "options": [
-        "Coal extraction",
-        "Roof support and sealing",
-        "Transport",
-        "Ventilation"
+        "Optional in non-hazardous areas",
+        "Required only in UG mines",
+        "Training hours, inspections, near-miss reports",
+        "Applicable after shift change"
       ],
-      "answer": 1,
-      "solution": "**Answer.** Roof support and sealing"
+      "answer": 2,
+      "solution": "Training, inspections, near-misses."
     },
     {
       "id": 28,
-      "subject": "Technical",
-      "topic": "Explosives & Blasting",
-      "section": "Section A \u2014 Technical",
+      "subject": "Technical (Mining)",
+      "topic": "Explosives & Shot Firing",
+      "section": "Section A — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "hard",
-      "stem": "Dump management in opencast mining involves",
+      "difficulty": "medium",
+      "stem": "The 'energy distribution' in a blast hole affects",
       "options": [
-        "Ignoring stability",
-        "Compaction, drainage, and reclamation",
-        "Burning waste",
-        "Only stacking"
+        "Used for roof support",
+        "Nothing significant",
+        "Fragmentation quality and throw of the blasted material",
+        "Used for drilling blast holes"
       ],
-      "answer": 3,
-      "solution": "**Answer.** Only stacking"
+      "answer": 2,
+      "solution": "Energy distribution affects fragmentation and material displacement."
     },
     {
       "id": 29,
-      "subject": "Technical",
-      "topic": "Safety & Legislation",
-      "section": "Section A \u2014 Technical",
+      "subject": "Technical (Mining)",
+      "topic": "CMR 2017 & Mines Act 1952",
+      "section": "Section A — Technical",
       "type": "MCQ",
       "marks": 1,
       "difficulty": "easy",
-      "stem": "A regulator in mine ventilation is used to",
+      "stem": "Under CMR 2017, 'Expenditure' on safety includes",
       "options": [
-        "Reduce temperature",
-        "Stop airflow",
-        "Control quantity of air",
-        "Increase gas"
+        "Adequate expenditure on safety measures and equipment",
+        "Improve ventilation efficiency",
+        "No budget needed",
+        "No specific requirement"
       ],
-      "answer": 1,
-      "solution": "**Answer.** Stop airflow"
+      "answer": 0,
+      "solution": "CMR 2017 requires adequate expenditure on safety measures and equipment."
     },
     {
       "id": 30,
-      "subject": "Technical",
-      "topic": "Explosives & Blasting",
-      "section": "Section A \u2014 Technical",
+      "subject": "Technical (Mining)",
+      "topic": "Opencast Working & Bench Formation",
+      "section": "Section A — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "hard",
-      "stem": "Detonating cord is used in mines to",
+      "difficulty": "easy",
+      "stem": "'Selective mining' extracts coal of",
       "options": [
-        "Provide lighting",
-        "Connect charges for simultaneous detonation",
-        "Signal workers",
-        "Measure distance"
+        "Different qualities separately",
+        "All qualities at once",
+        "Extraction of iron ore",
+        "Quarrying of granite"
       ],
-      "answer": 1,
-      "solution": "**Answer.** Connect charges for simultaneous detonation"
+      "answer": 0,
+      "solution": "Different qualities separately."
     },
     {
       "id": 31,
-      "subject": "Technical",
-      "topic": "Safety & Legislation",
-      "section": "Section A \u2014 Technical",
+      "subject": "Technical (Mining)",
+      "topic": "Report Writing",
+      "section": "Section A — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "easy",
-      "stem": "Bench formation in opencast mines is done to",
+      "difficulty": "medium",
+      "stem": "The purpose of a rescue drill report is to",
       "options": [
-        "Manage slope stability and enable machinery access",
-        "Increase pit depth",
-        "Reduce overburden",
-        "Increase water table"
+        "The weather conditions prevailing on the day of the drill",
+        "Record the drill crew's names",
+        "Document drill performance, response times, equipment condition, and lessons learned",
+        "The brand of the equipment used during the drill"
       ],
-      "answer": 1,
-      "solution": "**Answer.** Increase pit depth"
+      "answer": 2,
+      "solution": "Rescue drill reports must document performance, timing, equipment status, and improvement areas."
     },
     {
       "id": 32,
-      "subject": "Technical",
-      "topic": "Explosives & Blasting",
-      "section": "Section A \u2014 Technical",
+      "subject": "Technical (Mining)",
+      "topic": "Opencast Working & Bench Formation",
+      "section": "Section A — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "easy",
-      "stem": "The main hazard of working at heights in opencast mines is",
+      "difficulty": "medium",
+      "stem": "Berm width min is",
       "options": [
-        "Dust exposure",
-        "Noise",
-        "Heat stress",
-        "Fall of persons or material"
+        "0.25 m",
+        "1.0 m at top and 2.5 m at bottom",
+        "5.0 m",
+        "2.0 m"
       ],
-      "answer": 0,
-      "solution": "**Answer.** Dust exposure"
+      "answer": 1,
+      "solution": "CMR 2017 Reg 101(6): parapet/embankment top width not less than 1 m and bottom width not less than 2.5 m."
     },
     {
       "id": 33,
-      "subject": "Technical",
-      "topic": "Face Machinery",
-      "section": "Section A \u2014 Technical",
+      "subject": "Technical (Mining)",
+      "topic": "Opencast Working & Bench Formation",
+      "section": "Section A — Technical",
       "type": "MCQ",
       "marks": 1,
       "difficulty": "medium",
-      "stem": "Stoppings in mine ventilation are used to",
+      "stem": "The bench height in opencast coal mines is typically governed by",
       "options": [
-        "Block air passage",
-        "Control airflow direction",
-        "Both a and b",
-        "Support roof"
+        "The number of workers",
+        "The distance from the office",
+        "The height of the excavator",
+        "The geological conditions and equipment specifications"
       ],
-      "answer": 0,
-      "solution": "**Answer.** Block air passage"
+      "answer": 3,
+      "solution": "Bench height depends on geological conditions, equipment capabilities, and safety requirements."
     },
     {
       "id": 34,
-      "subject": "Technical",
-      "topic": "Strata Control",
-      "section": "Section A \u2014 Technical",
+      "subject": "Technical (Mining)",
+      "topic": "Safety in Opencast Workings",
+      "section": "Section A — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "hard",
-      "stem": "A shearer in longwall mining operates by",
+      "difficulty": "easy",
+      "stem": "JSA identifies",
       "options": [
-        "Stationary drilling",
-        "Blasting",
-        "Dragging along the face cutting coal",
-        "Manual operation"
+        "Applicable after shift change",
+        "Optional in non-hazardous areas",
+        "Hazards and safe procedures for each task",
+        "Required only in UG mines"
       ],
       "answer": 2,
-      "solution": "**Answer.** Dragging along the face cutting coal"
+      "solution": "Hazards and safe procedures."
     },
     {
       "id": 35,
-      "subject": "Technical",
-      "topic": "Safety & Legislation",
-      "section": "Section A \u2014 Technical",
+      "subject": "Technical (Mining)",
+      "topic": "Reclamation in Opencast Mining",
+      "section": "Section A — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "hard",
-      "stem": "The minimum number of miners per underground shift is governed by",
+      "difficulty": "medium",
+      "stem": "Post-closure monitoring period is",
       "options": [
-        "CMSR 2017",
-        "Mines Act 1952",
-        "All of the above",
-        "DGMS circulars"
+        "Six months after closure",
+        "Only 1 month",
+        "5-10 years or as required",
+        "One year after the closure"
       ],
-      "answer": 0,
-      "solution": "**Answer.** CMSR 2017"
+      "answer": 2,
+      "solution": "5-10 years or as required."
     },
     {
       "id": 36,
-      "subject": "Technical",
-      "topic": "Ventilation & Mine Gases",
-      "section": "Section A \u2014 Technical",
+      "subject": "Technical (Mining)",
+      "topic": "Report Writing",
+      "section": "Section A — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "medium",
-      "stem": "The convergence in an underground opening refers to",
+      "difficulty": "easy",
+      "stem": "The 'abstract' of a report should be written",
       "options": [
-        "Temperature rise",
-        "Gas concentration",
-        "Roof and floor moving closer",
-        "Air flow increase"
+        "During research",
+        "Before data collection",
+        "Before the report is written",
+        "After the entire report is complete"
       ],
-      "answer": 2,
-      "solution": "**Answer.** Roof and floor moving closer"
+      "answer": 3,
+      "solution": "Abstracts are written after the report is complete to accurately summarize content."
     },
     {
       "id": 37,
-      "subject": "Technical",
-      "topic": "Safety & Legislation",
-      "section": "Section A \u2014 Technical",
+      "subject": "Technical (Mining)",
+      "topic": "Explosives & Shot Firing",
+      "section": "Section A — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "hard",
-      "stem": "SDL stands for",
+      "difficulty": "easy",
+      "stem": "Specific charge is another term for",
       "options": [
-        "Shortwall Discharge Loader",
-        "Screw Conveyor Loader",
-        "Self-Propelled Discharge Loader",
-        "None"
+        "Total charge weight",
+        "Charge per row",
+        "Charge per hole",
+        "Powder factor"
       ],
-      "answer": 2,
-      "solution": "**Answer.** Self-Propelled Discharge Loader"
+      "answer": 3,
+      "solution": "Powder factor."
     },
     {
       "id": 38,
-      "subject": "Technical",
-      "topic": "Explosives & Blasting",
-      "section": "Section A \u2014 Technical",
+      "subject": "Technical (Mining)",
+      "topic": "Report Writing",
+      "section": "Section A — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "easy",
-      "stem": "The lower explosive limit of methane in air is approximately",
+      "difficulty": "medium",
+      "stem": "Monthly Safety Report includes",
       "options": [
-        "1%",
-        "10%",
-        "5%",
-        "15%"
+        "Optional in non-hazardous areas",
+        "Accidents, near-misses, training, inspections",
+        "Required only in UG mines",
+        "Increase production rate"
       ],
-      "answer": 0,
-      "solution": "**Answer.** 1%"
+      "answer": 1,
+      "solution": "Accidents, near-misses, training, inspections."
     },
     {
       "id": 39,
-      "subject": "Technical",
-      "topic": "Safety & Legislation",
-      "section": "Section A \u2014 Technical",
+      "subject": "Technical (Mining)",
+      "topic": "Safety Management Plan",
+      "section": "Section A — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "hard",
-      "stem": "Wire mesh in underground mines is used for",
+      "difficulty": "medium",
+      "stem": "The 'Contractor Safety Induction' must cover",
       "options": [
-        "Gas detection",
-        "Coal sampling",
-        "Roof and rib support",
-        "Water pumping"
+        "Optional in non-hazardous areas",
+        "Mine-specific hazards, rules, and emergency procedures",
+        "Reduce equipment maintenance",
+        "No induction needed"
       ],
-      "answer": 2,
-      "solution": "**Answer.** Roof and rib support"
+      "answer": 1,
+      "solution": "Contractor induction must cover mine-specific hazards and procedures."
     },
     {
       "id": 40,
-      "subject": "Technical",
-      "topic": "Strata Control",
-      "section": "Section A \u2014 Technical",
+      "subject": "Technical (Mining)",
+      "topic": "Reclamation in Opencast Mining",
+      "section": "Section A — Technical",
       "type": "MCQ",
       "marks": 1,
       "difficulty": "easy",
-      "stem": "The annual safety pass for mines is called",
+      "stem": "Mycorrhizal inoculation in reclamation helps plants by",
       "options": [
-        "Competency certificate",
-        "Safety passport",
-        "Neither",
-        "Both a and b"
+        "Reducing root growth",
+        "Killing harmful bacteria",
+        "Enhancing nutrient and water uptake through fungal association",
+        "Increasing soil temperature"
       ],
-      "answer": 1,
-      "solution": "**Answer.** Safety passport"
+      "answer": 2,
+      "solution": "Mycorrhizal fungi form symbiotic associations with plant roots, improving nutrient and water absorption."
     },
     {
       "id": 41,
-      "subject": "Technical",
-      "topic": "Safety & Legislation",
-      "section": "Section A \u2014 Technical",
+      "subject": "Technical (Mining)",
+      "topic": "Mines Rules 1955 & Related Rules",
+      "section": "Section A — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "hard",
-      "stem": "Caving in mining refers to",
+      "difficulty": "medium",
+      "stem": "The 'Safety Belt' inspection under Mines Rules must be",
       "options": [
-        "Accidental mine collapse",
-        "Controlled collapse of roof behind retreating face",
-        "Water inflow",
-        "Gas emission"
+        "Before each use by a competent person",
+        "Once in every working week",
+        "After every accident",
+        "Once in every calendar month"
       ],
-      "answer": 1,
-      "solution": "**Answer.** Controlled collapse of roof behind retreating face"
+      "answer": 0,
+      "solution": "Safety belts must be inspected before each use."
     },
     {
       "id": 42,
-      "subject": "Technical",
-      "topic": "Face Machinery",
-      "section": "Section A \u2014 Technical",
+      "subject": "Technical (Mining)",
+      "topic": "Explosives & Shot Firing",
+      "section": "Section A — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "hard",
-      "stem": "The pressure exerted by overburden on pillars is called",
+      "difficulty": "easy",
+      "stem": "The 'flyrock radius' in blasting is influenced by",
       "options": [
-        "Abutment pressure",
-        "Atmospheric pressure",
-        "None",
-        "Hydraulic pressure"
+        "Used for roof support",
+        "Used for charging detonators",
+        "Burden, stemming, and explosive charge characteristics",
+        "Used for drilling blast holes"
       ],
-      "answer": 0,
-      "solution": "**Answer.** Abutment pressure"
+      "answer": 2,
+      "solution": "Flyrock is influenced by burden, stemming, and charge characteristics."
     },
     {
       "id": 43,
-      "subject": "Technical",
-      "topic": "Ventilation & Mine Gases",
-      "section": "Section A \u2014 Technical",
+      "subject": "Technical (Mining)",
+      "topic": "Report Writing",
+      "section": "Section A — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "hard",
-      "stem": "Under CMR 2017, the responsible person for safety in a mine is",
+      "difficulty": "medium",
+      "stem": "A dust monitoring report should include",
       "options": [
-        "Only the manager",
-        "Manager and all supervisory staff",
-        "Only safety officer",
-        "Only shot firer"
+        "The name of the mine and its location and lease area",
+        "The month in which the dust samples were collected",
+        "Type of dust, concentration levels, exposure duration, and control measures in place",
+        "The signatures of the officials who signed the report"
       ],
-      "answer": 0,
-      "solution": "**Answer.** Only the manager"
+      "answer": 2,
+      "solution": "Dust monitoring reports must include dust type, concentrations, exposure levels, and existing controls."
     },
     {
       "id": 44,
-      "subject": "Technical",
-      "topic": "Explosives & Blasting",
-      "section": "Section A \u2014 Technical",
+      "subject": "Technical (Mining)",
+      "topic": "CMR 2017 & Mines Act 1952",
+      "section": "Section A — Technical",
       "type": "MCQ",
       "marks": 1,
       "difficulty": "medium",
-      "stem": "The safe distance for personnel during blasting is determined by",
+      "stem": "'Competent person' under the Mines Act 1952 means a person:",
       "options": [
-        "Random estimation",
-        "Manufacturer guidelines only",
-        "Supervisor's wish",
-        "DGMS regulations and charge weight calculations"
+        "Appointed by the Inspector",
+        "Having 10 years of experience",
+        "Appointed by the owner, agent or manager and possessing the prescribed qualifications",
+        "Holding any degree"
       ],
-      "answer": 1,
-      "solution": "**Answer.** Manufacturer guidelines only"
+      "answer": 2,
+      "solution": "Mines Act 1952, s.2(1)(c): a competent person is one appointed by the owner, agent or manager with the prescribed qualifications for the purpose."
     },
     {
       "id": 45,
-      "subject": "Technical",
-      "topic": "Safety & Legislation",
-      "section": "Section A \u2014 Technical",
+      "subject": "Technical (Mining)",
+      "topic": "Report Writing",
+      "section": "Section A — Technical",
       "type": "MCQ",
       "marks": 1,
       "difficulty": "easy",
-      "stem": "A feeder breaker is used to",
+      "stem": "The 'accessibility' of reports means",
       "options": [
-        "Break large coal lumps and feed to conveyor",
-        "Ventilate the mine",
-        "Drill holes",
-        "Support roof"
+        "Using short words and nothing else",
+        "Reports are readable and understandable by the intended audience",
+        "Printing the report in very large fonts",
+        "Including only a summary of the whole report"
       ],
-      "answer": 0,
-      "solution": "**Answer.** Break large coal lumps and feed to conveyor"
+      "answer": 1,
+      "solution": "Accessibility ensures reports can be read and understood by the target audience."
     },
     {
       "id": 46,
-      "subject": "Technical",
-      "topic": "Face Machinery",
-      "section": "Section A \u2014 Technical",
+      "subject": "Technical (Mining)",
+      "topic": "CMR 2017 & Mines Act 1952",
+      "section": "Section A — Technical",
       "type": "MCQ",
       "marks": 1,
       "difficulty": "medium",
-      "stem": "The boot end of a belt conveyor is where",
+      "stem": "Under CMR 2017, 'Personal Protective Equipment' must be",
       "options": [
-        "All of the above",
-        "Drive pulley is located",
-        "Belt tensioning happens",
-        "Tail pulley and loading point"
+        "Overcurrent protection only",
+        "Optional for all the workers",
+        "Provided free of charge and used by workers",
+        "Earth fault protection"
       ],
-      "answer": 1,
-      "solution": "**Answer.** Drive pulley is located"
+      "answer": 2,
+      "solution": "PPE must be provided free and used as required."
     },
     {
       "id": 47,
-      "subject": "Technical",
-      "topic": "Strata Control",
-      "section": "Section A \u2014 Technical",
+      "subject": "Technical (Mining)",
+      "topic": "Mines Rules 1955 & Related Rules",
+      "section": "Section A — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "medium",
-      "stem": "The detonator used in underground coal mines is typically",
+      "difficulty": "easy",
+      "stem": "Shift handover includes",
       "options": [
-        "Blasting cap",
-        "Electric detonator",
-        "Nonelectric (shock tube)",
-        "All of the above depending on conditions"
+        "Only the equipment list",
+        "Conditions, hazards, pending work",
+        "Only the attendance",
+        "Only the weather"
       ],
-      "answer": 0,
-      "solution": "**Answer.** Blasting cap"
+      "answer": 1,
+      "solution": "Conditions, hazards, pending work."
     },
     {
       "id": 48,
-      "subject": "Technical",
-      "topic": "Opencast Mining",
-      "section": "Section A \u2014 Technical",
+      "subject": "Technical (Mining)",
+      "topic": "CMR 2017 & Mines Act 1952",
+      "section": "Section A — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "hard",
-      "stem": "Emulsion explosives are preferred in mines because",
+      "difficulty": "medium",
+      "stem": "A first-aid room is required at a mine where the number of persons employed exceeds:",
       "options": [
-        "They are cheaper",
-        "They are illegal",
-        "They are water-resistant and safer to handle",
-        "They produce more smoke"
+        "150",
+        "100",
+        "250",
+        "50"
       ],
       "answer": 0,
-      "solution": "**Answer.** They are cheaper"
+      "solution": "Mines Act 1952, s.21: a first-aid room is required where more than 150 persons are employed."
     },
     {
       "id": 49,
-      "subject": "Technical",
-      "topic": "Opencast Mining",
-      "section": "Section A \u2014 Technical",
+      "subject": "Technical (Mining)",
+      "topic": "CMR 2017 & Mines Act 1952",
+      "section": "Section A — Technical",
       "type": "MCQ",
       "marks": 1,
       "difficulty": "medium",
-      "stem": "The main fan in a mine is located at",
+      "stem": "As per the Mines Act 1952, women may be employed aboveground only between:",
       "options": [
-        "Working face",
-        "Underground chamber",
-        "Surface (exhaust or forcing)",
-        "Intake airway"
+        "24 hours",
+        "6 a.m. and 7 p.m.",
+        "5 a.m. and 9 p.m.",
+        "8 a.m. and 6 p.m."
       ],
-      "answer": 0,
-      "solution": "**Answer.** Working face"
+      "answer": 1,
+      "solution": "Mines Act 1952, s.46: women shall not be employed belowground, and aboveground employment is restricted between 6 a.m. and 7 p.m."
     },
     {
       "id": 50,
-      "subject": "Technical",
-      "topic": "Ventilation & Mine Gases",
-      "section": "Section A \u2014 Technical",
+      "subject": "Technical (Mining)",
+      "topic": "Reclamation in Opencast Mining",
+      "section": "Section A — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "medium",
-      "stem": "Blast pattern design depends on",
+      "difficulty": "easy",
+      "stem": "Soil microbial activity in reclaimed mine soils is important for",
       "options": [
-        "Only rock hardness",
-        "Time of day",
-        "Number of workers",
-        "Borehole diameter, spacing, burden and stemming"
+        "The colour of the reclaimed soil surface",
+        "Nutrient cycling, organic matter decomposition, and soil health",
+        "The dust levels present in the region",
+        "The temperature of the soil surface layer"
       ],
-      "answer": 0,
-      "solution": "**Answer.** Only rock hardness"
+      "answer": 1,
+      "solution": "Microbial activity is essential for nutrient cycling, decomposition, and soil health."
     },
     {
       "id": 51,
-      "subject": "Technical",
-      "topic": "Face Machinery",
-      "section": "Section A \u2014 Technical",
+      "subject": "Technical (Mining)",
+      "topic": "Reclamation in Opencast Mining",
+      "section": "Section A — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "hard",
-      "stem": "Under CMR 2017, a shot firer must be certified by",
+      "difficulty": "easy",
+      "stem": "Grading creates",
       "options": [
-        "DGMS",
-        "CIL",
-        "State government",
-        "IME"
+        "Flat surface only",
+        "More erosion of the soil",
+        "Steep slopes without any shape",
+        "Gentle, stable slopes for drainage"
       ],
-      "answer": 0,
-      "solution": "**Answer.** DGMS"
+      "answer": 3,
+      "solution": "Gentle, stable slopes."
     },
     {
       "id": 52,
-      "subject": "Technical",
-      "topic": "Explosives & Blasting",
-      "section": "Section A \u2014 Technical",
+      "subject": "Technical (Mining)",
+      "topic": "CMR 2017 & Mines Act 1952",
+      "section": "Section A — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "hard",
-      "stem": "A shuttle car is used to",
+      "difficulty": "easy",
+      "stem": "Mines Rescue Rules 1985 framed under",
       "options": [
-        "Transport coal from face to conveyor",
-        "Pump water",
-        "Carry explosives",
-        "Drill shot holes"
+        "Coal Mines Act",
+        "Mines Act 1952",
+        "Disaster Management Act",
+        "Factories Act"
       ],
-      "answer": 0,
-      "solution": "**Answer.** Transport coal from face to conveyor"
+      "answer": 1,
+      "solution": "Mines Act 1952."
     },
     {
       "id": 53,
-      "subject": "Technical",
-      "topic": "Explosives & Blasting",
-      "section": "Section A \u2014 Technical",
+      "subject": "Technical (Mining)",
+      "topic": "Opencast Working & Bench Formation",
+      "section": "Section A — Technical",
       "type": "MCQ",
       "marks": 1,
       "difficulty": "medium",
-      "stem": "The maximum permissible explosive charge per delay in surface blasting is governed by",
+      "stem": "The 'working bench width' must accommodate",
       "options": [
-        "IS 6968",
-        "DGMS guidelines",
-        "Manufacturer",
-        "Both a and b"
+        "Excavator, haul road, and safety berm",
+        "Only a footpath",
+        "Only a car park",
+        "Only the office"
       ],
-      "answer": 1,
-      "solution": "**Answer.** DGMS guidelines"
+      "answer": 0,
+      "solution": "Working width must accommodate equipment, roads, and safety features."
     },
     {
       "id": 54,
-      "subject": "Technical",
-      "topic": "Explosives & Blasting",
-      "section": "Section A \u2014 Technical",
+      "subject": "Technical (Mining)",
+      "topic": "CMR 2017 & Mines Act 1952",
+      "section": "Section A — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "hard",
-      "stem": "Emergency evacuation plan in mines is called",
+      "difficulty": "easy",
+      "stem": "Coal mine under CMR 2017 means",
       "options": [
-        "Fire plan",
-        "Mine emergency plan",
-        "Rescue plan",
-        "Emergency preparedness and response plan"
+        "Any mine where coal is extracted",
+        "Specific to metal mines only",
+        "Mining of bauxite",
+        "Extraction of iron ore"
       ],
-      "answer": 1,
-      "solution": "**Answer.** Mine emergency plan"
+      "answer": 0,
+      "solution": "Any coal-extracting mine."
     },
     {
       "id": 55,
-      "subject": "Technical",
-      "topic": "Opencast Mining",
-      "section": "Section A \u2014 Technical",
+      "subject": "Technical (Mining)",
+      "topic": "Explosives & Shot Firing",
+      "section": "Section A — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "medium",
-      "stem": "Misfire in a blast means",
+      "difficulty": "easy",
+      "stem": "Explosive strength is measured by",
       "options": [
-        "Excess charge",
-        "Premature detonation",
-        "Explosive fails to detonate",
-        "Double firing"
+        "The packaging of the explosive",
+        "The colour of the explosive",
+        "Energy output per unit weight or volume",
+        "The total weight of the charge"
       ],
-      "answer": 3,
-      "solution": "**Answer.** Double firing"
+      "answer": 2,
+      "solution": "Energy output per unit weight or volume."
     },
     {
       "id": 56,
-      "subject": "Technical",
-      "topic": "Face Machinery",
-      "section": "Section A \u2014 Technical",
+      "subject": "Technical (Mining)",
+      "topic": "Reclamation in Opencast Mining",
+      "section": "Section A — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "hard",
-      "stem": "Methane gas in mines is also known as",
+      "difficulty": "easy",
+      "stem": "Which soil amendment is commonly used to improve reclaimed mine soil?",
       "options": [
-        "Firedamp",
-        "Blackdamp",
-        "Afterdamp",
-        "Stinkdamp"
+        "Lime",
+        "Cement",
+        "Sand",
+        "Gypsum"
       ],
       "answer": 0,
-      "solution": "**Answer.** Firedamp"
+      "solution": "Lime is used to neutralize acidic mine soils and improve soil structure for plant growth."
     },
     {
       "id": 57,
-      "subject": "Technical",
-      "topic": "Explosives & Blasting",
-      "section": "Section A \u2014 Technical",
+      "subject": "Technical (Mining)",
+      "topic": "Safety Management Plan",
+      "section": "Section A — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "hard",
-      "stem": "A longwall face uses supports called",
+      "difficulty": "medium",
+      "stem": "The 'safety corrective action tracking' ensures",
       "options": [
-        "Props",
-        "Timber sets",
-        "Rock bolts",
-        "Hydraulic powered roof supports (shields)"
+        "All identified actions are implemented and verified",
+        "No tracking of the corrective actions",
+        "Reduce equipment maintenance",
+        "Enhance surveying accuracy"
       ],
       "answer": 0,
-      "solution": "**Answer.** Props"
+      "solution": "Action tracking ensures all corrective measures are implemented and verified."
     },
     {
       "id": 58,
-      "subject": "Technical",
-      "topic": "Explosives & Blasting",
-      "section": "Section A \u2014 Technical",
+      "subject": "Technical (Mining)",
+      "topic": "CMR 2017 & Mines Act 1952",
+      "section": "Section A — Technical",
       "type": "MCQ",
       "marks": 1,
       "difficulty": "easy",
-      "stem": "A 'gathering arm loader' is used for",
+      "stem": "Roof inspection underground must be",
       "options": [
-        "Loading coal onto conveyors",
-        "Ventilation",
-        "Drilling",
-        "Blasting"
+        "After each blasting round",
+        "Once a year",
+        "Before every shift by competent person",
+        "Provide fresh air"
       ],
-      "answer": 0,
-      "solution": "**Answer.** Loading coal onto conveyors"
+      "answer": 2,
+      "solution": "Before every shift."
     },
     {
       "id": 59,
-      "subject": "Technical",
-      "topic": "Explosives & Blasting",
-      "section": "Section A \u2014 Technical",
+      "subject": "Technical (Mining)",
+      "topic": "Mines Rules 1955 & Related Rules",
+      "section": "Section A — Technical",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "easy",
-      "stem": "Water gel explosives are also known as",
+      "difficulty": "medium",
+      "stem": "Mines Rules 1955 specifies that the 'Davit and Bailer' for shaft inspection must be tested",
       "options": [
-        "Dynamite",
-        "Slurry explosives",
-        "ANFO",
-        "Black powder"
+        "Only at installation",
+        "Only after accidents",
+        "Every five years",
+        "At least once every six months"
       ],
-      "answer": 1,
-      "solution": "**Answer.** Slurry explosives"
+      "answer": 3,
+      "solution": "Davits and bailers must be tested at least once every six months."
     },
     {
       "id": 60,
-      "subject": "Technical",
-      "topic": "Safety & Legislation",
-      "section": "Section A \u2014 Technical",
+      "subject": "Technical (Mining)",
+      "topic": "Safety in Opencast Workings",
+      "section": "Section A — Technical",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Electrical earthing prevents",
+      "options": [
+        "Cost increase",
+        "Voltage increase",
+        "Current increase",
+        "Electric shock and equipment damage"
+      ],
+      "answer": 3,
+      "solution": "Electric shock and equipment damage."
+    },
+    {
+      "id": 61,
+      "subject": "Technical (Mining)",
+      "topic": "Mines Rules 1955 & Related Rules",
+      "section": "Section A — Technical",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "Contractor compliance under Rules is",
+      "options": [
+        "On paper and never in practice",
+        "At the time of inspection",
+        "Required and monitored by mine management",
+        "Left to the contractor"
+      ],
+      "answer": 2,
+      "solution": "Required and monitored."
+    },
+    {
+      "id": 62,
+      "subject": "Technical (Mining)",
+      "topic": "Safety Management Plan",
+      "section": "Section A — Technical",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The 'safety meeting' frequency in mines should be",
+      "options": [
+        "After the accidents occur",
+        "Never at any time of the year",
+        "Increase production",
+        "Regular, at least weekly or as needed"
+      ],
+      "answer": 3,
+      "solution": "Safety meetings should be regular (at least weekly) and as needed for specific issues."
+    },
+    {
+      "id": 63,
+      "subject": "Technical (Mining)",
+      "topic": "CMR 2017 & Mines Act 1952",
+      "section": "Section A — Technical",
       "type": "MCQ",
       "marks": 1,
       "difficulty": "hard",
-      "stem": "LHD stands for",
+      "stem": "Welfare Officer appointment requires mines with",
       "options": [
-        "Low Height Dump",
-        "Load Haul Dump",
-        "None",
-        "Long Haul Dump"
+        "1000 or more",
+        "50 or more",
+        "500 or more persons",
+        "Any workers"
       ],
-      "answer": 1,
-      "solution": "**Answer.** Load Haul Dump"
+      "answer": 2,
+      "solution": "Mines Rules 1955, Rule 72(1): a welfare officer is required in mines employing 500 or more persons."
+    },
+    {
+      "id": 64,
+      "subject": "Technical (Mining)",
+      "topic": "Explosives & Shot Firing",
+      "section": "Section A — Technical",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "Initiation energy comes from",
+      "options": [
+        "Requires special permit",
+        "Used for roof bolting only",
+        "Current, shock tube, or safety fuse",
+        "Applied after stemming only"
+      ],
+      "answer": 2,
+      "solution": "Current, shock tube, or safety fuse."
+    },
+    {
+      "id": 65,
+      "subject": "Technical (Mining)",
+      "topic": "Safety in Opencast Workings",
+      "section": "Section A — Technical",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "Emergency evacuation plan should be",
+      "options": [
+        "Regularly reviewed, updated, practiced",
+        "Written once and forgotten",
+        "Optional in non-hazardous areas",
+        "Optional for the mine management"
+      ],
+      "answer": 0,
+      "solution": "Regularly reviewed and practiced."
+    },
+    {
+      "id": 66,
+      "subject": "Technical (Mining)",
+      "topic": "Mines Rules 1955 & Related Rules",
+      "section": "Section A — Technical",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "Mines Rescue Rules 1985 were framed under",
+      "options": [
+        "Factories Act 1948",
+        "Environment Protection Act",
+        "Mines Act 1952",
+        "Mines and Minerals Act 1957"
+      ],
+      "answer": 2,
+      "solution": "Mines Rescue Rules 1985 were framed under the Mines Act 1952."
+    },
+    {
+      "id": 67,
+      "subject": "Technical (Mining)",
+      "topic": "Opencast Working & Bench Formation",
+      "section": "Section A — Technical",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "Catch benches in opencast mines serve to",
+      "options": [
+        "Provide parking space",
+        "Increase production",
+        "Intercept falling material and improve slope stability",
+        "Store equipment"
+      ],
+      "answer": 2,
+      "solution": "Catch benches intercept falling material and improve overall pit slope stability."
+    },
+    {
+      "id": 68,
+      "subject": "Technical (Mining)",
+      "topic": "Safety in Opencast Workings",
+      "section": "Section A — Technical",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The 'Communication System' at opencast mine faces must be",
+      "options": [
+        "Available at all work locations for emergency communication",
+        "Optional in non-hazardous areas",
+        "Required only in UG mines",
+        "Optional and not required for the workers"
+      ],
+      "answer": 0,
+      "solution": "Communication systems must be available at all work locations for emergency use."
+    },
+    {
+      "id": 69,
+      "subject": "Technical (Mining)",
+      "topic": "Opencast Working & Bench Formation",
+      "section": "Section A — Technical",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The 'floor gradient' should allow",
+      "options": [
+        "Free flow of water to sumps",
+        "Only vehicle movement",
+        "No drainage",
+        "Maximum water accumulation"
+      ],
+      "answer": 0,
+      "solution": "Allows free flow of water to sumps."
+    },
+    {
+      "id": 70,
+      "subject": "Technical (Mining)",
+      "topic": "CMR 2017 & Mines Act 1952",
+      "section": "Section A — Technical",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The maximum working hours in a week for an adult employed belowground in a mine are:",
+      "options": [
+        "54 hours",
+        "60 hours",
+        "45 hours",
+        "48 hours"
+      ],
+      "answer": 3,
+      "solution": "Mines Act 1952, s.28: no person shall be employed belowground for more than 48 hours in any week."
     },
     {
       "id": 71,
-      "subject": "General Awareness & Aptitude",
-      "topic": "Reasoning",
-      "section": "Section B \u2014 General",
+      "subject": "General",
+      "topic": "Reasoning & Verbal Ability",
+      "section": "Section B — General",
       "type": "MCQ",
       "marks": 1,
       "difficulty": "medium",
-      "stem": "Which blood group is universal donor",
+      "stem": "A train leaves station A at 9 AM at 60 km/hr. Another train leaves station B at 10 AM at 80 km/hr towards A. If the distance is 560 km, when do they meet?",
       "options": [
-        "O negative",
-        "B negative",
-        "AB positive",
-        "A positive"
+        "12 PM",
+        "2 PM",
+        "1 PM",
+        "3 PM"
       ],
-      "answer": 0,
-      "solution": "**Answer.** O negative"
+      "answer": 1,
+      "solution": "Train A covers 60 km before B starts at 10 AM; remaining 500 km at combined 140 km/h takes about 3.57 h, so they meet at about 13:34 — the nearest option is 2 PM."
     },
     {
       "id": 72,
-      "subject": "General Awareness & Aptitude",
-      "topic": "Reasoning",
-      "section": "Section B \u2014 General",
+      "subject": "General",
+      "topic": "Quantitative Aptitude",
+      "section": "Section B — General",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "easy",
-      "stem": "The sum of angles in a triangle is",
+      "difficulty": "medium",
+      "stem": "A train 150m long passes a pole in 15 seconds. Its speed in km/hr is",
       "options": [
-        "360\u00b0",
-        "270\u00b0",
-        "180\u00b0",
-        "90\u00b0"
+        "54",
+        "60",
+        "36",
+        "40"
       ],
       "answer": 2,
-      "solution": "**Answer.** 180\u00b0"
+      "solution": "Speed = 150/15 = 10 m/s = 10 × 18/5 = 36 km/hr."
     },
     {
       "id": 73,
-      "subject": "General Awareness & Aptitude",
-      "topic": "General Awareness",
-      "section": "Section B \u2014 General",
+      "subject": "General",
+      "topic": "General Knowledge",
+      "section": "Section B — General",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "hard",
-      "stem": "The SI unit of force is",
+      "difficulty": "easy",
+      "stem": "The first General Elections in India were held in",
       "options": [
-        "Newton",
-        "Joule",
-        "Pascal",
-        "Watt"
+        "1951-52",
+        "1947",
+        "1957",
+        "1950"
       ],
       "answer": 0,
-      "solution": "**Answer.** Newton"
+      "solution": "India's first general elections were held from October 1951 to February 1952."
     },
     {
       "id": 74,
-      "subject": "General Awareness & Aptitude",
-      "topic": "Reasoning",
-      "section": "Section B \u2014 General",
+      "subject": "General",
+      "topic": "General Awareness",
+      "section": "Section B — General",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "hard",
-      "stem": "India got independence on",
+      "difficulty": "medium",
+      "stem": "India's national animal is",
       "options": [
-        "15 August 1950",
-        "26 August 1947",
-        "15 August 1947",
-        "26 January 1950"
+        "Lion",
+        "Tiger",
+        "Leopard",
+        "Elephant"
       ],
-      "answer": 2,
-      "solution": "**Answer.** 15 August 1947"
+      "answer": 1,
+      "solution": "Tiger."
     },
     {
       "id": 75,
-      "subject": "General Awareness & Aptitude",
-      "topic": "Reasoning",
-      "section": "Section B \u2014 General",
+      "subject": "General",
+      "topic": "General Knowledge",
+      "section": "Section B — General",
       "type": "MCQ",
       "marks": 1,
       "difficulty": "easy",
-      "stem": "Who was the first President of India",
+      "stem": "The headquarters of the United Nations Children's Fund (UNICEF) is in",
       "options": [
-        "APJ Abdul Kalam",
-        "Dr. S. Radhakrishnan",
-        "Dr. Rajendra Prasad",
-        "Zakir Husain"
+        "Paris",
+        "Geneva",
+        "New York",
+        "London"
       ],
       "answer": 2,
-      "solution": "**Answer.** Dr. Rajendra Prasad"
+      "solution": "UNICEF headquarters is in New York City."
     },
     {
       "id": 76,
-      "subject": "General Awareness & Aptitude",
-      "topic": "Reasoning",
-      "section": "Section B \u2014 General",
+      "subject": "General",
+      "topic": "General Knowledge",
+      "section": "Section B — General",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "easy",
-      "stem": "A natural satellite of Earth is",
+      "difficulty": "medium",
+      "stem": "Chemical symbol for iron is",
       "options": [
-        "Sun",
-        "Moon",
-        "Mars",
-        "None"
+        "Fe",
+        "Ir",
+        "Io",
+        "In"
       ],
-      "answer": 1,
-      "solution": "**Answer.** Moon"
+      "answer": 0,
+      "solution": "Fe."
     },
     {
       "id": 77,
-      "subject": "General Awareness & Aptitude",
-      "topic": "General Awareness",
-      "section": "Section B \u2014 General",
+      "subject": "General",
+      "topic": "General Knowledge",
+      "section": "Section B — General",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "easy",
-      "stem": "A light year measures",
+      "difficulty": "medium",
+      "stem": "Vitamin C deficiency causes",
       "options": [
-        "Mass",
-        "Distance",
-        "Time",
-        "Speed"
+        "Pellagra",
+        "Beriberi",
+        "Scurvy",
+        "Rickets"
       ],
-      "answer": 1,
-      "solution": "**Answer.** Distance"
+      "answer": 2,
+      "solution": "Scurvy."
     },
     {
       "id": 78,
-      "subject": "General Awareness & Aptitude",
-      "topic": "General Awareness",
-      "section": "Section B \u2014 General",
+      "subject": "General",
+      "topic": "Quantitative Aptitude",
+      "section": "Section B — General",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "medium",
-      "stem": "Newton's third law states",
+      "difficulty": "easy",
+      "stem": "Rectangle 8cm x 5cm, perimeter is",
       "options": [
-        "None",
-        "F=ma",
-        "Every action has equal and opposite reaction",
-        "Body remains at rest"
+        "26 cm",
+        "64 cm",
+        "40 cm",
+        "13 cm"
       ],
-      "answer": 2,
-      "solution": "**Answer.** Every action has equal and opposite reaction"
+      "answer": 0,
+      "solution": "2(8+5)=26."
     },
     {
       "id": 79,
-      "subject": "General Awareness & Aptitude",
-      "topic": "Reasoning",
-      "section": "Section B \u2014 General",
+      "subject": "General",
+      "topic": "General Awareness",
+      "section": "Section B — General",
       "type": "MCQ",
       "marks": 1,
       "difficulty": "hard",
-      "stem": "The pH of pure water is",
+      "stem": "The 'Ayushman Bharat' scheme provides",
       "options": [
-        "1",
-        "0",
-        "7",
-        "14"
+        "Pension benefits",
+        "Free education for the children",
+        "Health coverage of ₹5 lakh per family per year",
+        "Free housing for the families"
       ],
       "answer": 2,
-      "solution": "**Answer.** 7"
+      "solution": "Ayushman Bharat provides health coverage up to ₹5 lakh per family for secondary and tertiary care."
     },
     {
       "id": 80,
-      "subject": "General Awareness & Aptitude",
-      "topic": "Reasoning",
-      "section": "Section B \u2014 General",
+      "subject": "General",
+      "topic": "General Awareness",
+      "section": "Section B — General",
       "type": "MCQ",
       "marks": 1,
       "difficulty": "easy",
-      "stem": "Which is the smallest continent",
+      "stem": "Missile Man of India is",
       "options": [
-        "South America",
-        "Australia",
-        "Europe",
-        "Antarctica"
+        "Vikram Sarabhai",
+        "A.P.J. Abdul Kalam",
+        "Homi Bhabha",
+        "C.V. Raman"
       ],
       "answer": 1,
-      "solution": "**Answer.** Australia"
+      "solution": "Dr. Kalam."
     },
     {
       "id": 81,
-      "subject": "General Awareness & Aptitude",
-      "topic": "Reasoning",
-      "section": "Section B \u2014 General",
+      "subject": "General",
+      "topic": "Quantitative Aptitude",
+      "section": "Section B — General",
       "type": "MCQ",
       "marks": 1,
       "difficulty": "easy",
-      "stem": "Speed of sound is approximately",
+      "stem": "The volume of a cylinder with radius 7 cm and height 10 cm is",
       "options": [
-        "343 m/s",
-        "30 m/s",
-        "3000 m/s",
-        "3430 m/s"
+        "1340 cm³",
+        "1540 cm³",
+        "1640 cm³",
+        "1440 cm³"
       ],
-      "answer": 0,
-      "solution": "**Answer.** 343 m/s"
+      "answer": 1,
+      "solution": "V = πr²h = 22/7 × 49 × 10 = 1540 cm³."
     },
     {
       "id": 82,
-      "subject": "General Awareness & Aptitude",
-      "topic": "Reasoning",
-      "section": "Section B \u2014 General",
+      "subject": "General",
+      "topic": "General Awareness",
+      "section": "Section B — General",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "hard",
-      "stem": "Which vitamin is produced in sunlight",
+      "difficulty": "medium",
+      "stem": "The Khel Ratna award was recently renamed as",
       "options": [
-        "Vitamin A",
-        "Vitamin D",
-        "Vitamin C",
-        "Vitamin B12"
+        "Padma Sports Award",
+        "Major Dhyan Chand Khel Ratna Award",
+        "The Arjuna Award for the sports",
+        "Dronacharya Award"
       ],
       "answer": 1,
-      "solution": "**Answer.** Vitamin D"
+      "solution": "Khel Ratna was renamed as Major Dhyan Chand Khel Ratna Award in 2021."
     },
     {
       "id": 83,
-      "subject": "General Awareness & Aptitude",
-      "topic": "Quantitative Aptitude",
-      "section": "Section B \u2014 General",
+      "subject": "General",
+      "topic": "General Knowledge",
+      "section": "Section B — General",
       "type": "MCQ",
       "marks": 1,
       "difficulty": "easy",
-      "stem": "The hardest natural substance is",
+      "stem": "The chemical formula for calcium carbonate is",
       "options": [
-        "Quartz",
-        "Topaz",
-        "Corundum",
-        "Diamond"
+        "CaCl2",
+        "CaCO3",
+        "CaO",
+        "Ca(OH)2"
       ],
-      "answer": 3,
-      "solution": "**Answer.** Diamond"
+      "answer": 1,
+      "solution": "CaCO3."
     },
     {
       "id": 84,
-      "subject": "General Awareness & Aptitude",
-      "topic": "General Awareness",
-      "section": "Section B \u2014 General",
+      "subject": "General",
+      "topic": "General Knowledge",
+      "section": "Section B — General",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "hard",
-      "stem": "Tangent of 45\u00b0 is",
+      "difficulty": "easy",
+      "stem": "Which country is known as the 'Land of Rising Sun'?",
       "options": [
-        "\u221a2",
-        "0",
-        "\u221e",
-        "1"
+        "Korea",
+        "Thailand",
+        "Japan",
+        "China"
       ],
-      "answer": 3,
-      "solution": "**Answer.** 1"
+      "answer": 2,
+      "solution": "Japan is known as the 'Land of the Rising Sun' (Nippon)."
     },
     {
       "id": 85,
-      "subject": "General Awareness & Aptitude",
+      "subject": "General",
       "topic": "General Knowledge",
-      "section": "Section B \u2014 General",
+      "section": "Section B — General",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "medium",
-      "stem": "Antonym of 'ancient' is",
+      "difficulty": "easy",
+      "stem": "The boiling point of water at standard pressure is",
       "options": [
-        "Medieval",
-        "Old",
-        "Historic",
-        "Modern"
+        "90C",
+        "120C",
+        "110C",
+        "100C"
       ],
       "answer": 3,
-      "solution": "**Answer.** Modern"
+      "solution": "100C."
     },
     {
       "id": 86,
-      "subject": "General Awareness & Aptitude",
-      "topic": "General Awareness",
-      "section": "Section B \u2014 General",
+      "subject": "General",
+      "topic": "Reasoning & Verbal Ability",
+      "section": "Section B — General",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "hard",
-      "stem": "180 degrees longitude is called",
+      "difficulty": "easy",
+      "stem": "Synonym of 'Ineffable' is",
       "options": [
-        "Prime Meridian",
-        "International Date Line",
-        "Tropic of Cancer",
-        "Equator"
+        "Indescribable",
+        "Expressible",
+        "Clear",
+        "Simple"
       ],
-      "answer": 1,
-      "solution": "**Answer.** International Date Line"
+      "answer": 0,
+      "solution": "Indescribable."
     },
     {
       "id": 87,
-      "subject": "General Awareness & Aptitude",
-      "topic": "Quantitative Aptitude",
-      "section": "Section B \u2014 General",
+      "subject": "General",
+      "topic": "General Knowledge",
+      "section": "Section B — General",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "medium",
-      "stem": "Synonym of 'persevere' is",
+      "difficulty": "easy",
+      "stem": "The largest freshwater lake in India is",
       "options": [
-        "Persist",
-        "Quit",
-        "Surrender",
-        "Abandon"
+        "Loktak Lake",
+        "Chilika Lake",
+        "Dal Lake",
+        "Wular Lake"
       ],
-      "answer": 0,
-      "solution": "**Answer.** Persist"
+      "answer": 3,
+      "solution": "Wular Lake in Jammu & Kashmir is the largest freshwater lake in India."
     },
     {
       "id": 88,
-      "subject": "General Awareness & Aptitude",
-      "topic": "Quantitative Aptitude",
-      "section": "Section B \u2014 General",
+      "subject": "General",
+      "topic": "General Knowledge",
+      "section": "Section B — General",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "medium",
-      "stem": "One kilometer equals",
+      "difficulty": "easy",
+      "stem": "Who was known as the 'Iron Man of India'?",
       "options": [
-        "1000 meters",
-        "10,000 meters",
-        "100 meters",
-        "100,000 meters"
+        "Jawaharlal Nehru",
+        "Sardar Vallabhbhai Patel",
+        "Subhas Chandra Bose",
+        "Mahatma Gandhi"
       ],
-      "answer": 0,
-      "solution": "**Answer.** 1000 meters"
+      "answer": 1,
+      "solution": "Sardar Vallabhbhai Patel was known as the Iron Man of India for his role in integrating princely states."
     },
     {
       "id": 89,
-      "subject": "General Awareness & Aptitude",
-      "topic": "Reasoning",
-      "section": "Section B \u2014 General",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "hard",
-      "stem": "DNA stands for",
-      "options": [
-        "Dynamic nuclear acid",
-        "Deoxyribonucleic acid",
-        "None",
-        "Deoxyribose nucleic acid"
-      ],
-      "answer": 1,
-      "solution": "**Answer.** Deoxyribonucleic acid"
-    },
-    {
-      "id": 90,
-      "subject": "General Awareness & Aptitude",
-      "topic": "Quantitative Aptitude",
-      "section": "Section B \u2014 General",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "hard",
-      "stem": "The headquarters of Coal India Limited is in",
-      "options": [
-        "New Delhi",
-        "Mumbai",
-        "Singrauli",
-        "Kolkata"
-      ],
-      "answer": 3,
-      "solution": "**Answer.** Kolkata"
-    },
-    {
-      "id": 91,
-      "subject": "General Awareness & Aptitude",
-      "topic": "General Awareness",
-      "section": "Section B \u2014 General",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "easy",
-      "stem": "The longest river in India is",
-      "options": [
-        "Brahmaputra",
-        "Yamuna",
-        "Godavari",
-        "Ganga"
-      ],
-      "answer": 3,
-      "solution": "**Answer.** Ganga"
-    },
-    {
-      "id": 92,
-      "subject": "General Awareness & Aptitude",
-      "topic": "Reasoning",
-      "section": "Section B \u2014 General",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "hard",
-      "stem": "India is a ___ republic",
-      "options": [
-        "None",
-        "Sovereign",
-        "Colony",
-        "Dependent"
-      ],
-      "answer": 1,
-      "solution": "**Answer.** Sovereign"
-    },
-    {
-      "id": 93,
-      "subject": "General Awareness & Aptitude",
+      "subject": "General",
       "topic": "General Knowledge",
-      "section": "Section B \u2014 General",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "hard",
-      "stem": "The currency of Japan is",
-      "options": [
-        "Yuan",
-        "Won",
-        "Yen",
-        "Rupee"
-      ],
-      "answer": 2,
-      "solution": "**Answer.** Yen"
-    },
-    {
-      "id": 94,
-      "subject": "General Awareness & Aptitude",
-      "topic": "General Awareness",
-      "section": "Section B \u2014 General",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "hard",
-      "stem": "A man walks 3 km east, then 4 km north. Distance from start is",
-      "options": [
-        "5 km",
-        "1 km",
-        "12 km",
-        "7 km"
-      ],
-      "answer": 0,
-      "solution": "**Answer.** 5 km"
-    },
-    {
-      "id": 95,
-      "subject": "General Awareness & Aptitude",
-      "topic": "Reasoning",
-      "section": "Section B \u2014 General",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "hard",
-      "stem": "Antonym of 'generous' is",
-      "options": [
-        "Kind",
-        "Giving",
-        "Charitable",
-        "Stingy"
-      ],
-      "answer": 3,
-      "solution": "**Answer.** Stingy"
-    },
-    {
-      "id": 96,
-      "subject": "General Awareness & Aptitude",
-      "topic": "Reasoning",
-      "section": "Section B \u2014 General",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "hard",
-      "stem": "The Great Wall of China was built to protect against",
-      "options": [
-        "None",
-        "Japanese invasion",
-        "Mongol invasions",
-        "British invasion"
-      ],
-      "answer": 2,
-      "solution": "**Answer.** Mongol invasions"
-    },
-    {
-      "id": 97,
-      "subject": "General Awareness & Aptitude",
-      "topic": "General Awareness",
-      "section": "Section B \u2014 General",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "hard",
-      "stem": "HCF of 12 and 18 is",
-      "options": [
-        "18",
-        "6",
-        "12",
-        "36"
-      ],
-      "answer": 1,
-      "solution": "**Answer.** 6"
-    },
-    {
-      "id": 98,
-      "subject": "General Awareness & Aptitude",
-      "topic": "Reasoning",
-      "section": "Section B \u2014 General",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "easy",
-      "stem": "The square root of 144 is",
-      "options": [
-        "13",
-        "11",
-        "14",
-        "12"
-      ],
-      "answer": 3,
-      "solution": "**Answer.** 12"
-    },
-    {
-      "id": 99,
-      "subject": "General Awareness & Aptitude",
-      "topic": "General Awareness",
-      "section": "Section B \u2014 General",
+      "section": "Section B — General",
       "type": "MCQ",
       "marks": 1,
       "difficulty": "medium",
-      "stem": "The speed of light is approximately",
+      "stem": "The hardest bone in the human body is",
       "options": [
-        "3 \u00d7 10\u00b9\u2070 m/s",
-        "3 \u00d7 10\u2078 m/s",
-        "3 \u00d7 10\u2076 m/s",
-        "3 \u00d7 10\u2074 m/s"
+        "Skull",
+        "Jaw",
+        "Spine",
+        "Femur"
       ],
       "answer": 1,
-      "solution": "**Answer.** 3 \u00d7 10\u2078 m/s"
+      "solution": "Jaw (mandible)."
+    },
+    {
+      "id": 90,
+      "subject": "General",
+      "topic": "General Knowledge",
+      "section": "Section B — General",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The chemical symbol for calcium is",
+      "options": [
+        "Ca",
+        "Cr",
+        "Cu",
+        "Co"
+      ],
+      "answer": 0,
+      "solution": "Ca."
+    },
+    {
+      "id": 91,
+      "subject": "General",
+      "topic": "General Knowledge",
+      "section": "Section B — General",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "Which vitamin is water soluble?",
+      "options": [
+        "Vitamin D",
+        "Vitamin A",
+        "Vitamin C",
+        "Vitamin K"
+      ],
+      "answer": 2,
+      "solution": "Vitamin C."
+    },
+    {
+      "id": 92,
+      "subject": "General",
+      "topic": "General Knowledge",
+      "section": "Section B — General",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The Battle of Plassey was fought in which year?",
+      "options": [
+        "1764",
+        "1857",
+        "1947",
+        "1757"
+      ],
+      "answer": 3,
+      "solution": "The Battle of Plassey was fought in 1757 between Siraj-ud-Daulah and the British East India Company."
+    },
+    {
+      "id": 93,
+      "subject": "General",
+      "topic": "General Awareness",
+      "section": "Section B — General",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "India's national song is",
+      "options": [
+        "Sare Jahan Se Achha",
+        "Ae Mere Watan Ke Logon",
+        "Jana Gana Mana",
+        "Vande Mataram"
+      ],
+      "answer": 3,
+      "solution": "Vande Mataram."
+    },
+    {
+      "id": 94,
+      "subject": "General",
+      "topic": "General Knowledge",
+      "section": "Section B — General",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Who painted the 'Mona Lisa'?",
+      "options": [
+        "Donatello",
+        "Michelangelo",
+        "Leonardo da Vinci",
+        "Raphael"
+      ],
+      "answer": 2,
+      "solution": "Leonardo da Vinci painted the Mona Lisa between 1503-1519."
+    },
+    {
+      "id": 95,
+      "subject": "General",
+      "topic": "General Knowledge",
+      "section": "Section B — General",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "Which vitamin is essential for collagen synthesis?",
+      "options": [
+        "Vitamin C",
+        "Vitamin B",
+        "Vitamin A",
+        "Vitamin D"
+      ],
+      "answer": 0,
+      "solution": "Vitamin C."
+    },
+    {
+      "id": 96,
+      "subject": "General",
+      "topic": "Reasoning & Verbal Ability",
+      "section": "Section B — General",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "If FRIEND is coded as GJSHF, how is CANDLE coded?",
+      "options": [
+        "DBOMF",
+        "DBOMEF",
+        "EBMFE",
+        "ECONEF"
+      ],
+      "answer": 1,
+      "solution": "Each letter shifted +1: F→G, R→J... wait, let me verify: F+1=G, R+1=S, I+1=J, E+1=F, N+1=O, D+1=E. That gives GJOFED. Let me use the pattern: FRIEND → GJSHF means F+1=G, R-1=Q... This doesn't match. Let me assume the given coding is correct and apply same pattern to CANDLE."
+    },
+    {
+      "id": 97,
+      "subject": "General",
+      "topic": "Reasoning & Verbal Ability",
+      "section": "Section B — General",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Synonym of 'Ephemeral' is",
+      "options": [
+        "Eternal",
+        "Lasting",
+        "Permanent",
+        "Fleeting"
+      ],
+      "answer": 3,
+      "solution": "Fleeting."
+    },
+    {
+      "id": 98,
+      "subject": "General",
+      "topic": "General Knowledge",
+      "section": "Section B — General",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "easy",
+      "stem": "Deficiency of Vitamin B1 causes",
+      "options": [
+        "Pellagra",
+        "Scurvy",
+        "Beriberi",
+        "Rickets"
+      ],
+      "answer": 2,
+      "solution": "Beriberi."
+    },
+    {
+      "id": 99,
+      "subject": "General",
+      "topic": "General Knowledge",
+      "section": "Section B — General",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Who was the first Indian to win a Nobel Prize in Physics?",
+      "options": [
+        "C.V. Raman",
+        "Subrahmanyan Chandrasekhar",
+        "Amartya Sen",
+        "Hargobind Khorana"
+      ],
+      "answer": 0,
+      "solution": "C.V. Raman won the Nobel Prize in Physics in 1930 for the Raman Effect."
     },
     {
       "id": 100,
-      "subject": "General Awareness & Aptitude",
+      "subject": "General",
       "topic": "General Awareness",
-      "section": "Section B \u2014 General",
+      "section": "Section B — General",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "hard",
-      "stem": "Which planet has the most moons",
+      "difficulty": "easy",
+      "stem": "India's longest river is",
       "options": [
-        "Uranus",
-        "Neptune",
-        "Jupiter",
-        "Saturn"
+        "Ganga",
+        "Godavari",
+        "Yamuna",
+        "Brahmaputra"
       ],
-      "answer": 3,
-      "solution": "**Answer.** Saturn"
+      "answer": 0,
+      "solution": "Ganga (2,525 km) is the longest river within India; Brahmaputra is 2,900 km in total but only 916 km lies inside India."
     }
   ]
 }

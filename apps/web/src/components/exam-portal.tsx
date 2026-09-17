@@ -6,13 +6,15 @@ import { secondsToHMS, cn } from "@/lib/utils";
 import { CalculatorLauncher } from "@/components/gate-calculator";
 import { QuestionTypeTag } from "@/components/question-extras";
 import { OfflineToast } from "@/components/offline-toast";
+import { LeaveConfirm } from "@/components/leave-confirm";
 import { QuestionFigure, type QuestionFigure as Figure } from "@/components/question-figure";
 import { MathText } from "@/components/math-text";
+import { useImpersonation } from "@/components/impersonation-context";
 
 type Question =
-  | { type: "MCQ"; marks: number; subject: string; stem: string; options: string[]; answer: number; solution?: string; figure?: Figure }
-  | { type: "MSQ"; marks: number; subject: string; stem: string; options: string[]; answer: number[]; solution?: string; figure?: Figure }
-  | { type: "NAT"; marks: number; subject: string; stem: string; answer: number; tolerance?: number; solution?: string; figure?: Figure };
+  | { type: "MCQ"; marks: number; subject: string; section?: string; stem: string; options: string[]; answer: number; solution?: string; figure?: Figure }
+  | { type: "MSQ"; marks: number; subject: string; section?: string; stem: string; options: string[]; answer: number[]; solution?: string; figure?: Figure }
+  | { type: "NAT"; marks: number; subject: string; section?: string; stem: string; answer: number; tolerance?: number; solution?: string; figure?: Figure };
 
 type Status = "nv" | "not" | "ans" | "mark" | "marka";
 type Answer = number | number[] | string | undefined;
@@ -61,7 +63,7 @@ function mmss(total: number): string {
 }
 
 export function ExamPortal({
-  kind, refId, title, questions, durationSec, lockdown, negativeMarking, examLabel, showCalculator,
+  kind, refId, title, questions, durationSec, lockdown, negativeMarking, examLabel, showCalculator, sectionOf, sectionFallback,
 }: {
   kind: "mock" | "pyq";
   refId: string;
@@ -79,12 +81,21 @@ export function ExamPortal({
   /** Whether the on-screen scientific calculator is available. GATE = true;
    *  CIL MT = false. Defaults to true to preserve existing GATE behaviour. */
   showCalculator?: boolean;
+  /** Maps a question's subject to its palette/section group. GATE passes this
+   *  to collapse syllabus topics into the two official sections (General
+   *  Aptitude / Technical). Unmapped subjects fall back to `sectionFallback`
+   *  if set, else the question's subject. Plain data — never a function, so it
+   *  survives the server→client serialization boundary. */
+  sectionOf?: Record<string, string>;
+  /** Section label for subjects not present in `sectionOf`. */
+  sectionFallback?: string;
 }) {
   const locked = lockdown ?? kind === "mock";
   const negMarking = negativeMarking ?? true;
   const examCaption = examLabel ?? "GATE — Graduate Aptitude Test in Engineering";
   const calculatorAllowed = showCalculator ?? true;
   const router = useRouter();
+  const impersonating = useImpersonation();
   const [state, dispatch] = useReducer(reducer, {
     idx: 0,
     answers: {},
@@ -94,15 +105,41 @@ export function ExamPortal({
   const [submitting, setSubmitting] = useState(false);
   const [paletteOpen, setPaletteOpen] = useState(false);
   const [confirmOpen, setConfirmOpen] = useState(false);
+  const [leaveOpen, setLeaveOpen] = useState(false);
   const [drill, setDrill] = useState(false);
+  const [viewOnlyToast, setViewOnlyToast] = useState(false);
+  // Mocks start behind a "Begin mock" overlay that requests fullscreen; PYQ
+  // Exam Mode keeps its instant start.
+  const [started, setStarted] = useState(kind !== "mock");
+  const [isFullscreen, setIsFullscreen] = useState(false);
+  const rootRef = useRef<HTMLDivElement>(null);
 
-  // Autosave / resume + pause state
+  function toastViewOnly() {
+    setViewOnlyToast(true);
+    setTimeout(() => setViewOnlyToast(false), 3000);
+  }
+
+  function startMock() {
+    try { localStorage.removeItem(storageKey); } catch { /* ignore */ }
+    void rootRef.current?.requestFullscreen?.().catch(() => {});
+    setStarted(true);
+  }
+
+  function toggleFullscreen() {
+    if (document.fullscreenElement) void document.exitFullscreen().catch(() => {});
+    else void rootRef.current?.requestFullscreen?.().catch(() => {});
+  }
+
+  // Autosave / pause state
   const storageKey = `cg:exam:${kind}:${refId}`;
-  const hydrated = useRef(false);
-  const [resumed, setResumed] = useState(false);
   const [paused, setPaused] = useState(false);
   const pausedRef = useRef(false);
   useEffect(() => { pausedRef.current = paused; }, [paused]);
+  const startedRef = useRef(started);
+  useEffect(() => { startedRef.current = started; }, [started]);
+  const leavingRef = useRef(false);
+  const submittingRef = useRef(false);
+  useEffect(() => { submittingRef.current = submitting; }, [submitting]);
 
   // Advisory per-section time tracking (non-blocking): seconds spent in each
   // subject. currentSubjectRef lets the 1s tick attribute time to the section
@@ -121,6 +158,13 @@ export function ExamPortal({
     return () => { document.body.style.overflow = prev; };
   }, [paletteOpen]);
 
+  // Track fullscreen (Esc / browser chrome also exit fullscreen)
+  useEffect(() => {
+    const onFs = () => setIsFullscreen(!!document.fullscreenElement);
+    document.addEventListener("fullscreenchange", onFs);
+    return () => document.removeEventListener("fullscreenchange", onFs);
+  }, []);
+
   // Mark first-visit as 'not' on entry
   useEffect(() => {
     if (state.status[state.idx] === "nv") {
@@ -133,44 +177,10 @@ export function ExamPortal({
     currentSubjectRef.current = questions[state.idx]?.subject ?? "";
   }, [state.idx, questions]);
 
-  // Hydrate a saved attempt from localStorage once on mount (post-render, so
-  // server + client first paint match and there is no hydration mismatch).
-  useEffect(() => {
-    try {
-      const raw = localStorage.getItem(storageKey);
-      if (raw) {
-        const saved = JSON.parse(raw);
-        if (saved?.answers && saved?.status) {
-          dispatch({ type: "hydrate", state: { idx: saved.idx ?? 0, answers: saved.answers, status: saved.status } });
-          if (typeof saved.secondsLeft === "number") setSecondsLeft(saved.secondsLeft);
-          if (saved.sectionSecs) setSectionSecs(saved.sectionSecs);
-          setResumed(true);
-        }
-      }
-    } catch { /* ignore corrupt/blocked storage */ }
-    hydrated.current = true;
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
-
-  // Autosave progress to localStorage on every change (after hydration).
-  useEffect(() => {
-    if (!hydrated.current) return;
-    try {
-      localStorage.setItem(storageKey, JSON.stringify({
-        idx: state.idx,
-        answers: state.answers,
-        status: state.status,
-        secondsLeft,
-        sectionSecs,
-        savedAt: Date.now(),
-      }));
-    } catch { /* ignore quota/blocked storage */ }
-  }, [state, secondsLeft, sectionSecs, storageKey]);
-
   // Tick timer
   useEffect(() => {
     const t = setInterval(() => {
-      if (pausedRef.current) return;
+      if (!startedRef.current || pausedRef.current) return;
       setSecondsLeft((s) => {
         if (s <= 1) { clearInterval(t); void submit(true); return 0; }
         return s - 1;
@@ -185,12 +195,48 @@ export function ExamPortal({
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  // Warn on close
+  // Warn on close (silenced once the candidate has chosen to exit)
   useEffect(() => {
-    const onBeforeUnload = (e: BeforeUnloadEvent) => { e.preventDefault(); e.returnValue = ""; };
+    const onBeforeUnload = (e: BeforeUnloadEvent) => {
+      if (leavingRef.current) return;
+      e.preventDefault();
+      e.returnValue = "";
+    };
     window.addEventListener("beforeunload", onBeforeUnload);
     return () => window.removeEventListener("beforeunload", onBeforeUnload);
   }, []);
+
+  // Intercept Back: trap navigation behind a guard entry and offer a
+  // leave / proceed / submit choice instead of silently abandoning the attempt.
+  useEffect(() => {
+    window.history.pushState({ cgExamGuard: true }, "");
+    const onPop = () => {
+      if (leavingRef.current || submittingRef.current) return;
+      window.history.pushState({ cgExamGuard: true }, "");
+      setLeaveOpen(true);
+    };
+    window.addEventListener("popstate", onPop);
+    return () => window.removeEventListener("popstate", onPop);
+  }, []);
+
+  // Guard header/footer/global nav: while a test is active, any anchor click
+  // outside the exam root is trapped behind the leave/continue/submit choice.
+  useEffect(() => {
+    if (!started) return;
+    const onClick = (e: MouseEvent) => {
+      if (leavingRef.current || submittingRef.current) return;
+      const t = e.target as Element | null;
+      const a = t?.closest?.("a[href]");
+      if (!(a instanceof HTMLAnchorElement)) return;
+      if (a.target === "_blank" || a.getAttribute("href")?.startsWith("#")) return;
+      if (rootRef.current?.contains(a)) return;
+      e.preventDefault();
+      e.stopPropagation();
+      setLeaveOpen(true);
+    };
+    document.addEventListener("click", onClick, true);
+    return () => document.removeEventListener("click", onClick, true);
+  }, [started]);
 
   // ---------- Exam-center lockdown ----------
   useEffect(() => {
@@ -232,16 +278,19 @@ export function ExamPortal({
   }, [state.status]);
 
   // Sections derived from the questions' subjects, in order of first appearance.
-  // Drives the section tabs and the grouped palette (discipline-generic).
+  // Drives the section tabs and the grouped palette. Callers can pass sectionOf
+  // to normalize granular subjects into official exam sections (e.g. GATE's two).
+  const sectionOf_ = (qq: Question) => sectionOf?.[qq.subject] ?? sectionFallback ?? qq.subject;
   const sections = useMemo(() => {
     const map = new Map<string, number[]>();
     questions.forEach((qq, i) => {
-      const list = map.get(qq.subject);
+      const name = sectionOf_(qq);
+      const list = map.get(name);
       if (list) list.push(i);
-      else map.set(qq.subject, [i]);
+      else map.set(name, [i]);
     });
     return Array.from(map.entries()).map(([name, indices]) => ({ name, indices }));
-  }, [questions]);
+  }, [questions, sectionOf]);
 
   const sectionStats = useMemo(
     () =>
@@ -293,7 +342,21 @@ export function ExamPortal({
   };
   useEffect(() => { if (drill && flaggedIdxs.length === 0) setDrill(false); }, [drill, flaggedIdxs.length]);
 
+  // Drop the back-guard history entry once an attempt is submitted, so the
+  // result page replaces the exam entry and Back returns to the listing page
+  // (not a fresh exam).
+  function dropGuard(cb: () => void) {
+    leavingRef.current = true;
+    const onPop = () => {
+      window.removeEventListener("popstate", onPop);
+      cb();
+    };
+    window.addEventListener("popstate", onPop);
+    window.history.go(-1);
+  }
+
   async function submit(auto = false) {
+    if (impersonating) { toastViewOnly(); return; }
     if (!auto && !confirmOpen) { setConfirmOpen(true); return; }
     setConfirmOpen(false);
     setSubmitting(true);
@@ -311,8 +374,7 @@ export function ExamPortal({
       if (res.status === 402) { alert("Upgrade required to attempt this paper."); return router.push("/pricing"); }
       const data = await res.json();
       if (!res.ok) throw new Error(JSON.stringify(data?.error));
-      try { localStorage.removeItem(storageKey); } catch { /* ignore */ }
-      router.push(`/result/${data.attempt.id}`);
+      dropGuard(() => router.replace(`/result/${data.attempt.id}`));
     } catch (e) {
       alert((e as Error).message);
       setSubmitting(false);
@@ -320,18 +382,27 @@ export function ExamPortal({
   }
 
   return (
-    <div className={cn("min-h-screen bg-canvas -mt-px pb-20 lg:pb-0", locked && "select-none")}>
+    <div id="cg-exam-root" ref={rootRef} className={cn("min-h-screen bg-canvas -mt-px pb-20 lg:pb-0", locked && "select-none")}>
       {/* ---------- Top bar ---------- */}
       <header className="bg-gradient-to-r from-brand-2 to-brand text-white px-4 sm:px-5 py-3 flex flex-wrap items-center gap-3 sm:gap-4">
-        <div className="hidden min-[400px]:inline-flex w-9 h-9 bg-white/15 grid place-items-center rounded-lg font-bold shrink-0">CG</div>
         <div className="min-w-0 flex-1">
-          <div className="text-xs sm:text-sm opacity-80">{examCaption}</div>
+          <div className="text-xs sm:text-sm opacity-80 truncate">{isFullscreen ? (q.section ?? q.subject) : examCaption}</div>
           <div className="font-semibold text-sm sm:text-base truncate">{title}</div>
         </div>
         <div className="ml-auto flex items-center gap-2 sm:gap-3 shrink-0">
           {/* Scientific calculator — top bar, like the real TCS iON CBT.
              GATE allows it; CIL MT does not. */}
           {calculatorAllowed && <CalculatorLauncher floating={false} />}
+          {kind === "mock" && (
+            <button
+              type="button"
+              onClick={toggleFullscreen}
+              title={isFullscreen ? "Exit fullscreen" : "Enter fullscreen"}
+              className="bg-white/15 hover:bg-white/25 rounded-md px-3 py-1.5 text-sm font-semibold transition"
+            >
+              {isFullscreen ? "⛶ Exit" : "⛶ Fullscreen"}
+            </button>
+          )}
           <button
             type="button"
             onClick={() => setPaused(true)}
@@ -364,7 +435,7 @@ export function ExamPortal({
         <div className="bg-slate-700 text-slate-100 px-2 sm:px-4 overflow-x-auto">
           <div className="flex gap-1 min-w-max" role="tablist" aria-label="Exam sections">
             {sectionStats.map((sec) => {
-              const active = sec.name === q.subject;
+              const active = sec.name === sectionOf_(q);
               return (
                 <button
                   key={sec.name}
@@ -390,14 +461,6 @@ export function ExamPortal({
         </div>
       )}
 
-      {/* ---------- Resumed-attempt banner ---------- */}
-      {resumed && (
-        <div className="bg-emerald-50 text-emerald-900 text-xs px-4 sm:px-5 py-1.5 flex items-center gap-2">
-          <span>↻ Resumed your saved attempt — your answers and timer were restored.</span>
-          <button type="button" onClick={() => setResumed(false)} className="ml-auto underline">Dismiss</button>
-        </div>
-      )}
-
       {/* ---------- Flagged-question drill bar ---------- */}
       {drill && (
         <div className="bg-violet-600 text-white px-4 sm:px-5 py-2 text-xs flex flex-wrap items-center gap-x-3 gap-y-1">
@@ -420,7 +483,10 @@ export function ExamPortal({
             <span className="badge bg-brand/10 text-brand">{q.subject}</span>
             <QuestionTypeTag type={q.type} />
           </div>
-          <MathText className="prose dark:prose-invert max-w-none text-base leading-relaxed">{q.stem}</MathText>
+          <div className="flex gap-2 text-base leading-relaxed">
+            <span className="font-bold text-ink shrink-0">Q{state.idx + 1}</span>
+            <MathText className="prose dark:prose-invert max-w-none flex-1">{q.stem}</MathText>
+          </div>
           {q.figure && <QuestionFigure figure={q.figure} />}
 
           <div className="mt-5">
@@ -465,7 +531,7 @@ export function ExamPortal({
             counts={counts}
             sections={sections}
             sectionSecs={sectionSecs}
-            activeSubject={q.subject}
+            activeSubject={sectionOf_(q)}
             currentIdx={state.idx}
             status={state.status}
             go={go}
@@ -528,7 +594,7 @@ export function ExamPortal({
               counts={counts}
               sections={sections}
               sectionSecs={sectionSecs}
-              activeSubject={q.subject}
+              activeSubject={sectionOf_(q)}
               currentIdx={state.idx}
               status={state.status}
               go={(i) => { go(i); setPaletteOpen(false); }}
@@ -554,8 +620,47 @@ export function ExamPortal({
         />
       )}
 
+      {/* Back-navigation guard: leave / proceed / submit */}
+      {leaveOpen && (
+        <LeaveConfirm
+          onContinue={() => setLeaveOpen(false)}
+          onSubmit={() => { setLeaveOpen(false); submit(false); }}
+        />
+      )}
+
+      {/* ---------- Begin-mock overlay (starts timer + fullscreen) ---------- */}
+      {kind === "mock" && !started && (
+        <div className="fixed inset-0 z-[80] bg-ink/80 backdrop-blur-sm grid place-items-center p-4 text-center">
+          <div className="bg-surface rounded-xl max-w-sm w-full p-6">
+            <h2 className="text-xl font-extrabold">Begin mock</h2>
+            <p className="text-sm text-muted mt-1">{title}</p>
+            {sections.length > 1 && (
+              <div className="flex flex-wrap justify-center gap-2 mt-3">
+                {sections.map((s) => (
+                  <span key={s.name} className="badge bg-brand/10 text-brand text-xs">{s.name}</span>
+                ))}
+              </div>
+            )}
+            <p className="text-xs text-muted mt-3">
+              {Math.round(durationSec / 60)} minutes · {questions.length} questions
+            </p>
+            <button onClick={startMock} className="btn btn-accent w-full mt-5">
+              Start mock
+            </button>
+            <p className="text-[11px] text-muted mt-3">
+              The exam opens in fullscreen with the current section shown in the header.
+            </p>
+          </div>
+        </div>
+      )}
+
       {/* ---------- Pause overlay (timer & progress frozen) ---------- */}
       <OfflineToast />
+      {viewOnlyToast && (
+        <div className="fixed top-4 left-1/2 z-[90] -translate-x-1/2 px-4 py-3 rounded-xl shadow-pop text-sm font-semibold bg-red-600 text-white animate-in slide-in-from-top-2">
+          Action disabled: You are in View-Only Admin Mode
+        </div>
+      )}
       {paused && (
         <div className="fixed inset-0 z-[80] bg-ink/80 backdrop-blur-sm grid place-items-center p-4 text-center">
           <div className="bg-surface rounded-xl max-w-sm w-full p-6">
@@ -623,8 +728,8 @@ function SubmitConfirm({
         </div>
 
         {/* Per-section breakdown */}
-        <div className="mt-5 overflow-hidden rounded-lg border border-line">
-          <table className="w-full text-xs">
+        <div className="mt-5 overflow-x-auto rounded-lg border border-line">
+          <table className="w-full text-xs min-w-[360px]">
             <thead className="bg-canvas text-muted">
               <tr>
                 <th className="text-left font-semibold px-3 py-2">Section</th>
@@ -740,12 +845,12 @@ function PaletteBody({
                     key={i}
                     onClick={() => go(i)}
                     className={cn(
-                      "min-h-[44px] sm:min-h-[36px] min-w-[44px] sm:min-w-0 text-xs font-semibold rounded transition active:scale-90",
-                      s === "nv"    && "bg-slate-200 text-slate-700",
-                      s === "not"   && "bg-rose-200 text-rose-900",
-                      s === "ans"   && "bg-emerald-500 text-white",
-                      s === "mark"  && "bg-violet-500 text-white",
-                      s === "marka" && "bg-violet-700 text-white ring-2 ring-emerald-400",
+                      "min-h-[44px] sm:min-h-[36px] min-w-0 w-full text-xs font-semibold rounded transition active:scale-90",
+                      s === "nv"    && "bg-slate-200 text-slate-700 dark:bg-slate-700 dark:text-slate-300",
+                      s === "not"   && "bg-rose-200 text-rose-900 dark:bg-rose-900/30 dark:text-rose-300",
+                      s === "ans"   && "bg-emerald-500 text-white dark:bg-emerald-600",
+                      s === "mark"  && "bg-violet-500 text-white dark:bg-violet-600",
+                      s === "marka" && "bg-violet-700 text-white ring-2 ring-emerald-400 dark:ring-emerald-500",
                       i === currentIdx && "ring-2 ring-brand",
                     )}
                     title={`Question ${i + 1}`}
@@ -771,11 +876,11 @@ function PaletteBody({
 
 function Legend({ counts }: { counts: Record<string, number> }) {
   const items: [string, string, number][] = [
-    ["bg-slate-200",    "Not visited",       counts.nv],
-    ["bg-rose-200",     "Not answered",      counts.not],
-    ["bg-emerald-500",  "Answered",          counts.ans],
-    ["bg-violet-500",   "Marked",            counts.mark],
-    ["bg-violet-700",   "Marked & answered", counts.marka],
+    ["bg-slate-200 dark:bg-slate-700",    "Not visited",       counts.nv],
+    ["bg-rose-200 dark:bg-rose-900/30",   "Not answered",      counts.not],
+    ["bg-emerald-500",                    "Answered",          counts.ans],
+    ["bg-violet-500",                     "Marked",            counts.mark],
+    ["bg-violet-700",                     "Marked & answered", counts.marka],
   ];
   return (
     <ul className="text-xs space-y-1.5">

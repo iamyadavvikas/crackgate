@@ -37,6 +37,7 @@ export async function GET() {
     }
 
   const now = new Date();
+  const since60 = new Date(now.getTime() - 60 * 86400_000);
   const since30 = new Date(now.getTime() - 30 * 86400_000);
   const since7 = new Date(now.getTime() - 7 * 86400_000);
   const since1 = new Date(now.getTime() - 86400_000);
@@ -59,6 +60,7 @@ export async function GET() {
     recentActivity,
     reports30,
     pageViews30,
+    pageViews60,
   ] = await Promise.all([
     db.user.count(),
     db.user.groupBy({ by: ["plan"], _count: { _all: true } }),
@@ -105,12 +107,21 @@ export async function GET() {
       take: 10_000,
     }),
     // ponytail: raw SQL with date_trunc — avoids fetching 50K rows for timeseries
-    db.$queryRaw<{ date: string; count: bigint }[]>`
+    db.$queryRaw<{ date: Date; count: bigint }[]>`
       SELECT DATE("createdAt") as date, COUNT(DISTINCT COALESCE("userId", "ip", 'anon')) as count
       FROM "PageView" WHERE "createdAt" >= ${since30}
       GROUP BY DATE("createdAt") ORDER BY date
     `,
+    // Total pageviews per day (last 60 days) — all visits, not distinct visitors
+    db.$queryRaw<{ date: Date; count: bigint }[]>`
+      SELECT DATE("createdAt") as date, COUNT(*) as count
+      FROM "PageView" WHERE "createdAt" >= ${since60}
+      AND ("userId" IS NULL OR "userId" NOT IN (SELECT id FROM "User" WHERE role = 'admin'))
+      GROUP BY DATE("createdAt") ORDER BY date
+    `,
   ]);
+
+  const adminIds = new Set((await db.user.findMany({ where: { role: "admin" }, select: { id: true } })).map(u => u.id));
 
   // Build daily signup + attempt + activity + reports series for the last 30 days.
   const signupSeries = fillDailySeries(30);
@@ -120,7 +131,7 @@ export async function GET() {
   const dauSet = new Map<string, Set<string>>();
 
   const signups30Rows = await db.user.findMany({
-    where: { createdAt: { gte: since30 } },
+    where: { createdAt: { gte: since30 }, role: { not: "admin" } },
     select: { createdAt: true },
     take: 10_000,
   });
@@ -138,6 +149,7 @@ export async function GET() {
     if (attemptSeries.has(k)) attemptSeries.set(k, (attemptSeries.get(k) ?? 0) + 1);
   }
   for (const r of activity30) {
+    if (adminIds.has(r.userId)) continue;
     const k = dateKey(r.ts);
     if (activitySeries.has(k)) activitySeries.set(k, (activitySeries.get(k) ?? 0) + 1);
     if (!dauSet.has(k)) dauSet.set(k, new Set());
@@ -153,11 +165,17 @@ export async function GET() {
   }));
 
   // ponytail: SQL already returned per-day counts — just convert bigint → number
-  const visitorMap = new Map(pageViews30.map((r) => [String(r.date).slice(0, 10), Number(r.count)]));
+  const visitorMap = new Map(pageViews30.map((r) => [dateKey(new Date(r.date)), Number(r.count)]));
   const visitorSeries = Array.from(signupSeries.keys()).map((d) => ({
     date: d,
     count: visitorMap.get(d) ?? 0,
   }));
+
+  const pageviewSeries = fillDailySeries(60);
+  for (const r of pageViews60) {
+    const k = dateKey(new Date(r.date));
+    if (pageviewSeries.has(k)) pageviewSeries.set(k, Number(r.count));
+  }
 
   const planMap: Record<string, number> = { free: 0, pro: 0, premium: 0 };
   for (const row of usersByPlan) planMap[row.plan] = row._count._all;
@@ -194,6 +212,7 @@ export async function GET() {
       reports: Array.from(reportSeries, ([date, count]) => ({ date, count })),
       dau: dauSeries,
       visitors: visitorSeries,
+      pageviews: Array.from(pageviewSeries, ([date, count]) => ({ date, count })),
     },
     recent: {
       users: recentUsers,

@@ -6,13 +6,15 @@ import { MegaNav } from "@/components/mega-nav";
 import { MobileSectionBar } from "@/components/mobile-nav";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { CommandPalette } from "@/components/command-palette";
+import { CartIcon } from "@/components/cart-icon";
 
 export async function SiteHeader() {
   const session = await auth();
   const u = session?.user;
+  const impersonating = !!session?.impersonator;
 
   return (
-    <header className="sticky top-0 z-40 bg-surface/85 backdrop-blur-md border-b border-line">
+    <header className="site-header sticky top-0 z-40 bg-surface/85 backdrop-blur-md border-b border-line">
       <nav className="max-w-7xl mx-auto px-4 sm:px-5 h-16 flex items-center gap-3 sm:gap-6">
         <BrandLockup />
 
@@ -21,6 +23,7 @@ export async function SiteHeader() {
 
         <div className="ml-auto flex items-center gap-2">
           <CommandPalette />
+          {!impersonating && <CartIcon href="/cart" />}
           <ThemeToggle />
           {u ? (
             <UserMenu
@@ -50,7 +53,7 @@ const MINING_MODULES = [
   { href: "/mocks", label: "Mocks" },
   { href: "/aits", label: "AITS" },
   { href: "/pricing", label: "Pricing" },
-  { href: "/blog", label: "Blog" },
+  { href: "/gate/mining/blog", label: "Blog" },
 ];
 
 /**
@@ -60,9 +63,10 @@ const MINING_MODULES = [
 export async function MiningHeader() {
   const session = await auth();
   const u = session?.user;
+  const impersonating = !!session?.impersonator;
 
   return (
-    <header className="sticky top-0 z-40 bg-surface/85 backdrop-blur-md border-b border-line">
+    <header className="site-header sticky top-0 z-40 bg-surface/85 backdrop-blur-md border-b border-line">
       <nav className="max-w-7xl mx-auto px-4 sm:px-5 h-16 flex items-center gap-3 sm:gap-6">
         <BrandLockup href="/" />
         <span className="hidden sm:inline-flex badge border border-brand/30 bg-brand/10 text-brand text-xs font-semibold">
@@ -82,6 +86,7 @@ export async function MiningHeader() {
 
         <div className="ml-auto flex items-center gap-2">
           <CommandPalette />
+          {!impersonating && <CartIcon href="/cart" />}
           <ThemeToggle />
           {u ? (
             <UserMenu

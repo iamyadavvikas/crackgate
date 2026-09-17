@@ -2,8 +2,12 @@ import Link from "next/link";
 import { ONGC_PATTERN, buildOngcMockPlan, type OngcMock } from "@/data/ongc-mocks";
 import { ongcLiveSetNos } from "@/data/ongc-mock-bank";
 import { ONGC_PRICE_RUPEES } from "@/data/ongc";
+import { AddToCartBtn } from "@/components/add-to-cart-btn";
+import { UnlockNowBtn } from "@/components/unlock-now-btn";
+import { auth } from "@/lib/auth";
+import { db } from "@/lib/db";
 
-export function OngcMockPlan({
+export async function OngcMockPlan({
   discipline,
   slug,
   unlocked,
@@ -12,9 +16,25 @@ export function OngcMockPlan({
   slug: string;
   unlocked: boolean;
 }) {
-  const payHref = `/pay/upi?plan=pro&exam=PSU&subject=${slug}`;
   const plan = buildOngcMockPlan(ongcLiveSetNos(slug));
   const liveCount = plan.filter((m) => m.status === "live").length;
+
+  const session = await auth();
+  const userId = (session?.user as { id?: string } | undefined)?.id;
+  const attempts = userId
+    ? await db.attempt.findMany({
+        where: { userId, kind: "mock", refId: { startsWith: `${slug}-` } },
+        select: { refId: true, id: true, score: true, total: true, takenAt: true },
+        orderBy: { takenAt: "desc" },
+      })
+    : [];
+  const attemptByNo = new Map<string, { id: string; score: number; total: number; takenAt: Date }>();
+  for (const a of attempts) {
+    const noStr = a.refId.replace(`${slug}-`, "");
+    if (!attemptByNo.has(noStr)) {
+      attemptByNo.set(noStr, { id: a.id, score: a.score, total: a.total, takenAt: a.takenAt });
+    }
+  }
   return (
     <section className="max-w-7xl mx-auto px-5 py-14">
       <div className="flex flex-wrap items-end justify-between gap-4">
@@ -43,19 +63,22 @@ export function OngcMockPlan({
           </span>
         </div>
       ) : (
-        <OngcPaywall discipline={discipline} payHref={payHref} count={plan.length} />
+        <OngcPaywall discipline={discipline} slug={slug} count={plan.length} />
       )}
 
       <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {plan.map((m) => (
-          <MockCard key={m.no} mock={m} slug={slug} unlocked={unlocked} payHref={payHref} />
-        ))}
+        {plan.map((m) => {
+          const attempt = attemptByNo.get(String(m.no).padStart(2, "0"));
+          return (
+            <MockCard key={m.no} mock={m} slug={slug} unlocked={unlocked} attempt={attempt ?? null} />
+          );
+        })}
       </div>
     </section>
   );
 }
 
-function OngcPaywall({ discipline, payHref, count }: { discipline: string; payHref: string; count: number }) {
+function OngcPaywall({ discipline, slug, count }: { discipline: string; slug: string; count: number }) {
   return (
     <div className="mt-6 overflow-hidden rounded-2xl border border-blue-400/30 bg-gradient-to-r from-[#003580] to-slate-900 text-white">
       <div className="flex flex-col gap-4 p-5 sm:flex-row sm:items-center sm:justify-between sm:p-6">
@@ -74,12 +97,16 @@ function OngcPaywall({ discipline, payHref, count }: { discipline: string; payHr
           <div className="text-right">
             <span className="text-3xl font-extrabold">₹{ONGC_PRICE_RUPEES}</span>
           </div>
-          <Link
-            href={payHref}
-            className="cg-neon inline-flex items-center justify-center gap-2 rounded-lg border border-blue-300/70 bg-blue-300/10 px-6 py-3 text-sm font-semibold text-blue-100 transition hover:bg-blue-300/20"
-          >
-            Unlock now <span aria-hidden>→</span>
-          </Link>
+          <div className="flex items-center gap-2">
+            <UnlockNowBtn
+              exam="PSU"
+              subject={slug}
+              plan="pro"
+              label="Unlock now"
+              className="cg-neon inline-flex items-center justify-center gap-2 rounded-lg border border-blue-300/70 bg-blue-300/10 px-6 py-3 text-sm font-semibold text-blue-100 transition hover:bg-blue-300/20"
+            />
+            <AddToCartBtn exam="PSU" subject={slug} variant="light" size="md" />
+          </div>
           <span className="text-[11px] text-white/50">Pay via UPI · access in a few hours</span>
         </div>
       </div>
@@ -91,22 +118,22 @@ function MockCard({
   mock,
   slug,
   unlocked,
-  payHref,
+  attempt,
 }: {
   mock: OngcMock;
   slug: string;
   unlocked: boolean;
-  payHref: string;
+  attempt: { id: string; score: number; total: number; takenAt: Date } | null;
 }) {
   const live = mock.status === "live";
   const canStart = unlocked && live;
   return (
-    <div className="card relative flex flex-col p-5 opacity-90">
-      <span className="badge badge-pro absolute right-4 top-4">
-        {live ? (unlocked ? "Ready" : "Locked") : "Coming soon"}
+    <div className={`card relative flex flex-col p-5 ${attempt ? "opacity-60" : "opacity-90"}`}>
+      <span className="badge badge-pro sm:absolute sm:right-4 sm:top-4 self-start">
+        {attempt ? "✓ Completed" : live ? (unlocked ? "Ready" : "Locked") : "Coming soon"}
       </span>
       <div className="text-xs font-mono text-brand">Mock {String(mock.no).padStart(2, "0")}</div>
-      <h4 className="mt-1 pr-20 font-bold text-ink leading-snug">{mock.title}</h4>
+      <h4 className="mt-1 sm:pr-20 font-bold text-ink leading-snug">{mock.title}</h4>
 
       <div className="mt-3 flex flex-wrap gap-2 text-xs text-muted">
         <span className="rounded-md bg-canvas px-2 py-1">{mock.questions} Q</span>
@@ -119,7 +146,20 @@ function MockCard({
         ))}
       </ul>
 
-      {canStart ? (
+      {attempt ? (
+        <div className="mt-4 space-y-2">
+          <div className="text-xs text-muted">
+            Score: <b className="text-ink">{attempt.score} / {attempt.total}</b>
+            · {attempt.takenAt.toLocaleDateString("en-IN", { day: "numeric", month: "short" })}
+          </div>
+          <Link
+            href={`/result/${attempt.id}`}
+            className="btn btn-ghost mt-1 w-full justify-center"
+          >
+            Review Answers →
+          </Link>
+        </div>
+      ) : canStart ? (
         <Link
           href={`/mocks/${slug}-${String(mock.no).padStart(2, "0")}`}
           className="btn btn-primary mt-4 w-full justify-center"
@@ -127,13 +167,13 @@ function MockCard({
           Start Mock
         </Link>
       ) : !unlocked ? (
-        <Link
-          href={payHref}
-          title="Unlock to access"
+        <UnlockNowBtn
+          exam="PSU"
+          subject={slug}
+          plan="pro"
+          label="Unlock to access"
           className="btn btn-ghost mt-4 w-full justify-center gap-2"
-        >
-          <span aria-hidden>🔒</span> Unlock to access
-        </Link>
+        />
       ) : (
         <button
           type="button"

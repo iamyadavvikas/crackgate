@@ -1,6 +1,7 @@
 import { notFound, redirect } from "next/navigation";
 import { ExamPortal } from "@/components/exam-portal";
 import { auth } from "@/lib/auth";
+import { db } from "@/lib/db";
 import { resolveMock } from "@/lib/mock-registry";
 import { hasEntitlement } from "@/lib/entitlements";
 
@@ -40,7 +41,14 @@ export default async function MockPage(props: { params: Promise<{ id: string }> 
       const freeTrial = m.gate.exam === "GATE" && m.gate.freeTrial === true;
       const ok = freeTrial || (await hasEntitlement(uid, m.gate.exam, m.gate.subject));
       if (!ok) {
-        redirect(`/pay/upi?plan=pro&exam=${m.gate.exam}&subject=${m.gate.subject}`);
+        // Seed the cart server-side (upsert mirrors the client addItem path) so
+        // checkout carries the correct exam/subject track.
+        await db.cart.upsert({
+          where: { userId_exam_subject: { userId: uid, exam: m.gate.exam, subject: m.gate.subject } },
+          create: { userId: uid, exam: m.gate.exam, subject: m.gate.subject, plan: "pro" },
+          update: { plan: "pro" },
+        });
+        redirect("/pay/checkout");
       }
     }
   }
@@ -49,6 +57,11 @@ export default async function MockPage(props: { params: Promise<{ id: string }> 
   const isPsu = m.gate.type === "entitlement" && m.gate.exam === "PSU";
   const isOngc = isPsu && m.id.startsWith("ongc-");
   const isCil = isPsu && m.id.startsWith("cil-");
+  const isDiploma = m.gate.type === "entitlement" && m.gate.exam === "DIPLOMA";
+
+  // GATE mocks (MN, CE, ES, GG) carry granular syllabus subjects per question;
+  // collapse them into the official two-section palette (GA + Technical).
+  const isGate = !isPsu && !isDiploma && !m.id.startsWith("state-");
 
   return (
     <ExamPortal
@@ -58,7 +71,9 @@ export default async function MockPage(props: { params: Promise<{ id: string }> 
       questions={m.questions as never}
       durationSec={m.durationSec}
       negativeMarking={m.negativeMarking}
-      showCalculator={!isPsu}
+      showCalculator={!isPsu && !isDiploma}
+      sectionOf={isGate ? { "General Aptitude": "Section A · General Aptitude" } : undefined}
+      sectionFallback={isGate ? "Section B · Technical" : undefined}
       examLabel={
         isOngc
           ? "ONGC — Oil and Natural Gas Corporation"

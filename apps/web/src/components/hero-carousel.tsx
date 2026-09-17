@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { CIL_ROWS, CIL_TOTAL_SEATS } from "@/data/cil";
@@ -23,15 +23,42 @@ type Props = {
   environment: CivilStats;
 };
 
-const SLIDES = 6;
-const AUTOPLAY_MS = 3000;
+const SLIDES = 8;
+const AUTOPLAY_MS = 5000;
 const EASE = [0.16, 1, 0.3, 1] as const;
+
+/* ─── Slide metadata ─── */
+const SLIDE_META = [
+  { label: "NCL", type: "diploma" as const, deadline: "2026-08-05", color: "blue" },
+  { label: "WCL", type: "diploma" as const, deadline: "2026-08-10", color: "emerald" },
+  { label: "ONGC", type: "psu" as const, deadline: null, color: "blue" },
+  { label: "MN", type: "gate" as const, deadline: null, color: "amber" },
+  { label: "CE", type: "gate" as const, deadline: null, color: "emerald" },
+  { label: "GG", type: "gate" as const, deadline: null, color: "amber" },
+  { label: "ES", type: "gate" as const, deadline: null, color: "emerald" },
+  { label: "CIL", type: "psu" as const, deadline: null, color: "cyan" },
+];
+
+const SLIDE_LABELS = [
+  "Diploma recruitment — Northern Coalfields Limited",
+  "Diploma recruitment — Western Coalfields Limited",
+  "PSU recruitment — Oil & Natural Gas Corporation",
+  "GATE MN 2027 — Mining Engineering",
+  "GATE CE 2027 — Civil Engineering",
+  "GATE GG 2027 — Geology and Geophysics",
+  "GATE ES 2027 — Environmental Science and Engineering",
+  "PSU recruitment — Coal India Limited",
+];
+
+/* ───────────────────────── MAIN CAROUSEL ───────────────────────── */
 
 export function HeroCarousel({ practiceQs, mocksCount, subjectsCount, civil, geology, environment }: Props) {
   const [[active, direction], setState] = useState<[number, number]>([0, 0]);
   const [paused, setPaused] = useState(false);
   const reduceMotion = useReducedMotion();
   const timer = useRef<ReturnType<typeof setInterval> | null>(null);
+  const touchStart = useRef<number | null>(null);
+  const sectionRef = useRef<HTMLElement>(null);
 
   const go = useCallback((next: number) => {
     setState(([cur]) => {
@@ -44,15 +71,42 @@ export function HeroCarousel({ practiceQs, mocksCount, subjectsCount, civil, geo
     setState(([cur]) => [((cur + delta) % SLIDES + SLIDES) % SLIDES, delta]);
   }, []);
 
+  /* Autoplay */
   useEffect(() => {
     if (paused || reduceMotion) return;
     timer.current = setInterval(() => {
       setState(([cur]) => [(cur + 1) % SLIDES, 1]);
     }, AUTOPLAY_MS);
-    return () => {
-      if (timer.current) clearInterval(timer.current);
-    };
+    return () => { if (timer.current) clearInterval(timer.current); };
   }, [paused, reduceMotion]);
+
+  /* Keyboard navigation */
+  const onKeyDown = useCallback((e: React.KeyboardEvent) => {
+    if (e.key === "ArrowLeft") { e.preventDefault(); goRel(-1); }
+    if (e.key === "ArrowRight") { e.preventDefault(); goRel(1); }
+  }, [goRel]);
+
+  /* Touch swipe */
+  const onTouchStart = useCallback((e: React.TouchEvent) => {
+    touchStart.current = e.touches[0].clientX;
+  }, []);
+
+  const onTouchEnd = useCallback((e: React.TouchEvent) => {
+    if (touchStart.current === null) return;
+    const delta = touchStart.current - e.changedTouches[0].clientX;
+    if (Math.abs(delta) > 50) goRel(delta > 0 ? 1 : -1);
+    touchStart.current = null;
+  }, [goRel]);
+
+  /* Stagger variants for text content */
+  const containerVariants = {
+    hidden: {},
+    visible: { transition: { staggerChildren: 0.1, delayChildren: 0.2 } },
+  };
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: EASE } },
+  };
 
   const variants = {
     enter: (dir: number) => ({ x: reduceMotion ? 0 : dir > 0 ? "100%" : "-100%", opacity: reduceMotion ? 0 : 1 }),
@@ -60,21 +114,11 @@ export function HeroCarousel({ practiceQs, mocksCount, subjectsCount, civil, geo
     exit: (dir: number) => ({ x: reduceMotion ? 0 : dir > 0 ? "-100%" : "100%", opacity: reduceMotion ? 0 : 1 }),
   };
 
-  const slideLabel =
-    active === 0
-      ? "PSU recruitment — Oil & Natural Gas Corporation"
-      : active === 1
-        ? "GATE MN 2027 — Mining Engineering"
-        : active === 2
-          ? "GATE CE 2027 — Civil Engineering"
-          : active === 3
-            ? "GATE GG 2027 — Geology and Geophysics"
-            : active === 4
-              ? "GATE ES 2027 — Environmental Science and Engineering"
-              : "PSU recruitment — Coal India Limited";
+  const meta = SLIDE_META[active];
 
   return (
     <section
+      ref={sectionRef}
       aria-roledescription="carousel"
       aria-label="CrackGate exam tracks"
       className="relative overflow-hidden bg-slate-950 text-white"
@@ -82,8 +126,16 @@ export function HeroCarousel({ practiceQs, mocksCount, subjectsCount, civil, geo
       onMouseLeave={() => setPaused(false)}
       onFocusCapture={() => setPaused(true)}
       onBlurCapture={() => setPaused(false)}
+      onKeyDown={onKeyDown}
+      onTouchStart={onTouchStart}
+      onTouchEnd={onTouchEnd}
+      tabIndex={0}
     >
-      <div className="relative min-h-[680px] pb-14 sm:min-h-[700px] sm:pb-16 lg:min-h-[720px] lg:pb-20">
+      {/* ── Themed particles ── */}
+      <SlideParticles theme={meta.color} />
+
+      {/* ── Slides ── */}
+      <div className="relative min-h-[500px] pb-16 sm:min-h-[600px] sm:pb-16 lg:min-h-[720px] lg:pb-20">
         <AnimatePresence initial={false} custom={direction} mode="popLayout">
           <motion.div
             key={active}
@@ -93,19 +145,23 @@ export function HeroCarousel({ practiceQs, mocksCount, subjectsCount, civil, geo
             animate="center"
             exit="exit"
             transition={{ duration: reduceMotion ? 0.3 : 0.8, ease: EASE }}
-            className="absolute inset-0"
+            className="relative"
             aria-roledescription="slide"
-            aria-label={slideLabel}
+            aria-label={SLIDE_LABELS[active]}
           >
             {active === 0 ? (
-              <OngcWindow />
+              <NclWindow />
             ) : active === 1 ? (
-              <GateWindow practiceQs={practiceQs} mocksCount={mocksCount} subjectsCount={subjectsCount} />
+              <WclWindow />
             ) : active === 2 ? (
-              <CivilWindow civil={civil} />
+              <OngcWindow />
             ) : active === 3 ? (
-              <GeologyWindow stats={geology} />
+              <GateWindow practiceQs={practiceQs} mocksCount={mocksCount} subjectsCount={subjectsCount} />
             ) : active === 4 ? (
+              <CivilWindow civil={civil} />
+            ) : active === 5 ? (
+              <GeologyWindow stats={geology} />
+            ) : active === 6 ? (
               <EnvironmentWindow stats={environment} />
             ) : (
               <PsuWindow />
@@ -114,46 +170,228 @@ export function HeroCarousel({ practiceQs, mocksCount, subjectsCount, civil, geo
         </AnimatePresence>
       </div>
 
-      {/* Arrows — hidden on touch/tablet (overlap content); dots + autoplay drive nav there */}
-      <button
-        type="button"
-        onClick={() => goRel(-1)}
-        aria-label="Previous slide"
-        className="group absolute left-3 top-1/2 z-20 hidden -translate-y-1/2 rounded-full border border-white/20 bg-white/10 p-2.5 backdrop-blur-md transition hover:bg-white/20 sm:left-5 lg:block"
-      >
+      {/* ── Arrows (desktop) ── */}
+      <button type="button" onClick={() => goRel(-1)} aria-label="Previous slide"
+        className="group absolute left-3 top-1/2 z-20 hidden -translate-y-1/2 rounded-full border border-white/20 bg-white/10 p-2.5 backdrop-blur-md transition hover:bg-white/20 sm:left-5 lg:block">
         <ChevronLeft />
       </button>
-      <button
-        type="button"
-        onClick={() => goRel(1)}
-        aria-label="Next slide"
-        className="group absolute right-3 top-1/2 z-20 hidden -translate-y-1/2 rounded-full border border-white/20 bg-white/10 p-2.5 backdrop-blur-md transition hover:bg-white/20 sm:right-5 lg:block"
-      >
+      <button type="button" onClick={() => goRel(1)} aria-label="Next slide"
+        className="group absolute right-3 top-1/2 z-20 hidden -translate-y-1/2 rounded-full border border-white/20 bg-white/10 p-2.5 backdrop-blur-md transition hover:bg-white/20 sm:right-5 lg:block">
         <ChevronRight />
       </button>
 
-      {/* Indicators — visual bar kept small but tap target padded to ~44px */}
-      <div className="absolute bottom-3 left-1/2 z-20 flex -translate-x-1/2 items-center">
-        {Array.from({ length: SLIDES }).map((_, i) => (
-          <button
-            key={i}
-            type="button"
-            onClick={() => go(i)}
-            aria-label={`Go to slide ${i + 1}`}
-            aria-current={active === i}
-            className="group grid place-items-center px-1.5 py-3"
-          >
-            <span
-              className={`h-2 rounded-full transition-all duration-300 ${
-                active === i ? "w-7 bg-accent" : "w-2 bg-white/40 group-hover:bg-white/70"
-              }`}
-            />
-          </button>
-        ))}
+      {/* ── Slide counter ── */}
+      <div className="absolute top-4 right-4 z-20 rounded-full bg-white/10 backdrop-blur-md px-3 py-1 text-xs font-semibold text-white/70">
+        {active + 1} / {SLIDES}
+      </div>
+
+      {/* ── Progress indicators ── */}
+      <div className="absolute bottom-0 left-0 right-0 z-20" style={{ background: "linear-gradient(transparent, rgba(2,6,23,0.8))" }}>
+        {/* Mobile: dot indicators */}
+        <div className="flex items-center justify-center gap-2 px-4 pb-4 pt-6 md:hidden">
+          {SLIDE_META.map((s, i) => (
+            <button
+              key={i}
+              type="button"
+              onClick={() => go(i)}
+              aria-label={`Go to ${s.label}`}
+              aria-current={active === i}
+              className="relative flex items-center justify-center"
+            >
+              <span className={`block rounded-full transition-all duration-300 ${active === i ? "h-2 w-2 bg-accent" : "h-1.5 w-1.5 bg-white/30"}`} />
+              {active === i && (
+                <motion.span
+                  className="absolute inset-0 m-auto h-2 w-2 rounded-full bg-accent"
+                  initial={{ scale: 0.8, opacity: 0.6 }}
+                  animate={{ scale: 1.8, opacity: 0 }}
+                  transition={{ duration: 1.8, repeat: Infinity }}
+                />
+              )}
+            </button>
+          ))}
+        </div>
+
+        {/* Desktop: segmented bar with labels */}
+        <div className="hidden items-end justify-center gap-1 px-8 pb-3 pt-6 md:flex">
+          {SLIDE_META.map((s, i) => (
+            <button
+              key={i}
+              type="button"
+              onClick={() => go(i)}
+              aria-label={`Go to ${s.label}`}
+              aria-current={active === i}
+              className="group relative flex flex-col items-center gap-1"
+            >
+              <span className={`text-[10px] font-bold tracking-wider transition-opacity duration-300 ${active === i ? "opacity-100 text-white" : "opacity-0 group-hover:opacity-70 text-white/60"}`}>
+                {s.label}
+              </span>
+              <div className="relative h-1.5 overflow-hidden rounded-full bg-white/15 transition-all duration-300"
+                style={{ width: active === i ? 48 : 16 }}>
+                {active === i && (
+                  <motion.div
+                    className="absolute inset-y-0 left-0 rounded-full bg-accent"
+                    initial={{ width: "0%" }}
+                    animate={{ width: "100%" }}
+                    transition={{ duration: AUTOPLAY_MS / 1000, ease: "linear" }}
+                    key={`bar-${active}`}
+                  />
+                )}
+              </div>
+            </button>
+          ))}
+        </div>
       </div>
     </section>
   );
 }
+
+/* ───────────────────────── PARTICLES ───────────────────────── */
+
+function SlideParticles({ theme }: { theme: string }) {
+  const particles = useMemo(() => {
+    const count = 12;
+    return Array.from({ length: count }, (_, i) => ({
+      id: i,
+      x: Math.random() * 100,
+      y: Math.random() * 100,
+      size: 2 + Math.random() * 3,
+      delay: Math.random() * 5,
+      duration: 8 + Math.random() * 12,
+    }));
+  }, []);
+
+  const colorMap: Record<string, string> = {
+    blue: "bg-blue-400",
+    emerald: "bg-emerald-400",
+    amber: "bg-amber-400",
+    cyan: "bg-cyan-400",
+  };
+
+  return (
+    <div className="absolute inset-0 z-10 overflow-hidden pointer-events-none" aria-hidden>
+      {particles.map((p) => (
+        <motion.div
+          key={p.id}
+          className={`absolute rounded-full ${colorMap[theme] || "bg-white"} opacity-20`}
+          style={{ left: `${p.x}%`, top: `${p.y}%`, width: p.size, height: p.size }}
+          animate={{ y: [0, -40, 0], opacity: [0.1, 0.3, 0.1] }}
+          transition={{ duration: p.duration, repeat: Infinity, delay: p.delay, ease: "easeInOut" }}
+        />
+      ))}
+    </div>
+  );
+}
+
+/* ───────────────────────── COUNT UP ───────────────────────── */
+
+export function CountUp({ target, duration = 2 }: { target: number; duration?: number }) {
+  const [count, setCount] = useState(0);
+  const ref = useRef<HTMLSpanElement>(null);
+  const hasAnimated = useRef(false);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el || hasAnimated.current) return;
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        hasAnimated.current = true;
+        const start = performance.now();
+        const step = (now: number) => {
+          const progress = Math.min((now - start) / (duration * 1000), 1);
+          const eased = 1 - Math.pow(1 - progress, 3);
+          setCount(Math.round(eased * target));
+          if (progress < 1) requestAnimationFrame(step);
+        };
+        requestAnimationFrame(step);
+      }
+    }, { threshold: 0.5 });
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [target, duration]);
+
+  return <span ref={ref}>{count.toLocaleString("en-IN")}</span>;
+}
+
+/* ───────────────────────── MINI QUIZ ───────────────────────── */
+
+const QUIZ_QUESTIONS = [
+  {
+    q: "The minimum factor of safety for highwall slopes in opencast coal mines as per CMR 2017 is:",
+    options: ["1.0", "1.2", "1.5", "2.0"],
+    correct: 2,
+    explanation: "CMR 2017 mandates a minimum factor of safety of 1.5 for highwall slopes in opencast mines.",
+  },
+  {
+    q: "Which gas is most commonly associated with spontaneous heating in underground coal mines?",
+    options: ["Methane (CH₄)", "Carbon Monoxide (CO)", "Hydrogen Sulphide (H₂S)", "Nitrogen (N₂)"],
+    correct: 1,
+    explanation: "CO is the primary indicator gas for spontaneous heating — it appears early in the oxidation process.",
+  },
+  {
+    q: "The standard duration for GATE MN exam is:",
+    options: ["2 hours", "2.5 hours", "3 hours", "3.5 hours"],
+    correct: 2,
+    explanation: "GATE Mining Engineering (MN) is a 3-hour exam with 65 MCQs and NAT questions.",
+  },
+];
+
+export function MiniQuiz() {
+  const [idx, setIdx] = useState(0);
+  const [selected, setSelected] = useState<number | null>(null);
+  const [showAnswer, setShowAnswer] = useState(false);
+  const q = QUIZ_QUESTIONS[idx];
+
+  const handleSelect = (i: number) => {
+    if (showAnswer) return;
+    setSelected(i);
+    setShowAnswer(true);
+  };
+
+  const handleNext = () => {
+    setIdx((prev) => (prev + 1) % QUIZ_QUESTIONS.length);
+    setSelected(null);
+    setShowAnswer(false);
+  };
+
+  const isCorrect = selected === q.correct;
+
+  return (
+    <div className="rounded-xl border border-white/10 bg-slate-900/80 p-3 backdrop-blur-md sm:p-4">
+      <div className="flex items-center justify-between mb-2">
+        <span className="text-[10px] font-bold uppercase tracking-wider text-accent">Try a Question</span>
+        <span className="text-[10px] text-white/40">{idx + 1}/{QUIZ_QUESTIONS.length}</span>
+      </div>
+      <p className="text-xs sm:text-sm text-white/90 font-medium leading-relaxed mb-3">{q.q}</p>
+      <div className="space-y-1.5">
+        {q.options.map((opt, i) => {
+          let cls = "border-white/10 bg-white/5 hover:bg-white/10 text-white/80";
+          if (showAnswer && i === q.correct) cls = "border-emerald-400/50 bg-emerald-400/15 text-emerald-300";
+          else if (showAnswer && i === selected) cls = "border-red-400/50 bg-red-400/15 text-red-300";
+          return (
+            <button key={i} onClick={() => handleSelect(i)}
+              className={`w-full rounded-lg border px-3 py-2 text-left text-[11px] sm:text-xs font-medium transition ${cls}`}>
+              <span className="mr-2 text-white/40">{String.fromCharCode(65 + i)}.</span>
+              {opt}
+            </button>
+          );
+        })}
+      </div>
+      {showAnswer && (
+        <motion.div initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: "auto" }} className="mt-2.5">
+          <p className={`text-[11px] font-semibold mb-1 ${isCorrect ? "text-emerald-400" : "text-red-400"}`}>
+            {isCorrect ? "✓ Correct!" : "✗ Incorrect"}
+          </p>
+          <p className="text-[10px] text-white/50 leading-relaxed">{q.explanation}</p>
+          <button onClick={handleNext} className="mt-2 text-[10px] font-semibold text-accent hover:underline">
+            Next question →
+          </button>
+        </motion.div>
+      )}
+    </div>
+  );
+}
+
+/* ───────────────────────── Stagger wrapper ── */
 
 /* ───────────────────────── WINDOW 1 — GATE MN ───────────────────────── */
 
@@ -169,7 +407,7 @@ export function GateWindow({
   return (
     <div className="relative h-full w-full">
       <IitBackdrop />
-      <div className="absolute inset-0 bg-gradient-to-r from-slate-900 via-transparent to-slate-950" />
+      <div className="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-900/60 to-slate-950/80" />
       <div className="relative mx-auto grid h-full max-w-7xl items-center gap-10 px-5 py-10 sm:py-14 lg:grid-cols-2 lg:py-20">
         <div>
           <span className="badge border border-amber-300/30 bg-amber-300/10 text-amber-300">
@@ -211,7 +449,7 @@ export function CivilWindow({ civil }: { civil: CivilStats }) {
   return (
     <div className="relative h-full w-full">
       <CivilBackdrop />
-      <div className="absolute inset-0 bg-gradient-to-r from-slate-900 via-transparent to-emerald-950/70" />
+      <div className="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-900/60 to-emerald-950/80" />
       <div className="relative mx-auto grid h-full max-w-7xl items-center gap-10 px-5 py-10 sm:py-14 lg:grid-cols-2 lg:py-20">
         <div>
           <span className="badge border border-emerald-300/30 bg-emerald-300/10 text-emerald-300">
@@ -264,7 +502,7 @@ export function GeologyWindow({ stats }: { stats: SubjectStats }) {
   return (
     <div className="relative h-full w-full">
       <GeologyBackdrop />
-      <div className="absolute inset-0 bg-gradient-to-r from-slate-900 via-transparent to-amber-950/70" />
+      <div className="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-900/60 to-amber-950/80" />
       <div className="relative mx-auto grid h-full max-w-7xl items-center gap-10 px-5 py-10 sm:py-14 lg:grid-cols-2 lg:py-20">
         <div>
           <span className="badge border border-amber-300/30 bg-amber-300/10 text-amber-200">
@@ -413,7 +651,7 @@ export function EnvironmentWindow({ stats }: { stats: SubjectStats }) {
   return (
     <div className="relative h-full w-full">
       <EnvironmentBackdrop />
-      <div className="absolute inset-0 bg-gradient-to-r from-slate-900 via-transparent to-teal-950/70" />
+      <div className="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-900/60 to-teal-950/80" />
       <div className="relative mx-auto grid h-full max-w-7xl items-center gap-10 px-5 py-10 sm:py-14 lg:grid-cols-2 lg:py-20">
         <div>
           <span className="badge border border-emerald-300/30 bg-emerald-300/10 text-emerald-200">
@@ -570,7 +808,7 @@ export function OngcWindow() {
   return (
     <div className="relative h-full w-full">
       <OilRigBackdrop />
-      <div className="absolute inset-0 bg-gradient-to-r from-[#003580]/90 via-[#003580]/70 to-[#003580]/40" />
+      <div className="absolute inset-0 bg-gradient-to-r from-[#002a6b]/95 via-[#003580]/80 to-slate-950/90" />
       <div className="relative mx-auto grid h-full max-w-7xl items-center gap-6 px-4 py-8 sm:px-5 sm:py-10 lg:grid-cols-2 lg:gap-10 lg:py-16">
         <div>
           <div className="flex items-center gap-2 sm:gap-3">
@@ -725,7 +963,7 @@ export function PsuWindow() {
   return (
     <div className="relative h-full w-full">
       <OpencastBackdrop />
-      <div className="absolute inset-0 bg-gradient-to-r from-blue-950/80 to-slate-900" />
+      <div className="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-blue-950/70 to-slate-950/90" />
       <div className="relative mx-auto grid h-full max-w-7xl items-center gap-10 px-5 py-10 sm:py-14 lg:grid-cols-2 lg:py-20">
         <div>
           <span className="badge border border-cyan-300/30 bg-cyan-300/10 text-cyan-300">
@@ -745,6 +983,11 @@ export function PsuWindow() {
             <Link href="/psu/cil" className="cg-neon inline-flex items-center gap-2 rounded-lg border border-cyan-400/70 bg-cyan-400/10 px-6 py-3.5 text-base font-semibold text-cyan-200 transition hover:bg-cyan-400/20" data-track="hero:cta:psu-cil">
               Explore PSU Prep Modules <span aria-hidden>→</span>
             </Link>
+          </div>
+          <div className="mt-6 sm:mt-8 grid grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-6 text-sm text-white/70">
+            <Stat n={`${CIL_TOTAL_SEATS}`} label="CIL Seats" />
+            <Stat n="100" label="MCQs / paper" />
+            <Stat n="0" label="Neg. Marking" />
           </div>
         </div>
         <div className="hidden lg:block lg:pl-4">
@@ -790,13 +1033,344 @@ function CilEligibilityCard() {
   );
 }
 
+/* ───────────────────────── WINDOW 6 — NCL Diploma ───────────────────────── */
+
+export function NclWindow() {
+  return (
+    <div className="relative h-full w-full">
+      <CoalMineBackdrop />
+      {/* AI-generated background (hybrid: raster bg + SVG overlay) */}
+      <div className="absolute inset-0 bg-[url('/images/ncl/ncl-banner-bg.svg')] bg-cover bg-center opacity-40" />
+      <div className="absolute inset-0 bg-gradient-to-r from-[#0a2342]/90 via-[#0d3060]/65 to-slate-950/85" />
+      <div className="relative mx-auto grid h-full max-w-7xl items-center gap-10 px-5 py-10 sm:py-14 lg:grid-cols-2 lg:py-20">
+        <div>
+          <div className="flex items-center gap-3">
+            <img src="/images/ncl/ncl-logo.png" alt="NCL" className="h-10 w-10 sm:h-12 sm:w-12 rounded-lg object-contain" />
+            <span className="badge border border-blue-300/30 bg-blue-300/10 text-blue-300">
+              Diploma · NCL · Live
+            </span>
+            <DeadlineBadge date="2026-08-05" color="blue" />
+          </div>
+          <h1 className="mt-4 text-3xl sm:text-4xl font-extrabold leading-tight lg:text-6xl">
+            NCL Recruitment 2026.{" "}
+            <span className="bg-gradient-to-r from-blue-300 to-indigo-400 bg-clip-text text-transparent">
+              259 Seats · Mining Sirdar &amp; Surveyor.
+            </span>
+          </h1>
+          <p className="mt-5 max-w-xl text-sm sm:text-lg text-white/80">
+            CBT only — no interview. 100 MCQs · 100 marks · 90 min · No negative marking.
+            20 full-length mocks built from the official NCL syllabus.
+          </p>
+          <div className="mt-6 sm:mt-8 flex flex-wrap gap-3">
+            <Link href="/diploma/ncl" className="cg-ripple inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-blue-400 to-indigo-500 px-6 py-3.5 text-base font-semibold text-white shadow-lg shadow-blue-500/30 transition hover:brightness-110" data-track="hero:cta:ncl">
+              Start Mock Test <span aria-hidden>→</span>
+            </Link>
+            <a href="https://www.nclcil.in/data-listing/pages/recruitment" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-lg border border-blue-300/40 bg-blue-300/5 px-6 py-3.5 text-base font-semibold text-blue-200 transition hover:bg-blue-300/15">
+              View Notification ↗
+            </a>
+          </div>
+          <div className="mt-6 sm:mt-8 grid grid-cols-2 gap-4 sm:grid-cols-4 sm:gap-6 text-sm text-white/70">
+            <Stat n="259" label="Vacancies" />
+            <Stat n="20" label="Mock Tests" />
+            <Stat n="90 min" label="CBT Duration" />
+            <Stat n="0" label="Neg. Marking" />
+          </div>
+        </div>
+        <div className="hidden lg:flex lg:justify-center">
+          <NclScene />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function CoalMineBackdrop() {
+  return (
+    <div className="absolute inset-0 overflow-hidden">
+      <svg className="absolute inset-0 h-full w-full opacity-[0.12]" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice" fill="none" stroke="#93c5fd" strokeWidth="2" aria-hidden>
+        {/* opencast benches */}
+        <path d="M0 500 H250 V420 H450 V340 H650 V260 H800" />
+        <path d="M0 540 H300 V460 H500 V380 H700 V300 H800" />
+        {/* dumper */}
+        <g transform="translate(100 450)">
+          <rect x="0" y="-30" width="80" height="30" rx="3" />
+          <circle cx="20" cy="8" r="12" />
+          <circle cx="60" cy="8" r="12" />
+        </g>
+        {/* dragline */}
+        <g transform="translate(500 280)">
+          <line x1="0" y1="60" x2="40" y2="0" />
+          <line x1="80" y1="60" x2="40" y2="0" />
+          <line x1="40" y1="0" x2="140" y2="20" />
+          <line x1="140" y1="20" x2="140" y2="80" />
+        </g>
+      </svg>
+    </div>
+  );
+}
+
+function NclScene() {
+  const float = (delay: number) => ({
+    animate: { y: [0, -10, 0] },
+    transition: { duration: 3.2, repeat: Infinity, ease: "easeInOut" as const, delay },
+  });
+  return (
+    <div className="relative h-[360px] w-[360px]">
+      <div className="absolute inset-0 rounded-full bg-blue-400/10 blur-3xl" />
+
+      {/* central mining helmet */}
+      <motion.div
+        initial={{ y: 0 }}
+        animate={{ y: [0, -6, 0] }}
+        transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+        className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+      >
+        <svg width="200" height="180" viewBox="0 0 200 180" fill="none" aria-hidden>
+          <path d="M30 110 a70 70 0 0 1 140 0 Z" fill="#3b82f6" fillOpacity="0.3" stroke="#60a5fa" strokeWidth="3" />
+          <rect x="24" y="108" width="152" height="12" rx="6" fill="#2563eb" />
+          <rect x="88" y="40" width="24" height="30" rx="4" fill="#fbbf24" />
+          <circle cx="100" cy="36" r="8" fill="#fde68a" />
+          {/* headlamp rays */}
+          <line x1="100" y1="28" x2="100" y2="10" stroke="#fde68a" strokeWidth="2" strokeLinecap="round" />
+          <line x1="88" y1="32" x2="78" y2="18" stroke="#fde68a" strokeWidth="2" strokeLinecap="round" />
+          <line x1="112" y1="32" x2="122" y2="18" stroke="#fde68a" strokeWidth="2" strokeLinecap="round" />
+        </svg>
+      </motion.div>
+
+      {/* floating survey instrument */}
+      <motion.div {...float(0)} className="absolute left-2 top-6">
+        <Holo>
+          <svg width="40" height="40" viewBox="0 0 40 40" aria-hidden fill="none" stroke="#60a5fa" strokeWidth="2" strokeLinecap="round">
+            <line x1="8" y1="36" x2="20" y2="18" />
+            <line x1="32" y1="36" x2="20" y2="18" />
+            <rect x="12" y="8" width="16" height="12" rx="2" />
+            <circle cx="20" cy="6" r="3" fill="#93c5fd" />
+          </svg>
+        </Holo>
+      </motion.div>
+
+      {/* floating safety sign */}
+      <motion.div {...float(0.9)} className="absolute right-2 top-10">
+        <Holo>
+          <svg width="42" height="42" viewBox="0 0 42 42" aria-hidden fill="none" stroke="#fbbf24" strokeWidth="2">
+            <path d="M21 6 L36 34 H6 Z" fill="#f59e0b" fillOpacity="0.15" />
+            <text x="21" y="30" textAnchor="middle" fill="#fbbf24" fontSize="14" fontWeight="bold">!</text>
+          </svg>
+        </Holo>
+      </motion.div>
+
+      {/* floating coal cart */}
+      <motion.div {...float(1.5)} className="absolute bottom-3 left-8">
+        <Holo>
+          <svg width="48" height="36" viewBox="0 0 48 36" aria-hidden fill="none" stroke="#60a5fa" strokeWidth="2" strokeLinecap="round">
+            <rect x="8" y="4" width="32" height="20" rx="2" />
+            <circle cx="14" cy="30" r="4" />
+            <circle cx="34" cy="30" r="4" />
+            <line x1="8" y1="24" x2="14" y2="30" />
+            <line x1="40" y1="24" x2="34" y2="30" />
+          </svg>
+        </Holo>
+      </motion.div>
+
+      {/* floating certificate */}
+      <motion.div {...float(1.2)} className="absolute bottom-6 right-6">
+        <Holo>
+          <svg width="40" height="40" viewBox="0 0 40 40" aria-hidden fill="none" stroke="#93c5fd" strokeWidth="2">
+            <rect x="6" y="4" width="28" height="32" rx="3" />
+            <line x1="12" y1="12" x2="28" y2="12" />
+            <line x1="12" y1="18" x2="28" y2="18" />
+            <line x1="12" y1="24" x2="22" y2="24" />
+            <circle cx="28" cy="30" r="6" fill="#3b82f6" fillOpacity="0.3" stroke="#60a5fa" />
+            <text x="28" y="33" textAnchor="middle" fill="#93c5fd" fontSize="8" fontWeight="bold">✓</text>
+          </svg>
+        </Holo>
+      </motion.div>
+    </div>
+  );
+}
+
+/* ───────────────────────── WINDOW 7 — WCL Diploma ───────────────────────── */
+
+export function WclWindow() {
+  return (
+    <div className="relative h-full w-full">
+      <WclBackdrop />
+      {/* AI-generated background (hybrid: raster bg + SVG overlay) */}
+      <div className="absolute inset-0 bg-[url('/images/wcl/wcl-banner-bg.svg')] bg-cover bg-center opacity-40" />
+      <div className="absolute inset-0 bg-gradient-to-r from-[#0a3d1c]/90 via-[#0d5028]/65 to-slate-950/85" />
+      <div className="relative mx-auto grid h-full max-w-7xl items-center gap-10 px-5 py-10 sm:py-14 lg:grid-cols-2 lg:py-20">
+        <div>
+          <div className="flex items-center gap-3">
+            <img src="/images/wcl/wcl-logo.webp" alt="WCL" className="h-10 w-10 sm:h-12 sm:w-12 rounded-lg object-contain" />
+            <span className="badge border border-emerald-300/30 bg-emerald-300/10 text-emerald-300">
+              Diploma · WCL · Live
+            </span>
+            <DeadlineBadge date="2026-08-10" color="emerald" />
+          </div>
+          <h1 className="mt-4 text-3xl sm:text-4xl font-extrabold leading-tight lg:text-6xl">
+            WCL Recruitment 2026.{" "}
+            <span className="bg-gradient-to-r from-emerald-300 to-green-400 bg-clip-text text-transparent">
+              444 Seats · Mining Sirdar &amp; AF Electrical.
+            </span>
+          </h1>
+          <p className="mt-5 max-w-xl text-sm sm:text-lg text-white/80">
+            CBT only — no interview. 100 MCQs · 100 marks · 120 min · No negative marking.
+            20 full-length mocks built from the official WCL syllabus.
+          </p>
+          <div className="mt-6 sm:mt-8 flex flex-wrap gap-3">
+            <Link href="/diploma/wcl" className="cg-ripple inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-emerald-400 to-green-500 px-6 py-3.5 text-base font-semibold text-white shadow-lg shadow-emerald-500/30 transition hover:brightness-110" data-track="hero:cta:wcl">
+              Start Mock Test <span aria-hidden>→</span>
+            </Link>
+            <a href="https://westerncoal.in/en/career/recruitment" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-lg border border-emerald-300/40 bg-emerald-300/5 px-6 py-3.5 text-base font-semibold text-emerald-200 transition hover:bg-emerald-300/15">
+              View Notification ↗
+            </a>
+          </div>
+          <div className="mt-6 sm:mt-8 grid grid-cols-2 gap-4 sm:grid-cols-4 sm:gap-6 text-sm text-white/70">
+            <Stat n="444" label="Vacancies" />
+            <Stat n="20" label="Mock Tests" />
+            <Stat n="120 min" label="CBT Duration" />
+            <Stat n="0" label="Neg. Marking" />
+          </div>
+        </div>
+        <div className="hidden lg:flex lg:justify-center">
+          <WclScene />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function WclBackdrop() {
+  return (
+    <div className="absolute inset-0 overflow-hidden">
+      <svg className="absolute inset-0 h-full w-full opacity-[0.12]" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice" fill="none" stroke="#6ee7b7" strokeWidth="2" aria-hidden>
+        {/* underground mine shaft */}
+        <rect x="300" y="100" width="200" height="400" rx="4" />
+        <line x1="300" y1="200" x2="500" y2="200" />
+        <line x1="300" y1="300" x2="500" y2="300" />
+        <line x1="300" y1="400" x2="500" y2="400" />
+        {/* elevator cage */}
+        <rect x="340" y="140" width="120" height="50" rx="3" />
+        <line x1="400" y1="100" x2="400" y2="140" strokeWidth="4" />
+        {/* ventilation fan */}
+        <circle cx="400" cy="80" r="18" />
+        <line x1="400" y1="62" x2="400" y2="98" />
+        <line x1="382" y1="80" x2="418" y2="80" />
+        {/* conveyor belt */}
+        <line x1="100" y1="500" x2="700" y2="500" strokeWidth="4" />
+        <circle cx="150" cy="500" r="10" />
+        <circle cx="650" cy="500" r="10" />
+      </svg>
+    </div>
+  );
+}
+
+function WclScene() {
+  const float = (delay: number) => ({
+    animate: { y: [0, -10, 0] },
+    transition: { duration: 3.2, repeat: Infinity, ease: "easeInOut" as const, delay },
+  });
+  return (
+    <div className="relative h-[360px] w-[360px]">
+      <div className="absolute inset-0 rounded-full bg-emerald-400/10 blur-3xl" />
+
+      {/* central electrical panel */}
+      <motion.div
+        initial={{ y: 0 }}
+        animate={{ y: [0, -6, 0] }}
+        transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+        className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+      >
+        <svg width="200" height="180" viewBox="0 0 200 180" fill="none" aria-hidden>
+          <rect x="30" y="20" width="140" height="140" rx="8" stroke="#34d399" strokeWidth="3" fill="#065f46" fillOpacity="0.2" />
+          {/* circuit breakers */}
+          <rect x="50" y="40" width="40" height="20" rx="3" fill="#10b981" fillOpacity="0.3" stroke="#34d399" strokeWidth="2" />
+          <rect x="110" y="40" width="40" height="20" rx="3" fill="#10b981" fillOpacity="0.3" stroke="#34d399" strokeWidth="2" />
+          <rect x="50" y="70" width="40" height="20" rx="3" fill="#f59e0b" fillOpacity="0.3" stroke="#fbbf24" strokeWidth="2" />
+          <rect x="110" y="70" width="40" height="20" rx="3" fill="#f59e0b" fillOpacity="0.3" stroke="#fbbf24" strokeWidth="2" />
+          {/* meters */}
+          <circle cx="70" cy="120" r="18" stroke="#6ee7b7" strokeWidth="2" />
+          <line x1="70" y1="120" x2="80" y2="110" stroke="#34d399" strokeWidth="2" strokeLinecap="round" />
+          <circle cx="130" cy="120" r="18" stroke="#6ee7b7" strokeWidth="2" />
+          <line x1="130" y1="120" x2="120" y2="108" stroke="#34d399" strokeWidth="2" strokeLinecap="round" />
+          {/* lightning bolt */}
+          <path d="M100 4 L92 16 H104 L96 28" stroke="#fde68a" strokeWidth="2.5" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+        </svg>
+      </motion.div>
+
+      {/* floating wrench */}
+      <motion.div {...float(0)} className="absolute left-2 top-6">
+        <Holo>
+          <svg width="40" height="40" viewBox="0 0 40 40" aria-hidden fill="none" stroke="#34d399" strokeWidth="2" strokeLinecap="round">
+            <path d="M10 30 L24 16" />
+            <circle cx="28" cy="12" r="8" />
+            <path d="M24 8 L28 12 L32 8" />
+          </svg>
+        </Holo>
+      </motion.div>
+
+      {/* floating voltage symbol */}
+      <motion.div {...float(0.9)} className="absolute right-2 top-10">
+        <Holo>
+          <svg width="42" height="42" viewBox="0 0 42 42" aria-hidden fill="none" stroke="#fbbf24" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M24 6 L16 20 H24 L18 36" />
+          </svg>
+        </Holo>
+      </motion.div>
+
+      {/* floating cable drum */}
+      <motion.div {...float(1.5)} className="absolute bottom-3 left-8">
+        <Holo>
+          <svg width="48" height="36" viewBox="0 0 48 36" aria-hidden fill="none" stroke="#6ee7b7" strokeWidth="2" strokeLinecap="round">
+            <circle cx="24" cy="18" r="14" />
+            <circle cx="24" cy="18" r="6" />
+            <line x1="10" y1="18" x2="18" y2="18" />
+            <line x1="30" y1="18" x2="38" y2="18" />
+          </svg>
+        </Holo>
+      </motion.div>
+
+      {/* floating safety helmet */}
+      <motion.div {...float(1.2)} className="absolute bottom-6 right-6">
+        <Holo>
+          <svg width="40" height="40" viewBox="0 0 40 40" aria-hidden>
+            <path d="M6 26 a14 14 0 0 1 28 0 Z" fill="#f59e0b" fillOpacity="0.3" stroke="#fbbf24" strokeWidth="2" />
+            <rect x="4" y="26" width="32" height="5" rx="2.5" fill="#fcd34d" />
+          </svg>
+        </Holo>
+      </motion.div>
+    </div>
+  );
+}
+
 /* ───────────────────────── Shared bits ───────────────────────── */
+
+function DeadlineBadge({ date, color }: { date: string; color: "blue" | "emerald" | "amber" | "cyan" }) {
+  const target = new Date(date).getTime();
+  const now = Date.now();
+  const daysLeft = Math.max(0, Math.ceil((target - now) / 86400000));
+  const urgent = daysLeft <= 14;
+
+  const colors = {
+    blue: "border-blue-400/50 bg-blue-500/15 text-blue-300",
+    emerald: "border-emerald-400/50 bg-emerald-500/15 text-emerald-300",
+    amber: "border-amber-400/50 bg-amber-500/15 text-amber-300",
+    cyan: "border-cyan-400/50 bg-cyan-500/15 text-cyan-300",
+  };
+
+  return (
+    <span className={`inline-flex items-center gap-1.5 rounded-full border px-2.5 py-1 text-xs font-bold ${colors[color]} ${urgent ? "animate-pulse" : ""}`}>
+      <span className={`h-1.5 w-1.5 rounded-full ${urgent ? "bg-red-400" : `bg-${color}-400`}`} />
+      {daysLeft}d left
+    </span>
+  );
+}
 
 function Stat({ n, label }: { n: string; label: string }) {
   return (
-    <div>
-      <div className="text-2xl font-extrabold text-white">{n}</div>
-      <div className="text-xs uppercase tracking-wide">{label}</div>
+    <div className="rounded-lg bg-white/5 px-3 py-2 ring-1 ring-white/5">
+      <div className="text-xl font-extrabold text-white">{n}</div>
+      <div className="text-[10px] uppercase tracking-wider text-white/50">{label}</div>
     </div>
   );
 }

@@ -5,6 +5,8 @@ import SubscriberList from "./subscriber-list";
 import RegisteredUsersList from "./registered-users-list";
 import AdditionalEmails from "./additional-emails";
 import NewsletterComposer from "./newsletter-composer";
+import SendHistory from "./send-history";
+import ScheduledSends from "./scheduled-sends";
 
 interface Subscriber {
   email: string;
@@ -38,20 +40,21 @@ export default function NewsletterPageClient({
   userCount,
   shareholderEmails: SHAREHOLDER_EMAILS,
 }: Props) {
-  const [subscriberSelected, setSubscriberSelected] = useState<Set<string>>(new Set());
-  const [userSelected, setUserSelected] = useState<Set<string>>(new Set());
-  const [additionalEmails, setAdditionalEmails] = useState<Set<string>>(new Set());
+  const [subscriberSelected, setSubscriberSelected] = useState<Map<string, string | null>>(new Map());
+  const [userSelected, setUserSelected] = useState<Map<string, string | null>>(new Map());
+  const [additionalEmails, setAdditionalEmails] = useState<Map<string, string | null>>(new Map());
   const [includeShareholders, setIncludeShareholders] = useState(false);
+  const [sendHistoryKey, setSendHistoryKey] = useState(0);
+  const [scheduleKey, setScheduleKey] = useState(0);
 
-  const allSelected = useMemo(
-    () => new Set([
-      ...subscriberSelected,
-      ...userSelected,
-      ...additionalEmails,
-      ...(includeShareholders ? SHAREHOLDER_EMAILS : []),
-    ]),
-    [subscriberSelected, userSelected, additionalEmails, includeShareholders, SHAREHOLDER_EMAILS],
-  );
+  const allSelected = useMemo(() => {
+    const merged = new Map<string, string | null>();
+    subscriberSelected.forEach((name, email) => merged.set(email, name));
+    userSelected.forEach((name, email) => merged.set(email, name));
+    additionalEmails.forEach((name, email) => merged.set(email, name));
+    if (includeShareholders) SHAREHOLDER_EMAILS.forEach((email) => merged.set(email, null));
+    return merged;
+  }, [subscriberSelected, userSelected, additionalEmails, includeShareholders, SHAREHOLDER_EMAILS]);
 
   const paidUsers = users.filter((u) => u.isPaid).length;
   const paidSubscribers = subscribers.filter((s) => s.isPaid).length;
@@ -109,13 +112,15 @@ export default function NewsletterPageClient({
               <span className="text-sm font-semibold group-hover:text-brand transition-colors">
                 Include testers / developers / shareholders
               </span>
-              <ul className="mt-2 space-y-0.5">
-                {SHAREHOLDER_EMAILS.map((email) => (
-                  <li key={email} className="text-xs font-mono text-muted truncate">
-                    {email}
-                  </li>
-                ))}
-              </ul>
+              {includeShareholders && (
+                <ul className="mt-2 space-y-0.5">
+                  {SHAREHOLDER_EMAILS.map((email) => (
+                    <li key={email} className="text-xs font-mono text-muted truncate">
+                      {email}
+                    </li>
+                  ))}
+                </ul>
+              )}
             </div>
           </label>
         </div>
@@ -129,8 +134,14 @@ export default function NewsletterPageClient({
           userSelectedCount={userSelected.size}
           additionalCount={additionalEmails.size}
           shareholdersCount={includeShareholders ? SHAREHOLDER_EMAILS.length : 0}
+          onSent={() => setSendHistoryKey((k) => k + 1)}
+          onScheduled={() => setScheduleKey((k) => k + 1)}
         />
       </div>
+
+      <ScheduledSends refreshKey={scheduleKey} />
+
+      <SendHistory refreshKey={sendHistoryKey} />
     </>
   );
 }

@@ -1,11 +1,15 @@
-import { getAdminSession } from "@/lib/admin";
+import { getAdminSession, getTestUserIds } from "@/lib/admin";
 import { redirect } from "next/navigation";
 import { db } from "@/lib/db";
-import { inr } from "@/lib/utils";
+import { inr, istDate, istTime } from "@/lib/utils";
 import { AdminKpiCard } from "@/components/admin/admin-kpi-card";
 import UpiReviewActions from "./actions";
 import GrantAccessForm from "./grant";
+import PaymentRowActions from "./payment-actions";
+import ViewAsButton from "@/components/admin/view-as-button";
+import RevokeEntitlementButton from "@/components/admin/revoke-entitlement-button";
 import { CATALOG, subjectLabel, getExam } from "@/data/catalog";
+import { isComboSlug, comboLabel, getCombo } from "@/lib/combos";
 
 export const dynamic = "force-dynamic";
 
@@ -32,6 +36,7 @@ export default async function AdminUpiPage({
 
   const now = new Date();
   const monthStart = new Date(now.getFullYear(), now.getMonth(), 1);
+  const testUserIds = await getTestUserIds();
 
   // Attribution filter applied to the unified payments table.
   const payWhere = {
@@ -48,6 +53,7 @@ export default async function AdminUpiPage({
     statusGroups,
     examRevenue,
     payments,
+    testUsers,
   ] = await Promise.all([
     db.upiPayment.findMany({
       where: { status: "pending" },
@@ -71,10 +77,12 @@ export default async function AdminUpiPage({
       _count: { _all: true },
     }),
     db.upiPayment.groupBy({ by: ["status"], _count: { _all: true } }),
-    // Captured revenue per exam track (unified Payment table).
+    // Captured revenue per exam+subject (unified Payment table) — grouped by
+    // subject so the two PSU entries (CIL / ONGC) split correctly. Test users
+    // are excluded so test grants don't inflate the chips.
     db.payment.groupBy({
-      by: ["exam"],
-      where: { status: "captured" },
+      by: ["exam", "subject"],
+      where: { status: "captured", userId: { notIn: [...testUserIds] } },
       _sum: { amount: true },
       _count: { _all: true },
     }),
@@ -83,7 +91,21 @@ export default async function AdminUpiPage({
       where: payWhere,
       orderBy: { capturedAt: "desc" },
       take: 100,
-      include: { user: { select: { email: true } } },
+      include: { user: { select: { id: true, name: true, email: true, phone: true } } },
+    }),
+    // Test accounts (entitlements granted via the "Is test user" checkbox).
+    db.user.findMany({
+      where: { entitlements: { some: { source: "test_grant" } } },
+      select: {
+        id: true,
+        email: true,
+        entitlements: {
+          where: { source: "test_grant" },
+          select: { id: true, exam: true, subject: true, tier: true, expiry: true, createdAt: true },
+        },
+      },
+      orderBy: { createdAt: "desc" },
+      take: 50,
     }),
   ]);
 
@@ -99,6 +121,34 @@ export default async function AdminUpiPage({
       ? subjectLabel(fExam, fSubject)
       : getExam(fExam)?.label ?? fExam
     : "All exams";
+  // For deduplicated exam codes (e.g. PSU has 2 catalog entries), show a
+  // generic label when no specific subject is selected.
+  const chipLabel = fExam
+    ? fSubject
+      ? subjectLabel(fExam, fSubject)
+      : CATALOG.filter((e) => e.exam === fExam).map((e) => e.label).join(" + ")
+    : "All exams";
+
+  // Resolve captured revenue per catalog entry. Payments are grouped by
+  // exam+subject; combo / cart rows carry a combo slug or comma-joined subjects.
+  const revenueByEntry = new Map<string, { sum: number; count: number }>();
+  for (const r of examRevenue) {
+    const parts = (r.subject ?? "").split(",").filter(Boolean);
+    const slugs = parts.length === 1 && isComboSlug(parts[0])
+      ? getCombo(parts[0])!.entitlements.map((e) => e.subject)
+      : parts;
+    const entry = CATALOG.find(
+      (e) =>
+        e.exam === r.exam &&
+        slugs.length > 0 &&
+        slugs.every((s) => e.subjects.some((x) => x.slug === s)),
+    );
+    if (!entry) continue; // cross-entry cart → visible only in the table below
+    const cur = revenueByEntry.get(entry.label) ?? { sum: 0, count: 0 };
+    cur.sum += r._sum.amount ?? 0;
+    cur.count += r._count._all;
+    revenueByEntry.set(entry.label, cur);
+  }
 
   return (
     <div className="max-w-6xl mx-auto px-5 py-10">
@@ -147,12 +197,12 @@ export default async function AdminUpiPage({
         </h2>
         <div className="flex flex-wrap gap-2 mt-2">
           {CATALOG.map((e) => {
-            const row = examRevenue.find((r) => r.exam === e.exam);
-            const sum = row?._sum.amount ?? 0;
-            const n = row?._count._all ?? 0;
+            const rev = revenueByEntry.get(e.label);
+            const sum = rev?.sum ?? 0;
+            const n = rev?.count ?? 0;
             return (
               <span
-                key={e.exam}
+                key={e.label}
                 className="inline-flex items-center gap-2 rounded-full border border-line bg-surface px-3 py-1.5 text-sm"
               >
                 <span className="font-semibold">{e.label}</span>
@@ -177,35 +227,58 @@ export default async function AdminUpiPage({
             <span className="text-muted text-sm">({payments.length})</span>
           </h2>
           <span className="text-xs text-muted">
-            Filter: <strong>{filterLabel}</strong>
+            Filter: <strong>{chipLabel}</strong>
           </span>
         </div>
 
         {/* Filter chips */}
         <div className="flex flex-wrap gap-2 mt-3">
           <FilterChip label="All exams" href="/admin/upi" active={!fExam} />
-          {CATALOG.map((e) => (
-            <FilterChip
-              key={e.exam}
-              label={e.label}
-              href={`/admin/upi?exam=${e.exam}`}
-              active={fExam === e.exam && !fSubject}
-            />
-          ))}
-        </div>
-        {fExam && (
-          <div className="flex flex-wrap gap-2 mt-2 pl-1">
-            {getExam(fExam)?.subjects.map((s) => (
+          {[...new Map(CATALOG.map((e) => [e.exam, e])).values()].map((e) => {
+            const multi = CATALOG.filter((x) => x.exam === e.exam).length > 1;
+            return (
               <FilterChip
-                key={s.slug}
-                label={`${s.label}${s.live ? "" : " · soon"}`}
-                href={`/admin/upi?exam=${fExam}&subject=${s.slug}`}
-                active={fSubject === s.slug}
-                small
+                key={e.exam}
+                label={multi ? e.exam : e.label}
+                href={`/admin/upi?exam=${e.exam}`}
+                active={fExam === e.exam && !fSubject}
               />
-            ))}
-          </div>
-        )}
+            );
+          })}
+        </div>
+        {fExam && (() => {
+          const entries = CATALOG.filter((e) => e.exam === fExam);
+          const groups = entries.length > 1
+            ? entries.map((e) => ({ label: e.label.replace(/PSU · /, ""), subjects: e.subjects }))
+            : (() => {
+                const subs = entries[0]?.subjects ?? [];
+                const prefixes = new Set(subs.map((s) => s.slug.includes("-") ? s.slug.split("-")[0].toUpperCase() : "OTHER"));
+                return prefixes.size > 1 ? groupByPrefix(subs) : [{ label: entries[0]?.label ?? fExam, subjects: subs }];
+              })();
+          return (
+            <div className="mt-3 pl-1 space-y-2">
+              {groups.map((g) => (
+                <div key={g.label} className="flex flex-wrap items-center gap-1.5">
+                  <span className="inline-flex items-center gap-1.5 px-2 py-1 rounded-md text-[11px] font-bold bg-brand/[0.06] border border-brand/10 text-brand tracking-wide shrink-0">
+                    {g.label}
+                    <span className="inline-flex items-center justify-center min-w-[14px] h-[14px] px-1 rounded-full text-[9px] font-bold bg-brand/10 text-brand/80 leading-none">
+                      {g.subjects.length}
+                    </span>
+                  </span>
+                  {g.subjects.map((s) => (
+                    <FilterChip
+                      key={s.slug}
+                      label={`${s.label}${s.live ? "" : " · soon"}`}
+                      href={`/admin/upi?exam=${fExam}&subject=${s.slug}`}
+                      active={fSubject === s.slug}
+                      small
+                    />
+                  ))}
+                </div>
+              ))}
+            </div>
+          );
+        })()}
 
         {payments.length === 0 ? (
           <p className="text-muted text-sm mt-3">
@@ -217,12 +290,14 @@ export default async function AdminUpiPage({
               <thead className="text-xs text-muted bg-bg-2">
                 <tr className="text-left">
                   <th className="p-3">Date</th>
+                  <th className="p-3">Time</th>
                   <th className="p-3">User</th>
                   <th className="p-3">Exam</th>
                   <th className="p-3">Subject</th>
                   <th className="p-3">Tier</th>
                   <th className="p-3">Amount</th>
                   <th className="p-3">Source</th>
+                  <th className="p-3">Actions</th>
                 </tr>
               </thead>
               <tbody>
@@ -231,14 +306,20 @@ export default async function AdminUpiPage({
                   return (
                     <tr key={p.id} className="border-t border-border/60">
                       <td className="p-3 whitespace-nowrap text-xs">
-                        {(p.capturedAt ?? p.createdAt)
-                          .toISOString()
-                          .slice(0, 16)
-                          .replace("T", " ")}
+                        {istDate(p.capturedAt ?? p.createdAt)}
                       </td>
-                      <td className="p-3 text-xs">{p.user.email}</td>
+                      <td className="p-3 whitespace-nowrap text-xs">
+                        {istTime(p.capturedAt ?? p.createdAt)}
+                      </td>
+                      <td className="p-3 text-xs">
+                        {p.user.name && <div className="font-medium text-ink select-all">{p.user.name}</div>}
+                        {p.user.phone && <div className="text-muted select-all">{p.user.phone}</div>}
+                        <div className="text-muted select-all">{p.user.email}</div>
+                      </td>
                       <td className="p-3 text-xs">{p.exam ?? "—"}</td>
-                      <td className="p-3 text-xs">{p.subject ?? "—"}</td>
+                      <td className="p-3 text-xs">
+                        {p.exam && p.subject ? subjectLabel(p.exam, p.subject) : (p.subject ?? "—")}
+                      </td>
                       <td className="p-3 font-semibold">{p.plan}</td>
                       <td className="p-3 font-semibold">{inr(p.amount)}</td>
                       <td className="p-3">
@@ -254,9 +335,108 @@ export default async function AdminUpiPage({
                           {src}
                         </span>
                       </td>
+                      <td className="p-3">
+                        <PaymentRowActions
+                          paymentId={p.id}
+                          periodMonths={p.periodMonths}
+                          userId={p.user.id}
+                          userEmail={p.user.email}
+                        />
+                      </td>
                     </tr>
                   );
                 })}
+              </tbody>
+            </table>
+          </div>
+        )}
+      </section>
+
+      {/* Test accounts (reachable only here — they create no Payment row) */}
+      <section className="mt-10">
+        <div className="flex flex-wrap items-baseline justify-between gap-2">
+          <h2 className="font-bold text-lg">
+            Test accounts{" "}
+            <span className="text-muted text-sm">({testUsers.length})</span>
+          </h2>
+          <span className="text-xs text-muted">
+            "Is test user" grants — excluded from revenue, impersonable.
+          </span>
+        </div>
+
+        {testUsers.length === 0 ? (
+          <p className="text-muted text-sm mt-3">
+            No test accounts yet. Use the grant form with the "Is test user"
+            checkbox to create one.
+          </p>
+        ) : (
+          <div className="card p-0 overflow-x-auto mt-3">
+            <table className="w-full text-sm">
+              <thead className="text-xs text-muted bg-bg-2">
+                <tr className="text-left">
+                  <th className="p-3">Email</th>
+                  <th className="p-3">Access</th>
+                  <th className="p-3">Granted</th>
+                  <th className="p-3">Expires</th>
+                  <th className="p-3">Status</th>
+                  <th className="p-3">Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                {testUsers.flatMap((u) =>
+                  u.entitlements.map((e, i) => {
+                    const expired = e.expiry && e.expiry < new Date();
+                    return (
+                      <tr key={e.id} className="border-t border-border/60 align-top">
+                        {i === 0 && (
+                          <>
+                            <td
+                              className="p-3 text-xs select-all"
+                              rowSpan={u.entitlements.length}
+                            >
+                              {u.email}
+                            </td>
+                            <td className="p-3" rowSpan={u.entitlements.length}>
+                              <ViewAsButton userId={u.id} userEmail={u.email} />
+                            </td>
+                          </>
+                        )}
+                        <td className="p-3">
+                          <span className="inline-flex items-center gap-1.5 px-1.5 py-0.5 rounded text-[10px] font-bold bg-accent/15 text-accent">
+                            {e.exam} · {e.subject} · {e.tier}
+                          </span>
+                          <RevokeEntitlementButton
+                            entitlementId={e.id}
+                            label={`${e.exam} · ${e.subject}`}
+                          />
+                        </td>
+                        <td className="p-3 text-xs whitespace-nowrap">
+                          {istDate(e.createdAt)}
+                        </td>
+                        <td className="p-3 text-xs whitespace-nowrap">
+                          {e.expiry ? (
+                            <span className={expired ? "text-err font-semibold" : ""}>
+                              {istDate(e.expiry)}
+                            </span>
+                          ) : (
+                            "∞"
+                          )}
+                        </td>
+                        <td className="p-3">
+                          <span
+                            className={`px-2 py-0.5 rounded text-[10px] font-bold ${
+                              expired
+                                ? "bg-err/15 text-err"
+                                : "bg-ok/15 text-ok"
+                            }`}
+                          >
+                            {expired ? "Expired" : "Active"}
+                          </span>
+                        </td>
+                      </tr>
+                    );
+                  }),
+                )}
               </tbody>
             </table>
           </div>
@@ -317,7 +497,41 @@ export default async function AdminUpiPage({
                       )}
                     </td>
                     <td className="p-3 text-xs">{c.exam ?? "—"}</td>
-                    <td className="p-3 text-xs">{c.subject ?? "—"}</td>
+                    <td className="p-3 text-xs">
+                      {Array.isArray(c.items) && c.items.length > 0 ? (
+                        <div className="space-y-1">
+                          <span className="inline-flex items-center gap-1">
+                            <span className="px-1.5 py-0.5 rounded text-[10px] font-bold bg-blue-500/15 text-blue-600 dark:text-blue-400">
+                              CART
+                            </span>
+                            <span className="text-muted">{c.items.length} items</span>
+                          </span>
+                          {c.items.map((item: any, i: number) => (
+                            <div key={i} className="text-[11px] text-muted pl-1">
+                              {subjectLabel(item.exam, item.subject)} · {item.plan} · ₹{Math.round(item.pricePaise / 100)}
+                            </div>
+                          ))}
+                          {(() => {
+                            const rawTotal = c.items.reduce((s: number, item: any) => s + (item.pricePaise ?? 0), 0);
+                            const saved = rawTotal - c.amountPaise;
+                            return saved > 0 ? (
+                              <div className="text-[11px] text-ok font-medium pl-1">
+                                15% combo discount: -₹{Math.round(saved / 100)}
+                              </div>
+                            ) : null;
+                          })()}
+                        </div>
+                      ) : c.subject && isComboSlug(c.subject) ? (
+                        <span className="inline-flex items-center gap-1">
+                          <span className="px-1.5 py-0.5 rounded text-[10px] font-bold bg-amber-500/15 text-amber-600 dark:text-amber-400">
+                            COMBO
+                          </span>
+                          <span className="text-muted">{comboLabel(c.subject)}</span>
+                        </span>
+                      ) : (
+                        c.exam && c.subject ? subjectLabel(c.exam, c.subject) : (c.subject ?? "—")
+                      )}
+                    </td>
                     <td className="p-3 font-semibold">{c.plan}</td>
                     <td className="p-3 font-semibold">
                       ₹{Math.round(c.amountPaise / 100)}
@@ -327,7 +541,7 @@ export default async function AdminUpiPage({
                       {c.payerNote ?? "—"}
                     </td>
                     <td className="p-3">
-                      <UpiReviewActions claimId={c.id} />
+                      <UpiReviewActions claimId={c.id} subject={c.subject} items={c.items as any} />
                     </td>
                   </tr>
                 ))}
@@ -372,7 +586,9 @@ export default async function AdminUpiPage({
                       )}
                     </td>
                     <td className="p-3 text-xs">{c.exam ?? "—"}</td>
-                    <td className="p-3 text-xs">{c.subject ?? "—"}</td>
+                    <td className="p-3 text-xs">
+                      {c.exam && c.subject ? subjectLabel(c.exam, c.subject) : (c.subject ?? "—")}
+                    </td>
                     <td className="p-3 text-xs">{c.plan}</td>
                     <td className="p-3 text-xs">
                       ₹{Math.round(c.amountPaise / 100)}
@@ -416,15 +632,29 @@ function FilterChip({
   return (
     <a
       href={href}
-      className={`shrink-0 rounded-full ${
-        small ? "px-2.5 py-1 text-xs" : "px-3 py-1.5 text-sm"
-      } font-medium whitespace-nowrap transition ${
+      className={`shrink-0 rounded-full font-medium whitespace-nowrap transition-all duration-150 ${
+        small ? "px-3 py-1 text-xs" : "px-3.5 py-1.5 text-sm"
+      } ${
         active
-          ? "bg-brand text-white"
-          : "bg-canvas text-ink hover:bg-brand/10 border border-line"
+          ? "bg-brand text-white shadow-[0_0_0_1px_rgba(79,70,229,0.3),0_4px_12px_-4px_rgba(79,70,229,0.4)]"
+          : "bg-surface text-ink/80 border border-line/80 hover:border-brand/30 hover:text-brand hover:bg-brand/[0.04] hover:shadow-sm"
       }`}
     >
       {label}
     </a>
   );
+}
+
+/** Group subjects by their slug prefix (e.g. wcl-*, ncl-*, coal-*). */
+function groupByPrefix(
+  subjects: { slug: string; label: string; live: boolean }[],
+): { label: string; subjects: { slug: string; label: string; live: boolean }[] }[] {
+  const map = new Map<string, { slug: string; label: string; live: boolean }[]>();
+  for (const s of subjects) {
+    const prefix = s.slug.includes("-") ? s.slug.split("-")[0].toUpperCase() : "OTHER";
+    const arr = map.get(prefix) ?? [];
+    arr.push(s);
+    map.set(prefix, arr);
+  }
+  return [...map.entries()].map(([label, subs]) => ({ label, subjects: subs }));
 }

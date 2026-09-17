@@ -3,6 +3,7 @@ import { auth } from "@/lib/auth";
 import { UserMenu } from "@/components/user-menu";
 import { BrandLockup } from "@/components/brand";
 import { ThemeToggle } from "@/components/theme-toggle";
+import { CartIcon } from "@/components/cart-icon";
 
 import { getGateSubject } from "@/data/gate/registry";
 
@@ -14,6 +15,7 @@ import { getGateSubject } from "@/data/gate/registry";
 export async function SubjectHeader({ subject }: { subject: string }) {
   const session = await auth();
   const u = session?.user;
+  const impersonating = !!session?.impersonator;
   const meta = getGateSubject(subject);
   const label = meta?.label ?? "GATE";
 
@@ -23,6 +25,7 @@ export async function SubjectHeader({ subject }: { subject: string }) {
     { href: `/gate/${subject}/practice`, label: "Practice" },
     { href: `/gate/${subject}/mocks`, label: "Mocks" },
     { href: `/gate/${subject}/aits`, label: "AITS" },
+    { href: `/gate/${subject}/blog`, label: "Blog" },
     { href: `/pricing?subject=${subject}`, label: "Pricing" },
   ];
 
@@ -49,6 +52,7 @@ export async function SubjectHeader({ subject }: { subject: string }) {
 
         <div className="ml-auto flex items-center gap-2">
           <ThemeToggle />
+          {!impersonating && <CartIcon href="/cart" />}
           {u ? (
             <UserMenu
               name={u.name ?? "Aspirant"}

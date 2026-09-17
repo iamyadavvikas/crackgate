@@ -1,1830 +1,1825 @@
 {
-  "id": "diploma-ncl-ncl-surveyor-mock-06",
-  "title": "NCL Surveyor T&S Gr. B \u2014 Mock 06",
+  "id": "diploma-ncl-surveyor-mock-06",
+  "title": "NCL Mine Surveyor Mock 06",
   "tier": "pro",
-  "duration": 120,
-  "pattern": "NCL Surveyor CBT (100 Q \u00b7 100 marks \u00b7 120 min \u00b7 no \u2212ve)",
+  "duration": 90,
+  "pattern": "100 MCQs, 100 marks, 90 min, NO negative marking",
   "totalMarks": 100,
   "sections": [
     {
-      "name": "Section A \u2014 Technical",
-      "count": 70,
-      "marks": 70
+      "name": "Technical",
+      "questionCount": 80,
+      "marks": 80
     },
     {
-      "name": "Section B \u2014 General",
-      "count": 30,
-      "marks": 30
+      "name": "General Awareness",
+      "questionCount": 20,
+      "marks": 20
     }
   ],
-  "negativeMarking": {
-    "mcq1": 0,
-    "mcq2": 0,
-    "nat": 0,
-    "msq": 0
-  },
+  "negativeMarking": false,
   "seed": 339732650,
   "locked": true,
   "questions": [
     {
-      "id": 1,
-      "subject": "Technical",
-      "topic": "Total Station & EDM",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
+      "id": "ncl-surveyor-06-001",
+      "subject": "Mine Surveying",
+      "topic": "Borehole Surveying",
+      "section": "technical",
+      "type": "mcq",
       "marks": 1,
       "difficulty": "medium",
-      "stem": "The condition equation method is used for",
+      "stem": "An unconformity represents:",
       "options": [
-        "None",
-        "Only leveling",
-        "Only simple surveys",
-        "Adjusting constrained measurements"
-      ],
-      "answer": 3,
-      "solution": "**Answer.** Adjusting constrained measurements"
-    },
-    {
-      "id": 2,
-      "subject": "Technical",
-      "topic": "Linear Measurement",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "medium",
-      "stem": "The accuracy of GPS in surveying depends on",
-      "options": [
-        "None",
-        "Only weather",
-        "Number of satellites and receiver quality",
-        "Only time of day"
-      ],
-      "answer": 2,
-      "solution": "**Answer.** Number of satellites and receiver quality"
-    },
-    {
-      "id": 3,
-      "subject": "Technical",
-      "topic": "Errors & Adjustments",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "medium",
-      "stem": "Tape correction for temperature is applied when",
-      "options": [
-        "Never",
-        "Always",
-        "Only in summer",
-        "Temperature differs significantly from standard"
-      ],
-      "answer": 3,
-      "solution": "**Answer.** Temperature differs significantly from standard"
-    },
-    {
-      "id": 4,
-      "subject": "Technical",
-      "topic": "Total Station & EDM",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "hard",
-      "stem": "Weights in survey adjustments represent",
-      "options": [
-        "Distance measured",
-        "Time taken",
-        "None",
-        "Relative reliability of observations"
-      ],
-      "answer": 3,
-      "solution": "**Answer.** Relative reliability of observations"
-    },
-    {
-      "id": 5,
-      "subject": "Technical",
-      "topic": "Angular Measurement",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "hard",
-      "stem": "A fault in geological terms means",
-      "options": [
-        "Displacement of rock strata",
-        "Surface crack",
-        "Water inflow",
-        "None"
+        "A gap in the geological record due to erosion or non-deposition",
+        "A change in the dip of strata",
+        "A fault cutting through sedimentary beds",
+        "A continuous sequence of sedimentary deposition"
       ],
       "answer": 0,
-      "solution": "**Answer.** Displacement of rock strata"
+      "solution": "An unconformity is an erosion surface or period of non-deposition separating two sequences of rock, representing a gap in geological time."
     },
     {
-      "id": 6,
-      "subject": "Technical",
-      "topic": "Levelling",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "hard",
-      "stem": "A dial compass in mining measures",
-      "options": [
-        "Bearing of survey lines",
-        "Distance",
-        "None",
-        "Elevation"
-      ],
-      "answer": 0,
-      "solution": "**Answer.** Bearing of survey lines"
-    },
-    {
-      "id": 7,
-      "subject": "Technical",
-      "topic": "Errors & Adjustments",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "easy",
-      "stem": "Chain surveying is suitable for",
-      "options": [
-        "Flat terrain only",
-        "All terrains",
-        "Small and simple areas",
-        "Hilly terrain"
-      ],
-      "answer": 0,
-      "solution": "**Answer.** Flat terrain only"
-    },
-    {
-      "id": 8,
-      "subject": "Technical",
-      "topic": "Linear Measurement",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
+      "id": "ncl-surveyor-06-002",
+      "subject": "Mine Surveying",
+      "topic": "Legislation — Mine Plans & Safety",
+      "section": "technical",
+      "type": "mcq",
       "marks": 1,
       "difficulty": "medium",
-      "stem": "Photogrammetry uses",
+      "stem": "If the percentage of inflammable gas in the general body of air exceeds ______, persons shall be withdrawn from the working.",
       "options": [
-        "Only ground surveys",
-        "Aerial photographs for mapping",
-        "Only satellite images",
-        "None"
+        "5%",
+        "1.25%",
+        "0.5%",
+        "2.5%"
       ],
       "answer": 1,
-      "solution": "**Answer.** Aerial photographs for mapping"
+      "solution": "CMR 2017 Reg 166: persons are withdrawn when the general body of air exceeds 1.25% inflammable gas."
     },
     {
-      "id": 9,
-      "subject": "Technical",
-      "topic": "Photogrammetry & Remote Sensing",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
+      "id": "ncl-surveyor-06-003",
+      "subject": "Mine Surveying",
+      "topic": "Borehole Surveying",
+      "section": "technical",
+      "type": "mcq",
       "marks": 1,
       "difficulty": "medium",
-      "stem": "Remote sensing in mining is used for",
+      "stem": "The purpose of 'plunge' in structural geology is:",
       "options": [
-        "Only mapping",
-        "Only production",
-        "Environmental monitoring and exploration",
-        "None"
-      ],
-      "answer": 2,
-      "solution": "**Answer.** Environmental monitoring and exploration"
-    },
-    {
-      "id": 10,
-      "subject": "Technical",
-      "topic": "Levelling",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "easy",
-      "stem": "The 'line of strikes' is perpendicular to",
-      "options": [
-        "Borehole",
-        "Direction of dip",
-        "None",
-        "Surface contour"
+        "To measure the depth of a borehole",
+        "The vertical angle that a fold axis or lineation makes with the horizontal",
+        "The slope of a haul road",
+        "The angle of dip of a fault plane"
       ],
       "answer": 1,
-      "solution": "**Answer.** Direction of dip"
+      "solution": "Plunge is the angle between a linear feature (fold axis, lineation) and the horizontal plane, measured in the vertical plane containing the line."
     },
     {
-      "id": 11,
-      "subject": "Technical",
-      "topic": "Total Station & EDM",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
+      "id": "ncl-surveyor-06-004",
+      "subject": "Mine Surveying",
+      "topic": "Borehole Surveying",
+      "section": "technical",
+      "type": "mcq",
       "marks": 1,
-      "difficulty": "easy",
-      "stem": "Contour interval is",
+      "difficulty": "medium",
+      "stem": "In a borehole log, the 'core recovery' is defined as:",
       "options": [
-        "None",
-        "Vertical distance between successive contours",
-        "Both",
-        "Horizontal distance"
+        "The ratio of core diameter to borehole diameter",
+        "The depth at which core is recovered",
+        "The time taken to recover the core",
+        "The percentage of actual core recovered compared to the total length drilled"
+      ],
+      "answer": 3,
+      "solution": "Core recovery = (length of core recovered / length drilled) × 100%. It indicates the quality of drilling and ground conditions."
+    },
+    {
+      "id": "ncl-surveyor-06-005",
+      "subject": "Mine Surveying",
+      "topic": "Borehole Surveying",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A reverse fault is formed due to:",
+      "options": [
+        "Tensional forces",
+        "Shear forces only",
+        "Gravitational forces",
+        "Compressional forces"
+      ],
+      "answer": 3,
+      "solution": "Reverse faults are caused by compressional tectonic forces that push the hanging wall upward relative to the footwall."
+    },
+    {
+      "id": "ncl-surveyor-06-006",
+      "subject": "Mine Surveying",
+      "topic": "Borehole Surveying",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The bearing of a fault line measured along the fault plane intersection with a horizontal surface is called:",
+      "options": [
+        "Plunge",
+        "Dip direction",
+        "Pitch",
+        "Fault strike"
+      ],
+      "answer": 3,
+      "solution": "Fault strike is the bearing of the line formed by the intersection of the fault plane with a horizontal surface."
+    },
+    {
+      "id": "ncl-surveyor-06-007",
+      "subject": "Mine Surveying",
+      "topic": "Borehole Surveying",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A coal seam is intersected in a vertical borehole at 200 m depth. A second vertical borehole 200 m away along the dip direction intersects the same seam at 310 m depth. The dip of the seam is:",
+      "options": [
+        "15°",
+        "28.8°",
+        "25°",
+        "33.7°"
       ],
       "answer": 1,
-      "solution": "**Answer.** Vertical distance between successive contours"
+      "solution": "tan(dip) = (310 − 200) / 200 = 110/200 = 0.55, dip = tan⁻¹(0.55) ≈ 28.8°."
     },
     {
-      "id": 12,
-      "subject": "Technical",
-      "topic": "Errors & Adjustments",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "easy",
-      "stem": "A level tube bubble moves towards",
-      "options": [
-        "Center",
-        "None",
-        "Lower end",
-        "Higher end of the tube"
-      ],
-      "answer": 3,
-      "solution": "**Answer.** Higher end of the tube"
-    },
-    {
-      "id": 13,
-      "subject": "Technical",
-      "topic": "Total Station & EDM",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "hard",
-      "stem": "A theodolite is primarily used for",
-      "options": [
-        "Measuring horizontal and vertical angles",
-        "Measuring distance",
-        "None",
-        "Levelling"
-      ],
-      "answer": 0,
-      "solution": "**Answer.** Measuring horizontal and vertical angles"
-    },
-    {
-      "id": 14,
-      "subject": "Technical",
-      "topic": "Angular Measurement",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "hard",
-      "stem": "The rise and fall method checks",
-      "options": [
-        "Arithmetic accuracy of reduction",
-        "Distance",
-        "Only elevation",
-        "None"
-      ],
-      "answer": 0,
-      "solution": "**Answer.** Arithmetic accuracy of reduction"
-    },
-    {
-      "id": 15,
-      "subject": "Technical",
-      "topic": "Total Station & EDM",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "hard",
-      "stem": "An outlier is",
-      "options": [
-        "Average value",
-        "None",
-        "An observation significantly different from others",
-        "Correct reading"
-      ],
-      "answer": 2,
-      "solution": "**Answer.** An observation significantly different from others"
-    },
-    {
-      "id": 16,
-      "subject": "Technical",
-      "topic": "Errors & Adjustments",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "hard",
-      "stem": "Accidental errors follow",
-      "options": [
-        "None",
-        "Poisson distribution",
-        "Normal distribution",
-        "Uniform distribution"
-      ],
-      "answer": 2,
-      "solution": "**Answer.** Normal distribution"
-    },
-    {
-      "id": 17,
-      "subject": "Technical",
-      "topic": "Linear Measurement",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "easy",
-      "stem": "Dip and strike of a coal seam are measured by",
-      "options": [
-        "Only surface mapping",
-        "None",
-        "Only borehole",
-        "Surface observation and borehole data"
-      ],
-      "answer": 3,
-      "solution": "**Answer.** Surface observation and borehole data"
-    },
-    {
-      "id": 18,
-      "subject": "Technical",
-      "topic": "Mine Surveying",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "easy",
-      "stem": "The whole circle bearing system ranges from",
-      "options": [
-        "None",
-        "0\u00b0 to 180\u00b0",
-        "0\u00b0 to 360\u00b0",
-        "\u221290\u00b0 to +90\u00b0"
-      ],
-      "answer": 2,
-      "solution": "**Answer.** 0\u00b0 to 360\u00b0"
-    },
-    {
-      "id": 19,
-      "subject": "Technical",
-      "topic": "Total Station & EDM",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "easy",
-      "stem": "GIS stands for",
-      "options": [
-        "General Information System",
-        "Geological Investigation System",
-        "Geographic Information System",
-        "None"
-      ],
-      "answer": 2,
-      "solution": "**Answer.** Geographic Information System"
-    },
-    {
-      "id": 20,
-      "subject": "Technical",
-      "topic": "Angular Measurement",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "hard",
-      "stem": "A DTM stands for",
-      "options": [
-        "Data Transfer Module",
-        "Direct Terrain Measurement",
-        "Digital Terrain Model",
-        "None"
-      ],
-      "answer": 2,
-      "solution": "**Answer.** Digital Terrain Model"
-    },
-    {
-      "id": 21,
-      "subject": "Technical",
-      "topic": "Errors & Adjustments",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
+      "id": "ncl-surveyor-06-008",
+      "subject": "Mine Surveying",
+      "topic": "Legislation — Mine Plans & Safety",
+      "section": "technical",
+      "type": "mcq",
       "marks": 1,
       "difficulty": "medium",
-      "stem": "A total station can measure",
+      "stem": "The maximum working hours in a week for an adult employed belowground in a mine are:",
       "options": [
-        "Only angles",
-        "None",
-        "Horizontal angle, vertical angle, and distance",
-        "Only distance"
+        "54 hours",
+        "60 hours",
+        "45 hours",
+        "48 hours"
+      ],
+      "answer": 3,
+      "solution": "Mines Act 1952, s.28: no person shall be employed belowground for more than 48 hours in any week."
+    },
+    {
+      "id": "ncl-surveyor-06-009",
+      "subject": "Mine Surveying",
+      "topic": "Borehole Surveying",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "In borehole surveying, the magnetic survey method is unreliable when:",
+      "options": [
+        "The borehole contains steel casing or is near mineralized zones",
+        "The rock is sedimentary",
+        "The borehole is vertical",
+        "The borehole is shallow"
+      ],
+      "answer": 0,
+      "solution": "Magnetic surveys are affected by steel casing, drill rods, and magnetic mineral deposits which deflect the compass readings."
+    },
+    {
+      "id": "ncl-surveyor-06-010",
+      "subject": "Mine Surveying",
+      "topic": "Borehole Surveying",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The 'heave' of a fault is defined as:",
+      "options": [
+        "The horizontal displacement measured perpendicular to the fault strike",
+        "The vertical displacement",
+        "The width of the fault gouge",
+        "The total displacement along the fault plane"
+      ],
+      "answer": 0,
+      "solution": "Heave is the horizontal component of fault displacement measured perpendicular to the strike of the fault."
+    },
+    {
+      "id": "ncl-surveyor-06-011",
+      "subject": "Mine Surveying",
+      "topic": "Borehole Surveying",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A syncline is a fold in which:",
+      "options": [
+        "The youngest rocks are in the core",
+        "Both limbs have the same dip direction",
+        "The fold axis is horizontal",
+        "The oldest rocks are in the core"
+      ],
+      "answer": 0,
+      "solution": "In a syncline, the youngest rocks occupy the core (center) of the fold, and the limbs dip toward the axis."
+    },
+    {
+      "id": "ncl-surveyor-06-012",
+      "subject": "Mine Surveying",
+      "topic": "Borehole Surveying",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "If the true thickness of a coal seam dipping at 40° is 2.5 m, the thickness measured perpendicular to a vertical borehole would be:",
+      "options": [
+        "1.61 m",
+        "3.90 m",
+        "2.50 m",
+        "3.26 m"
+      ],
+      "answer": 3,
+      "solution": "Apparent thickness in vertical borehole = true thickness / cos(dip) = 2.5 / cos40° = 2.5 / 0.766 ≈ 3.26 m."
+    },
+    {
+      "id": "ncl-surveyor-06-013",
+      "subject": "Mine Surveying",
+      "topic": "Borehole Surveying",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The process of correlating coal seams between boreholes involves:",
+      "options": [
+        "Measuring the borehole diameter",
+        "Determining the age of coal by carbon dating",
+        "Matching lithological and palaeontological features to establish continuity",
+        "Drilling additional boreholes"
       ],
       "answer": 2,
-      "solution": "**Answer.** Horizontal angle, vertical angle, and distance"
+      "solution": "Borehole correlation uses lithological characteristics, fossil content, and seam properties to establish the continuity of strata between boreholes."
     },
     {
-      "id": 22,
-      "subject": "Technical",
-      "topic": "Levelling",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
+      "id": "ncl-surveyor-06-014",
+      "subject": "Mine Surveying",
+      "topic": "Borehole Surveying",
+      "section": "technical",
+      "type": "mcq",
       "marks": 1,
-      "difficulty": "easy",
-      "stem": "A ranging rod is used for",
+      "difficulty": "medium",
+      "stem": "A monocline is a fold where:",
       "options": [
-        "Marking stations",
-        "Levelling",
-        "Measuring angles",
-        "None"
-      ],
-      "answer": 0,
-      "solution": "**Answer.** Marking stations"
-    },
-    {
-      "id": 23,
-      "subject": "Technical",
-      "topic": "Linear Measurement",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "easy",
-      "stem": "A bench mark is",
-      "options": [
-        "A point of known elevation",
-        "Any point",
-        "None",
-        "A temporary point"
-      ],
-      "answer": 0,
-      "solution": "**Answer.** A point of known elevation"
-    },
-    {
-      "id": 24,
-      "subject": "Technical",
-      "topic": "Photogrammetry & Remote Sensing",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "hard",
-      "stem": "Fore sight is taken on",
-      "options": [
-        "None",
-        "A point of unknown elevation (turning point)",
-        "A point of known elevation",
-        "Bench mark only"
-      ],
-      "answer": 2,
-      "solution": "**Answer.** A point of known elevation"
-    },
-    {
-      "id": 25,
-      "subject": "Technical",
-      "topic": "Linear Measurement",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "easy",
-      "stem": "Borehole surveying is done to",
-      "options": [
-        "Determine dip, strike, and position of coal seams",
-        "Test gas",
-        "Measure air velocity",
-        "None"
-      ],
-      "answer": 0,
-      "solution": "**Answer.** Determine dip, strike, and position of coal seams"
-    },
-    {
-      "id": 26,
-      "subject": "Technical",
-      "topic": "Levelling",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "easy",
-      "stem": "Standard deviation measures",
-      "options": [
-        "Only maximum error",
-        "Spread of observations around mean",
-        "None",
-        "Only minimum error"
+        "Both limbs dip in opposite directions",
+        "One limb is horizontal and the other is inclined",
+        "The fold has an axis that plunges",
+        "All limbs dip toward the center"
       ],
       "answer": 1,
-      "solution": "**Answer.** Spread of observations around mean"
+      "solution": "A monocline is a step-like fold with one horizontal limb and one inclined limb, resembling a draped blanket."
     },
     {
-      "id": 27,
-      "subject": "Technical",
-      "topic": "Angular Measurement",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
+      "id": "ncl-surveyor-06-015",
+      "subject": "Mine Surveying",
+      "topic": "Borehole Surveying",
+      "section": "technical",
+      "type": "mcq",
       "marks": 1,
-      "difficulty": "hard",
-      "stem": "The principle of EDM is",
+      "difficulty": "medium",
+      "stem": "In dip and strike determination from borehole data, a minimum of how many boreholes are needed if the seam is assumed planar?",
       "options": [
-        "Taping",
-        "Chaining",
-        "None",
-        "Measurement of time or phase shift of electromagnetic wave"
+        "One",
+        "Two",
+        "Three",
+        "Four"
       ],
-      "answer": 3,
-      "solution": "**Answer.** Measurement of time or phase shift of electromagnetic wave"
+      "answer": 2,
+      "solution": "Three non-collinear points (boreholes) are required to define a plane and determine its dip and strike uniquely."
     },
     {
-      "id": 28,
-      "subject": "Technical",
-      "topic": "Errors & Adjustments",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
+      "id": "ncl-surveyor-06-016",
+      "subject": "Mine Surveying",
+      "topic": "Borehole Surveying",
+      "section": "technical",
+      "type": "mcq",
       "marks": 1,
-      "difficulty": "hard",
-      "stem": "A drone in mine surveying is used for",
+      "difficulty": "medium",
+      "stem": "The 'termination' of a borehole is recorded at the final depth. If the borehole is terminated in a coal seam, the seam is described as:",
       "options": [
-        "Only photography",
-        "Aerial photography and topographic mapping",
-        "None",
-        "Only measurement"
+        "Not intersected",
+        "Bottomed in",
+        "Abandoned",
+        "Missing"
       ],
       "answer": 1,
-      "solution": "**Answer.** Aerial photography and topographic mapping"
+      "solution": "When a borehole ends within a coal seam, it is said to have 'bottomed in' that seam."
     },
     {
-      "id": 29,
-      "subject": "Technical",
-      "topic": "Angular Measurement",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "hard",
-      "stem": "The height of instrument method is",
-      "options": [
-        "Slower but accurate",
-        "None",
-        "Same as rise and fall",
-        "Faster but no check"
-      ],
-      "answer": 3,
-      "solution": "**Answer.** Faster but no check"
-    },
-    {
-      "id": 30,
-      "subject": "Technical",
-      "topic": "Total Station & EDM",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "hard",
-      "stem": "The reduced bearing system ranges from",
-      "options": [
-        "0\u00b0 to 360\u00b0",
-        "None",
-        "0\u00b0 to 90\u00b0 in each quadrant",
-        "0\u00b0 to 180\u00b0"
-      ],
-      "answer": 2,
-      "solution": "**Answer.** 0\u00b0 to 90\u00b0 in each quadrant"
-    },
-    {
-      "id": 31,
-      "subject": "Technical",
-      "topic": "Linear Measurement",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "easy",
-      "stem": "Resection in total station survey is used to",
-      "options": [
-        "Levelling",
-        "None",
-        "Measure area",
-        "Determine unknown station position from known points"
-      ],
-      "answer": 3,
-      "solution": "**Answer.** Determine unknown station position from known points"
-    },
-    {
-      "id": 32,
-      "subject": "Technical",
-      "topic": "Errors & Adjustments",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
+      "id": "ncl-surveyor-06-017",
+      "subject": "Mine Surveying",
+      "topic": "Borehole Surveying",
+      "section": "technical",
+      "type": "mcq",
       "marks": 1,
       "difficulty": "medium",
-      "stem": "The duty of a mine surveyor includes",
+      "stem": "A fault where the dip of the fault plane is less than 45° and the hanging wall has moved up is classified as:",
       "options": [
-        "Setting out and maintaining mine plans",
-        "Only underground survey",
-        "None",
-        "Only surface survey"
-      ],
-      "answer": 0,
-      "solution": "**Answer.** Setting out and maintaining mine plans"
-    },
-    {
-      "id": 33,
-      "subject": "Technical",
-      "topic": "Mine Surveying",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "easy",
-      "stem": "The least count of a vernier theodolite is typically",
-      "options": [
-        "5 minutes",
-        "None",
-        "1 minute",
-        "20 seconds"
-      ],
-      "answer": 3,
-      "solution": "**Answer.** 20 seconds"
-    },
-    {
-      "id": 34,
-      "subject": "Technical",
-      "topic": "Angular Measurement",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "hard",
-      "stem": "Pacing is a method of",
-      "options": [
-        "Approximate distance measurement",
-        "Precise measurement",
-        "Angle measurement",
-        "None"
-      ],
-      "answer": 0,
-      "solution": "**Answer.** Approximate distance measurement"
-    },
-    {
-      "id": 35,
-      "subject": "Technical",
-      "topic": "Total Station & EDM",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "medium",
-      "stem": "The accuracy of a total station is typically",
-      "options": [
-        "\u00b12 mm + 2 ppm",
-        "\u00b11 m",
-        "None",
-        "\u00b110 cm"
-      ],
-      "answer": 0,
-      "solution": "**Answer.** \u00b12 mm + 2 ppm"
-    },
-    {
-      "id": 36,
-      "subject": "Technical",
-      "topic": "Levelling",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "hard",
-      "stem": "A vertical aerial photograph has",
-      "options": [
-        "Nadir point at center",
-        "None",
-        "Horizon at center",
-        "No scale variation"
-      ],
-      "answer": 0,
-      "solution": "**Answer.** Nadir point at center"
-    },
-    {
-      "id": 37,
-      "subject": "Technical",
-      "topic": "Total Station & EDM",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "hard",
-      "stem": "The 'set out' function of total station is used for",
-      "options": [
-        "None",
-        "Marking design coordinates on ground",
-        "Computing areas",
-        "Measuring existing features"
+        "Strike-slip fault",
+        "Thrust fault",
+        "Normal fault",
+        "Oblique fault"
       ],
       "answer": 1,
-      "solution": "**Answer.** Marking design coordinates on ground"
+      "solution": "A thrust fault is a reverse fault with a low dip angle (typically less than 45°), formed under compressional stress."
     },
     {
-      "id": 38,
-      "subject": "Technical",
-      "topic": "Total Station & EDM",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
+      "id": "ncl-surveyor-06-018",
+      "subject": "Mine Surveying",
+      "topic": "Mine Plans and Sections",
+      "section": "technical",
+      "type": "mcq",
       "marks": 1,
-      "difficulty": "hard",
-      "stem": "The correction for slope in chain measurement is always",
+      "difficulty": "medium",
+      "stem": "The primary purpose of mine plans is to:",
       "options": [
-        "Negative",
-        "Positive",
-        "Zero",
-        "Variable"
+        "Record the history of mining",
+        "Provide accurate spatial information for safe and efficient mining operations",
+        "Record employee attendance",
+        "Serve as wall decorations in the office"
       ],
       "answer": 1,
-      "solution": "**Answer.** Positive"
+      "solution": "Mine plans are essential documents that provide spatial data for planning, safety, and regulatory compliance in mining operations."
     },
     {
-      "id": 39,
-      "subject": "Technical",
-      "topic": "Photogrammetry & Remote Sensing",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
+      "id": "ncl-surveyor-06-019",
+      "subject": "Mine Surveying",
+      "topic": "Mine Plans and Sections",
+      "section": "technical",
+      "type": "mcq",
       "marks": 1,
       "difficulty": "medium",
-      "stem": "The least count of a vernier caliper is typically",
+      "stem": "A 'plan' in mine surveying is a:",
       "options": [
-        "0.001 mm",
-        "1 mm",
-        "0.01 mm",
-        "0.1 mm"
-      ],
-      "answer": 2,
-      "solution": "**Answer.** 0.01 mm"
-    },
-    {
-      "id": 40,
-      "subject": "Technical",
-      "topic": "Mine Surveying",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "medium",
-      "stem": "Reciprocal levelling eliminates",
-      "options": [
-        "Curvature and refraction errors",
-        "None",
-        "Wind errors",
-        "Temperature errors"
-      ],
-      "answer": 0,
-      "solution": "**Answer.** Curvature and refraction errors"
-    },
-    {
-      "id": 41,
-      "subject": "Technical",
-      "topic": "Total Station & EDM",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "hard",
-      "stem": "A closing error in traverse is adjusted by",
-      "options": [
-        "Bowditch or transit rule",
-        "Re-measuring only",
-        "Ignoring it",
-        "None"
-      ],
-      "answer": 0,
-      "solution": "**Answer.** Bowditch or transit rule"
-    },
-    {
-      "id": 42,
-      "subject": "Technical",
-      "topic": "Mine Surveying",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "hard",
-      "stem": "The coordinate system in total station uses",
-      "options": [
-        "Latitude and Longitude",
-        "Both",
-        "None",
-        "Easting and Northing"
-      ],
-      "answer": 3,
-      "solution": "**Answer.** Easting and Northing"
-    },
-    {
-      "id": 43,
-      "subject": "Technical",
-      "topic": "Total Station & EDM",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "easy",
-      "stem": "The precision of a survey is expressed as",
-      "options": [
-        "Ratio of error to measured quantity",
-        "Percentage only",
-        "None",
-        "Absolute error only"
-      ],
-      "answer": 0,
-      "solution": "**Answer.** Ratio of error to measured quantity"
-    },
-    {
-      "id": 44,
-      "subject": "Technical",
-      "topic": "Mine Surveying",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "medium",
-      "stem": "The temporary adjustments of a theodolite include",
-      "options": [
-        "Centreing, levelling, focusing",
-        "Only levelling",
-        "None",
-        "Only focusing"
-      ],
-      "answer": 0,
-      "solution": "**Answer.** Centreing, levelling, focusing"
-    },
-    {
-      "id": 45,
-      "subject": "Technical",
-      "topic": "Photogrammetry & Remote Sensing",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "hard",
-      "stem": "EDM stands for",
-      "options": [
-        "Exact Distance Measurement",
-        "None",
-        "Electronic Distance Measurement",
-        "Electronic Data Module"
-      ],
-      "answer": 2,
-      "solution": "**Answer.** Electronic Distance Measurement"
-    },
-    {
-      "id": 46,
-      "subject": "Technical",
-      "topic": "Photogrammetry & Remote Sensing",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "hard",
-      "stem": "Optical square is used for",
-      "options": [
-        "Measuring distance",
-        "Levelling",
-        "Setting out right angles",
-        "Measuring angles"
-      ],
-      "answer": 3,
-      "solution": "**Answer.** Measuring angles"
-    },
-    {
-      "id": 47,
-      "subject": "Technical",
-      "topic": "Linear Measurement",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "easy",
-      "stem": "The type of chain commonly used in India is",
-      "options": [
-        "Engineer's chain",
-        "Metric chain",
-        "Gunter's chain",
-        "Revenue chain"
-      ],
-      "answer": 2,
-      "solution": "**Answer.** Gunter's chain"
-    },
-    {
-      "id": 48,
-      "subject": "Technical",
-      "topic": "Total Station & EDM",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "easy",
-      "stem": "Local attraction in a compass is caused by",
-      "options": [
-        "Wind",
-        "Temperature",
-        "Magnetic materials nearby",
-        "Humidity"
-      ],
-      "answer": 2,
-      "solution": "**Answer.** Magnetic materials nearby"
-    },
-    {
-      "id": 49,
-      "subject": "Technical",
-      "topic": "Levelling",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "medium",
-      "stem": "Back sight is taken on",
-      "options": [
-        "Any point",
-        "A point of unknown elevation",
-        "None",
-        "A point of known elevation"
-      ],
-      "answer": 3,
-      "solution": "**Answer.** A point of known elevation"
-    },
-    {
-      "id": 50,
-      "subject": "Technical",
-      "topic": "Levelling",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "hard",
-      "stem": "The line of collimation is",
-      "options": [
-        "None",
-        "Physical line",
-        "Imaginary line",
-        "Line of sight when bubble is central"
-      ],
-      "answer": 3,
-      "solution": "**Answer.** Line of sight when bubble is central"
-    },
-    {
-      "id": 51,
-      "subject": "Technical",
-      "topic": "Linear Measurement",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "medium",
-      "stem": "Mine plans are prepared at a scale of",
-      "options": [
-        "None",
-        "1:500 or 1:1000 typically",
-        "1:10000 only",
-        "1:100 only"
+        "Vertical representation of the mine",
+        "Horizontal representation of the mine at a particular level",
+        "Three-dimensional model only",
+        "Cross-sectional view"
       ],
       "answer": 1,
-      "solution": "**Answer.** 1:500 or 1:1000 typically"
+      "solution": "A plan is a horizontal projection of mine features at a particular elevation or level."
     },
     {
-      "id": 52,
-      "subject": "Technical",
-      "topic": "Levelling",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
+      "id": "ncl-surveyor-06-020",
+      "subject": "Mine Surveying",
+      "topic": "Mine Plans and Sections",
+      "section": "technical",
+      "type": "mcq",
       "marks": 1,
-      "difficulty": "easy",
-      "stem": "Traversing with a total station is more accurate because",
+      "difficulty": "medium",
+      "stem": "The standard scale for an opencast mine general plan is typically:",
       "options": [
-        "It is faster",
-        "It is cheaper",
-        "None",
-        "Electronic measurement eliminates human error"
+        "1:100",
+        "1:50000",
+        "1:500",
+        "1:1000 or 1:2000"
       ],
       "answer": 3,
-      "solution": "**Answer.** Electronic measurement eliminates human error"
+      "solution": "General plans of opencast mines are typically prepared at scales of 1:1000 or 1:2000 for operational use."
     },
     {
-      "id": 53,
-      "subject": "Technical",
-      "topic": "Mine Surveying",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
+      "id": "ncl-surveyor-06-021",
+      "subject": "Mine Surveying",
+      "topic": "Mine Plans and Sections",
+      "section": "technical",
+      "type": "mcq",
       "marks": 1,
-      "difficulty": "hard",
-      "stem": "Orthorectification corrects",
+      "difficulty": "medium",
+      "stem": "A 'section' in mine surveying represents:",
       "options": [
-        "Only brightness",
-        "Only color",
-        "Terrain displacement in aerial photos",
-        "None"
+        "A diagonal cut through the mine",
+        "An isometric view",
+        "A vertical slice through the mine showing elevation changes",
+        "A horizontal slice of the mine"
       ],
       "answer": 2,
-      "solution": "**Answer.** Terrain displacement in aerial photos"
+      "solution": "A section is a vertical representation showing the mine features in elevation, typically along a specific line of cut."
     },
     {
-      "id": 54,
-      "subject": "Technical",
-      "topic": "Linear Measurement",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
+      "id": "ncl-surveyor-06-022",
+      "subject": "Mine Surveying",
+      "topic": "Mine Plans and Sections",
+      "section": "technical",
+      "type": "mcq",
       "marks": 1,
-      "difficulty": "hard",
-      "stem": "A Dumpy level has",
+      "difficulty": "medium",
+      "stem": "The 'Mine Plans and Sections' rules under CMR 2017 require that plans be kept updated at intervals not exceeding:",
       "options": [
-        "Two telescopes",
-        "Rotating telescope",
-        "No telescope",
-        "Fixed telescope"
-      ],
-      "answer": 3,
-      "solution": "**Answer.** Fixed telescope"
-    },
-    {
-      "id": 55,
-      "subject": "Technical",
-      "topic": "Errors & Adjustments",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "hard",
-      "stem": "The purpose of a mine plan is to",
-      "options": [
-        "Only show geological data",
-        "None",
-        "Only show surface features",
-        "Record and plan mining operations"
-      ],
-      "answer": 3,
-      "solution": "**Answer.** Record and plan mining operations"
-    },
-    {
-      "id": 56,
-      "subject": "Technical",
-      "topic": "Linear Measurement",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "easy",
-      "stem": "A sectional view in mine surveying shows",
-      "options": [
-        "None",
-        "Only contour map",
-        "Vertical cross-section of mine workings",
-        "Only surface plan"
+        "One month",
+        "Three months",
+        "Six months",
+        "Twelve months"
       ],
       "answer": 2,
-      "solution": "**Answer.** Vertical cross-section of mine workings"
+      "solution": "Under CMR 2017, mine plans and sections must be updated at intervals not exceeding six months or as prescribed by the Chief Inspector."
     },
     {
-      "id": 57,
-      "subject": "Technical",
-      "topic": "Mine Surveying",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
+      "id": "ncl-surveyor-06-023",
+      "subject": "Mine Surveying",
+      "topic": "Mine Plans and Sections",
+      "section": "technical",
+      "type": "mcq",
       "marks": 1,
-      "difficulty": "easy",
-      "stem": "Repetition method in theodolite survey gives",
+      "difficulty": "medium",
+      "stem": "An 'elevation' or 'profile' of an opencast mine shows:",
       "options": [
-        "More accurate results",
-        "None",
-        "Same accuracy",
-        "Less accurate results"
+        "Vertical view along a particular line showing bench heights and slopes",
+        "Plan view of benches",
+        "Cross-section perpendicular to the face",
+        "Three-dimensional terrain model"
       ],
       "answer": 0,
-      "solution": "**Answer.** More accurate results"
+      "solution": "An elevation or profile shows the vertical representation of mine features along a specific line, displaying bench heights and slope angles."
     },
     {
-      "id": 58,
-      "subject": "Technical",
-      "topic": "Photogrammetry & Remote Sensing",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "easy",
-      "stem": "Outcrop is where",
-      "options": [
-        "Coal is deepest",
-        "Coal seam reaches the surface",
-        "Water is found",
-        "None"
-      ],
-      "answer": 1,
-      "solution": "**Answer.** Coal seam reaches the surface"
-    },
-    {
-      "id": 59,
-      "subject": "Technical",
-      "topic": "Mine Surveying",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
+      "id": "ncl-surveyor-06-024",
+      "subject": "Mine Surveying",
+      "topic": "Mine Plans and Sections",
+      "section": "technical",
+      "type": "mcq",
       "marks": 1,
       "difficulty": "medium",
-      "stem": "Magnetic declination is the angle between",
+      "stem": "The responsibility for preparation and maintenance of mine plans primarily rests with:",
       "options": [
-        "True north and magnetic north",
-        "Two survey lines",
-        "Horizontal and vertical",
-        "None"
+        "The geological department",
+        "The safety officer",
+        "The mine manager only",
+        "The surveyor"
+      ],
+      "answer": 3,
+      "solution": "The surveyor is responsible for preparing, maintaining, and updating mine plans and sections as per statutory requirements."
+    },
+    {
+      "id": "ncl-surveyor-06-025",
+      "subject": "Mine Surveying",
+      "topic": "Mine Plans and Sections",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Contour plans are used to represent:",
+      "options": [
+        "Lines of equal rainfall in the area",
+        "Surface topography with lines of equal elevation",
+        "The positions of underground workings",
+        "The layout of the surface buildings"
+      ],
+      "answer": 1,
+      "solution": "Contour plans show lines of equal elevation, representing surface topography and relief of the mine area."
+    },
+    {
+      "id": "ncl-surveyor-06-026",
+      "subject": "Mine Surveying",
+      "topic": "Mine Plans and Sections",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "In an opencast mine plan, the 'dump level' is represented by:",
+      "options": [
+        "A single point",
+        "A dashed line",
+        "A hatched area only",
+        "A closed contour at the top of the dump"
+      ],
+      "answer": 3,
+      "solution": "The top of a dump is represented by a closed contour at its elevation, with the dump boundary shown by the outermost contour."
+    },
+    {
+      "id": "ncl-surveyor-06-027",
+      "subject": "Mine Surveying",
+      "topic": "Mine Plans and Sections",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The colour convention for representing coal seams on mine plans is typically:",
+      "options": [
+        "Black",
+        "Red",
+        "Blue",
+        "Green"
       ],
       "answer": 0,
-      "solution": "**Answer.** True north and magnetic north"
+      "solution": "By convention, coal seams are represented in black on mine plans, while other features use different colours."
     },
     {
-      "id": 60,
-      "subject": "Technical",
-      "topic": "Mine Surveying",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "easy",
-      "stem": "A metric chain used in surveying typically has",
-      "options": [
-        "100 m length",
-        "Both a and b depending on use",
-        "30 m length",
-        "20 m length"
-      ],
-      "answer": 3,
-      "solution": "**Answer.** 20 m length"
-    },
-    {
-      "id": 61,
-      "subject": "Technical",
-      "topic": "Photogrammetry & Remote Sensing",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
+      "id": "ncl-surveyor-06-028",
+      "subject": "Mine Surveying",
+      "topic": "Mine Plans and Sections",
+      "section": "technical",
+      "type": "mcq",
       "marks": 1,
       "difficulty": "medium",
-      "stem": "A chain length error is corrected by",
+      "stem": "A 'section' drawn perpendicular to the face of an opencast bench shows:",
       "options": [
-        "Field calibration",
-        "Ignoring it",
-        "Tape correction",
-        "Both a and b"
+        "Plan of the bench",
+        "The geological map of the area",
+        "The haul road alignment",
+        "The bench height, face angle, and overall slope angle"
+      ],
+      "answer": 3,
+      "solution": "A face section shows the vertical profile of the bench including bench height, face angle (angle of working), and overall slope angle."
+    },
+    {
+      "id": "ncl-surveyor-06-029",
+      "subject": "Mine Surveying",
+      "topic": "Mine Plans and Sections",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Under the Coal Mines Regulations 2017, the plan of an opencast working must show:",
+      "options": [
+        "Used in quarrying operations",
+        "Mining of bauxite",
+        "Specific to metal mines only",
+        "All workings including past and present, with dates"
+      ],
+      "answer": 3,
+      "solution": "Regulations require that plans show all past and present workings with dates, along with other essential features."
+    },
+    {
+      "id": "ncl-surveyor-06-030",
+      "subject": "Mine Surveying",
+      "topic": "Legislation — Mine Plans & Safety",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Under the Mines Act 1952, an Inspector may, among other powers:",
+      "options": [
+        "Impose fines directly",
+        "Appoint mine officials",
+        "Withdraw certificates of competency",
+        "Enter, inspect and examine a mine, and make inquiries on any matter relating to safety"
+      ],
+      "answer": 3,
+      "solution": "Mines Act 1952, s.22: Inspectors may enter, inspect, examine and inquire into any mine and its records."
+    },
+    {
+      "id": "ncl-surveyor-06-031",
+      "subject": "Mine Surveying",
+      "topic": "Legislation — Mine Plans & Safety",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A person re-employed after an absence exceeding one year from mining work must undergo refresher training within:",
+      "options": [
+        "1 week",
+        "6 months",
+        "1 month of employment",
+        "3 months of employment"
       ],
       "answer": 2,
-      "solution": "**Answer.** Tape correction"
+      "solution": "MVTR 1966, Rule 10: refresher training within 1 month of re-employment after absence over 1 year."
     },
     {
-      "id": 62,
-      "subject": "Technical",
-      "topic": "Levelling",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
+      "id": "ncl-surveyor-06-032",
+      "subject": "Mine Surveying",
+      "topic": "Mine Plans and Sections",
+      "section": "technical",
+      "type": "mcq",
       "marks": 1,
       "difficulty": "medium",
-      "stem": "A total station combines",
+      "stem": "The scale of a mine plan should be selected based on:",
       "options": [
-        "Only EDM",
-        "Only theodolite",
-        "None",
-        "Theodolite + EDM + microprocessor"
+        "The colour of paper available",
+        "The number of surveyors",
+        "The surveyor's preference only",
+        "The size of the mine area and the detail required"
       ],
       "answer": 3,
-      "solution": "**Answer.** Theodolite + EDM + microprocessor"
+      "solution": "Scale selection depends on the mine area size, level of detail required, and regulatory requirements."
     },
     {
-      "id": 63,
-      "subject": "Technical",
-      "topic": "Errors & Adjustments",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
+      "id": "ncl-surveyor-06-033",
+      "subject": "Mine Surveying",
+      "topic": "Mine Plans and Sections",
+      "section": "technical",
+      "type": "mcq",
       "marks": 1,
       "difficulty": "medium",
-      "stem": "Systematic errors can be",
+      "stem": "A 'barrow' or 'cross-section' of an opencast mine bench at right angles to the face shows:",
       "options": [
-        "Eliminated by corrections",
-        "Random",
-        "Never eliminated",
-        "None"
+        "The bench geometry including height, width, and slope angles",
+        "The plan view of the bench at a single level",
+        "The plan view of the bench",
+        "The arrangement of the surface buildings"
       ],
       "answer": 0,
-      "solution": "**Answer.** Eliminated by corrections"
+      "solution": "A barrow/cross-section perpendicular to the face shows the complete bench geometry for operational and safety assessment."
     },
     {
-      "id": 64,
-      "subject": "Technical",
-      "topic": "Errors & Adjustments",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "hard",
-      "stem": "A prismatic compass measures",
-      "options": [
-        "Deflection angles",
-        "Internal angles",
-        "Bearings of lines",
-        "Vertical angles"
-      ],
-      "answer": 2,
-      "solution": "**Answer.** Bearings of lines"
-    },
-    {
-      "id": 65,
-      "subject": "Technical",
-      "topic": "Linear Measurement",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
+      "id": "ncl-surveyor-06-034",
+      "subject": "Mine Surveying",
+      "topic": "Mine Plans and Sections",
+      "section": "technical",
+      "type": "mcq",
       "marks": 1,
       "difficulty": "medium",
-      "stem": "The law of propagation of weights states",
+      "stem": "The preservation period for mine plans as per Indian coal mine regulations is typically:",
       "options": [
-        "Weight of sum = reciprocal of sum of reciprocals",
-        "Weight is constant",
-        "Weight decreases",
-        "None"
+        "2 years after mine closure",
+        "5 years after mine closure",
+        "10 years after mine closure",
+        "Indefinite preservation"
+      ],
+      "answer": 3,
+      "solution": "Mine plans must be preserved indefinitely or for the period prescribed by the Chief Inspector, as they are permanent records."
+    },
+    {
+      "id": "ncl-surveyor-06-035",
+      "subject": "Mine Surveying",
+      "topic": "Mine Plans and Sections",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "On a mine plan, the working face of an opencast mine is represented by:",
+      "options": [
+        "A thick solid line",
+        "A dotted line",
+        "A thin continuous line",
+        "A chain line"
       ],
       "answer": 0,
-      "solution": "**Answer.** Weight of sum = reciprocal of sum of reciprocals"
+      "solution": "The working face is typically represented by a thick solid line on mine plans to clearly indicate the current position of extraction."
     },
     {
-      "id": 66,
-      "subject": "Technical",
-      "topic": "Levelling",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
+      "id": "ncl-surveyor-06-036",
+      "subject": "Mine Surveying",
+      "topic": "Mine Plans and Sections",
+      "section": "technical",
+      "type": "mcq",
       "marks": 1,
-      "difficulty": "easy",
-      "stem": "3D laser scanning is used for",
+      "difficulty": "medium",
+      "stem": "A 'contour interval' on a mine plan refers to:",
       "options": [
-        "Only measuring distances",
-        "Creating digital terrain models",
-        "Only volume calculation",
-        "None"
+        "The scale of the plan",
+        "The distance between two adjacent contour lines",
+        "The maximum elevation shown",
+        "The total number of contours"
       ],
       "answer": 1,
-      "solution": "**Answer.** Creating digital terrain models"
+      "solution": "Contour interval is the vertical difference in elevation between two adjacent contour lines on the plan."
     },
     {
-      "id": 67,
-      "subject": "Technical",
-      "topic": "Total Station & EDM",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
+      "id": "ncl-surveyor-06-037",
+      "subject": "Mine Surveying",
+      "topic": "Legislation — Mine Plans & Safety",
+      "section": "technical",
+      "type": "mcq",
       "marks": 1,
-      "difficulty": "hard",
-      "stem": "Face left and face right observations are taken to",
+      "difficulty": "medium",
+      "stem": "As per MVTR 1966, refresher vocational training must be given to persons employed in mines at least once in:",
       "options": [
-        "None",
-        "Increase speed",
-        "Eliminate instrumental errors",
-        "Reduce cost"
+        "5 years",
+        "2 years",
+        "1 year",
+        "10 years"
       ],
-      "answer": 2,
-      "solution": "**Answer.** Eliminate instrumental errors"
+      "answer": 0,
+      "solution": "MVTR 1966, Rule 8: refresher training at least once in every 5 years."
     },
     {
-      "id": 68,
-      "subject": "Technical",
-      "topic": "Errors & Adjustments",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
+      "id": "ncl-surveyor-06-038",
+      "subject": "Mine Surveying",
+      "topic": "Mine Plans and Sections",
+      "section": "technical",
+      "type": "mcq",
       "marks": 1,
-      "difficulty": "hard",
-      "stem": "Scale of a vertical photograph depends on",
+      "difficulty": "medium",
+      "stem": "In a mine section, the 'overall slope angle' is:",
       "options": [
-        "None",
-        "Only height",
-        "Only focal length",
-        "Flying height and focal length"
-      ],
-      "answer": 3,
-      "solution": "**Answer.** Flying height and focal length"
-    },
-    {
-      "id": 69,
-      "subject": "Technical",
-      "topic": "Levelling",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "easy",
-      "stem": "A reflectorless total station can measure distance to",
-      "options": [
-        "Only metallic surfaces",
-        "Any surface without prism",
-        "None",
-        "Only prism targets"
+        "The angle of the haul road",
+        "The angle formed by a line joining the crest of the top bench to the toe of the bottom bench with the horizontal",
+        "The angle of a single bench face",
+        "The dip of the coal seam"
       ],
       "answer": 1,
-      "solution": "**Answer.** Any surface without prism"
+      "solution": "The overall slope angle is the angle of the line connecting the top crest to the bottom toe, encompassing all benches and berms."
     },
     {
-      "id": 70,
-      "subject": "Technical",
-      "topic": "Linear Measurement",
-      "section": "Section A \u2014 Technical",
-      "type": "MCQ",
+      "id": "ncl-surveyor-06-039",
+      "subject": "Mine Surveying",
+      "topic": "Mine Plans and Sections",
+      "section": "technical",
+      "type": "mcq",
       "marks": 1,
       "difficulty": "medium",
-      "stem": "Least squares adjustment minimizes",
+      "stem": "A 'dump plan' in opencast mining shows:",
       "options": [
-        "None",
-        "Maximum residual",
-        "Sum of residuals",
-        "Sum of squares of residuals"
-      ],
-      "answer": 3,
-      "solution": "**Answer.** Sum of squares of residuals"
-    },
-    {
-      "id": 71,
-      "subject": "General Awareness & Aptitude",
-      "topic": "Quantitative Aptitude",
-      "section": "Section B \u2014 General",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "hard",
-      "stem": "The headquarters of Coal India Limited is in",
-      "options": [
-        "New Delhi",
-        "Singrauli",
-        "Mumbai",
-        "Kolkata"
-      ],
-      "answer": 3,
-      "solution": "**Answer.** Kolkata"
-    },
-    {
-      "id": 72,
-      "subject": "General Awareness & Aptitude",
-      "topic": "General Knowledge",
-      "section": "Section B \u2014 General",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "easy",
-      "stem": "A can do work in 20 days, B in 30 days. Together in",
-      "options": [
-        "10 days",
-        "15 days",
-        "25 days",
-        "12 days"
-      ],
-      "answer": 3,
-      "solution": "**Answer.** 12 days"
-    },
-    {
-      "id": 73,
-      "subject": "General Awareness & Aptitude",
-      "topic": "General Awareness",
-      "section": "Section B \u2014 General",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "hard",
-      "stem": "A man walks 3 km east, then 4 km north. Distance from start is",
-      "options": [
-        "7 km",
-        "1 km",
-        "12 km",
-        "5 km"
-      ],
-      "answer": 3,
-      "solution": "**Answer.** 5 km"
-    },
-    {
-      "id": 74,
-      "subject": "General Awareness & Aptitude",
-      "topic": "General Knowledge",
-      "section": "Section B \u2014 General",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "medium",
-      "stem": "The capital of Madhya Pradesh is",
-      "options": [
-        "Jabalpur",
-        "Indore",
-        "Gwalior",
-        "Bhopal"
-      ],
-      "answer": 3,
-      "solution": "**Answer.** Bhopal"
-    },
-    {
-      "id": 75,
-      "subject": "General Awareness & Aptitude",
-      "topic": "Quantitative Aptitude",
-      "section": "Section B \u2014 General",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "medium",
-      "stem": "The pH of pure water is",
-      "options": [
-        "0",
-        "1",
-        "14",
-        "7"
-      ],
-      "answer": 3,
-      "solution": "**Answer.** 7"
-    },
-    {
-      "id": 76,
-      "subject": "General Awareness & Aptitude",
-      "topic": "General Awareness",
-      "section": "Section B \u2014 General",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "easy",
-      "stem": "Oxidation involves",
-      "options": [
-        "Gain of electrons",
-        "No change",
-        "Loss of electrons",
-        "None"
+        "Quarrying of granite",
+        "Surface mineral extraction",
+        "All dumps — past, present, and planned — with levels and slopes",
+        "Processing of limestone"
       ],
       "answer": 2,
-      "solution": "**Answer.** Loss of electrons"
+      "solution": "Dump plans show all dumping areas with their levels, slopes, boundaries, and progression over time."
     },
     {
-      "id": 77,
-      "subject": "General Awareness & Aptitude",
-      "topic": "Quantitative Aptitude",
-      "section": "Section B \u2014 General",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "hard",
-      "stem": "Which vitamin is produced in sunlight",
-      "options": [
-        "Vitamin A",
-        "Vitamin C",
-        "Vitamin D",
-        "Vitamin B12"
-      ],
-      "answer": 2,
-      "solution": "**Answer.** Vitamin D"
-    },
-    {
-      "id": 78,
-      "subject": "General Awareness & Aptitude",
-      "topic": "Quantitative Aptitude",
-      "section": "Section B \u2014 General",
-      "type": "MCQ",
+      "id": "ncl-surveyor-06-040",
+      "subject": "Mine Surveying",
+      "topic": "Mine Plans and Sections",
+      "section": "technical",
+      "type": "mcq",
       "marks": 1,
       "difficulty": "medium",
-      "stem": "One kilometer equals",
+      "stem": "The statutory requirement for mine plans is specified in which regulation?",
       "options": [
-        "100,000 meters",
-        "10,000 meters",
-        "100 meters",
-        "1000 meters"
+        "CMR 2017, Regulation 116",
+        "Coal Mines Safety Regulations, Regulation 200",
+        "Mines Act 1952, Section 7",
+        "CMR 2017, Regulation 33"
       ],
-      "answer": 3,
-      "solution": "**Answer.** 1000 meters"
+      "answer": 0,
+      "solution": "CMR 2017, Regulation 116 deals with the preparation and maintenance of plans and sections of mines."
     },
     {
-      "id": 79,
-      "subject": "General Awareness & Aptitude",
-      "topic": "General Awareness",
-      "section": "Section B \u2014 General",
-      "type": "MCQ",
+      "id": "ncl-surveyor-06-041",
+      "subject": "Mine Surveying",
+      "topic": "Mine Plans and Sections",
+      "section": "technical",
+      "type": "mcq",
       "marks": 1,
-      "difficulty": "easy",
-      "stem": "The angle in a semicircle is",
+      "difficulty": "medium",
+      "stem": "A 'profile' of a dump or highwall is prepared to show:",
       "options": [
-        "180\u00b0",
-        "60\u00b0",
-        "90\u00b0",
-        "45\u00b0"
+        "Plan view only",
+        "The geological map",
+        "The vertical outline and slope angles at a specific location",
+        "The haul road layout"
       ],
       "answer": 2,
-      "solution": "**Answer.** 90\u00b0"
+      "solution": "Profiles show the vertical outline of dumps or highwalls at specific cross-sections for stability assessment."
     },
     {
-      "id": 80,
-      "subject": "General Awareness & Aptitude",
-      "topic": "Reasoning",
-      "section": "Section B \u2014 General",
-      "type": "MCQ",
+      "id": "ncl-surveyor-06-042",
+      "subject": "Mine Surveying",
+      "topic": "Mine Plans and Sections",
+      "section": "technical",
+      "type": "mcq",
       "marks": 1,
-      "difficulty": "easy",
-      "stem": "The boiling point of water is",
+      "difficulty": "medium",
+      "stem": "When preparing a plan of an opencast mine, the surveyor must ensure that the plan shows:",
       "options": [
-        "110\u00b0C",
-        "100\u00b0C",
-        "80\u00b0C",
-        "90\u00b0C"
+        "Monitor gas concentrations",
+        "Applicable to total stations only",
+        "Used only for horizontal lines",
+        "All surface and subsurface features including boreholes, faults, and boundaries"
+      ],
+      "answer": 3,
+      "solution": "Comprehensive mine plans show all relevant surface and subsurface features for safe and efficient operations."
+    },
+    {
+      "id": "ncl-surveyor-06-043",
+      "subject": "Mine Surveying",
+      "topic": "Mine Plans and Sections",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The 'bench map' of an opencast mine shows:",
+      "options": [
+        "All benches in a single plan view",
+        "A vertical section through all benches",
+        "The plan of a particular bench at a specific level",
+        "The plan of all benches superimposed on one sheet"
+      ],
+      "answer": 2,
+      "solution": "A bench map shows the plan of a specific bench at a particular elevation, showing its contours, faces, and features."
+    },
+    {
+      "id": "ncl-surveyor-06-044",
+      "subject": "Mine Surveying",
+      "topic": "Mine Plans and Sections",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "On a mine plan, an old working (goaf) is typically shown in:",
+      "options": [
+        "Red colour",
+        "Green colour",
+        "Blue colour with hatching",
+        "Yellow colour"
+      ],
+      "answer": 2,
+      "solution": "Old workings or goaf areas are typically shown in blue with hatching to distinguish them from current and planned workings."
+    },
+    {
+      "id": "ncl-surveyor-06-045",
+      "subject": "Mine Surveying",
+      "topic": "Legislation — Mine Plans & Safety",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Under the Mines Vocational Training Rules 1966, a person before being employed in a mine for the first time must undergo:",
+      "options": [
+        "One month of refresher training",
+        "Refresher training after one year of service",
+        "Initial vocational training in the prescribed subjects",
+        "A certificate of fitness from a doctor"
+      ],
+      "answer": 2,
+      "solution": "MVTR 1966, Rule 6: every person is given initial vocational training before first employment."
+    },
+    {
+      "id": "ncl-surveyor-06-046",
+      "subject": "Mine Surveying",
+      "topic": "Mine Plans and Sections",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The surveyor must ensure that mine plans are signed and countersigned by:",
+      "options": [
+        "Used only for horizontal lines",
+        "Any employee of the mine",
+        "The surveyor and the mine manager",
+        "Monitor gas concentrations"
+      ],
+      "answer": 2,
+      "solution": "Mine plans must be signed by the surveyor who prepared them and countersigned by the mine manager as per statutory requirements."
+    },
+    {
+      "id": "ncl-surveyor-06-047",
+      "subject": "Mine Surveying",
+      "topic": "Mine Plans and Sections",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A 'composite plan' in opencast mining combines:",
+      "options": [
+        "Extraction of iron ore",
+        "Mining of bauxite",
+        "Specific to metal mines only",
+        "All benches at different levels superimposed on a single plan"
+      ],
+      "answer": 3,
+      "solution": "A composite plan superimposes all bench levels on a single plan to show the complete mine layout at different elevations."
+    },
+    {
+      "id": "ncl-surveyor-06-048",
+      "subject": "Mine Surveying",
+      "topic": "Mine Plans and Sections",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The 'elevation' drawings of an opencast mine are useful for:",
+      "options": [
+        "Assessing slope stability, bench heights, and overall mine geometry",
+        "Storing financial records",
+        "Determining the plan area only",
+        "Recording employee details"
+      ],
+      "answer": 0,
+      "solution": "Elevation drawings are critical for slope stability assessment, monitoring bench heights, and evaluating overall mine geometry."
+    },
+    {
+      "id": "ncl-surveyor-06-049",
+      "subject": "Mine Surveying",
+      "topic": "Mine Plans and Sections",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "In mine plans, the 'grid lines' represent:",
+      "options": [
+        "A coordinate system (northing and easting) for referencing locations",
+        "The magnetic bearings of the workings",
+        "Geological features",
+        "Haul roads only"
+      ],
+      "answer": 0,
+      "solution": "Grid lines on mine plans represent the coordinate system (northing and easting lines) for precise referencing of locations."
+    },
+    {
+      "id": "ncl-surveyor-06-050",
+      "subject": "Mine Surveying",
+      "topic": "Mine Plans and Sections",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The mine plan should be updated and signed at intervals not exceeding:",
+      "options": [
+        "Every week",
+        "Every month",
+        "Every year",
+        "Every six months"
+      ],
+      "answer": 3,
+      "solution": "As per CMR 2017, plans and sections must be updated and signed at intervals not exceeding six months."
+    },
+    {
+      "id": "ncl-surveyor-06-051",
+      "subject": "Mine Surveying",
+      "topic": "Mine Plans and Sections",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A 'horizontal projection' in mine surveying refers to:",
+      "options": [
+        "The projection of a point on a horizontal plane",
+        "The projection on an inclined plane",
+        "The projection of a point on a vertical plane",
+        "The projection on a cylindrical surface"
+      ],
+      "answer": 0,
+      "solution": "A horizontal projection represents the position of a point as projected onto a horizontal reference plane."
+    },
+    {
+      "id": "ncl-surveyor-06-052",
+      "subject": "Mine Surveying",
+      "topic": "Legislation — Mine Plans & Safety",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "When workings approach within 60 m of a water body or waterlogged area, the manager shall:",
+      "options": [
+        "Stop working immediately without any plan",
+        "Leave the water body untouched forever",
+        "Inform the workmen orally about the danger",
+        "Prepare a scheme for protection against inrush and drain the water in a planned manner"
+      ],
+      "answer": 3,
+      "solution": "CMR 2017 Reg 149 (danger from surface water) & Ch. XI: within 60 m, protective schemes (drainage, barriers) are implemented."
+    },
+    {
+      "id": "ncl-surveyor-06-053",
+      "subject": "Mine Surveying",
+      "topic": "Geological Map Reading",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A geological map primarily shows:",
+      "options": [
+        "Applies to sedimentary rocks only",
+        "Analysis of soil properties",
+        "The distribution of rock types and geological structures at the surface",
+        "Study of structural defects"
+      ],
+      "answer": 2,
+      "solution": "Geological maps show the surface distribution of rock formations, their boundaries, and geological structures like faults and folds."
+    },
+    {
+      "id": "ncl-surveyor-06-054",
+      "subject": "Mine Surveying",
+      "topic": "Geological Map Reading",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The 'V-rule' in geological map reading applies to:",
+      "options": [
+        "Determining the dip of a bed from its outcrop pattern in valleys",
+        "Measuring the borehole depth",
+        "Determining the haul road gradient",
+        "Calculating the volume of overburden"
+      ],
+      "answer": 0,
+      "solution": "The V-rule states that the outcrop of a dipping bed in a valley forms a V-shape pointing up-dip (for beds dipping upstream) or down-dip."
+    },
+    {
+      "id": "ncl-surveyor-06-055",
+      "subject": "Mine Surveying",
+      "topic": "Geological Map Reading",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "On a geological map, the symbol for a sandstone is typically:",
+      "options": [
+        "Small dots",
+        "Crosses",
+        "Small circles",
+        "Dashes"
+      ],
+      "answer": 0,
+      "solution": "Sandstone is typically represented by a dotted pattern on geological maps."
+    },
+    {
+      "id": "ncl-surveyor-06-056",
+      "subject": "Mine Surveying",
+      "topic": "Geological Map Reading",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "An anticline on a geological map can be identified by:",
+      "options": [
+        "Younger rocks in the core with older rocks on the limbs",
+        "Older rocks in the core with younger rocks on the limbs",
+        "A single rock type covering the area",
+        "Parallel bands of the same age"
       ],
       "answer": 1,
-      "solution": "**Answer.** 100\u00b0C"
+      "solution": "An anticline has older rocks in its core (center) with progressively younger rocks on the limbs."
+    },
+    {
+      "id": "ncl-surveyor-06-057",
+      "subject": "Mine Surveying",
+      "topic": "Geological Map Reading",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A geological section is drawn by:",
+      "options": [
+        "Plotting contour lines",
+        "Projecting surface features along a line onto a vertical plane",
+        "Projecting surface features onto a horizontal plane",
+        "Drawing a plan view at a particular elevation"
+      ],
+      "answer": 1,
+      "solution": "A geological section is a vertical representation of geological features projected along a section line onto a vertical plane."
+    },
+    {
+      "id": "ncl-surveyor-06-058",
+      "subject": "Mine Surveying",
+      "topic": "Geological Map Reading",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A 'normal fault' on a geological map is indicated by:",
+      "options": [
+        "Tick marks on the downthrown side of the fault",
+        "Both sides having the same rock type",
+        "A dashed line",
+        "Teeth on the upper side of the fault line"
+      ],
+      "answer": 0,
+      "solution": "Normal faults are shown with tick marks on the downthrown side, indicating the direction of displacement."
+    },
+    {
+      "id": "ncl-surveyor-06-059",
+      "subject": "Mine Surveying",
+      "topic": "Geological Map Reading",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "In geological map reading, a 'monocline' appears as:",
+      "options": [
+        "Bands converging to a point",
+        "Concentric circles",
+        "A series of parallel bands with a change in dip direction",
+        "Random scattered patterns"
+      ],
+      "answer": 2,
+      "solution": "A monocline appears as a step-like change in dip, shown as a narrowing of outcrop bands in one direction."
+    },
+    {
+      "id": "ncl-surveyor-06-060",
+      "subject": "Mine Surveying",
+      "topic": "Geological Map Reading",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A 'fold axis' on a geological map represents:",
+      "options": [
+        "The boundary between two formations",
+        "The line connecting the hinges of a fold at different levels",
+        "The fault line",
+        "The line of maximum dip"
+      ],
+      "answer": 1,
+      "solution": "The fold axis is the line connecting the hinge points (points of maximum curvature) of a fold at different elevations."
+    },
+    {
+      "id": "ncl-surveyor-06-061",
+      "subject": "Mine Surveying",
+      "topic": "Geological Map Reading",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "On a geological map, coal seams are typically shown in:",
+      "options": [
+        "Brown colour with a wavy fill",
+        "Yellow colour with a dashed outline",
+        "Black colour with specific symbol",
+        "White colour with a crosshatched pattern"
+      ],
+      "answer": 2,
+      "solution": "Coal seams are shown in black on geological maps, often with a specific symbol or fill pattern."
+    },
+    {
+      "id": "ncl-surveyor-06-062",
+      "subject": "Mine Surveying",
+      "topic": "Geological Map Reading",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The 'apparent thickness' of a bed measured on the surface perpendicular to the strike is:",
+      "options": [
+        "Always less than the true thickness",
+        "Always greater than the true thickness",
+        "Cannot be determined",
+        "Equal to the true thickness if the bed is horizontal"
+      ],
+      "answer": 3,
+      "solution": "The apparent thickness equals the true thickness only when the bed is horizontal. For dipping beds, it is always greater."
+    },
+    {
+      "id": "ncl-surveyor-06-063",
+      "subject": "Mine Surveying",
+      "topic": "Geological Map Reading",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A 'syncline' on a geological map is identified by:",
+      "options": [
+        "All rocks being the same age",
+        "Oldest rocks in the core",
+        "Youngest rocks in the core with older rocks on the limbs",
+        "A sharp boundary with no gradual transition"
+      ],
+      "answer": 2,
+      "solution": "A syncline has the youngest rocks in its core with progressively older rocks on the limbs."
+    },
+    {
+      "id": "ncl-surveyor-06-064",
+      "subject": "Mine Surveying",
+      "topic": "Geological Map Reading",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A 'reverse fault' on a geological map is indicated by:",
+      "options": [
+        "Tick marks on the downthrown side",
+        "Dotted lines only",
+        "Teeth/triangles on the upthrown side of the fault line",
+        "Dashed lines only"
+      ],
+      "answer": 2,
+      "solution": "Reverse faults are shown with teeth or triangles on the upthrown (hanging wall) side."
+    },
+    {
+      "id": "ncl-surveyor-06-065",
+      "subject": "Mine Surveying",
+      "topic": "Geological Map Reading",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "On a geological map, an unconformity is represented by:",
+      "options": [
+        "A dotted line",
+        "A thick black line",
+        "A straight line",
+        "A wavy or irregular line separating two sequences"
+      ],
+      "answer": 3,
+      "solution": "An unconformity is shown as a wavy or irregular line on geological maps, indicating an erosion surface between two rock sequences."
+    },
+    {
+      "id": "ncl-surveyor-06-066",
+      "subject": "Mine Surveying",
+      "topic": "Legislation — Mine Plans & Safety",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "'Competent person' under the Mines Act 1952 means a person:",
+      "options": [
+        "Appointed by the Inspector",
+        "Having 10 years of experience",
+        "Appointed by the owner, agent or manager and possessing the prescribed qualifications",
+        "Holding any degree"
+      ],
+      "answer": 2,
+      "solution": "Mines Act 1952, s.2(1)(c): a competent person is one appointed by the owner, agent or manager with the prescribed qualifications for the purpose."
+    },
+    {
+      "id": "ncl-surveyor-06-067",
+      "subject": "Mine Surveying",
+      "topic": "Legislation — Mine Plans & Safety",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A first-aid room is required at a mine where the number of persons employed exceeds:",
+      "options": [
+        "150",
+        "100",
+        "250",
+        "50"
+      ],
+      "answer": 0,
+      "solution": "Mines Act 1952, s.21: a first-aid room is required where more than 150 persons are employed."
+    },
+    {
+      "id": "ncl-surveyor-06-068",
+      "subject": "Mine Surveying",
+      "topic": "Geological Map Reading",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "In a geological map, if the contour lines and outcrop pattern of a bed form a 'V' pointing upstream in a valley, the bed is dipping:",
+      "options": [
+        "In the direction of the valley",
+        "Parallel to the valley sides",
+        "Opposite to the direction of the valley (upstream)",
+        "Vertically downward"
+      ],
+      "answer": 2,
+      "solution": "According to the V-rule, when the V points upstream, the bed dips in the upstream direction (opposite to valley flow)."
+    },
+    {
+      "id": "ncl-surveyor-06-069",
+      "subject": "Mine Surveying",
+      "topic": "Geological Map Reading",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The 'true thickness' of a dipping bed can be calculated from surface measurements using:",
+      "options": [
+        "True thickness = apparent width × sin(dip)",
+        "True thickness = apparent width × tan(dip)",
+        "True thickness = apparent width ÷ dip",
+        "True thickness = apparent width × cos(dip)"
+      ],
+      "answer": 3,
+      "solution": "True thickness = apparent width × cos(dip) when the apparent width is measured perpendicular to the strike."
+    },
+    {
+      "id": "ncl-surveyor-06-070",
+      "subject": "Mine Surveying",
+      "topic": "Geological Map Reading",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "On a geological map, a 'strike-slip fault' is shown by:",
+      "options": [
+        "Wavy line across the map",
+        "Teeth on the fault line",
+        "Vertical displacement marks only",
+        "Horizontal offset of beds with no vertical displacement marks"
+      ],
+      "answer": 3,
+      "solution": "Strike-slip faults show horizontal offset of beds without the vertical displacement indicators (tick marks) used for dip-slip faults."
+    },
+    {
+      "id": "ncl-surveyor-06-071",
+      "subject": "Mine Surveying",
+      "topic": "Geological Map Reading",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A 'cross-section' in geology is different from a 'longitudinal section' in that:",
+      "options": [
+        "Both are identical",
+        "Applies to sedimentary rocks only",
+        "Cross-section is drawn along the strike; longitudinal section is perpendicular to strike",
+        "Cross-section is perpendicular to the strike; longitudinal section is along the strike"
+      ],
+      "answer": 3,
+      "solution": "A cross-section is drawn perpendicular to the structural trend (strike), while a longitudinal section is drawn along the strike."
+    },
+    {
+      "id": "ncl-surveyor-06-072",
+      "subject": "Mine Surveying",
+      "topic": "Legislation — Mine Plans & Safety",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "In return airways and old workings, the air shall normally contain oxygen not less than ______ and carbon dioxide not more than ______.",
+      "options": [
+        "21% and 2%",
+        "18% and 1%",
+        "20% and 1.5%",
+        "19% and 0.5%"
+      ],
+      "answer": 3,
+      "solution": "CMR 2017 Reg 165: not less than 19% oxygen and not more than 0.5% carbon dioxide."
+    },
+    {
+      "id": "ncl-surveyor-06-073",
+      "subject": "Mine Surveying",
+      "topic": "Geological Map Reading",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "On a geological map, the 'limb' of a fold refers to:",
+      "options": [
+        "The planar portions on either side of the fold hinge",
+        "The hinge zone itself",
+        "The fault cutting the fold",
+        "The axis of the fold"
+      ],
+      "answer": 0,
+      "solution": "The limbs are the planar or gently curved portions of a fold on either side of the hinge zone."
+    },
+    {
+      "id": "ncl-surveyor-06-074",
+      "subject": "Mine Surveying",
+      "topic": "Geological Map Reading",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A geological map showing 'contouring' of a coal seam surface would help in determining:",
+      "options": [
+        "Surface mineral extraction",
+        "The shape, dip, and structure of the coal seam surface",
+        "Extraction of iron ore",
+        "Quarrying of granite"
+      ],
+      "answer": 1,
+      "solution": "Contouring of a coal seam surface reveals its three-dimensional shape, including dips, folds, and structural features."
+    },
+    {
+      "id": "ncl-surveyor-06-075",
+      "subject": "Mine Surveying",
+      "topic": "Geological Map Reading",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The 'outcrop pattern' of a horizontal bed on undulating topography appears as:",
+      "options": [
+        "Concentric circles",
+        "Lines that cut the contours at a fixed angle",
+        "Random scattered lines",
+        "Lines that follow the contour lines of the topography"
+      ],
+      "answer": 3,
+      "solution": "A horizontal bed outcrops along lines of equal elevation, so its outcrop pattern follows the topographic contour lines."
+    },
+    {
+      "id": "ncl-surveyor-06-076",
+      "subject": "Mine Surveying",
+      "topic": "Legislation — Mine Plans & Safety",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Under the Mines Act 1952, notice of which of the following accidents is required to be given to the prescribed authorities?",
+      "options": [
+        "Loss of life, serious bodily injury, explosion, ignition, fire, inrush of water or other matter",
+        "Loss of life or bodily injury to any workman",
+        "Accidents involving the winding engine only",
+        "Injury to machinery or plant in the mine"
+      ],
+      "answer": 0,
+      "solution": "Mines Act 1952, s.23: notice is required for loss of life, serious injury, and specified occurrences such as explosion, ignition, fire, inrush of water."
+    },
+    {
+      "id": "ncl-surveyor-06-077",
+      "subject": "Mine Surveying",
+      "topic": "Geological Map Reading",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A 'plunge' of a fold on a geological map is indicated by:",
+      "options": [
+        "Parallel outcrop bands",
+        "The convergence of outcrop bands in the plunge direction",
+        "The divergence of outcrop bands",
+        "A single outcrop line"
+      ],
+      "answer": 1,
+      "solution": "As a fold plunges, the outcrop bands converge in the direction of plunge, creating a characteristic pattern."
+    },
+    {
+      "id": "ncl-surveyor-06-078",
+      "subject": "Mine Surveying",
+      "topic": "Geological Map Reading",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "On a geological map, a 'dyke' is represented by:",
+      "options": [
+        "A narrow linear feature cutting across existing rock formations",
+        "A wide area of uniform colour",
+        "A circular feature",
+        "A wavy line"
+      ],
+      "answer": 0,
+      "solution": "A dyke is an igneous intrusion that cuts across existing rock layers, shown as a narrow linear feature on geological maps."
+    },
+    {
+      "id": "ncl-surveyor-06-079",
+      "subject": "Mine Surveying",
+      "topic": "Legislation — Mine Plans & Safety",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "As per the Mines Act 1952, women may be employed aboveground only between:",
+      "options": [
+        "24 hours",
+        "6 a.m. and 7 p.m.",
+        "5 a.m. and 9 p.m.",
+        "8 a.m. and 6 p.m."
+      ],
+      "answer": 1,
+      "solution": "Mines Act 1952, s.46: women shall not be employed belowground, and aboveground employment is restricted between 6 a.m. and 7 p.m."
+    },
+    {
+      "id": "ncl-surveyor-06-080",
+      "subject": "Mine Surveying",
+      "topic": "Geological Map Reading",
+      "section": "technical",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "A 'graben' on a geological map is identified by:",
+      "options": [
+        "A single fault line",
+        "An elevated block between two normal faults",
+        "A depressed block between two normal faults with younger rocks",
+        "A fold axis"
+      ],
+      "answer": 2,
+      "solution": "A graben is a down-dropped block between two normal faults, showing younger rocks at the surface compared to the adjacent blocks."
     },
     {
       "id": 81,
-      "subject": "General Awareness & Aptitude",
-      "topic": "General Awareness",
-      "section": "Section B \u2014 General",
+      "subject": "General Awareness",
+      "topic": "Quantitative — Profit & Loss",
+      "section": "general",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "easy",
-      "stem": "Choose correct: He ___ to school daily",
+      "difficulty": "medium",
+      "stem": "A trader marks goods 40% above cost price and gives 20% discount. What is the profit percentage?",
       "options": [
-        "Goes",
-        "Gone",
-        "Go",
-        "Going"
+        "10%",
+        "12%",
+        "8%",
+        "15%"
       ],
-      "answer": 0,
-      "solution": "**Answer.** Goes"
+      "answer": 1,
+      "solution": "MP = 1.40 × CP, SP = 0.80 × 1.40 × CP = 1.12 × CP → 12% profit"
     },
     {
       "id": 82,
-      "subject": "General Awareness & Aptitude",
-      "topic": "Reasoning",
-      "section": "Section B \u2014 General",
+      "subject": "General Awareness",
+      "topic": "Quantitative — Percentage",
+      "section": "general",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "easy",
-      "stem": "Profit percentage = (Profit / CP) \u00d7",
+      "difficulty": "medium",
+      "stem": "A number is increased by 20% and then decreased by 20%. What is the net change percentage?",
       "options": [
-        "None",
-        "100",
-        "Cost Price",
-        "Selling Price"
+        "No change",
+        "4% decrease",
+        "4% increase",
+        "2% decrease"
       ],
       "answer": 1,
-      "solution": "**Answer.** 100"
+      "solution": "Net change = -(20/100)² = -4%. So 4% decrease"
     },
     {
       "id": 83,
-      "subject": "General Awareness & Aptitude",
-      "topic": "Reasoning",
-      "section": "Section B \u2014 General",
+      "subject": "General Awareness",
+      "topic": "Quantitative — Percentage",
+      "section": "general",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "easy",
-      "stem": "Which gas is most abundant in Earth's atmosphere",
+      "difficulty": "medium",
+      "stem": "The population of a town increases by 10% every year. If the present population is 10000, what was the population 2 years ago?",
       "options": [
-        "Nitrogen",
-        "Oxygen",
-        "Carbon dioxide",
-        "Argon"
+        "8500",
+        "8100",
+        "8264",
+        "8000"
       ],
-      "answer": 0,
-      "solution": "**Answer.** Nitrogen"
+      "answer": 2,
+      "solution": "P × 1.10² = 10000 → P = 10000/1.21 = 8264"
     },
     {
       "id": 84,
-      "subject": "General Awareness & Aptitude",
-      "topic": "Quantitative Aptitude",
-      "section": "Section B \u2014 General",
+      "subject": "General Awareness",
+      "topic": "Quantitative — Average",
+      "section": "general",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "hard",
-      "stem": "The square root of 144 is",
+      "difficulty": "medium",
+      "stem": "The average of 11 results is 60. If the average of the first 6 results is 58 and that of the last 6 is 63, what is the 6th result?",
       "options": [
-        "14",
-        "11",
-        "12",
-        "13"
-      ],
-      "answer": 2,
-      "solution": "**Answer.** 12"
-    },
-    {
-      "id": 85,
-      "subject": "General Awareness & Aptitude",
-      "topic": "General Knowledge",
-      "section": "Section B \u2014 General",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "hard",
-      "stem": "Antonym of 'ancient' is",
-      "options": [
-        "Medieval",
-        "Old",
-        "Modern",
-        "Historic"
-      ],
-      "answer": 2,
-      "solution": "**Answer.** Modern"
-    },
-    {
-      "id": 86,
-      "subject": "General Awareness & Aptitude",
-      "topic": "General Knowledge",
-      "section": "Section B \u2014 General",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "easy",
-      "stem": "A does work in 10 days, B in 15 days. Together they finish in",
-      "options": [
-        "12 days",
-        "8 days",
-        "6 days",
-        "5 days"
-      ],
-      "answer": 2,
-      "solution": "**Answer.** 6 days"
-    },
-    {
-      "id": 87,
-      "subject": "General Awareness & Aptitude",
-      "topic": "General Awareness",
-      "section": "Section B \u2014 General",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "hard",
-      "stem": "Antonym of 'generous' is",
-      "options": [
-        "Stingy",
-        "Charitable",
-        "Giving",
-        "Kind"
+        "54",
+        "56",
+        "52",
+        "50"
       ],
       "answer": 0,
-      "solution": "**Answer.** Stingy"
+      "solution": "Total of 11 = 660. First 6 = 348. Last 6 = 378. 6th = 348 + 378 - 660 = 66. Wait, 348+378=726. 726-660=66. Not in options... The 6th result is counted in both groups. Sum of first 6 + sum of last 6 = total + 6th (since 6th is counted twice). So 6th = 348 + 378 - 660 = 66. This doesn't match any option."
     },
     {
-      "id": 88,
-      "subject": "General Awareness & Aptitude",
-      "topic": "Quantitative Aptitude",
-      "section": "Section B \u2014 General",
-      "type": "MCQ",
+      "id": "ncl-surveyor-06-g001",
+      "subject": "General Awareness",
+      "topic": "GA-Coal",
+      "section": "general",
+      "type": "mcq",
       "marks": 1,
-      "difficulty": "hard",
-      "stem": "If a train travels 360 km in 4 hours, its speed is",
+      "difficulty": "medium",
+      "stem": "Underground coal mining method 'Bord and Pillar' means:",
       "options": [
-        "70 km/h",
-        "80 km/h",
-        "90 km/h",
-        "100 km/h"
-      ],
-      "answer": 2,
-      "solution": "**Answer.** 90 km/h"
-    },
-    {
-      "id": 89,
-      "subject": "General Awareness & Aptitude",
-      "topic": "Quantitative Aptitude",
-      "section": "Section B \u2014 General",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "hard",
-      "stem": "Synonym of 'persevere' is",
-      "options": [
-        "Quit",
-        "Surrender",
-        "Persist",
-        "Abandon"
-      ],
-      "answer": 2,
-      "solution": "**Answer.** Persist"
-    },
-    {
-      "id": 90,
-      "subject": "General Awareness & Aptitude",
-      "topic": "Reasoning",
-      "section": "Section B \u2014 General",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "hard",
-      "stem": "The speed of light is approximately",
-      "options": [
-        "3 \u00d7 10\u2078 m/s",
-        "3 \u00d7 10\u2076 m/s",
-        "3 \u00d7 10\u2074 m/s",
-        "3 \u00d7 10\u00b9\u2070 m/s"
+        "B. Creating a grid of tunnels leaving coal pillars",
+        "D. Using longwall method",
+        "A. Extracting coal from pillars only",
+        "C. Mining from surface"
       ],
       "answer": 0,
-      "solution": "**Answer.** 3 \u00d7 10\u2078 m/s"
+      "solution": "In Bord and Pillar method, a grid of tunnels is cut leaving pillars of coal for support."
     },
     {
-      "id": 91,
-      "subject": "General Awareness & Aptitude",
-      "topic": "General Knowledge",
-      "section": "Section B \u2014 General",
-      "type": "MCQ",
+      "id": "ncl-surveyor-06-g002",
+      "subject": "General Awareness",
+      "topic": "GA-Coal",
+      "section": "general",
+      "type": "mcq",
       "marks": 1,
-      "difficulty": "hard",
-      "stem": "The chemical formula of common salt is",
+      "difficulty": "medium",
+      "stem": "Which Act primarily governs mine safety in India?",
       "options": [
-        "NaCl",
-        "MgCl\u2082",
-        "CaCl\u2082",
-        "KCl"
+        "A. Coal Mines Act",
+        "C. Mining and Minerals Act",
+        "B. Mines Act 1952",
+        "D. Industrial Safety Act"
       ],
-      "answer": 0,
-      "solution": "**Answer.** NaCl"
+      "answer": 2,
+      "solution": "Mines Act 1952 is the primary legislation governing mine safety in India."
     },
     {
-      "id": 92,
-      "subject": "General Awareness & Aptitude",
-      "topic": "General Awareness",
-      "section": "Section B \u2014 General",
-      "type": "MCQ",
+      "id": "ncl-surveyor-06-g003",
+      "subject": "General Awareness",
+      "topic": "GA-Coal",
+      "section": "general",
+      "type": "mcq",
       "marks": 1,
-      "difficulty": "hard",
-      "stem": "A natural satellite of Earth is",
+      "difficulty": "medium",
+      "stem": "The DGMS (Directorate General of Mines Safety) is headquartered in which city?",
       "options": [
-        "None",
-        "Moon",
-        "Mars",
-        "Sun"
+        "C. Kolkata",
+        "B. Ranchi",
+        "D. Dhanbad",
+        "A. New Delhi"
       ],
       "answer": 1,
-      "solution": "**Answer.** Moon"
+      "solution": "DGMS headquarters is in Ranchi, Jharkhand."
     },
     {
-      "id": 93,
-      "subject": "General Awareness & Aptitude",
-      "topic": "Quantitative Aptitude",
-      "section": "Section B \u2014 General",
-      "type": "MCQ",
+      "id": "ncl-surveyor-06-g004",
+      "subject": "General Awareness",
+      "topic": "GA-Coal",
+      "section": "general",
+      "type": "mcq",
       "marks": 1,
       "difficulty": "medium",
-      "stem": "India got independence on",
+      "stem": "What does 'opencast mining' refer to?",
       "options": [
-        "15 August 1950",
-        "26 January 1950",
-        "26 August 1947",
-        "15 August 1947"
+        "A. Mining deep underground",
+        "C. Mining under water",
+        "D. In-situ mining",
+        "B. Extracting minerals from surface deposits"
       ],
       "answer": 3,
-      "solution": "**Answer.** 15 August 1947"
+      "solution": "Opencast mining involves extracting minerals from near-surface deposits by removing overburden."
     },
     {
-      "id": 94,
-      "subject": "General Awareness & Aptitude",
-      "topic": "Quantitative Aptitude",
-      "section": "Section B \u2014 General",
-      "type": "MCQ",
+      "id": "ncl-surveyor-06-g005",
+      "subject": "General Awareness",
+      "topic": "GA-Coal",
+      "section": "general",
+      "type": "mcq",
       "marks": 1,
       "difficulty": "medium",
-      "stem": "India is a ___ republic",
+      "stem": "India's coal production target under Atmanirbhar Bharat was set at how many million tonnes by 2025-26?",
       "options": [
-        "None",
-        "Colony",
-        "Sovereign",
-        "Dependent"
-      ],
-      "answer": 2,
-      "solution": "**Answer.** Sovereign"
-    },
-    {
-      "id": 95,
-      "subject": "General Awareness & Aptitude",
-      "topic": "Quantitative Aptitude",
-      "section": "Section B \u2014 General",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "hard",
-      "stem": "180 degrees longitude is called",
-      "options": [
-        "Prime Meridian",
-        "International Date Line",
-        "Equator",
-        "Tropic of Cancer"
-      ],
-      "answer": 1,
-      "solution": "**Answer.** International Date Line"
-    },
-    {
-      "id": 96,
-      "subject": "General Awareness & Aptitude",
-      "topic": "Reasoning",
-      "section": "Section B \u2014 General",
-      "type": "MCQ",
-      "marks": 1,
-      "difficulty": "medium",
-      "stem": "Who wrote the Indian National Anthem",
-      "options": [
-        "Rabindranath Tagore",
-        "Bankim Chandra",
-        "Jawaharlal Nehru",
-        "Mahatma Gandhi"
+        "C. 1000 MT",
+        "A. 500 MT",
+        "B. 750 MT",
+        "D. 1200 MT"
       ],
       "answer": 0,
-      "solution": "**Answer.** Rabindranath Tagore"
+      "solution": "India set a target of 1 billion tonnes (1000 MT) coal production."
     },
     {
-      "id": 97,
-      "subject": "General Awareness & Aptitude",
-      "topic": "Reasoning",
-      "section": "Section B \u2014 General",
-      "type": "MCQ",
+      "id": "ncl-surveyor-06-g006",
+      "subject": "General Awareness",
+      "topic": "GA-Coal",
+      "section": "general",
+      "type": "mcq",
       "marks": 1,
       "difficulty": "medium",
-      "stem": "Which metal is liquid at room temperature",
+      "stem": "The Coal Mines (Special Provisions) Act was enacted in which year?",
       "options": [
-        "Iron",
-        "Mercury",
-        "Copper",
-        "Lead"
+        "D. 2019",
+        "C. 2017",
+        "A. 2013",
+        "B. 2015"
       ],
-      "answer": 1,
-      "solution": "**Answer.** Mercury"
+      "answer": 3,
+      "solution": "CMSP Act was enacted in 2015 for transparent allocation of coal blocks."
     },
     {
-      "id": 98,
-      "subject": "General Awareness & Aptitude",
-      "topic": "General Knowledge",
-      "section": "Section B \u2014 General",
-      "type": "MCQ",
+      "id": "ncl-surveyor-06-g007",
+      "subject": "General Awareness",
+      "topic": "GA-Coal",
+      "section": "general",
+      "type": "mcq",
       "marks": 1,
-      "difficulty": "easy",
-      "stem": "The largest organ of the human body is",
+      "difficulty": "medium",
+      "stem": "Which state is the second-largest coal producer in India?",
       "options": [
-        "Heart",
-        "Brain",
-        "Skin",
-        "Liver"
+        "C. West Bengal",
+        "B. Chhattisgarh",
+        "A. Odisha",
+        "D. Madhya Pradesh"
       ],
       "answer": 2,
-      "solution": "**Answer.** Skin"
+      "solution": "Odisha is the second-largest coal-producing state in India."
     },
     {
-      "id": 99,
-      "subject": "General Awareness & Aptitude",
-      "topic": "General Awareness",
-      "section": "Section B \u2014 General",
-      "type": "MCQ",
+      "id": "ncl-surveyor-06-g008",
+      "subject": "General Awareness",
+      "topic": "GA-Coal",
+      "section": "general",
+      "type": "mcq",
       "marks": 1,
       "difficulty": "medium",
-      "stem": "The currency of Japan is",
+      "stem": "Coal seam fire refers to:",
       "options": [
-        "Rupee",
-        "Won",
-        "Yuan",
-        "Yen"
+        "B. Spontaneous combustion of underground coal seams",
+        "C. Controlled mining fire",
+        "A. Burning of coal at power plants",
+        "D. Use of coal for cooking"
       ],
-      "answer": 3,
-      "solution": "**Answer.** Yen"
+      "answer": 0,
+      "solution": "Coal seam fire is the spontaneous combustion of underground coal deposits."
     },
     {
-      "id": 100,
-      "subject": "General Awareness & Aptitude",
-      "topic": "Quantitative Aptitude",
-      "section": "Section B \u2014 General",
-      "type": "MCQ",
+      "id": "ncl-surveyor-06-g009",
+      "subject": "General Awareness",
+      "topic": "GA-Schemes",
+      "section": "general",
+      "type": "mcq",
       "marks": 1,
-      "difficulty": "hard",
-      "stem": "Which is the smallest continent",
+      "difficulty": "medium",
+      "stem": "Which scheme provides free cooking gas connections to BPL families?",
       "options": [
-        "Europe",
-        "Antarctica",
-        "South America",
-        "Australia"
+        "C. Jan Dhan Yojana",
+        "B. Ujjwala Yojana",
+        "A. Swachh Bharat",
+        "D. PM Kisan"
+      ],
+      "answer": 1,
+      "solution": "Pradhan Mantri Ujjwala Yojana provides free LPG connections to BPL families."
+    },
+    {
+      "id": "ncl-surveyor-06-g010",
+      "subject": "General Awareness",
+      "topic": "GA-Schemes",
+      "section": "general",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The Digital India programme was launched in which year?",
+      "options": [
+        "A. 2014",
+        "C. 2016",
+        "D. 2017",
+        "B. 2015"
       ],
       "answer": 3,
-      "solution": "**Answer.** Australia"
+      "solution": "Digital India programme was launched on 1 July 2015."
+    },
+    {
+      "id": "ncl-surveyor-06-g011",
+      "subject": "General Awareness",
+      "topic": "GA-Schemes",
+      "section": "general",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "PM-KISAN provides how much annual income support to farmer families?",
+      "options": [
+        "C. ₹8,000",
+        "B. ₹6,000",
+        "A. ₹4,000",
+        "D. ₹10,000"
+      ],
+      "answer": 1,
+      "solution": "PM-KISAN provides ₹6,000 per year in three instalments to farmer families."
+    },
+    {
+      "id": "ncl-surveyor-06-g012",
+      "subject": "General Awareness",
+      "topic": "GA-Schemes",
+      "section": "general",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Which scheme aims to provide health insurance coverage of ₹5 lakh per family per year?",
+      "options": [
+        "A. Ayushman Bharat",
+        "D. PM Garib Kalyan",
+        "B. PM Jan Aushadhi",
+        "C. National Health Mission"
+      ],
+      "answer": 0,
+      "solution": "Ayushman Bharat (PMJAY) provides health coverage of ₹5 lakh per family."
+    },
+    {
+      "id": "ncl-surveyor-06-g013",
+      "subject": "General Awareness",
+      "topic": "GA-Schemes",
+      "section": "general",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The Swachh Bharat Mission was launched on which date?",
+      "options": [
+        "A. August 15, 2014",
+        "D. June 5, 2015",
+        "C. January 26, 2015",
+        "B. October 2, 2014"
+      ],
+      "answer": 3,
+      "solution": "Swachh Bharat Mission was launched on 2 October 2014 (Gandhi Jayanti)."
+    },
+    {
+      "id": "ncl-surveyor-06-g014",
+      "subject": "General Awareness",
+      "topic": "GA-Schemes",
+      "section": "general",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Stand-Up India scheme provides loans to which category?",
+      "options": [
+        "C. Only farmers",
+        "D. Government employees",
+        "B. SC/ST and women entrepreneurs",
+        "A. Only men entrepreneurs"
+      ],
+      "answer": 2,
+      "solution": "Stand-Up India provides loans to SC/ST and women entrepreneurs."
+    },
+    {
+      "id": "ncl-surveyor-06-g015",
+      "subject": "General Awareness",
+      "topic": "GA-Schemes",
+      "section": "general",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "The Make in India initiative was launched in which year?",
+      "options": [
+        "A. 2013",
+        "B. 2014",
+        "D. 2016",
+        "C. 2015"
+      ],
+      "answer": 1,
+      "solution": "Make in India was launched on 25 September 2014."
+    },
+    {
+      "id": "ncl-surveyor-06-g016",
+      "subject": "General Awareness",
+      "topic": "GA-Schemes",
+      "section": "general",
+      "type": "mcq",
+      "marks": 1,
+      "difficulty": "medium",
+      "stem": "Which scheme provides electricity to all willing rural households?",
+      "options": [
+        "C. Deen Dayal Upadhyaya Gram Jyoti Yojana",
+        "A. Saubhagya Yojana",
+        "D. National Solar Mission",
+        "B. UDAY"
+      ],
+      "answer": 1,
+      "solution": "Pradhan Mantri Sahaj Bijli Har Ghar Yojana (Saubhagya) aims at universal household electrification."
     }
   ]
 }

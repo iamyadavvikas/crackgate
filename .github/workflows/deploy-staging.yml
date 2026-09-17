@@ -121,6 +121,7 @@ jobs:
           IMAGE_TAG: ${{ needs.build.outputs.image_tag }}
           SKIP_MIGRATE: ${{ inputs.skip_migrate || 'false' }}
           ADMIN_EMAILS: ${{ vars.ADMIN_EMAILS }}
+          IMPERSONATE_SECRET: ${{ secrets.IMPERSONATE_SECRET }}
         run: |
           ssh -i ~/.ssh/id_ed25519 deploy@${{ secrets.STAGING_EC2_HOST }} bash -se <<EOF
             set -euo pipefail
@@ -129,7 +130,14 @@ jobs:
             aws ecr get-login-password --region ${{ env.AWS_REGION }} \
               | docker login --username AWS --password-stdin ${{ secrets.ECR_REGISTRY }}
 
+            # Pin image tag for this deploy. Save the tag the host is currently
+            # running first — a failed healthcheck must roll back to the
+            # last-known-good image, NOT ':latest' (the build job retags 'latest'
+            # to the new image before deploy starts, so 'latest' is the image
+            # that just failed).
             export IMAGE_TAG="${IMAGE_TAG}"
+            PREVIOUS_IMAGE_TAG=$(grep -E '^IMAGE_TAG=' .env.production | cut -d= -f2- | tr -d '"' | tail -1)
+            PREVIOUS_IMAGE_TAG="${PREVIOUS_IMAGE_TAG:-latest}"
             sed -i "s|^IMAGE_TAG=.*|IMAGE_TAG=${IMAGE_TAG}|" .env.production || \
               echo "IMAGE_TAG=${IMAGE_TAG}" >> .env.production
 
@@ -138,6 +146,15 @@ jobs:
                 sed -i "s|^ADMIN_EMAILS=.*|ADMIN_EMAILS=\"${ADMIN_EMAILS}\"|" .env.production
               else
                 echo "ADMIN_EMAILS=\"${ADMIN_EMAILS}\"" >> .env.production
+              fi
+            fi
+
+            # Sync impersonation signing key ("Login as User" view-only mode)
+            if [ -n "${IMPERSONATE_SECRET}" ]; then
+              if grep -q '^IMPERSONATE_SECRET=' .env.production; then
+                sed -i "s|^IMPERSONATE_SECRET=.*|IMPERSONATE_SECRET=\"${IMPERSONATE_SECRET}\"|" .env.production
+              else
+                echo "IMPERSONATE_SECRET=\"${IMPERSONATE_SECRET}\"" >> .env.production
               fi
             fi
 
@@ -174,8 +191,9 @@ jobs:
               sleep 2
             done
 
-            echo "✗ health check failed — rolling back"
-            sed -i "s|^IMAGE_TAG=.*|IMAGE_TAG=latest|" .env.production
+            echo "✗ health check failed — rolling back to ${PREVIOUS_IMAGE_TAG}"
+            sed -i "s|^IMAGE_TAG=.*|IMAGE_TAG=${PREVIOUS_IMAGE_TAG}|" .env.production || \
+              echo "IMAGE_TAG=${PREVIOUS_IMAGE_TAG}" >> .env.production
             docker compose -f docker-compose.aws.yml --env-file .env.production \\
               up -d --no-deps web
             exit 1

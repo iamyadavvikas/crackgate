@@ -10,8 +10,9 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
-  url      = env("DATABASE_URL")
+  provider   = "postgresql"
+  url        = env("DATABASE_URL")
+  directUrl  = env("DIRECT_URL")
 }
 
 enum Plan {
@@ -64,6 +65,7 @@ model User {
   pageViews      PageView[]
   accounts       Account[]
   sessions       Session[]
+  cart           Cart[]
 
   @@index([plan])
   @@index([createdAt])
@@ -159,6 +161,7 @@ model UpiPayment {
   exam          String?                          // ExamTrack code (e.g. "GATE")
   subject       String?                          // subject slug (e.g. "mining")
   amountPaise   Int                              // 49900 = ₹499
+  items         Json?                            // multi-item checkout: [{exam, subject, plan, pricePaise}]
   periodMonths  Int             @default(18)
   payerName     String?                          // full name the user paid with
   payerPhone    String?                          // contact + reconciliation key (UPI payer)
@@ -166,6 +169,8 @@ model UpiPayment {
   upiTxnRef     String?                          // legacy UPI reference (no longer collected)
   upiApp        String?                          // PhonePe | GPay | Paytm | BHIM | Other
   payerNote     String?                          // optional message from user
+  referralSource String?                        // how the user heard about us (optional)
+  promoCode    String?                          // promo code applied at checkout
   status        UpiClaimStatus  @default(pending)
   adminNote     String?                          // reason if rejected
   reviewedById  String?
@@ -178,6 +183,20 @@ model UpiPayment {
   @@index([userId, createdAt(sort: Desc)])
   @@index([status, createdAt])
   @@index([payerPhone])
+}
+
+// Shopping cart — persists across sessions for multi-item checkout.
+model Cart {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  exam      String   // "GATE" | "PSU" | "STATE" | "DIPLOMA"
+  subject   String   // subject slug
+  plan      String   @default("pro") // "pro" | "premium"
+  createdAt DateTime @default(now())
+
+  @@unique([userId, exam, subject])
+  @@index([userId])
 }
 
 // ---------- NextAuth.js tables ----------
@@ -245,6 +264,46 @@ model NewsletterSubscriber {
   @@index([subscribedAt(sort: Desc)])
 }
 
+model NewsletterSend {
+  id             String                @id @default(cuid())
+  subject        String
+  recipientCount Int
+  sentCount      Int                   @default(0)
+  failedCount    Int                   @default(0)
+  status         String                @default("completed") // completed | partial | failed
+  sentAt         DateTime              @default(now())
+  items          NewsletterSendItem[]
+
+  @@index([sentAt(sort: Desc)])
+}
+
+model NewsletterSendItem {
+  id     String  @id @default(cuid())
+  sendId String
+  email  String
+  status String  // delivered | failed
+  error  String? @db.Text
+
+  send NewsletterSend @relation(fields: [sendId], references: [id], onDelete: Cascade)
+
+  @@index([sendId])
+}
+
+model NewsletterSchedule {
+  id          String   @id @default(cuid())
+  subject     String
+  html        String   @db.Text
+  recipients  Json     // NewsletterRecipient[]: { email, name? }
+  scheduledAt DateTime
+  jobId       String?
+  status      String   @default("scheduled") // scheduled | processed
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([status])
+  @@index([scheduledAt])
+}
+
 model QuestionReport {
   id          String    @id @default(cuid())
   userId      String
@@ -283,5 +342,54 @@ model OtpCode {
   @@index([phone, createdAt(sort: Desc)])
   @@index([ip, createdAt(sort: Desc)])
   @@index([expiresAt])
+}
+
+model PromoCode {
+  id        String    @id @default(cuid())
+  code      String    @unique                          // e.g. "FIRST10", "STUDENT50"
+  type      String                                     // "percent" | "flat"
+  value     Int                                        // percent: 10 = 10% off; flat: 5000 = ₹50 off (paise)
+  maxUses   Int?                                       // null = unlimited
+  usedCount Int       @default(0)
+  expiresAt DateTime?
+  active    Boolean   @default(true)
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+
+  @@index([code])
+  @@index([active])
+}
+
+model CareerApplication {
+  id         String    @id @default(cuid())
+  name       String
+  email      String
+  phone      String
+  role       String
+  message    String?
+  portfolio  String?
+  status     String    @default("new") // new | reviewed | shortlisted | rejected
+  notes      String?
+  reviewedAt DateTime?
+  createdAt  DateTime  @default(now())
+
+  @@index([role])
+  @@index([status])
+  @@index([createdAt])
+}
+
+// Admin "login as user" sessions. Every impersonation start/end is recorded
+// so it can be audited (who impersonated whom, and when).
+model AuditLog {
+  id              String   @id @default(cuid())
+  action          String   // impersonate_start | impersonate_end
+  adminId         String
+  adminEmail      String
+  targetUserId    String
+  targetUserEmail String
+  createdAt       DateTime @default(now())
+
+  @@index([action, createdAt(sort: Desc)])
+  @@index([adminId, createdAt(sort: Desc)])
 }
 

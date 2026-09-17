@@ -4,8 +4,12 @@ import { WCL_AF_MOCKS, WCL_AF_PRICING } from "@/data/diploma/wcl-af-mocks";
 import { Breadcrumb } from "@/components/breadcrumb";
 import { ShareOnWhatsApp } from "@/components/share-on-whatsapp";
 import { NewsletterForm } from "@/components/newsletter-form";
+import { AddToCartBtn } from "@/components/add-to-cart-btn";
+import { UnlockNowBtn } from "@/components/unlock-now-btn";
 import { auth } from "@/lib/auth";
+import { db } from "@/lib/db";
 import { hasEntitlement } from "@/lib/entitlements";
+import { canonicalMockId } from "@/lib/mock-registry";
 
 export const dynamic = "force-dynamic";
 
@@ -50,8 +54,17 @@ export default async function WCLAFElectricalPage() {
   const isAdmin = (session?.user as { role?: string } | undefined)?.role === "admin";
   const unlocked = isAdmin || (await hasEntitlement(userId ?? "", "DIPLOMA", "wcl-af-electrical"));
 
+  const attempts = userId
+    ? await db.attempt.findMany({
+        where: { userId, kind: "mock" },
+        select: { id: true, refId: true, takenAt: true },
+        orderBy: { takenAt: "desc" },
+      })
+    : [];
+  const completedIds = new Set(attempts.filter(a => a.refId.startsWith("diploma-wcl-foreman-mock-")).map(a => canonicalMockId(a.refId)));
+  const attemptMap = new Map(attempts.map(a => [canonicalMockId(a.refId), { id: a.id, takenAt: a.takenAt }]));
+
   const liveCount = WCL_AF_MOCKS.length;
-  const payHref = "/pay/upi?plan=pro&exam=DIPLOMA&subject=wcl-af-electrical";
 
   return (
     <>
@@ -150,26 +163,36 @@ export default async function WCLAFElectricalPage() {
                 <div className="text-right">
                   <span className="text-3xl font-extrabold">₹{WCL_AF_PRICING.pro}</span>
                 </div>
-                <Link
-                  href={payHref}
-                  className="cg-neon inline-flex items-center justify-center gap-2 rounded-lg border border-emerald-400/70 bg-emerald-400/10 px-6 py-3 text-sm font-semibold text-emerald-100 transition hover:bg-emerald-400/20"
-                >
-                  Unlock now <span aria-hidden>→</span>
-                </Link>
+                <div className="flex items-center gap-2">
+                  <UnlockNowBtn
+                    exam="DIPLOMA"
+                    subject="wcl-af-electrical"
+                    plan="pro"
+                    label="Unlock now"
+                    className="cg-neon inline-flex items-center justify-center gap-2 rounded-lg border border-emerald-400/70 bg-emerald-400/10 px-6 py-3 text-sm font-semibold text-emerald-100 transition hover:bg-emerald-400/20"
+                  />
+                  <AddToCartBtn exam="DIPLOMA" subject="wcl-af-electrical" variant="light" size="md" />
+                </div>
                 <span className="text-[11px] text-white/50">Pay via UPI · access in a few hours</span>
               </div>
             </div>
           </div>
         )}
 
+        {completedIds.size > 0 && (
+          <p className="text-sm text-muted mt-6">
+            {completedIds.size} / {liveCount} completed · {liveCount - completedIds.size} remaining
+          </p>
+        )}
+
         {/* Mock card grid */}
-        <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {WCL_AF_MOCKS.map((m) => {
-            const canStart = unlocked;
+            const done = completedIds.has(canonicalMockId(m.id));
             return (
               <div key={m.id} className="card relative flex flex-col p-5">
-                <span className={`badge absolute right-4 top-4 ${unlocked ? "bg-brand/10 text-brand" : "badge-pro"}`}>
-                  {unlocked ? "Ready" : "Locked"}
+                <span className={`badge absolute right-4 top-4 ${done ? "bg-ok/10 text-ok" : unlocked ? "bg-brand/10 text-brand" : "badge-pro"}`}>
+                  {done ? "✓ Completed" : unlocked ? "Ready" : "Locked"}
                 </span>
                 <div className="text-xs font-mono text-brand">{m.title}</div>
                 <div className="mt-3 flex flex-wrap gap-2 text-xs text-muted">
@@ -177,14 +200,22 @@ export default async function WCLAFElectricalPage() {
                   <span className="rounded-md bg-canvas px-2 py-1">{m.duration} min</span>
                   <span className="rounded-md bg-canvas px-2 py-1">{m.totalMarks} marks</span>
                 </div>
-                {canStart ? (
+                {done ? (
+                  <Link href={`/result/${attemptMap.get(canonicalMockId(m.id))!.id}`} className="btn btn-ghost mt-4 w-full justify-center">
+                    Review Answers →
+                  </Link>
+                ) : unlocked ? (
                   <Link href={`/mocks/${m.id}`} className="btn btn-primary mt-4 w-full justify-center">
                     Start Mock
                   </Link>
                 ) : (
-                  <Link href={payHref} title="Unlock to access" className="btn btn-ghost mt-4 w-full justify-center gap-2">
-                    <span aria-hidden>🔒</span> Unlock to access
-                  </Link>
+                  <UnlockNowBtn
+                    exam="DIPLOMA"
+                    subject="wcl-af-electrical"
+                    plan="pro"
+                    label="Unlock to access"
+                    className="btn btn-ghost mt-4 w-full justify-center gap-2"
+                  />
                 )}
               </div>
             );

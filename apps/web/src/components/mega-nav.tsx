@@ -5,25 +5,16 @@ import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { cn } from "@/lib/utils";
 import { PSU_COMPANIES } from "@/data/psu";
+import { GATE_NAV_BRANCHES } from "@/data/gate/nav";
 
 type Branch = { label: string; href: string };
-
-const GATE_BRANCHES: Branch[] = [
-  { label: "Mining Engineering (MN)", href: "/gate/mining" },
-  { label: "Civil Engineering (CE)", href: "/gate/civil" },
-  { label: "Geology and Geophysics (GG)", href: "/gate/geology" },
-  { label: "Environmental Science and Engineering (ES)", href: "/gate/environment" },
-  { label: "Geomatics Engineering (GE)", href: "/gate/geomatics" },
-  { label: "Textile Engineering and Fibre Science (TF)", href: "/gate/textile" },
-  { label: "Life Sciences (XL)", href: "/gate/life-sciences" },
-  { label: "Ecology and Evolution (EY)", href: "/gate/ecology" },
-  { label: "Agricultural Engineering (AG)", href: "/gate/agricultural" },
-];
 
 const RESOURCE_LINKS: Branch[] = [
   { label: "Blog", href: "/blog" },
   { label: "News", href: "/news" },
+  { label: "Downloads", href: "/downloads" },
   { label: "About Us", href: "/about" },
+  { label: "Careers", href: "/about/careers" },
 ];
 
 export function MegaNav() {
@@ -77,6 +68,16 @@ export function MegaNav() {
 
   const isActive = (href: string) => pathname === href || pathname.startsWith(href + "/");
 
+  const isMostSpecificActive = (href: string) => {
+    if (!isActive(href)) return false;
+    return !RESOURCE_LINKS.some(
+      (other) =>
+        other.href !== href &&
+        other.href.length > href.length &&
+        isActive(other.href),
+    );
+  };
+
   // PSU mocks live under /mocks/cil-* and should highlight the PSU nav, not GATE.
   const isPsuMock = /^\/mocks\/(cil-)/.test(pathname);
 
@@ -105,7 +106,7 @@ export function MegaNav() {
         </button>
         {open === "gate" && (
           <Panel className="w-72">
-            {GATE_BRANCHES.map((b) => (
+            {GATE_NAV_BRANCHES.map((b) => (
               <Link
                 key={b.href}
                 href={b.href}
@@ -319,7 +320,7 @@ export function MegaNav() {
                 href={l.href}
                 className={cn(
                   "block rounded-md px-3 py-2 text-sm font-medium",
-                  isActive(l.href) ? "text-brand bg-brand/5" : "text-ink hover:bg-canvas",
+                  isMostSpecificActive(l.href) ? "text-brand bg-brand/5" : "text-ink hover:bg-canvas",
                 )}
               >
                 {l.label}

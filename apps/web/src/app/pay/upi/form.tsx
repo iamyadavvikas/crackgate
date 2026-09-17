@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { whatsappLink } from "@/lib/contact";
+import { WHATSAPP_COMMUNITY_URL } from "@/lib/contact";
 
 type Props = {
   plan: "pro" | "premium";
@@ -15,6 +15,12 @@ type Props = {
   defaultSubject?: string;
   /** Friendly label shown when attribution is locked from a deep link. */
   defaultSubjectLabel?: string;
+  /** True when purchasing a combo (shows both entitlements). */
+  isCombo?: boolean;
+  /** Display names for combo entitlements. */
+  comboLabels?: string[];
+  /** Friendly combo name, e.g. "WCL + NCL Mining Sirdar Combo". */
+  comboName?: string;
 };
 
 const APPS = ["PhonePe", "GPay", "Paytm", "BHIM", "Other"] as const;
@@ -35,6 +41,9 @@ export default function UpiClaimForm({
   defaultExam,
   defaultSubject = "",
   defaultSubjectLabel,
+  isCombo = false,
+  comboLabels = [],
+  comboName,
 }: Props) {
   const router = useRouter();
   // Attribution is locked when the buyer arrived from a specific product CTA
@@ -47,7 +56,6 @@ export default function UpiClaimForm({
   const [examName, setExamName] = useState<(typeof EXAMS)[number]>(coerceExam(defaultExam));
   const [subject, setSubject] = useState(defaultSubject);
   const [upiApp, setUpiApp] = useState<(typeof APPS)[number]>("PhonePe");
-  const [payerNote, setPayerNote] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [done, setDone] = useState(false);
@@ -75,7 +83,6 @@ export default function UpiClaimForm({
           examName,
           subject: subject.trim(),
           upiApp,
-          payerNote: payerNote.trim() || undefined,
         }),
       });
       const data = await r.json().catch(() => ({}));
@@ -121,6 +128,11 @@ export default function UpiClaimForm({
           Thanks, <b>{payerName.trim() || "there"}</b> — we&apos;ve received
           your <b className="capitalize">{plan}</b> claim of{" "}
           <b>₹{amountRupees}</b>.
+          {isCombo && (
+            <span className="block mt-1 text-xs text-ok font-medium">
+              {comboName ?? "Combo"} — unlocks 2 test series
+            </span>
+          )}
         </p>
         <p className="mt-2 text-sm text-muted">
           We verify against our UPI app and unlock your access within a few
@@ -136,9 +148,7 @@ export default function UpiClaimForm({
             Back to dashboard
           </button>
           <a
-            href={whatsappLink(
-              `Hi! I just submitted my ${plan} UPI payment (₹${amountRupees}). My phone: ${payerPhone.trim()}`,
-            )}
+            href={WHATSAPP_COMMUNITY_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn-ghost w-full text-sm"
@@ -288,21 +298,6 @@ export default function UpiClaimForm({
             </option>
           ))}
         </select>
-      </div>
-
-      <div>
-        <label htmlFor="note" className="block text-xs font-semibold text-muted">
-          Note (optional)
-        </label>
-        <textarea
-          id="note"
-          rows={2}
-          maxLength={280}
-          value={payerNote}
-          onChange={(e) => setPayerNote(e.target.value)}
-          placeholder="Anything we should know — e.g. paid from a different UPI ID"
-          className="input w-full mt-1"
-        />
       </div>
 
       {error && (

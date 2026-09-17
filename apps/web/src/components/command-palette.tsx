@@ -132,6 +132,7 @@ function buildCommands(): Command[] {
   cmds.push(
     { id: "pricing", label: "Pricing", description: "Plans & features", icon: Briefcase, href: "/pricing", category: "Quick Links" },
     { id: "about", label: "About Us", icon: Shield, href: "/about", category: "Quick Links" },
+    { id: "careers", label: "Careers", icon: Briefcase, href: "/about/careers", category: "Quick Links" },
     { id: "faq", label: "FAQ", icon: Search, href: "/faq", category: "Quick Links" },
     { id: "contact", label: "Contact", icon: Search, href: "/contact", category: "Quick Links" },
     { id: "state", label: "State Exams", icon: MapPin, href: "/state", category: "Quick Links" },
@@ -307,7 +308,6 @@ export function CommandPalette({ className = "" }: { className?: string }) {
         )}
       >
         <Search size={15} aria-hidden />
-        <span className="hidden sm:inline text-xs text-muted/70">⌘K</span>
       </button>
 
       {/* Overlay */}

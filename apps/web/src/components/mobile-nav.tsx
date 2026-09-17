@@ -1,12 +1,12 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useSearchParams } from "next/navigation";
 import { useCallback, useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import { cn } from "@/lib/utils";
 import { PSU_COMPANIES, type PsuCompany } from "@/data/psu";
-import { openCommandPalette } from "@/components/command-palette";
+import { GATE_NAV_BRANCHES } from "@/data/gate/nav";
 
 type Leaf = { href: string; label: string; soon?: boolean };
 
@@ -15,36 +15,7 @@ const SECTION_PILLS: Leaf[] = [
   { href: "/psu", label: "PSU" },
   { href: "/state", label: "State Exams" },
   { href: "/diploma", label: "Diploma" },
-];
-
-const DRAWER_SECTIONS = [
-  {
-    title: "Exam Tracks",
-    items: [
-      { href: "/gate/mining", label: "GATE Mining (MN)" },
-      { href: "/gate/civil", label: "GATE Civil (CE)" },
-      { href: "/gate/geology", label: "GATE Geology (GG)" },
-      { href: "/gate/environment", label: "GATE Environment (ES)" },
-      { href: "/state", label: "State Exams" },
-      { href: "/diploma", label: "Diploma" },
-    ],
-  },
-  {
-    title: "Prep",
-    items: [
-      { href: "/mocks", label: "Mock Tests" },
-      { href: "/practice", label: "Practice" },
-      { href: "/learn", label: "Learn Modules" },
-    ],
-  },
-  {
-    title: "Resources",
-    items: [
-      { href: "/blog", label: "Blog" },
-      { href: "/news", label: "News" },
-      { href: "/about", label: "About Us" },
-    ],
-  },
+  { href: "/resources", label: "Resources" },
 ];
 
 /* ------------------------------------------------------------------ */
@@ -234,61 +205,157 @@ function DiplomaSheet({ onClose }: { onClose: () => void }) {
 }
 
 /* ------------------------------------------------------------------ */
+/* Resources bottom-sheet panel                                       */
+/* ------------------------------------------------------------------ */
+
+const RESOURCE_ITEMS: Leaf[] = [
+  { href: "/blog", label: "Blog" },
+  { href: "/news", label: "News" },
+  { href: "/downloads", label: "Downloads" },
+  { href: "/about", label: "About Us" },
+  { href: "/about/careers", label: "Careers" },
+];
+
+function ResourcesSheet({ onClose }: { onClose: () => void }) {
+  const pathname = usePathname();
+
+  useEffect(() => {
+    const handler = (e: KeyboardEvent) => { if (e.key === "Escape") onClose(); };
+    window.addEventListener("keydown", handler);
+    return () => window.removeEventListener("keydown", handler);
+  }, [onClose]);
+
+  return (
+    <>
+      <div className="fixed inset-0 z-40 bg-black/40 cg-overlay" onClick={onClose} aria-hidden="true" />
+      <div className="fixed bottom-0 left-0 right-0 z-50 max-h-[80dvh] overflow-y-auto rounded-t-2xl border-t border-line bg-surface cg-sheet" role="dialog" aria-label="Resources">
+        <div className="sticky top-0 z-10 flex items-center justify-between bg-surface px-5 pt-3 pb-2 border-b border-line/50">
+          <div className="mx-auto h-1 w-10 rounded-full bg-line/60" />
+          <button type="button" onClick={onClose} className="absolute right-4 top-3 flex h-8 w-8 items-center justify-center rounded-full text-muted hover:bg-canvas transition-colors" aria-label="Close">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><line x1="18" y1="6" x2="6" y2="18" /><line x1="6" y1="6" x2="18" y2="18" /></svg>
+          </button>
+        </div>
+        <div className="px-5 pt-4 pb-2">
+          <h2 className="text-base font-bold text-ink">Resources</h2>
+          <p className="mt-0.5 text-xs text-muted">Blog, news &amp; about us</p>
+        </div>
+        <div className="px-3 pb-6 pt-1 space-y-1.5">
+          {RESOURCE_ITEMS.map((item) => {
+            const hasMoreSpecificMatch = RESOURCE_ITEMS.some(
+              (other) =>
+                other.href !== item.href &&
+                other.href.length > item.href.length &&
+                (pathname === other.href ||
+                  pathname?.startsWith(other.href + "/")),
+            );
+            const active =
+              (pathname === item.href ||
+                pathname?.startsWith(item.href + "/")) &&
+              !hasMoreSpecificMatch;
+            return (
+              <Link key={item.href} href={item.href} onClick={onClose} className={cn("flex items-center justify-between px-4 py-3 rounded-xl border transition-colors", active ? "border-brand/20 bg-brand/5" : "border-line/60 active:bg-canvas")}>
+                <div className="flex items-center gap-3 min-w-0">
+                  <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-canvas text-xs font-bold text-ink border border-line/40">
+                    {item.label[0]}
+                  </div>
+                  <div className="min-w-0">
+                    <div className="text-sm font-semibold text-ink">{item.label}</div>
+                  </div>
+                </div>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" className="text-muted/50 shrink-0"><polyline points="9 18 15 12 9 6" /></svg>
+              </Link>
+            );
+          })}
+        </div>
+      </div>
+    </>
+  );
+}
+
+/* ------------------------------------------------------------------ */
+/* GATE bottom-sheet panel                                            */
+/* ------------------------------------------------------------------ */
+
+function GateSheet({ onClose }: { onClose: () => void }) {
+  const pathname = usePathname();
+
+  useEffect(() => {
+    const handler = (e: KeyboardEvent) => { if (e.key === "Escape") onClose(); };
+    window.addEventListener("keydown", handler);
+    return () => window.removeEventListener("keydown", handler);
+  }, [onClose]);
+
+  const isActive = (href: string) => pathname === href || pathname?.startsWith(href + "/");
+
+  return (
+    <>
+      <div className="fixed inset-0 z-40 bg-black/40 cg-overlay" onClick={onClose} aria-hidden="true" />
+      <div className="fixed bottom-0 left-0 right-0 z-50 max-h-[80dvh] overflow-y-auto rounded-t-2xl border-t border-line bg-surface cg-sheet" role="dialog" aria-label="GATE exams">
+        <div className="sticky top-0 z-10 flex items-center justify-between bg-surface px-5 pt-3 pb-2 border-b border-line/50">
+          <div className="mx-auto h-1 w-10 rounded-full bg-line/60" />
+          <button type="button" onClick={onClose} className="absolute right-4 top-3 flex h-8 w-8 items-center justify-center rounded-full text-muted hover:bg-canvas transition-colors" aria-label="Close">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><line x1="18" y1="6" x2="6" y2="18" /><line x1="6" y1="6" x2="18" y2="18" /></svg>
+          </button>
+        </div>
+        <div className="px-5 pt-4 pb-2">
+          <h2 className="text-base font-bold text-ink">GATE Exam Tracks</h2>
+          <p className="mt-0.5 text-xs text-muted">Discipline-wise GATE preparation</p>
+        </div>
+        <div className="px-3 pb-6 pt-1 space-y-1.5">
+          {GATE_NAV_BRANCHES.map((b) => (
+            <Link key={b.href} href={b.href} onClick={onClose} className={cn("flex items-center justify-between px-4 py-3 rounded-xl border transition-colors", isActive(b.href) ? "border-brand/20 bg-brand/5" : "border-line/60 active:bg-canvas")}>
+              <div className="flex items-center gap-3 min-w-0">
+                <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-canvas text-xs font-bold text-ink border border-line/40">
+                  {b.label.match(/\((\w+)\)/)?.[1] ?? b.label[0]}
+                </div>
+                <div className="min-w-0">
+                  <div className="text-sm font-semibold text-ink">{b.label}</div>
+                </div>
+              </div>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" className="text-muted/50 shrink-0"><polyline points="9 18 15 12 9 6" /></svg>
+            </Link>
+          ))}
+          <Link href="/gate" onClick={onClose} className="flex items-center justify-center gap-1 px-4 py-3 rounded-xl border border-brand/20 bg-brand/5 text-sm font-semibold text-brand">
+            View all GATE tracks <span aria-hidden>→</span>
+          </Link>
+        </div>
+      </div>
+    </>
+  );
+}
+
+/* ------------------------------------------------------------------ */
 /* Mobile section bar + hamburger drawer                              */
 /* ------------------------------------------------------------------ */
 
 export function MobileSectionBar() {
   const pathname = usePathname();
+  const [gateOpen, setGateOpen] = useState(false);
   const [psuOpen, setPsuOpen] = useState(false);
   const [diplomaOpen, setDiplomaOpen] = useState(false);
-  const [drawerOpen, setDrawerOpen] = useState(false);
+  const [resourcesOpen, setResourcesOpen] = useState(false);
 
   const isPsuActive = pathname?.startsWith("/psu");
   const isDiplomaActive = pathname?.startsWith("/diploma");
-
-  useEffect(() => { setDrawerOpen(false); }, [pathname]);
-
-  useEffect(() => {
-    if (drawerOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "";
-    }
-    return () => { document.body.style.overflow = ""; };
-  }, [drawerOpen]);
-
-  useEffect(() => {
-    function onKey(e: KeyboardEvent) {
-      if (e.key === "Escape" && drawerOpen) setDrawerOpen(false);
-    }
-    document.addEventListener("keydown", onKey);
-    return () => document.removeEventListener("keydown", onKey);
-  }, [drawerOpen]);
-
-  const handleSearchTap = useCallback(() => {
-    setDrawerOpen(false);
-    // Small delay so the drawer closes first, then command palette opens
-    requestAnimationFrame(() => openCommandPalette());
-  }, []);
+  const isResourcesActive = pathname?.startsWith("/blog") || pathname?.startsWith("/news") || pathname?.startsWith("/downloads") || pathname?.startsWith("/about");
 
   return (
     <>
       <div className="md:hidden border-t border-line">
         <nav className="flex items-center gap-2 overflow-x-auto no-scrollbar px-3 py-2">
-          <button
-            type="button"
-            onClick={() => setDrawerOpen(true)}
-            aria-label="Open menu"
-            className="shrink-0 flex items-center justify-center w-9 h-9 rounded-full bg-canvas text-ink border border-line hover:bg-brand/10 transition"
-          >
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
-              <line x1="3" y1="6" x2="21" y2="6" />
-              <line x1="3" y1="12" x2="21" y2="12" />
-              <line x1="3" y1="18" x2="21" y2="18" />
-            </svg>
-          </button>
-
           {SECTION_PILLS.map((l) => {
+            if (l.href === "/gate") {
+              return (
+                <div key="gate" className="relative">
+                  <button type="button" onClick={() => setGateOpen(true)} className={cn("shrink-0 rounded-full px-3.5 py-1.5 text-sm font-medium whitespace-nowrap transition inline-flex items-center gap-1", pathname?.startsWith("/gate") ? "bg-brand text-white" : "bg-canvas text-ink hover:bg-brand/10")} aria-haspopup="dialog" aria-expanded={gateOpen}>
+                    GATE
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="6 9 12 15 18 9" /></svg>
+                  </button>
+                  {gateOpen && typeof window !== "undefined" && createPortal(<GateSheet onClose={() => setGateOpen(false)} />, document.body)}
+                </div>
+              );
+            }
+
             if (l.href === "/psu") {
               return (
                 <div key="psu" className="relative">
@@ -313,6 +380,18 @@ export function MobileSectionBar() {
               );
             }
 
+            if (l.href === "/resources") {
+              return (
+                <div key="resources" className="relative">
+                  <button type="button" onClick={() => setResourcesOpen(true)} className={cn("shrink-0 rounded-full px-3.5 py-1.5 text-sm font-medium whitespace-nowrap transition inline-flex items-center gap-1", isResourcesActive ? "bg-brand text-white" : "bg-canvas text-ink hover:bg-brand/10")} aria-haspopup="dialog" aria-expanded={resourcesOpen}>
+                    Resources
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="6 9 12 15 18 9" /></svg>
+                  </button>
+                  {resourcesOpen && typeof window !== "undefined" && createPortal(<ResourcesSheet onClose={() => setResourcesOpen(false)} />, document.body)}
+                </div>
+              );
+            }
+
             const active = pathname === l.href || pathname.startsWith(l.href + "/");
             return (
               <Link key={l.href} href={l.href} className={cn("shrink-0 rounded-full px-3.5 py-1.5 text-sm font-medium whitespace-nowrap transition", active ? "bg-brand text-white" : "bg-canvas text-ink hover:bg-brand/10")}>
@@ -322,79 +401,35 @@ export function MobileSectionBar() {
           })}
         </nav>
       </div>
-
-      {/* ── Full-screen hamburger drawer ── */}
-      {drawerOpen && (
-        <div className="fixed inset-0 z-50 md:hidden">
-          <div className="absolute inset-0 bg-black/50 backdrop-blur-sm" onClick={() => setDrawerOpen(false)} />
-          <div className="absolute inset-y-0 left-0 right-0 bg-surface overflow-y-auto cg-drawer-l">
-            <div className="sticky top-0 z-10 bg-surface/95 backdrop-blur-md border-b border-line">
-              <div className="flex items-center gap-3 px-4 py-3">
-                <button type="button" onClick={() => setDrawerOpen(false)} aria-label="Close menu" className="flex items-center justify-center w-9 h-9 rounded-lg text-muted hover:bg-canvas transition">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"><line x1="18" y1="6" x2="6" y2="18" /><line x1="6" y1="6" x2="18" y2="18" /></svg>
-                </button>
-                <span className="font-bold text-ink">Menu</span>
-              </div>
-              <div className="px-4 pb-3">
-                <button
-                  type="button"
-                  onClick={handleSearchTap}
-                  className="flex items-center gap-2 w-full rounded-xl border border-line bg-canvas px-3 py-2.5 text-sm text-muted hover:border-brand/30 hover:bg-brand/5 transition-colors"
-                >
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" className="shrink-0"><circle cx="11" cy="11" r="8" /><line x1="21" y1="21" x2="16.65" y2="16.65" /></svg>
-                  <span>Search exams, topics...</span>
-                  <span className="ml-auto text-[10px] font-medium text-muted/60 bg-surface border border-line rounded px-1.5 py-0.5">⌘K</span>
-                </button>
-              </div>
-            </div>
-
-            <div className="px-4 py-4 space-y-6">
-              {DRAWER_SECTIONS.map((section) => (
-                <div key={section.title}>
-                  <p className="px-3 mb-2 text-[11px] font-bold uppercase tracking-wide text-muted">{section.title}</p>
-                  <div className="space-y-0.5">
-                    {section.items.map((item) => {
-                      const active = pathname === item.href || pathname.startsWith(item.href + "/");
-                      return (
-                        <Link key={item.href} href={item.href} onClick={() => setDrawerOpen(false)} className={cn("flex items-center gap-3 rounded-xl px-3 py-3 text-sm font-medium transition", active ? "bg-brand/10 text-brand" : "text-ink hover:bg-canvas")}>
-                          {active && <span className="w-1.5 h-1.5 rounded-full bg-brand shrink-0" />}
-                          <span className={active ? "" : "ml-[10px]"}>{item.label}</span>
-                        </Link>
-                      );
-                    })}
-                  </div>
-                </div>
-              ))}
-              <div className="pt-2 pb-8">
-                <Link href="/pricing" onClick={() => setDrawerOpen(false)} className="btn btn-accent w-full justify-center text-sm">⭐ View Plans &amp; Pricing</Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
     </>
   );
 }
 
 const MINING_SITE_PREFIXES = ["/gate/mining", "/learn", "/practice", "/mocks", "/aits", "/pricing"];
-const LIVE_SUBJECT_PREFIXES = ["/gate/civil", "/gate/geology", "/gate/environment"];
+const LIVE_SUBJECT_PREFIXES = ["/gate/civil", "/gate/geology", "/gate/environment", "/gate/life-sciences"];
+const LIVE_SUBJECT_SLUGS = ["civil", "geology", "environment", "life-sciences"];
 
-function isMiningSite(pathname: string | null): boolean {
+function isMiningSite(pathname: string | null, search: URLSearchParams | null): boolean {
   if (!pathname) return false;
   if (/^\/mocks\/(cil-|ongc-|ce-mock-|gg-mock-|es-mock-|state-|diploma-)/.test(pathname)) return false;
+  // /pricing is mining-only unless ?subject= points at a live non-mining subject.
+  if (pathname === "/pricing" && search && LIVE_SUBJECT_SLUGS.includes(search.get("subject") ?? "")) return false;
   return MINING_SITE_PREFIXES.some((p) => pathname === p || pathname.startsWith(p + "/"));
 }
 
-function isLiveSubjectSite(pathname: string | null): boolean {
+function isLiveSubjectSite(pathname: string | null, search: URLSearchParams | null): boolean {
   if (!pathname) return false;
+  // /pricing?subject=<live> carries its own subject header (rendered by the pricing page).
+  if (pathname === "/pricing" && search && LIVE_SUBJECT_SLUGS.includes(search.get("subject") ?? "")) return true;
   return LIVE_SUBJECT_PREFIXES.some((p) => pathname === p || pathname.startsWith(p + "/"));
 }
 
 export function HideOnMiningSite({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
-  return isMiningSite(pathname) || isLiveSubjectSite(pathname) ? null : <>{children}</>;
+  const search = useSearchParams();
+  return isMiningSite(pathname, search) || isLiveSubjectSite(pathname, search) ? null : <>{children}</>;
 }
 
 export function ShowOnMiningSite({ children }: { children: React.ReactNode }) {
-  return isMiningSite(usePathname()) ? <>{children}</> : null;
+  return isMiningSite(usePathname(), useSearchParams()) ? <>{children}</> : null;
 }

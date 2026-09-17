@@ -5,6 +5,8 @@ import { NCL_SIRDAR_MOCKS } from "@/data/diploma/ncl-sirdar-mocks";
 import { NCL_SURVEYOR_MOCKS } from "@/data/diploma/ncl-surveyor-mocks";
 import { Breadcrumb } from "@/components/breadcrumb";
 import { NewsletterForm } from "@/components/newsletter-form";
+import { DiplomaCard } from "@/components/diploma-card";
+import { ComboAddToCartBtn } from "@/components/combo-add-to-cart-btn";
 
 export const metadata = {
   title: "NCL Diploma Exams · CrackGate",
@@ -146,59 +148,61 @@ export default function NclIndexPage() {
         </div>
 
         <div className="mt-8 grid gap-5 sm:grid-cols-2">
-          {/* Mining Sirdar */}
-          <Link
+          <DiplomaCard
             href="/diploma/ncl/mining-sirdar"
-            className="card group flex flex-col p-6 transition hover:-translate-y-1 hover:shadow-pop"
-          >
-            <div className="flex items-center justify-between">
-              <span className="badge bg-blue-400/15 text-blue-700 dark:text-blue-300">T&S Gr. C</span>
-              <span className="badge badge-pro">20 mocks</span>
-            </div>
-            <h3 className="mt-4 text-lg font-bold text-ink">Mining Sirdar</h3>
-            <p className="mt-2 flex-1 text-sm text-muted leading-snug">
-              DGMS Mining Sirdar Certificate of Competency under Coal Mines Regulations, 2017.
-              Covers opencast working, explosives, safety, CMR 2017 duties, and general aptitude.
-            </p>
-            <ul className="mt-3 space-y-1 text-xs text-muted">
-              {SYLLABUS_SIRDAR.map((t) => (
-                <li key={t}>▸ {t}</li>
-              ))}
-            </ul>
-            <div className="mt-4 flex items-center justify-between">
-              <span className="text-sm font-semibold text-brand">
-                Open mock series <span className="transition-transform group-hover:translate-x-0.5">→</span>
-              </span>
-              <span className="text-xs text-muted">20 mocks · ₹399</span>
-            </div>
-          </Link>
-
-          {/* Surveyor */}
-          <Link
+            badge="T&S Gr. C"
+            badgeCls="bg-blue-400/15 text-blue-700 dark:text-blue-300"
+            title="Mining Sirdar"
+            description="DGMS Mining Sirdar Certificate of Competency under Coal Mines Regulations, 2017. Covers opencast working, explosives, safety, CMR 2017 duties, and general aptitude."
+            syllabus={SYLLABUS_SIRDAR}
+            exam="DIPLOMA"
+            subject="ncl-mining-sirdar"
+          />
+          <DiplomaCard
             href="/diploma/ncl/surveyor"
-            className="card group flex flex-col p-6 transition hover:-translate-y-1 hover:shadow-pop"
-          >
-            <div className="flex items-center justify-between">
-              <span className="badge bg-indigo-400/15 text-indigo-700 dark:text-indigo-300">T&S Gr. B</span>
-              <span className="badge badge-pro">20 mocks</span>
+            badge="T&S Gr. B"
+            badgeCls="bg-indigo-400/15 text-indigo-700 dark:text-indigo-300"
+            title="Surveyor (Mining)"
+            description="Surveyors&apos; Certificate of Competency (SCC) under Coal Mines Regulations, 2017. Covers linear measurement, theodolite, total station, levelling, and mine surveying."
+            syllabus={SYLLABUS_SURVEYOR}
+            exam="DIPLOMA"
+            subject="ncl-surveyor"
+          />
+        </div>
+      </section>
+
+      {/* COMBO DEAL */}
+      <section className="max-w-7xl mx-auto px-5 pb-16">
+        <div className="relative overflow-hidden rounded-2xl border-2 border-amber-400/60 bg-gradient-to-br from-amber-500/5 via-orange-500/5 to-red-500/5 p-6 sm:p-8 transition-all duration-200 hover:shadow-xl hover:shadow-amber-500/10">
+          <div className="absolute -top-16 -right-16 w-40 h-40 bg-amber-400/10 rounded-full blur-3xl" />
+          <div className="absolute -bottom-16 -left-16 w-40 h-40 bg-orange-400/10 rounded-full blur-3xl" />
+
+          <div className="relative flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
+            <div className="flex-1">
+              <div className="flex items-center gap-2.5 mb-3">
+                <span className="inline-flex items-center rounded-full bg-emerald-500/10 px-3 py-1 text-xs font-semibold text-emerald-600 dark:text-emerald-400">WCL</span>
+                <span className="text-muted text-sm font-bold">+</span>
+                <span className="inline-flex items-center rounded-full bg-blue-500/10 px-3 py-1 text-xs font-semibold text-blue-600 dark:text-blue-400">NCL</span>
+                <span className="inline-flex items-center rounded-full bg-amber-500/20 px-2.5 py-0.5 text-[10px] font-bold text-amber-600 dark:text-amber-400 animate-pulse">BEST VALUE</span>
+              </div>
+              <h3 className="text-2xl font-extrabold text-ink">WCL + NCL Mining Sirdar Combo</h3>
+              <div className="mt-3 flex items-baseline gap-3">
+                <span className="text-4xl font-extrabold">₹678</span>
+                <span className="text-lg text-muted line-through">₹798</span>
+                <span className="inline-flex items-center rounded-full bg-ok/15 px-2.5 py-0.5 text-xs font-bold text-ok">SAVE ₹120 (15% off)</span>
+              </div>
+              <ul className="mt-4 space-y-2 text-sm text-muted">
+                <li className="flex gap-2.5"><span className="text-ok shrink-0"><svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg></span> WCL Mining Sirdar — 20 mocks</li>
+                <li className="flex gap-2.5"><span className="text-ok shrink-0"><svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg></span> NCL Mining Sirdar — 20 mocks</li>
+                <li className="flex gap-2.5"><span className="text-ok shrink-0"><svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg></span> 40 total mocks · 100 MCQs each · 120 min · no negative marking</li>
+                <li className="flex gap-2.5"><span className="text-ok shrink-0"><svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg></span> Add any 2+ mocks to cart — 15% off automatically</li>
+              </ul>
             </div>
-            <h3 className="mt-4 text-lg font-bold text-ink">Surveyor (Mining)</h3>
-            <p className="mt-2 flex-1 text-sm text-muted leading-snug">
-              Surveyors&apos; Certificate of Competency (SCC) under Coal Mines Regulations, 2017.
-              Covers linear measurement, theodolite, total station, levelling, and mine surveying.
-            </p>
-            <ul className="mt-3 space-y-1 text-xs text-muted">
-              {SYLLABUS_SURVEYOR.map((t) => (
-                <li key={t}>▸ {t}</li>
-              ))}
-            </ul>
-            <div className="mt-4 flex items-center justify-between">
-              <span className="text-sm font-semibold text-brand">
-                Open mock series <span className="transition-transform group-hover:translate-x-0.5">→</span>
-              </span>
-              <span className="text-xs text-muted">20 mocks · ₹399</span>
+            <div className="shrink-0 sm:text-right">
+              <ComboAddToCartBtn />
+              <p className="mt-2 text-xs text-muted">Pay via UPI · QR / GPay / PhonePe / Paytm</p>
             </div>
-          </Link>
+          </div>
         </div>
       </section>
 
