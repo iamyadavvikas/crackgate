@@ -38,7 +38,7 @@ variable "ec2_instance_type" {
 variable "rds_instance_class" {
   description = "RDS instance class (ARM64)"
   type        = string
-  default     = "db.t4g.micro"
+  default     = "db.t4g.small"
 }
 
 variable "rds_allocated_storage_gb" {
