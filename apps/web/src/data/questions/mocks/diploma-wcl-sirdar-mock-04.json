@@ -139,9 +139,9 @@
       "stem": "The 'recommended actions' in a report should be",
       "options": [
         "Specific, measurable, and actionable",
-        "Vague",
-        "General",
-        "Instructions from a superior officer"
+        "Vague and non-specific in wording",
+        "General and non-actionable advice",
+        "Instructions received from the superior officer"
       ],
       "answer": 0,
       "solution": "Specific, measurable, and actionable."
@@ -156,9 +156,9 @@
       "difficulty": "medium",
       "stem": "The 'cement grouted' roof bolt differs from resin by",
       "options": [
-        "Resin is weaker",
-        "Cement is more expensive",
-        "Cement is always stronger",
+        "Resin is weaker under tension load",
+        "Cement is always more expensive",
+        "Cement is always stronger in tensile strength",
         "Cement takes longer to set than resin"
       ],
       "answer": 3,
@@ -175,9 +175,9 @@
       "stem": "The 'frequency' of reporting depends on",
       "options": [
         "The type of activity and regulatory requirements",
-        "The number of holidays",
-        "The weather",
-        "The mine owner"
+        "The number of public holidays observed in the year",
+        "The weather during the monsoon season",
+        "The personal preference of the mine owner"
       ],
       "answer": 0,
       "solution": "Type of activity and regulatory requirements."
@@ -210,10 +210,10 @@
       "difficulty": "medium",
       "stem": "The 'traverse' in mine surveying is used to",
       "options": [
-        "Measure temperature",
-        "Measure air velocity",
+        "Measure the temperature of the surrounding rock",
+        "Measure the velocity of the air flowing in the mine roadway",
         "Establish control points by measuring angles and distances",
-        "Record temperature variations"
+        "Record the temperature variations of the rock"
       ],
       "answer": 2,
       "solution": "Traverses establish control points by measuring angles and distances."
@@ -228,9 +228,9 @@
       "difficulty": "medium",
       "stem": "Under the Mines Act 1952, an Inspector may, among other powers:",
       "options": [
-        "Impose fines directly",
-        "Appoint mine officials",
-        "Withdraw certificates of competency",
+        "Impose fines directly on the mine owner without holding an inquiry",
+        "Appoint, remove and suspend the mine officials of the undertaking",
+        "Withdraw or suspend permanently the certificates of competency of the mine officials concerned",
         "Enter, inspect and examine a mine, and make inquiries on any matter relating to safety"
       ],
       "answer": 3,
@@ -246,9 +246,9 @@
       "difficulty": "hard",
       "stem": "ASDL stands for",
       "options": [
-        "Automated Shuttle Loader",
+        "Automated Shuttle Car Loader",
         "Articulated Shuttle Loader",
-        "Auxiliary Discharge Loader",
+        "Auxiliary Side Discharge Loader Unit",
         "Articulated Side Discharge Loader"
       ],
       "answer": 3,
@@ -264,10 +264,10 @@
       "difficulty": "hard",
       "stem": "The 'hydraulic stowing' uses",
       "options": [
-        "Hand loading",
-        "Steam pressure",
+        "Hand loading of the waste material by the miners",
+        "Steam pressure generated in a boiler house",
         "Water pressure to transport stowing material",
-        "Belt conveyors"
+        "Belt conveyors placed along the stowing panel"
       ],
       "answer": 2,
       "solution": "Hydraulic stowing uses water pressure to transport material."
@@ -282,9 +282,9 @@
       "difficulty": "medium",
       "stem": "When workings approach within 60 m of a water body or waterlogged area, the manager shall:",
       "options": [
-        "Stop working immediately without any plan",
-        "Leave the water body untouched forever",
-        "Inform the workers orally",
+        "Stop all working immediately without any approved scheme or any written protection plan",
+        "Leave the water body completely untouched for the future workings",
+        "Inform the workers orally only about the nearby water inflow risk",
         "Prepare a scheme for protection against inrush and drain the water in a planned manner"
       ],
       "answer": 3,
@@ -300,9 +300,9 @@
       "difficulty": "medium",
       "stem": "The 'stowing pipeline diameter' selection depends on",
       "options": [
-        "The length of the pipeline only",
-        "The colour of the pipe",
-        "The number of bends only",
+        "The length of the pipeline only, ignoring the material",
+        "The colour of the pipe used for the line",
+        "The number of bends only in the pipeline",
         "Material flow rate, velocity, and pump capacity"
       ],
       "answer": 3,
@@ -318,10 +318,10 @@
       "difficulty": "medium",
       "stem": "The maximum persons permitted in a single trip on a man riding system is",
       "options": [
-        "As decided by the operator",
+        "As decided from time to time by the mine operator alone",
         "As per the designed capacity approved by the manager",
-        "Twenty persons",
-        "As many as fit in"
+        "Any number of persons not exceeding twenty",
+        "As many persons as can conveniently fit in"
       ],
       "answer": 1,
       "solution": "As per designed capacity approved by the manager."
@@ -336,10 +336,10 @@
       "difficulty": "hard",
       "stem": "A man riding system must not be used if",
       "options": [
-        "It is night shift",
-        "It is raining",
+        "It is the night shift or a holiday",
+        "It is raining heavily in the open",
         "Any defect is found that affects safety",
-        "Workers are late"
+        "The workers are late for the beginning of the shift"
       ],
       "answer": 2,
       "solution": "Use must stop if any safety defect is found."
@@ -354,10 +354,10 @@
       "difficulty": "easy",
       "stem": "Roof bolting in coal mines uses",
       "options": [
-        "Resisting the weight of the roof strata",
-        "Supporting the ribs in a bord and pillar face",
+        "Resisting weight of the roof strata",
+        "Supporting the ribs in a longwall face",
         "Cement or resin grouted bolts",
-        "Damping the firedamp in the return airway"
+        "Damping the firedamp in the return"
       ],
       "answer": 2,
       "solution": "Roof bolting uses cement or resin grouted bolts for support."
@@ -372,9 +372,9 @@
       "difficulty": "easy",
       "stem": "The 'pneumatic stowing' method uses",
       "options": [
-        "Hydraulic pressure",
-        "Vacuum suction",
-        "Hand packing",
+        "Hydraulic pressure of a high pressure water pump",
+        "Vacuum suction created by a compressor",
+        "Hand packing of the waste in the goaf",
         "Compressed air to transport stowing material"
       ],
       "answer": 3,
@@ -390,9 +390,9 @@
       "difficulty": "medium",
       "stem": "The 'gas chromatograph' is used to",
       "options": [
-        "Determines the age of the mine",
+        "Determines the age of the mine workings",
         "Measures the temperature of the strata",
-        "Checks the strength of roof bolts",
+        "Checks the strength of the roof bolts and the straps used",
         "Analyze the composition of mine gases accurately"
       ],
       "answer": 3,
@@ -427,9 +427,9 @@
       "stem": "A 'fault' in geology is",
       "options": [
         "A fracture in rock with displacement",
-        "A type of support",
-        "A type of mineral",
-        "A type of coal"
+        "A type of support system used in a heading",
+        "A type of mineral found in the seam",
+        "A type of coal seam in the district"
       ],
       "answer": 0,
       "solution": "A fault is a fracture with displacement of rock layers."
@@ -446,7 +446,7 @@
       "options": [
         "Levelling of the surface bench floors",
         "Recording the attendance of miners",
-        "Drafting the mine ventilation plan",
+        "Drafting the mine ventilation plan and the air schedule",
         "Spatial analysis and management of mine data"
       ],
       "answer": 3,
@@ -462,10 +462,10 @@
       "difficulty": "medium",
       "stem": "The winding engine must be operated by",
       "options": [
-        "The shot firer",
-        "The shotfirer",
+        "The shot firer appointed for the district by the manager",
+        "The shotfirer working on the night shift",
         "A competent person designated by the manager",
-        "The overman"
+        "The overman of the underground workings"
       ],
       "answer": 2,
       "solution": "A competent person designated by the manager."
@@ -481,9 +481,9 @@
       "stem": "The 'underground fire' in coal mines can be caused by",
       "options": [
         "Spontaneous heating, mining activities, or external sources",
-        "Improper handling of hot slag or friction sparks",
+        "Improper handling of hot slag or friction sparks at the coal face",
         "Failure of the ventilation and cooling system",
-        "Stone dust barriers of inadequate thickness"
+        "Stone dust barriers of inadequate thickness in the roadway"
       ],
       "answer": 0,
       "solution": "Underground fires can be from spontaneous heating, mining, or external sources."
@@ -498,10 +498,10 @@
       "difficulty": "medium",
       "stem": "The 'mine rescue station' must have",
       "options": [
-        "A list of phone numbers",
-        "Only a first-aid box",
+        "A list of the telephone numbers of hospitals",
+        "Only a first aid box kept in the mine office",
         "Trained personnel and equipment for emergency response",
-        "A wall map"
+        "A large wall map of the mine surface and underground workings"
       ],
       "answer": 2,
       "solution": "Rescue stations must have trained personnel and equipment."
@@ -516,10 +516,10 @@
       "difficulty": "easy",
       "stem": "The 'coal quality' is determined by",
       "options": [
-        "Proximate analysis of the coal sample",
+        "Proximate analysis of the coal sample only",
         "Calorific value, ash content, moisture, volatile matter",
-        "Colour of the overlying strata",
-        "Distance of the seam from the surface"
+        "The colour of the overlying strata of the working coal seam",
+        "The distance of the seam from the surface"
       ],
       "answer": 1,
       "solution": "Coal quality depends on CV, ash, moisture, and volatile matter."
@@ -534,10 +534,10 @@
       "difficulty": "medium",
       "stem": "The winding indicator must show",
       "options": [
-        "The speed of the engine only",
+        "The speed of the winding engine at any instant of time",
         "The position of the cage in the shaft at all times",
-        "The depth of the shaft only",
-        "The load on the rope only"
+        "The depth of the shaft below the collar",
+        "The load carried on the winding rope only"
       ],
       "answer": 1,
       "solution": "Must show cage position at all times."
@@ -553,9 +553,9 @@
       "stem": "The 'bord' in bord and pillar refers to",
       "options": [
         "The width of the heading driven between pillars",
-        "The height of the seam",
-        "The length of the pillar",
-        "The size of the goaf"
+        "The height of the coal seam being mined",
+        "The length of the pillar between the bords",
+        "The size of the goaf left behind the longwall face"
       ],
       "answer": 0,
       "solution": "Width of the heading between pillars."
@@ -573,7 +573,7 @@
         "Used for blasting the overburden seam",
         "Mechanized surface mining without blasting",
         "Used for hauling coal to the washery",
-        "Used for drilling vertical blast holes"
+        "Used for drilling the vertical blast holes in overburden"
       ],
       "answer": 1,
       "solution": "Mechanized surface mining without blasting."
@@ -589,9 +589,9 @@
       "stem": "The 'support spacing' in underground mines is determined by",
       "options": [
         "Load conditions, support capacity, and span",
-        "Control dust emissions",
-        "The colour of the support",
-        "Fixed for all the mines"
+        "Control of the dust emissions in the underground roadway",
+        "The colour of the steel support used",
+        "Fixed and identical for all the mines"
       ],
       "answer": 0,
       "solution": "Support spacing depends on load, capacity, and span."
@@ -606,9 +606,9 @@
       "difficulty": "easy",
       "stem": "The accident investigation must focus on",
       "options": [
-        "Punishing someone",
+        "Punishing the person who made the error",
         "Estimating the cost of the lost shift",
-        "Blaming the worker",
+        "Blaming the workers who were involved in the accident",
         "Finding the root cause and preventing recurrence"
       ],
       "answer": 3,
@@ -624,10 +624,10 @@
       "difficulty": "medium",
       "stem": "The 'body temperature monitoring' of rescue team members is important because",
       "options": [
-        "To check the strength of the equipment",
-        "It is not",
+        "To check the strength of the rescue equipment",
+        "It is not at all necessary for the rescue work",
         "To detect heat stress and prevent collapse of team members",
-        "To decide the route of travel"
+        "To decide the route and speed of travel of the rescue team"
       ],
       "answer": 2,
       "solution": "To detect heat stress and prevent collapse."
@@ -642,10 +642,10 @@
       "difficulty": "hard",
       "stem": "An electrical permit to work system is required for",
       "options": [
-        "Chemical resistance of components",
-        "Repair of mechanical components",
+        "The chemical resistance of the components",
+        "Any repair of mechanical components in the mine section",
         "Work on live or potentially live electrical equipment",
-        "All mechanical repairs"
+        "All mechanical repairs of any kind whatsoever"
       ],
       "answer": 2,
       "solution": "Work on live or potentially live electrical equipment."
@@ -661,9 +661,9 @@
       "stem": "A 'high-potential incident' is one that",
       "options": [
         "Had the potential to cause a serious or fatal injury",
-        "Caused only minor injuries",
-        "Involved no machinery",
-        "Caused no injury"
+        "Caused only minor injuries to the persons",
+        "Involved no machinery of any kind whatsoever",
+        "Caused no injury, loss or damage of any kind at all"
       ],
       "answer": 0,
       "solution": "Had the potential to cause a serious or fatal injury."
@@ -678,10 +678,10 @@
       "difficulty": "easy",
       "stem": "The 'fire extinguishing medium' selection depends on",
       "options": [
-        "The cost of the extinguisher only",
-        "The cheapest medium",
+        "The cost of the extinguisher only, ignoring the risk",
+        "Simply the cheapest medium available",
         "Type of fire, location, and safety requirements",
-        "The colour of the extinguisher"
+        "The colour of the extinguisher body shell"
       ],
       "answer": 2,
       "solution": "Medium selection depends on fire type, location, safety."
@@ -697,9 +697,9 @@
       "stem": "Coal dust becomes explosive when it is",
       "options": [
         "Suspended in air in sufficient concentration",
-        "On the ground",
-        "Mixed with water",
-        "Packed tightly on the floor"
+        "Lying loose on the ground in the mine roadway floor",
+        "Mixed with water or a fine wet mist",
+        "Packed tightly against the mine floor"
       ],
       "answer": 0,
       "solution": "Coal dust becomes explosive when suspended in sufficient concentration."
@@ -714,9 +714,9 @@
       "difficulty": "hard",
       "stem": "The 'blast round' in drifting typically includes",
       "options": [
-        "Only the cut holes with no lifters",
-        "Explosive charges placed before stemming",
-        "A single hole drilled at the face",
+        "Only the cut holes with no lifter holes",
+        "Explosive charges placed in the holes before stemming",
+        "A single large hole drilled at the face",
         "Cut holes, easer holes, lifters, and lifter holes"
       ],
       "answer": 3,
@@ -751,9 +751,9 @@
       "stem": "A 'mine plan' shows",
       "options": [
         "All working areas, benches, ramps, dumps, infrastructure",
-        "The position of the fans",
-        "The dump slopes",
-        "The electric lines"
+        "The position of the ventilation fan installations underground",
+        "The slopes of the surface overburden dumps",
+        "The electric power lines of the mine surface"
       ],
       "answer": 0,
       "solution": "Mine plans show all operational areas and infrastructure."
@@ -768,10 +768,10 @@
       "difficulty": "medium",
       "stem": "The 'rescue team deployment' underground follows",
       "options": [
-        "Based on the weather forecast",
-        "Decided at the time of rescue",
+        "Based on the weather forecast for the surface",
+        "Decided only at the time of the rescue",
         "Planned deployment with team composition and route",
-        "Random deployment"
+        "Random deployment of the team underground without any plan"
       ],
       "answer": 2,
       "solution": "Deployment follows planned team composition and route."
@@ -786,10 +786,10 @@
       "difficulty": "hard",
       "stem": "The 'methane' in coal mines is dangerous because",
       "options": [
-        "It is heavier than air",
+        "It is heavier than air and collects in the low lying places",
         "It is explosive when mixed with air in certain proportions",
-        "Dangerous near water",
-        "It cools the workings"
+        "It is dangerous only near the water inflows",
+        "It cools the underground workings of the mine"
       ],
       "answer": 1,
       "solution": "Methane is explosive when mixed with air (5-15% concentration)."
@@ -805,8 +805,8 @@
       "stem": "The dust suppression methods include",
       "options": [
         "Water sprays, stone dusting, ventilation, and surfactants",
-        "Restricted to development headings only",
-        "Applied only after the shift has ended",
+        "Restricted to the development headings of the underground mine",
+        "Applied only after the working shift has ended",
         "Limited to the return airway of the district"
       ],
       "answer": 0,
@@ -840,10 +840,10 @@
       "difficulty": "easy",
       "stem": "Continuous miners are used in",
       "options": [
-        "Stowing of goaf areas",
-        "Shaft winding",
+        "Stowing of the abandoned goaf areas",
+        "The winding of the men and the coal in the shaft cages",
         "Room and pillar operations for coal extraction",
-        "Opencast working"
+        "The opencast working of the coal mine"
       ],
       "answer": 2,
       "solution": "Continuous miners are used in room and pillar for coal extraction."
@@ -858,10 +858,10 @@
       "difficulty": "easy",
       "stem": "The 'coordinate system' in mine surveying uses",
       "options": [
-        "Arbitrary datum levels",
+        "Arbitrary and isolated datum levels",
         "Reference grid for positioning mine features",
-        "Monitor gas concentrations",
-        "Measure air velocity"
+        "To monitor the gas concentrations",
+        "To measure the air velocity in the underground roadways"
       ],
       "answer": 1,
       "solution": "Coordinate systems use reference grids for positioning."
@@ -876,7 +876,7 @@
       "difficulty": "easy",
       "stem": "The 'stowing' in mining is done to",
       "options": [
-        "Drain the workings",
+        "To drain the water from the workings",
         "Allow free flow of air through the goaf",
         "Reduce the cost of surface rehabilitation",
         "Fill the goaf to control subsidence"
@@ -894,9 +894,9 @@
       "difficulty": "medium",
       "stem": "A 'test run' of the winding engine must be carried out",
       "options": [
-        "Once in six months",
-        "Once a year",
-        "On Mondays",
+        "Once in every six months and entered in the records",
+        "Once in every calendar year of service",
+        "On Monday mornings at the start of the week",
         "Before winding persons at the start of each shift"
       ],
       "answer": 3,
@@ -913,9 +913,9 @@
       "stem": "An 'inundation report' must mention",
       "options": [
         "Source of water, rate of inflow, and measures taken to control it",
-        "The number of persons on leave",
-        "The list of machinery in the mine",
-        "The production target"
+        "The number of persons on leave on the day of the report",
+        "The list of all machinery working in the underground",
+        "The monthly production target fixed for the underground mine as a whole"
       ],
       "answer": 0,
       "solution": "Source, rate, and measures taken."
@@ -931,9 +931,9 @@
       "stem": "A circuit in a mine must be protected against",
       "options": [
         "Overload, short circuit, and earth leakage",
-        "Harmonic distortion analysis",
-        "Voltage regulation only",
-        "The colour of the cable"
+        "Harmonic distortion in the mine supply system",
+        "Voltage regulation of the supply only",
+        "The colour of the cable used underground"
       ],
       "answer": 0,
       "solution": "Overload, short circuit, and earth leakage."
@@ -948,10 +948,10 @@
       "difficulty": "hard",
       "stem": "The 'refuge hole' or 'manhole' in a track-based man riding system is provided for",
       "options": [
-        "Loading of coal",
+        "Loading of the coal in the mine gate",
         "Persons to take shelter if a vehicle approaches",
-        "Storing of tools",
-        "Dumping of muck"
+        "Storing of the tools, lamps and rods",
+        "Dumping of the muck and of the blasted stone in the goaf"
       ],
       "answer": 1,
       "solution": "Persons to take shelter if a vehicle approaches."
@@ -966,10 +966,10 @@
       "difficulty": "medium",
       "stem": "A 'serious accident' is one that",
       "options": [
-        "Causes only minor bruises",
-        "Causes loss of a limb or permanent disability",
+        "Causes only minor bruises to the persons",
+        "Causes the loss of a limb or of a permanent disability",
         "Causes fracture of any bone or severe bodily injury",
-        "Is not reported"
+        "Is not reported to the manager or the owner"
       ],
       "answer": 2,
       "solution": "Causes fracture of any bone or severe bodily injury."
@@ -984,9 +984,9 @@
       "difficulty": "easy",
       "stem": "The 'operating ratio' of shovel is",
       "options": [
-        "Working hours per day",
-        "Operating cost/output",
-        "Operators per shift",
+        "The working hours of the shovel per day",
+        "The operating cost of the shovel per unit of output",
+        "The number of operators per shift",
         "Actual output/theoretical maximum output"
       ],
       "answer": 3,
@@ -1002,10 +1002,10 @@
       "difficulty": "easy",
       "stem": "A sirdar holding charge of a section must take",
       "options": [
-        "A verbal message from the overman",
-        "A handover only at the weekend",
+        "A verbal message passed on by the overman to the sirdar",
+        "A charge handover taken only at the weekend",
         "A proper charge handover from the previous sirdar",
-        "A report after the shift ends"
+        "A report filed only after the shift ends"
       ],
       "answer": 2,
       "solution": "A proper charge handover from the previous sirdar is mandatory."
@@ -1020,9 +1020,9 @@
       "difficulty": "hard",
       "stem": "An 'emergency report' should be",
       "options": [
-        "Posted after a month",
-        "Detailed and lengthy",
-        "Written only after a week",
+        "Posted to the manager's office after a month",
+        "Detailed, lengthy and purely descriptive of fault",
+        "Written and submitted only after a full week",
         "Brief, factual, and transmitted immediately to the manager"
       ],
       "answer": 3,
@@ -1038,10 +1038,10 @@
       "difficulty": "hard",
       "stem": "The 'bearing' of a line in surveying refers to",
       "options": [
-        "Weight of line",
+        "The weight of the tape or survey line",
         "Angle of the line with reference direction",
-        "Length of line",
-        "Color of line"
+        "The measured length of the survey line",
+        "The colour of the station peg or line"
       ],
       "answer": 1,
       "solution": "Bearing is the angle of a line with a reference direction."
@@ -1092,10 +1092,10 @@
       "difficulty": "easy",
       "stem": "The load on a man riding rope must not exceed",
       "options": [
-        "Double the designed load",
+        "Twice the safe designed load",
         "The full breaking strength",
         "The safe working load as designed",
-        "50% of breaking load"
+        "Half of the breaking load of the rope"
       ],
       "answer": 2,
       "solution": "The load must not exceed the designed safe working load."
@@ -1110,10 +1110,10 @@
       "difficulty": "easy",
       "stem": "The 'haulage' in underground mines refers to",
       "options": [
-        "Exploitation of the pillars",
-        "Supporting the roof",
+        "The extraction and working of the pillars",
+        "The supporting of the roof in the workings",
         "Transport of coal and materials from face to surface",
-        "Ventilating the workings"
+        "The ventilating of the underground mine workings"
       ],
       "answer": 2,
       "solution": "Haulage is the transport of coal and materials."
@@ -1129,9 +1129,9 @@
       "stem": "The 'fire extinguisher inspection' frequency should be",
       "options": [
         "Monthly visual and annual maintenance checks",
-        "During the rains",
-        "In the office",
-        "Once in ten years"
+        "Only during the rainy season of the year",
+        "Kept only inside the surface mine office",
+        "Once in every ten years of operation"
       ],
       "answer": 0,
       "solution": "Extinguishers need monthly visual and annual maintenance checks."
@@ -1146,7 +1146,7 @@
       "difficulty": "easy",
       "stem": "The 'ultimate analysis' of coal determines",
       "options": [
-        "The moisture held in the coal seam",
+        "The moisture held in the coal as mined",
         "The ash left after complete incineration",
         "The volatile matter driven off on heating",
         "Carbon, hydrogen, nitrogen, sulfur, oxygen content"
@@ -1182,9 +1182,9 @@
       "difficulty": "medium",
       "stem": "The 'closing error' in a traverse must be within",
       "options": [
-        "Zero at every traverse station",
-        "Zero at every station",
-        "Whatever the surveyor fixes",
+        "Exactly zero at every single traverse station",
+        "Exactly zero at every survey traverse station",
+        "Whatever error limit the surveyor decides to fix",
         "The permissible limit as prescribed by survey regulations"
       ],
       "answer": 3,
@@ -1200,9 +1200,9 @@
       "difficulty": "medium",
       "stem": "The safety audit in a mine is conducted to",
       "options": [
-        "Check attendance",
-        "Verify the mine survey plans",
-        "Check production",
+        "Check the daily attendance of all the mine workers",
+        "Verify only the mine survey plans and the levels",
+        "Check the daily production output of the coal mine",
         "Identify safety hazards and assess compliance with regulations"
       ],
       "answer": 3,
@@ -1218,10 +1218,10 @@
       "difficulty": "hard",
       "stem": "The 'stowing pump selection' depends on",
       "options": [
-        "The colour of the pump",
-        "The cheapest pump",
+        "The colour of the pump housing body",
+        "Simply the cheapest available pump unit",
         "Head, capacity, and material characteristics",
-        "The size of the dam only"
+        "Only on the size of the stowing dam"
       ],
       "answer": 2,
       "solution": "Pump selection depends on head, capacity, and material."
@@ -1236,9 +1236,9 @@
       "difficulty": "medium",
       "stem": "The 'overcast' or 'air crossing' allows",
       "options": [
-        "Complete recirculation",
-        "A single split",
-        "Fresh air intake",
+        "The complete recirculation of the air",
+        "A single split of the air current",
+        "The fresh air intake at the surface",
         "Two air currents to cross without mixing"
       ],
       "answer": 3,
@@ -1254,10 +1254,10 @@
       "difficulty": "medium",
       "stem": "On the occurrence of a misfire, the hole shall:",
       "options": [
-        "Be abandoned for one week",
+        "Be abandoned, left unfired and reported to the manager after a week",
         "Not be probed, and the shot shall be dealt with by the shot-firer of the next shift",
-        "Be probed immediately with a steel rod",
-        "Be refired by the same shot-firer without delay"
+        "Be probed immediately by a competent person with a long steel rod",
+        "Be refired at once by the same shot-firer without any delay or wait"
       ],
       "answer": 1,
       "solution": "CMR 2017 Reg 204: a misfired hole is not probed; it is dealt with by the shot-firer of the succeeding shift, with a report to the manager."
@@ -1272,10 +1272,10 @@
       "difficulty": "hard",
       "stem": "The safety device in a man riding system includes",
       "options": [
-        "Automatic braking on overspeed",
-        "Reverse interlock on the cage doors",
+        "Automatic braking of the cage on overspeed",
+        "An interlock on the doors of the winding cage",
         "Anti-rollback device, speed governor, and safety catch",
-        "Automatic restarting of the hoist"
+        "The automatic restarting of the hoist motor"
       ],
       "answer": 2,
       "solution": "Multiple safety devices are required."
@@ -1290,9 +1290,9 @@
       "difficulty": "hard",
       "stem": "The 'timing of support withdrawal' in depillaring depends on",
       "options": [
-        "Support conveyor belts",
-        "Protect electrical equipment",
-        "A time set by the contractor",
+        "Support of the conveyor belts in the face",
+        "Protect the electrical equipment of the section",
+        "A time fixed in advance by the mine contractor",
         "Goaf conditions, roof behavior, and extraction progress"
       ],
       "answer": 3,
@@ -1308,9 +1308,9 @@
       "difficulty": "easy",
       "stem": "The 'mine water pumping record' must be maintained by",
       "options": [
-        "The manager only",
-        "The store keeper",
-        "The security guard",
+        "The mine manager only, and not the pumpman",
+        "The mine store keeper in the office",
+        "The security guard at the mine gate",
         "The person responsible for pumping operations"
       ],
       "answer": 3,
@@ -1326,10 +1326,10 @@
       "difficulty": "medium",
       "stem": "The sirdar must ensure that all persons under him",
       "options": [
-        "Work only at night",
-        "Are above 18 years only",
+        "Work only during the night shift of the day",
+        "Are above eighteen years of age only",
         "Are trained and understand safety procedures",
-        "Work without safety equipment"
+        "Work without any safety equipment"
       ],
       "answer": 2,
       "solution": "All persons must be trained and understand safety procedures."
@@ -1345,9 +1345,9 @@
       "stem": "The 'air quantity' required depends on",
       "options": [
         "Number of workers, equipment, and gas emissions",
-        "The colour of the coal",
-        "The depth of the shaft",
-        "The quantity fixed for all mines"
+        "The colour of the coal from the seam",
+        "The depth of the shaft from the collar",
+        "The same quantity fixed for all mines"
       ],
       "answer": 0,
       "solution": "Air quantity depends on workers, equipment, and gas emissions."
@@ -1398,9 +1398,9 @@
       "difficulty": "medium",
       "stem": "A 'mine plan' must be kept updated because",
       "options": [
-        "It is only for the annual report",
-        "It is needed for royalty assessment only",
-        "It is required only for opencast mines",
+        "It is only needed for the annual report of the mine",
+        "It is only needed for royalty assessment purposes",
+        "It is only required for the opencast mine plans",
         "It is a legal requirement and essential for safety and planning"
       ],
       "answer": 3,
@@ -1416,9 +1416,9 @@
       "difficulty": "hard",
       "stem": "Under the Mines Act, the 'notice of opening or abandonment of a mine' must be given to",
       "options": [
-        "The workers' union",
-        "The local magistrate",
-        "The miners' union",
+        "The local workers' union of the mine",
+        "The local magistrate of the mining area",
+        "The registered miners' union of the area",
         "The inspector of mines and the Chief Inspector"
       ],
       "answer": 3,
@@ -1434,10 +1434,10 @@
       "difficulty": "hard",
       "stem": "The 'stoppings' in underground mines are used to",
       "options": [
-        "Provide support",
-        "Allow passage",
+        "Provide support to the roof strata",
+        "Allow the passage of persons",
         "Direct airflow by sealing off areas",
-        "Store materials"
+        "Store the mining materials in the section"
       ],
       "answer": 2,
       "solution": "Stoppings are permanent walls to direct airflow in mine ventilation."
@@ -1452,10 +1452,10 @@
       "difficulty": "medium",
       "stem": "The 'foam-based fire suppression' is effective for",
       "options": [
-        "Gas fires",
+        "Fires of the firedamp gas in the workings",
         "Class A and B fires including coal and oil fires",
-        "Dust explosions",
-        "Fires in the winding engine room"
+        "The coal dust explosions in the roadways",
+        "Fires in the surface winding engine room"
       ],
       "answer": 1,
       "solution": "Class A and B fires including coal and oil fires."
@@ -1471,7 +1471,7 @@
       "stem": "A 'fatal accident' under the Mines Act is one that",
       "options": [
         "Causes a serious injury lasting a month",
-        "Causes minor injury",
+        "Causes only a minor injury",
         "Results in death of any person",
         "Happens only during day shift"
       ],
@@ -1488,10 +1488,10 @@
       "difficulty": "medium",
       "stem": "The 'quality' of a report depends on",
       "options": [
-        "Exclude numerical data",
-        "Length of the report only",
+        "Exclude all the numerical data and the field figures",
+        "Only on the total length of the written report text",
         "Accuracy of information, clarity of expression, and completeness",
-        "Use informal language"
+        "Use of very informal and casual spoken language in it"
       ],
       "answer": 2,
       "solution": "Accuracy, clarity, and completeness."
@@ -1506,10 +1506,10 @@
       "difficulty": "medium",
       "stem": "In every mine, the shot-firer shall be provided with a reserve station (a suitable sheltered place) and, where required:",
       "options": [
-        "An additional battery",
-        "A telephone at every face",
+        "An additional battery and a spare carbide lamp box unit",
+        "A telephone instrument kept at every single working face",
         "A relay of persons posted between the shot-firer and the firing station",
-        "A second shot-firer"
+        "A second shot-firer permanently posted on the same panel"
       ],
       "answer": 2,
       "solution": "CMR 2017 Reg 193: a RESERVE STATION is provided, with a relay of persons between the shot-firer and the firing station to transmit signals."
@@ -1524,10 +1524,10 @@
       "difficulty": "hard",
       "stem": "The 'water dam' in mines is built to",
       "options": [
-        "Store drinking water",
+        "Store the drinking water for the mine workers",
         "Control and direct water flow in underground workings",
-        "Provide support",
-        "Store explosives"
+        "Provide support to the roof and to the mine ribs",
+        "Store the explosives used in the underground mine"
       ],
       "answer": 1,
       "solution": "Water dams control and direct water flow underground."
@@ -1542,10 +1542,10 @@
       "difficulty": "hard",
       "stem": "A 'dangerous occurrence' is",
       "options": [
-        "A planned blasting operation",
+        "A planned and approved blasting operation",
         "An occurrence which could have led to an accident",
-        "A fatal accident only",
-        "A normal routine operation"
+        "Only an accident in which a person died",
+        "A normal routine operation of the mine"
       ],
       "answer": 1,
       "solution": "An occurrence which could have led to an accident."
@@ -1561,9 +1561,9 @@
       "stem": "A trailing cable in a mine must be",
       "options": [
         "Flexible, flame-retardant, and adequately insulated",
-        "Of any length and gauge",
-        "Works at rated voltage only",
-        "A rigid bare conductor"
+        "Of any length and of any size of gauge",
+        "Used only at the rated voltage of the supply",
+        "A rigid and bare copper conductor cable"
       ],
       "answer": 0,
       "solution": "Flexible, flame-retardant, and adequately insulated."
@@ -1632,9 +1632,9 @@
       "difficulty": "medium",
       "stem": "The 'CIL's washed coal' supply helps",
       "options": [
-        "Increase the moisture content of coal",
+        "Increase the moisture content of the coal",
         "Reduce the size of coal fed to the boiler",
-        "Eliminate the need for boiler blowdown",
+        "Eliminate the need for the boiler blowdown",
         "Reduce ash content and improve power plant efficiency"
       ],
       "answer": 3,
@@ -1812,10 +1812,10 @@
       "difficulty": "hard",
       "stem": "The Singareni Collieries Company Limited (SCCL) is a",
       "options": [
-        "Subsidiary of CIL",
-        "Central Government company",
+        "A wholly owned subsidiary of Coal India Ltd",
+        "A wholly owned Central Government company",
         "Joint venture of Telangana and Central Government",
-        "Private company"
+        "A private limited company of Telangana"
       ],
       "answer": 2,
       "solution": "SCCL is a joint venture of Telangana and Government of India."
@@ -1885,9 +1885,9 @@
       "stem": "The 'thermal coal' is primarily used for",
       "options": [
         "Power generation in thermal power plants",
-        "Chemical industry",
-        "Smelting of metals",
-        "Manufacture of coke"
+        "The chemical and fertilizer industries",
+        "The smelting of metals in the furnaces",
+        "The manufacture of coke and coke ovens"
       ],
       "answer": 0,
       "solution": "Thermal coal is used for power generation."
