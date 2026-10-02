@@ -247,9 +247,9 @@
       "stem": "The 'blast hole diameter' selection depends on",
       "options": [
         "Rock type, explosive type, and fragmentation requirements",
-        "Used for charging detonators",
-        "Used for roof bolting only",
-        "Used for drilling blast holes"
+        "Make of the drilling machine",
+        "Colour of the overburden rock",
+        "Hardness of the drill steel"
       ],
       "answer": 0,
       "solution": "Hole diameter depends on geology, explosive, and fragmentation."
@@ -318,9 +318,9 @@
       "difficulty": "easy",
       "stem": "Under the Mines Act, a 'mine' includes",
       "options": [
-        "Only the underground workings",
-        "Only the buildings on the surface",
-        "Only the persons employed in the mine",
+        "The underground workings alone, excluding surface works",
+        "The persons employed, but not the plant and machinery",
+        "The surface buildings alone, excluding underground roadways",
         "All works, machinery, and equipment used in connection with mining"
       ],
       "answer": 3,
@@ -372,10 +372,10 @@
       "difficulty": "hard",
       "stem": "The 'rescue equipment inspection' should be",
       "options": [
-        "Only once a year",
-        "Only after an accident",
+        "Once at the time of purchase, and never again",
+        "Only after an accident has actually occurred",
         "Before each use and at regular intervals",
-        "Only when the equipment is new"
+        "Only while the equipment is still new"
       ],
       "answer": 2,
       "solution": "Rescue equipment must be inspected before each use."
@@ -462,9 +462,9 @@
       "difficulty": "easy",
       "stem": "A 'handover report' between shifts should include",
       "options": [
-        "Only the number of persons employed",
-        "Only the quantity of coal produced",
-        "Only the names of the officials",
+        "The quantity of coal produced during the shift",
+        "The names and grades of officials on duty",
+        "The daily wage bill of the district",
         "Safety conditions, pending work, and outstanding issues"
       ],
       "answer": 3,
@@ -552,10 +552,10 @@
       "difficulty": "medium",
       "stem": "The 'stowing operations plan' must include",
       "options": [
-        "Only the quantity of coal production",
+        "The quantity of coal production for the month",
         "Material source, transport method, dam design, and monitoring",
-        "Only the stowing pump rating",
-        "Only the number of workers engaged"
+        "The nameplate rating of the stowing pumps",
+        "The number of workers engaged on the shift"
       ],
       "answer": 1,
       "solution": "Operations plan must cover material, transport, dams, and monitoring."
@@ -570,9 +570,9 @@
       "difficulty": "hard",
       "stem": "The moisture content of coal dust affects",
       "options": [
-        "Specific to metal mines only",
-        "Used in quarrying operations",
-        "Processing of limestone",
+        "The colour of the dust layer settled on the roof",
+        "The tonnage of coal required per shift face",
+        "The design capacity of the district fan",
         "Its explosibility - higher moisture reduces explosibility"
       ],
       "answer": 3,
@@ -678,10 +678,10 @@
       "difficulty": "easy",
       "stem": "The 'safety officer' in a mine must be appointed as per",
       "options": [
-        "Reduce equipment maintenance",
-        "Enhance surveying accuracy",
+        "The company's own internal circular",
+        "Mines Rules 1955 Rule 115",
         "CMR 2017 Regulation 39",
-        "Improve ventilation efficiency"
+        "An internal mine standing order"
       ],
       "answer": 2,
       "solution": "CMR 2017 Regulation 39."
@@ -804,10 +804,10 @@
       "difficulty": "medium",
       "stem": "The 'dip and strike' of a seam can be determined using",
       "options": [
-        "Used only for horizontal lines",
+        "A plane table survey alone",
         "A combination of compass, clinometer, and survey measurements",
-        "Works only in daylight",
-        "Applicable to total stations only"
+        "A total station operated by the surveyor",
+        "A theodolite fitted with a compass"
       ],
       "answer": 1,
       "solution": "Combination of compass, clinometer, and survey measurements."
@@ -840,10 +840,10 @@
       "difficulty": "hard",
       "stem": "The 'compensation for accident' to mine workers is governed by",
       "options": [
-        "Optional in non-hazardous areas",
+        "The Standing Orders of the company",
         "Employees' Compensation Act 1923 and Mines Act 1952",
-        "Increase production rate",
-        "Improve ventilation efficiency"
+        "The Payment of Wages Act 1936",
+        "The Code on Wages 2019 alone"
       ],
       "answer": 1,
       "solution": "Employees' Compensation Act 1923 and Mines Act 1952."
@@ -949,9 +949,9 @@
       "stem": "The 'safety pillar' during depillaring is left to",
       "options": [
         "Protect workers during pillar extraction",
-        "Store equipment",
-        "Increase production",
-        "Provide ventilation"
+        "Allow the roof to fall behind the goaf edge",
+        "Reduce the cost of roof support",
+        "Prevent the inflow of water into the goaf"
       ],
       "answer": 0,
       "solution": "Safety pillars protect workers during depillaring operations."
@@ -984,7 +984,7 @@
       "difficulty": "medium",
       "stem": "The dust count method measures",
       "options": [
-        "Specific to metal mines only",
+        "The weight of dust settled on a monthly plate",
         "Resistance measurement only",
         "The number of dust particles per unit volume of air",
         "Voltage measurement only"
@@ -1040,8 +1040,8 @@
       "options": [
         "Two parallel roadways or workings",
         "Surface to underground",
-        "Quarrying of granite",
-        "Extraction of iron ore"
+        "Two roadways at different levels",
+        "One roadway to a different panel"
       ],
       "answer": 0,
       "solution": "Cross-cuts connect parallel roadways or workings."
@@ -1272,9 +1272,9 @@
       "difficulty": "hard",
       "stem": "Bench stability depends on",
       "options": [
-        "Only the height of the bench",
-        "Only the type of excavator",
-        "Only the width of the haul road",
+        "The colour of the overburden in the bench face",
+        "The make of excavator working the bench",
+        "The number of persons working at the bench toe",
         "Joint orientation, groundwater, weathering, blast damage"
       ],
       "answer": 3,
@@ -1290,9 +1290,9 @@
       "difficulty": "hard",
       "stem": "The 'accident investigation' under the Mines Act is conducted to",
       "options": [
-        "Optional in non-hazardous areas",
+        "Establish the monetary liability of the operator",
         "Punish workers",
-        "Reduce equipment maintenance",
+        "Recommend a change in the production target",
         "Find the cause and prevent recurrence"
       ],
       "answer": 3,
@@ -1308,10 +1308,10 @@
       "difficulty": "easy",
       "stem": "The 'gradient' of a roadway is calculated from",
       "options": [
-        "Used only for horizontal lines",
+        "The rise or fall measured by a clinometer only",
         "Rise or fall divided by horizontal distance",
-        "Works only in daylight",
-        "Applicable to total stations only"
+        "The tonnage hauled over the roadway",
+        "The number of roadways in the district"
       ],
       "answer": 1,
       "solution": "Gradient is rise/fall divided by horizontal distance."
@@ -1326,10 +1326,10 @@
       "difficulty": "medium",
       "stem": "The 'water to solids ratio' in hydraulic stowing affects",
       "options": [
-        "Only the colour of the slurry",
-        "Only the height of the dam",
+        "The colour of the slurry being pumped",
+        "The nominal height of the stowing dam wall",
         "Pipeline wear, transport efficiency, and settling",
-        "Only the type of pump"
+        "The type of pump installed at the borehole"
       ],
       "answer": 2,
       "solution": "Water/solids ratio affects wear, efficiency, and settling."
@@ -1398,10 +1398,10 @@
       "difficulty": "medium",
       "stem": "The 'grid system' in mine surveying is used to",
       "options": [
-        "Used only for horizontal lines",
-        "Record temperature variations",
+        "Reduction of the levels to a datum",
+        "Fixing the position of the mine boundary",
         "Establish a coordinate system for reference and mapping",
-        "Test roof stability"
+        "Selection of the roof bolting pattern"
       ],
       "answer": 2,
       "solution": "Establishes a coordinate system for reference and mapping."
@@ -1471,9 +1471,9 @@
       "stem": "Every mine must conduct regular",
       "options": [
         "Safety meetings and toolbox talks",
-        "Only the quarterly production meetings",
-        "Only statutory inspections",
-        "Only surface staff meetings"
+        "The quarterly production review meeting alone",
+        "The statutory inspection by the inspector alone",
+        "The monthly reconciliation of district accounts alone"
       ],
       "answer": 0,
       "solution": "Regular safety meetings and toolbox talks are required."
@@ -1596,8 +1596,8 @@
       "difficulty": "easy",
       "stem": "The 'contour mining' method is used in",
       "options": [
-        "Mining of bauxite",
-        "Extraction of iron ore",
+        "Flat alluvial river terraces",
+        "Deep undersea coal seams",
         "Desert terrain",
         "Hilly or mountainous terrain along the contour of the hill"
       ],
@@ -1741,9 +1741,9 @@
       "stem": "The 'pillar and stall' method in underground mining involves",
       "options": [
         "Leaving pillars of coal to support the roof",
-        "Specific to metal mines only",
-        "Used in quarrying operations",
-        "Processing of limestone"
+        "Removing the roof to allow a continuous advance",
+        "Filling the goaf with pumped slurry waste",
+        "Driving an inclined roadway down from the surface"
       ],
       "answer": 0,
       "solution": "Leaving pillars to support the roof."
@@ -1777,8 +1777,8 @@
       "stem": "The 'first commercial coal mine auction' results showed",
       "options": [
         "Competitive bidding and premium over base price",
-        "Quarrying of granite",
-        "Mining of bauxite",
+        "Reserve price fixed for every block",
+        "No competitive bidding at all",
         "Government participation"
       ],
       "answer": 0,
@@ -1830,10 +1830,10 @@
       "difficulty": "easy",
       "stem": "The 'biodiversity management plan' for mining includes",
       "options": [
-        "Only the prevention of land subsidence",
+        "Prevention of land subsidence alone",
         "Conservation of local flora and fauna",
-        "Only the management of overburden dumps",
-        "Only the control of dust on haul roads"
+        "Management of overburden spoil dumps alone",
+        "Control of dust on the haul roads alone"
       ],
       "answer": 1,
       "solution": "Conservation of local flora and fauna."
@@ -1902,10 +1902,10 @@
       "difficulty": "medium",
       "stem": "The 'coal transportation' from mines primarily uses",
       "options": [
-        "Specific to metal mines only",
-        "Used in quarrying operations",
+        "Handcarts and animal drawn carts only",
+        "Conveyors and aerial ropeways exclusively",
         "Railways and road transport",
-        "Extraction of iron ore"
+        "Pipelines and inland barges only"
       ],
       "answer": 2,
       "solution": "Coal transportation primarily uses railways and roads."

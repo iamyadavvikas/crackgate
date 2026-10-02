@@ -156,9 +156,9 @@
       "difficulty": "hard",
       "stem": "The 'moisture content' in coal affects",
       "options": [
-        "Quarrying of granite",
-        "Processing of limestone",
-        "Specific to metal mines only",
+        "The quantity of stone dust needed",
+        "The thickness of the seam floor workings",
+        "The number of persons employed in the district",
         "Calorific value and handling properties"
       ],
       "answer": 3,
@@ -246,9 +246,9 @@
       "difficulty": "hard",
       "stem": "Respirable coal dust can cause",
       "options": [
-        "Specific to metal mines only",
-        "Nothing serious",
-        "Mining of bauxite",
+        "A skin ailment only",
+        "A short term cough",
+        "Loss of hearing in the workings",
         "Coal workers' pneumoconiosis (CWP) or black lung disease"
       ],
       "answer": 3,
@@ -300,9 +300,9 @@
       "difficulty": "easy",
       "stem": "The wet drilling method helps in",
       "options": [
-        "Increasing dust",
-        "Increasing production",
-        "Specific to metal mines only",
+        "Increase the weight of the drill rods",
+        "Increase the life of the drill bit",
+        "Increase the tonnage broken per round",
         "Reducing dust generation at source"
       ],
       "answer": 3,
@@ -336,9 +336,9 @@
       "difficulty": "medium",
       "stem": "The 'drill hole diameter' for blasting depends on",
       "options": [
-        "Used for charging detonators",
-        "Used for roof bolting only",
-        "The depth of the mine office",
+        "The colour of the overburden",
+        "The colour of the drill steel",
+        "The distance of the blast from the main roadway",
         "The type of explosive and rock conditions"
       ],
       "answer": 3,
@@ -355,9 +355,9 @@
       "stem": "The 'charge density' in a drill hole affects",
       "options": [
         "The fragmentation and throw of the blasted material",
-        "Used for roof bolting only",
-        "Requires special permit",
-        "Applied after stemming only"
+        "The cost of the drilling machine",
+        "The colour of the explosive",
+        "The time of firing of the shot"
       ],
       "answer": 0,
       "solution": "Affects fragmentation and throw."
@@ -516,10 +516,10 @@
       "difficulty": "easy",
       "stem": "The 'mucking' after blasting in a drift is done by",
       "options": [
-        "Used for roof bolting only",
-        "Used for stemming operations",
+        "Hand shovelling of the muck pile",
+        "Removal of the stemming material",
         "Loaders, LHDs, or other mechanized equipment",
-        "Applied after stemming only"
+        "Charging of the holes"
       ],
       "answer": 2,
       "solution": "Loaders, LHDs, or other mechanized equipment."
@@ -786,10 +786,10 @@
       "difficulty": "medium",
       "stem": "A coal dust explosion produces",
       "options": [
-        "Specific to metal mines only",
+        "A flame of very low temperature",
         "Heat, flame, pressure wave, and toxic gases",
-        "Used for stemming operations",
-        "Used for drilling blast holes"
+        "Cold water at the pit bottom",
+        "A fall of loose stone in the roadway"
       ],
       "answer": 1,
       "solution": "Produces heat, flame, pressure wave, and toxic gases."
@@ -967,9 +967,9 @@
       "stem": "The shearer in longwall mining cuts coal in",
       "options": [
         "Both directions of face advance",
-        "Used in quarrying operations",
-        "Specific to metal mines only",
-        "Extraction of iron ore"
+        "One direction of face advance only",
+        "Only the thickest part of the seam",
+        "Only after the panel has been flooded"
       ],
       "answer": 0,
       "solution": "Cuts coal in both directions of face advance."
@@ -1200,9 +1200,9 @@
       "difficulty": "hard",
       "stem": "Stowing in underground mining involves",
       "options": [
-        "Mining of bauxite",
-        "Specific to metal mines only",
-        "Processing of limestone",
+        "Removing all roof supports after each advance",
+        "Raising a stall from the parent roadway",
+        "Driving a cross-cut between two roadways",
         "Filling the goaf with waste material"
       ],
       "answer": 3,
@@ -1290,10 +1290,10 @@
       "difficulty": "easy",
       "stem": "The 'pillar width' in board and pillar mining depends on",
       "options": [
-        "Specific to metal mines only",
+        "Only the depth of workings",
         "Fixed for all mines",
         "Depth, strength of coal, and roof conditions",
-        "Extraction of iron ore"
+        "The size of the ventilation fan"
       ],
       "answer": 2,
       "solution": "Pillar width depends on depth, coal strength, and roof conditions."
@@ -1345,9 +1345,9 @@
       "stem": "The 'contour' on a mine plan represents",
       "options": [
         "Points of equal elevation connected by a line",
-        "Used only for horizontal lines",
-        "Applicable to total stations only",
-        "Works only in daylight"
+        "The boundary of the leasehold",
+        "The line of the roof bolt",
+        "The position of the ventilation fan"
       ],
       "answer": 0,
       "solution": "Points of equal elevation connected by a line."
@@ -1362,10 +1362,10 @@
       "difficulty": "medium",
       "stem": "The primary purpose of stowing in underground coal mines is",
       "options": [
-        "Increase production",
-        "Store the water of the mine",
+        "Reduce the cost of roof support",
+        "Keep the roadways free of water",
         "Fill the goaf to control surface subsidence",
-        "Provide ventilation"
+        "Provide a place to store mine equipment"
       ],
       "answer": 2,
       "solution": "Stowing fills goaf to control surface subsidence."
@@ -1416,10 +1416,10 @@
       "difficulty": "easy",
       "stem": "The 'traffic management plan' must cover",
       "options": [
-        "Only the main gate",
+        "The main gate of the mine",
         "All mine roads, intersections, work areas",
-        "Only the office car park",
-        "Only the coal stockyard"
+        "The office car park area",
+        "The coal stockyard approach road"
       ],
       "answer": 1,
       "solution": "Traffic management covers all roads and work areas."
@@ -1506,10 +1506,10 @@
       "difficulty": "easy",
       "stem": "Catch benches in opencast mines serve to",
       "options": [
-        "Provide parking",
-        "Increase production",
+        "Keep the haul road free of falling rock",
+        "Increase the depth of the opencast mine",
         "Intercept falling material and improve stability",
-        "Store equipment"
+        "Store the drill steel on the bench"
       ],
       "answer": 2,
       "solution": "Catch benches intercept material and improve stability."
@@ -1596,10 +1596,10 @@
       "difficulty": "easy",
       "stem": "The 'blast hole' in opencast mining is drilled for",
       "options": [
-        "Used for roof bolting only",
-        "Used for drilling blast holes",
+        "Installing the drainage pipes",
+        "Measuring the depth of the overburden",
         "Placing explosives to fragment rock or coal",
-        "Applied after stemming only"
+        "Placing the stemming material"
       ],
       "answer": 2,
       "solution": "Placing explosives to fragment rock or coal."
@@ -1776,8 +1776,8 @@
       "difficulty": "hard",
       "stem": "The 'coal gasification' projects in India are being promoted by",
       "options": [
-        "Mining of bauxite",
-        "Extraction of iron ore",
+        "The Ministry of Railways",
+        "The Oil and Natural Gas Commission",
         "The Ministry of Defence",
         "Ministry of Coal and CIL"
       ],
@@ -1795,9 +1795,9 @@
       "stem": "The 'frozen coal' in mines refers to",
       "options": [
         "Coal for storage",
-        "Processing of limestone",
+        "Coal held in the surface bunker",
         "Coal in inaccessible areas due to geological or operational reasons",
-        "Coal near water"
+        "Coal held in a rail wagon"
       ],
       "answer": 2,
       "solution": "Frozen coal refers to coal in inaccessible areas."
@@ -1885,9 +1885,9 @@
       "stem": "The 'commercial coal mining' was opened to",
       "options": [
         "Private sector entities",
-        "Used in quarrying operations",
-        "Specific to metal mines only",
-        "Extraction of iron ore"
+        "Foreign multinational companies alone",
+        "The state electricity boards alone",
+        "The state coal companies alone"
       ],
       "answer": 0,
       "solution": "Private sector entities."

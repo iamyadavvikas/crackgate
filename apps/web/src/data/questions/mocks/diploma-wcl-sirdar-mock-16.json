@@ -138,10 +138,10 @@
       "difficulty": "easy",
       "stem": "The 'objective' of an accident report is to",
       "options": [
-        "Improve ventilation efficiency",
-        "Blame someone for the accident",
+        "Estimate the cost of the shift lost",
+        "Blaming someone for the accident",
         "Present facts and findings to prevent recurrence",
-        "Reduce equipment maintenance"
+        "Record the tonnage of coal won"
       ],
       "answer": 2,
       "solution": "Present facts and findings to prevent recurrence."
@@ -337,8 +337,8 @@
       "stem": "The bench height in opencast coal mines depends on",
       "options": [
         "Fixed height for all mines",
-        "Processing of limestone",
-        "Extraction of iron ore",
+        "The colour of the overburden",
+        "The name of the mine manager",
         "Equipment reach, seam thickness, and geological conditions"
       ],
       "answer": 3,
@@ -373,8 +373,8 @@
       "stem": "The 'borehole' in coal exploration is drilled to",
       "options": [
         "Extract coal from the seam",
-        "Quarrying of granite",
-        "Processing of limestone",
+        "Install a permanent ventilation shaft",
+        "Dredge the overburden in the pit",
         "Collect geological information about coal deposits"
       ],
       "answer": 3,
@@ -552,10 +552,10 @@
       "difficulty": "hard",
       "stem": "The 'ribs' in bord and pillar mining are",
       "options": [
-        "Quarrying of granite",
+        "The cross-cuts between two roadways",
         "The sides of pillars that support the roof",
-        "Surface mineral extraction",
-        "Extraction of iron ore"
+        "The props erected under the roof",
+        "The roadways through the pillar line"
       ],
       "answer": 1,
       "solution": "Sides of pillars supporting the roof."
@@ -679,9 +679,9 @@
       "stem": "Under CMR 2017, the 'competent person' for examination of safety lamps must be",
       "options": [
         "A person authorized by the manager",
-        "Optional in non-hazardous areas",
+        "Any person holding a first aid certificate",
         "Any person of the mine",
-        "Increase production rate"
+        "A person appointed by the contractor"
       ],
       "answer": 0,
       "solution": "A person authorized by the manager."
@@ -697,9 +697,9 @@
       "stem": "A 'tacheometer' in surveying is used for",
       "options": [
         "Measuring distances using stadia hairs",
-        "Test roof stability",
-        "Used only for horizontal lines",
-        "Applicable to total stations only"
+        "Measuring the gas percentage",
+        "Reduction of levels below the seam",
+        "Setting out the shot hole pattern"
       ],
       "answer": 0,
       "solution": "Measuring distances using stadia hairs."
@@ -715,9 +715,9 @@
       "stem": "The main causes of accidents in coal mines include",
       "options": [
         "Roof fall, gas ignition, machinery, transportation, and drowning",
-        "Optional in non-hazardous areas",
-        "Extraction of iron ore",
-        "Mining of bauxite"
+        "Earthquake tremors and cyclonic winds",
+        "Seasonal monsoon flooding only",
+        "Shortage of underground illumination"
       ],
       "answer": 0,
       "solution": "Multiple causes including roof fall, gas, machinery, transportation, and drowning."
@@ -768,8 +768,8 @@
       "difficulty": "medium",
       "stem": "The 'error of closure' in a traverse must be checked against",
       "options": [
-        "Applicable to total stations only",
-        "Used only for horizontal lines",
+        "The instrument constant of the theodolite",
+        "The least count of the total station",
         "The permissible error limits as prescribed",
         "Zero only at all times"
       ],
@@ -786,10 +786,10 @@
       "difficulty": "hard",
       "stem": "The 'safety catch' on a cage must be able to",
       "options": [
-        "Enhance surveying accuracy",
+        "Slow the cage during the inspection",
         "Arrest the cage if the rope breaks",
-        "Improve ventilation efficiency",
-        "Optional in non-hazardous areas"
+        "Ventilate the cage at each level",
+        "Hold the cage at the pit bottom"
       ],
       "answer": 1,
       "solution": "Arrest the cage if the rope breaks."
@@ -1038,9 +1038,9 @@
       "difficulty": "hard",
       "stem": "The 'scaling' after blasting in a drift is done to",
       "options": [
-        "Increase production",
-        "Used for charging detonators",
-        "Used for roof bolting only",
+        "Charge the hole again for a second blast",
+        "Install the roof bolts before scaling",
+        "Increase the advance of the drift",
         "Remove loose and unstable rock from the roof and sides"
       ],
       "answer": 3,
@@ -1200,10 +1200,10 @@
       "difficulty": "medium",
       "stem": "The 'hierarchy of controls' for accident prevention includes",
       "options": [
-        "Improve ventilation efficiency",
-        "Enhance surveying accuracy",
+        "Removal of the ventilation officer",
+        "Replacement of the mine surveyor",
         "Elimination, substitution, engineering controls, administrative controls, and PPE",
-        "Increase production rate"
+        "Reduction of the shift length"
       ],
       "answer": 2,
       "solution": "Elimination, substitution, engineering controls, administrative controls, and PPE."
@@ -1291,9 +1291,9 @@
       "stem": "The 'old workings mapping' is important to",
       "options": [
         "A formality of the mine",
-        "Increase production",
+        "Fix the output target of the district",
         "Identify areas of potential water accumulation",
-        "Painting the workings white"
+        "Determine the colour of the strata"
       ],
       "answer": 2,
       "solution": "Mapping old workings identifies potential water accumulation areas."
@@ -1326,10 +1326,10 @@
       "difficulty": "medium",
       "stem": "The sirdar is responsible for the supervision of",
       "options": [
-        "Only the blasting gang",
-        "Only the surface workers",
+        "The blasting gang in the district",
+        "The surface workers on the dumps",
         "All persons under his charge in the shift",
-        "Only the new trainees"
+        "The newly inducted trainees"
       ],
       "answer": 2,
       "solution": "The sirdar is responsible for all persons under his charge during the shift."
@@ -1363,9 +1363,9 @@
       "stem": "The man riding system must be capable of operating during",
       "options": [
         "Emergency conditions including power failure",
-        "Only during the day shift",
-        "Only when the manager is present",
-        "Only in dry weather"
+        "The day shift hours alone",
+        "Times when the manager is present",
+        "Dry weather conditions"
       ],
       "answer": 0,
       "solution": "Must operate during emergency conditions including power failure."
@@ -1506,10 +1506,10 @@
       "difficulty": "medium",
       "stem": "The safety committee must include",
       "options": [
-        "Streamline reporting processes",
+        "Only the representatives of the owner",
         "Equal representation from management and workers",
-        "Improve ventilation efficiency",
-        "Optional in non-hazardous areas"
+        "Only the elected worker representatives",
+        "Only the mine manager and his nominees"
       ],
       "answer": 1,
       "solution": "Equal representation from management and workers."
@@ -1524,10 +1524,10 @@
       "difficulty": "medium",
       "stem": "The 'danger lamp' or 'safety lamp' regulations are specified in",
       "options": [
-        "Increase production rate",
-        "Optional in non-hazardous areas",
+        "CMR 2017 Regulation 122",
+        "Mines Act 1952 Section 18",
         "CMR 2017 Regulation 120",
-        "Reduce equipment maintenance"
+        "Mines Rules 1955 Rule 45"
       ],
       "answer": 2,
       "solution": "CMR 2017 Regulation 120."
@@ -1669,9 +1669,9 @@
       "stem": "The 'environmental clearance' for mining projects is required under",
       "options": [
         "Environment Protection Act 1986",
-        "Extraction of iron ore",
-        "Processing of limestone",
-        "Specific to metal mines only"
+        "The Mines Act 1952 alone",
+        "The Forest Conservation Act 1980",
+        "The Contract Act 1872"
       ],
       "answer": 0,
       "solution": "Required under Environment Protection Act 1986."
@@ -1686,10 +1686,10 @@
       "difficulty": "hard",
       "stem": "The 'domestic coal allocation' policy was replaced by",
       "options": [
-        "Specific to metal mines only",
+        "The Railway freight allocation system",
         "FSA and e-auction systems",
-        "Used in quarrying operations",
-        "Quarrying of granite"
+        "The State government quota system",
+        "The Directorate General of Supplies allotment"
       ],
       "answer": 1,
       "solution": "Replaced by FSA and e-auction systems."
@@ -1741,9 +1741,9 @@
       "stem": "The 'coal preparation plant' is used to",
       "options": [
         "Clean, grade, and prepare coal for market",
-        "Extraction of iron ore",
-        "Open pit copper extraction",
-        "Quarrying of granite"
+        "Removal of overburden from the pit",
+        "Benching the highwall",
+        "Dredging the district sump"
       ],
       "answer": 0,
       "solution": "Cleans, grades, and prepares coal for market."
@@ -1795,9 +1795,9 @@
       "stem": "The 'coal washeries' are operated by",
       "options": [
         "CIL subsidiaries and some private operators",
-        "Specific to metal mines only",
-        "Used in quarrying operations",
-        "Extraction of iron ore"
+        "State electricity boards exclusively",
+        "Railways on a build operate basis",
+        "Foreign contractors on a build transfer basis"
       ],
       "answer": 0,
       "solution": "CIL subsidiaries and some private operators."
@@ -1812,9 +1812,9 @@
       "difficulty": "easy",
       "stem": "The 'National Coal Index' was launched to",
       "options": [
-        "Quarrying of granite",
-        "Extraction of iron ore",
-        "The National Mineral Fund",
+        "Promote the export of washed coal",
+        "Fix the royalty on each mine",
+        "Allocate coal to the power sector",
         "Track coal price movements for auction and policy purposes"
       ],
       "answer": 3,

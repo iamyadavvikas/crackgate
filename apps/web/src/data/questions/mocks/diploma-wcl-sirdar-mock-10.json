@@ -138,9 +138,9 @@
       "difficulty": "medium",
       "stem": "Stone dust is used in coal mines to",
       "options": [
-        "Improve ventilation",
-        "Increase production",
-        "Reduce the moisture content",
+        "Keep the roadways free of coal dust",
+        "Increase the life of the mining machine",
+        "Reduce the temperature of the working place",
         "Prevent propagation of coal dust explosion"
       ],
       "answer": 3,
@@ -355,9 +355,9 @@
       "stem": "The minimum quantity of stone dust required per 100 meters of roadway depends on",
       "options": [
         "The cross-sectional area and type of rock dust",
-        "The number of workers",
-        "Power measurement only",
-        "Specific to metal mines only"
+        "The number of props in the roadway",
+        "The power rating of the dust fan",
+        "The tonnage of coal produced"
       ],
       "answer": 0,
       "solution": "Cross-sectional area and type of rock dust determine quantity."
@@ -390,9 +390,9 @@
       "difficulty": "easy",
       "stem": "The 'borehole sealing' near water bodies is done to",
       "options": [
-        "Increase production",
-        "Improve the haulage",
-        "Needed only near the surface",
+        "Reduce the cost of cementing",
+        "Improve the bearing capacity of the strata",
+        "Needed only in the main haulage road",
         "Prevent uncontrolled water inflow into workings"
       ],
       "answer": 3,
@@ -552,9 +552,9 @@
       "difficulty": "hard",
       "stem": "The 'bench height' safety considerations include",
       "options": [
-        "Optional in non-hazardous areas",
-        "Required only in UG mines",
-        "Improve ventilation efficiency",
+        "The colour of the overburden",
+        "The number of persons working at the toe",
+        "The make of the drilling fleet",
         "Equipment capabilities and geological conditions"
       ],
       "answer": 3,
@@ -624,9 +624,9 @@
       "difficulty": "easy",
       "stem": "The 'fire extinguisher' types suitable for coal mines include",
       "options": [
-        "Specific to metal mines only",
-        "Mining of bauxite",
-        "Extraction of iron ore",
+        "Ordinary water filled bucket extinguishers",
+        "Halon and soda acid types only",
+        "Compressed air jet types only",
         "Dry chemical, foam, and CO2 types"
       ],
       "answer": 3,
@@ -697,8 +697,8 @@
       "stem": "The electrical cables used in underground coal mines must be",
       "options": [
         "Flame-retardant and fire-resistant as per IS standards",
-        "Processing of limestone",
-        "Quarrying of granite",
+        "Armoured but not flame-retardant",
+        "Covered in PVC but not fire resistant",
         "Any cable of good quality"
       ],
       "answer": 0,
@@ -732,10 +732,10 @@
       "difficulty": "easy",
       "stem": "The 'fire fighting technique' for coal mine fires includes",
       "options": [
-        "Used in quarrying operations",
+        "Flooding only the main ventilation district",
         "Water, foam, inert gases, and isolation methods",
-        "Quarrying of granite",
-        "Specific to metal mines only"
+        "Flooding the entire ventilation district",
+        "Using only hand-operated extinguishers"
       ],
       "answer": 1,
       "solution": "Fire fighting uses water, foam, inert gases, isolation."
@@ -949,7 +949,7 @@
       "stem": "The 'safety lever' of a winding engine must be",
       "options": [
         "Within easy reach of the operator at all times",
-        "Improve ventilation efficiency",
+        "Operated only when the cage is moving",
         "Optional for the operator",
         "Fixed far away from the engine"
       ],
@@ -1146,10 +1146,10 @@
       "difficulty": "hard",
       "stem": "The safety devices on a winding engine include",
       "options": [
-        "Optional in non-hazardous areas",
-        "Required only in UG mines",
+        "A manually operated brake handle",
+        "An automatic cage weighing device",
         "Governor, overspeed device, braking system, and depth indicator",
-        "Improve ventilation efficiency"
+        "A change in the winding rope diameter"
       ],
       "answer": 2,
       "solution": "Multiple safety devices are required."
@@ -1237,7 +1237,7 @@
       "stem": "The 'working face' in mining is where",
       "options": [
         "The actual extraction of coal or mineral takes place",
-        "Extraction of iron ore",
+        "The storage of coal on the surface",
         "Tunneling for railway construction",
         "The blasting of stone for building"
       ],
@@ -1272,10 +1272,10 @@
       "difficulty": "easy",
       "stem": "A 'delay detonator' in blasting is used to",
       "options": [
-        "Used for roof bolting only",
+        "Increase the number of holes in the round",
         "Sequence the explosion of multiple holes for better fragmentation",
-        "Used for charging detonators",
-        "Used for stemming operations"
+        "Measure the delay between two holes",
+        "Hold the stemming material in place"
       ],
       "answer": 1,
       "solution": "Sequence explosions for better fragmentation."
@@ -1345,8 +1345,8 @@
       "stem": "The 'inundation hazard' in coal mines is increased by",
       "options": [
         "Efficient drainage of the workings",
-        "Mining of bauxite",
-        "Specific to metal mines only",
+        "Flooded old workings sealed with sandcrete",
+        "Concrete plugging of the water courses",
         "Proximity to surface water bodies, old workings, and aquifers"
       ],
       "answer": 3,
@@ -1362,9 +1362,9 @@
       "difficulty": "easy",
       "stem": "The 'hand mining' or 'conventional mining' involves",
       "options": [
-        "Used in quarrying operations",
-        "Specific to metal mines only",
-        "Processing of limestone",
+        "Mechanised cutting by a continuous miner",
+        "Longwall advancing with a shearer",
+        "A fully automated loader fleet operation",
         "Manual drilling, blasting, and loading"
       ],
       "answer": 3,
@@ -1399,7 +1399,7 @@
       "stem": "A 'notice of accident' under the Mines Act must be sent to",
       "options": [
         "The inspector of mines and the Chief Inspector",
-        "Improve ventilation efficiency",
+        "The district magistrate only",
         "The local police station",
         "No one except the manager"
       ],
@@ -1578,9 +1578,9 @@
       "difficulty": "hard",
       "stem": "The 'contractor workforce' in coal mines is managed through",
       "options": [
-        "Quarrying of granite",
-        "Specific to metal mines only",
-        "The railways act only",
+        "The Railways Act only",
+        "An oral undertaking from the contractor",
+        "The Contract Labour Regulation Act alone",
         "Labor laws and safety regulations"
       ],
       "answer": 3,

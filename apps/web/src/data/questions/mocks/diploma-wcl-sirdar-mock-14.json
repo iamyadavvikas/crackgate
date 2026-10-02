@@ -157,9 +157,9 @@
       "stem": "The purpose of drifting includes",
       "options": [
         "Exploration, development, ventilation, and access",
-        "Only the storage of coal",
-        "Only the housing of pumps",
-        "Only the storing of explosives"
+        "Storage of coal in the district alone",
+        "Housing of pumping machinery alone",
+        "Storing of explosives underground alone"
       ],
       "answer": 0,
       "solution": "Exploration, development, ventilation, and access."
@@ -174,9 +174,9 @@
       "difficulty": "hard",
       "stem": "An 'included angle' traverse uses",
       "options": [
-        "Used only for horizontal lines",
-        "Applicable to total stations only",
-        "Works only in daylight",
+        "Exterior angles at the traverse stations",
+        "Bearings read with a compass only",
+        "Distances measured with a tape only",
         "Interior angles measured between adjacent traverse lines"
       ],
       "answer": 3,
@@ -211,9 +211,9 @@
       "stem": "The cross-sectional area of the roadway affects",
       "options": [
         "The quantity of stone dust required for dusting",
-        "Specific to metal mines only",
-        "Used in quarrying operations",
-        "Applicable to narrow seam only"
+        "The cost of the shot firing operation",
+        "The number of persons who can pass at once",
+        "The depth of the roof bolt installed"
       ],
       "answer": 0,
       "solution": "Affects the quantity of stone dust required."
@@ -246,8 +246,8 @@
       "difficulty": "easy",
       "stem": "Spontaneous heating of coal occurs due to",
       "options": [
-        "Processing of limestone",
-        "Quarrying of granite",
+        "Friction of the roof against a prop",
+        "Absorption of moisture by the seam",
         "An external flame source",
         "Chemical reaction of coal with oxygen at low temperature"
       ],
@@ -265,8 +265,8 @@
       "stem": "The personal dust sampler is worn by",
       "options": [
         "Workers to measure their personal dust exposure",
-        "Specific to metal mines only",
-        "Used in quarrying operations",
+        "A person other than the worker exposed",
+        "The safety officer of the mine",
         "The manager only"
       ],
       "answer": 0,
@@ -301,8 +301,8 @@
       "stem": "The 'safety pillar' near water-logged workings must not be",
       "options": [
         "Maintained at all times",
-        "Reduce equipment maintenance",
-        "Increased beyond limits",
+        "Reinforced with steel straps",
+        "Doubled at each depillaring stage",
         "Reduced or removed without proper precautions"
       ],
       "answer": 3,
@@ -355,9 +355,9 @@
       "stem": "The 'steel strap' in roof support is used to",
       "options": [
         "Connect multiple bolts for distributed support",
-        "Store explosives",
-        "Provide ventilation",
-        "Increase production"
+        "Keep the roof bolts clear of the blasting zone",
+        "Support the roadway crossing",
+        "Reduce the number of roof bolts required"
       ],
       "answer": 0,
       "solution": "Steel straps connect bolts for distributed support."
@@ -589,9 +589,9 @@
       "stem": "The 'GPS survey' in mining provides",
       "options": [
         "Three-dimensional positioning for surface surveys",
-        "Quarrying of granite",
-        "Mining of bauxite",
-        "Extraction of iron ore"
+        "The tonnage of coal despatched",
+        "The depth of workings below the seam",
+        "The rate of roof fall per month"
       ],
       "answer": 0,
       "solution": "GPS surveys provide 3D positioning for surface surveys."
@@ -768,10 +768,10 @@
       "difficulty": "easy",
       "stem": "The 'shield' support in longwall mining protects against",
       "options": [
-        "Specific to metal mines only",
+        "Firedamp entering the working face",
         "Control dust emissions",
         "Goaf material falling onto the working face",
-        "Support conveyor belts"
+        "Water leaking from the roof"
       ],
       "answer": 2,
       "solution": "Shields protect the working face from goaf material."
@@ -805,9 +805,9 @@
       "stem": "The 'coal seam permeability' affects",
       "options": [
         "Gas drainage and water ingress characteristics",
-        "Processing of limestone",
-        "Specific to metal mines only",
-        "Quarrying of granite"
+        "The tonnage of coal extracted per month",
+        "The colour of the seam floor workings",
+        "The number of vehicles on the haul road"
       ],
       "answer": 0,
       "solution": "Permeability affects gas drainage and water ingress."
@@ -840,9 +840,9 @@
       "difficulty": "medium",
       "stem": "A water dam in a mine is constructed to",
       "options": [
-        "Improve ventilation",
-        "Reduce the pumping cost",
-        "Increase production",
+        "Cool the mine air",
+        "Measure the inflow of water into the mine",
+        "Increase the rate of coal extraction",
         "Impound water and prevent it from entering working areas"
       ],
       "answer": 3,
@@ -930,10 +930,10 @@
       "difficulty": "hard",
       "stem": "The 'subsidence' due to mining is controlled by",
       "options": [
-        "Extraction of iron ore",
+        "Complete extraction without delay",
         "Ignoring the subsidence",
         "Stowing, pillar design, and controlled extraction",
-        "Quarrying of granite"
+        "Removal of all surface buildings"
       ],
       "answer": 2,
       "solution": "Subsidence is controlled by stowing, pillars, and extraction methods."
@@ -1038,9 +1038,9 @@
       "difficulty": "hard",
       "stem": "The purpose of man riding systems in mines is to",
       "options": [
-        "Transport coal only",
-        "Increase production",
-        "Transport materials",
+        "Transport equipment to the face",
+        "Increase the tonnage handled per shift",
+        "Carry the shotfirers to the firing point",
         "Transport persons safely and reduce fatigue"
       ],
       "answer": 3,
@@ -1398,10 +1398,10 @@
       "difficulty": "medium",
       "stem": "A winding rope must be tested for",
       "options": [
-        "Only the colour of the rope",
+        "The colour of the rope surface",
         "Tensile strength, endurance, and non-destructive testing",
-        "Only the diameter of the rope",
-        "Only the price of the rope"
+        "The measured diameter of the rope",
+        "The purchase price of the rope"
       ],
       "answer": 1,
       "solution": "Tensile strength, endurance, and non-destructive testing."
@@ -1542,9 +1542,9 @@
       "difficulty": "medium",
       "stem": "Under the Mines Act, the 'reportable accident' includes",
       "options": [
-        "Reduce equipment maintenance",
-        "Enhance surveying accuracy",
-        "Improve ventilation efficiency",
+        "Any injury of a minor nature",
+        "Loss of a hand lamp only",
+        "A single fall of loose stone",
         "Fatal, serious, and dangerous occurrences as defined"
       ],
       "answer": 3,
@@ -1651,9 +1651,9 @@
       "stem": "The 'underground coal production' in India has been relatively low because of",
       "options": [
         "Geological challenges, safety concerns, and cost factors",
-        "Mining of bauxite",
+        "Absence of geological constraints",
         "High mechanisation in underground mines",
-        "Quarrying of granite"
+        "Low wages for underground workers"
       ],
       "answer": 0,
       "solution": "Geological challenges, safety, and cost."
@@ -1669,9 +1669,9 @@
       "stem": "The 'coal supply chain' efficiency depends on",
       "options": [
         "Mine production, transport, and dispatch systems",
-        "Processing of limestone",
+        "The colour of the coal produced",
         "Mine closures only",
-        "Mining of bauxite"
+        "The price of imported coal only"
       ],
       "answer": 0,
       "solution": "Mine production, transport, and dispatch systems."
@@ -1795,9 +1795,9 @@
       "stem": "The 'dragline' in opencast mining is used for",
       "options": [
         "Stripping overburden from large areas",
-        "Mining of bauxite",
-        "Specific to metal mines only",
-        "Used in quarrying operations"
+        "Benching the highwall before drilling",
+        "Loading coal into railway wagons",
+        "Grading the surface after land reclamation"
       ],
       "answer": 0,
       "solution": "Strips overburden from large areas."
@@ -1848,9 +1848,9 @@
       "difficulty": "medium",
       "stem": "The 'mechanized mining' in coal mines uses",
       "options": [
-        "Specific to metal mines only",
-        "Quarrying of granite",
-        "Processing of limestone",
+        "Hand tools and carrying baskets",
+        "Hand guided drilling and barrows",
+        "Animal drawn carts on the surface",
         "Heavy machinery like draglines, shovels, and trucks"
       ],
       "answer": 3,
@@ -1884,10 +1884,10 @@
       "difficulty": "medium",
       "stem": "The 'coal allocation' for power sector follows the",
       "options": [
-        "Specific to metal mines only",
+        "Administrative price fixation by the Ministry",
         "Fuel Supply Agreement (FSA) and e-auction",
-        "Used in quarrying operations",
-        "Processing of limestone"
+        "Quarterly allocation by the Railways",
+        "Open tender purchase by the buyers"
       ],
       "answer": 1,
       "solution": "FSA and e-auction."

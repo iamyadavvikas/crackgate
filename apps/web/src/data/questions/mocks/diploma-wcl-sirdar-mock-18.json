@@ -139,8 +139,8 @@
       "stem": "The 'pillar width' in board and pillar mining depends on",
       "options": [
         "Fixed for all mines",
-        "Quarrying of granite",
-        "Mining of bauxite",
+        "Only the depth of the workings",
+        "The size of the ventilation fan",
         "Depth, strength of coal, and roof conditions"
       ],
       "answer": 3,
@@ -193,9 +193,9 @@
       "stem": "The main danger from electrical equipment in coal mines is",
       "options": [
         "Ignition of methane or coal dust by sparks or heat",
-        "Specific to metal mines only",
-        "Used in quarrying operations",
-        "Extraction of iron ore"
+        "Electromagnetic interference with telephones",
+        "Excessive noise at the switchgear panels",
+        "Overheating of the transformer oil"
       ],
       "answer": 0,
       "solution": "Ignition of methane or coal dust by sparks or heat."
@@ -228,9 +228,9 @@
       "difficulty": "hard",
       "stem": "The 'levelling instrument' in mine surveying is used to determine",
       "options": [
-        "Used only for horizontal lines",
-        "Monitor gas concentrations",
-        "Record temperature variations",
+        "The horizontal angle between points",
+        "The bearing of a traverse line",
+        "The tonnage of coal at one place",
         "Difference in elevation between points"
       ],
       "answer": 3,
@@ -264,10 +264,10 @@
       "difficulty": "hard",
       "stem": "An accident investigation team should include",
       "options": [
-        "Optional in non-hazardous areas",
-        "Increase production rate",
+        "Only the officers of the mine",
+        "Only the owner's representatives",
         "Competent persons including safety officer and workers' representative",
-        "Improve ventilation efficiency"
+        "Only the electrician and fitter"
       ],
       "answer": 2,
       "solution": "Competent persons including safety officer and workers' representative."
@@ -445,8 +445,8 @@
       "stem": "Stone dust barriers are designed to",
       "options": [
         "Be triggered by the explosion pressure wave",
-        "Specific to metal mines only",
-        "Used in quarrying operations",
+        "Keep the return airway free of dust",
+        "Increase the incombustible matter in roadway dust",
         "Prevent dust accumulation"
       ],
       "answer": 0,
@@ -516,10 +516,10 @@
       "difficulty": "medium",
       "stem": "The cross-sectional area of the roadway affects",
       "options": [
-        "Applicable to narrow seam only",
+        "The cost of the shot firing operation",
         "The quantity of stone dust required for dusting",
-        "Specific to metal mines only",
-        "Used in quarrying operations"
+        "The number of persons who can pass at once",
+        "The depth of the roof bolt installed"
       ],
       "answer": 1,
       "solution": "Affects the quantity of stone dust required."
@@ -660,10 +660,10 @@
       "difficulty": "hard",
       "stem": "A water dam in a mine is constructed to",
       "options": [
-        "Cool the mine air",
-        "Increase production",
+        "Measure the inflow of water",
+        "Reduce the cost of mine ventilation",
         "Impound water and prevent it from entering working areas",
-        "Hoist the coal"
+        "Support the roof of the roadway"
       ],
       "answer": 2,
       "solution": "Impound water and prevent it from entering working areas."
@@ -678,9 +678,9 @@
       "difficulty": "hard",
       "stem": "Under the Mines Act, the 'Chief Inspector' has the power to",
       "options": [
-        "Only inspect the surface buildings",
-        "Only sanction the pay roll",
-        "Only certify the winding ropes",
+        "Inspection of the surface buildings alone",
+        "Sanction of the pay roll of the mine alone",
+        "Certification of the winding ropes in use alone",
         "Cancel or suspend certificates of competency"
       ],
       "answer": 3,
@@ -822,10 +822,10 @@
       "difficulty": "medium",
       "stem": "The 'gob' in mining is another term for",
       "options": [
-        "Specific to metal mines only",
-        "Mining of bauxite",
+        "Longwall - the retreating face working",
+        "Stope - the vertical extraction opening",
         "Goaf - the area where coal has been extracted",
-        "Processing of limestone"
+        "Cross-cut - the connecting roadway"
       ],
       "answer": 2,
       "solution": "Goaf - area where coal has been extracted."
@@ -876,10 +876,10 @@
       "difficulty": "hard",
       "stem": "The 'ultimate analysis' of coal determines",
       "options": [
-        "Quarrying of granite",
-        "Mining of bauxite",
+        "The moisture held in the coal seam",
+        "The ash left after complete incineration",
         "Carbon, hydrogen, nitrogen, sulfur, oxygen content",
-        "Extraction of iron ore"
+        "The volatile matter driven off on heating"
       ],
       "answer": 2,
       "solution": "Ultimate analysis determines C, H, N, S, O content."
@@ -1128,10 +1128,10 @@
       "difficulty": "easy",
       "stem": "The 'safe distance' for persons during blasting depends on",
       "options": [
-        "Used for roof bolting only",
-        "The colour of the rock",
+        "The time of the day",
+        "The grade of coal being mined",
         "The charge weight and type of explosive used",
-        "The length of the drill steel"
+        "The make of the detonator"
       ],
       "answer": 2,
       "solution": "Charge weight and type of explosive."
@@ -1146,10 +1146,10 @@
       "difficulty": "medium",
       "stem": "The 'safety lamp room' in a mine must be under the control of",
       "options": [
-        "Improve ventilation efficiency",
+        "Any person employed belowground",
         "Any person of the mine",
         "A competent person authorized by the manager",
-        "The sirdar of the mine"
+        "The opencast shift supervisor"
       ],
       "answer": 2,
       "solution": "A competent person authorized by the manager."
@@ -1200,8 +1200,8 @@
       "difficulty": "hard",
       "stem": "The 'gradient' of a roadway is calculated from",
       "options": [
-        "Used only for horizontal lines",
-        "Applicable to total stations only",
+        "Rise or fall measured by a clinometer",
+        "The number of roadways in the district",
         "Rise or fall divided by horizontal distance",
         "Works only in daylight"
       ],
@@ -1434,8 +1434,8 @@
       "difficulty": "hard",
       "stem": "The stone dust used for stone dusting must contain",
       "options": [
-        "Specific to metal mines only",
-        "Used in quarrying operations",
+        "At least 20% calcium carbonate",
+        "At least 50% calcium carbonate",
         "At least 80% calcium carbonate or equivalent incombustible material",
         "50% calcium carbonate"
       ],
@@ -1578,10 +1578,10 @@
       "difficulty": "hard",
       "stem": "The 'coal bed methane' (CBM) production in India is from",
       "options": [
-        "Specific to metal mines only",
-        "Quarrying of granite",
+        "Abandoned mine methane in Maharashtra alone",
+        "The shallow seams of Tamil Nadu",
         "Coal seams in Gujarat, Jharkhand, and other states",
-        "Processing of limestone"
+        "The opencast benches of Chhattisgarh"
       ],
       "answer": 2,
       "solution": "Coal seams in Gujarat, Jharkhand, and others."
@@ -1614,10 +1614,10 @@
       "difficulty": "easy",
       "stem": "The 'international coal market' prices are benchmarked by",
       "options": [
-        "Extraction of iron ore",
-        "Quarrying of granite",
+        "The Indian domestic notified price alone",
+        "The renewable energy tender rate",
         "Newcastle (Australia) and other international indices",
-        "Processing of limestone"
+        "The Railways freight surcharge"
       ],
       "answer": 2,
       "solution": "Newcastle and other international indices."
@@ -1650,10 +1650,10 @@
       "difficulty": "medium",
       "stem": "The 'coal quality parameters' include",
       "options": [
-        "Specific to metal mines only",
+        "The seam thickness at each borehole",
         "Calorific value, ash, moisture, sulfur, and size",
-        "Quarrying of granite",
-        "Used in quarrying operations"
+        "The overburden to coal ratio in the pit",
+        "The distance from the rail siding"
       ],
       "answer": 1,
       "solution": "Quality parameters include CV, ash, moisture, sulfur, size."
@@ -1705,8 +1705,8 @@
       "stem": "The 'roadway' in underground mining is driven for",
       "options": [
         "Transport, ventilation, and access to working faces",
-        "Quarrying of granite",
-        "Extraction of iron ore",
+        "Drainage of the district water",
+        "The approach to the surface office",
         "Storing of coal on the surface"
       ],
       "answer": 0,
@@ -1848,10 +1848,10 @@
       "difficulty": "hard",
       "stem": "The 'coal bunker' in a mine is used to",
       "options": [
-        "Used in quarrying operations",
-        "Quarrying of granite",
+        "Bore vertical holes for blasting the bench",
+        "Drain water from the main district sump",
         "Store coal before dispatch or use",
-        "Specific to metal mines only"
+        "Weigh coal dispatched by railway wagons"
       ],
       "answer": 2,
       "solution": "Stores coal before dispatch or use."
@@ -1903,8 +1903,8 @@
       "stem": "The 'mine safety culture' in India has improved due to",
       "options": [
         "Higher coal prices",
-        "Increase production rate",
-        "Reduce equipment maintenance",
+        "A rise in the number of open cast mines",
+        "A fall in the price of diesel",
         "Better training, technology, and regulatory enforcement"
       ],
       "answer": 3,

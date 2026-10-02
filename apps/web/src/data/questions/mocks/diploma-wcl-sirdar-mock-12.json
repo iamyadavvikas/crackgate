@@ -156,10 +156,10 @@
       "difficulty": "medium",
       "stem": "The 'mine section' shows",
       "options": [
-        "Used only for horizontal lines",
+        "The horizontal extent of the workings",
         "Surface features only",
         "Vertical slice through the mine showing workings",
-        "Applicable to total stations only"
+        "The tonnage of coal at one place"
       ],
       "answer": 2,
       "solution": "Mine sections show vertical slices through workings."
@@ -300,9 +300,9 @@
       "difficulty": "hard",
       "stem": "The 'proximate analysis' of coal determines",
       "options": [
-        "Specific to metal mines only",
-        "Processing of limestone",
-        "Quarrying of granite",
+        "The moisture held in the coal seam",
+        "The ultimate elemental composition",
+        "The sulphur retained after burning",
         "Moisture, volatile matter, ash, and fixed carbon"
       ],
       "answer": 3,
@@ -372,9 +372,9 @@
       "difficulty": "easy",
       "stem": "A 'coal fire' in an open cast mine can be caused by",
       "options": [
-        "Specific to metal mines only",
+        "Extraction of coal below the water table",
         "Water in the workings",
-        "Quarrying of granite",
+        "Continuous heavy rainfall on the spoil",
         "Improper handling of explosives, equipment heat, or spontaneous combustion"
       ],
       "answer": 3,
@@ -570,10 +570,10 @@
       "difficulty": "hard",
       "stem": "The 'coal measurement' by survey determines",
       "options": [
-        "Applicable to total stations only",
-        "Used only for horizontal lines",
+        "The grade of coal in the seam floor",
+        "The thickness of the overburden",
         "Volume and tonnage of coal extracted",
-        "Quarrying of granite"
+        "The price realised per tonne of coal"
       ],
       "answer": 2,
       "solution": "Coal measurement determines volume and tonnage."
@@ -661,9 +661,9 @@
       "stem": "The safety measures against roof fall include",
       "options": [
         "Proper support, regular inspection, and strata monitoring",
-        "Support conveyor belts",
-        "Optional in non-hazardous areas",
-        "Control dust emissions"
+        "Increasing the height of the pillar",
+        "Reducing the number of inspections",
+        "Increasing the ventilation fan speed"
       ],
       "answer": 0,
       "solution": "Proper support, regular inspection, and strata monitoring."
@@ -696,10 +696,10 @@
       "difficulty": "easy",
       "stem": "A '3D laser scanning' in mine surveying is used to",
       "options": [
-        "Used only for horizontal lines",
+        "Measuring the width of the roadway",
         "Test roof stability",
         "Create accurate 3D models of mine surfaces and openings",
-        "Applicable to total stations only"
+        "Recording the survey field books"
       ],
       "answer": 2,
       "solution": "Creates accurate 3D models of surfaces and openings."
@@ -931,8 +931,8 @@
       "stem": "The 'non-coking coal' is used for",
       "options": [
         "The making of coke",
-        "Processing of limestone",
-        "Specific to metal mines only",
+        "Blending for coke making in blast furnaces",
+        "The smelting of iron ore",
         "Power generation and industrial heating"
       ],
       "answer": 3,
@@ -1110,9 +1110,9 @@
       "difficulty": "hard",
       "stem": "A 'levelling staff' readings are taken to determine",
       "options": [
-        "Applicable to total stations only",
-        "Used only for horizontal lines",
-        "Record temperature variations",
+        "The horizontal angle of a traverse",
+        "The bearing of the survey line",
+        "The rate of the staff graduations",
         "The elevation difference between instrument and staff point"
       ],
       "answer": 3,
@@ -1128,10 +1128,10 @@
       "difficulty": "medium",
       "stem": "Stone dusting is done in underground coal mines to",
       "options": [
-        "Reduce the noise level",
-        "Increase production",
+        "Reduce the temperature of the mine air",
+        "Increase the output of the coal cutter",
         "Reduce the risk of coal dust explosion",
-        "Improve visibility"
+        "Reduce the cost of mine ventilation"
       ],
       "answer": 2,
       "solution": "Stone dusting reduces the risk of coal dust explosion."
@@ -1164,10 +1164,10 @@
       "difficulty": "easy",
       "stem": "The 'gob' in mining is another term for",
       "options": [
-        "Extraction of iron ore",
-        "Specific to metal mines only",
+        "Longwall - the retreating face working",
+        "Stope - the vertical extraction opening",
         "Goaf - the area where coal has been extracted",
-        "Quarrying of granite"
+        "Cross-cut - the connecting roadway"
       ],
       "answer": 2,
       "solution": "Goaf - area where coal has been extracted."
@@ -1236,10 +1236,10 @@
       "difficulty": "easy",
       "stem": "An explosion-proof electrical equipment is used in mines to",
       "options": [
-        "Reduce the noise level",
-        "Increase production",
+        "Operate at a higher voltage",
+        "Reduce the cost of maintenance",
         "Prevent ignition of coal dust and methane by electrical sparks",
-        "Used for charging detonators"
+        "Permit its use in a gassy heading"
       ],
       "answer": 2,
       "solution": "Prevents ignition of coal dust and methane."
@@ -1326,10 +1326,10 @@
       "difficulty": "hard",
       "stem": "The accident statistics help in",
       "options": [
-        "Increase production rate",
+        "Fix the output target of the district",
         "Identifying trends, patterns, and areas for safety improvement",
         "Reduce equipment maintenance",
-        "Enhance surveying accuracy"
+        "Compare the output of different shifts"
       ],
       "answer": 1,
       "solution": "Identifying trends, patterns, and areas for safety improvement."
@@ -1362,10 +1362,10 @@
       "difficulty": "hard",
       "stem": "The 'goaf management' in longwall mining involves",
       "options": [
-        "Mining of bauxite",
+        "Filling the goaf with pumped slurry",
         "Ventilating the goaf",
         "Controlling roof collapse behind the advancing face",
-        "Quarrying of granite"
+        "Driving a cross-cut through the goaf"
       ],
       "answer": 2,
       "solution": "Controlling roof collapse behind advancing face."
@@ -1380,9 +1380,9 @@
       "difficulty": "medium",
       "stem": "Stone dust barriers are designed to",
       "options": [
-        "Used in quarrying operations",
+        "Arrest the explosion pressure wave",
         "Prevent dust accumulation",
-        "Specific to metal mines only",
+        "Increase the incombustible content of roadway dust",
         "Be triggered by the explosion pressure wave"
       ],
       "answer": 3,
@@ -1668,9 +1668,9 @@
       "difficulty": "medium",
       "stem": "The 'coal supply chain' from mine to consumer includes",
       "options": [
-        "Quarrying of granite",
-        "Only the mining of ore",
-        "Extraction of iron ore",
+        "The geological exploration stage alone",
+        "The transport stage from pit to plant alone",
+        "The washing and despatch stages alone",
         "Extraction, processing, transport, and dispatch"
       ],
       "answer": 3,
@@ -1705,9 +1705,9 @@
       "stem": "The 'national coal distribution policy' ensures",
       "options": [
         "Equitable allocation of coal to various sectors",
-        "Privatisation of all mines",
-        "Mining of bauxite",
-        "Specific to metal mines only"
+        "Reservation of coal for the power sector",
+        "Free supply to the local industries",
+        "A ban on the export of coal"
       ],
       "answer": 0,
       "solution": "Equitable allocation to various sectors."
@@ -1813,9 +1813,9 @@
       "stem": "The 'dewatering' in coal mines is important to",
       "options": [
         "Remove groundwater for safe working conditions",
-        "Increase production",
-        "Reduces the output",
-        "Quarrying of granite"
+        "Increase the calorific value of the coal",
+        "Reduce the cost of ventilation",
+        "Increase the moisture in the coal"
       ],
       "answer": 0,
       "solution": "Dewatering removes groundwater for safe working."
@@ -1902,10 +1902,10 @@
       "difficulty": "easy",
       "stem": "The 'Strategic Coal Reserve' concept in India involves",
       "options": [
-        "Excess coal allocation to industries",
+        "Free allotment to thermal power plants",
         "Maintaining coal stockpiles for emergency use",
-        "Specific to metal mines only",
-        "Mining of bauxite"
+        "A fixed daily output target",
+        "The closing of uneconomic mines"
       ],
       "answer": 1,
       "solution": "Maintaining stockpiles for emergency."

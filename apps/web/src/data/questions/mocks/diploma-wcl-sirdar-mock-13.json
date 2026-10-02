@@ -229,9 +229,9 @@
       "stem": "A 'safety violation report' must include",
       "options": [
         "Nature of violation, person(s) involved, section of regulation violated, and action taken",
-        "Minimize equipment downtime",
-        "Optional in non-hazardous areas",
-        "Enhance surveying accuracy"
+        "The name of the shopkeeper nearby",
+        "The tonnage of coal lost that shift",
+        "The plan of the place of violation"
       ],
       "answer": 0,
       "solution": "Nature, person, regulation, and action taken."
@@ -300,10 +300,10 @@
       "difficulty": "medium",
       "stem": "The 'safety culture' in a mine refers to",
       "options": [
-        "Improve ventilation efficiency",
-        "Increase production rate",
+        "The number of hours worked per shift",
+        "The number of persons employed at the face",
         "Shared values, attitudes, and behaviors regarding safety",
-        "Reduce training requirements"
+        "The grade of the coal produced"
       ],
       "answer": 2,
       "solution": "Shared values, attitudes, and behaviors regarding safety."
@@ -336,9 +336,9 @@
       "difficulty": "hard",
       "stem": "The 'shot firing' sequence in underground coal mines follows",
       "options": [
-        "Mining of bauxite",
+        "A predetermined delay interval per hole",
         "Specific sequence to ensure safety and fragmentation",
-        "Extraction of iron ore",
+        "A single simultaneous initiation",
         "A random order of firing"
       ],
       "answer": 1,
@@ -427,9 +427,9 @@
       "stem": "The 'coal reserve' estimation considers",
       "options": [
         "Seam thickness, quality, and economic viability",
-        "Mining of bauxite",
-        "Processing of limestone",
-        "Quarrying of granite"
+        "The colour of the overburden spoil",
+        "The distance of the mine from the rail line",
+        "The number of persons employed belowground"
       ],
       "answer": 0,
       "solution": "Reserve estimation considers thickness, quality, and economics."
@@ -462,10 +462,10 @@
       "difficulty": "medium",
       "stem": "The 'blast pattern' in opencast mines is designed considering",
       "options": [
-        "Used for charging detonators",
-        "Used for stemming operations",
+        "The colour of the overburden",
+        "The time of firing",
         "Rock type, explosive, and desired fragmentation",
-        "Used for roof bolting only"
+        "The number of persons in the blast crew"
       ],
       "answer": 2,
       "solution": "Blast patterns consider geology, explosives, and fragmentation goals."
@@ -625,9 +625,9 @@
       "stem": "The 'firing order' in a blast is important to",
       "options": [
         "Control the direction of throw and minimize vibration",
-        "Used for drilling blast holes",
-        "Used for roof bolting only",
-        "To decide the number of persons in the mine"
+        "Determine the number of holes in the round",
+        "Select the type of stemming material",
+        "Decide the colour of the blasted rock"
       ],
       "answer": 0,
       "solution": "Controls direction of throw and vibration."
@@ -696,10 +696,10 @@
       "difficulty": "easy",
       "stem": "The 'gas content' of coal depends on",
       "options": [
-        "Mining of bauxite",
+        "The width of the roadways driven",
         "Coal rank, depth, and geological history",
-        "Extraction of iron ore",
-        "Quarrying of granite"
+        "The coal consumption of the district",
+        "The size of the ventilation fan"
       ],
       "answer": 1,
       "solution": "Gas content depends on rank, depth, and geological history."
@@ -750,10 +750,10 @@
       "difficulty": "hard",
       "stem": "The sirdar's duty during blasting includes",
       "options": [
-        "Applied after stemming only",
+        "Counting the number of persons in the mine",
         "Ensuring all persons are removed to a safe distance",
-        "Used for drilling blast holes",
-        "Used for roof bolting only"
+        "Inspecting the condition of the drill machine",
+        "Keeping the cut holes free of dust"
       ],
       "answer": 1,
       "solution": "During blasting the sirdar must ensure all persons are at a safe distance."
@@ -770,7 +770,7 @@
       "options": [
         "Deep support in weak roof conditions",
         "Prevent water ingress",
-        "Specific to metal mines only",
+        "Support of the roadway ribs",
         "Shallow support"
       ],
       "answer": 0,
@@ -985,9 +985,9 @@
       "stem": "The 'spontaneous combustion' of coal occurs due to",
       "options": [
         "Coal reacting with oxygen and generating heat",
-        "Quarrying of granite",
+        "Absorption of moisture by the seam",
         "Not possible in the mines",
-        "External ignition"
+        "Mechanical friction on the roof"
       ],
       "answer": 0,
       "solution": "Spontaneous combustion occurs when coal reacts with oxygen."
@@ -1002,9 +1002,9 @@
       "difficulty": "medium",
       "stem": "The dust control plan in a mine must include",
       "options": [
-        "Only the watering of the office garden",
-        "Specific to metal mines only",
-        "A one-time painting of the buildings",
+        "Only the cleaning of the office",
+        "Only the treatment of the main gate",
+        "A single annual dusting of the workings",
         "Methods of suppression, monitoring, and review"
       ],
       "answer": 3,
@@ -1110,7 +1110,7 @@
       "difficulty": "easy",
       "stem": "The safety slogan 'Safety is no accident' emphasizes that",
       "options": [
-        "Enhance surveying accuracy",
+        "Accidents are a matter of bad luck",
         "Safety requires deliberate effort and planning",
         "Accidents are random",
         "Accidents cannot be prevented"
@@ -1290,9 +1290,9 @@
       "difficulty": "medium",
       "stem": "The 'dip' of a seam affects",
       "options": [
-        "Used only for horizontal lines",
-        "Works only in daylight",
-        "Applicable to total stations only",
+        "The colour of the coal seam",
+        "The thickness of the overburden",
+        "The number of boreholes drilled",
         "The method of working, haulage, and drainage requirements"
       ],
       "answer": 3,
@@ -1308,9 +1308,9 @@
       "difficulty": "hard",
       "stem": "Mine surveying is essential for",
       "options": [
-        "Test roof stability",
-        "Used only for horizontal lines",
-        "Monitor gas concentrations",
+        "Selection of the ventilation fan rating",
+        "Detection of firedamp in the roadways",
+        "Appointment of the safety officer",
         "Ensuring correct alignment, level, and position of workings"
       ],
       "answer": 3,
@@ -1434,10 +1434,10 @@
       "difficulty": "easy",
       "stem": "A 'non-electric detonator' or 'shock tube' system is used because",
       "options": [
-        "Used for roof bolting only",
+        "It allows a longer delay interval",
         "It is safer near electrical equipment and lightning",
-        "Acoustic properties of surfaces",
-        "Chemical resistance of components"
+        "It reduces the cost of the detonators",
+        "It can be fired by an electric current"
       ],
       "answer": 1,
       "solution": "Safer near electrical equipment and lightning."
@@ -1488,10 +1488,10 @@
       "difficulty": "hard",
       "stem": "The 'priming' of an explosive charge involves",
       "options": [
-        "Used for roof bolting only",
+        "Drilling of the blast hole",
         "Inserting the detonator into the explosive cartridge",
-        "Used for roof support",
-        "Determining the charge weight"
+        "Removal of the stemming material",
+        "Counting the number of holes in the round"
       ],
       "answer": 1,
       "solution": "Inserting detonator into the cartridge."
@@ -1580,7 +1580,7 @@
       "options": [
         "Gradually increasing in non-underground roles",
         "Constant over the years",
-        "Mining of bauxite",
+        "Steadily falling in all roles",
         "Prohibited everywhere"
       ],
       "answer": 0,
@@ -1614,8 +1614,8 @@
       "difficulty": "hard",
       "stem": "The 'environmental impact assessment' (EIA) for mining includes",
       "options": [
-        "Extraction of iron ore",
-        "Quarrying of granite",
+        "A survey of the mineral rights only",
+        "A list of the surface owners",
         "A mineral map of the region",
         "Study of flora, fauna, water, air, and socio-economic impact"
       ],
@@ -1650,10 +1650,10 @@
       "difficulty": "easy",
       "stem": "The 'National Infrastructure Pipeline' benefits coal sector through",
       "options": [
-        "Processing of limestone",
+        "Reduced excise duty on coal",
         "Improved transport and logistics infrastructure",
         "A river interlinking project",
-        "Mining of bauxite"
+        "Import duty free mining equipment"
       ],
       "answer": 1,
       "solution": "Improved transport and logistics."
@@ -1902,9 +1902,9 @@
       "difficulty": "medium",
       "stem": "The 'Indian coal' has higher ash content compared to imported coal because of",
       "options": [
-        "Quarrying of granite",
+        "The size of the coal wagons used",
         "No particular reason",
-        "Specific to metal mines only",
+        "The method of coal washing used",
         "The geological formation and seam characteristics"
       ],
       "answer": 3,
