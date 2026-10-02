@@ -248,8 +248,8 @@
       "options": [
         "Adequate lighting, signage, reduced speeds",
         "No special measures",
-        "Increase production rate",
-        "Optional in non-hazardous areas"
+        "Restricting haulage to the upper benches",
+        "Halting all movement after dark"
       ],
       "answer": 0,
       "solution": "Night operations need lighting, signage, speed controls."
@@ -300,10 +300,10 @@
       "difficulty": "easy",
       "stem": "The 'coalfield' is an area with",
       "options": [
-        "Quarrying of granite",
+        "A single continuous seam throughout",
         "Multiple coal seams and deposits",
         "A single thin seam",
-        "Mining of bauxite"
+        "An igneous intrusion only"
       ],
       "answer": 1,
       "solution": "A coalfield has multiple coal seams and deposits."
@@ -319,9 +319,9 @@
       "stem": "A 'fault' in geological terms is",
       "options": [
         "A fracture in the rock along which displacement has occurred",
-        "Investigation of mineral deposits",
-        "Used only for horizontal lines",
-        "Analysis of soil properties"
+        "A fold in the sedimentary strata",
+        "An intrusion of molten magma",
+        "A washout filled with sediment"
       ],
       "answer": 0,
       "solution": "A fracture with displacement."
@@ -390,10 +390,10 @@
       "difficulty": "hard",
       "stem": "An accident investigation team should include",
       "options": [
-        "Improve ventilation efficiency",
+        "Only the officers of the mine",
         "Competent persons including safety officer and workers' representative",
         "Reduce equipment maintenance",
-        "Increase production rate"
+        "Only the representatives of the owner"
       ],
       "answer": 1,
       "solution": "Competent persons including safety officer and workers' representative."
@@ -518,8 +518,8 @@
       "options": [
         "Limit energy to safe levels in intrinsically safe circuits",
         "Reduce equipment maintenance",
-        "Improve ventilation efficiency",
-        "Increase voltage"
+        "Increase the ventilation in the district",
+        "Separate the circuit from the battery supply"
       ],
       "answer": 0,
       "solution": "Limits energy to safe levels in IS circuits."
@@ -535,9 +535,9 @@
       "stem": "A 'misfire' must be dealt with by",
       "options": [
         "Any worker present at the face",
-        "Used for roof bolting only",
+        "Re-drilling the hole immediately after firing",
         "A competent person following prescribed procedures",
-        "Leaving it until the next shift"
+        "Waiting for the next production shift"
       ],
       "answer": 2,
       "solution": "By a competent person following procedures."
@@ -570,10 +570,10 @@
       "difficulty": "hard",
       "stem": "A 'section' in mine surveying shows",
       "options": [
-        "Used only for horizontal lines",
+        "The horizontal projection of the workings",
         "Record temperature variations",
         "The vertical projection of workings along a vertical plane",
-        "Monitor gas concentrations"
+        "The tonnage of coal shown at one place"
       ],
       "answer": 2,
       "solution": "The vertical projection along a vertical plane."
@@ -588,10 +588,10 @@
       "difficulty": "hard",
       "stem": "The 'blasting safety zone' radius depends on",
       "options": [
-        "Used for roof bolting only",
-        "Fixed at 100m",
+        "The time of day at which blasting is done",
+        "Fixed at 25 m in every mine",
         "Type and quantity of explosives used",
-        "Used for drilling blast holes"
+        "The diameter of the drill rod"
       ],
       "answer": 2,
       "solution": "Safety zone radius depends on explosive type and quantity."
@@ -606,10 +606,10 @@
       "difficulty": "medium",
       "stem": "The 'blasting circuit' must be checked for",
       "options": [
-        "Used for roof bolting only",
-        "Applied after stemming only",
+        "Loose connections found only after the shot",
+        "Continuity checked only during charging",
         "Continuity and proper connections before firing",
-        "Used for roof support"
+        "The adequacy of the roof support"
       ],
       "answer": 2,
       "solution": "Continuity and proper connections."
@@ -660,9 +660,9 @@
       "difficulty": "medium",
       "stem": "The 'mine surveyor' is responsible for",
       "options": [
-        "Test roof stability",
-        "Used only for horizontal lines",
-        "Measure air velocity",
+        "Selection of the ventilation fan rating",
+        "Determination of the shot firing pattern",
+        "Appointment of the competent persons",
         "Accurate survey of workings, preparation of plans and sections"
       ],
       "answer": 3,
@@ -768,8 +768,8 @@
       "difficulty": "hard",
       "stem": "The 'fire safety training' for miners includes",
       "options": [
-        "Improve ventilation efficiency",
-        "Increase production rate",
+        "Only the underground fire fighting plan",
+        "Only the use of portable extinguishers",
         "No training needed",
         "Fire prevention, detection, and evacuation procedures"
       ],
@@ -786,10 +786,10 @@
       "difficulty": "easy",
       "stem": "The 'geological disturbance' in coal seams includes",
       "options": [
-        "Specific to metal mines only",
+        "Rolls and cleats in the coal seam",
         "No disturbances",
         "Faults, folds, intrusions, and washouts",
-        "Processing of limestone"
+        "Bedding planes in the overburden"
       ],
       "answer": 2,
       "solution": "Geological disturbances include faults, folds, intrusions, washouts."
@@ -822,10 +822,10 @@
       "difficulty": "medium",
       "stem": "The 'rock dusting' in coal mines is done to",
       "options": [
-        "Increase production",
-        "Mining of bauxite",
+        "Increase the incombustible content of the seam",
+        "Wet the roadway before each shift",
         "Prevent coal dust explosion by making dust inert",
-        "Quarrying of granite"
+        "Increase the ventilation fan speed"
       ],
       "answer": 2,
       "solution": "Rock dusting inertizes coal dust to prevent explosions."
@@ -895,9 +895,9 @@
       "stem": "The 'ash content' in coal affects",
       "options": [
         "Combustion efficiency and disposal requirements",
-        "Mining of bauxite",
-        "Specific to metal mines only",
-        "Used in quarrying operations"
+        "The grain size of coal washed out of the seam",
+        "The colour of the seam floor workings",
+        "The number of persons engaged at the face"
       ],
       "answer": 0,
       "solution": "Ash content affects combustion efficiency and disposal."
@@ -948,10 +948,10 @@
       "difficulty": "hard",
       "stem": "The 'methane emission' from coal seams is related to",
       "options": [
-        "Specific to metal mines only",
-        "Quarrying of granite",
+        "The presence of faults within the seam",
+        "The thickness of the overburden cover",
         "Coal rank, depth, and gas content",
-        "Extraction of iron ore"
+        "The method of mechanised coal cutting"
       ],
       "answer": 2,
       "solution": "Methane emission relates to rank, depth, and gas content."
@@ -1074,10 +1074,10 @@
       "difficulty": "hard",
       "stem": "The stage loader transfers coal from",
       "options": [
-        "Open pit copper extraction",
-        "The shaft to the surface",
+        "The surface bunker to the rail siding",
+        "The main gate to the workshop",
         "The AFC to the belt conveyor at the gate end",
-        "Quarrying of granite"
+        "The coal store to the washery"
       ],
       "answer": 2,
       "solution": "Transfers coal from AFC to belt conveyor at the gate end."
@@ -1146,9 +1146,9 @@
       "difficulty": "medium",
       "stem": "The 'GPS' in mine surveying is used for",
       "options": [
-        "Test roof stability",
-        "Used only for horizontal lines",
-        "Underground only",
+        "Detection of firedamp in the return airway",
+        "Reduction of levels below the seam",
+        "Direct measurement of the roof bolt depth",
         "Surface control surveys and establishing survey control points"
       ],
       "answer": 3,
@@ -1164,10 +1164,10 @@
       "difficulty": "easy",
       "stem": "Behavioral-based safety (BBS) focuses on",
       "options": [
-        "Increase production rate",
+        "The repair of the mine machinery",
         "Safe behaviors of workers through observation and feedback",
         "The maintenance of the equipment",
-        "Improve ventilation efficiency"
+        "The design of the ventilation plan"
       ],
       "answer": 1,
       "solution": "Safe behaviors through observation and feedback."
@@ -1218,10 +1218,10 @@
       "difficulty": "medium",
       "stem": "Permissible explosives in coal mines must not",
       "options": [
-        "Used for roof bolting only",
-        "Used for charging detonators",
+        "Be stored with detonators in the same magazine",
+        "Be fired without a shot firer present",
         "Cause ignition of methane or coal dust under test conditions",
-        "Used for stemming operations"
+        "Be used in the same round as the cut holes"
       ],
       "answer": 2,
       "solution": "Must not cause ignition of methane or coal dust."
@@ -1238,8 +1238,8 @@
       "options": [
         "Cool the drill bit and suppress dust",
         "Lubricate the haulage rope",
-        "Improve the ventilation",
-        "Increase production"
+        "Flush the cuttings out of the hole",
+        "Increase the penetration rate of the drill"
       ],
       "answer": 0,
       "solution": "Drill water cools the bit and suppresses dust."
@@ -1272,10 +1272,10 @@
       "difficulty": "easy",
       "stem": "The 'mechanized mining' achieves higher productivity because of",
       "options": [
-        "Specific to metal mines only",
+        "Replacement of all development work",
         "Use of continuous miners, loaders, and conveyor systems",
         "Elimination of all development work",
-        "Quarrying of granite"
+        "Use of only hand tools at the face"
       ],
       "answer": 1,
       "solution": "Use of continuous miners, loaders, and conveyors."
@@ -1345,9 +1345,9 @@
       "stem": "A road header in mining is used to",
       "options": [
         "Excavate rock and coal mechanically",
-        "Open pit copper extraction",
-        "Specific to metal mines only",
-        "Quarrying of granite"
+        "Loading coal into dumpers",
+        "Benching the overburden in a pit",
+        "Drilling vertical blast holes"
       ],
       "answer": 0,
       "solution": "Excavates rock and coal mechanically."
@@ -1362,10 +1362,10 @@
       "difficulty": "medium",
       "stem": "The 'tail gate' in longwall mining is the",
       "options": [
-        "Specific to metal mines only",
-        "Used in quarrying operations",
+        "Roadway at the intake end of the longwall face",
+        "The cross-cut connecting two longwall gates",
         "Roadway at the return end of the longwall face",
-        "Mining of bauxite"
+        "The gate road developed outbye the panel"
       ],
       "answer": 2,
       "solution": "Roadway at return end of face."
@@ -1416,9 +1416,9 @@
       "difficulty": "easy",
       "stem": "The 'coal burst' in deep mines occurs when",
       "options": [
-        "Mining of bauxite",
+        "Absence of stress in the coal seam",
         "The coal is under no pressure",
-        "Coal is soft",
+        "Rapid removal of the overburden",
         "Sudden release of stress energy in coal"
       ],
       "answer": 3,
@@ -1489,9 +1489,9 @@
       "stem": "The 'safety observation' is a tool used to",
       "options": [
         "Observe and feedback on safe and unsafe behaviors",
-        "Improve ventilation efficiency",
-        "Optional in non-hazardous areas",
-        "Required only in UG mines"
+        "Measure the output of each shift",
+        "Rank the safety performance of each section",
+        "Record the tonnage of coal despatched"
       ],
       "answer": 0,
       "solution": "Observe and feedback on safe and unsafe behaviors."
@@ -1525,9 +1525,9 @@
       "stem": "The 'safety lamp room' in a mine must be under the control of",
       "options": [
         "Any person employed in the mine",
-        "Increase production rate",
+        "The ventilation officer of the mine",
         "A competent person authorized by the manager",
-        "The senior sirdar of the mine"
+        "The opencast shift supervisor"
       ],
       "answer": 2,
       "solution": "A competent person authorized by the manager."
@@ -1615,9 +1615,9 @@
       "stem": "The 'strip mining' method involves",
       "options": [
         "Removing overburden to access shallow coal deposits",
-        "Mining of bauxite",
-        "Quarrying of granite",
-        "Underground extraction"
+        "Extraction of coal from deep seams",
+        "Removal of waste from a surface mine",
+        "Drilling of vertical shafts for access"
       ],
       "answer": 0,
       "solution": "Strip mining removes overburden for shallow deposits."
@@ -1632,10 +1632,10 @@
       "difficulty": "hard",
       "stem": "The 'Forest Clearance' for mining is required under",
       "options": [
-        "Quarrying of granite",
+        "The Mines Act 1952 alone",
         "Forest Conservation Act 1980",
-        "Processing of limestone",
-        "Mining of bauxite"
+        "The Land Acquisition Act 1894 alone",
+        "The Contract Act 1872"
       ],
       "answer": 1,
       "solution": "Required under Forest Conservation Act 1980."
@@ -1722,7 +1722,7 @@
       "difficulty": "hard",
       "stem": "The 'fatal accident rate' in Indian coal mines has been",
       "options": [
-        "Extraction of iron ore",
+        "Unchanged over the last two decades",
         "Steadily increasing in recent years",
         "Gradually decreasing over the years",
         "Constant throughout the years"

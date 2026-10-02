@@ -139,8 +139,8 @@
       "stem": "The 'roof fall' in coal mines can be caused by",
       "options": [
         "Weak roof strata, joints, and geological disturbances",
-        "Support conveyor belts",
-        "Specific to metal mines only",
+        "Overlapping of the support sets",
+        "Very thick and hard roof strata",
         "Good roof conditions"
       ],
       "answer": 0,
@@ -175,9 +175,9 @@
       "stem": "The 'fuel storage' safety must address",
       "options": [
         "No special requirements",
-        "Reduce equipment maintenance",
+        "Monthly inspection of the bund wall",
         "Spill containment, fire protection, access control",
-        "Increase production rate"
+        "Filling the tank to full capacity"
       ],
       "answer": 2,
       "solution": "Fuel storage needs containment, fire protection, access control."
@@ -210,10 +210,10 @@
       "difficulty": "hard",
       "stem": "An 'electric detonator' is fired by",
       "options": [
-        "Used for roof bolting only",
+        "A flame from the safety lamp",
         "Chemical resistance of components",
         "Electric current from a blasting machine",
-        "Applied after stemming only"
+        "The heat of the drill steel"
       ],
       "answer": 2,
       "solution": "Electric current from a blasting machine."
@@ -246,10 +246,10 @@
       "difficulty": "medium",
       "stem": "The 'contour map' in mining shows",
       "options": [
-        "Quarrying of granite",
-        "Mining of bauxite",
+        "The property boundaries of the lease",
+        "The roadways driven at one level",
         "Lines of equal elevation showing terrain shape",
-        "Extraction of iron ore"
+        "The tonnage removed per month"
       ],
       "answer": 2,
       "solution": "Contour maps show lines of equal elevation for terrain."
@@ -264,10 +264,10 @@
       "difficulty": "medium",
       "stem": "The 'rescue operation safety measures' include",
       "options": [
-        "Reduce equipment maintenance",
+        "Testing the breathing apparatus",
         "Buddy system, continuous monitoring, escape routes",
         "No measures needed",
-        "Enhance surveying accuracy"
+        "Recording the seam thickness"
       ],
       "answer": 1,
       "solution": "Safety measures include buddy system, monitoring, escape routes."
@@ -318,10 +318,10 @@
       "difficulty": "easy",
       "stem": "A continuous miner machine cuts coal using",
       "options": [
-        "Specific to metal mines only",
+        "A ripper bar drawn by a hydraulic tractor",
         "Rotating cutting drums with tungsten carbide bits",
-        "Processing of limestone",
-        "Extraction of iron ore"
+        "A chain cutter pulled along the face",
+        "Water jet cutting at very high pressure"
       ],
       "answer": 1,
       "solution": "Rotating cutting drums with tungsten carbide bits."
@@ -408,10 +408,10 @@
       "difficulty": "hard",
       "stem": "An excavator in open cast mining is used for",
       "options": [
-        "Quarrying of granite",
-        "Mining of bauxite",
+        "Benching hard rock before drilling",
+        "Boring vertical holes for roof support",
         "Digging and loading overburden or coal",
-        "Extraction of iron ore"
+        "Grading the reclaimed backfill surface"
       ],
       "answer": 2,
       "solution": "Digs and loads overburden or coal."
@@ -534,9 +534,9 @@
       "difficulty": "medium",
       "stem": "A shearer is used in longwall mining to",
       "options": [
-        "Used in quarrying operations",
-        "Specific to metal mines only",
-        "Extraction of iron ore",
+        "Boring holes for ventilation",
+        "Boring holes for roof bolt installation",
+        "Loading coal into shuttle cars",
         "Cut coal from the face mechanically"
       ],
       "answer": 3,
@@ -553,9 +553,9 @@
       "stem": "The 'gas detector' in a mine must be carried by",
       "options": [
         "Every person entering underground areas",
-        "Only the surface watchman",
-        "Only the coal washery staff",
-        "Only the surveyor's team"
+        "The surface watchman on the portal",
+        "The coal washery staff",
+        "The surveyor's field team"
       ],
       "answer": 0,
       "solution": "Every person entering underground areas."
@@ -930,10 +930,10 @@
       "difficulty": "easy",
       "stem": "The 'charge weight per delay' is limited to",
       "options": [
-        "Used for roof bolting only",
-        "No limit at all",
+        "No limit in a non-gassy seam",
+        "A limit fixed for every mine irrespective of site conditions",
         "Control ground vibration and air blast",
-        "Applied after stemming only"
+        "The colour of the explosive used"
       ],
       "answer": 2,
       "solution": "Charge per delay is limited to control vibration and air blast."
@@ -1146,10 +1146,10 @@
       "difficulty": "easy",
       "stem": "The 'setting out' in mining involves",
       "options": [
-        "Used only for horizontal lines",
-        "Quarrying of granite",
+        "The levelling of surface bench floors",
+        "The calculation of coal tonnage",
         "Transferring planned positions to ground for mining",
-        "Mining of bauxite"
+        "The drawing of the ventilation plan"
       ],
       "answer": 2,
       "solution": "Setting out transfers planned positions to ground."
@@ -1201,8 +1201,8 @@
       "stem": "The main safety feature of a continuous miner is",
       "options": [
         "Remote operation from a safe distance away from the face",
-        "Enhance surveying accuracy",
-        "Optional in non-hazardous areas",
+        "An automatic water spray system",
+        "A dead man control on the cutter",
         "No safety feature"
       ],
       "answer": 0,
@@ -1416,9 +1416,9 @@
       "difficulty": "easy",
       "stem": "The 'maingate' in longwall mining is the",
       "options": [
-        "Specific to metal mines only",
-        "Mining of bauxite",
-        "Used in quarrying operations",
+        "Roadway at the return end of the longwall face",
+        "The cross-cut connecting two longwalls",
+        "The gate road developed outbye the panel",
         "Roadway at the intake end of the longwall face"
       ],
       "answer": 3,
@@ -1524,7 +1524,7 @@
       "difficulty": "medium",
       "stem": "Personal dust monitors must be calibrated",
       "options": [
-        "Specific to metal mines only",
+        "After every dust explosion",
         "Before each use",
         "Once a year",
         "Never"
@@ -1633,9 +1633,9 @@
       "stem": "The 'Methane Recovery from Coal Mines' project was supported by",
       "options": [
         "World Bank and Ministry of Coal",
-        "Control dust emissions",
-        "Specific to metal mines only",
-        "Used in quarrying operations"
+        "The Oil and Natural Gas Commission alone",
+        "The state electricity boards",
+        "Private coal companies only"
       ],
       "answer": 0,
       "solution": "World Bank and Ministry of Coal."
@@ -1686,10 +1686,10 @@
       "difficulty": "hard",
       "stem": "The 'coal mine accident investigation' focuses on",
       "options": [
-        "Required only in UG mines",
+        "Fixing the liability of a person",
         "Finding root cause and preventing recurrence",
-        "Mining of bauxite",
-        "Optional in non-hazardous areas"
+        "Estimating the cost of the lost shift",
+        "Publishing the names of the injured"
       ],
       "answer": 1,
       "solution": "Finding root cause and preventing recurrence."
@@ -1740,10 +1740,10 @@
       "difficulty": "hard",
       "stem": "The 'non-fatal accident rate' in mines depends on",
       "options": [
-        "The colour of the dumpers",
-        "Improve ventilation efficiency",
+        "The grade of coal produced",
+        "The number of persons at the face",
         "Safety training, equipment maintenance, and supervision",
-        "Enhance surveying accuracy"
+        "The number of survey stations"
       ],
       "answer": 2,
       "solution": "Safety training, equipment maintenance, and supervision."
@@ -1866,10 +1866,10 @@
       "difficulty": "hard",
       "stem": "The 'highwall' in opencast mining is the",
       "options": [
-        "Mining of bauxite",
+        "The drainage sump at the lowest pit level",
         "The unexcavated face of overburden and coal in a strip mine",
-        "Specific to metal mines only",
-        "Quarrying of granite"
+        "The reclaimed spoil placed on the surface",
+        "The haul road benched into the seam floor"
       ],
       "answer": 1,
       "solution": "Unexcavated face of overburden and coal."

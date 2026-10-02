@@ -174,10 +174,10 @@
       "difficulty": "easy",
       "stem": "The 'volatile matter' in coal includes",
       "options": [
-        "Quarrying of granite",
+        "The ash residue left after incineration",
         "Gases released during heating",
-        "Mining of bauxite",
-        "Processing of limestone"
+        "The moisture held in the coal seam",
+        "The fixed carbon burned away as coke"
       ],
       "answer": 1,
       "solution": "Volatile matter includes gases released during heating."
@@ -300,10 +300,10 @@
       "difficulty": "medium",
       "stem": "The 'mine survey safety' requires",
       "options": [
-        "Improve ventilation efficiency",
+        "Prior approval from the manager",
         "Proper lighting, communication, and equipment for survey teams",
         "Reduce equipment maintenance",
-        "No safety measures"
+        "Work to the pattern of an earlier survey"
       ],
       "answer": 1,
       "solution": "Survey safety requires lighting, communication, equipment."
@@ -517,8 +517,8 @@
       "stem": "Water barriers are used to",
       "options": [
         "Improve ventilation",
-        "Specific to metal mines only",
-        "Increase coal dust",
+        "Prevent the flow of the return air",
+        "Quench the heat of a mine fire",
         "Supress coal dust explosions by absorbing heat"
       ],
       "answer": 3,
@@ -642,10 +642,10 @@
       "difficulty": "medium",
       "stem": "The primary purpose of mine surveying is",
       "options": [
-        "Used only for horizontal lines",
+        "Reduction of the levels to a datum",
         "Establish and maintain mine workings in correct position",
         "Preparing decorative wall displays",
-        "Monitor gas concentrations"
+        "Detection of firedamp in the return airway"
       ],
       "answer": 1,
       "solution": "Mine surveying establishes and maintains correct positions of workings."
@@ -660,10 +660,10 @@
       "difficulty": "easy",
       "stem": "The 'reduction of levels' in surveying is done to",
       "options": [
-        "Used only for horizontal lines",
+        "Calculation of the pillar area",
         "Determine the elevation of points relative to a datum",
         "Measure the width of the seam",
-        "Test roof stability"
+        "Selection of the roof bolting pattern"
       ],
       "answer": 1,
       "solution": "Determine elevation of points relative to a datum."
@@ -750,10 +750,10 @@
       "difficulty": "medium",
       "stem": "The 'blast crew composition' includes",
       "options": [
-        "Used for drilling blast holes",
+        "Only the person who owns the explosive",
         "Shot firer, blaster, and safety personnel",
-        "Used for charging detonators",
-        "Used for roof bolting only"
+        "Only the mine electrician",
+        "Only the contractor who drilled the holes"
       ],
       "answer": 1,
       "solution": "Blast crews include certified shot firers and safety personnel."
@@ -822,10 +822,10 @@
       "difficulty": "medium",
       "stem": "The 'mucking cycle' in drifting includes",
       "options": [
-        "Only the drilling of blast holes",
-        "Only the firing of shots",
+        "Drilling of blast holes in the face",
+        "Firing of shots in the round",
         "Loading, hauling, and dumping muck",
-        "Only the support of the drift"
+        "Erection of supports in the drift"
       ],
       "answer": 2,
       "solution": "Mucking cycle includes load, haul, dump."
@@ -985,9 +985,9 @@
       "stem": "The sirdar is responsible for the proper utilization of",
       "options": [
         "All materials issued for the work",
-        "Only the explosives",
-        "Only the timber",
-        "Only the pumps"
+        "Explosives issued to the shot-firer alone",
+        "Timber used in the roadway alone",
+        "The standby pumping capacity alone"
       ],
       "answer": 0,
       "solution": "All materials issued must be properly utilized."
@@ -1020,10 +1020,10 @@
       "difficulty": "medium",
       "stem": "A shovel in open cast mining is used for",
       "options": [
-        "Used in quarrying operations",
-        "Processing of limestone",
+        "Benching the highwall before drilling",
+        "Dredging sludge from the surface sump",
         "Loading overburden and coal into dumpers",
-        "Specific to metal mines only"
+        "Drilling blast holes in the hard rock bench"
       ],
       "answer": 2,
       "solution": "Loads overburden and coal into dumpers."
@@ -1039,9 +1039,9 @@
       "stem": "A 'shot firer' must not",
       "options": [
         "Fire shots until all persons are withdrawn to a safe distance",
-        "Used for roof bolting only",
-        "Requires special permit",
-        "Applied after stemming only"
+        "Carry out the shot firing without checking the misfire position",
+        "Be appointed without a valid blasting certificate",
+        "Fire a shot with the stemming left incomplete"
       ],
       "answer": 0,
       "solution": "Must not fire shots until all persons are safe."
@@ -1110,10 +1110,10 @@
       "difficulty": "hard",
       "stem": "A 'magnetic declination' in surveying is the",
       "options": [
-        "Monitor gas concentrations",
-        "Used only for horizontal lines",
+        "Difference in level between two points",
+        "Angle between the plumb line and the vertical",
         "Angle between true north and magnetic north",
-        "Measure air velocity"
+        "Angle between the mine rail and the roadway"
       ],
       "answer": 2,
       "solution": "Angle between true north and magnetic north."
@@ -1344,10 +1344,10 @@
       "difficulty": "hard",
       "stem": "A 'benchmark' in mine surveying is",
       "options": [
-        "Used only for horizontal lines",
+        "A traverse line of known bearing",
         "Any point fixed on the surface",
         "A point of known elevation used as a reference",
-        "Record temperature variations"
+        "A station marked on the surface plan"
       ],
       "answer": 2,
       "solution": "A point of known elevation used as reference."
@@ -1578,9 +1578,9 @@
       "difficulty": "easy",
       "stem": "The 'coal gasification' can produce",
       "options": [
-        "Quarrying of granite",
-        "Extraction of iron ore",
-        "Mining of bauxite",
+        "Refined diesel for long haul freight movement",
+        "Coke for iron making in a blast furnace",
+        "Liquefied petroleum gas for domestic cooking",
         "Syngas for power, chemicals, and transportation fuel"
       ],
       "answer": 3,
@@ -1596,9 +1596,9 @@
       "difficulty": "hard",
       "stem": "The 'depillaring' in underground mining involves",
       "options": [
-        "Specific to metal mines only",
-        "Used in quarrying operations",
-        "Mining of bauxite",
+        "Raising a stall from the parent roadway",
+        "Filling the goaf with pumped slurry waste",
+        "Driving a cross-cut between two roadways",
         "Extraction of pillars left during development"
       ],
       "answer": 3,
@@ -1614,9 +1614,9 @@
       "difficulty": "easy",
       "stem": "The 'coal grading' system in India classifies coal based on",
       "options": [
-        "Used in quarrying operations",
-        "Processing of limestone",
-        "Specific to metal mines only",
+        "The seam thickness at each exploration borehole",
+        "The overburden to coal ratio in the open cast pit",
+        "The ash content measured at the washery",
         "Gradation based on Useful Heat Value (UHV)"
       ],
       "answer": 3,
@@ -1866,9 +1866,9 @@
       "difficulty": "easy",
       "stem": "The 'Coal India Scientific Research Foundation' (CISRF) promotes",
       "options": [
-        "Extraction of iron ore",
-        "Quarrying of granite",
-        "Mining of bauxite",
+        "Fixation of the royalty on coal",
+        "Railway freight rates for coal dispatch",
+        "Technical training for underground mine workers",
         "Research and development in coal sector"
       ],
       "answer": 3,

@@ -714,10 +714,10 @@
       "difficulty": "medium",
       "stem": "The sirdar is responsible for the enforcement of",
       "options": [
-        "Only the company standing orders",
-        "Only the contractor's instructions",
+        "The company standing orders alone",
+        "The contractor's site instructions alone",
         "CMR 2017, Mines Act 1952, and DGMS circulars",
-        "Only the pay rules"
+        "The wage payment rules alone"
       ],
       "answer": 2,
       "solution": "The sirdar enforces CMR 2017, Mines Act 1952, and DGMS circulars."
@@ -732,10 +732,10 @@
       "difficulty": "easy",
       "stem": "The 'plan preparation' for mines includes",
       "options": [
-        "Used only for horizontal lines",
+        "Reduction of levels to a datum only",
         "No preparation of plans at all",
         "Drawing plans from survey data at specified scale",
-        "Applicable to total stations only"
+        "Sketching the ventilation circuit"
       ],
       "answer": 2,
       "solution": "Plan preparation involves drawing from survey data."
@@ -950,7 +950,7 @@
       "options": [
         "Render first aid, secure the area, and report immediately",
         "Wait for the manager",
-        "Enhance surveying accuracy",
+        "Record the names of the witnesses only",
         "Leave the place of accident"
       ],
       "answer": 0,
@@ -1002,7 +1002,7 @@
       "difficulty": "easy",
       "stem": "The 'control survey' in mining provides",
       "options": [
-        "Extraction of iron ore",
+        "Secondary detail for the mine plans",
         "Primary reference framework for all mine surveys",
         "No control over the workings",
         "Not needed in the mines"
@@ -1020,10 +1020,10 @@
       "difficulty": "hard",
       "stem": "The 'face advance rate' in longwall mining depends on",
       "options": [
-        "Specific to metal mines only",
+        "The colour of the coal seam",
         "Roof conditions, equipment capacity, and support cycle time",
-        "The number of surface fans",
-        "The colour of the coal"
+        "The distance to the coal washery",
+        "The name of the mine manager"
       ],
       "answer": 1,
       "solution": "Roof conditions, equipment capacity, and support cycle."
@@ -1057,9 +1057,9 @@
       "stem": "The 'powers of the Chief Inspector' under the Mines Act include",
       "options": [
         "Issue directions, suspend operations, and ensure compliance",
-        "Only levy penalties on workers",
-        "Only approve the pay roll",
-        "Only conduct medical examinations"
+        "Levy of penalties on individual workers alone",
+        "Approval of the pay roll of the mine alone",
+        "Conduct of medical examinations of miners alone"
       ],
       "answer": 0,
       "solution": "Issue directions, suspend operations, and ensure compliance."
@@ -1327,9 +1327,9 @@
       "stem": "The landing at each level of a shaft must have",
       "options": [
         "Proper safety gates or barriers",
-        "Measure air velocity",
-        "Used only for horizontal lines",
-        "No safety device"
+        "A gauge board at the shaft bottom",
+        "A set of approved safety signs",
+        "An electric lamp at the landing"
       ],
       "answer": 0,
       "solution": "Proper safety gates or barriers are required."
@@ -1380,10 +1380,10 @@
       "difficulty": "easy",
       "stem": "The pressure wave from a coal dust explosion can",
       "options": [
-        "Specific to metal mines only",
+        "Raise the temperature of the goaf",
         "Cool the area",
         "Travel ahead of the flame and pre-ignite dust",
-        "Used for roof support"
+        "Support the props in the roadway"
       ],
       "answer": 2,
       "solution": "Travels ahead of the flame and pre-ignites dust."
@@ -1578,10 +1578,10 @@
       "difficulty": "hard",
       "stem": "The 'coal mining training' institutions in India include",
       "options": [
-        "Processing of limestone",
+        "Only the private technical colleges",
         "A list of private tuition centres",
         "ISM Dhanbad, NITs, and CIL training centers",
-        "Extraction of iron ore"
+        "Only the state polytechnic institutes"
       ],
       "answer": 2,
       "solution": "ISM Dhanbad, NITs, and CIL training centers."
@@ -1596,10 +1596,10 @@
       "difficulty": "easy",
       "stem": "The 'domestic coal supply' shortage can be met by",
       "options": [
-        "Specific to metal mines only",
+        "Reduced washery throughput",
         "Reducing the washery capacity",
         "Increased production and supplementary imports",
-        "Quarrying of granite"
+        "A ban on open cast mining"
       ],
       "answer": 2,
       "solution": "Increased production and supplementary imports."
@@ -1902,10 +1902,10 @@
       "difficulty": "medium",
       "stem": "The 'continuous miner' in underground mining can achieve",
       "options": [
-        "Same as manual",
-        "Processing of limestone",
+        "Lower output than hand drilling",
+        "Output equal to a shearer only",
         "Higher production rates compared to conventional drilling and blasting",
-        "Specific to metal mines only"
+        "Output equal to conventional methods"
       ],
       "answer": 2,
       "solution": "Higher production than conventional methods."

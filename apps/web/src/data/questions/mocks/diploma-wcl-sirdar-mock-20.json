@@ -138,8 +138,8 @@
       "difficulty": "easy",
       "stem": "The 'plan preparation' for mines includes",
       "options": [
-        "Used only for horizontal lines",
-        "Applicable to total stations only",
+        "Reduction of levels to a datum only",
+        "Sketching the ventilation circuit",
         "No preparation of plans at all",
         "Drawing plans from survey data at specified scale"
       ],
@@ -156,10 +156,10 @@
       "difficulty": "easy",
       "stem": "The safety officer in a mine is responsible for",
       "options": [
-        "Reduce equipment maintenance",
-        "Optional in non-hazardous areas",
+        "Approval of the annual training calendar",
+        "Preparation of the wage bill",
         "Safety inspections, investigations, training, and promotion of safety culture",
-        "Enhance surveying accuracy"
+        "Maintenance of the mine survey plans"
       ],
       "answer": 2,
       "solution": "Safety inspections, investigations, training, and promoting safety culture."
@@ -229,9 +229,9 @@
       "stem": "A '3D laser scanning' in mine surveying is used to",
       "options": [
         "Create accurate 3D models of mine surfaces and openings",
-        "Test roof stability",
-        "Used only for horizontal lines",
-        "Monitor gas concentrations"
+        "Measuring the width of the roadway",
+        "Reduction of levels below the seam",
+        "Recording the survey field books"
       ],
       "answer": 0,
       "solution": "Creates accurate 3D models of surfaces and openings."
@@ -499,9 +499,9 @@
       "stem": "The 'chain pillar' in longwall mining is the",
       "options": [
         "Pillar between two adjacent longwall panels",
-        "Extraction of iron ore",
-        "Surface mineral extraction",
-        "Mining of bauxite"
+        "The pillar recovered during depillaring",
+        "A temporary prop left after recovery",
+        "The roadway left between two longwalls"
       ],
       "answer": 0,
       "solution": "Pillar between two adjacent panels."
@@ -625,9 +625,9 @@
       "stem": "The 'shield' support in longwall mining protects against",
       "options": [
         "Goaf material falling onto the working face",
-        "Support conveyor belts",
-        "Specific to metal mines only",
-        "Control dust emissions"
+        "Firedamp entering the working face",
+        "Water leaking from the roof",
+        "Dust blown along the return airway"
       ],
       "answer": 0,
       "solution": "Shields protect the working face from goaf material."
@@ -733,9 +733,9 @@
       "stem": "The 'profile leveling' determines",
       "options": [
         "Elevations along a predetermined line",
-        "Horizontal distance",
-        "Used only for horizontal lines",
-        "Record temperature variations"
+        "The bearing of the traverse line",
+        "The width of the roadway at one point",
+        "The tonnage of coal in the panel"
       ],
       "answer": 0,
       "solution": "Profile leveling determines elevations along a line."
@@ -1038,10 +1038,10 @@
       "difficulty": "hard",
       "stem": "The 'objective' of an accident report is to",
       "options": [
-        "Optional in non-hazardous areas",
-        "Blame someone for the accident",
+        "Estimate the cost of the shift lost",
+        "Blaming someone for the accident",
         "Present facts and findings to prevent recurrence",
-        "Enhance surveying accuracy"
+        "Record the tonnage of coal won"
       ],
       "answer": 2,
       "solution": "Present facts and findings to prevent recurrence."
@@ -1110,10 +1110,10 @@
       "difficulty": "hard",
       "stem": "The 'ribs' in bord and pillar mining are",
       "options": [
-        "Processing of limestone",
-        "Specific to metal mines only",
+        "The cross-cuts connecting two parallel roadways",
+        "The props erected under the roof",
         "The sides of pillars that support the roof",
-        "Quarrying of granite"
+        "The roadways driven through the pillar line"
       ],
       "answer": 2,
       "solution": "Sides of pillars supporting the roof."
@@ -1272,10 +1272,10 @@
       "difficulty": "easy",
       "stem": "A 'coal fire' in an open cast mine can be caused by",
       "options": [
-        "Extraction of iron ore",
+        "Flooding of the lower benches",
         "Improper handling of explosives, equipment heat, or spontaneous combustion",
-        "Water in the workings",
-        "Processing of limestone"
+        "Removal of all vegetation from the pit",
+        "Benching of hard rock in the seam"
       ],
       "answer": 1,
       "solution": "Improper handling of explosives, equipment heat, or spontaneous combustion."
@@ -1327,9 +1327,9 @@
       "stem": "The 'coalification process' involves",
       "options": [
         "Biological and geological transformation of plant material",
-        "Mining of bauxite",
-        "Specific to metal mines only",
-        "No process at all"
+        "Melting of the seam under heat and pressure",
+        "Oxidation of the seam by air alone",
+        "Deposition of ash in a swamp"
       ],
       "answer": 0,
       "solution": "Coalification involves both biological and geological processes."
@@ -1597,9 +1597,9 @@
       "stem": "The 'coal transportation' from opencast mines is typically done by",
       "options": [
         "Dumpers, conveyors, and sometimes rail",
-        "Quarrying of granite",
-        "Mining of bauxite",
-        "Processing of limestone"
+        "Handcarts and wheelbarrows only",
+        "Pipeline and barge transport only",
+        "Animal drawn carts on the surface"
       ],
       "answer": 0,
       "solution": "Dumpers, conveyors, and sometimes rail."
@@ -1614,10 +1614,10 @@
       "difficulty": "hard",
       "stem": "The 'carbon credit' concept in mining relates to",
       "options": [
-        "Processing of limestone",
+        "The sale of the mined coal abroad",
         "Reducing greenhouse gas emissions from mining operations",
-        "Extraction of iron ore",
-        "The construction of new dams"
+        "The royalty paid to the state",
+        "The grant of a new mining lease"
       ],
       "answer": 1,
       "solution": "Reducing greenhouse gas emissions."
@@ -1884,9 +1884,9 @@
       "difficulty": "easy",
       "stem": "The 'coal supply to non-power sector' is managed through",
       "options": [
-        "Quarrying of granite",
-        "Mining of bauxite",
-        "Extraction of iron ore",
+        "Administrative price fixation by the Ministry",
+        "Quarterly allocation by the Railways",
+        "Free allotment to local industry",
         "E-auction and FSA mechanisms"
       ],
       "answer": 3,

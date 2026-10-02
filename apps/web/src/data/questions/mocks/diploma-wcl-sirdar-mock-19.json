@@ -175,8 +175,8 @@
       "stem": "The 'non-coking coal' is used for",
       "options": [
         "Power generation and industrial heating",
-        "Extraction of iron ore",
-        "Quarrying of granite",
+        "The making of coke in blast furnaces",
+        "Chemical feedstock for fertilisers",
         "The making of coke"
       ],
       "answer": 0,
@@ -192,10 +192,10 @@
       "difficulty": "hard",
       "stem": "A 'misfire' must be dealt with by",
       "options": [
-        "Used for roof bolting only",
+        "Re-stemming the hole by any worker",
         "Leaving it until the next shift",
         "A competent person following prescribed procedures",
-        "Any worker present at the face"
+        "Burning the remaining charge in the open"
       ],
       "answer": 2,
       "solution": "By a competent person following procedures."
@@ -372,10 +372,10 @@
       "difficulty": "medium",
       "stem": "The safety measures against roof fall include",
       "options": [
-        "Stabilize goaf areas",
-        "Support conveyor belts",
+        "Increase the width of the pillar",
+        "Increase the height of the roadway",
         "Proper support, regular inspection, and strata monitoring",
-        "Optional in non-hazardous areas"
+        "Reduce the number of roof inspections"
       ],
       "answer": 2,
       "solution": "Proper support, regular inspection, and strata monitoring."
@@ -552,10 +552,10 @@
       "difficulty": "hard",
       "stem": "The stone dust barrier is used to",
       "options": [
-        "Specific to metal mines only",
-        "Improve roof support",
+        "Improve the roof support condition",
+        "Arrest the spread of an ignition",
         "Suppress coal dust explosion propagation",
-        "Increase production"
+        "Increase the tonnage of coal broken"
       ],
       "answer": 2,
       "solution": "Stone dust barriers suppress coal dust explosion propagation."
@@ -624,9 +624,9 @@
       "difficulty": "medium",
       "stem": "Who must the sirdar inform immediately in case of a reportable accident?",
       "options": [
-        "Enhance surveying accuracy",
+        "The safety officer only",
         "The manager and DGMS",
-        "Optional in non-hazardous areas",
+        "The mine surveyor only",
         "The police"
       ],
       "answer": 1,
@@ -678,9 +678,9 @@
       "difficulty": "hard",
       "stem": "The primary purpose of stowing is to",
       "options": [
-        "Reduce the number of workers",
-        "Increase production",
-        "Improve the lighting",
+        "Reduce the cost of roof bolts",
+        "Increase the rate of coal extraction",
+        "Improve the ventilation in the goaf",
         "Control subsidence and support the roof"
       ],
       "answer": 3,
@@ -696,10 +696,10 @@
       "difficulty": "hard",
       "stem": "The 'barrier pillar' is left to",
       "options": [
-        "Provide lighting",
-        "Increase production",
+        "Support the mains in the event of a fire",
+        "Increase the output of the section",
         "Separate different panels or protect main workings",
-        "Store equipment"
+        "Reduce the cost of ventilation"
       ],
       "answer": 2,
       "solution": "Barrier pillars separate panels and protect main workings."
@@ -822,9 +822,9 @@
       "difficulty": "easy",
       "stem": "A water spray system is used in mines to",
       "options": [
-        "Improve production",
-        "Specific to metal mines only",
-        "Increase dust",
+        "Increase the tonnage of coal broken",
+        "Keep the roadway free of slack coal",
+        "Reduce the cost of ventilation",
         "Suppress coal dust at the source"
       ],
       "answer": 3,
@@ -895,9 +895,9 @@
       "stem": "The 'blast timing diagram' shows",
       "options": [
         "Sequence and timing of all detonators",
-        "Used for roof bolting only",
-        "Used for drilling blast holes",
-        "Used for charging detonators"
+        "The cost of the explosive used",
+        "The number of persons in the blast crew",
+        "The time of firing of the previous shot"
       ],
       "answer": 0,
       "solution": "Timing diagrams show the complete detonation sequence."
@@ -930,9 +930,9 @@
       "difficulty": "hard",
       "stem": "The 'misfire' in blasting refers to",
       "options": [
-        "Used for roof bolting only",
-        "Applied after stemming only",
-        "Used for roof support",
+        "A shot fired with inadequate stemming",
+        "A shot fired after the circuit was checked",
+        "A shot fired at a lower delay interval",
         "A shot that fails to explode"
       ],
       "answer": 3,
@@ -948,10 +948,10 @@
       "difficulty": "easy",
       "stem": "The 'fire extinguisher' types suitable for coal mines include",
       "options": [
-        "Specific to metal mines only",
+        "Ordinary water filled bucket extinguishers",
         "Dry chemical, foam, and CO2 types",
-        "Used in quarrying operations",
-        "Quarrying of granite"
+        "Soda acid and halon types only",
+        "Compressed air jet types only"
       ],
       "answer": 1,
       "solution": "Coal mines use dry chemical, foam, and CO2 extinguishers."
@@ -1110,9 +1110,9 @@
       "difficulty": "easy",
       "stem": "The 'GPS survey' in mining provides",
       "options": [
-        "Processing of limestone",
-        "Used only for horizontal lines",
-        "Applicable to total stations only",
+        "The tonnage of coal despatched",
+        "The depth of workings below the seam",
+        "The rate of roof fall per month",
         "Three-dimensional positioning for surface surveys"
       ],
       "answer": 3,
@@ -1236,10 +1236,10 @@
       "difficulty": "easy",
       "stem": "The 'sapropelic coal' is formed from",
       "options": [
-        "Higher plants",
+        "Accumulated tree bark in a swamp",
         "Algae and spores",
-        "Processing of limestone",
-        "Specific to metal mines only"
+        "Coarse detritus in a river bed",
+        "Weathered igneous rock fragments"
       ],
       "answer": 1,
       "solution": "Sapropelic coal forms from algae and spores."
@@ -1254,10 +1254,10 @@
       "difficulty": "hard",
       "stem": "A dragline in open cast mining is used for",
       "options": [
-        "Used in quarrying operations",
+        "Benching hard rock ahead of the drilling fleet",
         "Stripping overburden from large areas",
-        "Extraction of iron ore",
-        "Specific to metal mines only"
+        "Loading coal into railway wagons",
+        "Dredging overburden from a district sump"
       ],
       "answer": 1,
       "solution": "Strips overburden from large areas."
@@ -1362,7 +1362,7 @@
       "difficulty": "easy",
       "stem": "An isolated stone dust barrier is installed",
       "options": [
-        "Specific to metal mines only",
+        "At every roadway intersection in the mine",
         "Nowhere in the mine",
         "At the surface only",
         "At specific intervals along the main and return airways"
@@ -1489,9 +1489,9 @@
       "stem": "Water barriers are used to",
       "options": [
         "Supress coal dust explosions by absorbing heat",
-        "Improve ventilation",
-        "Specific to metal mines only",
-        "Increase coal dust"
+        "Prevent the flow of the return air",
+        "Quench the heat of a mine fire",
+        "Prevent the accumulation of slack coal"
       ],
       "answer": 0,
       "solution": "Water barriers absorb heat and suppress explosions."
@@ -1614,10 +1614,10 @@
       "difficulty": "medium",
       "stem": "The 'ash content' of coal affects",
       "options": [
-        "Used in quarrying operations",
+        "The time of drilling the coal seam",
         "Its quality, price, and suitability for different uses",
-        "Mining of bauxite",
-        "Specific to metal mines only"
+        "The grain size of coal washed out of the seam",
+        "The number of persons engaged at the face"
       ],
       "answer": 1,
       "solution": "Affects quality, price, and suitability for uses."
@@ -1633,9 +1633,9 @@
       "stem": "The 'resettlement and rehabilitation' (R&R) policy for mining deals with",
       "options": [
         "Displacement and rehabilitation of affected families",
-        "Worker welfare only",
-        "Processing of limestone",
-        "Quarrying of granite"
+        "Increasing the output of the mine",
+        "Rehabilitation of the mine spoil heaps",
+        "Compensation to the land owner only"
       ],
       "answer": 0,
       "solution": "R&R policy deals with displacement and rehabilitation of affected families."
@@ -1722,8 +1722,8 @@
       "difficulty": "hard",
       "stem": "The 'coal sector reforms' aim to",
       "options": [
-        "Mining of bauxite",
-        "Extraction of iron ore",
+        "Ban the export of coal",
+        "Increase the royalty on each mine",
         "Reduce the number of mines",
         "Increase competition and production efficiency"
       ],
@@ -1812,10 +1812,10 @@
       "difficulty": "medium",
       "stem": "The 'National Safety Council (Mining)' promotes",
       "options": [
-        "Mining of bauxite",
-        "Surface mineral extraction",
+        "The promotion of coal exports",
+        "The fixation of coal prices",
         "Safety awareness and training in the mining sector",
-        "The promotion of coal exports"
+        "The allocation of coal linkages"
       ],
       "answer": 2,
       "solution": "Safety awareness and training."
@@ -1867,9 +1867,9 @@
       "stem": "The 'washability' of coal refers to",
       "options": [
         "The ease with which it can be cleaned of impurities",
-        "Quarrying of granite",
-        "Specific to metal mines only",
-        "Its burning property"
+        "The ease with which it can be crushed",
+        "The time taken for spontaneous heating",
+        "Its resistance to the roof load"
       ],
       "answer": 0,
       "solution": "Ease of cleaning impurities."

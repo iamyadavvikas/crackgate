@@ -192,10 +192,10 @@
       "difficulty": "easy",
       "stem": "The 'safety committee' in a mine is constituted under",
       "options": [
-        "Required only in UG mines",
-        "Enhance surveying accuracy",
+        "Section 41A of the Mines Act 1952",
+        "CMR 2017 Regulation 39",
         "Section 7 of Mines Act 1952",
-        "Optional in non-hazardous areas"
+        "The company's own safety charter"
       ],
       "answer": 2,
       "solution": "Section 7 of Mines Act 1952."
@@ -354,10 +354,10 @@
       "difficulty": "easy",
       "stem": "Roof bolting in coal mines uses",
       "options": [
-        "Specific to metal mines only",
-        "Protect electrical equipment",
+        "Resisting the weight of the roof strata",
+        "Supporting the ribs in a bord and pillar face",
         "Cement or resin grouted bolts",
-        "Control dust emissions"
+        "Damping the firedamp in the return airway"
       ],
       "answer": 2,
       "solution": "Roof bolting uses cement or resin grouted bolts for support."
@@ -444,9 +444,9 @@
       "difficulty": "hard",
       "stem": "The 'GIS application' in mining is used for",
       "options": [
-        "Used only for horizontal lines",
-        "Not used in mining",
-        "Mining of bauxite",
+        "Levelling of the surface bench floors",
+        "Recording the attendance of miners",
+        "Drafting the mine ventilation plan",
         "Spatial analysis and management of mine data"
       ],
       "answer": 3,
@@ -481,9 +481,9 @@
       "stem": "The 'underground fire' in coal mines can be caused by",
       "options": [
         "Spontaneous heating, mining activities, or external sources",
-        "Specific to metal mines only",
-        "Used in quarrying operations",
-        "Quarrying of granite"
+        "Improper handling of hot slag or friction sparks",
+        "Failure of the ventilation and cooling system",
+        "Stone dust barriers of inadequate thickness"
       ],
       "answer": 0,
       "solution": "Underground fires can be from spontaneous heating, mining, or external sources."
@@ -516,10 +516,10 @@
       "difficulty": "easy",
       "stem": "The 'coal quality' is determined by",
       "options": [
-        "Mining of bauxite",
+        "Proximate analysis of the coal sample",
         "Calorific value, ash content, moisture, volatile matter",
-        "Processing of limestone",
-        "Quarrying of granite"
+        "Colour of the overlying strata",
+        "Distance of the seam from the surface"
       ],
       "answer": 1,
       "solution": "Coal quality depends on CV, ash, moisture, and volatile matter."
@@ -570,10 +570,10 @@
       "difficulty": "hard",
       "stem": "A surface miner is used for",
       "options": [
-        "Only for blasting the overburden",
+        "Used for blasting the overburden seam",
         "Mechanized surface mining without blasting",
-        "Only for hauling coal",
-        "Only for drilling blast holes"
+        "Used for hauling coal to the washery",
+        "Used for drilling vertical blast holes"
       ],
       "answer": 1,
       "solution": "Mechanized surface mining without blasting."
@@ -607,7 +607,7 @@
       "stem": "The accident investigation must focus on",
       "options": [
         "Punishing someone",
-        "Increase production rate",
+        "Estimating the cost of the lost shift",
         "Blaming the worker",
         "Finding the root cause and preventing recurrence"
       ],
@@ -714,9 +714,9 @@
       "difficulty": "hard",
       "stem": "The 'blast round' in drifting typically includes",
       "options": [
-        "Used for roof bolting only",
-        "Applied after stemming only",
-        "Used for drilling blast holes",
+        "Only the cut holes with no lifters",
+        "Explosive charges placed before stemming",
+        "A single hole drilled at the face",
         "Cut holes, easer holes, lifters, and lifter holes"
       ],
       "answer": 3,
@@ -805,9 +805,9 @@
       "stem": "The dust suppression methods include",
       "options": [
         "Water sprays, stone dusting, ventilation, and surfactants",
-        "Applicable to narrow seam only",
-        "Specific to metal mines only",
-        "Used in quarrying operations"
+        "Restricted to development headings only",
+        "Applied only after the shift has ended",
+        "Limited to the return airway of the district"
       ],
       "answer": 0,
       "solution": "Multiple methods are used for dust suppression."
@@ -877,8 +877,8 @@
       "stem": "The 'stowing' in mining is done to",
       "options": [
         "Drain the workings",
-        "Provide ventilation",
-        "Increase production",
+        "Allow free flow of air through the goaf",
+        "Reduce the cost of surface rehabilitation",
         "Fill the goaf to control subsidence"
       ],
       "answer": 3,
@@ -967,7 +967,7 @@
       "stem": "A 'serious accident' is one that",
       "options": [
         "Causes only minor bruises",
-        "Improve ventilation efficiency",
+        "Causes loss of a limb or permanent disability",
         "Causes fracture of any bone or severe bodily injury",
         "Is not reported"
       ],
@@ -1146,9 +1146,9 @@
       "difficulty": "easy",
       "stem": "The 'ultimate analysis' of coal determines",
       "options": [
-        "Specific to metal mines only",
-        "Used in quarrying operations",
-        "Quarrying of granite",
+        "The moisture held in the coal seam",
+        "The ash left after complete incineration",
+        "The volatile matter driven off on heating",
         "Carbon, hydrogen, nitrogen, sulfur, oxygen content"
       ],
       "answer": 3,
@@ -1164,10 +1164,10 @@
       "difficulty": "hard",
       "stem": "The manager must conduct an inquiry into",
       "options": [
-        "Only accidents causing death",
-        "Only minor injuries",
+        "Accidents causing loss of life",
+        "Minor injuries recorded in the day book",
         "Every serious and dangerous occurrence",
-        "Only electrical faults"
+        "Electrical faults reported by the electrician"
       ],
       "answer": 2,
       "solution": "Every serious and dangerous occurrence."
@@ -1182,7 +1182,7 @@
       "difficulty": "medium",
       "stem": "The 'closing error' in a traverse must be within",
       "options": [
-        "Used only for horizontal lines",
+        "Zero at every traverse station",
         "Zero at every station",
         "Whatever the surveyor fixes",
         "The permissible limit as prescribed by survey regulations"
@@ -1201,7 +1201,7 @@
       "stem": "The safety audit in a mine is conducted to",
       "options": [
         "Check attendance",
-        "Enhance surveying accuracy",
+        "Verify the mine survey plans",
         "Check production",
         "Identify safety hazards and assess compliance with regulations"
       ],
@@ -1272,10 +1272,10 @@
       "difficulty": "hard",
       "stem": "The safety device in a man riding system includes",
       "options": [
-        "Reduce training requirements",
-        "Enhance surveying accuracy",
+        "Automatic braking on overspeed",
+        "Reverse interlock on the cage doors",
         "Anti-rollback device, speed governor, and safety catch",
-        "Increase production rate"
+        "Automatic restarting of the hoist"
       ],
       "answer": 2,
       "solution": "Multiple safety devices are required."
@@ -1380,10 +1380,10 @@
       "difficulty": "easy",
       "stem": "Drifting in mining refers to",
       "options": [
-        "Mining of bauxite",
+        "Sinking a vertical shaft through the coal seam",
         "Driving horizontal or near-horizontal openings in rock",
-        "Extraction of iron ore",
-        "Quarrying of granite"
+        "Raising ore from an underground stope face",
+        "Removing overburden from an open pit bench"
       ],
       "answer": 1,
       "solution": "Driving horizontal or near-horizontal openings in rock."
@@ -1398,9 +1398,9 @@
       "difficulty": "medium",
       "stem": "A 'mine plan' must be kept updated because",
       "options": [
-        "It is not",
-        "Applicable to total stations only",
-        "Used only for horizontal lines",
+        "It is only for the annual report",
+        "It is needed for royalty assessment only",
+        "It is required only for opencast mines",
         "It is a legal requirement and essential for safety and planning"
       ],
       "answer": 3,
@@ -1470,7 +1470,7 @@
       "difficulty": "hard",
       "stem": "A 'fatal accident' under the Mines Act is one that",
       "options": [
-        "Enhance surveying accuracy",
+        "Causes a serious injury lasting a month",
         "Causes minor injury",
         "Results in death of any person",
         "Happens only during day shift"
@@ -1632,9 +1632,9 @@
       "difficulty": "medium",
       "stem": "The 'CIL's washed coal' supply helps",
       "options": [
-        "Processing of limestone",
-        "Specific to metal mines only",
-        "Increase the moisture content",
+        "Increase the moisture content of coal",
+        "Reduce the size of coal fed to the boiler",
+        "Eliminate the need for boiler blowdown",
         "Reduce ash content and improve power plant efficiency"
       ],
       "answer": 3,
@@ -1650,10 +1650,10 @@
       "difficulty": "easy",
       "stem": "The 'clean coal technologies' in India include",
       "options": [
-        "Quarrying of granite",
+        "Underground mining by longwall only",
         "Surface mining without drilling",
         "CFBC, AFBC, and IGCC technologies",
-        "Extraction of iron ore"
+        "Burning of coal in an open hearth furnace"
       ],
       "answer": 2,
       "solution": "CFBC, AFBC, and IGCC technologies."
@@ -1669,9 +1669,9 @@
       "stem": "The 'coal bed methane' (CBM) is extracted from",
       "options": [
         "Coal seams before or during mining",
-        "Mining of bauxite",
-        "Surface mineral extraction",
-        "Quarrying of granite"
+        "The abandoned spoil heaps on the surface",
+        "The seams already worked out",
+        "The deep boreholes drilled for water supply"
       ],
       "answer": 0,
       "solution": "Extracted from coal seams before or during mining."
@@ -1777,9 +1777,9 @@
       "stem": "The 'coal washeries' in India are used to",
       "options": [
         "Reduce ash content and improve coal quality",
-        "Extraction of iron ore",
-        "Specific to metal mines only",
-        "Increase coal quantity"
+        "Removal of sulphur from the coal",
+        "Drying the coal for the domestic market",
+        "Disposal of the mine water pumped out"
       ],
       "answer": 0,
       "solution": "Washeries reduce ash and improve coal quality."

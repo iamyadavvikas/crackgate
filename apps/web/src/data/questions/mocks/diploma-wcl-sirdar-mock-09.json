@@ -138,9 +138,9 @@
       "difficulty": "easy",
       "stem": "A coal dust explosion can be initiated by",
       "options": [
-        "Used for drilling blast holes",
-        "Used for stemming operations",
-        "Specific to metal mines only",
+        "Overheating of a bearing in the roadway",
+        "Friction sparks from a dragging cable",
+        "Electrical failure of the surface plant",
         "A methane explosion, spark, or flame"
       ],
       "answer": 3,
@@ -372,9 +372,9 @@
       "difficulty": "easy",
       "stem": "The 'bearing' of a line in surveying is the",
       "options": [
-        "Used only for horizontal lines",
-        "Applicable to total stations only",
-        "Test roof stability",
+        "The angle between two traverse lines",
+        "The difference in level between points",
+        "The width of the survey chain",
         "Angle measured clockwise from north to the line"
       ],
       "answer": 3,
@@ -393,7 +393,7 @@
         "Manual excavation",
         "Keeping the roof fully supported",
         "Allowing roof to collapse in a controlled manner behind the face",
-        "Mining of bauxite"
+        "Grouting the void behind the face"
       ],
       "answer": 2,
       "solution": "Controlled caving allows roof to collapse behind the working face."
@@ -787,9 +787,9 @@
       "stem": "The 'dip and strike' measurements define",
       "options": [
         "Orientation of geological features in three dimensions",
-        "Power measurement only",
-        "Used only for horizontal lines",
-        "The quality and grade of the coal"
+        "The vertical extent of the seam",
+        "The cost of the survey instrument",
+        "The tonnage of coal in the panel"
       ],
       "answer": 0,
       "solution": "Dip and strike define 3D orientation of geological features."
@@ -822,10 +822,10 @@
       "difficulty": "hard",
       "stem": "The 'cross-section' of a drift or tunnel shows",
       "options": [
-        "Used only for horizontal lines",
-        "Applicable to total stations only",
+        "The length of the roadway driven",
+        "The gradient of the roadway floor",
         "The shape and dimensions of the opening at a particular point",
-        "Works only in daylight"
+        "The number of props in the roadway"
       ],
       "answer": 2,
       "solution": "Shape and dimensions at a particular point."
@@ -858,10 +858,10 @@
       "difficulty": "medium",
       "stem": "A dumper in open cast mining transports",
       "options": [
-        "Used in quarrying operations",
-        "Specific to metal mines only",
+        "Persons from the shaft bottom to the surface",
+        "Drill rods from the workshop to the face",
         "Overburden and coal from face to dump or coal depot",
-        "Processing of limestone"
+        "Stone dust from the surface store"
       ],
       "answer": 2,
       "solution": "Transports overburden and coal."
@@ -876,10 +876,10 @@
       "difficulty": "easy",
       "stem": "The 'fire safety audit' in mines should cover",
       "options": [
-        "Optional in non-hazardous areas",
+        "Only the records of past accidents",
         "No audit needed",
         "Detection systems, suppression, escape routes, and training",
-        "Increase production rate"
+        "Only the condition of the fire appliances"
       ],
       "answer": 2,
       "solution": "Fire audits cover detection, suppression, escape, training."
@@ -1020,10 +1020,10 @@
       "difficulty": "easy",
       "stem": "The earthing of electrical equipment in mines is important to",
       "options": [
-        "Improve the lighting only",
+        "Reduce the cost of cable installation",
         "Prevent electric shock and reduce risk of ignition",
-        "Acoustic properties of surfaces",
-        "Increase production"
+        "Determine the direction of the seam",
+        "Increase the voltage carrying capacity"
       ],
       "answer": 1,
       "solution": "Prevent electric shock and reduce risk of ignition."
@@ -1056,10 +1056,10 @@
       "difficulty": "easy",
       "stem": "The first-aid box in a mine must contain",
       "options": [
-        "Only a pair of scissors",
-        "Only a list of emergency contacts",
+        "The mine telephone directory",
+        "Spare bulbs for the cap lamp",
         "Prescribed medicines and equipment for first aid",
-        "Only a bottle of water"
+        "The accident register forms"
       ],
       "answer": 2,
       "solution": "Prescribed medicines and equipment for first aid."
@@ -1164,10 +1164,10 @@
       "difficulty": "easy",
       "stem": "The 'stope' in mining refers to",
       "options": [
-        "Processing of limestone",
+        "A horizontal roadway driven between two shafts",
         "An underground excavation from which ore or coal is extracted",
-        "Specific to metal mines only",
-        "Quarrying of granite"
+        "A vertical opening raised from a lower level",
+        "An open bench worked in a surface quarry"
       ],
       "answer": 1,
       "solution": "Underground excavation for extraction."
@@ -1219,9 +1219,9 @@
       "stem": "The 'sapropelic coal' is formed from",
       "options": [
         "Algae and spores",
-        "Higher plants",
-        "Specific to metal mines only",
-        "Quarrying of granite"
+        "Accumulated tree bark in a swamp",
+        "Coarse detritus in a river bed",
+        "Weathered igneous rock fragments"
       ],
       "answer": 0,
       "solution": "Sapropelic coal forms from algae and spores."
@@ -1236,9 +1236,9 @@
       "difficulty": "easy",
       "stem": "The 'sectional area' of a roadway is important for",
       "options": [
-        "Used only for horizontal lines",
+        "The tonnage of coal in the district",
         "Independent of the mine layout",
-        "The colour of the rock",
+        "The age of the roof strata",
         "Ventilation calculations and support design"
       ],
       "answer": 3,
@@ -1362,10 +1362,10 @@
       "difficulty": "easy",
       "stem": "A dragline in open cast mining is used for",
       "options": [
-        "Used in quarrying operations",
+        "Benching hard rock ahead of the drilling fleet",
         "Stripping overburden from large areas",
-        "Quarrying of granite",
-        "Specific to metal mines only"
+        "Loading coal into railway wagons",
+        "Dredging overburden from a district sump"
       ],
       "answer": 1,
       "solution": "Strips overburden from large areas."
@@ -1524,9 +1524,9 @@
       "difficulty": "medium",
       "stem": "In the 'longwall method', coal is extracted from",
       "options": [
-        "Mining of bauxite",
-        "Processing of limestone",
-        "Quarrying of granite",
+        "A series of isolated cross-cut panels",
+        "The pillar left standing between two stalls",
+        "The floor level worked beneath the seam",
         "A long continuous face"
       ],
       "answer": 3,
@@ -1651,9 +1651,9 @@
       "stem": "The 'clean coal technology' aims to",
       "options": [
         "Reduce environmental impact of coal use",
-        "Processing of limestone",
-        "Specific to metal mines only",
-        "Make coal cleaner to handle"
+        "Reduce the moisture in the coal seams",
+        "Increase the ash content of the coal",
+        "Reduce the calorific value of the coal"
       ],
       "answer": 0,
       "solution": "Clean coal technologies reduce environmental impact."
@@ -1813,9 +1813,9 @@
       "stem": "The 'moisture content' of coal is important because",
       "options": [
         "It affects the calorific value and handling properties",
-        "Quarrying of granite",
-        "Mining of bauxite",
-        "It is not"
+        "It decides the price of the coal mine",
+        "It fixes the grade of the coal seam",
+        "It is only a laboratory measurement"
       ],
       "answer": 0,
       "solution": "Affects calorific value and handling."
@@ -1848,9 +1848,9 @@
       "difficulty": "medium",
       "stem": "The 'adit' in mining is a",
       "options": [
-        "Quarrying of granite",
+        "An inclined opening driven from the surface",
         "Horizontal or near-horizontal opening from the surface into a hillside",
-        "Processing of limestone",
+        "A vertical opening sunk from the surface",
         "Surface mineral extraction"
       ],
       "answer": 1,
@@ -1866,10 +1866,10 @@
       "difficulty": "medium",
       "stem": "The 'Environmental Impact Assessment' (EIA) for mining projects is mandatory under",
       "options": [
-        "Coal Mines Regulations 2017",
+        "Mines Act 1952 alone",
         "Environment Protection Act 1986",
-        "Mines Act 1952",
-        "Extraction of iron ore"
+        "Forest Conservation Act 1980",
+        "Land Acquisition Act 1894"
       ],
       "answer": 1,
       "solution": "EIA is mandatory under EPA 1986 for mining projects."
@@ -1884,9 +1884,9 @@
       "difficulty": "medium",
       "stem": "The 'compensation for land acquisition' for mining is governed by",
       "options": [
-        "Dredging of riverbeds",
-        "Specific to metal mines only",
-        "Quarrying of granite",
+        "The Coal Mines Act 1971",
+        "The Environment Protection Act 1986",
+        "The Minimum Wages Act 1948",
         "Right to Fair Compensation Act 2013"
       ],
       "answer": 3,

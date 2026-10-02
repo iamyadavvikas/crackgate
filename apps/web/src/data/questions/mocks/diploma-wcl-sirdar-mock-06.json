@@ -193,9 +193,9 @@
       "stem": "The 'barrier pillar' is left to",
       "options": [
         "Separate different panels or protect main workings",
-        "Increase production",
-        "Store equipment",
-        "Provide lighting"
+        "Allow two panels to be worked simultaneously",
+        "Keep the main haulage roadway dry",
+        "Support the weight of the overburden"
       ],
       "answer": 0,
       "solution": "Barrier pillars separate panels and protect main workings."
@@ -426,10 +426,10 @@
       "difficulty": "hard",
       "stem": "The 'surface survey' for mining establishes",
       "options": [
-        "Used only for horizontal lines",
-        "Processing of limestone",
+        "The tonnage of coal already despatched",
+        "The depth of overburden in the working pit",
         "Control points and reference framework for mine development",
-        "Extraction of iron ore"
+        "The grade of the coal in the seam floor"
       ],
       "answer": 2,
       "solution": "Surface surveys establish control for mine development."
@@ -463,8 +463,8 @@
       "stem": "The 'safety helmet' of a mine rescue team member must have",
       "options": [
         "No special feature",
-        "Enhance surveying accuracy",
-        "Reduce equipment maintenance",
+        "A flame safety lamp fitted on the helmet",
+        "A headlamp with a rubber outer shell",
         "A cap lamp and communication device"
       ],
       "answer": 3,
@@ -516,10 +516,10 @@
       "difficulty": "medium",
       "stem": "The 'blast report' should contain",
       "options": [
-        "Used for roof bolting only",
-        "Applied after stemming only",
+        "The names of the persons who refused the shot",
+        "The time at which stemming was completed",
         "Type/quantity of explosive used, number of shots fired, and any misfires",
-        "Used for stemming operations"
+        "The colour of the explosive used"
       ],
       "answer": 2,
       "solution": "Type/quantity of explosive used, number of shots fired, and any misfires."
@@ -588,9 +588,9 @@
       "difficulty": "hard",
       "stem": "The 'humic coal' is formed from",
       "options": [
-        "Mining of bauxite",
+        "Accumulated animal excreta",
         "Higher plant material",
-        "Quarrying of granite",
+        "Fragmented rock debris from the overburden",
         "Marine animal remains"
       ],
       "answer": 1,
@@ -679,9 +679,9 @@
       "stem": "Who must the sirdar inform immediately in case of a reportable accident?",
       "options": [
         "The manager and DGMS",
-        "Enhance surveying accuracy",
+        "The safety officer only",
         "The police",
-        "Reduce equipment maintenance"
+        "The mine surveyor only"
       ],
       "answer": 0,
       "solution": "The manager and DGMS must be informed immediately."
@@ -750,10 +750,10 @@
       "difficulty": "hard",
       "stem": "The 'safe distance' for persons during blasting depends on",
       "options": [
-        "Used for roof bolting only",
-        "The colour of the explosive",
+        "The time of day of the firing",
+        "The grade of coal being mined",
         "The charge weight and type of explosive used",
-        "Used for drilling blast holes"
+        "The size of the drilling machine"
       ],
       "answer": 2,
       "solution": "Charge weight and type of explosive."
@@ -822,10 +822,10 @@
       "difficulty": "medium",
       "stem": "The accident report must contain",
       "options": [
-        "Increase production rate",
-        "Enhance surveying accuracy",
+        "The tonnage of coal lost in the shift",
+        "The plan of the place of accident",
         "Details of the accident, injured person, cause, and witnesses",
-        "Reduce equipment maintenance"
+        "The cost of the damaged machinery"
       ],
       "answer": 2,
       "solution": "Details of the accident, injured person, cause, and witnesses."
@@ -984,9 +984,9 @@
       "difficulty": "hard",
       "stem": "The 'wet drilling' in underground mines is done to",
       "options": [
-        "Cool the drill only",
-        "Cool the drill steel only",
-        "Increase production",
+        "Reduce the noise level during drilling",
+        "Increase the life of the drill bit",
+        "Prevent the drill steel from overheating",
         "Suppress dust generation during drilling"
       ],
       "answer": 3,
@@ -1002,9 +1002,9 @@
       "difficulty": "easy",
       "stem": "The 'total station' combines",
       "options": [
-        "Used only for horizontal lines",
-        "Applicable to total stations only",
-        "Works only in daylight",
+        "A level and a compass only",
+        "A level, compass, and plane table",
+        "A tape and a chain only",
         "Theodolite, distance meter, and data recorder"
       ],
       "answer": 3,
@@ -1111,9 +1111,9 @@
       "stem": "The 'safety sign maintenance' must be",
       "options": [
         "Regular inspection and replacement of damaged signs",
-        "Enhance surveying accuracy",
+        "Erected only once at the mine entrance",
         "Done only by the security staff",
-        "Painting them once in ten years"
+        "Repainted at each annual shutdown"
       ],
       "answer": 0,
       "solution": "Safety signs must be regularly inspected and maintained."
@@ -1308,8 +1308,8 @@
       "difficulty": "medium",
       "stem": "The 'dust suppression' methods in coal mines include",
       "options": [
-        "Quarrying of granite",
-        "Mining of bauxite",
+        "Wetting the floor after every round",
+        "Sealing off the return airway",
         "No methods needed",
         "Water spraying, stone dusting, and ventilation"
       ],
@@ -1326,9 +1326,9 @@
       "difficulty": "medium",
       "stem": "The main function of a feeder breaker is to",
       "options": [
-        "Only load coal into dumpers",
-        "Only break the overburden",
-        "Only transfer coal from the face",
+        "Loading coal directly into railway wagons",
+        "Breaking overburden ahead of the shovel face",
+        "Boring vertical holes for roof support bolts",
         "Reduce size of coal and feed to belt conveyor"
       ],
       "answer": 3,
@@ -1344,9 +1344,9 @@
       "difficulty": "hard",
       "stem": "The 'borehole survey' determines",
       "options": [
-        "Used only for horizontal lines",
-        "Monitor gas concentrations",
-        "Applicable to total stations only",
+        "The tonnage of coal drilled out",
+        "The depth of the seam floor",
+        "The width of the drill hole",
         "Position and orientation of boreholes underground"
       ],
       "answer": 3,
@@ -1416,9 +1416,9 @@
       "difficulty": "easy",
       "stem": "The inspector of mines has the power to",
       "options": [
-        "Only examine the registers",
-        "Only question the manager",
-        "Only visit with prior notice",
+        "Examination of the statutory registers alone",
+        "Questioning of the manager on record",
+        "Visits to the mine after prior notice",
         "Enter, inspect, and examine any mine at any time"
       ],
       "answer": 3,
@@ -1452,10 +1452,10 @@
       "difficulty": "medium",
       "stem": "The 'galleries' in board and pillar mining are driven at",
       "options": [
-        "Quarrying of granite",
+        "Any width the drifter can cut",
         "Random directions",
         "Predetermined width and alignment",
-        "Mining of bauxite"
+        "Random widths as encountered"
       ],
       "answer": 2,
       "solution": "Galleries are driven at predetermined widths and alignments."
@@ -1470,10 +1470,10 @@
       "difficulty": "medium",
       "stem": "The safety device on a conveyor belt includes",
       "options": [
-        "Streamline reporting processes",
-        "Optional in non-hazardous areas",
+        "A reverse direction interlock",
+        "A device to detect lumps in the belt",
         "Emergency stop pull cord, belt drift switch, and speed sensor",
-        "Reduce equipment maintenance"
+        "An automatic tensioning device"
       ],
       "answer": 2,
       "solution": "Emergency stop pull cord, belt drift switch, and speed sensor."
@@ -1525,8 +1525,8 @@
       "stem": "The 'pedestrian safety' measures include",
       "options": [
         "No measures needed",
-        "Enhance surveying accuracy",
-        "Improve ventilation efficiency",
+        "Separate crossings at the shaft bottom",
+        "Higher illumination at the dump",
         "Designated walkways, barriers, visibility measures"
       ],
       "answer": 3,
@@ -1632,9 +1632,9 @@
       "difficulty": "hard",
       "stem": "The 'coal supply' to power plants is managed by",
       "options": [
-        "Mining of bauxite",
-        "Specific to metal mines only",
-        "Quarrying of granite",
+        "Direct supply by private coal companies",
+        "State electricity boards through direct contracts",
+        "The Railways through long term freight contracts",
         "CIL through its subsidiaries and e-auction platform"
       ],
       "answer": 3,
@@ -1705,9 +1705,9 @@
       "stem": "The 'stripping ratio' in opencast mining is the ratio of",
       "options": [
         "Overburden to coal extracted",
-        "Specific to metal mines only",
-        "Used in quarrying operations",
-        "Quarrying of granite"
+        "Coal extracted to overburden removed",
+        "Blast holes drilled to tonnes of coal won",
+        "Haul road length to bench height in metres"
       ],
       "answer": 0,
       "solution": "Overburden to coal extracted."
@@ -1722,10 +1722,10 @@
       "difficulty": "medium",
       "stem": "The 'bench' in opencast mining is",
       "options": [
-        "Specific to metal mines only",
+        "An inclined roadway driven down from the surface",
         "A horizontal step-like working in an open cast mine",
-        "Mining of bauxite",
-        "Quarrying of granite"
+        "The vertical face left standing after blasting",
+        "The sump built at the lowest point of the pit"
       ],
       "answer": 1,
       "solution": "A horizontal step-like working in an open cast mine."
@@ -1740,9 +1740,9 @@
       "difficulty": "hard",
       "stem": "The 'energy security' of India depends on",
       "options": [
-        "Only on imported oil",
-        "Only on natural gas",
-        "Only on renewable sources",
+        "Exclusively on imported crude oil",
+        "Exclusively on imported liquefied natural gas",
+        "Exclusively on renewable energy sources",
         "Domestic coal production and import management"
       ],
       "answer": 3,
@@ -1830,10 +1830,10 @@
       "difficulty": "hard",
       "stem": "The 'volatile matter' in coal is",
       "options": [
-        "Specific to metal mines only",
-        "Quarrying of granite",
+        "The mineral matter left after complete burning",
+        "The water held in the pores of the coal",
         "The gases released when coal is heated in the absence of air",
-        "Mining of bauxite"
+        "The fixed carbon remaining after heating in air"
       ],
       "answer": 2,
       "solution": "Gases released when coal is heated without air."
@@ -1867,8 +1867,8 @@
       "stem": "The 'coal supply monitoring' system tracks",
       "options": [
         "Only the wages of workers",
-        "Processing of limestone",
-        "Excavation of overburden only",
+        "Only the wagons loaded at the siding",
+        "Only the daily output of one mine",
         "Production, dispatch, and delivery to consumers"
       ],
       "answer": 3,

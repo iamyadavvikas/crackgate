@@ -609,7 +609,7 @@
         "Blocking airflow",
         "Releasing inert material to suppress the explosion",
         "Absorbing water",
-        "Specific to metal mines only"
+        "Preventing the spread of firedamp"
       ],
       "answer": 1,
       "solution": "Releases inert material to suppress the explosion."
@@ -715,9 +715,9 @@
       "stem": "Under CMR 2017, the 'record of safety inspections' must be maintained by",
       "options": [
         "The manager for a period of at least 2 years",
-        "The workers' representative",
-        "The contractor",
-        "Improve ventilation efficiency"
+        "The safety officer for two years",
+        "The inspector of mines for five years",
+        "The mine manager for one year"
       ],
       "answer": 0,
       "solution": "The manager for at least 2 years."
@@ -732,10 +732,10 @@
       "difficulty": "hard",
       "stem": "A dust explosion requires the presence of",
       "options": [
-        "Specific to metal mines only",
-        "Used for roof support",
+        "Dust suspended in the air",
+        "Roof bolts and props",
         "Dust, oxygen, ignition source, and confinement",
-        "Used for drilling blast holes"
+        "A continuous miner working the seam"
       ],
       "answer": 2,
       "solution": "All four elements are required."
@@ -805,9 +805,9 @@
       "stem": "The 'shot hole' in underground coal mines is drilled at",
       "options": [
         "Predetermined angle and depth as per blast design",
-        "Quarrying of granite",
+        "Any convenient angle and depth",
         "A vertical hole always",
-        "Processing of limestone"
+        "A horizontal hole across the roadway"
       ],
       "answer": 0,
       "solution": "Shot holes are drilled at predetermined angles and depths."
@@ -840,9 +840,9 @@
       "difficulty": "hard",
       "stem": "The total dust in mines consists of",
       "options": [
-        "Specific to metal mines only",
-        "Used in quarrying operations",
-        "Applicable to narrow seam only",
+        "The fraction retained in the ribs and roof",
+        "The fraction deposited on the roadway floor",
+        "Only the fraction visible to the naked eye",
         "Respirable and non-respirable fractions"
       ],
       "answer": 3,
@@ -896,8 +896,8 @@
       "options": [
         "A ventilation shaft",
         "Access, ventilation, and transport to the longwall face",
-        "Quarrying of granite",
-        "Surface mineral extraction"
+        "A cross-cut between two panels",
+        "A stope worked outbye the gate"
       ],
       "answer": 1,
       "solution": "Access, ventilation, and transport to face."
@@ -930,10 +930,10 @@
       "difficulty": "medium",
       "stem": "The 'incubation period' of coal refers to",
       "options": [
-        "Extraction of iron ore",
-        "Processing of limestone",
+        "The time taken for the mine to reach full capacity",
+        "The period during which water is drained from a seam",
         "The time from first exposure of coal to air until spontaneous ignition",
-        "Specific to metal mines only"
+        "The interval between two statutory examinations"
       ],
       "answer": 2,
       "solution": "Time from first exposure to air until spontaneous ignition."
@@ -966,10 +966,10 @@
       "difficulty": "easy",
       "stem": "The 'crib' support in mining consists of",
       "options": [
-        "Specific to metal mines only",
+        "A single steel prop with a cap",
         "Interlocked timber or steel members forming a stack",
         "A single column of timber",
-        "Protect electrical equipment"
+        "Concrete blocks laid in courses"
       ],
       "answer": 1,
       "solution": "Cribs are interlocked timber or steel stacks for support."
@@ -1146,10 +1146,10 @@
       "difficulty": "hard",
       "stem": "The sirdar must ensure that the working place is freed from",
       "options": [
-        "Only the gas at the face",
-        "Only the roof condition",
+        "Loose rib material at the face",
+        "Water accumulated in the roadway sump",
         "Any danger before allowing persons to work",
-        "Only the haulage track"
+        "Untested shot holes left at the face"
       ],
       "answer": 2,
       "solution": "The working place must be freed from any danger."
@@ -1183,8 +1183,8 @@
       "stem": "The 'floor heave' in coal mines can be caused by",
       "options": [
         "Highly compacted roof",
-        "Mining of bauxite",
-        "Extraction of iron ore",
+        "Strong sandstone floor strata",
+        "Dry conditions throughout the year",
         "Weak floor strata, water ingress, and stress"
       ],
       "answer": 3,
@@ -1218,10 +1218,10 @@
       "difficulty": "easy",
       "stem": "The 'levelling instrument' in mine surveying is used to determine",
       "options": [
-        "Monitor gas concentrations",
+        "The horizontal angle between two points",
         "Difference in elevation between points",
         "Test roof stability",
-        "Used only for horizontal lines"
+        "The bearing of a traverse line"
       ],
       "answer": 1,
       "solution": "Determines difference in elevation between points."
@@ -1291,9 +1291,9 @@
       "stem": "The 'material classification' for blasting considers",
       "options": [
         "Rock strength, density, fracturing characteristics",
-        "Used for roof bolting only",
-        "Used for drilling blast holes",
-        "Used for stemming operations"
+        "Colour of the blasted rock",
+        "Cost of the drilling machine",
+        "Time of firing of the shot"
       ],
       "answer": 0,
       "solution": "Material classification considers strength, density, and fracturing."
@@ -1344,9 +1344,9 @@
       "difficulty": "medium",
       "stem": "A mine fire can be classified as",
       "options": [
-        "Only the fire in electrical equipment",
-        "Only spontaneous heating",
-        "Only the surface fire",
+        "Fires originating in electrical equipment",
+        "Fires of spontaneous origin belowground",
+        "Fires in surface buildings and workshops",
         "Surface fire and underground fire"
       ],
       "answer": 3,
@@ -1362,9 +1362,9 @@
       "difficulty": "hard",
       "stem": "The 'chain pillar' in longwall mining is the",
       "options": [
-        "Open pit copper extraction",
-        "Quarrying of granite",
-        "Extraction of iron ore",
+        "The roadway left between two longwalls",
+        "A temporary prop left after recovery",
+        "The pillar recovered during depillaring",
         "Pillar between two adjacent longwall panels"
       ],
       "answer": 3,
@@ -1434,10 +1434,10 @@
       "difficulty": "medium",
       "stem": "A 'haul cycle' includes",
       "options": [
-        "Only the loading of coal",
-        "Only the hauling of waste",
+        "Loading of coal at the face",
+        "Hauling of waste to the spoil dump",
         "Loading, hauling, dumping, returning empty",
-        "Only the dumping of material"
+        "Tipping of material at the dump"
       ],
       "answer": 2,
       "solution": "Haul cycle includes load, haul, dump, return."
@@ -1452,8 +1452,8 @@
       "difficulty": "medium",
       "stem": "The stone dust used for stone dusting must contain",
       "options": [
-        "Specific to metal mines only",
-        "Used in quarrying operations",
+        "At least 50% calcium carbonate",
+        "At least 20% calcium carbonate",
         "50% calcium carbonate",
         "At least 80% calcium carbonate or equivalent incombustible material"
       ],
@@ -1524,10 +1524,10 @@
       "difficulty": "hard",
       "stem": "The 'coal dust explosion' requires",
       "options": [
-        "Used in quarrying operations",
-        "Used for drilling blast holes",
+        "Roof bolts and timber props",
+        "A continuous miner cutting the seam",
         "Coal dust, ignition source, and confined space",
-        "Specific to metal mines only"
+        "An open fire at the surface"
       ],
       "answer": 2,
       "solution": "Coal dust explosions need dust, ignition, and confinement."
@@ -1560,10 +1560,10 @@
       "difficulty": "medium",
       "stem": "The 'roof condition survey' in underground mines involves",
       "options": [
-        "Support conveyor belts",
-        "Used only for horizontal lines",
+        "Measurement of the road width",
+        "Setting out of the gate road centreline",
         "Systematic assessment of roof conditions and support adequacy",
-        "No survey needed"
+        "A visual check at the end of each shift"
       ],
       "answer": 2,
       "solution": "Roof condition surveys systematically assess conditions and support."
@@ -1615,9 +1615,9 @@
       "stem": "The 'Raniganj' coalfield is historically significant because",
       "options": [
         "It was the first coal mining area in India",
-        "Quarrying of granite",
-        "Processing of limestone",
-        "No significance"
+        "The only coalfield in eastern India",
+        "The deepest coal seams in India",
+        "The largest coal washery in India"
       ],
       "answer": 0,
       "solution": "Raniganj was the first coal mining area in India."
@@ -1670,8 +1670,8 @@
       "options": [
         "Increase the moisture in coal",
         "Improve quality and reduce ash content for specific users",
-        "Dredging of riverbeds",
-        "Extraction of iron ore"
+        "Reduce the freight cost per tonne",
+        "Avoid the need for washing the coal"
       ],
       "answer": 1,
       "solution": "Improve quality and reduce ash content."
@@ -1686,10 +1686,10 @@
       "difficulty": "medium",
       "stem": "The 'coal gasification' technology converts coal into",
       "options": [
-        "Processing of limestone",
+        "Refined petroleum directly",
         "Synthesis gas (syngas) for various applications",
         "Liquid fuel only",
-        "Quarrying of granite"
+        "Coke for blast furnace use"
       ],
       "answer": 1,
       "solution": "Coal gasification converts coal into synthesis gas."
@@ -1758,8 +1758,8 @@
       "difficulty": "medium",
       "stem": "The 'Make in India' initiative in coal sector promotes",
       "options": [
-        "Mining of bauxite",
-        "Processing of limestone",
+        "Import of all mining machinery",
+        "Import of skilled contract labour",
         "Import of all mining equipment",
         "Indigenous manufacturing of mining equipment"
       ],
@@ -1776,10 +1776,10 @@
       "difficulty": "hard",
       "stem": "The 'technology adoption' in Indian coal mining has increased through",
       "options": [
-        "Specific to metal mines only",
+        "Subsidies on imported equipment",
         "Equipment imports, indigenous manufacturing, and R&D",
-        "Import of skilled workers",
-        "Processing of limestone"
+        "A decline in the output per man shift",
+        "Replacement of all manual methods"
       ],
       "answer": 1,
       "solution": "Equipment imports, indigenous manufacturing, and R&D."
@@ -1794,10 +1794,10 @@
       "difficulty": "easy",
       "stem": "The 'goaf' in underground mining is the",
       "options": [
-        "Used in quarrying operations",
+        "The space kept open for ventilation purposes",
         "The area from which coal has been extracted",
-        "Extraction of iron ore",
-        "Specific to metal mines only"
+        "The unexcavated seam left between two workings",
+        "The roadway kept open for persons to travel"
       ],
       "answer": 1,
       "solution": "Area from which coal has been extracted."
