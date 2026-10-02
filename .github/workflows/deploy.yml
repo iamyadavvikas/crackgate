@@ -34,6 +34,8 @@ jobs:
       - run: npx --workspace @crackgate/database prisma generate
       - run: npm run --workspace apps/web lint
       - run: npm run --workspace apps/web typecheck
+      - name: WCL option-length cue guard
+        run: npm run check:wcl
       - run: npm run --workspace apps/web test
       # Informational dependency audit — surfaces advisories without blocking the
       # required check (Dependabot opens the actual upgrade PRs).
