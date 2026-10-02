@@ -1593,16 +1593,16 @@
       "section": "Section A — General Awareness",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "hard",
-      "stem": "If '+' means '×', '×' means '÷', '÷' means '-', and '-' means '+', find: 12 + 6 ÷ 3 - 2 × 1",
+      "difficulty": "medium",
+      "stem": "If '−' means '×', '×' means '+', and '+' means '−', find the value of: 6 − 4 × 2",
       "options": [
-        "11",
-        "5",
-        "7",
-        "9"
+        "26",
+        "22",
+        "10",
+        "4"
       ],
-      "answer": 1,
-      "solution": "12×6-3+2÷1 = 72-3+2 = 71. Wait, let me recalculate: 12×6=72, 72-3=69, 69+2=71, 71÷1=71. Answer is 71."
+      "answer": 0,
+      "solution": "Replacing each symbol: 6 − 4 × 2 becomes 6 × 4 + 2. Applying BDM, 6 × 4 = 24, then 24 + 2 = 26."
     },
     {
       "id": 83,

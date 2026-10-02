@@ -1727,8 +1727,8 @@
         "105°",
         "60°"
       ],
-      "answer": 1,
-      "solution": "At 9:30, hour hand at 9.5, minute hand at 6. Angle = 3.5×30 = 105°. Wait: hour hand moves 0.5 per min. At 9:30, hour hand at 9+15=10.5 marks, minute hand at 6. Angle = (10.5-6)×30 = 135°. Hmm, let me recalc: hour hand = 9×30 + 30×0.5 = 270+15 = 285°. Minute hand = 180°. Angle = 105°."
+      "answer": 2,
+      "solution": "At 9:30 the hour hand is at 9 x 30 + 30 x 0.5 = 285 degrees and the minute hand is at 180 degrees, so the angle between them is 105 degrees."
     },
     {
       "id": 90,

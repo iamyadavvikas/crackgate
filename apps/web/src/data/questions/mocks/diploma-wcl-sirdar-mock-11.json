@@ -1611,16 +1611,16 @@
       "section": "Section A — General Awareness",
       "type": "MCQ",
       "marks": 1,
-      "difficulty": "hard",
-      "stem": "Pointing to a man, a boy said 'He is the son of my grandfather's only son.' How is the man related to the boy?",
+      "difficulty": "medium",
+      "stem": "Pointing to a woman, a boy said 'She is the daughter of the only son of my father.' How is the woman related to the boy?",
       "options": [
-        "Father",
-        "Uncle",
-        "Son",
-        "Brother"
+        "Mother",
+        "Aunt",
+        "Sister",
+        "Niece"
       ],
-      "answer": 0,
-      "solution": "Grandfather's only son is boy's father. Son of father is the man himself - so he is the boy's brother. Wait: Grandfather's only son = boy's father. Son of that = boy himself. So the man is the boy himself?"
+      "answer": 2,
+      "solution": "The only son of the boy's father is the boy himself. The daughter of the boy is therefore his sister."
     },
     {
       "id": 84,
@@ -1925,8 +1925,8 @@
         "1200",
         "1400"
       ],
-      "answer": 2,
-      "solution": "(1000+1200+1400+1600)/4 = 5200/4 = 1300. Wait, that's 1300."
+      "answer": 1,
+      "solution": "Average = (1000 + 1200 + 1400 + 1600) / 4 = 5200 / 4 = 1300 cubic meters."
     }
   ],
   "seed": 95110541
