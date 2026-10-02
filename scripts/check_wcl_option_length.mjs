@@ -38,7 +38,7 @@ const FILE_PREFIX = "diploma-wcl-sirdar-mock-";
 
 const KEY_SKEW_LOW = 0.75;
 const KEY_SKEW_HIGH = 1.35;
-const MIN_CORROBORATING_LENGTH = 16;
+const MIN_CORROBORATING_LENGTH = 26;
 
 // 25% is the chance rate for one correct answer among four. 40% leaves headroom
 // for sampling noise while still failing if the cue comes back.
