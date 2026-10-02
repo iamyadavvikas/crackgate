@@ -23,7 +23,8 @@
     "build:mocks:one": "npx tsx scripts/build_mocks.ts --only=",
     "build:gg:practice": "npx tsx scripts/build_gg_practice.ts",
     "build:gg:mocks": "npx tsx scripts/build_gg_mocks.ts",
-    "build:gg:mocks:force": "npx tsx scripts/build_gg_mocks.ts --force"
+    "build:gg:mocks:force": "npx tsx scripts/build_gg_mocks.ts --force",
+    "check:wcl": "node scripts/check_wcl_option_length.mjs"
   },
   "engines": {
     "node": ">=20.0.0",
