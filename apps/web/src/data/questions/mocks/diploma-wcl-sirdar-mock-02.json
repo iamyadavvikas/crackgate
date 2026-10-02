@@ -138,9 +138,9 @@
       "difficulty": "medium",
       "stem": "The 'rescue equipment replacement' criteria include",
       "options": [
-        "The colour of the equipment",
-        "Availability of spare parts",
-        "The cost of the equipment",
+        "The colour and make of the rescue equipment",
+        "Availability of the spare parts in store",
+        "The purchase cost and the annual upkeep of the equipment",
         "Age, condition, and manufacturer recommendations"
       ],
       "answer": 3,
@@ -157,9 +157,9 @@
       "stem": "The 'igneous intrusion' in coal seams causes",
       "options": [
         "Displacement of the seam along a fault plane",
-        "Reduction of the overburden",
+        "A reduction in the thickness of the overburden",
         "Alteration of coal quality and seam continuity",
-        "Folding of the overlying strata"
+        "Folding of the overlying rock strata above the seam"
       ],
       "answer": 2,
       "solution": "Igneous intrusions alter coal quality and seam continuity."
@@ -177,7 +177,7 @@
         "Coal absorbs moisture from the air",
         "Coal reacts with oxygen and generates heat",
         "Coal absorbs oxygen slowly at low temperature",
-        "Coal is cold"
+        "The coal seam remains cold and inert"
       ],
       "answer": 1,
       "solution": "Spontaneous heating occurs when coal reacts with oxygen."
@@ -192,10 +192,10 @@
       "difficulty": "medium",
       "stem": "The cable testing in mines must be done by",
       "options": [
-        "The mine electrician",
-        "The winding engineman",
+        "The mine electrician holding a valid licence",
+        "The winding engineman of the main shaft",
         "Competent persons using approved testing equipment",
-        "The surface watchman"
+        "The surface watchman of the mine surface works area"
       ],
       "answer": 2,
       "solution": "Competent persons using approved testing equipment."
@@ -210,7 +210,7 @@
       "difficulty": "easy",
       "stem": "The 'filling factor' in stowing represents",
       "options": [
-        "Ratio of sand to water in the slurry",
+        "The ratio of sand to water used in the stowing slurry",
         "Ratio of coal extracted to material used",
         "Ratio of air to water in the pipeline",
         "Percentage of goaf filled with stowing material"
@@ -229,9 +229,9 @@
       "stem": "The 'water inflow monitoring' in mines involves",
       "options": [
         "One-time measurement at the start of a shift",
-        "Monitoring only once a year",
+        "Monitoring of the water inflow only once a year",
         "Regular measurement and recording of water inflow rates",
-        "Measuring only during the rainy season"
+        "Measuring of the water inflow rate only in the rainy season"
       ],
       "answer": 2,
       "solution": "Water inflow is monitored regularly for early warning."
@@ -246,10 +246,10 @@
       "difficulty": "medium",
       "stem": "The 'seam thickness' affects",
       "options": [
-        "Applies to sedimentary rocks only",
+        "Applies to the sedimentary rock formations",
         "Mining method selection and economic viability",
-        "Works for surface deposits",
-        "Specific to metamorphic terrain"
+        "Works only for the surface coal deposits",
+        "Specific to the metamorphic rock terrain around it"
       ],
       "answer": 1,
       "solution": "Seam thickness affects mining method and economics."
@@ -265,9 +265,9 @@
       "stem": "The 'gas detection' in mines uses",
       "options": [
         "Gas detectors and monitoring instruments",
-        "Sound detection",
-        "Smell and taste",
-        "Measuring the temperature"
+        "Detection by listening to the air",
+        "Detection by the smell and taste of gas",
+        "Measuring the temperature in the workings"
       ],
       "answer": 0,
       "solution": "Gas detection uses detectors and monitoring instruments."
@@ -283,9 +283,9 @@
       "stem": "A 'level instrument' must be checked for",
       "options": [
         "Temporary adjustments - bubble, crosshair, and line of sight",
-        "Measure air velocity",
-        "Map underground water flows",
-        "Test roof stability"
+        "Measurement of the air velocity in the roadways",
+        "Mapping of the flow paths of the underground water in the mine",
+        "Testing of the stability of the mine roof strata"
       ],
       "answer": 0,
       "solution": "Temporary adjustments - bubble, crosshair, and line of sight."
@@ -301,8 +301,8 @@
       "stem": "The 'flyrock radius' is influenced by",
       "options": [
         "Burden, stemming, and charge characteristics",
-        "Distance of the nearest dwelling from the site",
-        "Direction of the prevailing wind",
+        "Distance of the nearest dwelling nearby",
+        "Direction of the prevailing wind in the area",
         "Time of the day at which firing is done"
       ],
       "answer": 0,
@@ -318,10 +318,10 @@
       "difficulty": "easy",
       "stem": "A sirdar who finds a dangerous occurrence must",
       "options": [
-        "Wait for shift end",
-        "Continue working",
+        "Wait until the end of that shift to report",
+        "Continue the normal work in that same place",
         "Immediately stop work, withdraw persons, and report",
-        "Record it at the end of the shift"
+        "Record the occurrence in the book at the end of the shift"
       ],
       "answer": 2,
       "solution": "Immediate action is required for dangerous occurrences."
@@ -337,9 +337,9 @@
       "stem": "The primary purpose of ventilation in underground mines is to",
       "options": [
         "Provide fresh air and remove hazardous gases, dust, and heat",
-        "Remove harmful gases and dust",
-        "Cool the mine",
-        "Control humidity in underground workings"
+        "Removal of the harmful gases and dust from the mine",
+        "Cooling of the underground working environment inside the mine",
+        "Control of the humidity in the underground workings"
       ],
       "answer": 0,
       "solution": "Provide fresh air and remove hazardous gases, dust, and heat."
@@ -356,8 +356,8 @@
       "options": [
         "Demonstrated by detailed exploration and sampling",
         "Inferred from the seam thickness alone",
-        "Inferred from surface outcrops",
-        "Indicated by regional mapping"
+        "Inferred from the surface outcrops of seams",
+        "Indicated by the regional geological mapping"
       ],
       "answer": 0,
       "solution": "Proven reserves are demonstrated by detailed exploration."
@@ -372,10 +372,10 @@
       "difficulty": "medium",
       "stem": "The 'pit bottom' is the",
       "options": [
-        "Highest bench level",
-        "Mid slope level",
+        "The highest bench level in the pit",
+        "The mid slope level of the working pit",
         "Deepest working level of the mine",
-        "Shallowest point"
+        "The shallowest point within the mine pit"
       ],
       "answer": 2,
       "solution": "Pit bottom is the deepest active working level."
@@ -390,10 +390,10 @@
       "difficulty": "easy",
       "stem": "The 'mine plan scale' typically used for working plans is",
       "options": [
-        "1:100",
-        "1:50000",
+        "1:100 or 1:200",
+        "1:5000 or 1:50000",
         "1:500 or 1:1000",
-        "1:10000"
+        "1:5000 or 1:10000"
       ],
       "answer": 2,
       "solution": "1:500 or 1:1000."
@@ -411,7 +411,7 @@
         "Cleaned and maintained regularly",
         "Rated for the full design water pressure",
         "Fitted only during the monsoon",
-        "Painted once a year"
+        "Repainted once every year with care"
       ],
       "answer": 0,
       "solution": "Cleaned and maintained regularly."
@@ -427,9 +427,9 @@
       "stem": "A continuous miner is used for",
       "options": [
         "Mechanized extraction of coal from the face",
-        "Only roof bolting",
-        "Only stone drifting",
-        "Surface haulage of coal"
+        "Only for the roof bolting work done at the face",
+        "Only for the stone drifting operations",
+        "For the surface haulage of mined coal"
       ],
       "answer": 0,
       "solution": "Mechanized extraction of coal from the face."
@@ -463,9 +463,9 @@
       "stem": "The 'rescue communication' underground uses",
       "options": [
         "Intrinsic safety telephones and communication systems",
-        "Ordinary mobile phones",
-        "Open flame signalling",
-        "Public address announcements"
+        "Ordinary mobile phones used by the mine staff",
+        "Signalling by open flame or by shouting aloud",
+        "Announcements over the public address system"
       ],
       "answer": 0,
       "solution": "Rescue communication uses intrinsic safety telephones."
@@ -481,9 +481,9 @@
       "stem": "The 'transport of explosives' in mines must follow",
       "options": [
         "Prescribed regulations for safe handling and storage",
-        "The shortest route to the face",
-        "Handing over to any worker",
-        "Carrying them together with detonators"
+        "Use of the shortest possible route to the face",
+        "Handing over the explosives to any one of the mine workers",
+        "Carrying the explosives with the detonators"
       ],
       "answer": 0,
       "solution": "Prescribed regulations for safe handling."
@@ -498,10 +498,10 @@
       "difficulty": "hard",
       "stem": "The 'coking coal' is used for",
       "options": [
-        "Blending with low rank coal for coke making",
+        "Blending with low rank coal for coke",
         "Fertiliser and cement manufacture",
         "Making coke for iron and steel industry",
-        "Power generation"
+        "Power generation in the thermal plants"
       ],
       "answer": 2,
       "solution": "Coking coal is used to make coke for iron/steel industry."
@@ -516,9 +516,9 @@
       "difficulty": "medium",
       "stem": "The 'auxiliary fan' is used to",
       "options": [
-        "Cool the mine",
-        "Replace main fan",
-        "Heat the mine",
+        "Cooling of the mine workings and of the men",
+        "Replacing of the main ventilation fan used",
+        "Heating of the mine workings and of the men",
         "Supplement ventilation in specific areas"
       ],
       "answer": 3,
@@ -534,10 +534,10 @@
       "difficulty": "hard",
       "stem": "A 'theodolite' in mine surveying is used to measure",
       "options": [
-        "Determination of the least count of the instrument",
+        "Determination of the least count",
         "Horizontal and vertical angles",
         "Direct measurement of gas percentage",
-        "Measurement of the horizontal distance only"
+        "Measurement of the horizontal distance"
       ],
       "answer": 1,
       "solution": "Measures horizontal and vertical angles."
@@ -552,10 +552,10 @@
       "difficulty": "easy",
       "stem": "The frequency of stone dust application depends on",
       "options": [
-        "The number of holidays",
+        "The number of the holidays observed",
         "The rate of dust generation and accumulation",
-        "The colour of the coal",
-        "The manager's wish"
+        "The colour of the coal and of the seam",
+        "The personal wish of the mine manager"
       ],
       "answer": 1,
       "solution": "Depends on rate of dust generation and accumulation."
@@ -589,9 +589,9 @@
       "stem": "A motor starter in a mine must have",
       "options": [
         "Automatic restart capability",
-        "A manual switch",
+        "A manual switch or a manual handle",
         "Overload and short circuit protection",
-        "Insulation testing"
+        "Insulation testing of the motor windings"
       ],
       "answer": 2,
       "solution": "Overload and short circuit protection."
@@ -607,9 +607,9 @@
       "stem": "A face pump is used to",
       "options": [
         "Remove water accumulation at the coal face",
-        "Ventilate the face",
-        "Pump water for drinking",
-        "Support the roof at the face"
+        "Ventilation of the coal face",
+        "Pumping of water for drinking purposes",
+        "Support of the roof and the face area"
       ],
       "answer": 0,
       "solution": "Removes water accumulation at the coal face."
@@ -625,9 +625,9 @@
       "stem": "A cable joint in a mine must be",
       "options": [
         "Made by competent persons using approved methods",
-        "Repaired with insulating tape",
-        "Sealed with candle wax",
-        "Made by the shotfirer"
+        "Repaired with the insulating tape alone",
+        "Sealed with the wax of a burnt candle",
+        "Made by the shot firer in that panel"
       ],
       "answer": 0,
       "solution": "Made by competent persons using approved methods."
@@ -642,7 +642,7 @@
       "difficulty": "easy",
       "stem": "Before winding persons, the winding engine must be",
       "options": [
-        "Not tested",
+        "Not tested before the winding",
         "Tested by running loaded",
         "Checked by the banksman only",
         "Tested by running empty"
@@ -660,10 +660,10 @@
       "difficulty": "hard",
       "stem": "Pit dewatering involves",
       "options": [
-        "Allowing water to stand",
-        "Sealing the pit bottom",
+        "Allowing the water to stand in the pit",
+        "Sealing of the pit bottom with stoppings",
         "Removing groundwater for dry working conditions",
-        "Storing water in the benches"
+        "Storing of the mine water in the benches of the pit"
       ],
       "answer": 2,
       "solution": "Dewatering removes groundwater for safe working."
@@ -680,7 +680,7 @@
       "options": [
         "Digging, swinging, dumping, returning",
         "Drilling, blasting, mucking, hauling",
-        "Filling, tamping, stemming, firing",
+        "Filling, tamping, stemming, and firing of the hole",
         "Cutting, loading, hauling, dumping"
       ],
       "answer": 0,
@@ -697,9 +697,9 @@
       "stem": "The sirdar must ensure that the working place has",
       "options": [
         "Adequate ventilation before persons enter",
-        "Natural lighting",
-        "Ventilation only at night",
-        "No escape route"
+        "Adequate natural lighting",
+        "Ventilation arranged only at night time",
+        "No escape route or exit from the place"
       ],
       "answer": 0,
       "solution": "Adequate ventilation is required before persons enter."
@@ -714,10 +714,10 @@
       "difficulty": "hard",
       "stem": "The 'face ventilation' is designed to",
       "options": [
-        "Reduce humidity",
-        "Cool the mine",
+        "Reduction of the humidity in the face",
+        "Cooling of the mine workings and men",
         "Dilute and remove gases from working face",
-        "Increase temperature"
+        "Increase of the temperature at the face"
       ],
       "answer": 2,
       "solution": "Face ventilation dilutes and removes gases from face."
@@ -734,8 +734,8 @@
       "options": [
         "The displacement and direction of the fault to plan the working",
         "The tonnage of coal already despatched from the district",
-        "The grade of the overburden in the working pit",
-        "The hourly capacity of the belt conveyor"
+        "The grade of the overburden in the working opencast pit",
+        "The hourly capacity of the belt conveyor fitted"
       ],
       "answer": 0,
       "solution": "Displacement and direction to plan working."
@@ -750,9 +750,9 @@
       "difficulty": "medium",
       "stem": "The 'stowing face' in underground mining is where",
       "options": [
-        "Ventilation occurs",
-        "Haulage happens",
-        "Coal is extracted",
+        "Ventilation of the working face occurs",
+        "Haulage of the coal to the pit bottom",
+        "Extraction of the coal from the face",
         "Stowing material is deposited into goaf"
       ],
       "answer": 3,
@@ -768,10 +768,10 @@
       "difficulty": "hard",
       "stem": "A 'raise borer' is used to",
       "options": [
-        "Ventilate the mine",
-        "Drill horizontal holes",
+        "Ventilation of the underground mine workings",
+        "Drilling of the horizontal holes in rock",
         "Excavate vertical or inclined openings between levels",
-        "Drain the sump"
+        "Draining of the water from the mine sump"
       ],
       "answer": 2,
       "solution": "Raise borers excavate vertical or inclined openings."
@@ -787,9 +787,9 @@
       "stem": "The 'safety gear' of a man riding system includes",
       "options": [
         "Seat belts or safety chains for each passenger",
-        "A sun roof on the car",
-        "Improved seat comfort",
-        "Headlights for the surface only"
+        "A sun roof fitted on the man riding car",
+        "Improved comfort of the seats fitted in the car",
+        "Headlights meant for the surface roads"
       ],
       "answer": 0,
       "solution": "Seat belts or safety chains for each passenger."
@@ -822,9 +822,9 @@
       "difficulty": "easy",
       "stem": "A sirdar who notices subsidence must",
       "options": [
-        "Note it in the daily diary and continue work",
-        "Note it in the diary only",
-        "Wait until next shift",
+        "Note it in the diary and continue the work",
+        "Record it in the diary and carry on work",
+        "Wait until the very beginning of the next working shift",
         "Immediately report and take precautionary measures"
       ],
       "answer": 3,
@@ -840,9 +840,9 @@
       "difficulty": "easy",
       "stem": "The inflow of water into a mine can be detected by",
       "options": [
-        "A rise in wind velocity",
-        "A change in roof colour",
-        "An increase in the temperature of the goaf",
+        "A sudden rise in the wind velocity of the workings",
+        "A clearly visible change in the colour of the roof strata in the goaf",
+        "An increase in the temperature of the mined-out goaf",
         "Sudden increase in pump load, wet spots, or change in water quality"
       ],
       "answer": 3,
@@ -859,8 +859,8 @@
       "stem": "The 'rescue equipment testing records' must be",
       "options": [
         "Maintained with dates, results, and corrective actions",
-        "Kept in the personal notebook of the sirdar",
-        "Discarded after each quarterly practice",
+        "Kept only in the personal notebook kept by the sirdar",
+        "Discarded after each practice of the quarter",
         "Maintained only by the equipment manufacturer"
       ],
       "answer": 0,
@@ -876,10 +876,10 @@
       "difficulty": "medium",
       "stem": "A 'flood gate' in a mine is used to",
       "options": [
-        "Increase the rate of pumping",
+        "An increase in the rate of pumping out",
         "Isolate sections in case of water inrush",
-        "Ventilate the workings",
-        "Drain the water from the mine"
+        "Ventilation of the mine workings there",
+        "Draining of the water from the mine workings"
       ],
       "answer": 1,
       "solution": "Isolates sections in case of water inrush."
@@ -896,7 +896,7 @@
       "options": [
         "Is only for display",
         "Is only for illumination",
-        "Is not used",
+        "Is not used in gassy seams at all",
         "Is tested for accuracy before use"
       ],
       "answer": 3,
@@ -912,10 +912,10 @@
       "difficulty": "medium",
       "stem": "The 'mechanical stowing' uses",
       "options": [
-        "Explosive charges",
-        "Hand picking by workers",
+        "Explosive charges placed in the holes",
+        "Hand picking of the material by workers",
         "Mechanical equipment like conveyors and loaders",
-        "Hand barrows"
+        "Hand barrows and manual carrying by hand"
       ],
       "answer": 2,
       "solution": "Mechanical stowing uses equipment like conveyors and loaders."
@@ -930,10 +930,10 @@
       "difficulty": "hard",
       "stem": "An isolated stone dust barrier is installed",
       "options": [
-        "At every roadway intersection in the mine",
+        "At every roadway intersection inside the mine",
         "At specific intervals along the main and return airways",
-        "At the surface only",
-        "At the pit bottom"
+        "At the surface plant of the mine workings",
+        "At the bottom of the working open cast pit"
       ],
       "answer": 1,
       "solution": "At specific intervals along main and return airways."
@@ -949,9 +949,9 @@
       "stem": "A 'sump' in a mine is used to",
       "options": [
         "Collect water for pumping to surface",
-        "Store diesel fuel",
-        "Serve as an emergency exit",
-        "Hold the drilling water"
+        "Storage of the diesel fuel at the face",
+        "Serve as an emergency exit route",
+        "Holding of the water used for drilling"
       ],
       "answer": 0,
       "solution": "Collects water for pumping to surface."
@@ -968,8 +968,8 @@
       "options": [
         "Stone dust barriers",
         "Additional auxiliary fans",
-        "Water drenching at the shaft bottom",
-        "Extra stoppings at all junctions"
+        "Water drenching",
+        "More stoppings in the pit"
       ],
       "answer": 0,
       "solution": "CMR 2017 Regulation 146 requires stone dust barriers in gassy seams of the second or third degree, and in development workings in a first-degree gassy seam where inflammable gas may occur in dangerous quantities, to prevent an ignition or explosion from extending from one part of the mine to the other."
@@ -984,10 +984,10 @@
       "difficulty": "medium",
       "stem": "The 'flame safety lamp' is used to detect",
       "options": [
-        "Only the temperature of the air",
-        "Only the humidity of the air",
+        "Only the temperature of the mine air",
+        "Only the humidity of the mine air",
         "Presence of methane and oxygen deficiency",
-        "The velocity of the air current"
+        "The velocity of the air current flowing"
       ],
       "answer": 2,
       "solution": "Presence of methane and oxygen deficiency."
@@ -1005,7 +1005,7 @@
         "Available and in working order",
         "Stored in the office and kept locked",
         "Replaced once every year only",
-        "Counted and reported to the manager daily"
+        "Counted and reported daily to the manager"
       ],
       "answer": 0,
       "solution": "Fire-fighting equipment must be kept available and maintained in working order at convenient points both on surface and belowground (CMR 2017 Regulation 139)."
@@ -1020,9 +1020,9 @@
       "difficulty": "easy",
       "stem": "The sirdar shall ensure that the shot firer does not",
       "options": [
-        "Use any explosive",
-        "Carry more explosive than needed",
-        "Enter the face after firing",
+        "Permit the use of any explosive at the working face area",
+        "Allow him to carry more explosive than the need requires",
+        "Allow him to re-enter the face after the firing of the shot is completed",
         "Commence shot firing until all persons are removed to a safe distance"
       ],
       "answer": 3,
@@ -1038,7 +1038,7 @@
       "difficulty": "hard",
       "stem": "The 'accident triangle' or 'Heinrich's triangle' shows the relationship between",
       "options": [
-        "The ratio of accidents to man hours worked",
+        "The ratio of the number of accidents to the man hours worked",
         "Near misses, minor injuries, and serious/fatal injuries",
         "The sequence of events leading to a single casualty",
         "The monetary cost of accidents to the owner"
@@ -1056,10 +1056,10 @@
       "difficulty": "easy",
       "stem": "The 'timber prop' in underground mines is used for",
       "options": [
-        "Transport of coal",
+        "Transport of the mined coal from the face",
         "Temporary support of roof and floor",
-        "Drainage of water",
-        "Blasting of the face"
+        "Drainage of the water from the workings",
+        "Blasting of the coal at the face"
       ],
       "answer": 1,
       "solution": "Timber props provide temporary support for roof and floor."
@@ -1092,10 +1092,10 @@
       "difficulty": "medium",
       "stem": "A 'de-watering plan' for a mine must include",
       "options": [
-        "The name of the mine manager only",
-        "The number of persons employed on the surface",
+        "Only the name of the mine manager of the open pit",
+        "Only the number of persons employed on the surface",
         "Pump locations, capacity, piping layout, and emergency procedures",
-        "The blasting schedule for the week"
+        "Only the blasting schedule prepared for each mine week"
       ],
       "answer": 2,
       "solution": "Pump locations, capacity, piping, and emergency procedures."
@@ -1110,9 +1110,9 @@
       "difficulty": "medium",
       "stem": "The 'returns of accidents' must be maintained by",
       "options": [
-        "The workers' union",
-        "The inspector",
-        "The mine owner",
+        "The workers' union of that mine",
+        "The inspector of mines of the region",
+        "The owner or the appointed agent of the mine",
         "The manager as per prescribed format"
       ],
       "answer": 3,
@@ -1128,10 +1128,10 @@
       "difficulty": "hard",
       "stem": "A stone dust barrier that has been triggered must be",
       "options": [
-        "Left as is",
+        "Left in the same condition",
         "Immediately renewed and recharged",
-        "Painted over",
-        "Stored in the store"
+        "Painted over with the mine paint",
+        "Stored in the store for reuse"
       ],
       "answer": 1,
       "solution": "Immediately renewed and recharged."
@@ -1146,10 +1146,10 @@
       "difficulty": "hard",
       "stem": "A flameproof enclosure can withstand",
       "options": [
-        "Protect electrical equipment",
-        "Control dust emissions",
+        "Protection of the electrical equipment fitted within the box",
+        "Control of the dust emissions generated in the mine roadways",
         "Internal explosion without allowing it to escape to the surrounding atmosphere",
-        "Mechanical shock without any damage"
+        "Mechanical shock without any visible damage to the enclosure"
       ],
       "answer": 2,
       "solution": "Internal explosion without allowing it to escape."
@@ -1166,8 +1166,8 @@
       "options": [
         "Check and satisfy himself about the safety conditions",
         "Rely on the previous sirdar's report alone",
-        "Not check anything",
-        "Wait for the manager's instructions"
+        "Not check anything in the working place at all",
+        "Wait for the written instructions of the manager"
       ],
       "answer": 0,
       "solution": "The sirdar must check and satisfy himself about safety conditions."
@@ -1183,8 +1183,8 @@
       "stem": "The maximum number of persons permitted in a winding cage depends on",
       "options": [
         "A fixed number set by the operator",
-        "Twenty persons always",
-        "The operator's decision",
+        "Twenty persons in every case always",
+        "The decision taken by the operator",
         "The designed capacity and safe working load"
       ],
       "answer": 3,
@@ -1203,7 +1203,7 @@
         "Less than a caved area",
         "Equal to the height of the seam",
         "More than caved area",
-        "The same"
+        "Same as that of a caved area"
       ],
       "answer": 0,
       "solution": "Generally less than a caved area."
@@ -1218,9 +1218,9 @@
       "difficulty": "medium",
       "stem": "The 'fire emergency communication' in mines must be",
       "options": [
-        "No communication needed",
-        "Installed only in the manager's office",
-        "Used only once a month",
+        "No communication system is needed at all inside the mine",
+        "Installed only in the office of the manager",
+        "Used only once a month by the mine sirdar",
         "Reliable, tested, and accessible during emergencies"
       ],
       "answer": 3,
@@ -1236,9 +1236,9 @@
       "difficulty": "hard",
       "stem": "The 'fire dam' in mines is built to",
       "options": [
-        "Provide support",
-        "Increase ventilation",
-        "Increase the air flow",
+        "Provide the necessary support to the workings",
+        "Increase of the ventilation air flow",
+        "Increase of the air flow in the mine",
         "Seal off fire area and prevent spread"
       ],
       "answer": 3,
@@ -1255,9 +1255,9 @@
       "stem": "A 'booster fan' is used to",
       "options": [
         "Assist the main fan in boosting air pressure in a section",
-        "Control the roof conditions",
-        "Supply water to the workings",
-        "Replace the main fan"
+        "Control of the roof conditions at the working face",
+        "Supply of water to the underground mine workings",
+        "Replacement of the main ventilation fan of the mine"
       ],
       "answer": 0,
       "solution": "Assists the main fan in boosting air pressure."
@@ -1274,7 +1274,7 @@
       "options": [
         "Electromagnetic interference with mine telephones",
         "Excessive noise levels at the switchgear panels",
-        "Overheating of the transformer oil in the substation",
+        "Overheating of the transformer oil",
         "Ignition of methane or coal dust by sparks or heat"
       ],
       "answer": 3,
@@ -1290,9 +1290,9 @@
       "difficulty": "medium",
       "stem": "The voltage for operating SDL/LHD is typically",
       "options": [
-        "220 kV AC",
-        "33 kV AC",
-        "125 V DC",
+        "220 V or 220 kV AC",
+        "33 kV or 330 V AC",
+        "125 V or 250 V DC",
         "250V DC or 440V AC"
       ],
       "answer": 3,
@@ -1308,10 +1308,10 @@
       "difficulty": "hard",
       "stem": "The 'water dam maintenance' includes",
       "options": [
-        "Painting the dam once a year",
-        "Inspecting only after heavy rains",
+        "Painting of the water dams at least once every year",
+        "Inspection of the water dams only after the heavy rains fall there",
         "Regular inspection, repair of seepage, and drainage clearing",
-        "Replacing the dam every five years"
+        "Replacement of the water dams every five years in use"
       ],
       "answer": 2,
       "solution": "Dam maintenance includes inspection, repair, drainage clearing."
@@ -1327,9 +1327,9 @@
       "stem": "A winding rope must be discarded if",
       "options": [
         "It shows signs of deterioration or damage beyond limits",
-        "It is used",
-        "After ten years of service",
-        "It is 5 years old"
+        "It has already been used for a very long time",
+        "After ten full years of service in the underground mine workings",
+        "It is merely about five years of service age"
       ],
       "answer": 0,
       "solution": "Must be discarded if deterioration or damage exceeds limits."
@@ -1345,9 +1345,9 @@
       "stem": "The electrical maintenance register must contain",
       "options": [
         "Details of all maintenance activities, tests, and results",
-        "Thermal insulation properties",
-        "Mechanical strength of materials",
-        "The personal details of all workers"
+        "Thermal insulation properties of the cables and all their ends",
+        "Mechanical strength of the cable materials used",
+        "The personal details of all the underground workers"
       ],
       "answer": 0,
       "solution": "Details of all maintenance activities, tests, and results."
@@ -1381,9 +1381,9 @@
       "stem": "The 'risk assessment' in a mine involves",
       "options": [
         "Identifying hazards, assessing risks, and implementing controls",
-        "Writing a report after the accident",
-        "Only examining the machinery",
-        "Consulting only the safety officer"
+        "Writing the accident report only after the accident has occurred",
+        "Only examining the machinery and plant in the mine",
+        "Consulting only the safety officer appointed there"
       ],
       "answer": 0,
       "solution": "Identifying hazards, assessing risks, and implementing controls."
@@ -1398,10 +1398,10 @@
       "difficulty": "hard",
       "stem": "The 'maximum duration' a rescue team can operate underground with breathing apparatus is limited by",
       "options": [
-        "The size of the rescue station",
-        "The manager's decision",
+        "The size of the underground rescue station in the mine there",
+        "The decision taken by the mine manager there",
         "The oxygen supply capacity of the breathing apparatus",
-        "The distance from the shaft"
+        "The distance of the working place from the shaft"
       ],
       "answer": 2,
       "solution": "The oxygen supply capacity of the breathing apparatus."
@@ -1416,8 +1416,8 @@
       "difficulty": "medium",
       "stem": "The 'fan pressure' in mine ventilation is",
       "options": [
-        "Regulate air temperature only",
-        "Zero",
+        "Regulate the air temperature only",
+        "Zero or a negligible pressure value",
         "Independent of the quantity of air flowing",
         "The pressure difference created by the fan"
       ],
@@ -1435,8 +1435,8 @@
       "stem": "The 'Factor of Risk' (FER) in coal mines is calculated as",
       "options": [
         "Methane percentage ÷ Lower Explosive Limit",
-        "Temperature × pressure",
-        "Humidity × temperature",
+        "Temperature multiplied by the pressure",
+        "Humidity multiplied by the temperature",
         "Methane percentage × dust concentration"
       ],
       "answer": 0,
@@ -1452,9 +1452,9 @@
       "difficulty": "hard",
       "stem": "The 'inundation rescue equipment' in mines must include",
       "options": [
-        "Diesel generators only",
-        "Drilling machines only",
-        "Explosive stores",
+        "Diesel generators and power units only",
+        "Drilling machines and jumbo sets only",
+        "Explosive stores and their underground magazines",
         "Pumps, pipes, and communication systems"
       ],
       "answer": 3,
@@ -1471,9 +1471,9 @@
       "stem": "The 'underground refuge chamber' is used to",
       "options": [
         "Provide temporary shelter for miners trapped underground",
-        "Store explosives",
-        "House the ventilation fan",
-        "Store equipment"
+        "Storage of the explosives in a mine surface storage magazine",
+        "Housing of the main ventilation fan in the mine",
+        "Storage of the mining equipment and the spares"
       ],
       "answer": 0,
       "solution": "Provides temporary shelter for trapped miners."
@@ -1491,7 +1491,7 @@
         "An Overman's or Sirdar's certificate",
         "A Manager's First Class certificate only",
         "An Engine Driver's certificate",
-        "A Surveyor's certificate"
+        "A Surveyor or a mine survey certificate"
       ],
       "answer": 0,
       "solution": "CMR 2017 Reg 190: a shot-firer holds a gas-testing certificate and an Overman's or Sirdar's certificate."
@@ -1506,8 +1506,8 @@
       "difficulty": "medium",
       "stem": "If a sirdar's district is of such a size that it cannot be examined within the required time, the matter is referred to:",
       "options": [
-        "The manager",
-        "The overman",
+        "The manager of the mine",
+        "The overman of the mine",
         "The safety officer",
         "The Chief Inspector"
       ],
@@ -1524,9 +1524,9 @@
       "difficulty": "easy",
       "stem": "The 'fire watch' in a mine after a fire incident must continue until",
       "options": [
-        "Three hours",
-        "The shift ends",
-        "Forty eight hours",
+        "For at least three hours after the fire",
+        "Until the end of that particular shift",
+        "For at least forty eight hours after the fire is put out",
         "The area is declared safe by a competent person"
       ],
       "answer": 3,
@@ -1542,10 +1542,10 @@
       "difficulty": "medium",
       "stem": "The sirdar must report to the manager if he finds that",
       "options": [
-        "Production is low",
+        "The production output of that mine is low",
         "There is a contravention of the Act or regulations",
-        "The canteen is closed",
-        "Workers are late"
+        "The mine canteen services have been closed",
+        "The mine workers are often very late for reporting duty"
       ],
       "answer": 1,
       "solution": "Any contravention of the Act or regulations must be reported."
@@ -1596,7 +1596,7 @@
       "difficulty": "easy",
       "stem": "The highest dam in India is",
       "options": [
-        "Nagarjuna Sagar Dam",
+        "Nagar Sagar",
         "Hirakud Dam",
         "Bhakra Dam",
         "Tehri Dam"
@@ -1633,9 +1633,9 @@
       "stem": "The 'mine water' treatment and use is important for",
       "options": [
         "Only for washing the machinery",
-        "Only for dust suppression",
+        "Only for the suppression of dust",
         "Community water supply and irrigation",
-        "Storing in underground sumps permanently"
+        "Storing in underground sumps"
       ],
       "answer": 2,
       "solution": "Community water supply and irrigation."
@@ -1651,7 +1651,7 @@
       "stem": "The 'CIL's welfare schemes' for workers include",
       "options": [
         "Healthcare, education, housing, and provident fund",
-        "Discipline charges for late reporting to work",
+        "Discipline charges for the late reporting of the workers",
         "Only a free coal quota allotted to each employee",
         "Only an annual bonus linked to district output"
       ],
@@ -1704,10 +1704,10 @@
       "difficulty": "medium",
       "stem": "The 'carbon capture and storage' (CCS) technology involves",
       "options": [
-        "Burning coal at lower temperatures",
-        "Using only renewable energy",
+        "Burning of the coal at much lower temperatures in the kiln",
+        "Using only the renewable sources of energy",
         "Capturing CO2 emissions and storing them underground",
-        "Storing coal in sealed silos"
+        "Storing of the coal in sealed storage silos"
       ],
       "answer": 2,
       "solution": "Capturing CO2 and storing underground."
@@ -1724,8 +1724,8 @@
       "options": [
         "Launching satellites into polar orbit",
         "Sending astronauts to the Moon",
-        "Manned space missions",
-        "Launching rockets from underwater"
+        "Manned space missions of India",
+        "Launching of rockets from under water"
       ],
       "answer": 0,
       "solution": "Launching satellites into polar orbit."
@@ -1740,10 +1740,10 @@
       "difficulty": "easy",
       "stem": "The 'royalty' on coal is paid by",
       "options": [
-        "Workers to management",
-        "The DGMS",
+        "Payments by the workers to management",
+        "Payments made to the DGMS",
         "Mine lessee to State Government",
-        "State Government to Central"
+        "Payments by the State to the Central"
       ],
       "answer": 2,
       "solution": "Royalty is paid by the mine lessee to the State Government."
@@ -1759,9 +1759,9 @@
       "stem": "The 'CIL's e-Nivaran' portal is for",
       "options": [
         "Online grievance redressal of coal sector issues",
-        "Booking coal rakes online",
-        "e-Auction of coal",
-        "Issuing employee identity cards"
+        "Online booking of the coal rakes by rail",
+        "Conducting the e-Auction of coal online",
+        "Issuing of the employee identity cards daily"
       ],
       "answer": 0,
       "solution": "Online grievance redressal."
@@ -1903,8 +1903,8 @@
       "stem": "The Amazon River is in",
       "options": [
         "South America",
-        "Asia",
-        "Africa",
+        "Asia continent",
+        "Africa continent",
         "North America"
       ],
       "answer": 0,
@@ -1920,9 +1920,9 @@
       "difficulty": "easy",
       "stem": "The 'auction of coal mines' for commercial mining was launched under",
       "options": [
-        "The Mines and Minerals (Development and Regulation) Act",
+        "The Mineral (Development) Act, 1952",
         "The Mineral (Auction) Regulations 2015",
-        "The Coal Mines Act 1971",
+        "The Coal Mines Act of 1971 repealed",
         "The Coal Mines (Special Provisions) Act"
       ],
       "answer": 3,
